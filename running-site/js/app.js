@@ -100,6 +100,11 @@ function buildNavbar() {
       <div class="navbar-inner">
         <a href="index.html" class="navbar-brand">${SITE.name}</a>
         <ul class="navbar-nav">${links}</ul>
+        <button class="navbar-search-btn" onclick="openSearch()" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
         <a href="${SITE.subscribeUrl || '#'}" class="navbar-subscribe">Subscribe</a>
       </div>
     </nav>
@@ -108,8 +113,63 @@ function buildNavbar() {
       <span class="breaking-badge">BREAKING</span>
       <span class="breaking-text">${SITE.breakingNews}</span>
     </div>` : ''}
+    <div id="search-overlay" class="search-overlay" role="dialog" aria-label="Search">
+      <div class="search-inner">
+        <div class="search-header">
+          <input id="search-input" type="text" placeholder="SEARCH…" autocomplete="off" oninput="handleSearchInput(this.value)">
+          <button class="search-close-btn" onclick="closeSearch()" aria-label="Close search">×</button>
+        </div>
+        <div id="search-results-list" class="search-results-list"></div>
+      </div>
+    </div>
   `;
 }
+
+// ── SEARCH ────────────────────────────────────────────────
+window.openSearch = function() {
+  const overlay = document.getElementById('search-overlay');
+  if (!overlay) return;
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  const input = document.getElementById('search-input');
+  if (input) { input.value = ''; input.focus(); }
+  const list = document.getElementById('search-results-list');
+  if (list) list.innerHTML = '';
+};
+
+window.closeSearch = function() {
+  const overlay = document.getElementById('search-overlay');
+  if (overlay) overlay.classList.remove('open');
+  document.body.style.overflow = '';
+};
+
+window.handleSearchInput = function(query) {
+  const container = document.getElementById('search-results-list');
+  if (!container) return;
+  const q = query.trim().toLowerCase();
+  if (!q) { container.innerHTML = ''; return; }
+
+  const results = ARTICLES.filter(a =>
+    (a.title || '').toLowerCase().includes(q) ||
+    (a.excerpt || '').toLowerCase().includes(q) ||
+    (a.category || '').toLowerCase().includes(q) ||
+    (a.author || '').toLowerCase().includes(q)
+  );
+
+  if (!results.length) {
+    container.innerHTML = `<div class="search-no-results">No articles found for "${query}"</div>`;
+    return;
+  }
+
+  container.innerHTML = results.map(a => `
+    <div class="search-result-item" onclick="goTo('article.html?id=${a.id}');closeSearch();">
+      <div class="search-result-cat">${a.category}</div>
+      <div class="search-result-title">${a.title}</div>
+      ${a.excerpt ? `<div class="search-result-excerpt">${a.excerpt}</div>` : ''}
+      <div class="search-result-meta">${a.author} · ${a.date} · ${a.readTime}</div>
+    </div>
+  `).join('');
+};
 
 // ── CROP HELPERS ──────────────────────────────────────────
 // Parse new-format crop string "x:20,y:10,w:60,h:40,ar:1.5"
@@ -576,6 +636,11 @@ function buildFooter() {
 
 // ── INIT ──────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', async () => {
+  // Reading progress bar (only visible on article pages)
+  const progressBar = document.createElement('div');
+  progressBar.id = 'reading-progress';
+  document.body.insertBefore(progressBar, document.body.firstChild);
+
   await loadData();
 
   const navTarget = qs('#nav-placeholder');
@@ -591,4 +656,30 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (page === 'rankings') buildRankingsPage();
 
   buildAthleteCardModal();
+
+  // Scroll handler: progress bar on article pages
+  if (page === 'article') {
+    window.addEventListener('scroll', () => {
+      const total = document.body.scrollHeight - window.innerHeight;
+      progressBar.style.width = total > 0 ? ((window.scrollY / total) * 100) + '%' : '0%';
+    }, { passive: true });
+  }
+
+  // Global keyboard shortcuts
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      const overlay = document.getElementById('search-overlay');
+      if (overlay && overlay.classList.contains('open')) closeSearch();
+    }
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      e.preventDefault();
+      openSearch();
+    }
+  });
+
+  // Close search when clicking outside the search box
+  document.addEventListener('click', e => {
+    const overlay = document.getElementById('search-overlay');
+    if (overlay && e.target === overlay) closeSearch();
+  });
 });
