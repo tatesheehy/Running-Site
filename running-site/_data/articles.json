@@ -11,6 +11,7 @@
       "date": "June 18, 2026",
       "readTime": "12 min read",
       "image": "",
+      "imagePosition": "center",
       "body": "Your full article text goes here. Add as much or as little as you want.\n\n## A Section Heading\n\nMore article text goes here. You can have multiple paragraphs.\n\n> A great quote from someone goes here.\n\nAnd more text after that."
     },
     {
@@ -24,6 +25,7 @@
       "date": "June 15, 2026",
       "readTime": "8 min read",
       "image": "",
+      "imagePosition": "center",
       "body": "Article body goes here..."
     },
     {
@@ -37,6 +39,7 @@
       "date": "June 12, 2026",
       "readTime": "10 min read",
       "image": "",
+      "imagePosition": "center",
       "body": "Article body goes here..."
     },
     {
@@ -50,6 +53,7 @@
       "date": "June 10, 2026",
       "readTime": "6 min read",
       "image": "",
+      "imagePosition": "center",
       "body": "Article body goes here..."
     },
     {
@@ -63,6 +67,7 @@
       "date": "June 8, 2026",
       "readTime": "9 min read",
       "image": "",
+      "imagePosition": "center",
       "body": "Article body goes here..."
     },
     {
@@ -76,6 +81,7 @@
       "date": "June 14, 2026",
       "readTime": "11 min read",
       "image": "",
+      "imagePosition": "center",
       "body": "Article body goes here..."
     },
     {
@@ -89,6 +95,7 @@
       "date": "June 10, 2026",
       "readTime": "14 min read",
       "image": "",
+      "imagePosition": "center",
       "body": "Article body goes here..."
     },
     {
@@ -102,6 +109,7 @@
       "date": "June 7, 2026",
       "readTime": "7 min read",
       "image": "",
+      "imagePosition": "center",
       "body": "Article body goes here..."
     }
   ]

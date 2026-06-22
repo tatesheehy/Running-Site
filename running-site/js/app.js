@@ -113,8 +113,9 @@ function buildNavbar() {
 
 // ── ARTICLE CARD HTML ──────────────────────────────────────
 function articleCard(a) {
+  const pos = a.imagePosition || 'center';
   const img = a.image
-    ? `<img class="article-card-img" src="${a.image}" alt="${a.title}" loading="lazy">`
+    ? `<img class="article-card-img" src="${a.image}" alt="${a.title}" loading="lazy" style="object-position:${pos};">`
     : `<div class="img-placeholder" style="aspect-ratio:16/10;"></div>`;
 
   return `
@@ -140,8 +141,9 @@ function buildHome() {
   const picks = ARTICLES.filter(a => a.editorsPick).slice(0, 5);
   const latest = ARTICLES.filter(a => !a.featured).slice(0, 6);
 
+  const heroPos = featured.imagePosition || 'center';
   const heroImg = featured.image
-    ? `<img class="hero-image" src="${featured.image}" alt="${featured.title}">`
+    ? `<img class="hero-image" src="${featured.image}" alt="${featured.title}" style="object-position:${heroPos};">`
     : `<div class="img-placeholder" style="aspect-ratio:16/9;"></div>`;
 
   const picksHtml = picks.map(p => `
@@ -317,8 +319,9 @@ function buildArticlePage() {
 
   document.title = `${a.title} — ${SITE.name}`;
 
+  const detailPos = a.imagePosition || 'center';
   const imgHtml = a.image
-    ? `<img class="article-detail-image" src="${a.image}" alt="${a.title}">`
+    ? `<img class="article-detail-image" src="${a.image}" alt="${a.title}" style="object-position:${detailPos};">`
     : `<div class="article-detail-image-placeholder"></div>`;
 
   // Render markdown body if marked is available, otherwise use as-is
