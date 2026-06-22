@@ -13,130 +13,142 @@ collections:
   # ── ARTICLES ─────────────────────────────────────────────
   - name: articles
     label: Articles
-    file: running-site/_data/articles.json
-    fields:
-      - name: items
+    files:
+      - name: articles
         label: Articles
-        label_singular: Article
-        widget: list
+        file: running-site/_data/articles.json
         fields:
-          - { label: "Title", name: title, widget: string }
-          - { label: "Unique ID (no spaces, e.g. jakob-oslo-2026)", name: id, widget: string }
-          - label: "Category"
-            name: category
-            widget: select
-            options:
-              - DISTANCE RUNNING
-              - SPRINTS
-              - MARATHON
-              - MIDDLE DISTANCE
-              - OPINION
-              - TECHNOLOGY
-              - HISTORY
-              - NEWS
-          - { label: "Featured (home page hero — only one!)", name: featured, widget: boolean, default: false }
-          - { label: "Editor's Pick (home page sidebar)", name: editorsPick, widget: boolean, default: false }
-          - { label: "Author", name: author, widget: string }
-          - { label: "Date (e.g. June 21, 2026)", name: date, widget: string }
-          - { label: "Read Time (e.g. 8 min read)", name: readTime, widget: string }
-          - { label: "Cover Image", name: image, widget: image, required: false, allow_multiple: false, default: "" }
-          - { label: "Excerpt (one sentence summary)", name: excerpt, widget: text }
-          - { label: "Article Body", name: body, widget: markdown }
+          - name: items
+            label: Articles
+            label_singular: Article
+            widget: list
+            fields:
+              - { label: "Title", name: title, widget: string }
+              - { label: "Unique ID (no spaces, e.g. jakob-oslo-2026)", name: id, widget: string }
+              - label: "Category"
+                name: category
+                widget: select
+                options:
+                  - DISTANCE RUNNING
+                  - SPRINTS
+                  - MARATHON
+                  - MIDDLE DISTANCE
+                  - OPINION
+                  - TECHNOLOGY
+                  - HISTORY
+                  - NEWS
+              - { label: "Featured (home page hero — only one!)", name: featured, widget: boolean, default: false }
+              - { label: "Editor's Pick (home page sidebar)", name: editorsPick, widget: boolean, default: false }
+              - { label: "Author", name: author, widget: string }
+              - { label: "Date (e.g. June 21, 2026)", name: date, widget: string }
+              - { label: "Read Time (e.g. 8 min read)", name: readTime, widget: string }
+              - { label: "Cover Image", name: image, widget: image, required: false, default: "" }
+              - { label: "Excerpt (one sentence summary)", name: excerpt, widget: text }
+              - { label: "Article Body", name: body, widget: markdown }
 
   # ── ATHLETES ─────────────────────────────────────────────
   - name: athletes
     label: Athletes
-    file: running-site/_data/athletes.json
-    fields:
-      - name: items
+    files:
+      - name: athletes
         label: Athletes
-        label_singular: Athlete
-        widget: list
+        file: running-site/_data/athletes.json
         fields:
-          - { label: "Unique ID (e.g. jakob-ingebrigtsen)", name: id, widget: string }
-          - { label: "Full Name", name: name, widget: string }
-          - { label: "Country", name: country, widget: string }
-          - { label: "Flag Emoji", name: flag, widget: string, hint: "e.g. 🇳🇴" }
-          - { label: "Photo", name: photo, widget: image, required: false, default: "" }
-          - { label: "Photo Background Color", name: photoBackground, widget: string, default: "#111111", hint: "Dark hex color, e.g. #0d1b2a" }
-          - { label: "Event Category", name: event, widget: string, hint: "e.g. MIDDLE DISTANCE" }
-          - { label: "Height", name: height, widget: string }
-          - { label: "Weight", name: weight, widget: string }
-          - { label: "Age", name: age, widget: string }
-          - { label: "Pro Seasons", name: seasons, widget: string }
-
-          - label: "Stats"
-            name: stats_group
-            widget: object
-            collapsed: false
-            fields:
-              - { label: "Stat 1 — Value", name: stat1Value, widget: string, hint: "e.g. 3:43.73" }
-              - { label: "Stat 1 — Label", name: stat1Label, widget: string, hint: "e.g. WORLD RECORD" }
-              - { label: "Stat 1 — Sub", name: stat1Sub, widget: string, hint: "e.g. personal best" }
-              - { label: "Stat 2 — Value", name: stat2Value, widget: string }
-              - { label: "Stat 2 — Label", name: stat2Label, widget: string }
-              - { label: "Stat 2 — Sub", name: stat2Sub, widget: string }
-              - { label: "Stat 3 — Value", name: stat3Value, widget: string }
-              - { label: "Stat 3 — Label", name: stat3Label, widget: string }
-              - { label: "Stat 3 — Sub", name: stat3Sub, widget: string }
-              - { label: "Stat 4 — Value", name: stat4Value, widget: string }
-              - { label: "Stat 4 — Label", name: stat4Label, widget: string }
-              - { label: "Stat 4 — Sub", name: stat4Sub, widget: string }
-
-          - name: achievements
-            label: Achievements
+          - name: items
+            label: Athletes
+            label_singular: Athlete
             widget: list
             fields:
-              - { label: "Icon (emoji)", name: icon, widget: string }
-              - { label: "Count (e.g. 2x)", name: count, widget: string }
-              - { label: "Label", name: label, widget: string }
+              - { label: "Unique ID (e.g. jakob-ingebrigtsen)", name: id, widget: string }
+              - { label: "Full Name", name: name, widget: string }
+              - { label: "Country", name: country, widget: string }
+              - { label: "Flag Emoji", name: flag, widget: string, hint: "e.g. 🇳🇴" }
+              - { label: "Photo", name: photo, widget: image, required: false, default: "" }
+              - { label: "Photo Background Color", name: photoBackground, widget: string, default: "#111111", hint: "Dark hex color, e.g. #0d1b2a" }
+              - { label: "Event Category", name: event, widget: string, hint: "e.g. MIDDLE DISTANCE" }
+              - { label: "Height", name: height, widget: string }
+              - { label: "Weight", name: weight, widget: string }
+              - { label: "Age", name: age, widget: string }
+              - { label: "Pro Seasons", name: seasons, widget: string }
 
-          - name: traits
-            label: Trait Badges
-            widget: list
-            fields:
-              - { label: "Emoji", name: emoji, widget: string }
-              - { label: "Label", name: label, widget: string }
+              - label: "Stats"
+                name: stats_group
+                widget: object
+                collapsed: false
+                fields:
+                  - { label: "Stat 1 — Value", name: stat1Value, widget: string, hint: "e.g. 3:43.73" }
+                  - { label: "Stat 1 — Label", name: stat1Label, widget: string, hint: "e.g. WORLD RECORD" }
+                  - { label: "Stat 1 — Sub", name: stat1Sub, widget: string, hint: "e.g. personal best" }
+                  - { label: "Stat 2 — Value", name: stat2Value, widget: string }
+                  - { label: "Stat 2 — Label", name: stat2Label, widget: string }
+                  - { label: "Stat 2 — Sub", name: stat2Sub, widget: string }
+                  - { label: "Stat 3 — Value", name: stat3Value, widget: string }
+                  - { label: "Stat 3 — Label", name: stat3Label, widget: string }
+                  - { label: "Stat 3 — Sub", name: stat3Sub, widget: string }
+                  - { label: "Stat 4 — Value", name: stat4Value, widget: string }
+                  - { label: "Stat 4 — Label", name: stat4Label, widget: string }
+                  - { label: "Stat 4 — Sub", name: stat4Sub, widget: string }
 
-          - { label: "Club", name: club, widget: string }
-          - { label: "Coach", name: coach, widget: string }
-          - { label: "Hometown", name: hometown, widget: string }
+              - name: achievements
+                label: Achievements
+                widget: list
+                fields:
+                  - { label: "Icon (emoji)", name: icon, widget: string }
+                  - { label: "Count (e.g. 2x)", name: count, widget: string }
+                  - { label: "Label", name: label, widget: string }
 
-          - { label: "Card Headline — Key Words (bold)", name: headlineKey, widget: string }
-          - { label: "Card Headline — Rest (gray)", name: headlineRest, widget: string }
+              - name: traits
+                label: Trait Badges
+                widget: list
+                fields:
+                  - { label: "Emoji", name: emoji, widget: string }
+                  - { label: "Label", name: label, widget: string }
 
-          - { label: "Analysis — Review Title", name: reviewTitle, widget: string, default: "Season review" }
-          - { label: "Analysis — Review Text", name: reviewBody, widget: text }
-          - { label: "Analysis — Question Title", name: questionTitle, widget: string, default: "Next question" }
-          - { label: "Analysis — Question Text", name: questionBody, widget: text }
+              - { label: "Club", name: club, widget: string }
+              - { label: "Coach", name: coach, widget: string }
+              - { label: "Hometown", name: hometown, widget: string }
+
+              - { label: "Card Headline — Key Words (bold)", name: headlineKey, widget: string }
+              - { label: "Card Headline — Rest (gray)", name: headlineRest, widget: string }
+
+              - { label: "Analysis — Review Title", name: reviewTitle, widget: string, default: "Season review" }
+              - { label: "Analysis — Review Text", name: reviewBody, widget: text }
+              - { label: "Analysis — Question Title", name: questionTitle, widget: string, default: "Next question" }
+              - { label: "Analysis — Question Text", name: questionBody, widget: text }
 
   # ── RANKINGS ─────────────────────────────────────────────
   - name: rankings
     label: Rankings
-    file: running-site/_data/rankings.json
-    fields:
-      - { label: "Year", name: year, widget: string }
-      - name: events
-        label: Events
-        label_singular: Event
-        widget: list
+    files:
+      - name: rankings
+        label: Rankings
+        file: running-site/_data/rankings.json
         fields:
-          - { label: "Event Name (e.g. 1500m)", name: name, widget: string }
-          - name: rows
-            label: Rankings
-            label_singular: Entry
+          - { label: "Year", name: year, widget: string }
+          - name: events
+            label: Events
+            label_singular: Event
             widget: list
             fields:
-              - { label: "Rank", name: rank, widget: number }
-              - { label: "Athlete ID (must match an athlete's ID exactly)", name: athleteId, widget: string }
-              - { label: "Season Best", name: seasonBest, widget: string }
-              - { label: "Meet", name: meet, widget: string }
+              - { label: "Event Name (e.g. 1500m)", name: name, widget: string }
+              - name: rows
+                label: Rankings
+                label_singular: Entry
+                widget: list
+                fields:
+                  - { label: "Rank", name: rank, widget: number }
+                  - { label: "Athlete ID (must match an athlete's ID exactly)", name: athleteId, widget: string }
+                  - { label: "Season Best", name: seasonBest, widget: string }
+                  - { label: "Meet", name: meet, widget: string }
 
   # ── SITE SETTINGS ────────────────────────────────────────
   - name: settings
     label: Site Settings
-    file: running-site/_data/site.json
-    fields:
-      - { label: "Site Name", name: name, widget: string }
-      - { label: "Breaking News (leave blank to hide)", name: breakingNews, widget: string, required: false }
-      - { label: "Accent Color", name: accentColor, widget: color, default: "#E8500A" }
+    files:
+      - name: settings
+        label: Site Settings
+        file: running-site/_data/site.json
+        fields:
+          - { label: "Site Name", name: name, widget: string }
+          - { label: "Breaking News (leave blank to hide)", name: breakingNews, widget: string, required: false }
+          - { label: "Accent Color", name: accentColor, widget: color, default: "#E8500A" }
