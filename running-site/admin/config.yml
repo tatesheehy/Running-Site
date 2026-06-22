@@ -151,11 +151,63 @@ collections:
         label: Site Settings
         file: running-site/_data/site.json
         fields:
+
+          - label: "── IDENTITY ──────────────────────────────"
+            name: _id_divider
+            widget: hidden
+            required: false
+
           - { label: "Site Name", name: name, widget: string }
-          - { label: "Tagline (shown in browser tab/SEO)", name: tagline, widget: string, required: false }
-          - { label: "Breaking News bar (leave blank to hide)", name: breakingNews, widget: string, required: false }
-          - { label: "Subscribe Button URL", name: subscribeUrl, widget: string, required: false, default: "#" }
+          - { label: "SEO Tagline (browser tab / meta description)", name: tagline, widget: string, required: false }
+          - { label: "Home Page Tagline (shown on homepage below nav)", name: homeTagline, widget: string, required: false, hint: "e.g. The inside track on distance running. Leave blank to hide." }
           - { label: "Accent Color", name: accentColor, widget: color, default: "#E8500A" }
+
+          - label: "── NAVBAR ────────────────────────────────"
+            name: _nav_divider
+            widget: hidden
+            required: false
+
+          - { label: "Subscribe Button Label", name: subscribeLabel, widget: string, default: "Subscribe", required: false }
+          - { label: "Subscribe Button URL", name: subscribeUrl, widget: string, required: false, default: "#" }
+          - { label: "Podcast Nav Link URL (leave blank for #)", name: podcastUrl, widget: string, required: false }
+          - { label: "Breaking News bar (leave blank to hide)", name: breakingNews, widget: string, required: false }
+
+          - label: "── HOME PAGE ─────────────────────────────"
+            name: _home_divider
+            widget: hidden
+            required: false
+
+          - { label: "'Latest Articles' Section Title", name: latestArticlesTitle, widget: string, default: "Latest Articles", required: false }
+          - { label: "'Editors' Picks' Label", name: editorPicksLabel, widget: string, default: "Editors' Picks", required: false }
+          - { label: "Show Rankings Widget on Home Page", name: showRankingsWidget, widget: boolean, default: true, required: false }
+
+          - label: "── ARTICLES PAGE ─────────────────────────"
+            name: _articles_divider
+            widget: hidden
+            required: false
+
+          - { label: "Articles Page Intro Text (shown under 'Articles' heading)", name: articlesIntro, widget: text, required: false, hint: "Leave blank to hide." }
+
+          - label: "── RANKINGS PAGE ─────────────────────────"
+            name: _rankings_divider
+            widget: hidden
+            required: false
+
+          - { label: "Rankings Page Intro Text (shown under the Rankings heading)", name: rankingsIntro, widget: text, required: false, hint: "Leave blank to hide." }
+
+          - label: "── FOOTER ────────────────────────────────"
+            name: _footer_divider
+            widget: hidden
+            required: false
+
+          - { label: "Footer Tagline", name: footerTagline, widget: string, required: false, hint: "Short description shown under the site name in the footer." }
+          - { label: "Footer Copyright Text", name: footerCopyright, widget: string, required: false }
+
+          - label: "── SOCIAL LINKS ──────────────────────────"
+            name: _social_divider
+            widget: hidden
+            required: false
+
           - { label: "Twitter / X URL (leave blank to hide)", name: twitterUrl, widget: string, required: false }
           - { label: "Instagram URL (leave blank to hide)", name: instagramUrl, widget: string, required: false }
-          - { label: "Footer Copyright Text", name: footerCopyright, widget: string, required: false }
+          - { label: "YouTube URL (leave blank to hide)", name: youtubeUrl, widget: string, required: false }

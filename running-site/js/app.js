@@ -88,7 +88,7 @@ function buildNavbar() {
     { label: 'Articles', href: 'articles.html' },
     { label: 'Rankings', href: 'rankings.html' },
     { label: 'News', href: 'articles.html?category=News' },
-    { label: 'Podcast', href: '#' },
+    { label: 'Podcast', href: SITE.podcastUrl || '#' },
   ];
 
   const links = navLinks.map(l =>
@@ -105,7 +105,7 @@ function buildNavbar() {
             <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
           </svg>
         </button>
-        <a href="${SITE.subscribeUrl || '#'}" class="navbar-subscribe">Subscribe</a>
+        <a href="${SITE.subscribeUrl || '#'}" class="navbar-subscribe">${SITE.subscribeLabel || 'Subscribe'}</a>
       </div>
     </nav>
     ${SITE.breakingNews ? `
@@ -245,6 +245,9 @@ function buildHome() {
     </div>
   `).join('');
 
+  const editorPicksLabel = SITE.editorPicksLabel || "Editors' Picks";
+  const latestTitle = SITE.latestArticlesTitle || 'Latest Articles';
+
   const latestHtml = latest.map(a => articleCard(a)).join('');
 
   const firstEvent = Object.keys(RANKINGS)[0] || '';
@@ -253,8 +256,20 @@ function buildHome() {
     `<button class="event-tab ${i === 0 ? 'active' : ''}" data-event="${ev}">${ev}</button>`
   ).join('');
 
+  const rankingsWidgetHtml = SITE.showRankingsWidget === false ? '' : `
+    <div class="rankings-widget">
+      <div class="rw-header">
+        <div class="rw-title">${RANKINGS_YEAR} World Rankings</div>
+        <div class="event-tabs" id="home-tabs">${eventTabsHtml}</div>
+      </div>
+      <div id="rankings-table-wrap">${buildRankingsTableHtml(firstEvent, true)}</div>
+      <a href="rankings.html" class="view-all-link">View full rankings →</a>
+    </div>
+  `;
+
   document.getElementById('main').innerHTML = `
     <div class="container">
+      ${SITE.homeTagline ? `<div class="home-tagline">${SITE.homeTagline}</div>` : ''}
       <section class="hero">
         <div>
           <div class="hero-image-wrap">
@@ -271,24 +286,17 @@ function buildHome() {
           </div>
         </div>
         <div class="editors-picks">
-          <div class="ep-label">Editors' Picks</div>
+          <div class="ep-label">${editorPicksLabel}</div>
           ${picksHtml}
         </div>
       </section>
 
       <div class="section-header">
-        <h2 class="section-title">Latest Articles</h2>
+        <h2 class="section-title">${latestTitle}</h2>
       </div>
       <div class="articles-grid">${latestHtml}</div>
 
-      <div class="rankings-widget">
-        <div class="rw-header">
-          <div class="rw-title">${RANKINGS_YEAR} World Rankings</div>
-          <div class="event-tabs" id="home-tabs">${eventTabsHtml}</div>
-        </div>
-        <div id="rankings-table-wrap">${buildRankingsTableHtml(firstEvent, true)}</div>
-        <a href="rankings.html" class="view-all-link">View full rankings →</a>
-      </div>
+      ${rankingsWidgetHtml}
     </div>
   `;
 
@@ -356,6 +364,7 @@ function buildArticlesPage() {
     <div class="container">
       <div class="page-header">
         <h1 class="page-title">Articles</h1>
+        ${SITE.articlesIntro ? `<p class="page-intro">${SITE.articlesIntro}</p>` : ''}
       </div>
       <div class="filter-bar" id="filter-bar">${filterHtml}</div>
       <div class="articles-grid" id="articles-grid"></div>
@@ -459,6 +468,7 @@ function buildRankingsPage() {
     <div class="container">
       <div class="page-header">
         <h1 class="page-title">${RANKINGS_YEAR} Rankings</h1>
+        ${SITE.rankingsIntro ? `<p class="page-intro">${SITE.rankingsIntro}</p>` : ''}
       </div>
       <div class="event-tabs" id="rankings-tabs" style="margin-bottom:28px;">${tabsHtml}</div>
       <div class="rankings-page-layout">
@@ -617,12 +627,16 @@ function buildFooter() {
   const socials = [
     SITE.twitterUrl ? `<li><a href="${SITE.twitterUrl}" target="_blank" rel="noopener">Twitter / X</a></li>` : '',
     SITE.instagramUrl ? `<li><a href="${SITE.instagramUrl}" target="_blank" rel="noopener">Instagram</a></li>` : '',
+    SITE.youtubeUrl ? `<li><a href="${SITE.youtubeUrl}" target="_blank" rel="noopener">YouTube</a></li>` : '',
   ].join('');
 
   return `
     <footer>
       <div class="footer-inner">
-        <div class="footer-brand">${SITE.name}</div>
+        <div class="footer-brand-wrap">
+          <div class="footer-brand">${SITE.name}</div>
+          ${SITE.footerTagline ? `<div class="footer-tagline">${SITE.footerTagline}</div>` : ''}
+        </div>
         <ul class="footer-links">
           <li><a href="articles.html">Articles</a></li>
           <li><a href="rankings.html">Rankings</a></li>

@@ -1,10 +1,20 @@
 {
   "name": "RUNNING WEBSITE",
   "tagline": "Track & Field Coverage and Rankings",
+  "homeTagline": "",
   "breakingNews": "Welcome to RUNNING WEBSITE. Check out our newest rankings now",
   "subscribeUrl": "#",
+  "subscribeLabel": "Subscribe",
   "accentColor": "#E8500A",
   "twitterUrl": "",
   "instagramUrl": "",
-  "footerCopyright": "© 2026 Running Website. All rights reserved."
+  "youtubeUrl": "",
+  "podcastUrl": "",
+  "footerCopyright": "© 2026 Running Website. All rights reserved.",
+  "footerTagline": "",
+  "articlesIntro": "",
+  "rankingsIntro": "",
+  "latestArticlesTitle": "Latest Articles",
+  "editorPicksLabel": "Editors' Picks",
+  "showRankingsWidget": true
 }
