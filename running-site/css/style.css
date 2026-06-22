@@ -185,7 +185,12 @@ button { font-family: inherit; }
   border-bottom: 1px solid var(--border);
 }
 
-.hero-image-wrap { position: relative; }
+.hero-image-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  width: 100%;
+}
 
 .hero-image, .hero-image-wrap .img-placeholder {
   aspect-ratio: 16/9;
@@ -294,6 +299,9 @@ button { font-family: inherit; }
 .article-card-img-wrap {
   position: relative;
   margin-bottom: 12px;
+  overflow: hidden;
+  aspect-ratio: 16/10;
+  width: 100%;
 }
 
 .article-card-img, .article-card-img-wrap .img-placeholder {
@@ -993,6 +1001,22 @@ footer {
   aspect-ratio: 16/9;
   object-fit: cover;
   margin-bottom: 40px;
+}
+
+.article-detail-image-wrap {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 16/9;
+  margin-bottom: 40px;
+}
+
+/* Absolutely-positioned image for precision crop rendering */
+.cropped-img {
+  position: absolute;
+  height: auto;
+  max-width: none;
+  display: block;
 }
 
 .article-detail-image-placeholder {

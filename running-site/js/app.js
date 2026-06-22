@@ -111,12 +111,46 @@ function buildNavbar() {
   `;
 }
 
+// ── CROP HELPERS ──────────────────────────────────────────
+// Parse new-format crop string "x:20,y:10,w:60,h:40,ar:1.5"
+function parseCropStr(str) {
+  if (!str) return null;
+  const m = String(str).match(/x:([\d.]+),y:([\d.]+),w:([\d.]+),h:([\d.]+),ar:([\d.]+)/);
+  if (!m) return null;
+  return { x: +m[1], y: +m[2], w: +m[3], h: +m[4], ar: +m[5] };
+}
+
+// Returns inline style for absolutely-positioned crop image
+// x, y, w = percentages (0-100) of natural image; ar = image naturalWidth/naturalHeight
+// containerAR = aspect ratio of the container (e.g. 16/9)
+function cropImgStyle(crop, containerAR) {
+  const { x, y, w, ar: iAR } = crop;
+  // Image width as % of container width so the crop region fills the container
+  const imgWidthPct = (10000 / w).toFixed(2);
+  // Left offset so the crop region's left edge aligns with the container's left edge
+  const imgLeftPct = (-(x / w) * 100).toFixed(2);
+  // Top offset so the crop region's top edge aligns with the container's top edge
+  // (derived from: -(y_frac * containerW / (w_frac * iAR)) / containerH = -(y * cAR) / (w * iAR))
+  const imgTopPct = (-(y * containerAR * 100) / (w * iAR)).toFixed(2);
+  return `width:${imgWidthPct}%;height:auto;left:${imgLeftPct}%;top:${imgTopPct}%;`;
+}
+
+// Render an image with optional precision crop, returning an HTML string.
+// For new-format crop strings (x:...) uses absolute positioning inside the wrapper.
+// For old-format strings ("50% 30%", "center") falls back to object-position.
+function imgHTML(src, alt, cropStr, containerAR, cssClass) {
+  if (!src) return `<div class="img-placeholder" style="aspect-ratio:${containerAR};"></div>`;
+  const crop = parseCropStr(cropStr);
+  if (crop) {
+    return `<img class="cropped-img" src="${src}" alt="${alt}" loading="lazy" style="${cropImgStyle(crop, containerAR)}">`;
+  }
+  const pos = cropStr || 'center';
+  return `<img class="${cssClass}" src="${src}" alt="${alt}" loading="lazy" style="object-position:${pos};">`;
+}
+
 // ── ARTICLE CARD HTML ──────────────────────────────────────
 function articleCard(a) {
-  const pos = a.imagePosition || 'center';
-  const img = a.image
-    ? `<img class="article-card-img" src="${a.image}" alt="${a.title}" loading="lazy" style="object-position:${pos};">`
-    : `<div class="img-placeholder" style="aspect-ratio:16/10;"></div>`;
+  const img = imgHTML(a.image, a.title, a.imagePosition, 16/10, 'article-card-img');
 
   return `
     <article class="article-card" onclick="goTo('article.html?id=${a.id}')">
@@ -141,10 +175,7 @@ function buildHome() {
   const picks = ARTICLES.filter(a => a.editorsPick).slice(0, 5);
   const latest = ARTICLES.filter(a => !a.featured).slice(0, 6);
 
-  const heroPos = featured.imagePosition || 'center';
-  const heroImg = featured.image
-    ? `<img class="hero-image" src="${featured.image}" alt="${featured.title}" style="object-position:${heroPos};">`
-    : `<div class="img-placeholder" style="aspect-ratio:16/9;"></div>`;
+  const heroImg = imgHTML(featured.image, featured.title, featured.imagePosition, 16/9, 'hero-image');
 
   const picksHtml = picks.map(p => `
     <div class="ep-item" onclick="goTo('article.html?id=${p.id}')">
@@ -319,9 +350,11 @@ function buildArticlePage() {
 
   document.title = `${a.title} — ${SITE.name}`;
 
-  const detailPos = a.imagePosition || 'center';
+  const detailCrop = parseCropStr(a.imagePosition);
   const imgHtml = a.image
-    ? `<img class="article-detail-image" src="${a.image}" alt="${a.title}" style="object-position:${detailPos};">`
+    ? (detailCrop
+        ? `<div class="article-detail-image-wrap"><img class="cropped-img" src="${a.image}" alt="${a.title}" style="${cropImgStyle(detailCrop, 16/9)}"></div>`
+        : `<img class="article-detail-image" src="${a.image}" alt="${a.title}" style="object-position:${a.imagePosition || 'center'};">`)
     : `<div class="article-detail-image-placeholder"></div>`;
 
   // Render markdown body if marked is available, otherwise use as-is

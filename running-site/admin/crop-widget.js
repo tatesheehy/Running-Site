@@ -79,7 +79,10 @@
       var imageUrl = this.state.imageUrl;
       var loaded = this.state.loaded;
       var currentVal = this.props.value || '—';
-      var iframeSrc = '/crop-tool.html?embed=1' + (imageUrl ? '&url=' + encodeURIComponent(imageUrl) : '');
+      var savedVal = this.props.value || '';
+      var iframeSrc = '/crop-tool.html?embed=1'
+        + (imageUrl ? '&url=' + encodeURIComponent(imageUrl) : '')
+        + (savedVal && savedVal.indexOf('x:') === 0 ? '&val=' + encodeURIComponent(savedVal) : '');
 
       var btnStyle = {
         display: 'inline-block',

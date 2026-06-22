@@ -159,18 +159,26 @@
       box-shadow: 0 calc(33.33%) 0 rgba(255,255,255,0.25);
     }
 
-    /* Corner handles */
+    /* Corner handles — interactive */
     .handle {
       position: absolute;
-      width: 14px;
-      height: 14px;
+      width: 18px;
+      height: 18px;
       border: 3px solid #fff;
       background: transparent;
+      pointer-events: auto;
+      z-index: 10;
     }
-    .handle-tl { top: -2px; left: -2px; border-right: none; border-bottom: none; }
-    .handle-tr { top: -2px; right: -2px; border-left: none; border-bottom: none; }
-    .handle-bl { bottom: -2px; left: -2px; border-right: none; border-top: none; }
-    .handle-br { bottom: -2px; right: -2px; border-left: none; border-top: none; }
+    .handle-tl { top: -3px; left: -3px; border-right: none; border-bottom: none; cursor: nw-resize; }
+    .handle-tr { top: -3px; right: -3px; border-left: none; border-bottom: none; cursor: ne-resize; }
+    .handle-bl { bottom: -3px; left: -3px; border-right: none; border-top: none; cursor: sw-resize; }
+    .handle-br { bottom: -3px; right: -3px; border-left: none; border-top: none; cursor: se-resize; }
+
+    /* Edge handles */
+    .handle-t, .handle-b { left: 50%; transform: translateX(-50%); width: 24px; height: 8px; border: none; border-top: 3px solid rgba(255,255,255,0.7); cursor: n-resize; }
+    .handle-b { border-top: none; border-bottom: 3px solid rgba(255,255,255,0.7); cursor: s-resize; top: auto; bottom: -3px; }
+    .handle-l, .handle-r { top: 50%; transform: translateY(-50%); height: 24px; width: 8px; border: none; border-left: 3px solid rgba(255,255,255,0.7); cursor: w-resize; }
+    .handle-r { border-left: none; border-right: 3px solid rgba(255,255,255,0.7); cursor: e-resize; left: auto; right: -3px; }
 
     /* ── RIGHT: SIDEBAR ── */
     .sidebar {
@@ -222,11 +230,13 @@
       overflow: hidden;
       border-radius: 4px;
       background: #222;
+      aspect-ratio: 1.6;
     }
     #preview-img {
+      position: absolute;
+      height: auto;
       display: block;
-      width: 100%;
-      object-fit: cover;
+      max-width: none;
     }
 
     /* Result box */
@@ -246,10 +256,11 @@
     }
     .result-value {
       font-family: monospace;
-      font-size: 18px;
+      font-size: 12px;
       font-weight: 700;
       color: var(--accent);
       margin-bottom: 12px;
+      word-break: break-all;
     }
     .copy-btn {
       width: 100%;
@@ -289,6 +300,19 @@
       transition: border-color 0.15s, color 0.15s;
     }
     .new-image-btn:hover { border-color: #555; color: #fff; }
+
+    .zoom-badge {
+      display: inline-block;
+      background: rgba(232,80,10,0.2);
+      border: 1px solid rgba(232,80,10,0.4);
+      color: var(--accent);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 3px;
+      margin-left: 8px;
+      font-family: monospace;
+    }
   </style>
 </head>
 <body>
@@ -313,10 +337,10 @@
     <div id="crop-container">
       <img id="source-img" alt="Source image">
       <div id="crop-frame">
-        <div class="handle handle-tl"></div>
-        <div class="handle handle-tr"></div>
-        <div class="handle handle-bl"></div>
-        <div class="handle handle-br"></div>
+        <div class="handle handle-tl" data-corner="tl"></div>
+        <div class="handle handle-tr" data-corner="tr"></div>
+        <div class="handle handle-bl" data-corner="bl"></div>
+        <div class="handle handle-br" data-corner="br"></div>
       </div>
     </div>
 
@@ -344,17 +368,17 @@
     </div>
 
     <div class="sidebar-section">
-      <h3>Live Preview</h3>
+      <h3>Live Preview <span id="zoom-badge" class="zoom-badge" style="display:none;"></span></h3>
       <div class="preview-wrap" id="preview-wrap">
-        <img id="preview-img" alt="Preview" style="aspect-ratio:1.6;">
+        <img id="preview-img" alt="Preview">
       </div>
     </div>
 
     <div class="sidebar-section">
       <h3>Result</h3>
       <div class="result-box">
-        <div class="result-label" id="result-label">Drag the frame, then save</div>
-        <div class="result-value" id="result-value">50% 50%</div>
+        <div class="result-label" id="result-label">Drag frame to position · Drag corners to zoom</div>
+        <div class="result-value" id="result-value">—</div>
         <button class="copy-btn" id="save-btn" onclick="saveCrop()">✓ Save Crop</button>
         <button class="copy-btn" id="copy-btn" onclick="copyResult()" style="margin-top:8px;background:#333;">Copy Value</button>
       </div>
@@ -364,8 +388,9 @@
       <h3>How to use</h3>
       <p class="instructions">
         1. Upload your image<br>
-        2. <strong>Drag the white frame</strong> to frame the shot<br>
-        3. Click <strong>Save Crop</strong> — done!
+        2. <strong>Drag the white frame</strong> to pan<br>
+        3. <strong>Drag the corner handles</strong> to zoom in/out<br>
+        4. Click <strong>Save Crop</strong> — done!
       </p>
     </div>
 
@@ -383,8 +408,10 @@
   const sourceImg = document.getElementById('source-img');
   const cropFrame = document.getElementById('crop-frame');
   const previewImg = document.getElementById('preview-img');
+  const previewWrap = document.getElementById('preview-wrap');
   const resultValue = document.getElementById('result-value');
   const newImageBtn = document.getElementById('new-image-btn');
+  const zoomBadge = document.getElementById('zoom-badge');
 
   // ── POST MESSAGE TO CMS PARENT ──
   function notifyParent(val) {
@@ -399,10 +426,13 @@
   let frameW = 0, frameH = 0;
   let frameX = 0, frameY = 0;
   let currentRatio = 1.6;
-  let isDragging = false;
-  let dragStartX = 0, dragStartY = 0;
-  let frameStartX = 0, frameStartY = 0;
+
+  // Interaction state
+  let activeAction = null; // 'drag' | 'resize-tl' | 'resize-tr' | 'resize-bl' | 'resize-br'
+  let pointerStartX = 0, pointerStartY = 0;
+  let frameStartX = 0, frameStartY = 0, frameStartW = 0, frameStartH = 0;
   let currentSrc = '';
+  const MIN_FRAME = 40; // px
 
   // ── UPLOAD ──
   fileInput.addEventListener('change', e => {
@@ -425,7 +455,7 @@
     reader.readAsDataURL(file);
   }
 
-  function initCrop(src) {
+  function initCrop(src, initialCrop) {
     currentSrc = src;
     sourceImg.src = src;
     previewImg.src = src;
@@ -440,7 +470,11 @@
 
       requestAnimationFrame(() => {
         recalcLayout();
-        centerFrame();
+        if (initialCrop) {
+          restoreCrop(initialCrop);
+        } else {
+          centerFrame();
+        }
         updateResult();
         updatePreview();
       });
@@ -454,12 +488,12 @@
     imgOffsetX = rect.left - cropContainer.getBoundingClientRect().left;
     imgOffsetY = rect.top - cropContainer.getBoundingClientRect().top;
 
-    // Frame size: fill ~70% of the shorter dimension
+    // Default frame: ~80% of the shorter dimension
     const shorter = Math.min(imgDisplayW, imgDisplayH);
-    frameW = Math.min(shorter * 1.1, imgDisplayW * 0.75);
+    frameW = Math.min(shorter * 1.0, imgDisplayW * 0.8);
     frameH = frameW / currentRatio;
-    if (frameH > imgDisplayH * 0.85) {
-      frameH = imgDisplayH * 0.85;
+    if (frameH > imgDisplayH * 0.9) {
+      frameH = imgDisplayH * 0.9;
       frameW = frameH * currentRatio;
     }
   }
@@ -477,53 +511,145 @@
     cropFrame.style.height = frameH + 'px';
   }
 
-  // ── DRAGGING ──
+  // Restore a previously-saved crop value to the frame
+  function restoreCrop(val) {
+    const m = String(val).match(/x:([\d.]+),y:([\d.]+),w:([\d.]+),h:([\d.]+)/);
+    if (!m) { centerFrame(); return; }
+    const xPct = +m[1], yPct = +m[2], wPct = +m[3], hPct = +m[4];
+    frameW = (wPct / 100) * imgDisplayW;
+    frameH = (hPct / 100) * imgDisplayH;
+    frameX = imgOffsetX + (xPct / 100) * imgDisplayW;
+    frameY = imgOffsetY + (yPct / 100) * imgDisplayH;
+    positionFrame();
+  }
+
+  // ── DRAG HANDLING ──
   cropContainer.addEventListener('mousedown', e => {
-    isDragging = true;
-    dragStartX = e.clientX;
-    dragStartY = e.clientY;
+    // Don't start drag if a handle started a resize
+    if (activeAction && activeAction.startsWith('resize')) return;
+    activeAction = 'drag';
+    pointerStartX = e.clientX;
+    pointerStartY = e.clientY;
     frameStartX = frameX;
     frameStartY = frameY;
     e.preventDefault();
   });
 
+  // ── RESIZE HANDLE HANDLING ──
+  document.querySelectorAll('.handle[data-corner]').forEach(handle => {
+    handle.addEventListener('mousedown', e => {
+      e.stopPropagation(); // don't trigger container drag
+      activeAction = 'resize-' + handle.dataset.corner;
+      pointerStartX = e.clientX;
+      pointerStartY = e.clientY;
+      frameStartX = frameX;
+      frameStartY = frameY;
+      frameStartW = frameW;
+      frameStartH = frameH;
+      e.preventDefault();
+    });
+  });
+
+  // ── POINTER MOVE ──
   window.addEventListener('mousemove', e => {
-    if (!isDragging) return;
+    if (!activeAction) return;
+    const dx = e.clientX - pointerStartX;
+    const dy = e.clientY - pointerStartY;
 
-    const dx = e.clientX - dragStartX;
-    const dy = e.clientY - dragStartY;
-
-    const minX = imgOffsetX;
-    const maxX = imgOffsetX + imgDisplayW - frameW;
-    const minY = imgOffsetY;
-    const maxY = imgOffsetY + imgDisplayH - frameH;
-
-    frameX = Math.max(minX, Math.min(maxX, frameStartX + dx));
-    frameY = Math.max(minY, Math.min(maxY, frameStartY + dy));
+    if (activeAction === 'drag') {
+      const minX = imgOffsetX;
+      const maxX = imgOffsetX + imgDisplayW - frameW;
+      const minY = imgOffsetY;
+      const maxY = imgOffsetY + imgDisplayH - frameH;
+      frameX = Math.max(minX, Math.min(maxX, frameStartX + dx));
+      frameY = Math.max(minY, Math.min(maxY, frameStartY + dy));
+    } else if (activeAction.startsWith('resize')) {
+      const corner = activeAction.split('-')[1]; // tl, tr, bl, br
+      applyResize(corner, dx, dy);
+    }
 
     positionFrame();
     updateResult();
     updatePreview();
   });
 
-  window.addEventListener('mouseup', () => { isDragging = false; });
+  window.addEventListener('mouseup', () => { activeAction = null; });
 
-  // Touch support
+  function applyResize(corner, dx, dy) {
+    // Anchor = opposite corner; moving corner follows mouse
+    let newW, newH, newX, newY;
+
+    if (corner === 'br') {
+      // Anchor TL: only size changes, position stays
+      newW = frameStartW + dx;
+    } else if (corner === 'bl') {
+      // Anchor TR: x moves, width changes inversely
+      newW = frameStartW - dx;
+    } else if (corner === 'tr') {
+      // Anchor BL: y moves, height changes; use dx for width
+      newW = frameStartW + dx;
+    } else { // tl
+      // Anchor BR: both x and y move, size shrinks
+      newW = frameStartW - dx;
+    }
+
+    // Enforce minimum size
+    newW = Math.max(MIN_FRAME, newW);
+    // Clamp to image width
+    newW = Math.min(imgDisplayW, newW);
+    // Height from ratio
+    newH = newW / currentRatio;
+    // Clamp to image height
+    if (newH > imgDisplayH) {
+      newH = imgDisplayH;
+      newW = newH * currentRatio;
+    }
+
+    // Update position based on which corner is anchored
+    if (corner === 'br') {
+      // TL stays
+      newX = frameStartX;
+      newY = frameStartY;
+    } else if (corner === 'bl') {
+      // TR stays: right edge = frameStartX + frameStartW
+      newX = frameStartX + frameStartW - newW;
+      newY = frameStartY;
+    } else if (corner === 'tr') {
+      // BL stays: bottom edge = frameStartY + frameStartH
+      newX = frameStartX;
+      newY = frameStartY + frameStartH - newH;
+    } else { // tl
+      // BR stays: right = frameStartX + frameStartW, bottom = frameStartY + frameStartH
+      newX = frameStartX + frameStartW - newW;
+      newY = frameStartY + frameStartH - newH;
+    }
+
+    // Clamp to image bounds
+    newX = Math.max(imgOffsetX, Math.min(imgOffsetX + imgDisplayW - newW, newX));
+    newY = Math.max(imgOffsetY, Math.min(imgOffsetY + imgDisplayH - newH, newY));
+
+    frameW = newW;
+    frameH = newH;
+    frameX = newX;
+    frameY = newY;
+  }
+
+  // Touch support for drag
   cropContainer.addEventListener('touchstart', e => {
     const t = e.touches[0];
-    isDragging = true;
-    dragStartX = t.clientX;
-    dragStartY = t.clientY;
+    activeAction = 'drag';
+    pointerStartX = t.clientX;
+    pointerStartY = t.clientY;
     frameStartX = frameX;
     frameStartY = frameY;
     e.preventDefault();
   }, { passive: false });
 
   window.addEventListener('touchmove', e => {
-    if (!isDragging) return;
+    if (activeAction !== 'drag') return;
     const t = e.touches[0];
-    const dx = t.clientX - dragStartX;
-    const dy = t.clientY - dragStartY;
+    const dx = t.clientX - pointerStartX;
+    const dy = t.clientY - pointerStartY;
     const minX = imgOffsetX;
     const maxX = imgOffsetX + imgDisplayW - frameW;
     const minY = imgOffsetY;
@@ -535,32 +661,56 @@
     updatePreview();
   }, { passive: false });
 
-  window.addEventListener('touchend', () => { isDragging = false; });
+  window.addEventListener('touchend', () => { activeAction = null; });
 
   // ── RESULT ──
   function updateResult() {
     const relX = frameX - imgOffsetX;
     const relY = frameY - imgOffsetY;
 
-    // Center of frame relative to image
-    const focalX = relX + frameW / 2;
-    const focalY = relY + frameH / 2;
+    // Store as percentage of image display size (same as natural, since we use fractions)
+    const xPct = Math.round((relX / imgDisplayW) * 100);
+    const yPct = Math.round((relY / imgDisplayH) * 100);
+    const wPct = Math.round((frameW / imgDisplayW) * 100);
+    const hPct = Math.round((frameH / imgDisplayH) * 100);
+    const ar = (imgNaturalW / imgNaturalH).toFixed(4);
 
-    const xPct = Math.round((focalX / imgDisplayW) * 100);
-    const yPct = Math.round((focalY / imgDisplayH) * 100);
-
-    const val = `${xPct}% ${yPct}%`;
+    const val = `x:${xPct},y:${yPct},w:${wPct},h:${hPct},ar:${ar}`;
     resultValue.textContent = val;
-    previewImg.style.objectPosition = val;
+
+    // Show zoom level
+    const zoom = (100 / wPct).toFixed(2);
+    zoomBadge.style.display = '';
+    zoomBadge.textContent = zoom + '×';
   }
 
+  // ── PREVIEW ── (shows the actual crop, not just focal point)
   function updatePreview() {
-    previewImg.style.objectFit = 'cover';
+    const relX = frameX - imgOffsetX;
+    const relY = frameY - imgOffsetY;
+    const wPct = (frameW / imgDisplayW) * 100;
+    const hPct = (frameH / imgDisplayH) * 100;
+    const xPct = (relX / imgDisplayW) * 100;
+    const yPct = (relY / imgDisplayH) * 100;
+    const iAR = imgNaturalW / imgNaturalH;
+
+    // Apply same formula as the site's app.js cropImgStyle()
+    const imgWidthPct = (10000 / wPct).toFixed(2);
+    const imgLeftPct = (-(xPct / wPct) * 100).toFixed(2);
+    const imgTopPct = (-(yPct * currentRatio * 100) / (wPct * iAR)).toFixed(2);
+
+    previewImg.style.width = imgWidthPct + '%';
+    previewImg.style.left = imgLeftPct + '%';
+    previewImg.style.top = imgTopPct + '%';
+
+    // Preview aspect ratio matches current ratio button
+    previewWrap.style.aspectRatio = currentRatio;
   }
 
   // ── SAVE CROP (sends to CMS parent) ──
   function saveCrop() {
     const val = resultValue.textContent;
+    if (!val || val === '—') return;
     notifyParent(val);
     const btn = document.getElementById('save-btn');
     btn.textContent = '✓ Saved!';
@@ -574,6 +724,7 @@
   // ── COPY ──
   function copyResult() {
     const val = resultValue.textContent;
+    if (!val || val === '—') return;
     navigator.clipboard.writeText(val).then(() => {
       const btn = document.getElementById('copy-btn');
       btn.textContent = '✓ Copied!';
@@ -591,12 +742,7 @@
     btn.classList.add('active');
     currentRatio = parseFloat(btn.dataset.ratio);
 
-    const previewWrap = document.getElementById('preview-wrap');
-    previewImg.style.aspectRatio = currentRatio;
-    previewWrap.style.aspectRatio = currentRatio;
-
-    recalcLayout();
-    // Recalculate frame height for new ratio, keep center
+    // Adjust frame height for new ratio while keeping width (and center)
     const centerX = frameX + frameW / 2;
     const centerY = frameY + frameH / 2;
     frameH = frameW / currentRatio;
@@ -605,6 +751,7 @@
     frameY = Math.max(imgOffsetY, Math.min(imgOffsetY + imgDisplayH - frameH, centerY - frameH / 2));
     positionFrame();
     updateResult();
+    updatePreview();
   }
 
   // ── RESET ──
@@ -621,15 +768,15 @@
   const params = new URLSearchParams(window.location.search);
   const isEmbed = params.get('embed') === '1';
   const urlParam = params.get('url');
+  const valParam = params.get('val'); // restore saved crop position
 
   if (isEmbed) {
-    // Hide header and compact the layout
     const header = document.querySelector('header');
     if (header) header.style.display = 'none';
     document.body.style.background = '#111';
 
     if (urlParam) {
-      initCrop(urlParam);
+      initCrop(urlParam, valParam || null);
     }
   }
 
@@ -639,6 +786,7 @@
       recalcLayout();
       centerFrame();
       updateResult();
+      updatePreview();
     }
   });
 </script>
