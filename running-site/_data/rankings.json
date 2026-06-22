@@ -3,6 +3,12 @@
   "criteria": "Our rankings blend season-best performances, consistency across Diamond League and major championship appearances, head-to-head matchup records, and overall depth of the competitive field faced. Rankings update every Monday through the outdoor season.",
   "events": [
     {
+      "name": "800m",
+      "description": "Pure guts.",
+      "photo": "",
+      "rows": []
+    },
+    {
       "name": "1500m",
       "description": "The metric mile. Perhaps the most unpredictable event on the track.",
       "photo": "/images/1500tab.png",
@@ -40,20 +46,14 @@
       ]
     },
     {
-      "name": "100m",
-      "description": "The fastest humans alive. No tactics — just who finds another gear in the last 30 meters.",
+      "name": "3000m/5000m",
+      "description": "A hodgepodge of the world's strongest 1500m runners and quickest 10000m guys.",
       "photo": "",
       "rows": []
     },
     {
-      "name": "Marathon",
-      "description": "26.2 miles of attrition. Where consistency over the full season separates the contenders from the pretenders.",
-      "photo": "",
-      "rows": []
-    },
-    {
-      "name": "800m",
-      "description": "The brutal half-mile. Speed endurance at its most punishing — and most exciting.",
+      "name": "10000m",
+      "description": "Only the strong survive.",
       "photo": "",
       "rows": []
     }
