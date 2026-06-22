@@ -147,5 +147,10 @@ collections:
         file: running-site/_data/site.json
         fields:
           - { label: "Site Name", name: name, widget: string }
-          - { label: "Breaking News (leave blank to hide)", name: breakingNews, widget: string, required: false }
+          - { label: "Tagline (shown in browser tab/SEO)", name: tagline, widget: string, required: false }
+          - { label: "Breaking News bar (leave blank to hide)", name: breakingNews, widget: string, required: false }
+          - { label: "Subscribe Button URL", name: subscribeUrl, widget: string, required: false, default: "#" }
           - { label: "Accent Color", name: accentColor, widget: color, default: "#E8500A" }
+          - { label: "Twitter / X URL (leave blank to hide)", name: twitterUrl, widget: string, required: false }
+          - { label: "Instagram URL (leave blank to hide)", name: instagramUrl, widget: string, required: false }
+          - { label: "Footer Copyright Text", name: footerCopyright, widget: string, required: false }

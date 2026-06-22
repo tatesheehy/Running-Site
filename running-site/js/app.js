@@ -100,7 +100,7 @@ function buildNavbar() {
       <div class="navbar-inner">
         <a href="index.html" class="navbar-brand">${SITE.name}</a>
         <ul class="navbar-nav">${links}</ul>
-        <a href="#" class="navbar-subscribe">Subscribe</a>
+        <a href="${SITE.subscribeUrl || '#'}" class="navbar-subscribe">Subscribe</a>
       </div>
     </nav>
     ${SITE.breakingNews ? `
@@ -516,12 +516,37 @@ window.openAthleteCard = openAthleteCard;
 window.closeAthleteCard = closeAthleteCard;
 window.goTo = goTo;
 
+// ── FOOTER ────────────────────────────────────────────────
+function buildFooter() {
+  const socials = [
+    SITE.twitterUrl ? `<li><a href="${SITE.twitterUrl}" target="_blank" rel="noopener">Twitter / X</a></li>` : '',
+    SITE.instagramUrl ? `<li><a href="${SITE.instagramUrl}" target="_blank" rel="noopener">Instagram</a></li>` : '',
+  ].join('');
+
+  return `
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-brand">${SITE.name}</div>
+        <ul class="footer-links">
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="rankings.html">Rankings</a></li>
+          ${socials}
+        </ul>
+        <div class="footer-copy">${SITE.footerCopyright || ''}</div>
+      </div>
+    </footer>
+  `;
+}
+
 // ── INIT ──────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', async () => {
   await loadData();
 
   const navTarget = qs('#nav-placeholder');
   if (navTarget) navTarget.innerHTML = buildNavbar();
+
+  const footerTarget = qs('#footer-placeholder');
+  if (footerTarget) footerTarget.outerHTML = buildFooter();
 
   const page = document.body.dataset.page;
   if (page === 'home')     buildHome();
