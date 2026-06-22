@@ -386,6 +386,13 @@
   const resultValue = document.getElementById('result-value');
   const newImageBtn = document.getElementById('new-image-btn');
 
+  // ── POST MESSAGE TO CMS PARENT ──
+  function notifyParent(val) {
+    if (window.parent !== window) {
+      window.parent.postMessage({ type: 'cropPosition', value: val }, '*');
+    }
+  }
+
   let imgNaturalW = 0, imgNaturalH = 0;
   let imgDisplayW = 0, imgDisplayH = 0;
   let imgOffsetX = 0, imgOffsetY = 0;
@@ -545,6 +552,7 @@
     const val = `${xPct}% ${yPct}%`;
     resultValue.textContent = val;
     previewImg.style.objectPosition = val;
+    notifyParent(val);
   }
 
   function updatePreview() {
@@ -595,6 +603,22 @@
     sourceImg.src = '';
     previewImg.src = '';
     fileInput.value = '';
+  }
+
+  // ── EMBED MODE: auto-load image from URL param ──
+  const params = new URLSearchParams(window.location.search);
+  const isEmbed = params.get('embed') === '1';
+  const urlParam = params.get('url');
+
+  if (isEmbed) {
+    // Hide header and compact the layout
+    const header = document.querySelector('header');
+    if (header) header.style.display = 'none';
+    document.body.style.background = '#111';
+
+    if (urlParam) {
+      initCrop(urlParam);
+    }
   }
 
   // Recalc on resize

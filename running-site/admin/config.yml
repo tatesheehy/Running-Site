@@ -42,9 +42,8 @@ collections:
               - { label: "Cover Image", name: image, widget: image, required: false, default: "" }
               - label: "Image Focus / Crop"
                 name: imagePosition
-                widget: string
+                widget: image-crop
                 default: "50% 50%"
-                hint: "Use the Crop Tool at /crop-tool.html to get this value. Paste the result here (e.g. '35% 20%')."
                 required: false
               - { label: "Excerpt (one sentence summary)", name: excerpt, widget: text }
               - { label: "Article Body", name: body, widget: markdown }
