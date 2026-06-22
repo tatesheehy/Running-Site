@@ -11,7 +11,7 @@ function getParam(name) { return new URLSearchParams(window.location.search).get
 function goTo(url) { window.location.href = url; }
 
 // ── DATA LOADING ──────────────────────────────────────────
-let ARTICLES, ATHLETES, RANKINGS, RANKINGS_YEAR, SITE;
+let ARTICLES, ATHLETES, RANKINGS, RANKINGS_EVENTS, RANKINGS_CRITERIA, RANKINGS_YEAR, SITE;
 
 async function loadData() {
   try {
@@ -32,7 +32,9 @@ async function loadData() {
 
     // Convert events array to object keyed by event name
     RANKINGS = {};
-    (rankingsData.events || []).forEach(e => {
+    RANKINGS_EVENTS = rankingsData.events || [];
+    RANKINGS_CRITERIA = rankingsData.criteria || '';
+    RANKINGS_EVENTS.forEach(e => {
       RANKINGS[e.name] = e.rows || [];
     });
 
@@ -450,48 +452,102 @@ function buildArticlePage() {
 
 // ── RANKINGS PAGE ─────────────────────────────────────────
 function buildRankingsPage() {
-  const events = Object.keys(RANKINGS);
-  const firstEvent = events[0] || '';
+  const eventParam = getParam('event');
+  if (eventParam) {
+    buildRankingsDetail(decodeURIComponent(eventParam));
+  } else {
+    buildRankingsHub();
+  }
+}
 
-  const tabsHtml = events.map((ev, i) =>
-    `<button class="event-tab ${i === 0 ? 'active' : ''}" data-event="${ev}">${ev}</button>`
-  ).join('');
-
-  const sidebarArticles = ARTICLES.slice(0, 5).map(a => `
-    <div class="sidebar-article" onclick="goTo('article.html?id=${a.id}')">
-      <div class="sidebar-article-cat">${a.category}</div>
-      <div class="sidebar-article-title">${a.title}</div>
-    </div>
-  `).join('');
+function buildRankingsHub() {
+  const cardsHtml = RANKINGS_EVENTS.map((ev, i) => {
+    const count = (ev.rows || []).length;
+    const num = String(i + 1).padStart(2, '0');
+    const photoStyle = ev.photo ? `style="background-image:url('${ev.photo}');"` : '';
+    return `
+      <div class="ranking-card" onclick="goTo('rankings.html?event=${encodeURIComponent(ev.name)}')">
+        <div class="ranking-card-photo" ${photoStyle}></div>
+        <div class="ranking-card-num">${num}</div>
+        <div class="ranking-card-body">
+          <div class="ranking-card-event">${ev.name}</div>
+          ${ev.description ? `<div class="ranking-card-desc">${ev.description}</div>` : ''}
+          <div class="ranking-card-cta">${count ? `${count} athletes ranked` : 'Coming soon'} &rarr;</div>
+        </div>
+      </div>
+    `;
+  }).join('');
 
   document.getElementById('main').innerHTML = `
     <div class="container">
-      <div class="page-header">
-        <h1 class="page-title">${RANKINGS_YEAR} Rankings</h1>
-        ${SITE.rankingsIntro ? `<p class="page-intro">${SITE.rankingsIntro}</p>` : ''}
-      </div>
-      <div class="event-tabs" id="rankings-tabs" style="margin-bottom:28px;">${tabsHtml}</div>
-      <div class="rankings-page-layout">
-        <div class="rankings-main" id="rankings-main">
-          ${buildRankingsTableHtml(firstEvent, false)}
+      <div class="rankings-hub">
+        <div class="page-header">
+          <h1 class="page-title">${RANKINGS_YEAR} Rankings</h1>
+          ${SITE.rankingsIntro ? `<p class="page-intro">${SITE.rankingsIntro}</p>` : ''}
         </div>
-        <aside>
-          <div class="rankings-sidebar-section">
-            <div class="rankings-sidebar-title">Recent Articles</div>
-            ${sidebarArticles}
-          </div>
-        </aside>
+        ${RANKINGS_CRITERIA ? `
+        <div class="rankings-criteria">
+          <button class="rankings-criteria-toggle" onclick="window.toggleCriteria()" aria-expanded="false">
+            <span>How We Rank</span>
+            <span class="criteria-chevron">&#9660;</span>
+          </button>
+          <div class="rankings-criteria-body" id="criteria-body" hidden>${RANKINGS_CRITERIA}</div>
+        </div>
+        ` : ''}
+        <div class="rankings-cards-grid">${cardsHtml}</div>
       </div>
     </div>
   `;
+}
 
-  qs('#rankings-tabs').addEventListener('click', e => {
-    const btn = e.target.closest('.event-tab');
-    if (!btn) return;
-    qsa('.event-tab', qs('#rankings-tabs')).forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    qs('#rankings-main').innerHTML = buildRankingsTableHtml(btn.dataset.event, false);
-  });
+window.toggleCriteria = function() {
+  const body = document.getElementById('criteria-body');
+  const btn = document.querySelector('.rankings-criteria-toggle');
+  const chevron = btn.querySelector('.criteria-chevron');
+  const isOpen = body.hasAttribute('hidden');
+  if (isOpen) { body.removeAttribute('hidden'); } else { body.setAttribute('hidden', ''); }
+  btn.setAttribute('aria-expanded', isOpen);
+  chevron.style.transform = isOpen ? 'rotate(180deg)' : '';
+};
+
+function buildRankingsDetail(eventName) {
+  const ev = RANKINGS_EVENTS.find(e => e.name === eventName);
+  const rows = (ev && ev.rows) ? ev.rows : [];
+
+  const rowsHtml = rows.length ? rows.map(r => {
+    const a = ATHLETES[r.athleteId];
+    if (!a) return '';
+    return `
+      <div class="rd-row" onclick="openAthleteCard('${r.athleteId}', ${r.rank})">
+        <div class="rd-rank ${r.rank === 1 ? 'gold' : ''}">${r.rank}</div>
+        <div class="rd-info">
+          <div class="rd-name">${a.name}</div>
+          <div class="rd-country">${a.flag} ${a.country}</div>
+        </div>
+        <div class="rd-right">
+          <div class="rd-time">${r.seasonBest}</div>
+          <div class="rd-meet">${r.meet}</div>
+        </div>
+      </div>
+    `;
+  }).join('') : `<p class="rankings-empty">No rankings data yet for this event.</p>`;
+
+  document.getElementById('main').innerHTML = `
+    <div class="container">
+      <div class="rankings-detail">
+        <a href="rankings.html" class="rd-back">&larr; All Rankings</a>
+        <div class="rd-header">
+          <div class="rd-header-meta">${RANKINGS_YEAR} Season Rankings</div>
+          <h1 class="rd-header-event">${eventName}</h1>
+          ${ev && ev.description ? `<p class="rd-header-desc">${ev.description}</p>` : ''}
+        </div>
+        <div class="rd-col-labels">
+          <span>Rank</span><span>Athlete</span><span style="text-align:right">Best / Meet</span>
+        </div>
+        <div class="rd-list">${rowsHtml}</div>
+      </div>
+    </div>
+  `;
 }
 
 // ── ATHLETE CARD MODAL ─────────────────────────────────────

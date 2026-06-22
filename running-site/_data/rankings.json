@@ -1,8 +1,11 @@
 {
   "year": "2026",
+  "criteria": "Our rankings blend season-best performances, consistency across Diamond League and major championship appearances, head-to-head matchup records, and overall depth of the competitive field faced. Rankings update every Monday through the outdoor season.",
   "events": [
     {
       "name": "1500m",
+      "description": "The metric mile — where tactics meet speed. The most unpredictable event on the track.",
+      "photo": "",
       "rows": [
         {
           "rank": 1,
@@ -38,14 +41,21 @@
     },
     {
       "name": "100m",
+      "description": "The fastest humans alive. No tactics — just who finds another gear in the last 30 meters.",
+      "photo": "",
       "rows": []
     },
     {
       "name": "Marathon",
+      "description": "26.2 miles of attrition. Where consistency over the full season separates the contenders from the pretenders.",
+      "photo": "",
       "rows": []
     },
     {
-      "name": "800m"
+      "name": "800m",
+      "description": "The brutal half-mile. Speed endurance at its most punishing — and most exciting.",
+      "photo": "",
+      "rows": []
     }
   ]
 }
