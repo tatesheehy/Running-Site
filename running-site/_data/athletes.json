@@ -1,189 +1,455 @@
 {
   "items": [
     {
-      "id": "jakob-ingebrigtsen",
-      "name": "Jakob Ingebrigtsen",
-      "country": "Norway",
-      "flag": "🇳🇴",
-      "photo": "",
       "photoBackground": "#0d1b2a",
-      "event": "MIDDLE DISTANCE",
+      "stat4Sub": "2026",
+      "reviewTitle": "Season review",
+      "stat3Sub": "this season",
+      "stat2Sub": "Oslo DL",
+      "stat1Sub": "personal best",
+      "achievements": [
+        {
+          "icon": "🥇",
+          "count": "2x",
+          "label": "Olympic Gold"
+        },
+        {
+          "icon": "🌍",
+          "count": "1x",
+          "label": "World Champ"
+        },
+        {
+          "icon": "⚡",
+          "count": "1x",
+          "label": "World Record"
+        }
+      ],
+      "traits": [
+        {
+          "emoji": "⚡",
+          "label": "Explosive Kick"
+        },
+        {
+          "emoji": "🧠",
+          "label": "Tactical IQ"
+        },
+        {
+          "emoji": "🏔️",
+          "label": "Front Runner"
+        },
+        {
+          "emoji": "🔥",
+          "label": "Mental Edge"
+        }
+      ],
       "height": "5'11\"",
-      "weight": "132 lbs",
-      "age": "25",
-      "seasons": "8",
-      "stat1Value": "3:43.73", "stat1Label": "WORLD RECORD", "stat1Sub": "personal best",
-      "stat2Value": "3:44.38", "stat2Label": "SEASON BEST", "stat2Sub": "Oslo DL",
-      "stat3Value": "4", "stat3Label": "PODIUMS", "stat3Sub": "this season",
-      "stat4Value": "#1", "stat4Label": "WORLD RANK", "stat4Sub": "2026",
-      "achievements": [
-        { "icon": "🥇", "count": "2x", "label": "Olympic Gold" },
-        { "icon": "🌍", "count": "1x", "label": "World Champ" },
-        { "icon": "⚡", "count": "1x", "label": "World Record" }
-      ],
-      "traits": [
-        { "emoji": "⚡", "label": "Explosive Kick" },
-        { "emoji": "🧠", "label": "Tactical IQ" },
-        { "emoji": "🏔️", "label": "Front Runner" },
-        { "emoji": "🔥", "label": "Mental Edge" }
-      ],
-      "club": "Sandnes IL",
-      "coach": "Gjert Ingebrigtsen",
-      "hometown": "Sandnes, Norway",
-      "headlineKey": "Generational talent",
+      "questionBody": "Can he finally crack the 3:43 barrier again? The conditions at Oslo looked right, and the pacemakers are lined up.",
       "headlineRest": "whose numbers rewrote what we thought was possible in middle distance running.",
-      "reviewTitle": "Season review",
-      "reviewBody": "Ingebrigtsen has been in ruthless form this year. His front-running style has evolved — he's now just as dangerous in a tactical race as he is going wire-to-wire. The Oslo performance showed a new dimension: he can manufacture a kick from an already brutal pace.",
-      "questionTitle": "Next question",
-      "questionBody": "Can he finally crack the 3:43 barrier again? The conditions at Oslo looked right, and the pacemakers are lined up."
-    },
-    {
-      "id": "yomif-kejelcha",
-      "name": "Yomif Kejelcha",
-      "country": "Ethiopia",
-      "flag": "🇪🇹",
-      "photo": "",
-      "photoBackground": "#0a1a0d",
-      "event": "DISTANCE RUNNING",
-      "height": "5'5\"",
-      "weight": "114 lbs",
-      "age": "27",
-      "seasons": "9",
-      "stat1Value": "3:47.01", "stat1Label": "PERSONAL BEST", "stat1Sub": "indoor WR",
-      "stat2Value": "3:45.12", "stat2Label": "SEASON BEST", "stat2Sub": "Rabat DL",
-      "stat3Value": "3", "stat3Label": "PODIUMS", "stat3Sub": "this season",
-      "stat4Value": "#2", "stat4Label": "WORLD RANK", "stat4Sub": "2026",
-      "achievements": [
-        { "icon": "🏟️", "count": "2x", "label": "World Indoor Champ" },
-        { "icon": "💎", "count": "3x", "label": "Diamond League Win" },
-        { "icon": "📋", "count": "0x", "label": "Olympic Gold" }
-      ],
-      "traits": [
-        { "emoji": "💨", "label": "Pure Speed" },
-        { "emoji": "🎯", "label": "Consistency" },
-        { "emoji": "📈", "label": "Indoor King" },
-        { "emoji": "🤫", "label": "Quiet Assassin" }
-      ],
-      "club": "Nike",
-      "coach": "Self-coached",
-      "hometown": "Bekoji, Ethiopia",
-      "headlineKey": "The quiet assassin",
-      "headlineRest": "who keeps showing up at the finish line when it matters most.",
-      "reviewTitle": "Season review",
-      "reviewBody": "Kejelcha has been a model of consistency in 2026. While he hasn't grabbed the headlines, his results speak for themselves — four top-3 finishes in Diamond League events and a season best of 3:45.12.",
-      "questionTitle": "Next question",
-      "questionBody": "Can he find the gear to challenge Ingebrigtsen head-to-head? Their encounters so far have gone to the Norwegian, but the gap is narrowing."
-    },
-    {
-      "id": "cole-hocker",
-      "name": "Cole Hocker",
-      "country": "United States",
-      "flag": "🇺🇸",
-      "photo": "",
-      "photoBackground": "#1a0a0a",
-      "event": "MIDDLE DISTANCE",
-      "height": "6'0\"",
-      "weight": "145 lbs",
-      "age": "23",
-      "seasons": "4",
-      "stat1Value": "3:46.01", "stat1Label": "PERSONAL BEST", "stat1Sub": "Eugene DL",
-      "stat2Value": "3:46.01", "stat2Label": "SEASON BEST", "stat2Sub": "Eugene DL",
-      "stat3Value": "2", "stat3Label": "PODIUMS", "stat3Sub": "this season",
-      "stat4Value": "#3", "stat4Label": "WORLD RANK", "stat4Sub": "2026",
-      "achievements": [
-        { "icon": "🥇", "count": "1x", "label": "Olympic Gold" },
-        { "icon": "🎓", "count": "3x", "label": "NCAA Champion" },
-        { "icon": "🇺🇸", "count": "1x", "label": "American Record" }
-      ],
-      "traits": [
-        { "emoji": "🚀", "label": "Devastating Kick" },
-        { "emoji": "🧘", "label": "Race Patience" },
-        { "emoji": "📐", "label": "Perfect Form" },
-        { "emoji": "🌟", "label": "Rising Star" }
-      ],
-      "club": "Nike",
-      "coach": "Jerry Schumacher",
-      "hometown": "Carmel, Indiana",
-      "headlineKey": "America's next great miler",
-      "headlineRest": "who has the kick to beat anyone in the world on the right day.",
-      "reviewTitle": "Season review",
-      "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
-      "questionTitle": "Next question",
-      "questionBody": "Is this the year Hocker runs a sub-3:45? The talent is there. The question is whether he can find a race with the right pacemakers."
-    },
-    {
-      "id": "josh-kerr",
-      "name": "Josh Kerr",
-      "country": "Great Britain",
-      "flag": "🇬🇧",
-      "photo": "",
-      "photoBackground": "#0a0a1a",
-      "event": "MIDDLE DISTANCE",
-      "height": "6'1\"",
-      "weight": "150 lbs",
-      "age": "26",
-      "seasons": "6",
-      "stat1Value": "3:46.44", "stat1Label": "PERSONAL BEST", "stat1Sub": "Budapest WC",
-      "stat2Value": "3:46.54", "stat2Label": "SEASON BEST", "stat2Sub": "Rome DL",
-      "stat3Value": "2", "stat3Label": "PODIUMS", "stat3Sub": "this season",
-      "stat4Value": "#4", "stat4Label": "WORLD RANK", "stat4Sub": "2026",
-      "achievements": [
-        { "icon": "🌍", "count": "1x", "label": "World Champion" },
-        { "icon": "🥈", "count": "1x", "label": "Olympic Silver" },
-        { "icon": "💎", "count": "2x", "label": "DL Champion" }
-      ],
-      "traits": [
-        { "emoji": "💪", "label": "Raw Strength" },
-        { "emoji": "🏃", "label": "Mid-Race Surge" },
-        { "emoji": "🧠", "label": "Race Savvy" },
-        { "emoji": "🏋️", "label": "Physical Power" }
-      ],
-      "club": "Adidas",
-      "coach": "Gary Lough",
-      "hometown": "Edinburgh, Scotland",
-      "headlineKey": "The power runner",
-      "headlineRest": "who turns middle distance into a strength competition and usually wins.",
-      "reviewTitle": "Season review",
-      "reviewBody": "Kerr continues to be one of the most physically imposing presences in the 1500m field. His ability to surge mid-race and break the competition is unmatched.",
-      "questionTitle": "Next question",
-      "questionBody": "Can Kerr position himself for another world title? His head-to-head with Hocker and Ingebrigtsen will be the defining series of the season."
-    },
-    {
-      "id": "timothy-cheruiyot",
-      "name": "Timothy Cheruiyot",
-      "country": "Kenya",
-      "flag": "🇰🇪",
-      "photo": "",
-      "photoBackground": "#0a1a0a",
-      "event": "MIDDLE DISTANCE",
-      "height": "5'10\"",
-      "weight": "128 lbs",
-      "age": "28",
+      "name": "Jakob Ingebrigtsen",
+      "headlineKey": "Generational talent",
+      "flag": "🇳🇴",
       "seasons": "8",
-      "stat1Value": "3:28.41", "stat1Label": "PERSONAL BEST", "stat1Sub": "1 mile equiv.",
-      "stat2Value": "3:47.22", "stat2Label": "SEASON BEST", "stat2Sub": "Shanghai DL",
-      "stat3Value": "1", "stat3Label": "PODIUMS", "stat3Sub": "this season",
-      "stat4Value": "#5", "stat4Label": "WORLD RANK", "stat4Sub": "2026",
+      "stat4Value": "#1",
+      "hometown": "Sandnes, Norway",
+      "stat3Value": "4",
+      "questionTitle": "Next question",
+      "photo": "/images/brunson5.png",
+      "stat2Value": "3:44.38",
+      "stat4Label": "WORLD RANK",
+      "stat1Value": "3:43.73",
+      "stat3Label": "PODIUMS",
+      "club": "Sandnes IL",
+      "stat2Label": "SEASON BEST",
+      "country": "Norway",
+      "stat1Label": "WORLD RECORD",
+      "weight": "132 lbs",
+      "coach": "Gjert Ingebrigtsen",
+      "reviewBody": "Ingebrigtsen has been in ruthless form this year. His front-running style has evolved — he's now just as dangerous in a tactical race as he is going wire-to-wire. The Oslo performance showed a new dimension: he can manufacture a kick from an already brutal pace.",
+      "event": "MIDDLE DISTANCE",
+      "id": "jakob-ingebrigtsen",
+      "age": "25",
+      "stats_group": {
+        "stat4Sub": "x",
+        "stat3Sub": "x",
+        "stat2Sub": "x",
+        "stat1Sub": "x",
+        "stat4Value": "x",
+        "stat3Value": "x",
+        "stat2Value": "x",
+        "stat4Label": "x",
+        "stat1Value": "x",
+        "stat3Label": "x",
+        "stat2Label": "x",
+        "stat1Label": "x"
+      }
+    },
+    {
+      "photoBackground": "#0a1a0d",
+      "stat4Sub": "2026",
+      "reviewTitle": "Season review",
+      "stat3Sub": "this season",
+      "stat2Sub": "Rabat DL",
+      "stat1Sub": "indoor WR",
       "achievements": [
-        { "icon": "🌍", "count": "2x", "label": "World Champion" },
-        { "icon": "🥈", "count": "1x", "label": "Olympic Silver" },
-        { "icon": "💎", "count": "4x", "label": "Diamond League Win" }
+        {
+          "icon": "🏟️",
+          "count": "2x",
+          "label": "World Indoor Champ"
+        },
+        {
+          "icon": "💎",
+          "count": "3x",
+          "label": "Diamond League Win"
+        },
+        {
+          "icon": "📋",
+          "count": "0x",
+          "label": "Olympic Gold"
+        }
       ],
       "traits": [
-        { "emoji": "🦁", "label": "Killer Instinct" },
-        { "emoji": "🏆", "label": "Championship DNA" },
-        { "emoji": "🎖️", "label": "Proven Winner" },
-        { "emoji": "🔄", "label": "Long Stride" }
+        {
+          "emoji": "💨",
+          "label": "Pure Speed"
+        },
+        {
+          "emoji": "🎯",
+          "label": "Consistency"
+        },
+        {
+          "emoji": "📈",
+          "label": "Indoor King"
+        },
+        {
+          "emoji": "🤫",
+          "label": "Quiet Assassin"
+        }
       ],
-      "club": "Iten Training Camp",
-      "coach": "Patrick Sang",
-      "hometown": "Kericho, Kenya",
-      "headlineKey": "The veteran champion",
-      "headlineRest": "who knows exactly where he needs to be at the bell and how to finish.",
-      "reviewTitle": "Season review",
-      "reviewBody": "Cheruiyot has shown signs of returning to his dominant best after a couple of injury-interrupted campaigns. His Shanghai win was a reminder that when he's right, he can run with anyone.",
+      "height": "5'5\"",
+      "questionBody": "Can he find the gear to challenge Ingebrigtsen head-to-head? Their encounters so far have gone to the Norwegian, but the gap is narrowing.",
+      "headlineRest": "who keeps showing up at the finish line when it matters most.",
+      "name": "Yomif Kejelcha",
+      "headlineKey": "The quiet assassin",
+      "flag": "🇪🇹",
+      "seasons": "9",
+      "stat4Value": "#2",
+      "hometown": "Bekoji, Ethiopia",
+      "stat3Value": "3",
       "questionTitle": "Next question",
-      "questionBody": "Is this a true comeback season or a false dawn? The Oslo Diamond League will be the real test."
+      "photo": "",
+      "stat2Value": "3:45.12",
+      "stat4Label": "WORLD RANK",
+      "stat1Value": "3:47.01",
+      "stat3Label": "PODIUMS",
+      "club": "Nike",
+      "stat2Label": "SEASON BEST",
+      "country": "Ethiopia",
+      "stat1Label": "PERSONAL BEST",
+      "weight": "114 lbs",
+      "coach": "Self-coached",
+      "reviewBody": "Kejelcha has been a model of consistency in 2026. While he hasn't grabbed the headlines, his results speak for themselves — four top-3 finishes in Diamond League events and a season best of 3:45.12.",
+      "event": "DISTANCE RUNNING",
+      "id": "yomif-kejelcha",
+      "age": "27",
+      "stats_group": {
+        "stat4Sub": "x",
+        "stat3Sub": "x",
+        "stat2Sub": "x",
+        "stat1Sub": "x",
+        "stat4Value": "x",
+        "stat3Value": "x",
+        "stat2Value": "x",
+        "stat4Label": "x",
+        "stat1Value": "x",
+        "stat3Label": "x",
+        "stat2Label": "x",
+        "stat1Label": "x"
+      }
+    },
+    {
+      "photoBackground": "#1a0a0a",
+      "stat4Sub": "2026",
+      "reviewTitle": "Season review",
+      "stat3Sub": "this season",
+      "stat2Sub": "Eugene DL",
+      "stat1Sub": "Eugene DL",
+      "achievements": [
+        {
+          "icon": "🥇",
+          "count": "1x",
+          "label": "Olympic Gold"
+        },
+        {
+          "icon": "🎓",
+          "count": "3x",
+          "label": "NCAA Champion"
+        },
+        {
+          "icon": "🇺🇸",
+          "count": "1x",
+          "label": "American Record"
+        }
+      ],
+      "traits": [
+        {
+          "emoji": "🚀",
+          "label": "Devastating Kick"
+        },
+        {
+          "emoji": "🧘",
+          "label": "Race Patience"
+        },
+        {
+          "emoji": "📐",
+          "label": "Perfect Form"
+        },
+        {
+          "emoji": "🌟",
+          "label": "Rising Star"
+        }
+      ],
+      "height": "6'0\"",
+      "questionBody": "Is this the year Hocker runs a sub-3:45? The talent is there. The question is whether he can find a race with the right pacemakers.",
+      "headlineRest": "who has the kick to beat anyone in the world on the right day.",
+      "name": "Cole Hocker",
+      "headlineKey": "America's next great miler",
+      "flag": "🇺🇸",
+      "seasons": "4",
+      "stat4Value": "#3",
+      "hometown": "Carmel, Indiana",
+      "stat3Value": "2",
+      "questionTitle": "Next question",
+      "photo": "",
+      "stat2Value": "3:46.01",
+      "stat4Label": "WORLD RANK",
+      "stat1Value": "3:46.01",
+      "stat3Label": "PODIUMS",
+      "club": "Nike",
+      "stat2Label": "SEASON BEST",
+      "country": "United States",
+      "stat1Label": "PERSONAL BEST",
+      "weight": "145 lbs",
+      "coach": "Jerry Schumacher",
+      "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
+      "event": "MIDDLE DISTANCE",
+      "id": "cole-hocker",
+      "age": "23",
+      "stats_group": {
+        "stat4Sub": "x",
+        "stat3Sub": "x",
+        "stat2Sub": "x",
+        "stat1Sub": "x",
+        "stat4Value": "x",
+        "stat3Value": "x",
+        "stat2Value": "x",
+        "stat4Label": "x",
+        "stat1Value": "x",
+        "stat3Label": "x",
+        "stat2Label": "x",
+        "stat1Label": "x"
+      }
+    },
+    {
+      "photoBackground": "#0a0a1a",
+      "stat4Sub": "2026",
+      "reviewTitle": "Season review",
+      "stat3Sub": "this season",
+      "stat2Sub": "Rome DL",
+      "stat1Sub": "Budapest WC",
+      "achievements": [
+        {
+          "icon": "🌍",
+          "count": "1x",
+          "label": "World Champion"
+        },
+        {
+          "icon": "🥈",
+          "count": "1x",
+          "label": "Olympic Silver"
+        },
+        {
+          "icon": "💎",
+          "count": "2x",
+          "label": "DL Champion"
+        }
+      ],
+      "traits": [
+        {
+          "emoji": "💪",
+          "label": "Raw Strength"
+        },
+        {
+          "emoji": "🏃",
+          "label": "Mid-Race Surge"
+        },
+        {
+          "emoji": "🧠",
+          "label": "Race Savvy"
+        },
+        {
+          "emoji": "🏋️",
+          "label": "Physical Power"
+        }
+      ],
+      "height": "6'1\"",
+      "questionBody": "Can Kerr position himself for another world title? His head-to-head with Hocker and Ingebrigtsen will be the defining series of the season.",
+      "headlineRest": "who turns middle distance into a strength competition and usually wins.",
+      "name": "Josh Kerr",
+      "headlineKey": "The power runner",
+      "flag": "🇬🇧",
+      "seasons": "6",
+      "stat4Value": "#4",
+      "hometown": "Edinburgh, Scotland",
+      "stat3Value": "2",
+      "questionTitle": "Next question",
+      "photo": "",
+      "stat2Value": "3:46.54",
+      "stat4Label": "WORLD RANK",
+      "stat1Value": "3:46.44",
+      "stat3Label": "PODIUMS",
+      "club": "Adidas",
+      "stat2Label": "SEASON BEST",
+      "country": "Great Britain",
+      "stat1Label": "PERSONAL BEST",
+      "weight": "150 lbs",
+      "coach": "Gary Lough",
+      "reviewBody": "Kerr continues to be one of the most physically imposing presences in the 1500m field. His ability to surge mid-race and break the competition is unmatched.",
+      "event": "MIDDLE DISTANCE",
+      "id": "josh-kerr",
+      "age": "26",
+      "stats_group": {
+        "stat4Sub": "x",
+        "stat3Sub": "x",
+        "stat2Sub": "x",
+        "stat1Sub": "x",
+        "stat4Value": "x",
+        "stat3Value": "x",
+        "stat2Value": "x",
+        "stat4Label": "x",
+        "stat1Value": "x",
+        "stat3Label": "x",
+        "stat2Label": "x",
+        "stat1Label": "xx"
+      }
+    },
+    {
+      "photoBackground": "#0a1a0a",
+      "stat4Sub": "2026",
+      "reviewTitle": "Season review",
+      "stat3Sub": "this season",
+      "stat2Sub": "Shanghai DL",
+      "stat1Sub": "1 mile equiv.",
+      "achievements": [
+        {
+          "icon": "🌍",
+          "count": "2x",
+          "label": "World Champion"
+        },
+        {
+          "icon": "🥈",
+          "count": "1x",
+          "label": "Olympic Silver"
+        },
+        {
+          "icon": "💎",
+          "count": "4x",
+          "label": "Diamond League Win"
+        }
+      ],
+      "traits": [
+        {
+          "emoji": "🦁",
+          "label": "Killer Instinct"
+        },
+        {
+          "emoji": "🏆",
+          "label": "Championship DNA"
+        },
+        {
+          "emoji": "🎖️",
+          "label": "Proven Winner"
+        },
+        {
+          "emoji": "🔄",
+          "label": "Long Stride"
+        }
+      ],
+      "height": "5'10\"",
+      "questionBody": "Is this a true comeback season or a false dawn? The Oslo Diamond League will be the real test.",
+      "headlineRest": "who knows exactly where he needs to be at the bell and how to finish.",
+      "name": "Timothy Cheruiyot",
+      "headlineKey": "The veteran champion",
+      "flag": "🇰🇪",
+      "seasons": "8",
+      "stat4Value": "#5",
+      "hometown": "Kericho, Kenya",
+      "stat3Value": "1",
+      "questionTitle": "Next question",
+      "photo": "",
+      "stat2Value": "3:47.22",
+      "stat4Label": "WORLD RANK",
+      "stat1Value": "3:28.41",
+      "stat3Label": "PODIUMS",
+      "club": "Iten Training Camp",
+      "stat2Label": "SEASON BEST",
+      "country": "Kenya",
+      "stat1Label": "PERSONAL BEST",
+      "weight": "128 lbs",
+      "coach": "Patrick Sang",
+      "reviewBody": "Cheruiyot has shown signs of returning to his dominant best after a couple of injury-interrupted campaigns. His Shanghai win was a reminder that when he's right, he can run with anyone.",
+      "event": "MIDDLE DISTANCE",
+      "id": "timothy-cheruiyot",
+      "age": "28",
+      "stats_group": {
+        "stat4Sub": "x",
+        "stat3Sub": "x",
+        "stat2Sub": "x",
+        "stat1Sub": "x",
+        "stat4Value": "x",
+        "stat3Value": "x",
+        "stat2Value": "x",
+        "stat4Label": "x",
+        "stat1Value": "x",
+        "stat3Label": "x",
+        "stat2Label": "x",
+        "stat1Label": "x"
+      }
+    },
+    {
+      "photoBackground": "#111111",
+      "reviewTitle": "Season review",
+      "height": "5'7",
+      "questionBody": "x",
+      "headlineRest": "x",
+      "name": "Tate Sheehy",
+      "headlineKey": "x",
+      "flag": "x",
+      "seasons": "0",
+      "hometown": "x",
+      "questionTitle": "Next question",
+      "photo": "",
+      "club": "x",
+      "country": "United States",
+      "weight": "130",
+      "coach": "x",
+      "reviewBody": "x",
+      "event": "MIDDLE DISTANCE",
+      "id": "tate-sheehy",
+      "age": "20",
+      "stats_group": {
+        "stat4Sub": "x",
+        "stat3Sub": "x",
+        "stat2Sub": "x",
+        "stat1Sub": "x",
+        "stat4Value": "x",
+        "stat3Value": "x",
+        "stat2Value": "x",
+        "stat4Label": "x",
+        "stat1Value": "x",
+        "stat3Label": "x",
+        "stat2Label": "x",
+        "stat1Label": "x"
+      }
     }
   ]
 }

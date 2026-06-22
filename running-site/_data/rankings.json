@@ -4,11 +4,36 @@
     {
       "name": "1500m",
       "rows": [
-        { "rank": 1, "athleteId": "jakob-ingebrigtsen", "seasonBest": "3:44.38", "meet": "Oslo DL" },
-        { "rank": 2, "athleteId": "yomif-kejelcha", "seasonBest": "3:45.12", "meet": "Rabat DL" },
-        { "rank": 3, "athleteId": "cole-hocker", "seasonBest": "3:46.01", "meet": "Eugene DL" },
-        { "rank": 4, "athleteId": "josh-kerr", "seasonBest": "3:46.54", "meet": "Rome DL" },
-        { "rank": 5, "athleteId": "timothy-cheruiyot", "seasonBest": "3:47.22", "meet": "Shanghai DL" }
+        {
+          "rank": 1,
+          "athleteId": "jakob-ingebrigtsen",
+          "seasonBest": "3:44.38",
+          "meet": "Oslo DL"
+        },
+        {
+          "rank": 2,
+          "athleteId": "yomif-kejelcha",
+          "seasonBest": "3:45.12",
+          "meet": "Rabat DL"
+        },
+        {
+          "rank": 3,
+          "athleteId": "cole-hocker",
+          "seasonBest": "3:46.01",
+          "meet": "Eugene DL"
+        },
+        {
+          "rank": 4,
+          "athleteId": "josh-kerr",
+          "seasonBest": "3:46.54",
+          "meet": "Rome DL"
+        },
+        {
+          "rank": 5,
+          "athleteId": "timothy-cheruiyot",
+          "seasonBest": "3:47.22",
+          "meet": "Shanghai DL"
+        }
       ]
     },
     {
@@ -18,6 +43,9 @@
     {
       "name": "Marathon",
       "rows": []
+    },
+    {
+      "name": "800m"
     }
   ]
 }
