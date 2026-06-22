@@ -6,7 +6,7 @@
 
   var CropControl = createClass({
     getInitialState: function () {
-      return { iframeKey: 0, manualUrl: '' };
+      return { manualUrl: '' };
     },
 
     componentDidMount: function () {
@@ -17,13 +17,7 @@
       window.removeEventListener('message', this.handleMessage);
     },
 
-    componentDidUpdate: function (prevProps) {
-      var prev = this.resolveImageUrl(prevProps);
-      var next = this.resolveImageUrl(this.props);
-      if (prev !== next) {
-        this.setState({ iframeKey: this.state.iframeKey + 1 });
-      }
-    },
+    componentDidUpdate: function () {},
 
     handleMessage: function (e) {
       if (e.data && e.data.type === 'cropPosition') {
@@ -60,7 +54,7 @@
     },
 
     handleManualUrl: function (e) {
-      this.setState({ manualUrl: e.target.value, iframeKey: this.state.iframeKey + 1 });
+      this.setState({ manualUrl: e.target.value });
     },
 
     render: function () {
@@ -95,7 +89,7 @@
         imageUrl
           ? h('div', { style: { border: '1px solid #333', borderRadius: '6px', overflow: 'hidden' } },
               h('iframe', {
-                key: this.state.iframeKey,
+                key: imageUrl,
                 src: iframeSrc,
                 style: { width: '100%', height: '420px', border: 'none', display: 'block' },
                 title: 'Image Crop Tool'

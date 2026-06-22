@@ -353,9 +353,10 @@
     <div class="sidebar-section">
       <h3>Result</h3>
       <div class="result-box">
-        <div class="result-label">Paste this into "Image Focus" in the CMS</div>
+        <div class="result-label" id="result-label">Drag the frame, then save</div>
         <div class="result-value" id="result-value">50% 50%</div>
-        <button class="copy-btn" id="copy-btn" onclick="copyResult()">Copy Value</button>
+        <button class="copy-btn" id="save-btn" onclick="saveCrop()">✓ Save Crop</button>
+        <button class="copy-btn" id="copy-btn" onclick="copyResult()" style="margin-top:8px;background:#333;">Copy Value</button>
       </div>
     </div>
 
@@ -363,9 +364,8 @@
       <h3>How to use</h3>
       <p class="instructions">
         1. Upload your image<br>
-        2. <strong>Drag the white frame</strong> over the part you want to show<br>
-        3. Click <strong>Copy Value</strong><br>
-        4. In the CMS, paste it into the <strong>Image Focus / Crop</strong> field
+        2. <strong>Drag the white frame</strong> to frame the shot<br>
+        3. Click <strong>Save Crop</strong> — done!
       </p>
     </div>
 
@@ -552,11 +552,23 @@
     const val = `${xPct}% ${yPct}%`;
     resultValue.textContent = val;
     previewImg.style.objectPosition = val;
-    notifyParent(val);
   }
 
   function updatePreview() {
     previewImg.style.objectFit = 'cover';
+  }
+
+  // ── SAVE CROP (sends to CMS parent) ──
+  function saveCrop() {
+    const val = resultValue.textContent;
+    notifyParent(val);
+    const btn = document.getElementById('save-btn');
+    btn.textContent = '✓ Saved!';
+    btn.style.background = '#2a9d2a';
+    setTimeout(() => {
+      btn.textContent = '✓ Save Crop';
+      btn.style.background = '';
+    }, 2000);
   }
 
   // ── COPY ──
