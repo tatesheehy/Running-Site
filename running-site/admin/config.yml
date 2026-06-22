@@ -42,15 +42,10 @@ collections:
               - { label: "Cover Image", name: image, widget: image, required: false, default: "" }
               - label: "Image Focus / Crop"
                 name: imagePosition
-                widget: select
-                default: "center"
-                hint: "Controls which part of the image is shown when cropped. Use Top for faces at top of photo, Bottom for ground-level shots."
-                options:
-                  - { label: "Center (default)", value: "center" }
-                  - { label: "Top — show top of image", value: "top" }
-                  - { label: "Bottom — show bottom of image", value: "bottom" }
-                  - { label: "Left — show left side", value: "left" }
-                  - { label: "Right — show right side", value: "right" }
+                widget: string
+                default: "50% 50%"
+                hint: "Use the Crop Tool at /crop-tool.html to get this value. Paste the result here (e.g. '35% 20%')."
+                required: false
               - { label: "Excerpt (one sentence summary)", name: excerpt, widget: text }
               - { label: "Article Body", name: body, widget: markdown }
 

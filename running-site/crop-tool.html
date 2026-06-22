@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Crop Tool</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --accent: #E8500A;
+      --dark: #111111;
+      --dark-2: #1C1C1C;
+      --text: #1A1A1A;
+      --muted: #888888;
+      --border: #333;
+      --bg: #0a0a0a;
+      --font-display: 'Barlow Condensed', sans-serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    header {
+      background: var(--dark);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    header h1 {
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    header a {
+      margin-left: auto;
+      color: var(--muted);
+      font-size: 13px;
+      text-decoration: none;
+    }
+    header a:hover { color: #fff; }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 0;
+      height: calc(100vh - 57px);
+    }
+
+    /* ── LEFT: CANVAS AREA ── */
+    .canvas-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .upload-zone {
+      border: 2px dashed var(--border);
+      border-radius: 8px;
+      padding: 64px 48px;
+      text-align: center;
+      cursor: pointer;
+      transition: border-color 0.2s;
+      width: 100%;
+      max-width: 640px;
+    }
+    .upload-zone:hover, .upload-zone.drag-over {
+      border-color: var(--accent);
+    }
+    .upload-zone-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      opacity: 0.4;
+    }
+    .upload-zone h2 {
+      font-family: var(--font-display);
+      font-size: 24px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .upload-zone p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .upload-zone input { display: none; }
+    .upload-btn {
+      margin-top: 20px;
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 10px 24px;
+      border-radius: 4px;
+      cursor: pointer;
+      border: none;
+    }
+
+    /* ── CROP CONTAINER ── */
+    #crop-container {
+      display: none;
+      position: relative;
+      cursor: crosshair;
+      user-select: none;
+    }
+
+    #source-img {
+      display: block;
+      max-width: 100%;
+      max-height: calc(100vh - 160px);
+      object-fit: contain;
+      pointer-events: none;
+    }
+
+    /* The crop frame */
+    #crop-frame {
+      position: absolute;
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 9999px rgba(0,0,0,0.55);
+      cursor: move;
+      pointer-events: none;
+    }
+
+    /* Rule of thirds grid */
+    #crop-frame::before,
+    #crop-frame::after {
+      content: '';
+      position: absolute;
+      background: rgba(255,255,255,0.25);
+    }
+    #crop-frame::before {
+      left: 33.33%; top: 0; bottom: 0; width: 1px;
+      box-shadow: calc(33.33%) 0 0 rgba(255,255,255,0.25);
+    }
+    #crop-frame::after {
+      top: 33.33%; left: 0; right: 0; height: 1px;
+      box-shadow: 0 calc(33.33%) 0 rgba(255,255,255,0.25);
+    }
+
+    /* Corner handles */
+    .handle {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border: 3px solid #fff;
+      background: transparent;
+    }
+    .handle-tl { top: -2px; left: -2px; border-right: none; border-bottom: none; }
+    .handle-tr { top: -2px; right: -2px; border-left: none; border-bottom: none; }
+    .handle-bl { bottom: -2px; left: -2px; border-right: none; border-top: none; }
+    .handle-br { bottom: -2px; right: -2px; border-left: none; border-top: none; }
+
+    /* ── RIGHT: SIDEBAR ── */
+    .sidebar {
+      background: var(--dark);
+      border-left: 1px solid var(--border);
+      overflow-y: auto;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .sidebar-section h3 {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    /* Aspect ratio buttons */
+    .ratio-btns {
+      display: flex;
+      gap: 8px;
+    }
+    .ratio-btn {
+      flex: 1;
+      background: var(--dark-2);
+      border: 1px solid var(--border);
+      color: #fff;
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 600;
+      padding: 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .ratio-btn:hover { border-color: #555; }
+    .ratio-btn.active { border-color: var(--accent); background: rgba(232,80,10,0.15); }
+    .ratio-btn small { display: block; font-size: 10px; color: var(--muted); margin-top: 2px; }
+
+    /* Preview */
+    .preview-wrap {
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+      background: #222;
+    }
+    #preview-img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    /* Result box */
+    .result-box {
+      background: var(--dark-2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 12px 14px;
+    }
+    .result-label {
+      font-size: 11px;
+      color: var(--muted);
+      margin-bottom: 6px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .result-value {
+      font-family: monospace;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .copy-btn {
+      width: 100%;
+      background: var(--accent);
+      color: #fff;
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    .copy-btn:hover { opacity: 0.88; }
+    .copy-btn.copied { background: #2a9d2a; }
+
+    .instructions {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .instructions strong { color: #fff; }
+
+    .new-image-btn {
+      width: 100%;
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-family: var(--font-body);
+      font-size: 13px;
+      padding: 9px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .new-image-btn:hover { border-color: #555; color: #fff; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Image Crop Tool</h1>
+  <a href="index.html">← Back to site</a>
+</header>
+
+<div class="layout">
+  <!-- LEFT CANVAS -->
+  <div class="canvas-area" id="canvas-area">
+
+    <label class="upload-zone" id="upload-zone">
+      <div class="upload-zone-icon">🖼️</div>
+      <h2>Upload your image</h2>
+      <p>Drag & drop or click to browse</p>
+      <button class="upload-btn" type="button" onclick="document.getElementById('file-input').click()">Choose Image</button>
+      <input type="file" id="file-input" accept="image/*">
+    </label>
+
+    <div id="crop-container">
+      <img id="source-img" alt="Source image">
+      <div id="crop-frame">
+        <div class="handle handle-tl"></div>
+        <div class="handle handle-tr"></div>
+        <div class="handle handle-bl"></div>
+        <div class="handle handle-br"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDEBAR -->
+  <div class="sidebar" id="sidebar">
+
+    <div class="sidebar-section">
+      <h3>Crop Shape</h3>
+      <div class="ratio-btns">
+        <button class="ratio-btn active" data-ratio="1.6" onclick="setRatio(this)">
+          16:10
+          <small>Article card</small>
+        </button>
+        <button class="ratio-btn" data-ratio="1.7778" onclick="setRatio(this)">
+          16:9
+          <small>Hero / featured</small>
+        </button>
+        <button class="ratio-btn" data-ratio="1" onclick="setRatio(this)">
+          1:1
+          <small>Square</small>
+        </button>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Live Preview</h3>
+      <div class="preview-wrap" id="preview-wrap">
+        <img id="preview-img" alt="Preview" style="aspect-ratio:1.6;">
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Result</h3>
+      <div class="result-box">
+        <div class="result-label">Paste this into "Image Focus" in the CMS</div>
+        <div class="result-value" id="result-value">50% 50%</div>
+        <button class="copy-btn" id="copy-btn" onclick="copyResult()">Copy Value</button>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>How to use</h3>
+      <p class="instructions">
+        1. Upload your image<br>
+        2. <strong>Drag the white frame</strong> over the part you want to show<br>
+        3. Click <strong>Copy Value</strong><br>
+        4. In the CMS, paste it into the <strong>Image Focus / Crop</strong> field
+      </p>
+    </div>
+
+    <button class="new-image-btn" id="new-image-btn" onclick="resetTool()" style="display:none;">
+      ↩ Use a different image
+    </button>
+
+  </div>
+</div>
+
+<script>
+  const fileInput = document.getElementById('file-input');
+  const uploadZone = document.getElementById('upload-zone');
+  const cropContainer = document.getElementById('crop-container');
+  const sourceImg = document.getElementById('source-img');
+  const cropFrame = document.getElementById('crop-frame');
+  const previewImg = document.getElementById('preview-img');
+  const resultValue = document.getElementById('result-value');
+  const newImageBtn = document.getElementById('new-image-btn');
+
+  let imgNaturalW = 0, imgNaturalH = 0;
+  let imgDisplayW = 0, imgDisplayH = 0;
+  let imgOffsetX = 0, imgOffsetY = 0;
+  let frameW = 0, frameH = 0;
+  let frameX = 0, frameY = 0;
+  let currentRatio = 1.6;
+  let isDragging = false;
+  let dragStartX = 0, dragStartY = 0;
+  let frameStartX = 0, frameStartY = 0;
+  let currentSrc = '';
+
+  // ── UPLOAD ──
+  fileInput.addEventListener('change', e => {
+    const file = e.target.files[0];
+    if (file) loadFile(file);
+  });
+
+  uploadZone.addEventListener('dragover', e => { e.preventDefault(); uploadZone.classList.add('drag-over'); });
+  uploadZone.addEventListener('dragleave', () => uploadZone.classList.remove('drag-over'));
+  uploadZone.addEventListener('drop', e => {
+    e.preventDefault();
+    uploadZone.classList.remove('drag-over');
+    const file = e.dataTransfer.files[0];
+    if (file && file.type.startsWith('image/')) loadFile(file);
+  });
+
+  function loadFile(file) {
+    const reader = new FileReader();
+    reader.onload = e => initCrop(e.target.result);
+    reader.readAsDataURL(file);
+  }
+
+  function initCrop(src) {
+    currentSrc = src;
+    sourceImg.src = src;
+    previewImg.src = src;
+
+    sourceImg.onload = () => {
+      imgNaturalW = sourceImg.naturalWidth;
+      imgNaturalH = sourceImg.naturalHeight;
+
+      uploadZone.style.display = 'none';
+      cropContainer.style.display = 'block';
+      newImageBtn.style.display = 'block';
+
+      requestAnimationFrame(() => {
+        recalcLayout();
+        centerFrame();
+        updateResult();
+        updatePreview();
+      });
+    };
+  }
+
+  function recalcLayout() {
+    const rect = sourceImg.getBoundingClientRect();
+    imgDisplayW = rect.width;
+    imgDisplayH = rect.height;
+    imgOffsetX = rect.left - cropContainer.getBoundingClientRect().left;
+    imgOffsetY = rect.top - cropContainer.getBoundingClientRect().top;
+
+    // Frame size: fill ~70% of the shorter dimension
+    const shorter = Math.min(imgDisplayW, imgDisplayH);
+    frameW = Math.min(shorter * 1.1, imgDisplayW * 0.75);
+    frameH = frameW / currentRatio;
+    if (frameH > imgDisplayH * 0.85) {
+      frameH = imgDisplayH * 0.85;
+      frameW = frameH * currentRatio;
+    }
+  }
+
+  function centerFrame() {
+    frameX = imgOffsetX + (imgDisplayW - frameW) / 2;
+    frameY = imgOffsetY + (imgDisplayH - frameH) / 2;
+    positionFrame();
+  }
+
+  function positionFrame() {
+    cropFrame.style.left = frameX + 'px';
+    cropFrame.style.top = frameY + 'px';
+    cropFrame.style.width = frameW + 'px';
+    cropFrame.style.height = frameH + 'px';
+  }
+
+  // ── DRAGGING ──
+  cropContainer.addEventListener('mousedown', e => {
+    isDragging = true;
+    dragStartX = e.clientX;
+    dragStartY = e.clientY;
+    frameStartX = frameX;
+    frameStartY = frameY;
+    e.preventDefault();
+  });
+
+  window.addEventListener('mousemove', e => {
+    if (!isDragging) return;
+
+    const dx = e.clientX - dragStartX;
+    const dy = e.clientY - dragStartY;
+
+    const minX = imgOffsetX;
+    const maxX = imgOffsetX + imgDisplayW - frameW;
+    const minY = imgOffsetY;
+    const maxY = imgOffsetY + imgDisplayH - frameH;
+
+    frameX = Math.max(minX, Math.min(maxX, frameStartX + dx));
+    frameY = Math.max(minY, Math.min(maxY, frameStartY + dy));
+
+    positionFrame();
+    updateResult();
+    updatePreview();
+  });
+
+  window.addEventListener('mouseup', () => { isDragging = false; });
+
+  // Touch support
+  cropContainer.addEventListener('touchstart', e => {
+    const t = e.touches[0];
+    isDragging = true;
+    dragStartX = t.clientX;
+    dragStartY = t.clientY;
+    frameStartX = frameX;
+    frameStartY = frameY;
+    e.preventDefault();
+  }, { passive: false });
+
+  window.addEventListener('touchmove', e => {
+    if (!isDragging) return;
+    const t = e.touches[0];
+    const dx = t.clientX - dragStartX;
+    const dy = t.clientY - dragStartY;
+    const minX = imgOffsetX;
+    const maxX = imgOffsetX + imgDisplayW - frameW;
+    const minY = imgOffsetY;
+    const maxY = imgOffsetY + imgDisplayH - frameH;
+    frameX = Math.max(minX, Math.min(maxX, frameStartX + dx));
+    frameY = Math.max(minY, Math.min(maxY, frameStartY + dy));
+    positionFrame();
+    updateResult();
+    updatePreview();
+  }, { passive: false });
+
+  window.addEventListener('touchend', () => { isDragging = false; });
+
+  // ── RESULT ──
+  function updateResult() {
+    const relX = frameX - imgOffsetX;
+    const relY = frameY - imgOffsetY;
+
+    // Center of frame relative to image
+    const focalX = relX + frameW / 2;
+    const focalY = relY + frameH / 2;
+
+    const xPct = Math.round((focalX / imgDisplayW) * 100);
+    const yPct = Math.round((focalY / imgDisplayH) * 100);
+
+    const val = `${xPct}% ${yPct}%`;
+    resultValue.textContent = val;
+    previewImg.style.objectPosition = val;
+  }
+
+  function updatePreview() {
+    previewImg.style.objectFit = 'cover';
+  }
+
+  // ── COPY ──
+  function copyResult() {
+    const val = resultValue.textContent;
+    navigator.clipboard.writeText(val).then(() => {
+      const btn = document.getElementById('copy-btn');
+      btn.textContent = '✓ Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => {
+        btn.textContent = 'Copy Value';
+        btn.classList.remove('copied');
+      }, 2000);
+    });
+  }
+
+  // ── RATIO ──
+  function setRatio(btn) {
+    document.querySelectorAll('.ratio-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentRatio = parseFloat(btn.dataset.ratio);
+
+    const previewWrap = document.getElementById('preview-wrap');
+    previewImg.style.aspectRatio = currentRatio;
+    previewWrap.style.aspectRatio = currentRatio;
+
+    recalcLayout();
+    // Recalculate frame height for new ratio, keep center
+    const centerX = frameX + frameW / 2;
+    const centerY = frameY + frameH / 2;
+    frameH = frameW / currentRatio;
+    if (frameH > imgDisplayH) { frameH = imgDisplayH; frameW = frameH * currentRatio; }
+    frameX = Math.max(imgOffsetX, Math.min(imgOffsetX + imgDisplayW - frameW, centerX - frameW / 2));
+    frameY = Math.max(imgOffsetY, Math.min(imgOffsetY + imgDisplayH - frameH, centerY - frameH / 2));
+    positionFrame();
+    updateResult();
+  }
+
+  // ── RESET ──
+  function resetTool() {
+    uploadZone.style.display = '';
+    cropContainer.style.display = 'none';
+    newImageBtn.style.display = 'none';
+    sourceImg.src = '';
+    previewImg.src = '';
+    fileInput.value = '';
+  }
+
+  // Recalc on resize
+  window.addEventListener('resize', () => {
+    if (cropContainer.style.display !== 'none') {
+      recalcLayout();
+      centerFrame();
+      updateResult();
+    }
+  });
+</script>
+</body>
+</html>
