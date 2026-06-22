@@ -23,30 +23,33 @@
     },
 
     // ── FIND IMAGE URL ──────────────────────────────────────────
+    // Walk UP the DOM from our own root element, at each level checking
+    // sibling branches (not our own branch). The first img found this way
+    // belongs to the Cover Image field for the same list item — not to
+    // any other article's image.
     findImageUrl: function () {
-      // Try entry data for the specific list item first
-      try {
-        var entry = this.props.entry;
-        if (entry && entry.getIn) {
-          var forID = this.props.forID || '';
-          var match = forID.match(/items[.\[]+(\d+)/);
-          if (match) {
-            var idx = parseInt(match[1], 10);
-            var img = entry.getIn(['data', 'items', idx, 'image']);
-            if (img) return img.startsWith('http') ? img : window.location.origin + (img.startsWith('/') ? '' : '/') + img;
-          }
-          var direct = entry.getIn(['data', 'image']);
-          if (direct) return direct.startsWith('http') ? direct : window.location.origin + (direct.startsWith('/') ? '' : '/') + direct;
-        }
-      } catch (e) {}
+      var el = this._rootEl;
+      if (!el) return null;
 
-      // Fall back: scan DOM for the nearest img element
-      var imgs = Array.from(document.querySelectorAll('img'));
-      for (var i = 0; i < imgs.length; i++) {
-        var src = imgs[i].src || '';
-        if (src && !src.includes('data:') && !src.includes('netlify-identity') && src.length > 10) {
-          return src;
+      while (el && el !== document.body) {
+        var parent = el.parentElement;
+        if (!parent) break;
+
+        var children = parent.children;
+        for (var i = 0; i < children.length; i++) {
+          var sibling = children[i];
+          // Skip the branch that contains our own widget
+          if (sibling === el || sibling.contains(el)) continue;
+
+          var imgs = sibling.querySelectorAll('img');
+          for (var j = 0; j < imgs.length; j++) {
+            var src = imgs[j].src || '';
+            if (src && !src.includes('data:') && !src.includes('netlify-identity') && src.length > 10) {
+              return src;
+            }
+          }
         }
+        el = parent;
       }
       return null;
     },
@@ -370,7 +373,7 @@
         fontFamily: 'Inter, sans-serif', letterSpacing: '0.02em'
       };
 
-      return h('div', { style: { fontFamily: 'Inter, sans-serif' } },
+      return h('div', { style: { fontFamily: 'Inter, sans-serif' }, ref: function (el) { self._rootEl = el; } },
         h('button', {
           style: btnStyle,
           onClick: function () { self.openModal(); }
