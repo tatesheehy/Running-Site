@@ -128,6 +128,10 @@ collections:
               - { label: "Age", name: age, widget: string }
               - { label: "Pro Seasons", name: seasons, widget: string }
 
+              - { label: "NCAA Athlete", name: ncaa, widget: boolean, default: false, required: false, hint: "Toggle on if this athlete is currently competing in the NCAA." }
+              - { label: "College / University", name: college, widget: string, required: false, hint: "e.g. University of Oregon, Georgetown University" }
+              - { label: "College Logo", name: collegeLogo, widget: image, required: false, hint: "Upload the college or university logo." }
+
               - name: prs
                 label: "Personal Records (1–4)"
                 widget: wa-prs

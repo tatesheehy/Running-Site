@@ -694,6 +694,18 @@ function openAthleteCard(athleteId, rank) {
           ${prsHtml ? `<div class="card-prs"><div class="card-prs-label">Personal Records</div>${prsHtml}</div>` : ''}
           ${achieveHtml ? `<div class="card-achievements">${achieveHtml}</div>` : ''}
           ${extraHtml ? `<div class="card-extra">${extraHtml}</div>` : ''}
+          ${a.ncaa ? `
+            <div class="card-ncaa">
+              <div class="card-ncaa-logos">
+                <svg class="card-ncaa-logo" viewBox="0 0 72 28" xmlns="http://www.w3.org/2000/svg" aria-label="NCAA">
+                  <rect width="72" height="28" rx="5" fill="#003087"/>
+                  <text x="36" y="20" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="15" fill="#ffffff" letter-spacing="1">NCAA</text>
+                </svg>
+                ${a.collegeLogo ? `<img class="card-college-logo" src="${a.collegeLogo}" alt="${a.college || 'College logo'}">` : ''}
+              </div>
+              ${a.college ? `<div class="card-college-name">${a.college}</div>` : ''}
+            </div>
+          ` : ''}
         </div>
       </div>
       <div class="card-right">
