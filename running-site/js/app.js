@@ -87,7 +87,10 @@ function buildTickerHtml() {
       const rank = i + 1;
       const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
       const name = (a && a.name) || r.name || r.athleteId || '—';
-      return `<span class="ticker-item"><span class="ticker-rank">${rank}</span> ${name}</span>`;
+      const clickAttr = r.athleteId
+        ? `onclick="if(window.openAthleteCard){window.openAthleteCard('${r.athleteId}',${rank})}else{window.location.href='rankings.html'}" role="button" tabindex="0"`
+        : `onclick="window.location.href='rankings.html'" role="button" tabindex="0"`;
+      return `<span class="ticker-item ticker-item-link" ${clickAttr}><span class="ticker-rank">${rank}</span> ${name}</span>`;
     }).join('<span class="ticker-sep">·</span>');
 
     // Duplicate for seamless loop
@@ -101,7 +104,7 @@ function buildTickerHtml() {
 
   return `
     <div class="breaking-bar" role="marquee">
-      <span class="breaking-badge">1500m</span>
+      <a class="breaking-badge" href="rankings.html">1500m</a>
       ${tickerContent}
     </div>`;
 }

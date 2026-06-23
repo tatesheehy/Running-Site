@@ -275,7 +275,11 @@ button { font-family: inherit; }
   white-space: nowrap;
   flex-shrink: 0;
   border-radius: var(--radius-sm);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s;
 }
+.breaking-badge:hover { background: #222; }
 
 .ticker-track {
   flex: 1;
@@ -306,6 +310,12 @@ button { font-family: inherit; }
   font-weight: 600;
   padding: 0 10px;
 }
+.ticker-item-link {
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.15s, opacity 0.15s;
+}
+.ticker-item-link:hover { background: rgba(255,255,255,0.18); }
 
 .ticker-rank {
   font-family: var(--font-display);
