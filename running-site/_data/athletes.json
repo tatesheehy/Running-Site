@@ -84,89 +84,6 @@
       }
     },
     {
-      "photoBackground": "#0a1a0d",
-      "stat4Sub": "2026",
-      "reviewTitle": "Season review",
-      "stat3Sub": "this season",
-      "stat2Sub": "Rabat DL",
-      "stat1Sub": "indoor WR",
-      "achievements": [
-        {
-          "icon": "🏟️",
-          "count": "2x",
-          "label": "World Indoor Champ"
-        },
-        {
-          "icon": "💎",
-          "count": "3x",
-          "label": "Diamond League Win"
-        },
-        {
-          "icon": "📋",
-          "count": "0x",
-          "label": "Olympic Gold"
-        }
-      ],
-      "traits": [
-        {
-          "emoji": "💨",
-          "label": "Pure Speed"
-        },
-        {
-          "emoji": "🎯",
-          "label": "Consistency"
-        },
-        {
-          "emoji": "📈",
-          "label": "Indoor King"
-        },
-        {
-          "emoji": "🤫",
-          "label": "Quiet Assassin"
-        }
-      ],
-      "height": "5'5\"",
-      "questionBody": "Can he find the gear to challenge Ingebrigtsen head-to-head? Their encounters so far have gone to the Norwegian, but the gap is narrowing.",
-      "headlineRest": "who keeps showing up at the finish line when it matters most.",
-      "name": "Isaac Nader",
-      "headlineKey": "The quiet assassin",
-      "flag": "🇵🇹",
-      "seasons": "9",
-      "stat4Value": "#2",
-      "hometown": "Bekoji, Ethiopia",
-      "stat3Value": "3",
-      "questionTitle": "Next question",
-      "photo": "/images/nader_card.png",
-      "stat2Value": "3:45.12",
-      "stat4Label": "WORLD RANK",
-      "stat1Value": "3:47.01",
-      "stat3Label": "PODIUMS",
-      "club": "Nike",
-      "stat2Label": "SEASON BEST",
-      "country": "Portugal",
-      "stat1Label": "PERSONAL BEST",
-      "weight": "114 lbs",
-      "coach": "Self-coached",
-      "reviewBody": "Kejelcha has been a model of consistency in 2026. While he hasn't grabbed the headlines, his results speak for themselves — four top-3 finishes in Diamond League events and a season best of 3:45.12.",
-      "event": "MIDDLE DISTANCE",
-      "id": "isaac-nader",
-      "age": "27",
-      "stats_group": {
-        "stat4Sub": "x",
-        "stat3Sub": "x",
-        "stat2Sub": "x",
-        "stat1Sub": "x",
-        "stat4Value": "x",
-        "stat3Value": "x",
-        "stat2Value": "x",
-        "stat4Label": "x",
-        "stat1Value": "x",
-        "stat3Label": "x",
-        "stat2Label": "x",
-        "stat1Label": "x"
-      }
-    },
-    {
       "photoBackground": "#1a0a0a",
       "stat4Sub": "2026",
       "reviewTitle": "Season review",
@@ -234,6 +151,89 @@
       "event": "MIDDLE DISTANCE + DISTANCE",
       "id": "cole-hocker",
       "age": "23",
+      "stats_group": {
+        "stat4Sub": "x",
+        "stat3Sub": "x",
+        "stat2Sub": "x",
+        "stat1Sub": "x",
+        "stat4Value": "x",
+        "stat3Value": "x",
+        "stat2Value": "x",
+        "stat4Label": "x",
+        "stat1Value": "x",
+        "stat3Label": "x",
+        "stat2Label": "x",
+        "stat1Label": "x"
+      }
+    },
+    {
+      "photoBackground": "#0a1a0d",
+      "stat4Sub": "2026",
+      "reviewTitle": "Season review",
+      "stat3Sub": "this season",
+      "stat2Sub": "Rabat DL",
+      "stat1Sub": "indoor WR",
+      "achievements": [
+        {
+          "icon": "🏟️",
+          "count": "2x",
+          "label": "World Indoor Champ"
+        },
+        {
+          "icon": "💎",
+          "count": "3x",
+          "label": "Diamond League Win"
+        },
+        {
+          "icon": "📋",
+          "count": "0x",
+          "label": "Olympic Gold"
+        }
+      ],
+      "traits": [
+        {
+          "emoji": "💨",
+          "label": "Pure Speed"
+        },
+        {
+          "emoji": "🎯",
+          "label": "Consistency"
+        },
+        {
+          "emoji": "📈",
+          "label": "Indoor King"
+        },
+        {
+          "emoji": "🤫",
+          "label": "Quiet Assassin"
+        }
+      ],
+      "height": "5'5\"",
+      "questionBody": "Can he find the gear to challenge Ingebrigtsen head-to-head? Their encounters so far have gone to the Norwegian, but the gap is narrowing.",
+      "headlineRest": "who keeps showing up at the finish line when it matters most.",
+      "name": "Isaac Nader",
+      "headlineKey": "The quiet assassin",
+      "flag": "🇵🇹",
+      "seasons": "9",
+      "stat4Value": "#2",
+      "hometown": "Bekoji, Ethiopia",
+      "stat3Value": "3",
+      "questionTitle": "Next question",
+      "photo": "/images/nader_card.png",
+      "stat2Value": "3:45.12",
+      "stat4Label": "WORLD RANK",
+      "stat1Value": "3:47.01",
+      "stat3Label": "PODIUMS",
+      "club": "Nike",
+      "stat2Label": "SEASON BEST",
+      "country": "Portugal",
+      "stat1Label": "PERSONAL BEST",
+      "weight": "115 lbs",
+      "coach": "Self-coached",
+      "reviewBody": "Kejelcha has been a model of consistency in 2026. While he hasn't grabbed the headlines, his results speak for themselves — four top-3 finishes in Diamond League events and a season best of 3:45.12.",
+      "event": "MIDDLE DISTANCE",
+      "id": "isaac-nader",
+      "age": "27",
       "stats_group": {
         "stat4Sub": "x",
         "stat3Sub": "x",
