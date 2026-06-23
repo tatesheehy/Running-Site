@@ -87,8 +87,7 @@ function buildTickerHtml() {
       const rank = i + 1;
       const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
       const name = (a && a.name) || r.name || r.athleteId || '—';
-      const time = r.seasonBest ? ` — ${r.seasonBest}` : '';
-      return `<span class="ticker-item"><span class="ticker-rank">${rank}</span> ${name}${time}</span>`;
+      return `<span class="ticker-item"><span class="ticker-rank">${rank}</span> ${name}</span>`;
     }).join('<span class="ticker-sep">·</span>');
 
     // Duplicate for seamless loop

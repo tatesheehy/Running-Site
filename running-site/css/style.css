@@ -304,7 +304,7 @@ button { font-family: inherit; }
   color: #fff;
   font-size: 13px;
   font-weight: 600;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .ticker-rank {
@@ -318,7 +318,7 @@ button { font-family: inherit; }
 .ticker-sep {
   color: rgba(255,255,255,0.4);
   font-size: 13px;
-  padding: 0 4px;
+  padding: 0 2px;
 }
 
 .ticker-static {
@@ -1471,10 +1471,10 @@ footer {
   height: 5px;
   border-radius: 3px;
   background: linear-gradient(to right,
-    #1d4ed8 0%,
-    #60a5fa 30%,
-    #e2e8f0 50%,
-    #f87171 70%,
+    #a8d8f0 0%,
+    #2563eb 30%,
+    #f97316 60%,
+    #ea580c 78%,
     #dc2626 100%
   );
   flex-shrink: 0;
