@@ -505,7 +505,7 @@ function buildRankingsHub() {
         <div class="ranking-card-body">
           <div class="ranking-card-event">${ev.name}</div>
           ${ev.description ? `<div class="ranking-card-desc">${ev.description}</div>` : ''}
-          <div class="ranking-card-cta">${count ? `${count} athletes ranked` : 'Coming soon'} &rarr;</div>
+          <div class="ranking-card-cta">${count ? `${count} athletes ranked` : 'Under construction'} &rarr;</div>
         </div>
       </div>
     `;
