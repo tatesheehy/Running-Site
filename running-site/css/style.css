@@ -1193,10 +1193,10 @@ footer {
   inset: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.18;
+  opacity: 0.45;
   transition: opacity 0.28s;
 }
-.ranking-card:hover .ranking-card-photo { opacity: 0.12; }
+.ranking-card:hover .ranking-card-photo { opacity: 0.35; }
 
 .ranking-card-num {
   position: absolute;
