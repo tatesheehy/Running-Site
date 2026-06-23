@@ -425,6 +425,7 @@ button { font-family: inherit; }
   aspect-ratio: 16/9;
   width: 100%;
   border-radius: var(--radius);
+  margin-bottom: 22px;
 }
 
 .hero-image, .hero-image-wrap .img-placeholder {
@@ -442,16 +443,15 @@ button { font-family: inherit; }
 
 .hero-body { padding-right: 28px; }
 
-
 .hero-cat { margin: 14px 0 10px; }
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: 42px;
+  font-size: 44px;
   font-weight: 800;
   line-height: 1.05;
-  letter-spacing: -0.01em;
-  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
   cursor: pointer;
 }
 
@@ -459,9 +459,9 @@ button { font-family: inherit; }
 
 .hero-excerpt {
   font-size: 15px;
-  color: #444;
-  line-height: 1.65;
-  margin-bottom: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 18px;
 }
 
 .meta {
