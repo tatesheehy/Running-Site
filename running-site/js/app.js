@@ -51,7 +51,6 @@ async function loadData() {
 
 // Convert flat athlete structure (from JSON/CMS) to the format the card expects
 function normalizeAthlete(a) {
-  const sg = a.stats_group || a;
   return {
     ...a,
     vitals: {
@@ -60,12 +59,7 @@ function normalizeAthlete(a) {
       AGE: a.age,
       SEASONS: a.seasons,
     },
-    stats: [
-      { value: sg.stat1Value, label: sg.stat1Label, sub: sg.stat1Sub },
-      { value: sg.stat2Value, label: sg.stat2Label, sub: sg.stat2Sub },
-      { value: sg.stat3Value, label: sg.stat3Label, sub: sg.stat3Sub },
-      { value: sg.stat4Value, label: sg.stat4Label, sub: sg.stat4Sub },
-    ],
+    prs: (a.prs || []).slice(0, 4),
     extra: {
       CLUB: a.club,
       COACH: a.coach,
@@ -648,11 +642,10 @@ function openAthleteCard(athleteId, rank) {
     </div>
   `).join('');
 
-  const statsHtml = (a.stats || []).map(s => `
-    <div class="card-stat">
-      <div class="card-stat-value">${s.value}</div>
-      <div class="card-stat-label">${s.label}</div>
-      ${s.sub ? `<div class="card-stat-sub">${s.sub}</div>` : ''}
+  const prsHtml = (a.prs || []).map(pr => `
+    <div class="card-pr-row">
+      <span class="card-pr-event">${pr.event || ''}</span>
+      <span class="card-pr-time">${pr.time || ''}</span>
     </div>
   `).join('');
 
@@ -698,7 +691,7 @@ function openAthleteCard(athleteId, rank) {
         </div>
         <div class="card-info">
           <div class="card-vitals">${vitalsHtml}</div>
-          <div class="card-stats-grid">${statsHtml}</div>
+          ${prsHtml ? `<div class="card-prs"><div class="card-prs-label">Personal Records</div>${prsHtml}</div>` : ''}
           ${achieveHtml ? `<div class="card-achievements">${achieveHtml}</div>` : ''}
           ${extraHtml ? `<div class="card-extra">${extraHtml}</div>` : ''}
         </div>

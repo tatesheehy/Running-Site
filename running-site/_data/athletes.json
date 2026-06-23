@@ -2,43 +2,39 @@
   "items": [
     {
       "photoBackground": "#0d1b2a",
-      "stat4Sub": "2026",
       "reviewTitle": "Season review",
-      "stat3Sub": "this season",
-      "stat2Sub": "Oslo DL",
-      "stat1Sub": "personal best",
       "achievements": [
         {
-          "icon": "🥇",
+          "icon": "\ud83e\udd47",
           "count": "2x",
           "label": "Olympic Gold"
         },
         {
-          "icon": "🌍",
+          "icon": "\ud83c\udf0d",
           "count": "1x",
           "label": "World Champ"
         },
         {
-          "icon": "⚡",
+          "icon": "\u26a1",
           "count": "1x",
           "label": "World Record"
         }
       ],
       "traits": [
         {
-          "emoji": "⚡",
+          "emoji": "\u26a1",
           "label": "Explosive Kick"
         },
         {
-          "emoji": "🧠",
+          "emoji": "\ud83e\udde0",
           "label": "Tactical IQ"
         },
         {
-          "emoji": "🏔️",
+          "emoji": "\ud83c\udfd4\ufe0f",
           "label": "Front Runner"
         },
         {
-          "emoji": "🔥",
+          "emoji": "\ud83d\udd25",
           "label": "Mental Edge"
         }
       ],
@@ -49,55 +45,47 @@
       "headlineKey": "Generational talent",
       "flag": "NO",
       "seasons": "8",
-      "stat4Value": "#1",
       "hometown": "Sandnes, Norway",
-      "stat3Value": "4",
       "questionTitle": "Next question",
       "photo": "/images/jakobcard.png",
-      "stat2Value": "3:44.38",
-      "stat4Label": "WORLD RANK",
-      "stat1Value": "3:43.73",
-      "stat3Label": "PODIUMS",
       "club": "Sandnes IL",
-      "stat2Label": "SEASON BEST",
       "country": "Norway",
-      "stat1Label": "WORLD RECORD",
       "weight": "132 lbs",
       "coach": "Gjert Ingebrigtsen",
-      "reviewBody": "Ingebrigtsen has been in ruthless form this year. His front-running style has evolved — he's now just as dangerous in a tactical race as he is going wire-to-wire. The Oslo performance showed a new dimension: he can manufacture a kick from an already brutal pace.",
+      "reviewBody": "Ingebrigtsen has been in ruthless form this year. His front-running style has evolved \u2014 he's now just as dangerous in a tactical race as he is going wire-to-wire. The Oslo performance showed a new dimension: he can manufacture a kick from an already brutal pace.",
       "event": "MIDDLE DISTANCE + DISTANCE",
       "id": "jakob-ingebrigtsen",
       "age": "25",
-      "stats_group": {
-        "stat4Sub": "x",
-        "stat3Sub": "x",
-        "stat2Sub": "x",
-        "stat1Sub": "x",
-        "stat4Value": "x",
-        "stat3Value": "x",
-        "stat2Value": "x",
-        "stat4Label": "x",
-        "stat1Value": "x",
-        "stat3Label": "x",
-        "stat2Label": "x",
-        "stat1Label": "x"
-      }
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:43.73"
+        },
+        {
+          "event": "Mile",
+          "time": "3:47.32"
+        },
+        {
+          "event": "3000m",
+          "time": "7:26.15"
+        },
+        {
+          "event": "5000m",
+          "time": "12:48.45"
+        }
+      ]
     },
     {
       "photoBackground": "#1a0a0a",
-      "stat4Sub": "2026",
       "reviewTitle": "Season review",
-      "stat3Sub": "this season",
-      "stat2Sub": "Eugene DL",
-      "stat1Sub": "Eugene DL",
       "achievements": [
         {
-          "icon": "🥇",
+          "icon": "\ud83e\udd47",
           "count": "1x",
           "label": "Olympic Gold"
         },
         {
-          "icon": "🎓",
+          "icon": "\ud83c\udf93",
           "count": "3x",
           "label": "NCAA Champion"
         },
@@ -109,19 +97,19 @@
       ],
       "traits": [
         {
-          "emoji": "🚀",
+          "emoji": "\ud83d\ude80",
           "label": "Devastating Kick"
         },
         {
-          "emoji": "🧘",
+          "emoji": "\ud83e\uddd8",
           "label": "Race Patience"
         },
         {
-          "emoji": "📐",
+          "emoji": "\ud83d\udcd0",
           "label": "Perfect Form"
         },
         {
-          "emoji": "🌟",
+          "emoji": "\ud83c\udf1f",
           "label": "Rising Star"
         }
       ],
@@ -132,79 +120,63 @@
       "headlineKey": "America's next great miler",
       "flag": "US",
       "seasons": "4",
-      "stat4Value": "#3",
       "hometown": "Carmel, Indiana",
-      "stat3Value": "2",
       "questionTitle": "Next question",
       "photo": "/images/hockercard.png",
-      "stat2Value": "3:46.01",
-      "stat4Label": "WORLD RANK",
-      "stat1Value": "3:46.01",
-      "stat3Label": "PODIUMS",
       "club": "Nike",
-      "stat2Label": "SEASON BEST",
       "country": "United States",
-      "stat1Label": "PERSONAL BEST",
       "weight": "145 lbs",
       "coach": "Jerry Schumacher",
       "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
       "event": "MIDDLE DISTANCE + DISTANCE",
       "id": "cole-hocker",
       "age": "23",
-      "stats_group": {
-        "stat4Sub": "x",
-        "stat3Sub": "x",
-        "stat2Sub": "x",
-        "stat1Sub": "x",
-        "stat4Value": "x",
-        "stat3Value": "x",
-        "stat2Value": "x",
-        "stat4Label": "x",
-        "stat1Value": "x",
-        "stat3Label": "x",
-        "stat2Label": "x",
-        "stat1Label": "x"
-      }
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:43.31"
+        },
+        {
+          "event": "Mile",
+          "time": "3:47.98"
+        }
+      ]
     },
     {
       "photoBackground": "#0a1a0d",
-      "stat4Sub": "2026",
       "reviewTitle": "Season review",
-      "stat3Sub": "this season",
-      "stat2Sub": "Rabat DL",
-      "stat1Sub": "indoor WR",
       "achievements": [
         {
-          "icon": "🏟️",
+          "icon": "\ud83c\udfdf\ufe0f",
           "count": "2x",
           "label": "World Indoor Champ"
         },
         {
-          "icon": "💎",
+          "icon": "\ud83d\udc8e",
           "count": "3x",
           "label": "Diamond League Win"
         },
         {
-          "icon": "📋",
+          "icon": "\ud83d\udccb",
           "count": "0x",
           "label": "Olympic Gold"
         }
       ],
       "traits": [
         {
-          "emoji": "💨",
+          "emoji": "\ud83d\udca8",
           "label": "Pure Speed"
         },
         {
-          "emoji": "🎯",
+          "emoji": "\ud83c\udfaf",
           "label": "Consistency"
         },
         {
-          "emoji": "📈",
+          "emoji": "\ud83d\udcc8",
           "label": "Indoor King"
         },
         {
-          "emoji": "🤫",
+          "emoji": "\ud83e\udd2b",
           "label": "Quiet Assassin"
         }
       ],
@@ -215,79 +187,63 @@
       "headlineKey": "The quiet assassin",
       "flag": "PT",
       "seasons": "9",
-      "stat4Value": "#2",
       "hometown": "Bekoji, Ethiopia",
-      "stat3Value": "3",
       "questionTitle": "Next question",
       "photo": "/images/nader_card.png",
-      "stat2Value": "3:45.12",
-      "stat4Label": "WORLD RANK",
-      "stat1Value": "3:47.01",
-      "stat3Label": "PODIUMS",
       "club": "Nike",
-      "stat2Label": "SEASON BEST",
       "country": "Portugal",
-      "stat1Label": "PERSONAL BEST",
       "weight": "115 lbs",
       "coach": "Self-coached",
-      "reviewBody": "Kejelcha has been a model of consistency in 2026. While he hasn't grabbed the headlines, his results speak for themselves — four top-3 finishes in Diamond League events and a season best of 3:45.12.",
+      "reviewBody": "Kejelcha has been a model of consistency in 2026. While he hasn't grabbed the headlines, his results speak for themselves \u2014 four top-3 finishes in Diamond League events and a season best of 3:45.12.",
       "event": "MIDDLE DISTANCE",
       "id": "isaac-nader",
       "age": "27",
-      "stats_group": {
-        "stat4Sub": "x",
-        "stat3Sub": "x",
-        "stat2Sub": "x",
-        "stat1Sub": "x",
-        "stat4Value": "x",
-        "stat3Value": "x",
-        "stat2Value": "x",
-        "stat4Label": "x",
-        "stat1Value": "x",
-        "stat3Label": "x",
-        "stat2Label": "x",
-        "stat1Label": "x"
-      }
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:44.74"
+        },
+        {
+          "event": "Mile",
+          "time": "3:51.83"
+        }
+      ]
     },
     {
       "photoBackground": "#0a0a1a",
-      "stat4Sub": "2026",
       "reviewTitle": "Season review",
-      "stat3Sub": "this season",
-      "stat2Sub": "Rome DL",
-      "stat1Sub": "Budapest WC",
       "achievements": [
         {
-          "icon": "🌍",
+          "icon": "\ud83c\udf0d",
           "count": "1x",
           "label": "World Champion"
         },
         {
-          "icon": "🥈",
+          "icon": "\ud83e\udd48",
           "count": "1x",
           "label": "Olympic Silver"
         },
         {
-          "icon": "💎",
+          "icon": "\ud83d\udc8e",
           "count": "2x",
           "label": "DL Champion"
         }
       ],
       "traits": [
         {
-          "emoji": "💪",
+          "emoji": "\ud83d\udcaa",
           "label": "Raw Strength"
         },
         {
-          "emoji": "🏃",
+          "emoji": "\ud83c\udfc3",
           "label": "Mid-Race Surge"
         },
         {
-          "emoji": "🧠",
+          "emoji": "\ud83e\udde0",
           "label": "Race Savvy"
         },
         {
-          "emoji": "🏋️",
+          "emoji": "\ud83c\udfcb\ufe0f",
           "label": "Physical Power"
         }
       ],
@@ -298,79 +254,63 @@
       "headlineKey": "The power runner",
       "flag": "GB",
       "seasons": "6",
-      "stat4Value": "#4",
       "hometown": "Edinburgh, Scotland",
-      "stat3Value": "2",
       "questionTitle": "Next question",
       "photo": "/images/kerrcard.png",
-      "stat2Value": "3:46.54",
-      "stat4Label": "WORLD RANK",
-      "stat1Value": "3:46.44",
-      "stat3Label": "PODIUMS",
       "club": "Adidas",
-      "stat2Label": "SEASON BEST",
       "country": "Great Britain",
-      "stat1Label": "PERSONAL BEST",
       "weight": "150 lbs",
       "coach": "Gary Lough",
       "reviewBody": "Kerr continues to be one of the most physically imposing presences in the 1500m field. His ability to surge mid-race and break the competition is unmatched.",
       "event": "MIDDLE DISTANCE",
       "id": "josh-kerr",
       "age": "26",
-      "stats_group": {
-        "stat4Sub": "x",
-        "stat3Sub": "x",
-        "stat2Sub": "x",
-        "stat1Sub": "x",
-        "stat4Value": "x",
-        "stat3Value": "x",
-        "stat2Value": "x",
-        "stat4Label": "x",
-        "stat1Value": "x",
-        "stat3Label": "x",
-        "stat2Label": "x",
-        "stat1Label": "xx"
-      }
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:45.34"
+        },
+        {
+          "event": "Mile",
+          "time": "3:47.32"
+        }
+      ]
     },
     {
       "photoBackground": "#0a1a0a",
-      "stat4Sub": "2026",
       "reviewTitle": "Season review",
-      "stat3Sub": "this season",
-      "stat2Sub": "Shanghai DL",
-      "stat1Sub": "1 mile equiv.",
       "achievements": [
         {
-          "icon": "🌍",
+          "icon": "\ud83c\udf0d",
           "count": "2x",
           "label": "World Champion"
         },
         {
-          "icon": "🥈",
+          "icon": "\ud83e\udd48",
           "count": "1x",
           "label": "Olympic Silver"
         },
         {
-          "icon": "💎",
+          "icon": "\ud83d\udc8e",
           "count": "4x",
           "label": "Diamond League Win"
         }
       ],
       "traits": [
         {
-          "emoji": "🦁",
+          "emoji": "\ud83e\udd81",
           "label": "Killer Instinct"
         },
         {
-          "emoji": "🏆",
+          "emoji": "\ud83c\udfc6",
           "label": "Championship DNA"
         },
         {
-          "emoji": "🎖️",
+          "emoji": "\ud83c\udf96\ufe0f",
           "label": "Proven Winner"
         },
         {
-          "emoji": "🔄",
+          "emoji": "\ud83d\udd04",
           "label": "Long Stride"
         }
       ],
@@ -381,39 +321,27 @@
       "headlineKey": "The veteran champion",
       "flag": "KE",
       "seasons": "8",
-      "stat4Value": "#5",
       "hometown": "Kericho, Kenya",
-      "stat3Value": "1",
       "questionTitle": "Next question",
       "photo": "/images/timothy_card.png",
-      "stat2Value": "3:47.22",
-      "stat4Label": "WORLD RANK",
-      "stat1Value": "3:28.41",
-      "stat3Label": "PODIUMS",
       "club": "Iten Training Camp",
-      "stat2Label": "SEASON BEST",
       "country": "Kenya",
-      "stat1Label": "PERSONAL BEST",
       "weight": "128 lbs",
       "coach": "Patrick Sang",
       "reviewBody": "Cheruiyot has shown signs of returning to his dominant best after a couple of injury-interrupted campaigns. His Shanghai win was a reminder that when he's right, he can run with anyone.",
       "event": "MIDDLE DISTANCE",
       "id": "timothy-cheruiyot",
       "age": "28",
-      "stats_group": {
-        "stat4Sub": "x",
-        "stat3Sub": "x",
-        "stat2Sub": "x",
-        "stat1Sub": "x",
-        "stat4Value": "x",
-        "stat3Value": "x",
-        "stat2Value": "x",
-        "stat4Label": "x",
-        "stat1Value": "x",
-        "stat3Label": "x",
-        "stat2Label": "x",
-        "stat1Label": "x"
-      }
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:28.77"
+        },
+        {
+          "event": "Mile",
+          "time": "3:50.51"
+        }
+      ]
     },
     {
       "photoBackground": "#111111",
@@ -436,20 +364,7 @@
       "event": "MIDDLE DISTANCE",
       "id": "niels-laros",
       "age": "21",
-      "stats_group": {
-        "stat4Sub": "xx",
-        "stat3Sub": "xx",
-        "stat2Sub": "xx",
-        "stat1Sub": "xx",
-        "stat4Value": "xx",
-        "stat3Value": "xx",
-        "stat2Value": "xx",
-        "stat4Label": "xx",
-        "stat1Value": "xx",
-        "stat3Label": "xx",
-        "stat2Label": "xx",
-        "stat1Label": "xx"
-      }
+      "prs": []
     },
     {
       "photoBackground": "#111111",
@@ -473,20 +388,7 @@
       "event": "MIDDLE DISTANCE",
       "id": "cameron-myers",
       "age": "19",
-      "stats_group": {
-        "stat4Sub": "xx",
-        "stat3Sub": "xx",
-        "stat2Sub": "xx",
-        "stat1Sub": "xx",
-        "stat4Value": "xx",
-        "stat3Value": "xx",
-        "stat2Value": "xx",
-        "stat4Label": "xx",
-        "stat1Value": "xx",
-        "stat3Label": "xx",
-        "stat2Label": "xx",
-        "stat1Label": "xx"
-      }
+      "prs": []
     },
     {
       "photoBackground": "#111111",
@@ -509,20 +411,7 @@
       "event": "MIDDLE DISTANCE",
       "id": "jake-wightman",
       "age": "32",
-      "stats_group": {
-        "stat4Sub": "xx",
-        "stat3Sub": "xx",
-        "stat2Sub": "xx",
-        "stat1Sub": "xx",
-        "stat4Value": "xx",
-        "stat3Value": "xx",
-        "stat2Value": "xx",
-        "stat4Label": "xx",
-        "stat1Value": "xx",
-        "stat3Label": "xx",
-        "stat2Label": "xx",
-        "stat1Label": "xx"
-      }
+      "prs": []
     },
     {
       "photoBackground": "#111111",
@@ -545,20 +434,7 @@
       "event": "MIDDLE DISTANCE",
       "id": "phanuel-koech",
       "age": "19",
-      "stats_group": {
-        "stat4Sub": "x",
-        "stat3Sub": "x",
-        "stat2Sub": "x",
-        "stat1Sub": "x",
-        "stat4Value": "x",
-        "stat3Value": "x",
-        "stat2Value": "x",
-        "stat4Label": "x",
-        "stat1Value": "x",
-        "stat3Label": "x",
-        "stat2Label": "x",
-        "stat1Label": "x"
-      }
+      "prs": []
     },
     {
       "photoBackground": "#111111",
@@ -581,20 +457,7 @@
       "event": "MIDDLE DISTANCE",
       "id": "yared-nuguse",
       "age": "x",
-      "stats_group": {
-        "stat4Sub": "x",
-        "stat3Sub": "x",
-        "stat2Sub": "x",
-        "stat1Sub": "x",
-        "stat4Value": "x",
-        "stat3Value": "x",
-        "stat2Value": "x",
-        "stat4Label": "x",
-        "stat1Value": "x",
-        "stat3Label": "x",
-        "stat2Label": "x",
-        "stat1Label": "x"
-      }
+      "prs": []
     },
     {
       "photoBackground": "#111111",
@@ -617,20 +480,7 @@
       "event": "MIDDLE DISTANCE",
       "id": "simeon-birnbaum",
       "age": "21",
-      "stats_group": {
-        "stat4Sub": "x",
-        "stat3Sub": "x",
-        "stat2Sub": "x",
-        "stat1Sub": "x",
-        "stat4Value": "x",
-        "stat3Value": "x",
-        "stat2Value": "x",
-        "stat4Label": "x",
-        "stat1Value": "xx",
-        "stat3Label": "x",
-        "stat2Label": "x",
-        "stat1Label": "xxx"
-      }
+      "prs": []
     },
     {
       "photoBackground": "#111111",
@@ -653,20 +503,7 @@
       "event": "MIDDLE DISTANCE",
       "id": "vincent-ciattei",
       "age": "31",
-      "stats_group": {
-        "stat4Sub": "x",
-        "stat3Sub": "x",
-        "stat2Sub": "x",
-        "stat1Sub": "x",
-        "stat4Value": "x",
-        "stat3Value": "x",
-        "stat2Value": "x",
-        "stat4Label": "x",
-        "stat1Value": "x",
-        "stat3Label": "x",
-        "stat2Label": "x",
-        "stat1Label": "x"
-      }
+      "prs": []
     },
     {
       "photoBackground": "#111111",
@@ -689,20 +526,7 @@
       "event": "MIDDLE DISTANCE",
       "id": "reynold-cheruiyot",
       "age": "21",
-      "stats_group": {
-        "stat4Sub": "x",
-        "stat3Sub": "x",
-        "stat2Sub": "x",
-        "stat1Sub": "x",
-        "stat4Value": "x",
-        "stat3Value": "x",
-        "stat2Value": "x",
-        "stat4Label": "x",
-        "stat1Value": "x",
-        "stat3Label": "x",
-        "stat2Label": "x",
-        "stat1Label": "x"
-      }
+      "prs": []
     },
     {
       "photoBackground": "#111111",
@@ -725,20 +549,7 @@
       "event": "MIDDLE DISTANCE",
       "id": "hobbs-kessler",
       "age": "23",
-      "stats_group": {
-        "stat4Sub": "x",
-        "stat3Sub": "x",
-        "stat2Sub": "x",
-        "stat1Sub": "x",
-        "stat4Value": "x",
-        "stat3Value": "x",
-        "stat2Value": "x",
-        "stat4Label": "x",
-        "stat1Value": "x",
-        "stat3Label": "x",
-        "stat2Label": "x",
-        "stat1Label": "x"
-      }
+      "prs": []
     },
     {
       "photoBackground": "#111111",
@@ -761,20 +572,7 @@
       "event": "MIDDLE DISTANCE",
       "id": "azeddine-habz",
       "age": "32",
-      "stats_group": {
-        "stat4Sub": "x",
-        "stat3Sub": "x",
-        "stat2Sub": "x",
-        "stat1Sub": "x",
-        "stat4Value": "x",
-        "stat3Value": "x",
-        "stat2Value": "x",
-        "stat4Label": "x",
-        "stat1Value": "x",
-        "stat3Label": "x",
-        "stat2Label": "x",
-        "stat1Label": "x"
-      }
+      "prs": []
     },
     {
       "photoBackground": "#111111",
@@ -797,20 +595,7 @@
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "andrew-coscoran",
       "age": "30",
-      "stats_group": {
-        "stat4Sub": "x",
-        "stat3Sub": "x",
-        "stat2Sub": "x",
-        "stat1Sub": "x",
-        "stat4Value": "x",
-        "stat3Value": "x",
-        "stat2Value": "x",
-        "stat4Label": "x",
-        "stat1Value": "x",
-        "stat3Label": "x",
-        "stat2Label": "x",
-        "stat1Label": "x"
-      }
+      "prs": []
     },
     {
       "photoBackground": "#111111",
@@ -833,20 +618,7 @@
       "event": "MIDDLE DISTANCE",
       "id": "jonah-koech",
       "age": "29",
-      "stats_group": {
-        "stat4Sub": "x",
-        "stat3Sub": "x",
-        "stat2Sub": "x",
-        "stat1Sub": "x",
-        "stat4Value": "x",
-        "stat3Value": "x",
-        "stat2Value": "x",
-        "stat4Label": "x",
-        "stat1Value": "x",
-        "stat3Label": "x",
-        "stat2Label": "x",
-        "stat1Label": "x"
-      }
+      "prs": []
     },
     {
       "photoBackground": "#111111",
@@ -869,20 +641,7 @@
       "event": "MIDDLE DISTANCE",
       "id": "mohamed-attaoui",
       "age": "24",
-      "stats_group": {
-        "stat4Sub": "x",
-        "stat3Sub": "x",
-        "stat2Sub": "x",
-        "stat1Sub": "x",
-        "stat4Value": "x",
-        "stat3Value": "x",
-        "stat2Value": "x",
-        "stat4Label": "x",
-        "stat1Value": "x",
-        "stat3Label": "x",
-        "stat2Label": "x",
-        "stat1Label": "x"
-      }
+      "prs": []
     }
   ]
 }

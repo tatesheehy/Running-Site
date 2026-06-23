@@ -128,23 +128,15 @@ collections:
               - { label: "Age", name: age, widget: string }
               - { label: "Pro Seasons", name: seasons, widget: string }
 
-              - label: "Stats"
-                name: stats_group
-                widget: object
-                collapsed: false
+              - name: prs
+                label: "Personal Records (1–4)"
+                label_singular: PR
+                widget: list
+                min: 1
+                max: 4
                 fields:
-                  - { label: "Stat 1 — Value", name: stat1Value, widget: string, hint: "e.g. 3:43.73" }
-                  - { label: "Stat 1 — Label", name: stat1Label, widget: string, hint: "e.g. WORLD RECORD" }
-                  - { label: "Stat 1 — Sub", name: stat1Sub, widget: string, hint: "e.g. personal best" }
-                  - { label: "Stat 2 — Value", name: stat2Value, widget: string }
-                  - { label: "Stat 2 — Label", name: stat2Label, widget: string }
-                  - { label: "Stat 2 — Sub", name: stat2Sub, widget: string }
-                  - { label: "Stat 3 — Value", name: stat3Value, widget: string }
-                  - { label: "Stat 3 — Label", name: stat3Label, widget: string }
-                  - { label: "Stat 3 — Sub", name: stat3Sub, widget: string }
-                  - { label: "Stat 4 — Value", name: stat4Value, widget: string }
-                  - { label: "Stat 4 — Label", name: stat4Label, widget: string }
-                  - { label: "Stat 4 — Sub", name: stat4Sub, widget: string }
+                  - { label: "Event (e.g. 1500m, Mile, 3000m)", name: event, widget: string }
+                  - { label: "Time (e.g. 3:43.73)", name: time, widget: string }
 
               - name: achievements
                 label: Achievements
