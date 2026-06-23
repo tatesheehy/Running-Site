@@ -330,7 +330,7 @@ function buildRankingsTableHtml(event, compact) {
         <td><span class="rank-num ${rankClass}">${r.rank}</span></td>
         <td class="athlete-name-cell">
           <div class="name">${name}</div>
-          <div class="country">${flag}${flag && country ? ' ' : ''}${country}</div>
+          <div class="country">${renderFlag(flag)} ${country}</div>
         </td>
         ${compact ? '' : `<td>${country}</td>`}
         <td><span class="best-time">${r.seasonBest || ''}</span></td>
@@ -531,7 +531,7 @@ function buildRankingsDetail(eventName) {
         <div class="rd-rank ${r.rank === 1 ? 'gold' : ''}">${r.rank}</div>
         <div class="rd-info">
           <div class="rd-name">${name}</div>
-          <div class="rd-country">${flag}${flag && country ? ' ' : ''}${country}</div>
+          <div class="rd-country">${renderFlag(flag)} ${country}</div>
         </div>
         <div class="rd-right">
           <div class="rd-time">${r.seasonBest || ''}</div>
@@ -632,7 +632,7 @@ function openAthleteCard(athleteId, rank) {
         <div class="card-header-top"><a href="#">Full Profile</a></div>
         <div>
           <span class="card-athlete-name">${a.name}</span>
-          <span class="card-athlete-country">${a.flag} ${a.country}</span>
+          <span class="card-athlete-country">${renderFlag(a.flag)} ${a.country}</span>
         </div>
       </div>
       <button class="card-close" onclick="closeAthleteCard()" aria-label="Close">×</button>
@@ -702,7 +702,7 @@ window.openRankingRow = function(encodedData) {
       <div class="card-rank">${r.rank}</div>
       <div class="card-header-center">
         <div class="card-athlete-name">${r.name}</div>
-        <span class="card-athlete-country">${r.flag}${r.flag && r.country ? ' ' : ''}${r.country}</span>
+        <span class="card-athlete-country">${renderFlag(r.flag)} ${r.country}</span>
       </div>
       <button class="card-close" onclick="closeAthleteCard()" aria-label="Close">×</button>
     </div>

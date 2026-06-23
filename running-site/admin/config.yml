@@ -64,7 +64,7 @@ collections:
               - { label: "Unique ID (e.g. jakob-ingebrigtsen)", name: id, widget: string }
               - { label: "Full Name", name: name, widget: string }
               - { label: "Country", name: country, widget: string }
-              - { label: "Flag Emoji", name: flag, widget: string, hint: "e.g. 🇳🇴" }
+              - { label: "Flag Code", name: flag, widget: string, hint: "2-letter ISO code — e.g. NO, US, GB, KE, ET, MA, AU, NZ, JP, FR, DE, NL, PT, ES, IT, BE, SE, DK, FI, CA, JM, BR, ZA, NG, GH, TZ, UG, QA, BH, KR, IN, CN. Use SCT for Scotland, WAL for Wales, NIR for N. Ireland." }
               - { label: "Photo", name: photo, widget: image, required: false, default: "" }
               - { label: "Photo Background Color", name: photoBackground, widget: string, default: "#111111", hint: "Dark hex color, e.g. #0d1b2a" }
               - { label: "Event Category", name: event, widget: string, hint: "e.g. MIDDLE DISTANCE" }
@@ -144,7 +144,7 @@ collections:
                   - { label: "Rank", name: rank, widget: number }
                   - { label: "Athlete Name", name: name, widget: string }
                   - { label: "Country", name: country, widget: string, required: false }
-                  - { label: "Flag Emoji", name: flag, widget: string, required: false, hint: "e.g. 🇳🇴" }
+                  - { label: "Flag Code", name: flag, widget: string, required: false, hint: "2-letter ISO code — e.g. NO, US, GB, KE, AU, FR, DE, PT, NL, SCT for Scotland, etc." }
                   - { label: "Season Best", name: seasonBest, widget: string }
                   - { label: "Meet", name: meet, widget: string }
                   - { label: "Athlete ID (optional — links to athlete profile card)", name: athleteId, widget: string, required: false, hint: "Must match an athlete's ID in the Athletes section. Leave blank if you don't have a full profile for this athlete." }
