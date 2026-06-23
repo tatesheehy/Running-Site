@@ -15,11 +15,12 @@ let ARTICLES, ATHLETES, RANKINGS, RANKINGS_EVENTS, RANKINGS_CRITERIA, RANKINGS_Y
 
 async function loadData() {
   try {
+    const noCache = { cache: 'no-store' };
     const [articlesData, athletesData, rankingsData, siteData] = await Promise.all([
-      fetch('/_data/articles.json').then(r => r.json()),
-      fetch('/_data/athletes.json').then(r => r.json()),
-      fetch('/_data/rankings.json').then(r => r.json()),
-      fetch('/_data/site.json').then(r => r.json()),
+      fetch('/_data/articles.json', noCache).then(r => r.json()),
+      fetch('/_data/athletes.json', noCache).then(r => r.json()),
+      fetch('/_data/rankings.json', noCache).then(r => r.json()),
+      fetch('/_data/site.json', noCache).then(r => r.json()),
     ]);
 
     ARTICLES = articlesData.items || [];
