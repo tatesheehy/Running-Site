@@ -11,7 +11,7 @@
       "date": "June 15, 2026",
       "title": "Sha'Carri's 10.62: Breaking Down the Most Important Race of the Season",
       "id": "shascarri-10-62",
-      "image": "",
+      "image": "/images/1500cover.png",
       "category": "SPRINTS"
     },
     {
@@ -25,7 +25,7 @@
       "date": "June 12, 2026",
       "title": "Why Tokyo's Course Record Means More Than Berlin's Sub-2 Mark",
       "id": "tokyo-course-record",
-      "image": "/images/hock.png",
+      "image": "/images/1500cover.png",
       "category": "MARATHON"
     },
     {
@@ -39,7 +39,7 @@
       "date": "June 10, 2026",
       "title": "The NCAA Track Season Has a Depth Problem, and Nobody Wants to Say It",
       "id": "ncaa-depth-problem",
-      "image": "/images/brunson5.png",
+      "image": "/images/1500cover.png",
       "category": "OPINION"
     },
     {
@@ -53,36 +53,8 @@
       "date": "June 8, 2026",
       "title": "Super Spikes, Super Problems: The Gear Wars Are Distorting Track's Record Books",
       "id": "super-spikes-gear-wars",
-      "image": "",
+      "image": "/images/1500cover.png",
       "category": "TECHNOLOGY"
-    },
-    {
-      "excerpt": "Coach Gjert Ingebrigtsen opens up on the philosophy behind the numbers.",
-      "body": "Article body goes here...",
-      "readTime": "11 min read",
-      "imagePosition": "center",
-      "editorsPick": false,
-      "author": "Marcus Osei",
-      "featured": false,
-      "date": "June 14, 2026",
-      "title": "Inside Jakob's Mile: A Workout-by-Workout Breakdown of the World Record",
-      "id": "jakobs-mile-workout",
-      "image": "",
-      "category": "MIDDLE DISTANCE"
-    },
-    {
-      "excerpt": "Seven decades on, the most mythologized sub-barrier in sports remains misunderstood.",
-      "body": "Article body goes here...",
-      "readTime": "14 min read",
-      "imagePosition": "center",
-      "editorsPick": false,
-      "author": "Leila Hassan",
-      "featured": false,
-      "date": "June 10, 2026",
-      "title": "The Four-Minute Mile at 70: What Roger Bannister's Record Still Teaches Us",
-      "id": "four-minute-mile-70",
-      "image": "",
-      "category": "HISTORY"
     },
     {
       "excerpt": "StatTC is here with the newest 1500m rankings",
@@ -98,20 +70,6 @@
       "image": "/images/1500cover.png",
       "rankingsEvent": "",
       "category": "DISTANCE RUNNING"
-    },
-    {
-      "excerpt": "Three Diamond League wins, a world lead, and a rivalry with Julien Alfred heating up in real time.",
-      "body": "Article body goes here...",
-      "readTime": "7 min read",
-      "imagePosition": "x:13,y:2,w:72,h:81,ar:2.0000",
-      "editorsPick": false,
-      "author": "Maya Thornton",
-      "featured": false,
-      "date": "June 7, 2026",
-      "title": "Sha'Carri Richardson's 2026 Season Is Already Making History",
-      "id": "shacarri-2026-season",
-      "image": "",
-      "category": "SPRINTS"
     }
   ]
 }
