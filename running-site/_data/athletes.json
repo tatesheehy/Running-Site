@@ -84,6 +84,89 @@
       }
     },
     {
+      "photoBackground": "#1a0a0a",
+      "stat4Sub": "2026",
+      "reviewTitle": "Season review",
+      "stat3Sub": "this season",
+      "stat2Sub": "Eugene DL",
+      "stat1Sub": "Eugene DL",
+      "achievements": [
+        {
+          "icon": "🥇",
+          "count": "1x",
+          "label": "Olympic Gold"
+        },
+        {
+          "icon": "🎓",
+          "count": "3x",
+          "label": "NCAA Champion"
+        },
+        {
+          "icon": "🇺🇸",
+          "count": "1x",
+          "label": "American Record"
+        }
+      ],
+      "traits": [
+        {
+          "emoji": "🚀",
+          "label": "Devastating Kick"
+        },
+        {
+          "emoji": "🧘",
+          "label": "Race Patience"
+        },
+        {
+          "emoji": "📐",
+          "label": "Perfect Form"
+        },
+        {
+          "emoji": "🌟",
+          "label": "Rising Star"
+        }
+      ],
+      "height": "6'0\"",
+      "questionBody": "Is this the year Hocker runs a sub-3:45? The talent is there. The question is whether he can find a race with the right pacemakers.",
+      "headlineRest": "who has the kick to beat anyone in the world on the right day.",
+      "name": "Cole Hocker",
+      "headlineKey": "America's next great miler",
+      "flag": "🇺🇸",
+      "seasons": "4",
+      "stat4Value": "#3",
+      "hometown": "Carmel, Indiana",
+      "stat3Value": "2",
+      "questionTitle": "Next question",
+      "photo": "/images/hockercard.png",
+      "stat2Value": "3:46.01",
+      "stat4Label": "WORLD RANK",
+      "stat1Value": "3:46.01",
+      "stat3Label": "PODIUMS",
+      "club": "Nike",
+      "stat2Label": "SEASON BEST",
+      "country": "United States",
+      "stat1Label": "PERSONAL BEST",
+      "weight": "145 lbs",
+      "coach": "Jerry Schumacher",
+      "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
+      "event": "MIDDLE DISTANCE",
+      "id": "cole-hocker",
+      "age": "23",
+      "stats_group": {
+        "stat4Sub": "x",
+        "stat3Sub": "x",
+        "stat2Sub": "x",
+        "stat1Sub": "x",
+        "stat4Value": "x",
+        "stat3Value": "x",
+        "stat2Value": "x",
+        "stat4Label": "x",
+        "stat1Value": "x",
+        "stat3Label": "x",
+        "stat2Label": "x",
+        "stat1Label": "x"
+      }
+    },
+    {
       "photoBackground": "#0a1a0d",
       "stat4Sub": "2026",
       "reviewTitle": "Season review",
@@ -151,89 +234,6 @@
       "event": "DISTANCE RUNNING",
       "id": "yomif-kejelcha",
       "age": "27",
-      "stats_group": {
-        "stat4Sub": "x",
-        "stat3Sub": "x",
-        "stat2Sub": "x",
-        "stat1Sub": "x",
-        "stat4Value": "x",
-        "stat3Value": "x",
-        "stat2Value": "x",
-        "stat4Label": "x",
-        "stat1Value": "x",
-        "stat3Label": "x",
-        "stat2Label": "x",
-        "stat1Label": "x"
-      }
-    },
-    {
-      "photoBackground": "#1a0a0a",
-      "stat4Sub": "2026",
-      "reviewTitle": "Season review",
-      "stat3Sub": "this season",
-      "stat2Sub": "Eugene DL",
-      "stat1Sub": "Eugene DL",
-      "achievements": [
-        {
-          "icon": "🥇",
-          "count": "1x",
-          "label": "Olympic Gold"
-        },
-        {
-          "icon": "🎓",
-          "count": "3x",
-          "label": "NCAA Champion"
-        },
-        {
-          "icon": "🇺🇸",
-          "count": "1x",
-          "label": "American Record"
-        }
-      ],
-      "traits": [
-        {
-          "emoji": "🚀",
-          "label": "Devastating Kick"
-        },
-        {
-          "emoji": "🧘",
-          "label": "Race Patience"
-        },
-        {
-          "emoji": "📐",
-          "label": "Perfect Form"
-        },
-        {
-          "emoji": "🌟",
-          "label": "Rising Star"
-        }
-      ],
-      "height": "6'0\"",
-      "questionBody": "Is this the year Hocker runs a sub-3:45? The talent is there. The question is whether he can find a race with the right pacemakers.",
-      "headlineRest": "who has the kick to beat anyone in the world on the right day.",
-      "name": "Cole Hocker",
-      "headlineKey": "America's next great miler",
-      "flag": "🇺🇸",
-      "seasons": "4",
-      "stat4Value": "#3",
-      "hometown": "Carmel, Indiana",
-      "stat3Value": "2",
-      "questionTitle": "Next question",
-      "photo": "",
-      "stat2Value": "3:46.01",
-      "stat4Label": "WORLD RANK",
-      "stat1Value": "3:46.01",
-      "stat3Label": "PODIUMS",
-      "club": "Nike",
-      "stat2Label": "SEASON BEST",
-      "country": "United States",
-      "stat1Label": "PERSONAL BEST",
-      "weight": "145 lbs",
-      "coach": "Jerry Schumacher",
-      "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
-      "event": "MIDDLE DISTANCE",
-      "id": "cole-hocker",
-      "age": "23",
       "stats_group": {
         "stat4Sub": "x",
         "stat3Sub": "x",
