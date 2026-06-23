@@ -298,11 +298,14 @@ function buildHome() {
   `;
 
   const heroItem = featuredRankings || featured;
-  const heroDest = featuredRankings ? 'rankings.html' : `article.html?id=${heroItem.id}`;
+  const rankingsEvent = featuredRankings && featuredRankings.rankingsEvent;
+  const heroDest = featuredRankings
+    ? `rankings.html${rankingsEvent ? '?event=' + encodeURIComponent(rankingsEvent) : ''}`
+    : `article.html?id=${heroItem.id}`;
   const heroImg  = imgHTML(heroItem.image, heroItem.title, heroItem.imagePosition, 16/9, 'hero-image');
   const heroHtml = `
     <div>
-      <div class="hero-image-wrap">
+      <div class="hero-image-wrap" onclick="goTo('${heroDest}')" style="cursor:pointer">
         ${heroImg}
         <span class="cat-tag">${heroItem.category || 'RANKINGS'}</span>
       </div>
