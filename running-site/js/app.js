@@ -318,19 +318,22 @@ function buildRankingsTableHtml(event, compact) {
     return `<p style="color:var(--muted);padding:20px 0;font-size:14px;">No rankings data yet for ${event}.</p>`;
   }
   const rowsHtml = rows.map(r => {
-    const a = ATHLETES[r.athleteId];
-    if (!a) return '';
+    const a = ATHLETES[r.athleteId] || {};
+    const name    = r.name    || a.name    || r.athleteId || '—';
+    const country = r.country || a.country || '';
+    const flag    = r.flag    || a.flag    || '';
+    const hasCard = r.athleteId && ATHLETES[r.athleteId];
     const rankClass = r.rank === 1 ? '' : 'gray';
     return `
-      <tr onclick="openAthleteCard('${r.athleteId}', ${r.rank})">
+      <tr ${hasCard ? `onclick="openAthleteCard('${r.athleteId}', ${r.rank})"` : ''} style="${hasCard ? '' : 'cursor:default'}">
         <td><span class="rank-num ${rankClass}">${r.rank}</span></td>
         <td class="athlete-name-cell">
-          <div class="name">${a.name}</div>
-          <div class="country">${a.flag} ${a.country}</div>
+          <div class="name">${name}</div>
+          <div class="country">${flag}${flag && country ? ' ' : ''}${country}</div>
         </td>
-        ${compact ? '' : `<td>${a.country}</td>`}
-        <td><span class="best-time">${r.seasonBest}</span></td>
-        <td class="meet-cell">${r.meet}</td>
+        ${compact ? '' : `<td>${country}</td>`}
+        <td><span class="best-time">${r.seasonBest || ''}</span></td>
+        <td class="meet-cell">${r.meet || ''}</td>
       </tr>
     `;
   }).join('');
@@ -515,18 +518,23 @@ function buildRankingsDetail(eventName) {
   const rows = (ev && ev.rows) ? ev.rows : [];
 
   const rowsHtml = rows.length ? rows.map(r => {
-    const a = ATHLETES[r.athleteId];
-    if (!a) return '';
+    // Inline fields on the row take priority; athlete database used as fallback + for modal
+    const a = ATHLETES[r.athleteId] || {};
+    const name    = r.name    || a.name    || r.athleteId || '—';
+    const country = r.country || a.country || '';
+    const flag    = r.flag    || a.flag    || '';
+    const hasCard = r.athleteId && ATHLETES[r.athleteId];
+    const click   = hasCard ? `onclick="openAthleteCard('${r.athleteId}', ${r.rank})"` : '';
     return `
-      <div class="rd-row" onclick="openAthleteCard('${r.athleteId}', ${r.rank})">
+      <div class="rd-row${hasCard ? '' : ' no-card'}" ${click}>
         <div class="rd-rank ${r.rank === 1 ? 'gold' : ''}">${r.rank}</div>
         <div class="rd-info">
-          <div class="rd-name">${a.name}</div>
-          <div class="rd-country">${a.flag} ${a.country}</div>
+          <div class="rd-name">${name}</div>
+          <div class="rd-country">${flag}${flag && country ? ' ' : ''}${country}</div>
         </div>
         <div class="rd-right">
-          <div class="rd-time">${r.seasonBest}</div>
-          <div class="rd-meet">${r.meet}</div>
+          <div class="rd-time">${r.seasonBest || ''}</div>
+          <div class="rd-meet">${r.meet || ''}</div>
         </div>
       </div>
     `;

@@ -142,9 +142,12 @@ collections:
                 widget: list
                 fields:
                   - { label: "Rank", name: rank, widget: number }
-                  - { label: "Athlete ID (must match an athlete's ID exactly)", name: athleteId, widget: string }
+                  - { label: "Athlete Name", name: name, widget: string }
+                  - { label: "Country", name: country, widget: string, required: false }
+                  - { label: "Flag Emoji", name: flag, widget: string, required: false, hint: "e.g. 🇳🇴" }
                   - { label: "Season Best", name: seasonBest, widget: string }
                   - { label: "Meet", name: meet, widget: string }
+                  - { label: "Athlete ID (optional — links to athlete profile card)", name: athleteId, widget: string, required: false, hint: "Must match an athlete's ID in the Athletes section. Leave blank if you don't have a full profile for this athlete." }
 
   # ── SITE SETTINGS ────────────────────────────────────────
   - name: settings

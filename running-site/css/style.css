@@ -1281,6 +1281,9 @@ footer {
   padding: 40px 16px;
 }
 
+.rd-row.no-card { cursor: default; }
+.rd-row.no-card:hover { background: none; padding-left: 16px; }
+
 /* ── ARTICLE DETAIL PAGE ──────────────────────────────────── */
 .article-detail {
   max-width: 720px;
