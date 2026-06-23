@@ -515,6 +515,7 @@
     {
       "photoBackground": "#111111",
       "reviewTitle": "Season review",
+      "collegeLogo": "/images/oregon_ducks_logo.svg.png",
       "height": "5'11",
       "questionBody": "x",
       "headlineRest": "x",
@@ -543,8 +544,10 @@
       "hometown": "x",
       "questionTitle": "Next question",
       "photo": "/images/birnbaum_card.png",
+      "ncaa": true,
       "club": "x",
       "country": "United States",
+      "college": "Oregon",
       "weight": "145",
       "coach": "x",
       "reviewBody": "x",
