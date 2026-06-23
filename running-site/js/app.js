@@ -319,10 +319,10 @@ function buildRankingsTableHtml(event, compact) {
     return `<p style="color:var(--muted);padding:20px 0;font-size:14px;">No rankings data yet for ${event}.</p>`;
   }
   const rowsHtml = rows.map(r => {
-    const a = ATHLETES[r.athleteId] || {};
-    const name    = r.name    || a.name    || r.athleteId || '—';
-    const country = r.country || a.country || '';
-    const flag    = r.flag    || a.flag    || '';
+    const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
+    const name    = (a && a.name)    || r.name    || r.athleteId || '—';
+    const country = (a && a.country) || r.country || '';
+    const flag    = (a && a.flag)    || r.flag    || '';
     const hasCard = r.athleteId && ATHLETES[r.athleteId];
     const rankClass = r.rank === 1 ? '' : 'gray';
     return `
@@ -519,10 +519,10 @@ function buildRankingsDetail(eventName) {
   const rows = (ev && ev.rows) ? ev.rows : [];
 
   const rowsHtml = rows.length ? rows.map(r => {
-    const a = ATHLETES[r.athleteId] || {};
-    const name    = r.name    || a.name    || r.athleteId || '—';
-    const country = r.country || a.country || '';
-    const flag    = r.flag    || a.flag    || '';
+    const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
+    const name    = (a && a.name)    || r.name    || r.athleteId || '—';
+    const country = (a && a.country) || r.country || '';
+    const flag    = (a && a.flag)    || r.flag    || '';
     const hasFullCard = r.athleteId && ATHLETES[r.athleteId];
     // All rows are always clickable — full card if profile exists, mini card otherwise
     const clickData = encodeURIComponent(JSON.stringify({athleteId: r.athleteId||'', rank: r.rank, name, country, flag, seasonBest: r.seasonBest||'', meet: r.meet||''}));

@@ -197,68 +197,11 @@ collections:
                 widget: list
                 fields:
                   - { label: "Rank", name: rank, widget: number }
-                  - { label: "Athlete Name", name: name, widget: string }
-                  - { label: "Country", name: country, widget: string, required: false }
-                  - label: "Flag / Country"
-                    name: flag
-                    widget: select
-                    required: false
-                    options:
-                      - { label: "Argentina (AR)", value: "AR" }
-                      - { label: "Australia (AU)", value: "AU" }
-                      - { label: "Austria (AT)", value: "AT" }
-                      - { label: "Bahrain (BH)", value: "BH" }
-                      - { label: "Belgium (BE)", value: "BE" }
-                      - { label: "Brazil (BR)", value: "BR" }
-                      - { label: "Burundi (BI)", value: "BI" }
-                      - { label: "Cameroon (CM)", value: "CM" }
-                      - { label: "Canada (CA)", value: "CA" }
-                      - { label: "Chile (CL)", value: "CL" }
-                      - { label: "China (CN)", value: "CN" }
-                      - { label: "Colombia (CO)", value: "CO" }
-                      - { label: "Czech Republic (CZ)", value: "CZ" }
-                      - { label: "Denmark (DK)", value: "DK" }
-                      - { label: "Egypt (EG)", value: "EG" }
-                      - { label: "Eritrea (ER)", value: "ER" }
-                      - { label: "Ethiopia (ET)", value: "ET" }
-                      - { label: "Finland (FI)", value: "FI" }
-                      - { label: "France (FR)", value: "FR" }
-                      - { label: "Georgia (GE)", value: "GE" }
-                      - { label: "Germany (DE)", value: "DE" }
-                      - { label: "Ghana (GH)", value: "GH" }
-                      - { label: "Great Britain (GB)", value: "GB" }
-                      - { label: "India (IN)", value: "IN" }
-                      - { label: "Ireland (IE)", value: "IE" }
-                      - { label: "Italy (IT)", value: "IT" }
-                      - { label: "Jamaica (JM)", value: "JM" }
-                      - { label: "Japan (JP)", value: "JP" }
-                      - { label: "Kenya (KE)", value: "KE" }
-                      - { label: "Mexico (MX)", value: "MX" }
-                      - { label: "Morocco (MA)", value: "MA" }
-                      - { label: "Netherlands (NL)", value: "NL" }
-                      - { label: "New Zealand (NZ)", value: "NZ" }
-                      - { label: "Nigeria (NG)", value: "NG" }
-                      - { label: "Northern Ireland (NIR)", value: "NIR" }
-                      - { label: "Norway (NO)", value: "NO" }
-                      - { label: "Poland (PL)", value: "PL" }
-                      - { label: "Portugal (PT)", value: "PT" }
-                      - { label: "Qatar (QA)", value: "QA" }
-                      - { label: "Rwanda (RW)", value: "RW" }
-                      - { label: "Scotland (SCT)", value: "SCT" }
-                      - { label: "Senegal (SN)", value: "SN" }
-                      - { label: "South Africa (ZA)", value: "ZA" }
-                      - { label: "South Korea (KR)", value: "KR" }
-                      - { label: "Spain (ES)", value: "ES" }
-                      - { label: "Sweden (SE)", value: "SE" }
-                      - { label: "Switzerland (CH)", value: "CH" }
-                      - { label: "Tanzania (TZ)", value: "TZ" }
-                      - { label: "Turkey (TR)", value: "TR" }
-                      - { label: "Uganda (UG)", value: "UG" }
-                      - { label: "United States (US)", value: "US" }
-                      - { label: "Wales (WAL)", value: "WAL" }
-                  - { label: "Season Best", name: seasonBest, widget: string }
-                  - { label: "Meet", name: meet, widget: string }
-                  - { label: "Athlete ID (optional — links to athlete profile card)", name: athleteId, widget: string, required: false, hint: "Must match an athlete's ID in the Athletes section. Leave blank if you don't have a full profile for this athlete." }
+                  - { label: "Athlete ID", name: athleteId, widget: string, required: false, hint: "Enter the athlete's ID from the Athletes section (e.g. jakob-ingebrigtsen). Name, country, and flag will be auto-filled from their profile. Leave blank for athletes without a profile." }
+                  - { label: "Season Best", name: seasonBest, widget: string, required: false }
+                  - { label: "Meet", name: meet, widget: string, required: false }
+                  - { label: "Athlete Name (leave blank if Athlete ID is set — auto-filled)", name: name, widget: string, required: false }
+                  - { label: "Country (leave blank if Athlete ID is set — auto-filled)", name: country, widget: string, required: false }
 
   # ── SITE SETTINGS ────────────────────────────────────────
   - name: settings
