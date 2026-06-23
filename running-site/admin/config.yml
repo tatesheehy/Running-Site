@@ -34,9 +34,19 @@ collections:
                   - TECHNOLOGY
                   - HISTORY
                   - NEWS
-              - { label: "Featured (home page hero — only one!)", name: featured, widget: boolean, default: false }
-              - { label: "Editor's Pick (home page sidebar)", name: editorsPick, widget: boolean, default: false }
-              - { label: "Author", name: author, widget: string }
+              - label: "Content Type"
+                name: type
+                widget: select
+                options:
+                  - { label: "Article", value: "article" }
+                  - { label: "Rankings Embed", value: "rankings" }
+                default: "article"
+                required: false
+                hint: "Rankings Embed shows a live mini rankings table in the home page grid instead of an article card."
+              - { label: "Rankings Event (Rankings Embed only — must match exactly, e.g. 1500m)", name: rankingsEvent, widget: string, required: false }
+              - { label: "Featured (home page hero — only one! Articles only)", name: featured, widget: boolean, default: false }
+              - { label: "Editor's Pick (home page sidebar — Articles only)", name: editorsPick, widget: boolean, default: false }
+              - { label: "Author", name: author, widget: string, required: false }
               - { label: "Date (e.g. June 21, 2026)", name: date, widget: string }
               - { label: "Read Time (e.g. 8 min read)", name: readTime, widget: string }
               - { label: "Cover Image", name: image, widget: image, required: false, default: "" }

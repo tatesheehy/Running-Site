@@ -237,20 +237,20 @@ function imgHTML(src, alt, cropStr, containerAR, cssClass) {
 
 // ── ARTICLE CARD HTML ──────────────────────────────────────
 function articleCard(a) {
+  const dest = a.type === 'rankings' ? 'rankings.html' : `article.html?id=${a.id}`;
   const img = imgHTML(a.image, a.title, a.imagePosition, 16/10, 'article-card-img');
 
   return `
-    <article class="article-card" onclick="goTo('article.html?id=${a.id}')">
+    <article class="article-card" onclick="goTo('${dest}')">
       <div class="article-card-img-wrap">
         ${img}
-        <span class="cat-tag">${a.category}</span>
+        <span class="cat-tag">${a.category || 'RANKINGS'}</span>
       </div>
       <h3 class="article-card-title">${a.title}</h3>
       ${a.excerpt ? `<p class="article-card-excerpt">${a.excerpt}</p>` : ''}
       <div class="meta">
-        <span class="author">${a.author}</span>
-        <span class="sep">·</span>${a.date}
-        <span class="sep">·</span>${a.readTime}
+        ${a.author ? `<span class="author">${a.author}</span><span class="sep">·</span>` : ''}${a.date || ''}
+        ${a.readTime ? `<span class="sep">·</span>${a.readTime}` : ''}
       </div>
     </article>
   `;
@@ -258,11 +258,10 @@ function articleCard(a) {
 
 // ── HOME PAGE ─────────────────────────────────────────────
 function buildHome() {
-  const featured = ARTICLES.find(a => a.featured) || ARTICLES[0];
-  const picks = ARTICLES.filter(a => a.editorsPick).slice(0, 5);
+  const featuredRankings = ARTICLES.find(a => a.featured && a.type === 'rankings');
+  const featured = ARTICLES.find(a => a.featured && a.type !== 'rankings') || ARTICLES.find(a => a.type !== 'rankings') || ARTICLES[0];
+  const picks = ARTICLES.filter(a => a.editorsPick && a.type !== 'rankings').slice(0, 5);
   const latest = ARTICLES.filter(a => !a.featured).slice(0, 6);
-
-  const heroImg = imgHTML(featured.image, featured.title, featured.imagePosition, 16/9, 'hero-image');
 
   const picksHtml = picks.map(p => `
     <div class="ep-item" onclick="goTo('article.html?id=${p.id}')">
@@ -294,24 +293,30 @@ function buildHome() {
     </div>
   `;
 
+  const heroItem = featuredRankings || featured;
+  const heroDest = featuredRankings ? 'rankings.html' : `article.html?id=${heroItem.id}`;
+  const heroImg  = imgHTML(heroItem.image, heroItem.title, heroItem.imagePosition, 16/9, 'hero-image');
+  const heroHtml = `
+    <div>
+      <div class="hero-image-wrap">
+        ${heroImg}
+        <span class="cat-tag">${heroItem.category || 'RANKINGS'}</span>
+      </div>
+      <div class="hero-body">
+        <h1 class="hero-title" onclick="goTo('${heroDest}')">${heroItem.title}</h1>
+        <p class="hero-excerpt">${heroItem.excerpt || ''}</p>
+        <div class="meta">
+          ${heroItem.author ? `By <span class="author">${heroItem.author}</span><span class="sep">·</span>` : ''}${heroItem.date || ''}
+          ${heroItem.readTime ? `<span class="sep">·</span>${heroItem.readTime}` : ''}
+        </div>
+      </div>
+    </div>`;
+
   document.getElementById('main').innerHTML = `
     <div class="container">
       ${SITE.homeTagline ? `<div class="home-tagline">${SITE.homeTagline}</div>` : ''}
       <section class="hero">
-        <div>
-          <div class="hero-image-wrap">
-            ${heroImg}
-            <span class="cat-tag">${featured.category}</span>
-          </div>
-          <div class="hero-body">
-            <h1 class="hero-title" onclick="goTo('article.html?id=${featured.id}')">${featured.title}</h1>
-            <p class="hero-excerpt">${featured.excerpt}</p>
-            <div class="meta">By <span class="author">${featured.author}</span>
-              <span class="sep">·</span>${featured.date}
-              <span class="sep">·</span>${featured.readTime}
-            </div>
-          </div>
-        </div>
+        ${heroHtml}
         <div class="editors-picks">
           <div class="ep-label">${editorPicksLabel}</div>
           ${picksHtml}
