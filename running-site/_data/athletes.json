@@ -5,36 +5,36 @@
       "reviewTitle": "Season review",
       "achievements": [
         {
-          "icon": "\ud83e\udd47",
+          "icon": "🥇",
           "count": "2x",
           "label": "Olympic Gold"
         },
         {
-          "icon": "\ud83c\udf0d",
+          "icon": "🌍",
           "count": "1x",
           "label": "World Champ"
         },
         {
-          "icon": "\u26a1",
+          "icon": "⚡",
           "count": "1x",
           "label": "World Record"
         }
       ],
       "traits": [
         {
-          "emoji": "\u26a1",
+          "emoji": "⚡",
           "label": "Explosive Kick"
         },
         {
-          "emoji": "\ud83e\udde0",
+          "emoji": "🧠",
           "label": "Tactical IQ"
         },
         {
-          "emoji": "\ud83c\udfd4\ufe0f",
+          "emoji": "🏔️",
           "label": "Front Runner"
         },
         {
-          "emoji": "\ud83d\udd25",
+          "emoji": "🔥",
           "label": "Mental Edge"
         }
       ],
@@ -45,17 +45,6 @@
       "headlineKey": "Generational talent",
       "flag": "NO",
       "seasons": "8",
-      "hometown": "Sandnes, Norway",
-      "questionTitle": "Next question",
-      "photo": "/images/jakobcard.png",
-      "club": "Sandnes IL",
-      "country": "Norway",
-      "weight": "132 lbs",
-      "coach": "Gjert Ingebrigtsen",
-      "reviewBody": "Ingebrigtsen has yet to race in 2026. The Norwegian may return from racing in mid-July following surgery to remove damaged tissue and scarring from the sheath surrounding his left Achilles tendon in February of this year. ",
-      "event": "MIDDLE DISTANCE + DISTANCE",
-      "id": "jakob-ingebrigtsen",
-      "age": "25",
       "prs": [
         {
           "event": "1500m",
@@ -69,19 +58,30 @@
           "event": "3000m",
           "time": "7:17.55"
         }
-      ]
+      ],
+      "hometown": "Sandnes, Norway",
+      "questionTitle": "Next question",
+      "photo": "/images/jakobcard.png",
+      "club": "Sandnes IL",
+      "country": "Norway",
+      "weight": "132 lbs",
+      "coach": "Gjert Ingebrigtsen",
+      "reviewBody": "Ingebrigtsen has yet to race in 2026. The Norwegian may return from racing in mid-July following surgery to remove damaged tissue and scarring from the sheath surrounding his left Achilles tendon in February of this year. ",
+      "event": "MIDDLE DISTANCE + DISTANCE",
+      "id": "jakob-ingebrigtsen",
+      "age": "25"
     },
     {
       "photoBackground": "#1a0a0a",
       "reviewTitle": "Season review",
       "achievements": [
         {
-          "icon": "\ud83e\udd47",
+          "icon": "🥇",
           "count": "1x",
           "label": "Olympic Gold"
         },
         {
-          "icon": "\ud83c\udf93",
+          "icon": "🎓",
           "count": "3x",
           "label": "NCAA Champion"
         },
@@ -93,19 +93,19 @@
       ],
       "traits": [
         {
-          "emoji": "\ud83d\ude80",
+          "emoji": "🚀",
           "label": "Devastating Kick"
         },
         {
-          "emoji": "\ud83e\uddd8",
+          "emoji": "🧘",
           "label": "Race Patience"
         },
         {
-          "emoji": "\ud83d\udcd0",
+          "emoji": "📐",
           "label": "Perfect Form"
         },
         {
-          "emoji": "\ud83c\udf1f",
+          "emoji": "🌟",
           "label": "Rising Star"
         }
       ],
@@ -116,17 +116,6 @@
       "headlineKey": "America's next great miler",
       "flag": "US",
       "seasons": "4",
-      "hometown": "Carmel, Indiana",
-      "questionTitle": "Next question",
-      "photo": "/images/hockercard.png",
-      "club": "Nike",
-      "country": "United States",
-      "weight": "145 lbs",
-      "coach": "Jerry Schumacher",
-      "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
-      "event": "MIDDLE DISTANCE + DISTANCE",
-      "id": "cole-hocker",
-      "age": "23",
       "prs": [
         {
           "event": "1500m",
@@ -140,43 +129,54 @@
           "event": "3000m",
           "time": "7:23.14"
         }
-      ]
+      ],
+      "hometown": "Carmel, Indiana",
+      "questionTitle": "Next question",
+      "photo": "/images/hockercard.png",
+      "club": "Nike",
+      "country": "United States",
+      "weight": "145 lbs",
+      "coach": "Jerry Schumacher",
+      "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
+      "event": "MIDDLE DISTANCE + DISTANCE",
+      "id": "cole-hocker",
+      "age": "23"
     },
     {
       "photoBackground": "#0a1a0d",
       "reviewTitle": "Season review",
       "achievements": [
         {
-          "icon": "\ud83c\udfdf\ufe0f",
+          "icon": "🏟️",
           "count": "2x",
           "label": "World Indoor Champ"
         },
         {
-          "icon": "\ud83d\udc8e",
+          "icon": "💎",
           "count": "3x",
           "label": "Diamond League Win"
         },
         {
-          "icon": "\ud83d\udccb",
+          "icon": "📋",
           "count": "0x",
           "label": "Olympic Gold"
         }
       ],
       "traits": [
         {
-          "emoji": "\ud83d\udca8",
+          "emoji": "💨",
           "label": "Pure Speed"
         },
         {
-          "emoji": "\ud83c\udfaf",
+          "emoji": "🎯",
           "label": "Consistency"
         },
         {
-          "emoji": "\ud83d\udcc8",
+          "emoji": "📈",
           "label": "Indoor King"
         },
         {
-          "emoji": "\ud83e\udd2b",
+          "emoji": "🤫",
           "label": "Quiet Assassin"
         }
       ],
@@ -187,17 +187,6 @@
       "headlineKey": "The quiet assassin",
       "flag": "PT",
       "seasons": "9",
-      "hometown": "Bekoji, Ethiopia",
-      "questionTitle": "Next question",
-      "photo": "/images/nader_card.png",
-      "club": "Nike",
-      "country": "Portugal",
-      "weight": "115 lbs",
-      "coach": "Self-coached",
-      "reviewBody": "Kejelcha has been a model of consistency in 2026. While he hasn't grabbed the headlines, his results speak for themselves \u2014 four top-3 finishes in Diamond League events and a season best of 3:45.12.",
-      "event": "MIDDLE DISTANCE",
-      "id": "isaac-nader",
-      "age": "27",
       "prs": [
         {
           "event": "1500m",
@@ -207,43 +196,54 @@
           "event": "Mile",
           "time": "3:48.25"
         }
-      ]
+      ],
+      "hometown": "Bekoji, Ethiopia",
+      "questionTitle": "Next question",
+      "photo": "/images/nader_card.png",
+      "club": "Nike",
+      "country": "Portugal",
+      "weight": "115 lbs",
+      "coach": "Self-coached",
+      "reviewBody": "Kejelcha has been a model of consistency in 2026. While he hasn't grabbed the headlines, his results speak for themselves — four top-3 finishes in Diamond League events and a season best of 3:45.12.",
+      "event": "MIDDLE DISTANCE",
+      "id": "isaac-nader",
+      "age": "27"
     },
     {
       "photoBackground": "#0a0a1a",
       "reviewTitle": "Season review",
       "achievements": [
         {
-          "icon": "\ud83c\udf0d",
+          "icon": "🌍",
           "count": "1x",
           "label": "World Champion"
         },
         {
-          "icon": "\ud83e\udd48",
+          "icon": "🥈",
           "count": "1x",
           "label": "Olympic Silver"
         },
         {
-          "icon": "\ud83d\udc8e",
+          "icon": "💎",
           "count": "2x",
           "label": "DL Champion"
         }
       ],
       "traits": [
         {
-          "emoji": "\ud83d\udcaa",
+          "emoji": "💪",
           "label": "Raw Strength"
         },
         {
-          "emoji": "\ud83c\udfc3",
+          "emoji": "🏃",
           "label": "Mid-Race Surge"
         },
         {
-          "emoji": "\ud83e\udde0",
+          "emoji": "🧠",
           "label": "Race Savvy"
         },
         {
-          "emoji": "\ud83c\udfcb\ufe0f",
+          "emoji": "🏋️",
           "label": "Physical Power"
         }
       ],
@@ -254,17 +254,6 @@
       "headlineKey": "The power runner",
       "flag": "GB",
       "seasons": "6",
-      "hometown": "Edinburgh, Scotland",
-      "questionTitle": "Next question",
-      "photo": "/images/kerrcard.png",
-      "club": "Adidas",
-      "country": "Great Britain",
-      "weight": "150 lbs",
-      "coach": "Gary Lough",
-      "reviewBody": "Kerr continues to be one of the most physically imposing presences in the 1500m field. His ability to surge mid-race and break the competition is unmatched.",
-      "event": "MIDDLE DISTANCE",
-      "id": "josh-kerr",
-      "age": "26",
       "prs": [
         {
           "event": "1500m",
@@ -278,43 +267,54 @@
           "event": "3000m",
           "time": "7:30.14"
         }
-      ]
+      ],
+      "hometown": "Edinburgh, Scotland",
+      "questionTitle": "Next question",
+      "photo": "/images/kerrcard.png",
+      "club": "Adidas",
+      "country": "Great Britain",
+      "weight": "150 lbs",
+      "coach": "Gary Lough",
+      "reviewBody": "Kerr continues to be one of the most physically imposing presences in the 1500m field. His ability to surge mid-race and break the competition is unmatched.",
+      "event": "MIDDLE DISTANCE",
+      "id": "josh-kerr",
+      "age": "26"
     },
     {
       "photoBackground": "#0a1a0a",
       "reviewTitle": "Season review",
       "achievements": [
         {
-          "icon": "\ud83c\udf0d",
+          "icon": "🌍",
           "count": "2x",
           "label": "World Champion"
         },
         {
-          "icon": "\ud83e\udd48",
+          "icon": "🥈",
           "count": "1x",
           "label": "Olympic Silver"
         },
         {
-          "icon": "\ud83d\udc8e",
+          "icon": "💎",
           "count": "4x",
           "label": "Diamond League Win"
         }
       ],
       "traits": [
         {
-          "emoji": "\ud83e\udd81",
+          "emoji": "🦁",
           "label": "Killer Instinct"
         },
         {
-          "emoji": "\ud83c\udfc6",
+          "emoji": "🏆",
           "label": "Championship DNA"
         },
         {
-          "emoji": "\ud83c\udf96\ufe0f",
+          "emoji": "🎖️",
           "label": "Proven Winner"
         },
         {
-          "emoji": "\ud83d\udd04",
+          "emoji": "🔄",
           "label": "Long Stride"
         }
       ],
@@ -325,6 +325,16 @@
       "headlineKey": "The veteran champion",
       "flag": "KE",
       "seasons": "8",
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:28.28"
+        },
+        {
+          "event": "Mile",
+          "time": "3:47.71"
+        }
+      ],
       "hometown": "Kericho, Kenya",
       "questionTitle": "Next question",
       "photo": "/images/timothy_card.png",
@@ -335,17 +345,7 @@
       "reviewBody": "Cheruiyot has shown signs of returning to his dominant best after a couple of injury-interrupted campaigns. His Shanghai win was a reminder that when he's right, he can run with anyone.",
       "event": "MIDDLE DISTANCE",
       "id": "timothy-cheruiyot",
-      "age": "28",
-      "prs": [
-        {
-          "event": "1500m",
-          "time": "3:28.28"
-        },
-        {
-          "event": "Mile",
-          "time": "3:47.71"
-        }
-      ]
+      "age": "28"
     },
     {
       "photoBackground": "#111111",
@@ -357,17 +357,6 @@
       "headlineKey": "xx",
       "flag": "NL",
       "seasons": "3",
-      "hometown": "xx",
-      "questionTitle": "Next question",
-      "photo": "/images/laros_card.png",
-      "club": "xx",
-      "country": "Netherlands",
-      "weight": "145",
-      "coach": "xx",
-      "reviewBody": "xx",
-      "event": "MIDDLE DISTANCE",
-      "id": "niels-laros",
-      "age": "21",
       "prs": [
         {
           "event": "1500m",
@@ -381,7 +370,18 @@
           "event": "3000m",
           "time": "7:29.49"
         }
-      ]
+      ],
+      "hometown": "xx",
+      "questionTitle": "Next question",
+      "photo": "/images/laros_card.png",
+      "club": "xx",
+      "country": "Netherlands",
+      "weight": "145",
+      "coach": "xx",
+      "reviewBody": "xx",
+      "event": "MIDDLE DISTANCE",
+      "id": "niels-laros",
+      "age": "21"
     },
     {
       "photoBackground": "#111111",
@@ -394,17 +394,6 @@
       "headlineKey": "xx",
       "flag": "AU",
       "seasons": "2",
-      "hometown": "xx",
-      "questionTitle": "Next question",
-      "photo": "/images/myers_card.png",
-      "club": "xx",
-      "country": "Australia",
-      "weight": "150",
-      "coach": "xx",
-      "reviewBody": "x",
-      "event": "MIDDLE DISTANCE",
-      "id": "cameron-myers",
-      "age": "19",
       "prs": [
         {
           "event": "1500m",
@@ -418,7 +407,18 @@
           "event": "3000m",
           "time": "7:27.57"
         }
-      ]
+      ],
+      "hometown": "xx",
+      "questionTitle": "Next question",
+      "photo": "/images/myers_card.png",
+      "club": "xx",
+      "country": "Australia",
+      "weight": "150",
+      "coach": "xx",
+      "reviewBody": "x",
+      "event": "MIDDLE DISTANCE",
+      "id": "cameron-myers",
+      "age": "19"
     },
     {
       "photoBackground": "#111111",
@@ -430,6 +430,16 @@
       "headlineKey": "xx",
       "flag": "SCT",
       "seasons": "12",
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:29.23"
+        },
+        {
+          "event": "Mile",
+          "time": "3:47.82"
+        }
+      ],
       "hometown": "xx",
       "questionTitle": "Next question",
       "photo": "/images/wightman_card.png",
@@ -440,17 +450,7 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "jake-wightman",
-      "age": "32",
-      "prs": [
-        {
-          "event": "1500m",
-          "time": "3:29.23"
-        },
-        {
-          "event": "Mile",
-          "time": "3:47.82"
-        }
-      ]
+      "age": "32"
     },
     {
       "photoBackground": "#111111",
@@ -462,6 +462,12 @@
       "headlineKey": "x",
       "flag": "KE",
       "seasons": "xx",
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:27.72"
+        }
+      ],
       "hometown": "x",
       "questionTitle": "Next question",
       "photo": "/images/phanuel_card.png",
@@ -472,13 +478,7 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "phanuel-koech",
-      "age": "19",
-      "prs": [
-        {
-          "event": "1500m",
-          "time": "3:27.72"
-        }
-      ]
+      "age": "19"
     },
     {
       "photoBackground": "#111111",
@@ -490,6 +490,16 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "x",
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:27.80"
+        },
+        {
+          "event": "Mile",
+          "time": "3:43.97"
+        }
+      ],
       "hometown": "x",
       "questionTitle": "Next question",
       "photo": "/images/nuguse_card.png",
@@ -500,17 +510,7 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "yared-nuguse",
-      "age": "x",
-      "prs": [
-        {
-          "event": "1500m",
-          "time": "3:27.80"
-        },
-        {
-          "event": "Mile",
-          "time": "3:43.97"
-        }
-      ]
+      "age": "x"
     },
     {
       "photoBackground": "#111111",
@@ -522,6 +522,24 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "0",
+      "prs": [
+        {
+          "event": "800m",
+          "time": "1:44.67"
+        },
+        {
+          "event": "1500m",
+          "time": "3:31.69"
+        },
+        {
+          "event": "5000m",
+          "time": "13:19.73"
+        },
+        {
+          "event": "Mile",
+          "time": "3:52.81"
+        }
+      ],
       "hometown": "x",
       "questionTitle": "Next question",
       "photo": "/images/birnbaum_card.png",
@@ -532,17 +550,7 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "simeon-birnbaum",
-      "age": "21",
-      "prs": [
-        {
-          "event": "1500m",
-          "time": "3:31.69"
-        },
-        {
-          "event": "Mile",
-          "time": "3:52.81"
-        }
-      ]
+      "age": "21"
     },
     {
       "photoBackground": "#111111",
@@ -554,6 +562,20 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "9",
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:30.90"
+        },
+        {
+          "event": "Mile",
+          "time": "3:49.37"
+        },
+        {
+          "event": "5000m",
+          "time": "13:13.20"
+        }
+      ],
       "hometown": "x",
       "questionTitle": "Next question",
       "photo": "/images/ciattei_card.png",
@@ -564,17 +586,7 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "vincent-ciattei",
-      "age": "31",
-      "prs": [
-        {
-          "event": "1500m",
-          "time": "3:30.90"
-        },
-        {
-          "event": "Mile",
-          "time": "3:49.37"
-        }
-      ]
+      "age": "31"
     },
     {
       "photoBackground": "#111111",
@@ -586,6 +598,24 @@
       "headlineKey": "x",
       "flag": "KE",
       "seasons": "3",
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:29.91"
+        },
+        {
+          "event": "Mile",
+          "time": "3:47.46"
+        },
+        {
+          "event": "2000m",
+          "time": "4:48.14"
+        },
+        {
+          "event": "3000m",
+          "time": "7:26.11"
+        }
+      ],
       "hometown": "x",
       "questionTitle": "Next question",
       "photo": "/images/reynold_card.png",
@@ -596,17 +626,7 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "reynold-cheruiyot",
-      "age": "21",
-      "prs": [
-        {
-          "event": "1500m",
-          "time": "3:29.91"
-        },
-        {
-          "event": "Mile",
-          "time": "3:47.46"
-        }
-      ]
+      "age": "21"
     },
     {
       "photoBackground": "#111111",
@@ -618,6 +638,24 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "4",
+      "prs": [
+        {
+          "event": "800m",
+          "time": "1:43.64"
+        },
+        {
+          "event": "1500m",
+          "time": "3:29.45"
+        },
+        {
+          "event": "Mile",
+          "time": "3:46.90"
+        },
+        {
+          "event": "2000m",
+          "time": "4:48.79"
+        }
+      ],
       "hometown": "x",
       "questionTitle": "Next question",
       "photo": "/images/hobbs_card.png",
@@ -628,17 +666,7 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "hobbs-kessler",
-      "age": "23",
-      "prs": [
-        {
-          "event": "1500m",
-          "time": "3:29.45"
-        },
-        {
-          "event": "Mile",
-          "time": "3:46.90"
-        }
-      ]
+      "age": "23"
     },
     {
       "photoBackground": "#111111",
@@ -650,6 +678,16 @@
       "headlineKey": "x",
       "flag": "FR",
       "seasons": "10",
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:27.49"
+        },
+        {
+          "event": "3000m",
+          "time": "7:31.50"
+        }
+      ],
       "hometown": "x",
       "questionTitle": "Next question",
       "photo": "/images/habz_card.png",
@@ -660,17 +698,7 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "azeddine-habz",
-      "age": "32",
-      "prs": [
-        {
-          "event": "1500m",
-          "time": "3:27.49"
-        },
-        {
-          "event": "3000m",
-          "time": "7:31.50"
-        }
-      ]
+      "age": "32"
     },
     {
       "photoBackground": "#111111",
@@ -682,6 +710,16 @@
       "headlineKey": "x",
       "flag": "IE",
       "seasons": "8",
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:30.42"
+        },
+        {
+          "event": "Mile",
+          "time": "3:49.26"
+        }
+      ],
       "hometown": "x",
       "questionTitle": "Next question",
       "photo": "/images/coscoran_card.png",
@@ -692,17 +730,7 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "andrew-coscoran",
-      "age": "30",
-      "prs": [
-        {
-          "event": "1500m",
-          "time": "3:30.42"
-        },
-        {
-          "event": "Mile",
-          "time": "3:49.26"
-        }
-      ]
+      "age": "30"
     },
     {
       "photoBackground": "#111111",
@@ -714,6 +742,24 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "7",
+      "prs": [
+        {
+          "event": "800m",
+          "time": "1:43.32"
+        },
+        {
+          "event": "1500m",
+          "time": "3:30.17"
+        },
+        {
+          "event": "Mile",
+          "time": "4:00.24"
+        },
+        {
+          "event": "1000 Metres",
+          "time": "2:15.15"
+        }
+      ],
       "hometown": "x",
       "questionTitle": "Next question",
       "photo": "/images/jonahkoech_card.png",
@@ -724,13 +770,7 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "jonah-koech",
-      "age": "29",
-      "prs": [
-        {
-          "event": "1500m",
-          "time": "3:30.17"
-        }
-      ]
+      "age": "29"
     },
     {
       "photoBackground": "#111111",
@@ -742,6 +782,12 @@
       "headlineKey": "x",
       "flag": "MA",
       "seasons": "4",
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:31.82"
+        }
+      ],
       "hometown": "x",
       "questionTitle": "Next question",
       "photo": "/images/attaoui_card.png",
@@ -752,13 +798,7 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "mohamed-attaoui",
-      "age": "24",
-      "prs": [
-        {
-          "event": "1500m",
-          "time": "3:31.82"
-        }
-      ]
+      "age": "24"
     }
   ]
 }
