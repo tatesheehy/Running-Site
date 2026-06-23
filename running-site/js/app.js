@@ -518,15 +518,15 @@ function buildRankingsDetail(eventName) {
   const rows = (ev && ev.rows) ? ev.rows : [];
 
   const rowsHtml = rows.length ? rows.map(r => {
-    // Inline fields on the row take priority; athlete database used as fallback + for modal
     const a = ATHLETES[r.athleteId] || {};
     const name    = r.name    || a.name    || r.athleteId || '—';
     const country = r.country || a.country || '';
     const flag    = r.flag    || a.flag    || '';
-    const hasCard = r.athleteId && ATHLETES[r.athleteId];
-    const click   = hasCard ? `onclick="openAthleteCard('${r.athleteId}', ${r.rank})"` : '';
+    const hasFullCard = r.athleteId && ATHLETES[r.athleteId];
+    // All rows are always clickable — full card if profile exists, mini card otherwise
+    const clickData = encodeURIComponent(JSON.stringify({athleteId: r.athleteId||'', rank: r.rank, name, country, flag, seasonBest: r.seasonBest||'', meet: r.meet||''}));
     return `
-      <div class="rd-row${hasCard ? '' : ' no-card'}" ${click}>
+      <div class="rd-row" onclick="openRankingRow('${clickData}')">
         <div class="rd-rank ${r.rank === 1 ? 'gold' : ''}">${r.rank}</div>
         <div class="rd-info">
           <div class="rd-name">${name}</div>
@@ -685,6 +685,41 @@ function closeAthleteCard() {
 window.openAthleteCard = openAthleteCard;
 window.closeAthleteCard = closeAthleteCard;
 window.goTo = goTo;
+
+// Opens full card if athlete profile exists, otherwise shows a compact mini card
+window.openRankingRow = function(encodedData) {
+  const r = JSON.parse(decodeURIComponent(encodedData));
+  if (r.athleteId && ATHLETES[r.athleteId]) {
+    openAthleteCard(r.athleteId, r.rank);
+    return;
+  }
+  // Mini card for athletes without a full profile
+  const overlay = qs('#athlete-modal');
+  const inner = qs('#athlete-card-inner');
+  inner.innerHTML = `
+    <div class="card-header">
+      <div class="card-rank">${r.rank}</div>
+      <div class="card-header-center">
+        <div class="card-athlete-name">${r.name}</div>
+        <span class="card-athlete-country">${r.flag}${r.flag && r.country ? ' ' : ''}${r.country}</span>
+      </div>
+      <button class="card-close" onclick="closeAthleteCard()" aria-label="Close">×</button>
+    </div>
+    <div class="mini-card-body">
+      <div class="mini-card-stat">
+        <div class="mini-card-stat-value">${r.seasonBest || '—'}</div>
+        <div class="mini-card-stat-label">Season Best</div>
+      </div>
+      <div class="mini-card-stat">
+        <div class="mini-card-stat-value">${r.meet || '—'}</div>
+        <div class="mini-card-stat-label">Meet</div>
+      </div>
+      <div class="mini-card-note">Full athlete profile coming soon.</div>
+    </div>
+  `;
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+};
 
 // ── FOOTER ────────────────────────────────────────────────
 function buildFooter() {

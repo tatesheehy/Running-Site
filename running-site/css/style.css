@@ -1281,8 +1281,41 @@ footer {
   padding: 40px 16px;
 }
 
-.rd-row.no-card { cursor: default; }
-.rd-row.no-card:hover { background: none; padding-left: 16px; }
+/* ── MINI ATHLETE CARD ────────────────────────────────────── */
+.mini-card-body {
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  min-height: 200px;
+  justify-content: center;
+}
+
+.mini-card-stat { text-align: center; }
+
+.mini-card-stat-value {
+  font-family: 'Courier New', monospace;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.mini-card-stat-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.mini-card-note {
+  font-size: 13px;
+  color: var(--muted);
+  font-style: italic;
+  text-align: center;
+}
 
 /* ── ARTICLE DETAIL PAGE ──────────────────────────────────── */
 .article-detail {
