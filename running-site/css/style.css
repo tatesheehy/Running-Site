@@ -20,6 +20,9 @@
   --font-display: 'Barlow Condensed', sans-serif;
   --font-body: 'Inter', sans-serif;
   --max-width: 1200px;
+  --radius-sm: 4px;
+  --radius: 6px;
+  --radius-lg: 10px;
 }
 
 html { scroll-behavior: smooth; }
@@ -221,7 +224,7 @@ button { font-family: inherit; }
   font-size: 13px;
   font-weight: 700;
   padding: 9px 20px;
-  border-radius: 3px;
+  border-radius: var(--radius);
   letter-spacing: 0.03em;
   white-space: nowrap;
   transition: opacity 0.15s;
@@ -247,6 +250,7 @@ button { font-family: inherit; }
   letter-spacing: 0.1em;
   white-space: nowrap;
   flex-shrink: 0;
+  border-radius: var(--radius-sm);
 }
 
 .breaking-text {
@@ -299,6 +303,7 @@ button { font-family: inherit; }
   font-weight: 700;
   padding: 3px 8px;
   letter-spacing: 0.08em;
+  border-radius: var(--radius-sm);
 }
 
 /* ── IMAGE PLACEHOLDER ────────────────────────────────────── */
@@ -341,6 +346,7 @@ button { font-family: inherit; }
   overflow: hidden;
   aspect-ratio: 16/9;
   width: 100%;
+  border-radius: var(--radius);
 }
 
 .hero-image, .hero-image-wrap .img-placeholder {
@@ -453,6 +459,7 @@ button { font-family: inherit; }
   overflow: hidden;
   aspect-ratio: 16/10;
   width: 100%;
+  border-radius: var(--radius);
 }
 
 .article-card-img, .article-card-img-wrap .img-placeholder {
@@ -492,6 +499,7 @@ button { font-family: inherit; }
   border: 1px solid var(--border);
   padding: 28px;
   margin-bottom: 52px;
+  border-radius: var(--radius-lg);
 }
 
 .rw-header {
@@ -516,7 +524,7 @@ button { font-family: inherit; }
   border: 1.5px solid #ccc;
   background: transparent;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: var(--radius);
   transition: all 0.15s;
   color: var(--text);
 }
@@ -619,7 +627,7 @@ button { font-family: inherit; }
   max-width: 880px;
   max-height: 88vh;
   overflow-y: auto;
-  border-radius: 2px;
+  border-radius: var(--radius-lg);
   box-shadow: 0 24px 72px rgba(0, 0, 0, 0.5);
   transform: translateY(8px);
   transition: transform 0.2s;
@@ -754,6 +762,7 @@ button { font-family: inherit; }
   padding: 4px 10px;
   letter-spacing: 0.12em;
   z-index: 2;
+  border-radius: var(--radius-sm);
 }
 
 .card-info { padding: 16px; }
@@ -794,6 +803,8 @@ button { font-family: inherit; }
   background: #2e2e2e;
   margin-bottom: 14px;
   border: 1px solid #2e2e2e;
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 
 .card-stat {
@@ -1016,7 +1027,7 @@ footer {
   border: 1.5px solid var(--border);
   background: none;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: var(--radius);
   transition: all 0.15s;
   color: var(--text);
 }
@@ -1034,7 +1045,7 @@ footer {
   border: 1.5px solid var(--dark);
   background: none;
   cursor: pointer;
-  border-radius: 3px;
+  border-radius: var(--radius);
   transition: all 0.15s;
   color: var(--text);
   letter-spacing: 0.02em;
@@ -1089,7 +1100,7 @@ footer {
 .rankings-cards-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3px;
+  gap: 10px;
 }
 
 .ranking-card {
@@ -1104,6 +1115,7 @@ footer {
   padding: 28px 32px;
   transition: background 0.28s;
   text-decoration: none;
+  border-radius: var(--radius-lg);
 }
 
 .ranking-card:hover { background: var(--accent); }
