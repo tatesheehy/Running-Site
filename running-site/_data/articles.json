@@ -1,20 +1,6 @@
 {
   "items": [
     {
-      "excerpt": "At a time when training data is public and everyone runs the same workouts, Ethiopia's quiet genius has found something money can't buy: a way of moving that no algorithm predicted.",
-      "body": "Your full article text goes here. Add as much or as little as you want.\n\n## A Section Heading\n\nMore article text goes here. You can have multiple paragraphs.\n\n> A great quote from someone goes here.\n\nAnd more text after that.",
-      "readTime": "12 min read",
-      "imagePosition": "x:33,y:24,w:67,h:57,ar:1.9048",
-      "editorsPick": true,
-      "author": "Marcus Osei",
-      "featured": true,
-      "date": "June 18, 2026",
-      "title": "The Last Amateur: How Yomif Kejelcha Is Rewriting Distance Running's Playbook",
-      "id": "yomif-kejelcha-last-amateur",
-      "image": "/images/hock.png",
-      "category": "DISTANCE RUNNING"
-    },
-    {
       "excerpt": "A frame-by-frame look at what made the race historic.",
       "body": "Article body goes here...",
       "readTime": "8 min read",
@@ -99,10 +85,25 @@
       "category": "HISTORY"
     },
     {
+      "excerpt": "StatTC is here with the newest 1500m rankings",
+      "body": "placeholder",
+      "readTime": "5 min read",
+      "imagePosition": "50% 50%",
+      "editorsPick": false,
+      "featured": true,
+      "date": "June 23, 2026",
+      "title": "1500m Rankings",
+      "type": "rankings",
+      "id": "1500m-rankings",
+      "image": "/images/1500cover.png",
+      "rankingsEvent": "",
+      "category": "DISTANCE RUNNING"
+    },
+    {
       "excerpt": "Three Diamond League wins, a world lead, and a rivalry with Julien Alfred heating up in real time.",
       "body": "Article body goes here...",
       "readTime": "7 min read",
-      "imagePosition": "x:0,y:0,w:53,h:63,ar:1.9048",
+      "imagePosition": "x:13,y:2,w:72,h:81,ar:2.0000",
       "editorsPick": false,
       "author": "Maya Thornton",
       "featured": false,
