@@ -220,6 +220,17 @@ button { font-family: inherit; }
   white-space: nowrap;
   line-height: 1;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.brand-pencil {
+  width: 12px;
+  height: 22px;
+  flex-shrink: 0;
+  position: relative;
+  top: -1px;
 }
 
 .navbar-brand-sep {
@@ -1098,11 +1109,15 @@ footer {
 .footer-brand-wrap { display: flex; flex-direction: column; gap: 4px; }
 
 .footer-brand {
-  font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 900;
+  font-family: 'Teko', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
   color: #fff;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .footer-tagline {
