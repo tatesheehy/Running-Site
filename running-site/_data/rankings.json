@@ -14,15 +14,6 @@
       "photo": "/images/1500tab.png",
       "rows": [
         {
-          "rank": 1,
-          "athleteId": "jakob-ingebrigtsen",
-          "name": "Jakob Ingebrigtsen",
-          "country": "Norway",
-          "flag": "NO",
-          "seasonBest": "3:44.38",
-          "meet": "Oslo DL"
-        },
-        {
           "rank": 2,
           "athleteId": "isaac-nader",
           "name": "Isaac Nader",
@@ -86,15 +77,6 @@
           "meet": "x"
         },
         {
-          "rank": 9,
-          "athleteId": "phanuel-koech",
-          "name": "Phanuel Koech",
-          "country": "Kenya",
-          "flag": "KE",
-          "seasonBest": "x",
-          "meet": "x"
-        },
-        {
           "rank": 10,
           "athleteId": "yared-nuguse",
           "name": "Yared Nuguse",
@@ -140,15 +122,6 @@
           "athleteId": "simeon-birnbaum"
         },
         {
-          "rank": 15,
-          "name": "Jonah Koech",
-          "country": "United States",
-          "flag": "US",
-          "seasonBest": "x",
-          "meet": "x",
-          "athleteId": "jonah-koech"
-        },
-        {
           "rank": 16,
           "athleteId": "azeddine-habz",
           "meet": "x",
@@ -156,7 +129,25 @@
           "name": "Azeddine Habz"
         }
       ],
-      "sections": []
+      "sections": [
+        {
+          "title": "Missing in action",
+          "entries": [
+            {
+              "athleteId": "jakob-ingebrigtsen",
+              "reason": "Injury"
+            },
+            {
+              "athleteId": "phanuel-koech",
+              "reason": "Unknown"
+            },
+            {
+              "athleteId": "jonah-koech",
+              "reason": "Injury"
+            }
+          ]
+        }
+      ]
     },
     {
       "name": "3000m/5000m",
