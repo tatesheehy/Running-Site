@@ -81,6 +81,38 @@ function normalizeAthlete(a) {
   };
 }
 
+// ── RANKINGS TICKER ───────────────────────────────────────
+function buildTickerHtml() {
+  const rows = RANKINGS['1500m'] || [];
+  if (!rows.length && !SITE.breakingNews) return '';
+
+  let tickerContent = '';
+
+  if (rows.length) {
+    const items = rows.map((r, i) => {
+      const rank = i + 1;
+      const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
+      const name = (a && a.name) || r.name || r.athleteId || '—';
+      const time = r.seasonBest ? ` — ${r.seasonBest}` : '';
+      return `<span class="ticker-item"><span class="ticker-rank">${rank}</span> ${name}${time}</span>`;
+    }).join('<span class="ticker-sep">·</span>');
+
+    // Duplicate for seamless loop
+    tickerContent = `
+      <div class="ticker-track">
+        <div class="ticker-content">${items}<span class="ticker-sep">·</span>${items}<span class="ticker-sep">·</span></div>
+      </div>`;
+  } else if (SITE.breakingNews) {
+    tickerContent = `<span class="ticker-static">${SITE.breakingNews}</span>`;
+  }
+
+  return `
+    <div class="breaking-bar" role="marquee">
+      <span class="breaking-badge">1500m</span>
+      ${tickerContent}
+    </div>`;
+}
+
 // ── NAVBAR ────────────────────────────────────────────────
 function buildNavbar() {
   const currentPage = document.body.dataset.page;
@@ -111,11 +143,7 @@ function buildNavbar() {
         <a href="${SITE.subscribeUrl || '#'}" class="navbar-subscribe">${SITE.subscribeLabel || 'Subscribe'}</a>
       </div>
     </nav>
-    ${SITE.breakingNews ? `
-    <div class="breaking-bar" role="alert">
-      <span class="breaking-badge">BREAKING</span>
-      <span class="breaking-text">${SITE.breakingNews}</span>
-    </div>` : ''}
+    ${buildTickerHtml()}
     <div id="search-overlay" class="search-overlay" role="dialog" aria-label="Search">
       <div class="search-inner">
         <div class="search-header">
