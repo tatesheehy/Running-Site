@@ -502,7 +502,7 @@ button { font-family: inherit; }
   cursor: pointer;
   display: flex;
   gap: 12px;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .ep-item:first-of-type { padding-top: 0; }
