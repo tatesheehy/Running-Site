@@ -414,6 +414,42 @@
         "stat2Label": "x",
         "stat1Label": "x"
       }
+    },
+    {
+      "photoBackground": "#111111",
+      "reviewTitle": "Season review",
+      "height": "6'1",
+      "questionBody": "xx",
+      "headlineRest": "xx",
+      "name": "Niels Laros",
+      "headlineKey": "xx",
+      "flag": "🇳🇱",
+      "seasons": "3",
+      "hometown": "xx",
+      "questionTitle": "Next question",
+      "photo": "",
+      "club": "xx",
+      "country": "Netherlands",
+      "weight": "145",
+      "coach": "xx",
+      "reviewBody": "xx",
+      "event": "MIDDLE DISTANCE",
+      "id": "niels-laros",
+      "age": "21",
+      "stats_group": {
+        "stat4Sub": "xx",
+        "stat3Sub": "xx",
+        "stat2Sub": "xx",
+        "stat1Sub": "xx",
+        "stat4Value": "xx",
+        "stat3Value": "xx",
+        "stat2Value": "xx",
+        "stat4Label": "xx",
+        "stat1Value": "xx",
+        "stat3Label": "xx",
+        "stat2Label": "xx",
+        "stat1Label": "xx"
+      }
     }
   ]
 }
