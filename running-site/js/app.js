@@ -146,8 +146,36 @@ function buildNavbar() {
           </svg>
         </button>
         <a href="${SITE.subscribeUrl || '#'}" class="navbar-subscribe">${SITE.subscribeLabel || 'Subscribe'}</a>
+        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </nav>
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <div class="mobile-drawer-top">
+        <a href="index.html" class="navbar-brand">
+          <svg class="brand-pencil" viewBox="0 0 11 21" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="miter" stroke-linecap="square" aria-hidden="true">
+            <rect x="1.75" y="0.75" width="7.5" height="2.75"/>
+            <line x1="1.75" y1="4.25" x2="9.25" y2="4.25"/>
+            <line x1="1.75" y1="5.25" x2="9.25" y2="5.25"/>
+            <polyline points="1.75,5.25 1.75,14.5 5.5,19.75 9.25,14.5 9.25,5.25"/>
+            <line x1="4" y1="5.25" x2="4" y2="14"/>
+            <line x1="7" y1="5.25" x2="7" y2="14"/>
+          </svg>${SITE.name}</a>
+        <button class="mobile-drawer-close" onclick="toggleMobileMenu()" aria-label="Close menu">×</button>
+      </div>
+      <ul class="mobile-drawer-nav">
+        ${navLinks.map(l => `<li><a href="${l.href}">${l.label}</a></li>`).join('')}
+      </ul>
+      <div class="mobile-drawer-footer">
+        <button class="mobile-drawer-search" onclick="toggleMobileMenu();openSearch()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          Search
+        </button>
+        <a href="${SITE.subscribeUrl || '#'}" class="navbar-subscribe">${SITE.subscribeLabel || 'Subscribe'}</a>
+      </div>
+    </div>
+    <div class="mobile-overlay" id="mobile-overlay" onclick="toggleMobileMenu()"></div>
     ${buildTickerHtml()}
     <div id="search-overlay" class="search-overlay" role="dialog" aria-label="Search">
       <div class="search-inner">
@@ -160,6 +188,169 @@ function buildNavbar() {
     </div>
   `;
 }
+
+// ── MOBILE MENU ───────────────────────────────────────────
+function toggleMobileMenu() {
+  const drawer  = qs('#mobile-drawer');
+  const overlay = qs('#mobile-overlay');
+  if (!drawer) return;
+  const open = drawer.classList.toggle('open');
+  overlay.classList.toggle('open', open);
+  drawer.setAttribute('aria-hidden', String(!open));
+  document.body.style.overflow = open ? 'hidden' : '';
+}
+window.toggleMobileMenu = toggleMobileMenu;
+
+// ── HEAD TO HEAD ───────────────────────────────────────────
+let h2hSlots = [null, null];
+
+function parseTimeToSecs(t) {
+  if (!t) return null;
+  const parts = String(t).trim().split(':').map(Number);
+  if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
+  if (parts.length === 2) return parts[0] * 60 + parts[1];
+  return parts[0];
+}
+
+function openH2H(preselectedId) {
+  let modal = qs('#h2h-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'h2h-modal';
+    modal.className = 'modal-overlay';
+    modal.innerHTML = `
+      <div class="h2h-card">
+        <div class="h2h-header">
+          <span class="h2h-title">Head to Head</span>
+          <button class="h2h-close-btn" onclick="closeH2H()" aria-label="Close">×</button>
+        </div>
+        <div class="h2h-pickers">
+          <div class="h2h-picker" id="h2h-picker-1">
+            <input class="h2h-input" id="h2h-input-1" placeholder="Search athlete…" autocomplete="off">
+            <div class="h2h-dropdown" id="h2h-drop-1"></div>
+          </div>
+          <div class="h2h-vs">VS</div>
+          <div class="h2h-picker" id="h2h-picker-2">
+            <input class="h2h-input" id="h2h-input-2" placeholder="Search athlete…" autocomplete="off">
+            <div class="h2h-dropdown" id="h2h-drop-2"></div>
+          </div>
+        </div>
+        <div class="h2h-comparison" id="h2h-comparison">
+          <p class="h2h-prompt">Search for two athletes above to compare them.</p>
+        </div>
+      </div>`;
+    document.body.appendChild(modal);
+    modal.addEventListener('click', e => { if (e.target === modal) closeH2H(); });
+    setupH2HPickers();
+  }
+  h2hSlots = [null, null];
+  qs('#h2h-input-1').value = '';
+  qs('#h2h-input-2').value = '';
+  qs('#h2h-comparison').innerHTML = '<p class="h2h-prompt">Search for two athletes above to compare them.</p>';
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  if (preselectedId) setH2HSlot(1, preselectedId);
+}
+
+function closeH2H() {
+  const modal = qs('#h2h-modal');
+  if (modal) modal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function setupH2HPickers() {
+  [1, 2].forEach(slot => {
+    const input = qs('#h2h-input-' + slot);
+    const drop  = qs('#h2h-drop-' + slot);
+    input.addEventListener('input', () => {
+      const q = input.value.trim().toLowerCase();
+      if (!q) { drop.innerHTML = ''; drop.classList.remove('open'); return; }
+      const matches = Object.values(ATHLETES).filter(a => a.name.toLowerCase().includes(q)).slice(0, 7);
+      drop.innerHTML = matches.length
+        ? matches.map(a => `<div class="h2h-dd-item" onclick="setH2HSlot(${slot},'${a.id}')">${renderFlag(a.flag)} ${a.name} <span class="h2h-dd-country">${a.country}</span></div>`).join('')
+        : '<div class="h2h-dd-empty">No athletes found</div>';
+      drop.classList.add('open');
+    });
+    document.addEventListener('click', e => {
+      if (!qs('#h2h-picker-' + slot)?.contains(e.target)) drop.classList.remove('open');
+    });
+  });
+}
+
+function setH2HSlot(slot, athleteId) {
+  const a = ATHLETES[athleteId];
+  if (!a) return;
+  h2hSlots[slot - 1] = athleteId;
+  qs('#h2h-input-' + slot).value = a.name;
+  qs('#h2h-drop-' + slot).classList.remove('open');
+  if (h2hSlots[0] && h2hSlots[1]) renderH2HComparison(h2hSlots[0], h2hSlots[1]);
+}
+
+function renderH2HComparison(id1, id2) {
+  const a1 = ATHLETES[id1], a2 = ATHLETES[id2];
+  if (!a1 || !a2) return;
+
+  const getRanks = id => {
+    const out = [];
+    RANKINGS_EVENTS.forEach(ev => {
+      const idx = (RANKINGS[ev.name] || []).findIndex(r => r.athleteId === id);
+      if (idx !== -1) out.push({ event: ev.name, rank: idx + 1 });
+    });
+    return out;
+  };
+
+  const col = (a, opp) => {
+    const ranks = getRanks(a.id);
+    const photoHtml = a.photo
+      ? `<img class="h2h-photo" src="${a.photo}" alt="${a.name}">`
+      : `<div class="h2h-photo h2h-photo-ph"></div>`;
+
+    const rankHtml = ranks.length
+      ? ranks.map(r => `<div class="h2h-rank-row"><span class="h2h-rank-num">#${r.rank}</span><span class="h2h-rank-ev">${r.event}</span></div>`).join('')
+      : '<div class="h2h-empty-row">Not currently ranked</div>';
+
+    const oppPrs = opp.prs || [];
+    const prHtml = (a.prs || []).length
+      ? (a.prs || []).map(pr => {
+          const oppPr = oppPrs.find(p => p.event === pr.event);
+          const mine = parseTimeToSecs(pr.time), theirs = parseTimeToSecs(oppPr?.time);
+          const better = mine && theirs && mine < theirs;
+          return `<div class="h2h-pr-row${better ? ' h2h-pr-win' : ''}">
+            <span class="h2h-pr-ev">${pr.event}</span>
+            <span class="h2h-pr-t">${pr.time}${better ? ' ✓' : ''}</span>
+          </div>`;
+        }).join('')
+      : '<div class="h2h-empty-row">No PRs listed</div>';
+
+    const vitals = [['HT', a.height], ['WT', a.weight], ['AGE', a.age], ['PRO YRS', a.seasons]].filter(v => v[1]);
+    const vitalsHtml = vitals.map(([k, v]) =>
+      `<div class="h2h-vital"><span class="h2h-vital-k">${k}</span><span class="h2h-vital-v">${v}</span></div>`
+    ).join('');
+
+    return `
+      <div class="h2h-col">
+        <div class="h2h-photo-wrap" style="background:${a.photoBackground || '#111'}">${photoHtml}</div>
+        <div class="h2h-name">${a.name}</div>
+        <div class="h2h-country">${renderFlag(a.flag)} ${a.country}</div>
+        <div class="h2h-section">Rankings</div>
+        <div class="h2h-ranks">${rankHtml}</div>
+        <div class="h2h-section">Personal Bests</div>
+        <div class="h2h-prs">${prHtml}</div>
+        ${vitals.length ? `<div class="h2h-section">Vitals</div><div class="h2h-vitals">${vitalsHtml}</div>` : ''}
+      </div>`;
+  };
+
+  qs('#h2h-comparison').innerHTML = `
+    <div class="h2h-cols">
+      ${col(a1, a2)}
+      <div class="h2h-col-divider"></div>
+      ${col(a2, a1)}
+    </div>`;
+}
+
+window.openH2H = openH2H;
+window.closeH2H = closeH2H;
+window.setH2HSlot = setH2HSlot;
 
 // ── SEARCH ────────────────────────────────────────────────
 window.openSearch = function() {
@@ -543,6 +734,9 @@ function buildRankingsHub() {
           <div class="rankings-criteria-body" id="criteria-body" hidden>${RANKINGS_CRITERIA}</div>
         </div>
         ` : ''}
+        <div class="rankings-hub-actions">
+          <button class="h2h-hub-btn" onclick="openH2H()">⇌ Compare Athletes Head to Head</button>
+        </div>
         <div class="rankings-cards-grid">${cardsHtml}</div>
       </div>
     </div>
@@ -715,7 +909,9 @@ function openAthleteCard(athleteId, rank) {
     <div class="card-header">
       <div class="card-rank">${rank}</div>
       <div class="card-header-center">
-        <div class="card-header-top"><a href="#">Full Profile</a></div>
+        <div class="card-header-top">
+          <button class="card-compare-btn" onclick="closeAthleteCard();openH2H('${athleteId}')" title="Compare athletes">⇌ Compare</button>
+        </div>
         <div>
           <span class="card-athlete-name">${a.name}</span>
           <span class="card-athlete-country">${renderFlag(a.flag)} ${a.country}</span>
