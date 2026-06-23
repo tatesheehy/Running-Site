@@ -196,7 +196,6 @@ collections:
                 label_singular: Entry
                 widget: list
                 fields:
-                  - { label: "Rank", name: rank, widget: number }
                   - { label: "Athlete ID", name: athleteId, widget: string, required: false, hint: "Enter the athlete's ID from the Athletes section (e.g. jakob-ingebrigtsen). Name, country, and flag will be auto-filled from their profile. Leave blank for athletes without a profile." }
                   - { label: "Season Best", name: seasonBest, widget: string, required: false }
                   - { label: "Meet", name: meet, widget: string, required: false }

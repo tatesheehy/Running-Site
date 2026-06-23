@@ -318,16 +318,17 @@ function buildRankingsTableHtml(event, compact) {
   if (!rows.length) {
     return `<p style="color:var(--muted);padding:20px 0;font-size:14px;">No rankings data yet for ${event}.</p>`;
   }
-  const rowsHtml = rows.map(r => {
+  const rowsHtml = rows.map((r, i) => {
+    const rank = i + 1;
     const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
     const name    = (a && a.name)    || r.name    || r.athleteId || '—';
     const country = (a && a.country) || r.country || '';
     const flag    = (a && a.flag)    || r.flag    || '';
     const hasCard = r.athleteId && ATHLETES[r.athleteId];
-    const rankClass = r.rank === 1 ? '' : 'gray';
+    const rankClass = rank === 1 ? '' : 'gray';
     return `
-      <tr ${hasCard ? `onclick="openAthleteCard('${r.athleteId}', ${r.rank})"` : ''} style="${hasCard ? '' : 'cursor:default'}">
-        <td><span class="rank-num ${rankClass}">${r.rank}</span></td>
+      <tr ${hasCard ? `onclick="openAthleteCard('${r.athleteId}', ${rank})"` : ''} style="${hasCard ? '' : 'cursor:default'}">
+        <td><span class="rank-num ${rankClass}">${rank}</span></td>
         <td class="athlete-name-cell">
           <div class="name">${name}</div>
           <div class="country">${renderFlag(flag)} ${country}</div>
@@ -514,17 +515,17 @@ window.toggleCriteria = function() {
   chevron.style.transform = isOpen ? 'rotate(180deg)' : '';
 };
 
-function buildRankingRow(r) {
+function buildRankingRow(r, rank) {
   const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
   const name    = (a && a.name)    || r.name    || r.athleteId || '—';
   const country = (a && a.country) || r.country || '';
   const flag    = (a && a.flag)    || r.flag    || '';
   const photo   = a && a.photo;
   const photoBg = (a && a.photoBackground) || '#111';
-  const clickData = encodeURIComponent(JSON.stringify({athleteId: r.athleteId||'', rank: r.rank||0, name, country, flag, seasonBest: r.seasonBest||'', meet: r.meet||''}));
+  const clickData = encodeURIComponent(JSON.stringify({athleteId: r.athleteId||'', rank: rank||0, name, country, flag, seasonBest: r.seasonBest||'', meet: r.meet||''}));
   return `
     <div class="rd-row" onclick="openRankingRow('${clickData}')">
-      ${r.rank != null ? `<div class="rd-rank ${r.rank === 1 ? 'gold' : ''}">${r.rank}</div>` : '<div class="rd-rank-empty"></div>'}
+      ${rank != null ? `<div class="rd-rank ${rank === 1 ? 'gold' : ''}">${rank}</div>` : '<div class="rd-rank-empty"></div>'}
       <div class="rd-avatar ${photo ? '' : 'rd-avatar--empty'}" style="${photo ? `background-color:${photoBg};background-image:url('${photo}');background-size:cover;background-position:top center` : ''}"></div>
       <div class="rd-info">
         <div class="rd-name">${name}</div>
@@ -546,12 +547,12 @@ function buildRankingsDetail(eventName) {
   const sections = (ev && ev.sections) ? ev.sections : [];
 
   const rowsHtml = rows.length
-    ? rows.map(buildRankingRow).join('')
+    ? rows.map((r, i) => buildRankingRow(r, i + 1)).join('')
     : `<p class="rankings-empty">No rankings data yet for this event.</p>`;
 
   const sectionsHtml = sections.map(sec => {
     if (!sec.entries || !sec.entries.length) return '';
-    const entriesHtml = sec.entries.map(e => buildRankingRow({...e, rank: null})).join('');
+    const entriesHtml = sec.entries.map(e => buildRankingRow(e, null)).join('');
     return `
       <div class="rd-section">
         <div class="rd-section-header">
