@@ -524,11 +524,14 @@ function buildRankingsDetail(eventName) {
     const country = (a && a.country) || r.country || '';
     const flag    = (a && a.flag)    || r.flag    || '';
     const hasFullCard = r.athleteId && ATHLETES[r.athleteId];
+    const photo = a && a.photo;
+    const photoBg = (a && a.photoBackground) || '#111';
     // All rows are always clickable — full card if profile exists, mini card otherwise
     const clickData = encodeURIComponent(JSON.stringify({athleteId: r.athleteId||'', rank: r.rank, name, country, flag, seasonBest: r.seasonBest||'', meet: r.meet||''}));
     return `
       <div class="rd-row" onclick="openRankingRow('${clickData}')">
         <div class="rd-rank ${r.rank === 1 ? 'gold' : ''}">${r.rank}</div>
+        <div class="rd-avatar ${photo ? '' : 'rd-avatar--empty'}" style="${photo ? `background-color:${photoBg};background-image:url('${photo}');background-size:cover;background-position:top center` : ''}"></div>
         <div class="rd-info">
           <div class="rd-name">${name}</div>
           <div class="rd-country">${renderFlag(flag)} ${country}</div>
