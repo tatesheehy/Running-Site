@@ -7,44 +7,11 @@
       "stat3Sub": "this season",
       "stat2Sub": "Oslo DL",
       "stat1Sub": "personal best",
-      "achievements": [
-        {
-          "icon": "🥇",
-          "count": "2x",
-          "label": "Olympic Gold"
-        },
-        {
-          "icon": "🌍",
-          "count": "1x",
-          "label": "World Champ"
-        },
-        {
-          "icon": "⚡",
-          "count": "1x",
-          "label": "World Record"
-        }
-      ],
-      "traits": [
-        {
-          "emoji": "⚡",
-          "label": "Explosive Kick"
-        },
-        {
-          "emoji": "🧠",
-          "label": "Tactical IQ"
-        },
-        {
-          "emoji": "🏔️",
-          "label": "Front Runner"
-        },
-        {
-          "emoji": "🔥",
-          "label": "Mental Edge"
-        }
-      ],
+      "achievements": [],
+      "traits": [],
       "height": "5'11\"",
-      "questionBody": "Can he finally crack the 3:43 barrier again? The conditions at Oslo looked right, and the pacemakers are lined up.",
-      "headlineRest": "whose numbers rewrote what we thought was possible in middle distance running.",
+      "questionBody": "Can Ingebrigtsen return to top form? In 2025 his only races outdoors were the 1500m and 5000m at the World Championships in Tokyo where he finished eighth in the prelim and tenth in the final, respectively.",
+      "headlineRest": "on the mend from a debilitating achilles injury.",
       "name": "Jakob Ingebrigtsen",
       "headlineKey": "Generational talent",
       "flag": "NO",
@@ -64,7 +31,7 @@
       "stat1Label": "WORLD RECORD",
       "weight": "132 lbs",
       "coach": "Gjert Ingebrigtsen",
-      "reviewBody": "Ingebrigtsen has been in ruthless form this year. His front-running style has evolved — he's now just as dangerous in a tactical race as he is going wire-to-wire. The Oslo performance showed a new dimension: he can manufacture a kick from an already brutal pace.",
+      "reviewBody": "Ingebrigtsen has yet to race in 2026. The Norwegian may return from racing in mid-July following surgery to remove damaged tissue and scarring from the sheath surrounding his left Achilles tendon in February of this year. ",
       "event": "MIDDLE DISTANCE + DISTANCE",
       "id": "jakob-ingebrigtsen",
       "age": "25",
