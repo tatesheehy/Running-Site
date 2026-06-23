@@ -636,9 +636,9 @@
       "reviewTitle": "Season review",
       "height": "5'10",
       "questionBody": "x",
-      "headlineRest": "x",
+      "headlineRest": "who is now all grown up and trying to prove his 2024 campaign was no fluke. ",
       "name": "Hobbs Kessler",
-      "headlineKey": "x",
+      "headlineKey": "American wunderkid",
       "flag": "US",
       "seasons": "4",
       "prs": [
@@ -740,9 +740,9 @@
       "reviewTitle": "Season review",
       "height": "5'11",
       "questionBody": "x",
-      "headlineRest": "x",
+      "headlineRest": "who made the switch to 1500m and won USAs.",
       "name": "Jonah Koech",
-      "headlineKey": "x",
+      "headlineKey": "Wildcard runner",
       "flag": "US",
       "seasons": "7",
       "prs": [
@@ -802,6 +802,49 @@
       "event": "MIDDLE DISTANCE",
       "id": "mohamed-attaoui",
       "age": "24"
+    },
+    {
+      "photoBackground": "#111111",
+      "reviewTitle": "Season review",
+      "collegeLogo": "/images/villanova_wildcats_logo.svg.png",
+      "height": "5'9",
+      "questionBody": "x",
+      "headlineRest": ".",
+      "name": "Marco Langon",
+      "headlineKey": "Unapologetically himself",
+      "flag": "US",
+      "seasons": "0",
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:32.79"
+        },
+        {
+          "event": "Mile",
+          "time": "3:54.59"
+        },
+        {
+          "event": "3000m",
+          "time": "7:34.00"
+        },
+        {
+          "event": "5000m",
+          "time": "13:05.21"
+        }
+      ],
+      "hometown": "x",
+      "questionTitle": "Next question",
+      "photo": "/images/langon_card.png",
+      "ncaa": true,
+      "club": "x",
+      "country": "United States",
+      "college": "Villanova",
+      "weight": "145",
+      "coach": "x",
+      "reviewBody": "x",
+      "event": "DISTANCE",
+      "id": "marco-langon",
+      "age": "21"
     }
   ]
 }
