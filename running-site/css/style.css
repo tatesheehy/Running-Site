@@ -1324,7 +1324,7 @@ footer {
 
 .rd-col-labels {
   display: grid;
-  grid-template-columns: 80px 1fr auto;
+  grid-template-columns: 80px 1fr 140px auto;
   padding: 10px 16px;
   font-size: 10px;
   font-weight: 700;
@@ -1337,7 +1337,7 @@ footer {
 
 .rd-row {
   display: grid;
-  grid-template-columns: 80px 56px 1fr auto;
+  grid-template-columns: 80px 56px 1fr 140px auto;
   align-items: center;
   gap: 0 14px;
   padding: 16px 16px;
@@ -1446,12 +1446,24 @@ footer {
   max-width: 160px;
 }
 
+.rd-momentum-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+}
+.rd-momentum-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: 0.6;
+}
 .rd-momentum {
   display: flex;
   align-items: center;
-  gap: 7px;
-  margin-top: 6px;
-  justify-content: flex-end;
+  gap: 8px;
 }
 .rd-momentum-bar {
   position: relative;
@@ -1483,7 +1495,6 @@ footer {
   font-size: 11px;
   font-weight: 700;
   min-width: 26px;
-  text-align: right;
   color: var(--muted);
 }
 .rd-momentum-val.pos { color: #f87171; }
@@ -1637,5 +1648,7 @@ footer {
   .rd-rank { font-size: 36px; }
   .rd-name { font-size: 20px; }
   .rd-row { grid-template-columns: 52px 44px 1fr auto; gap: 0 10px; }
+  .rd-momentum-col { display: none; }
+  .rd-col-labels { grid-template-columns: 80px 1fr auto; }
   .rd-avatar { width: 44px; height: 44px; }
 }

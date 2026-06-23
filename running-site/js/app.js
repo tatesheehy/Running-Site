@@ -538,17 +538,20 @@ window.toggleCriteria = function() {
 };
 
 function buildMomentumHtml(val) {
-  if (val == null || val === '') return '';
+  if (val == null || val === '') return '<div class="rd-momentum-col"></div>';
   const v   = Math.max(-10, Math.min(10, Number(val)));
   const pct = ((v + 10) / 20) * 100;
   const str = (v > 0 ? '+' : '') + v;
   const cls = v > 0 ? 'pos' : v < 0 ? 'neg' : 'neu';
   return `
-    <div class="rd-momentum">
-      <div class="rd-momentum-bar">
-        <div class="rd-momentum-marker" style="left:${pct}%"></div>
+    <div class="rd-momentum-col">
+      <div class="rd-momentum-label">Momentum</div>
+      <div class="rd-momentum">
+        <div class="rd-momentum-bar">
+          <div class="rd-momentum-marker" style="left:${pct}%"></div>
+        </div>
+        <span class="rd-momentum-val ${cls}">${str}</span>
       </div>
-      <span class="rd-momentum-val ${cls}">${str}</span>
     </div>`;
 }
 
@@ -568,12 +571,12 @@ function buildRankingRow(r, rank) {
         <div class="rd-name">${name}</div>
         <div class="rd-country">${renderFlag(flag)} ${country}</div>
       </div>
+      ${buildMomentumHtml(r.momentum)}
       <div class="rd-right">
         ${r.reason
           ? `<div class="rd-reason">${r.reason}</div>`
           : `<div class="rd-time">${r.seasonBest || ''}</div><div class="rd-meet">${r.meet || ''}</div>`
         }
-        ${buildMomentumHtml(r.momentum)}
       </div>
     </div>
   `;
@@ -612,7 +615,7 @@ function buildRankingsDetail(eventName) {
           ${ev && ev.description ? `<p class="rd-header-desc">${ev.description}</p>` : ''}
         </div>
         <div class="rd-col-labels">
-          <span>Rank</span><span>Athlete</span><span style="text-align:right">Best / Meet</span>
+          <span>Rank</span><span>Athlete</span><span>Momentum</span><span style="text-align:right">Best / Meet</span>
         </div>
         <div class="rd-list">${rowsHtml}</div>
         ${sectionsHtml}
