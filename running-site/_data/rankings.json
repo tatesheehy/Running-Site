@@ -20,7 +20,8 @@
           "country": "Portugal",
           "flag": "PT",
           "seasonBest": "3:45.12",
-          "meet": "Rabat DL"
+          "meet": "Rabat DL",
+          "momentum": -3
         },
         {
           "rank": 3,
@@ -29,7 +30,8 @@
           "country": "United States",
           "flag": "US",
           "seasonBest": "3:46.01",
-          "meet": "Eugene DL"
+          "meet": "Eugene DL",
+          "momentum": 1
         },
         {
           "rank": 4,
@@ -38,7 +40,8 @@
           "country": "Great Britain",
           "flag": "GB",
           "seasonBest": "3:46.54",
-          "meet": "Rome DL"
+          "meet": "Rome DL",
+          "momentum": 3
         },
         {
           "rank": 5,
@@ -47,7 +50,8 @@
           "country": "Kenya",
           "flag": "KE",
           "seasonBest": "3:47.22",
-          "meet": "Shanghai DL"
+          "meet": "Shanghai DL",
+          "momentum": 0
         },
         {
           "rank": 6,
@@ -56,7 +60,8 @@
           "country": "Netherlands",
           "flag": "NL",
           "seasonBest": "x",
-          "meet": "x"
+          "meet": "x",
+          "momentum": 2
         },
         {
           "rank": 7,
@@ -65,7 +70,8 @@
           "country": "Australia",
           "flag": "AU",
           "seasonBest": "x",
-          "meet": "x"
+          "meet": "x",
+          "momentum": 2
         },
         {
           "rank": 8,
@@ -74,7 +80,8 @@
           "country": "Scotland",
           "flag": "SCT",
           "seasonBest": "x",
-          "meet": "x"
+          "meet": "x",
+          "momentum": -2
         },
         {
           "rank": 10,
@@ -83,7 +90,8 @@
           "country": "United States",
           "flag": "US",
           "seasonBest": "x",
-          "meet": "x"
+          "meet": "x",
+          "momentum": 6
         },
         {
           "rank": 11,
@@ -92,7 +100,8 @@
           "flag": "MA",
           "seasonBest": "x",
           "meet": "x",
-          "athleteId": "mohamed-attaoui"
+          "athleteId": "mohamed-attaoui",
+          "momentum": 3
         },
         {
           "rank": 12,
@@ -101,7 +110,8 @@
           "flag": "US",
           "seasonBest": "x",
           "meet": "x",
-          "athleteId": "hobbs-kessler"
+          "athleteId": "hobbs-kessler",
+          "momentum": 1
         },
         {
           "rank": 13,
@@ -110,14 +120,16 @@
           "flag": "US",
           "seasonBest": "x",
           "meet": "x",
-          "athleteId": "vincent-ciattei"
+          "athleteId": "vincent-ciattei",
+          "momentum": 2
         },
         {
           "rank": 16,
           "athleteId": "azeddine-habz",
           "meet": "x",
           "seasonBest": "x",
-          "name": "Azeddine Habz"
+          "name": "Azeddine Habz",
+          "momentum": 0
         }
       ],
       "sections": [
