@@ -113,15 +113,6 @@
           "athleteId": "vincent-ciattei"
         },
         {
-          "rank": 14,
-          "name": "Simeon Birnbaum",
-          "country": "United States",
-          "flag": "US",
-          "seasonBest": "x",
-          "meet": "x",
-          "athleteId": "simeon-birnbaum"
-        },
-        {
           "rank": 16,
           "athleteId": "azeddine-habz",
           "meet": "x",
@@ -144,6 +135,15 @@
             {
               "athleteId": "jonah-koech",
               "reason": "Injury"
+            }
+          ]
+        },
+        {
+          "title": "In the hunt",
+          "description": "these guys might just sneak into the rankings soon",
+          "entries": [
+            {
+              "athleteId": "simeon-birnbaum"
             }
           ]
         }
