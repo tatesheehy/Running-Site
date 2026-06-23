@@ -130,6 +130,7 @@ function buildNavbar() {
     <nav class="navbar" role="navigation" aria-label="Main navigation">
       <div class="navbar-inner">
         <a href="index.html" class="navbar-brand">${SITE.name}</a>
+        <div class="navbar-brand-sep" aria-hidden="true"></div>
         <ul class="navbar-nav">${links}</ul>
         <button class="navbar-search-btn" onclick="openSearch()" aria-label="Search">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -265,9 +266,12 @@ function buildHome() {
 
   const picksHtml = picks.map(p => `
     <div class="ep-item" onclick="goTo('article.html?id=${p.id}')">
-      <div class="ep-cat">${p.category}</div>
-      <div class="ep-title">${p.title}</div>
-      <div class="ep-meta">${p.author} · ${p.readTime}</div>
+      <div class="ep-text">
+        <div class="ep-cat">${p.category}</div>
+        <div class="ep-title">${p.title}</div>
+        <div class="ep-meta">${p.author} · ${p.readTime}</div>
+      </div>
+      ${p.image ? `<img class="ep-thumb" src="${p.image}" alt="${p.title}" loading="lazy">` : ''}
     </div>
   `).join('');
 

@@ -204,38 +204,43 @@ button { font-family: inherit; }
 }
 
 .navbar-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 28px;
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 28px;
 }
 
 .navbar-brand {
   font-family: 'Teko', sans-serif;
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 500;
   color: #fff;
   letter-spacing: 0.04em;
   white-space: nowrap;
-  margin-right: 8px;
   line-height: 1;
+  flex-shrink: 0;
+}
+
+.navbar-brand-sep {
+  width: 1px;
+  height: 18px;
+  background: rgba(255,255,255,0.18);
+  flex-shrink: 0;
 }
 
 .navbar-nav {
   display: flex;
-  gap: 24px;
+  gap: 20px;
   list-style: none;
   flex: 1;
 }
 
 .navbar-nav a {
-  color: #ccc;
-  font-size: 14px;
+  color: #aaa;
+  font-size: 13.5px;
   font-weight: 500;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   transition: color 0.15s;
 }
 
@@ -246,7 +251,7 @@ button { font-family: inherit; }
   color: #fff !important;
   font-size: 13px;
   font-weight: 700;
-  padding: 9px 20px;
+  padding: 8px 18px;
   border-radius: var(--radius);
   letter-spacing: 0.03em;
   white-space: nowrap;
@@ -495,10 +500,24 @@ button { font-family: inherit; }
   padding: 14px 0;
   border-bottom: 1px solid var(--border);
   cursor: pointer;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
 }
 
 .ep-item:first-of-type { padding-top: 0; }
 .ep-item:last-child { border-bottom: none; }
+
+.ep-text { flex: 1; min-width: 0; }
+
+.ep-thumb {
+  width: 62px;
+  height: 62px;
+  border-radius: var(--radius-sm);
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--bg-light);
+}
 
 .ep-cat {
   font-size: 10px;
@@ -511,7 +530,7 @@ button { font-family: inherit; }
 
 .ep-title {
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 4px;
