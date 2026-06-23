@@ -1446,6 +1446,50 @@ footer {
   max-width: 160px;
 }
 
+.rd-momentum {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 6px;
+  justify-content: flex-end;
+}
+.rd-momentum-bar {
+  position: relative;
+  width: 90px;
+  height: 5px;
+  border-radius: 3px;
+  background: linear-gradient(to right,
+    #1d4ed8 0%,
+    #60a5fa 30%,
+    #e2e8f0 50%,
+    #f87171 70%,
+    #dc2626 100%
+  );
+  flex-shrink: 0;
+}
+.rd-momentum-marker {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 11px;
+  height: 11px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(0,0,0,0.35), 0 1px 4px rgba(0,0,0,0.5);
+  pointer-events: none;
+}
+.rd-momentum-val {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  min-width: 26px;
+  text-align: right;
+  color: var(--muted);
+}
+.rd-momentum-val.pos { color: #f87171; }
+.rd-momentum-val.neg { color: #60a5fa; }
+.rd-momentum-val.neu { color: var(--muted); }
+
 /* ── MINI ATHLETE CARD ────────────────────────────────────── */
 .mini-card-body {
   padding: 36px 32px;

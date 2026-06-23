@@ -189,6 +189,7 @@ collections:
                   - { label: "Athlete ID", name: athleteId, widget: string, required: false, hint: "Enter the athlete's ID from the Athletes section (e.g. jakob-ingebrigtsen). Name, country, and flag will be auto-filled from their profile. Leave blank for athletes without a profile." }
                   - { label: "Season Best", name: seasonBest, widget: string, required: false }
                   - { label: "Meet", name: meet, widget: string, required: false }
+                  - { label: "Momentum (-10 to +10)", name: momentum, widget: number, min: -10, max: 10, step: 1, required: false, hint: "Trend: -10 = falling fast, 0 = neutral, +10 = rising fast. Leave blank to hide the slider." }
                   - { label: "Athlete Name (leave blank if Athlete ID is set — auto-filled)", name: name, widget: string, required: false }
                   - { label: "Country (leave blank if Athlete ID is set — auto-filled)", name: country, widget: string, required: false }
               - name: sections
@@ -206,6 +207,7 @@ collections:
                     fields:
                       - { label: "Athlete ID", name: athleteId, widget: string, required: false, hint: "Auto-fills name, country, and flag from the athlete's profile." }
                       - { label: "Reason", name: reason, widget: string, required: false, hint: "e.g. Stress fracture — out 8 weeks, or Season-ending injury" }
+                      - { label: "Momentum (-10 to +10)", name: momentum, widget: number, min: -10, max: 10, step: 1, required: false, hint: "Trend: -10 = falling fast, 0 = neutral, +10 = rising fast." }
                       - { label: "Athlete Name (leave blank if Athlete ID is set — auto-filled)", name: name, widget: string, required: false }
                       - { label: "Country (leave blank if Athlete ID is set — auto-filled)", name: country, widget: string, required: false }
 

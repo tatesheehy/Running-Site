@@ -537,6 +537,21 @@ window.toggleCriteria = function() {
   chevron.style.transform = isOpen ? 'rotate(180deg)' : '';
 };
 
+function buildMomentumHtml(val) {
+  if (val == null || val === '') return '';
+  const v   = Math.max(-10, Math.min(10, Number(val)));
+  const pct = ((v + 10) / 20) * 100;
+  const str = (v > 0 ? '+' : '') + v;
+  const cls = v > 0 ? 'pos' : v < 0 ? 'neg' : 'neu';
+  return `
+    <div class="rd-momentum">
+      <div class="rd-momentum-bar">
+        <div class="rd-momentum-marker" style="left:${pct}%"></div>
+      </div>
+      <span class="rd-momentum-val ${cls}">${str}</span>
+    </div>`;
+}
+
 function buildRankingRow(r, rank) {
   const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
   const name    = (a && a.name)    || r.name    || r.athleteId || '—';
@@ -558,6 +573,7 @@ function buildRankingRow(r, rank) {
           ? `<div class="rd-reason">${r.reason}</div>`
           : `<div class="rd-time">${r.seasonBest || ''}</div><div class="rd-meet">${r.meet || ''}</div>`
         }
+        ${buildMomentumHtml(r.momentum)}
       </div>
     </div>
   `;
