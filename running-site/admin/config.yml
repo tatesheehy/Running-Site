@@ -50,14 +50,14 @@ collections:
 
   # ── ATHLETES ─────────────────────────────────────────────
   - name: athletes
-    label: Athletes
+    label: "Athletes (profiles only)"
     files:
       - name: athletes
-        label: Athletes
+        label: "Athletes — Profile Cards"
         file: running-site/_data/athletes.json
         fields:
           - name: items
-            label: Athletes
+            label: "Athletes — ⚠️ Adding here only creates the profile card. To show an athlete in the rankings table, ALSO add them under Rankings → the event → Rankings rows."
             label_singular: Athlete
             widget: list
             fields:
