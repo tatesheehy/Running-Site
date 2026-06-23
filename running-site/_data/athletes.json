@@ -450,6 +450,42 @@
         "stat2Label": "xx",
         "stat1Label": "xx"
       }
+    },
+    {
+      "photoBackground": "#111111",
+      "reviewTitle": "Season review",
+      "traits": [],
+      "height": "5'11",
+      "headlineRest": "xx",
+      "name": "Cameron Myers",
+      "headlineKey": "xx",
+      "flag": "🇦🇺",
+      "seasons": "2",
+      "hometown": "xx",
+      "questionTitle": "Next question",
+      "photo": "/images/myers_card.png",
+      "club": "xx",
+      "country": "Australia",
+      "weight": "150",
+      "coach": "xx",
+      "reviewBody": "",
+      "event": "MIDDLE DISTANCE",
+      "id": "cameron-myers",
+      "age": "19",
+      "stats_group": {
+        "stat4Sub": "xx",
+        "stat3Sub": "xx",
+        "stat2Sub": "xx",
+        "stat1Sub": "xx",
+        "stat4Value": "xx",
+        "stat3Value": "xx",
+        "stat2Value": "xx",
+        "stat4Label": "xx",
+        "stat1Value": "xx",
+        "stat3Label": "xx",
+        "stat2Label": "xx",
+        "stat1Label": "xx"
+      }
     }
   ]
 }
