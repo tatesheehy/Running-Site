@@ -514,35 +514,54 @@ window.toggleCriteria = function() {
   chevron.style.transform = isOpen ? 'rotate(180deg)' : '';
 };
 
+function buildRankingRow(r) {
+  const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
+  const name    = (a && a.name)    || r.name    || r.athleteId || '—';
+  const country = (a && a.country) || r.country || '';
+  const flag    = (a && a.flag)    || r.flag    || '';
+  const photo   = a && a.photo;
+  const photoBg = (a && a.photoBackground) || '#111';
+  const clickData = encodeURIComponent(JSON.stringify({athleteId: r.athleteId||'', rank: r.rank||0, name, country, flag, seasonBest: r.seasonBest||'', meet: r.meet||''}));
+  return `
+    <div class="rd-row" onclick="openRankingRow('${clickData}')">
+      ${r.rank != null ? `<div class="rd-rank ${r.rank === 1 ? 'gold' : ''}">${r.rank}</div>` : '<div class="rd-rank-empty"></div>'}
+      <div class="rd-avatar ${photo ? '' : 'rd-avatar--empty'}" style="${photo ? `background-color:${photoBg};background-image:url('${photo}');background-size:cover;background-position:top center` : ''}"></div>
+      <div class="rd-info">
+        <div class="rd-name">${name}</div>
+        <div class="rd-country">${renderFlag(flag)} ${country}</div>
+      </div>
+      <div class="rd-right">
+        ${r.reason
+          ? `<div class="rd-reason">${r.reason}</div>`
+          : `<div class="rd-time">${r.seasonBest || ''}</div><div class="rd-meet">${r.meet || ''}</div>`
+        }
+      </div>
+    </div>
+  `;
+}
+
 function buildRankingsDetail(eventName) {
   const ev = RANKINGS_EVENTS.find(e => e.name === eventName);
   const rows = (ev && ev.rows) ? ev.rows : [];
+  const sections = (ev && ev.sections) ? ev.sections : [];
 
-  const rowsHtml = rows.length ? rows.map(r => {
-    const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
-    const name    = (a && a.name)    || r.name    || r.athleteId || '—';
-    const country = (a && a.country) || r.country || '';
-    const flag    = (a && a.flag)    || r.flag    || '';
-    const hasFullCard = r.athleteId && ATHLETES[r.athleteId];
-    const photo = a && a.photo;
-    const photoBg = (a && a.photoBackground) || '#111';
-    // All rows are always clickable — full card if profile exists, mini card otherwise
-    const clickData = encodeURIComponent(JSON.stringify({athleteId: r.athleteId||'', rank: r.rank, name, country, flag, seasonBest: r.seasonBest||'', meet: r.meet||''}));
+  const rowsHtml = rows.length
+    ? rows.map(buildRankingRow).join('')
+    : `<p class="rankings-empty">No rankings data yet for this event.</p>`;
+
+  const sectionsHtml = sections.map(sec => {
+    if (!sec.entries || !sec.entries.length) return '';
+    const entriesHtml = sec.entries.map(e => buildRankingRow({...e, rank: null})).join('');
     return `
-      <div class="rd-row" onclick="openRankingRow('${clickData}')">
-        <div class="rd-rank ${r.rank === 1 ? 'gold' : ''}">${r.rank}</div>
-        <div class="rd-avatar ${photo ? '' : 'rd-avatar--empty'}" style="${photo ? `background-color:${photoBg};background-image:url('${photo}');background-size:cover;background-position:top center` : ''}"></div>
-        <div class="rd-info">
-          <div class="rd-name">${name}</div>
-          <div class="rd-country">${renderFlag(flag)} ${country}</div>
+      <div class="rd-section">
+        <div class="rd-section-header">
+          <span class="rd-section-title">${sec.title || ''}</span>
+          ${sec.description ? `<span class="rd-section-desc">${sec.description}</span>` : ''}
         </div>
-        <div class="rd-right">
-          <div class="rd-time">${r.seasonBest || ''}</div>
-          <div class="rd-meet">${r.meet || ''}</div>
-        </div>
+        <div class="rd-list">${entriesHtml}</div>
       </div>
     `;
-  }).join('') : `<p class="rankings-empty">No rankings data yet for this event.</p>`;
+  }).join('');
 
   document.getElementById('main').innerHTML = `
     <div class="container">
@@ -557,6 +576,7 @@ function buildRankingsDetail(eventName) {
           <span>Rank</span><span>Athlete</span><span style="text-align:right">Best / Meet</span>
         </div>
         <div class="rd-list">${rowsHtml}</div>
+        ${sectionsHtml}
       </div>
     </div>
   `;

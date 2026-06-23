@@ -1327,6 +1327,46 @@ footer {
   padding: 40px 16px;
 }
 
+.rd-rank-empty {
+  width: 80px;
+}
+
+.rd-section {
+  margin-top: 40px;
+}
+
+.rd-section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 10px 16px;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 0;
+}
+
+.rd-section-title {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.rd-section-desc {
+  font-size: 12px;
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+.rd-reason {
+  font-size: 13px;
+  color: var(--muted);
+  font-style: italic;
+  text-align: right;
+  max-width: 160px;
+}
+
 /* ── MINI ATHLETE CARD ────────────────────────────────────── */
 .mini-card-body {
   padding: 36px 32px;
