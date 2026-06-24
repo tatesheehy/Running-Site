@@ -184,6 +184,7 @@
           "label": "Rising Star"
         }
       ],
+      "waUrl": "https://worldathletics.org/athletes/united-states/cole-hocker-14905834",
       "height": "6'0\"",
       "questionBody": "Is this the year Hocker runs a sub-3:45? The talent is there. The question is whether he can find a race with the right pacemakers.",
       "headlineRest": "who has the kick to beat anyone in the world on the right day.",
@@ -193,6 +194,10 @@
       "seasons": "4",
       "prs": [
         {
+          "event": "800m",
+          "time": "1:45.13"
+        },
+        {
           "event": "1500m",
           "time": "3:27.65"
         },
@@ -201,8 +206,68 @@
           "time": "3:45.94"
         },
         {
+          "event": "2000m",
+          "time": "4:52.92"
+        },
+        {
           "event": "3000m",
           "time": "7:23.14"
+        },
+        {
+          "event": "2 Miles",
+          "time": "8:05.70"
+        },
+        {
+          "event": "5000m",
+          "time": "12:57.82"
+        },
+        {
+          "event": "1000 Metres",
+          "time": "2:16.30"
+        },
+        {
+          "event": "1000 Metres Short Track",
+          "time": "2:16.30"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:30.80"
+        },
+        {
+          "event": "Mile Short Track",
+          "time": "3:45.94"
+        },
+        {
+          "event": "2000 Metres Short Track",
+          "time": "4:52.92"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:23.14"
+        },
+        {
+          "event": "2 Miles Short Track",
+          "time": "8:05.70"
+        },
+        {
+          "event": "5000 Metres Short Track",
+          "time": "12:57.82"
+        },
+        {
+          "event": "Mile Road",
+          "time": "4:08.0h"
+        },
+        {
+          "event": "4x400 Metres Relay",
+          "time": "3:20.29"
+        },
+        {
+          "event": "Distance Medley",
+          "time": "9:58.91"
+        },
+        {
+          "event": "4xMile Relay",
+          "time": "15:52.05"
         }
       ],
       "hometown": "Carmel, Indiana",
@@ -255,6 +320,7 @@
           "label": "Quiet Assassin"
         }
       ],
+      "waUrl": "https://worldathletics.org/athletes/portugal/isaac-nader-14756630",
       "height": "5'5\"",
       "questionBody": "Can he find the gear to challenge Ingebrigtsen head-to-head? Their encounters so far have gone to the Norwegian, but the gap is narrowing.",
       "headlineRest": "who keeps showing up at the finish line when it matters most.",
@@ -733,14 +799,13 @@
       "photo": "/images/wightman_card.png",
       "club": "xx",
       "country": "Scotland",
+      "results": [],
       "weight": "145",
       "coach": "xx",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "jake-wightman",
-      "age": "32",
-      "results": [],
-      "waUrl": "https://worldathletics.org/athletes/great-britain-ni/jake-wightman-14522654"
+      "age": "32"
     },
     {
       "photoBackground": "#111111",
@@ -1007,14 +1072,13 @@
       "photo": "/images/reynold_card.png",
       "club": "x",
       "country": "Kenya",
+      "results": [],
       "weight": "140",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "reynold-cheruiyot",
-      "age": "21",
-      "results": [],
-      "waUrl": "https://worldathletics.org/athletes/kenya/reynold-cheruiyot-14997479"
+      "age": "21"
     },
     {
       "photoBackground": "#111111",
@@ -1299,14 +1363,13 @@
       "photo": "/images/attaoui_card.png",
       "club": "x",
       "country": "Morocco",
+      "results": [],
       "weight": "145",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "mohamed-attaoui",
-      "age": "24",
-      "results": [],
-      "waUrl": "https://worldathletics.org/athletes/spain/mohamed-attaoui-14929058"
+      "age": "24"
     },
     {
       "photoBackground": "#111111",
