@@ -249,6 +249,8 @@ function openH2H(preselectedId, eventContext) {
   qs('#h2h-input-1').value = '';
   qs('#h2h-input-2').value = '';
   qs('#h2h-comparison').innerHTML = '<p class="h2h-prompt">Search for two athletes above to compare them.</p>';
+  const titleEl = qs('.h2h-title');
+  if (titleEl) titleEl.textContent = 'Head to Head';
   modal.classList.add('open');
   document.body.style.overflow = 'hidden';
   if (preselectedId) setH2HSlot(1, preselectedId);
@@ -292,7 +294,6 @@ function renderH2HComparison(id1, id2) {
   const a1 = ATHLETES[id1], a2 = ATHLETES[id2];
   if (!a1 || !a2) return;
 
-  // Returns ranked positions AND any section appearances for an athlete
   const getRankInfo = id => {
     const ranked = [];
     const sectioned = [];
@@ -308,13 +309,11 @@ function renderH2HComparison(id1, id2) {
     return { ranked, sectioned };
   };
 
-  // Build intersection of PR events — only events both athletes have recorded
   const EVENT_ORDER = ['60m','100m','200m','400m','800m','1500m','Mile','3000m','5000m','10000m','Half Marathon','Marathon','Steeplechase','60mH','110mH','400mH'];
   const a1Events = new Set((a1.prs || []).map(p => p.event));
   const a2Events = new Set((a2.prs || []).map(p => p.event));
   const shared = [...a1Events].filter(e => a2Events.has(e));
 
-  // Determine priority order based on event context
   const getPriority = (sharedEvs) => {
     const ctx = (h2hEventContext || '').toLowerCase();
     const has = ev => sharedEvs.includes(ev);
@@ -342,22 +341,24 @@ function renderH2HComparison(id1, id2) {
     }),
   ];
 
-  const colPrHtml = (a, opp) => {
-    if (!allPrEvents.length) return '<div class="h2h-empty-row">No PRs listed</div>';
-    return allPrEvents.map(ev => {
-      const pr    = (a.prs   || []).find(p => p.event === ev);
-      const oppPr = (opp.prs || []).find(p => p.event === ev);
-      const mine   = pr    ? parseTimeToSecs(pr.time)    : null;
-      const theirs = oppPr ? parseTimeToSecs(oppPr.time) : null;
-      const better = mine && theirs && mine < theirs;
-      return `<div class="h2h-pr-row${better ? ' h2h-pr-win' : ''}">
-        <span class="h2h-pr-ev">${ev}</span>
-        <span class="h2h-pr-t">${pr ? pr.time + (better ? ' ✓' : '') : '—'}</span>
-      </div>`;
-    }).join('');
-  };
+  // Shared 3-column PR table: a1 time | event | a2 time
+  const sharedPrHtml = allPrEvents.length
+    ? allPrEvents.map(ev => {
+        const pr1 = (a1.prs || []).find(p => p.event === ev);
+        const pr2 = (a2.prs || []).find(p => p.event === ev);
+        const t1 = pr1 ? parseTimeToSecs(pr1.time) : null;
+        const t2 = pr2 ? parseTimeToSecs(pr2.time) : null;
+        const a1wins = t1 && t2 && t1 < t2;
+        const a2wins = t1 && t2 && t2 < t1;
+        return `<div class="h2h-shared-pr-row">
+          <span class="h2h-spr-t${a1wins ? ' h2h-spr-win' : ''}">${pr1 ? pr1.time : '—'}</span>
+          <span class="h2h-spr-ev">${ev}</span>
+          <span class="h2h-spr-t h2h-spr-t--right${a2wins ? ' h2h-spr-win' : ''}">${pr2 ? pr2.time : '—'}</span>
+        </div>`;
+      }).join('')
+    : '<div class="h2h-empty-row" style="text-align:center;padding:12px 0">No shared events to compare</div>';
 
-  const col = (a, opp) => {
+  const col = (a, isRight) => {
     const { ranked, sectioned } = getRankInfo(a.id);
     const photoHtml = a.photo
       ? `<img class="h2h-photo" src="${a.photo}" alt="${a.name}">`
@@ -379,36 +380,46 @@ function renderH2HComparison(id1, id2) {
     }
 
     return `
-      <div class="h2h-col">
+      <div class="h2h-col${isRight ? ' h2h-col--right' : ''}">
         <div class="h2h-photo-wrap" style="background:${a.photoBackground || '#111'}">${photoHtml}</div>
-        <div class="h2h-name">${a.name}</div>
-        <div class="h2h-country">${renderFlag(a.flag)} ${a.country}</div>
+        <div class="h2h-name${isRight ? ' h2h-name--right' : ''}">${a.name}</div>
+        <div class="h2h-country${isRight ? ' h2h-country--right' : ''}">${renderFlag(a.flag)} ${a.country}</div>
+        ${a.event ? `<div class="h2h-event-tag${isRight ? ' h2h-event-tag--right' : ''}">${a.event}</div>` : ''}
         <div class="h2h-section-label">Rankings</div>
         <div class="h2h-ranks">${rankHtml}</div>
-        <div class="h2h-section-label">Personal Bests</div>
-        <div class="h2h-prs">${colPrHtml(a, opp)}</div>
       </div>`;
   };
 
+  const n1 = a1.name.split(' ').slice(-1)[0];
+  const n2 = a2.name.split(' ').slice(-1)[0];
+
   qs('#h2h-comparison').innerHTML = `
     <div class="h2h-cols">
-      ${col(a1, a2)}
+      ${col(a1, false)}
       <div class="h2h-col-divider"></div>
-      ${col(a2, a1)}
+      ${col(a2, true)}
+    </div>
+    <div class="h2h-pr-section">
+      <div class="h2h-pr-section-hdr">
+        <span class="h2h-pr-ath">${n1}</span>
+        <span class="h2h-pr-label">Personal Bests</span>
+        <span class="h2h-pr-ath h2h-pr-ath--right">${n2}</span>
+      </div>
+      <div class="h2h-pr-table">${sharedPrHtml}</div>
     </div>`;
 
-  // Equalize heights of matching sections so dividers line up
+  const titleEl = qs('.h2h-title');
+  if (titleEl) titleEl.textContent = `${n1} vs ${n2}`;
+
   requestAnimationFrame(() => {
-    ['h2h-ranks', 'h2h-prs'].forEach(cls => {
-      const els = qs('#h2h-comparison').querySelectorAll('.' + cls);
-      if (els.length === 2) {
-        els[0].style.minHeight = '';
-        els[1].style.minHeight = '';
-        const maxH = Math.max(els[0].offsetHeight, els[1].offsetHeight);
-        els[0].style.minHeight = maxH + 'px';
-        els[1].style.minHeight = maxH + 'px';
-      }
-    });
+    const els = qs('#h2h-comparison').querySelectorAll('.h2h-ranks');
+    if (els.length === 2) {
+      els[0].style.minHeight = '';
+      els[1].style.minHeight = '';
+      const maxH = Math.max(els[0].offsetHeight, els[1].offsetHeight);
+      els[0].style.minHeight = maxH + 'px';
+      els[1].style.minHeight = maxH + 'px';
+    }
   });
 }
 
