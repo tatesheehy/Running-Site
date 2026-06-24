@@ -276,7 +276,71 @@
       "photo": "/images/hockercard.png",
       "club": "Nike",
       "country": "United States",
-      "results": [],
+      "results": [
+        {
+          "date": "JUN 14",
+          "meet": "USATF LA Grand Prix",
+          "event": "",
+          "time": "7:37.77",
+          "place": "2"
+        },
+        {
+          "date": "MAR 21",
+          "meet": "World Athletics Indoor Championships",
+          "event": "3000 Metres Short Track",
+          "time": "7:35.70",
+          "place": "2"
+        },
+        {
+          "date": "MAR 1",
+          "meet": "USA Indoor Championships",
+          "event": "",
+          "time": "3:38.08",
+          "place": "5"
+        },
+        {
+          "date": "FEB 28",
+          "meet": "USA Indoor Championships",
+          "event": "3000 Metres Short Track",
+          "time": "7:39.25",
+          "place": "1"
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Sound Invite",
+          "event": "1500m",
+          "time": "3:30.80",
+          "place": ""
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Sound Invite",
+          "event": "Mile sh",
+          "time": "3:45.94",
+          "place": "1"
+        },
+        {
+          "date": "FEB 7",
+          "meet": "Doc Hale Virginia Tech Invitational",
+          "event": "1000 Metres",
+          "time": "2:16.30",
+          "place": ""
+        },
+        {
+          "date": "FEB 1",
+          "meet": "Millrose Games",
+          "event": "2 Miles sh",
+          "time": "8:07.31",
+          "place": "1"
+        },
+        {
+          "date": "JAN 23",
+          "meet": "Hokie Invitational",
+          "event": "2000m sh",
+          "time": "4:52.92",
+          "place": "1"
+        }
+      ],
       "weight": "145 lbs",
       "coach": "Jerry Schumacher",
       "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
