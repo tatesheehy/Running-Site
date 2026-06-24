@@ -113,15 +113,16 @@ function extractSeasonResults(nd, year) {
     return cur;
   }
 
-  function coerce(item, inheritComp, inheritDate) {
+  function coerce(item, inheritComp, inheritDate, inheritYear) {
     const rawDate   = item.date || item.dateFormatted || item.dateDay || inheritDate || '';
     const rawMark   = item.mark || item.performance || item.result || item.time || '';
     const rawComp   = item.competition || item.competitionName || item.meet || item.matchName || inheritComp || '';
     const rawEvent  = item.discipline || item.event || item.eventName || item.disciplineCode || '';
     const rawPlace  = item.place || item.position || item.rank || item.pos || '';
     const rawSeason = item.season || item.year || '';
-    const entryYear = getYear(rawDate) || getYear(rawSeason) || (typeof rawSeason === 'number' ? rawSeason : 0);
-    if (entryYear && entryYear !== year) return;
+    let entryYear = getYear(rawDate) || getYear(rawSeason) || (typeof rawSeason === 'number' ? rawSeason : 0);
+    if (!entryYear && inheritYear) entryYear = inheritYear;
+    if (!entryYear || entryYear !== year) return;
     const mark = parseMark(rawMark);
     if (!mark) return;
     const meetLower = rawComp.toLowerCase();
@@ -129,15 +130,15 @@ function extractSeasonResults(nd, year) {
     raw.push({ date: parseResultDate(rawDate) || (rawSeason ? String(rawSeason) : ''), meet: cleanMeetName(rawComp), event: normalizeEvent(String(rawEvent)) || '', time: mark, place: rawPlace ? String(rawPlace).replace(/\.$/, '') : '', _rawDate: rawDate });
   }
 
-  function processArray(arr, inheritComp, inheritDate) {
+  function processArray(arr, inheritComp, inheritDate, inheritYear) {
     if (!Array.isArray(arr)) return;
     for (const item of arr) {
       if (!item || typeof item !== 'object') continue;
       const comp = item.competition || item.competitionName || item.meet || item.matchName || inheritComp || '';
       const date = item.date || item.dateFormatted || item.dateDay || inheritDate || '';
-      if (Array.isArray(item.results) && item.results.length > 0) processArray(item.results, comp, date);
-      else if (Array.isArray(item.performances) && item.performances.length > 0) processArray(item.performances, comp, date);
-      else coerce(item, comp, date);
+      if (Array.isArray(item.results) && item.results.length > 0) processArray(item.results, comp, date, inheritYear);
+      else if (Array.isArray(item.performances) && item.performances.length > 0) processArray(item.performances, comp, date, inheritYear);
+      else coerce(item, comp, date, inheritYear);
     }
   }
 
@@ -146,7 +147,11 @@ function extractSeasonResults(nd, year) {
   for (const path of [['resultsByYear'], ['athlete', 'resultsByYear']]) {
     const rby = dig(pp, ...path);
     if (rby && typeof rby === 'object' && !Array.isArray(rby)) {
-      for (const val of Object.values(rby)) processArray(val);
+      for (const [yearKey, arr] of Object.entries(rby)) {
+        const keyYear = parseInt(yearKey, 10);
+        if (!isNaN(keyYear) && keyYear !== year) continue;
+        processArray(arr, '', '', keyYear || year);
+      }
     }
   }
 

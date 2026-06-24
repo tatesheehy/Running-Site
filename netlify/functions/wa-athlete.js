@@ -165,7 +165,7 @@ function extractSeasonResults(nd, year) {
     return cur;
   }
 
-  function coerce(item, inheritComp, inheritDate) {
+  function coerce(item, inheritComp, inheritDate, inheritYear) {
     const rawDate   = item.date || item.dateFormatted || item.dateDay || inheritDate || '';
     const rawMark   = item.mark || item.performance || item.result || item.time || '';
     const rawComp   = item.competition || item.competitionName || item.meet || item.matchName || inheritComp || '';
@@ -173,8 +173,11 @@ function extractSeasonResults(nd, year) {
     const rawPlace  = item.place || item.position || item.rank || item.pos || '';
     const rawSeason = item.season || item.year || '';
 
-    const entryYear = getYear(rawDate) || getYear(rawSeason) || (typeof rawSeason === 'number' ? rawSeason : 0);
-    if (entryYear && entryYear !== year) return;
+    let entryYear = getYear(rawDate) || getYear(rawSeason) || (typeof rawSeason === 'number' ? rawSeason : 0);
+    // Fall back to the year inherited from the resultsByYear key when the entry has no year in its fields
+    if (!entryYear && inheritYear) entryYear = inheritYear;
+    // Strict: exclude entries with wrong year OR unknown year
+    if (!entryYear || entryYear !== year) return;
 
     const mark = parseMark(rawMark);
     if (!mark) return;
@@ -193,25 +196,29 @@ function extractSeasonResults(nd, year) {
     });
   }
 
-  function processArray(arr, inheritComp, inheritDate) {
+  function processArray(arr, inheritComp, inheritDate, inheritYear) {
     if (!Array.isArray(arr)) return;
     for (const item of arr) {
       if (!item || typeof item !== 'object') continue;
       const comp = item.competition || item.competitionName || item.meet || item.matchName || inheritComp || '';
       const date = item.date || item.dateFormatted || item.dateDay || inheritDate || '';
-      if (Array.isArray(item.results) && item.results.length > 0)       processArray(item.results, comp, date);
-      else if (Array.isArray(item.performances) && item.performances.length > 0) processArray(item.performances, comp, date);
-      else coerce(item, comp, date);
+      if (Array.isArray(item.results) && item.results.length > 0)       processArray(item.results, comp, date, inheritYear);
+      else if (Array.isArray(item.performances) && item.performances.length > 0) processArray(item.performances, comp, date, inheritYear);
+      else coerce(item, comp, date, inheritYear);
     }
   }
 
   const pp = dig(nd, 'props', 'pageProps') || {};
 
-  // Strategy A: resultsByYear object keyed by year string
+  // Strategy A: resultsByYear object keyed by year string — only process the current year's key
   for (const path of [['resultsByYear'], ['athlete', 'resultsByYear']]) {
     const rby = dig(pp, ...path);
     if (rby && typeof rby === 'object' && !Array.isArray(rby)) {
-      for (const val of Object.values(rby)) processArray(val);
+      for (const [yearKey, arr] of Object.entries(rby)) {
+        const keyYear = parseInt(yearKey, 10);
+        if (!isNaN(keyYear) && keyYear !== year) continue; // skip other years' buckets
+        processArray(arr, '', '', keyYear || year);
+      }
     }
   }
 
