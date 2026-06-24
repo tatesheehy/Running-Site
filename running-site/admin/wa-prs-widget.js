@@ -38,13 +38,14 @@
   var WAPrsControl = createClass({
     getInitialState: function () {
       return {
-        waInput:  '',
-        loading:  false,
-        error:    '',
-        athletes: [],   // name-search results
-        outdoor:  [],   // fetched from WA
-        indoor:   [],
-        checked:  [],   // indices into outdoor.concat(indoor)
+        waInput:   '',
+        loading:   false,
+        error:     '',
+        athletes:  [],   // name-search results
+        outdoor:   [],   // fetched from WA
+        indoor:    [],
+        checked:   [],   // indices into outdoor.concat(indoor)
+        waResults: [],   // season results preview from WA fetch
       };
     },
 
@@ -92,10 +93,11 @@
     },
 
     applyPRData: function (data) {
-      var outdoor = data.outdoor || [];
-      var indoor  = data.indoor  || [];
-      var checked = outdoor.map(function (_, i) { return i; });
-      this.setState({ outdoor: outdoor, indoor: indoor, checked: checked, loading: false });
+      var outdoor   = data.outdoor   || [];
+      var indoor    = data.indoor    || [];
+      var waResults = data.results   || [];
+      var checked   = outdoor.map(function (_, i) { return i; });
+      this.setState({ outdoor: outdoor, indoor: indoor, checked: checked, loading: false, waResults: waResults });
       var prs = outdoor.map(function (p) { return { event: p.event, time: p.time }; });
       this.props.onChange(prs);
     },
@@ -195,6 +197,36 @@
           ),
           st.error && h('div', { style: S.err }, '⚠ ' + st.error),
           h('div', { style: S.hint }, 'Live Netlify site only — not available in local preview.'),
+        ),
+
+        // ── Season results preview (shown after WA fetch) ────────────
+        st.waResults.length > 0 && h('div', { style: { background: '#e8f5e9', border: '1px solid #a5d6a7', borderRadius: 6, padding: '10px 12px', marginBottom: 12 } },
+          h('div', { style: { fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.06em', color: '#2e7d32', marginBottom: 6 } },
+            '✓ ' + st.waResults.length + ' season result' + (st.waResults.length === 1 ? '' : 's') + ' found — saved automatically by daily sync'),
+          h('div', { style: { fontSize: 11, color: '#555', marginBottom: 8 } },
+            'These will be written to the athlete\'s profile the next time the sync runs (or trigger it manually).'),
+          h('table', { style: { width: '100%', borderCollapse: 'collapse', fontSize: 12 } },
+            h('thead', null,
+              h('tr', null,
+                h('th', { style: { textAlign: 'left', color: '#888', fontWeight: 700, paddingBottom: 4, fontSize: 10 } }, 'Date'),
+                h('th', { style: { textAlign: 'left', color: '#888', fontWeight: 700, paddingBottom: 4, fontSize: 10 } }, 'Meet'),
+                h('th', { style: { textAlign: 'left', color: '#888', fontWeight: 700, paddingBottom: 4, fontSize: 10 } }, 'Event'),
+                h('th', { style: { textAlign: 'left', color: '#888', fontWeight: 700, paddingBottom: 4, fontSize: 10 } }, 'Time'),
+                h('th', { style: { textAlign: 'left', color: '#888', fontWeight: 700, paddingBottom: 4, fontSize: 10 } }, 'Pl.'),
+              )
+            ),
+            h('tbody', null,
+              st.waResults.map(function (r, i) {
+                return h('tr', { key: i },
+                  h('td', { style: { color: '#666', paddingBottom: 3, paddingRight: 8 } }, r.date),
+                  h('td', { style: { color: '#333', paddingBottom: 3, paddingRight: 8 } }, r.meet),
+                  h('td', { style: { color: '#555', paddingBottom: 3, paddingRight: 8, fontSize: 11 } }, r.event),
+                  h('td', { style: { fontFamily: 'monospace', fontWeight: 700, paddingBottom: 3, paddingRight: 8 } }, r.time),
+                  h('td', { style: { color: '#888', paddingBottom: 3 } }, r.place),
+                );
+              })
+            )
+          )
         ),
 
         // ── Athlete chips (name-search results) ─────────────────────

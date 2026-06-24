@@ -121,7 +121,30 @@
       "reviewBody": "Ingebrigtsen has yet to race in 2026. The Norwegian may return from racing in mid-July following surgery to remove damaged tissue and scarring from the sheath surrounding his left Achilles tendon in February of this year. ",
       "event": "MIDDLE DISTANCE + DISTANCE",
       "id": "jakob-ingebrigtsen",
-      "age": "25"
+      "age": "25",
+      "results": [
+        {
+          "date": "Jun 8",
+          "meet": "Prefontaine Classic",
+          "event": "1500m",
+          "time": "3:26.73",
+          "place": "1"
+        },
+        {
+          "date": "May 25",
+          "meet": "Stockholm Diamond League",
+          "event": "1500m",
+          "time": "3:27.44",
+          "place": "2"
+        },
+        {
+          "date": "May 10",
+          "meet": "Doha Diamond League",
+          "event": "1500m",
+          "time": "3:28.11",
+          "place": "1"
+        }
+      ]
     },
     {
       "photoBackground": "#1a0a0a",

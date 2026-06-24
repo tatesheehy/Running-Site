@@ -78,7 +78,57 @@ function sortBests(bests) {
   });
 }
 
-async function fetchOutdoorPRs(waUrl) {
+function findResultsArray(obj, depth = 0) {
+  if (depth > 12 || obj == null || typeof obj !== 'object') return null;
+  if (Array.isArray(obj)) {
+    if (obj.length > 0 && typeof obj[0] === 'object' && obj[0] !== null) {
+      const f = obj[0];
+      const hasComp = f.competition || f.competitionName || f.meet || f.matchName;
+      const hasMark = f.mark || f.performance || f.result || f.time;
+      const hasDate = f.date || f.dateFormatted || f.dateDay || f.season;
+      if (hasComp && hasMark && hasDate) return obj;
+    }
+    for (const item of obj) { const found = findResultsArray(item, depth + 1); if (found) return found; }
+    return null;
+  }
+  const priority = ['results', 'performances', 'competitionResults', 'resultsByYear', 'seasonResults', 'athleteResults', 'data', 'items'];
+  for (const key of priority) { if (key in obj) { const found = findResultsArray(obj[key], depth + 1); if (found) return found; } }
+  for (const key of Object.keys(obj)) { if (!priority.includes(key)) { const found = findResultsArray(obj[key], depth + 1); if (found) return found; } }
+  return null;
+}
+
+function parseResultDate(raw) {
+  if (!raw) return '';
+  const s = String(raw).trim();
+  const iso = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (iso) { const d = new Date(s); return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }); }
+  const dmy = s.match(/^(\d{1,2})\s+([A-Z]{3})\s+(\d{4})/i);
+  if (dmy) return `${dmy[2]} ${parseInt(dmy[1], 10)}`;
+  return s;
+}
+
+function normalizeResults(arr, year) {
+  return arr
+    .map(r => {
+      const rawDate  = r.date || r.dateFormatted || r.dateDay || '';
+      const rawMark  = r.mark || r.performance || r.result || r.time || '';
+      const rawComp  = r.competition || r.competitionName || r.meet || r.matchName || '';
+      const rawEvent = r.discipline || r.event || r.eventName || r.disciplineCode || '';
+      const rawPlace = r.place || r.position || r.rank || r.pos || '';
+      const rawSeason = r.season || r.year || '';
+      const dateStr  = String(rawDate), seasonStr = String(rawSeason);
+      const isCurrentYear = dateStr.startsWith(String(year)) || dateStr.endsWith(String(year)) || seasonStr === String(year);
+      if (!isCurrentYear) return null;
+      const mark = parseMark(rawMark);
+      if (!mark) return null;
+      return { date: parseResultDate(rawDate) || String(rawSeason), meet: rawComp, event: normalizeEvent(String(rawEvent)) || '', time: mark, place: rawPlace ? String(rawPlace) : '', _rawDate: rawDate };
+    })
+    .filter(Boolean)
+    .sort((a, b) => new Date(b._rawDate || 0) - new Date(a._rawDate || 0))
+    .map(({ _rawDate, ...r }) => r);
+}
+
+async function fetchAthleteData(waUrl) {
   let html;
   try {
     html = await fetch(waUrl, { headers: FETCH_HEADERS }).then(r => r.text());
@@ -86,7 +136,9 @@ async function fetchOutdoorPRs(waUrl) {
     throw new Error(`Could not fetch ${waUrl}: ${e.message}`);
   }
 
+  const year = new Date().getFullYear();
   let outdoor = [];
+  let results = [];
 
   // Strategy 1: __NEXT_DATA__
   const ndMatch = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
@@ -98,10 +150,12 @@ async function fetchOutdoorPRs(waUrl) {
         const all = normalizeBests(arr);
         outdoor = sortBests(all.filter(b => !b.indoor));
       }
+      const resArr = findResultsArray(nd);
+      if (resArr) results = normalizeResults(resArr, year);
     } catch (_) {}
   }
 
-  // Strategy 2: HTML table
+  // Strategy 2: HTML table fallback for PRs
   if (outdoor.length === 0) {
     const timeRe = /^\d*:\d{2}\.\d{2}$|^\d{2}\.\d{2}$/;
     const rowRe  = /<tr[^>]*>([\s\S]*?)<\/tr>/gi;
@@ -120,12 +174,15 @@ async function fetchOutdoorPRs(waUrl) {
     outdoor = sortBests(outdoor);
   }
 
-  return outdoor.map(({ event, time }) => ({ event, time }));
+  return {
+    prs:     outdoor.map(({ event, time }) => ({ event, time })),
+    results,
+  };
 }
 
-function prsChanged(oldPrs, newPrs) {
-  if (oldPrs.length !== newPrs.length) return true;
-  return newPrs.some((p, i) => p.event !== oldPrs[i]?.event || p.time !== oldPrs[i]?.time);
+function arrChanged(oldArr, newArr) {
+  if ((oldArr || []).length !== (newArr || []).length) return true;
+  return (newArr || []).some((p, i) => JSON.stringify(p) !== JSON.stringify((oldArr || [])[i]));
 }
 
 // ── GitHub API helpers ────────────────────────────────────────────────────────
@@ -205,12 +262,16 @@ async function runSync() {
     if (!athlete.waUrl) continue;
 
     try {
-      const newPrs = await fetchOutdoorPRs(athlete.waUrl);
-      if (newPrs.length > 0 && prsChanged(athlete.prs || [], newPrs)) {
-        console.log(`sync-prs: updated PRs for ${athlete.name}`);
-        athlete.prs = newPrs;
-        anyChanged = true;
-        results.push({ name: athlete.name, status: 'updated', count: newPrs.length });
+      const { prs: newPrs, results: newResults } = await fetchAthleteData(athlete.waUrl);
+      const prsUpdated     = newPrs.length > 0 && arrChanged(athlete.prs, newPrs);
+      const resultsUpdated = newResults.length > 0 && arrChanged(athlete.results, newResults);
+
+      if (prsUpdated)     { athlete.prs     = newPrs;     anyChanged = true; }
+      if (resultsUpdated) { athlete.results  = newResults; anyChanged = true; }
+
+      if (prsUpdated || resultsUpdated) {
+        console.log(`sync-prs: updated ${athlete.name} — PRs: ${newPrs.length}, results: ${newResults.length}`);
+        results.push({ name: athlete.name, status: 'updated', prs: newPrs.length, seasonResults: newResults.length });
       } else {
         results.push({ name: athlete.name, status: 'unchanged' });
       }

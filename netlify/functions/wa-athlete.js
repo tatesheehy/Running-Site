@@ -121,6 +121,106 @@ function sortBests(bests) {
   });
 }
 
+// ── Season results helpers ────────────────────────────────────────────────────
+
+// Walk an object looking for an array of race/competition results.
+// Distinguishes from bests by requiring a competition name field.
+function findResultsArray(obj, depth = 0) {
+  if (depth > 12 || obj == null || typeof obj !== 'object') return null;
+
+  if (Array.isArray(obj)) {
+    if (obj.length > 0 && typeof obj[0] === 'object' && obj[0] !== null) {
+      const first = obj[0];
+      const hasComp = first.competition || first.competitionName || first.meet || first.matchName || first.eventName;
+      const hasMark = first.mark || first.performance || first.result || first.time;
+      const hasDate = first.date || first.dateFormatted || first.dateDay || first.season;
+      if (hasComp && hasMark && hasDate) return obj;
+    }
+    for (const item of obj) {
+      const found = findResultsArray(item, depth + 1);
+      if (found) return found;
+    }
+    return null;
+  }
+
+  // Keys WA commonly uses for competition results
+  const priority = [
+    'results', 'performances', 'competitionResults', 'resultsByYear',
+    'seasonResults', 'athleteResults', 'data', 'items',
+  ];
+  for (const key of priority) {
+    if (key in obj) {
+      const found = findResultsArray(obj[key], depth + 1);
+      if (found) return found;
+    }
+  }
+  for (const key of Object.keys(obj)) {
+    if (!priority.includes(key)) {
+      const found = findResultsArray(obj[key], depth + 1);
+      if (found) return found;
+    }
+  }
+  return null;
+}
+
+function parseResultDate(raw) {
+  if (!raw) return '';
+  // WA uses formats like "2026-06-08", "08 JUN 2026", "08/06/2026"
+  const s = String(raw).trim();
+  // ISO: 2026-06-08
+  const iso = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
+  if (iso) {
+    const d = new Date(s);
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  }
+  // DD MON YYYY
+  const dmy = s.match(/^(\d{1,2})\s+([A-Z]{3})\s+(\d{4})/i);
+  if (dmy) return `${dmy[2]} ${parseInt(dmy[1], 10)}`;
+  return s;
+}
+
+function normalizeResults(arr, currentYear) {
+  const year = currentYear || new Date().getFullYear();
+  return arr
+    .map(r => {
+      const rawDate = r.date || r.dateFormatted || r.dateDay || '';
+      const rawMark = r.mark || r.performance || r.result || r.time || '';
+      const rawComp = r.competition || r.competitionName || r.meet || r.matchName || '';
+      const rawEvent = r.discipline || r.event || r.eventName || r.disciplineCode || '';
+      const rawPlace = r.place || r.position || r.rank || r.pos || '';
+      const rawSeason = r.season || r.year || '';
+
+      // Filter to current year only
+      const dateStr = String(rawDate);
+      const seasonStr = String(rawSeason);
+      const isCurrentYear =
+        dateStr.startsWith(String(year)) ||       // ISO format 2026-...
+        dateStr.endsWith(String(year)) ||          // DD MON 2026
+        seasonStr === String(year);
+      if (!isCurrentYear) return null;
+
+      const mark = parseMark(rawMark);
+      if (!mark) return null;
+
+      return {
+        date:  parseResultDate(rawDate) || (rawSeason ? String(rawSeason) : ''),
+        meet:  rawComp,
+        event: normalizeEvent(String(rawEvent)) || '',
+        time:  mark,
+        place: rawPlace ? String(rawPlace) : '',
+        _rawDate: rawDate,
+      };
+    })
+    .filter(Boolean)
+    .sort((a, b) => {
+      // Sort descending by date (most recent first)
+      const da = new Date(a._rawDate || 0).getTime();
+      const db = new Date(b._rawDate || 0).getTime();
+      return db - da;
+    })
+    .map(({ _rawDate, ...r }) => r); // strip internal sort key
+}
+
 // ── Search: find athletes by name ────────────────────────────────────────────
 
 async function searchAthletes(name) {
@@ -206,16 +306,27 @@ async function getAthleteProfile(url) {
   let outdoor = [];
   let indoor  = [];
 
+  let results = [];
+
   // ── Strategy 1: __NEXT_DATA__ deep search ────────────────────────────────
   const ndMatch = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
   if (ndMatch) {
     try {
       const nd = JSON.parse(ndMatch[1]);
+
+      // PRs
       const arr = findBestsArray(nd);
       if (arr) {
         const all = normalizeBests(arr);
         outdoor = sortBests(all.filter(b => !b.indoor));
         indoor  = sortBests(all.filter(b =>  b.indoor));
+      }
+
+      // Season results — WA often stores these under resultsByYear or similar
+      const year = new Date().getFullYear();
+      const resultsArr = findResultsArray(nd);
+      if (resultsArr) {
+        results = normalizeResults(resultsArr, year);
       }
     } catch (_) { /* fall through */ }
   }
@@ -226,14 +337,12 @@ async function getAthleteProfile(url) {
   if (outdoor.length === 0) {
     const timeRe = /^\d*:\d{2}\.\d{2}$|^\d{2}\.\d{2}$/;
     const rowRe  = /<tr[^>]*>([\s\S]*?)<\/tr>/gi;
-    const cellRe = /<td[^>]*>([\s\S]*?)<\/td>/gi;
     let rowM;
     while ((rowM = rowRe.exec(html)) !== null) {
       const cells = [];
-      let cM;
-      const chunk = rowM[1];
       const cellRx = /<td[^>]*>([\s\S]*?)<\/td>/gi;
-      while ((cM = cellRx.exec(chunk)) !== null) {
+      let cM;
+      while ((cM = cellRx.exec(rowM[1])) !== null) {
         cells.push(cM[1].replace(/<[^>]+>/g, '').trim());
       }
       if (cells.length >= 2 && timeRe.test(cells[1])) {
@@ -249,7 +358,7 @@ async function getAthleteProfile(url) {
     outdoor = sortBests(outdoor);
   }
 
-  return { name: athleteName, outdoor, indoor };
+  return { name: athleteName, outdoor, indoor, results };
 }
 
 // ── Netlify handler ───────────────────────────────────────────────────────────

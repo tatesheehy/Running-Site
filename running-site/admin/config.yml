@@ -147,6 +147,19 @@ collections:
                 label: "Personal Records"
                 widget: wa-prs
 
+              - name: results
+                label: "Season Results"
+                label_singular: Result
+                widget: list
+                required: false
+                hint: "Race results for the current season — shown as a collapsible table on the athlete card."
+                fields:
+                  - { label: "Date (e.g. Jun 8)", name: date, widget: string }
+                  - { label: "Meet", name: meet, widget: string }
+                  - { label: "Event (e.g. 1500m)", name: event, widget: string, required: false }
+                  - { label: "Time / Mark", name: time, widget: string }
+                  - { label: "Place (e.g. 1, 2, DNF)", name: place, widget: string, required: false }
+
               - name: achievements
                 label: Achievements
                 widget: list
