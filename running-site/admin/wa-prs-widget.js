@@ -151,11 +151,21 @@
             : h('label', { style: S.savedBoxLabelEmpty }, '⚠ No PRs saved yet'),
 
           current.length === 0
-            ? h('div', { style: { color: '#e65100', fontSize: 12 } }, 'Use the fetch tool below or add PRs manually.')
+            ? h('div', { style: { color: '#e65100', fontSize: 12, marginBottom: 6 } }, 'Use the fetch tool below or add PRs manually.')
             : current.map(function (pr, i) {
-                return h('div', { key: i, style: S.savedRow },
-                  h('span', { style: { fontWeight: 700, minWidth: 64, color: '#1b5e20' } }, pr.event),
-                  h('span', { style: Object.assign({}, S.mono, { color: '#333' }) }, pr.time),
+                return h('div', { key: i, style: Object.assign({}, S.row, { marginBottom: 6 }) },
+                  h('input', {
+                    value:       pr.event || '',
+                    placeholder: 'Event (1500m)',
+                    onChange:    function (ev) { self.updateCurrent(i, 'event', ev.target.value); },
+                    style:       Object.assign({}, S.input, { flex: '0 0 110px', background: '#fff', border: '1px solid #a5d6a7' }),
+                  }),
+                  h('input', {
+                    value:       pr.time || '',
+                    placeholder: 'Time (3:26.73)',
+                    onChange:    function (ev) { self.updateCurrent(i, 'time', ev.target.value); },
+                    style:       Object.assign({}, S.input, { background: '#fff', border: '1px solid #a5d6a7' }),
+                  }),
                   h('button', { type: 'button', style: S.removeBtn, onClick: function () { self.removeCurrent(i); } }, '×'),
                 );
               }),
