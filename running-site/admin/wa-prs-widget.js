@@ -37,27 +37,39 @@
 
   var WAPrsControl = createClass({
     getInitialState: function () {
-      // Pre-fill fetch input with the athlete's saved waUrl if one exists
-      var savedWaUrl = '';
+      return {
+        waInput:      '',
+        loading:      false,
+        error:        '',
+        athletes:     [],
+        outdoor:      [],
+        indoor:       [],
+        checked:      [],
+        waResults:    [],
+        _urlFilled:   false,
+      };
+    },
+
+    _readEntryWaUrl: function () {
       try {
         var entry = this.props.entry;
-        if (entry) {
-          savedWaUrl = (typeof entry.getIn === 'function'
-            ? entry.getIn(['data', 'waUrl'])
-            : (entry.data && entry.data.waUrl)) || '';
-        }
-      } catch (_) {}
+        if (!entry) return '';
+        return (typeof entry.getIn === 'function'
+          ? entry.getIn(['data', 'waUrl'])
+          : (entry.data && entry.data.waUrl)) || '';
+      } catch (_) { return ''; }
+    },
 
-      return {
-        waInput:   savedWaUrl,
-        loading:   false,
-        error:     '',
-        athletes:  [],
-        outdoor:   [],
-        indoor:    [],
-        checked:   [],
-        waResults: [],
-      };
+    componentDidMount: function () {
+      var url = this._readEntryWaUrl();
+      if (url) this.setState({ waInput: url, _urlFilled: true });
+    },
+
+    componentDidUpdate: function () {
+      if (!this.state._urlFilled) {
+        var url = this._readEntryWaUrl();
+        if (url) this.setState({ waInput: url, _urlFilled: true });
+      }
     },
 
     doFetch: function () {
