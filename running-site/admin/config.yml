@@ -143,8 +143,11 @@ collections:
               - { label: "College Logo", name: collegeLogo, widget: image, required: false, hint: "Upload the college or university logo." }
 
               - name: prs
-                label: "Personal Records (1–4)"
-                widget: wa-prs
+                label: "Personal Records"
+                widget: list
+                fields:
+                  - { label: "Event (e.g. 1500m, Mile, 5000m)", name: event, widget: string }
+                  - { label: "Time / Mark (e.g. 3:27.65)", name: time, widget: string }
 
               - name: achievements
                 label: Achievements

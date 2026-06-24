@@ -59,7 +59,7 @@ function normalizeAthlete(a) {
       AGE: a.age,
       SEASONS: a.seasons,
     },
-    prs: (a.prs || []).slice(0, 4),
+    prs: (a.prs || []),
     extra: {
       CLUB: a.club,
       COACH: a.coach,
@@ -306,12 +306,11 @@ function renderH2HComparison(id1, id2) {
     return { ranked, sectioned };
   };
 
-  // Build unified ordered PR event list from both athletes
+  // Build intersection of PR events — only events both athletes have recorded
   const EVENT_ORDER = ['60m','100m','200m','400m','800m','1500m','Mile','3000m','5000m','10000m','Half Marathon','Marathon','Steeplechase','60mH','110mH','400mH'];
-  const allPrEvents = [...new Set([
-    ...(a1.prs || []).map(p => p.event),
-    ...(a2.prs || []).map(p => p.event),
-  ])].sort((a, b) => {
+  const a1Events = new Set((a1.prs || []).map(p => p.event));
+  const a2Events = new Set((a2.prs || []).map(p => p.event));
+  const allPrEvents = [...a1Events].filter(e => a2Events.has(e)).sort((a, b) => {
     const ai = EVENT_ORDER.indexOf(a), bi = EVENT_ORDER.indexOf(b);
     if (ai === -1 && bi === -1) return a.localeCompare(b);
     if (ai === -1) return 1;
@@ -373,6 +372,20 @@ function renderH2HComparison(id1, id2) {
       <div class="h2h-col-divider"></div>
       ${col(a2, a1)}
     </div>`;
+
+  // Equalize heights of matching sections so dividers line up
+  requestAnimationFrame(() => {
+    ['h2h-ranks', 'h2h-prs'].forEach(cls => {
+      const els = qs('#h2h-comparison').querySelectorAll('.' + cls);
+      if (els.length === 2) {
+        els[0].style.minHeight = '';
+        els[1].style.minHeight = '';
+        const maxH = Math.max(els[0].offsetHeight, els[1].offsetHeight);
+        els[0].style.minHeight = maxH + 'px';
+        els[1].style.minHeight = maxH + 'px';
+      }
+    });
+  });
 }
 
 window.openH2H = openH2H;
@@ -907,7 +920,7 @@ function openAthleteCard(athleteId, rank) {
     </div>
   `).join('');
 
-  const prsHtml = (a.prs || []).map(pr => `
+  const prsHtml = (a.prs || []).slice(0, 4).map(pr => `
     <div class="card-pr-row">
       <span class="card-pr-event">${pr.event || ''}</span>
       <span class="card-pr-time">${pr.time || ''}</span>
