@@ -1020,6 +1020,37 @@ function openAthleteCard(athleteId, rank) {
           </div>
         ` : ''}
         ${traitsHtml ? `<div class="card-traits">${traitsHtml}</div>` : ''}
+        ${(a.results || []).length > 0 ? `
+          <details class="card-results">
+            <summary class="card-results-toggle">
+              <span class="card-results-label">2026 Season Results</span>
+              <span class="card-results-count">${a.results.length} race${a.results.length === 1 ? '' : 's'}</span>
+              <span class="card-results-arrow">▸</span>
+            </summary>
+            <table class="card-results-table">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Meet</th>
+                  <th>Event</th>
+                  <th>Time</th>
+                  <th>Pl.</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${(a.results).map(r => `
+                  <tr>
+                    <td class="cr-date">${r.date || ''}</td>
+                    <td class="cr-meet">${r.meet || ''}</td>
+                    <td class="cr-event">${r.event || ''}</td>
+                    <td class="cr-time">${r.time || ''}</td>
+                    <td class="cr-place">${r.place || ''}</td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          </details>
+        ` : ''}
         <div class="card-analysis-label">Analysis</div>
         ${an.reviewTitle ? `
           <div class="card-analysis-section">
@@ -1033,37 +1064,6 @@ function openAthleteCard(athleteId, rank) {
         ` : ''}
       </div>
     </div>
-    ${(a.results || []).length > 0 ? `
-      <details class="card-results">
-        <summary class="card-results-toggle">
-          <span class="card-results-label">2026 Season Results</span>
-          <span class="card-results-count">${a.results.length} race${a.results.length === 1 ? '' : 's'}</span>
-          <span class="card-results-arrow">▸</span>
-        </summary>
-        <table class="card-results-table">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Meet</th>
-              <th>Event</th>
-              <th>Time</th>
-              <th>Pl.</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${(a.results).map(r => `
-              <tr>
-                <td class="cr-date">${r.date || ''}</td>
-                <td class="cr-meet">${r.meet || ''}</td>
-                <td class="cr-event">${r.event || ''}</td>
-                <td class="cr-time">${r.time || ''}</td>
-                <td class="cr-place">${r.place || ''}</td>
-              </tr>
-            `).join('')}
-          </tbody>
-        </table>
-      </details>
-    ` : ''}
   `;
 
   overlay.classList.add('open');

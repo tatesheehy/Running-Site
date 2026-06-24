@@ -1084,8 +1084,8 @@ button { font-family: inherit; }
 
 /* ── SEASON RESULTS (collapsible table at bottom of athlete card) ── */
 .card-results {
-  border-top: 1.5px solid #2a2a2a;
-  background: #111;
+  border-top: 1.5px solid #e8e8e8;
+  margin: 0 -28px;
 }
 
 .card-results-toggle {
@@ -1111,8 +1111,8 @@ button { font-family: inherit; }
 .card-results-count {
   font-size: 11px;
   font-weight: 600;
-  color: #555;
-  background: #222;
+  color: #666;
+  background: #f0f0f0;
   border-radius: 10px;
   padding: 1px 8px;
 }
@@ -1120,7 +1120,7 @@ button { font-family: inherit; }
 .card-results-arrow {
   margin-left: auto;
   font-size: 11px;
-  color: #555;
+  color: #999;
   transition: transform 0.18s;
 }
 
@@ -1135,7 +1135,7 @@ button { font-family: inherit; }
 }
 
 .card-results-table thead tr {
-  background: #1a1a1a;
+  background: #f7f7f7;
 }
 
 .card-results-table th {
@@ -1143,21 +1143,21 @@ button { font-family: inherit; }
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #555;
-  padding: 7px 12px 7px 28px;
+  color: #999;
+  padding: 7px 12px 7px 0;
   text-align: left;
-  border-bottom: 1px solid #2a2a2a;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .card-results-table th:first-child { padding-left: 28px; }
 .card-results-table th:last-child  { padding-right: 28px; }
 
 .card-results-table tbody tr {
-  border-bottom: 1px solid #1e1e1e;
+  border-bottom: 1px solid #f0f0f0;
   transition: background 0.1s;
 }
 
-.card-results-table tbody tr:hover { background: #1a1a1a; }
+.card-results-table tbody tr:hover { background: #fafafa; }
 .card-results-table tbody tr:last-child { border-bottom: none; }
 
 .card-results-table td {
@@ -1168,11 +1168,11 @@ button { font-family: inherit; }
 .card-results-table td:first-child { padding-left: 28px; }
 .card-results-table td:last-child  { padding-right: 28px; }
 
-.cr-date  { color: #666; font-size: 12px; white-space: nowrap; min-width: 54px; }
-.cr-meet  { color: #ccc; font-weight: 500; }
+.cr-date  { color: #999; font-size: 12px; white-space: nowrap; min-width: 54px; }
+.cr-meet  { color: var(--text); font-weight: 500; }
 .cr-event { color: #888; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
-.cr-time  { font-family: 'Courier New', monospace; font-weight: 700; color: #fff; }
-.cr-place { color: #888; font-size: 12px; text-align: right; padding-right: 28px; }
+.cr-time  { font-family: 'Courier New', monospace; font-weight: 700; color: var(--text); }
+.cr-place { color: #999; font-size: 12px; text-align: right; padding-right: 28px; }
 
 .card-attribution {
   font-size: 13px;
