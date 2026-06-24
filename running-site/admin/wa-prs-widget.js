@@ -12,6 +12,10 @@
 
   var S = {
     wrap:        { fontFamily: 'system-ui, sans-serif', fontSize: 13, color: '#333' },
+    savedBox:    { background: '#eef7ee', border: '2px solid #4caf50', borderRadius: 6, padding: '10px 12px', marginBottom: 12 },
+    savedBoxEmpty: { background: '#fff8e1', border: '2px solid #ffc107', borderRadius: 6, padding: '10px 12px', marginBottom: 12 },
+    savedBoxLabel: { display: 'block', fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: '#2e7d32', marginBottom: 6 },
+    savedBoxLabelEmpty: { display: 'block', fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: '#e65100', marginBottom: 4 },
     fetchBox:    { background: '#f4f6f8', border: '1px solid #d0d8e0', borderRadius: 6, padding: '10px 12px', marginBottom: 12 },
     fetchLabel:  { display: 'block', fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: '#555', marginBottom: 6 },
     row:         { display: 'flex', gap: 8 },
@@ -25,7 +29,8 @@
     prRow:       { display: 'flex', alignItems: 'center', gap: 8, padding: '5px 2px', borderBottom: '1px solid #eee', cursor: 'pointer' },
     indoorTag:   { fontSize: 10, background: '#dbeafe', color: '#1d4ed8', borderRadius: 3, padding: '1px 5px', fontWeight: 700 },
     chip:        { padding: '5px 12px', background: '#e8f0fe', border: '1px solid #93c5fd', borderRadius: 20, cursor: 'pointer', fontSize: 12, fontWeight: 600, color: '#1d4ed8', marginRight: 6, marginBottom: 6, display: 'inline-block' },
-    savedRow:    { display: 'flex', alignItems: 'center', gap: 8, padding: '5px 8px', background: '#f9f9f9', border: '1px solid #e8e8e8', borderRadius: 4, marginBottom: 4 },
+    savedRow:    { display: 'flex', alignItems: 'center', gap: 8, padding: '5px 8px', background: '#fff', border: '1px solid #c8e6c9', borderRadius: 4, marginBottom: 4 },
+    savedRowEdit: { display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 },
     mono:        { fontFamily: "'Courier New', monospace", fontWeight: 700 },
     removeBtn:   { background: 'none', border: 'none', color: '#bbb', cursor: 'pointer', fontSize: 18, lineHeight: 1, marginLeft: 'auto', padding: '0 4px' },
   };
@@ -139,6 +144,26 @@
 
       return h('div', { style: S.wrap },
 
+        // ── Currently saved PRs (always at top so you can see what's stored) ──
+        h('div', { style: current.length > 0 ? S.savedBox : S.savedBoxEmpty },
+          current.length > 0
+            ? h('label', { style: S.savedBoxLabel }, '✓ Saved PRs (' + current.length + ' stored):')
+            : h('label', { style: S.savedBoxLabelEmpty }, '⚠ No PRs saved yet'),
+
+          current.length === 0
+            ? h('div', { style: { color: '#e65100', fontSize: 12 } }, 'Use the fetch tool below or add PRs manually.')
+            : current.map(function (pr, i) {
+                return h('div', { key: i, style: S.savedRow },
+                  h('span', { style: { fontWeight: 700, minWidth: 64, color: '#1b5e20' } }, pr.event),
+                  h('span', { style: Object.assign({}, S.mono, { color: '#333' }) }, pr.time),
+                  h('button', { type: 'button', style: S.removeBtn, onClick: function () { self.removeCurrent(i); } }, '×'),
+                );
+              }),
+
+          h('button', { type: 'button', style: Object.assign({}, S.btnSm, { marginTop: current.length > 0 ? 8 : 4 }), onClick: function () { self.addManual(); } },
+            '+ Add PR manually'),
+        ),
+
         // ── WA fetch box ────────────────────────────────────────────
         h('div', { style: S.fetchBox },
           h('label', { style: S.fetchLabel }, '⚡ Auto-fill from World Athletics'),
@@ -175,9 +200,9 @@
           )
         ),
 
-        // ── PR checkboxes ───────────────────────────────────────────
+        // ── PR checkboxes (shown after WA fetch) ────────────────────
         hasFetched && h('div', null,
-          h('div', { style: S.head }, 'Select up to 4 (' + st.checked.length + ' selected):'),
+          h('div', { style: S.head }, 'Check PRs to save (' + st.checked.length + ' selected):'),
 
           st.outdoor.length > 0 && h('div', null,
             h('div', { style: S.subHead }, 'OUTDOOR'),
@@ -187,7 +212,6 @@
                   type:     'checkbox',
                   checked:  st.checked.indexOf(i) !== -1,
                   onChange: function () { self.toggleCheck(i); },
-                  disabled: st.checked.indexOf(i) === -1 && st.checked.length >= 4,
                 }),
                 h('span', { style: { fontWeight: 700, minWidth: 54 } }, pr.event),
                 h('span', { style: S.mono }, pr.time),
@@ -205,7 +229,6 @@
                   type:     'checkbox',
                   checked:  st.checked.indexOf(idx) !== -1,
                   onChange: function () { self.toggleCheck(idx); },
-                  disabled: st.checked.indexOf(idx) === -1 && st.checked.length >= 4,
                 }),
                 h('span', { style: { fontWeight: 700, minWidth: 54 } }, pr.event),
                 h('span', { style: S.mono }, pr.time),
@@ -214,44 +237,6 @@
               );
             })
           ),
-        ),
-
-        // ── Current saved PRs ───────────────────────────────────────
-        h('div', { style: { marginTop: hasFetched ? 14 : 0 } },
-          h('div', { style: S.head }, 'Saved PRs (' + current.length + '/4):'),
-
-          current.length === 0
-            ? h('div', { style: S.hint },
-                hasFetched ? 'Check boxes above to add PRs.' : 'No PRs yet. Search above or add manually.')
-            : current.map(function (pr, i) {
-                return hasFetched
-                  // Read-only when WA data is loaded — use checkboxes to manage
-                  ? h('div', { key: i, style: S.savedRow },
-                      h('span', { style: { fontWeight: 700, minWidth: 54 } }, pr.event),
-                      h('span', { style: S.mono }, pr.time),
-                      h('button', { type: 'button', style: S.removeBtn, onClick: function () { self.removeCurrent(i); } }, '×'),
-                    )
-                  // Editable text inputs when no WA data loaded
-                  : h('div', { key: i, style: Object.assign({}, S.row, { marginBottom: 6 }) },
-                      h('input', {
-                        value:       pr.event,
-                        placeholder: 'Event (1500m)',
-                        onChange:    function (ev) { self.updateCurrent(i, 'event', ev.target.value); },
-                        style:       Object.assign({}, S.input, { flex: '0 0 110px' }),
-                      }),
-                      h('input', {
-                        value:       pr.time,
-                        placeholder: 'Time (3:26.73)',
-                        onChange:    function (ev) { self.updateCurrent(i, 'time', ev.target.value); },
-                        style:       S.input,
-                      }),
-                      h('button', { type: 'button', style: S.removeBtn, onClick: function () { self.removeCurrent(i); } }, '×'),
-                    );
-              }),
-
-          !hasFetched && current.length < 4 &&
-            h('button', { type: 'button', style: S.btnSm, onClick: function () { self.addManual(); } },
-              '+ Add PR manually'),
         ),
       );
     },
