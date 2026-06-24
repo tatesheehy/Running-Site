@@ -1417,13 +1417,6 @@ footer {
 /* ── RANKINGS DETAIL PAGE ─────────────────────────────────── */
 .rankings-detail { padding: 36px 0 80px; }
 
-.rd-back-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 36px;
-}
-.rd-back-row .h2h-hub-btn { margin-bottom: 0; }
 .rd-back {
   display: inline-flex;
   align-items: center;
@@ -1431,13 +1424,36 @@ footer {
   font-weight: 700;
   color: var(--accent);
   transition: opacity 0.15s;
+  margin-bottom: 20px;
 }
 .rd-back:hover { opacity: 0.75; }
 
 .rd-header {
+  display: flex;
+  align-items: stretch;
+  gap: 32px;
   padding-bottom: 28px;
-  border-bottom: 3px solid var(--dark);
+  border-bottom: 3px solid var(--accent);
   margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.rd-header-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.rd-header-photo {
+  width: 240px;
+  min-height: 180px;
+  flex-shrink: 0;
+  border-radius: var(--radius);
+  background-size: cover;
+  background-position: center top;
+  align-self: stretch;
 }
 
 .rd-header-meta {
@@ -1451,7 +1467,7 @@ footer {
 
 .rd-header-event {
   font-family: var(--font-display);
-  font-size: 80px;
+  font-size: 72px;
   font-weight: 900;
   letter-spacing: -0.01em;
   line-height: 0.9;
@@ -1459,22 +1475,42 @@ footer {
 }
 
 .rd-header-desc {
-  font-size: 16px;
+  font-size: 15px;
   color: #555;
   line-height: 1.6;
-  max-width: 580px;
+  margin-bottom: 20px;
+  flex: 1;
 }
+
+.rd-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.rd-header-count {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.rd-h2h-inline { margin-bottom: 0; }
 
 .rd-col-labels {
   display: grid;
   grid-template-columns: 80px 1fr 140px auto;
   padding: 10px 16px;
+  padding-left: 19px;
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
   border-bottom: 1px solid var(--border);
+  border-left: 3px solid transparent;
   margin-bottom: 0;
 }
 

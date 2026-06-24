@@ -887,17 +887,22 @@ function buildRankingsDetail(eventName) {
     `;
   }).join('');
 
+  const athleteCount = rows.length;
   document.getElementById('main').innerHTML = `
     <div class="container">
       <div class="rankings-detail">
-        <div class="rd-back-row">
-          <a href="rankings.html" class="rd-back">&larr; All Rankings</a>
-          <button class="h2h-hub-btn" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">⇌ Compare Athletes</button>
-        </div>
         <div class="rd-header">
-          <div class="rd-header-meta">${RANKINGS_YEAR} Season Rankings</div>
-          <h1 class="rd-header-event">${eventName}</h1>
-          ${ev && ev.description ? `<p class="rd-header-desc">${ev.description}</p>` : ''}
+          <div class="rd-header-text">
+            <a href="rankings.html" class="rd-back">&larr; All Rankings</a>
+            <div class="rd-header-meta">${RANKINGS_YEAR} Season Rankings</div>
+            <h1 class="rd-header-event">${eventName}</h1>
+            ${ev && ev.description ? `<p class="rd-header-desc">${ev.description}</p>` : ''}
+            <div class="rd-header-actions">
+              ${athleteCount ? `<span class="rd-header-count">${athleteCount} athletes ranked</span>` : ''}
+              <button class="h2h-hub-btn rd-h2h-inline" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">⇌ Compare Athletes</button>
+            </div>
+          </div>
+          ${ev && ev.photo ? `<div class="rd-header-photo" style="background-image:url('${ev.photo}')"></div>` : ''}
         </div>
         <div class="rd-col-labels">
           <span>Rank</span><span>Athlete</span><span>Momentum</span><span style="text-align:right">Best / Meet</span>
