@@ -78,54 +78,95 @@ function sortBests(bests) {
   });
 }
 
-function findResultsArray(obj, depth = 0) {
-  if (depth > 12 || obj == null || typeof obj !== 'object') return null;
-  if (Array.isArray(obj)) {
-    if (obj.length > 0 && typeof obj[0] === 'object' && obj[0] !== null) {
-      const f = obj[0];
-      const hasComp = f.competition || f.competitionName || f.meet || f.matchName;
-      const hasMark = f.mark || f.performance || f.result || f.time;
-      const hasDate = f.date || f.dateFormatted || f.dateDay || f.season;
-      if (hasComp && hasMark && hasDate) return obj;
-    }
-    for (const item of obj) { const found = findResultsArray(item, depth + 1); if (found) return found; }
-    return null;
-  }
-  const priority = ['results', 'performances', 'competitionResults', 'resultsByYear', 'seasonResults', 'athleteResults', 'data', 'items'];
-  for (const key of priority) { if (key in obj) { const found = findResultsArray(obj[key], depth + 1); if (found) return found; } }
-  for (const key of Object.keys(obj)) { if (!priority.includes(key)) { const found = findResultsArray(obj[key], depth + 1); if (found) return found; } }
-  return null;
-}
-
 function parseResultDate(raw) {
   if (!raw) return '';
   const s = String(raw).trim();
   const iso = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
-  if (iso) { const d = new Date(s); return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }); }
+  if (iso) return new Date(s).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
   const dmy = s.match(/^(\d{1,2})\s+([A-Z]{3})\s+(\d{4})/i);
   if (dmy) return `${dmy[2]} ${parseInt(dmy[1], 10)}`;
   return s;
 }
 
-function normalizeResults(arr, year) {
-  return arr
-    .map(r => {
-      const rawDate  = r.date || r.dateFormatted || r.dateDay || '';
-      const rawMark  = r.mark || r.performance || r.result || r.time || '';
-      const rawComp  = r.competition || r.competitionName || r.meet || r.matchName || '';
-      const rawEvent = r.discipline || r.event || r.eventName || r.disciplineCode || '';
-      const rawPlace = r.place || r.position || r.rank || r.pos || '';
-      const rawSeason = r.season || r.year || '';
-      const dateStr  = String(rawDate), seasonStr = String(rawSeason);
-      const isCurrentYear = dateStr.startsWith(String(year)) || dateStr.endsWith(String(year)) || seasonStr === String(year);
-      if (!isCurrentYear) return null;
-      const mark = parseMark(rawMark);
-      if (!mark) return null;
-      return { date: parseResultDate(rawDate) || String(rawSeason), meet: rawComp, event: normalizeEvent(String(rawEvent)) || '', time: mark, place: rawPlace ? String(rawPlace) : '', _rawDate: rawDate };
-    })
-    .filter(Boolean)
-    .sort((a, b) => new Date(b._rawDate || 0) - new Date(a._rawDate || 0))
-    .map(({ _rawDate, ...r }) => r);
+function getYear(raw) {
+  if (!raw) return 0;
+  const m = String(raw).match(/\b(20\d{2})\b/);
+  return m ? parseInt(m[1], 10) : 0;
+}
+
+function extractSeasonResults(nd, year) {
+  const collected = [];
+  const dedup = new Set();
+
+  function add(r) {
+    const key = [r.date, r.meet, r.event, r.time].join('\x00');
+    if (dedup.has(key)) return;
+    dedup.add(key);
+    collected.push(r);
+  }
+
+  function dig(obj, ...keys) {
+    let cur = obj;
+    for (const k of keys) { if (cur == null || typeof cur !== 'object') return undefined; cur = cur[k]; }
+    return cur;
+  }
+
+  function coerce(raw, inheritComp, inheritDate) {
+    const rawDate   = raw.date || raw.dateFormatted || raw.dateDay || inheritDate || '';
+    const rawMark   = raw.mark || raw.performance || raw.result || raw.time || '';
+    const rawComp   = raw.competition || raw.competitionName || raw.meet || raw.matchName || inheritComp || '';
+    const rawEvent  = raw.discipline || raw.event || raw.eventName || raw.disciplineCode || '';
+    const rawPlace  = raw.place || raw.position || raw.rank || raw.pos || '';
+    const rawSeason = raw.season || raw.year || '';
+    const entryYear = getYear(rawDate) || getYear(rawSeason) || (typeof rawSeason === 'number' ? rawSeason : 0);
+    if (entryYear && entryYear !== year) return;
+    const mark = parseMark(rawMark);
+    if (!mark) return;
+    add({ date: parseResultDate(rawDate) || (rawSeason ? String(rawSeason) : ''), meet: rawComp, event: normalizeEvent(String(rawEvent)) || '', time: mark, place: rawPlace ? String(rawPlace) : '', _rawDate: rawDate });
+  }
+
+  function processArray(arr, inheritComp, inheritDate) {
+    if (!Array.isArray(arr)) return;
+    for (const item of arr) {
+      if (!item || typeof item !== 'object') continue;
+      const comp = item.competition || item.competitionName || item.meet || item.matchName || inheritComp || '';
+      const date = item.date || item.dateFormatted || item.dateDay || inheritDate || '';
+      if (Array.isArray(item.results) && item.results.length > 0) processArray(item.results, comp, date);
+      else if (Array.isArray(item.performances) && item.performances.length > 0) processArray(item.performances, comp, date);
+      else coerce(item, comp, date);
+    }
+  }
+
+  const pp = dig(nd, 'props', 'pageProps') || {};
+
+  for (const path of [['resultsByYear'], ['athlete', 'resultsByYear']]) {
+    const rby = dig(pp, ...path);
+    if (rby && typeof rby === 'object' && !Array.isArray(rby)) {
+      for (const val of Object.values(rby)) processArray(val);
+    }
+  }
+
+  for (const path of [['results'], ['athlete', 'results'], ['performances'], ['athlete', 'performances'], ['competitionResults'], ['athlete', 'competitionResults'], ['seasonResults'], ['data', 'results']]) {
+    const arr = dig(pp, ...path);
+    if (Array.isArray(arr) && arr.length > 0) processArray(arr);
+  }
+
+  if (collected.length === 0) {
+    (function walk(obj, depth) {
+      if (depth > 10 || obj == null || typeof obj !== 'object') return;
+      if (Array.isArray(obj)) {
+        if (obj.length > 0 && typeof obj[0] === 'object') {
+          const f = obj[0];
+          if ((f.competition || f.competitionName || f.meet) && (f.mark || f.performance || f.result || f.time) && (f.date || f.season)) { processArray(obj); return; }
+        }
+        for (const item of obj) walk(item, depth + 1);
+      } else {
+        for (const val of Object.values(obj)) walk(val, depth + 1);
+      }
+    })(nd, 0);
+  }
+
+  return collected.sort((a, b) => new Date(b._rawDate || 0) - new Date(a._rawDate || 0)).map(({ _rawDate, ...r }) => r);
 }
 
 async function fetchAthleteData(waUrl) {
@@ -150,8 +191,7 @@ async function fetchAthleteData(waUrl) {
         const all = normalizeBests(arr);
         outdoor = sortBests(all.filter(b => !b.indoor));
       }
-      const resArr = findResultsArray(nd);
-      if (resArr) results = normalizeResults(resArr, year);
+      results = extractSeasonResults(nd, year);
     } catch (_) {}
   }
 

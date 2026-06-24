@@ -123,102 +123,138 @@ function sortBests(bests) {
 
 // ── Season results helpers ────────────────────────────────────────────────────
 
-// Walk an object looking for an array of race/competition results.
-// Distinguishes from bests by requiring a competition name field.
-function findResultsArray(obj, depth = 0) {
-  if (depth > 12 || obj == null || typeof obj !== 'object') return null;
-
-  if (Array.isArray(obj)) {
-    if (obj.length > 0 && typeof obj[0] === 'object' && obj[0] !== null) {
-      const first = obj[0];
-      const hasComp = first.competition || first.competitionName || first.meet || first.matchName || first.eventName;
-      const hasMark = first.mark || first.performance || first.result || first.time;
-      const hasDate = first.date || first.dateFormatted || first.dateDay || first.season;
-      if (hasComp && hasMark && hasDate) return obj;
-    }
-    for (const item of obj) {
-      const found = findResultsArray(item, depth + 1);
-      if (found) return found;
-    }
-    return null;
-  }
-
-  // Keys WA commonly uses for competition results
-  const priority = [
-    'results', 'performances', 'competitionResults', 'resultsByYear',
-    'seasonResults', 'athleteResults', 'data', 'items',
-  ];
-  for (const key of priority) {
-    if (key in obj) {
-      const found = findResultsArray(obj[key], depth + 1);
-      if (found) return found;
-    }
-  }
-  for (const key of Object.keys(obj)) {
-    if (!priority.includes(key)) {
-      const found = findResultsArray(obj[key], depth + 1);
-      if (found) return found;
-    }
-  }
-  return null;
-}
-
 function parseResultDate(raw) {
   if (!raw) return '';
-  // WA uses formats like "2026-06-08", "08 JUN 2026", "08/06/2026"
   const s = String(raw).trim();
-  // ISO: 2026-06-08
   const iso = s.match(/^(\d{4})-(\d{2})-(\d{2})/);
-  if (iso) {
-    const d = new Date(s);
-    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-  }
-  // DD MON YYYY
+  if (iso) return new Date(s).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
   const dmy = s.match(/^(\d{1,2})\s+([A-Z]{3})\s+(\d{4})/i);
   if (dmy) return `${dmy[2]} ${parseInt(dmy[1], 10)}`;
   return s;
 }
 
-function normalizeResults(arr, currentYear) {
-  const year = currentYear || new Date().getFullYear();
-  return arr
-    .map(r => {
-      const rawDate = r.date || r.dateFormatted || r.dateDay || '';
-      const rawMark = r.mark || r.performance || r.result || r.time || '';
-      const rawComp = r.competition || r.competitionName || r.meet || r.matchName || '';
-      const rawEvent = r.discipline || r.event || r.eventName || r.disciplineCode || '';
-      const rawPlace = r.place || r.position || r.rank || r.pos || '';
-      const rawSeason = r.season || r.year || '';
+function getYear(raw) {
+  if (!raw) return 0;
+  const s = String(raw).trim();
+  const m = s.match(/\b(20\d{2})\b/);
+  return m ? parseInt(m[1], 10) : 0;
+}
 
-      // Filter to current year only
-      const dateStr = String(rawDate);
-      const seasonStr = String(rawSeason);
-      const isCurrentYear =
-        dateStr.startsWith(String(year)) ||       // ISO format 2026-...
-        dateStr.endsWith(String(year)) ||          // DD MON 2026
-        seasonStr === String(year);
-      if (!isCurrentYear) return null;
+// Collects ALL season results from __NEXT_DATA__, handling every WA layout variant:
+//  • resultsByYear: { "2026": [...], "2025": [...] }
+//  • flat arrays:   results: [{ competition, date, discipline, mark, place }]
+//  • comp-centric:  results: [{ competition, date, results: [{ discipline, mark }] }]
+//  • perf lists:    performances: [{ competition, results: [...] }]
+function extractSeasonResults(nd, year) {
+  const collected = [];
+  const dedup = new Set();
 
-      const mark = parseMark(rawMark);
-      if (!mark) return null;
+  function add(r) {
+    const key = [r.date, r.meet, r.event, r.time].join('\x00');
+    if (dedup.has(key)) return;
+    dedup.add(key);
+    collected.push(r);
+  }
 
-      return {
-        date:  parseResultDate(rawDate) || (rawSeason ? String(rawSeason) : ''),
-        meet:  rawComp,
-        event: normalizeEvent(String(rawEvent)) || '',
-        time:  mark,
-        place: rawPlace ? String(rawPlace) : '',
-        _rawDate: rawDate,
-      };
-    })
-    .filter(Boolean)
-    .sort((a, b) => {
-      // Sort descending by date (most recent first)
-      const da = new Date(a._rawDate || 0).getTime();
-      const db = new Date(b._rawDate || 0).getTime();
-      return db - da;
-    })
-    .map(({ _rawDate, ...r }) => r); // strip internal sort key
+  // Try to get a value at a dot-path through an object
+  function dig(obj, ...keys) {
+    let cur = obj;
+    for (const k of keys) {
+      if (cur == null || typeof cur !== 'object') return undefined;
+      cur = cur[k];
+    }
+    return cur;
+  }
+
+  // Flatten one raw result entry into our schema
+  function coerce(raw, inheritComp, inheritDate) {
+    const rawDate  = raw.date || raw.dateFormatted || raw.dateDay || inheritDate || '';
+    const rawMark  = raw.mark || raw.performance || raw.result || raw.time || '';
+    const rawComp  = raw.competition || raw.competitionName || raw.meet || raw.matchName || inheritComp || '';
+    const rawEvent = raw.discipline || raw.event || raw.eventName || raw.disciplineCode || '';
+    const rawPlace = raw.place || raw.position || raw.rank || raw.pos || '';
+    const rawSeason = raw.season || raw.year || '';
+
+    const entryYear = getYear(rawDate) || getYear(rawSeason) || (typeof rawSeason === 'number' ? rawSeason : 0);
+    if (entryYear && entryYear !== year) return;
+
+    const mark = parseMark(rawMark);
+    if (!mark) return;
+
+    add({
+      date:     parseResultDate(rawDate) || (rawSeason ? String(rawSeason) : ''),
+      meet:     rawComp,
+      event:    normalizeEvent(String(rawEvent)) || '',
+      time:     mark,
+      place:    rawPlace ? String(rawPlace) : '',
+      _rawDate: rawDate,
+    });
+  }
+
+  // Process an array of entries — handles both flat and competition-centric layouts
+  function processArray(arr, inheritComp, inheritDate) {
+    if (!Array.isArray(arr)) return;
+    for (const item of arr) {
+      if (!item || typeof item !== 'object') continue;
+      const comp = item.competition || item.competitionName || item.meet || item.matchName || inheritComp || '';
+      const date = item.date || item.dateFormatted || item.dateDay || inheritDate || '';
+
+      if (Array.isArray(item.results) && item.results.length > 0) {
+        // Competition-centric: each item is a meet with nested per-discipline results
+        processArray(item.results, comp, date);
+      } else if (Array.isArray(item.performances) && item.performances.length > 0) {
+        processArray(item.performances, comp, date);
+      } else {
+        coerce(item, comp, date);
+      }
+    }
+  }
+
+  const pp = dig(nd, 'props', 'pageProps') || {};
+
+  // Strategy A: resultsByYear as a plain object keyed by year string
+  for (const path of [['resultsByYear'], ['athlete', 'resultsByYear']]) {
+    const rby = dig(pp, ...path);
+    if (rby && typeof rby === 'object' && !Array.isArray(rby)) {
+      // Each value is an array of results for that year
+      for (const val of Object.values(rby)) processArray(val);
+    }
+  }
+
+  // Strategy B: named result arrays at known paths
+  const directPaths = [
+    ['results'], ['athlete', 'results'],
+    ['performances'], ['athlete', 'performances'],
+    ['competitionResults'], ['athlete', 'competitionResults'],
+    ['seasonResults'], ['data', 'results'], ['data', 'performances'],
+  ];
+  for (const path of directPaths) {
+    const arr = dig(pp, ...path);
+    if (Array.isArray(arr) && arr.length > 0) processArray(arr);
+  }
+
+  // Strategy C: generic deep walk — collect every array that looks like results
+  if (collected.length === 0) {
+    (function walk(obj, depth) {
+      if (depth > 10 || obj == null || typeof obj !== 'object') return;
+      if (Array.isArray(obj)) {
+        if (obj.length > 0 && typeof obj[0] === 'object') {
+          const f = obj[0];
+          const hasComp = f.competition || f.competitionName || f.meet;
+          const hasMark = f.mark || f.performance || f.result || f.time;
+          const hasDate = f.date || f.dateFormatted || f.season;
+          if (hasComp && hasMark && hasDate) { processArray(obj); return; }
+        }
+        for (const item of obj) walk(item, depth + 1);
+      } else {
+        for (const val of Object.values(obj)) walk(val, depth + 1);
+      }
+    })(nd, 0);
+  }
+
+  return collected
+    .sort((a, b) => new Date(b._rawDate || 0) - new Date(a._rawDate || 0))
+    .map(({ _rawDate, ...r }) => r);
 }
 
 // ── Search: find athletes by name ────────────────────────────────────────────
@@ -322,12 +358,8 @@ async function getAthleteProfile(url) {
         indoor  = sortBests(all.filter(b =>  b.indoor));
       }
 
-      // Season results — WA often stores these under resultsByYear or similar
-      const year = new Date().getFullYear();
-      const resultsArr = findResultsArray(nd);
-      if (resultsArr) {
-        results = normalizeResults(resultsArr, year);
-      }
+      // Season results — multi-strategy extraction
+      results = extractSeasonResults(nd, new Date().getFullYear());
     } catch (_) { /* fall through */ }
   }
 
