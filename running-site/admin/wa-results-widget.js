@@ -132,7 +132,9 @@
           ),
 
           current.length === 0 && h('div', { style: { fontSize: 12, color: '#e65100' } },
-            'Use the sync button below to fetch race results from World Athletics.')
+            waUrl
+              ? 'Use the sync button below to fetch race results from World Athletics.'
+              : 'Enter the World Athletics Profile URL in the field above, then use the sync button.')
         ),
 
         // ── Fetch box ──────────────────────────────────────────────
