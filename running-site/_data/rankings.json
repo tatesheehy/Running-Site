@@ -162,6 +162,16 @@
               "momentum": 0
             }
           ]
+        },
+        {
+          "title": "Suspended",
+          "description": "💉",
+          "entries": [
+            {
+              "athleteId": "mohamed-katir",
+              "reason": "Whereabouts failures + tampering with documents"
+            }
+          ]
         }
       ]
     },
