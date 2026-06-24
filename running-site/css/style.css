@@ -1615,14 +1615,21 @@ footer {
 
 .rd-rank {
   font-family: var(--font-display);
-  font-size: 52px;
+  font-size: 28px;
   font-weight: 900;
-  color: #e0e0e0;
+  color: #bbb;
   line-height: 1;
+  background: #f4f4f4;
+  border-radius: 8px;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.rd-rank.gold   { color: var(--accent); }
-.rd-rank.silver { color: #8a8a8a; }
-.rd-rank.bronze { color: #b07540; }
+.rd-rank.gold   { color: var(--accent); background: rgba(232,80,10,0.08); }
+.rd-rank.silver { color: #8a8a8a; background: #f0f0f0; }
+.rd-rank.bronze { color: #b07540; background: rgba(176,117,64,0.08); }
 
 .rd-avatar {
   width: 56px;
