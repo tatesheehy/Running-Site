@@ -94,16 +94,18 @@ function getYear(raw) {
   return m ? parseInt(m[1], 10) : 0;
 }
 
-function extractSeasonResults(nd, year) {
-  const collected = [];
-  const dedup = new Set();
+function cleanMeetName(raw) {
+  if (!raw) return '';
+  let s = raw.trim();
+  const dashIdx = s.indexOf(' - ');
+  if (dashIdx !== -1) s = s.slice(0, dashIdx).trim();
+  const parts = s.split(',');
+  if (parts.length >= 3) s = parts[0].trim();
+  return s;
+}
 
-  function add(r) {
-    const key = [r.date, r.meet, r.event, r.time].join('\x00');
-    if (dedup.has(key)) return;
-    dedup.add(key);
-    collected.push(r);
-  }
+function extractSeasonResults(nd, year) {
+  const raw = [];
 
   function dig(obj, ...keys) {
     let cur = obj;
@@ -111,18 +113,20 @@ function extractSeasonResults(nd, year) {
     return cur;
   }
 
-  function coerce(raw, inheritComp, inheritDate) {
-    const rawDate   = raw.date || raw.dateFormatted || raw.dateDay || inheritDate || '';
-    const rawMark   = raw.mark || raw.performance || raw.result || raw.time || '';
-    const rawComp   = raw.competition || raw.competitionName || raw.meet || raw.matchName || inheritComp || '';
-    const rawEvent  = raw.discipline || raw.event || raw.eventName || raw.disciplineCode || '';
-    const rawPlace  = raw.place || raw.position || raw.rank || raw.pos || '';
-    const rawSeason = raw.season || raw.year || '';
+  function coerce(item, inheritComp, inheritDate) {
+    const rawDate   = item.date || item.dateFormatted || item.dateDay || inheritDate || '';
+    const rawMark   = item.mark || item.performance || item.result || item.time || '';
+    const rawComp   = item.competition || item.competitionName || item.meet || item.matchName || inheritComp || '';
+    const rawEvent  = item.discipline || item.event || item.eventName || item.disciplineCode || '';
+    const rawPlace  = item.place || item.position || item.rank || item.pos || '';
+    const rawSeason = item.season || item.year || '';
     const entryYear = getYear(rawDate) || getYear(rawSeason) || (typeof rawSeason === 'number' ? rawSeason : 0);
     if (entryYear && entryYear !== year) return;
     const mark = parseMark(rawMark);
     if (!mark) return;
-    add({ date: parseResultDate(rawDate) || (rawSeason ? String(rawSeason) : ''), meet: rawComp, event: normalizeEvent(String(rawEvent)) || '', time: mark, place: rawPlace ? String(rawPlace) : '', _rawDate: rawDate });
+    const meetLower = rawComp.toLowerCase();
+    if (meetLower.includes('split time') || meetLower.includes('- splits')) return;
+    raw.push({ date: parseResultDate(rawDate) || (rawSeason ? String(rawSeason) : ''), meet: cleanMeetName(rawComp), event: normalizeEvent(String(rawEvent)) || '', time: mark, place: rawPlace ? String(rawPlace).replace(/\.$/, '') : '', _rawDate: rawDate });
   }
 
   function processArray(arr, inheritComp, inheritDate) {
@@ -151,7 +155,7 @@ function extractSeasonResults(nd, year) {
     if (Array.isArray(arr) && arr.length > 0) processArray(arr);
   }
 
-  if (collected.length === 0) {
+  if (raw.length === 0) {
     (function walk(obj, depth) {
       if (depth > 10 || obj == null || typeof obj !== 'object') return;
       if (Array.isArray(obj)) {
@@ -160,13 +164,27 @@ function extractSeasonResults(nd, year) {
           if ((f.competition || f.competitionName || f.meet) && (f.mark || f.performance || f.result || f.time) && (f.date || f.season)) { processArray(obj); return; }
         }
         for (const item of obj) walk(item, depth + 1);
-      } else {
-        for (const val of Object.values(obj)) walk(val, depth + 1);
-      }
+      } else { for (const val of Object.values(obj)) walk(val, depth + 1); }
     })(nd, 0);
   }
 
-  return collected.sort((a, b) => new Date(b._rawDate || 0) - new Date(a._rawDate || 0)).map(({ _rawDate, ...r }) => r);
+  raw.sort((a, b) => new Date(b._rawDate || 0) - new Date(a._rawDate || 0));
+
+  const seen = new Map();
+  for (const r of raw) {
+    const normTime = r.time.replace(/[hi]$/, '');
+    const key = `${r._rawDate}|${normTime}`;
+    if (!seen.has(key)) {
+      seen.set(key, r);
+    } else {
+      const cur = seen.get(key);
+      const score    = (r.event ? 2 : 0) + (r.place ? 1 : 0) - r.meet.length * 0.001;
+      const curScore = (cur.event ? 2 : 0) + (cur.place ? 1 : 0) - cur.meet.length * 0.001;
+      if (score > curScore) seen.set(key, r);
+    }
+  }
+
+  return Array.from(seen.values()).map(({ _rawDate, ...r }) => r);
 }
 
 async function fetchAthleteData(waUrl) {

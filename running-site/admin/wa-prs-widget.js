@@ -37,15 +37,26 @@
 
   var WAPrsControl = createClass({
     getInitialState: function () {
+      // Pre-fill fetch input with the athlete's saved waUrl if one exists
+      var savedWaUrl = '';
+      try {
+        var entry = this.props.entry;
+        if (entry) {
+          savedWaUrl = (typeof entry.getIn === 'function'
+            ? entry.getIn(['data', 'waUrl'])
+            : (entry.data && entry.data.waUrl)) || '';
+        }
+      } catch (_) {}
+
       return {
-        waInput:   '',
+        waInput:   savedWaUrl,
         loading:   false,
         error:     '',
-        athletes:  [],   // name-search results
-        outdoor:   [],   // fetched from WA
+        athletes:  [],
+        outdoor:   [],
         indoor:    [],
-        checked:   [],   // indices into outdoor.concat(indoor)
-        waResults: [],   // season results preview from WA fetch
+        checked:   [],
+        waResults: [],
       };
     },
 
