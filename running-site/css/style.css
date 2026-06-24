@@ -1857,18 +1857,18 @@ footer {
   margin-bottom: 28px;
 }
 .h2h-hub-btn {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid var(--border);
-  color: #ccc;
-  font-size: 14px;
-  font-weight: 600;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
   letter-spacing: 0.04em;
-  padding: 10px 20px;
+  padding: 9px 18px;
   border-radius: 7px;
   cursor: pointer;
-  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  transition: opacity 0.15s;
 }
-.h2h-hub-btn:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+.h2h-hub-btn:hover { opacity: 0.85; }
 
 /* ── HEAD TO HEAD MODAL ───────────────────────────────────── */
 .h2h-card {

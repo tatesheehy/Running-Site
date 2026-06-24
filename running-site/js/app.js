@@ -306,6 +306,34 @@ function renderH2HComparison(id1, id2) {
     return { ranked, sectioned };
   };
 
+  // Build unified ordered PR event list from both athletes
+  const EVENT_ORDER = ['60m','100m','200m','400m','800m','1500m','Mile','3000m','5000m','10000m','Half Marathon','Marathon','Steeplechase','60mH','110mH','400mH'];
+  const allPrEvents = [...new Set([
+    ...(a1.prs || []).map(p => p.event),
+    ...(a2.prs || []).map(p => p.event),
+  ])].sort((a, b) => {
+    const ai = EVENT_ORDER.indexOf(a), bi = EVENT_ORDER.indexOf(b);
+    if (ai === -1 && bi === -1) return a.localeCompare(b);
+    if (ai === -1) return 1;
+    if (bi === -1) return -1;
+    return ai - bi;
+  });
+
+  const colPrHtml = (a, opp) => {
+    if (!allPrEvents.length) return '<div class="h2h-empty-row">No PRs listed</div>';
+    return allPrEvents.map(ev => {
+      const pr    = (a.prs   || []).find(p => p.event === ev);
+      const oppPr = (opp.prs || []).find(p => p.event === ev);
+      const mine   = pr    ? parseTimeToSecs(pr.time)    : null;
+      const theirs = oppPr ? parseTimeToSecs(oppPr.time) : null;
+      const better = mine && theirs && mine < theirs;
+      return `<div class="h2h-pr-row${better ? ' h2h-pr-win' : ''}">
+        <span class="h2h-pr-ev">${ev}</span>
+        <span class="h2h-pr-t">${pr ? pr.time + (better ? ' ✓' : '') : '—'}</span>
+      </div>`;
+    }).join('');
+  };
+
   const col = (a, opp) => {
     const { ranked, sectioned } = getRankInfo(a.id);
     const photoHtml = a.photo
@@ -327,19 +355,6 @@ function renderH2HComparison(id1, id2) {
       rankHtml = `<div class="h2h-empty-row">No current ranking data</div>`;
     }
 
-    const oppPrs = opp.prs || [];
-    const prHtml = (a.prs || []).length
-      ? (a.prs || []).map(pr => {
-          const oppPr = oppPrs.find(p => p.event === pr.event);
-          const mine = parseTimeToSecs(pr.time), theirs = parseTimeToSecs(oppPr?.time);
-          const better = mine && theirs && mine < theirs;
-          return `<div class="h2h-pr-row${better ? ' h2h-pr-win' : ''}">
-            <span class="h2h-pr-ev">${pr.event}</span>
-            <span class="h2h-pr-t">${pr.time}${better ? ' ✓' : ''}</span>
-          </div>`;
-        }).join('')
-      : '<div class="h2h-empty-row">No PRs listed</div>';
-
     return `
       <div class="h2h-col">
         <div class="h2h-photo-wrap" style="background:${a.photoBackground || '#111'}">${photoHtml}</div>
@@ -348,7 +363,7 @@ function renderH2HComparison(id1, id2) {
         <div class="h2h-section-label">Rankings</div>
         <div class="h2h-ranks">${rankHtml}</div>
         <div class="h2h-section-label">Personal Bests</div>
-        <div class="h2h-prs">${prHtml}</div>
+        <div class="h2h-prs">${colPrHtml(a, opp)}</div>
       </div>`;
   };
 
