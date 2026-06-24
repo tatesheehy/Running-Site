@@ -89,9 +89,9 @@
     applyPRData: function (data) {
       var outdoor = data.outdoor || [];
       var indoor  = data.indoor  || [];
-      var checked = outdoor.slice(0, 4).map(function (_, i) { return i; });
+      var checked = outdoor.map(function (_, i) { return i; });
       this.setState({ outdoor: outdoor, indoor: indoor, checked: checked, loading: false });
-      var prs = outdoor.slice(0, 4).map(function (p) { return { event: p.event, time: p.time }; });
+      var prs = outdoor.map(function (p) { return { event: p.event, time: p.time }; });
       this.props.onChange(prs);
     },
 
@@ -100,11 +100,9 @@
       var pos     = checked.indexOf(idx);
       if (pos !== -1) {
         checked.splice(pos, 1);
-      } else if (checked.length < 4) {
+      } else {
         checked.push(idx);
         checked.sort(function (a, b) { return a - b; });
-      } else {
-        return;
       }
       this.setState({ checked: checked });
       var all = this.state.outdoor.concat(this.state.indoor);

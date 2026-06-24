@@ -144,10 +144,7 @@ collections:
 
               - name: prs
                 label: "Personal Records"
-                widget: list
-                fields:
-                  - { label: "Event (e.g. 1500m, Mile, 5000m)", name: event, widget: string }
-                  - { label: "Time / Mark (e.g. 3:27.65)", name: time, widget: string }
+                widget: wa-prs
 
               - name: achievements
                 label: Achievements
