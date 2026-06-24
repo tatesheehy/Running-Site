@@ -927,8 +927,8 @@ function buildRankingRow(r, rank) {
 }
 
 window.filterRankings = function(country) {
-  document.querySelectorAll('#main .rd-row').forEach(row => {
-    row.style.display = (!country || row.dataset.country === country) ? '' : 'none';
+  document.querySelectorAll('#main .rd-row, #main .rd-card').forEach(el => {
+    el.style.display = (!country || el.dataset.country === country) ? '' : 'none';
   });
 };
 
@@ -1004,6 +1004,24 @@ function buildRankingsDetail(eventName) {
     `;
   }).join('');
 
+  const cardsHtml = rows.length
+    ? rows.map((r, i) => buildRankingCard(r, i + 1)).join('')
+    : '';
+
+  const sectionCardsHtml = sections.map(sec => {
+    if (!sec.entries || !sec.entries.length) return '';
+    return `
+      <div class="rd-section">
+        <div class="rd-section-header">
+          <span class="rd-section-title">${sec.title || ''}</span>
+          ${sec.description ? `<span class="rd-section-desc">${sec.description}</span>` : ''}
+        </div>
+        <div class="rd-grid">${sec.entries.map(e => buildRankingCard(e, null)).join('')}</div>
+      </div>
+    `;
+  }).join('');
+
+  const isGrid = window._rdView === 'grid';
   const athleteCount = rows.length;
   document.getElementById('main').innerHTML = `
     <div class="container">
@@ -1017,20 +1035,73 @@ function buildRankingsDetail(eventName) {
             <div class="rd-header-actions">
               ${athleteCount ? `<span class="rd-header-count">${athleteCount} athletes ranked</span>` : ''}
               <button class="h2h-hub-btn rd-h2h-inline" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">⇌ Compare Athletes</button>
+              <div class="rd-view-toggle">
+                <button class="rd-view-btn${!isGrid ? ' rd-view-btn--active' : ''}" onclick="toggleRdView('list')" title="List view">
+                  <svg viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="20" height="3" rx="1.5" fill="currentColor"/><rect x="0" y="6.5" width="20" height="3" rx="1.5" fill="currentColor"/><rect x="0" y="13" width="20" height="3" rx="1.5" fill="currentColor"/></svg>
+                </button>
+                <button class="rd-view-btn${isGrid ? ' rd-view-btn--active' : ''}" onclick="toggleRdView('grid')" title="Card view">
+                  <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="9" height="9" rx="1.5" fill="currentColor"/><rect x="11" y="0" width="9" height="9" rx="1.5" fill="currentColor"/><rect x="0" y="11" width="9" height="9" rx="1.5" fill="currentColor"/><rect x="11" y="11" width="9" height="9" rx="1.5" fill="currentColor"/></svg>
+                </button>
+              </div>
             </div>
           </div>
           ${ev && ev.photo ? `<div class="rd-header-photo" style="background-image:url('${ev.photo}')"></div>` : ''}
         </div>
         ${filterHtml}
-        <div class="rd-col-labels">
+        <div class="rd-col-labels" style="${isGrid ? 'display:none' : ''}">
           <span>Rank</span><span>Athlete</span><span>Momentum</span><span style="text-align:right">Best / Meet</span>
         </div>
-        <div class="rd-list">${rowsHtml}</div>
-        ${sectionsHtml}
+        <div class="rd-list-wrap" style="${isGrid ? 'display:none' : ''}">
+          <div class="rd-list">${rowsHtml}</div>
+          ${sectionsHtml}
+        </div>
+        <div class="rd-grid-wrap" style="${isGrid ? '' : 'display:none'}">
+          <div class="rd-grid">${cardsHtml}</div>
+          ${sectionCardsHtml}
+        </div>
       </div>
     </div>
   `;
 }
+
+function buildRankingCard(r, rank) {
+  const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
+  const name    = (a && a.name)    || r.name    || r.athleteId || '—';
+  const country = (a && a.country) || r.country || '';
+  const flag    = (a && a.flag)    || r.flag    || '';
+  const photo   = a && a.photo;
+  const photoBg = (a && a.photoBackground) || '#1c1c1c';
+  const rankClass = rank === 1 ? 'gold' : rank === 2 ? 'silver' : rank === 3 ? 'bronze' : '';
+  const seasonBest = (r.seasonBest && r.seasonBest !== 'x') ? r.seasonBest : '';
+  const meet = (r.meet && r.meet !== 'x') ? r.meet : '';
+  const clickData = encodeURIComponent(JSON.stringify({athleteId: r.athleteId||'', rank: rank||0, name, country, flag, seasonBest: r.seasonBest||'', meet: r.meet||''}));
+  return `
+    <div class="rd-card" data-country="${country}" onclick="openRankingRow('${clickData}')">
+      <div class="rd-card-photo" style="${photo ? `background-color:${photoBg};background-image:url('${photo}')` : `background:${photoBg}`}">
+        ${rank != null ? `<div class="rd-card-rank ${rankClass}">${rank}</div>` : ''}
+      </div>
+      <div class="rd-card-body">
+        <div class="rd-card-name">${name}</div>
+        <div class="rd-card-country">${renderFlag(flag)} ${country}</div>
+        ${seasonBest ? `<div class="rd-card-time">${seasonBest}</div>` : ''}
+        ${meet ? `<div class="rd-card-meet">${meet}</div>` : ''}
+      </div>
+    </div>
+  `;
+}
+
+window.toggleRdView = function(mode) {
+  window._rdView = mode;
+  const listWrap = document.querySelector('.rd-list-wrap');
+  const gridWrap = document.querySelector('.rd-grid-wrap');
+  const colLabels = document.querySelector('.rd-col-labels');
+  if (listWrap) listWrap.style.display = mode === 'grid' ? 'none' : '';
+  if (gridWrap) gridWrap.style.display = mode === 'grid' ? '' : 'none';
+  if (colLabels) colLabels.style.display = mode === 'grid' ? 'none' : '';
+  document.querySelectorAll('.rd-view-btn').forEach((btn, i) => {
+    btn.classList.toggle('rd-view-btn--active', (i === 0 && mode === 'list') || (i === 1 && mode === 'grid'));
+  });
+};
 
 // ── ATHLETE CARD MODAL ─────────────────────────────────────
 function buildAthleteCardModal() {
