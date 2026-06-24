@@ -327,12 +327,32 @@
       "seasons": "8",
       "prs": [
         {
+          "event": "800m",
+          "time": "1:43.11"
+        },
+        {
           "event": "1500m",
           "time": "3:28.28"
         },
         {
           "event": "Mile",
           "time": "3:47.71"
+        },
+        {
+          "event": "2000m",
+          "time": "5:03.05"
+        },
+        {
+          "event": "3000m",
+          "time": "7:27.24"
+        },
+        {
+          "event": "5000m",
+          "time": "13:16.41"
+        },
+        {
+          "event": "Distance Medley",
+          "time": "9:17.20"
         }
       ],
       "hometown": "Kericho, Kenya",
@@ -567,6 +587,10 @@
       "seasons": "9",
       "prs": [
         {
+          "event": "800m",
+          "time": "1:46.82"
+        },
+        {
           "event": "1500m",
           "time": "3:30.90"
         },
@@ -575,8 +599,72 @@
           "time": "3:49.37"
         },
         {
+          "event": "3000m",
+          "time": "7:39.50"
+        },
+        {
+          "event": "2 Miles",
+          "time": "9:09.50"
+        },
+        {
           "event": "5000m",
           "time": "13:13.20"
+        },
+        {
+          "event": "800 Metres Short Track",
+          "time": "1:54.84"
+        },
+        {
+          "event": "1000 Metres",
+          "time": "2:18.49"
+        },
+        {
+          "event": "1000 Metres Short Track",
+          "time": "2:21.63"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:33.74"
+        },
+        {
+          "event": "Mile Short Track",
+          "time": "3:50.56"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:39.50"
+        },
+        {
+          "event": "Mile Road",
+          "time": "3:54.55"
+        },
+        {
+          "event": "Mile Road",
+          "time": "3:50.28"
+        },
+        {
+          "event": "5 Kilometres Road",
+          "time": "14:11"
+        },
+        {
+          "event": "4x400 Metres Relay",
+          "time": "3:17.68"
+        },
+        {
+          "event": "4x800 Metres Relay",
+          "time": "7:13.75"
+        },
+        {
+          "event": "4x800 Metres Relay Short Track",
+          "time": "7:28.58"
+        },
+        {
+          "event": "Distance Medley",
+          "time": "9:46.15"
+        },
+        {
+          "event": "Distance Medley Short Track",
+          "time": "9:30.76"
         }
       ],
       "hometown": "x",
