@@ -130,6 +130,7 @@ collections:
                   - { label: "Uganda (UG)", value: "UG" }
                   - { label: "United States (US)", value: "US" }
                   - { label: "Wales (WAL)", value: "WAL" }
+              - { label: "World Athletics Profile URL (for auto PR sync — e.g. https://www.worldathletics.org/athletes/norway/jakob-ingebrigtsen-14528596)", name: waUrl, widget: string, required: false }
               - { label: "Photo", name: photo, widget: image, required: false, default: "" }
               - { label: "Photo Background Color", name: photoBackground, widget: string, default: "#111111", hint: "Dark hex color, e.g. #0d1b2a" }
               - { label: "Event Category", name: event, widget: string, hint: "e.g. MIDDLE DISTANCE" }
