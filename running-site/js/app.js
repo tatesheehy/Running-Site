@@ -836,7 +836,10 @@ function buildRankingsDetail(eventName) {
   document.getElementById('main').innerHTML = `
     <div class="container">
       <div class="rankings-detail">
-        <a href="rankings.html" class="rd-back">&larr; All Rankings</a>
+        <div class="rd-back-row">
+          <a href="rankings.html" class="rd-back">&larr; All Rankings</a>
+          <button class="h2h-hub-btn" onclick="openH2H()">⇌ Compare Athletes</button>
+        </div>
         <div class="rd-header">
           <div class="rd-header-meta">${RANKINGS_YEAR} Season Rankings</div>
           <h1 class="rd-header-event">${eventName}</h1>
