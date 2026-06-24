@@ -44,6 +44,11 @@
     componentDidMount: function () {
       var url = this._readEntryWaUrl();
       if (url) this.setState({ waUrl: url, _urlFilled: true });
+      // Register current value with Decap so the field is included on save
+      // even if the user publishes without re-syncing.
+      if (this.props.onChange && Array.isArray(this.props.value)) {
+        this.props.onChange(this.props.value);
+      }
     },
 
     componentDidUpdate: function () {

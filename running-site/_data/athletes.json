@@ -5,36 +5,36 @@
       "reviewTitle": "Season review",
       "achievements": [
         {
-          "icon": "🥇",
+          "icon": "\ud83e\udd47",
           "count": "2x",
           "label": "Olympic Gold"
         },
         {
-          "icon": "🌍",
+          "icon": "\ud83c\udf0d",
           "count": "1x",
           "label": "World Champ"
         },
         {
-          "icon": "⚡",
+          "icon": "\u26a1",
           "count": "1x",
           "label": "World Record"
         }
       ],
       "traits": [
         {
-          "emoji": "⚡",
+          "emoji": "\u26a1",
           "label": "Explosive Kick"
         },
         {
-          "emoji": "🧠",
+          "emoji": "\ud83e\udde0",
           "label": "Tactical IQ"
         },
         {
-          "emoji": "🏔️",
+          "emoji": "\ud83c\udfd4\ufe0f",
           "label": "Front Runner"
         },
         {
-          "emoji": "🔥",
+          "emoji": "\ud83d\udd25",
           "label": "Mental Edge"
         }
       ],
@@ -144,19 +144,20 @@
       "reviewBody": "Ingebrigtsen has yet to race in 2026. The Norwegian may return from racing in mid-July following surgery to remove damaged tissue and scarring from the sheath surrounding his left Achilles tendon in February of this year. ",
       "event": "MIDDLE DISTANCE + DISTANCE",
       "id": "jakob-ingebrigtsen",
-      "age": "25"
+      "age": "25",
+      "waUrl": ""
     },
     {
       "photoBackground": "#1a0a0a",
       "reviewTitle": "Season review",
       "achievements": [
         {
-          "icon": "🥇",
+          "icon": "\ud83e\udd47",
           "count": "1x",
           "label": "Olympic Gold"
         },
         {
-          "icon": "🎓",
+          "icon": "\ud83c\udf93",
           "count": "3x",
           "label": "NCAA Champion"
         },
@@ -168,19 +169,19 @@
       ],
       "traits": [
         {
-          "emoji": "🚀",
+          "emoji": "\ud83d\ude80",
           "label": "Devastating Kick"
         },
         {
-          "emoji": "🧘",
+          "emoji": "\ud83e\uddd8",
           "label": "Race Patience"
         },
         {
-          "emoji": "📐",
+          "emoji": "\ud83d\udcd0",
           "label": "Perfect Form"
         },
         {
-          "emoji": "🌟",
+          "emoji": "\ud83c\udf1f",
           "label": "Rising Star"
         }
       ],
@@ -215,43 +216,45 @@
       "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
       "event": "MIDDLE DISTANCE + DISTANCE",
       "id": "cole-hocker",
-      "age": "23"
+      "age": "23",
+      "results": [],
+      "waUrl": ""
     },
     {
       "photoBackground": "#0a1a0d",
       "reviewTitle": "Season review",
       "achievements": [
         {
-          "icon": "🏟️",
+          "icon": "\ud83c\udfdf\ufe0f",
           "count": "2x",
           "label": "World Indoor Champ"
         },
         {
-          "icon": "💎",
+          "icon": "\ud83d\udc8e",
           "count": "3x",
           "label": "Diamond League Win"
         },
         {
-          "icon": "📋",
+          "icon": "\ud83d\udccb",
           "count": "0x",
           "label": "Olympic Gold"
         }
       ],
       "traits": [
         {
-          "emoji": "💨",
+          "emoji": "\ud83d\udca8",
           "label": "Pure Speed"
         },
         {
-          "emoji": "🎯",
+          "emoji": "\ud83c\udfaf",
           "label": "Consistency"
         },
         {
-          "emoji": "📈",
+          "emoji": "\ud83d\udcc8",
           "label": "Indoor King"
         },
         {
-          "emoji": "🤫",
+          "emoji": "\ud83e\udd2b",
           "label": "Quiet Assassin"
         }
       ],
@@ -319,46 +322,48 @@
       "country": "Portugal",
       "weight": "115 lbs",
       "coach": "Self-coached",
-      "reviewBody": "Kejelcha has been a model of consistency in 2026. While he hasn't grabbed the headlines, his results speak for themselves — four top-3 finishes in Diamond League events and a season best of 3:45.12.",
+      "reviewBody": "Kejelcha has been a model of consistency in 2026. While he hasn't grabbed the headlines, his results speak for themselves \u2014 four top-3 finishes in Diamond League events and a season best of 3:45.12.",
       "event": "MIDDLE DISTANCE",
       "id": "isaac-nader",
-      "age": "27"
+      "age": "27",
+      "results": [],
+      "waUrl": ""
     },
     {
       "photoBackground": "#0a0a1a",
       "reviewTitle": "Season review",
       "achievements": [
         {
-          "icon": "🌍",
+          "icon": "\ud83c\udf0d",
           "count": "1x",
           "label": "World Champion"
         },
         {
-          "icon": "🥈",
+          "icon": "\ud83e\udd48",
           "count": "1x",
           "label": "Olympic Silver"
         },
         {
-          "icon": "💎",
+          "icon": "\ud83d\udc8e",
           "count": "2x",
           "label": "DL Champion"
         }
       ],
       "traits": [
         {
-          "emoji": "💪",
+          "emoji": "\ud83d\udcaa",
           "label": "Raw Strength"
         },
         {
-          "emoji": "🏃",
+          "emoji": "\ud83c\udfc3",
           "label": "Mid-Race Surge"
         },
         {
-          "emoji": "🧠",
+          "emoji": "\ud83e\udde0",
           "label": "Race Savvy"
         },
         {
-          "emoji": "🏋️",
+          "emoji": "\ud83c\udfcb\ufe0f",
           "label": "Physical Power"
         }
       ],
@@ -441,43 +446,45 @@
       "reviewBody": "Kerr continues to be one of the most physically imposing presences in the 1500m field. His ability to surge mid-race and break the competition is unmatched.",
       "event": "MIDDLE DISTANCE",
       "id": "josh-kerr",
-      "age": "26"
+      "age": "26",
+      "results": [],
+      "waUrl": ""
     },
     {
       "photoBackground": "#0a1a0a",
       "reviewTitle": "Season review",
       "achievements": [
         {
-          "icon": "🌍",
+          "icon": "\ud83c\udf0d",
           "count": "2x",
           "label": "World Champion"
         },
         {
-          "icon": "🥈",
+          "icon": "\ud83e\udd48",
           "count": "1x",
           "label": "Olympic Silver"
         },
         {
-          "icon": "💎",
+          "icon": "\ud83d\udc8e",
           "count": "4x",
           "label": "Diamond League Win"
         }
       ],
       "traits": [
         {
-          "emoji": "🦁",
+          "emoji": "\ud83e\udd81",
           "label": "Killer Instinct"
         },
         {
-          "emoji": "🏆",
+          "emoji": "\ud83c\udfc6",
           "label": "Championship DNA"
         },
         {
-          "emoji": "🎖️",
+          "emoji": "\ud83c\udf96\ufe0f",
           "label": "Proven Winner"
         },
         {
-          "emoji": "🔄",
+          "emoji": "\ud83d\udd04",
           "label": "Long Stride"
         }
       ],
@@ -528,7 +535,9 @@
       "reviewBody": "Cheruiyot has shown signs of returning to his dominant best after a couple of injury-interrupted campaigns. His Shanghai win was a reminder that when he's right, he can run with anyone.",
       "event": "MIDDLE DISTANCE",
       "id": "timothy-cheruiyot",
-      "age": "28"
+      "age": "28",
+      "results": [],
+      "waUrl": ""
     },
     {
       "photoBackground": "#111111",
@@ -592,7 +601,9 @@
       "reviewBody": "xx",
       "event": "MIDDLE DISTANCE",
       "id": "niels-laros",
-      "age": "21"
+      "age": "21",
+      "results": [],
+      "waUrl": ""
     },
     {
       "photoBackground": "#111111",
@@ -629,7 +640,9 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "cameron-myers",
-      "age": "19"
+      "age": "19",
+      "results": [],
+      "waUrl": ""
     },
     {
       "photoBackground": "#111111",
@@ -661,7 +674,9 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "jake-wightman",
-      "age": "32"
+      "age": "32",
+      "results": [],
+      "waUrl": ""
     },
     {
       "photoBackground": "#111111",
@@ -689,7 +704,9 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "phanuel-koech",
-      "age": "19"
+      "age": "19",
+      "results": [],
+      "waUrl": ""
     },
     {
       "photoBackground": "#111111",
@@ -721,7 +738,9 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "yared-nuguse",
-      "age": "x"
+      "age": "x",
+      "results": [],
+      "waUrl": ""
     },
     {
       "photoBackground": "#111111",
@@ -764,7 +783,9 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "simeon-birnbaum",
-      "age": "21"
+      "age": "21",
+      "results": [],
+      "waUrl": ""
     },
     {
       "photoBackground": "#111111",
@@ -868,7 +889,9 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "vincent-ciattei",
-      "age": "31"
+      "age": "31",
+      "results": [],
+      "waUrl": ""
     },
     {
       "photoBackground": "#111111",
@@ -908,7 +931,9 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "reynold-cheruiyot",
-      "age": "21"
+      "age": "21",
+      "results": [],
+      "waUrl": ""
     },
     {
       "photoBackground": "#111111",
@@ -948,7 +973,9 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "hobbs-kessler",
-      "age": "23"
+      "age": "23",
+      "results": [],
+      "waUrl": ""
     },
     {
       "photoBackground": "#111111",
@@ -1044,7 +1071,9 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "azeddine-habz",
-      "age": "32"
+      "age": "32",
+      "results": [],
+      "waUrl": ""
     },
     {
       "photoBackground": "#111111",
@@ -1076,7 +1105,9 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "andrew-coscoran",
-      "age": "30"
+      "age": "30",
+      "results": [],
+      "waUrl": ""
     },
     {
       "photoBackground": "#111111",
@@ -1116,7 +1147,9 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "jonah-koech",
-      "age": "29"
+      "age": "29",
+      "results": [],
+      "waUrl": ""
     },
     {
       "photoBackground": "#111111",
@@ -1144,7 +1177,9 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "mohamed-attaoui",
-      "age": "24"
+      "age": "24",
+      "results": [],
+      "waUrl": ""
     },
     {
       "photoBackground": "#111111",
@@ -1187,7 +1222,9 @@
       "reviewBody": "x",
       "event": "DISTANCE",
       "id": "marco-langon",
-      "age": "21"
+      "age": "21",
+      "results": [],
+      "waUrl": ""
     }
   ]
 }
