@@ -1174,6 +1174,8 @@ button { font-family: inherit; }
 .cr-time  { font-family: 'Courier New', monospace; font-weight: 700; color: var(--text); }
 .cr-place { color: #999; font-size: 12px; text-align: right; padding-right: 28px; }
 
+.card-results-empty { color: var(--muted); font-size: 13px; padding: 14px 28px; margin: 0; }
+
 .card-attribution {
   font-size: 13px;
   color: var(--muted);

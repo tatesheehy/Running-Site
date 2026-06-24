@@ -1020,13 +1020,16 @@ function openAthleteCard(athleteId, rank) {
           </div>
         ` : ''}
         ${traitsHtml ? `<div class="card-traits">${traitsHtml}</div>` : ''}
-        ${(a.results || []).length > 0 ? `
+        ${(() => {
+          const results = a.results || [];
+          return `
           <details class="card-results">
             <summary class="card-results-toggle">
               <span class="card-results-label">2026 Season Results</span>
-              <span class="card-results-count">${a.results.length} race${a.results.length === 1 ? '' : 's'}</span>
+              <span class="card-results-count">${results.length} race${results.length === 1 ? '' : 's'}</span>
               <span class="card-results-arrow">▸</span>
             </summary>
+            ${results.length > 0 ? `
             <table class="card-results-table">
               <thead>
                 <tr>
@@ -1038,7 +1041,7 @@ function openAthleteCard(athleteId, rank) {
                 </tr>
               </thead>
               <tbody>
-                ${(a.results).map(r => `
+                ${results.map(r => `
                   <tr>
                     <td class="cr-date">${r.date || ''}</td>
                     <td class="cr-meet">${r.meet || ''}</td>
@@ -1049,8 +1052,9 @@ function openAthleteCard(athleteId, rank) {
                 `).join('')}
               </tbody>
             </table>
-          </details>
-        ` : ''}
+            ` : `<p class="card-results-empty">No results yet this season.</p>`}
+          </details>`;
+        })()}
         <div class="card-analysis-label">Analysis</div>
         ${an.reviewTitle ? `
           <div class="card-analysis-section">
