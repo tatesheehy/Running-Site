@@ -127,7 +127,6 @@
 
     addManual: function () {
       var current = this.props.value || [];
-      if (current.length >= 4) return;
       this.props.onChange(current.concat([{ event: '', time: '' }]));
     },
 
