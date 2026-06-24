@@ -152,8 +152,27 @@ async function ghPut(path, token, body) {
 }
 
 // ── Main handler ──────────────────────────────────────────────────────────────
+// Runs on schedule OR manually via:
+//   GET /.netlify/functions/sync-prs?secret=YOUR_SYNC_SECRET
+// Set SYNC_SECRET in Netlify env vars to protect the manual trigger.
 
-exports.handler = async () => {
+exports.handler = async (event) => {
+  // Manual HTTP trigger (for testing)
+  if (event.httpMethod === 'GET') {
+    const secret = process.env.SYNC_SECRET;
+    const provided = (event.queryStringParameters || {}).secret;
+    if (!secret || provided !== secret) {
+      return { statusCode: 401, body: 'Unauthorized — set ?secret=YOUR_SYNC_SECRET' };
+    }
+  } else if (event.httpMethod && event.httpMethod !== 'POST') {
+    return { statusCode: 405, body: 'Method not allowed' };
+  }
+
+  // Falls through to the sync logic below
+  return runSync();
+};
+
+async function runSync() {
   const token = process.env.GITHUB_TOKEN;
   const repo  = process.env.GITHUB_REPO; // e.g. "tsheehy/running-site"
 
