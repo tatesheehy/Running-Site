@@ -1987,7 +1987,6 @@ footer {
 
 .h2h-photo-wrap {
   width: 100%;
-  height: 160px;
   border-radius: 8px;
   overflow: hidden;
   display: flex;
@@ -1997,15 +1996,15 @@ footer {
 }
 .h2h-photo {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
+  height: auto;
+  display: block;
 }
 .h2h-photo-ph {
   width: 64px;
   height: 64px;
   border-radius: 50%;
   background: #222;
+  margin: 40px auto;
 }
 
 .h2h-name {
@@ -2021,7 +2020,7 @@ footer {
   align-items: center;
   gap: 5px;
 }
-.h2h-section {
+.h2h-section-label {
   font-size: 10px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -2031,12 +2030,12 @@ footer {
   padding-top: 10px;
   border-top: 1px solid var(--border);
 }
-.h2h-rank-row, .h2h-pr-row, .h2h-vital {
+.h2h-rank-row, .h2h-pr-row {
   display: flex;
   align-items: baseline;
   gap: 8px;
   font-size: 14px;
-  padding: 3px 0;
+  padding: 4px 0;
 }
 .h2h-rank-num {
   font-family: var(--font-display);
@@ -2045,12 +2044,22 @@ footer {
   color: var(--accent);
   min-width: 36px;
 }
-.h2h-rank-ev { color: #ccc; font-size: 13px; }
-.h2h-pr-ev { color: var(--muted); font-size: 13px; flex: 1; }
-.h2h-pr-t { font-weight: 700; font-size: 14px; font-variant-numeric: tabular-nums; }
+.h2h-rank-ev { color: #e0e0e0; font-size: 13px; }
+.h2h-rank-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #ccc;
+  padding: 2px 7px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.h2h-pr-ev { color: #b0b0b0; font-size: 13px; flex: 1; }
+.h2h-pr-t { color: #e8e8e8; font-weight: 700; font-size: 14px; font-variant-numeric: tabular-nums; }
 .h2h-pr-row.h2h-pr-win .h2h-pr-t { color: #4ade80; }
-.h2h-vital-k { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; min-width: 64px; }
-.h2h-vital-v { font-weight: 600; font-size: 14px; }
 .h2h-empty-row { color: var(--muted); font-size: 13px; padding: 4px 0; }
 
 @media (max-width: 600px) {

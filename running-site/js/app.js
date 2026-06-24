@@ -290,24 +290,42 @@ function renderH2HComparison(id1, id2) {
   const a1 = ATHLETES[id1], a2 = ATHLETES[id2];
   if (!a1 || !a2) return;
 
-  const getRanks = id => {
-    const out = [];
+  // Returns ranked positions AND any section appearances for an athlete
+  const getRankInfo = id => {
+    const ranked = [];
+    const sectioned = [];
     RANKINGS_EVENTS.forEach(ev => {
       const idx = (RANKINGS[ev.name] || []).findIndex(r => r.athleteId === id);
-      if (idx !== -1) out.push({ event: ev.name, rank: idx + 1 });
+      if (idx !== -1) ranked.push({ event: ev.name, rank: idx + 1 });
+      (ev.sections || []).forEach(sec => {
+        if ((sec.entries || []).some(e => e.athleteId === id)) {
+          sectioned.push({ event: ev.name, section: sec.title });
+        }
+      });
     });
-    return out;
+    return { ranked, sectioned };
   };
 
   const col = (a, opp) => {
-    const ranks = getRanks(a.id);
+    const { ranked, sectioned } = getRankInfo(a.id);
     const photoHtml = a.photo
       ? `<img class="h2h-photo" src="${a.photo}" alt="${a.name}">`
-      : `<div class="h2h-photo h2h-photo-ph"></div>`;
+      : `<div class="h2h-photo-ph"></div>`;
 
-    const rankHtml = ranks.length
-      ? ranks.map(r => `<div class="h2h-rank-row"><span class="h2h-rank-num">#${r.rank}</span><span class="h2h-rank-ev">${r.event}</span></div>`).join('')
-      : '<div class="h2h-empty-row">Not currently ranked</div>';
+    let rankHtml;
+    if (ranked.length) {
+      rankHtml = ranked.map(r =>
+        `<div class="h2h-rank-row"><span class="h2h-rank-num">#${r.rank}</span><span class="h2h-rank-ev">${r.event}</span></div>`
+      ).join('');
+    } else if (sectioned.length) {
+      rankHtml = sectioned.map(s =>
+        `<div class="h2h-rank-row h2h-rank-section">
+          <span class="h2h-rank-tag">${s.section}</span><span class="h2h-rank-ev">${s.event}</span>
+        </div>`
+      ).join('');
+    } else {
+      rankHtml = `<div class="h2h-empty-row">No current ranking data</div>`;
+    }
 
     const oppPrs = opp.prs || [];
     const prHtml = (a.prs || []).length
@@ -322,21 +340,15 @@ function renderH2HComparison(id1, id2) {
         }).join('')
       : '<div class="h2h-empty-row">No PRs listed</div>';
 
-    const vitals = [['HT', a.height], ['WT', a.weight], ['AGE', a.age], ['PRO YRS', a.seasons]].filter(v => v[1]);
-    const vitalsHtml = vitals.map(([k, v]) =>
-      `<div class="h2h-vital"><span class="h2h-vital-k">${k}</span><span class="h2h-vital-v">${v}</span></div>`
-    ).join('');
-
     return `
       <div class="h2h-col">
         <div class="h2h-photo-wrap" style="background:${a.photoBackground || '#111'}">${photoHtml}</div>
         <div class="h2h-name">${a.name}</div>
         <div class="h2h-country">${renderFlag(a.flag)} ${a.country}</div>
-        <div class="h2h-section">Rankings</div>
+        <div class="h2h-section-label">Rankings</div>
         <div class="h2h-ranks">${rankHtml}</div>
-        <div class="h2h-section">Personal Bests</div>
+        <div class="h2h-section-label">Personal Bests</div>
         <div class="h2h-prs">${prHtml}</div>
-        ${vitals.length ? `<div class="h2h-section">Vitals</div><div class="h2h-vitals">${vitalsHtml}</div>` : ''}
       </div>`;
   };
 
