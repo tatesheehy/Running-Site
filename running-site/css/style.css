@@ -1485,13 +1485,16 @@ footer {
   gap: 0 14px;
   padding: 16px 16px;
   border-bottom: 1px solid var(--border);
+  border-left: 3px solid transparent;
   cursor: pointer;
-  transition: background 0.15s, padding-left 0.15s;
+  transition: background 0.15s, border-left-color 0.15s;
 }
 .rd-row:hover {
   background: var(--bg-light);
-  padding-left: 24px;
+  border-left-color: var(--accent);
 }
+.rd-row--podium { border-left-color: #e8e8e8; }
+.rd-row--podium:hover { border-left-color: var(--accent); }
 
 .rd-rank {
   font-family: var(--font-display);
@@ -1500,7 +1503,9 @@ footer {
   color: #e0e0e0;
   line-height: 1;
 }
-.rd-rank.gold { color: var(--accent); }
+.rd-rank.gold   { color: var(--accent); }
+.rd-rank.silver { color: #8a8a8a; }
+.rd-rank.bronze { color: #b07540; }
 
 .rd-avatar {
   width: 56px;
@@ -1595,14 +1600,7 @@ footer {
   gap: 4px;
   justify-content: center;
 }
-.rd-momentum-label {
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--muted);
-  opacity: 0.6;
-}
+.rd-time:empty::after { content: '—'; color: var(--muted); }
 .rd-momentum {
   display: flex;
   align-items: center;

@@ -825,7 +825,6 @@ function buildMomentumHtml(val) {
   const cls = v > 0 ? 'pos' : v < 0 ? 'neg' : 'neu';
   return `
     <div class="rd-momentum-col">
-      <div class="rd-momentum-label">Momentum</div>
       <div class="rd-momentum">
         <div class="rd-momentum-bar">
           <div class="rd-momentum-marker" style="left:${pct}%"></div>
@@ -843,9 +842,12 @@ function buildRankingRow(r, rank) {
   const photo   = a && a.photo;
   const photoBg = (a && a.photoBackground) || '#111';
   const clickData = encodeURIComponent(JSON.stringify({athleteId: r.athleteId||'', rank: rank||0, name, country, flag, seasonBest: r.seasonBest||'', meet: r.meet||''}));
+  const rankClass = rank === 1 ? 'gold' : rank === 2 ? 'silver' : rank === 3 ? 'bronze' : '';
+  const seasonBest = (r.seasonBest && r.seasonBest !== 'x') ? r.seasonBest : '';
+  const meet = (r.meet && r.meet !== 'x') ? r.meet : '';
   return `
-    <div class="rd-row" onclick="openRankingRow('${clickData}')">
-      ${rank != null ? `<div class="rd-rank ${rank === 1 ? 'gold' : ''}">${rank}</div>` : '<div class="rd-rank-empty"></div>'}
+    <div class="rd-row${rank <= 3 && rank != null ? ' rd-row--podium' : ''}" onclick="openRankingRow('${clickData}')">
+      ${rank != null ? `<div class="rd-rank ${rankClass}">${rank}</div>` : '<div class="rd-rank-empty"></div>'}
       <div class="rd-avatar ${photo ? '' : 'rd-avatar--empty'}" style="${photo ? `background-color:${photoBg};background-image:url('${photo}');background-size:cover;background-position:top center` : ''}"></div>
       <div class="rd-info">
         <div class="rd-name">${name}</div>
@@ -855,7 +857,7 @@ function buildRankingRow(r, rank) {
       <div class="rd-right">
         ${r.reason
           ? `<div class="rd-reason">${r.reason}</div>`
-          : `<div class="rd-time">${r.seasonBest || ''}</div><div class="rd-meet">${r.meet || ''}</div>`
+          : `<div class="rd-time">${seasonBest}</div><div class="rd-meet">${meet}</div>`
         }
       </div>
     </div>
