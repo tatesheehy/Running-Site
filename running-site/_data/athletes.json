@@ -276,13 +276,13 @@
       "photo": "/images/hockercard.png",
       "club": "Nike",
       "country": "United States",
+      "results": [],
       "weight": "145 lbs",
       "coach": "Jerry Schumacher",
       "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
       "event": "MIDDLE DISTANCE + DISTANCE",
       "id": "cole-hocker",
-      "age": "23",
-      "results": []
+      "age": "23"
     },
     {
       "photoBackground": "#0a1a0d",
@@ -385,13 +385,13 @@
       "photo": "/images/nader_card.png",
       "club": "Nike",
       "country": "Portugal",
+      "results": [],
       "weight": "115 lbs",
       "coach": "Self-coached",
       "reviewBody": "Kejelcha has been a model of consistency in 2026. While he hasn't grabbed the headlines, his results speak for themselves — four top-3 finishes in Diamond League events and a season best of 3:45.12.",
       "event": "MIDDLE DISTANCE",
       "id": "isaac-nader",
-      "age": "27",
-      "results": []
+      "age": "27"
     },
     {
       "photoBackground": "#0a0a1a",
@@ -506,13 +506,13 @@
       "photo": "/images/kerrcard.png",
       "club": "Adidas",
       "country": "Great Britain",
+      "results": [],
       "weight": "150 lbs",
       "coach": "Gary Lough",
       "reviewBody": "Kerr continues to be one of the most physically imposing presences in the 1500m field. His ability to surge mid-race and break the competition is unmatched.",
       "event": "MIDDLE DISTANCE",
       "id": "josh-kerr",
-      "age": "26",
-      "results": []
+      "age": "26"
     },
     {
       "photoBackground": "#0a1a0a",
@@ -595,13 +595,13 @@
       "photo": "/images/timothy_card.png",
       "club": "Iten Training Camp",
       "country": "Kenya",
+      "results": [],
       "weight": "128 lbs",
       "coach": "Patrick Sang",
       "reviewBody": "Cheruiyot has shown signs of returning to his dominant best after a couple of injury-interrupted campaigns. His Shanghai win was a reminder that when he's right, he can run with anyone.",
       "event": "MIDDLE DISTANCE",
       "id": "timothy-cheruiyot",
-      "age": "28",
-      "results": []
+      "age": "28"
     },
     {
       "photoBackground": "#111111",
@@ -665,13 +665,13 @@
       "photo": "/images/laros_card.png",
       "club": "xx",
       "country": "Netherlands",
+      "results": [],
       "weight": "145",
       "coach": "xx",
       "reviewBody": "xx",
       "event": "MIDDLE DISTANCE",
       "id": "niels-laros",
-      "age": "21",
-      "results": []
+      "age": "21"
     },
     {
       "photoBackground": "#111111",
@@ -728,13 +728,13 @@
       "photo": "/images/myers_card.png",
       "club": "xx",
       "country": "Australia",
+      "results": [],
       "weight": "150",
       "coach": "xx",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "cameron-myers",
-      "age": "19",
-      "results": []
+      "age": "19"
     },
     {
       "photoBackground": "#111111",
@@ -876,13 +876,13 @@
       "photo": "/images/phanuel_card.png",
       "club": "x",
       "country": "Kenya",
+      "results": [],
       "weight": "145",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "phanuel-koech",
-      "age": "19",
-      "results": []
+      "age": "19"
     },
     {
       "photoBackground": "#111111",
@@ -954,13 +954,13 @@
       "photo": "/images/nuguse_card.png",
       "club": "x",
       "country": "United States",
+      "results": [],
       "weight": "145",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "yared-nuguse",
-      "age": "x",
-      "results": []
+      "age": "x"
     },
     {
       "photoBackground": "#111111",
@@ -1030,14 +1030,14 @@
       "ncaa": true,
       "club": "x",
       "country": "United States",
+      "results": [],
       "college": "Oregon",
       "weight": "145",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "simeon-birnbaum",
-      "age": "21",
-      "results": []
+      "age": "21"
     },
     {
       "photoBackground": "#111111",
@@ -1137,13 +1137,13 @@
       "photo": "/images/ciattei_card.png",
       "club": "x",
       "country": "United States",
+      "results": [],
       "weight": "155",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "vincent-ciattei",
-      "age": "31",
-      "results": []
+      "age": "31"
     },
     {
       "photoBackground": "#111111",
@@ -1244,13 +1244,13 @@
       "photo": "/images/hobbs_card.png",
       "club": "x",
       "country": "United States",
+      "results": [],
       "weight": "140",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "hobbs-kessler",
-      "age": "23",
-      "results": []
+      "age": "23"
     },
     {
       "photoBackground": "#111111",
@@ -1342,13 +1342,13 @@
       "photo": "/images/habz_card.png",
       "club": "x",
       "country": "France",
+      "results": [],
       "weight": "155",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "azeddine-habz",
-      "age": "32",
-      "results": []
+      "age": "32"
     },
     {
       "photoBackground": "#111111",
@@ -1375,13 +1375,13 @@
       "photo": "/images/coscoran_card.png",
       "club": "x",
       "country": "Ireland",
+      "results": [],
       "weight": "150",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "andrew-coscoran",
-      "age": "30",
-      "results": []
+      "age": "30"
     },
     {
       "photoBackground": "#111111",
@@ -1416,13 +1416,13 @@
       "photo": "/images/jonahkoech_card.png",
       "club": "x",
       "country": "United States",
+      "results": [],
       "weight": "150",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "jonah-koech",
-      "age": "29",
-      "results": []
+      "age": "29"
     },
     {
       "photoBackground": "#111111",
@@ -1541,14 +1541,14 @@
       "ncaa": true,
       "club": "x",
       "country": "United States",
+      "results": [],
       "college": "Villanova",
       "weight": "145",
       "coach": "x",
       "reviewBody": "x",
       "event": "DISTANCE",
       "id": "marco-langon",
-      "age": "21",
-      "results": []
+      "age": "21"
     },
     {
       "photoBackground": "#111111",
@@ -1605,13 +1605,13 @@
       "ncaa": false,
       "club": "x",
       "country": "Spain",
+      "results": [],
       "weight": "150",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "mohamed-katir",
-      "age": "28",
-      "results": []
+      "age": "28"
     }
   ]
 }
