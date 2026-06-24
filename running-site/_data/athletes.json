@@ -241,12 +241,52 @@
       "seasons": "9",
       "prs": [
         {
+          "event": "800m",
+          "time": "1:43.86"
+        },
+        {
           "event": "1500m",
           "time": "3:29.37"
         },
         {
           "event": "Mile",
           "time": "3:48.25"
+        },
+        {
+          "event": "3000m",
+          "time": "7:38.05"
+        },
+        {
+          "event": "10000m",
+          "time": "29:57.34"
+        },
+        {
+          "event": "800 Metres Short Track",
+          "time": "1:45.05"
+        },
+        {
+          "event": "1000 Metres",
+          "time": "2:16.39"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:32.44"
+        },
+        {
+          "event": "Mile Short Track",
+          "time": "3:54.17"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:38.05"
+        },
+        {
+          "event": "Mile Road",
+          "time": "4:14.0h"
+        },
+        {
+          "event": "10 Kilometres Road",
+          "time": "28:01"
         }
       ],
       "hometown": "Bekoji, Ethiopia",
@@ -308,16 +348,64 @@
       "seasons": "6",
       "prs": [
         {
+          "event": "800m",
+          "time": "1:44.60"
+        },
+        {
           "event": "1500m",
           "time": "3:27.79"
         },
         {
           "event": "Mile",
-          "time": "3:48.87"
+          "time": "3:45.34"
         },
         {
           "event": "3000m",
           "time": "7:30.14"
+        },
+        {
+          "event": "2 Miles",
+          "time": "8:00.67"
+        },
+        {
+          "event": "5000m",
+          "time": "13:23.78"
+        },
+        {
+          "event": "800 Metres Short Track",
+          "time": "1:46.64"
+        },
+        {
+          "event": "1000 Metres",
+          "time": "2:17.60"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:32.86"
+        },
+        {
+          "event": "Mile Short Track",
+          "time": "3:48.87"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:30.14"
+        },
+        {
+          "event": "2 Miles Short Track",
+          "time": "8:00.67"
+        },
+        {
+          "event": "Mile Road",
+          "time": "4:05.0h"
+        },
+        {
+          "event": "Mile Road",
+          "time": "3:44.3h"
+        },
+        {
+          "event": "Distance Medley Short Track",
+          "time": "9:33.41"
         }
       ],
       "hometown": "Edinburgh, Scotland",
