@@ -1,6 +1,5 @@
 // Custom Decap CMS widget: "wa-results"
 // Manages the "results" field (season race results) for each athlete.
-// Reads the athlete's waUrl from the entry and fetches results from WA.
 
 (function () {
   var h           = window.h;
@@ -16,8 +15,10 @@
     greenLabel: { display: 'block', fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: '#2e7d32', marginBottom: 6 },
     yellowLabel: { display: 'block', fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '.05em', color: '#e65100', marginBottom: 4 },
     fetchBox:  { background: '#f4f6f8', border: '1px solid #d0d8e0', borderRadius: 6, padding: '10px 12px' },
-    urlText:   { fontSize: 11, color: '#555', marginBottom: 8, wordBreak: 'break-all' },
+    urlLabel:  { display: 'block', fontSize: 11, fontWeight: 700, color: '#555', marginBottom: 4 },
+    urlInput:  { width: '100%', boxSizing: 'border-box', padding: '6px 8px', fontSize: 12, fontFamily: 'monospace', border: '1px solid #c0c8d0', borderRadius: 4, marginBottom: 8 },
     btn:       { padding: '7px 14px', background: '#E8500A', color: '#fff', border: 'none', borderRadius: 4, cursor: 'pointer', fontSize: 13, fontWeight: 600, whiteSpace: 'nowrap' },
+    btnDis:    { padding: '7px 14px', background: '#E8500A', color: '#fff', border: 'none', borderRadius: 4, cursor: 'default', fontSize: 13, fontWeight: 600, whiteSpace: 'nowrap', opacity: 0.45 },
     hint:      { color: '#999', fontSize: 11, marginTop: 6, fontStyle: 'italic' },
     err:       { color: '#c00', fontSize: 12, marginTop: 6 },
     ok:        { color: '#2e7d32', fontSize: 12, marginLeft: 10 },
@@ -28,43 +29,19 @@
 
   var WaResultsControl = createClass({
     getInitialState: function () {
-      return { loading: false, error: '', justFetched: false, _urlFilled: false, waUrl: '' };
-    },
-
-    _readEntryWaUrl: function () {
-      try {
-        var entry = this.props.entry;
-        if (!entry) return '';
-        return (typeof entry.getIn === 'function'
-          ? entry.getIn(['data', 'waUrl'])
-          : (entry.data && entry.data.waUrl)) || '';
-      } catch (_) { return ''; }
+      return { loading: false, error: '', justFetched: false, urlInput: '' };
     },
 
     componentDidMount: function () {
-      var url = this._readEntryWaUrl();
-      if (url) this.setState({ waUrl: url, _urlFilled: true });
-      // Always register the value so Decap includes this field on every save,
-      // even when results is missing/undefined in the JSON (required: false).
+      // Always register value so Decap includes this field on every save.
       if (this.props.onChange) {
         this.props.onChange(Array.isArray(this.props.value) ? this.props.value : []);
       }
     },
 
-    componentDidUpdate: function () {
-      // Keep waUrl in sync as the user edits the waUrl field above
-      var url = this._readEntryWaUrl();
-      if (url !== this.state.waUrl) {
-        this.setState({ waUrl: url, _urlFilled: true });
-      }
-    },
-
     fetchResults: function () {
-      var url = this.state.waUrl || this._readEntryWaUrl();
-      if (!url) {
-        this.setState({ error: 'No World Athletics URL found. Fill in the "World Athletics Profile URL" field above first.' });
-        return;
-      }
+      var url = this.state.urlInput.trim();
+      if (!url) return;
       var self = this;
       this.setState({ loading: true, error: '', justFetched: false });
       fetch(API + '?url=' + encodeURIComponent(url))
@@ -93,12 +70,12 @@
     render: function () {
       var self    = this;
       var current = Array.isArray(this.props.value) ? this.props.value : [];
-      var waUrl   = this.state.waUrl || this._readEntryWaUrl();
+      var url     = this.state.urlInput.trim();
       var st      = this.state;
 
       return h('div', { style: S.wrap },
 
-        // ── Saved results display ──────────────────────────────────
+        // ── Saved results ──────────────────────────────────────
         h('div', { style: current.length > 0 ? S.greenBox : S.yellowBox },
           current.length > 0
             ? h('span', { style: S.greenLabel }, '✓ ' + current.length + ' season result' + (current.length === 1 ? '' : 's') + ' saved')
@@ -129,38 +106,32 @@
                 );
               })
             )
-          ),
-
-          current.length === 0 && h('div', { style: { fontSize: 12, color: '#e65100' } },
-            waUrl
-              ? 'Use the sync button below to fetch race results from World Athletics.'
-              : 'Enter the World Athletics Profile URL in the field above, then use the sync button.')
+          )
         ),
 
-        // ── Fetch box ──────────────────────────────────────────────
+        // ── Sync box ───────────────────────────────────────────
         h('div', { style: S.fetchBox },
-          waUrl
-            ? h('div', null,
-                h('div', { style: S.urlText },
-                  h('strong', null, 'WA Profile: '),
-                  h('span', { style: { fontFamily: 'monospace', fontSize: 11 } }, waUrl)
-                ),
-                h('div', { style: { display: 'flex', alignItems: 'center', gap: 10 } },
-                  h('button', {
-                    type:     'button',
-                    onClick:  function () { self.fetchResults(); },
-                    disabled: st.loading,
-                    style:    Object.assign({}, S.btn, st.loading ? { opacity: .45, cursor: 'default' } : {}),
-                  }, st.loading ? 'Fetching…' : '⟳ Sync results from World Athletics'),
-                  st.justFetched && h('span', { style: S.ok }, '✓ Saved — publish to apply')
-                )
-              )
-            : h('div', { style: { color: '#999', fontSize: 12, fontStyle: 'italic' } },
-                'Fill in the "World Athletics Profile URL" field above to enable result sync.'
-              ),
-
+          h('label', { style: S.urlLabel }, 'World Athletics Profile URL'),
+          h('input', {
+            type: 'text',
+            value: st.urlInput,
+            placeholder: 'https://worldathletics.org/athletes/norway/jakob-ingebrigtsen-14528596',
+            style: S.urlInput,
+            onChange: function (e) {
+              self.setState({ urlInput: e.target.value, error: '', justFetched: false });
+            },
+          }),
+          h('div', { style: { display: 'flex', alignItems: 'center', gap: 10 } },
+            h('button', {
+              type:     'button',
+              onClick:  function () { self.fetchResults(); },
+              disabled: !url || st.loading,
+              style:    (!url || st.loading) ? S.btnDis : S.btn,
+            }, st.loading ? 'Fetching…' : '⟳ Sync from World Athletics'),
+            st.justFetched && h('span', { style: S.ok }, '✓ Done — publish to apply')
+          ),
           st.error && h('div', { style: S.err }, '⚠ ' + st.error),
-          h('div', { style: S.hint }, 'Live Netlify site only — not available in local preview.')
+          h('div', { style: S.hint }, 'Paste the athlete\'s WA profile URL above, then click Sync. Live Netlify site only.')
         )
       );
     },
