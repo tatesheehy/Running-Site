@@ -546,6 +546,10 @@
           "time": "1:43.83"
         },
         {
+          "event": "1500m",
+          "time": "3:29.20"
+        },
+        {
           "event": "Mile",
           "time": "3:45.94"
         },
@@ -634,6 +638,7 @@
     {
       "photoBackground": "#111111",
       "reviewTitle": "Season review",
+      "waUrl": "https://worldathletics.org/athletes/great-britain-ni/jake-wightman-14522654",
       "height": "5'11",
       "questionBody": "x",
       "headlineRest": "xx",
@@ -643,12 +648,84 @@
       "seasons": "12",
       "prs": [
         {
+          "event": "400m",
+          "time": "48.34"
+        },
+        {
+          "event": "800m",
+          "time": "1:43.65"
+        },
+        {
           "event": "1500m",
           "time": "3:29.23"
         },
         {
           "event": "Mile",
           "time": "3:47.82"
+        },
+        {
+          "event": "2000m",
+          "time": "4:53.69"
+        },
+        {
+          "event": "3000m",
+          "time": "7:37.81"
+        },
+        {
+          "event": "2 Miles",
+          "time": "8:20.15"
+        },
+        {
+          "event": "5000m",
+          "time": "15:37.32"
+        },
+        {
+          "event": "800 Metres Short Track",
+          "time": "1:47.69"
+        },
+        {
+          "event": "1000 Metres",
+          "time": "2:13.88"
+        },
+        {
+          "event": "1000 Metres Short Track",
+          "time": "2:17.51"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:34.06"
+        },
+        {
+          "event": "Mile Short Track",
+          "time": "3:57.24"
+        },
+        {
+          "event": "2000 Metres Short Track",
+          "time": "4:53.69"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:37.81"
+        },
+        {
+          "event": "2 Miles Short Track",
+          "time": "8:20.15"
+        },
+        {
+          "event": "Mile Road",
+          "time": "4:05.70"
+        },
+        {
+          "event": "Mile Road",
+          "time": "3:50.0h"
+        },
+        {
+          "event": "5 Kilometres Road",
+          "time": "13:52"
+        },
+        {
+          "event": "10 Kilometres Road",
+          "time": "30:10"
         }
       ],
       "hometown": "xx",
@@ -882,6 +959,10 @@
       "seasons": "3",
       "prs": [
         {
+          "event": "800m",
+          "time": "1:49.64"
+        },
+        {
           "event": "1500m",
           "time": "3:29.91"
         },
@@ -896,6 +977,26 @@
         {
           "event": "3000m",
           "time": "7:26.11"
+        },
+        {
+          "event": "5000m",
+          "time": "13:16.40"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:42.27"
+        },
+        {
+          "event": "Mile Road",
+          "time": "4:05.91"
+        },
+        {
+          "event": "5 Kilometres Road",
+          "time": "13:04"
+        },
+        {
+          "event": "10 Kilometres Road",
+          "time": "28:46"
         }
       ],
       "hometown": "x",
