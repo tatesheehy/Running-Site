@@ -47,6 +47,14 @@
       "seasons": "8",
       "prs": [
         {
+          "event": "400m",
+          "time": "51.03"
+        },
+        {
+          "event": "800m",
+          "time": "1:46.44"
+        },
+        {
           "event": "1500m",
           "time": "3:26.73"
         },
@@ -55,8 +63,52 @@
           "time": "3:43.73"
         },
         {
+          "event": "2000m",
+          "time": "4:43.13"
+        },
+        {
           "event": "3000m",
           "time": "7:17.55"
+        },
+        {
+          "event": "3000m SC",
+          "time": "8:26.81"
+        },
+        {
+          "event": "2 Miles",
+          "time": "7:54.10"
+        },
+        {
+          "event": "5000m",
+          "time": "12:48.45"
+        },
+        {
+          "event": "Half Marathon",
+          "time": "1:03:13"
+        },
+        {
+          "event": "800 Metres Short Track",
+          "time": "1:52.01"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:29.63"
+        },
+        {
+          "event": "Mile Short Track",
+          "time": "3:45.14"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:40.32"
+        },
+        {
+          "event": "Mile Road",
+          "time": "4:00.71"
+        },
+        {
+          "event": "10 Kilometres Road",
+          "time": "27:54"
         }
       ],
       "hometown": "Sandnes, Norway",
@@ -379,6 +431,10 @@
       "seasons": "3",
       "prs": [
         {
+          "event": "800m",
+          "time": "1:43.83"
+        },
+        {
           "event": "1500m",
           "time": "3:29.20"
         },
@@ -387,8 +443,36 @@
           "time": "3:45.94"
         },
         {
+          "event": "2000m",
+          "time": "4:49.68"
+        },
+        {
           "event": "3000m",
           "time": "7:29.49"
+        },
+        {
+          "event": "5000m",
+          "time": "13:10.86"
+        },
+        {
+          "event": "800 Metres Short Track",
+          "time": "1:47.16"
+        },
+        {
+          "event": "1000 Metres",
+          "time": "2:14.37"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:49.51"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:29.49"
+        },
+        {
+          "event": "5 Kilometres Road",
+          "time": "13:26"
         }
       ],
       "hometown": "xx",
