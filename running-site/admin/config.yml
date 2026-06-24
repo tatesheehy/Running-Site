@@ -71,10 +71,10 @@ collections:
             label_singular: Athlete
             widget: list
             fields:
-              - { label: "Unique ID (e.g. jakob-ingebrigtsen)", name: id, widget: string }
               - { label: "Full Name", name: name, widget: string }
+              - { label: "Unique ID", name: id, widget: string, hint: "e.g. jakob-ingebrigtsen (lowercase, hyphens, no spaces)" }
               - { label: "Country", name: country, widget: string }
-              - label: "Flag / Country"
+              - label: "Flag"
                 name: flag
                 widget: select
                 options:
@@ -130,18 +130,21 @@ collections:
                   - { label: "Uganda (UG)", value: "UG" }
                   - { label: "United States (US)", value: "US" }
                   - { label: "Wales (WAL)", value: "WAL" }
-              - { label: "World Athletics Profile URL (for auto PR sync — e.g. https://www.worldathletics.org/athletes/norway/jakob-ingebrigtsen-14528596)", name: waUrl, widget: string, required: false }
+              - { label: "World Athletics URL", name: waUrl, widget: string, required: false, hint: "e.g. https://worldathletics.org/athletes/norway/jakob-ingebrigtsen-14528596 — used for auto daily sync" }
               - { label: "Photo", name: photo, widget: image, required: false, default: "" }
-              - { label: "Photo Background Color", name: photoBackground, widget: string, default: "#111111", hint: "Dark hex color, e.g. #0d1b2a" }
-              - { label: "Event Category", name: event, widget: string, hint: "e.g. MIDDLE DISTANCE" }
+              - { label: "Photo BG Color", name: photoBackground, widget: string, default: "#111111", hint: "Dark hex color, e.g. #0d1b2a" }
+              - { label: "Event", name: event, widget: string, hint: "e.g. MIDDLE DISTANCE" }
+              - { label: "Age", name: age, widget: string }
               - { label: "Height", name: height, widget: string }
               - { label: "Weight", name: weight, widget: string }
-              - { label: "Age", name: age, widget: string }
               - { label: "Pro Seasons", name: seasons, widget: string }
+              - { label: "Club", name: club, widget: string }
+              - { label: "Coach", name: coach, widget: string }
+              - { label: "Hometown", name: hometown, widget: string }
 
-              - { label: "NCAA Athlete", name: ncaa, widget: boolean, default: false, required: false, hint: "Toggle on if this athlete is currently competing in the NCAA." }
-              - { label: "College / University", name: college, widget: string, required: false, hint: "e.g. University of Oregon, Georgetown University" }
-              - { label: "College Logo", name: collegeLogo, widget: image, required: false, hint: "Upload the college or university logo." }
+              - { label: "NCAA Athlete", name: ncaa, widget: boolean, default: false, required: false }
+              - { label: "College", name: college, widget: string, required: false, hint: "e.g. University of Oregon" }
+              - { label: "College Logo", name: collegeLogo, widget: image, required: false }
 
               - name: prs
                 label: "Personal Records"
@@ -155,29 +158,29 @@ collections:
               - name: achievements
                 label: Achievements
                 widget: list
+                minimize_collapsed: true
+                summary: "{{icon}} {{count}} {{label}}"
                 fields:
                   - { label: "Icon (emoji)", name: icon, widget: string }
-                  - { label: "Count (e.g. 2x)", name: count, widget: string }
+                  - { label: "Count", name: count, widget: string, hint: "e.g. 2x" }
                   - { label: "Label", name: label, widget: string }
 
               - name: traits
                 label: Trait Badges
                 widget: list
+                minimize_collapsed: true
+                summary: "{{emoji}} {{label}}"
                 fields:
                   - { label: "Emoji", name: emoji, widget: string }
                   - { label: "Label", name: label, widget: string }
 
-              - { label: "Club", name: club, widget: string }
-              - { label: "Coach", name: coach, widget: string }
-              - { label: "Hometown", name: hometown, widget: string }
+              - { label: "Headline (bold)", name: headlineKey, widget: string }
+              - { label: "Headline (gray)", name: headlineRest, widget: string }
 
-              - { label: "Card Headline — Key Words (bold)", name: headlineKey, widget: string }
-              - { label: "Card Headline — Rest (gray)", name: headlineRest, widget: string }
-
-              - { label: "Analysis — Review Title", name: reviewTitle, widget: string, default: "Season review" }
-              - { label: "Analysis — Review Text", name: reviewBody, widget: text }
-              - { label: "Analysis — Question Title", name: questionTitle, widget: string, default: "Next question" }
-              - { label: "Analysis — Question Text", name: questionBody, widget: text }
+              - { label: "Review Title", name: reviewTitle, widget: string, default: "Season review", hint: "Usually 'Season review' — only change if needed" }
+              - { label: "Season Review", name: reviewBody, widget: text }
+              - { label: "Question Title", name: questionTitle, widget: string, default: "Next question", hint: "Usually 'Next question' — only change if needed" }
+              - { label: "Next Question", name: questionBody, widget: text }
 
   # ── RANKINGS ─────────────────────────────────────────────
   - name: rankings
