@@ -203,6 +203,7 @@ window.toggleMobileMenu = toggleMobileMenu;
 
 // ── HEAD TO HEAD ───────────────────────────────────────────
 let h2hSlots = [null, null];
+let h2hEventContext = null;
 
 function parseTimeToSecs(t) {
   if (!t) return null;
@@ -212,7 +213,8 @@ function parseTimeToSecs(t) {
   return parts[0];
 }
 
-function openH2H(preselectedId) {
+function openH2H(preselectedId, eventContext) {
+  h2hEventContext = eventContext || null;
   let modal = qs('#h2h-modal');
   if (!modal) {
     modal = document.createElement('div');
@@ -310,13 +312,35 @@ function renderH2HComparison(id1, id2) {
   const EVENT_ORDER = ['60m','100m','200m','400m','800m','1500m','Mile','3000m','5000m','10000m','Half Marathon','Marathon','Steeplechase','60mH','110mH','400mH'];
   const a1Events = new Set((a1.prs || []).map(p => p.event));
   const a2Events = new Set((a2.prs || []).map(p => p.event));
-  const allPrEvents = [...a1Events].filter(e => a2Events.has(e)).sort((a, b) => {
-    const ai = EVENT_ORDER.indexOf(a), bi = EVENT_ORDER.indexOf(b);
-    if (ai === -1 && bi === -1) return a.localeCompare(b);
-    if (ai === -1) return 1;
-    if (bi === -1) return -1;
-    return ai - bi;
-  });
+  const shared = [...a1Events].filter(e => a2Events.has(e));
+
+  // Determine priority order based on event context
+  const getPriority = (sharedEvs) => {
+    const ctx = (h2hEventContext || '').toLowerCase();
+    const has = ev => sharedEvs.includes(ev);
+    if (ctx.includes('1500')) {
+      return ['1500m', '800m', 'Mile', '3000m', '5000m'];
+    } else if (ctx.includes('5000') || ctx.includes('3000')) {
+      return [has('Mile') ? 'Mile' : '1500m', '3000m', '5000m', has('10000m') ? '10000m' : '800m'];
+    } else if (ctx.includes('800')) {
+      return ['800m', has('Mile') ? 'Mile' : '1500m'];
+    } else if (ctx.includes('10000') || ctx.includes('10,000')) {
+      return ['10000m', '5000m', '3000m', has('Mile') ? 'Mile' : '1500m'];
+    }
+    return [];
+  };
+
+  const priority = getPriority(shared);
+  const allPrEvents = [
+    ...priority.filter(e => shared.includes(e)),
+    ...shared.filter(e => !priority.includes(e)).sort((a, b) => {
+      const ai = EVENT_ORDER.indexOf(a), bi = EVENT_ORDER.indexOf(b);
+      if (ai === -1 && bi === -1) return a.localeCompare(b);
+      if (ai === -1) return 1;
+      if (bi === -1) return -1;
+      return ai - bi;
+    }),
+  ];
 
   const colPrHtml = (a, opp) => {
     if (!allPrEvents.length) return '<div class="h2h-empty-row">No PRs listed</div>';
@@ -866,7 +890,7 @@ function buildRankingsDetail(eventName) {
       <div class="rankings-detail">
         <div class="rd-back-row">
           <a href="rankings.html" class="rd-back">&larr; All Rankings</a>
-          <button class="h2h-hub-btn" onclick="openH2H()">⇌ Compare Athletes</button>
+          <button class="h2h-hub-btn" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">⇌ Compare Athletes</button>
         </div>
         <div class="rd-header">
           <div class="rd-header-meta">${RANKINGS_YEAR} Season Rankings</div>
@@ -953,7 +977,7 @@ function openAthleteCard(athleteId, rank) {
       <div class="card-rank">${rank}</div>
       <div class="card-header-center">
         <div class="card-header-top">
-          <button class="card-compare-btn" onclick="closeAthleteCard();openH2H('${athleteId}')" title="Compare athletes">⇌ Compare</button>
+          <button class="card-compare-btn" onclick="closeAthleteCard();openH2H('${athleteId}',new URLSearchParams(location.search).get('event'))" title="Compare athletes">⇌ Compare</button>
         </div>
         <div>
           <span class="card-athlete-name">${a.name}</span>
