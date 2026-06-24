@@ -1017,6 +1017,7 @@ function openAthleteCard(athleteId, rank) {
               ${a.college ? `<div class="card-college-name">${a.college}</div>` : ''}
             </div>
           ` : ''}
+          ${a.waUrl ? `<a class="card-wa-link" href="${a.waUrl}" target="_blank" rel="noopener noreferrer">World Athletics ↗</a>` : ''}
         </div>
       </div>
       <div class="card-right">
