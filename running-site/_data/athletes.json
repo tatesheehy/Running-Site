@@ -280,7 +280,8 @@
       "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
       "event": "MIDDLE DISTANCE + DISTANCE",
       "id": "cole-hocker",
-      "age": "23"
+      "age": "23",
+      "results": []
     },
     {
       "photoBackground": "#0a1a0d",
@@ -388,7 +389,8 @@
       "reviewBody": "Kejelcha has been a model of consistency in 2026. While he hasn't grabbed the headlines, his results speak for themselves — four top-3 finishes in Diamond League events and a season best of 3:45.12.",
       "event": "MIDDLE DISTANCE",
       "id": "isaac-nader",
-      "age": "27"
+      "age": "27",
+      "results": []
     },
     {
       "photoBackground": "#0a0a1a",
@@ -507,7 +509,8 @@
       "reviewBody": "Kerr continues to be one of the most physically imposing presences in the 1500m field. His ability to surge mid-race and break the competition is unmatched.",
       "event": "MIDDLE DISTANCE",
       "id": "josh-kerr",
-      "age": "26"
+      "age": "26",
+      "results": []
     },
     {
       "photoBackground": "#0a1a0a",
@@ -594,7 +597,8 @@
       "reviewBody": "Cheruiyot has shown signs of returning to his dominant best after a couple of injury-interrupted campaigns. His Shanghai win was a reminder that when he's right, he can run with anyone.",
       "event": "MIDDLE DISTANCE",
       "id": "timothy-cheruiyot",
-      "age": "28"
+      "age": "28",
+      "results": []
     },
     {
       "photoBackground": "#111111",
@@ -662,7 +666,8 @@
       "reviewBody": "xx",
       "event": "MIDDLE DISTANCE",
       "id": "niels-laros",
-      "age": "21"
+      "age": "21",
+      "results": []
     },
     {
       "photoBackground": "#111111",
@@ -699,7 +704,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "cameron-myers",
-      "age": "19"
+      "age": "19",
+      "results": []
     },
     {
       "photoBackground": "#111111",
@@ -833,7 +839,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "phanuel-koech",
-      "age": "19"
+      "age": "19",
+      "results": []
     },
     {
       "photoBackground": "#111111",
@@ -865,7 +872,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "yared-nuguse",
-      "age": "x"
+      "age": "x",
+      "results": []
     },
     {
       "photoBackground": "#111111",
@@ -908,7 +916,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "simeon-birnbaum",
-      "age": "21"
+      "age": "21",
+      "results": []
     },
     {
       "photoBackground": "#111111",
@@ -1012,7 +1021,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "vincent-ciattei",
-      "age": "31"
+      "age": "31",
+      "results": []
     },
     {
       "photoBackground": "#111111",
@@ -1118,7 +1128,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "hobbs-kessler",
-      "age": "23"
+      "age": "23",
+      "results": []
     },
     {
       "photoBackground": "#111111",
@@ -1215,7 +1226,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "azeddine-habz",
-      "age": "32"
+      "age": "32",
+      "results": []
     },
     {
       "photoBackground": "#111111",
@@ -1247,7 +1259,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "andrew-coscoran",
-      "age": "30"
+      "age": "30",
+      "results": []
     },
     {
       "photoBackground": "#111111",
@@ -1287,7 +1300,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "jonah-koech",
-      "age": "29"
+      "age": "29",
+      "results": []
     },
     {
       "photoBackground": "#111111",
@@ -1412,7 +1426,8 @@
       "reviewBody": "x",
       "event": "DISTANCE",
       "id": "marco-langon",
-      "age": "21"
+      "age": "21",
+      "results": []
     },
     {
       "photoBackground": "#111111",
@@ -1474,7 +1489,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "mohamed-katir",
-      "age": "28"
+      "age": "28",
+      "results": []
     }
   ]
 }
