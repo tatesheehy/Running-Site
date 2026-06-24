@@ -857,7 +857,7 @@ function buildRankingRow(r, rank) {
   const seasonBest = (r.seasonBest && r.seasonBest !== 'x') ? r.seasonBest : '';
   const meet = (r.meet && r.meet !== 'x') ? r.meet : '';
   return `
-    <div class="rd-row${rank <= 3 && rank != null ? ' rd-row--podium' : ''}" onclick="openRankingRow('${clickData}')">
+    <div class="rd-row${rank <= 3 && rank != null ? ' rd-row--podium' : ''}" data-country="${country}" onclick="openRankingRow('${clickData}')">
       ${rank != null ? `<div class="rd-rank ${rankClass}">${rank}</div>` : '<div class="rd-rank-empty"></div>'}
       <div class="rd-avatar ${photo ? '' : 'rd-avatar--empty'}" style="${photo ? `background-color:${photoBg};background-image:url('${photo}');background-size:cover;background-position:top center` : ''}"></div>
       <div class="rd-info">
@@ -875,10 +875,65 @@ function buildRankingRow(r, rank) {
   `;
 }
 
+window.filterRankings = function(country) {
+  document.querySelectorAll('#main .rd-row').forEach(row => {
+    row.style.display = (!country || row.dataset.country === country) ? '' : 'none';
+  });
+};
+
+window.toggleRdCountrySelect = function() {
+  const cs = document.getElementById('rd-country-select');
+  if (cs) cs.classList.toggle('open');
+};
+
+window.pickRdCountry = function(el, country) {
+  const val = document.querySelector('#rd-country-select .rd-cs-val');
+  if (val) val.innerHTML = el.innerHTML;
+  document.querySelectorAll('.rd-cs-opt').forEach(o => o.classList.remove('rd-cs-opt--active'));
+  el.classList.add('rd-cs-opt--active');
+  const cs = document.getElementById('rd-country-select');
+  if (cs) cs.classList.remove('open');
+  filterRankings(country);
+};
+
+if (!window._rdCsOutsideClick) {
+  window._rdCsOutsideClick = true;
+  document.addEventListener('click', function(e) {
+    const cs = document.getElementById('rd-country-select');
+    if (cs && !cs.contains(e.target)) cs.classList.remove('open');
+  });
+}
+
 function buildRankingsDetail(eventName) {
   const ev = RANKINGS_EVENTS.find(e => e.name === eventName);
   const rows = (ev && ev.rows) ? ev.rows : [];
   const sections = (ev && ev.sections) ? ev.sections : [];
+
+  // Collect unique countries for filter pills
+  const countryInfo = {};
+  rows.forEach(r => {
+    const a = r.athleteId && ATHLETES[r.athleteId];
+    const c = (a && a.country) || r.country || '';
+    const f = (a && a.flag)    || r.flag    || '';
+    if (c && !countryInfo[c]) countryInfo[c] = f;
+  });
+  const countries = Object.keys(countryInfo).sort();
+  const filterHtml = countries.length > 1
+    ? `<div class="rd-filter">
+        <div class="rd-cs" id="rd-country-select">
+          <button class="rd-cs-btn" type="button" onclick="toggleRdCountrySelect()">
+            <span class="rd-cs-val">All Countries</span>
+            <svg class="rd-cs-arrow" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="rd-cs-list">
+            <div class="rd-cs-opt rd-cs-opt--active" onclick="pickRdCountry(this, '')">All Countries</div>
+            ${countries.map(c => `<div class="rd-cs-opt" onclick="pickRdCountry(this, '${c.replace(/'/g, "\\'")}')">${renderFlag(countryInfo[c])} ${c}</div>`).join('')}
+          </div>
+        </div>
+      </div>`
+    : '';
 
   const rowsHtml = rows.length
     ? rows.map((r, i) => buildRankingRow(r, i + 1)).join('')
@@ -915,6 +970,7 @@ function buildRankingsDetail(eventName) {
           </div>
           ${ev && ev.photo ? `<div class="rd-header-photo" style="background-image:url('${ev.photo}')"></div>` : ''}
         </div>
+        ${filterHtml}
         <div class="rd-col-labels">
           <span>Rank</span><span>Athlete</span><span>Momentum</span><span style="text-align:right">Best / Meet</span>
         </div>
