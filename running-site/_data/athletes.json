@@ -2417,54 +2417,300 @@
       "ncaa": false,
       "club": "x",
       "country": "Norway",
+      "results": [],
+      "weight": "x",
+      "coach": "x",
+      "reviewBody": "x",
+      "event": "MIDDLE DISTANCE/DISTANCE",
+      "id": "narve-nordas",
+      "age": "27"
+    },
+    {
+      "photoBackground": "#111111",
+      "reviewTitle": "Season review",
+      "waUrl": "https://worldathletics.org/athletes/united-states/cooper-teare-14757466",
+      "height": "x",
+      "questionBody": "x",
+      "headlineRest": "x",
+      "name": "Cooper Teare",
+      "headlineKey": "x",
+      "flag": "US",
+      "seasons": "x",
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:32.16"
+        },
+        {
+          "event": "2000m",
+          "time": "4:54.74"
+        },
+        {
+          "event": "3000m",
+          "time": "7:30.62"
+        },
+        {
+          "event": "2 Miles",
+          "time": "8:08.91"
+        },
+        {
+          "event": "5000m",
+          "time": "12:54.72"
+        },
+        {
+          "event": "1000 Metres",
+          "time": "2:17.76"
+        },
+        {
+          "event": "1000 Metres Short Track",
+          "time": "2:17.76"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:34.35"
+        },
+        {
+          "event": "2000 Metres Short Track",
+          "time": "4:54.74"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:30.62"
+        },
+        {
+          "event": "2 Miles Short Track",
+          "time": "8:08.91"
+        },
+        {
+          "event": "5000 Metres Short Track",
+          "time": "12:57.97"
+        },
+        {
+          "event": "Mile Road",
+          "time": "3:49.3h"
+        },
+        {
+          "event": "5 Kilometres Road",
+          "time": "13:25"
+        },
+        {
+          "event": "4x400 Metres Relay",
+          "time": "3:20.29"
+        },
+        {
+          "event": "4xMile Relay",
+          "time": "15:52.05"
+        },
+        {
+          "event": "Mile",
+          "time": "3:50.17"
+        }
+      ],
+      "hometown": "x",
+      "questionTitle": "Next question",
+      "photo": "/images/teare_card.png",
+      "ncaa": false,
+      "club": "x",
+      "country": "United States",
       "results": [
         {
-          "date": "JUN 10",
-          "meet": "Oslo Bislett Games",
-          "event": "Mile",
-          "time": "3:53.87",
+          "date": "JUN 13",
+          "meet": "USATF LA Grand Prix",
+          "event": "5000m",
+          "time": "13:18.13",
           "place": ""
         },
         {
-          "date": "JUN 7",
-          "meet": "BAUHAUS-Galan",
+          "date": "MAY 23",
+          "meet": "LA Track Festival",
           "event": "1500m",
-          "time": "3:31.74",
+          "time": "3:34.23",
           "place": ""
         },
         {
-          "date": "MAY 31",
-          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+          "date": "MAY 2",
+          "meet": "USA 5 km Road Running Championships",
           "event": "",
-          "time": "3:33.45",
-          "place": "12"
+          "time": "13:29",
+          "place": "3"
         },
         {
-          "date": "MAY 24",
-          "meet": "61. Internationales Pfingstsportfest Rehlingen",
-          "event": "",
-          "time": "3:32.52",
-          "place": "1"
-        },
-        {
-          "date": "MAY 20",
-          "meet": "15th Savona International Meeting",
-          "event": "",
-          "time": "3:34.37",
-          "place": "4"
-        },
-        {
-          "date": "APR 4",
-          "meet": "Urban Trail de Lille",
+          "date": "APR 18",
+          "meet": "Boston 5K",
           "event": "5 Kilometres Road",
-          "time": "13:10",
+          "time": "13:25",
           "place": ""
         },
         {
           "date": "MAR 1",
-          "meet": "Norwegian Indoor Championships",
+          "meet": "USA Indoor Championships",
+          "event": "",
+          "time": "3:38.87",
+          "place": "7"
+        },
+        {
+          "date": "FEB 28",
+          "meet": "USA Indoor Championships",
+          "event": "",
+          "time": "7:41.62",
+          "place": "7"
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Sound Invite",
+          "event": "1500 Metres Short Track",
+          "time": "3:34.35",
+          "place": ""
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Sound Invite",
+          "event": "Mile sh",
+          "time": "3:50.49",
+          "place": "2"
+        },
+        {
+          "date": "FEB 7",
+          "meet": "Doc Hale Virginia Tech Invitational",
+          "event": "1000 Metres",
+          "time": "2:17.76",
+          "place": ""
+        },
+        {
+          "date": "FEB 1",
+          "meet": "Millrose Games",
+          "event": "3000m",
+          "time": "7:38.16",
+          "place": ""
+        },
+        {
+          "date": "FEB 1",
+          "meet": "Millrose Games",
+          "event": "2 Miles sh",
+          "time": "8:08.91",
+          "place": "7"
+        },
+        {
+          "date": "JAN 23",
+          "meet": "Hokie Invitational",
+          "event": "2000m sh",
+          "time": "4:54.74",
+          "place": "2"
+        }
+      ],
+      "weight": "x",
+      "coach": "x",
+      "reviewBody": "x",
+      "event": "MIDDLE DISTANCE/DISTANCE",
+      "id": "cooper-teare",
+      "age": "26"
+    },
+    {
+      "photoBackground": "#111111",
+      "reviewTitle": "Season review",
+      "waUrl": "https://worldathletics.org/athletes/new-zealand/sam-ruthe-15131581",
+      "height": "x",
+      "questionBody": "x",
+      "headlineRest": "x",
+      "name": "Sam Ruthe",
+      "headlineKey": "x",
+      "flag": "NZ",
+      "seasons": "x",
+      "prs": [
+        {
+          "event": "800m",
+          "time": "1:45.86"
+        },
+        {
+          "event": "1500m",
+          "time": "3:33.25"
+        },
+        {
+          "event": "Mile",
+          "time": "3:48.88"
+        },
+        {
+          "event": "3000m",
+          "time": "7:43.16"
+        },
+        {
+          "event": "5000m",
+          "time": "13:40.48"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:33.25"
+        },
+        {
+          "event": "Mile Short Track",
+          "time": "3:48.88"
+        },
+        {
           "event": "3000 Metres Short Track",
-          "time": "7:41.44",
+          "time": "7:43.16"
+        }
+      ],
+      "hometown": "x",
+      "questionTitle": "Next question",
+      "photo": "/images/ruthe_card.png",
+      "ncaa": false,
+      "club": "x",
+      "country": "New Zealand",
+      "results": [
+        {
+          "date": "MAR 5",
+          "meet": "New Zealand Track & Field Championships",
+          "event": "1500m",
+          "time": "3:41.43",
+          "place": "1"
+        },
+        {
+          "date": "FEB 22",
+          "meet": "Saucony Battle for Boston",
+          "event": "3000m sh",
+          "time": "7:43.16",
+          "place": "2"
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Sound Invite",
+          "event": "Mile sh",
+          "time": "3:52.46",
+          "place": "7"
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Sound Invite",
+          "event": "1500m sh",
+          "time": "3:34.66",
+          "place": ""
+        },
+        {
+          "date": "JAN 31",
+          "meet": "Boston University John Thomas Terrier Classic",
+          "event": "1500m",
+          "time": "3:33.25",
+          "place": ""
+        },
+        {
+          "date": "JAN 31",
+          "meet": "Boston University John Thomas Terrier Classic",
+          "event": "Mile sh",
+          "time": "3:48.88",
+          "place": "1"
+        },
+        {
+          "date": "JAN 24",
+          "meet": "Pak'n Save Cooks International Classic",
+          "event": "Mile",
+          "time": "3:53.83",
+          "place": "2"
+        },
+        {
+          "date": "JAN 17",
+          "meet": "Allan & Sylvia Potts Classic",
+          "event": "800m",
+          "time": "1:45.86",
           "place": "1"
         }
       ],
@@ -2472,8 +2718,8 @@
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
-      "id": "narve-nordas",
-      "age": "27"
+      "id": "sam-ruthe",
+      "age": "17"
     }
   ]
 }
