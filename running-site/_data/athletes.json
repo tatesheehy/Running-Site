@@ -2195,64 +2195,7 @@
       "ncaa": false,
       "club": "x",
       "country": "United States",
-      "results": [
-        {
-          "date": "JUN 13",
-          "meet": "USATF LA Grand Prix",
-          "event": "1500m",
-          "time": "3:33.71",
-          "place": "1"
-        },
-        {
-          "date": "MAY 23",
-          "meet": "LA Track Festival",
-          "event": "800m",
-          "time": "1:45.79",
-          "place": ""
-        },
-        {
-          "date": "MAY 1",
-          "meet": "Payton Jordan Invitational",
-          "event": "5000m",
-          "time": "13:13.11",
-          "place": ""
-        },
-        {
-          "date": "FEB 28",
-          "meet": "USA Indoor Championships",
-          "event": "",
-          "time": "7:47.99",
-          "place": "12"
-        },
-        {
-          "date": "FEB 14",
-          "meet": "Sound Invite",
-          "event": "3000m sh",
-          "time": "7:35.29",
-          "place": "3"
-        },
-        {
-          "date": "FEB 1",
-          "meet": "Millrose Games",
-          "event": "2 Miles sh",
-          "time": "8:15.93",
-          "place": "11"
-        },
-        {
-          "date": "FEB 1",
-          "meet": "Millrose Games",
-          "event": "3000m sh",
-          "time": "7:41.28",
-          "place": ""
-        },
-        {
-          "date": "JAN 10",
-          "meet": "46th World Athletics Cross Country Championships",
-          "event": "Cross Country Relay",
-          "time": "22:43",
-          "place": "5"
-        }
-      ],
+      "results": [],
       "college": "",
       "weight": "x",
       "coach": "x",
@@ -2260,6 +2203,67 @@
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "ethan-strand",
       "age": "23"
+    },
+    {
+      "photoBackground": "#111111",
+      "reviewTitle": "Season review",
+      "waUrl": "https://worldathletics.org/athletes/kenya/emmanuel-wanyonyi-14974928",
+      "height": "x",
+      "questionBody": "x",
+      "headlineRest": "x",
+      "name": "Emmanuel Wanyonyi",
+      "headlineKey": "x",
+      "flag": "KE",
+      "seasons": "x",
+      "prs": [
+        {
+          "event": "800m",
+          "time": "1:41.11"
+        },
+        {
+          "event": "1500m",
+          "time": "3:34.11"
+        },
+        {
+          "event": "Mile Road",
+          "time": "3:52.45"
+        }
+      ],
+      "hometown": "x",
+      "questionTitle": "Next question",
+      "photo": "/images/wanyonyi_card.png",
+      "ncaa": false,
+      "club": "x",
+      "country": "Kenya",
+      "results": [
+        {
+          "date": "JUN 10",
+          "meet": "Oslo Bislett Games",
+          "event": "800m",
+          "time": "1:42.09",
+          "place": "2"
+        },
+        {
+          "date": "MAY 31",
+          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+          "event": "",
+          "time": "1:43.56",
+          "place": "2"
+        },
+        {
+          "date": "APR 24",
+          "meet": "Kip Keino Classic",
+          "event": "1500m",
+          "time": "3:34.11",
+          "place": ""
+        }
+      ],
+      "weight": "x",
+      "coach": "x",
+      "reviewBody": "x",
+      "event": "MIDDLE DISTANCE",
+      "id": "emmanuel-wanyonyi",
+      "age": "21"
     }
   ]
 }
