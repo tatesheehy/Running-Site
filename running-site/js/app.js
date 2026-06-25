@@ -908,7 +908,7 @@ function buildRankingRow(r, rank) {
   const seasonBest = (r.seasonBest && r.seasonBest !== 'x') ? r.seasonBest : '';
   const meet = (r.meet && r.meet !== 'x') ? r.meet : '';
   return `
-    <div class="rd-row${rank <= 3 && rank != null ? ' rd-row--podium' : ''}" data-country="${country}" onclick="openRankingRow('${clickData}')">
+    <div class="rd-row${rank <= 3 && rank != null ? ' rd-row--podium' : ''}" data-country="${country}" data-athlete-id="${r.athleteId || ''}" onclick="openRankingRow('${clickData}')">
       ${rank != null ? `<div class="rd-rank ${rankClass}">${rank}</div>` : '<div class="rd-rank-empty"></div>'}
       <div class="rd-avatar ${photo ? '' : 'rd-avatar--empty'}" style="${photo ? `background-color:${photoBg};background-image:url('${photo}');background-size:cover;background-position:top center` : ''}"></div>
       <div class="rd-info">
@@ -917,10 +917,9 @@ function buildRankingRow(r, rank) {
       </div>
       ${buildMomentumHtml(r.momentum)}
       <div class="rd-right">
-        ${r.reason
-          ? `<div class="rd-reason">${r.reason}</div>`
-          : `<div class="rd-time">${seasonBest}</div><div class="rd-meet">${meet}</div>`
-        }
+        ${r.reason ? `<div class="rd-reason">${r.reason}</div>` : ''}
+        <div class="rd-time">${seasonBest}</div>
+        <div class="rd-meet">${meet}</div>
       </div>
     </div>
   `;
@@ -1062,6 +1061,7 @@ function buildRankingsDetail(eventName) {
       </div>
     </div>
   `;
+  enrichRankingsWithWA(eventName);
 }
 
 function buildRankingCard(r, rank) {
@@ -1076,15 +1076,16 @@ function buildRankingCard(r, rank) {
   const meet = (r.meet && r.meet !== 'x') ? r.meet : '';
   const clickData = encodeURIComponent(JSON.stringify({athleteId: r.athleteId||'', rank: rank||0, name, country, flag, seasonBest: r.seasonBest||'', meet: r.meet||''}));
   return `
-    <div class="rd-card" data-country="${country}" onclick="openRankingRow('${clickData}')">
+    <div class="rd-card" data-country="${country}" data-athlete-id="${r.athleteId || ''}" onclick="openRankingRow('${clickData}')">
       <div class="rd-card-photo" style="${photo ? `background-color:${photoBg};background-image:url('${photo}')` : `background:${photoBg}`}">
         ${rank != null ? `<div class="rd-card-rank ${rankClass}">${rank}</div>` : ''}
       </div>
       <div class="rd-card-body">
         <div class="rd-card-name">${name}</div>
         <div class="rd-card-country">${renderFlag(flag)} ${country}</div>
-        ${seasonBest ? `<div class="rd-card-time">${seasonBest}</div>` : ''}
-        ${meet ? `<div class="rd-card-meet">${meet}</div>` : ''}
+        ${r.reason ? `<div class="rd-card-reason">${r.reason}</div>` : ''}
+        <div class="rd-card-time">${seasonBest}</div>
+        <div class="rd-card-meet">${meet}</div>
       </div>
     </div>
   `;
@@ -1102,6 +1103,95 @@ window.toggleRdView = function(mode) {
     btn.classList.toggle('rd-view-btn--active', (i === 0 && mode === 'list') || (i === 1 && mode === 'grid'));
   });
 };
+
+// ── WA PERSONAL BEST ENRICHMENT ─────────────────────────────────
+const _waBestCache = {};
+
+async function fetchWAPersonalBests(waUrl, disciplines) {
+  if (!waUrl) return null;
+  if (_waBestCache[waUrl] !== undefined) return _waBestCache[waUrl];
+
+  try {
+    const res = await fetch(`/.netlify/functions/wa-athlete?url=${encodeURIComponent(waUrl)}`);
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const json = await res.json();
+    const outdoor = json.outdoor || [];
+    const result = {};
+    for (const disc of disciplines) {
+      const perf = outdoor.find(p => p.event === disc);
+      if (perf) result[disc] = { mark: perf.time, venue: perf.venue };
+    }
+    _waBestCache[waUrl] = Object.keys(result).length ? result : null;
+    return _waBestCache[waUrl];
+  } catch (e) {
+    _waBestCache[waUrl] = null;
+    return null;
+  }
+}
+
+// Event name keys match what wa-athlete.js normalizes to (e.g. '1500m', 'Mile')
+const _WA_DISC = {
+  '1500m': ['1500m', 'Mile'],
+  '5000m': ['5000m'],
+  '10000m': ['10000m'],
+  '800m':  ['800m'],
+  'mile':  ['Mile', '1500m'],
+  'steeplechase': ['3000m SC'],
+};
+
+function getWADisciplines(eventName) {
+  const norm = eventName.replace(/\s+/g, '').toLowerCase();
+  for (const [key, discs] of Object.entries(_WA_DISC)) {
+    if (norm.includes(key)) return discs;
+  }
+  return [];
+}
+
+async function enrichRankingsWithWA(eventName) {
+  const disciplines = getWADisciplines(eventName);
+  if (!disciplines.length) return;
+  const is1500Page = eventName.toLowerCase().includes('1500');
+
+  document.querySelectorAll('#main [data-athlete-id]').forEach(async item => {
+    const athId = item.dataset.athleteId;
+    if (!athId) return;
+    const ath = ATHLETES[athId];
+    if (!ath) return;
+
+    let mark = '', venue = '', isMile = false;
+
+    const waBests = await fetchWAPersonalBests(ath.waUrl, disciplines);
+    if (waBests) {
+      for (const disc of disciplines) {
+        if (waBests[disc]) {
+          mark = waBests[disc].mark;
+          venue = waBests[disc].venue;
+          isMile = disc.toLowerCase().includes('mile');
+          break;
+        }
+      }
+    }
+
+    // Fallback: local prs data
+    if (!mark && ath.prs) {
+      const pr = ath.prs.find(p => p.event === '1500m') || ath.prs.find(p => p.event === 'Mile');
+      if (pr) { mark = pr.time; isMile = pr.event === 'Mile'; }
+    }
+
+    if (!mark) return;
+    const mileBadge = (isMile && is1500Page) ? ' <span class="rd-mile-badge">Mile</span>' : '';
+
+    const timeEl = item.querySelector('.rd-time');
+    const meetEl = item.querySelector('.rd-meet');
+    if (timeEl) timeEl.innerHTML = mark + mileBadge;
+    if (meetEl) meetEl.textContent = venue || '';
+
+    const cardTimeEl = item.querySelector('.rd-card-time');
+    const cardMeetEl = item.querySelector('.rd-card-meet');
+    if (cardTimeEl) cardTimeEl.innerHTML = mark + mileBadge;
+    if (cardMeetEl) cardMeetEl.textContent = venue || '';
+  });
+}
 
 // ── ATHLETE CARD MODAL ─────────────────────────────────────
 function buildAthleteCardModal() {
