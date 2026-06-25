@@ -95,6 +95,16 @@ function parseMark(raw) {
   return String(raw).replace(/i$/, '').trim();
 }
 
+function cleanVenue(raw) {
+  if (!raw) return '';
+  const parts = raw.split(',').map(p => p.trim()).filter(Boolean);
+  if (parts.length <= 1) return raw.trim();
+  const last = parts[parts.length - 1];
+  // If last part is a short country/state code, use the part before it
+  if (/^[A-Z]{2,3}$/.test(last)) return parts[parts.length - 2];
+  return last;
+}
+
 function isIndoor(b) {
   return b.indoor === true
     || b.type === 'indoor'
@@ -107,7 +117,7 @@ function normalizeBests(arr) {
   return arr.map(b => ({
     event:  normalizeEvent(b.discipline || b.event || b.eventName || ''),
     time:   parseMark(b.mark || b.performance || b.result || b.time || b.best),
-    venue:  b.venue || b.location || b.city || '',
+    venue:  cleanVenue(b.venue || b.location || b.city || ''),
     date:   b.date || b.dateFormatted || '',
     indoor: isIndoor(b),
   })).filter(b => b.event && b.time);

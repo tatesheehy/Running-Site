@@ -1866,6 +1866,7 @@ footer {
   flex-direction: column;
   gap: 4px;
   justify-content: center;
+  align-self: center;
 }
 .rd-time:empty::after { content: '—'; color: var(--muted); }
 .rd-momentum {
