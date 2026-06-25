@@ -14,11 +14,11 @@
   "latestArticlesTitle": "Latest Articles",
   "breakingNews": "Welcome to StatTC. Check out our newest rankings now",
   "accentColor": "#E8500A",
+  "nextMeet": {
+    "name": "London Diamond League",
+    "datetime": "2026-07-18T13:04:00-07:00"
+  },
   "twitterUrl": "",
   "instagramUrl": "",
-  "showRankingsWidget": true,
-  "nextMeet": {
-    "name": "Monaco Diamond League",
-    "datetime": "2026-07-11T19:00:00+02:00"
-  }
+  "showRankingsWidget": true
 }
