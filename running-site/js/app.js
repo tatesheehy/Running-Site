@@ -112,12 +112,13 @@ function buildTickerHtml() {
 // ── NAVBAR ────────────────────────────────────────────────
 function buildNavbar() {
   const currentPage = document.body.dataset.page;
-  const pageMap = { home: 'index.html', articles: 'articles.html', rankings: 'rankings.html', article: 'articles.html' };
+  const pageMap = { home: 'index.html', articles: 'articles.html', rankings: 'rankings.html', article: 'articles.html', athletes: 'athletes.html' };
   const activeHref = pageMap[currentPage] || '';
 
   const navLinks = [
     { label: 'Articles', href: 'articles.html' },
     { label: 'Rankings', href: 'rankings.html' },
+    { label: 'Athletes', href: 'athletes.html' },
     { label: 'News', href: 'articles.html?category=News' },
     { label: 'Podcast', href: SITE.podcastUrl || '#' },
   ];
@@ -714,6 +715,57 @@ function buildRankingsTableHtml(event, compact) {
       <tbody>${rowsHtml}</tbody>
     </table>
   `;
+}
+
+// ── ATHLETES PAGE ─────────────────────────────────────────
+function buildAthletesPage() {
+  const all = Object.values(ATHLETES);
+  let activeSort = 'alpha';
+
+  function sortedAthletes() {
+    const list = [...all];
+    if (activeSort === 'alpha') list.sort((a, b) => a.name.localeCompare(b.name));
+    if (activeSort === 'country') list.sort((a, b) => (a.country || '').localeCompare(b.country || '') || a.name.localeCompare(b.name));
+    return list;
+  }
+
+  function renderGrid(list) {
+    if (!list.length) return '<p class="ath-page-empty">No athletes found.</p>';
+    return list.map(a => {
+      const photo = a.photo || '';
+      const bg = a.photoBackground || '#111';
+      const prsHtml = (a.prs || []).slice(0, 3).map(pr =>
+        `<div class="ath-page-pr"><span class="ath-page-pr-event">${pr.event}</span><span class="ath-page-pr-time">${pr.time}</span></div>`
+      ).join('');
+      return `
+        <div class="ath-page-card" onclick="openAthleteCard('${a.id}', null)" role="button" tabindex="0">
+          <div class="ath-page-photo" style="${photo ? `background-color:${bg};background-image:url('${photo}')` : `background:${bg}`}"></div>
+          <div class="ath-page-body">
+            <div class="ath-page-name">${a.name}</div>
+            <div class="ath-page-country">${renderFlag(a.flag)} ${a.country}</div>
+            ${prsHtml ? `<div class="ath-page-prs">${prsHtml}</div>` : ''}
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  qs('#main').innerHTML = `
+    <div class="page-wrap">
+      <div class="ath-page-header">
+        <h1 class="ath-page-title">Athletes</h1>
+        <div class="ath-page-filters">
+          <button class="ath-page-filter active" data-sort="alpha" onclick="sortAthletes('alpha')">A – Z</button>
+          <button class="ath-page-filter" data-sort="country" onclick="sortAthletes('country')">By Country</button>
+        </div>
+      </div>
+      <div class="ath-page-grid" id="ath-page-grid">${renderGrid(sortedAthletes())}</div>
+    </div>`;
+
+  window.sortAthletes = function(sort) {
+    activeSort = sort;
+    document.querySelectorAll('.ath-page-filter').forEach(b => b.classList.toggle('active', b.dataset.sort === sort));
+    qs('#ath-page-grid').innerHTML = renderGrid(sortedAthletes());
+  };
 }
 
 // ── ARTICLES PAGE ─────────────────────────────────────────
@@ -1495,6 +1547,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (page === 'articles') buildArticlesPage();
   if (page === 'article')  buildArticlePage();
   if (page === 'rankings') buildRankingsPage();
+  if (page === 'athletes') buildAthletesPage();
 
   buildAthleteCardModal();
 

@@ -2599,3 +2599,27 @@ footer {
   .h2h-cols { grid-template-columns: 1fr; }
   .h2h-col-divider { height: 1px; width: auto; }
 }
+
+/* ── ATHLETES PAGE ───────────────────────────────────────── */
+.ath-page-header { display: flex; align-items: baseline; gap: 24px; flex-wrap: wrap; margin-bottom: 24px; border-bottom: 2px solid #1e1e1e; padding-bottom: 16px; }
+.ath-page-title { font-family: var(--font-display); font-size: 38px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.02em; color: #fff; margin: 0; }
+.ath-page-filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.ath-page-filter { font-family: var(--font-body); font-size: 12px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; padding: 5px 14px; border-radius: 20px; border: 1px solid #2a2a2a; background: none; color: #666; cursor: pointer; transition: background 0.15s, color 0.15s, border-color 0.15s; }
+.ath-page-filter:hover { color: #ccc; border-color: #444; }
+.ath-page-filter.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.ath-page-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
+.ath-page-card { background: #111; border-radius: 12px; overflow: hidden; cursor: pointer; transition: transform 0.15s, box-shadow 0.15s; }
+.ath-page-card:hover { transform: translateY(-3px); box-shadow: 0 10px 32px rgba(0,0,0,0.2); }
+.ath-page-photo { width: 100%; aspect-ratio: 3 / 4; background-size: cover; background-position: top center; background-color: #1c1c1c; }
+.ath-page-body { padding: 12px 14px 14px; }
+.ath-page-name { font-family: var(--font-display); font-size: 17px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.02em; color: #fff; line-height: 1.1; margin-bottom: 4px; }
+.ath-page-country { font-size: 12px; color: #666; display: flex; align-items: center; gap: 5px; margin-bottom: 10px; }
+.ath-page-prs { border-top: 1px solid #1e1e1e; padding-top: 8px; display: flex; flex-direction: column; gap: 4px; }
+.ath-page-pr { display: flex; justify-content: space-between; align-items: center; }
+.ath-page-pr-event { font-size: 10px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: #555; }
+.ath-page-pr-time { font-family: 'Courier New', monospace; font-size: 13px; font-weight: 700; color: #aaa; font-variant-numeric: tabular-nums; }
+.ath-page-empty { color: #555; font-size: 14px; padding: 40px 0; }
+@media (max-width: 600px) {
+  .ath-page-header { flex-direction: column; gap: 12px; }
+  .ath-page-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+}
