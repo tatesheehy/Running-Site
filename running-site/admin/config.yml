@@ -296,6 +296,7 @@ collections:
             fields:
               - { label: "Meet Name (e.g. Monaco Diamond League)", name: name, widget: string }
               - { label: "Date & Time (local time of the meet)", name: datetime, widget: datetime, hint: "Pick the local start time.", format: "YYYY-MM-DDTHH:mm:ssZ" }
+              - { label: "Pill Color", name: color, widget: color, required: false, hint: "Leave blank to use the default accent color.", default: "" }
 
           - label: "── FOOTER ────────────────────────────────"
             name: _footer_divider

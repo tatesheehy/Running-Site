@@ -1023,7 +1023,8 @@ function _pillForMeet(meet) {
   if (days > 0)       label = `${days}d ${hrs}h`;
   else if (hrs > 0)   label = `${hrs}h ${mins}m`;
   else                label = `${mins}m`;
-  return `<span class="rd-countdown-pill">⏱ ${label} · ${meet.name}</span>`;
+  const style = meet.color ? ` style="background:${meet.color}"` : '';
+  return `<span class="rd-countdown-pill"${style}>⏱ ${label} · ${meet.name}</span>`;
 }
 
 function buildCountdownPills() {
@@ -1103,7 +1104,6 @@ function buildRankingsDetail(eventName) {
 
   const isGrid = window._rdView === 'grid';
   const athleteCount = rows.length;
-  const countdownHtml = buildCountdownPill();
   document.getElementById('main').innerHTML = `
     <div class="container">
       <div class="rankings-detail">
@@ -1115,7 +1115,6 @@ function buildRankingsDetail(eventName) {
             ${ev && ev.description ? `<p class="rd-header-desc">${ev.description}</p>` : ''}
             <div class="rd-header-actions">
               ${athleteCount ? `<span class="rd-header-count">${athleteCount} athletes ranked</span>` : ''}
-              ${countdownHtml}
               <button class="h2h-hub-btn rd-h2h-inline" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">⇌ Compare Athletes</button>
               <div class="rd-view-toggle">
                 <button class="rd-view-btn${!isGrid ? ' rd-view-btn--active' : ''}" onclick="toggleRdView('list')" title="List view">
