@@ -52,6 +52,18 @@
       <polygon points="0,0 4,0 30,17 30,20 26,20 0,3" fill="#fff"/>
       <polygon points="26,0 30,0 30,3 4,20 0,20 0,17" fill="#fff"/>`),
 
+    ENG: f(`<rect width="30" height="20" fill="#fff"/>
+      <rect x="13.5" width="3" height="20" fill="#C8102E"/>
+      <rect y="8.5" width="30" height="3" fill="#C8102E"/>`),
+
+    NIR: f(`<rect width="30" height="20" fill="#fff"/>
+      <polygon points="0,0 2,0 30,18.3 30,20 28,20 0,1.7" fill="#C8102E"/>
+      <polygon points="28,0 30,0 30,1.7 2,20 0,20 0,18.3" fill="#C8102E"/>
+      <rect x="13.5" width="3" height="20" fill="#C8102E"/>
+      <rect y="8.5" width="30" height="3" fill="#C8102E"/>
+      <polygon points="12,7 15,4 18,7 21,10 18,13 15,16 12,13 9,10" fill="none" stroke="#C8102E" stroke-width="1.5"/>
+      <polygon points="13.5,10 15,8 16.5,10 15,12" fill="#C8102E"/>`),
+
     WAL: f(`<rect width="30" height="20" fill="#fff"/>
       <rect y="10" width="30" height="10" fill="#00AB39"/>
       <ellipse cx="15" cy="11" rx="4" ry="6" fill="#C8102E"/>
@@ -180,6 +192,23 @@
       <rect width="30" height="6.67" fill="#FCD116"/>`),
 
     /* ── Africa ──────────────────────────────────────────── */
+    BW: f(`<rect width="30" height="20" fill="#75AADB"/>
+      <rect y="7.5" width="30" height="5" fill="#fff"/>
+      <rect y="8.5" width="30" height="3" fill="#000"/>`),
+
+    ER: f(`<rect width="30" height="20" fill="#4189DD"/>
+      <rect y="10" width="30" height="10" fill="#4FBF38"/>
+      <polygon points="0,0 30,10 0,20" fill="#EA0437"/>
+      <circle cx="7" cy="10" r="3" fill="#FFDA44"/>
+      <polygon points="7,7.5 7.6,9.3 9.5,9.3 8,10.5 8.6,12.3 7,11.2 5.4,12.3 6,10.5 4.5,9.3 6.4,9.3" fill="#EA0437"/>`),
+
+    SO: f(`<rect width="30" height="20" fill="#4189DD"/>
+      <polygon points="15,6.5 16.2,10.1 20,10.1 17,12.3 18.2,16 15,13.8 11.8,16 13,12.3 10,10.1 13.8,10.1" fill="#fff"/>`),
+
+    DJ: f(`<rect width="30" height="20" fill="#12AD2B"/>
+      <rect width="30" height="10" fill="#6AB2E7"/>
+      <polygon points="0,0 0,20 13,10" fill="#fff"/>
+      <polygon points="3,10 8,7 8,13" fill="#D7141A"/>`),
     KE: f(`<rect width="30" height="20" fill="#000"/>
       <rect y="6.67" width="30" height="6.66" fill="#BB0000"/>
       <rect y="13.33" width="30" height="6.67" fill="#006600"/>
