@@ -648,7 +648,7 @@ function buildHome() {
   document.getElementById('main').innerHTML = `
     <div class="container">
       ${SITE.homeTagline ? `<div class="home-tagline">${SITE.homeTagline}</div>` : ''}
-      ${buildCountdownPill() ? `<div class="home-countdown">${buildCountdownPill()}</div>` : ''}
+      ${buildCountdownPills() ? `<div class="home-countdown">${buildCountdownPills()}</div>` : ''}
       <section class="hero">
         ${heroHtml}
         <div class="editors-picks">
@@ -1010,8 +1010,7 @@ if (!window._rdCsOutsideClick) {
   });
 }
 
-function buildCountdownPill() {
-  const meet = SITE && SITE.nextMeet;
+function _pillForMeet(meet) {
   if (!meet || !meet.name || !meet.datetime) return '';
   const target = new Date(meet.datetime);
   const diffMs = target - Date.now();
@@ -1025,6 +1024,15 @@ function buildCountdownPill() {
   else if (hrs > 0)   label = `${hrs}h ${mins}m`;
   else                label = `${mins}m`;
   return `<span class="rd-countdown-pill">⏱ ${label} · ${meet.name}</span>`;
+}
+
+function buildCountdownPills() {
+  const meets = (SITE && SITE.upcomingMeets) || (SITE && SITE.nextMeet ? [SITE.nextMeet] : []);
+  return meets.map(_pillForMeet).filter(Boolean).join('');
+}
+
+function buildCountdownPill() {
+  return buildCountdownPills();
 }
 
 function buildRankingsDetail(eventName) {

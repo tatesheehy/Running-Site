@@ -287,14 +287,15 @@ collections:
             widget: hidden
             required: false
 
-          - name: nextMeet
-            label: "Next Meet (Countdown Pill)"
-            widget: object
+          - name: upcomingMeets
+            label: "Upcoming Meets (Countdown Pills)"
+            label_singular: "Meet"
+            widget: list
             required: false
-            hint: "Shows a countdown pill on the home page and rankings page. Leave Name blank to hide the pill. Auto-hides if the meet is more than 60 days away or has passed."
+            hint: "Each meet shows as a countdown pill on the home page and rankings page. Pills auto-hide if the meet is more than 60 days away or has already passed."
             fields:
-              - { label: "Meet Name (e.g. Monaco Diamond League)", name: name, widget: string, required: false, default: "" }
-              - { label: "Date & Time (local time of the meet)", name: datetime, widget: datetime, required: false, hint: "Pick the local start time — include the timezone offset if you know it (e.g. 2026-07-11T19:00:00+02:00). Use the datetime picker or type directly.", format: "YYYY-MM-DDTHH:mm:ssZ", default: "" }
+              - { label: "Meet Name (e.g. Monaco Diamond League)", name: name, widget: string }
+              - { label: "Date & Time (local time of the meet)", name: datetime, widget: datetime, hint: "Pick the local start time.", format: "YYYY-MM-DDTHH:mm:ssZ" }
 
           - label: "── FOOTER ────────────────────────────────"
             name: _footer_divider
