@@ -628,34 +628,37 @@ function buildHome() {
   const heroDest = featuredRankings
     ? `rankings.html${rankingsEvent ? '?event=' + encodeURIComponent(rankingsEvent) : ''}`
     : `article.html?id=${heroItem.id}`;
-  const heroImg  = imgHTML(heroItem.image, heroItem.title, heroItem.imagePosition, 16/9, 'hero-image');
-  const heroHtml = `
-    <div>
-      <div class="hero-image-wrap" onclick="goTo('${heroDest}')" style="cursor:pointer">
-        ${heroImg}
-        <span class="cat-tag">${heroItem.category || 'RANKINGS'}</span>
-      </div>
-      <div class="hero-body">
-        <h1 class="hero-title" onclick="goTo('${heroDest}')">${heroItem.title}</h1>
-        <p class="hero-excerpt">${heroItem.excerpt || ''}</p>
-        <div class="meta">
-          ${heroItem.author ? `By <span class="author">${heroItem.author}</span><span class="sep">·</span>` : ''}${heroItem.date || ''}
-          ${heroItem.readTime ? `<span class="sep">·</span>${heroItem.readTime}` : ''}
-        </div>
-      </div>
-    </div>`;
+  const heroImg = imgHTML(heroItem.image, heroItem.title, heroItem.imagePosition, 21/9, 'home-hero-img');
+
+  const countdownHtml = buildCountdownPills();
 
   document.getElementById('main').innerHTML = `
-    <div class="container">
-      ${SITE.homeTagline ? `<div class="home-tagline">${SITE.homeTagline}</div>` : ''}
-      ${buildCountdownPills() ? `<div class="home-countdown">${buildCountdownPills()}</div>` : ''}
-      <section class="hero">
-        ${heroHtml}
-        <div class="editors-picks">
-          <div class="ep-label">${editorPicksLabel}</div>
-          ${picksHtml}
+    ${SITE.homeTagline || countdownHtml ? `
+      <div class="container">
+        ${SITE.homeTagline ? `<div class="home-tagline">${SITE.homeTagline}</div>` : ''}
+        ${countdownHtml ? `<div class="home-countdown">${countdownHtml}</div>` : ''}
+      </div>` : ''}
+
+    <div class="home-hero-full" onclick="goTo('${heroDest}')">
+      ${heroImg}
+      <span class="cat-tag">${heroItem.category || 'RANKINGS'}</span>
+      <div class="home-hero-overlay">
+        <div class="container">
+          <h1 class="home-hero-title">${heroItem.title}</h1>
+          <div class="home-hero-meta">
+            ${heroItem.author ? `By <span class="author">${heroItem.author}</span><span class="sep">·</span>` : ''}${heroItem.date || ''}
+            ${heroItem.readTime ? `<span class="sep">·</span>${heroItem.readTime}` : ''}
+          </div>
         </div>
-      </section>
+      </div>
+    </div>
+
+    <div class="container">
+      ${picksHtml ? `
+        <div class="home-ep-row">
+          <div class="ep-label">${editorPicksLabel}</div>
+          <div class="home-ep-list">${picksHtml}</div>
+        </div>` : ''}
 
       <div class="section-header">
         <h2 class="section-title">${latestTitle}</h2>
