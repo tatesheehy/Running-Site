@@ -358,7 +358,7 @@ async function runSync() {
 
   try {
     await ghPut(apiPath, token, {
-      message: 'chore: auto-sync athlete PRs from World Athletics',
+      message: 'chore: auto-sync athlete PRs from World Athletics [skip ci]',
       content: updatedBase64,
       sha: fileData.sha,
     });
