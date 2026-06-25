@@ -752,7 +752,7 @@ function buildAthletesPage() {
     }).join('');
   }
 
-  qs('#main').innerHTML = `
+  document.getElementById('main').innerHTML = `
     <div class="container">
       <div class="ath-page-header">
         <div class="ath-page-header-left">
@@ -1563,6 +1563,16 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (page === 'athletes') buildAthletesPage();
 
   buildAthleteCardModal();
+
+  // Re-trigger fade-in animation whenever #main content is replaced
+  const mainEl = document.getElementById('main');
+  if (mainEl) {
+    new MutationObserver(() => {
+      mainEl.classList.remove('page-entering');
+      void mainEl.offsetWidth;
+      mainEl.classList.add('page-entering');
+    }).observe(mainEl, { childList: true });
+  }
 
   // Scroll handler: progress bar on article pages
   if (page === 'article') {
