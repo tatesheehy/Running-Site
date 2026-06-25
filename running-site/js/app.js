@@ -1152,45 +1152,60 @@ async function enrichRankingsWithWA(eventName) {
   if (!disciplines.length) return;
   const is1500Page = eventName.toLowerCase().includes('1500');
 
-  document.querySelectorAll('#main [data-athlete-id]').forEach(async item => {
+  // Deduplicate — list + card both have data-athlete-id, only fetch each athlete once
+  const seen = new Set();
+  const queue = [];
+  document.querySelectorAll('#main [data-athlete-id]').forEach(item => {
     const athId = item.dataset.athleteId;
-    if (!athId) return;
+    if (!athId || seen.has(athId)) return;
+    seen.add(athId);
     const ath = ATHLETES[athId];
-    if (!ath) return;
+    if (ath) queue.push({ athId, ath });
+  });
 
-    let mark = '', venue = '', isMile = false;
+  // Process 3 athletes at a time, 300ms between batches
+  const BATCH = 3;
+  for (let i = 0; i < queue.length; i += BATCH) {
+    await Promise.all(queue.slice(i, i + BATCH).map(async ({ athId, ath }) => {
+      let mark = '', venue = '', isMile = false;
 
-    const waBests = await fetchWAPersonalBests(ath.waUrl, disciplines);
-    if (waBests) {
-      for (const disc of disciplines) {
-        if (waBests[disc]) {
-          mark = waBests[disc].mark;
-          venue = waBests[disc].venue;
-          isMile = disc.toLowerCase().includes('mile');
-          break;
+      const waBests = await fetchWAPersonalBests(ath.waUrl, disciplines);
+      if (waBests) {
+        for (const disc of disciplines) {
+          if (waBests[disc]) {
+            mark = waBests[disc].mark;
+            venue = waBests[disc].venue;
+            isMile = disc.toLowerCase().includes('mile');
+            break;
+          }
         }
       }
-    }
 
-    // Fallback: local prs data
-    if (!mark && ath.prs) {
-      const pr = ath.prs.find(p => p.event === '1500m') || ath.prs.find(p => p.event === 'Mile');
-      if (pr) { mark = pr.time; isMile = pr.event === 'Mile'; }
-    }
+      // Fallback: local prs data
+      if (!mark && ath.prs) {
+        const pr = ath.prs.find(p => p.event === '1500m') || ath.prs.find(p => p.event === 'Mile');
+        if (pr) { mark = pr.time; isMile = pr.event === 'Mile'; }
+      }
 
-    if (!mark) return;
-    const mileBadge = (isMile && is1500Page) ? ' <span class="rd-mile-badge">Mile</span>' : '';
+      if (!mark) return;
+      const mileBadge = (isMile && is1500Page) ? ' <span class="rd-mile-badge">Mile</span>' : '';
 
-    const timeEl = item.querySelector('.rd-time');
-    const meetEl = item.querySelector('.rd-meet');
-    if (timeEl) timeEl.innerHTML = mark + mileBadge;
-    if (meetEl) meetEl.textContent = venue || '';
+      // Update all DOM elements for this athlete (covers both list row and grid card)
+      document.querySelectorAll(`#main [data-athlete-id="${athId}"]`).forEach(el => {
+        const timeEl = el.querySelector('.rd-time');
+        const meetEl = el.querySelector('.rd-meet');
+        if (timeEl) timeEl.innerHTML = mark + mileBadge;
+        if (meetEl) meetEl.textContent = venue || '';
 
-    const cardTimeEl = item.querySelector('.rd-card-time');
-    const cardMeetEl = item.querySelector('.rd-card-meet');
-    if (cardTimeEl) cardTimeEl.innerHTML = mark + mileBadge;
-    if (cardMeetEl) cardMeetEl.textContent = venue || '';
-  });
+        const cardTimeEl = el.querySelector('.rd-card-time');
+        const cardMeetEl = el.querySelector('.rd-card-meet');
+        if (cardTimeEl) cardTimeEl.innerHTML = mark + mileBadge;
+        if (cardMeetEl) cardMeetEl.textContent = venue || '';
+      });
+    }));
+
+    if (i + BATCH < queue.length) await new Promise(r => setTimeout(r, 300));
+  }
 }
 
 // ── ATHLETE CARD MODAL ─────────────────────────────────────
