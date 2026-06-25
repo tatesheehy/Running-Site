@@ -16,5 +16,9 @@
   "accentColor": "#E8500A",
   "twitterUrl": "",
   "instagramUrl": "",
-  "showRankingsWidget": true
+  "showRankingsWidget": true,
+  "nextMeet": {
+    "name": "Monaco Diamond League",
+    "datetime": "2026-07-11T19:00:00+02:00"
+  }
 }

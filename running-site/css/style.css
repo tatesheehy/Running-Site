@@ -1511,6 +1511,25 @@ footer {
 
 .rd-h2h-inline { margin-bottom: 0; }
 
+.home-countdown {
+  padding: 16px 0 4px;
+}
+
+.rd-countdown-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 6px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
 .rd-view-toggle {
   display: flex;
   align-items: center;

@@ -282,6 +282,20 @@ collections:
 
           - { label: "Rankings Page Intro Text (shown under the Rankings heading)", name: rankingsIntro, widget: text, required: false, hint: "Leave blank to hide." }
 
+          - label: "── COUNTDOWN PILL ────────────────────────"
+            name: _countdown_divider
+            widget: hidden
+            required: false
+
+          - name: nextMeet
+            label: "Next Meet (Countdown Pill)"
+            widget: object
+            required: false
+            hint: "Shows a countdown pill on the home page and rankings page. Leave Name blank to hide the pill. Auto-hides if the meet is more than 60 days away or has passed."
+            fields:
+              - { label: "Meet Name (e.g. Monaco Diamond League)", name: name, widget: string, required: false, default: "" }
+              - { label: "Date & Time (local time of the meet)", name: datetime, widget: datetime, required: false, hint: "Pick the local start time — include the timezone offset if you know it (e.g. 2026-07-11T19:00:00+02:00). Use the datetime picker or type directly.", format: "YYYY-MM-DDTHH:mm:ssZ", default: "" }
+
           - label: "── FOOTER ────────────────────────────────"
             name: _footer_divider
             widget: hidden
