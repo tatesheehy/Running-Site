@@ -430,7 +430,9 @@ button { font-family: inherit; }
 /* ── FULL-BLEED HERO ──────────────────────────────────────── */
 .home-hero-full {
   position: relative;
-  width: 100%;
+  width: calc(100% - 48px);
+  margin: 0 24px;
+  border-radius: 14px;
   cursor: pointer;
   overflow: hidden;
   display: block;
@@ -451,8 +453,8 @@ button { font-family: inherit; }
 
 .home-hero-full .cat-tag {
   position: absolute;
-  top: 20px;
-  left: 28px;
+  top: 16px;
+  left: 16px;
 }
 
 .home-hero-overlay {
@@ -1559,10 +1561,10 @@ footer {
 .rd-h2h-inline { margin-bottom: 0; }
 
 .home-countdown {
-  padding: 16px 0 4px;
+  padding: 14px 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
 }
 
 .rd-countdown-pill {
@@ -2095,6 +2097,7 @@ footer {
 
 /* ── RESPONSIVE ───────────────────────────────────────────── */
 @media (max-width: 960px) {
+  .home-hero-full { width: calc(100% - 32px); margin: 0 16px; border-radius: 10px; }
   .home-hero-img, .home-hero-full .img-placeholder { aspect-ratio: 16/9; }
   .home-hero-title { font-size: 36px; }
   .home-ep-list { grid-template-columns: 1fr; }
