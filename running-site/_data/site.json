@@ -12,16 +12,16 @@
   "editorPicksLabel": "Editors' Picks",
   "upcomingMeets": [
     {
+      "name": "Pre Classic",
+      "datetime": "2026-07-04T18:00:00-07:00"
+    },
+    {
       "name": "Monaco Diamond League",
       "datetime": "2026-07-10T19:00:00-07:00"
     },
     {
       "name": "London Diamond League",
       "datetime": "2026-07-18T13:04:00-07:00"
-    },
-    {
-      "name": "Pre Classic",
-      "datetime": "2026-07-04T18:00:00-07:00"
     }
   ],
   "footerTagline": "",
