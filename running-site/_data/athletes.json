@@ -449,7 +449,85 @@
       "photo": "/images/nader_card.png",
       "club": "Nike",
       "country": "Portugal",
-      "results": [],
+      "results": [
+        {
+          "date": "JUN 16",
+          "meet": "65th Ostrava Golden Spike",
+          "event": "1000 Metres",
+          "time": "2:16.39",
+          "place": ""
+        },
+        {
+          "date": "JUN 10",
+          "meet": "Oslo Bislett Games",
+          "event": "Mile",
+          "time": "3:50.71",
+          "place": ""
+        },
+        {
+          "date": "JUN 4",
+          "meet": "Golden Gala Pietro Mennea",
+          "event": "800m",
+          "time": "1:44.28",
+          "place": ""
+        },
+        {
+          "date": "MAY 31",
+          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+          "event": "1500m",
+          "time": "3:30.43",
+          "place": "2"
+        },
+        {
+          "date": "MAR 22",
+          "meet": "World Athletics Indoor Championships",
+          "event": "1500 Metres Short Track",
+          "time": "3:40.06",
+          "place": "2"
+        },
+        {
+          "date": "MAR 20",
+          "meet": "World Athletics Indoor Championships",
+          "event": "1500 Metres Short Track",
+          "time": "3:43.58",
+          "place": "18"
+        },
+        {
+          "date": "FEB 22",
+          "meet": "ORLEN Copernicus Cup",
+          "event": "800m sh",
+          "time": "1:45.05",
+          "place": "5"
+        },
+        {
+          "date": "FEB 19",
+          "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+          "event": "1500m sh",
+          "time": "3:32.44",
+          "place": "1"
+        },
+        {
+          "date": "FEB 15",
+          "meet": "Campeonatos Nacionais de Clubes 1ª e 2ª Divisão",
+          "event": "",
+          "time": "8:11.30",
+          "place": "1"
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Campeonatos Nacionais de Clubes 1ª e 2ª Divisão",
+          "event": "",
+          "time": "4:04.97",
+          "place": "1"
+        },
+        {
+          "date": "FEB 3",
+          "meet": "Czech Indoor Gala",
+          "event": "3000m",
+          "time": "7:38.05",
+          "place": ""
+        }
+      ],
       "weight": "115 lbs",
       "coach": "Self-coached",
       "reviewBody": "Kejelcha has been a model of consistency in 2026. While he hasn't grabbed the headlines, his results speak for themselves — four top-3 finishes in Diamond League events and a season best of 3:45.12.",
@@ -570,7 +648,36 @@
       "photo": "/images/kerrcard.png",
       "club": "Adidas",
       "country": "Great Britain",
-      "results": [],
+      "results": [
+        {
+          "date": "JUN 14",
+          "meet": "USATF LA Grand Prix",
+          "event": "",
+          "time": "1:45.46",
+          "place": "4"
+        },
+        {
+          "date": "MAY 23",
+          "meet": "LA Track Festival",
+          "event": "800m",
+          "time": "1:44.60",
+          "place": ""
+        },
+        {
+          "date": "MAR 21",
+          "meet": "World Athletics Indoor Championships",
+          "event": "3000 Metres Short Track",
+          "time": "7:35.56",
+          "place": "1"
+        },
+        {
+          "date": "FEB 1",
+          "meet": "Millrose Games",
+          "event": "2 Miles sh",
+          "time": "8:07.68",
+          "place": "2"
+        }
+      ],
       "weight": "150 lbs",
       "coach": "Gary Lough",
       "reviewBody": "Kerr continues to be one of the most physically imposing presences in the 1500m field. His ability to surge mid-race and break the competition is unmatched.",
@@ -659,7 +766,78 @@
       "photo": "/images/timothy_card.png",
       "club": "Iten Training Camp",
       "country": "Kenya",
-      "results": [],
+      "results": [
+        {
+          "date": "JUN 10",
+          "meet": "Oslo Bislett Games",
+          "event": "Mile",
+          "time": "3:48.21",
+          "place": "1"
+        },
+        {
+          "date": "JUN 7",
+          "meet": "BAUHAUS-Galan",
+          "event": "1500m",
+          "time": "3:30.67",
+          "place": ""
+        },
+        {
+          "date": "MAY 23",
+          "meet": "Wanda Diamond League Xiamen",
+          "event": "5000m",
+          "time": "13:16.41",
+          "place": ""
+        },
+        {
+          "date": "MAY 16",
+          "meet": "Wanda Diamond League",
+          "event": "3000m",
+          "time": "7:27.24",
+          "place": "4"
+        },
+        {
+          "date": "MAY 9",
+          "meet": "Athletics Kenya Prison Services Track and Field Championships",
+          "event": "800m",
+          "time": "1:50.1h",
+          "place": ""
+        },
+        {
+          "date": "MAY 8",
+          "meet": "Athletics Kenya Prison Services Track and Field Championships",
+          "event": "",
+          "time": "1:56.1h",
+          "place": "1"
+        },
+        {
+          "date": "MAY 8",
+          "meet": "Athletics Kenya Prison Services Track and Field Championships",
+          "event": "",
+          "time": "3:58.6h",
+          "place": "1"
+        },
+        {
+          "date": "MAY 8",
+          "meet": "Athletics Kenya Prison Services Track and Field Championships",
+          "event": "",
+          "time": "3:48.7h",
+          "place": "1"
+        },
+        {
+          "date": "APR 24",
+          "meet": "Kip Keino Classic",
+          "event": "",
+          "time": "3:38.16",
+          "place": "6"
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Sirikwa Classic Continental Tour Gold",
+          "event": "",
+          "time": "5:54",
+          "place": "3"
+        }
+      ],
       "weight": "128 lbs",
       "coach": "Patrick Sang",
       "reviewBody": "Cheruiyot has shown signs of returning to his dominant best after a couple of injury-interrupted campaigns. His Shanghai win was a reminder that when he's right, he can run with anyone.",
@@ -729,7 +907,15 @@
       "photo": "/images/laros_card.png",
       "club": "xx",
       "country": "Netherlands",
-      "results": [],
+      "results": [
+        {
+          "date": "JUN 21",
+          "meet": "FBK Games",
+          "event": "800m",
+          "time": "1:43.83",
+          "place": ""
+        }
+      ],
       "weight": "145",
       "coach": "xx",
       "reviewBody": "xx",
@@ -2417,63 +2603,252 @@
       "ncaa": false,
       "club": "x",
       "country": "Norway",
-      "results": [
-        {
-          "date": "JUN 10",
-          "meet": "Oslo Bislett Games",
-          "event": "Mile",
-          "time": "3:53.87",
-          "place": ""
-        },
-        {
-          "date": "JUN 7",
-          "meet": "BAUHAUS-Galan",
-          "event": "1500m",
-          "time": "3:31.74",
-          "place": ""
-        },
-        {
-          "date": "MAY 31",
-          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-          "event": "",
-          "time": "3:33.45",
-          "place": "12"
-        },
-        {
-          "date": "MAY 24",
-          "meet": "61. Internationales Pfingstsportfest Rehlingen",
-          "event": "",
-          "time": "3:32.52",
-          "place": "1"
-        },
-        {
-          "date": "MAY 20",
-          "meet": "15th Savona International Meeting",
-          "event": "",
-          "time": "3:34.37",
-          "place": "4"
-        },
-        {
-          "date": "APR 4",
-          "meet": "Urban Trail de Lille",
-          "event": "5 Kilometres Road",
-          "time": "13:10",
-          "place": ""
-        },
-        {
-          "date": "MAR 1",
-          "meet": "Norwegian Indoor Championships",
-          "event": "3000 Metres Short Track",
-          "time": "7:41.44",
-          "place": "1"
-        }
-      ],
+      "results": [],
       "weight": "x",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "narve-nordas",
       "age": "27"
+    },
+    {
+      "photoBackground": "#111111",
+      "reviewTitle": "Season review",
+      "waUrl": "https://worldathletics.org/athletes/united-states/cooper-teare-14757466",
+      "height": "x",
+      "questionBody": "x",
+      "headlineRest": "x",
+      "name": "Cooper Teare",
+      "headlineKey": "x",
+      "flag": "US",
+      "seasons": "x",
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:32.16"
+        },
+        {
+          "event": "2000m",
+          "time": "4:54.74"
+        },
+        {
+          "event": "3000m",
+          "time": "7:30.62"
+        },
+        {
+          "event": "2 Miles",
+          "time": "8:08.91"
+        },
+        {
+          "event": "5000m",
+          "time": "12:54.72"
+        },
+        {
+          "event": "1000 Metres",
+          "time": "2:17.76"
+        },
+        {
+          "event": "1000 Metres Short Track",
+          "time": "2:17.76"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:34.35"
+        },
+        {
+          "event": "2000 Metres Short Track",
+          "time": "4:54.74"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:30.62"
+        },
+        {
+          "event": "2 Miles Short Track",
+          "time": "8:08.91"
+        },
+        {
+          "event": "5000 Metres Short Track",
+          "time": "12:57.97"
+        },
+        {
+          "event": "Mile Road",
+          "time": "3:49.3h"
+        },
+        {
+          "event": "5 Kilometres Road",
+          "time": "13:25"
+        },
+        {
+          "event": "4x400 Metres Relay",
+          "time": "3:20.29"
+        },
+        {
+          "event": "4xMile Relay",
+          "time": "15:52.05"
+        },
+        {
+          "event": "Mile",
+          "time": "3:50.17"
+        }
+      ],
+      "hometown": "x",
+      "questionTitle": "Next question",
+      "photo": "/images/teare_card.png",
+      "ncaa": false,
+      "club": "x",
+      "country": "United States",
+      "results": [
+        {
+          "date": "JUN 13",
+          "meet": "USATF LA Grand Prix",
+          "event": "5000m",
+          "time": "13:18.13",
+          "place": ""
+        },
+        {
+          "date": "MAY 23",
+          "meet": "LA Track Festival",
+          "event": "1500m",
+          "time": "3:34.23",
+          "place": ""
+        },
+        {
+          "date": "MAY 2",
+          "meet": "USA 5 km Road Running Championships",
+          "event": "",
+          "time": "13:29",
+          "place": "3"
+        },
+        {
+          "date": "APR 18",
+          "meet": "Boston 5K",
+          "event": "5 Kilometres Road",
+          "time": "13:25",
+          "place": ""
+        },
+        {
+          "date": "MAR 1",
+          "meet": "USA Indoor Championships",
+          "event": "",
+          "time": "3:38.87",
+          "place": "7"
+        },
+        {
+          "date": "FEB 28",
+          "meet": "USA Indoor Championships",
+          "event": "",
+          "time": "7:41.62",
+          "place": "7"
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Sound Invite",
+          "event": "1500 Metres Short Track",
+          "time": "3:34.35",
+          "place": ""
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Sound Invite",
+          "event": "Mile sh",
+          "time": "3:50.49",
+          "place": "2"
+        },
+        {
+          "date": "FEB 7",
+          "meet": "Doc Hale Virginia Tech Invitational",
+          "event": "1000 Metres",
+          "time": "2:17.76",
+          "place": ""
+        },
+        {
+          "date": "FEB 1",
+          "meet": "Millrose Games",
+          "event": "3000m",
+          "time": "7:38.16",
+          "place": ""
+        },
+        {
+          "date": "FEB 1",
+          "meet": "Millrose Games",
+          "event": "2 Miles sh",
+          "time": "8:08.91",
+          "place": "7"
+        },
+        {
+          "date": "JAN 23",
+          "meet": "Hokie Invitational",
+          "event": "2000m sh",
+          "time": "4:54.74",
+          "place": "2"
+        }
+      ],
+      "weight": "x",
+      "coach": "x",
+      "reviewBody": "x",
+      "event": "MIDDLE DISTANCE/DISTANCE",
+      "id": "cooper-teare",
+      "age": "26"
+    },
+    {
+      "photoBackground": "#111111",
+      "reviewTitle": "Season review",
+      "waUrl": "https://worldathletics.org/athletes/new-zealand/sam-ruthe-15131581",
+      "height": "x",
+      "questionBody": "x",
+      "headlineRest": "x",
+      "name": "Sam Ruthe",
+      "headlineKey": "x",
+      "flag": "NZ",
+      "seasons": "x",
+      "prs": [
+        {
+          "event": "800m",
+          "time": "1:45.86"
+        },
+        {
+          "event": "1500m",
+          "time": "3:33.25"
+        },
+        {
+          "event": "Mile",
+          "time": "3:48.88"
+        },
+        {
+          "event": "3000m",
+          "time": "7:43.16"
+        },
+        {
+          "event": "5000m",
+          "time": "13:40.48"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:33.25"
+        },
+        {
+          "event": "Mile Short Track",
+          "time": "3:48.88"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:43.16"
+        }
+      ],
+      "hometown": "x",
+      "questionTitle": "Next question",
+      "photo": "/images/ruthe_card.png",
+      "ncaa": false,
+      "club": "x",
+      "country": "New Zealand",
+      "results": [],
+      "weight": "x",
+      "coach": "x",
+      "reviewBody": "x",
+      "event": "MIDDLE DISTANCE/DISTANCE",
+      "id": "sam-ruthe",
+      "age": "17"
     }
   ]
 }
