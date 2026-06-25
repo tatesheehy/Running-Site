@@ -10,16 +10,24 @@
   "rankingsIntro": "Welcome to the 2026 Rankings page.",
   "articlesIntro": "",
   "editorPicksLabel": "Editors' Picks",
+  "upcomingMeets": [
+    {
+      "name": "Monaco Diamond League",
+      "datetime": "2026-07-10T19:00:00-07:00"
+    },
+    {
+      "name": "London Diamond League",
+      "datetime": "2026-07-18T13:04:00-07:00"
+    },
+    {
+      "name": "Pre Classic",
+      "datetime": "2026-07-04T18:00:00-07:00"
+    }
+  ],
   "footerTagline": "",
   "latestArticlesTitle": "Latest Articles",
   "breakingNews": "Welcome to StatTC. Check out our newest rankings now",
   "accentColor": "#e8500a",
-  "upcomingMeets": [
-    {
-      "name": "London Diamond League",
-      "datetime": "2026-07-18T13:04:00-07:00"
-    }
-  ],
   "twitterUrl": "",
   "instagramUrl": "",
   "showRankingsWidget": true
