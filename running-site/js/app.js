@@ -750,12 +750,15 @@ function buildAthletesPage() {
   }
 
   qs('#main').innerHTML = `
-    <div class="page-wrap">
+    <div class="container">
       <div class="ath-page-header">
-        <h1 class="ath-page-title">Athletes</h1>
-        <div class="ath-page-filters">
-          <button class="ath-page-filter active" data-sort="alpha" onclick="sortAthletes('alpha')">A – Z</button>
-          <button class="ath-page-filter" data-sort="country" onclick="sortAthletes('country')">By Country</button>
+        <div class="ath-page-header-left">
+          <h1 class="ath-page-title">Athletes</h1>
+          <span class="ath-page-count">${all.length} athletes</span>
+        </div>
+        <div class="ath-page-sort-toggle">
+          <button class="ath-page-sort active" data-sort="alpha" onclick="sortAthletes('alpha')">A – Z</button>
+          <button class="ath-page-sort" data-sort="country" onclick="sortAthletes('country')">By Country</button>
         </div>
       </div>
       <div class="ath-page-grid" id="ath-page-grid">${renderGrid(sortedAthletes())}</div>
@@ -763,7 +766,7 @@ function buildAthletesPage() {
 
   window.sortAthletes = function(sort) {
     activeSort = sort;
-    document.querySelectorAll('.ath-page-filter').forEach(b => b.classList.toggle('active', b.dataset.sort === sort));
+    document.querySelectorAll('.ath-page-sort').forEach(b => b.classList.toggle('active', b.dataset.sort === sort));
     qs('#ath-page-grid').innerHTML = renderGrid(sortedAthletes());
   };
 }
