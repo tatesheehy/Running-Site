@@ -1813,7 +1813,7 @@ footer {
   box-shadow: 0 3px 8px rgba(0,0,0,0.07);
 }
 
-/* white mask that covers content scrolling above the sticky bar */
+/* white mask — only active once the bar has scrolled into sticky position */
 .rd-col-labels::before {
   content: '';
   position: absolute;
@@ -1822,6 +1822,10 @@ footer {
   right: -100px;
   height: 200px;
   background: var(--bg);
+  display: none;
+}
+.rd-col-labels.is-sticky::before {
+  display: block;
 }
 
 .rd-row {

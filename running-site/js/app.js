@@ -1132,6 +1132,7 @@ function buildRankingsDetail(eventName) {
           ${ev && ev.photo ? `<div class="rd-header-photo" style="background-image:url('${ev.photo}')"></div>` : ''}
         </div>
         ${filterHtml}
+        <div id="rd-col-sentinel"></div>
         <div class="rd-col-labels" style="${isGrid ? 'display:none' : ''}">
           <span>Rank</span><span>Athlete</span><span>Momentum</span><span style="text-align:right">Best / Meet</span>
         </div>
@@ -1146,6 +1147,15 @@ function buildRankingsDetail(eventName) {
       </div>
     </div>
   `;
+  // Detect when col-labels become sticky and activate the top-mask
+  const sentinel = document.getElementById('rd-col-sentinel');
+  const colLabels = document.querySelector('.rd-col-labels');
+  if (sentinel && colLabels) {
+    new IntersectionObserver(([entry]) => {
+      colLabels.classList.toggle('is-sticky', !entry.isIntersecting);
+    }, { rootMargin: '-62px 0px 0px 0px', threshold: 0 }).observe(sentinel);
+  }
+
   enrichRankingsWithWA(eventName);
 }
 
