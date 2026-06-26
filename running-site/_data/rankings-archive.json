@@ -4,10 +4,25 @@
       "year": "2026",
       "label": "",
       "events": [
-        { "name": "800m", "weekIds": [] },
-        { "name": "1500m", "weekIds": ["1500m-2026-06-09"] },
-        { "name": "3000m/5000m", "weekIds": [] },
-        { "name": "10000m", "weekIds": [] }
+        {
+          "name": "800m",
+          "weekIds": []
+        },
+        {
+          "name": "1500m",
+          "weekIds": [
+            "1500m-06-25-2026",
+            "1500m-2026-06-09"
+          ]
+        },
+        {
+          "name": "3000m/5000m",
+          "weekIds": []
+        },
+        {
+          "name": "10000m",
+          "weekIds": []
+        }
       ]
     }
   ]
