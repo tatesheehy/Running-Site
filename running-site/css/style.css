@@ -2367,9 +2367,84 @@ footer {
 /* ── RANKINGS HUB H2H BUTTON ──────────────────────────────── */
 .rankings-hub-actions {
   display: flex;
+  align-items: center;
+  gap: 12px;
   justify-content: flex-end;
   margin-bottom: 28px;
 }
+.rankings-archive-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 9px 14px;
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  transition: color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+.rankings-archive-link:hover { color: var(--text); border-color: #bbb; }
+
+/* ── RANKINGS ARCHIVE ─────────────────────────────────── */
+.archive-seasons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding-bottom: 80px;
+}
+.archive-season-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 24px 22px;
+  cursor: pointer;
+  transition: box-shadow 0.18s, border-color 0.18s, transform 0.18s;
+}
+.archive-season-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  border-color: #ccc;
+  transform: translateY(-2px);
+}
+.archive-season-year {
+  font-family: var(--font-display);
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--dark);
+  margin-bottom: 4px;
+}
+.archive-season-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+.archive-season-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.archive-event-tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: #f0f0f0;
+  color: #555;
+  padding: 3px 9px;
+  border-radius: 20px;
+}
+.archive-season-cta {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .h2h-hub-btn {
   background: var(--accent);
   border: 1px solid var(--accent);

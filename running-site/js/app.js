@@ -11,16 +11,17 @@ function getParam(name) { return new URLSearchParams(window.location.search).get
 function goTo(url) { window.location.href = url; }
 
 // ── DATA LOADING ──────────────────────────────────────────
-let ARTICLES, ATHLETES, RANKINGS, RANKINGS_EVENTS, RANKINGS_CRITERIA, RANKINGS_YEAR, SITE;
+let ARTICLES, ATHLETES, RANKINGS, RANKINGS_EVENTS, RANKINGS_CRITERIA, RANKINGS_YEAR, RANKINGS_ARCHIVE, SITE;
 
 async function loadData() {
   try {
     const noCache = { cache: 'no-store' };
-    const [articlesData, athletesData, rankingsData, siteData] = await Promise.all([
+    const [articlesData, athletesData, rankingsData, siteData, archiveData] = await Promise.all([
       fetch('/_data/articles.json', noCache).then(r => r.json()),
       fetch('/_data/athletes.json', noCache).then(r => r.json()),
       fetch('/_data/rankings.json', noCache).then(r => r.json()),
       fetch('/_data/site.json', noCache).then(r => r.json()),
+      fetch('/_data/rankings-archive.json', noCache).then(r => r.json()).catch(() => ({ seasons: [] })),
     ]);
 
     ARTICLES = articlesData.items || [];
@@ -40,6 +41,7 @@ async function loadData() {
     });
 
     RANKINGS_YEAR = rankingsData.year || '';
+    RANKINGS_ARCHIVE = archiveData.seasons || [];
     SITE = siteData;
 
     document.documentElement.style.setProperty('--accent', SITE.accentColor || '#E8500A');
@@ -878,7 +880,20 @@ function buildArticlePage() {
 // ── RANKINGS PAGE ─────────────────────────────────────────
 function buildRankingsPage() {
   const eventParam = getParam('event');
-  if (eventParam) {
+  const yearParam  = getParam('year');
+  const viewParam  = getParam('view');
+
+  if (viewParam === 'archive' && yearParam) {
+    buildArchiveYearHub(yearParam);
+  } else if (viewParam === 'archive') {
+    buildArchiveHub();
+  } else if (yearParam && eventParam) {
+    buildRankingsDetail(decodeURIComponent(eventParam), {
+      archiveYear: yearParam,
+      backUrl: `rankings.html?view=archive&year=${encodeURIComponent(yearParam)}`,
+      backLabel: 'Archive',
+    });
+  } else if (eventParam) {
     buildRankingsDetail(decodeURIComponent(eventParam));
   } else {
     buildRankingsHub();
@@ -921,11 +936,76 @@ function buildRankingsHub() {
         ` : ''}
         <div class="rankings-hub-actions">
           <button class="h2h-hub-btn" onclick="openH2H()">⇌ Compare Athletes Head to Head</button>
+          ${RANKINGS_ARCHIVE.length ? `<a href="rankings.html?view=archive" class="rankings-archive-link">📁 Rankings Archive &rarr;</a>` : ''}
         </div>
         <div class="rankings-cards-grid">${cardsHtml}</div>
       </div>
     </div>
   `;
+}
+
+function buildArchiveHub() {
+  const seasons = RANKINGS_ARCHIVE || [];
+
+  const cardsHtml = seasons.length ? seasons.map(s => {
+    const year   = s.year || '';
+    const label  = s.label || `${year} Season`;
+    const events = s.events || [];
+    const tags   = events.map(e => `<span class="archive-event-tag">${e.name}</span>`).join('');
+    return `
+      <div class="archive-season-card" onclick="goTo('rankings.html?view=archive&year=${encodeURIComponent(year)}')">
+        <div class="archive-season-year">${year}</div>
+        <div class="archive-season-label">${label}</div>
+        ${tags ? `<div class="archive-season-tags">${tags}</div>` : ''}
+        <div class="archive-season-cta">${events.length} event${events.length !== 1 ? 's' : ''} &rarr;</div>
+      </div>`;
+  }).join('') : `<p class="rankings-empty">No archived seasons yet.</p>`;
+
+  document.getElementById('main').innerHTML = `
+    <div class="container">
+      <div class="rankings-hub">
+        <div class="page-header">
+          <a href="rankings.html" class="rd-back">&larr; Current Rankings</a>
+          <h1 class="page-title">Rankings Archive</h1>
+        </div>
+        <div class="archive-seasons-grid">${cardsHtml}</div>
+      </div>
+    </div>`;
+}
+
+function buildArchiveYearHub(year) {
+  const season = (RANKINGS_ARCHIVE || []).find(s => s.year === year);
+  if (!season) { goTo('rankings.html?view=archive'); return; }
+
+  const label    = season.label || `${year} Season`;
+  const events   = season.events || [];
+
+  const cardsHtml = events.map((ev, i) => {
+    const count      = (ev.rows || []).length;
+    const num        = String(i + 1).padStart(2, '0');
+    const photoStyle = ev.photo ? `style="background-image:url('${ev.photo}');"` : '';
+    return `
+      <div class="ranking-card" onclick="goTo('rankings.html?view=archive&year=${encodeURIComponent(year)}&event=${encodeURIComponent(ev.name)}')">
+        <div class="ranking-card-photo" ${photoStyle}></div>
+        <div class="ranking-card-num">${num}</div>
+        <div class="ranking-card-body">
+          <div class="ranking-card-event">${ev.name}</div>
+          ${ev.description ? `<div class="ranking-card-desc">${ev.description}</div>` : ''}
+          <div class="ranking-card-cta">${count ? `${count} athletes ranked` : 'No data'} &rarr;</div>
+        </div>
+      </div>`;
+  }).join('');
+
+  document.getElementById('main').innerHTML = `
+    <div class="container">
+      <div class="rankings-hub">
+        <div class="page-header">
+          <a href="rankings.html?view=archive" class="rd-back">&larr; Archive</a>
+          <h1 class="page-title">${label}</h1>
+        </div>
+        <div class="rankings-cards-grid">${cardsHtml}</div>
+      </div>
+    </div>`;
 }
 
 window.toggleCriteria = function() {
@@ -1039,10 +1119,23 @@ function buildCountdownPill() {
   return buildCountdownPills();
 }
 
-function buildRankingsDetail(eventName) {
-  const ev = RANKINGS_EVENTS.find(e => e.name === eventName);
-  const rows = (ev && ev.rows) ? ev.rows : [];
+function buildRankingsDetail(eventName, opts = {}) {
+  const {
+    archiveYear = null,
+    backUrl     = 'rankings.html',
+    backLabel   = 'All Rankings',
+  } = opts;
+
+  let ev;
+  if (archiveYear) {
+    const season = (RANKINGS_ARCHIVE || []).find(s => s.year === archiveYear);
+    ev = season ? (season.events || []).find(e => e.name === eventName) : null;
+  } else {
+    ev = RANKINGS_EVENTS.find(e => e.name === eventName);
+  }
+  const rows     = (ev && ev.rows)     ? ev.rows     : [];
   const sections = (ev && ev.sections) ? ev.sections : [];
+  const displayYear = archiveYear || RANKINGS_YEAR;
 
   // Collect unique countries for filter pills
   const countryInfo = {};
@@ -1112,8 +1205,8 @@ function buildRankingsDetail(eventName) {
       <div class="rankings-detail">
         <div class="rd-header">
           <div class="rd-header-text">
-            <a href="rankings.html" class="rd-back">&larr; All Rankings</a>
-            <div class="rd-header-meta">${RANKINGS_YEAR} Season Rankings</div>
+            <a href="${backUrl}" class="rd-back">&larr; ${backLabel}</a>
+            <div class="rd-header-meta">${displayYear} Season Rankings${archiveYear ? ' &middot; Archive' : ''}</div>
             <h1 class="rd-header-event">${eventName}</h1>
             ${ev && ev.description ? `<p class="rd-header-desc">${ev.description}</p>` : ''}
             <div class="rd-header-actions">
@@ -1156,7 +1249,7 @@ function buildRankingsDetail(eventName) {
     }, { rootMargin: '-62px 0px 0px 0px', threshold: 0 }).observe(sentinel);
   }
 
-  enrichRankingsWithWA(eventName);
+  if (!archiveYear) enrichRankingsWithWA(eventName);
 }
 
 function buildRankingCard(r, rank) {

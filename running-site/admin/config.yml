@@ -230,6 +230,57 @@ collections:
                       - { label: "Athlete Name (leave blank if Athlete ID is set — auto-filled)", name: name, widget: string, required: false }
                       - { label: "Country (leave blank if Athlete ID is set — auto-filled)", name: country, widget: string, required: false }
 
+  # ── RANKINGS ARCHIVE ─────────────────────────────────────
+  - name: rankings-archive
+    label: Rankings Archive
+    files:
+      - name: rankings-archive
+        label: Rankings Archive
+        file: running-site/_data/rankings-archive.json
+        fields:
+          - name: seasons
+            label: Archived Seasons
+            label_singular: Season
+            widget: list
+            summary: "{{year}} Season"
+            fields:
+              - { label: "Year (e.g. 2025)", name: year, widget: string }
+              - { label: "Label (optional, e.g. '2025 Outdoor Season')", name: label, widget: string, required: false }
+              - name: events
+                label: Events
+                label_singular: Event
+                widget: list
+                fields:
+                  - { label: "Event Name (e.g. 1500m)", name: name, widget: string }
+                  - { label: "Short Description", name: description, widget: string, required: false }
+                  - { label: "Card Photo", name: photo, widget: image, required: false }
+                  - name: rows
+                    label: Rankings
+                    label_singular: Entry
+                    widget: list
+                    fields:
+                      - { label: "Athlete ID", name: athleteId, widget: string, required: false, hint: "Auto-fills name, country, flag from the athlete profile." }
+                      - { label: "Season Best", name: seasonBest, widget: string, required: false }
+                      - { label: "Meet", name: meet, widget: string, required: false }
+                      - { label: "Athlete Name (leave blank if Athlete ID is set)", name: name, widget: string, required: false }
+                      - { label: "Country (leave blank if Athlete ID is set)", name: country, widget: string, required: false }
+                  - name: sections
+                    label: "Extra Sections (e.g. Injured, MIA)"
+                    label_singular: Section
+                    widget: list
+                    required: false
+                    fields:
+                      - { label: "Section Title", name: title, widget: string }
+                      - { label: "Section Description", name: description, widget: string, required: false }
+                      - name: entries
+                        label: Athletes
+                        widget: list
+                        fields:
+                          - { label: "Athlete ID", name: athleteId, widget: string, required: false }
+                          - { label: "Reason", name: reason, widget: string, required: false }
+                          - { label: "Athlete Name", name: name, widget: string, required: false }
+                          - { label: "Country", name: country, widget: string, required: false }
+
   # ── SITE SETTINGS ────────────────────────────────────────
   - name: settings
     label: Site Settings
