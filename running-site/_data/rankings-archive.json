@@ -2,25 +2,43 @@
   "seasons": [
     {
       "year": "2026",
-      "label": "June 9, 2026",
+      "label": "",
       "events": [
+        {
+          "name": "800m"
+        },
         {
           "name": "1500m",
           "weeks": [
             {
-              "label": "Week 1",
+              "label": "June 9, 2026",
               "date": "",
               "rows": [
-                { "athleteId": "cole-hocker" },
-                { "athleteId": "niels-laros" },
-                { "athleteId": "josh-kerr" },
-                { "athleteId": "abdel-nader" },
-                { "athleteId": "vincent-ciattei" },
-                { "athleteId": "azeddine-habz" }
+                {
+                  "athleteId": "cole-hocker"
+                },
+                {
+                  "athleteId": "niels-laros"
+                },
+                {
+                  "athleteId": "josh-kerr"
+                },
+                {
+                  "athleteId": "isaac-nader"
+                },
+                {
+                  "athleteId": "vincent-ciattei"
+                }
               ],
               "sections": []
             }
           ]
+        },
+        {
+          "name": "3000m/5000m"
+        },
+        {
+          "name": "10000m"
         }
       ]
     }
