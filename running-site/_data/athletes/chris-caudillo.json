@@ -1,0 +1,156 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "collegeLogo": "/images/cal_poly_mustangs_logo.svg.png",
+  "waUrl": "https://worldathletics.org/athletes/united-states/christopher-caudillo-15028382",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Chris Caudillo",
+  "headlineKey": "x",
+  "flag": "US",
+  "seasons": "x",
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:35.13"
+    },
+    {
+      "event": "3000m",
+      "time": "8:24.45"
+    },
+    {
+      "event": "5000m",
+      "time": "13:28.40"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "8:24.45"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:35.05"
+    },
+    {
+      "event": "Distance Medley",
+      "time": "9:25.05"
+    },
+    {
+      "event": "Mile",
+      "time": "3:56.05"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "/images/caudillo_card.png",
+  "ncaa": false,
+  "club": "x",
+  "country": "United States",
+  "results": [
+    {
+      "date": "JUN 12",
+      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "event": "1500m",
+      "time": "3:38.06",
+      "place": "7"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "event": "1500m",
+      "time": "3:36.30",
+      "place": "5"
+    },
+    {
+      "date": "MAY 29",
+      "meet": "NCAA Division I West First Rounds",
+      "event": "1500m",
+      "time": "3:38.06",
+      "place": "4"
+    },
+    {
+      "date": "MAY 27",
+      "meet": "NCAA Division I West First Rounds",
+      "event": "",
+      "time": "3:40.15",
+      "place": "6"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "The Big West Track and Field Championships",
+      "event": "",
+      "time": "3:45.53",
+      "place": "3"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "The Big West Track and Field Championships",
+      "event": "",
+      "time": "14:15.70",
+      "place": "3"
+    },
+    {
+      "date": "MAY 15",
+      "meet": "The Big West Track and Field Championships",
+      "event": "",
+      "time": "3:57.52",
+      "place": "1"
+    },
+    {
+      "date": "MAY 9",
+      "meet": "Franson Last Chance",
+      "event": "1500m",
+      "time": "3:35.13",
+      "place": "3"
+    },
+    {
+      "date": "APR 17",
+      "meet": "Bryan Clay Invitational",
+      "event": "5000m",
+      "time": "13:28.40",
+      "place": ""
+    },
+    {
+      "date": "APR 3",
+      "meet": "Stanford Invitational",
+      "event": "",
+      "time": "3:39.28",
+      "place": "2"
+    },
+    {
+      "date": "APR 3",
+      "meet": "Stanford Invitational",
+      "event": "",
+      "time": "DNF",
+      "place": ""
+    },
+    {
+      "date": "FEB 21",
+      "meet": "Alex Wilson Invitational",
+      "event": "Distance Medley",
+      "time": "9:25.05",
+      "place": ""
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Husky Classic",
+      "event": "",
+      "time": "3:57.48",
+      "place": "5"
+    },
+    {
+      "date": "JAN 30",
+      "meet": "UW Invite/Mile City",
+      "event": "Mile",
+      "time": "3:56.05",
+      "place": "7"
+    }
+  ],
+  "college": "Cal Poly",
+  "weight": "x",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE/DISTANCE",
+  "id": "chris-caudillo",
+  "age": "20"
+}
