@@ -2479,6 +2479,10 @@ footer {
   margin-bottom: 6px;
   text-shadow: 1px 1px 0 rgba(0,0,0,0.12);
 }
+.archive-season-year--week {
+  font-size: 28px;
+  line-height: 1.15;
+}
 .archive-season-label {
   font-family: 'Courier New', Courier, monospace;
   font-size: 11px;
@@ -2541,67 +2545,95 @@ footer {
   top: -2px;
 }
 
-/* ── ARCHIVE INDEX CARDS (year hub sub-events) ─────────── */
+/* ── ARCHIVE INDEX CARDS ────────────────────────────────── */
 .archive-index-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 28px 24px;
   padding-bottom: 80px;
+  align-items: start;
 }
 .archive-index-card {
   position: relative;
-  /* ruled paper: red top rule, then faint blue lines */
-  background-color: #fffef8;
+  background-color: #fefdf5;
   background-image:
-    linear-gradient(#c0392b 0px, #c0392b 4px, transparent 4px),
+    linear-gradient(#b83225 0px, #b83225 5px, transparent 5px),
     repeating-linear-gradient(
       transparent 0px,
-      transparent 27px,
-      rgba(100,140,210,0.22) 27px,
-      rgba(100,140,210,0.22) 28px
+      transparent 24px,
+      rgba(90,120,200,0.16) 24px,
+      rgba(90,120,200,0.16) 25px
     );
-  background-position: top left;
-  border: 1px solid #cfc3a0;
-  border-radius: 3px;
-  padding: 20px 16px 16px;
+  border: 1px solid #d0c4a2;
+  border-radius: 2px;
+  padding: 22px 18px 16px;
   cursor: pointer;
-  box-shadow: 2px 3px 10px rgba(60,35,5,0.14), inset 0 1px 0 rgba(255,255,240,0.9);
-  transition: transform 0.16s ease, box-shadow 0.16s ease;
-  min-height: 140px;
+  box-shadow:
+    2px 2px 0 #d0c4a2,
+    3px 4px 12px rgba(50,28,5,0.14);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  min-height: 148px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 0;
+}
+/* hole-punch circle top-right */
+.archive-index-card::after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(160,130,80,0.45);
+  background: #ede0bc;
 }
 .archive-index-card:hover {
-  transform: translateY(-4px) rotate(0.8deg);
-  box-shadow: 4px 8px 20px rgba(60,35,5,0.22);
+  transform: translateY(-3px) rotate(0.5deg);
+  box-shadow:
+    2px 2px 0 #c4b890,
+    5px 9px 20px rgba(50,28,5,0.22);
+}
+/* thin margin line on the left, like a legal pad */
+.archive-index-card::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  bottom: 0;
+  left: 42px;
+  width: 1px;
+  background: rgba(200,80,80,0.18);
+  pointer-events: none;
 }
 .archive-index-card-event {
-  font-family: var(--font-display);
-  font-size: 36px;
-  font-weight: 900;
-  color: #1a0e05;
-  line-height: 1;
-  margin-top: 8px;
-  /* slightly uneven baseline, like hand-stamped */
-  letter-spacing: -0.01em;
+  font-family: 'Special Elite', 'Courier New', monospace;
+  font-size: 22px;
+  color: #1c0f05;
+  line-height: 1.2;
+  margin-top: 10px;
+  padding-left: 52px; /* clear the margin line */
+  letter-spacing: 0.01em;
+  flex: 1;
 }
 .archive-index-card-desc {
   font-family: 'Courier New', Courier, monospace;
   font-size: 10px;
-  color: #6b4010;
-  letter-spacing: 0.05em;
-  margin-top: 6px;
-  opacity: 0.8;
+  color: #7a5225;
+  letter-spacing: 0.04em;
+  margin-top: 10px;
+  padding-left: 52px;
+  opacity: 0.75;
 }
 .archive-index-card-cta {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #8b3a10;
-  margin-top: 14px;
+  padding-left: 52px;
+  margin-top: 16px;
 }
 
 .h2h-hub-btn {

@@ -985,15 +985,15 @@ function buildArchiveYearHub(year) {
   const label  = season.label || `${year} Season`;
   const events = season.events || [];
 
-  const cardsHtml = events.map((ev) => {
-    const count = (ev.rows || []).length;
+  const cardsHtml = events.length ? events.map((ev) => {
+    const weekCount = (ev.weeks || []).length;
     return `
-      <div class="archive-index-card" onclick="goTo('rankings.html?view=archive&year=${encodeURIComponent(year)}&event=${encodeURIComponent(ev.name)}')">
-        <div class="archive-index-card-event">${ev.name}</div>
-        ${ev.description ? `<div class="archive-index-card-desc">${ev.description}</div>` : ''}
-        <div class="archive-index-card-cta">${count ? `${count} athletes` : 'No data'} &rarr;</div>
+      <div class="archive-season-card" onclick="goTo('rankings.html?view=archive&year=${encodeURIComponent(year)}&event=${encodeURIComponent(ev.name)}')">
+        <div class="archive-season-year">${ev.name}</div>
+        <div class="archive-season-label">${ev.description || ''}</div>
+        <div class="archive-season-cta">${weekCount ? `${weekCount} week${weekCount !== 1 ? 's' : ''}` : 'No weeks'} &rarr;</div>
       </div>`;
-  }).join('');
+  }).join('') : `<p class="archive-empty">No events yet.</p>`;
 
   document.getElementById('main').innerHTML = `
     <div class="archive-vintage-page">
@@ -1002,7 +1002,7 @@ function buildArchiveYearHub(year) {
           <a href="rankings.html?view=archive" class="rd-back">&larr; Archive</a>
           <h1 class="archive-page-title">${label}</h1>
         </div>
-        <div class="archive-index-grid">${cardsHtml}</div>
+        <div class="archive-seasons-grid">${cardsHtml}</div>
       </div>
     </div>`;
 }
@@ -1017,12 +1017,12 @@ function buildArchiveWeekHub(year, eventName) {
 
   const cardsHtml = weeks.length ? weeks.map((w, i) => {
     const count = (w.rows || []).length;
-    const label = w.label || `Week ${i + 1}`;
+    const wLabel = w.label || `Week ${i + 1}`;
     return `
-      <div class="archive-index-card" onclick="goTo('rankings.html?view=archive&year=${encodeURIComponent(year)}&event=${encodeURIComponent(eventName)}&week=${i}')">
-        <div class="archive-index-card-event">${label}</div>
-        ${w.date ? `<div class="archive-index-card-desc">${w.date}</div>` : ''}
-        <div class="archive-index-card-cta">${count ? `${count} athletes` : 'No data'} &rarr;</div>
+      <div class="archive-season-card" onclick="goTo('rankings.html?view=archive&year=${encodeURIComponent(year)}&event=${encodeURIComponent(eventName)}&week=${i}')">
+        <div class="archive-season-year archive-season-year--week">${wLabel}</div>
+        ${w.date ? `<div class="archive-season-label">${w.date}</div>` : '<div class="archive-season-label"></div>'}
+        <div class="archive-season-cta">${count ? `${count} athletes` : 'No data'} &rarr;</div>
       </div>`;
   }).join('') : `<p class="archive-empty">No weeks added yet.</p>`;
 
@@ -1033,7 +1033,7 @@ function buildArchiveWeekHub(year, eventName) {
           <a href="rankings.html?view=archive&year=${encodeURIComponent(year)}" class="rd-back">&larr; ${yearLabel}</a>
           <h1 class="archive-page-title">${eventName}</h1>
         </div>
-        <div class="archive-index-grid">${cardsHtml}</div>
+        <div class="archive-seasons-grid">${cardsHtml}</div>
       </div>
     </div>`;
 }
