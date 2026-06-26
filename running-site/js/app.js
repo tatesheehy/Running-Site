@@ -1019,9 +1019,10 @@ function buildArchiveWeekHub(year, eventName) {
   const weekIds  = ev.weekIds || [];
   const yearLabel = season.label || `${year} Season`;
 
+  const liveCount = ((RANKINGS_EVENTS || []).find(e => e.name === eventName)?.rows || []).length;
   const cardsHtml = weekIds.length ? weekIds.map((wid) => {
     const w = (RANKINGS_WEEKS || {})[wid] || {};
-    const count  = (w.rows || []).length;
+    const count  = (w.rows || []).length || liveCount;
     const wLabel = w.label || wid;
     return `
       <div class="archive-season-card" onclick="goTo('rankings.html?view=archive&year=${encodeURIComponent(year)}&event=${encodeURIComponent(eventName)}&week=${encodeURIComponent(wid)}')">
