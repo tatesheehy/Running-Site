@@ -1550,6 +1550,54 @@ function buildFooter() {
   `;
 }
 
+// ── SKELETON LOADING ──────────────────────────────────────
+function showSkeleton(page) {
+  const main = document.getElementById('main');
+  if (!main) return;
+  const s = (cls) => `<div class="skel ${cls}"></div>`;
+  const cards = (n, cls) => Array(n).fill(0).map(() => s(cls)).join('');
+
+  const skels = {
+    home: `
+      <div class="container">
+        <div class="skel-pills-row">${s('skel-pill')}${s('skel-pill')}${s('skel-pill')}</div>
+      </div>
+      <div class="skel-hero-wrap">${s('skel-hero')}</div>
+      <div class="container">
+        <div class="skel-ep-row">${cards(3, 'skel-ep-card')}</div>
+        <div class="skel-grid">${cards(6, 'skel-article-card')}</div>
+      </div>`,
+
+    athletes: `
+      <div class="container">
+        <div class="skel-page-hdr">${s('skel-title')}${s('skel-toggle')}</div>
+        <div class="skel-athlete-grid">${cards(8, 'skel-athlete-card')}</div>
+      </div>`,
+
+    rankings: `
+      <div class="container">
+        <div class="skel-page-hdr">${s('skel-title')}${s('skel-toggle')}</div>
+        <div class="skel-rows">${cards(10, 'skel-row')}</div>
+      </div>`,
+
+    articles: `
+      <div class="container">
+        <div class="skel-page-hdr">${s('skel-title')}</div>
+        <div class="skel-grid">${cards(8, 'skel-article-card')}</div>
+      </div>`,
+
+    article: `
+      <div class="container skel-article-wrap">
+        ${s('skel-article-img')}
+        ${s('skel-title')}${s('skel-line skel-line--short')}
+        ${s('skel-line')}${s('skel-line')}${s('skel-line skel-line--med')}
+        ${s('skel-line')}${s('skel-line')}${s('skel-line skel-line--short')}
+      </div>`,
+  };
+
+  if (skels[page]) main.innerHTML = `<div class="skel-page">${skels[page]}</div>`;
+}
+
 // ── INIT ──────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', async () => {
   // Reading progress bar (only visible on article pages)
@@ -1557,6 +1605,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   progressBar.id = 'reading-progress';
   document.body.insertBefore(progressBar, document.body.firstChild);
 
+  showSkeleton(document.body.dataset.page);
   await loadData();
 
   const navTarget = qs('#nav-placeholder');
