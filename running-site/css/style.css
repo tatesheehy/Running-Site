@@ -2111,9 +2111,9 @@ footer {
 .article-detail-cat { margin-bottom: 14px; }
 
 .article-detail-title {
-  font-family: var(--font-display);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 48px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.01em;
   margin-bottom: 18px;
