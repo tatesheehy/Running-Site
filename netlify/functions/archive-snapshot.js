@@ -103,13 +103,14 @@ exports.handler = async (event) => {
     for (const ev of sourceEvents) {
       if (!ev.name) continue;
 
-      const weekId = (ev.weekId && ev.weekId.trim()) ? ev.weekId.trim() : `${slugifyEvent(ev.name)}-${dateStr}`;
+      const weekId    = (ev.weekId    && ev.weekId.trim())    ? ev.weekId.trim()    : `${slugifyEvent(ev.name)}-${dateStr}`;
+      const weekLabel = (ev.weekLabel && ev.weekLabel.trim()) ? ev.weekLabel.trim() : label;
 
       // Add or replace the week entry in rankings-weeks.json
       const existingIdx = weeksRaw.weeks.findIndex(w => w.id === weekId);
       const weekEntry = {
         id: weekId,
-        label,
+        label: weekLabel,
         date: dateStr,
         rows: (ev.rows || []).map(r => ({
           athleteId:  r.athleteId  || '',
