@@ -665,11 +665,8 @@ function buildHome() {
   const countdownHtml = buildCountdownPills();
 
   document.getElementById('main').innerHTML = `
-    ${SITE.homeTagline || countdownHtml ? `
-      <div class="container">
-        ${SITE.homeTagline ? `<div class="home-tagline">${SITE.homeTagline}</div>` : ''}
-        ${countdownHtml ? `<div class="home-countdown">${countdownHtml}</div>` : ''}
-      </div>` : ''}
+    ${SITE.homeTagline ? `<div class="container"><div class="home-tagline">${SITE.homeTagline}</div></div>` : ''}
+    ${countdownHtml ? `<div class="home-countdown-wrap"><div class="home-countdown">${countdownHtml}</div></div>` : ''}
 
     <div class="home-hero-full" onclick="goTo('${heroDest}')">
       ${heroImg}

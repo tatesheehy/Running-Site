@@ -436,7 +436,7 @@ button { font-family: inherit; }
 
 .ticker-rank {
   font-family: var(--font-display);
-  font-weight: 900;
+  font-weight: 700;
   font-size: 11px;
   opacity: 0.7;
   margin-right: 4px;
@@ -485,7 +485,7 @@ button { font-family: inherit; }
 .section-title {
   font-family: var(--font-display);
   font-size: 22px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.02em;
 }
 
@@ -833,7 +833,7 @@ button { font-family: inherit; }
 .rank-num {
   font-family: var(--font-display);
   font-size: 24px;
-  font-weight: 900;
+  font-weight: 700;
   color: var(--accent);
   width: 44px;
   line-height: 1;
@@ -916,7 +916,7 @@ button { font-family: inherit; }
 .card-rank {
   font-family: var(--font-display);
   font-size: 44px;
-  font-weight: 900;
+  font-weight: 800;
   color: var(--accent);
   line-height: 1;
   min-width: 52px;
@@ -940,7 +940,7 @@ button { font-family: inherit; }
 .card-athlete-name {
   font-family: var(--font-display);
   font-size: 26px;
-  font-weight: 800;
+  font-weight: 700;
   color: #fff;
   line-height: 1;
 }
@@ -1118,7 +1118,7 @@ button { font-family: inherit; }
 .card-achievement-count {
   font-family: var(--font-display);
   font-size: 15px;
-  font-weight: 900;
+  font-weight: 700;
   color: #fff;
   display: block;
   line-height: 1;
@@ -1415,7 +1415,7 @@ footer {
 .page-title {
   font-family: var(--font-display);
   font-size: 40px;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 0.02em;
 }
 
@@ -1667,6 +1667,10 @@ footer {
 }
 
 .rd-h2h-inline { margin-bottom: 0; }
+
+.home-countdown-wrap {
+  padding: 0 28px;
+}
 
 .home-countdown {
   padding: 14px 0;
