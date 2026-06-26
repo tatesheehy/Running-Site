@@ -965,7 +965,7 @@ function buildArchiveHub() {
     <div class="archive-vintage-page">
       <div class="container">
         <div class="archive-vintage-header">
-          <a href="rankings.html" class="rd-back">&larr; Current Rankings</a>
+          <a href="rankings.html" class="rd-back">&larr; Return to the present</a>
           <h1 class="archive-page-title">Rankings Archive</h1>
         </div>
         <div class="archive-seasons-grid">${cardsHtml}</div>
