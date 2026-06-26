@@ -1804,13 +1804,24 @@ footer {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
-  border-bottom: 1px solid var(--border);
   border-left: 3px solid transparent;
   margin-bottom: 0;
   position: sticky;
   top: 62px;
   background: var(--bg);
-  z-index: 10;
+  z-index: 50;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.07);
+}
+
+/* white mask that covers content scrolling above the sticky bar */
+.rd-col-labels::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  left: -100px;
+  right: -100px;
+  height: 200px;
+  background: var(--bg);
 }
 
 .rd-row {
