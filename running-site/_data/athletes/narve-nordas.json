@@ -1,0 +1,83 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "waUrl": "https://worldathletics.org/athletes/norway/narve-gilje-nordas-14705412",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Narve Nordas",
+  "headlineKey": "x",
+  "flag": "NO",
+  "seasons": "x",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:58.63"
+    },
+    {
+      "event": "1500m",
+      "time": "3:29.47"
+    },
+    {
+      "event": "Mile",
+      "time": "3:47.68"
+    },
+    {
+      "event": "2000m",
+      "time": "4:50.64"
+    },
+    {
+      "event": "3000m",
+      "time": "7:33.49"
+    },
+    {
+      "event": "3000m SC",
+      "time": "9:53.48"
+    },
+    {
+      "event": "5000m",
+      "time": "13:04.85"
+    },
+    {
+      "event": "10000m",
+      "time": "28:04.42"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "1:04:57"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:37.03"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:39.05"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:04.85"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:10"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:31"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "/images/nordas_card.png",
+  "ncaa": false,
+  "club": "x",
+  "country": "Norway",
+  "results": [],
+  "weight": "x",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE/DISTANCE",
+  "id": "narve-nordas",
+  "age": "27"
+}

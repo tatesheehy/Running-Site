@@ -1,0 +1,42 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "waUrl": "https://worldathletics.org/athletes/kenya/phanuel-kipkosgei-koech-15090820",
+  "height": "5'11",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Phanuel Koech",
+  "headlineKey": "x",
+  "flag": "KE",
+  "seasons": "xx",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:46.93"
+    },
+    {
+      "event": "1500m",
+      "time": "3:27.72"
+    },
+    {
+      "event": "3000m",
+      "time": "8:18.01"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:56.08"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "/images/phanuel_card.png",
+  "club": "x",
+  "country": "Kenya",
+  "results": [],
+  "weight": "145",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "phanuel-koech",
+  "age": "19"
+}

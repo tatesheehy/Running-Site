@@ -1,0 +1,77 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "collegeLogo": "/images/oregon_ducks_logo.svg.png",
+  "waUrl": "https://worldathletics.org/athletes/united-states/simeon-birnbaum-15027172",
+  "height": "5'11",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Simeon Birnbaum",
+  "headlineKey": "x",
+  "flag": "US",
+  "seasons": "0",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:44.67"
+    },
+    {
+      "event": "1500m",
+      "time": "3:31.69"
+    },
+    {
+      "event": "3000m",
+      "time": "7:39.65"
+    },
+    {
+      "event": "5000m",
+      "time": "13:19.73"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:22.84"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:22.84"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:47.49"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:39.65"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:45.78"
+    },
+    {
+      "event": "4x800 Metres Relay",
+      "time": "7:14.10"
+    },
+    {
+      "event": "Distance Medley",
+      "time": "9:26.38"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:14.88"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "/images/birnbaum_card.png",
+  "ncaa": true,
+  "club": "x",
+  "country": "United States",
+  "results": [],
+  "college": "Oregon",
+  "weight": "145",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "simeon-birnbaum",
+  "age": "21"
+}

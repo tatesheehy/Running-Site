@@ -1,0 +1,160 @@
+{
+  "photoBackground": "#0a1a0a",
+  "reviewTitle": "Season review",
+  "achievements": [
+    {
+      "icon": "🌍",
+      "count": "2x",
+      "label": "World Champion"
+    },
+    {
+      "icon": "🥈",
+      "count": "1x",
+      "label": "Olympic Silver"
+    },
+    {
+      "icon": "💎",
+      "count": "4x",
+      "label": "Diamond League Win"
+    }
+  ],
+  "traits": [
+    {
+      "emoji": "🦁",
+      "label": "Killer Instinct"
+    },
+    {
+      "emoji": "🏆",
+      "label": "Championship DNA"
+    },
+    {
+      "emoji": "🎖️",
+      "label": "Proven Winner"
+    },
+    {
+      "emoji": "🔄",
+      "label": "Long Stride"
+    }
+  ],
+  "waUrl": "https://worldathletics.org/athletes/kenya/timothy-cheruiyot-14643526",
+  "height": "5'10\"",
+  "questionBody": "Is this a true comeback season or a false dawn? The Oslo Diamond League will be the real test.",
+  "headlineRest": "who knows exactly where he needs to be at the bell and how to finish.",
+  "name": "Timothy Cheruiyot",
+  "headlineKey": "The veteran champion",
+  "flag": "KE",
+  "seasons": "8",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:43.11"
+    },
+    {
+      "event": "1500m",
+      "time": "3:28.28"
+    },
+    {
+      "event": "Mile",
+      "time": "3:47.71"
+    },
+    {
+      "event": "2000m",
+      "time": "5:03.05"
+    },
+    {
+      "event": "3000m",
+      "time": "7:27.24"
+    },
+    {
+      "event": "5000m",
+      "time": "13:16.41"
+    },
+    {
+      "event": "Distance Medley",
+      "time": "9:17.20"
+    }
+  ],
+  "hometown": "Kericho, Kenya",
+  "questionTitle": "Next question",
+  "photo": "/images/timothy_card.png",
+  "club": "Iten Training Camp",
+  "country": "Kenya",
+  "results": [
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "Mile",
+      "time": "3:48.21",
+      "place": "1"
+    },
+    {
+      "date": "JUN 7",
+      "meet": "BAUHAUS-Galan",
+      "event": "1500m",
+      "time": "3:30.67",
+      "place": ""
+    },
+    {
+      "date": "MAY 23",
+      "meet": "Wanda Diamond League Xiamen",
+      "event": "5000m",
+      "time": "13:16.41",
+      "place": ""
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Wanda Diamond League",
+      "event": "3000m",
+      "time": "7:27.24",
+      "place": "4"
+    },
+    {
+      "date": "MAY 9",
+      "meet": "Athletics Kenya Prison Services Track and Field Championships",
+      "event": "800m",
+      "time": "1:50.1h",
+      "place": ""
+    },
+    {
+      "date": "MAY 8",
+      "meet": "Athletics Kenya Prison Services Track and Field Championships",
+      "event": "",
+      "time": "1:56.1h",
+      "place": "1"
+    },
+    {
+      "date": "MAY 8",
+      "meet": "Athletics Kenya Prison Services Track and Field Championships",
+      "event": "",
+      "time": "3:58.6h",
+      "place": "1"
+    },
+    {
+      "date": "MAY 8",
+      "meet": "Athletics Kenya Prison Services Track and Field Championships",
+      "event": "",
+      "time": "3:48.7h",
+      "place": "1"
+    },
+    {
+      "date": "APR 24",
+      "meet": "Kip Keino Classic",
+      "event": "",
+      "time": "3:38.16",
+      "place": "6"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sirikwa Classic Continental Tour Gold",
+      "event": "",
+      "time": "5:54",
+      "place": "3"
+    }
+  ],
+  "weight": "128 lbs",
+  "coach": "Patrick Sang",
+  "reviewBody": "Cheruiyot has shown signs of returning to his dominant best after a couple of injury-interrupted campaigns. His Shanghai win was a reminder that when he's right, he can run with anyone.",
+  "event": "MIDDLE DISTANCE",
+  "id": "timothy-cheruiyot",
+  "age": "28"
+}

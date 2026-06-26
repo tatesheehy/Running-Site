@@ -1,0 +1,180 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "waUrl": "https://worldathletics.org/athletes/united-states/cooper-teare-14757466",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Cooper Teare",
+  "headlineKey": "x",
+  "flag": "US",
+  "seasons": "x",
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:32.16"
+    },
+    {
+      "event": "2000m",
+      "time": "4:54.74"
+    },
+    {
+      "event": "3000m",
+      "time": "7:30.62"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:08.91"
+    },
+    {
+      "event": "5000m",
+      "time": "12:54.72"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:17.76"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:17.76"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:34.35"
+    },
+    {
+      "event": "2000 Metres Short Track",
+      "time": "4:54.74"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:30.62"
+    },
+    {
+      "event": "2 Miles Short Track",
+      "time": "8:08.91"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "12:57.97"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:49.3h"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:25"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:20.29"
+    },
+    {
+      "event": "4xMile Relay",
+      "time": "15:52.05"
+    },
+    {
+      "event": "Mile",
+      "time": "3:50.17"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "/images/teare_card.png",
+  "ncaa": false,
+  "club": "x",
+  "country": "United States",
+  "results": [
+    {
+      "date": "JUN 13",
+      "meet": "USATF LA Grand Prix",
+      "event": "5000m",
+      "time": "13:18.13",
+      "place": ""
+    },
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "1500m",
+      "time": "3:34.23",
+      "place": ""
+    },
+    {
+      "date": "MAY 2",
+      "meet": "USA 5 km Road Running Championships",
+      "event": "",
+      "time": "13:29",
+      "place": "3"
+    },
+    {
+      "date": "APR 18",
+      "meet": "Boston 5K",
+      "event": "5 Kilometres Road",
+      "time": "13:25",
+      "place": ""
+    },
+    {
+      "date": "MAR 1",
+      "meet": "USA Indoor Championships",
+      "event": "",
+      "time": "3:38.87",
+      "place": "7"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "USA Indoor Championships",
+      "event": "",
+      "time": "7:41.62",
+      "place": "7"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "1500 Metres Short Track",
+      "time": "3:34.35",
+      "place": ""
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "Mile sh",
+      "time": "3:50.49",
+      "place": "2"
+    },
+    {
+      "date": "FEB 7",
+      "meet": "Doc Hale Virginia Tech Invitational",
+      "event": "1000 Metres",
+      "time": "2:17.76",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "3000m",
+      "time": "7:38.16",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "2 Miles sh",
+      "time": "8:08.91",
+      "place": "7"
+    },
+    {
+      "date": "JAN 23",
+      "meet": "Hokie Invitational",
+      "event": "2000m sh",
+      "time": "4:54.74",
+      "place": "2"
+    }
+  ],
+  "weight": "x",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE/DISTANCE",
+  "id": "cooper-teare",
+  "age": "26"
+}

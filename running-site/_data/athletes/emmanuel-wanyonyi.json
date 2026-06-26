@@ -1,0 +1,39 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "waUrl": "https://worldathletics.org/athletes/kenya/emmanuel-wanyonyi-14974928",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Emmanuel Wanyonyi",
+  "headlineKey": "x",
+  "flag": "KE",
+  "seasons": "x",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:41.11"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.11"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:52.45"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "/images/wanyonyi_card.png",
+  "ncaa": false,
+  "club": "x",
+  "country": "Kenya",
+  "results": [],
+  "weight": "x",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "emmanuel-wanyonyi",
+  "age": "21"
+}

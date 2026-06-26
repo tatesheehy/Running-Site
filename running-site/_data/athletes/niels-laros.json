@@ -1,0 +1,78 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "waUrl": "https://worldathletics.org/athletes/netherlands/niels-laros-14910035",
+  "height": "6'1",
+  "questionBody": "xx",
+  "headlineRest": "xx",
+  "name": "Niels Laros",
+  "headlineKey": "xx",
+  "flag": "NL",
+  "seasons": "3",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:43.83"
+    },
+    {
+      "event": "1500m",
+      "time": "3:29.20"
+    },
+    {
+      "event": "Mile",
+      "time": "3:45.94"
+    },
+    {
+      "event": "2000m",
+      "time": "4:49.68"
+    },
+    {
+      "event": "3000m",
+      "time": "7:29.49"
+    },
+    {
+      "event": "5000m",
+      "time": "13:10.86"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:47.16"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:14.37"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:49.51"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:29.49"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:26"
+    }
+  ],
+  "hometown": "xx",
+  "questionTitle": "Next question",
+  "photo": "/images/laros_card.png",
+  "club": "xx",
+  "country": "Netherlands",
+  "results": [
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "800m",
+      "time": "1:43.83",
+      "place": ""
+    }
+  ],
+  "weight": "145",
+  "coach": "xx",
+  "reviewBody": "xx",
+  "event": "MIDDLE DISTANCE",
+  "id": "niels-laros",
+  "age": "21"
+}

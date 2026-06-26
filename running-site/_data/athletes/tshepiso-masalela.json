@@ -1,0 +1,99 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "waUrl": "https://worldathletics.org/athletes/botswana/tshepiso-masalela-14754326",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Tshepiso Masalela",
+  "headlineKey": "x",
+  "flag": "BI",
+  "seasons": "x",
+  "prs": [
+    {
+      "event": "400m",
+      "time": "48.21"
+    },
+    {
+      "event": "800m",
+      "time": "1:42.70"
+    },
+    {
+      "event": "1500m",
+      "time": "3:30.71"
+    },
+    {
+      "event": "Mile",
+      "time": "3:52.07"
+    },
+    {
+      "event": "3000m",
+      "time": "7:58.99"
+    },
+    {
+      "event": "5000m",
+      "time": "14:57.29"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:16.13"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:45.56"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:16.64"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "/images/masalela_card.png",
+  "ncaa": false,
+  "club": "x",
+  "country": "Botswana",
+  "results": [
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "Mile",
+      "time": "3:52.07",
+      "place": ""
+    },
+    {
+      "date": "JUN 5",
+      "meet": "Znamensky Memorial",
+      "event": "",
+      "time": "3:37.78",
+      "place": "3"
+    },
+    {
+      "date": "APR 10",
+      "meet": "Cape Miller Continental Tour",
+      "event": "",
+      "time": "3:35.99",
+      "place": "2"
+    },
+    {
+      "date": "APR 5",
+      "meet": "Botswana Championships",
+      "event": "1500m",
+      "time": "3:35.06",
+      "place": "1"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "ORLEN Copernicus Cup",
+      "event": "",
+      "time": "DQ",
+      "place": ""
+    }
+  ],
+  "weight": "x",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "tshepiso-masalela",
+  "age": "27"
+}

@@ -1,0 +1,147 @@
+{
+  "photoBackground": "#0d1b2a",
+  "reviewTitle": "Season review",
+  "achievements": [
+    {
+      "icon": "🥇",
+      "count": "2x",
+      "label": "Olympic Gold"
+    },
+    {
+      "icon": "🌍",
+      "count": "1x",
+      "label": "World Champ"
+    },
+    {
+      "icon": "⚡",
+      "count": "1x",
+      "label": "World Record"
+    }
+  ],
+  "traits": [
+    {
+      "emoji": "⚡",
+      "label": "Explosive Kick"
+    },
+    {
+      "emoji": "🧠",
+      "label": "Tactical IQ"
+    },
+    {
+      "emoji": "🏔️",
+      "label": "Front Runner"
+    },
+    {
+      "emoji": "🔥",
+      "label": "Mental Edge"
+    }
+  ],
+  "waUrl": "https://worldathletics.org/athletes/norway/jakob-ingebrigtsen-14653717",
+  "height": "5'11\"",
+  "questionBody": "Can Ingebrigtsen return to top form? In 2025 his only races outdoors were the 1500m and 5000m at the World Championships in Tokyo where he finished eighth in the prelim and tenth in the final, respectively.",
+  "headlineRest": "on the mend from a debilitating achilles injury.",
+  "name": "Jakob Ingebrigtsen",
+  "headlineKey": "Generational talent",
+  "flag": "NO",
+  "seasons": "8",
+  "prs": [
+    {
+      "event": "400m",
+      "time": "51.03"
+    },
+    {
+      "event": "800m",
+      "time": "1:46.44"
+    },
+    {
+      "event": "1500m",
+      "time": "3:26.73"
+    },
+    {
+      "event": "Mile",
+      "time": "3:43.73"
+    },
+    {
+      "event": "2000m",
+      "time": "4:43.13"
+    },
+    {
+      "event": "3000m",
+      "time": "7:17.55"
+    },
+    {
+      "event": "3000m SC",
+      "time": "8:26.81"
+    },
+    {
+      "event": "2 Miles",
+      "time": "7:54.10"
+    },
+    {
+      "event": "5000m",
+      "time": "12:48.45"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "1:03:13"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:52.01"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:29.63"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:45.14"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:40.32"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:00.71"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:54"
+    }
+  ],
+  "hometown": "Sandnes, Norway",
+  "questionTitle": "Next question",
+  "photo": "/images/jakobcard.png",
+  "club": "Sandnes IL",
+  "country": "Norway",
+  "results": [
+    {
+      "date": "Jun 8",
+      "meet": "Prefontaine Classic",
+      "event": "1500m",
+      "time": "3:26.73",
+      "place": "1"
+    },
+    {
+      "date": "May 25",
+      "meet": "Stockholm Diamond League",
+      "event": "1500m",
+      "time": "3:27.44",
+      "place": "2"
+    },
+    {
+      "date": "May 10",
+      "meet": "Doha Diamond League",
+      "event": "1500m",
+      "time": "3:28.11",
+      "place": "1"
+    }
+  ],
+  "weight": "132 lbs",
+  "coach": "Gjert Ingebrigtsen",
+  "reviewBody": "Ingebrigtsen has yet to race in 2026. The Norwegian may return from racing in mid-July following surgery to remove damaged tissue and scarring from the sheath surrounding his left Achilles tendon in February of this year. ",
+  "event": "MIDDLE DISTANCE + DISTANCE",
+  "id": "jakob-ingebrigtsen",
+  "age": "25"
+}

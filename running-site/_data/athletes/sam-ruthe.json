@@ -1,0 +1,59 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "waUrl": "https://worldathletics.org/athletes/new-zealand/sam-ruthe-15131581",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Sam Ruthe",
+  "headlineKey": "x",
+  "flag": "NZ",
+  "seasons": "x",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:45.86"
+    },
+    {
+      "event": "1500m",
+      "time": "3:33.25"
+    },
+    {
+      "event": "Mile",
+      "time": "3:48.88"
+    },
+    {
+      "event": "3000m",
+      "time": "7:43.16"
+    },
+    {
+      "event": "5000m",
+      "time": "13:40.48"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:33.25"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:48.88"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:43.16"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "/images/ruthe_card.png",
+  "ncaa": false,
+  "club": "x",
+  "country": "New Zealand",
+  "results": [],
+  "weight": "x",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE/DISTANCE",
+  "id": "sam-ruthe",
+  "age": "17"
+}

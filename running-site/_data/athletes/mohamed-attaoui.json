@@ -1,0 +1,82 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "waUrl": "https://worldathletics.org/athletes/spain/mohamed-attaoui-14929058",
+  "height": "5'10",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Mohamed Attaoui",
+  "headlineKey": "x",
+  "flag": "MA",
+  "seasons": "4",
+  "prs": [
+    {
+      "event": "400m",
+      "time": "48.80"
+    },
+    {
+      "event": "800m",
+      "time": "1:42.04"
+    },
+    {
+      "event": "1500m",
+      "time": "3:31.82"
+    },
+    {
+      "event": "Mile",
+      "time": "4:17.0h"
+    },
+    {
+      "event": "3000m",
+      "time": "8:00.33"
+    },
+    {
+      "event": "500 Metres",
+      "time": "1:04.13"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:44.48"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:12.25"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:14.52"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:35.65"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "8:00.33"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:06.59"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:11.34"
+    },
+    {
+      "event": "4x400 Metres Relay Short Track",
+      "time": "3:16.42"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "/images/attaoui_card.png",
+  "club": "x",
+  "country": "Morocco",
+  "results": [],
+  "weight": "145",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "mohamed-attaoui",
+  "age": "24"
+}

@@ -1,0 +1,98 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "waUrl": "https://worldathletics.org/athletes/france/azeddine-habz-14640588",
+  "height": "6'1",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Azeddine Habz",
+  "headlineKey": "x",
+  "flag": "FR",
+  "seasons": "10",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:43.79"
+    },
+    {
+      "event": "1500m",
+      "time": "3:27.49"
+    },
+    {
+      "event": "Mile",
+      "time": "3:46.65"
+    },
+    {
+      "event": "2000m",
+      "time": "4:57.22"
+    },
+    {
+      "event": "3000m",
+      "time": "7:31.50"
+    },
+    {
+      "event": "5000m",
+      "time": "13:38.00"
+    },
+    {
+      "event": "10000m",
+      "time": "30:50.81"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "1:04:53"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:46.85"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:22.34"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:32.24"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:47.56"
+    },
+    {
+      "event": "2000 Metres Short Track",
+      "time": "4:57.22"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:31.50"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:50.5h"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:43"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:43"
+    },
+    {
+      "event": "4x800 Metres Relay",
+      "time": "7:37.44"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "/images/habz_card.png",
+  "club": "x",
+  "country": "France",
+  "results": [],
+  "weight": "155",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "azeddine-habz",
+  "age": "32"
+}

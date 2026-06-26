@@ -1,0 +1,150 @@
+{
+  "photoBackground": "#0a0a1a",
+  "reviewTitle": "Season review",
+  "achievements": [
+    {
+      "icon": "🌍",
+      "count": "1x",
+      "label": "World Champion"
+    },
+    {
+      "icon": "🥈",
+      "count": "1x",
+      "label": "Olympic Silver"
+    },
+    {
+      "icon": "💎",
+      "count": "2x",
+      "label": "DL Champion"
+    }
+  ],
+  "traits": [
+    {
+      "emoji": "💪",
+      "label": "Raw Strength"
+    },
+    {
+      "emoji": "🏃",
+      "label": "Mid-Race Surge"
+    },
+    {
+      "emoji": "🧠",
+      "label": "Race Savvy"
+    },
+    {
+      "emoji": "🏋️",
+      "label": "Physical Power"
+    }
+  ],
+  "waUrl": "https://worldathletics.org/athletes/great-britain-ni/josh-kerr-14533464",
+  "height": "6'1\"",
+  "questionBody": "Can Kerr position himself for another world title? His head-to-head with Hocker and Ingebrigtsen will be the defining series of the season.",
+  "headlineRest": "who turns middle distance into a strength competition and usually wins.",
+  "name": "Josh Kerr",
+  "headlineKey": "The power runner",
+  "flag": "GB",
+  "seasons": "6",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:44.60"
+    },
+    {
+      "event": "1500m",
+      "time": "3:27.79"
+    },
+    {
+      "event": "Mile",
+      "time": "3:45.34"
+    },
+    {
+      "event": "3000m",
+      "time": "7:30.14"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:00.67"
+    },
+    {
+      "event": "5000m",
+      "time": "13:23.78"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:46.64"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:17.60"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:32.86"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:48.87"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:30.14"
+    },
+    {
+      "event": "2 Miles Short Track",
+      "time": "8:00.67"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:05.0h"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:44.3h"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:33.41"
+    }
+  ],
+  "hometown": "Edinburgh, Scotland",
+  "questionTitle": "Next question",
+  "photo": "/images/kerrcard.png",
+  "club": "Adidas",
+  "country": "Great Britain",
+  "results": [
+    {
+      "date": "JUN 14",
+      "meet": "USATF LA Grand Prix",
+      "event": "",
+      "time": "1:45.46",
+      "place": "4"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "800m",
+      "time": "1:44.60",
+      "place": ""
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "3000 Metres Short Track",
+      "time": "7:35.56",
+      "place": "1"
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "2 Miles sh",
+      "time": "8:07.68",
+      "place": "2"
+    }
+  ],
+  "weight": "150 lbs",
+  "coach": "Gary Lough",
+  "reviewBody": "Kerr continues to be one of the most physically imposing presences in the 1500m field. His ability to surge mid-race and break the competition is unmatched.",
+  "event": "MIDDLE DISTANCE",
+  "id": "josh-kerr",
+  "age": "26"
+}

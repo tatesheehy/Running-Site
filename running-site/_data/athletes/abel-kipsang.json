@@ -1,0 +1,71 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "waUrl": "https://worldathletics.org/athletes/kenya/abel-kipsang-14909437",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Abel Kipsang",
+  "headlineKey": "x",
+  "flag": "KE",
+  "seasons": "x",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:45.14"
+    },
+    {
+      "event": "800m",
+      "time": "1:44.6h"
+    },
+    {
+      "event": "1500m",
+      "time": "3:29.11"
+    },
+    {
+      "event": "Mile",
+      "time": "3:50.87"
+    },
+    {
+      "event": "2000m",
+      "time": "4:50.68"
+    },
+    {
+      "event": "3000m",
+      "time": "7:42.21"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:33.36"
+    },
+    {
+      "event": "2000 Metres Short Track",
+      "time": "4:57.21"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:38"
+    },
+    {
+      "event": "4x100 Metres Relay",
+      "time": "41.28"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:10.54"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "/images/abelkipsang_card.png",
+  "ncaa": false,
+  "club": "x",
+  "country": "Kenya",
+  "results": [],
+  "weight": "x",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "abel-kipsang",
+  "age": "29"
+}

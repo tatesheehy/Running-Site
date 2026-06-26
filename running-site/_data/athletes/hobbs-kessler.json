@@ -1,0 +1,41 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "height": "5'10",
+  "questionBody": "x",
+  "headlineRest": "who is now all grown up and trying to prove his 2024 campaign was no fluke. ",
+  "name": "Hobbs Kessler",
+  "headlineKey": "American wunderkid",
+  "flag": "US",
+  "seasons": "4",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:43.64"
+    },
+    {
+      "event": "1500m",
+      "time": "3:29.45"
+    },
+    {
+      "event": "Mile",
+      "time": "3:46.90"
+    },
+    {
+      "event": "2000m",
+      "time": "4:48.79"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "/images/hobbs_card.png",
+  "club": "x",
+  "country": "United States",
+  "results": [],
+  "weight": "140",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "hobbs-kessler",
+  "age": "23"
+}

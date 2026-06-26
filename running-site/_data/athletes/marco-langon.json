@@ -1,0 +1,44 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "collegeLogo": "/images/villanova_wildcats_logo.svg.png",
+  "height": "5'9",
+  "questionBody": "x",
+  "headlineRest": ".",
+  "name": "Marco Langon",
+  "headlineKey": "Unapologetically himself",
+  "flag": "US",
+  "seasons": "0",
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:32.79"
+    },
+    {
+      "event": "Mile",
+      "time": "3:54.59"
+    },
+    {
+      "event": "3000m",
+      "time": "7:34.00"
+    },
+    {
+      "event": "5000m",
+      "time": "13:05.21"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "/images/langon_card.png",
+  "ncaa": true,
+  "club": "x",
+  "country": "United States",
+  "results": [],
+  "college": "Villanova",
+  "weight": "145",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "DISTANCE",
+  "id": "marco-langon",
+  "age": "21"
+}

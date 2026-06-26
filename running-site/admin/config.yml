@@ -60,127 +60,114 @@ collections:
 
   # ── ATHLETES ─────────────────────────────────────────────
   - name: athletes
-    label: "Athletes (profiles only)"
-    files:
-      - name: athletes
-        label: "Athletes — Profile Cards"
-        file: running-site/_data/athletes.json
+    label: Athletes
+    label_singular: Athlete
+    folder: running-site/_data/athletes
+    create: true
+    slug: "{{id}}"
+    identifier_field: name
+    extension: json
+    format: json
+    summary: "{{name}} ({{country}})"
+    fields:
+      - { label: "Full Name", name: name, widget: string }
+      - { label: "Unique ID", name: id, widget: string, hint: "e.g. jakob-ingebrigtsen (lowercase, hyphens, no spaces)" }
+      - { label: "Country", name: country, widget: string }
+      - label: "Flag"
+        name: flag
+        widget: select
+        options:
+          - { label: "Argentina (AR)", value: "AR" }
+          - { label: "Australia (AU)", value: "AU" }
+          - { label: "Austria (AT)", value: "AT" }
+          - { label: "Bahrain (BH)", value: "BH" }
+          - { label: "Belgium (BE)", value: "BE" }
+          - { label: "Brazil (BR)", value: "BR" }
+          - { label: "Burundi (BI)", value: "BI" }
+          - { label: "Cameroon (CM)", value: "CM" }
+          - { label: "Canada (CA)", value: "CA" }
+          - { label: "Chile (CL)", value: "CL" }
+          - { label: "China (CN)", value: "CN" }
+          - { label: "Colombia (CO)", value: "CO" }
+          - { label: "Czech Republic (CZ)", value: "CZ" }
+          - { label: "Denmark (DK)", value: "DK" }
+          - { label: "Egypt (EG)", value: "EG" }
+          - { label: "Eritrea (ER)", value: "ER" }
+          - { label: "Ethiopia (ET)", value: "ET" }
+          - { label: "Finland (FI)", value: "FI" }
+          - { label: "France (FR)", value: "FR" }
+          - { label: "Georgia (GE)", value: "GE" }
+          - { label: "Germany (DE)", value: "DE" }
+          - { label: "Ghana (GH)", value: "GH" }
+          - { label: "Great Britain (GB)", value: "GB" }
+          - { label: "India (IN)", value: "IN" }
+          - { label: "Ireland (IE)", value: "IE" }
+          - { label: "Italy (IT)", value: "IT" }
+          - { label: "Jamaica (JM)", value: "JM" }
+          - { label: "Japan (JP)", value: "JP" }
+          - { label: "Kenya (KE)", value: "KE" }
+          - { label: "Mexico (MX)", value: "MX" }
+          - { label: "Morocco (MA)", value: "MA" }
+          - { label: "Netherlands (NL)", value: "NL" }
+          - { label: "New Zealand (NZ)", value: "NZ" }
+          - { label: "Nigeria (NG)", value: "NG" }
+          - { label: "Northern Ireland (NIR)", value: "NIR" }
+          - { label: "Norway (NO)", value: "NO" }
+          - { label: "Poland (PL)", value: "PL" }
+          - { label: "Portugal (PT)", value: "PT" }
+          - { label: "Qatar (QA)", value: "QA" }
+          - { label: "Rwanda (RW)", value: "RW" }
+          - { label: "Scotland (SCT)", value: "SCT" }
+          - { label: "Senegal (SN)", value: "SN" }
+          - { label: "South Africa (ZA)", value: "ZA" }
+          - { label: "South Korea (KR)", value: "KR" }
+          - { label: "Spain (ES)", value: "ES" }
+          - { label: "Sweden (SE)", value: "SE" }
+          - { label: "Switzerland (CH)", value: "CH" }
+          - { label: "Tanzania (TZ)", value: "TZ" }
+          - { label: "Turkey (TR)", value: "TR" }
+          - { label: "Uganda (UG)", value: "UG" }
+          - { label: "United States (US)", value: "US" }
+          - { label: "Wales (WAL)", value: "WAL" }
+      - { label: "World Athletics URL", name: waUrl, widget: string, required: false, hint: "e.g. https://worldathletics.org/athletes/norway/jakob-ingebrigtsen-14528596 — used for auto daily sync" }
+      - { label: "Photo", name: photo, widget: image, required: false, default: "" }
+      - { label: "Photo BG Color", name: photoBackground, widget: string, default: "#111111", hint: "Dark hex color, e.g. #0d1b2a" }
+      - { label: "Event", name: event, widget: string, hint: "e.g. MIDDLE DISTANCE" }
+      - { label: "Age", name: age, widget: string }
+      - { label: "Height", name: height, widget: string }
+      - { label: "Weight", name: weight, widget: string }
+      - { label: "Pro Seasons", name: seasons, widget: string }
+      - { label: "Club", name: club, widget: string }
+      - { label: "Coach", name: coach, widget: string }
+      - { label: "Hometown", name: hometown, widget: string }
+      - { label: "NCAA Athlete", name: ncaa, widget: boolean, default: false, required: false }
+      - { label: "College", name: college, widget: string, required: false, hint: "e.g. University of Oregon" }
+      - { label: "College Logo", name: collegeLogo, widget: image, required: false }
+      - { name: prs, label: "Personal Records", widget: wa-prs }
+      - { name: results, label: "Season Results", widget: wa-results, required: false }
+      - name: achievements
+        label: Achievements
+        widget: list
+        minimize_collapsed: true
+        summary: "{{icon}} {{count}} {{label}}"
         fields:
-          - name: items
-            label: "Athletes — ⚠️ Adding here only creates the profile card. To show an athlete in the rankings table, ALSO add them under Rankings → the event → Rankings rows."
-            label_singular: Athlete
-            widget: list
-            fields:
-              - { label: "Full Name", name: name, widget: string }
-              - { label: "Unique ID", name: id, widget: string, hint: "e.g. jakob-ingebrigtsen (lowercase, hyphens, no spaces)" }
-              - { label: "Country", name: country, widget: string }
-              - label: "Flag"
-                name: flag
-                widget: select
-                options:
-                  - { label: "Argentina (AR)", value: "AR" }
-                  - { label: "Australia (AU)", value: "AU" }
-                  - { label: "Austria (AT)", value: "AT" }
-                  - { label: "Bahrain (BH)", value: "BH" }
-                  - { label: "Belgium (BE)", value: "BE" }
-                  - { label: "Brazil (BR)", value: "BR" }
-                  - { label: "Burundi (BI)", value: "BI" }
-                  - { label: "Cameroon (CM)", value: "CM" }
-                  - { label: "Canada (CA)", value: "CA" }
-                  - { label: "Chile (CL)", value: "CL" }
-                  - { label: "China (CN)", value: "CN" }
-                  - { label: "Colombia (CO)", value: "CO" }
-                  - { label: "Czech Republic (CZ)", value: "CZ" }
-                  - { label: "Denmark (DK)", value: "DK" }
-                  - { label: "Egypt (EG)", value: "EG" }
-                  - { label: "Eritrea (ER)", value: "ER" }
-                  - { label: "Ethiopia (ET)", value: "ET" }
-                  - { label: "Finland (FI)", value: "FI" }
-                  - { label: "France (FR)", value: "FR" }
-                  - { label: "Georgia (GE)", value: "GE" }
-                  - { label: "Germany (DE)", value: "DE" }
-                  - { label: "Ghana (GH)", value: "GH" }
-                  - { label: "Great Britain (GB)", value: "GB" }
-                  - { label: "India (IN)", value: "IN" }
-                  - { label: "Ireland (IE)", value: "IE" }
-                  - { label: "Italy (IT)", value: "IT" }
-                  - { label: "Jamaica (JM)", value: "JM" }
-                  - { label: "Japan (JP)", value: "JP" }
-                  - { label: "Kenya (KE)", value: "KE" }
-                  - { label: "Mexico (MX)", value: "MX" }
-                  - { label: "Morocco (MA)", value: "MA" }
-                  - { label: "Netherlands (NL)", value: "NL" }
-                  - { label: "New Zealand (NZ)", value: "NZ" }
-                  - { label: "Nigeria (NG)", value: "NG" }
-                  - { label: "Northern Ireland (NIR)", value: "NIR" }
-                  - { label: "Norway (NO)", value: "NO" }
-                  - { label: "Poland (PL)", value: "PL" }
-                  - { label: "Portugal (PT)", value: "PT" }
-                  - { label: "Qatar (QA)", value: "QA" }
-                  - { label: "Rwanda (RW)", value: "RW" }
-                  - { label: "Scotland (SCT)", value: "SCT" }
-                  - { label: "Senegal (SN)", value: "SN" }
-                  - { label: "South Africa (ZA)", value: "ZA" }
-                  - { label: "South Korea (KR)", value: "KR" }
-                  - { label: "Spain (ES)", value: "ES" }
-                  - { label: "Sweden (SE)", value: "SE" }
-                  - { label: "Switzerland (CH)", value: "CH" }
-                  - { label: "Tanzania (TZ)", value: "TZ" }
-                  - { label: "Turkey (TR)", value: "TR" }
-                  - { label: "Uganda (UG)", value: "UG" }
-                  - { label: "United States (US)", value: "US" }
-                  - { label: "Wales (WAL)", value: "WAL" }
-              - { label: "World Athletics URL", name: waUrl, widget: string, required: false, hint: "e.g. https://worldathletics.org/athletes/norway/jakob-ingebrigtsen-14528596 — used for auto daily sync" }
-              - { label: "Photo", name: photo, widget: image, required: false, default: "" }
-              - { label: "Photo BG Color", name: photoBackground, widget: string, default: "#111111", hint: "Dark hex color, e.g. #0d1b2a" }
-              - { label: "Event", name: event, widget: string, hint: "e.g. MIDDLE DISTANCE" }
-              - { label: "Age", name: age, widget: string }
-              - { label: "Height", name: height, widget: string }
-              - { label: "Weight", name: weight, widget: string }
-              - { label: "Pro Seasons", name: seasons, widget: string }
-              - { label: "Club", name: club, widget: string }
-              - { label: "Coach", name: coach, widget: string }
-              - { label: "Hometown", name: hometown, widget: string }
-
-              - { label: "NCAA Athlete", name: ncaa, widget: boolean, default: false, required: false }
-              - { label: "College", name: college, widget: string, required: false, hint: "e.g. University of Oregon" }
-              - { label: "College Logo", name: collegeLogo, widget: image, required: false }
-
-              - name: prs
-                label: "Personal Records"
-                widget: wa-prs
-
-              - name: results
-                label: "Season Results"
-                widget: wa-results
-                required: false
-
-              - name: achievements
-                label: Achievements
-                widget: list
-                minimize_collapsed: true
-                summary: "{{icon}} {{count}} {{label}}"
-                fields:
-                  - { label: "Icon (emoji)", name: icon, widget: string }
-                  - { label: "Count", name: count, widget: string, hint: "e.g. 2x" }
-                  - { label: "Label", name: label, widget: string }
-
-              - name: traits
-                label: Trait Badges
-                widget: list
-                minimize_collapsed: true
-                summary: "{{emoji}} {{label}}"
-                fields:
-                  - { label: "Emoji", name: emoji, widget: string }
-                  - { label: "Label", name: label, widget: string }
-
-              - { label: "Headline (bold)", name: headlineKey, widget: string }
-              - { label: "Headline (gray)", name: headlineRest, widget: string }
-
-              - { label: "Review Title", name: reviewTitle, widget: string, default: "Season review", hint: "Usually 'Season review' — only change if needed" }
-              - { label: "Season Review", name: reviewBody, widget: text }
-              - { label: "Question Title", name: questionTitle, widget: string, default: "Next question", hint: "Usually 'Next question' — only change if needed" }
-              - { label: "Next Question", name: questionBody, widget: text }
+          - { label: "Icon (emoji)", name: icon, widget: string }
+          - { label: "Count", name: count, widget: string, hint: "e.g. 2x" }
+          - { label: "Label", name: label, widget: string }
+      - name: traits
+        label: Trait Badges
+        widget: list
+        minimize_collapsed: true
+        summary: "{{emoji}} {{label}}"
+        fields:
+          - { label: "Emoji", name: emoji, widget: string }
+          - { label: "Label", name: label, widget: string }
+      - { label: "Headline (bold)", name: headlineKey, widget: string }
+      - { label: "Headline (gray)", name: headlineRest, widget: string }
+      - { label: "Review Title", name: reviewTitle, widget: string, default: "Season review", hint: "Usually 'Season review' — only change if needed" }
+      - { label: "Season Review", name: reviewBody, widget: text }
+      - { label: "Question Title", name: questionTitle, widget: string, default: "Next question", hint: "Usually 'Next question' — only change if needed" }
+      - { label: "Next Question", name: questionBody, widget: text }
 
   # ── RANKINGS ─────────────────────────────────────────────
   - name: rankings

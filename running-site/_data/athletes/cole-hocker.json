@@ -1,0 +1,201 @@
+{
+  "photoBackground": "#1a0a0a",
+  "reviewTitle": "Season review",
+  "achievements": [
+    {
+      "icon": "🥇",
+      "count": "1x",
+      "label": "Olympic Gold"
+    },
+    {
+      "icon": "🎓",
+      "count": "3x",
+      "label": "NCAA Champion"
+    },
+    {
+      "icon": "US",
+      "count": "1x",
+      "label": "American Record"
+    }
+  ],
+  "traits": [
+    {
+      "emoji": "🚀",
+      "label": "Devastating Kick"
+    },
+    {
+      "emoji": "🧘",
+      "label": "Race Patience"
+    },
+    {
+      "emoji": "📐",
+      "label": "Perfect Form"
+    },
+    {
+      "emoji": "🌟",
+      "label": "Rising Star"
+    }
+  ],
+  "waUrl": "https://worldathletics.org/athletes/united-states/cole-hocker-14905834",
+  "height": "6'0\"",
+  "questionBody": "Is this the year Hocker runs a sub-3:45? The talent is there. The question is whether he can find a race with the right pacemakers.",
+  "headlineRest": "who has the kick to beat anyone in the world on the right day.",
+  "name": "Cole Hocker",
+  "headlineKey": "America's next great miler",
+  "flag": "US",
+  "seasons": "4",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:45.13"
+    },
+    {
+      "event": "1500m",
+      "time": "3:27.65"
+    },
+    {
+      "event": "Mile",
+      "time": "3:45.94"
+    },
+    {
+      "event": "2000m",
+      "time": "4:52.92"
+    },
+    {
+      "event": "3000m",
+      "time": "7:23.14"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:05.70"
+    },
+    {
+      "event": "5000m",
+      "time": "12:57.82"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:16.30"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:16.30"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:30.80"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:45.94"
+    },
+    {
+      "event": "2000 Metres Short Track",
+      "time": "4:52.92"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:23.14"
+    },
+    {
+      "event": "2 Miles Short Track",
+      "time": "8:05.70"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "12:57.82"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:08.0h"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:20.29"
+    },
+    {
+      "event": "Distance Medley",
+      "time": "9:58.91"
+    },
+    {
+      "event": "4xMile Relay",
+      "time": "15:52.05"
+    }
+  ],
+  "hometown": "Carmel, Indiana",
+  "questionTitle": "Next question",
+  "photo": "/images/hockercard.png",
+  "club": "Nike",
+  "country": "United States",
+  "results": [
+    {
+      "date": "JUN 14",
+      "meet": "USATF LA Grand Prix",
+      "event": "",
+      "time": "7:37.77",
+      "place": "2"
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "3000 Metres Short Track",
+      "time": "7:35.70",
+      "place": "2"
+    },
+    {
+      "date": "MAR 1",
+      "meet": "USA Indoor Championships",
+      "event": "",
+      "time": "3:38.08",
+      "place": "5"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "USA Indoor Championships",
+      "event": "3000 Metres Short Track",
+      "time": "7:39.25",
+      "place": "1"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "1500m",
+      "time": "3:30.80",
+      "place": ""
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "Mile sh",
+      "time": "3:45.94",
+      "place": "1"
+    },
+    {
+      "date": "FEB 7",
+      "meet": "Doc Hale Virginia Tech Invitational",
+      "event": "1000 Metres",
+      "time": "2:16.30",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "2 Miles sh",
+      "time": "8:07.31",
+      "place": "1"
+    },
+    {
+      "date": "JAN 23",
+      "meet": "Hokie Invitational",
+      "event": "2000m sh",
+      "time": "4:52.92",
+      "place": "1"
+    }
+  ],
+  "weight": "145 lbs",
+  "coach": "Jerry Schumacher",
+  "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
+  "event": "MIDDLE DISTANCE + DISTANCE",
+  "id": "cole-hocker",
+  "age": "23"
+}

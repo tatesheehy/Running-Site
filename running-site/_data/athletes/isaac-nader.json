@@ -1,0 +1,187 @@
+{
+  "photoBackground": "#0a1a0d",
+  "reviewTitle": "Season review",
+  "achievements": [
+    {
+      "icon": "🏟️",
+      "count": "2x",
+      "label": "World Indoor Champ"
+    },
+    {
+      "icon": "💎",
+      "count": "3x",
+      "label": "Diamond League Win"
+    },
+    {
+      "icon": "📋",
+      "count": "0x",
+      "label": "Olympic Gold"
+    }
+  ],
+  "traits": [
+    {
+      "emoji": "💨",
+      "label": "Pure Speed"
+    },
+    {
+      "emoji": "🎯",
+      "label": "Consistency"
+    },
+    {
+      "emoji": "📈",
+      "label": "Indoor King"
+    },
+    {
+      "emoji": "🤫",
+      "label": "Quiet Assassin"
+    }
+  ],
+  "waUrl": "https://worldathletics.org/athletes/portugal/isaac-nader-14756630",
+  "height": "5'5\"",
+  "questionBody": "Can he find the gear to challenge Ingebrigtsen head-to-head? Their encounters so far have gone to the Norwegian, but the gap is narrowing.",
+  "headlineRest": "who keeps showing up at the finish line when it matters most.",
+  "name": "Isaac Nader",
+  "headlineKey": "The quiet assassin",
+  "flag": "PT",
+  "seasons": "9",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:43.86"
+    },
+    {
+      "event": "1500m",
+      "time": "3:29.37"
+    },
+    {
+      "event": "Mile",
+      "time": "3:48.25"
+    },
+    {
+      "event": "3000m",
+      "time": "7:38.05"
+    },
+    {
+      "event": "10000m",
+      "time": "29:57.34"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:45.05"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:16.39"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:32.44"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:54.17"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:38.05"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:14.0h"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "28:01"
+    }
+  ],
+  "hometown": "Bekoji, Ethiopia",
+  "questionTitle": "Next question",
+  "photo": "/images/nader_card.png",
+  "club": "Nike",
+  "country": "Portugal",
+  "results": [
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "1000 Metres",
+      "time": "2:16.39",
+      "place": ""
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "Mile",
+      "time": "3:50.71",
+      "place": ""
+    },
+    {
+      "date": "JUN 4",
+      "meet": "Golden Gala Pietro Mennea",
+      "event": "800m",
+      "time": "1:44.28",
+      "place": ""
+    },
+    {
+      "date": "MAY 31",
+      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+      "event": "1500m",
+      "time": "3:30.43",
+      "place": "2"
+    },
+    {
+      "date": "MAR 22",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1500 Metres Short Track",
+      "time": "3:40.06",
+      "place": "2"
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1500 Metres Short Track",
+      "time": "3:43.58",
+      "place": "18"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "ORLEN Copernicus Cup",
+      "event": "800m sh",
+      "time": "1:45.05",
+      "place": "5"
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "1500m sh",
+      "time": "3:32.44",
+      "place": "1"
+    },
+    {
+      "date": "FEB 15",
+      "meet": "Campeonatos Nacionais de Clubes 1ª e 2ª Divisão",
+      "event": "",
+      "time": "8:11.30",
+      "place": "1"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Campeonatos Nacionais de Clubes 1ª e 2ª Divisão",
+      "event": "",
+      "time": "4:04.97",
+      "place": "1"
+    },
+    {
+      "date": "FEB 3",
+      "meet": "Czech Indoor Gala",
+      "event": "3000m",
+      "time": "7:38.05",
+      "place": ""
+    }
+  ],
+  "weight": "115 lbs",
+  "coach": "Self-coached",
+  "reviewBody": "Kejelcha has been a model of consistency in 2026. While he hasn't grabbed the headlines, his results speak for themselves — four top-3 finishes in Diamond League events and a season best of 3:45.12.",
+  "event": "MIDDLE DISTANCE",
+  "id": "isaac-nader",
+  "age": "27"
+}

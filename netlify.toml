@@ -1,4 +1,5 @@
 [build]
+  command = "node scripts/build-athletes.js"
   publish = "running-site"
   functions = "netlify/functions"
 
