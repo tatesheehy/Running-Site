@@ -2375,15 +2375,15 @@ footer {
 .rankings-archive-link {
   font-size: 13px;
   font-weight: 600;
-  color: var(--muted);
+  color: var(--text);
   text-decoration: none;
   padding: 9px 14px;
-  border: 1px solid var(--border);
+  border: 1.5px solid var(--text);
   border-radius: 7px;
-  transition: color 0.15s, border-color 0.15s;
+  transition: background 0.15s, color 0.15s;
   white-space: nowrap;
 }
-.rankings-archive-link:hover { color: var(--text); border-color: #bbb; }
+.rankings-archive-link:hover { background: var(--text); color: var(--bg); }
 
 /* ── RANKINGS ARCHIVE — VINTAGE ───────────────────────── */
 
