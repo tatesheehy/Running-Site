@@ -11,17 +11,18 @@ function getParam(name) { return new URLSearchParams(window.location.search).get
 function goTo(url) { window.location.href = url; }
 
 // ── DATA LOADING ──────────────────────────────────────────
-let ARTICLES, ATHLETES, RANKINGS, RANKINGS_EVENTS, RANKINGS_CRITERIA, RANKINGS_YEAR, RANKINGS_ARCHIVE, SITE;
+let ARTICLES, ATHLETES, RANKINGS, RANKINGS_EVENTS, RANKINGS_CRITERIA, RANKINGS_YEAR, RANKINGS_ARCHIVE, RANKINGS_WEEKS, SITE;
 
 async function loadData() {
   try {
     const noCache = { cache: 'no-store' };
-    const [articlesData, athletesData, rankingsData, siteData, archiveData] = await Promise.all([
+    const [articlesData, athletesData, rankingsData, siteData, archiveData, weeksData] = await Promise.all([
       fetch('/_data/articles.json', noCache).then(r => r.json()),
       fetch('/_data/athletes.json', noCache).then(r => r.json()),
       fetch('/_data/rankings.json', noCache).then(r => r.json()),
       fetch('/_data/site.json', noCache).then(r => r.json()),
       fetch('/_data/rankings-archive.json', noCache).then(r => r.json()).catch(() => ({ seasons: [] })),
+      fetch('/_data/rankings-weeks.json', noCache).then(r => r.json()).catch(() => ({ weeks: [] })),
     ]);
 
     ARTICLES = articlesData.items || [];
@@ -42,6 +43,8 @@ async function loadData() {
 
     RANKINGS_YEAR = rankingsData.year || '';
     RANKINGS_ARCHIVE = archiveData.seasons || [];
+    RANKINGS_WEEKS = {};
+    (weeksData.weeks || []).forEach(w => { if (w.id) RANKINGS_WEEKS[w.id] = w; });
     SITE = siteData;
 
     document.documentElement.style.setProperty('--accent', SITE.accentColor || '#E8500A');
@@ -884,11 +887,11 @@ function buildRankingsPage() {
   const viewParam  = getParam('view');
   const weekParam  = getParam('week');
 
-  if (viewParam === 'archive' && yearParam && eventParam && weekParam !== null) {
+  if (viewParam === 'archive' && yearParam && eventParam && weekParam) {
     const eventName = decodeURIComponent(eventParam);
     buildRankingsDetail(eventName, {
-      archiveYear:    yearParam,
-      archiveWeekIdx: parseInt(weekParam, 10),
+      archiveYear:   yearParam,
+      archiveWeekId: weekParam,
       backUrl:  `rankings.html?view=archive&year=${encodeURIComponent(yearParam)}&event=${encodeURIComponent(eventParam)}`,
       backLabel: eventName,
     });
@@ -986,7 +989,7 @@ function buildArchiveYearHub(year) {
   const events = season.events || [];
 
   const cardsHtml = events.length ? events.map((ev) => {
-    const weekCount = (ev.weeks || []).length;
+    const weekCount = (ev.weekIds || []).length;
     const nameCls = ev.name.length > 6 ? 'archive-season-year archive-season-year--event' : 'archive-season-year';
     return `
       <div class="archive-season-card" onclick="goTo('rankings.html?view=archive&year=${encodeURIComponent(year)}&event=${encodeURIComponent(ev.name)}')">
@@ -1013,14 +1016,15 @@ function buildArchiveWeekHub(year, eventName) {
   const ev = season ? (season.events || []).find(e => e.name === eventName) : null;
   if (!ev) { goTo(`rankings.html?view=archive&year=${encodeURIComponent(year)}`); return; }
 
-  const weeks     = ev.weeks || [];
+  const weekIds  = ev.weekIds || [];
   const yearLabel = season.label || `${year} Season`;
 
-  const cardsHtml = weeks.length ? weeks.map((w, i) => {
-    const count = (w.rows || []).length;
-    const wLabel = w.label || `Week ${i + 1}`;
+  const cardsHtml = weekIds.length ? weekIds.map((wid) => {
+    const w = (RANKINGS_WEEKS || {})[wid] || {};
+    const count  = (w.rows || []).length;
+    const wLabel = w.label || wid;
     return `
-      <div class="archive-season-card" onclick="goTo('rankings.html?view=archive&year=${encodeURIComponent(year)}&event=${encodeURIComponent(eventName)}&week=${i}')">
+      <div class="archive-season-card" onclick="goTo('rankings.html?view=archive&year=${encodeURIComponent(year)}&event=${encodeURIComponent(eventName)}&week=${encodeURIComponent(wid)}')">
         <div class="archive-season-year archive-season-year--week">${wLabel}</div>
         ${w.date ? `<div class="archive-season-label">${w.date}</div>` : '<div class="archive-season-label"></div>'}
         <div class="archive-season-cta">${count ? `${count} athletes` : 'No data'} &rarr;</div>
@@ -1152,18 +1156,18 @@ function buildCountdownPill() {
 
 function buildRankingsDetail(eventName, opts = {}) {
   const {
-    archiveYear    = null,
-    archiveWeekIdx = null,
-    backUrl        = 'rankings.html',
-    backLabel      = 'All Rankings',
+    archiveYear   = null,
+    archiveWeekId = null,
+    backUrl       = 'rankings.html',
+    backLabel     = 'All Rankings',
   } = opts;
 
   let ev, weekObj;
   if (archiveYear) {
     const season = (RANKINGS_ARCHIVE || []).find(s => s.year === archiveYear);
     ev = season ? (season.events || []).find(e => e.name === eventName) : null;
-    if (archiveWeekIdx !== null && ev && ev.weeks) {
-      weekObj = ev.weeks[archiveWeekIdx] || null;
+    if (archiveWeekId) {
+      weekObj = (RANKINGS_WEEKS || {})[archiveWeekId] || null;
     }
   } else {
     ev = RANKINGS_EVENTS.find(e => e.name === eventName);
