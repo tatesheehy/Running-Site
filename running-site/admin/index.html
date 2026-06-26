@@ -36,10 +36,35 @@
       transition: opacity .15s;
     }
     #wa-tool-btn:hover { opacity: .88; }
+    #archive-btn {
+      position: fixed;
+      bottom: 64px;
+      right: 20px;
+      z-index: 99999;
+      background: #2a1808;
+      color: #f0dfa0;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(0,0,0,.4);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: opacity .15s;
+    }
+    #archive-btn:hover { opacity: .88; }
   </style>
   <a id="wa-tool-btn" href="/admin/wa-lookup.html" target="_blank">
     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
     WA PR Lookup
+  </a>
+  <a id="archive-btn" href="/admin/archive.html" target="_blank">
+    📥 Archive Rankings
   </a>
 </body>
 </html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archive Snapshot — THE SPLITS</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f5f5f5;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 40px 36px;
+      max-width: 480px;
+      width: 100%;
+    }
+    .logo {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 28px;
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #444;
+      margin-bottom: 6px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ddd;
+      border-radius: 7px;
+      font-size: 14px;
+      font-family: inherit;
+      margin-bottom: 20px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    input[type="text"]:focus { border-color: #E8500A; }
+    button {
+      width: 100%;
+      padding: 13px;
+      background: #E8500A;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    button:hover { opacity: 0.88; }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    #status {
+      margin-top: 18px;
+      font-size: 13px;
+      line-height: 1.5;
+      border-radius: 7px;
+      padding: 12px 14px;
+      display: none;
+    }
+    #status.ok  { background: #e9fce9; color: #1a5c1a; display: block; }
+    #status.err { background: #fce9e9; color: #5c1a1a; display: block; }
+    .back {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 13px;
+      color: #888;
+      text-decoration: none;
+    }
+    .back:hover { color: #E8500A; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">THE SPLITS — Admin</div>
+    <h1>📥 Snapshot Rankings to Archive</h1>
+    <p>Copies the current live rankings into the archive as a new week entry. Each event in rankings.json gets a dated snapshot under the current year.</p>
+
+    <label for="weekLabel">Week label (optional)</label>
+    <input type="text" id="weekLabel" placeholder="e.g. June 25, 2026">
+
+    <button id="btn" onclick="doSnapshot()">Archive Current Rankings</button>
+
+    <div id="status"></div>
+    <a class="back" href="/admin/">&larr; Back to CMS</a>
+  </div>
+
+  <script>
+    const inp = document.getElementById('weekLabel');
+    // Pre-fill with today's date
+    const today = new Date();
+    inp.value = today.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+
+    async function doSnapshot() {
+      const btn = document.getElementById('btn');
+      const status = document.getElementById('status');
+      btn.disabled = true;
+      btn.textContent = 'Archiving…';
+      status.className = '';
+      status.style.display = 'none';
+
+      try {
+        const res = await fetch('/.netlify/functions/archive-snapshot', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ weekLabel: inp.value.trim() || null }),
+        });
+        const data = await res.json();
+        if (res.ok && data.success) {
+          status.className = 'ok';
+          const evList = (data.events || []).join(', ') || '(none)';
+          status.textContent = `✓ Archived "${data.label}" for ${data.year}. Events: ${evList}. Changes committed to GitHub — Netlify will redeploy shortly.`;
+        } else {
+          status.className = 'err';
+          status.textContent = `Error: ${data.error || 'Unknown error'}`;
+        }
+      } catch (e) {
+        status.className = 'err';
+        status.textContent = `Network error: ${e.message}`;
+      }
+
+      btn.disabled = false;
+      btn.textContent = 'Archive Current Rankings';
+    }
+  </script>
+</body>
+</html>

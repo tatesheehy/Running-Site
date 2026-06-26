@@ -2483,6 +2483,10 @@ footer {
   font-size: 28px;
   line-height: 1.15;
 }
+.archive-season-year--event {
+  font-size: 34px;
+  line-height: 1.2;
+}
 .archive-season-label {
   font-family: 'Courier New', Courier, monospace;
   font-size: 11px;

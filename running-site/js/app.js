@@ -987,9 +987,10 @@ function buildArchiveYearHub(year) {
 
   const cardsHtml = events.length ? events.map((ev) => {
     const weekCount = (ev.weeks || []).length;
+    const nameCls = ev.name.length > 6 ? 'archive-season-year archive-season-year--event' : 'archive-season-year';
     return `
       <div class="archive-season-card" onclick="goTo('rankings.html?view=archive&year=${encodeURIComponent(year)}&event=${encodeURIComponent(ev.name)}')">
-        <div class="archive-season-year">${ev.name}</div>
+        <div class="${nameCls}">${ev.name}</div>
         <div class="archive-season-label">${ev.description || ''}</div>
         <div class="archive-season-cta">${weekCount ? `${weekCount} week${weekCount !== 1 ? 's' : ''}` : 'No weeks'} &rarr;</div>
       </div>`;
