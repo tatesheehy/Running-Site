@@ -656,6 +656,7 @@ function buildHome() {
       <div class="home-hero-overlay">
         <div class="container">
           <h1 class="home-hero-title">${heroItem.title}</h1>
+          ${heroItem.excerpt ? `<p class="home-hero-excerpt">${heroItem.excerpt}</p>` : ''}
           <div class="home-hero-meta">
             ${heroItem.author ? `By <span class="author">${heroItem.author}</span><span class="sep">·</span>` : ''}${heroItem.date || ''}
             ${heroItem.readTime ? `<span class="sep">·</span>${heroItem.readTime}` : ''}
