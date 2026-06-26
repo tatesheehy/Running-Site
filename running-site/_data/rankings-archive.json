@@ -6,26 +6,20 @@
       "events": [
         {
           "name": "1500m",
-          "rows": [
+          "weeks": [
             {
-              "athleteId": "cole-hocker"
-            },
-            {
-              "athleteId": "niels-laros"
-            },
-            {
-              "athleteId": "josh-kerr"
-            },
-            {
-              "athleteId": "abdel-nader"
-            },
-            {
-              "athleteId": "vincent-ciattei"
-            },
-            {
-              "athleteId": "azeddine-habz"
-            },
-            {}
+              "label": "Week 1",
+              "date": "",
+              "rows": [
+                { "athleteId": "cole-hocker" },
+                { "athleteId": "niels-laros" },
+                { "athleteId": "josh-kerr" },
+                { "athleteId": "abdel-nader" },
+                { "athleteId": "vincent-ciattei" },
+                { "athleteId": "azeddine-habz" }
+              ],
+              "sections": []
+            }
           ]
         }
       ]

@@ -882,13 +882,18 @@ function buildRankingsPage() {
   const eventParam = getParam('event');
   const yearParam  = getParam('year');
   const viewParam  = getParam('view');
+  const weekParam  = getParam('week');
 
-  if (viewParam === 'archive' && yearParam && eventParam) {
-    buildRankingsDetail(decodeURIComponent(eventParam), {
-      archiveYear: yearParam,
-      backUrl: `rankings.html?view=archive&year=${encodeURIComponent(yearParam)}`,
-      backLabel: 'Archive',
+  if (viewParam === 'archive' && yearParam && eventParam && weekParam !== null) {
+    const eventName = decodeURIComponent(eventParam);
+    buildRankingsDetail(eventName, {
+      archiveYear:    yearParam,
+      archiveWeekIdx: parseInt(weekParam, 10),
+      backUrl:  `rankings.html?view=archive&year=${encodeURIComponent(yearParam)}&event=${encodeURIComponent(eventParam)}`,
+      backLabel: eventName,
     });
+  } else if (viewParam === 'archive' && yearParam && eventParam) {
+    buildArchiveWeekHub(yearParam, decodeURIComponent(eventParam));
   } else if (viewParam === 'archive' && yearParam) {
     buildArchiveYearHub(yearParam);
   } else if (viewParam === 'archive') {
@@ -996,6 +1001,37 @@ function buildArchiveYearHub(year) {
         <div class="archive-vintage-header">
           <a href="rankings.html?view=archive" class="rd-back">&larr; Archive</a>
           <h1 class="archive-page-title">${label}</h1>
+        </div>
+        <div class="archive-index-grid">${cardsHtml}</div>
+      </div>
+    </div>`;
+}
+
+function buildArchiveWeekHub(year, eventName) {
+  const season = (RANKINGS_ARCHIVE || []).find(s => s.year === year);
+  const ev = season ? (season.events || []).find(e => e.name === eventName) : null;
+  if (!ev) { goTo(`rankings.html?view=archive&year=${encodeURIComponent(year)}`); return; }
+
+  const weeks     = ev.weeks || [];
+  const yearLabel = season.label || `${year} Season`;
+
+  const cardsHtml = weeks.length ? weeks.map((w, i) => {
+    const count = (w.rows || []).length;
+    const label = w.label || `Week ${i + 1}`;
+    return `
+      <div class="archive-index-card" onclick="goTo('rankings.html?view=archive&year=${encodeURIComponent(year)}&event=${encodeURIComponent(eventName)}&week=${i}')">
+        <div class="archive-index-card-event">${label}</div>
+        ${w.date ? `<div class="archive-index-card-desc">${w.date}</div>` : ''}
+        <div class="archive-index-card-cta">${count ? `${count} athletes` : 'No data'} &rarr;</div>
+      </div>`;
+  }).join('') : `<p class="archive-empty">No weeks added yet.</p>`;
+
+  document.getElementById('main').innerHTML = `
+    <div class="archive-vintage-page">
+      <div class="container">
+        <div class="archive-vintage-header">
+          <a href="rankings.html?view=archive&year=${encodeURIComponent(year)}" class="rd-back">&larr; ${yearLabel}</a>
+          <h1 class="archive-page-title">${eventName}</h1>
         </div>
         <div class="archive-index-grid">${cardsHtml}</div>
       </div>
@@ -1115,20 +1151,25 @@ function buildCountdownPill() {
 
 function buildRankingsDetail(eventName, opts = {}) {
   const {
-    archiveYear = null,
-    backUrl     = 'rankings.html',
-    backLabel   = 'All Rankings',
+    archiveYear    = null,
+    archiveWeekIdx = null,
+    backUrl        = 'rankings.html',
+    backLabel      = 'All Rankings',
   } = opts;
 
-  let ev;
+  let ev, weekObj;
   if (archiveYear) {
     const season = (RANKINGS_ARCHIVE || []).find(s => s.year === archiveYear);
     ev = season ? (season.events || []).find(e => e.name === eventName) : null;
+    if (archiveWeekIdx !== null && ev && ev.weeks) {
+      weekObj = ev.weeks[archiveWeekIdx] || null;
+    }
   } else {
     ev = RANKINGS_EVENTS.find(e => e.name === eventName);
   }
-  const rows     = (ev && ev.rows)     ? ev.rows     : [];
-  const sections = (ev && ev.sections) ? ev.sections : [];
+  const rows     = weekObj ? (weekObj.rows     || []) : ((ev && ev.rows)     || []);
+  const sections = weekObj ? (weekObj.sections || []) : ((ev && ev.sections) || []);
+  const weekLabel = weekObj ? (weekObj.label || null) : null;
   const displayYear = archiveYear || RANKINGS_YEAR;
 
   // Collect unique countries for filter pills
@@ -1202,7 +1243,7 @@ function buildRankingsDetail(eventName, opts = {}) {
             <a href="${backUrl}" class="rd-back">&larr; ${backLabel}</a>
             <div class="rd-header-meta">${displayYear} Season Rankings${archiveYear ? ' <span class="archive-stamp">Archive</span>' : ''}</div>
             <h1 class="rd-header-event">${eventName}</h1>
-            ${ev && ev.description ? `<p class="rd-header-desc">${ev.description}</p>` : ''}
+            ${weekLabel ? `<p class="rd-header-desc">${weekLabel}</p>` : (ev && ev.description ? `<p class="rd-header-desc">${ev.description}</p>` : '')}
             <div class="rd-header-actions">
               ${athleteCount ? `<span class="rd-header-count">${athleteCount} athletes ranked</span>` : ''}
               <button class="h2h-hub-btn rd-h2h-inline" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">⇌ Compare Athletes</button>
