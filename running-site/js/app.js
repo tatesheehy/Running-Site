@@ -1172,8 +1172,10 @@ function buildRankingsDetail(eventName, opts = {}) {
   } else {
     ev = RANKINGS_EVENTS.find(e => e.name === eventName);
   }
-  const rows     = weekObj ? (weekObj.rows     || []) : ((ev && ev.rows)     || []);
-  const sections = weekObj ? (weekObj.sections || []) : ((ev && ev.sections) || []);
+  // If the week exists but has no rows yet, fall back to the current live rankings for that event
+  const liveEv = archiveYear ? RANKINGS_EVENTS.find(e => e.name === eventName) : null;
+  const rows     = (weekObj && (weekObj.rows || []).length)     ? weekObj.rows     : (liveEv ? (liveEv.rows     || []) : ((ev && ev.rows)     || []));
+  const sections = (weekObj && (weekObj.sections || []).length) ? weekObj.sections : (liveEv ? (liveEv.sections || []) : ((ev && ev.sections) || []));
   const weekLabel = weekObj ? (weekObj.label || null) : null;
   const displayYear = archiveYear || RANKINGS_YEAR;
 
