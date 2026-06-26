@@ -53,7 +53,246 @@
   "photo": "/images/myers_card.png",
   "club": "xx",
   "country": "Australia",
-  "results": [],
+  "results": [
+    {
+      "date": "JUN 10",
+      "meet": "Maurie Plant Meet, Lakeside Stadium, Melbourne",
+      "event": "1500 m sh",
+      "time": "3:30.42",
+      "place": "1."
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Split times",
+      "event": "1500 m sh",
+      "time": "3:33.98",
+      "place": "1."
+    },
+    {
+      "date": "JUN 7",
+      "meet": "Maurie Plant Meet, Lakeside Stadium, Melbourne",
+      "event": "1500 m",
+      "time": "1:44.05",
+      "place": "1."
+    },
+    {
+      "date": "MAY 30",
+      "meet": "",
+      "event": "800 m",
+      "time": "1:44.05",
+      "place": ""
+    },
+    {
+      "date": "MAY 30",
+      "meet": "10. PUMA NITRO Lange Laufnacht",
+      "event": "3000 m sh",
+      "time": "7:27.57",
+      "place": ""
+    },
+    {
+      "date": "MAY 30",
+      "meet": "AACT Summer Series Meet Number 8",
+      "event": "800 m",
+      "time": "1:58.10",
+      "place": ""
+    },
+    {
+      "date": "MAY 30",
+      "meet": "Australian Championships",
+      "event": "5000 m",
+      "time": "13:11.66",
+      "place": "1."
+    },
+    {
+      "date": "APR 11",
+      "meet": "10. PUMA NITRO Lange Laufnacht",
+      "event": "3000 m",
+      "time": "7:27.57",
+      "place": ""
+    },
+    {
+      "date": "APR 11",
+      "meet": "Millrose Games",
+      "event": "3000 m",
+      "time": "7:27.57",
+      "place": ""
+    },
+    {
+      "date": "APR 11",
+      "meet": "New Balance Indoor Grand Prix",
+      "event": "3000 m sh",
+      "time": "7:33.12",
+      "place": "5"
+    },
+    {
+      "date": "APR 11",
+      "meet": "World Athletics U20 Championships",
+      "event": "1500 m",
+      "time": "3:40.60",
+      "place": "5"
+    },
+    {
+      "date": "APR 11",
+      "meet": "Millrose Games, Armory Track\\u0026Field Center, New York, NY (i) - Indoor Meeting",
+      "event": "Mile sh",
+      "time": "3:47.57",
+      "place": "1."
+    },
+    {
+      "date": "APR 10",
+      "meet": "10. PUMA NITRO Lange Laufnacht",
+      "event": "5000 m",
+      "time": "13:11.66",
+      "place": ""
+    },
+    {
+      "date": "APR 10",
+      "meet": "AACT Summer Series Meet Number 13",
+      "event": "1500 m sh",
+      "time": "3:46.30",
+      "place": ""
+    },
+    {
+      "date": "APR 10",
+      "meet": "World Athletics U20 Championships",
+      "event": "1500 m",
+      "time": "3:40.60",
+      "place": "31"
+    },
+    {
+      "date": "APR 10",
+      "meet": "10. PUMA NITRO Lange Laufnacht, Carl-Kaufmann-Stadion, Karlsruhe",
+      "event": "800 m",
+      "time": "1:44.05",
+      "place": "1."
+    },
+    {
+      "date": "APR 9",
+      "meet": "10. PUMA NITRO Lange Laufnacht, Carl-Kaufmann-Stadion, Karlsruhe",
+      "event": "800 m",
+      "time": "3:34.39",
+      "place": "1."
+    },
+    {
+      "date": "MAR 28",
+      "meet": "Australian Championships",
+      "event": "1500 m",
+      "time": "3:29.85",
+      "place": "1."
+    },
+    {
+      "date": "FEB 1",
+      "meet": "10. PUMA NITRO Lange Laufnacht",
+      "event": "800 m",
+      "time": "1:44.05",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "10. PUMA NITRO Lange Laufnacht",
+      "event": "1500 m",
+      "time": "3:29.85",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Australian Championships",
+      "event": "1500 m sh",
+      "time": "3:32.78",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "NSW Milers Series",
+      "event": "1500 m sh",
+      "time": "3:29.80",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Albie Thomas Mile",
+      "event": "Mile",
+      "time": "4:07.04",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Prefontaine Classic",
+      "event": "Mile sh",
+      "time": "3:47.48",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Australian Championships, Olympic Park, Sydney",
+      "event": "1500 m sh",
+      "time": "3:39.69",
+      "place": "1."
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games, Armory Track\\u0026Field Center, New York, NY (i) - Split times",
+      "event": "Mile",
+      "time": "3:32.78",
+      "place": "1."
+    },
+    {
+      "date": "JAN 24",
+      "meet": "",
+      "event": "Mile",
+      "time": "3:47.48",
+      "place": ""
+    },
+    {
+      "date": "JAN 24",
+      "meet": "10. PUMA NITRO Lange Laufnacht",
+      "event": "Mile sh",
+      "time": "3:47.48",
+      "place": ""
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Millrose Games",
+      "event": "Mile",
+      "time": "3:47.57",
+      "place": ""
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Millrose Games",
+      "event": "Mile sh",
+      "time": "3:47.57",
+      "place": ""
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Zatopek 10",
+      "event": "3000 m",
+      "time": "8:05.82",
+      "place": ""
+    },
+    {
+      "date": "JAN 24",
+      "meet": "On Track Nights: Zatopek: 10",
+      "event": "3000 m sh",
+      "time": "7:33.12",
+      "place": ""
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Diamond Discipline",
+      "event": "Mile sh",
+      "time": "3:49.81",
+      "place": "1."
+    },
+    {
+      "date": "JAN 16",
+      "meet": "BAUHAUS-Galan, Olympiastadion, Stockholm - Diamond Discipline",
+      "event": "1500 m sh",
+      "time": "3:30.32",
+      "place": "2."
+    }
+  ],
   "weight": "150",
   "coach": "xx",
   "reviewBody": "x",

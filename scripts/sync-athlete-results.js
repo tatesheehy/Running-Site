@@ -9,7 +9,8 @@ const https = require('https');
 
 const ATHLETES_DIR = path.join(__dirname, '../running-site/_data/athletes');
 const FORCE        = process.argv.includes('--force');
-const YEAR         = process.argv[process.argv.indexOf('--year') + 1] || String(new Date().getFullYear());
+const yearIdx      = process.argv.indexOf('--year');
+const YEAR         = yearIdx !== -1 ? process.argv[yearIdx + 1] : String(new Date().getFullYear());
 
 const MONTHS = { JAN:0, FEB:1, MAR:2, APR:3, MAY:4, JUN:5, JUL:6, AUG:7, SEP:8, OCT:9, NOV:10, DEC:11 };
 

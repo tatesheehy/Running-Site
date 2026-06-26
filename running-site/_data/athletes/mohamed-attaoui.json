@@ -72,7 +72,232 @@
   "photo": "/images/attaoui_card.png",
   "club": "x",
   "country": "Morocco",
-  "results": [],
+  "results": [
+    {
+      "date": "JUN 10",
+      "meet": "Spanish Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:45.62",
+      "place": "1."
+    },
+    {
+      "date": "JUN 7",
+      "meet": "Spanish Championships",
+      "event": "800 m sh",
+      "time": "1:45.03",
+      "place": "1."
+    },
+    {
+      "date": "JUN 3",
+      "meet": "",
+      "event": "1000 m",
+      "time": "2:12.25",
+      "place": ""
+    },
+    {
+      "date": "JUN 3",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1000 m",
+      "time": "2:14.52",
+      "place": ""
+    },
+    {
+      "date": "JUN 3",
+      "meet": "IX GP Diputación de Castellón – VI Memorial JA Cansino",
+      "event": "1500 m",
+      "time": "3:39.48",
+      "place": ""
+    },
+    {
+      "date": "JUN 3",
+      "meet": "World Athletics Indoor Championships, Kujawsko-Pomorska Arena, Toruń (i)",
+      "event": "1000 m sh",
+      "time": "1:44.48",
+      "place": "2."
+    },
+    {
+      "date": "MAR 22",
+      "meet": "The XXXIII Olympic Games",
+      "event": "800 m",
+      "time": "1:42.08",
+      "place": "24"
+    },
+    {
+      "date": "MAR 22",
+      "meet": "Spanish Indoor Championships, Velódromo Luis Puig, Valencia (i)",
+      "event": "1000 m sh",
+      "time": "1:48.21",
+      "place": "1."
+    },
+    {
+      "date": "MAR 21",
+      "meet": "",
+      "event": "500 m",
+      "time": "48.80",
+      "place": ""
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "4x400 m Relay",
+      "time": "3:11.34",
+      "place": ""
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "4x400 m Relay sh",
+      "time": "3:16.42",
+      "place": ""
+    },
+    {
+      "date": "MAR 21",
+      "meet": "Pruebas de Libre Participación",
+      "event": "800 m sh",
+      "time": "1:46.94",
+      "place": ""
+    },
+    {
+      "date": "MAR 21",
+      "meet": "Pruebas de Libre Participación",
+      "event": "800 m sh",
+      "time": "1:52.90",
+      "place": ""
+    },
+    {
+      "date": "MAR 21",
+      "meet": "Spanish Indoor Championships, Velódromo Luis Puig, Valencia (i)",
+      "event": "1000 m sh",
+      "time": "1:45.76",
+      "place": "1."
+    },
+    {
+      "date": "MAR 20",
+      "meet": "13. Erfurt Indoor 2026, Hartwig-Gauder-Halle, Erfurt (i)",
+      "event": "1000 m sh",
+      "time": "1:47.58",
+      "place": "1."
+    },
+    {
+      "date": "MAR 1",
+      "meet": "European Athletics U23 Championships",
+      "event": "1500 m",
+      "time": "3:43.63",
+      "place": "1."
+    },
+    {
+      "date": "MAR 1",
+      "meet": "World Indoor Tour Gold Madrid 2026, Gallur, Madrid (i) - Split times",
+      "event": "",
+      "time": "1:44.98",
+      "place": "2."
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Millrose Games, Armory Track\\u0026Field Center, New York, NY (i) - World Athletics Indoor Tour",
+      "event": "800 m sh",
+      "time": "1:44.98",
+      "place": "2."
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Paavo Nurmi Games, Paavo Nurmen Stadion, Turku",
+      "event": "1500 m",
+      "time": "2:14.52",
+      "place": "1."
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Diamond Discipline",
+      "event": "800 m sh",
+      "time": "1:45.66",
+      "place": "8."
+    },
+    {
+      "date": "FEB 6",
+      "meet": "",
+      "event": "800 m sh",
+      "time": "1:44.48",
+      "place": ""
+    },
+    {
+      "date": "FEB 6",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m",
+      "time": "1:44.48",
+      "place": ""
+    },
+    {
+      "date": "FEB 6",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:44.48",
+      "place": ""
+    },
+    {
+      "date": "FEB 6",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "1000 m",
+      "time": "1:44.48",
+      "place": ""
+    },
+    {
+      "date": "FEB 6",
+      "meet": "XIX Reunión Internacional Villa de Bilbao",
+      "event": "1000 m",
+      "time": "2:15.03",
+      "place": ""
+    },
+    {
+      "date": "FEB 6",
+      "meet": "BAUHAUS-Galan, Olympiastadion, Stockholm - Diamond Discipline",
+      "event": "800 m",
+      "time": "1:46.92",
+      "place": "10."
+    },
+    {
+      "date": "FEB 6",
+      "meet": "World Athletics Indoor Championships, Kujawsko-Pomorska Arena, Toruń (i)",
+      "event": "1000 m sh",
+      "time": "1:45.75",
+      "place": "2."
+    },
+    {
+      "date": "FEB 1",
+      "meet": "BAUHAUS-Galan, Olympiastadion, Stockholm - Diamond Discipline",
+      "event": "800 m",
+      "time": "3:48.61",
+      "place": "10."
+    },
+    {
+      "date": "JAN 17",
+      "meet": "",
+      "event": "1000 m sh",
+      "time": "2:14.52",
+      "place": ""
+    },
+    {
+      "date": "JAN 17",
+      "meet": "World Indoor Tour Gold Madrid 2026",
+      "event": "1000 m sh",
+      "time": "2:14.52",
+      "place": ""
+    },
+    {
+      "date": "JAN 17",
+      "meet": "Spanish U23 Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:53.37",
+      "place": ""
+    },
+    {
+      "date": "JAN 17",
+      "meet": "World Indoor Tour Gold Madrid 2026, Gallur, Madrid (i) - World Athletics Indoor Tour",
+      "event": "1000 m sh",
+      "time": "1:44.66",
+      "place": "3."
+    }
+  ],
   "weight": "145",
   "coach": "x",
   "reviewBody": "x",
