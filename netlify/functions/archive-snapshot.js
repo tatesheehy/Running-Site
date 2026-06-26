@@ -103,7 +103,7 @@ exports.handler = async (event) => {
     for (const ev of sourceEvents) {
       if (!ev.name) continue;
 
-      const weekId = `${slugifyEvent(ev.name)}-${dateStr}`;
+      const weekId = (ev.weekId && ev.weekId.trim()) ? ev.weekId.trim() : `${slugifyEvent(ev.name)}-${dateStr}`;
 
       // Add or replace the week entry in rankings-weeks.json
       const existingIdx = weeksRaw.weeks.findIndex(w => w.id === weekId);
