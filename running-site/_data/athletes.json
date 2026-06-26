@@ -69,7 +69,150 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "abel-kipsang",
-      "age": "29"
+      "age": "29",
+      "dob": "1996-11-22"
+    },
+    {
+      "photoBackground": "#111111",
+      "reviewTitle": "Season review",
+      "collegeLogo": "/images/856623ecea6c457a427a1cdaf6bb421e.png",
+      "waUrl": "https://worldathletics.org/athletes/united-states/abel-teffra-14888013",
+      "height": "x",
+      "questionBody": "x",
+      "headlineRest": "x",
+      "name": "Abel Teffra",
+      "headlineKey": "x",
+      "flag": "US",
+      "seasons": "x",
+      "prs": [
+        {
+          "event": "800m",
+          "time": "1:45.67"
+        },
+        {
+          "event": "1500m",
+          "time": "3:33.84"
+        },
+        {
+          "event": "Mile",
+          "time": "3:52.44"
+        },
+        {
+          "event": "3000m",
+          "time": "7:55.13"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:35.20"
+        },
+        {
+          "event": "Mile Short Track",
+          "time": "3:52.44"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:55.13"
+        },
+        {
+          "event": "4x800 Metres Relay",
+          "time": "7:13.95"
+        },
+        {
+          "event": "Distance Medley",
+          "time": "9:28.29"
+        },
+        {
+          "event": "Distance Medley Short Track",
+          "time": "9:19.24"
+        },
+        {
+          "event": "4xMile Relay",
+          "time": "15:52.56"
+        },
+        {
+          "event": "1000 Metres",
+          "time": "2:17.39"
+        }
+      ],
+      "hometown": "x",
+      "questionTitle": "Next question",
+      "photo": "/images/teffra_card.png",
+      "ncaa": false,
+      "club": "x",
+      "country": "United States",
+      "results": [
+        {
+          "date": "JUN 21",
+          "meet": "Portland Track Festival",
+          "event": "",
+          "time": "1:46.40",
+          "place": "8"
+        },
+        {
+          "date": "JUN 13",
+          "meet": "USATF LA Grand Prix",
+          "event": "1500m",
+          "time": "3:34.08",
+          "place": "2"
+        },
+        {
+          "date": "MAY 23",
+          "meet": "LA Track Festival",
+          "event": "800m",
+          "time": "1:45.71",
+          "place": ""
+        },
+        {
+          "date": "MAR 1",
+          "meet": "USA Indoor Championships",
+          "event": "",
+          "time": "3:38.90",
+          "place": "8"
+        },
+        {
+          "date": "FEB 22",
+          "meet": "Saucony Battle for Boston",
+          "event": "1500m sh",
+          "time": "3:35.20",
+          "place": "3"
+        },
+        {
+          "date": "FEB 13",
+          "meet": "Boston University David Hemery Valentine Invitational",
+          "event": "Mile sh",
+          "time": "3:53.29",
+          "place": "10"
+        },
+        {
+          "date": "FEB 13",
+          "meet": "Boston University David Hemery Valentine Invitational",
+          "event": "1500m sh",
+          "time": "3:37.83",
+          "place": "11"
+        },
+        {
+          "date": "FEB 7",
+          "meet": "Penn Classic",
+          "event": "3000m",
+          "time": "7:55.13",
+          "place": ""
+        },
+        {
+          "date": "JAN 24",
+          "meet": "Penn Elite",
+          "event": "1000 Metres",
+          "time": "2:20.49",
+          "place": ""
+        }
+      ],
+      "college": "Georgetown",
+      "weight": "x",
+      "coach": "x",
+      "reviewBody": "x",
+      "event": "MIDDLE DISTANCE",
+      "id": "abel-teffra",
+      "age": "24",
+      "dob": "2002-01-23"
     },
     {
       "photoBackground": "#111111",
@@ -200,7 +343,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "azeddine-habz",
-      "age": "32"
+      "age": "32",
+      "dob": "1993-07-19"
     },
     {
       "photoBackground": "#111111",
@@ -263,7 +407,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "cameron-myers",
-      "age": "19"
+      "age": "20",
+      "dob": "2006-06-09"
     },
     {
       "photoBackground": "#1a0a0a",
@@ -464,7 +609,8 @@
       "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
       "event": "MIDDLE DISTANCE + DISTANCE",
       "id": "cole-hocker",
-      "age": "23"
+      "age": "25",
+      "dob": "2001-06-06"
     },
     {
       "photoBackground": "#111111",
@@ -644,7 +790,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "cooper-teare",
-      "age": "26"
+      "age": "26",
+      "dob": "1999-08-18"
     },
     {
       "photoBackground": "#111111",
@@ -683,7 +830,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "emmanuel-wanyonyi",
-      "age": "21"
+      "age": "21",
+      "dob": "2004-08-01"
     },
     {
       "photoBackground": "#111111",
@@ -775,7 +923,229 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "ethan-strand",
-      "age": "23"
+      "age": "23",
+      "dob": "2002-10-19"
+    },
+    {
+      "photoBackground": "#111111",
+      "reviewTitle": "Season review",
+      "collegeLogo": "/images/virginia-cavaliers-logo.png",
+      "waUrl": "https://worldathletics.org/athletes/united-states/gary-martin-14970735",
+      "height": "x",
+      "questionBody": "x",
+      "headlineRest": "x",
+      "name": "Gary Martin",
+      "headlineKey": "x",
+      "flag": "US",
+      "seasons": "x",
+      "prs": [
+        {
+          "event": "800m",
+          "time": "1:47.46"
+        },
+        {
+          "event": "1500m",
+          "time": "3:32.03"
+        },
+        {
+          "event": "Mile",
+          "time": "3:48.82"
+        },
+        {
+          "event": "2000m",
+          "time": "5:25.71"
+        },
+        {
+          "event": "3000m",
+          "time": "7:36.09"
+        },
+        {
+          "event": "2 Miles",
+          "time": "9:02.93"
+        },
+        {
+          "event": "5000m",
+          "time": "13:05.57"
+        },
+        {
+          "event": "800 Metres Short Track",
+          "time": "1:48.71"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:33.41"
+        },
+        {
+          "event": "Mile Short Track",
+          "time": "3:48.82"
+        },
+        {
+          "event": "2000 Metres Short Track",
+          "time": "5:25.71"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:36.09"
+        },
+        {
+          "event": "2 Miles Short Track",
+          "time": "9:02.93"
+        },
+        {
+          "event": "5000 Metres Short Track",
+          "time": "13:05.57"
+        },
+        {
+          "event": "Distance Medley",
+          "time": "9:26.84"
+        },
+        {
+          "event": "4xMile Relay",
+          "time": "15:52.30"
+        }
+      ],
+      "hometown": "x",
+      "questionTitle": "Next question",
+      "photo": "/images/martin_card.png",
+      "ncaa": false,
+      "club": "x",
+      "country": "United States",
+      "results": [
+        {
+          "date": "JUN 12",
+          "meet": "NCAA Division I Outdoor Track and Field Championships",
+          "event": "",
+          "time": "3:37.21",
+          "place": "3"
+        },
+        {
+          "date": "JUN 12",
+          "meet": "NCAA Division I Outdoor Track and Field Championships",
+          "event": "",
+          "time": "14:10.63",
+          "place": "20"
+        },
+        {
+          "date": "JUN 10",
+          "meet": "NCAA Division I Outdoor Track and Field Championships",
+          "event": "",
+          "time": "3:38.81",
+          "place": "1"
+        },
+        {
+          "date": "MAY 29",
+          "meet": "NCAA Division I East First Rounds",
+          "event": "",
+          "time": "3:42.48",
+          "place": "1"
+        },
+        {
+          "date": "MAY 29",
+          "meet": "NCAA Division I East First Rounds",
+          "event": "",
+          "time": "13:49.63",
+          "place": "2"
+        },
+        {
+          "date": "MAY 27",
+          "meet": "NCAA Division I East First Rounds",
+          "event": "",
+          "time": "3:47.70",
+          "place": "1"
+        },
+        {
+          "date": "MAY 16",
+          "meet": "ACC Outdoor Track & Field Championships",
+          "event": "",
+          "time": "3:39.88",
+          "place": "2"
+        },
+        {
+          "date": "MAY 16",
+          "meet": "ACC Outdoor Track & Field Championships",
+          "event": "",
+          "time": "13:31.43",
+          "place": "4"
+        },
+        {
+          "date": "MAY 14",
+          "meet": "ACC Outdoor Track & Field Championships",
+          "event": "",
+          "time": "3:54.66",
+          "place": "1"
+        },
+        {
+          "date": "APR 18",
+          "meet": "Virginia Challenge",
+          "event": "5000m",
+          "time": "13:25.42",
+          "place": ""
+        },
+        {
+          "date": "APR 3",
+          "meet": "Virginia Grand Prix",
+          "event": "",
+          "time": "3:39.92",
+          "place": "1"
+        },
+        {
+          "date": "MAR 14",
+          "meet": "NCAA Division I Indoor Track and Field Championships",
+          "event": "",
+          "time": "3:59.50",
+          "place": "4"
+        },
+        {
+          "date": "MAR 13",
+          "meet": "NCAA Division I Indoor Track and Field Championships",
+          "event": "",
+          "time": "3:55.13",
+          "place": "1"
+        },
+        {
+          "date": "FEB 28",
+          "meet": "ACC Indoor Track & Field Championships",
+          "event": "3000m",
+          "time": "7:43.18",
+          "place": ""
+        },
+        {
+          "date": "FEB 26",
+          "meet": "ACC Indoor Track & Field Championships",
+          "event": "5000 Metres Short Track",
+          "time": "13:41.66",
+          "place": ""
+        },
+        {
+          "date": "FEB 22",
+          "meet": "Saucony Battle for Boston",
+          "event": "Distance Medley Short Track",
+          "time": "9:16.75",
+          "place": ""
+        },
+        {
+          "date": "FEB 1",
+          "meet": "Millrose Games",
+          "event": "1500m",
+          "time": "3:35.60",
+          "place": ""
+        },
+        {
+          "date": "FEB 1",
+          "meet": "Millrose Games",
+          "event": "Mile sh",
+          "time": "3:52.62",
+          "place": "8"
+        }
+      ],
+      "college": "Virginia",
+      "weight": "x",
+      "coach": "x",
+      "reviewBody": "x",
+      "event": "MIDDLE DISTANCE/DISTANCE",
+      "id": "gary-martin",
+      "age": "22",
+      "dob": "2003-12-23"
     },
     {
       "photoBackground": "#111111",
@@ -862,7 +1232,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "george-mills",
-      "age": "27"
+      "age": "27",
+      "dob": "1999-05-12"
     },
     {
       "photoBackground": "#111111",
@@ -1090,7 +1461,8 @@
       "reviewBody": "Kejelcha has been a model of consistency in 2026. While he hasn't grabbed the headlines, his results speak for themselves — four top-3 finishes in Diamond League events and a season best of 3:45.12.",
       "event": "MIDDLE DISTANCE",
       "id": "isaac-nader",
-      "age": "27"
+      "age": "26",
+      "dob": "1999-08-17"
     },
     {
       "photoBackground": "#111111",
@@ -1196,7 +1568,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "jake-wightman",
-      "age": "32"
+      "age": "31",
+      "dob": "1994-07-11"
     },
     {
       "photoBackground": "#0d1b2a",
@@ -1343,7 +1716,8 @@
       "reviewBody": "Ingebrigtsen has yet to race in 2026. The Norwegian may return from racing in mid-July following surgery to remove damaged tissue and scarring from the sheath surrounding his left Achilles tendon in February of this year. ",
       "event": "MIDDLE DISTANCE + DISTANCE",
       "id": "jakob-ingebrigtsen",
-      "age": "25"
+      "age": "25",
+      "dob": "2000-09-19"
     },
     {
       "photoBackground": "#111111",
@@ -1475,7 +1849,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "josh-hoey",
-      "age": "26"
+      "age": "26",
+      "dob": "1999-11-01"
     },
     {
       "photoBackground": "#0a0a1a",
@@ -1625,7 +2000,236 @@
       "reviewBody": "Kerr continues to be one of the most physically imposing presences in the 1500m field. His ability to surge mid-race and break the competition is unmatched.",
       "event": "MIDDLE DISTANCE",
       "id": "josh-kerr",
-      "age": "26"
+      "age": "28",
+      "dob": "1997-10-08"
+    },
+    {
+      "photoBackground": "#111111",
+      "reviewTitle": "Season review",
+      "collegeLogo": "/images/stanford_cardinal_logo.svg.png",
+      "waUrl": "https://worldathletics.org/athletes/united-states/leo-young-14965052",
+      "height": "x",
+      "questionBody": "x",
+      "headlineRest": "x",
+      "name": "Leo Young",
+      "headlineKey": "x",
+      "flag": "US",
+      "seasons": "x",
+      "prs": [
+        {
+          "event": "1500m",
+          "time": "3:35.96"
+        },
+        {
+          "event": "5000m",
+          "time": "13:24.84"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:40.96"
+        },
+        {
+          "event": "Mile Short Track",
+          "time": "3:57.81"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:55.36"
+        },
+        {
+          "event": "5000 Metres Short Track",
+          "time": "13:30.21"
+        },
+        {
+          "event": "Distance Medley Short Track",
+          "time": "9:27.06"
+        },
+        {
+          "event": "Mile",
+          "time": "3:56.17"
+        },
+        {
+          "event": "3000m",
+          "time": "7:52.46"
+        }
+      ],
+      "hometown": "x",
+      "questionTitle": "Next question",
+      "photo": "/images/leoyoung_card.png",
+      "ncaa": true,
+      "club": "x",
+      "country": "United States",
+      "results": [
+        {
+          "date": "MAY 29",
+          "meet": "NCAA Division I West First Rounds",
+          "event": "",
+          "time": "3:39.38",
+          "place": "10"
+        },
+        {
+          "date": "MAY 29",
+          "meet": "NCAA Division I West First Rounds",
+          "event": "",
+          "time": "14:06.79",
+          "place": "14"
+        },
+        {
+          "date": "MAY 27",
+          "meet": "NCAA Division I West First Rounds",
+          "event": "",
+          "time": "3:42.43",
+          "place": "4"
+        },
+        {
+          "date": "MAY 16",
+          "meet": "ACC Outdoor Track & Field Championships",
+          "event": "",
+          "time": "3:42.69",
+          "place": "8"
+        },
+        {
+          "date": "MAY 16",
+          "meet": "ACC Outdoor Track & Field Championships",
+          "event": "",
+          "time": "14:06.95",
+          "place": "20"
+        },
+        {
+          "date": "MAY 14",
+          "meet": "ACC Outdoor Track & Field Championships",
+          "event": "",
+          "time": "3:41.44",
+          "place": "2"
+        },
+        {
+          "date": "MAY 1",
+          "meet": "Payton Jordan Invitational",
+          "event": "",
+          "time": "3:39.88",
+          "place": "3"
+        },
+        {
+          "date": "MAY 1",
+          "meet": "Payton Jordan Invitational",
+          "event": "",
+          "time": "DNF",
+          "place": ""
+        },
+        {
+          "date": "APR 18",
+          "meet": "Bryan Clay Invitational",
+          "event": "1500m",
+          "time": "3:38.05",
+          "place": "8"
+        },
+        {
+          "date": "APR 11",
+          "meet": "The Big Meet",
+          "event": "",
+          "time": "DNS",
+          "place": ""
+        },
+        {
+          "date": "APR 4",
+          "meet": "Stanford Invitational",
+          "event": "",
+          "time": "1:51.00",
+          "place": "4"
+        },
+        {
+          "date": "APR 3",
+          "meet": "Stanford Invitational",
+          "event": "5000m",
+          "time": "13:24.84",
+          "place": ""
+        },
+        {
+          "date": "FEB 28",
+          "meet": "ACC Indoor Track & Field Championships",
+          "event": "Mile sh",
+          "time": "3:59.98",
+          "place": "3"
+        },
+        {
+          "date": "FEB 28",
+          "meet": "ACC Indoor Track & Field Championships",
+          "event": "",
+          "time": "DNF",
+          "place": ""
+        },
+        {
+          "date": "FEB 27",
+          "meet": "ACC Indoor Track & Field Championships",
+          "event": "Mile sh",
+          "time": "4:00.63",
+          "place": "1"
+        },
+        {
+          "date": "FEB 26",
+          "meet": "ACC Indoor Track & Field Championships",
+          "event": "",
+          "time": "9:36.50",
+          "place": "3"
+        },
+        {
+          "date": "FEB 22",
+          "meet": "Saucony Battle for Boston",
+          "event": "Distance Medley Short Track",
+          "time": "9:28.52",
+          "place": ""
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Husky Classic",
+          "event": "800m",
+          "time": "1:49.81",
+          "place": ""
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Husky Classic",
+          "event": "4x400 Metres Relay",
+          "time": "3:25.91",
+          "place": ""
+        },
+        {
+          "date": "FEB 13",
+          "meet": "Husky Classic",
+          "event": "Mile",
+          "time": "3:56.17",
+          "place": "4"
+        },
+        {
+          "date": "JAN 31",
+          "meet": "Boston University John Thomas Terrier Classic",
+          "event": "1500 Metres Short Track",
+          "time": "3:40.96",
+          "place": ""
+        },
+        {
+          "date": "JAN 31",
+          "meet": "Boston University John Thomas Terrier Classic",
+          "event": "Mile sh",
+          "time": "3:57.81",
+          "place": "10"
+        },
+        {
+          "date": "JAN 16",
+          "meet": "UW Preview",
+          "event": "3000m",
+          "time": "7:52.46",
+          "place": ""
+        }
+      ],
+      "college": "Stanford",
+      "weight": "x",
+      "coach": "x",
+      "reviewBody": "x",
+      "event": "MIDDLE DISTANCE/DISTANCE",
+      "id": "leo-young",
+      "age": "21",
+      "dob": "2005-02-28"
     },
     {
       "photoBackground": "#111111",
@@ -1751,7 +2355,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "mohamed-attaoui",
-      "age": "24"
+      "age": "24",
+      "dob": "2001-09-26"
     },
     {
       "photoBackground": "#111111",
@@ -1814,7 +2419,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "mohamed-katir",
-      "age": "28"
+      "age": "28",
+      "dob": "1998-02-17"
     },
     {
       "photoBackground": "#111111",
@@ -1897,7 +2503,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "narve-nordas",
-      "age": "27"
+      "age": "27",
+      "dob": "1998-09-30"
     },
     {
       "photoBackground": "#111111",
@@ -1975,7 +2582,8 @@
       "reviewBody": "xx",
       "event": "MIDDLE DISTANCE",
       "id": "niels-laros",
-      "age": "21"
+      "age": "21",
+      "dob": "2005-04-17"
     },
     {
       "photoBackground": "#111111",

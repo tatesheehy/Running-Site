@@ -54,14 +54,24 @@ async function loadData() {
   }
 }
 
+function calcAgeFromDob(dob) {
+  const born  = new Date(dob);
+  const today = new Date();
+  let age = today.getFullYear() - born.getFullYear();
+  const m = today.getMonth() - born.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < born.getDate())) age--;
+  return age;
+}
+
 // Convert flat athlete structure (from JSON/CMS) to the format the card expects
 function normalizeAthlete(a) {
+  const age = a.dob ? String(calcAgeFromDob(a.dob)) : a.age;
   return {
     ...a,
     vitals: {
       HEIGHT: a.height,
       WEIGHT: a.weight,
-      AGE: a.age,
+      AGE: age,
       SEASONS: a.seasons,
     },
     prs: (a.prs || []),
