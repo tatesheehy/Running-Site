@@ -2541,6 +2541,69 @@ footer {
   top: -2px;
 }
 
+/* ── ARCHIVE INDEX CARDS (year hub sub-events) ─────────── */
+.archive-index-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 24px;
+  padding-bottom: 80px;
+}
+.archive-index-card {
+  position: relative;
+  /* ruled paper: red top rule, then faint blue lines */
+  background-color: #fffef8;
+  background-image:
+    linear-gradient(#c0392b 0px, #c0392b 4px, transparent 4px),
+    repeating-linear-gradient(
+      transparent 0px,
+      transparent 27px,
+      rgba(100,140,210,0.22) 27px,
+      rgba(100,140,210,0.22) 28px
+    );
+  background-position: top left;
+  border: 1px solid #cfc3a0;
+  border-radius: 3px;
+  padding: 20px 16px 16px;
+  cursor: pointer;
+  box-shadow: 2px 3px 10px rgba(60,35,5,0.14), inset 0 1px 0 rgba(255,255,240,0.9);
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.archive-index-card:hover {
+  transform: translateY(-4px) rotate(0.8deg);
+  box-shadow: 4px 8px 20px rgba(60,35,5,0.22);
+}
+.archive-index-card-event {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 900;
+  color: #1a0e05;
+  line-height: 1;
+  margin-top: 8px;
+  /* slightly uneven baseline, like hand-stamped */
+  letter-spacing: -0.01em;
+}
+.archive-index-card-desc {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  color: #6b4010;
+  letter-spacing: 0.05em;
+  margin-top: 6px;
+  opacity: 0.8;
+}
+.archive-index-card-cta {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #8b3a10;
+  margin-top: 14px;
+}
+
 .h2h-hub-btn {
   background: var(--accent);
   border: 1px solid var(--accent);

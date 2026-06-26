@@ -883,16 +883,16 @@ function buildRankingsPage() {
   const yearParam  = getParam('year');
   const viewParam  = getParam('view');
 
-  if (viewParam === 'archive' && yearParam) {
-    buildArchiveYearHub(yearParam);
-  } else if (viewParam === 'archive') {
-    buildArchiveHub();
-  } else if (yearParam && eventParam) {
+  if (viewParam === 'archive' && yearParam && eventParam) {
     buildRankingsDetail(decodeURIComponent(eventParam), {
       archiveYear: yearParam,
       backUrl: `rankings.html?view=archive&year=${encodeURIComponent(yearParam)}`,
       backLabel: 'Archive',
     });
+  } else if (viewParam === 'archive' && yearParam) {
+    buildArchiveYearHub(yearParam);
+  } else if (viewParam === 'archive') {
+    buildArchiveHub();
   } else if (eventParam) {
     buildRankingsDetail(decodeURIComponent(eventParam));
   } else {
@@ -980,19 +980,13 @@ function buildArchiveYearHub(year) {
   const label  = season.label || `${year} Season`;
   const events = season.events || [];
 
-  const cardsHtml = events.map((ev, i) => {
-    const count      = (ev.rows || []).length;
-    const num        = String(i + 1).padStart(2, '0');
-    const photoStyle = ev.photo ? `style="background-image:url('${ev.photo}');"` : '';
+  const cardsHtml = events.map((ev) => {
+    const count = (ev.rows || []).length;
     return `
-      <div class="ranking-card" onclick="goTo('rankings.html?view=archive&year=${encodeURIComponent(year)}&event=${encodeURIComponent(ev.name)}')">
-        <div class="ranking-card-photo" ${photoStyle}></div>
-        <div class="ranking-card-num">${num}</div>
-        <div class="ranking-card-body">
-          <div class="ranking-card-event">${ev.name}</div>
-          ${ev.description ? `<div class="ranking-card-desc">${ev.description}</div>` : ''}
-          <div class="ranking-card-cta">${count ? `${count} athletes ranked` : 'No data'} &rarr;</div>
-        </div>
+      <div class="archive-index-card" onclick="goTo('rankings.html?view=archive&year=${encodeURIComponent(year)}&event=${encodeURIComponent(ev.name)}')">
+        <div class="archive-index-card-event">${ev.name}</div>
+        ${ev.description ? `<div class="archive-index-card-desc">${ev.description}</div>` : ''}
+        <div class="archive-index-card-cta">${count ? `${count} athletes` : 'No data'} &rarr;</div>
       </div>`;
   }).join('');
 
@@ -1003,7 +997,7 @@ function buildArchiveYearHub(year) {
           <a href="rankings.html?view=archive" class="rd-back">&larr; Archive</a>
           <h1 class="archive-page-title">${label}</h1>
         </div>
-        <div class="rankings-cards-grid">${cardsHtml}</div>
+        <div class="archive-index-grid">${cardsHtml}</div>
       </div>
     </div>`;
 }
