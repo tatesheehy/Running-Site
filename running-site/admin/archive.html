@@ -12,17 +12,10 @@
       color: #1a1a1a;
       min-height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
-    .card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-      padding: 40px 36px;
-      max-width: 480px;
-      width: 100%;
+      padding: 40px 24px 80px;
+      gap: 20px;
     }
     .logo {
       font-size: 11px;
@@ -30,126 +23,198 @@
       letter-spacing: 0.14em;
       text-transform: uppercase;
       color: #888;
-      margin-bottom: 28px;
+      margin-bottom: 4px;
+      align-self: flex-start;
+      max-width: 480px;
+      width: 100%;
     }
-    h1 {
-      font-size: 22px;
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 32px 36px;
+      max-width: 480px;
+      width: 100%;
+    }
+    .card + .card { border-top: none; }
+    h2 {
+      font-size: 18px;
       font-weight: 700;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
     p {
-      font-size: 14px;
-      color: #555;
+      font-size: 13px;
+      color: #666;
       line-height: 1.6;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
     label {
       display: block;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 600;
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: #444;
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
     input[type="text"] {
       width: 100%;
-      padding: 10px 12px;
+      padding: 9px 12px;
       border: 1px solid #ddd;
       border-radius: 7px;
       font-size: 14px;
       font-family: inherit;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       outline: none;
       transition: border-color 0.15s;
     }
     input[type="text"]:focus { border-color: #E8500A; }
-    button {
+    .btn {
       width: 100%;
-      padding: 13px;
+      padding: 12px;
       background: #E8500A;
       color: #fff;
       border: none;
       border-radius: 8px;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 600;
       font-family: inherit;
       cursor: pointer;
       transition: opacity 0.15s;
     }
-    button:hover { opacity: 0.88; }
-    button:disabled { opacity: 0.5; cursor: not-allowed; }
-    #status {
-      margin-top: 18px;
+    .btn:hover { opacity: 0.88; }
+    .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+    .btn--secondary { background: #2a1808; }
+    .status {
+      margin-top: 14px;
       font-size: 13px;
       line-height: 1.5;
       border-radius: 7px;
-      padding: 12px 14px;
+      padding: 11px 13px;
       display: none;
     }
-    #status.ok  { background: #e9fce9; color: #1a5c1a; display: block; }
-    #status.err { background: #fce9e9; color: #5c1a1a; display: block; }
+    .status.ok  { background: #e9fce9; color: #1a5c1a; display: block; }
+    .status.err { background: #fce9e9; color: #5c1a1a; display: block; }
+    .divider {
+      border: none;
+      border-top: 1px solid #eee;
+      margin: 20px 0 16px;
+    }
+    .hint {
+      font-size: 11px;
+      color: #999;
+      margin-top: -12px;
+      margin-bottom: 16px;
+    }
     .back {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 4px;
       font-size: 13px;
       color: #888;
       text-decoration: none;
+      max-width: 480px;
+      width: 100%;
     }
     .back:hover { color: #E8500A; }
   </style>
 </head>
 <body>
-  <div class="card">
-    <div class="logo">THE SPLITS — Admin</div>
-    <h1>📥 Snapshot Rankings to Archive</h1>
-    <p>Copies the current live rankings into the archive as a new week entry. Each event in rankings.json gets a dated snapshot under the current year.</p>
+  <div class="logo">THE SPLITS — Admin</div>
 
-    <label for="weekLabel">Week label (optional)</label>
+  <!-- Card 1: Archive all events -->
+  <div class="card">
+    <h2>📥 Archive All Rankings</h2>
+    <p>Snapshots every event in the live rankings as a new week entry. Uses the Week ID and Week Label set on each event in the CMS, or falls back to a date-based ID.</p>
+
+    <label for="weekLabel">Week label (optional fallback)</label>
     <input type="text" id="weekLabel" placeholder="e.g. June 25, 2026">
 
-    <button id="btn" onclick="doSnapshot()">Archive Current Rankings</button>
-
-    <div id="status"></div>
-    <a class="back" href="/admin/">&larr; Back to CMS</a>
+    <button class="btn" id="btn-all" onclick="doSnapshot()">Archive All Events</button>
+    <div class="status" id="status-all"></div>
   </div>
 
-  <script>
-    const inp = document.getElementById('weekLabel');
-    // Pre-fill with today's date
-    const today = new Date();
-    inp.value = today.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  <!-- Card 2: Load specific event into a week ID -->
+  <div class="card">
+    <h2>🎯 Load Event Into Week</h2>
+    <p>Pulls the current live rankings for one event into a specific week ID. Use this when you've already added the week ID to the archive index and just need to fill it with data.</p>
 
-    async function doSnapshot() {
-      const btn = document.getElementById('btn');
-      const status = document.getElementById('status');
+    <label for="targetEvent">Event name</label>
+    <input type="text" id="targetEvent" placeholder="e.g. 1500m">
+
+    <label for="targetWeekId">Week ID</label>
+    <input type="text" id="targetWeekId" placeholder="e.g. 1500m-06-25-2026">
+    <p class="hint">Must match the ID you added in Rankings Archive.</p>
+
+    <label for="targetWeekLabel">Week label (optional)</label>
+    <input type="text" id="targetWeekLabel" placeholder="e.g. Oslo Diamond League">
+
+    <button class="btn btn--secondary" id="btn-single" onclick="doSingleSnapshot()">Load Rankings Into This Week</button>
+    <div class="status" id="status-single"></div>
+  </div>
+
+  <a class="back" href="/admin/">&larr; Back to CMS</a>
+
+  <script>
+    // Pre-fill week label with today's date
+    const today = new Date();
+    const todayStr = today.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    document.getElementById('weekLabel').value = todayStr;
+
+    async function callSnapshot(payload, btnId, statusId, resetLabel) {
+      const btn    = document.getElementById(btnId);
+      const status = document.getElementById(statusId);
       btn.disabled = true;
-      btn.textContent = 'Archiving…';
-      status.className = '';
-      status.style.display = 'none';
+      btn.textContent = 'Working…';
+      status.className = 'status';
 
       try {
-        const res = await fetch('/.netlify/functions/archive-snapshot', {
+        const res  = await fetch('/.netlify/functions/archive-snapshot', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ weekLabel: inp.value.trim() || null }),
+          body: JSON.stringify(payload),
         });
         const data = await res.json();
         if (res.ok && data.success) {
-          status.className = 'ok';
-          const evList = (data.events || []).join(', ') || '(none)';
-          status.textContent = `✓ Archived "${data.label}" for ${data.year}. Events: ${evList}. Changes committed to GitHub — Netlify will redeploy shortly.`;
+          status.className = 'status ok';
+          const ids = (data.weekIds || []).join(', ') || '(none)';
+          status.textContent = `✓ Done — week ID(s): ${ids}. Committed to GitHub, Netlify will redeploy shortly.`;
         } else {
-          status.className = 'err';
+          status.className = 'status err';
           status.textContent = `Error: ${data.error || 'Unknown error'}`;
         }
       } catch (e) {
-        status.className = 'err';
+        status.className = 'status err';
         status.textContent = `Network error: ${e.message}`;
       }
 
       btn.disabled = false;
-      btn.textContent = 'Archive Current Rankings';
+      btn.textContent = resetLabel;
+    }
+
+    function doSnapshot() {
+      callSnapshot(
+        { weekLabel: document.getElementById('weekLabel').value.trim() || null },
+        'btn-all', 'status-all', 'Archive All Events'
+      );
+    }
+
+    function doSingleSnapshot() {
+      const eventName = document.getElementById('targetEvent').value.trim();
+      const weekId    = document.getElementById('targetWeekId').value.trim();
+      if (!eventName || !weekId) {
+        const s = document.getElementById('status-single');
+        s.className = 'status err';
+        s.textContent = 'Event name and Week ID are both required.';
+        return;
+      }
+      callSnapshot(
+        {
+          eventName: eventName,
+          weekId:    weekId,
+          weekLabel: document.getElementById('targetWeekLabel').value.trim() || null,
+        },
+        'btn-single', 'status-single', 'Load Rankings Into This Week'
+      );
     }
   </script>
 </body>

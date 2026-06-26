@@ -60,10 +60,12 @@ exports.handler = async (event) => {
     return { statusCode: 500, headers: CORS, body: JSON.stringify({ error: 'GITHUB_TOKEN not set in Netlify environment variables' }) };
   }
 
-  let weekLabel = null;
+  let weekLabel = null, targetEvent = null, customWeekId = null;
   try {
     const body = event.body ? JSON.parse(event.body) : {};
-    weekLabel = body.weekLabel || null;
+    weekLabel    = body.weekLabel    || null;
+    targetEvent  = body.eventName    || null;
+    customWeekId = body.weekId       || null;
   } catch (_) {}
 
   const today   = new Date();
@@ -96,14 +98,18 @@ exports.handler = async (event) => {
     }
     if (!season.events) season.events = [];
 
-    const sourceEvents = rankings.events || [];
+    let sourceEvents = rankings.events || [];
+    if (targetEvent) sourceEvents = sourceEvents.filter(ev => ev.name === targetEvent);
+
     const snapshotted  = [];
     const newWeekIds   = [];
 
     for (const ev of sourceEvents) {
       if (!ev.name) continue;
 
-      const weekId    = (ev.weekId    && ev.weekId.trim())    ? ev.weekId.trim()    : `${slugifyEvent(ev.name)}-${dateStr}`;
+      const weekId    = customWeekId                          ? customWeekId
+                      : (ev.weekId    && ev.weekId.trim())    ? ev.weekId.trim()
+                      : `${slugifyEvent(ev.name)}-${dateStr}`;
       const weekLabel = (ev.weekLabel && ev.weekLabel.trim()) ? ev.weekLabel.trim() : label;
 
       // Add or replace the week entry in rankings-weeks.json
