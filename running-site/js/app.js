@@ -69,16 +69,12 @@ function normalizeAthlete(a) {
   return {
     ...a,
     vitals: {
-      HEIGHT: a.height,
-      WEIGHT: a.weight,
       AGE: age,
-      SEASONS: a.seasons,
     },
     prs: (a.prs || []),
     extra: {
       CLUB: a.club,
       COACH: a.coach,
-      HOMETOWN: a.hometown,
     },
     headline: { keyWord: a.headlineKey, rest: a.headlineRest },
     analysis: {

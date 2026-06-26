@@ -137,8 +137,8 @@ collections:
       - { label: "Height", name: height, widget: string }
       - { label: "Weight", name: weight, widget: string }
       - { label: "Pro Seasons", name: seasons, widget: string }
-      - { label: "Club", name: club, widget: string }
-      - { label: "Coach", name: coach, widget: string }
+      - { label: "Club", name: club, widget: string, required: false }
+      - { label: "Coach", name: coach, widget: string, required: false }
       - { label: "Hometown", name: hometown, widget: string }
       - { label: "NCAA Athlete", name: ncaa, widget: boolean, default: false, required: false }
       - { label: "College", name: college, widget: string, required: false, hint: "e.g. University of Oregon" }
