@@ -959,14 +959,14 @@ function buildArchiveHub() {
         ${tags ? `<div class="archive-season-tags">${tags}</div>` : ''}
         <div class="archive-season-cta">${events.length} event${events.length !== 1 ? 's' : ''} &rarr;</div>
       </div>`;
-  }).join('') : `<p class="rankings-empty">No archived seasons yet.</p>`;
+  }).join('') : `<p class="archive-empty">No archived seasons yet.</p>`;
 
   document.getElementById('main').innerHTML = `
-    <div class="container">
-      <div class="rankings-hub">
-        <div class="page-header">
+    <div class="archive-vintage-page">
+      <div class="container">
+        <div class="archive-vintage-header">
           <a href="rankings.html" class="rd-back">&larr; Current Rankings</a>
-          <h1 class="page-title">Rankings Archive</h1>
+          <h1 class="archive-page-title">Rankings Archive</h1>
         </div>
         <div class="archive-seasons-grid">${cardsHtml}</div>
       </div>
@@ -977,8 +977,8 @@ function buildArchiveYearHub(year) {
   const season = (RANKINGS_ARCHIVE || []).find(s => s.year === year);
   if (!season) { goTo('rankings.html?view=archive'); return; }
 
-  const label    = season.label || `${year} Season`;
-  const events   = season.events || [];
+  const label  = season.label || `${year} Season`;
+  const events = season.events || [];
 
   const cardsHtml = events.map((ev, i) => {
     const count      = (ev.rows || []).length;
@@ -997,11 +997,11 @@ function buildArchiveYearHub(year) {
   }).join('');
 
   document.getElementById('main').innerHTML = `
-    <div class="container">
-      <div class="rankings-hub">
-        <div class="page-header">
+    <div class="archive-vintage-page">
+      <div class="container">
+        <div class="archive-vintage-header">
           <a href="rankings.html?view=archive" class="rd-back">&larr; Archive</a>
-          <h1 class="page-title">${label}</h1>
+          <h1 class="archive-page-title">${label}</h1>
         </div>
         <div class="rankings-cards-grid">${cardsHtml}</div>
       </div>
@@ -1206,7 +1206,7 @@ function buildRankingsDetail(eventName, opts = {}) {
         <div class="rd-header">
           <div class="rd-header-text">
             <a href="${backUrl}" class="rd-back">&larr; ${backLabel}</a>
-            <div class="rd-header-meta">${displayYear} Season Rankings${archiveYear ? ' &middot; Archive' : ''}</div>
+            <div class="rd-header-meta">${displayYear} Season Rankings${archiveYear ? ' <span class="archive-stamp">Archive</span>' : ''}</div>
             <h1 class="rd-header-event">${eventName}</h1>
             ${ev && ev.description ? `<p class="rd-header-desc">${ev.description}</p>` : ''}
             <div class="rd-header-actions">
