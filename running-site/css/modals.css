@@ -1,0 +1,1011 @@
+/* ============================================================
+   MODALS — .athlete-card, .card-*, .h2h-*, .search-*, .modal-*
+   ============================================================ */
+
+/* ── SEARCH OVERLAY ───────────────────────────────────────── */
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.96);
+  z-index: 9998;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 24px 0;
+}
+.search-overlay.open { display: flex; }
+
+.search-inner {
+  width: 100%;
+  max-width: 680px;
+}
+
+.search-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: 24px;
+  gap: 12px;
+}
+
+#search-input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 32px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.04em;
+  padding: 14px 0;
+}
+#search-input::placeholder { color: #2a2a2a; }
+
+.search-close-btn {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 6px 8px;
+  line-height: 1;
+  transition: color 0.15s;
+  flex-shrink: 0;
+}
+.search-close-btn:hover { color: #fff; }
+
+.search-results-list {
+  max-height: calc(100vh - 220px);
+  overflow-y: auto;
+}
+
+.search-result-item {
+  padding: 16px 0;
+  border-bottom: 1px solid #1e1e1e;
+  cursor: pointer;
+  transition: padding-left 0.15s;
+}
+.search-result-item:hover { padding-left: 8px; }
+.search-result-item:last-child { border-bottom: none; }
+
+.search-result-cat {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.search-result-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.search-result-excerpt {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 6px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.search-result-meta { font-size: 12px; color: #444; }
+
+.search-no-results {
+  color: #555;
+  font-size: 16px;
+  padding: 24px 0;
+  font-style: italic;
+}
+
+/* ── ATHLETE CARD MODAL ───────────────────────────────────── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.athlete-card {
+  background: #fff;
+  width: 100%;
+  max-width: 880px;
+  max-height: 88vh;
+  overflow-y: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 24px 72px rgba(0, 0, 0, 0.5);
+  transform: translateY(8px);
+  transition: transform 0.2s;
+}
+
+.modal-overlay.open .athlete-card { transform: translateY(0); }
+
+/* Card Header */
+.card-header {
+  background: var(--dark);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.card-rank {
+  font-family: var(--font-display);
+  font-size: 44px;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  min-width: 52px;
+  text-align: center;
+}
+
+.card-header-center { flex: 1; }
+
+.card-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.card-athlete-name {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+
+.card-athlete-country {
+  color: #aaa;
+  font-size: 15px;
+  margin-left: 8px;
+}
+
+.card-close {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 26px;
+  cursor: pointer;
+  padding: 4px 8px;
+  line-height: 1;
+  transition: color 0.15s;
+  flex-shrink: 0;
+}
+
+.card-close:hover { color: #fff; }
+
+/* Card Body */
+.card-body {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+}
+
+/* Left panel */
+.card-left { background: #1a1a1a; }
+
+.card-photo-wrap {
+  position: relative;
+  overflow: hidden;
+  min-height: 200px;
+}
+
+.card-photo-bg {
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255,255,255,0.04) 0px,
+    rgba(255,255,255,0.04) 2px,
+    transparent 2px,
+    transparent 14px
+  );
+}
+
+.card-photo {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.card-photo-placeholder {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.card-photo-placeholder-icon {
+  font-size: 64px;
+  opacity: 0.2;
+}
+
+.card-event-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 800;
+  padding: 4px 10px;
+  letter-spacing: 0.12em;
+  z-index: 2;
+  border-radius: var(--radius-sm);
+}
+
+.card-info { padding: 16px; }
+
+.card-vitals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 0;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #2e2e2e;
+}
+
+.card-vital {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+}
+
+.card-vital-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #666;
+  letter-spacing: 0.06em;
+  min-width: 54px;
+}
+
+.card-vital-value {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ddd;
+}
+
+.card-prs {
+  margin-bottom: 14px;
+}
+
+.card-prs-label {
+  font-size: 9px;
+  font-weight: 700;
+  color: #555;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.card-pr-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 7px 0;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.card-pr-row:first-of-type {
+  border-top: 1px solid #2a2a2a;
+}
+
+.card-pr-event {
+  font-size: 11px;
+  font-weight: 700;
+  color: #888;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.card-pr-time {
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.card-achievements {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #2e2e2e;
+}
+
+.card-achievement { text-align: center; }
+
+.card-achievement-icon { font-size: 22px; display: block; margin-bottom: 2px; }
+
+.card-achievement-count {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  line-height: 1;
+}
+
+.card-achievement-label {
+  font-size: 9px;
+  color: #666;
+  display: block;
+  margin-top: 2px;
+}
+
+.card-extra { font-size: 11px; color: #666; line-height: 1.8; }
+.card-extra strong { color: #aaa; }
+
+.card-ncaa {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #2a2a2a;
+}
+.card-ncaa-logos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card-ncaa-logo {
+  height: 26px;
+  width: auto;
+  flex-shrink: 0;
+}
+.card-college-logo {
+  height: 22px;
+  width: auto;
+  max-width: 64px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.card-college-name {
+  margin-top: 5px;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+}
+.card-wa-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  opacity: 0.85;
+  transition: opacity 0.15s;
+}
+.card-wa-link:hover { opacity: 1; text-decoration: underline; }
+
+/* Right panel */
+.card-right { padding: 26px 28px; }
+
+.card-headline {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+
+.card-headline .hl-key { color: var(--text); }
+.card-headline .hl-rest { color: #bbb; }
+
+.card-traits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 26px;
+}
+
+.card-trait {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  min-width: 64px;
+}
+
+.card-trait-icon {
+  width: 54px;
+  height: 54px;
+  background: var(--dark);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.card-trait-label {
+  font-size: 9px;
+  font-weight: 700;
+  text-align: center;
+  color: #777;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  max-width: 64px;
+}
+
+.card-analysis-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  border-top: 1.5px solid var(--border);
+  padding-top: 20px;
+}
+
+.card-analysis-section { margin-bottom: 16px; }
+
+.card-analysis-section p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.card-analysis-section strong {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.card-analysis-section em { font-style: italic; }
+
+/* ── SEASON RESULTS (collapsible table at bottom of athlete card) ── */
+.card-results {
+  border-top: 1.5px solid #e8e8e8;
+  margin: 0 -28px;
+}
+
+.card-results-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.card-results-toggle::-webkit-details-marker { display: none; }
+
+.card-results-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.card-results-count {
+  font-size: 11px;
+  font-weight: 600;
+  color: #666;
+  background: #f0f0f0;
+  border-radius: 10px;
+  padding: 1px 8px;
+}
+
+.card-results-arrow {
+  margin-left: auto;
+  font-size: 11px;
+  color: #999;
+  transition: transform 0.18s;
+}
+
+.card-results[open] .card-results-arrow {
+  transform: rotate(90deg);
+}
+
+.card-results-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.card-results-table thead tr {
+  background: #f7f7f7;
+}
+
+.card-results-table th {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #999;
+  padding: 7px 12px 7px 0;
+  text-align: left;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.card-results-table th:first-child { padding-left: 28px; }
+.card-results-table th:last-child  { padding-right: 28px; }
+
+.card-results-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.1s;
+}
+
+.card-results-table tbody tr:hover { background: #fafafa; }
+.card-results-table tbody tr:last-child { border-bottom: none; }
+
+.card-results-table td {
+  padding: 9px 12px 9px 0;
+  vertical-align: middle;
+}
+
+.card-results-table td:first-child { padding-left: 28px; }
+.card-results-table td:last-child  { padding-right: 28px; }
+
+.cr-date  { color: #999; font-size: 12px; white-space: nowrap; min-width: 54px; }
+.cr-meet  { color: var(--text); font-weight: 500; }
+.cr-event { color: #888; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+.cr-time  { font-family: 'Courier New', monospace; font-weight: 700; color: var(--text); }
+.cr-place { color: #999; font-size: 12px; text-align: right; padding-right: 28px; }
+
+.card-results-empty { color: var(--muted); font-size: 13px; padding: 14px 28px; margin: 0; }
+
+.card-attribution {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* ── MINI ATHLETE CARD ────────────────────────────────────── */
+.mini-card-body {
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  min-height: 200px;
+  justify-content: center;
+}
+
+.mini-card-stat { text-align: center; }
+
+.mini-card-stat-value {
+  font-family: 'Courier New', monospace;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.mini-card-stat-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.mini-card-note {
+  font-size: 13px;
+  color: var(--muted);
+  font-style: italic;
+  text-align: center;
+}
+
+/* ── CARD COMPARE BUTTON ──────────────────────────────────── */
+.card-compare-btn {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: #ccc;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.card-compare-btn:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+/* ── HEAD TO HEAD MODAL ───────────────────────────────────── */
+.h2h-card::-webkit-scrollbar {
+  width: 4px;
+}
+.h2h-card::-webkit-scrollbar-track {
+  background: transparent;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.h2h-card::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 2px;
+}
+.h2h-card::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+.h2h-card {
+  scrollbar-width: thin;
+  scrollbar-color: #333 transparent;
+}
+
+.h2h-card {
+  background: #111;
+  color: #f0f0f0;
+  border: 1px solid #333;
+  border-radius: 12px;
+  width: min(680px, 96vw);
+  max-height: 88vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  animation: card-in 0.22s ease;
+}
+
+.h2h-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px;
+  border-bottom: 1px solid #2a2a2a;
+  position: sticky;
+  top: 0;
+  background: #111;
+  z-index: 1;
+}
+.h2h-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #f0f0f0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+.h2h-close-btn {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+  border-radius: 4px;
+  transition: color 0.15s;
+}
+.h2h-close-btn:hover { color: #fff; }
+
+.h2h-pickers {
+  display: grid;
+  grid-template-columns: 1fr 44px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 20px 24px;
+  border-bottom: 1px solid #2a2a2a;
+}
+.h2h-picker { position: relative; }
+.h2h-input {
+  width: 100%;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 7px;
+  color: #f0f0f0;
+  font-size: 14px;
+  padding: 10px 14px;
+  outline: none;
+  transition: border-color 0.15s;
+  box-sizing: border-box;
+}
+.h2h-input::placeholder { color: #666; }
+.h2h-input:focus { border-color: var(--accent); }
+.h2h-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 7px;
+  z-index: 50;
+  overflow: hidden;
+  display: none;
+}
+.h2h-dropdown.open { display: block; }
+.h2h-dd-item {
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #ddd;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.1s;
+}
+.h2h-dd-item:hover { background: rgba(255,255,255,0.07); color: #fff; }
+.h2h-dd-country { color: #888; font-size: 12px; margin-left: auto; }
+.h2h-dd-empty { padding: 12px 14px; color: #888; font-size: 14px; }
+
+.h2h-vs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--accent);
+  padding-top: 10px;
+}
+
+.h2h-comparison { padding: 0 0 24px; }
+.h2h-prompt {
+  color: #888;
+  text-align: center;
+  padding: 40px 24px;
+  font-size: 15px;
+}
+
+.h2h-cols {
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  gap: 0;
+}
+.h2h-col-divider { background: #2a2a2a; }
+.h2h-col { padding: 16px 20px; display: flex; flex-direction: column; gap: 6px; }
+
+.h2h-photo-wrap {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+.h2h-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.h2h-photo-ph {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #222;
+  margin: 40px auto;
+}
+
+.h2h-name {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+.h2h-name--right { text-align: right; }
+.h2h-country {
+  font-size: 12px;
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.h2h-country--right { justify-content: flex-end; }
+.h2h-event-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0.8;
+  margin-top: 2px;
+}
+.h2h-event-tag--right { text-align: right; }
+.h2h-section-label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #888;
+  font-weight: 700;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #2a2a2a;
+}
+.h2h-rank-row, .h2h-pr-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  padding: 4px 0;
+}
+.h2h-rank-num {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--accent);
+  min-width: 36px;
+}
+.h2h-rank-ev { color: #fff; font-size: 13px; }
+.h2h-rank-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #ddd;
+  padding: 2px 7px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.h2h-pr-ev { color: #bbb; font-size: 13px; flex: 1; }
+.h2h-pr-t { color: #fff; font-weight: 700; font-size: 14px; font-variant-numeric: tabular-nums; }
+.h2h-pr-row.h2h-pr-win .h2h-pr-t { color: #4ade80; }
+.h2h-empty-row { color: #888; font-size: 13px; padding: 4px 0; }
+
+/* Head-to-head race record */
+.h2h-record-section {
+  padding: 0 20px 24px;
+  border-top: 1px solid #2a2a2a;
+  margin-top: 4px;
+}
+.h2h-record-score {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 10px 0 12px;
+  gap: 8px;
+}
+.h2h-record-wins {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: 800;
+  color: #444;
+  line-height: 1;
+}
+.h2h-record-wins:last-child { text-align: right; }
+.h2h-record-leading { color: var(--accent); }
+.h2h-record-label {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #555;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+}
+.h2h-record-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px;
+  align-items: center;
+  padding: 7px 0;
+  border-bottom: 1px solid #1e1e1e;
+}
+.h2h-record-t {
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: #bbb;
+  font-variant-numeric: tabular-nums;
+}
+.h2h-record-t--right { text-align: right; }
+.h2h-record-dim { color: #444; }
+.h2h-record-place { font-size: 10px; font-family: inherit; font-weight: 400; color: #666; }
+.h2h-record-mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+}
+.h2h-record-meet {
+  font-size: 11px;
+  font-weight: 700;
+  color: #ccc;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 140px;
+}
+.h2h-record-meta {
+  font-size: 10px;
+  color: #555;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Shared PR comparison section */
+.h2h-pr-section {
+  padding: 0 20px 24px;
+  border-top: 1px solid #2a2a2a;
+  margin-top: 4px;
+}
+.h2h-pr-section-hdr {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 8px;
+  align-items: center;
+  padding: 12px 0 8px;
+}
+.h2h-pr-ath {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #aaa;
+}
+.h2h-pr-ath--right { text-align: right; }
+.h2h-pr-label {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #555;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+}
+.h2h-shared-pr-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 10px;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid #1e1e1e;
+}
+.h2h-spr-ev {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #555;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+}
+.h2h-spr-t {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: #bbb;
+  font-variant-numeric: tabular-nums;
+}
+.h2h-spr-t--right { text-align: right; }
+.h2h-spr-win { color: var(--accent); }
+
+@media (max-width: 600px) {
+  .h2h-pickers { grid-template-columns: 1fr; }
+  .h2h-vs { padding: 0; }
+  .h2h-cols { grid-template-columns: 1fr; }
+  .h2h-col-divider { height: 1px; width: auto; }
+}
