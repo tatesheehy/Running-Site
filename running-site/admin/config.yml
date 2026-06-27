@@ -7,6 +7,27 @@ public_folder: /images
 
 collections:
 
+  # ── CONTRIBUTORS ─────────────────────────────────────────
+  - name: contributors
+    label: Contributors
+    files:
+      - name: contributors
+        label: Contributors
+        file: running-site/_data/contributors.json
+        fields:
+          - name: items
+            label: Contributors
+            label_singular: Contributor
+            widget: list
+            fields:
+              - { label: "Full Name", name: name, widget: string }
+              - { label: "Role / Title (e.g. Editor, Writer)", name: role, widget: string, required: false }
+              - { label: "Bio", name: bio, widget: text, required: false }
+              - { label: "Photo", name: photo, widget: image, required: false }
+              - { label: "Photo Background Color", name: photoBackground, widget: color, required: false, default: "#1a1a1a" }
+              - { label: "Twitter / X URL", name: twitter, widget: string, required: false }
+              - { label: "Instagram URL", name: instagram, widget: string, required: false }
+
   # ── ARTICLES ─────────────────────────────────────────────
   - name: articles
     label: Articles

@@ -29,13 +29,14 @@ let ARTICLES, ATHLETES, RANKINGS, RANKINGS_EVENTS, RANKINGS_CRITERIA, RANKINGS_Y
 async function loadData() {
   try {
     const noCache = { cache: 'no-store' };
-    const [articlesData, athletesData, rankingsData, siteData, archiveData, weeksData] = await Promise.all([
+    const [articlesData, athletesData, rankingsData, siteData, archiveData, weeksData, contributorsData] = await Promise.all([
       fetch('/_data/articles.json', noCache).then(r => r.json()),
       fetch('/_data/athletes.json', noCache).then(r => r.json()),
       fetch('/_data/rankings.json', noCache).then(r => r.json()),
       fetch('/_data/site.json', noCache).then(r => r.json()),
       fetch('/_data/rankings-archive.json', noCache).then(r => r.json()).catch(() => ({ seasons: [] })),
       fetch('/_data/rankings-weeks.json', noCache).then(r => r.json()).catch(() => ({ weeks: [] })),
+      fetch('/_data/contributors.json', noCache).then(r => r.json()).catch(() => ({ items: [] })),
     ]);
 
     ARTICLES = articlesData.items || [];
@@ -59,6 +60,7 @@ async function loadData() {
     RANKINGS_WEEKS = {};
     (weeksData.weeks || []).forEach(w => { if (w.id) RANKINGS_WEEKS[w.id] = w; });
     SITE = siteData;
+    SITE.contributors = contributorsData.items || [];
 
     document.documentElement.style.setProperty('--accent', SITE.accentColor || '#E8500A');
 
@@ -145,6 +147,7 @@ function buildNavbar() {
     { label: 'Athletes', href: 'athletes.html' },
     { label: 'News', href: 'articles.html?category=News' },
     { label: 'Podcast', href: SITE.podcastUrl || '#' },
+    { label: 'About', href: 'about.html' },
   ];
 
   const links = navLinks.map(l =>
@@ -1808,6 +1811,44 @@ function showSkeleton(page) {
 })();
 
 // ── INIT ──────────────────────────────────────────────────
+function buildAboutPage() {
+  const contributors = (SITE.contributors || []);
+  const main = qs('#main');
+
+  const cards = contributors.length ? contributors.map(c => {
+    const socials = [
+      c.twitter    ? `<a class="contrib-social" href="${c.twitter}" target="_blank" rel="noopener">𝕏</a>` : '',
+      c.instagram  ? `<a class="contrib-social" href="${c.instagram}" target="_blank" rel="noopener">IG</a>` : '',
+    ].filter(Boolean).join('');
+
+    return `
+      <div class="contrib-card">
+        <div class="contrib-photo-wrap" style="background:${c.photoBackground || '#1a1a1a'}">
+          ${c.photo ? `<img class="contrib-photo" src="${c.photo}" alt="${c.name}">` : `<div class="contrib-photo-empty"></div>`}
+        </div>
+        <div class="contrib-info">
+          <div class="contrib-name">${c.name}</div>
+          ${c.role ? `<div class="contrib-role">${c.role}</div>` : ''}
+          ${c.bio  ? `<p class="contrib-bio">${c.bio}</p>` : ''}
+          ${socials ? `<div class="contrib-socials">${socials}</div>` : ''}
+        </div>
+      </div>`;
+  }).join('') : '<p class="about-empty">No contributors added yet.</p>';
+
+  main.innerHTML = `
+    <div class="about-page">
+      <div class="ath-page-header">
+        <div class="ath-page-header-left">
+          <h1 class="ath-page-title">ABOUT</h1>
+          ${SITE.aboutIntro ? `<p class="ath-page-subtitle">${SITE.aboutIntro}</p>` : ''}
+        </div>
+      </div>
+      <div class="container">
+        <div class="contrib-grid">${cards}</div>
+      </div>
+    </div>`;
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   // Reading progress bar (only visible on article pages)
   const progressBar = document.createElement('div');
@@ -1824,11 +1865,12 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (footerTarget) footerTarget.outerHTML = buildFooter();
 
   const page = document.body.dataset.page;
-  if (page === 'home')     buildHome();
-  if (page === 'articles') buildArticlesPage();
-  if (page === 'article')  buildArticlePage();
-  if (page === 'rankings') buildRankingsPage();
-  if (page === 'athletes') buildAthletesPage();
+  if (page === 'home')        buildHome();
+  if (page === 'articles')    buildArticlesPage();
+  if (page === 'article')     buildArticlePage();
+  if (page === 'rankings')    buildRankingsPage();
+  if (page === 'athletes')    buildAthletesPage();
+  if (page === 'about')       buildAboutPage();
 
   buildAthleteCardModal();
 
