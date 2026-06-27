@@ -15,7 +15,10 @@ const files = fs.readdirSync(dir)
 
 const items = files.map(f => {
   const raw = fs.readFileSync(path.join(dir, f), 'utf8');
-  return JSON.parse(raw);
+  const data = JSON.parse(raw);
+  // Always derive id from filename so it can never mismatch
+  data.id = path.basename(f, '.json');
+  return data;
 });
 
 fs.writeFileSync(out, JSON.stringify({ items }, null, 2));

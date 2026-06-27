@@ -85,14 +85,13 @@ collections:
     label_singular: Athlete
     folder: running-site/_data/athletes
     create: true
-    slug: "{{id}}"
+    slug: "{{slug}}"
     identifier_field: name
     extension: json
     format: json
     summary: "{{name}} ({{country}})"
     fields:
       - { label: "Full Name", name: name, widget: string }
-      - { label: "Unique ID", name: id, widget: string, hint: "e.g. jakob-ingebrigtsen (lowercase, hyphens, no spaces)" }
       - { label: "Country", name: country, widget: string }
       - label: "Flag"
         name: flag
