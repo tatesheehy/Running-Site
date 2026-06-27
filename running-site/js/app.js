@@ -1507,6 +1507,24 @@ function openAthleteCard(athleteId, rank) {
   const a = ATHLETES[athleteId];
   if (!a) return;
 
+  const FLAG_COLORS = {
+    AU:  '#FFCD00', // Australia gold
+    BI:  '#75AADB', // Botswana blue
+    FR:  '#002395', // France blue
+    GB:  '#CF081F', // Great Britain / England red
+    IE:  '#169B62', // Ireland green
+    KE:  '#BB0000', // Kenya red
+    MA:  '#C1272D', // Morocco red
+    NL:  '#FF6600', // Netherlands orange
+    NZ:  '#00247D', // New Zealand blue
+    NO:  '#EF2B2D', // Norway red
+    PT:  '#006600', // Portugal green
+    SCT: '#003C82', // Scotland blue
+    ES:  '#AA151B', // Spain red
+    US:  '#002868', // United States navy
+  };
+  const countryColor = FLAG_COLORS[a.flag] || 'var(--accent)';
+
   const overlay = qs('#athlete-modal');
   const inner = qs('#athlete-card-inner');
 
@@ -1550,18 +1568,18 @@ function openAthleteCard(athleteId, rank) {
   const an = a.analysis || {};
 
   inner.innerHTML = `
-    <div class="card-header">
-      <div class="card-rank">${rank}</div>
+    <div class="card-header" style="border-top: 7px solid ${countryColor}">
+      ${rank != null ? `<div class="card-rank">${rank}</div>` : ''}
       <div class="card-header-center">
-        <div class="card-header-top">
-          <button class="card-compare-btn" onclick="closeAthleteCard();openH2H('${athleteId}',new URLSearchParams(location.search).get('event'))" title="Compare athletes">⇌ Compare</button>
-        </div>
         <div>
           <span class="card-athlete-name">${a.name}</span>
           <span class="card-athlete-country">${renderFlag(a.flag)} ${a.country}</span>
         </div>
       </div>
-      <button class="card-close" onclick="closeAthleteCard()" aria-label="Close">×</button>
+      <div class="card-header-actions">
+        <button class="card-compare-btn" onclick="closeAthleteCard();openH2H('${athleteId}',new URLSearchParams(location.search).get('event'))" title="Compare athletes">⇌ Compare</button>
+        <button class="card-close" onclick="closeAthleteCard()" aria-label="Close">×</button>
+      </div>
     </div>
     <div class="card-body">
       <div class="card-left">
