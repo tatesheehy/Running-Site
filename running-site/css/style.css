@@ -9,6 +9,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
+  --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
   --accent: #E8500A;
   --dark: #111111;
   --dark-2: #1C1C1C;
@@ -304,6 +305,16 @@ button { font-family: inherit; }
   z-index: 100;
   border-top: 3px solid var(--accent);
 }
+.navbar::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--noise);
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 0;
+}
+.navbar-inner { position: relative; z-index: 1; }
 
 .navbar-inner {
   padding: 0 28px;
@@ -559,12 +570,22 @@ button { font-family: inherit; }
   left: 16px;
 }
 
+.home-hero-full::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--noise);
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 1;
+}
 .home-hero-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 120px 0 36px;
+  z-index: 2;
   background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.72) 60%, rgba(0,0,0,0.88) 100%);
   pointer-events: none;
 }
@@ -1588,6 +1609,16 @@ footer {
     rgba(0,0,0,0.82) 100%
   );
   pointer-events: none;
+}
+
+.ranking-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: var(--noise);
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .ranking-card-num {
