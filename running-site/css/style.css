@@ -2779,6 +2779,24 @@ footer {
 .h2h-hub-btn:hover { background: var(--bg-light); }
 
 /* ── HEAD TO HEAD MODAL ───────────────────────────────────── */
+.h2h-card::-webkit-scrollbar {
+  width: 4px;
+}
+.h2h-card::-webkit-scrollbar-track {
+  background: transparent;
+}
+.h2h-card::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 2px;
+}
+.h2h-card::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+.h2h-card {
+  scrollbar-width: thin;
+  scrollbar-color: #333 transparent;
+}
+
 .h2h-card {
   background: #111;
   color: #f0f0f0;
