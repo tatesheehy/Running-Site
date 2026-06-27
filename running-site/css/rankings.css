@@ -80,104 +80,94 @@
 
 .ranking-card {
   position: relative;
-  min-height: 340px;
   background: #111;
   cursor: pointer;
   overflow: hidden;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 30px 32px;
-  transition: transform 0.22s ease, box-shadow 0.22s ease;
-  text-decoration: none;
+  flex-direction: row;
+  align-items: stretch;
+  height: 180px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   border-radius: var(--radius-lg);
-  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.22);
 }
 
 .ranking-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 28px rgba(0,0,0,0.32);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.38);
+}
+
+.ranking-card-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px 32px;
+  position: relative;
+  z-index: 1;
+  min-width: 0;
 }
 
 .ranking-card-photo {
-  position: absolute;
-  inset: 0;
+  width: 42%;
+  flex-shrink: 0;
   background-size: cover;
   background-position: center top;
-  opacity: 0.7;
-  transition: opacity 0.28s, transform 0.36s ease;
+  position: relative;
+  transition: transform 0.36s ease;
 }
-.ranking-card:hover .ranking-card-photo { opacity: 0.8; transform: scale(1.03); }
 
-/* gradient fade so text stays legible */
-.ranking-card::after {
+/* left-edge feather so photo blends into the dark background */
+.ranking-card-photo::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.0) 20%,
-    rgba(0,0,0,0.55) 60%,
-    rgba(0,0,0,0.82) 100%
-  );
+  background: linear-gradient(to right, #111 0%, transparent 32%);
   pointer-events: none;
 }
 
-.ranking-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: var(--noise);
-  opacity: 0.05;
-  pointer-events: none;
-  z-index: 1;
-}
+.ranking-card:hover .ranking-card-photo { transform: scale(1.03); }
 
 .ranking-card-num {
-  position: absolute;
-  top: 18px;
-  right: 24px;
   font-family: var(--font-display);
-  font-size: 96px;
+  font-size: 11px;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.09);
-  line-height: 1;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: 6px;
   user-select: none;
-  z-index: 2;
 }
-
-.ranking-card-body { position: relative; z-index: 2; }
 
 .ranking-card-event {
   font-family: var(--font-display);
-  font-size: 54px;
+  font-size: 42px;
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.01em;
   line-height: 1;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .ranking-card-desc {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.65);
-  line-height: 1.5;
-  margin-bottom: 20px;
-  max-width: 340px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.4;
+  margin-bottom: 14px;
 }
 
 .ranking-card-cta {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--accent);
-  border-top: 1px solid rgba(255,255,255,0.12);
-  padding-top: 14px;
-  width: 100%;
 }
 .ranking-card:hover .ranking-card-cta { color: #fff; }
 
@@ -191,7 +181,7 @@
   font-weight: 700;
   color: var(--accent);
   transition: opacity 0.15s;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 .rd-back:hover { opacity: 0.75; }
 

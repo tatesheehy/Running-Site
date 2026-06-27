@@ -79,13 +79,13 @@ function buildRankingsHub() {
     const photoStyle = ev.photo ? `style="background-image:url('${ev.photo}');"` : '';
     return `
       <div class="ranking-card" onclick="goTo('rankings.html?event=${encodeURIComponent(ev.name)}')">
-        <div class="ranking-card-photo" ${photoStyle}></div>
-        <div class="ranking-card-num">${num}</div>
-        <div class="ranking-card-body">
+        <div class="ranking-card-left">
+          <div class="ranking-card-num">${num}</div>
           <div class="ranking-card-event">${ev.name}</div>
           ${ev.description ? `<div class="ranking-card-desc">${ev.description}</div>` : ''}
           <div class="ranking-card-cta">${count ? `${count} athletes ranked` : 'Under construction'} &rarr;</div>
         </div>
+        ${ev.photo ? `<div class="ranking-card-photo" ${photoStyle}></div>` : ''}
       </div>
     `;
   }).join('');
