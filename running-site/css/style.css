@@ -1507,79 +1507,99 @@ footer {
 .rankings-cards-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 14px;
 }
 
 .ranking-card {
   position: relative;
-  min-height: 300px;
-  background: var(--dark);
+  min-height: 340px;
+  background: #111;
   cursor: pointer;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 28px 32px;
-  transition: background 0.28s;
+  padding: 30px 32px;
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
   text-decoration: none;
   border-radius: var(--radius-lg);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
 }
 
-.ranking-card:hover { background: var(--accent); }
+.ranking-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.32);
+}
 
 .ranking-card-photo {
   position: absolute;
   inset: 0;
   background-size: cover;
-  background-position: center;
-  opacity: 0.45;
-  transition: opacity 0.28s;
+  background-position: center top;
+  opacity: 0.7;
+  transition: opacity 0.28s, transform 0.36s ease;
 }
-.ranking-card:hover .ranking-card-photo { opacity: 0.35; }
+.ranking-card:hover .ranking-card-photo { opacity: 0.8; transform: scale(1.03); }
+
+/* gradient fade so text stays legible */
+.ranking-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.0) 20%,
+    rgba(0,0,0,0.55) 60%,
+    rgba(0,0,0,0.82) 100%
+  );
+  pointer-events: none;
+}
 
 .ranking-card-num {
   position: absolute;
-  top: 22px;
-  right: 28px;
+  top: 18px;
+  right: 24px;
   font-family: var(--font-display);
-  font-size: 80px;
-  font-weight: 900;
-  color: rgba(255, 255, 255, 0.06);
+  font-size: 96px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.09);
   line-height: 1;
   user-select: none;
-  transition: color 0.28s;
+  z-index: 2;
 }
-.ranking-card:hover .ranking-card-num { color: rgba(255,255,255,0.1); }
 
-.ranking-card-body { position: relative; z-index: 1; }
+.ranking-card-body { position: relative; z-index: 2; }
 
 .ranking-card-event {
   font-family: var(--font-display);
-  font-size: 52px;
-  font-weight: 900;
+  font-size: 54px;
+  font-weight: 700;
   color: #fff;
   letter-spacing: 0.01em;
-  line-height: 0.95;
-  margin-bottom: 12px;
+  line-height: 1;
+  margin-bottom: 8px;
 }
 
 .ranking-card-desc {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 1.55;
-  margin-bottom: 18px;
-  transition: color 0.28s;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.5;
+  margin-bottom: 20px;
   max-width: 340px;
 }
-.ranking-card:hover .ranking-card-desc { color: rgba(255,255,255,0.8); }
 
 .ranking-card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent);
-  transition: color 0.28s;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding-top: 14px;
+  width: 100%;
 }
 .ranking-card:hover .ranking-card-cta { color: #fff; }
 
