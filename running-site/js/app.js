@@ -1127,7 +1127,7 @@ function buildRankingRow(r, rank) {
   const meet = (r.meet && r.meet !== 'x') ? r.meet : '';
   return `
     <div class="rd-row${rank <= 3 && rank != null ? ' rd-row--podium' : ''}" data-country="${country}" data-athlete-id="${r.athleteId || ''}" onclick="openRankingRow('${clickData}')">
-      ${rank != null ? `<div class="rd-rank ${rankClass}">${rank}</div>` : '<div class="rd-rank-empty"></div>'}
+      ${rank != null ? `<div class="rd-rank ${rankClass}">${rank <= 3 ? '<svg class="rd-crown" viewBox="0 0 24 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 13 L4 3 L9 9 L12 0 L15 9 L20 3 L24 13 L24 15 L0 15 Z"/></svg>' : ''}${rank}</div>` : '<div class="rd-rank-empty"></div>'}
       <div class="rd-avatar ${photo ? '' : 'rd-avatar--empty'}" style="${photo ? `background-color:${photoBg};background-image:url('${photo}');background-size:cover;background-position:top center` : ''}"></div>
       <div class="rd-info">
         <div class="rd-name">${name}</div>
@@ -1139,6 +1139,7 @@ function buildRankingRow(r, rank) {
         <div class="rd-time">${seasonBest}</div>
         <div class="rd-meet">${meet}</div>
       </div>
+
     </div>
   `;
 }
@@ -1353,7 +1354,7 @@ function buildRankingCard(r, rank) {
   return `
     <div class="rd-card" data-country="${country}" data-athlete-id="${r.athleteId || ''}" onclick="openRankingRow('${clickData}')">
       <div class="rd-card-photo" style="${photo ? `background-color:${photoBg};background-image:url('${photo}')` : `background:${photoBg}`}">
-        ${rank != null ? `<div class="rd-card-rank ${rankClass}">${rank}</div>` : ''}
+        ${rank != null ? `<div class="rd-card-rank ${rankClass}">${rank <= 3 ? '<svg class="rd-crown" viewBox="0 0 24 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 13 L4 3 L9 9 L12 0 L15 9 L20 3 L24 13 L24 15 L0 15 Z"/></svg>' : ''}${rank}</div>` : ''}
       </div>
       <div class="rd-card-body">
         <div class="rd-card-name">${name}</div>
