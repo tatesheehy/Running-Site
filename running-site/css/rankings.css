@@ -190,7 +190,7 @@
   align-items: flex-end;
   justify-content: space-between;
   gap: 32px;
-  padding: 40px 0 20px;
+  padding: 16px 0 20px;
   border-bottom: 3px solid var(--accent);
   margin-bottom: 28px;
 }
@@ -417,7 +417,7 @@
   top: -1px;
 }
 
-.rd-filter { padding: 4px 0 20px; }
+.rd-filter { padding: 4px 0 8px; }
 
 .rd-cs {
   position: relative;
