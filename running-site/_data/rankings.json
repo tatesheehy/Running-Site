@@ -14,14 +14,34 @@
       "photo": "/images/1500cover.png",
       "rows": [
         {
-          "rank": 2,
-          "athleteId": "isaac-nader",
-          "name": "Isaac Nader",
-          "country": "Portugal",
-          "flag": "PT",
-          "seasonBest": "3:45.12",
-          "meet": "Rabat DL",
-          "momentum": -3
+          "rank": 4,
+          "athleteId": "josh-kerr",
+          "name": "Josh Kerr",
+          "country": "Great Britain",
+          "flag": "GB",
+          "seasonBest": "3:46.54",
+          "meet": "Rome DL",
+          "momentum": 3
+        },
+        {
+          "rank": 10,
+          "athleteId": "yared-nuguse",
+          "name": "Yared Nuguse",
+          "country": "United States",
+          "flag": "US",
+          "seasonBest": "x",
+          "meet": "x",
+          "momentum": 6
+        },
+        {
+          "rank": 7,
+          "athleteId": "cameron-myers",
+          "name": "Cameron Myers",
+          "country": "Australia",
+          "flag": "AU",
+          "seasonBest": "x",
+          "meet": "x",
+          "momentum": 2
         },
         {
           "rank": 3,
@@ -34,24 +54,14 @@
           "momentum": 1
         },
         {
-          "rank": 4,
-          "athleteId": "josh-kerr",
-          "name": "Josh Kerr",
-          "country": "Great Britain",
-          "flag": "GB",
-          "seasonBest": "3:46.54",
-          "meet": "Rome DL",
-          "momentum": 3
-        },
-        {
-          "rank": 5,
-          "athleteId": "timothy-cheruiyot",
-          "name": "Timothy Cheruiyot",
-          "country": "Kenya",
-          "flag": "KE",
-          "seasonBest": "3:47.22",
-          "meet": "Shanghai DL",
-          "momentum": 0
+          "rank": 2,
+          "athleteId": "isaac-nader",
+          "name": "Isaac Nader",
+          "country": "Portugal",
+          "flag": "PT",
+          "seasonBest": "3:45.12",
+          "meet": "Rabat DL",
+          "momentum": -3
         },
         {
           "rank": 6,
@@ -59,16 +69,6 @@
           "name": "Niels Laros",
           "country": "Netherlands",
           "flag": "NL",
-          "seasonBest": "x",
-          "meet": "x",
-          "momentum": 2
-        },
-        {
-          "rank": 7,
-          "athleteId": "cameron-myers",
-          "name": "Cameron Myers",
-          "country": "Australia",
-          "flag": "AU",
           "seasonBest": "x",
           "meet": "x",
           "momentum": 2
@@ -84,14 +84,14 @@
           "momentum": -2
         },
         {
-          "rank": 10,
-          "athleteId": "yared-nuguse",
-          "name": "Yared Nuguse",
-          "country": "United States",
-          "flag": "US",
-          "seasonBest": "x",
-          "meet": "x",
-          "momentum": 6
+          "rank": 5,
+          "athleteId": "timothy-cheruiyot",
+          "name": "Timothy Cheruiyot",
+          "country": "Kenya",
+          "flag": "KE",
+          "seasonBest": "3:47.22",
+          "meet": "Shanghai DL",
+          "momentum": 0
         },
         {
           "rank": 11,
