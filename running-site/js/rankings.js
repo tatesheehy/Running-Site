@@ -239,7 +239,7 @@ function buildRankingRow(r, rank) {
         <div class="rd-name">${name}</div>
         <div class="rd-country">${renderFlag(flag)} ${country}</div>
       </div>
-      ${buildMomentumHtml(r.momentum)}
+      ${rank != null ? buildMomentumHtml(r.momentum) : ''}
       <div class="rd-right">
         ${r.reason ? `<div class="rd-reason">${r.reason}</div>` : ''}
         <div class="rd-time">${seasonBest}</div>
