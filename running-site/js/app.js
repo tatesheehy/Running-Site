@@ -1273,14 +1273,16 @@ function buildRankingsDetail(eventName, opts = {}) {
   document.getElementById('main').innerHTML = `
     <div class="container">
       <div class="rankings-detail">
+        <a href="${backUrl}" class="rd-back">&larr; ${backLabel}</a>
         <div class="rd-header">
-          <div class="rd-header-text">
-            <a href="${backUrl}" class="rd-back">&larr; ${backLabel}</a>
+          <div class="rd-header-left">
             <div class="rd-header-meta">${displayYear} Season Rankings${archiveYear ? ' <span class="archive-stamp">Archive</span>' : ''}</div>
             <h1 class="rd-header-event">${eventName}</h1>
             ${weekLabel ? `<p class="rd-header-desc">${weekLabel}</p>` : (ev && ev.description ? `<p class="rd-header-desc">${ev.description}</p>` : '')}
-            <div class="rd-header-actions">
-              ${athleteCount ? `<span class="rd-header-count">${athleteCount} athletes ranked</span>` : ''}
+          </div>
+          <div class="rd-header-actions">
+            ${athleteCount ? `<span class="rd-header-count">${athleteCount} athletes ranked</span>` : ''}
+            <div class="rd-header-btns">
               <button class="h2h-hub-btn rd-h2h-inline" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">⇌ Compare Athletes</button>
               <div class="rd-view-toggle">
                 <button class="rd-view-btn${!isGrid ? ' rd-view-btn--active' : ''}" onclick="toggleRdView('list')" title="List view">
@@ -1292,7 +1294,6 @@ function buildRankingsDetail(eventName, opts = {}) {
               </div>
             </div>
           </div>
-          ${ev && ev.photo ? `<div class="rd-header-photo" style="background-image:url('${ev.photo}')"></div>` : ''}
         </div>
         ${filterHtml}
         <div id="rd-col-sentinel"></div>

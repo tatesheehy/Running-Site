@@ -1648,30 +1648,16 @@ footer {
 
 .rd-header {
   display: flex;
-  align-items: stretch;
+  align-items: flex-end;
+  justify-content: space-between;
   gap: 32px;
-  padding-bottom: 28px;
+  padding: 40px 0 20px;
   border-bottom: 3px solid var(--accent);
-  margin-bottom: 8px;
-  overflow: hidden;
+  margin-bottom: 28px;
 }
 
-.rd-header-text {
-  flex: 1;
+.rd-header-left {
   min-width: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.rd-header-photo {
-  width: 240px;
-  min-height: 180px;
-  flex-shrink: 0;
-  border-radius: var(--radius);
-  background-size: cover;
-  background-position: center top;
-  align-self: stretch;
 }
 
 .rd-header-meta {
@@ -1687,24 +1673,33 @@ footer {
   font-family: var(--font-display);
   font-size: 72px;
   font-weight: 900;
-  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
   line-height: 0.9;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .rd-header-desc {
-  font-size: 15px;
-  color: #555;
+  font-size: 14px;
+  color: var(--muted);
   line-height: 1.6;
-  margin-bottom: 20px;
-  flex: 1;
+  margin: 0;
 }
 
 .rd-header-actions {
   display: flex;
-  align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.rd-header-btns {
+  display: flex;
+  align-items: stretch;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
 }
 
 .rd-header-count {
@@ -1715,7 +1710,11 @@ footer {
   color: var(--muted);
 }
 
-.rd-h2h-inline { margin-bottom: 0; }
+.rd-h2h-inline {
+  margin-bottom: 0;
+  border-right: 1.5px solid var(--border);
+  border-radius: 0;
+}
 
 .home-countdown-wrap {
   padding: 0 28px;
@@ -1747,9 +1746,8 @@ footer {
   display: flex;
   align-items: center;
   gap: 2px;
-  background: #f0f0f0;
-  border-radius: 8px;
-  padding: 3px;
+  background: none;
+  padding: 4px 6px;
 }
 .rd-view-btn {
   display: flex;
@@ -1982,10 +1980,10 @@ footer {
 
 .rd-row {
   display: grid;
-  grid-template-columns: 80px 56px 1fr 140px auto;
+  grid-template-columns: 64px 52px 1fr 160px auto;
   align-items: center;
-  gap: 0 14px;
-  padding: 16px 16px;
+  gap: 0 16px;
+  padding: 14px 20px 14px 16px;
   border-bottom: 1px solid var(--border);
   border-left: 3px solid transparent;
   cursor: pointer;
@@ -1995,33 +1993,34 @@ footer {
   background: var(--bg-light);
   border-left-color: var(--accent);
 }
-.rd-row--podium { border-left-color: #e8e8e8; }
+.rd-row--podium { border-left-color: var(--border); }
 .rd-row--podium:hover { border-left-color: var(--accent); }
 
 .rd-rank {
   font-family: var(--font-display);
-  font-size: 28px;
-  font-weight: 900;
-  color: #bbb;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--muted);
   line-height: 1;
-  background: #f4f4f4;
-  border-radius: 8px;
-  width: 62px;
-  height: 62px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+  background: var(--bg-light);
 }
-.rd-rank.gold   { color: var(--accent); background: rgba(232,80,10,0.08); }
-.rd-rank.silver { color: #8a8a8a; background: #f0f0f0; }
-.rd-rank.bronze { color: #b07540; background: rgba(176,117,64,0.08); }
+.rd-rank.gold   { color: var(--accent); background: rgba(232,80,10,0.1); }
+.rd-rank.silver { color: #7a7a7a; background: rgba(138,138,138,0.1); }
+.rd-rank.bronze { color: #a06830; background: rgba(176,117,64,0.1); }
 
 .rd-avatar {
-  width: 56px;
-  min-width: 56px;
-  height: 56px;
-  border-radius: var(--radius);
+  width: 52px;
+  min-width: 52px;
+  height: 52px;
+  border-radius: 50%;
   align-self: center;
+  object-fit: cover;
 }
 .rd-avatar--empty {
   background: var(--bg-light);
@@ -2029,32 +2028,36 @@ footer {
 
 .rd-name {
   font-family: var(--font-display);
-  font-size: 26px;
-  font-weight: 800;
+  font-size: 22px;
+  font-weight: 700;
   color: var(--text);
   line-height: 1.1;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 .rd-country {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .rd-right { text-align: right; }
 
 .rd-time {
   font-family: 'Courier New', monospace;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: var(--text);
-  letter-spacing: 0.02em;
-  margin-bottom: 3px;
+  letter-spacing: 0.03em;
+  margin-bottom: 2px;
 }
 
 .rd-meet {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--muted);
+  text-align: right;
 }
 
 .rankings-empty {
