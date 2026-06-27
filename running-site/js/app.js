@@ -767,16 +767,32 @@ function buildAthletesPage() {
     return list.map(a => {
       const photo = a.photo || '';
       const bg = a.photoBackground || '#111';
-      const prsHtml = (a.prs || []).slice(0, 3).map(pr =>
-        `<div class="ath-page-pr"><span class="ath-page-pr-event">${pr.event}</span><span class="ath-page-pr-time">${pr.time}</span></div>`
+      const allPrs = (a.prs || []).map(pr =>
+        `<div class="ath-flip-pr"><span class="ath-flip-pr-event">${pr.event}</span><span class="ath-flip-pr-time">${pr.time}</span></div>`
       ).join('');
+      const age = a.dob ? calcAgeFromDob(a.dob) : (a.age || '');
       return `
-        <div class="ath-page-card" onclick="openAthleteCard('${a.id}', null)" role="button" tabindex="0">
-          <div class="ath-page-photo" style="${photo ? `background-color:${bg};background-image:url('${photo}')` : `background:${bg}`}"></div>
-          <div class="ath-page-body">
-            <div class="ath-page-name">${a.name}</div>
-            <div class="ath-page-country">${renderFlag(a.flag)} ${a.country}</div>
-            ${prsHtml ? `<div class="ath-page-prs">${prsHtml}</div>` : ''}
+        <div class="ath-flip-card" role="button" tabindex="0">
+          <div class="ath-flip-inner">
+            <div class="ath-flip-front" onclick="openAthleteCard('${a.id}', null)">
+              <div class="ath-flip-photo" style="${photo ? `background-color:${bg};background-image:url('${photo}')` : `background:${bg}`}"></div>
+              <div class="ath-flip-front-info">
+                <div class="ath-page-name">${a.name}</div>
+                <div class="ath-page-country">${renderFlag(a.flag)} ${a.country}</div>
+              </div>
+            </div>
+            <div class="ath-flip-back" onclick="openAthleteCard('${a.id}', null)">
+              <div class="ath-flip-back-header">
+                <div class="ath-page-name">${a.name}</div>
+                <div class="ath-page-country">${renderFlag(a.flag)} ${a.country}</div>
+                ${age ? `<div class="ath-flip-age">Age ${age}</div>` : ''}
+              </div>
+              <div class="ath-flip-prs-label">Personal Bests</div>
+              <div class="ath-flip-prs-wrap">
+                <div class="ath-flip-prs">${allPrs || '<span class="ath-flip-no-prs">No data yet</span>'}</div>
+              </div>
+              <div class="ath-flip-cta">View Profile →</div>
+            </div>
           </div>
         </div>`;
     }).join('');
