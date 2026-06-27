@@ -2784,6 +2784,8 @@ footer {
 }
 .h2h-card::-webkit-scrollbar-track {
   background: transparent;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 .h2h-card::-webkit-scrollbar-thumb {
   background: #333;
