@@ -5,13 +5,13 @@
     {
       "name": "800m",
       "description": "Pure guts.",
-      "photo": "/images/800cover.png",
+      "photo": "",
       "rows": []
     },
     {
       "name": "1500m",
-      "description": "The metric mile. Perhaps the most unpredictable event on the track.",
-      "photo": "/images/1500cover.png",
+      "description": "The metric mile.",
+      "photo": "",
       "rows": [
         {
           "rank": 4,
@@ -234,14 +234,14 @@
     },
     {
       "name": "5000m",
-      "description": "A hodgepodge of the world's strongest 1500m runners and quickest 10000m guys.",
+      "description": "Strength plus speed.",
       "photo": "",
       "rows": []
     },
     {
       "name": "10000m",
       "description": "Only the strong survive.",
-      "photo": "/images/10000cover.png",
+      "photo": "",
       "rows": []
     }
   ]
