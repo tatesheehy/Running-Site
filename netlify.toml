@@ -1,5 +1,5 @@
 [build]
-  command = "node scripts/sync-athlete-ages.js && node scripts/sync-athlete-results.js && node scripts/build-athletes.js"
+  command = "node scripts/sync-athlete-ages.js && node scripts/build-athletes.js"
   publish = "running-site"
   functions = "netlify/functions"
 
