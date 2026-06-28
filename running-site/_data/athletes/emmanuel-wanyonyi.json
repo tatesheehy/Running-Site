@@ -33,58 +33,23 @@
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
-      "event": "1500 m",
-      "time": "3:34.11",
-      "place": ""
-    },
-    {
-      "date": "JUN 10",
-      "meet": "World Athletics U20 Championships",
-      "event": "1500 m",
-      "time": "1:44.01",
-      "place": ""
-    },
-    {
-      "date": "JUN 10",
-      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-      "event": "800 m",
-      "time": "1:44.36",
-      "place": "1."
+      "event": "800m",
+      "time": "1:42.09",
+      "place": "2"
     },
     {
       "date": "MAY 31",
-      "meet": "Meeting de Paris",
-      "event": "800 m",
-      "time": "1:43.27",
-      "place": "1."
-    },
-    {
-      "date": "APR 24",
-      "meet": "Oslo Bislett Games",
-      "event": "800 m",
-      "time": "1:41.11",
-      "place": ""
-    },
-    {
-      "date": "APR 24",
-      "meet": "Oslo Bislett Games",
-      "event": "Mile Road",
-      "time": "3:52.45",
-      "place": ""
-    },
-    {
-      "date": "APR 24",
-      "meet": "Meeting International d’Athlétisme Herculis EBS",
-      "event": "1500 m",
-      "time": "1:41.44",
-      "place": ""
-    },
-    {
-      "date": "APR 24",
-      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat, Complexe Sportif Prince Moulay Abdellah, Rabat - Diamond Discipline",
-      "event": "800 m",
+      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+      "event": "",
       "time": "1:43.56",
-      "place": "2."
+      "place": "2"
+    },
+    {
+      "date": "APR 24",
+      "meet": "Kip Keino Classic",
+      "event": "1500m",
+      "time": "3:34.11",
+      "place": ""
     }
   ],
   "weight": "x",
