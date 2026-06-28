@@ -9,16 +9,20 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
   margin-bottom: 40px;
-  padding: 12px;
-  margin-left: -12px;
-  margin-right: -12px;
-  width: calc(100% + 24px);
 }
 
 .article-card {
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border-radius: var(--radius);
+  padding-bottom: 10px;
+}
+
+.article-card .article-card-title,
+.article-card .article-card-excerpt,
+.article-card .meta {
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .article-card:hover {
   transform: translateY(-3px);
