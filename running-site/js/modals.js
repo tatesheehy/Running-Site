@@ -138,6 +138,7 @@ function openAthleteCard(athleteId, rank) {
             <summary class="card-results-toggle">
               <span class="card-results-label">2026 Season Results</span>
               <span class="card-results-count">${results.length} race${results.length === 1 ? '' : 's'}</span>
+              ${a.lastSynced ? `<span class="card-results-synced">updated ${(() => { const d = new Date(a.lastSynced + 'T12:00:00'); return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }); })()}</span>` : ''}
               <span class="card-results-arrow">▸</span>
             </summary>
             ${results.length > 0 ? `
@@ -164,8 +165,7 @@ function openAthleteCard(athleteId, rank) {
               </tbody>
             </table>
             ` : `<p class="card-results-empty">No results yet this season.</p>`}
-          </details>
-          ${a.lastSynced ? `<div class="card-last-synced">Last updated: ${(() => { const d = new Date(a.lastSynced + 'T12:00:00'); return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }); })()}</div>` : ''}`;
+          </details>`;
         })()}
         <div class="card-analysis-label">Analysis</div>
         ${an.reviewTitle ? `
