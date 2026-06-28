@@ -158,8 +158,8 @@ function openAthleteCard(athleteId, rank) {
                     <td class="cr-date">${r.date || ''}</td>
                     <td class="cr-meet">${r.meet || ''}</td>
                     <td class="cr-event">${r.event || ''}</td>
-                    <td class="cr-time">${r.time || ''}</td>
-                    <td class="cr-place">${r.place || ''}</td>
+                    <td class="cr-time">${['DNF','DNS','DQ','NM','NH','DSQ'].includes((r.time||'').toUpperCase()) ? `<span class="cr-nonfinish">${r.time}</span>` : (r.time || '')}</td>
+                    <td class="cr-place">${['DNF','DNS','DQ','NM','NH','DSQ'].includes((r.time||'').toUpperCase()) ? '' : (r.place || '')}</td>
                   </tr>
                 `).join('')}
               </tbody>

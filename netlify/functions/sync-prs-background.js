@@ -38,8 +38,16 @@ function normalizeEvent(raw) {
   return EVENT_MAP[raw.toLowerCase().trim()] || raw;
 }
 
+const NON_FINISH = new Set(['DNF', 'DNS', 'DQ', 'NM', 'NH', 'DQB', 'DSQ']);
+
 function parseMark(raw) {
-  return raw ? String(raw).replace(/i$/, '').trim() : '';
+  if (!raw) return '';
+  const s = String(raw).replace(/i$/, '').trim();
+  return NON_FINISH.has(s.toUpperCase()) ? s.toUpperCase() : s;
+}
+
+function isNonFinish(mark) {
+  return NON_FINISH.has(String(mark || '').toUpperCase());
 }
 
 function isIndoor(b) {
@@ -75,7 +83,7 @@ function normalizeBests(arr) {
     event: normalizeEvent(b.discipline || b.event || b.eventName || ''),
     time:  parseMark(b.mark || b.performance || b.result || b.time || b.best),
     indoor: isIndoor(b),
-  })).filter(b => b.event && b.time);
+  })).filter(b => b.event && b.time && !isNonFinish(b.time));
 }
 
 function sortBests(bests) {
@@ -131,7 +139,7 @@ function extractSeasonResults(nd, year) {
     if (!entryYear && inheritYear) entryYear = inheritYear;
     if (!entryYear || entryYear !== year) return;
     const mark = parseMark(rawMark);
-    if (!mark) return;
+    if (!mark || (!isNonFinish(mark) && !/[\d:]/.test(mark))) return;
     const meetLower = rawComp.toLowerCase();
     if (meetLower.includes('split time') || meetLower.includes('- splits')) return;
     raw.push({ date: parseResultDate(rawDate) || (rawSeason ? String(rawSeason) : ''), meet: cleanMeetName(rawComp), event: normalizeEvent(String(rawEvent)) || '', time: mark, place: rawPlace ? String(rawPlace).replace(/\.$/, '') : '', _rawDate: rawDate });
@@ -178,7 +186,7 @@ function extractSeasonResults(nd, year) {
           const entryYear = getYear(rawDate);
           if (!entryYear || entryYear !== year) continue;
           const mark = parseMark(rawMark);
-          if (!mark) continue;
+          if (!mark || (!isNonFinish(mark) && !/[\d:]/.test(mark))) continue;
           const meetLower = rawComp.toLowerCase();
           if (meetLower.includes('split time') || meetLower.includes('- splits')) continue;
           raw.push({
