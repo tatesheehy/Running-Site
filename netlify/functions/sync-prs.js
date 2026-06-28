@@ -335,7 +335,11 @@ exports.handler = async (event) => {
   if (event.httpMethod && event.httpMethod !== 'GET' && event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method not allowed' };
   }
-  return runSync();
+  try {
+    return await runSync();
+  } catch (e) {
+    return { statusCode: 500, body: 'Unhandled error: ' + e.message };
+  }
 };
 
 async function runSync() {
