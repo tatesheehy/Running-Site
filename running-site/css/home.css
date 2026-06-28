@@ -333,6 +333,51 @@
 
 .meet-cell { color: var(--muted); font-size: 13px; text-align: right; }
 
+/* ── COMPACT RANKINGS LIST (sidebar widget) ───────────────── */
+.rw-list { display: flex; flex-direction: column; }
+
+.rw-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--border);
+}
+.rw-row:last-child { border-bottom: none; }
+.rw-row--clickable { cursor: pointer; }
+.rw-row--clickable:hover .rw-name { color: var(--accent); }
+
+.rw-rank {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--muted);
+  width: 24px;
+  flex-shrink: 0;
+  text-align: center;
+}
+.rw-rank--first { color: var(--accent); font-size: 22px; }
+
+.rw-flag { font-size: 18px; flex-shrink: 0; line-height: 1; }
+
+.rw-name {
+  font-size: 14px;
+  font-weight: 700;
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.15s;
+}
+
+.rw-country {
+  font-size: 12px;
+  color: var(--muted);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
 .view-all-link {
   display: block;
   text-align: right;

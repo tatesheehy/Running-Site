@@ -4,10 +4,32 @@
 
 // ── RANKINGS TABLE HTML ────────────────────────────────────
 function buildRankingsTableHtml(event, compact) {
-  const rows = RANKINGS[event] || [];
-  if (!rows.length) {
+  const allRows = RANKINGS[event] || [];
+  if (!allRows.length) {
     return `<p style="color:var(--muted);padding:20px 0;font-size:14px;">No rankings data yet for ${event}.</p>`;
   }
+  const rows = compact ? allRows.slice(0, 5) : allRows;
+
+  if (compact) {
+    const rowsHtml = rows.map((r, i) => {
+      const rank = i + 1;
+      const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
+      const name    = (a && a.name)    || r.name    || r.athleteId || '—';
+      const country = (a && a.country) || r.country || '';
+      const flag    = (a && a.flag)    || r.flag    || '';
+      const hasCard = r.athleteId && ATHLETES[r.athleteId];
+      return `
+        <div class="rw-row ${hasCard ? 'rw-row--clickable' : ''}" ${hasCard ? `onclick="openAthleteCard('${r.athleteId}', ${rank})"` : ''}>
+          <span class="rw-rank ${rank === 1 ? 'rw-rank--first' : ''}">${rank}</span>
+          <span class="rw-flag">${renderFlag(flag)}</span>
+          <span class="rw-name">${name}</span>
+          <span class="rw-country">${country}</span>
+        </div>
+      `;
+    }).join('');
+    return `<div class="rw-list">${rowsHtml}</div>`;
+  }
+
   const rowsHtml = rows.map((r, i) => {
     const rank = i + 1;
     const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
@@ -23,7 +45,7 @@ function buildRankingsTableHtml(event, compact) {
           <div class="name">${name}</div>
           <div class="country">${renderFlag(flag)} ${country}</div>
         </td>
-        ${compact ? '' : `<td>${country}</td>`}
+        <td>${country}</td>
         <td><span class="best-time">${(r.seasonBest && r.seasonBest !== 'x') ? r.seasonBest : '—'}</span></td>
         <td class="meet-cell">${(r.meet && r.meet !== 'x') ? r.meet : ''}</td>
       </tr>
@@ -34,8 +56,7 @@ function buildRankingsTableHtml(event, compact) {
     <table class="rankings-table" aria-label="${event} rankings">
       <thead>
         <tr>
-          <th>Rank</th><th>Athlete</th>
-          ${compact ? '' : '<th>Country</th>'}
+          <th>Rank</th><th>Athlete</th><th>Country</th>
           <th>Best Time</th><th style="text-align:right">Meet</th>
         </tr>
       </thead>
