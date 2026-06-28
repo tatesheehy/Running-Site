@@ -73,7 +73,64 @@
   "ncaa": false,
   "club": "x",
   "country": "Norway",
-  "results": [],
+  "results": [
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "",
+      "time": "3:32.05",
+      "place": "10"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "Mile",
+      "time": "3:53.87",
+      "place": ""
+    },
+    {
+      "date": "JUN 7",
+      "meet": "BAUHAUS-Galan",
+      "event": "1500m",
+      "time": "3:31.74",
+      "place": ""
+    },
+    {
+      "date": "MAY 31",
+      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+      "event": "",
+      "time": "3:33.45",
+      "place": "12"
+    },
+    {
+      "date": "MAY 24",
+      "meet": "61. Internationales Pfingstsportfest Rehlingen",
+      "event": "",
+      "time": "3:32.52",
+      "place": "1"
+    },
+    {
+      "date": "MAY 20",
+      "meet": "15th Savona International Meeting",
+      "event": "",
+      "time": "3:34.37",
+      "place": "4"
+    },
+    {
+      "date": "APR 4",
+      "meet": "Urban Trail de Lille",
+      "event": "5 Kilometres Road",
+      "time": "13:10",
+      "place": ""
+    },
+    {
+      "date": "MAR 1",
+      "meet": "Norwegian Indoor Championships",
+      "event": "3000 Metres Short Track",
+      "time": "7:41.44",
+      "place": "1"
+    }
+  ],
   "weight": "x",
   "coach": "x",
   "reviewBody": "x",

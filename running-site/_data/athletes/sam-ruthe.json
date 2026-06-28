@@ -49,7 +49,64 @@
   "ncaa": false,
   "club": "x",
   "country": "New Zealand",
-  "results": [],
+  "results": [
+    {
+      "date": "MAR 5",
+      "meet": "New Zealand Track & Field Championships",
+      "event": "1500m",
+      "time": "3:41.43",
+      "place": "1"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "3000m sh",
+      "time": "7:43.16",
+      "place": "2"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "Mile sh",
+      "time": "3:52.46",
+      "place": "7"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "1500m sh",
+      "time": "3:34.66",
+      "place": ""
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "1500m",
+      "time": "3:33.25",
+      "place": ""
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "Mile sh",
+      "time": "3:48.88",
+      "place": "1"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Pak'n Save Cooks International Classic",
+      "event": "Mile",
+      "time": "3:53.83",
+      "place": "2"
+    },
+    {
+      "date": "JAN 17",
+      "meet": "Allan & Sylvia Potts Classic",
+      "event": "800m",
+      "time": "1:45.86",
+      "place": "1"
+    }
+  ],
   "weight": "x",
   "coach": "x",
   "reviewBody": "x",
