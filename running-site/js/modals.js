@@ -72,9 +72,10 @@ function openAthleteCard(athleteId, rank) {
     </div>
   `).join('');
 
-  const extraHtml = Object.entries(a.extra || {}).map(([k, v]) =>
-    v ? `<strong>${k}</strong> ${v}<br>` : ''
-  ).join('');
+  const extraHtml = Object.entries(a.extra || {})
+    .filter(([, v]) => v && String(v).trim() && String(v).trim() !== 'x')
+    .map(([k, v]) => `<strong>${k}</strong> ${v}<br>`)
+    .join('');
 
   const traitsHtml = (a.traits || []).map(t => `
     <div class="card-trait">
