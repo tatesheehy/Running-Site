@@ -63,109 +63,88 @@
   "country": "Kenya",
   "results": [
     {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "1500m",
+      "time": "3:33.52",
+      "place": ""
+    },
+    {
       "date": "JUN 20",
-      "meet": "Athletics Kenya National Police Service Track and Field Championships, Ulinzi Sports Complex, Langata, Nairobi",
-      "event": "Cross Country",
-      "time": "3:40.97",
-      "place": "10."
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "",
+      "time": "3:42.89",
+      "place": "15"
     },
     {
       "date": "JUN 18",
-      "meet": "Kip Keino Classic, Nyayo National Stadium, Nairobi",
-      "event": "Cross Country",
-      "time": "3:38.1h",
-      "place": "5."
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "",
+      "time": "3:39.9h",
+      "place": "6"
     },
     {
       "date": "MAY 27",
       "meet": "Athletics Kenya National Police Service Track and Field Championships",
-      "event": "4x100 m Relay",
-      "time": "41.28",
+      "event": "800m",
+      "time": "1:47.09",
       "place": ""
     },
     {
       "date": "MAY 27",
-      "meet": "African Games",
-      "event": "1500 m",
-      "time": "1:45.14",
-      "place": ""
+      "meet": "Athletics Kenya National Police Service Track and Field Championships",
+      "event": "",
+      "time": "1:50.28",
+      "place": "1"
     },
     {
       "date": "MAY 27",
-      "meet": "XXII Commonwealth Games",
-      "event": "1500 m",
-      "time": "3:30.82",
-      "place": "1."
+      "meet": "Athletics Kenya National Police Service Track and Field Championships",
+      "event": "",
+      "time": "3:44.94",
+      "place": "2"
     },
     {
       "date": "MAY 27",
-      "meet": "Kenyan Championships",
-      "event": "1500 m",
-      "time": "3:36.17",
-      "place": "8."
-    },
-    {
-      "date": "MAY 27",
-      "meet": "Trials For World Athletics Relay Championships, Ulinzi Sports Complex, Langata, Nairobi",
-      "event": "1500 m",
-      "time": "3:42.20",
-      "place": "2."
-    },
-    {
-      "date": "MAY 27",
-      "meet": "Trials For World Athletics Relay Championships, Ulinzi Sports Complex, Langata, Nairobi",
-      "event": "Cross Country",
-      "time": "3:42.20",
-      "place": "2."
+      "meet": "Athletics Kenya National Police Service Track and Field Championships",
+      "event": "",
+      "time": "3:44.45",
+      "place": "3"
     },
     {
       "date": "APR 28",
-      "meet": "XXII Commonwealth Games",
-      "event": "1500 m",
-      "time": "3:35.70",
-      "place": "4."
+      "meet": "Simbine Classic",
+      "event": "",
+      "time": "1:47.43",
+      "place": "8"
     },
     {
       "date": "APR 24",
-      "meet": "Athletics Kenya National Police Service Track and Field Championships, Ulinzi Sports Complex, Langata, Nairobi",
-      "event": "1500 m",
-      "time": "1:47.09",
-      "place": "1."
+      "meet": "Kip Keino Classic",
+      "event": "",
+      "time": "3:40.97",
+      "place": "10"
     },
     {
       "date": "APR 11",
-      "meet": "Athletics Kenya National Police Service Track and Field Championships",
-      "event": "4x400 m Relay",
-      "time": "3:10.54",
-      "place": ""
-    },
-    {
-      "date": "APR 11",
-      "meet": "The XXXII Olympic Games",
-      "event": "1500 m sh",
-      "time": "3:29.93",
-      "place": ""
-    },
-    {
-      "date": "APR 11",
-      "meet": "Athletics Kenya National Police Service Track and Field Championships, Ulinzi Sports Complex, Langata, Nairobi",
-      "event": "1500 m",
-      "time": "1:50.28",
-      "place": "1."
+      "meet": "Trials For World Athletics Relay Championships",
+      "event": "",
+      "time": "3:38.1h",
+      "place": "5"
     },
     {
       "date": "APR 9",
-      "meet": "Simbine Classic, Pilditch Stadium, Pretoria",
-      "event": "1500 m",
-      "time": "1:47.43",
-      "place": "8."
+      "meet": "Trials For World Athletics Relay Championships",
+      "event": "",
+      "time": "3:42.20",
+      "place": "2"
     },
     {
       "date": "FEB 14",
-      "meet": "Athletics Kenya National Police Service Track and Field Championships, Ulinzi Sports Complex, Langata, Nairobi",
-      "event": "Cross Country",
-      "time": "3:44.45",
-      "place": "3."
+      "meet": "Sirikwa Classic Continental Tour Gold",
+      "event": "",
+      "time": "6:16",
+      "place": "28"
     }
   ],
   "weight": "x",

@@ -90,179 +90,81 @@
   "country": "France",
   "results": [
     {
-      "date": "JUN 10",
-      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-      "event": "1500 m",
-      "time": "3:30.68",
-      "place": ""
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "1500m",
+      "time": "3:29.80",
+      "place": "2"
     },
     {
       "date": "JUN 10",
-      "meet": "ORLEN Copernicus Cup",
+      "meet": "Oslo Bislett Games",
       "event": "Mile",
-      "time": "3:32.56",
+      "time": "3:49.63",
       "place": ""
-    },
-    {
-      "date": "JUN 10",
-      "meet": "Chpts Interclubs LIFA - Finale Nationale 3, Complexe sportif Laura Flessel, Bussy Saint Georges",
-      "event": "1500 m",
-      "time": "3:38.25",
-      "place": "1."
-    },
-    {
-      "date": "JUN 10",
-      "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Split times",
-      "event": "1500 m sh",
-      "time": "3:34.10",
-      "place": "1."
     },
     {
       "date": "JUN 7",
-      "meet": "Chpts Interclubs LIFA - Finale Nationale 3, Complexe sportif Laura Flessel, Bussy Saint Georges",
-      "event": "1500 m",
-      "time": "7:57.20",
-      "place": "1."
+      "meet": "BAUHAUS-Galan",
+      "event": "",
+      "time": "3:33.84",
+      "place": "9"
     },
     {
       "date": "MAY 31",
       "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-      "event": "Half Marathon",
-      "time": "1:04:53",
-      "place": ""
-    },
-    {
-      "date": "MAY 31",
-      "meet": "Herculis",
-      "event": "1500 m sh",
-      "time": "3:31.74",
-      "place": ""
-    },
-    {
-      "date": "MAY 31",
-      "meet": "French Indoor Championships",
-      "event": "3000 m sh",
-      "time": "3:41.77",
-      "place": "1."
+      "event": "",
+      "time": "3:30.68",
+      "place": "3"
     },
     {
       "date": "MAY 17",
-      "meet": "French Indoor Championships",
-      "event": "1500 m sh",
-      "time": "3:40.93",
-      "place": "1."
+      "meet": "Chpts Interclubs LIFA",
+      "event": "",
+      "time": "3:38.25",
+      "place": "1"
     },
     {
       "date": "MAR 21",
-      "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Diamond Discipline",
-      "event": "Mile",
-      "time": "3:49.63",
-      "place": "7."
+      "meet": "World Athletics Indoor Championships",
+      "event": "3000 Metres Short Track",
+      "time": "7:39.87",
+      "place": "11"
     },
     {
       "date": "FEB 28",
-      "meet": "French Championships",
-      "event": "1500 m",
-      "time": "3:33.33",
-      "place": "1."
-    },
-    {
-      "date": "FEB 28",
-      "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Diamond Discipline",
-      "event": "Mile",
-      "time": "3:32.56",
-      "place": "1."
+      "meet": "French Indoor Championships",
+      "event": "3000 Metres Short Track",
+      "time": "8:12.21",
+      "place": "1"
     },
     {
       "date": "FEB 22",
-      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-      "event": "4x800 m Relay",
-      "time": "7:37.44",
-      "place": ""
-    },
-    {
-      "date": "FEB 22",
-      "meet": "Czech Indoor Gala",
-      "event": "Mile",
-      "time": "3:39.16",
-      "place": ""
-    },
-    {
-      "date": "FEB 22",
-      "meet": "BAUHAUS-Galan, Olympiastadion, Stockholm - Diamond Discipline",
-      "event": "1500 m sh",
-      "time": "3:30.68",
-      "place": "9."
-    },
-    {
-      "date": "FEB 19",
-      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-      "event": "1500 m sh",
-      "time": "3:32.56",
-      "place": ""
-    },
-    {
-      "date": "FEB 19",
       "meet": "ORLEN Copernicus Cup",
-      "event": "Mile",
-      "time": "3:49.63",
-      "place": ""
-    },
-    {
-      "date": "FEB 19",
-      "meet": "Montgeron Meeting Elite",
-      "event": "3000 m sh",
-      "time": "8:06.63",
-      "place": ""
+      "event": "1500m sh",
+      "time": "3:32.56",
+      "place": "1"
     },
     {
       "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
-      "event": "3000 m sh",
-      "time": "7:56.32",
+      "event": "3000m",
+      "time": "7:35.79",
       "place": ""
-    },
-    {
-      "date": "FEB 19",
-      "meet": "INIT Indoor Meeting Karlsruhe, Europahalle, Karlsruhe (i) - Indoor Meeting",
-      "event": "Mile",
-      "time": "3:33.36",
-      "place": "1."
     },
     {
       "date": "FEB 8",
-      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat, Complexe Sportif Prince Moulay Abdellah, Rabat - Diamond Discipline",
-      "event": "1500 m sh",
-      "time": "3:30.68",
-      "place": "3."
+      "meet": "INIT Indoor Meeting Karlsruhe",
+      "event": "1500m sh",
+      "time": "3:33.36",
+      "place": "1"
     },
     {
       "date": "JAN 11",
-      "meet": "",
-      "event": "10,000 m",
-      "time": "30:50.81",
+      "meet": "10K Valencia Ibercaja by Kiprun",
+      "event": "10 Kilometres Road",
+      "time": "27:43",
       "place": ""
-    },
-    {
-      "date": "JAN 11",
-      "meet": "Oslo Bislett Games",
-      "event": "3000 m",
-      "time": "7:35.79",
-      "place": ""
-    },
-    {
-      "date": "JAN 11",
-      "meet": "Corrida Pédestre Internationale de Houilles",
-      "event": "Half Marathon",
-      "time": "28:32",
-      "place": ""
-    },
-    {
-      "date": "JAN 11",
-      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF, Arena Stade Couvert, Liévin (i) - World Athletics Indoor Tour",
-      "event": "3000 m sh",
-      "time": "7:35.79",
-      "place": "4."
     }
   ],
   "weight": "155",

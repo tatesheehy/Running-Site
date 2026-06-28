@@ -84,192 +84,59 @@
   "results": [
     {
       "date": "JUN 13",
-      "meet": "LA Track Festival",
-      "event": "4xMile Relay",
-      "time": "16:25.19",
-      "place": ""
-    },
-    {
-      "date": "JUN 13",
-      "meet": "Darius Dixon Memorial Invitational",
-      "event": "1500 m",
-      "time": "3:38.13",
-      "place": ""
-    },
-    {
-      "date": "JUN 13",
-      "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "3000 m sh",
-      "time": "7:52.03",
-      "place": "1."
+      "meet": "USATF LA Grand Prix",
+      "event": "1500m",
+      "time": "3:33.71",
+      "place": "1"
     },
     {
       "date": "MAY 23",
-      "meet": "",
-      "event": "800 m",
+      "meet": "LA Track Festival",
+      "event": "800m",
       "time": "1:45.79",
       "place": ""
     },
     {
-      "date": "MAY 23",
-      "meet": "LA Track Festival",
-      "event": "Distance Medley sh",
-      "time": "9:17.17",
-      "place": ""
-    },
-    {
-      "date": "MAY 23",
+      "date": "MAY 1",
       "meet": "Payton Jordan Invitational",
-      "event": "800 m",
-      "time": "1:54.52",
+      "event": "5000m",
+      "time": "13:13.11",
       "place": ""
-    },
-    {
-      "date": "MAY 23",
-      "meet": "Prefontaine Classic",
-      "event": "Mile",
-      "time": "3:48.86",
-      "place": "1."
-    },
-    {
-      "date": "MAY 1",
-      "meet": "",
-      "event": "2 Mi",
-      "time": "8:15.93",
-      "place": ""
-    },
-    {
-      "date": "MAY 1",
-      "meet": "Sound Invite",
-      "event": "2 Mi",
-      "time": "8:15.93",
-      "place": ""
-    },
-    {
-      "date": "MAY 1",
-      "meet": "Millrose Games",
-      "event": "5000 m",
-      "time": "13:46.81",
-      "place": ""
-    },
-    {
-      "date": "MAY 1",
-      "meet": "USA Indoor Championships, Ocean Breeze Athl. Complex, New York, NY (i)",
-      "event": "2 Mi sh",
-      "time": "7:35.29",
-      "place": "3."
     },
     {
       "date": "FEB 28",
-      "meet": "USATF LA Grand Prix, USC Allyson Felix at Loker Track Stadium, Los Angeles, CA",
-      "event": "3000 m sh",
-      "time": "3:33.71",
-      "place": "1."
-    },
-    {
-      "date": "FEB 14",
-      "meet": "LA Track Festival",
-      "event": "800 m",
-      "time": "1:45.79",
-      "place": ""
-    },
-    {
-      "date": "FEB 14",
-      "meet": "LA Track Festival",
-      "event": "1500 m",
-      "time": "3:33.71",
-      "place": ""
-    },
-    {
-      "date": "FEB 14",
-      "meet": "Boston University John Thomas Terrier Classic",
-      "event": "3000 m",
-      "time": "7:46.48",
-      "place": ""
+      "meet": "USA Indoor Championships",
+      "event": "",
+      "time": "7:47.99",
+      "place": "12"
     },
     {
       "date": "FEB 14",
       "meet": "Sound Invite",
-      "event": "3000 m sh",
-      "time": "7:46.48",
-      "place": ""
-    },
-    {
-      "date": "FEB 14",
-      "meet": "USATF LA Grand Prix, USC Allyson Felix at Loker Track Stadium, Los Angeles, CA",
-      "event": "1500 m",
-      "time": "1:45.79",
-      "place": "7."
-    },
-    {
-      "date": "FEB 1",
-      "meet": "",
-      "event": "3000 m",
-      "time": "7:30.15",
-      "place": ""
-    },
-    {
-      "date": "FEB 1",
-      "meet": "",
-      "event": "3000 m sh",
-      "time": "7:30.15",
-      "place": ""
-    },
-    {
-      "date": "FEB 1",
-      "meet": "USATF LA Grand Prix",
-      "event": "3000 m",
+      "event": "3000m sh",
       "time": "7:35.29",
-      "place": ""
+      "place": "3"
     },
     {
       "date": "FEB 1",
-      "meet": "Sound Invite",
-      "event": "3000 m sh",
-      "time": "7:35.29",
-      "place": ""
-    },
-    {
-      "date": "FEB 1",
-      "meet": "ACC Indoor Track \\u0026 Field Championships",
-      "event": "2 Mi",
-      "time": "7:30.15",
-      "place": ""
-    },
-    {
-      "date": "FEB 1",
-      "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "2 Mi",
-      "time": "7:35.29",
-      "place": ""
-    },
-    {
-      "date": "FEB 1",
-      "meet": "LA Track Festival, Drake Stadium, Los Angeles, CA - National Events",
-      "event": "800 m",
-      "time": "1:45.79",
-      "place": "7."
-    },
-    {
-      "date": "FEB 1",
-      "meet": "Millrose Games, Armory Track\\u0026Field Center, New York, NY (i) - Split times",
-      "event": "2 Mi sh",
-      "time": "7:41.28",
-      "place": "3."
-    },
-    {
-      "date": "JAN 10",
-      "meet": "The Penn Relays",
-      "event": "Cross Country Relay",
-      "time": "16:25.19",
-      "place": "21"
-    },
-    {
-      "date": "JAN 10",
-      "meet": "Millrose Games, Armory Track\\u0026Field Center, New York, NY (i) - World Athletics Indoor Tour",
-      "event": "2 Mi sh",
+      "meet": "Millrose Games",
+      "event": "2 Miles sh",
       "time": "8:15.93",
-      "place": "11."
+      "place": "11"
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "3000m sh",
+      "time": "7:41.28",
+      "place": ""
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Relay",
+      "time": "22:43",
+      "place": "5"
     }
   ],
   "college": "",
