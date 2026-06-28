@@ -49,6 +49,8 @@ function buildAthletesPage() {
     }).join('');
   }
 
+  let activeView = 'grid';
+
   document.getElementById('main').innerHTML = `
     <div class="container">
       <div class="ath-page-header">
@@ -56,17 +58,43 @@ function buildAthletesPage() {
           <h1 class="ath-page-title">Athletes</h1>
           <span class="ath-page-count">${all.length} athletes</span>
         </div>
-        <div class="ath-page-sort-toggle">
-          <button class="ath-page-sort active" data-sort="alpha" onclick="sortAthletes('alpha')">A – Z</button>
-          <button class="ath-page-sort" data-sort="country" onclick="sortAthletes('country')">By Country</button>
+        <div class="ath-page-controls">
+          <div class="ath-page-sort-toggle" id="ath-sort-btns">
+            <button class="ath-page-sort active" data-sort="alpha" onclick="sortAthletes('alpha')">A – Z</button>
+            <button class="ath-page-sort" data-sort="country" onclick="sortAthletes('country')">By Country</button>
+          </div>
+          <button class="ath-view-btn" id="ath-map-btn" onclick="toggleAthleteMap()">🗺 Map</button>
         </div>
       </div>
-      <div class="ath-page-grid" id="ath-page-grid">${renderGrid(sortedAthletes())}</div>
+      <div id="ath-page-grid" class="ath-page-grid">${renderGrid(sortedAthletes())}</div>
     </div>`;
+
+  window._mapRenderGrid  = list => { qs('#ath-page-grid').className = 'ath-page-grid'; qs('#ath-page-grid').innerHTML = renderGrid(list); };
+  window._mapRestoreGrid = ()   => { qs('#ath-page-grid').className = 'ath-page-grid'; qs('#ath-page-grid').innerHTML = renderGrid(sortedAthletes()); };
 
   window.sortAthletes = function(sort) {
     activeSort = sort;
     document.querySelectorAll('.ath-page-sort').forEach(b => b.classList.toggle('active', b.dataset.sort === sort));
     qs('#ath-page-grid').innerHTML = renderGrid(sortedAthletes());
+  };
+
+  window.toggleAthleteMap = function() {
+    const grid    = qs('#ath-page-grid');
+    const btn     = qs('#ath-map-btn');
+    const sortBtns = qs('#ath-sort-btns');
+    activeView = activeView === 'grid' ? 'map' : 'grid';
+
+    if (activeView === 'map') {
+      btn.classList.add('active');
+      sortBtns.style.visibility = 'hidden';
+      grid.className = 'ath-map-wrap';
+      grid.innerHTML = buildWorldMap(all);
+      initMapInteractions(all);
+    } else {
+      btn.classList.remove('active');
+      sortBtns.style.visibility = '';
+      grid.className = 'ath-page-grid';
+      grid.innerHTML = renderGrid(sortedAthletes());
+    }
   };
 }

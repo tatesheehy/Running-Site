@@ -58,32 +58,37 @@ function buildShareCardHtml(athlete) {
 }
 
 function openShareOverlay(athleteId) {
-  const athlete = ATHLETES[athleteId];
-  if (!athlete) return;
+  try {
+    const athlete = (typeof ATHLETES !== 'undefined') ? ATHLETES[athleteId] : null;
+    if (!athlete) { console.warn('Share: athlete not found for id', athleteId, typeof ATHLETES); return; }
 
-  const existing = document.getElementById('share-overlay');
-  if (existing) existing.remove();
+    const existing = document.getElementById('share-overlay');
+    if (existing) existing.remove();
 
-  const overlay = document.createElement('div');
-  overlay.id = 'share-overlay';
-  overlay.style.cssText = `
-    position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.85);
-    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;
-  `;
+    const overlay = document.createElement('div');
+    overlay.id = 'share-overlay';
+    overlay.style.cssText = [
+      'position:fixed', 'inset:0', 'z-index:99999', 'background:rgba(0,0,0,0.85)',
+      'display:flex', 'flex-direction:column', 'align-items:center', 'justify-content:center', 'gap:16px',
+    ].join(';');
 
-  overlay.innerHTML = `
-    ${buildShareCardHtml(athlete)}
-    <p style="color:#666;font-size:13px;font-family:sans-serif;margin:0">
-      Screenshot this card to share — press <kbd style="background:#222;color:#aaa;padding:2px 6px;border-radius:3px">Esc</kbd> or click outside to close
-    </p>
-  `;
+    const cardHtml = buildShareCardHtml(athlete);
+    overlay.innerHTML = `
+      ${cardHtml}
+      <p style="color:#aaa;font-size:13px;font-family:sans-serif;margin:0;text-align:center">
+        Screenshot this card to share —
+        <span style="background:#222;color:#aaa;padding:2px 8px;border-radius:3px;cursor:pointer" onclick="document.getElementById('share-overlay').remove()">close ×</span>
+      </p>
+    `;
 
-  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.remove(); });
-  document.addEventListener('keydown', function esc(e) {
-    if (e.key === 'Escape') { overlay.remove(); document.removeEventListener('keydown', esc); }
-  });
+    document.body.appendChild(overlay);
 
-  document.body.appendChild(overlay);
+    overlay.addEventListener('click', e => { if (e.target === overlay) overlay.remove(); });
+    const escHandler = (e) => { if (e.key === 'Escape') { overlay.remove(); document.removeEventListener('keydown', escHandler); } };
+    document.addEventListener('keydown', escHandler);
+  } catch(err) {
+    console.error('Share overlay error:', err);
+  }
 }
 
 window.openShareOverlay = openShareOverlay;
