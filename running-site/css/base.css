@@ -53,13 +53,24 @@
 html { scroll-behavior: smooth; }
 
 @keyframes pageFadeIn {
-  from { opacity: 0; transform: translateY(6px); }
+  from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-#main { animation: pageFadeIn 0.12s ease-out both; }
+#main { animation: pageFadeIn 0.18s cubic-bezier(0.2, 0, 0.2, 1) both; }
 #main.page-swap { animation: none; }
-#main.page-entering { animation: pageFadeIn 0.12s ease-out both; }
+#main.page-entering { animation: pageFadeIn 0.18s cubic-bezier(0.2, 0, 0.2, 1) both; }
+
+/* ── SCROLL REVEAL ────────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 body {
   font-family: var(--font-body);

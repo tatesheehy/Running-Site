@@ -36,6 +36,12 @@
   max-width: none;
   height: auto;
   position: static;
+  transform: scale(1.04);
+  animation: heroZoom 6s ease-out forwards;
+}
+
+@keyframes heroZoom {
+  to { transform: scale(1); }
 }
 
 .home-hero-full .cat-tag {
@@ -352,11 +358,21 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 11px 0;
+  padding: 11px 4px;
   border-bottom: 1px solid var(--border);
+  border-left: 3px solid transparent;
+  transition: border-color 0.15s, padding-left 0.15s, background 0.15s;
+  margin: 0 -8px;
+  padding-left: 8px;
+  border-radius: 6px;
 }
 .rw-row:last-child { border-bottom: none; }
 .rw-row--clickable { cursor: pointer; }
+.rw-row--clickable:hover {
+  background: var(--bg-light);
+  border-left-color: var(--accent);
+  padding-left: 12px;
+}
 .rw-row--clickable:hover .rw-name { color: var(--accent); }
 
 .rw-rank {
@@ -392,7 +408,7 @@
 
 .view-all-link {
   display: block;
-  text-align: right;
+  text-align: left;
   margin-top: 16px;
   color: var(--accent);
   font-size: 13px;

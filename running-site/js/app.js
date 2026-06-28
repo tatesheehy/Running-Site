@@ -37,6 +37,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     }).observe(mainEl, { childList: true });
   }
 
+  // Scroll reveal
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } });
+  }, { threshold: 0.08 });
+  const observeReveal = () => qsa('.reveal').forEach(el => revealObserver.observe(el));
+  observeReveal();
+  new MutationObserver(observeReveal).observe(document.getElementById('main'), { childList: true, subtree: true });
+
   // Scroll handler: progress bar on article pages
   if (page === 'article') {
     window.addEventListener('scroll', () => {

@@ -34,7 +34,7 @@ function articleCard(a) {
   const img = imgHTML(a.image, a.title, a.imagePosition, 16/10, 'article-card-img');
 
   return `
-    <article class="article-card" onclick="goTo('${dest}')">
+    <article class="article-card reveal" onclick="goTo('${dest}')">
       <div class="article-card-img-wrap">
         ${img}
         <span class="cat-tag">${a.category || 'RANKINGS'}</span>
@@ -70,7 +70,7 @@ function buildHome() {
   const editorPicksLabel = SITE.editorPicksLabel || "Editors' Picks";
   const latestTitle = SITE.latestArticlesTitle || 'Latest Articles';
 
-  const latestHtml = latest.map(a => articleCard(a)).join('');
+  const latestHtml = latest.map((a, i) => articleCard(a).replace('class="article-card reveal"', `class="article-card reveal" style="transition-delay:${i * 60}ms"`)).join('');
 
   const firstEvent = Object.keys(RANKINGS)[0] || '';
 
