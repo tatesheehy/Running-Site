@@ -24,8 +24,8 @@ function buildRankingsTableHtml(event, compact) {
           <div class="country">${renderFlag(flag)} ${country}</div>
         </td>
         ${compact ? '' : `<td>${country}</td>`}
-        <td><span class="best-time">${r.seasonBest || ''}</span></td>
-        <td class="meet-cell">${r.meet || ''}</td>
+        <td><span class="best-time">${(r.seasonBest && r.seasonBest !== 'x') ? r.seasonBest : '—'}</span></td>
+        <td class="meet-cell">${(r.meet && r.meet !== 'x') ? r.meet : ''}</td>
       </tr>
     `;
   }).join('');
