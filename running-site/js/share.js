@@ -1,199 +1,89 @@
 // ============================================================
-//  SHARE — generate a shareable athlete stats card image
+//  SHARE — in-page shareable athlete stats card
 // ============================================================
 
-const CARD_W = 1200;
-const CARD_H = 630;
-const ACCENT  = '#e8500a';
-const BG      = '#111111';
-const BG2     = '#1a1a1a';
-
-function loadImg(src) {
-  return new Promise((res) => {
-    const img = new Image();
-    img.onload  = () => res(img);
-    img.onerror = () => res(null);
-    // Use absolute URL so canvas doesn't treat it as cross-origin
-    img.src = src.startsWith('http') ? src : window.location.origin + (src.startsWith('/') ? '' : '/') + src;
-  });
-}
-
-function roundRect(ctx, x, y, w, h, r) {
-  ctx.beginPath();
-  ctx.moveTo(x + r, y);
-  ctx.lineTo(x + w - r, y);
-  ctx.quadraticCurveTo(x + w, y, x + w, y + r);
-  ctx.lineTo(x + w, y + h - r);
-  ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
-  ctx.lineTo(x + r, y + h);
-  ctx.quadraticCurveTo(x, y + h, x, y + h - r);
-  ctx.lineTo(x, y + r);
-  ctx.quadraticCurveTo(x, y, x + r, y);
-  ctx.closePath();
-}
-
-async function generateShareCard(athlete) {
-  const canvas = document.createElement('canvas');
-  canvas.width  = CARD_W;
-  canvas.height = CARD_H;
-  const ctx = canvas.getContext('2d');
-
-  // ── Background ──────────────────────────────────────────
-  ctx.fillStyle = BG;
-  ctx.fillRect(0, 0, CARD_W, CARD_H);
-
-  // ── Photo (right side) ──────────────────────────────────
-  const PHOTO_X = 560;
-  const photo = athlete.photo ? await loadImg(athlete.photo) : null;
-  if (photo) {
-    ctx.save();
-    ctx.beginPath();
-    ctx.rect(PHOTO_X, 0, CARD_W - PHOTO_X, CARD_H);
-    ctx.clip();
-    // scale-to-fill
-    const scale = Math.max((CARD_W - PHOTO_X) / photo.width, CARD_H / photo.height);
-    const pw = photo.width * scale;
-    const ph = photo.height * scale;
-    const px = PHOTO_X + ((CARD_W - PHOTO_X) - pw) / 2;
-    const py = (CARD_H - ph) / 2;
-    ctx.drawImage(photo, px, py, pw, ph);
-    ctx.restore();
-
-    // Gradient feather from left over photo
-    const grad = ctx.createLinearGradient(PHOTO_X, 0, CARD_W, 0);
-    grad.addColorStop(0,    BG);
-    grad.addColorStop(0.35, 'rgba(17,17,17,0.7)');
-    grad.addColorStop(1,    'rgba(17,17,17,0)');
-    ctx.fillStyle = grad;
-    ctx.fillRect(PHOTO_X, 0, CARD_W - PHOTO_X, CARD_H);
-
-    // Bottom vignette
-    const botGrad = ctx.createLinearGradient(0, CARD_H - 120, 0, CARD_H);
-    botGrad.addColorStop(0, 'rgba(17,17,17,0)');
-    botGrad.addColorStop(1, 'rgba(17,17,17,0.5)');
-    ctx.fillStyle = botGrad;
-    ctx.fillRect(PHOTO_X, CARD_H - 120, CARD_W - PHOTO_X, 120);
-  }
-
-  // ── Left accent bar ──────────────────────────────────────
-  ctx.fillStyle = ACCENT;
-  ctx.fillRect(0, 0, 8, CARD_H);
-
-  // ── Site tag ─────────────────────────────────────────────
+function buildShareCardHtml(athlete) {
   const siteName = (SITE && SITE.name) || 'StatTC';
-  ctx.font = '600 18px "Helvetica Neue", Helvetica, Arial, sans-serif';
-  ctx.fillStyle = ACCENT;
-  ctx.letterSpacing = '0.08em';
-  ctx.fillText(siteName.toUpperCase(), 44, 56);
-  ctx.letterSpacing = '0';
+  const accent   = (SITE && SITE.accentColor) || '#e8500a';
+  const photo    = athlete.photo || '';
+  const bg       = athlete.photoBackground || '#1a1a1a';
+  const nameParts = athlete.name.trim().split(' ');
+  const firstName = nameParts.slice(0, -1).join(' ');
+  const lastName  = nameParts[nameParts.length - 1];
 
-  // ── Event badge ──────────────────────────────────────────
-  const eventLabel = (athlete.event || '').toUpperCase();
-  if (eventLabel) {
-    ctx.font = '700 13px "Helvetica Neue", Helvetica, Arial, sans-serif';
-    const badgeW = ctx.measureText(eventLabel).width + 24;
-    roundRect(ctx, 44, 74, badgeW, 28, 5);
-    ctx.fillStyle = '#2a2a2a';
-    ctx.fill();
-    ctx.fillStyle = '#aaa';
-    ctx.fillText(eventLabel, 56, 93);
-  }
+  const KEY_EVENTS = ['800m','1500m','Mile','3000m','5000m','10000m','Half Marathon','Marathon','3000m SC'];
+  const prs = (athlete.prs || []).filter(p => KEY_EVENTS.includes(p.event)).slice(0, 6);
 
-  // ── Name ─────────────────────────────────────────────────
-  const nameY = eventLabel ? 190 : 160;
-  ctx.font = '900 74px "Helvetica Neue", Helvetica, Arial, sans-serif';
-  ctx.fillStyle = '#ffffff';
-  // Scale down name if too wide
-  const nameParts = athlete.name.split(' ');
-  if (nameParts.length >= 2) {
-    ctx.font = '900 36px "Helvetica Neue", Helvetica, Arial, sans-serif';
-    ctx.fillStyle = 'rgba(255,255,255,0.55)';
-    ctx.fillText(nameParts.slice(0, -1).join(' ').toUpperCase(), 44, nameY - 44);
-    ctx.font = '900 78px "Helvetica Neue", Helvetica, Arial, sans-serif';
-    ctx.fillStyle = '#ffffff';
-    ctx.fillText(nameParts[nameParts.length - 1].toUpperCase(), 44, nameY);
-  } else {
-    ctx.font = '900 74px "Helvetica Neue", Helvetica, Arial, sans-serif';
-    ctx.fillStyle = '#ffffff';
-    ctx.fillText(athlete.name.toUpperCase(), 44, nameY);
-  }
+  const prsHtml = prs.map(p => `
+    <div style="margin-bottom:14px">
+      <div style="font-size:11px;color:#666;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:3px">${p.event}</div>
+      <div style="font-size:22px;font-weight:700;font-family:'Courier New',monospace;color:#fff">${p.time}</div>
+    </div>
+  `).join('');
 
-  // ── Country ───────────────────────────────────────────────
-  ctx.font = '500 22px "Helvetica Neue", Helvetica, Arial, sans-serif';
-  ctx.fillStyle = '#888';
-  ctx.fillText((athlete.country || '').toUpperCase(), 44, nameY + 36);
+  return `
+    <div id="share-card" style="
+      width:600px; height:315px; position:relative; overflow:hidden;
+      background:${bg}; border-radius:12px; display:flex;
+      font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+    ">
+      ${photo ? `
+        <div style="position:absolute;inset:0;
+          background-image:url('${photo}');
+          background-size:cover;background-position:center top;opacity:0.35">
+        </div>
+        <div style="position:absolute;inset:0;
+          background:linear-gradient(to right,${bg} 45%,transparent 100%)">
+        </div>
+      ` : ''}
 
-  // ── Divider ───────────────────────────────────────────────
-  const divY = nameY + 68;
-  ctx.fillStyle = '#2a2a2a';
-  ctx.fillRect(44, divY, 460, 1);
+      <div style="position:absolute;left:0;top:0;bottom:0;width:6px;background:${accent}"></div>
 
-  // ── PRs ──────────────────────────────────────────────────
-  const prs = (athlete.prs || []).filter(p =>
-    ['800m','1500m','Mile','3000m','5000m','10000m','Marathon','Half Marathon','3000m SC'].includes(p.event)
-  ).slice(0, 6);
+      <div style="position:relative;z-index:2;padding:28px 28px 28px 32px;display:flex;flex-direction:column;justify-content:space-between;width:300px">
+        <div>
+          <div style="font-size:11px;font-weight:700;letter-spacing:0.1em;color:${accent};margin-bottom:10px">${siteName.toUpperCase()}</div>
+          ${athlete.event ? `<div style="font-size:10px;font-weight:600;color:#777;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:14px">${athlete.event}</div>` : ''}
+          ${firstName ? `<div style="font-size:18px;font-weight:600;color:rgba(255,255,255,0.5);line-height:1">${firstName.toUpperCase()}</div>` : ''}
+          <div style="font-size:42px;font-weight:900;color:#fff;line-height:1;margin-bottom:4px">${lastName.toUpperCase()}</div>
+          <div style="font-size:13px;color:#666">${athlete.country || ''}</div>
+        </div>
+        <div style="font-size:11px;color:#444">${siteName.toLowerCase()}.com</div>
+      </div>
 
-  const prStartY = divY + 32;
-  const COL_W    = 230;
-  prs.forEach((pr, i) => {
-    const col = i % 2;
-    const row = Math.floor(i / 2);
-    const x   = 44 + col * COL_W;
-    const y   = prStartY + row * 58;
+      <div style="position:relative;z-index:2;padding:28px 28px 28px 0;display:flex;flex-wrap:wrap;align-content:flex-start;gap:0 24px;width:240px">
+        ${prsHtml}
+      </div>
+    </div>
+  `;
+}
 
-    ctx.font = '600 13px "Helvetica Neue", Helvetica, Arial, sans-serif';
-    ctx.fillStyle = '#666';
-    ctx.fillText(pr.event.toUpperCase(), x, y);
+function openShareOverlay(athleteId) {
+  const athlete = ATHLETES[athleteId];
+  if (!athlete) return;
 
-    ctx.font = '700 28px "Courier New", Courier, monospace';
-    ctx.fillStyle = '#fff';
-    ctx.fillText(pr.time, x, y + 26);
+  const existing = document.getElementById('share-overlay');
+  if (existing) existing.remove();
+
+  const overlay = document.createElement('div');
+  overlay.id = 'share-overlay';
+  overlay.style.cssText = `
+    position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.85);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;
+  `;
+
+  overlay.innerHTML = `
+    ${buildShareCardHtml(athlete)}
+    <p style="color:#666;font-size:13px;font-family:sans-serif;margin:0">
+      Screenshot this card to share — press <kbd style="background:#222;color:#aaa;padding:2px 6px;border-radius:3px">Esc</kbd> or click outside to close
+    </p>
+  `;
+
+  overlay.addEventListener('click', e => { if (e.target === overlay) overlay.remove(); });
+  document.addEventListener('keydown', function esc(e) {
+    if (e.key === 'Escape') { overlay.remove(); document.removeEventListener('keydown', esc); }
   });
 
-  // ── Bottom watermark ─────────────────────────────────────
-  ctx.font = '500 16px "Helvetica Neue", Helvetica, Arial, sans-serif';
-  ctx.fillStyle = '#444';
-  ctx.fillText(siteName.toLowerCase() + '.com', 44, CARD_H - 28);
-
-  return canvas;
+  document.body.appendChild(overlay);
 }
 
-async function shareAthleteCard(athleteId) {
-  const athlete = ATHLETES[athleteId];
-  if (!athlete) { alert('Athlete not found'); return; }
-
-  const btn = document.querySelector('.card-share-btn');
-  if (btn) { btn.textContent = 'Generating…'; btn.disabled = true; }
-
-  // Must open the window synchronously (before any await) or the browser blocks it
-  const win = window.open('', '_blank');
-  if (!win) { alert('Allow pop-ups for this site to use the Share feature.'); return; }
-
-  try {
-    const canvas  = await generateShareCard(athlete);
-    const dataUrl = canvas.toDataURL('image/png');
-    const name    = `${athlete.name.replace(/\s+/g, '-')}-stats`;
-
-    win.document.write(`
-      <!doctype html><html>
-      <head><title>${athlete.name} — Stats Card</title>
-      <style>
-        body { margin:0; background:#000; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; font-family:sans-serif; }
-        img  { max-width:100%; display:block; }
-        p    { color:#666; font-size:13px; margin-top:16px; }
-        a    { color:#e8500a; }
-      </style></head>
-      <body>
-        <img src="${dataUrl}" alt="${athlete.name} stats card">
-        <p>Right-click the image to save, or <a href="${dataUrl}" download="${name}.png">click here to download</a>.</p>
-      </body></html>
-    `);
-    win.document.close();
-  } catch (e) {
-    alert('Error generating card: ' + e.message);
-  } finally {
-    if (btn) { btn.textContent = '↗ Share'; btn.disabled = false; }
-  }
-}
-
-window.shareAthleteCard = shareAthleteCard;
+window.openShareOverlay = openShareOverlay;
