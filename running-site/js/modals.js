@@ -48,7 +48,7 @@ function openAthleteCard(athleteId, rank) {
 
   const photoHtml = a.photo
     ? `<img class="card-photo" src="${a.photo}" alt="${a.name}">`
-    : `<div class="card-photo-placeholder"><span class="card-photo-placeholder-icon">🏃</span></div>`;
+    : `<div class="card-photo-placeholder no-photo"></div>`;
 
   const vitalsHtml = Object.entries(a.vitals || {}).map(([k, v]) => `
     <div class="card-vital">
@@ -442,7 +442,7 @@ function renderH2HComparison(id1, id2) {
     const { ranked, sectioned } = getRankInfo(a.id);
     const photoHtml = a.photo
       ? `<img class="h2h-photo" src="${a.photo}" alt="${a.name}">`
-      : `<div class="h2h-photo-ph"></div>`;
+      : `<div class="h2h-photo-ph no-photo"></div>`;
 
     let rankHtml;
     if (ranked.length) {

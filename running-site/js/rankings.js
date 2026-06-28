@@ -234,7 +234,7 @@ function buildRankingRow(r, rank) {
   return `
     <div class="rd-row${rank <= 3 && rank != null ? ' rd-row--podium' : ''}" data-country="${country}" data-athlete-id="${r.athleteId || ''}" onclick="openRankingRow('${clickData}')">
       ${rank != null ? `<div class="rd-rank ${rankClass}">${rank <= 3 ? '<svg class="rd-crown" viewBox="0 0 24 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 13 L4 3 L9 9 L12 0 L15 9 L20 3 L24 13 L24 15 L0 15 Z"/></svg>' : ''}${rank}</div>` : '<div class="rd-rank-empty"></div>'}
-      <div class="rd-avatar ${photo ? '' : 'rd-avatar--empty'}" style="${photo ? `background-color:${photoBg};background-image:url('${photo}');background-size:cover;background-position:top center` : ''}"></div>
+      <div class="rd-avatar ${photo ? '' : 'rd-avatar--empty no-photo'}" style="${photo ? `background-color:${photoBg};background-image:url('${photo}');background-size:cover;background-position:top center` : ''}"></div>
       <div class="rd-info">
         <div class="rd-name">${name}</div>
         <div class="rd-country">${renderFlag(flag)} ${country}</div>
@@ -263,7 +263,7 @@ function buildRankingCard(r, rank) {
   const clickData = encodeURIComponent(JSON.stringify({athleteId: r.athleteId||'', rank: rank||0, name, country, flag, seasonBest: r.seasonBest||'', meet: r.meet||''}));
   return `
     <div class="rd-card" data-country="${country}" data-athlete-id="${r.athleteId || ''}" onclick="openRankingRow('${clickData}')">
-      <div class="rd-card-photo" style="${photo ? `background-color:${photoBg};background-image:url('${photo}')` : `background:${photoBg}`}">
+      <div class="rd-card-photo${photo ? '' : ' no-photo'}" style="${photo ? `background-color:${photoBg};background-image:url('${photo}')` : ''}">
         ${rank != null ? `<div class="rd-card-rank ${rankClass}">${rank <= 3 ? '<svg class="rd-crown" viewBox="0 0 24 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 13 L4 3 L9 9 L12 0 L15 9 L20 3 L24 13 L24 15 L0 15 Z"/></svg>' : ''}${rank}</div>` : ''}
       </div>
       <div class="rd-card-body">

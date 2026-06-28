@@ -26,7 +26,7 @@ function buildAthletesPage() {
         <div class="ath-flip-card" role="button" tabindex="0">
           <div class="ath-flip-inner">
             <div class="ath-flip-front" onclick="openAthleteCard('${a.id}', null)">
-              <div class="ath-flip-photo" style="${photo ? `background-color:${bg};background-image:url('${photo}')` : `background:${bg}`}"></div>
+              <div class="ath-flip-photo${photo ? '' : ' no-photo'}" style="${photo ? `background-color:${bg};background-image:url('${photo}')` : ''}"></div>
               <div class="ath-flip-front-info">
                 <div class="ath-page-name">${a.name}</div>
                 <div class="ath-page-country">${renderFlag(a.flag)} ${a.country}</div>
