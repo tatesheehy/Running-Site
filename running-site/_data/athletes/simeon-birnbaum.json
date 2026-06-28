@@ -66,7 +66,155 @@
   "ncaa": true,
   "club": "x",
   "country": "United States",
-  "results": [],
+  "results": [
+    {
+      "date": "JUN 12",
+      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "event": "1500m",
+      "time": "3:36.05",
+      "place": "1"
+    },
+    {
+      "date": "JUN 12",
+      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "event": "",
+      "time": "DNF",
+      "place": ""
+    },
+    {
+      "date": "JUN 10",
+      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "event": "",
+      "time": "3:38.87",
+      "place": "2"
+    },
+    {
+      "date": "MAY 29",
+      "meet": "NCAA Division I West First Rounds",
+      "event": "1500m",
+      "time": "3:37.00",
+      "place": "1"
+    },
+    {
+      "date": "MAY 29",
+      "meet": "NCAA Division I West First Rounds",
+      "event": "",
+      "time": "13:42.69",
+      "place": "5"
+    },
+    {
+      "date": "MAY 27",
+      "meet": "NCAA Division I West First Rounds",
+      "event": "",
+      "time": "3:41.36",
+      "place": "1"
+    },
+    {
+      "date": "MAY 17",
+      "meet": "Big Ten Outdoor Track & Field Championships",
+      "event": "",
+      "time": "DNF",
+      "place": ""
+    },
+    {
+      "date": "MAY 15",
+      "meet": "Big Ten Outdoor Track & Field Championships",
+      "event": "",
+      "time": "3:54.45",
+      "place": "1"
+    },
+    {
+      "date": "MAY 15",
+      "meet": "Big Ten Outdoor Track & Field Championships",
+      "event": "",
+      "time": "4:00.98",
+      "place": "1"
+    },
+    {
+      "date": "MAY 8",
+      "meet": "Oregon Twilight",
+      "event": "800m",
+      "time": "1:44.67",
+      "place": "1"
+    },
+    {
+      "date": "MAY 8",
+      "meet": "Oregon Twilight",
+      "event": "",
+      "time": "DNF",
+      "place": ""
+    },
+    {
+      "date": "APR 18",
+      "meet": "Oregon Team Invitational",
+      "event": "1500m",
+      "time": "3:31.69",
+      "place": "1"
+    },
+    {
+      "date": "APR 3",
+      "meet": "Stanford Invitational",
+      "event": "5000m",
+      "time": "13:19.73",
+      "place": ""
+    },
+    {
+      "date": "MAR 14",
+      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "event": "3000m sh",
+      "time": "7:41.85",
+      "place": "2"
+    },
+    {
+      "date": "MAR 13",
+      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "event": "",
+      "time": "9:27.49",
+      "place": "7"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Big Ten Conference Indoor Track & Field Championships",
+      "event": "",
+      "time": "7:59.87",
+      "place": "1"
+    },
+    {
+      "date": "FEB 26",
+      "meet": "Big Ten Conference Indoor Track & Field Championships",
+      "event": "5000 Metres Short Track",
+      "time": "13:45.78",
+      "place": ""
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "Distance Medley Short Track",
+      "time": "9:14.88",
+      "place": ""
+    },
+    {
+      "date": "FEB 20",
+      "meet": "Arkansas Qualifier",
+      "event": "",
+      "time": "DQ",
+      "place": ""
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Razorback Invitational",
+      "event": "Mile sh",
+      "time": "3:55.88",
+      "place": "9"
+    },
+    {
+      "date": "JAN 30",
+      "meet": "Razorback Invitational",
+      "event": "800m sh",
+      "time": "1:48.05",
+      "place": "1"
+    }
+  ],
   "college": "Oregon",
   "weight": "145",
   "coach": "x",
