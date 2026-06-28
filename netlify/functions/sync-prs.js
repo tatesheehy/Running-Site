@@ -1,15 +1,22 @@
-// Scheduled function: runs daily to sync athlete PRs from World Athletics.
+// Scheduled function: runs daily to sync athlete PRs + season results from World Athletics.
+// Reads and writes individual athlete JSON files (running-site/_data/athletes/*.json)
+// so the build process always sees fresh data when it regenerates athletes.json.
+//
 // Required env vars:
 //   GITHUB_TOKEN  — Personal Access Token with "Contents: Read & Write" on the repo
 //   GITHUB_REPO   — owner/repo, e.g. "tsheehy/running-site"
+//   GITHUB_BRANCH — branch to commit to (default: "main")
 //
-// Set these in: Netlify → Site → Environment variables
+// Optional:
+//   SYNC_SECRET   — shared secret for manual HTTP trigger
 
 const FETCH_HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
   'Accept-Language': 'en-US,en;q=0.9',
 };
+
+// ── WA parsing helpers ────────────────────────────────────────────────────────
 
 const EVENT_MAP = {
   '60 metres': '60m', '100 metres': '100m', '200 metres': '200m', '400 metres': '400m',
@@ -204,7 +211,6 @@ async function fetchAthleteData(waUrl) {
   let outdoor = [];
   let results = [];
 
-  // Strategy 1: __NEXT_DATA__
   const ndMatch = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
   if (ndMatch) {
     try {
@@ -218,7 +224,7 @@ async function fetchAthleteData(waUrl) {
     } catch (_) {}
   }
 
-  // Strategy 2: HTML table fallback for PRs
+  // HTML table fallback for PRs
   if (outdoor.length === 0) {
     const timeRe = /^\d*:\d{2}\.\d{2}$|^\d{2}\.\d{2}$/;
     const rowRe  = /<tr[^>]*>([\s\S]*?)<\/tr>/gi;
@@ -250,36 +256,84 @@ function arrChanged(oldArr, newArr) {
 
 // ── GitHub API helpers ────────────────────────────────────────────────────────
 
-async function ghGet(path, token) {
-  const res = await fetch(`https://api.github.com/repos/${path}`, {
-    headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' },
-  });
-  if (!res.ok) throw new Error(`GitHub GET ${path} → ${res.status}`);
-  return res.json();
-}
-
-async function ghPut(path, token, body) {
-  const res = await fetch(`https://api.github.com/repos/${path}`, {
-    method: 'PUT',
-    headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
+async function ghFetch(url, token, options = {}) {
+  const res = await fetch(url, {
+    ...options,
+    headers: {
+      Authorization: `Bearer ${token}`,
+      Accept: 'application/vnd.github+json',
+      'Content-Type': 'application/json',
+      ...(options.headers || {}),
+    },
   });
   if (!res.ok) {
     const err = await res.text();
-    throw new Error(`GitHub PUT ${path} → ${res.status}: ${err}`);
+    throw new Error(`GitHub ${options.method || 'GET'} ${url} → ${res.status}: ${err}`);
   }
   return res.json();
+}
+
+const GH = 'https://api.github.com';
+
+// List files in a directory
+async function ghListDir(repo, token, dirPath) {
+  return ghFetch(`${GH}/repos/${repo}/contents/${dirPath}`, token);
+}
+
+// Get a single file (returns { content (base64), sha, path })
+async function ghGetFile(repo, token, filePath) {
+  return ghFetch(`${GH}/repos/${repo}/contents/${filePath}`, token);
+}
+
+// Commit multiple file changes in a single git commit using the Git Data API
+async function ghCommitMany(repo, token, branch, changes, message) {
+  // changes: [{ path, content (utf8 string) }, ...]
+
+  // 1. Get the latest commit SHA on the branch
+  const refData = await ghFetch(`${GH}/repos/${repo}/git/refs/heads/${branch}`, token);
+  const latestCommitSha = refData.object.sha;
+
+  // 2. Get the tree SHA from that commit
+  const commitData = await ghFetch(`${GH}/repos/${repo}/git/commits/${latestCommitSha}`, token);
+  const baseTreeSha = commitData.tree.sha;
+
+  // 3. Create a blob for each changed file
+  const treeItems = await Promise.all(changes.map(async ({ path, content }) => {
+    const blob = await ghFetch(`${GH}/repos/${repo}/git/blobs`, token, {
+      method: 'POST',
+      body: JSON.stringify({ content, encoding: 'utf-8' }),
+    });
+    return { path, mode: '100644', type: 'blob', sha: blob.sha };
+  }));
+
+  // 4. Create a new tree on top of the base tree
+  const newTree = await ghFetch(`${GH}/repos/${repo}/git/trees`, token, {
+    method: 'POST',
+    body: JSON.stringify({ base_tree: baseTreeSha, tree: treeItems }),
+  });
+
+  // 5. Create the commit
+  const newCommit = await ghFetch(`${GH}/repos/${repo}/git/commits`, token, {
+    method: 'POST',
+    body: JSON.stringify({ message, tree: newTree.sha, parents: [latestCommitSha] }),
+  });
+
+  // 6. Update the branch ref
+  await ghFetch(`${GH}/repos/${repo}/git/refs/heads/${branch}`, token, {
+    method: 'PATCH',
+    body: JSON.stringify({ sha: newCommit.sha }),
+  });
+
+  return newCommit.sha;
 }
 
 // ── Main handler ──────────────────────────────────────────────────────────────
 // Runs on schedule OR manually via:
 //   GET /.netlify/functions/sync-prs?secret=YOUR_SYNC_SECRET
-// Set SYNC_SECRET in Netlify env vars to protect the manual trigger.
 
 exports.handler = async (event) => {
-  // Manual HTTP trigger (for testing)
   if (event.httpMethod === 'GET') {
-    const secret = process.env.SYNC_SECRET;
+    const secret   = process.env.SYNC_SECRET;
     const provided = (event.queryStringParameters || {}).secret;
     if (!secret || provided !== secret) {
       return { statusCode: 401, body: 'Unauthorized — set ?secret=YOUR_SYNC_SECRET' };
@@ -287,86 +341,92 @@ exports.handler = async (event) => {
   } else if (event.httpMethod && event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method not allowed' };
   }
-
-  // Falls through to the sync logic below
   return runSync();
 };
 
 async function runSync() {
-  const token = process.env.GITHUB_TOKEN;
-  const repo  = process.env.GITHUB_REPO; // e.g. "tsheehy/running-site"
+  const token  = process.env.GITHUB_TOKEN;
+  const repo   = process.env.GITHUB_REPO;
+  const branch = process.env.GITHUB_BRANCH || 'main';
 
   if (!token || !repo) {
     console.error('sync-prs: GITHUB_TOKEN and GITHUB_REPO env vars are required');
     return { statusCode: 500, body: 'Missing env vars' };
   }
 
-  const filePath = 'running-site/_data/athletes.json';
-  const apiPath  = `${repo}/contents/${filePath}`;
+  const athletesDir = 'running-site/_data/athletes';
 
-  // 1. Fetch athletes.json from GitHub
-  let fileData;
+  // 1. List all individual athlete JSON files
+  let dirListing;
   try {
-    fileData = await ghGet(apiPath, token);
+    dirListing = await ghListDir(repo, token, athletesDir);
   } catch (e) {
-    console.error('sync-prs: could not read athletes.json from GitHub:', e.message);
+    console.error('sync-prs: could not list athletes dir:', e.message);
     return { statusCode: 500, body: e.message };
   }
 
-  const currentContent = Buffer.from(fileData.content, 'base64').toString('utf8');
-  const data = JSON.parse(currentContent);
-  const athletes = data.items || [];
+  const jsonFiles = dirListing.filter(f => f.name.endsWith('.json'));
 
-  // 2. Fetch fresh PRs for each athlete that has a waUrl
-  let anyChanged = false;
-  const results = [];
+  // 2. Fetch each file and collect athletes that have a waUrl
+  const athletes = [];
+  for (const f of jsonFiles) {
+    try {
+      const fileData = await ghGetFile(repo, token, f.path);
+      const content  = Buffer.from(fileData.content, 'base64').toString('utf8');
+      const data     = JSON.parse(content);
+      athletes.push({ filePath: f.path, sha: fileData.sha, data });
+    } catch (e) {
+      console.warn(`sync-prs: could not read ${f.path}:`, e.message);
+    }
+  }
 
-  for (const athlete of athletes) {
-    if (!athlete.waUrl) continue;
+  // 3. Fetch WA data for each athlete with a waUrl
+  const changes = [];
+  const report  = [];
+
+  for (const { filePath, data } of athletes) {
+    if (!data.waUrl) continue;
 
     try {
-      const { prs: newPrs, results: newResults } = await fetchAthleteData(athlete.waUrl);
-      const prsUpdated     = newPrs.length > 0 && arrChanged(athlete.prs, newPrs);
-      const resultsUpdated = newResults.length > 0 && arrChanged(athlete.results, newResults);
+      const { prs: newPrs, results: newResults } = await fetchAthleteData(data.waUrl);
+      const prsUpdated     = newPrs.length > 0 && arrChanged(data.prs, newPrs);
+      const resultsUpdated = newResults.length > 0 && arrChanged(data.results, newResults);
 
-      if (prsUpdated)     { athlete.prs     = newPrs;     anyChanged = true; }
-      if (resultsUpdated) { athlete.results  = newResults; anyChanged = true; }
+      if (prsUpdated)     data.prs     = newPrs;
+      if (resultsUpdated) data.results = newResults;
 
       if (prsUpdated || resultsUpdated) {
-        console.log(`sync-prs: updated ${athlete.name} — PRs: ${newPrs.length}, results: ${newResults.length}`);
-        results.push({ name: athlete.name, status: 'updated', prs: newPrs.length, seasonResults: newResults.length });
+        changes.push({ path: filePath, content: JSON.stringify(data, null, 2) });
+        console.log(`sync-prs: updated ${data.name} — PRs: ${newPrs.length}, results: ${newResults.length}`);
+        report.push({ name: data.name, status: 'updated', prs: newPrs.length, seasonResults: newResults.length });
       } else {
-        results.push({ name: athlete.name, status: 'unchanged' });
+        report.push({ name: data.name, status: 'unchanged' });
       }
     } catch (e) {
-      console.warn(`sync-prs: failed for ${athlete.name}:`, e.message);
-      results.push({ name: athlete.name, status: 'error', error: e.message });
+      console.warn(`sync-prs: failed for ${data.name}:`, e.message);
+      report.push({ name: data.name, status: 'error', error: e.message });
     }
 
-    // Small delay between requests to be polite to WA servers
     await new Promise(r => setTimeout(r, 1500));
   }
 
-  if (!anyChanged) {
-    console.log('sync-prs: no PR changes detected');
-    return { statusCode: 200, body: JSON.stringify({ message: 'No changes', results }) };
+  if (changes.length === 0) {
+    console.log('sync-prs: no changes detected');
+    return { statusCode: 200, body: JSON.stringify({ message: 'No changes', report }) };
   }
 
-  // 3. Commit updated athletes.json back to GitHub
-  const updatedContent = JSON.stringify(data, null, 2);
-  const updatedBase64  = Buffer.from(updatedContent).toString('base64');
-
+  // 4. Commit all changed files in a single git commit
+  const updatedNames = changes.map(c => c.path.split('/').pop().replace('.json', '')).join(', ');
   try {
-    await ghPut(apiPath, token, {
-      message: 'chore: auto-sync athlete PRs from World Athletics [skip ci]',
-      content: updatedBase64,
-      sha: fileData.sha,
-    });
-    console.log('sync-prs: committed updated athletes.json');
+    const sha = await ghCommitMany(
+      repo, token, branch, changes,
+      `chore: auto-sync PRs + results for ${updatedNames} [skip ci]`
+    );
+    console.log(`sync-prs: committed ${changes.length} file(s) → ${sha}`);
   } catch (e) {
     console.error('sync-prs: failed to commit:', e.message);
     return { statusCode: 500, body: e.message };
   }
 
-  return { statusCode: 200, body: JSON.stringify({ message: 'PRs synced', results }) };
-};
+  return { statusCode: 200, body: JSON.stringify({ message: `Synced ${changes.length} athlete(s)`, report }) };
+}
