@@ -179,6 +179,25 @@ function openAthleteCard(athleteId, rank) {
             <p><strong>${an.questionTitle}:</strong> <em>${an.questionBody || ''}</em></p>
           </div>
         ` : ''}
+        ${(() => {
+          const similar = getSimilarAthletes(a);
+          if (!similar.length) return '';
+          const cards = similar.map(s => {
+            const photo = s.photo || '';
+            const bg = s.photoBackground || '#111';
+            return `
+              <div class="similar-card" onclick="openAthleteCard('${s.id}', null)">
+                <div class="similar-photo${photo ? '' : ' no-photo'}" style="${photo ? `background-color:${bg};background-image:url('${photo}')` : ''}"></div>
+                <div class="similar-name">${s.name}</div>
+                <div class="similar-country">${renderFlag(s.flag)} ${s.country}</div>
+              </div>`;
+          }).join('');
+          return `
+            <div class="similar-section">
+              <div class="similar-label">Similar Athletes</div>
+              <div class="similar-list">${cards}</div>
+            </div>`;
+        })()}
       </div>
     </div>
   `;

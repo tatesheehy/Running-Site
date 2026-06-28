@@ -86,6 +86,44 @@ function imgHTML(src, alt, cropStr, containerAR, cssClass) {
   return `<img class="${cssClass}" src="${src}" alt="${alt}" loading="lazy" style="object-position:${pos};">`;
 }
 
+// ── SIMILAR ATHLETES ──────────────────────────────────────
+function timeToSecs(t) {
+  if (!t || typeof t !== 'string') return null;
+  const parts = t.trim().split(':');
+  if (parts.length === 3) return +parts[0] * 3600 + +parts[1] * 60 + +parts[2];
+  if (parts.length === 2) return +parts[0] * 60 + +parts[1];
+  return +parts[0] || null;
+}
+
+const SIMILAR_EVENTS = new Set(['800m','1500m','Mile','3000m','5000m','10000m','3000m SC','Marathon','Half Marathon']);
+
+function getSimilarAthletes(athlete, count = 3) {
+  const aPrs = {};
+  (athlete.prs || []).filter(p => SIMILAR_EVENTS.has(p.event)).forEach(p => {
+    const s = timeToSecs(p.time);
+    if (s) aPrs[p.event] = s;
+  });
+  if (!Object.keys(aPrs).length) return [];
+
+  return Object.values(ATHLETES)
+    .filter(b => b.id !== athlete.id)
+    .map(b => {
+      const bPrs = {};
+      (b.prs || []).filter(p => SIMILAR_EVENTS.has(p.event)).forEach(p => {
+        const s = timeToSecs(p.time);
+        if (s) bPrs[p.event] = s;
+      });
+      const shared = Object.keys(aPrs).filter(ev => bPrs[ev]);
+      if (!shared.length) return null;
+      const avgDiff = shared.reduce((sum, ev) => sum + Math.abs(aPrs[ev] - bPrs[ev]) / aPrs[ev], 0) / shared.length;
+      return { b, score: avgDiff };
+    })
+    .filter(x => x && x.score < 0.06)
+    .sort((a, b) => a.score - b.score)
+    .slice(0, count)
+    .map(x => x.b);
+}
+
 // ── SKELETON LOADING ──────────────────────────────────────
 function showSkeleton(page) {
   const main = document.getElementById('main');
