@@ -4,12 +4,16 @@
    ============================================================ */
 
 /* ── ATHLETE SILHOUETTE PLACEHOLDER ──────────────────────── */
+/*
+  SVG: head (with hair bump) + neck + singlet body (scoop neckline, shoulder straps)
+  viewBox 0 0 160 215 — portrait orientation
+*/
 .no-photo {
   background: #1a1a1a !important;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 96' fill='rgba(255,255,255,0.12)'%3E%3Ccircle cx='32' cy='14' r='11'/%3E%3Cpath d='M32 27c-15 0-22 12-20 30h10l4-20h12l4 20h10c2-18-5-30-20-30z'/%3E%3Cpath d='M12 57l-4 36h12l12-24 12 24h12l-4-36H12z'/%3E%3C/svg%3E") !important;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 215' fill='rgba(255,255,255,0.14)'%3E%3Cellipse cx='80' cy='54' rx='34' ry='40'/%3E%3Cellipse cx='71' cy='23' rx='21' ry='14'/%3E%3Crect x='67' y='88' width='26' height='20' rx='3'/%3E%3Cpath d='M0 215 L0 150 Q18 120 48 110 L67 101 Q68 106 70 112 Q75 124 80 126 Q85 124 90 112 Q92 106 93 101 L112 110 Q142 120 160 150 L160 215 Z'/%3E%3C/svg%3E") !important;
   background-repeat: no-repeat !important;
-  background-position: center 60% !important;
-  background-size: 48% auto !important;
+  background-position: center 55% !important;
+  background-size: 62% auto !important;
 }
 
 /* ── PAGE FADE-IN ─────────────────────────────────────────── */
