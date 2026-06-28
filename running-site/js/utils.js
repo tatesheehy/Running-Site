@@ -97,28 +97,67 @@ function timeToSecs(t) {
 
 const SIMILAR_EVENTS = new Set(['800m','1500m','Mile','3000m','5000m','10000m','3000m SC','Marathon','Half Marathon']);
 
-function getSimilarAthletes(athlete, count = 3) {
-  const aPrs = {};
+// World records in seconds — used to measure how specialized an athlete is in each event
+const EVENT_WR = {
+  '800m': 100.91, '1500m': 206.0, 'Mile': 223.13, '3000m': 440.67,
+  '5000m': 755.36, '10000m': 1571.0, 'Marathon': 7121.0, 'Half Marathon': 3518.0, '3000m SC': 485.0,
+};
+
+// Log-scale distance (km) used to compute each athlete's event "center of gravity"
+const EVENT_LOG_DIST = {
+  '800m': Math.log(0.8), '1500m': Math.log(1.5), 'Mile': Math.log(1.61),
+  '3000m': Math.log(3), '5000m': Math.log(5), '10000m': Math.log(10),
+  'Marathon': Math.log(42.2), 'Half Marathon': Math.log(21.1), '3000m SC': Math.log(3),
+};
+
+function buildProfile(athlete) {
+  const prs = {}, spec = {};
   (athlete.prs || []).filter(p => SIMILAR_EVENTS.has(p.event)).forEach(p => {
     const s = timeToSecs(p.time);
-    if (s) aPrs[p.event] = s;
+    if (!s) return;
+    prs[p.event] = s;
+    const wr = EVENT_WR[p.event];
+    spec[p.event] = wr ? wr / s : 0.8; // 1.0 = world record level
   });
-  if (!Object.keys(aPrs).length) return [];
+  // Weighted center on log-distance scale — reveals whether athlete is a miler vs marathon runner
+  let tw = 0, wdist = 0;
+  Object.keys(prs).forEach(ev => {
+    const ld = EVENT_LOG_DIST[ev];
+    if (ld != null) { wdist += ld * (spec[ev] || 0.5); tw += (spec[ev] || 0.5); }
+  });
+  return { prs, spec, center: tw > 0 ? wdist / tw : null };
+}
+
+function getSimilarAthletes(athlete, count = 3) {
+  const A = buildProfile(athlete);
+  if (!Object.keys(A.prs).length) return [];
 
   return Object.values(ATHLETES)
     .filter(b => b.id !== athlete.id)
     .map(b => {
-      const bPrs = {};
-      (b.prs || []).filter(p => SIMILAR_EVENTS.has(p.event)).forEach(p => {
-        const s = timeToSecs(p.time);
-        if (s) bPrs[p.event] = s;
-      });
-      const shared = Object.keys(aPrs).filter(ev => bPrs[ev]);
+      const B = buildProfile(b);
+      const shared = Object.keys(A.prs).filter(ev => B.prs[ev]);
       if (!shared.length) return null;
-      const avgDiff = shared.reduce((sum, ev) => sum + Math.abs(aPrs[ev] - bPrs[ev]) / aPrs[ev], 0) / shared.length;
-      return { b, score: avgDiff };
+
+      // Weight each shared event by how specialized BOTH athletes are in it
+      // (geometric mean of spec scores) — a 1500m shared by two milers counts
+      // more than a 1500m shared by a miler and a 10K runner
+      let totalW = 0, weightedDiff = 0;
+      shared.forEach(ev => {
+        const w = Math.sqrt(A.spec[ev] * B.spec[ev]);
+        weightedDiff += (Math.abs(A.prs[ev] - B.prs[ev]) / A.prs[ev]) * w;
+        totalW += w;
+      });
+      const timeSimilarity = weightedDiff / totalW;
+
+      // Penalty for different event centers (miler vs 10K runner)
+      const centerPenalty = (A.center != null && B.center != null)
+        ? Math.abs(A.center - B.center) * 0.15
+        : 0;
+
+      return { b, score: timeSimilarity + centerPenalty };
     })
-    .filter(x => x && x.score < 0.06)
+    .filter(x => x && x.score < 0.08)
     .sort((a, b) => a.score - b.score)
     .slice(0, count)
     .map(x => x.b);
