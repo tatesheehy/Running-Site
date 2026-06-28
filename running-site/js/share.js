@@ -9,12 +9,12 @@ const BG      = '#111111';
 const BG2     = '#1a1a1a';
 
 function loadImg(src) {
-  return new Promise((res, rej) => {
+  return new Promise((res) => {
     const img = new Image();
-    img.crossOrigin = 'anonymous';
     img.onload  = () => res(img);
     img.onerror = () => res(null);
-    img.src = src;
+    // Use absolute URL so canvas doesn't treat it as cross-origin
+    img.src = src.startsWith('http') ? src : window.location.origin + (src.startsWith('/') ? '' : '/') + src;
   });
 }
 
@@ -166,25 +166,31 @@ async function shareAthleteCard(athleteId) {
   if (btn) { btn.textContent = 'Generating…'; btn.disabled = true; }
 
   try {
-    const canvas = await generateShareCard(athlete);
-    const blob   = await new Promise(res => canvas.toBlob(res, 'image/png'));
-    const url    = URL.createObjectURL(blob);
+    const canvas  = await generateShareCard(athlete);
+    const dataUrl = canvas.toDataURL('image/png');
+    const name    = athlete.name.replace(/\s+/g, '-');
 
-    // Try Web Share API first (mobile), fall back to download
-    if (navigator.canShare && navigator.canShare({ files: [new File([blob], 'athlete.png', { type: 'image/png' })] })) {
-      await navigator.share({
-        files: [new File([blob], `${athlete.name.replace(/\s+/g, '-')}-stats.png`, { type: 'image/png' })],
-        title: `${athlete.name} — ${(SITE && SITE.name) || 'StatTC'}`,
-      });
-    } else {
-      const a = document.createElement('a');
-      a.href     = url;
-      a.download = `${athlete.name.replace(/\s+/g, '-')}-stats.png`;
-      a.click();
+    // Mobile: native share sheet
+    if (navigator.share && navigator.canShare) {
+      const res  = await fetch(dataUrl);
+      const blob = await res.blob();
+      const file = new File([blob], `${name}-stats.png`, { type: 'image/png' });
+      if (navigator.canShare({ files: [file] })) {
+        await navigator.share({ files: [file], title: `${athlete.name} — ${(SITE && SITE.name) || 'StatTC'}` });
+        return;
+      }
     }
-    URL.revokeObjectURL(url);
+
+    // Desktop: download
+    const a = document.createElement('a');
+    a.href     = dataUrl;
+    a.download = `${name}-stats.png`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
   } catch (e) {
-    console.error('Share failed', e);
+    console.error('Share card error:', e);
+    alert('Could not generate card. Check console for details.');
   } finally {
     if (btn) { btn.textContent = '↗ Share'; btn.disabled = false; }
   }
