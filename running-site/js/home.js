@@ -74,8 +74,9 @@ function buildHome() {
 
   const firstEvent = Object.keys(RANKINGS)[0] || '';
 
+  const TAB_LABELS = { '800m':'800', '1500m':'1500', '5000m':'5K', '10000m':'10K', 'Mile':'Mile', 'Marathon':'Mar.' };
   const eventTabsHtml = Object.keys(RANKINGS).map((ev, i) =>
-    `<button class="event-tab ${i === 0 ? 'active' : ''}" data-event="${ev}">${ev}</button>`
+    `<button class="event-tab ${i === 0 ? 'active' : ''}" data-event="${ev}">${TAB_LABELS[ev] || ev}</button>`
   ).join('');
 
   const rankingsWidgetHtml = SITE.showRankingsWidget === false ? '' : `

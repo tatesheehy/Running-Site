@@ -107,7 +107,7 @@ button { font-family: inherit; }
   display: flex;
   align-items: center;
   gap: 12px;
-  margin: 40px 0 24px;
+  margin: 28px 0 20px;
 }
 
 .section-header::before {
