@@ -160,7 +160,7 @@ async function generateShareCard(athlete) {
 
 async function shareAthleteCard(athleteId) {
   const athlete = ATHLETES[athleteId];
-  if (!athlete) return;
+  if (!athlete) { alert('Athlete not found'); return; }
 
   const btn = document.querySelector('.card-share-btn');
   if (btn) { btn.textContent = 'Generating…'; btn.disabled = true; }
@@ -168,29 +168,27 @@ async function shareAthleteCard(athleteId) {
   try {
     const canvas  = await generateShareCard(athlete);
     const dataUrl = canvas.toDataURL('image/png');
-    const name    = athlete.name.replace(/\s+/g, '-');
+    const name    = `${athlete.name.replace(/\s+/g, '-')}-stats`;
 
-    // Mobile: native share sheet
-    if (navigator.share && navigator.canShare) {
-      const res  = await fetch(dataUrl);
-      const blob = await res.blob();
-      const file = new File([blob], `${name}-stats.png`, { type: 'image/png' });
-      if (navigator.canShare({ files: [file] })) {
-        await navigator.share({ files: [file], title: `${athlete.name} — ${(SITE && SITE.name) || 'StatTC'}` });
-        return;
-      }
-    }
-
-    // Desktop: download
-    const a = document.createElement('a');
-    a.href     = dataUrl;
-    a.download = `${name}-stats.png`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    // Open in new tab — works everywhere, user can right-click to save
+    const win = window.open('', '_blank');
+    win.document.write(`
+      <!doctype html><html>
+      <head><title>${athlete.name} — Stats Card</title>
+      <style>
+        body { margin:0; background:#000; display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:100vh; font-family:sans-serif; }
+        img  { max-width:100%; display:block; }
+        p    { color:#666; font-size:13px; margin-top:16px; }
+        a    { color:#e8500a; }
+      </style></head>
+      <body>
+        <img src="${dataUrl}" alt="${athlete.name} stats card">
+        <p>Right-click the image to save, or <a href="${dataUrl}" download="${name}.png">click here to download</a>.</p>
+      </body></html>
+    `);
+    win.document.close();
   } catch (e) {
-    console.error('Share card error:', e);
-    alert('Could not generate card. Check console for details.');
+    alert('Error generating card: ' + e.message);
   } finally {
     if (btn) { btn.textContent = '↗ Share'; btn.disabled = false; }
   }
