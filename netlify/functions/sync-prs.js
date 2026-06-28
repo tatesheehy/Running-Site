@@ -329,16 +329,10 @@ async function ghCommitMany(repo, token, branch, changes, message) {
 
 // ── Main handler ──────────────────────────────────────────────────────────────
 // Runs on schedule OR manually via:
-//   GET /.netlify/functions/sync-prs?secret=YOUR_SYNC_SECRET
+//   GET https://sparkly-centaur-e5f197.netlify.app/.netlify/functions/sync-prs
 
 exports.handler = async (event) => {
-  if (event.httpMethod === 'GET') {
-    const secret   = process.env.SYNC_SECRET;
-    const provided = (event.queryStringParameters || {}).secret;
-    if (!secret || provided !== secret) {
-      return { statusCode: 401, body: 'Unauthorized — set ?secret=YOUR_SYNC_SECRET' };
-    }
-  } else if (event.httpMethod && event.httpMethod !== 'POST') {
+  if (event.httpMethod && event.httpMethod !== 'GET' && event.httpMethod !== 'POST') {
     return { statusCode: 405, body: 'Method not allowed' };
   }
   return runSync();
