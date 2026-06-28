@@ -87,6 +87,7 @@ function buildArticlePage() {
 
   document.getElementById('main').innerHTML = `
     <div class="article-detail">
+      <nav class="article-breadcrumb"><a href="articles.html">Articles</a> <span>→</span> ${a.title}</nav>
       <div class="article-detail-cat"><span class="cat-tag">${a.category}</span></div>
       <h1 class="article-detail-title">${a.title}</h1>
       <p class="article-detail-excerpt">${a.excerpt}</p>

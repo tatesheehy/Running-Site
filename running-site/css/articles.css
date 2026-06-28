@@ -123,6 +123,23 @@
   padding: 0 24px 80px;
 }
 
+.article-breadcrumb {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.article-breadcrumb a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.article-breadcrumb a:hover { text-decoration: underline; }
+.article-breadcrumb span { color: var(--muted); }
+
 .article-detail-cat { margin-bottom: 14px; }
 
 .article-detail-title {
