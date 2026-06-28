@@ -68,7 +68,78 @@
   "photo": "/images/nuguse_card.png",
   "club": "x",
   "country": "United States",
-  "results": [],
+  "results": [
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "Mile",
+      "time": "3:48.21",
+      "place": ""
+    },
+    {
+      "date": "JUN 7",
+      "meet": "BAUHAUS-Galan",
+      "event": "1500m",
+      "time": "3:30.11",
+      "place": "1"
+    },
+    {
+      "date": "MAY 31",
+      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+      "event": "1500m",
+      "time": "3:30.35",
+      "place": "1"
+    },
+    {
+      "date": "APR 21",
+      "meet": "Grand Blue Mile presented by Wellmark Blue Cross Blue Shield",
+      "event": "Mile Road",
+      "time": "3:54.06",
+      "place": "1"
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "3000 Metres Short Track",
+      "time": "7:37.08",
+      "place": "5"
+    },
+    {
+      "date": "MAR 1",
+      "meet": "USA Indoor Championships",
+      "event": "",
+      "time": "3:38.06",
+      "place": "4"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "USA Indoor Championships",
+      "event": "",
+      "time": "7:39.28",
+      "place": "2"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "3000m",
+      "time": "7:33.78",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "1500 Metres Short Track",
+      "time": "3:33.07",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "Mile sh",
+      "time": "3:48.31",
+      "place": "2"
+    }
+  ],
   "weight": "145",
   "coach": "x",
   "reviewBody": "x",
