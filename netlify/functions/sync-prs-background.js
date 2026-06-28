@@ -425,9 +425,13 @@ async function runSync() {
       if (prsUpdated)     data.prs     = newPrs;
       if (resultsUpdated) data.results = newResults;
 
-      if (prsUpdated || resultsUpdated) {
-        data.lastSynced = new Date().toISOString().split('T')[0];
+      const today = new Date().toISOString().split('T')[0];
+      const needsWrite = prsUpdated || resultsUpdated || data.lastSynced !== today;
+      if (needsWrite) {
+        data.lastSynced = today;
         changes.push({ path: filePath, content: JSON.stringify(data, null, 2) });
+      }
+      if (prsUpdated || resultsUpdated) {
         console.log(`sync-prs: updated ${data.name} — PRs: ${newPrs.length}, results: ${newResults.length}`);
         report.push({ name: data.name, status: 'updated', prs: newPrs.length, seasonResults: newResults.length });
       } else {

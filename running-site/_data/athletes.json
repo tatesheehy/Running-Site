@@ -65,109 +65,88 @@
       "country": "Kenya",
       "results": [
         {
+          "date": "JUN 28",
+          "meet": "Meeting de Paris",
+          "event": "1500m",
+          "time": "3:33.52",
+          "place": "13"
+        },
+        {
           "date": "JUN 20",
-          "meet": "Athletics Kenya National Police Service Track and Field Championships, Ulinzi Sports Complex, Langata, Nairobi",
-          "event": "Cross Country",
-          "time": "3:40.97",
-          "place": "10."
+          "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+          "event": "1500m",
+          "time": "3:42.89",
+          "place": "15"
         },
         {
           "date": "JUN 18",
-          "meet": "Kip Keino Classic, Nyayo National Stadium, Nairobi",
-          "event": "Cross Country",
-          "time": "3:38.1h",
-          "place": "5."
+          "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+          "event": "1500m",
+          "time": "3:39.9h",
+          "place": "6"
         },
         {
           "date": "MAY 27",
           "meet": "Athletics Kenya National Police Service Track and Field Championships",
-          "event": "4x100 m Relay",
-          "time": "41.28",
-          "place": ""
+          "event": "800m",
+          "time": "1:50.28",
+          "place": "1"
         },
         {
           "date": "MAY 27",
-          "meet": "African Games",
-          "event": "1500 m",
-          "time": "1:45.14",
-          "place": ""
+          "meet": "Athletics Kenya National Police Service Track and Field Championships",
+          "event": "800m",
+          "time": "1:47.09",
+          "place": "1"
         },
         {
           "date": "MAY 27",
-          "meet": "XXII Commonwealth Games",
-          "event": "1500 m",
-          "time": "3:30.82",
-          "place": "1."
+          "meet": "Athletics Kenya National Police Service Track and Field Championships",
+          "event": "1500m",
+          "time": "3:44.94",
+          "place": "2"
         },
         {
           "date": "MAY 27",
-          "meet": "Kenyan Championships",
-          "event": "1500 m",
-          "time": "3:36.17",
-          "place": "8."
-        },
-        {
-          "date": "MAY 27",
-          "meet": "Trials For World Athletics Relay Championships, Ulinzi Sports Complex, Langata, Nairobi",
-          "event": "1500 m",
-          "time": "3:42.20",
-          "place": "2."
-        },
-        {
-          "date": "MAY 27",
-          "meet": "Trials For World Athletics Relay Championships, Ulinzi Sports Complex, Langata, Nairobi",
-          "event": "Cross Country",
-          "time": "3:42.20",
-          "place": "2."
+          "meet": "Athletics Kenya National Police Service Track and Field Championships",
+          "event": "1500m",
+          "time": "3:44.45",
+          "place": "3"
         },
         {
           "date": "APR 28",
-          "meet": "XXII Commonwealth Games",
-          "event": "1500 m",
-          "time": "3:35.70",
-          "place": "4."
+          "meet": "Simbine Classic",
+          "event": "800m",
+          "time": "1:47.43",
+          "place": "8"
         },
         {
           "date": "APR 24",
-          "meet": "Athletics Kenya National Police Service Track and Field Championships, Ulinzi Sports Complex, Langata, Nairobi",
-          "event": "1500 m",
-          "time": "1:47.09",
-          "place": "1."
+          "meet": "Kip Keino Classic",
+          "event": "1500m",
+          "time": "3:40.97",
+          "place": "10"
         },
         {
           "date": "APR 11",
-          "meet": "Athletics Kenya National Police Service Track and Field Championships",
-          "event": "4x400 m Relay",
-          "time": "3:10.54",
-          "place": ""
-        },
-        {
-          "date": "APR 11",
-          "meet": "The XXXII Olympic Games",
-          "event": "1500 m sh",
-          "time": "3:29.93",
-          "place": ""
-        },
-        {
-          "date": "APR 11",
-          "meet": "Athletics Kenya National Police Service Track and Field Championships, Ulinzi Sports Complex, Langata, Nairobi",
-          "event": "1500 m",
-          "time": "1:50.28",
-          "place": "1."
+          "meet": "Trials For World Athletics Relay Championships",
+          "event": "1500m",
+          "time": "3:38.1h",
+          "place": "5"
         },
         {
           "date": "APR 9",
-          "meet": "Simbine Classic, Pilditch Stadium, Pretoria",
-          "event": "1500 m",
-          "time": "1:47.43",
-          "place": "8."
+          "meet": "Trials For World Athletics Relay Championships",
+          "event": "1500m",
+          "time": "3:42.20",
+          "place": "2"
         },
         {
           "date": "FEB 14",
-          "meet": "Athletics Kenya National Police Service Track and Field Championships, Ulinzi Sports Complex, Langata, Nairobi",
+          "meet": "Sirikwa Classic Continental Tour Gold",
           "event": "Cross Country",
-          "time": "3:44.45",
-          "place": "3."
+          "time": "6:16",
+          "place": "28"
         }
       ],
       "weight": "x",
@@ -234,10 +213,6 @@
         {
           "event": "4xMile Relay",
           "time": "15:52.56"
-        },
-        {
-          "event": "1000 Metres",
-          "time": "2:17.39"
         }
       ],
       "hometown": "x",
@@ -250,7 +225,7 @@
         {
           "date": "JUN 21",
           "meet": "Portland Track Festival",
-          "event": "",
+          "event": "800m",
           "time": "1:46.40",
           "place": "8"
         },
@@ -266,49 +241,42 @@
           "meet": "LA Track Festival",
           "event": "800m",
           "time": "1:45.71",
-          "place": ""
+          "place": "6"
         },
         {
           "date": "MAR 1",
           "meet": "USA Indoor Championships",
-          "event": "",
+          "event": "1500 Metres Short Track",
           "time": "3:38.90",
           "place": "8"
         },
         {
           "date": "FEB 22",
           "meet": "Saucony Battle for Boston",
-          "event": "1500m sh",
+          "event": "1500 Metres Short Track",
           "time": "3:35.20",
           "place": "3"
         },
         {
           "date": "FEB 13",
           "meet": "Boston University David Hemery Valentine Invitational",
-          "event": "Mile sh",
+          "event": "Mile Short Track",
           "time": "3:53.29",
           "place": "10"
         },
         {
-          "date": "FEB 13",
-          "meet": "Boston University David Hemery Valentine Invitational",
-          "event": "1500m sh",
-          "time": "3:37.83",
-          "place": "11"
-        },
-        {
           "date": "FEB 7",
           "meet": "Penn Classic",
-          "event": "3000m",
+          "event": "3000 Metres Short Track",
           "time": "7:55.13",
-          "place": ""
+          "place": "1"
         },
         {
           "date": "JAN 24",
           "meet": "Penn Elite",
-          "event": "1000 Metres",
+          "event": "1000 Metres Short Track",
           "time": "2:20.49",
-          "place": ""
+          "place": "1"
         }
       ],
       "college": "Georgetown",
@@ -322,7 +290,9 @@
     },
     {
       "photoBackground": "#111111",
+      "lastSynced": "2026-06-28",
       "reviewTitle": "Season review",
+      "waUrl": "https://worldathletics.org/athletes/ireland/andrew-coscoran-14595170",
       "height": "5'11",
       "questionBody": "x",
       "headlineRest": "x",
@@ -332,12 +302,60 @@
       "seasons": "8",
       "prs": [
         {
+          "event": "800m",
+          "time": "1:46.61"
+        },
+        {
           "event": "1500m",
           "time": "3:30.42"
         },
         {
           "event": "Mile",
           "time": "3:49.26"
+        },
+        {
+          "event": "3000m",
+          "time": "7:30.75"
+        },
+        {
+          "event": "3000m SC",
+          "time": "9:43.71"
+        },
+        {
+          "event": "5000m",
+          "time": "13:11.05"
+        },
+        {
+          "event": "10000m",
+          "time": "27:56.37"
+        },
+        {
+          "event": "1000 Metres",
+          "time": "2:19.25"
+        },
+        {
+          "event": "1000 Metres Short Track",
+          "time": "2:19.25"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:33.09"
+        },
+        {
+          "event": "Mile Short Track",
+          "time": "3:49.26"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:30.75"
+        },
+        {
+          "event": "5000 Metres Short Track",
+          "time": "13:12.56"
+        },
+        {
+          "event": "4xMile Relay",
+          "time": "16:10.04"
         }
       ],
       "hometown": "x",
@@ -345,7 +363,64 @@
       "photo": "/images/coscoran_card.png",
       "club": "x",
       "country": "Ireland",
-      "results": [],
+      "results": [
+        {
+          "date": "JUN 28",
+          "meet": "Meeting de Paris",
+          "event": "1500m",
+          "time": "3:46.91",
+          "place": "15"
+        },
+        {
+          "date": "JUN 10",
+          "meet": "Oslo Bislett Games",
+          "event": "Mile",
+          "time": "3:49.68",
+          "place": "8"
+        },
+        {
+          "date": "MAY 31",
+          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+          "event": "1500m",
+          "time": "3:31.65",
+          "place": "6"
+        },
+        {
+          "date": "MAR 21",
+          "meet": "World Athletics Indoor Championships",
+          "event": "3000 Metres Short Track",
+          "time": "7:43.89",
+          "place": "13"
+        },
+        {
+          "date": "MAR 1",
+          "meet": "Irish Senior Indoor Championships",
+          "event": "3000 Metres Short Track",
+          "time": "8:24.33",
+          "place": "8"
+        },
+        {
+          "date": "FEB 19",
+          "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+          "event": "1500 Metres Short Track",
+          "time": "3:33.09",
+          "place": "3"
+        },
+        {
+          "date": "FEB 1",
+          "meet": "Millrose Games",
+          "event": "Mile Short Track",
+          "time": "3:49.54",
+          "place": "5"
+        },
+        {
+          "date": "JAN 24",
+          "meet": "New Balance Indoor Grand Prix",
+          "event": "3000 Metres Short Track",
+          "time": "7:30.97",
+          "place": "2"
+        }
+      ],
       "weight": "150",
       "coach": "x",
       "reviewBody": "x",
@@ -445,179 +520,81 @@
       "country": "France",
       "results": [
         {
-          "date": "JUN 10",
-          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-          "event": "1500 m",
-          "time": "3:30.68",
-          "place": ""
+          "date": "JUN 28",
+          "meet": "Meeting de Paris",
+          "event": "1500m",
+          "time": "3:29.80",
+          "place": "2"
         },
         {
           "date": "JUN 10",
-          "meet": "ORLEN Copernicus Cup",
+          "meet": "Oslo Bislett Games",
           "event": "Mile",
-          "time": "3:32.56",
-          "place": ""
-        },
-        {
-          "date": "JUN 10",
-          "meet": "Chpts Interclubs LIFA - Finale Nationale 3, Complexe sportif Laura Flessel, Bussy Saint Georges",
-          "event": "1500 m",
-          "time": "3:38.25",
-          "place": "1."
-        },
-        {
-          "date": "JUN 10",
-          "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Split times",
-          "event": "1500 m sh",
-          "time": "3:34.10",
-          "place": "1."
+          "time": "3:49.63",
+          "place": "7"
         },
         {
           "date": "JUN 7",
-          "meet": "Chpts Interclubs LIFA - Finale Nationale 3, Complexe sportif Laura Flessel, Bussy Saint Georges",
-          "event": "1500 m",
-          "time": "7:57.20",
-          "place": "1."
+          "meet": "BAUHAUS-Galan",
+          "event": "1500m",
+          "time": "3:33.84",
+          "place": "9"
         },
         {
           "date": "MAY 31",
           "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-          "event": "Half Marathon",
-          "time": "1:04:53",
-          "place": ""
-        },
-        {
-          "date": "MAY 31",
-          "meet": "Herculis",
-          "event": "1500 m sh",
-          "time": "3:31.74",
-          "place": ""
-        },
-        {
-          "date": "MAY 31",
-          "meet": "French Indoor Championships",
-          "event": "3000 m sh",
-          "time": "3:41.77",
-          "place": "1."
+          "event": "1500m",
+          "time": "3:30.68",
+          "place": "3"
         },
         {
           "date": "MAY 17",
-          "meet": "French Indoor Championships",
-          "event": "1500 m sh",
-          "time": "3:40.93",
-          "place": "1."
+          "meet": "Chpts Interclubs LIFA",
+          "event": "1500m",
+          "time": "3:38.25",
+          "place": "1"
         },
         {
           "date": "MAR 21",
-          "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Diamond Discipline",
-          "event": "Mile",
-          "time": "3:49.63",
-          "place": "7."
+          "meet": "World Athletics Indoor Championships",
+          "event": "3000 Metres Short Track",
+          "time": "7:39.87",
+          "place": "11"
         },
         {
           "date": "FEB 28",
-          "meet": "French Championships",
-          "event": "1500 m",
-          "time": "3:33.33",
-          "place": "1."
-        },
-        {
-          "date": "FEB 28",
-          "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Diamond Discipline",
-          "event": "Mile",
-          "time": "3:32.56",
-          "place": "1."
+          "meet": "French Indoor Championships",
+          "event": "3000 Metres Short Track",
+          "time": "8:12.21",
+          "place": "1"
         },
         {
           "date": "FEB 22",
-          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-          "event": "4x800 m Relay",
-          "time": "7:37.44",
-          "place": ""
-        },
-        {
-          "date": "FEB 22",
-          "meet": "Czech Indoor Gala",
-          "event": "Mile",
-          "time": "3:39.16",
-          "place": ""
-        },
-        {
-          "date": "FEB 22",
-          "meet": "BAUHAUS-Galan, Olympiastadion, Stockholm - Diamond Discipline",
-          "event": "1500 m sh",
-          "time": "3:30.68",
-          "place": "9."
-        },
-        {
-          "date": "FEB 19",
-          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-          "event": "1500 m sh",
-          "time": "3:32.56",
-          "place": ""
-        },
-        {
-          "date": "FEB 19",
           "meet": "ORLEN Copernicus Cup",
-          "event": "Mile",
-          "time": "3:49.63",
-          "place": ""
-        },
-        {
-          "date": "FEB 19",
-          "meet": "Montgeron Meeting Elite",
-          "event": "3000 m sh",
-          "time": "8:06.63",
-          "place": ""
+          "event": "1500 Metres Short Track",
+          "time": "3:32.56",
+          "place": "1"
         },
         {
           "date": "FEB 19",
           "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
-          "event": "3000 m sh",
-          "time": "7:56.32",
-          "place": ""
-        },
-        {
-          "date": "FEB 19",
-          "meet": "INIT Indoor Meeting Karlsruhe, Europahalle, Karlsruhe (i) - Indoor Meeting",
-          "event": "Mile",
-          "time": "3:33.36",
-          "place": "1."
+          "event": "3000 Metres Short Track",
+          "time": "7:35.79",
+          "place": "4"
         },
         {
           "date": "FEB 8",
-          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat, Complexe Sportif Prince Moulay Abdellah, Rabat - Diamond Discipline",
-          "event": "1500 m sh",
-          "time": "3:30.68",
-          "place": "3."
+          "meet": "INIT Indoor Meeting Karlsruhe",
+          "event": "1500 Metres Short Track",
+          "time": "3:33.36",
+          "place": "1"
         },
         {
           "date": "JAN 11",
-          "meet": "",
-          "event": "10,000 m",
-          "time": "30:50.81",
-          "place": ""
-        },
-        {
-          "date": "JAN 11",
-          "meet": "Oslo Bislett Games",
-          "event": "3000 m",
-          "time": "7:35.79",
-          "place": ""
-        },
-        {
-          "date": "JAN 11",
-          "meet": "Corrida Pédestre Internationale de Houilles",
-          "event": "Half Marathon",
-          "time": "28:32",
-          "place": ""
-        },
-        {
-          "date": "JAN 11",
-          "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF, Arena Stade Couvert, Liévin (i) - World Athletics Indoor Tour",
-          "event": "3000 m sh",
-          "time": "7:35.79",
-          "place": "4."
+          "meet": "10K Valencia Ibercaja by Kiprun, Valencia",
+          "event": "10 Kilometres Road",
+          "time": "27:43",
+          "place": "21"
         }
       ],
       "weight": "155",
@@ -627,6 +604,212 @@
       "id": "azeddine-habz",
       "age": "32",
       "dob": "1993-07-19"
+    },
+    {
+      "photoBackground": "#111111",
+      "reviewTitle": "Season review",
+      "collegeLogo": "/images/block_m-hex.png",
+      "waUrl": "http://worldathletics.org/athletes/united-states/brendan-herger-15078829",
+      "height": "x",
+      "questionBody": "x",
+      "headlineRest": "x",
+      "name": "Brendan Herger",
+      "headlineKey": "x",
+      "flag": "US",
+      "seasons": "x",
+      "prs": [
+        {
+          "event": "800m",
+          "time": "1:46.40"
+        },
+        {
+          "event": "1500m",
+          "time": "3:34.06"
+        },
+        {
+          "event": "Mile",
+          "time": "3:54.56"
+        },
+        {
+          "event": "800 Metres Short Track",
+          "time": "1:48.24"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:38.33"
+        },
+        {
+          "event": "Mile Short Track",
+          "time": "3:54.56"
+        },
+        {
+          "event": "4x400 Metres Relay",
+          "time": "3:14.09"
+        },
+        {
+          "event": "4x400 Metres Relay Short Track",
+          "time": "3:16.51"
+        },
+        {
+          "event": "4x800 Metres Relay",
+          "time": "7:14.65"
+        },
+        {
+          "event": "4x800 Metres Relay Short Track",
+          "time": "7:48.64"
+        },
+        {
+          "event": "Distance Medley",
+          "time": "9:14.80"
+        }
+      ],
+      "hometown": "x",
+      "questionTitle": "Next question",
+      "photo": "/images/default_card.png",
+      "ncaa": false,
+      "club": "x",
+      "country": "United States",
+      "results": [
+        {
+          "date": "JUN 12",
+          "meet": "NCAA Division I Outdoor Track and Field Championships",
+          "event": "1500m",
+          "time": "3:38.91",
+          "place": "10"
+        },
+        {
+          "date": "JUN 10",
+          "meet": "NCAA Division I Outdoor Track and Field Championships",
+          "event": "1500m",
+          "time": "3:39.15",
+          "place": "3"
+        },
+        {
+          "date": "MAY 29",
+          "meet": "NCAA Division I East First Rounds",
+          "event": "1500m",
+          "time": "3:42.87",
+          "place": "3"
+        },
+        {
+          "date": "MAY 27",
+          "meet": "NCAA Division I East First Rounds",
+          "event": "1500m",
+          "time": "3:42.86",
+          "place": "1"
+        },
+        {
+          "date": "MAY 15",
+          "meet": "Big Ten Outdoor Track & Field Championships",
+          "event": "1500m",
+          "time": "3:43.24",
+          "place": "1"
+        },
+        {
+          "date": "MAY 15",
+          "meet": "Big Ten Outdoor Track & Field Championships",
+          "event": "1500m",
+          "time": "4:01.84",
+          "place": "3"
+        },
+        {
+          "date": "MAY 3",
+          "meet": "Duke Twilight",
+          "event": "800m",
+          "time": "1:46.40",
+          "place": "3"
+        },
+        {
+          "date": "MAY 3",
+          "meet": "Duke Twilight",
+          "event": "1500m",
+          "time": "DNF",
+          "place": ""
+        },
+        {
+          "date": "APR 17",
+          "meet": "Wake Forest Invitational",
+          "event": "1500m",
+          "time": "3:34.06",
+          "place": "2"
+        },
+        {
+          "date": "MAR 26",
+          "meet": "Raleigh Relays",
+          "event": "1500m",
+          "time": "3:36.03",
+          "place": "2"
+        },
+        {
+          "date": "MAR 13",
+          "meet": "NCAA Division I Indoor Track and Field Championships",
+          "event": "Distance Medley Short Track",
+          "time": "9:22.77",
+          "place": "4"
+        },
+        {
+          "date": "FEB 28",
+          "meet": "Big Ten Conference Indoor Track & Field Championships",
+          "event": "Mile Short Track",
+          "time": "4:12.89",
+          "place": "4"
+        },
+        {
+          "date": "FEB 27",
+          "meet": "Big Ten Conference Indoor Track & Field Championships",
+          "event": "Mile Short Track",
+          "time": "4:00.87",
+          "place": "3"
+        },
+        {
+          "date": "FEB 26",
+          "meet": "Big Ten Conference Indoor Track & Field Championships",
+          "event": "Distance Medley Short Track",
+          "time": "9:38.72",
+          "place": "1"
+        },
+        {
+          "date": "FEB 21",
+          "meet": "Alex Wilson Invitational",
+          "event": "Distance Medley",
+          "time": "9:14.80",
+          "place": "1"
+        },
+        {
+          "date": "FEB 13",
+          "meet": "Boston University David Hemery Valentine Invitational",
+          "event": "Mile Short Track",
+          "time": "3:54.56",
+          "place": "2"
+        },
+        {
+          "date": "JAN 31",
+          "meet": "Razorback Invitational",
+          "event": "Mile Short Track",
+          "time": "3:55.80",
+          "place": "7"
+        },
+        {
+          "date": "JAN 17",
+          "meet": "Simmons-Harvey Invitational",
+          "event": "800 Metres Short Track",
+          "time": "DNF",
+          "place": ""
+        },
+        {
+          "date": "JAN 17",
+          "meet": "Simmons-Harvey Invitational",
+          "event": "Mile Short Track",
+          "time": "3:56.62",
+          "place": "2"
+        }
+      ],
+      "college": "Michigan",
+      "weight": "x",
+      "coach": "x",
+      "reviewBody": "x",
+      "event": "MIDDLE DISTANCE",
+      "id": "brendan-herger"
     },
     {
       "photoBackground": "#111111",
@@ -647,7 +830,7 @@
         },
         {
           "event": "1500m",
-          "time": "3:29.80"
+          "time": "3:28.00"
         },
         {
           "event": "Mile",
@@ -685,242 +868,81 @@
       "country": "Australia",
       "results": [
         {
-          "date": "JUN 10",
-          "meet": "Maurie Plant Meet, Lakeside Stadium, Melbourne",
-          "event": "1500 m sh",
-          "time": "3:30.42",
-          "place": "1."
+          "date": "JUN 28",
+          "meet": "Meeting de Paris",
+          "event": "1500m",
+          "time": "3:28.00",
+          "place": "1"
         },
         {
           "date": "JUN 10",
-          "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Split times",
-          "event": "1500 m sh",
-          "time": "3:33.98",
-          "place": "1."
+          "meet": "Oslo Bislett Games",
+          "event": "Mile",
+          "time": "3:48.35",
+          "place": "3"
         },
         {
           "date": "JUN 7",
-          "meet": "Maurie Plant Meet, Lakeside Stadium, Melbourne",
-          "event": "1500 m",
-          "time": "1:44.05",
-          "place": "1."
-        },
-        {
-          "date": "MAY 30",
-          "meet": "",
-          "event": "800 m",
-          "time": "1:44.05",
-          "place": ""
+          "meet": "BAUHAUS-Galan",
+          "event": "1500m",
+          "time": "3:30.32",
+          "place": "2"
         },
         {
           "date": "MAY 30",
           "meet": "10. PUMA NITRO Lange Laufnacht",
-          "event": "3000 m sh",
-          "time": "7:27.57",
-          "place": ""
+          "event": "800m",
+          "time": "1:44.05",
+          "place": "1"
         },
         {
-          "date": "MAY 30",
-          "meet": "AACT Summer Series Meet Number 8",
-          "event": "800 m",
-          "time": "1:58.10",
-          "place": ""
-        },
-        {
-          "date": "MAY 30",
+          "date": "APR 11",
           "meet": "Australian Championships",
-          "event": "5000 m",
+          "event": "5000m",
           "time": "13:11.66",
-          "place": "1."
-        },
-        {
-          "date": "APR 11",
-          "meet": "10. PUMA NITRO Lange Laufnacht",
-          "event": "3000 m",
-          "time": "7:27.57",
-          "place": ""
-        },
-        {
-          "date": "APR 11",
-          "meet": "Millrose Games",
-          "event": "3000 m",
-          "time": "7:27.57",
-          "place": ""
-        },
-        {
-          "date": "APR 11",
-          "meet": "New Balance Indoor Grand Prix",
-          "event": "3000 m sh",
-          "time": "7:33.12",
-          "place": "5"
-        },
-        {
-          "date": "APR 11",
-          "meet": "World Athletics U20 Championships",
-          "event": "1500 m",
-          "time": "3:40.60",
-          "place": "5"
-        },
-        {
-          "date": "APR 11",
-          "meet": "Millrose Games, Armory Track\\u0026Field Center, New York, NY (i) - Indoor Meeting",
-          "event": "Mile sh",
-          "time": "3:47.57",
-          "place": "1."
+          "place": "1"
         },
         {
           "date": "APR 10",
-          "meet": "10. PUMA NITRO Lange Laufnacht",
-          "event": "5000 m",
-          "time": "13:11.66",
-          "place": ""
-        },
-        {
-          "date": "APR 10",
-          "meet": "AACT Summer Series Meet Number 13",
-          "event": "1500 m sh",
-          "time": "3:46.30",
-          "place": ""
-        },
-        {
-          "date": "APR 10",
-          "meet": "World Athletics U20 Championships",
-          "event": "1500 m",
-          "time": "3:40.60",
-          "place": "31"
-        },
-        {
-          "date": "APR 10",
-          "meet": "10. PUMA NITRO Lange Laufnacht, Carl-Kaufmann-Stadion, Karlsruhe",
-          "event": "800 m",
-          "time": "1:44.05",
-          "place": "1."
+          "meet": "Australian Championships",
+          "event": "1500m",
+          "time": "3:29.85",
+          "place": "1"
         },
         {
           "date": "APR 9",
-          "meet": "10. PUMA NITRO Lange Laufnacht, Carl-Kaufmann-Stadion, Karlsruhe",
-          "event": "800 m",
-          "time": "3:34.39",
-          "place": "1."
+          "meet": "Australian Championships",
+          "event": "1500m",
+          "time": "3:39.69",
+          "place": "1"
         },
         {
           "date": "MAR 28",
-          "meet": "Australian Championships",
-          "event": "1500 m",
-          "time": "3:29.85",
-          "place": "1."
+          "meet": "Maurie Plant Meet",
+          "event": "1500m",
+          "time": "3:30.42",
+          "place": "1"
         },
         {
           "date": "FEB 1",
-          "meet": "10. PUMA NITRO Lange Laufnacht",
-          "event": "800 m",
-          "time": "1:44.05",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "10. PUMA NITRO Lange Laufnacht",
-          "event": "1500 m",
-          "time": "3:29.85",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "Australian Championships",
-          "event": "1500 m sh",
-          "time": "3:32.78",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "NSW Milers Series",
-          "event": "1500 m sh",
-          "time": "3:29.80",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "Albie Thomas Mile",
-          "event": "Mile",
-          "time": "4:07.04",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "Prefontaine Classic",
-          "event": "Mile sh",
-          "time": "3:47.48",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "Australian Championships, Olympic Park, Sydney",
-          "event": "1500 m sh",
-          "time": "3:39.69",
-          "place": "1."
-        },
-        {
-          "date": "FEB 1",
-          "meet": "Millrose Games, Armory Track\\u0026Field Center, New York, NY (i) - Split times",
-          "event": "Mile",
-          "time": "3:32.78",
-          "place": "1."
-        },
-        {
-          "date": "JAN 24",
-          "meet": "",
-          "event": "Mile",
-          "time": "3:47.48",
-          "place": ""
-        },
-        {
-          "date": "JAN 24",
-          "meet": "10. PUMA NITRO Lange Laufnacht",
-          "event": "Mile sh",
-          "time": "3:47.48",
-          "place": ""
-        },
-        {
-          "date": "JAN 24",
           "meet": "Millrose Games",
-          "event": "Mile",
+          "event": "Mile Short Track",
           "time": "3:47.57",
-          "place": ""
+          "place": "1"
         },
         {
           "date": "JAN 24",
-          "meet": "Millrose Games",
-          "event": "Mile sh",
-          "time": "3:47.57",
-          "place": ""
-        },
-        {
-          "date": "JAN 24",
-          "meet": "Zatopek 10",
-          "event": "3000 m",
-          "time": "8:05.82",
-          "place": ""
-        },
-        {
-          "date": "JAN 24",
-          "meet": "On Track Nights: Zatopek: 10",
-          "event": "3000 m sh",
-          "time": "7:33.12",
-          "place": ""
-        },
-        {
-          "date": "JAN 24",
-          "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Diamond Discipline",
-          "event": "Mile sh",
-          "time": "3:49.81",
-          "place": "1."
+          "meet": "New Balance Indoor Grand Prix",
+          "event": "3000 Metres Short Track",
+          "time": "7:27.57",
+          "place": "1"
         },
         {
           "date": "JAN 16",
-          "meet": "BAUHAUS-Galan, Olympiastadion, Stockholm - Diamond Discipline",
-          "event": "1500 m sh",
-          "time": "3:30.32",
-          "place": "2."
+          "meet": "UW Preview",
+          "event": "Mile",
+          "time": "3:49.81",
+          "place": "1"
         }
       ],
       "weight": "150",
@@ -1010,7 +1032,7 @@
         {
           "date": "JUN 12",
           "meet": "NCAA Division I Outdoor Track and Field Championships",
-          "event": "",
+          "event": "1500m",
           "time": "3:38.10",
           "place": "8"
         },
@@ -1024,56 +1046,56 @@
         {
           "date": "MAY 29",
           "meet": "NCAA Division I West First Rounds",
-          "event": "",
+          "event": "1500m",
           "time": "3:37.64",
           "place": "2"
         },
         {
           "date": "MAY 27",
           "meet": "NCAA Division I West First Rounds",
-          "event": "",
+          "event": "1500m",
           "time": "3:39.63",
           "place": "1"
         },
         {
           "date": "MAY 16",
           "meet": "Big 12 Outdoor Track & Field Championship",
-          "event": "",
+          "event": "800m",
           "time": "1:47.88",
           "place": "5"
         },
         {
           "date": "MAY 16",
           "meet": "Big 12 Outdoor Track & Field Championship",
-          "event": "",
+          "event": "1500m",
           "time": "3:58.63",
           "place": "1"
         },
         {
           "date": "MAY 15",
           "meet": "Big 12 Outdoor Track & Field Championship",
-          "event": "",
+          "event": "800m",
           "time": "1:47.97",
           "place": "1"
         },
         {
           "date": "MAY 14",
           "meet": "Big 12 Outdoor Track & Field Championship",
-          "event": "",
+          "event": "1500m",
           "time": "3:47.08",
           "place": "1"
         },
         {
           "date": "MAY 1",
           "meet": "BYU Robison Invitational",
-          "event": "",
+          "event": "800m",
           "time": "1:47.02",
           "place": "1"
         },
         {
           "date": "APR 29",
           "meet": "BYU Robison Invitational",
-          "event": "",
+          "event": "1500m",
           "time": "3:40.20",
           "place": "1"
         },
@@ -1082,27 +1104,34 @@
           "meet": "Bryan Clay Invitational",
           "event": "5000m",
           "time": "13:51.05",
-          "place": ""
+          "place": "25"
         },
         {
           "date": "APR 3",
           "meet": "Stanford Invitational",
-          "event": "",
+          "event": "1500m",
           "time": "3:41.32",
           "place": "1"
         },
         {
           "date": "APR 3",
           "meet": "Stanford Invitational",
-          "event": "",
+          "event": "10000m",
           "time": "DNF",
           "place": ""
         },
         {
           "date": "MAR 14",
           "meet": "NCAA Division I Indoor Track and Field Championships",
-          "event": "Mile sh",
+          "event": "Mile Short Track",
           "time": "3:58.94",
+          "place": "1"
+        },
+        {
+          "date": "MAR 13",
+          "meet": "NCAA Division I Indoor Track and Field Championships",
+          "event": "Mile Short Track",
+          "time": "3:56.72",
           "place": "1"
         },
         {
@@ -1110,33 +1139,26 @@
           "meet": "NCAA Division I Indoor Track and Field Championships",
           "event": "Distance Medley Short Track",
           "time": "9:25.81",
-          "place": ""
-        },
-        {
-          "date": "MAR 13",
-          "meet": "NCAA Division I Indoor Track and Field Championships",
-          "event": "Mile sh",
-          "time": "3:56.72",
-          "place": "1"
+          "place": "6"
         },
         {
           "date": "FEB 28",
           "meet": "Big 12 Indoor Track & Field Championship",
-          "event": "",
+          "event": "Mile Short Track",
           "time": "4:05.23",
           "place": "1"
         },
         {
           "date": "FEB 27",
           "meet": "Big 12 Indoor Track & Field Championship",
-          "event": "",
+          "event": "Mile Short Track",
           "time": "4:06.64",
           "place": "2"
         },
         {
           "date": "FEB 27",
           "meet": "Big 12 Indoor Track & Field Championship",
-          "event": "",
+          "event": "Distance Medley Short Track",
           "time": "9:35.98",
           "place": "1"
         },
@@ -1145,48 +1167,34 @@
           "meet": "Colorado Last Chance",
           "event": "Distance Medley",
           "time": "9:28.60",
-          "place": ""
+          "place": "2"
         },
         {
           "date": "FEB 13",
           "meet": "Boston University David Hemery Valentine Invitational",
-          "event": "1500m sh",
-          "time": "3:37.03",
-          "place": "8"
-        },
-        {
-          "date": "FEB 13",
-          "meet": "Boston University David Hemery Valentine Invitational",
-          "event": "Mile sh",
+          "event": "Mile Short Track",
           "time": "3:52.84",
           "place": "8"
         },
         {
           "date": "FEB 13",
           "meet": "Boston University David Hemery Valentine Invitational",
-          "event": "",
+          "event": "3000 Metres Short Track",
           "time": "DNF",
           "place": ""
         },
         {
           "date": "JAN 31",
           "meet": "Boston University John Thomas Terrier Classic",
-          "event": "Mile sh",
+          "event": "Mile Short Track",
           "time": "3:54.38",
           "place": "5"
         },
         {
           "date": "JAN 31",
           "meet": "Boston University John Thomas Terrier Classic",
-          "event": "",
+          "event": "3000 Metres Short Track",
           "time": "NM",
-          "place": ""
-        },
-        {
-          "date": "JAN 31",
-          "meet": "Boston University John Thomas Terrier Classic",
-          "event": "1500m sh",
-          "time": "3:38.80",
           "place": ""
         }
       ],
@@ -1233,10 +1241,6 @@
         {
           "event": "Distance Medley",
           "time": "9:25.05"
-        },
-        {
-          "event": "Mile",
-          "time": "3:56.05"
         }
       ],
       "hometown": "x",
@@ -1270,28 +1274,28 @@
         {
           "date": "MAY 27",
           "meet": "NCAA Division I West First Rounds",
-          "event": "",
+          "event": "1500m",
           "time": "3:40.15",
           "place": "6"
         },
         {
           "date": "MAY 16",
           "meet": "The Big West Track and Field Championships",
-          "event": "",
+          "event": "1500m",
           "time": "3:45.53",
           "place": "3"
         },
         {
           "date": "MAY 16",
           "meet": "The Big West Track and Field Championships",
-          "event": "",
+          "event": "5000m",
           "time": "14:15.70",
           "place": "3"
         },
         {
           "date": "MAY 15",
           "meet": "The Big West Track and Field Championships",
-          "event": "",
+          "event": "1500m",
           "time": "3:57.52",
           "place": "1"
         },
@@ -1307,19 +1311,19 @@
           "meet": "Bryan Clay Invitational",
           "event": "5000m",
           "time": "13:28.40",
-          "place": ""
+          "place": "2"
         },
         {
           "date": "APR 3",
           "meet": "Stanford Invitational",
-          "event": "",
+          "event": "1500m",
           "time": "3:39.28",
           "place": "2"
         },
         {
           "date": "APR 3",
           "meet": "Stanford Invitational",
-          "event": "",
+          "event": "10000m",
           "time": "DNF",
           "place": ""
         },
@@ -1328,12 +1332,12 @@
           "meet": "Alex Wilson Invitational",
           "event": "Distance Medley",
           "time": "9:25.05",
-          "place": ""
+          "place": "8"
         },
         {
           "date": "FEB 13",
           "meet": "Husky Classic",
-          "event": "",
+          "event": "Mile",
           "time": "3:57.48",
           "place": "5"
         },
@@ -1486,7 +1490,7 @@
         {
           "date": "JUN 14",
           "meet": "USATF LA Grand Prix",
-          "event": "",
+          "event": "3000m",
           "time": "7:37.77",
           "place": "2"
         },
@@ -1500,7 +1504,7 @@
         {
           "date": "MAR 1",
           "meet": "USA Indoor Championships",
-          "event": "",
+          "event": "1500 Metres Short Track",
           "time": "3:38.08",
           "place": "5"
         },
@@ -1514,35 +1518,28 @@
         {
           "date": "FEB 14",
           "meet": "Sound Invite",
-          "event": "1500m",
-          "time": "3:30.80",
-          "place": ""
-        },
-        {
-          "date": "FEB 14",
-          "meet": "Sound Invite",
-          "event": "Mile sh",
+          "event": "Mile Short Track",
           "time": "3:45.94",
           "place": "1"
         },
         {
           "date": "FEB 7",
           "meet": "Doc Hale Virginia Tech Invitational",
-          "event": "1000 Metres",
+          "event": "1000 Metres Short Track",
           "time": "2:16.30",
-          "place": ""
+          "place": "1"
         },
         {
           "date": "FEB 1",
           "meet": "Millrose Games",
-          "event": "2 Miles sh",
+          "event": "2 Miles Short Track",
           "time": "8:07.31",
           "place": "1"
         },
         {
           "date": "JAN 23",
           "meet": "Hokie Invitational",
-          "event": "2000m sh",
+          "event": "2000 Metres Short Track",
           "time": "4:52.92",
           "place": "1"
         }
@@ -1630,10 +1627,6 @@
         {
           "event": "4xMile Relay",
           "time": "15:52.05"
-        },
-        {
-          "event": "Mile",
-          "time": "3:50.17"
         }
       ],
       "hometown": "x",
@@ -1648,19 +1641,19 @@
           "meet": "USATF LA Grand Prix",
           "event": "5000m",
           "time": "13:18.13",
-          "place": ""
+          "place": "8"
         },
         {
           "date": "MAY 23",
           "meet": "LA Track Festival",
           "event": "1500m",
           "time": "3:34.23",
-          "place": ""
+          "place": "5"
         },
         {
           "date": "MAY 2",
           "meet": "USA 5 km Road Running Championships",
-          "event": "",
+          "event": "5 Kilometres Road",
           "time": "13:29",
           "place": "3"
         },
@@ -1669,61 +1662,47 @@
           "meet": "Boston 5K",
           "event": "5 Kilometres Road",
           "time": "13:25",
-          "place": ""
+          "place": "4"
         },
         {
           "date": "MAR 1",
           "meet": "USA Indoor Championships",
-          "event": "",
+          "event": "1500 Metres Short Track",
           "time": "3:38.87",
           "place": "7"
         },
         {
           "date": "FEB 28",
           "meet": "USA Indoor Championships",
-          "event": "",
+          "event": "3000 Metres Short Track",
           "time": "7:41.62",
           "place": "7"
         },
         {
           "date": "FEB 14",
           "meet": "Sound Invite",
-          "event": "1500 Metres Short Track",
-          "time": "3:34.35",
-          "place": ""
-        },
-        {
-          "date": "FEB 14",
-          "meet": "Sound Invite",
-          "event": "Mile sh",
+          "event": "Mile Short Track",
           "time": "3:50.49",
           "place": "2"
         },
         {
           "date": "FEB 7",
           "meet": "Doc Hale Virginia Tech Invitational",
-          "event": "1000 Metres",
+          "event": "1000 Metres Short Track",
           "time": "2:17.76",
-          "place": ""
+          "place": "2"
         },
         {
           "date": "FEB 1",
           "meet": "Millrose Games",
-          "event": "3000m",
-          "time": "7:38.16",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "Millrose Games",
-          "event": "2 Miles sh",
+          "event": "2 Miles Short Track",
           "time": "8:08.91",
           "place": "7"
         },
         {
           "date": "JAN 23",
           "meet": "Hokie Invitational",
-          "event": "2000m sh",
+          "event": "2000 Metres Short Track",
           "time": "4:54.74",
           "place": "2"
         }
@@ -1771,58 +1750,23 @@
         {
           "date": "JUN 10",
           "meet": "Oslo Bislett Games",
-          "event": "1500 m",
-          "time": "3:34.11",
-          "place": ""
-        },
-        {
-          "date": "JUN 10",
-          "meet": "World Athletics U20 Championships",
-          "event": "1500 m",
-          "time": "1:44.01",
-          "place": ""
-        },
-        {
-          "date": "JUN 10",
-          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-          "event": "800 m",
-          "time": "1:44.36",
-          "place": "1."
+          "event": "800m",
+          "time": "1:42.09",
+          "place": "2"
         },
         {
           "date": "MAY 31",
-          "meet": "Meeting de Paris",
-          "event": "800 m",
-          "time": "1:43.27",
-          "place": "1."
-        },
-        {
-          "date": "APR 24",
-          "meet": "Oslo Bislett Games",
-          "event": "800 m",
-          "time": "1:41.11",
-          "place": ""
-        },
-        {
-          "date": "APR 24",
-          "meet": "Oslo Bislett Games",
-          "event": "Mile Road",
-          "time": "3:52.45",
-          "place": ""
-        },
-        {
-          "date": "APR 24",
-          "meet": "Meeting International d’Athlétisme Herculis EBS",
-          "event": "1500 m",
-          "time": "1:41.44",
-          "place": ""
-        },
-        {
-          "date": "APR 24",
-          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat, Complexe Sportif Prince Moulay Abdellah, Rabat - Diamond Discipline",
-          "event": "800 m",
+          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+          "event": "800m",
           "time": "1:43.56",
-          "place": "2."
+          "place": "2"
+        },
+        {
+          "date": "APR 24",
+          "meet": "Kip Keino Classic",
+          "event": "1500m",
+          "time": "3:34.11",
+          "place": "1"
         }
       ],
       "weight": "x",
@@ -1919,192 +1863,52 @@
       "results": [
         {
           "date": "JUN 13",
-          "meet": "LA Track Festival",
-          "event": "4xMile Relay",
-          "time": "16:25.19",
-          "place": ""
-        },
-        {
-          "date": "JUN 13",
-          "meet": "Darius Dixon Memorial Invitational",
-          "event": "1500 m",
-          "time": "3:38.13",
-          "place": ""
-        },
-        {
-          "date": "JUN 13",
-          "meet": "NCAA Division I Indoor Track and Field Championships",
-          "event": "3000 m sh",
-          "time": "7:52.03",
-          "place": "1."
+          "meet": "USATF LA Grand Prix",
+          "event": "1500m",
+          "time": "3:33.71",
+          "place": "1"
         },
         {
           "date": "MAY 23",
-          "meet": "",
-          "event": "800 m",
+          "meet": "LA Track Festival",
+          "event": "800m",
           "time": "1:45.79",
-          "place": ""
+          "place": "7"
         },
         {
-          "date": "MAY 23",
-          "meet": "LA Track Festival",
-          "event": "Distance Medley sh",
-          "time": "9:17.17",
-          "place": ""
-        },
-        {
-          "date": "MAY 23",
+          "date": "MAY 1",
           "meet": "Payton Jordan Invitational",
-          "event": "800 m",
-          "time": "1:54.52",
-          "place": ""
-        },
-        {
-          "date": "MAY 23",
-          "meet": "Prefontaine Classic",
-          "event": "Mile",
-          "time": "3:48.86",
-          "place": "1."
-        },
-        {
-          "date": "MAY 1",
-          "meet": "",
-          "event": "2 Mi",
-          "time": "8:15.93",
-          "place": ""
-        },
-        {
-          "date": "MAY 1",
-          "meet": "Sound Invite",
-          "event": "2 Mi",
-          "time": "8:15.93",
-          "place": ""
-        },
-        {
-          "date": "MAY 1",
-          "meet": "Millrose Games",
-          "event": "5000 m",
-          "time": "13:46.81",
-          "place": ""
-        },
-        {
-          "date": "MAY 1",
-          "meet": "USA Indoor Championships, Ocean Breeze Athl. Complex, New York, NY (i)",
-          "event": "2 Mi sh",
-          "time": "7:35.29",
-          "place": "3."
+          "event": "5000m",
+          "time": "13:13.11",
+          "place": "3"
         },
         {
           "date": "FEB 28",
-          "meet": "USATF LA Grand Prix, USC Allyson Felix at Loker Track Stadium, Los Angeles, CA",
-          "event": "3000 m sh",
-          "time": "3:33.71",
-          "place": "1."
-        },
-        {
-          "date": "FEB 14",
-          "meet": "LA Track Festival",
-          "event": "800 m",
-          "time": "1:45.79",
-          "place": ""
-        },
-        {
-          "date": "FEB 14",
-          "meet": "LA Track Festival",
-          "event": "1500 m",
-          "time": "3:33.71",
-          "place": ""
-        },
-        {
-          "date": "FEB 14",
-          "meet": "Boston University John Thomas Terrier Classic",
-          "event": "3000 m",
-          "time": "7:46.48",
-          "place": ""
+          "meet": "USA Indoor Championships",
+          "event": "3000 Metres Short Track",
+          "time": "7:47.99",
+          "place": "12"
         },
         {
           "date": "FEB 14",
           "meet": "Sound Invite",
-          "event": "3000 m sh",
-          "time": "7:46.48",
-          "place": ""
-        },
-        {
-          "date": "FEB 14",
-          "meet": "USATF LA Grand Prix, USC Allyson Felix at Loker Track Stadium, Los Angeles, CA",
-          "event": "1500 m",
-          "time": "1:45.79",
-          "place": "7."
-        },
-        {
-          "date": "FEB 1",
-          "meet": "",
-          "event": "3000 m",
-          "time": "7:30.15",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "",
-          "event": "3000 m sh",
-          "time": "7:30.15",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "USATF LA Grand Prix",
-          "event": "3000 m",
+          "event": "3000 Metres Short Track",
           "time": "7:35.29",
-          "place": ""
+          "place": "3"
         },
         {
           "date": "FEB 1",
-          "meet": "Sound Invite",
-          "event": "3000 m sh",
-          "time": "7:35.29",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "ACC Indoor Track \\u0026 Field Championships",
-          "event": "2 Mi",
-          "time": "7:30.15",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "NCAA Division I Indoor Track and Field Championships",
-          "event": "2 Mi",
-          "time": "7:35.29",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "LA Track Festival, Drake Stadium, Los Angeles, CA - National Events",
-          "event": "800 m",
-          "time": "1:45.79",
-          "place": "7."
-        },
-        {
-          "date": "FEB 1",
-          "meet": "Millrose Games, Armory Track\\u0026Field Center, New York, NY (i) - Split times",
-          "event": "2 Mi sh",
-          "time": "7:41.28",
-          "place": "3."
-        },
-        {
-          "date": "JAN 10",
-          "meet": "The Penn Relays",
-          "event": "Cross Country Relay",
-          "time": "16:25.19",
-          "place": "21"
-        },
-        {
-          "date": "JAN 10",
-          "meet": "Millrose Games, Armory Track\\u0026Field Center, New York, NY (i) - World Athletics Indoor Tour",
-          "event": "2 Mi sh",
+          "meet": "Millrose Games",
+          "event": "2 Miles Short Track",
           "time": "8:15.93",
-          "place": "11."
+          "place": "11"
+        },
+        {
+          "date": "JAN 10",
+          "meet": "46th World Athletics Cross Country Championships",
+          "event": "Cross Country Relay",
+          "time": "22:43",
+          "place": "5"
         }
       ],
       "college": "",
@@ -2204,63 +2008,63 @@
         {
           "date": "JUN 12",
           "meet": "NCAA Division I Outdoor Track and Field Championships",
-          "event": "",
+          "event": "1500m",
           "time": "3:37.21",
           "place": "3"
         },
         {
           "date": "JUN 12",
           "meet": "NCAA Division I Outdoor Track and Field Championships",
-          "event": "",
+          "event": "5000m",
           "time": "14:10.63",
           "place": "20"
         },
         {
           "date": "JUN 10",
           "meet": "NCAA Division I Outdoor Track and Field Championships",
-          "event": "",
+          "event": "1500m",
           "time": "3:38.81",
           "place": "1"
         },
         {
           "date": "MAY 29",
           "meet": "NCAA Division I East First Rounds",
-          "event": "",
+          "event": "1500m",
           "time": "3:42.48",
           "place": "1"
         },
         {
           "date": "MAY 29",
           "meet": "NCAA Division I East First Rounds",
-          "event": "",
+          "event": "5000m",
           "time": "13:49.63",
           "place": "2"
         },
         {
           "date": "MAY 27",
           "meet": "NCAA Division I East First Rounds",
-          "event": "",
+          "event": "1500m",
           "time": "3:47.70",
           "place": "1"
         },
         {
           "date": "MAY 16",
           "meet": "ACC Outdoor Track & Field Championships",
-          "event": "",
+          "event": "1500m",
           "time": "3:39.88",
           "place": "2"
         },
         {
           "date": "MAY 16",
           "meet": "ACC Outdoor Track & Field Championships",
-          "event": "",
+          "event": "5000m",
           "time": "13:31.43",
           "place": "4"
         },
         {
           "date": "MAY 14",
           "meet": "ACC Outdoor Track & Field Championships",
-          "event": "",
+          "event": "1500m",
           "time": "3:54.66",
           "place": "1"
         },
@@ -2269,61 +2073,54 @@
           "meet": "Virginia Challenge",
           "event": "5000m",
           "time": "13:25.42",
-          "place": ""
+          "place": "1"
         },
         {
           "date": "APR 3",
           "meet": "Virginia Grand Prix",
-          "event": "",
+          "event": "1500m",
           "time": "3:39.92",
           "place": "1"
         },
         {
           "date": "MAR 14",
           "meet": "NCAA Division I Indoor Track and Field Championships",
-          "event": "",
+          "event": "Mile Short Track",
           "time": "3:59.50",
           "place": "4"
         },
         {
           "date": "MAR 13",
           "meet": "NCAA Division I Indoor Track and Field Championships",
-          "event": "",
+          "event": "Mile Short Track",
           "time": "3:55.13",
           "place": "1"
         },
         {
           "date": "FEB 28",
           "meet": "ACC Indoor Track & Field Championships",
-          "event": "3000m",
+          "event": "3000 Metres Short Track",
           "time": "7:43.18",
-          "place": ""
+          "place": "1"
         },
         {
           "date": "FEB 26",
           "meet": "ACC Indoor Track & Field Championships",
           "event": "5000 Metres Short Track",
           "time": "13:41.66",
-          "place": ""
+          "place": "2"
         },
         {
           "date": "FEB 22",
           "meet": "Saucony Battle for Boston",
           "event": "Distance Medley Short Track",
           "time": "9:16.75",
-          "place": ""
+          "place": "3"
         },
         {
           "date": "FEB 1",
           "meet": "Millrose Games",
-          "event": "1500m",
-          "time": "3:35.60",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "Millrose Games",
-          "event": "Mile sh",
+          "event": "Mile Short Track",
           "time": "3:52.62",
           "place": "8"
         }
@@ -2573,21 +2370,21 @@
           "meet": "65th Ostrava Golden Spike",
           "event": "1000 Metres",
           "time": "2:16.39",
-          "place": ""
+          "place": "8"
         },
         {
           "date": "JUN 10",
           "meet": "Oslo Bislett Games",
           "event": "Mile",
           "time": "3:50.71",
-          "place": ""
+          "place": "12"
         },
         {
           "date": "JUN 4",
           "meet": "Golden Gala Pietro Mennea",
           "event": "800m",
           "time": "1:44.28",
-          "place": ""
+          "place": "5"
         },
         {
           "date": "MAY 31",
@@ -2608,42 +2405,42 @@
           "meet": "World Athletics Indoor Championships",
           "event": "1500 Metres Short Track",
           "time": "3:43.58",
-          "place": "18"
+          "place": "2"
         },
         {
           "date": "FEB 22",
           "meet": "ORLEN Copernicus Cup",
-          "event": "800m sh",
+          "event": "800 Metres Short Track",
           "time": "1:45.05",
           "place": "5"
         },
         {
           "date": "FEB 19",
           "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
-          "event": "1500m sh",
+          "event": "1500 Metres Short Track",
           "time": "3:32.44",
           "place": "1"
         },
         {
           "date": "FEB 15",
           "meet": "Campeonatos Nacionais de Clubes 1ª e 2ª Divisão",
-          "event": "",
+          "event": "3000 Metres Short Track",
           "time": "8:11.30",
           "place": "1"
         },
         {
           "date": "FEB 14",
           "meet": "Campeonatos Nacionais de Clubes 1ª e 2ª Divisão",
-          "event": "",
+          "event": "1500 Metres Short Track",
           "time": "4:04.97",
           "place": "1"
         },
         {
           "date": "FEB 3",
           "meet": "Czech Indoor Gala",
-          "event": "3000m",
+          "event": "3000 Metres Short Track",
           "time": "7:38.05",
-          "place": ""
+          "place": "1"
         }
       ],
       "weight": "115 lbs",
@@ -2754,228 +2551,60 @@
       "country": "Scotland",
       "results": [
         {
-          "date": "JUN 21",
-          "meet": "European Athletics Team Championships Super League",
-          "event": "800 m",
-          "time": "1:45.71",
-          "place": "2."
+          "date": "JUN 28",
+          "meet": "Meeting de Paris",
+          "event": "1500m",
+          "time": "3:29.95",
+          "place": "3"
         },
         {
           "date": "JUN 21",
-          "meet": "LA Track Festival, Drake Stadium, Los Angeles, CA",
-          "event": "800 m",
-          "time": "1:44.74",
-          "place": "4."
+          "meet": "Novuna UK Athletics Championships",
+          "event": "800m",
+          "time": "1:45.40",
+          "place": "1"
         },
         {
           "date": "JUN 20",
-          "meet": "UK Indoor Championships",
-          "event": "1500 m sh",
-          "time": "3:43.83",
-          "place": "4."
-        },
-        {
-          "date": "JUN 10",
-          "meet": "BAUHAUS-Galan",
-          "event": "10 Kilom Road",
-          "time": "30:10",
-          "place": ""
-        },
-        {
-          "date": "JUN 10",
-          "meet": "BAUHAUS-Galan",
-          "event": "800 m",
-          "time": "1:44.39",
-          "place": ""
-        },
-        {
-          "date": "JUN 10",
-          "meet": "Herculis",
-          "event": "1500 m sh",
-          "time": "3:29.47",
-          "place": ""
-        },
-        {
-          "date": "JUN 10",
-          "meet": "Müller Anniversary Games",
-          "event": "Mile sh",
-          "time": "3:52.02",
-          "place": ""
-        },
-        {
-          "date": "JUN 10",
-          "meet": "BAUHAUS-Galan, Olympiastadion, Stockholm - Diamond Discipline",
-          "event": "1500 m",
-          "time": "1:44.74",
-          "place": "7."
-        },
-        {
-          "date": "JUN 10",
-          "meet": "Novuna UK Athletics Championships, Alexander Stadium, Birmingham",
-          "event": "1500 m",
+          "meet": "Novuna UK Athletics Championships",
+          "event": "800m",
           "time": "1:47.07",
-          "place": "1."
+          "place": "1"
+        },
+        {
+          "date": "JUN 10",
+          "meet": "Oslo Bislett Games",
+          "event": "Mile",
+          "time": "3:49.36",
+          "place": "5"
         },
         {
           "date": "JUN 7",
           "meet": "BAUHAUS-Galan",
-          "event": "5 Kilom Road",
-          "time": "13:52",
-          "place": ""
-        },
-        {
-          "date": "JUN 7",
-          "meet": "59th Ostrava Golden Spike",
-          "event": "800 m sh",
-          "time": "1:44.97",
-          "place": ""
-        },
-        {
-          "date": "JUN 7",
-          "meet": "UK Indoor Championships",
-          "event": "1500 m sh",
-          "time": "3:40.26",
-          "place": "1."
+          "event": "800m",
+          "time": "1:44.39",
+          "place": "7"
         },
         {
           "date": "MAY 23",
-          "meet": "Müller UK Athletics Championships",
-          "event": "1500 m",
-          "time": "1:45.40",
-          "place": "1."
-        },
-        {
-          "date": "FEB 1",
-          "meet": "",
-          "event": "3000 m",
-          "time": "7:37.81",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "",
-          "event": "3000 m sh",
-          "time": "7:37.81",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "Oslo Bislett Games",
-          "event": "2000 m",
-          "time": "4:53.69",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "New Balance Indoor Grand Prix",
-          "event": "2000 m sh",
-          "time": "4:53.69",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "New Balance Indoor Grand Prix",
-          "event": "3000 m",
-          "time": "7:42.64",
-          "place": ""
+          "meet": "LA Track Festival",
+          "event": "800m",
+          "time": "1:44.74",
+          "place": "4"
         },
         {
           "date": "FEB 1",
           "meet": "Millrose Games",
-          "event": "3000 m sh",
-          "time": "7:42.64",
-          "place": ""
+          "event": "2 Miles Short Track",
+          "time": "8:20.15",
+          "place": "12"
         },
         {
-          "date": "FEB 1",
-          "meet": "Wakefield National Junior Athletic League",
-          "event": "3000 m sh",
-          "time": "8:13.6h",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "Millrose Games",
-          "event": "3000 m sh",
-          "time": "7:37.81",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
+          "date": "JAN 24",
           "meet": "New Balance Indoor Grand Prix",
-          "event": "2 Mi",
-          "time": "7:54.58",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "scottishathletics Indoor 3000m Championships",
-          "event": "2 Mi",
-          "time": "7:42.64",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Diamond Discipline",
-          "event": "Mile",
-          "time": "3:49.36",
-          "place": "5."
-        },
-        {
-          "date": "FEB 1",
-          "meet": "New Balance Indoor Grand Prix, The Track at New Balance, Boston, MA (i) - Indoor Meeting",
-          "event": "2000 m sh",
+          "event": "2000 Metres Short Track",
           "time": "4:53.69",
-          "place": "4."
-        },
-        {
-          "date": "JAN 24",
-          "meet": "",
-          "event": "Mile",
-          "time": "3:47.82",
-          "place": ""
-        },
-        {
-          "date": "JAN 24",
-          "meet": "",
-          "event": "Mile sh",
-          "time": "3:57.24",
-          "place": ""
-        },
-        {
-          "date": "JAN 24",
-          "meet": "BAUHAUS-Galan",
-          "event": "1500 m",
-          "time": "1:44.39",
-          "place": ""
-        },
-        {
-          "date": "JAN 24",
-          "meet": "Oslo Bislett Games",
-          "event": "Mile",
-          "time": "3:49.36",
-          "place": ""
-        },
-        {
-          "date": "JAN 24",
-          "meet": "Prefontaine Classic",
-          "event": "Mile sh",
-          "time": "3:47.82",
-          "place": ""
-        },
-        {
-          "date": "JAN 24",
-          "meet": "New Balance Indoor Grand Prix",
-          "event": "Mile sh",
-          "time": "3:57.24",
-          "place": ""
-        },
-        {
-          "date": "JAN 24",
-          "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Split times",
-          "event": "1500 m",
-          "time": "1:45.40",
-          "place": "1."
+          "place": "4"
         }
       ],
       "weight": "145",
@@ -3232,7 +2861,7 @@
         {
           "date": "JAN 24",
           "meet": "New Balance Indoor Grand Prix",
-          "event": "800m sh",
+          "event": "800 Metres Short Track",
           "time": "1:42.50",
           "place": "1"
         }
@@ -3362,7 +2991,7 @@
         {
           "date": "JUN 14",
           "meet": "USATF LA Grand Prix",
-          "event": "",
+          "event": "800m",
           "time": "1:45.46",
           "place": "4"
         },
@@ -3371,7 +3000,7 @@
           "meet": "LA Track Festival",
           "event": "800m",
           "time": "1:44.60",
-          "place": ""
+          "place": "3"
         },
         {
           "date": "MAR 21",
@@ -3383,7 +3012,7 @@
         {
           "date": "FEB 1",
           "meet": "Millrose Games",
-          "event": "2 Miles sh",
+          "event": "2 Miles Short Track",
           "time": "8:07.68",
           "place": "2"
         }
@@ -3436,14 +3065,6 @@
         {
           "event": "Distance Medley Short Track",
           "time": "9:27.06"
-        },
-        {
-          "event": "Mile",
-          "time": "3:56.17"
-        },
-        {
-          "event": "3000m",
-          "time": "7:52.46"
         }
       ],
       "hometown": "x",
@@ -3456,56 +3077,56 @@
         {
           "date": "MAY 29",
           "meet": "NCAA Division I West First Rounds",
-          "event": "",
+          "event": "1500m",
           "time": "3:39.38",
           "place": "10"
         },
         {
           "date": "MAY 29",
           "meet": "NCAA Division I West First Rounds",
-          "event": "",
+          "event": "5000m",
           "time": "14:06.79",
           "place": "14"
         },
         {
           "date": "MAY 27",
           "meet": "NCAA Division I West First Rounds",
-          "event": "",
+          "event": "1500m",
           "time": "3:42.43",
           "place": "4"
         },
         {
           "date": "MAY 16",
           "meet": "ACC Outdoor Track & Field Championships",
-          "event": "",
+          "event": "1500m",
           "time": "3:42.69",
           "place": "8"
         },
         {
           "date": "MAY 16",
           "meet": "ACC Outdoor Track & Field Championships",
-          "event": "",
+          "event": "5000m",
           "time": "14:06.95",
           "place": "20"
         },
         {
           "date": "MAY 14",
           "meet": "ACC Outdoor Track & Field Championships",
-          "event": "",
+          "event": "1500m",
           "time": "3:41.44",
           "place": "2"
         },
         {
           "date": "MAY 1",
           "meet": "Payton Jordan Invitational",
-          "event": "",
+          "event": "1500m",
           "time": "3:39.88",
           "place": "3"
         },
         {
           "date": "MAY 1",
           "meet": "Payton Jordan Invitational",
-          "event": "",
+          "event": "5000m",
           "time": "DNF",
           "place": ""
         },
@@ -3519,14 +3140,14 @@
         {
           "date": "APR 11",
           "meet": "The Big Meet",
-          "event": "",
+          "event": "1500m",
           "time": "DNS",
           "place": ""
         },
         {
           "date": "APR 4",
           "meet": "Stanford Invitational",
-          "event": "",
+          "event": "800m",
           "time": "1:51.00",
           "place": "4"
         },
@@ -3535,33 +3156,33 @@
           "meet": "Stanford Invitational",
           "event": "5000m",
           "time": "13:24.84",
-          "place": ""
+          "place": "8"
         },
         {
           "date": "FEB 28",
           "meet": "ACC Indoor Track & Field Championships",
-          "event": "Mile sh",
+          "event": "Mile Short Track",
           "time": "3:59.98",
           "place": "3"
         },
         {
           "date": "FEB 28",
           "meet": "ACC Indoor Track & Field Championships",
-          "event": "",
+          "event": "3000 Metres Short Track",
           "time": "DNF",
           "place": ""
         },
         {
           "date": "FEB 27",
           "meet": "ACC Indoor Track & Field Championships",
-          "event": "Mile sh",
+          "event": "Mile Short Track",
           "time": "4:00.63",
           "place": "1"
         },
         {
           "date": "FEB 26",
           "meet": "ACC Indoor Track & Field Championships",
-          "event": "",
+          "event": "Distance Medley Short Track",
           "time": "9:36.50",
           "place": "3"
         },
@@ -3570,21 +3191,21 @@
           "meet": "Saucony Battle for Boston",
           "event": "Distance Medley Short Track",
           "time": "9:28.52",
-          "place": ""
+          "place": "6"
         },
         {
           "date": "FEB 14",
           "meet": "Husky Classic",
           "event": "800m",
           "time": "1:49.81",
-          "place": ""
+          "place": "3"
         },
         {
           "date": "FEB 14",
           "meet": "Husky Classic",
           "event": "4x400 Metres Relay",
           "time": "3:25.91",
-          "place": ""
+          "place": "3"
         },
         {
           "date": "FEB 13",
@@ -3596,14 +3217,7 @@
         {
           "date": "JAN 31",
           "meet": "Boston University John Thomas Terrier Classic",
-          "event": "1500 Metres Short Track",
-          "time": "3:40.96",
-          "place": ""
-        },
-        {
-          "date": "JAN 31",
-          "meet": "Boston University John Thomas Terrier Classic",
-          "event": "Mile sh",
+          "event": "Mile Short Track",
           "time": "3:57.81",
           "place": "10"
         },
@@ -3612,7 +3226,7 @@
           "meet": "UW Preview",
           "event": "3000m",
           "time": "7:52.46",
-          "place": ""
+          "place": "3"
         }
       ],
       "college": "Stanford",
@@ -3744,228 +3358,102 @@
       "country": "Morocco",
       "results": [
         {
+          "date": "JUN 28",
+          "meet": "Meeting de Paris",
+          "event": "800m",
+          "time": "1:45.09",
+          "place": "9"
+        },
+        {
           "date": "JUN 10",
-          "meet": "Spanish Indoor Championships",
-          "event": "800 m sh",
-          "time": "1:45.62",
-          "place": "1."
+          "meet": "Oslo Bislett Games",
+          "event": "800m",
+          "time": "1:45.66",
+          "place": "8"
         },
         {
           "date": "JUN 7",
-          "meet": "Spanish Championships",
-          "event": "800 m sh",
-          "time": "1:45.03",
-          "place": "1."
+          "meet": "BAUHAUS-Galan",
+          "event": "800m",
+          "time": "1:46.92",
+          "place": "10"
         },
         {
           "date": "JUN 3",
-          "meet": "",
-          "event": "1000 m",
-          "time": "2:12.25",
-          "place": ""
+          "meet": "Paavo Nurmi Games",
+          "event": "1500m",
+          "time": "3:31.82",
+          "place": "1"
         },
         {
-          "date": "JUN 3",
+          "date": "MAR 22",
           "meet": "World Athletics Indoor Championships",
-          "event": "1000 m",
-          "time": "2:14.52",
-          "place": ""
+          "event": "800 Metres Short Track",
+          "time": "1:44.66",
+          "place": "3"
         },
         {
-          "date": "JUN 3",
-          "meet": "IX GP Diputación de Castellón – VI Memorial JA Cansino",
-          "event": "1500 m",
-          "time": "3:39.48",
-          "place": ""
-        },
-        {
-          "date": "JUN 3",
-          "meet": "World Athletics Indoor Championships, Kujawsko-Pomorska Arena, Toruń (i)",
-          "event": "1000 m sh",
+          "date": "MAR 21",
+          "meet": "World Athletics Indoor Championships",
+          "event": "800 Metres Short Track",
           "time": "1:44.48",
-          "place": "2."
-        },
-        {
-          "date": "MAR 22",
-          "meet": "The XXXIII Olympic Games",
-          "event": "800 m",
-          "time": "1:42.08",
-          "place": "24"
-        },
-        {
-          "date": "MAR 22",
-          "meet": "Spanish Indoor Championships, Velódromo Luis Puig, Valencia (i)",
-          "event": "1000 m sh",
-          "time": "1:48.21",
-          "place": "1."
-        },
-        {
-          "date": "MAR 21",
-          "meet": "",
-          "event": "500 m",
-          "time": "48.80",
-          "place": ""
-        },
-        {
-          "date": "MAR 21",
-          "meet": "World Athletics Indoor Championships",
-          "event": "4x400 m Relay",
-          "time": "3:11.34",
-          "place": ""
-        },
-        {
-          "date": "MAR 21",
-          "meet": "World Athletics Indoor Championships",
-          "event": "4x400 m Relay sh",
-          "time": "3:16.42",
-          "place": ""
-        },
-        {
-          "date": "MAR 21",
-          "meet": "Pruebas de Libre Participación",
-          "event": "800 m sh",
-          "time": "1:46.94",
-          "place": ""
-        },
-        {
-          "date": "MAR 21",
-          "meet": "Pruebas de Libre Participación",
-          "event": "800 m sh",
-          "time": "1:52.90",
-          "place": ""
-        },
-        {
-          "date": "MAR 21",
-          "meet": "Spanish Indoor Championships, Velódromo Luis Puig, Valencia (i)",
-          "event": "1000 m sh",
-          "time": "1:45.76",
-          "place": "1."
+          "place": "2"
         },
         {
           "date": "MAR 20",
-          "meet": "13. Erfurt Indoor 2026, Hartwig-Gauder-Halle, Erfurt (i)",
-          "event": "1000 m sh",
-          "time": "1:47.58",
-          "place": "1."
+          "meet": "World Athletics Indoor Championships",
+          "event": "800 Metres Short Track",
+          "time": "1:45.75",
+          "place": "2"
         },
         {
           "date": "MAR 1",
-          "meet": "European Athletics U23 Championships",
-          "event": "1500 m",
-          "time": "3:43.63",
-          "place": "1."
-        },
-        {
-          "date": "MAR 1",
-          "meet": "World Indoor Tour Gold Madrid 2026, Gallur, Madrid (i) - Split times",
-          "event": "",
-          "time": "1:44.98",
-          "place": "2."
+          "meet": "Spanish Indoor Championships",
+          "event": "800 Metres Short Track",
+          "time": "1:45.62",
+          "place": "1"
         },
         {
           "date": "FEB 28",
-          "meet": "Millrose Games, Armory Track\\u0026Field Center, New York, NY (i) - World Athletics Indoor Tour",
-          "event": "800 m sh",
-          "time": "1:44.98",
-          "place": "2."
+          "meet": "Spanish Indoor Championships",
+          "event": "800 Metres Short Track",
+          "time": "1:48.21",
+          "place": "1"
         },
         {
           "date": "FEB 19",
-          "meet": "Paavo Nurmi Games, Paavo Nurmen Stadion, Turku",
-          "event": "1500 m",
-          "time": "2:14.52",
-          "place": "1."
+          "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+          "event": "1500 Metres Short Track",
+          "time": "3:41.31",
+          "place": "8"
         },
         {
           "date": "FEB 13",
-          "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Diamond Discipline",
-          "event": "800 m sh",
-          "time": "1:45.66",
-          "place": "8."
+          "meet": "13. Erfurt Indoor 2026",
+          "event": "800 Metres Short Track",
+          "time": "1:45.76",
+          "place": "1"
         },
         {
           "date": "FEB 6",
-          "meet": "",
-          "event": "800 m sh",
-          "time": "1:44.48",
-          "place": ""
-        },
-        {
-          "date": "FEB 6",
-          "meet": "World Athletics Indoor Championships",
-          "event": "800 m",
-          "time": "1:44.48",
-          "place": ""
-        },
-        {
-          "date": "FEB 6",
-          "meet": "World Athletics Indoor Championships",
-          "event": "800 m sh",
-          "time": "1:44.48",
-          "place": ""
-        },
-        {
-          "date": "FEB 6",
-          "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
-          "event": "1000 m",
-          "time": "1:44.48",
-          "place": ""
-        },
-        {
-          "date": "FEB 6",
-          "meet": "XIX Reunión Internacional Villa de Bilbao",
-          "event": "1000 m",
-          "time": "2:15.03",
-          "place": ""
-        },
-        {
-          "date": "FEB 6",
-          "meet": "BAUHAUS-Galan, Olympiastadion, Stockholm - Diamond Discipline",
-          "event": "800 m",
-          "time": "1:46.92",
-          "place": "10."
-        },
-        {
-          "date": "FEB 6",
-          "meet": "World Athletics Indoor Championships, Kujawsko-Pomorska Arena, Toruń (i)",
-          "event": "1000 m sh",
-          "time": "1:45.75",
-          "place": "2."
+          "meet": "World Indoor Tour Gold Madrid 2026",
+          "event": "1000 Metres Short Track",
+          "time": "2:14.52",
+          "place": "1"
         },
         {
           "date": "FEB 1",
-          "meet": "BAUHAUS-Galan, Olympiastadion, Stockholm - Diamond Discipline",
-          "event": "800 m",
-          "time": "3:48.61",
-          "place": "10."
+          "meet": "Millrose Games",
+          "event": "800 Metres Short Track",
+          "time": "1:44.98",
+          "place": "2"
         },
         {
           "date": "JAN 17",
-          "meet": "",
-          "event": "1000 m sh",
-          "time": "2:14.52",
-          "place": ""
-        },
-        {
-          "date": "JAN 17",
-          "meet": "World Indoor Tour Gold Madrid 2026",
-          "event": "1000 m sh",
-          "time": "2:14.52",
-          "place": ""
-        },
-        {
-          "date": "JAN 17",
-          "meet": "Spanish U23 Indoor Championships",
-          "event": "1500 m sh",
-          "time": "3:53.37",
-          "place": ""
-        },
-        {
-          "date": "JAN 17",
-          "meet": "World Indoor Tour Gold Madrid 2026, Gallur, Madrid (i) - World Athletics Indoor Tour",
-          "event": "1000 m sh",
-          "time": "1:44.66",
-          "place": "3."
+          "meet": "Antequera Indoor Match",
+          "event": "1500 Metres Short Track",
+          "time": "3:35.65",
+          "place": "1"
         }
       ],
       "weight": "145",
@@ -4115,7 +3603,64 @@
       "ncaa": false,
       "club": "x",
       "country": "Norway",
-      "results": [],
+      "results": [
+        {
+          "date": "JUN 28",
+          "meet": "Meeting de Paris",
+          "event": "",
+          "time": "3:32.05",
+          "place": "10"
+        },
+        {
+          "date": "JUN 10",
+          "meet": "Oslo Bislett Games",
+          "event": "Mile",
+          "time": "3:53.87",
+          "place": ""
+        },
+        {
+          "date": "JUN 7",
+          "meet": "BAUHAUS-Galan",
+          "event": "1500m",
+          "time": "3:31.74",
+          "place": ""
+        },
+        {
+          "date": "MAY 31",
+          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+          "event": "",
+          "time": "3:33.45",
+          "place": "12"
+        },
+        {
+          "date": "MAY 24",
+          "meet": "61. Internationales Pfingstsportfest Rehlingen",
+          "event": "",
+          "time": "3:32.52",
+          "place": "1"
+        },
+        {
+          "date": "MAY 20",
+          "meet": "15th Savona International Meeting",
+          "event": "",
+          "time": "3:34.37",
+          "place": "4"
+        },
+        {
+          "date": "APR 4",
+          "meet": "Urban Trail de Lille",
+          "event": "5 Kilometres Road",
+          "time": "13:10",
+          "place": ""
+        },
+        {
+          "date": "MAR 1",
+          "meet": "Norwegian Indoor Championships",
+          "event": "3000 Metres Short Track",
+          "time": "7:41.44",
+          "place": "1"
+        }
+      ],
       "weight": "x",
       "coach": "x",
       "reviewBody": "x",
@@ -4540,7 +4085,64 @@
       "ncaa": false,
       "club": "x",
       "country": "New Zealand",
-      "results": [],
+      "results": [
+        {
+          "date": "MAR 5",
+          "meet": "New Zealand Track & Field Championships",
+          "event": "1500m",
+          "time": "3:41.43",
+          "place": "1"
+        },
+        {
+          "date": "FEB 22",
+          "meet": "Saucony Battle for Boston",
+          "event": "3000m sh",
+          "time": "7:43.16",
+          "place": "2"
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Sound Invite",
+          "event": "Mile sh",
+          "time": "3:52.46",
+          "place": "7"
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Sound Invite",
+          "event": "1500m sh",
+          "time": "3:34.66",
+          "place": ""
+        },
+        {
+          "date": "JAN 31",
+          "meet": "Boston University John Thomas Terrier Classic",
+          "event": "1500m",
+          "time": "3:33.25",
+          "place": ""
+        },
+        {
+          "date": "JAN 31",
+          "meet": "Boston University John Thomas Terrier Classic",
+          "event": "Mile sh",
+          "time": "3:48.88",
+          "place": "1"
+        },
+        {
+          "date": "JAN 24",
+          "meet": "Pak'n Save Cooks International Classic",
+          "event": "Mile",
+          "time": "3:53.83",
+          "place": "2"
+        },
+        {
+          "date": "JAN 17",
+          "meet": "Allan & Sylvia Potts Classic",
+          "event": "800m",
+          "time": "1:45.86",
+          "place": "1"
+        }
+      ],
       "weight": "x",
       "coach": "x",
       "reviewBody": "x",
@@ -4616,7 +4218,155 @@
       "ncaa": true,
       "club": "x",
       "country": "United States",
-      "results": [],
+      "results": [
+        {
+          "date": "JUN 12",
+          "meet": "NCAA Division I Outdoor Track and Field Championships",
+          "event": "1500m",
+          "time": "3:36.05",
+          "place": "1"
+        },
+        {
+          "date": "JUN 12",
+          "meet": "NCAA Division I Outdoor Track and Field Championships",
+          "event": "",
+          "time": "DNF",
+          "place": ""
+        },
+        {
+          "date": "JUN 10",
+          "meet": "NCAA Division I Outdoor Track and Field Championships",
+          "event": "",
+          "time": "3:38.87",
+          "place": "2"
+        },
+        {
+          "date": "MAY 29",
+          "meet": "NCAA Division I West First Rounds",
+          "event": "1500m",
+          "time": "3:37.00",
+          "place": "1"
+        },
+        {
+          "date": "MAY 29",
+          "meet": "NCAA Division I West First Rounds",
+          "event": "",
+          "time": "13:42.69",
+          "place": "5"
+        },
+        {
+          "date": "MAY 27",
+          "meet": "NCAA Division I West First Rounds",
+          "event": "",
+          "time": "3:41.36",
+          "place": "1"
+        },
+        {
+          "date": "MAY 17",
+          "meet": "Big Ten Outdoor Track & Field Championships",
+          "event": "",
+          "time": "DNF",
+          "place": ""
+        },
+        {
+          "date": "MAY 15",
+          "meet": "Big Ten Outdoor Track & Field Championships",
+          "event": "",
+          "time": "3:54.45",
+          "place": "1"
+        },
+        {
+          "date": "MAY 15",
+          "meet": "Big Ten Outdoor Track & Field Championships",
+          "event": "",
+          "time": "4:00.98",
+          "place": "1"
+        },
+        {
+          "date": "MAY 8",
+          "meet": "Oregon Twilight",
+          "event": "800m",
+          "time": "1:44.67",
+          "place": "1"
+        },
+        {
+          "date": "MAY 8",
+          "meet": "Oregon Twilight",
+          "event": "",
+          "time": "DNF",
+          "place": ""
+        },
+        {
+          "date": "APR 18",
+          "meet": "Oregon Team Invitational",
+          "event": "1500m",
+          "time": "3:31.69",
+          "place": "1"
+        },
+        {
+          "date": "APR 3",
+          "meet": "Stanford Invitational",
+          "event": "5000m",
+          "time": "13:19.73",
+          "place": ""
+        },
+        {
+          "date": "MAR 14",
+          "meet": "NCAA Division I Indoor Track and Field Championships",
+          "event": "3000m sh",
+          "time": "7:41.85",
+          "place": "2"
+        },
+        {
+          "date": "MAR 13",
+          "meet": "NCAA Division I Indoor Track and Field Championships",
+          "event": "",
+          "time": "9:27.49",
+          "place": "7"
+        },
+        {
+          "date": "FEB 28",
+          "meet": "Big Ten Conference Indoor Track & Field Championships",
+          "event": "",
+          "time": "7:59.87",
+          "place": "1"
+        },
+        {
+          "date": "FEB 26",
+          "meet": "Big Ten Conference Indoor Track & Field Championships",
+          "event": "5000 Metres Short Track",
+          "time": "13:45.78",
+          "place": ""
+        },
+        {
+          "date": "FEB 22",
+          "meet": "Saucony Battle for Boston",
+          "event": "Distance Medley Short Track",
+          "time": "9:14.88",
+          "place": ""
+        },
+        {
+          "date": "FEB 20",
+          "meet": "Arkansas Qualifier",
+          "event": "",
+          "time": "DQ",
+          "place": ""
+        },
+        {
+          "date": "JAN 31",
+          "meet": "Razorback Invitational",
+          "event": "Mile sh",
+          "time": "3:55.88",
+          "place": "9"
+        },
+        {
+          "date": "JAN 30",
+          "meet": "Razorback Invitational",
+          "event": "800m sh",
+          "time": "1:48.05",
+          "place": "1"
+        }
+      ],
       "college": "Oregon",
       "weight": "145",
       "coach": "x",
@@ -5246,7 +4996,78 @@
       "photo": "/images/nuguse_card.png",
       "club": "x",
       "country": "United States",
-      "results": [],
+      "results": [
+        {
+          "date": "JUN 10",
+          "meet": "Oslo Bislett Games",
+          "event": "Mile",
+          "time": "3:48.21",
+          "place": ""
+        },
+        {
+          "date": "JUN 7",
+          "meet": "BAUHAUS-Galan",
+          "event": "1500m",
+          "time": "3:30.11",
+          "place": "1"
+        },
+        {
+          "date": "MAY 31",
+          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+          "event": "1500m",
+          "time": "3:30.35",
+          "place": "1"
+        },
+        {
+          "date": "APR 21",
+          "meet": "Grand Blue Mile presented by Wellmark Blue Cross Blue Shield",
+          "event": "Mile Road",
+          "time": "3:54.06",
+          "place": "1"
+        },
+        {
+          "date": "MAR 21",
+          "meet": "World Athletics Indoor Championships",
+          "event": "3000 Metres Short Track",
+          "time": "7:37.08",
+          "place": "5"
+        },
+        {
+          "date": "MAR 1",
+          "meet": "USA Indoor Championships",
+          "event": "",
+          "time": "3:38.06",
+          "place": "4"
+        },
+        {
+          "date": "FEB 28",
+          "meet": "USA Indoor Championships",
+          "event": "",
+          "time": "7:39.28",
+          "place": "2"
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Sound Invite",
+          "event": "3000m",
+          "time": "7:33.78",
+          "place": ""
+        },
+        {
+          "date": "FEB 1",
+          "meet": "Millrose Games",
+          "event": "1500 Metres Short Track",
+          "time": "3:33.07",
+          "place": ""
+        },
+        {
+          "date": "FEB 1",
+          "meet": "Millrose Games",
+          "event": "Mile sh",
+          "time": "3:48.31",
+          "place": "2"
+        }
+      ],
       "weight": "145",
       "coach": "x",
       "reviewBody": "x",
