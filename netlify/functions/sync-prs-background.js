@@ -151,6 +151,7 @@ function extractSeasonResults(nd, year) {
 
   const pp = dig(nd, 'props', 'pageProps') || {};
 
+  // Strategy A1: old structure — resultsByYear keyed by year string
   for (const path of [['resultsByYear'], ['athlete', 'resultsByYear']]) {
     const rby = dig(pp, ...path);
     if (rby && typeof rby === 'object' && !Array.isArray(rby)) {
@@ -158,6 +159,37 @@ function extractSeasonResults(nd, year) {
         const keyYear = parseInt(yearKey, 10);
         if (!isNaN(keyYear) && keyYear !== year) continue;
         processArray(arr, '', '', keyYear || year);
+      }
+    }
+  }
+
+  // Strategy A2: new WA structure — competitor.resultsByYear.resultsByEvent[]
+  // Each event has { discipline, results: [{ date, competition, mark, place }] }
+  const rbe = dig(pp, 'competitor', 'resultsByYear', 'resultsByEvent');
+  if (Array.isArray(rbe)) {
+    for (const evGroup of rbe) {
+      const discipline = evGroup.discipline || '';
+      if (Array.isArray(evGroup.results)) {
+        for (const r of evGroup.results) {
+          const rawDate  = r.date || '';
+          const rawMark  = r.mark || r.performance || '';
+          const rawComp  = r.competition || r.competitionName || '';
+          const rawPlace = r.place || r.position || '';
+          const entryYear = getYear(rawDate);
+          if (!entryYear || entryYear !== year) continue;
+          const mark = parseMark(rawMark);
+          if (!mark) continue;
+          const meetLower = rawComp.toLowerCase();
+          if (meetLower.includes('split time') || meetLower.includes('- splits')) continue;
+          raw.push({
+            date:     parseResultDate(rawDate),
+            meet:     cleanMeetName(rawComp),
+            event:    normalizeEvent(discipline),
+            time:     mark,
+            place:    rawPlace ? String(rawPlace).replace(/\.$/, '') : '',
+            _rawDate: rawDate,
+          });
+        }
       }
     }
   }
