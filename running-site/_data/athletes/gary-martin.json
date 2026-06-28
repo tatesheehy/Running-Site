@@ -86,63 +86,63 @@
     {
       "date": "JUN 12",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "",
+      "event": "1500m",
       "time": "3:37.21",
       "place": "3"
     },
     {
       "date": "JUN 12",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "",
+      "event": "5000m",
       "time": "14:10.63",
       "place": "20"
     },
     {
       "date": "JUN 10",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "",
+      "event": "1500m",
       "time": "3:38.81",
       "place": "1"
     },
     {
       "date": "MAY 29",
       "meet": "NCAA Division I East First Rounds",
-      "event": "",
+      "event": "1500m",
       "time": "3:42.48",
       "place": "1"
     },
     {
       "date": "MAY 29",
       "meet": "NCAA Division I East First Rounds",
-      "event": "",
+      "event": "5000m",
       "time": "13:49.63",
       "place": "2"
     },
     {
       "date": "MAY 27",
       "meet": "NCAA Division I East First Rounds",
-      "event": "",
+      "event": "1500m",
       "time": "3:47.70",
       "place": "1"
     },
     {
       "date": "MAY 16",
       "meet": "ACC Outdoor Track & Field Championships",
-      "event": "",
+      "event": "1500m",
       "time": "3:39.88",
       "place": "2"
     },
     {
       "date": "MAY 16",
       "meet": "ACC Outdoor Track & Field Championships",
-      "event": "",
+      "event": "5000m",
       "time": "13:31.43",
       "place": "4"
     },
     {
       "date": "MAY 14",
       "meet": "ACC Outdoor Track & Field Championships",
-      "event": "",
+      "event": "1500m",
       "time": "3:54.66",
       "place": "1"
     },
@@ -151,61 +151,54 @@
       "meet": "Virginia Challenge",
       "event": "5000m",
       "time": "13:25.42",
-      "place": ""
+      "place": "1"
     },
     {
       "date": "APR 3",
       "meet": "Virginia Grand Prix",
-      "event": "",
+      "event": "1500m",
       "time": "3:39.92",
       "place": "1"
     },
     {
       "date": "MAR 14",
       "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "",
+      "event": "Mile Short Track",
       "time": "3:59.50",
       "place": "4"
     },
     {
       "date": "MAR 13",
       "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "",
+      "event": "Mile Short Track",
       "time": "3:55.13",
       "place": "1"
     },
     {
       "date": "FEB 28",
       "meet": "ACC Indoor Track & Field Championships",
-      "event": "3000m",
+      "event": "3000 Metres Short Track",
       "time": "7:43.18",
-      "place": ""
+      "place": "1"
     },
     {
       "date": "FEB 26",
       "meet": "ACC Indoor Track & Field Championships",
       "event": "5000 Metres Short Track",
       "time": "13:41.66",
-      "place": ""
+      "place": "2"
     },
     {
       "date": "FEB 22",
       "meet": "Saucony Battle for Boston",
       "event": "Distance Medley Short Track",
       "time": "9:16.75",
-      "place": ""
+      "place": "3"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
-      "event": "1500m",
-      "time": "3:35.60",
-      "place": ""
-    },
-    {
-      "date": "FEB 1",
-      "meet": "Millrose Games",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "3:52.62",
       "place": "8"
     }

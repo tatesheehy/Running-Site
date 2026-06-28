@@ -66,7 +66,7 @@
     {
       "date": "JUN 21",
       "meet": "Portland Track Festival",
-      "event": "",
+      "event": "800m",
       "time": "1:46.40",
       "place": "8"
     },
@@ -82,49 +82,42 @@
       "meet": "LA Track Festival",
       "event": "800m",
       "time": "1:45.71",
-      "place": ""
+      "place": "6"
     },
     {
       "date": "MAR 1",
       "meet": "USA Indoor Championships",
-      "event": "",
+      "event": "1500 Metres Short Track",
       "time": "3:38.90",
       "place": "8"
     },
     {
       "date": "FEB 22",
       "meet": "Saucony Battle for Boston",
-      "event": "1500m sh",
+      "event": "1500 Metres Short Track",
       "time": "3:35.20",
       "place": "3"
     },
     {
       "date": "FEB 13",
       "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "3:53.29",
       "place": "10"
     },
     {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "1500m sh",
-      "time": "3:37.83",
-      "place": "11"
-    },
-    {
       "date": "FEB 7",
       "meet": "Penn Classic",
-      "event": "3000m",
+      "event": "3000 Metres Short Track",
       "time": "7:55.13",
-      "place": ""
+      "place": "1"
     },
     {
       "date": "JAN 24",
       "meet": "Penn Elite",
-      "event": "1000 Metres",
+      "event": "1000 Metres Short Track",
       "time": "2:20.49",
-      "place": ""
+      "place": "1"
     }
   ],
   "college": "Georgetown",
