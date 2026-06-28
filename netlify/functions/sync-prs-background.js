@@ -426,6 +426,7 @@ async function runSync() {
       if (resultsUpdated) data.results = newResults;
 
       if (prsUpdated || resultsUpdated) {
+        data.lastSynced = new Date().toISOString().split('T')[0];
         changes.push({ path: filePath, content: JSON.stringify(data, null, 2) });
         console.log(`sync-prs: updated ${data.name} — PRs: ${newPrs.length}, results: ${newResults.length}`);
         report.push({ name: data.name, status: 'updated', prs: newPrs.length, seasonResults: newResults.length });

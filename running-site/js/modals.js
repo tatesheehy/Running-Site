@@ -164,7 +164,8 @@ function openAthleteCard(athleteId, rank) {
               </tbody>
             </table>
             ` : `<p class="card-results-empty">No results yet this season.</p>`}
-          </details>`;
+          </details>
+          ${a.lastSynced ? `<div class="card-last-synced">Last updated: ${(() => { const d = new Date(a.lastSynced + 'T12:00:00'); return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }); })()}</div>` : ''}`;
         })()}
         <div class="card-analysis-label">Analysis</div>
         ${an.reviewTitle ? `
