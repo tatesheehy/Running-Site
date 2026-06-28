@@ -210,12 +210,27 @@
   gap: 10px;
 }
 
+/* ── TWO-COLUMN BODY ──────────────────────────────────────── */
+.home-body {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 48px;
+  align-items: start;
+  padding-top: 8px;
+}
+
+.home-main { min-width: 0; }
+
+.home-sidebar {
+  position: sticky;
+  top: 80px;
+}
+
 /* ── RANKINGS WIDGET (HOME) ───────────────────────────────── */
 .rankings-widget {
   background: var(--bg-light);
   border: 1px solid var(--border);
   padding: 28px;
-  margin-bottom: 52px;
   border-radius: var(--radius-lg);
 }
 

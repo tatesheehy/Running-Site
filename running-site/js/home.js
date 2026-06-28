@@ -81,7 +81,7 @@ function buildHome() {
   const rankingsWidgetHtml = SITE.showRankingsWidget === false ? '' : `
     <div class="rankings-widget">
       <div class="rw-header">
-        <div class="rw-title">${RANKINGS_YEAR} World Rankings</div>
+        <div class="rw-title">Latest Rankings</div>
         <div class="event-tabs" id="home-tabs">${eventTabsHtml}</div>
       </div>
       <div id="rankings-table-wrap">${buildRankingsTableHtml(firstEvent, true)}</div>
@@ -124,12 +124,15 @@ function buildHome() {
           <div class="home-ep-list">${picksHtml}</div>
         </div>` : ''}
 
-      <div class="section-header">
-        <h2 class="section-title">${latestTitle}</h2>
+      <div class="home-body">
+        <div class="home-main">
+          <div class="section-header">
+            <h2 class="section-title">${latestTitle}</h2>
+          </div>
+          <div class="articles-grid">${latestHtml}</div>
+        </div>
+        ${rankingsWidgetHtml ? `<aside class="home-sidebar">${rankingsWidgetHtml}</aside>` : ''}
       </div>
-      <div class="articles-grid">${latestHtml}</div>
-
-      ${rankingsWidgetHtml}
     </div>
   `;
 
