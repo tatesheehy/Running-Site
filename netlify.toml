@@ -6,5 +6,5 @@
 [functions]
   node_bundler = "esbuild"
 
-[functions."sync-prs"]
+[functions."sync-prs-background"]
   schedule = "0 6 * * *"
