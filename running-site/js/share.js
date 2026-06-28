@@ -165,13 +165,15 @@ async function shareAthleteCard(athleteId) {
   const btn = document.querySelector('.card-share-btn');
   if (btn) { btn.textContent = 'Generating…'; btn.disabled = true; }
 
+  // Must open the window synchronously (before any await) or the browser blocks it
+  const win = window.open('', '_blank');
+  if (!win) { alert('Allow pop-ups for this site to use the Share feature.'); return; }
+
   try {
     const canvas  = await generateShareCard(athlete);
     const dataUrl = canvas.toDataURL('image/png');
     const name    = `${athlete.name.replace(/\s+/g, '-')}-stats`;
 
-    // Open in new tab — works everywhere, user can right-click to save
-    const win = window.open('', '_blank');
     win.document.write(`
       <!doctype html><html>
       <head><title>${athlete.name} — Stats Card</title>
