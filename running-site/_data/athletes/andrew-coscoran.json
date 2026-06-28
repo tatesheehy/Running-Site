@@ -76,14 +76,14 @@
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
-      "event": "",
+      "event": "1500m",
       "time": "3:46.91",
       "place": "15"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
-      "event": "",
+      "event": "Mile",
       "time": "3:49.68",
       "place": "8"
     },
@@ -104,35 +104,28 @@
     {
       "date": "MAR 1",
       "meet": "Irish Senior Indoor Championships",
-      "event": "",
+      "event": "3000 Metres Short Track",
       "time": "8:24.33",
       "place": "8"
     },
     {
       "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
-      "event": "1500m sh",
+      "event": "1500 Metres Short Track",
       "time": "3:33.09",
       "place": "3"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "3:49.54",
       "place": "5"
     },
     {
-      "date": "FEB 1",
-      "meet": "Millrose Games",
-      "event": "1500m sh",
-      "time": "3:33.55",
-      "place": ""
-    },
-    {
       "date": "JAN 24",
       "meet": "New Balance Indoor Grand Prix",
-      "event": "3000m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:30.97",
       "place": "2"
     }

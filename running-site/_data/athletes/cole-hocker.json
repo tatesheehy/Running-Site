@@ -131,7 +131,7 @@
     {
       "date": "JUN 14",
       "meet": "USATF LA Grand Prix",
-      "event": "",
+      "event": "3000m",
       "time": "7:37.77",
       "place": "2"
     },
@@ -145,7 +145,7 @@
     {
       "date": "MAR 1",
       "meet": "USA Indoor Championships",
-      "event": "",
+      "event": "1500 Metres Short Track",
       "time": "3:38.08",
       "place": "5"
     },
@@ -159,35 +159,28 @@
     {
       "date": "FEB 14",
       "meet": "Sound Invite",
-      "event": "1500m",
-      "time": "3:30.80",
-      "place": ""
-    },
-    {
-      "date": "FEB 14",
-      "meet": "Sound Invite",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "3:45.94",
       "place": "1"
     },
     {
       "date": "FEB 7",
       "meet": "Doc Hale Virginia Tech Invitational",
-      "event": "1000 Metres",
+      "event": "1000 Metres Short Track",
       "time": "2:16.30",
-      "place": ""
+      "place": "1"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
-      "event": "2 Miles sh",
+      "event": "2 Miles Short Track",
       "time": "8:07.31",
       "place": "1"
     },
     {
       "date": "JAN 23",
       "meet": "Hokie Invitational",
-      "event": "2000m sh",
+      "event": "2000 Metres Short Track",
       "time": "4:52.92",
       "place": "1"
     }

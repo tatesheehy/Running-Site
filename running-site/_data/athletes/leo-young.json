@@ -50,56 +50,56 @@
     {
       "date": "MAY 29",
       "meet": "NCAA Division I West First Rounds",
-      "event": "",
+      "event": "1500m",
       "time": "3:39.38",
       "place": "10"
     },
     {
       "date": "MAY 29",
       "meet": "NCAA Division I West First Rounds",
-      "event": "",
+      "event": "5000m",
       "time": "14:06.79",
       "place": "14"
     },
     {
       "date": "MAY 27",
       "meet": "NCAA Division I West First Rounds",
-      "event": "",
+      "event": "1500m",
       "time": "3:42.43",
       "place": "4"
     },
     {
       "date": "MAY 16",
       "meet": "ACC Outdoor Track & Field Championships",
-      "event": "",
+      "event": "1500m",
       "time": "3:42.69",
       "place": "8"
     },
     {
       "date": "MAY 16",
       "meet": "ACC Outdoor Track & Field Championships",
-      "event": "",
+      "event": "5000m",
       "time": "14:06.95",
       "place": "20"
     },
     {
       "date": "MAY 14",
       "meet": "ACC Outdoor Track & Field Championships",
-      "event": "",
+      "event": "1500m",
       "time": "3:41.44",
       "place": "2"
     },
     {
       "date": "MAY 1",
       "meet": "Payton Jordan Invitational",
-      "event": "",
+      "event": "1500m",
       "time": "3:39.88",
       "place": "3"
     },
     {
       "date": "MAY 1",
       "meet": "Payton Jordan Invitational",
-      "event": "",
+      "event": "5000m",
       "time": "DNF",
       "place": ""
     },
@@ -113,14 +113,14 @@
     {
       "date": "APR 11",
       "meet": "The Big Meet",
-      "event": "",
+      "event": "1500m",
       "time": "DNS",
       "place": ""
     },
     {
       "date": "APR 4",
       "meet": "Stanford Invitational",
-      "event": "",
+      "event": "800m",
       "time": "1:51.00",
       "place": "4"
     },
@@ -129,33 +129,33 @@
       "meet": "Stanford Invitational",
       "event": "5000m",
       "time": "13:24.84",
-      "place": ""
+      "place": "8"
     },
     {
       "date": "FEB 28",
       "meet": "ACC Indoor Track & Field Championships",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "3:59.98",
       "place": "3"
     },
     {
       "date": "FEB 28",
       "meet": "ACC Indoor Track & Field Championships",
-      "event": "",
+      "event": "3000 Metres Short Track",
       "time": "DNF",
       "place": ""
     },
     {
       "date": "FEB 27",
       "meet": "ACC Indoor Track & Field Championships",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "4:00.63",
       "place": "1"
     },
     {
       "date": "FEB 26",
       "meet": "ACC Indoor Track & Field Championships",
-      "event": "",
+      "event": "Distance Medley Short Track",
       "time": "9:36.50",
       "place": "3"
     },
@@ -164,21 +164,21 @@
       "meet": "Saucony Battle for Boston",
       "event": "Distance Medley Short Track",
       "time": "9:28.52",
-      "place": ""
+      "place": "6"
     },
     {
       "date": "FEB 14",
       "meet": "Husky Classic",
       "event": "800m",
       "time": "1:49.81",
-      "place": ""
+      "place": "3"
     },
     {
       "date": "FEB 14",
       "meet": "Husky Classic",
       "event": "4x400 Metres Relay",
       "time": "3:25.91",
-      "place": ""
+      "place": "3"
     },
     {
       "date": "FEB 13",
@@ -190,14 +190,7 @@
     {
       "date": "JAN 31",
       "meet": "Boston University John Thomas Terrier Classic",
-      "event": "1500 Metres Short Track",
-      "time": "3:40.96",
-      "place": ""
-    },
-    {
-      "date": "JAN 31",
-      "meet": "Boston University John Thomas Terrier Classic",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "3:57.81",
       "place": "10"
     },
@@ -206,7 +199,7 @@
       "meet": "UW Preview",
       "event": "3000m",
       "time": "7:52.46",
-      "place": ""
+      "place": "3"
     }
   ],
   "college": "Stanford",

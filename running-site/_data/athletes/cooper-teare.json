@@ -87,19 +87,19 @@
       "meet": "USATF LA Grand Prix",
       "event": "5000m",
       "time": "13:18.13",
-      "place": ""
+      "place": "8"
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
       "event": "1500m",
       "time": "3:34.23",
-      "place": ""
+      "place": "5"
     },
     {
       "date": "MAY 2",
       "meet": "USA 5 km Road Running Championships",
-      "event": "",
+      "event": "5 Kilometres Road",
       "time": "13:29",
       "place": "3"
     },
@@ -108,61 +108,47 @@
       "meet": "Boston 5K",
       "event": "5 Kilometres Road",
       "time": "13:25",
-      "place": ""
+      "place": "4"
     },
     {
       "date": "MAR 1",
       "meet": "USA Indoor Championships",
-      "event": "",
+      "event": "1500 Metres Short Track",
       "time": "3:38.87",
       "place": "7"
     },
     {
       "date": "FEB 28",
       "meet": "USA Indoor Championships",
-      "event": "",
+      "event": "3000 Metres Short Track",
       "time": "7:41.62",
       "place": "7"
     },
     {
       "date": "FEB 14",
       "meet": "Sound Invite",
-      "event": "1500 Metres Short Track",
-      "time": "3:34.35",
-      "place": ""
-    },
-    {
-      "date": "FEB 14",
-      "meet": "Sound Invite",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "3:50.49",
       "place": "2"
     },
     {
       "date": "FEB 7",
       "meet": "Doc Hale Virginia Tech Invitational",
-      "event": "1000 Metres",
+      "event": "1000 Metres Short Track",
       "time": "2:17.76",
-      "place": ""
+      "place": "2"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
-      "event": "3000m",
-      "time": "7:38.16",
-      "place": ""
-    },
-    {
-      "date": "FEB 1",
-      "meet": "Millrose Games",
-      "event": "2 Miles sh",
+      "event": "2 Miles Short Track",
       "time": "8:08.91",
       "place": "7"
     },
     {
       "date": "JAN 23",
       "meet": "Hokie Invitational",
-      "event": "2000m sh",
+      "event": "2000 Metres Short Track",
       "time": "4:54.74",
       "place": "2"
     }
