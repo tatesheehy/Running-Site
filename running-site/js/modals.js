@@ -2,6 +2,111 @@
 //  MODALS — athlete card, H2H, search
 // ============================================================
 
+// ── SEASON TIMELINE ────────────────────────────────────────
+const _TL_MONTHS = {JAN:1,FEB:2,MAR:3,APR:4,MAY:5,JUN:6,JUL:7,AUG:8,SEP:9,OCT:10,NOV:11,DEC:12};
+const _TL_NF = new Set(['DNF','DNS','DQ','NM','NH','DSQ']);
+
+function _tlOrd(dateStr) {
+  const [mon, day] = String(dateStr || '').split(' ');
+  return (_TL_MONTHS[mon] || 0) * 31 + parseInt(day || 0);
+}
+
+function buildSeasonTimeline(a) {
+  const results = (a.results || []).filter(r => r.date);
+  if (results.length < 2) return '';
+
+  const sorted = [...results].sort((x, y) => _tlOrd(x.date) - _tlOrd(y.date));
+  const minOrd = _tlOrd(sorted[0].date);
+  const maxOrd = _tlOrd(sorted[sorted.length - 1].date);
+  const range  = Math.max(maxOrd - minOrd, 1);
+
+  const prTimes = new Set((a.prs || []).map(p => p.time));
+
+  function dotKind(r) {
+    if (_TL_NF.has(String(r.time || '').toUpperCase())) return 'dnf';
+    const p = parseInt(r.place || 99);
+    if (p === 1) return 'win';
+    if (p <= 3)  return 'pod';
+    if (p <= 8)  return 'top';
+    return 'out';
+  }
+
+  // Group races that share the same date
+  const byDate = {};
+  sorted.forEach(r => { (byDate[r.date] = byDate[r.date] || []).push(r); });
+
+  const dots = Object.entries(byDate).map(([date, races]) => {
+    const pct  = (((_tlOrd(date) - minOrd) / range) * 88 + 6).toFixed(1); // 6–94%
+    const kind = dotKind(races[0]);
+    const isPR = races.some(r => prTimes.has(r.time));
+    const count = races.length;
+    const shortEv = (races[0].event || '')
+      .replace('Half Marathon','HM').replace('Marathon','Mar')
+      .replace('3000m SC','SC').replace('3000m Steeplechase','SC')
+      .replace('Cross Country','XC');
+
+    const tipMeet = (races[0].meet || '').replace(/"/g,'&quot;');
+    const tipRows = races.map(r =>
+      `${r.event} · ${r.time}${_TL_NF.has(String(r.time||'').toUpperCase()) ? '' : ' · #'+r.place}`
+    ).join('&#10;');
+
+    return `<div class="tl-wrap" style="left:${pct}%"
+        onmouseenter="_tlShow(this)" onmouseleave="_tlHide()"
+        data-meet="${tipMeet}" data-rows="${tipRows}" data-date="${date}">
+      <div class="tl-dot tl-${kind}${isPR?' tl-pr':''}${count>1?' tl-multi':''}">${count>1?count:kind==='win'?'1':''}</div>
+    </div>`;
+  }).join('');
+
+  // Month axis markers
+  const months = [...new Set(sorted.map(r => r.date.split(' ')[0]))];
+  const mks = months.map(mon => {
+    const pct = Math.max(0, Math.min(100, ((_tlOrd(mon+' 15') - minOrd) / range) * 88 + 6)).toFixed(1);
+    return `<div class="tl-mon" style="left:${pct}%">${mon}</div>`;
+  }).join('');
+
+  return `
+    <div class="season-tl">
+      <div class="season-tl-hdr">
+        <span class="season-tl-title">Season at a glance</span>
+        <span class="season-tl-leg">
+          <span class="tl-dot tl-win" style="width:10px;height:10px;font-size:0;display:inline-block"></span> Win &nbsp;
+          <span class="tl-dot tl-pod" style="width:10px;height:10px;font-size:0;display:inline-block"></span> Podium &nbsp;
+          <span class="tl-dot tl-top" style="width:10px;height:10px;font-size:0;display:inline-block"></span> Top 8
+        </span>
+      </div>
+      <div class="season-tl-body">
+        <div class="season-tl-months">${mks}</div>
+        <div class="season-tl-track">
+          <div class="season-tl-line"></div>
+          ${dots}
+        </div>
+        <div class="season-tl-tip" id="tl-tip"></div>
+      </div>
+    </div>`;
+}
+
+window._tlShow = function(el) {
+  const tip = document.getElementById('tl-tip');
+  if (!tip) return;
+  const meet = el.dataset.meet;
+  const rows = el.dataset.rows.replace(/&#10;/g, '\n').split('\n');
+  const date = el.dataset.date;
+  tip.innerHTML = `<div class="tl-tip-meet">${meet}</div><div class="tl-tip-date">${date}</div>${rows.map(r=>`<div class="tl-tip-row">${r}</div>`).join('')}`;
+  const wrap  = el.closest('.season-tl-body');
+  const wRect = wrap.getBoundingClientRect();
+  const eRect = el.getBoundingClientRect();
+  let left = eRect.left - wRect.left - 8;
+  tip.style.display = 'block';
+  const tipW = tip.offsetWidth;
+  left = Math.max(0, Math.min(left, wRect.width - tipW));
+  tip.style.left = left + 'px';
+  tip.style.opacity = '1';
+};
+window._tlHide = function() {
+  const tip = document.getElementById('tl-tip');
+  if (tip) { tip.style.opacity = '0'; setTimeout(() => { if(tip) tip.style.display = 'none'; }, 150); }
+};
+
 // ── ATHLETE CARD MODAL ─────────────────────────────────────
 function buildAthleteCardModal() {
   const overlay = document.createElement('div');
@@ -133,6 +238,7 @@ function openAthleteCard(athleteId, rank) {
           </div>
         ` : ''}
         ${traitsHtml ? `<div class="card-traits">${traitsHtml}</div>` : ''}
+        ${buildSeasonTimeline(a)}
         ${(() => {
           const results = a.results || [];
           return `
