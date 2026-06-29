@@ -199,6 +199,27 @@
       "discipline": "1500m",
       "place": 1,
       "year": "2024"
+    },
+    {
+      "competition": "World Athletics Championships",
+      "short": "WC",
+      "discipline": "5000m",
+      "place": 1,
+      "year": "2025"
+    },
+    {
+      "competition": "World Athletics Indoor Championships",
+      "short": "WI",
+      "discipline": "1500m",
+      "place": 2,
+      "year": "2024"
+    },
+    {
+      "competition": "World Athletics Indoor Championships",
+      "short": "WI",
+      "discipline": "3000m",
+      "place": 2,
+      "year": "2024"
     }
   ]
 }

@@ -37,5 +37,14 @@
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "hobbs-kessler",
-  "age": "23"
+  "age": "23",
+  "honours": [
+    {
+      "competition": "World Athletics Indoor Championships",
+      "short": "WI",
+      "discipline": "1500m",
+      "place": 3,
+      "year": "2024"
+    }
+  ]
 }
