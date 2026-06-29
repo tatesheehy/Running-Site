@@ -42,7 +42,7 @@
   "headlineRest": "who turns middle distance into a strength competition and usually wins.",
   "name": "Josh Kerr",
   "headlineKey": "The power runner",
-  "flag": "GB",
+  "flag": "SCT",
   "seasons": "6",
   "prs": [
     {
@@ -110,42 +110,13 @@
   "questionTitle": "Next question",
   "photo": "/images/kerrcard.png",
   "club": "Adidas",
-  "country": "Great Britain",
-  "results": [
-    {
-      "date": "JUN 14",
-      "meet": "USATF LA Grand Prix",
-      "event": "800m",
-      "time": "1:45.46",
-      "place": "4"
-    },
-    {
-      "date": "MAY 23",
-      "meet": "LA Track Festival",
-      "event": "800m",
-      "time": "1:44.60",
-      "place": "3"
-    },
-    {
-      "date": "MAR 21",
-      "meet": "World Athletics Indoor Championships",
-      "event": "3000 Metres Short Track",
-      "time": "7:35.56",
-      "place": "1"
-    },
-    {
-      "date": "FEB 1",
-      "meet": "Millrose Games",
-      "event": "2 Miles Short Track",
-      "time": "8:07.68",
-      "place": "2"
-    }
-  ],
+  "country": "Scotland",
+  "results": [],
+  "dob": "1997-10-08",
   "weight": "150 lbs",
   "coach": "Gary Lough",
   "reviewBody": "Kerr continues to be one of the most physically imposing presences in the 1500m field. His ability to surge mid-race and break the competition is unmatched.",
   "event": "MIDDLE DISTANCE",
   "id": "josh-kerr",
-  "age": "28",
-  "dob": "1997-10-08"
+  "age": "28"
 }
