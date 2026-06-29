@@ -1108,6 +1108,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   cursor: default;
+  padding: 12px 8px;
 }
 .tl-dot {
   width: 13px;

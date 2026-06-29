@@ -83,7 +83,9 @@ function buildSeasonTimeline(a) {
     </div>`;
 }
 
+let _tlHideTimer = null;
 window._tlShow = function(el) {
+  clearTimeout(_tlHideTimer);
   const tip = document.getElementById('tl-tip');
   if (!tip) return;
   const meet = el.dataset.meet;
@@ -101,8 +103,10 @@ window._tlShow = function(el) {
   tip.style.opacity = '1';
 };
 window._tlHide = function() {
-  const tip = document.getElementById('tl-tip');
-  if (tip) { tip.style.opacity = '0'; setTimeout(() => { if(tip) tip.style.display = 'none'; }, 150); }
+  _tlHideTimer = setTimeout(() => {
+    const tip = document.getElementById('tl-tip');
+    if (tip) { tip.style.opacity = '0'; setTimeout(() => { if(tip) tip.style.display = 'none'; }, 150); }
+  }, 80);
 };
 
 // ── ATHLETE CARD MODAL ─────────────────────────────────────
