@@ -470,9 +470,11 @@
     let data;
     try {
       const res = await fetch(`${API}?action=search&name=${encodeURIComponent(name)}`);
-      data = await res.json();
+      const text = await res.text();
+      if (!text) throw new Error(`Empty response (${res.status}) — function may have timed out`);
+      data = JSON.parse(text);
     } catch (e) {
-      setStatus('search-status', 'error', `Network error: ${e.message}. Make sure you're on the live Netlify site (not local).`);
+      setStatus('search-status', 'error', `Error: ${e.message}`);
       return;
     }
 
@@ -524,9 +526,11 @@
     let data;
     try {
       const res = await fetch(`${API}?url=${encodeURIComponent(waUrl)}`);
-      data = await res.json();
+      const text = await res.text();
+      if (!text) throw new Error(`Empty response (${res.status}) — function may have timed out`);
+      data = JSON.parse(text);
     } catch (e) {
-      const msg = `Network error: ${e.message}. This tool only works on the live Netlify site.`;
+      const msg = `Error: ${e.message}`;
       setStatus('url-status', 'error', msg);
       setStatus('search-status', 'error', msg);
       return;

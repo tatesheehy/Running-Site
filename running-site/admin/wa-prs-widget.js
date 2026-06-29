@@ -82,8 +82,11 @@
         ? API + '?url=' + encodeURIComponent(q)
         : API + '?action=search&name=' + encodeURIComponent(q);
       fetch(url)
-        .then(function (r) { return r.json(); })
-        .then(function (data) {
+        .then(function (r) { return r.text().then(function(t) { return { ok: r.ok, status: r.status, text: t }; }); })
+        .then(function (res) {
+          if (!res.text) throw new Error('Empty response from server (status ' + res.status + '). The function may have timed out.');
+          var data;
+          try { data = JSON.parse(res.text); } catch(e) { throw new Error('Server error (status ' + res.status + '). Check Netlify function logs.'); }
           if (data.error) throw new Error(data.error);
           if (data.athletes) {
             self.setState({ athletes: data.athletes, loading: false });
@@ -105,8 +108,11 @@
       this.setState({ loading: true, error: '', athletes: [] });
       var self = this;
       fetch(API + '?url=' + encodeURIComponent(url))
-        .then(function (r) { return r.json(); })
-        .then(function (data) {
+        .then(function (r) { return r.text().then(function(t) { return { ok: r.ok, status: r.status, text: t }; }); })
+        .then(function (res) {
+          if (!res.text) throw new Error('Empty response from server (status ' + res.status + '). The function may have timed out.');
+          var data;
+          try { data = JSON.parse(res.text); } catch(e) { throw new Error('Server error (status ' + res.status + '). Check Netlify function logs.'); }
           if (data.error) throw new Error(data.error);
           self.applyPRData(data);
         })
