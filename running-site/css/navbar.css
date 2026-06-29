@@ -55,6 +55,13 @@
   top: 3px;
 }
 
+.brand-logo {
+  height: 28px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
 .navbar-brand-sep {
   width: 1px;
   height: 18px;

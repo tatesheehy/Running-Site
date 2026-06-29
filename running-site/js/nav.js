@@ -59,14 +59,7 @@ function buildNavbar() {
     <nav class="navbar" role="navigation" aria-label="Main navigation">
       <div class="navbar-inner">
         <a href="index.html" class="navbar-brand">
-          <svg class="brand-pencil" viewBox="0 0 11 21" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="miter" stroke-linecap="square" aria-hidden="true">
-            <rect x="1.75" y="0.75" width="7.5" height="2.75"/>
-            <line x1="1.75" y1="4.25" x2="9.25" y2="4.25"/>
-            <line x1="1.75" y1="5.25" x2="9.25" y2="5.25"/>
-            <polyline points="1.75,5.25 1.75,14.5 5.5,19.75 9.25,14.5 9.25,5.25"/>
-            <line x1="4" y1="5.25" x2="4" y2="14"/>
-            <line x1="7" y1="5.25" x2="7" y2="14"/>
-          </svg>${SITE.name}</a>
+          <img src="/images/stattc-logo.png" alt="${SITE.name}" class="brand-logo"></a>
         <div class="navbar-brand-sep" aria-hidden="true"></div>
         <ul class="navbar-nav">${links}</ul>
         <button class="navbar-theme-btn" onclick="toggleTheme()" aria-label="Toggle dark mode" id="theme-toggle-btn">
@@ -91,14 +84,7 @@ function buildNavbar() {
     <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
       <div class="mobile-drawer-top">
         <a href="index.html" class="navbar-brand">
-          <svg class="brand-pencil" viewBox="0 0 11 21" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="miter" stroke-linecap="square" aria-hidden="true">
-            <rect x="1.75" y="0.75" width="7.5" height="2.75"/>
-            <line x1="1.75" y1="4.25" x2="9.25" y2="4.25"/>
-            <line x1="1.75" y1="5.25" x2="9.25" y2="5.25"/>
-            <polyline points="1.75,5.25 1.75,14.5 5.5,19.75 9.25,14.5 9.25,5.25"/>
-            <line x1="4" y1="5.25" x2="4" y2="14"/>
-            <line x1="7" y1="5.25" x2="7" y2="14"/>
-          </svg>${SITE.name}</a>
+          <img src="/images/stattc-logo.png" alt="${SITE.name}" class="brand-logo"></a>
         <button class="mobile-drawer-close" onclick="toggleMobileMenu()" aria-label="Close menu">×</button>
       </div>
       <ul class="mobile-drawer-nav">
@@ -151,14 +137,7 @@ function buildFooter() {
       <div class="footer-inner">
         <div class="footer-brand-wrap">
           <div class="footer-brand">
-            <svg class="brand-pencil" viewBox="0 0 11 21" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="miter" stroke-linecap="square" aria-hidden="true">
-              <rect x="1.75" y="0.75" width="7.5" height="2.75"/>
-              <line x1="1.75" y1="4.25" x2="9.25" y2="4.25"/>
-              <line x1="1.75" y1="5.25" x2="9.25" y2="5.25"/>
-              <polyline points="1.75,5.25 1.75,14.5 5.5,19.75 9.25,14.5 9.25,5.25"/>
-              <line x1="4" y1="5.25" x2="4" y2="14"/>
-              <line x1="7" y1="5.25" x2="7" y2="14"/>
-            </svg>${SITE.name}
+            <img src="/images/stattc-logo.png" alt="${SITE.name}" class="brand-logo">
           </div>
           ${SITE.footerTagline ? `<div class="footer-tagline">${SITE.footerTagline}</div>` : ''}
         </div>
