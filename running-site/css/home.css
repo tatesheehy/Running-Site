@@ -20,7 +20,7 @@
   grid-template-columns: 1fr 320px;
   gap: 28px;
   align-items: start;
-  padding: 24px 0 0;
+  padding: 8px 0 0;
 }
 
 .home-hero-col { min-width: 0; }
@@ -230,7 +230,7 @@
 }
 
 .home-countdown {
-  padding: 14px 0;
+  padding: 8px 0 4px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
