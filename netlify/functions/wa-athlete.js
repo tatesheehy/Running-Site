@@ -417,6 +417,81 @@ async function searchAthletes(name) {
   return { athletes };
 }
 
+// ── Honours extraction ────────────────────────────────────────────────────────
+// Priority competition categories, in display-importance order
+const HONOUR_CATS = [
+  { match: 'olympic',                         short: 'OLY',    weight: 0 },
+  { match: 'world athletics championships',   short: 'WC',     weight: 1 },
+  { match: 'world championships',             short: 'WC',     weight: 1 },
+  { match: 'world indoor',                    short: 'WI',     weight: 2 },
+  { match: 'diamond league final',            short: 'DLF',    weight: 3 },
+];
+
+function honourCatInfo(name) {
+  const lower = (name || '').toLowerCase();
+  for (const c of HONOUR_CATS) {
+    if (lower.includes(c.match)) return c;
+  }
+  return null;
+}
+
+function extractHonours(nd) {
+  const found = [];
+
+  function processEntry(entry, inheritCatName) {
+    const catName = entry.categoryName || entry.competitionType || entry.competition || inheritCatName || '';
+    const info = honourCatInfo(catName);
+    if (!info) return;
+
+    const rawPlace = String(entry.place || entry.position || entry.rank || '').replace(/[^\d]/g, '');
+    if (!rawPlace || !['1', '2', '3'].includes(rawPlace)) return;
+
+    const discipline = normalizeEvent(entry.discipline || entry.event || entry.eventName || '');
+    const rawYear = entry.year || getYear(entry.date || '') || '';
+    const year = String(rawYear).replace(/\D/g, '').slice(0, 4);
+
+    found.push({ competition: catName, short: info.short, discipline, place: parseInt(rawPlace), year, _w: info.weight });
+  }
+
+  function walk(obj, inheritCat, depth) {
+    if (depth > 12 || !obj || typeof obj !== 'object') return;
+    if (Array.isArray(obj)) {
+      for (const item of obj) {
+        if (!item || typeof item !== 'object') continue;
+        const cat = item.categoryName || item.competitionType || inheritCat || '';
+        if (Array.isArray(item.results))       { for (const r of item.results)       processEntry(r, cat); }
+        else if (Array.isArray(item.performances)) { for (const r of item.performances) processEntry(r, cat); }
+        else processEntry(item, inheritCat);
+      }
+      return;
+    }
+    for (const key of ['honours', 'honors', 'achievements', 'medals']) {
+      if (key in obj) walk(obj[key], '', depth + 1);
+    }
+    for (const key of ['athlete', 'data', 'pageProps', 'props']) {
+      if (key in obj && obj[key] && typeof obj[key] === 'object') walk(obj[key], inheritCat, depth + 1);
+    }
+  }
+
+  walk(nd, '', 0);
+
+  // Deduplicate
+  const seen = new Set();
+  const unique = found.filter(h => {
+    const k = `${h.short}|${h.year}|${h.discipline}|${h.place}`;
+    if (seen.has(k)) return false;
+    seen.add(k); return true;
+  });
+
+  unique.sort((a, b) => {
+    if (a._w !== b._w) return a._w - b._w;
+    if (a.year !== b.year) return (parseInt(b.year) || 0) - (parseInt(a.year) || 0);
+    return a.place - b.place;
+  });
+
+  return unique.map(({ _w, ...h }) => h);
+}
+
 // ── Profile: fetch PRs for a given athlete page URL ──────────────────────────
 
 async function getAthleteProfile(url) {
@@ -435,7 +510,7 @@ async function getAthleteProfile(url) {
   let indoor  = [];
 
   let results = [];
-
+  let honours = [];
   let dob = '';
 
   // ── Strategy 1: __NEXT_DATA__ deep search ────────────────────────────────
@@ -474,6 +549,9 @@ async function getAthleteProfile(url) {
 
       // Season results — multi-strategy extraction
       results = extractSeasonResults(nd, new Date().getFullYear());
+
+      // Honours — Olympic/World/Indoor medals and Diamond League Final wins
+      honours = extractHonours(nd);
     } catch (_) { /* fall through */ }
   }
 
@@ -510,7 +588,7 @@ async function getAthleteProfile(url) {
     outdoor = sortBests(outdoor);
   }
 
-  return { name: athleteName, dob, outdoor, indoor, results };
+  return { name: athleteName, dob, outdoor, indoor, results, honours };
 }
 
 // ── Netlify handler ───────────────────────────────────────────────────────────

@@ -109,6 +109,44 @@ window._tlHide = function() {
   }, 80);
 };
 
+// ── HONOURS ────────────────────────────────────────────────
+function _medalSvg(place, short) {
+  // Diamond League Final → diamond shape in accent color
+  if (short === 'DLF') {
+    return `<svg class="ch-icon ch-icon-dlf" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="10,1 19,9 10,19 1,9" fill="#E8500A"/>
+      <polygon points="10,4 16,9 10,16 4,9" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.2"/>
+    </svg>`;
+  }
+  const fills   = { 1: '#F5B800', 2: '#9CA3AF', 3: '#B87333' };
+  const glints  = { 1: 'rgba(255,255,255,0.35)', 2: 'rgba(255,255,255,0.25)', 3: 'rgba(255,255,255,0.2)' };
+  const fill    = fills[place]  || '#888';
+  const glint   = glints[place] || 'rgba(255,255,255,0.2)';
+  return `<svg class="ch-icon" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="7" y="0" width="6" height="3.5" rx="1.5" fill="${fill}" opacity="0.75"/>
+    <path d="M7 3.5 L10 7.5 L13 3.5" fill="${fill}" opacity="0.6"/>
+    <circle cx="10" cy="17" r="9" fill="${fill}"/>
+    <circle cx="10" cy="17" r="7" stroke="${glint}" stroke-width="1.5" fill="none"/>
+    <text x="10" y="21" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="9" fill="rgba(255,255,255,0.9)">${place}</text>
+  </svg>`;
+}
+
+function buildHonoursHtml(honours) {
+  if (!honours || !honours.length) return '';
+  const classes = ['ch-gold', 'ch-silver', 'ch-bronze'];
+  const badges = honours.map(h => {
+    const yr = h.year ? `'${String(h.year).slice(-2)}` : '';
+    return `<div class="ch-badge ${classes[h.place - 1] || ''}">
+      ${_medalSvg(h.place, h.short)}
+      <span class="ch-text">
+        <span class="ch-comp">${h.short}${yr ? ' ' + yr : ''}</span>
+        ${h.discipline ? `<span class="ch-event">${h.discipline}</span>` : ''}
+      </span>
+    </div>`;
+  }).join('');
+  return `<div class="card-honours"><div class="card-honours-label">Trophy Case</div><div class="card-honours-badges">${badges}</div></div>`;
+}
+
 // ── ATHLETE CARD MODAL ─────────────────────────────────────
 function buildAthleteCardModal() {
   const overlay = document.createElement('div');
@@ -240,6 +278,8 @@ function openAthleteCard(athleteId, rank) {
           </div>
         ` : ''}
         ${traitsHtml ? `<div class="card-traits">${traitsHtml}</div>` : ''}
+        ${buildHonoursHtml(a.honours)}
+        <div class="card-honours-placeholder" style="${a.honours === undefined && a.waUrl ? '' : 'display:none'}"></div>
         ${buildSeasonTimeline(a)}
         ${(() => {
           const results = a.results || [];
@@ -314,31 +354,44 @@ function openAthleteCard(athleteId, rank) {
   overlay.classList.add('open');
   document.body.style.overflow = 'hidden';
 
-  // If no local age/dob but athlete has a WA URL, fetch it and fill in
-  const needsAge = !a.dob && !(a.vitals && a.vitals.AGE) && a.waUrl;
-  if (needsAge) {
+  // Fetch from WA if we're missing age or haven't checked for honours yet
+  const needsAge     = !a.dob && !(a.vitals && a.vitals.AGE) && a.waUrl;
+  const needsHonours = a.honours === undefined && a.waUrl;
+  if (needsAge || needsHonours) {
     fetch(`/.netlify/functions/wa-athlete?url=${encodeURIComponent(a.waUrl)}`)
       .then(r => r.json())
       .then(data => {
-        if (!data.dob) return;
-        const born = new Date(data.dob);
-        const today = new Date();
-        let age = today.getFullYear() - born.getFullYear();
-        const m = today.getMonth() - born.getMonth();
-        if (m < 0 || (m === 0 && today.getDate() < born.getDate())) age--;
-        // Cache so subsequent opens don't re-fetch
-        a.dob = data.dob;
-        if (!a.vitals) a.vitals = {};
-        a.vitals.AGE = String(age);
-        // Update the displayed vitals if the card is still open
-        const vitalsEl = qs('#athlete-card-inner .card-vitals');
-        if (vitalsEl && !vitalsEl.querySelector('.card-vital')) {
-          vitalsEl.innerHTML = `<div class="card-vital"><span class="card-vital-label">AGE</span><span class="card-vital-value">${age}</span></div>`;
-        } else if (vitalsEl && !vitalsEl.innerHTML.includes('AGE')) {
-          vitalsEl.insertAdjacentHTML('afterbegin', `<div class="card-vital"><span class="card-vital-label">AGE</span><span class="card-vital-value">${age}</span></div>`);
+        // ── Age ──
+        if (needsAge && data.dob) {
+          const born = new Date(data.dob);
+          const today = new Date();
+          let age = today.getFullYear() - born.getFullYear();
+          const m = today.getMonth() - born.getMonth();
+          if (m < 0 || (m === 0 && today.getDate() < born.getDate())) age--;
+          a.dob = data.dob;
+          if (!a.vitals) a.vitals = {};
+          a.vitals.AGE = String(age);
+          const vitalsEl = qs('#athlete-card-inner .card-vitals');
+          if (vitalsEl && !vitalsEl.querySelector('.card-vital')) {
+            vitalsEl.innerHTML = `<div class="card-vital"><span class="card-vital-label">AGE</span><span class="card-vital-value">${age}</span></div>`;
+          } else if (vitalsEl && !vitalsEl.innerHTML.includes('AGE')) {
+            vitalsEl.insertAdjacentHTML('afterbegin', `<div class="card-vital"><span class="card-vital-label">AGE</span><span class="card-vital-value">${age}</span></div>`);
+          }
         }
+        // ── Honours ──
+        // Cache result (empty array = "checked, none found"; undefined = "not checked")
+        a.honours = (data.honours && data.honours.length) ? data.honours : [];
+        const placeholder = qs('#athlete-card-inner .card-honours-placeholder');
+        if (placeholder && a.honours.length) {
+          const honoursHtml = buildHonoursHtml(a.honours);
+          placeholder.insertAdjacentHTML('beforebegin', honoursHtml);
+        }
+        if (placeholder) placeholder.remove();
       })
-      .catch(() => {});
+      .catch(() => {
+        // Mark as checked so we don't retry on next open
+        if (needsHonours) a.honours = [];
+      });
   }
 }
 

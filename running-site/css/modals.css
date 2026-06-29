@@ -460,6 +460,43 @@
   max-width: 64px;
 }
 
+/* ── CAREER HONOURS ─────────────────────────────────────── */
+.card-honours {
+  padding: 16px 0 4px;
+  border-top: 1.5px solid var(--border);
+  margin-bottom: 8px;
+}
+.card-honours-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.card-honours-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.ch-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+.ch-badge.ch-gold   { border-color: rgba(255,200,0,0.3);  background: rgba(255,200,0,0.07);  }
+.ch-badge.ch-silver { border-color: rgba(180,180,200,0.3); background: rgba(180,180,200,0.07); }
+.ch-badge.ch-bronze { border-color: rgba(205,127,50,0.3); background: rgba(205,127,50,0.07); }
+.ch-icon { display: block; width: 20px; height: 26px; flex-shrink: 0; }
+.ch-icon-dlf { height: 20px; }
+.ch-text  { display: flex; flex-direction: column; gap: 1px; }
+.ch-comp  { font-size: 11px; font-weight: 800; letter-spacing: 0.06em; color: var(--text); text-transform: uppercase; }
+.ch-event { font-size: 10px; font-weight: 600; color: var(--muted); }
+
 .card-analysis-label {
   font-size: 10px;
   font-weight: 800;
