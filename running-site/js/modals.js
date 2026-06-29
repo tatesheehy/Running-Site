@@ -447,6 +447,13 @@ function setH2HSlot(slot, athleteId) {
   if (h2hSlots[0] && h2hSlots[1]) renderH2HComparison(h2hSlots[0], h2hSlots[1]);
 }
 
+function _ordSuffix(n) {
+  const i = parseInt(n);
+  if (isNaN(i)) return '';
+  const s = ['th','st','nd','rd'], v = i % 100;
+  return s[(v-20)%10] || s[v] || s[0];
+}
+
 function renderH2HComparison(id1, id2) {
   const a1 = ATHLETES[id1], a2 = ATHLETES[id2];
   if (!a1 || !a2) return;
@@ -535,38 +542,67 @@ function renderH2HComparison(id1, id2) {
     if (!isNaN(p1) && !isNaN(p2)) {
       a1wins = p1 < p2; a2wins = p2 < p1;
     } else {
-      const t1 = parseTimeToSecs(race1.time), t2 = parseTimeToSecs(match.time);
-      if (t1 && t2) { a1wins = t1 < t2; a2wins = t2 < t1; }
+      const t1s = parseTimeToSecs(race1.time), t2s = parseTimeToSecs(match.time);
+      if (t1s && t2s) { a1wins = t1s < t2s; a2wins = t2s < t1s; }
     }
+    // Margin of victory in seconds
+    const t1s = parseTimeToSecs(race1.time), t2s = parseTimeToSecs(match.time);
+    const marginSec = (t1s && t2s) ? Math.abs(t1s - t2s) : null;
+    const marginStr = marginSec != null
+      ? (marginSec < 0.1 ? '<0.1s' : marginSec < 10 ? marginSec.toFixed(2) + 's' : Math.round(marginSec) + 's')
+      : null;
     h2hRaces.push({ date: race1.date, meet: race1.meet, event: race1.event,
       time1: race1.time, time2: match.time, place1: race1.place, place2: match.place,
-      a1wins, a2wins });
+      a1wins, a2wins, marginStr });
   });
+
+  // Sort chronologically (most recent first)
+  const _MONTHS = {JAN:1,FEB:2,MAR:3,APR:4,MAY:5,JUN:6,JUL:7,AUG:8,SEP:9,OCT:10,NOV:11,DEC:12};
+  h2hRaces.sort((a, b) => {
+    const ord = r => { const [m,d] = String(r.date||'').split(' '); return (_MONTHS[m]||0)*31+parseInt(d||0); };
+    return ord(b) - ord(a);
+  });
+
   const h2hW1 = h2hRaces.filter(r => r.a1wins).length;
   const h2hW2 = h2hRaces.filter(r => r.a2wins).length;
 
-  const h2hRecordHtml = h2hRaces.length ? `
-    <div class="h2h-record-section">
-      <div class="h2h-pr-section-hdr">
-        <span class="h2h-pr-ath">${n1}</span>
-        <span class="h2h-pr-label">This Season</span>
-        <span class="h2h-pr-ath h2h-pr-ath--right">${n2}</span>
+  const h2hEncountersHtml = `
+    <div class="h2h-encounters">
+      <div class="h2h-enc-header">
+        <span class="h2h-enc-ath">${n1}</span>
+        <span class="h2h-enc-title">2026 Head to Head</span>
+        <span class="h2h-enc-ath h2h-enc-ath--right">${n2}</span>
       </div>
+      ${h2hRaces.length ? `
       <div class="h2h-record-score">
         <span class="h2h-record-wins${h2hW1 > h2hW2 ? ' h2h-record-leading' : ''}">${h2hW1}</span>
         <span class="h2h-record-label">${h2hRaces.length} race${h2hRaces.length === 1 ? '' : 's'}</span>
         <span class="h2h-record-wins${h2hW2 > h2hW1 ? ' h2h-record-leading' : ''}">${h2hW2}</span>
       </div>
-      ${h2hRaces.map(r => `
-        <div class="h2h-record-row">
-          <span class="h2h-record-t${r.a1wins ? ' h2h-spr-win' : r.a2wins ? ' h2h-record-dim' : ''}">${r.time1 || '—'}${r.place1 ? ' <span class="h2h-record-place">(' + r.place1 + ')</span>' : ''}</span>
-          <span class="h2h-record-mid">
-            <span class="h2h-record-meet">${r.meet}</span>
-            <span class="h2h-record-meta">${r.event}${r.date ? ' · ' + r.date : ''}</span>
-          </span>
-          <span class="h2h-record-t h2h-record-t--right${r.a2wins ? ' h2h-spr-win' : r.a1wins ? ' h2h-record-dim' : ''}">${r.time2 || '—'}${r.place2 ? ' <span class="h2h-record-place">(' + r.place2 + ')</span>' : ''}</span>
-        </div>`).join('')}
-    </div>` : '';
+      <div class="h2h-enc-rows">
+        ${h2hRaces.map(r => {
+          const winner = r.a1wins ? n1 : r.a2wins ? n2 : null;
+          const marginLabel = winner && r.marginStr ? `${winner} by ${r.marginStr}` : 'Dead heat';
+          return `
+          <div class="h2h-enc-row${r.a1wins ? ' h2h-enc-row--left' : r.a2wins ? ' h2h-enc-row--right' : ''}">
+            <div class="h2h-enc-time${r.a1wins ? ' h2h-enc-winner' : r.a2wins ? ' h2h-enc-loser' : ''}">
+              <span class="h2h-enc-t">${r.time1 || '—'}</span>
+              ${r.place1 ? `<span class="h2h-enc-place">${r.place1}${_ordSuffix(r.place1)}</span>` : ''}
+            </div>
+            <div class="h2h-enc-mid">
+              <div class="h2h-enc-meet">${r.meet}</div>
+              <div class="h2h-enc-event">${r.event}${r.date ? ' · ' + r.date : ''}</div>
+              <div class="h2h-enc-margin">${marginLabel}</div>
+            </div>
+            <div class="h2h-enc-time h2h-enc-time--right${r.a2wins ? ' h2h-enc-winner' : r.a1wins ? ' h2h-enc-loser' : ''}">
+              <span class="h2h-enc-t">${r.time2 || '—'}</span>
+              ${r.place2 ? `<span class="h2h-enc-place">${r.place2}${_ordSuffix(r.place2)}</span>` : ''}
+            </div>
+          </div>`;
+        }).join('')}
+      </div>` : `
+      <div class="h2h-enc-none">No shared races this season</div>`}
+    </div>`;
 
   const col = (a, isRight) => {
     const { ranked, sectioned } = getRankInfo(a.id);
@@ -606,6 +642,7 @@ function renderH2HComparison(id1, id2) {
       <div class="h2h-col-divider"></div>
       ${col(a2, true)}
     </div>
+    ${h2hEncountersHtml}
     <div class="h2h-pr-section">
       <div class="h2h-pr-section-hdr">
         <span class="h2h-pr-ath">${n1}</span>
@@ -613,8 +650,7 @@ function renderH2HComparison(id1, id2) {
         <span class="h2h-pr-ath h2h-pr-ath--right">${n2}</span>
       </div>
       <div class="h2h-pr-table">${sharedPrHtml}</div>
-    </div>
-    ${h2hRecordHtml}`;
+    </div>`;
 
   const titleEl = qs('.h2h-title');
   if (titleEl) titleEl.textContent = `${n1} vs ${n2}`;
