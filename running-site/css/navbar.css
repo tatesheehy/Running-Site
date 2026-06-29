@@ -52,7 +52,7 @@
   height: 22px;
   flex-shrink: 0;
   position: relative;
-  top: -1px;
+  top: 3px;
 }
 
 .navbar-brand-sep {
