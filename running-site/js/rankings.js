@@ -529,6 +529,29 @@ async function enrichRankingsWithWA(eventName) {
   if (!disciplines.length) return;
   const is1500Page = eventName.toLowerCase().includes('1500');
 
+  // Populate from local prs immediately (synchronous — no network wait)
+  const seen0 = new Set();
+  document.querySelectorAll('#main [data-athlete-id]').forEach(el => {
+    const athId = el.dataset.athleteId;
+    if (!athId || seen0.has(athId)) return;
+    seen0.add(athId);
+    const ath = ATHLETES[athId];
+    if (!ath || !ath.prs) return;
+    let localMark = '', localIsMile = false;
+    for (const disc of disciplines) {
+      const pr = ath.prs.find(p => p.event === disc);
+      if (pr && pr.time) { localMark = pr.time; localIsMile = disc.toLowerCase().includes('mile'); break; }
+    }
+    if (!localMark) return;
+    const localBadge = (localIsMile && is1500Page) ? ' <span class="rd-mile-badge">Mile</span>' : '';
+    document.querySelectorAll(`#main [data-athlete-id="${athId}"]`).forEach(el2 => {
+      const timeEl = el2.querySelector('.rd-time');
+      const cardTimeEl = el2.querySelector('.rd-card-time');
+      if (timeEl) timeEl.innerHTML = localMark + localBadge;
+      if (cardTimeEl) cardTimeEl.innerHTML = localMark + localBadge;
+    });
+  });
+
   // Deduplicate — list + card both have data-athlete-id, only fetch each athlete once
   const seen = new Set();
   const queue = [];
