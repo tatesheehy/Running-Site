@@ -38,10 +38,17 @@ const FETCH_HEADERS = {
   'Accept-Language': 'en-US,en;q=0.9',
 };
 
-const CORS = {
-  'Access-Control-Allow-Origin': 'https://stattc.com',
-  'Content-Type': 'application/json',
-};
+const ALLOWED_ORIGINS = new Set([
+  'https://stattc.com',
+  'http://localhost:8765',
+  'http://localhost:8888',
+  'http://127.0.0.1:8765',
+]);
+
+function corsHeaders(origin) {
+  const allowed = ALLOWED_ORIGINS.has(origin) ? origin : 'https://stattc.com';
+  return { 'Access-Control-Allow-Origin': allowed, 'Content-Type': 'application/json' };
+}
 
 // Map WA event names → display names used in our CMS
 const EVENT_MAP = {
@@ -454,6 +461,9 @@ async function getAthleteProfile(url) {
 // ── Netlify handler ───────────────────────────────────────────────────────────
 
 exports.handler = async (event) => {
+  const origin = event.headers['origin'] || '';
+  const CORS = corsHeaders(origin);
+
   if (event.httpMethod === 'OPTIONS') {
     return { statusCode: 200, headers: CORS, body: '' };
   }
