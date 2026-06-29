@@ -58,12 +58,10 @@ function buildAthletesPage() {
           <h1 class="ath-page-title">Athletes</h1>
           <span class="ath-page-count">${all.length} athletes</span>
         </div>
-        <div class="ath-page-controls">
-          <div class="ath-page-sort-toggle" id="ath-sort-btns">
-            <button class="ath-page-sort active" data-sort="alpha" onclick="sortAthletes('alpha')">A – Z</button>
-            <button class="ath-page-sort" data-sort="country" onclick="sortAthletes('country')">By Country</button>
-          </div>
-          <button class="ath-view-btn" id="ath-map-btn" onclick="toggleAthleteMap()">🗺 Map</button>
+        <div class="ath-page-sort-toggle" id="ath-sort-btns">
+          <button class="ath-page-sort active" data-sort="alpha" onclick="sortAthletes('alpha')">A – Z</button>
+          <button class="ath-page-sort" data-sort="country" onclick="sortAthletes('country')">By Country</button>
+          <button class="ath-page-sort" id="ath-map-btn" onclick="toggleAthleteMap()">Map</button>
         </div>
       </div>
       <div id="ath-page-grid" class="ath-page-grid">${renderGrid(sortedAthletes())}</div>
@@ -72,27 +70,33 @@ function buildAthletesPage() {
   window._mapRenderGrid  = list => { qs('#ath-page-grid').className = 'ath-page-grid'; qs('#ath-page-grid').innerHTML = renderGrid(list); };
   window._mapRestoreGrid = ()   => { qs('#ath-page-grid').className = 'ath-page-grid'; qs('#ath-page-grid').innerHTML = renderGrid(sortedAthletes()); };
 
+  function setGridView() {
+    activeView = 'grid';
+    qs('#ath-page-grid').className = 'ath-page-grid';
+    qs('#ath-page-grid').innerHTML = renderGrid(sortedAthletes());
+  }
+
   window.sortAthletes = function(sort) {
+    if (activeView === 'map') setGridView();
     activeSort = sort;
     document.querySelectorAll('.ath-page-sort').forEach(b => b.classList.toggle('active', b.dataset.sort === sort));
     qs('#ath-page-grid').innerHTML = renderGrid(sortedAthletes());
   };
 
   window.toggleAthleteMap = function() {
-    const grid    = qs('#ath-page-grid');
-    const btn     = qs('#ath-map-btn');
-    const sortBtns = qs('#ath-sort-btns');
+    const grid = qs('#ath-page-grid');
+    const btn  = qs('#ath-map-btn');
     activeView = activeView === 'grid' ? 'map' : 'grid';
 
     if (activeView === 'map') {
+      document.querySelectorAll('.ath-page-sort').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      sortBtns.style.visibility = 'hidden';
       grid.className = 'ath-map-wrap';
       grid.innerHTML = buildWorldMap(all);
       initMapInteractions(all);
     } else {
       btn.classList.remove('active');
-      sortBtns.style.visibility = '';
+      document.querySelectorAll('.ath-page-sort[data-sort]').forEach(b => b.classList.toggle('active', b.dataset.sort === activeSort));
       grid.className = 'ath-page-grid';
       grid.innerHTML = renderGrid(sortedAthletes());
     }
