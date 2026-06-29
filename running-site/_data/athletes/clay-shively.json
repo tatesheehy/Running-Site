@@ -1,0 +1,160 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "collegeLogo": "/images/northern_arizona_athletics_logo.svg.png",
+  "waUrl": "https://worldathletics.org/athletes/united-states/clay-shively-15036461",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Clay Shively",
+  "headlineKey": "x",
+  "flag": "US",
+  "seasons": "x",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:50.06"
+    },
+    {
+      "event": "1500m",
+      "time": "3:39.35"
+    },
+    {
+      "event": "Mile",
+      "time": "3:56.96"
+    },
+    {
+      "event": "3000m",
+      "time": "8:00.15"
+    },
+    {
+      "event": "5000m",
+      "time": "13:58.95"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:41.44"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:56.96"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "8:00.15"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:53.30"
+    }
+  ],
+  "hometown": "Los Angeles",
+  "questionTitle": "Next question",
+  "photo": "/images/default_card.png",
+  "ncaa": false,
+  "country": "United States",
+  "results": [
+    {
+      "date": "JUN 4",
+      "meet": "HOKA Festival of Miles",
+      "event": "",
+      "time": "3:59.84",
+      "place": "10"
+    },
+    {
+      "date": "MAY 29",
+      "meet": "NCAA Division I West First Rounds",
+      "event": "",
+      "time": "DQ",
+      "place": ""
+    },
+    {
+      "date": "MAY 27",
+      "meet": "NCAA Division I West First Rounds",
+      "event": "1500m",
+      "time": "3:41.22",
+      "place": "8"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Big Sky Outdoor Track and Field Championships",
+      "event": "5000m",
+      "time": "13:58.95",
+      "place": ""
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Big Sky Outdoor Track and Field Championships",
+      "event": "",
+      "time": "3:45.24",
+      "place": "3"
+    },
+    {
+      "date": "APR 18",
+      "meet": "Bryan Clay Invitational",
+      "event": "1500m",
+      "time": "3:39.35",
+      "place": "1"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Big Sky Conference Indoor Track & Field Championships",
+      "event": "3000m",
+      "time": "8:28.41",
+      "place": ""
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Big Sky Conference Indoor Track & Field Championships",
+      "event": "",
+      "time": "4:09.10",
+      "place": "2"
+    },
+    {
+      "date": "FEB 27",
+      "meet": "Big Sky Conference Indoor Track & Field Championships",
+      "event": "Distance Medley Short Track",
+      "time": "9:53.30",
+      "place": ""
+    },
+    {
+      "date": "FEB 20",
+      "meet": "Colorado Last Chance",
+      "event": "Distance Medley",
+      "time": "9:26.58",
+      "place": ""
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Boston University David Hemery Valentine Invitational",
+      "event": "1500m sh",
+      "time": "3:41.44",
+      "place": "2"
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Boston University David Hemery Valentine Invitational",
+      "event": "Mile sh",
+      "time": "3:56.96",
+      "place": "2"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "6th Annual Brant Tolsma Invitational",
+      "event": "800m",
+      "time": "1:53.61",
+      "place": ""
+    },
+    {
+      "date": "JAN 31",
+      "meet": "6th Annual Brant Tolsma Invitational",
+      "event": "Mile sh",
+      "time": "4:00.95",
+      "place": "3"
+    }
+  ],
+  "college": "NAU",
+  "weight": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE"
+}
