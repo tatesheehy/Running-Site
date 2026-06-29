@@ -38,15 +38,16 @@ const FETCH_HEADERS = {
   'Accept-Language': 'en-US,en;q=0.9',
 };
 
-const ALLOWED_ORIGINS = new Set([
-  'https://stattc.com',
-  'http://localhost:8765',
-  'http://localhost:8888',
-  'http://127.0.0.1:8765',
-]);
+function isAllowedOrigin(origin) {
+  if (!origin) return false;
+  if (origin === 'https://stattc.com') return true;
+  if (/^https:\/\/[a-z0-9-]+\.netlify\.app$/.test(origin)) return true;
+  if (/^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)) return true;
+  return false;
+}
 
 function corsHeaders(origin) {
-  const allowed = ALLOWED_ORIGINS.has(origin) ? origin : 'https://stattc.com';
+  const allowed = isAllowedOrigin(origin) ? origin : 'https://stattc.com';
   return { 'Access-Control-Allow-Origin': allowed, 'Content-Type': 'application/json' };
 }
 
