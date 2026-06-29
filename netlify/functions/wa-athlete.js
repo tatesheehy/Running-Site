@@ -1,5 +1,37 @@
 // Proxy to World Athletics — fetches athlete pages server-side to avoid CORS
 
+// ── Rate limiter ──────────────────────────────────────────────────────────────
+// Module-level Map persists across warm Lambda invocations (same container reuse).
+// Limits reset on cold starts, but that's acceptable — this stops sustained abuse.
+const _rl = new Map();
+const RL_WINDOW = 60_000; // 1 minute window
+
+const RL_LIMITS = {
+  search:  10, // search queries per IP per minute
+  profile: 30, // profile fetches per IP per minute (H2H compare needs 2 per comparison)
+};
+
+function checkRateLimit(ip, type) {
+  const key = `${ip}|${type}`;
+  const limit = RL_LIMITS[type] || 20;
+  const now = Date.now();
+
+  // Purge stale entries to prevent unbounded Map growth
+  if (_rl.size > 500) {
+    for (const [k, v] of _rl) {
+      if (now - v.w > RL_WINDOW * 2) _rl.delete(k);
+    }
+  }
+
+  const e = _rl.get(key);
+  if (!e || now - e.w > RL_WINDOW) {
+    _rl.set(key, { n: 1, w: now });
+    return false; // within limit
+  }
+  e.n++;
+  return e.n > limit; // true = rate limited
+}
+
 const FETCH_HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
@@ -7,7 +39,7 @@ const FETCH_HEADERS = {
 };
 
 const CORS = {
-  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Origin': 'https://stattc.com',
   'Content-Type': 'application/json',
 };
 
@@ -426,7 +458,17 @@ exports.handler = async (event) => {
     return { statusCode: 200, headers: CORS, body: '' };
   }
 
+  const ip = event.headers['client-ip'] || event.headers['x-forwarded-for'] || 'unknown';
   const { action, name, url } = event.queryStringParameters || {};
+
+  const actionType = (action === 'search' || (!url && name)) ? 'search' : 'profile';
+  if (checkRateLimit(ip, actionType)) {
+    return {
+      statusCode: 429,
+      headers: { ...CORS, 'Retry-After': '60' },
+      body: JSON.stringify({ error: 'Too many requests. Please wait a moment.' }),
+    };
+  }
 
   try {
     if (action === 'search' || (!url && name)) {

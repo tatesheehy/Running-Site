@@ -264,7 +264,6 @@ function buildRankingRow(r, rank) {
       <div class="rd-right">
         ${r.reason ? `<div class="rd-reason">${r.reason}</div>` : ''}
         <div class="rd-time">${seasonBest}</div>
-        <div class="rd-meet">${meet}</div>
       </div>
 
     </div>
@@ -292,7 +291,6 @@ function buildRankingCard(r, rank) {
         <div class="rd-card-country">${renderFlag(flag)} ${country}</div>
         ${r.reason ? `<div class="rd-card-reason">${r.reason}</div>` : ''}
         <div class="rd-card-time">${seasonBest}</div>
-        <div class="rd-card-meet">${meet}</div>
       </div>
     </div>
   `;
@@ -456,7 +454,7 @@ function buildRankingsDetail(eventName, opts = {}) {
         ${filterHtml}
         <div id="rd-col-sentinel"></div>
         <div class="rd-col-labels" style="${isGrid ? 'display:none' : ''}">
-          <span>Rank</span><span>Athlete</span><span>Momentum</span><span style="text-align:right">Best / Meet</span>
+          <span>Rank</span><span>Athlete</span><span>Momentum</span><span style="text-align:right">Best</span>
         </div>
         <div class="rd-list-wrap" style="${isGrid ? 'display:none' : ''}">
           <div class="rd-list">${rowsHtml}</div>
