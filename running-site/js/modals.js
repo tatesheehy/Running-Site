@@ -313,6 +313,33 @@ function openAthleteCard(athleteId, rank) {
 
   overlay.classList.add('open');
   document.body.style.overflow = 'hidden';
+
+  // If no local age/dob but athlete has a WA URL, fetch it and fill in
+  const needsAge = !a.dob && !(a.vitals && a.vitals.AGE) && a.waUrl;
+  if (needsAge) {
+    fetch(`/.netlify/functions/wa-athlete?url=${encodeURIComponent(a.waUrl)}`)
+      .then(r => r.json())
+      .then(data => {
+        if (!data.dob) return;
+        const born = new Date(data.dob);
+        const today = new Date();
+        let age = today.getFullYear() - born.getFullYear();
+        const m = today.getMonth() - born.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < born.getDate())) age--;
+        // Cache so subsequent opens don't re-fetch
+        a.dob = data.dob;
+        if (!a.vitals) a.vitals = {};
+        a.vitals.AGE = String(age);
+        // Update the displayed vitals if the card is still open
+        const vitalsEl = qs('#athlete-card-inner .card-vitals');
+        if (vitalsEl && !vitalsEl.querySelector('.card-vital')) {
+          vitalsEl.innerHTML = `<div class="card-vital"><span class="card-vital-label">AGE</span><span class="card-vital-value">${age}</span></div>`;
+        } else if (vitalsEl && !vitalsEl.innerHTML.includes('AGE')) {
+          vitalsEl.insertAdjacentHTML('afterbegin', `<div class="card-vital"><span class="card-vital-label">AGE</span><span class="card-vital-value">${age}</span></div>`);
+        }
+      })
+      .catch(() => {});
+  }
 }
 
 function closeAthleteCard() {

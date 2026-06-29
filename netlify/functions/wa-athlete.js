@@ -436,11 +436,33 @@ async function getAthleteProfile(url) {
 
   let results = [];
 
+  let dob = '';
+
   // ── Strategy 1: __NEXT_DATA__ deep search ────────────────────────────────
   const ndMatch = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
   if (ndMatch) {
     try {
       const nd = JSON.parse(ndMatch[1]);
+
+      // DOB — WA stores it at various paths depending on page version
+      const pp = nd?.props?.pageProps || {};
+      const athObj = pp.athlete || pp.data?.athlete || pp.athleteProfile || {};
+      const rawDob =
+        athObj.dateOfBirth || athObj.birthDate ||
+        athObj.basicData?.dateOfBirth || athObj.basicData?.birthDate ||
+        pp.dateOfBirth || '';
+      if (rawDob) {
+        // Normalise to YYYY-MM-DD if possible
+        const isoM = String(rawDob).match(/(\d{4})-(\d{2})-(\d{2})/);
+        const dmyM = String(rawDob).match(/(\d{1,2})\s+([A-Z]{3})\s+(\d{4})/i);
+        const months = { jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12 };
+        if (isoM) {
+          dob = `${isoM[1]}-${isoM[2]}-${isoM[3]}`;
+        } else if (dmyM) {
+          const mo = months[dmyM[2].toLowerCase()];
+          if (mo) dob = `${dmyM[3]}-${String(mo).padStart(2,'0')}-${String(parseInt(dmyM[1],10)).padStart(2,'0')}`;
+        }
+      }
 
       // PRs
       const arr = findBestsArray(nd);
@@ -453,6 +475,12 @@ async function getAthleteProfile(url) {
       // Season results — multi-strategy extraction
       results = extractSeasonResults(nd, new Date().getFullYear());
     } catch (_) { /* fall through */ }
+  }
+
+  // DOB fallback: look for ISO date near "dateOfBirth" anywhere in the raw HTML
+  if (!dob) {
+    const dobHtml = html.match(/"dateOfBirth"\s*:\s*"(\d{4}-\d{2}-\d{2})"/);
+    if (dobHtml) dob = dobHtml[1];
   }
 
   // ── Strategy 2: HTML table parsing ───────────────────────────────────────
@@ -482,7 +510,7 @@ async function getAthleteProfile(url) {
     outdoor = sortBests(outdoor);
   }
 
-  return { name: athleteName, outdoor, indoor, results };
+  return { name: athleteName, dob, outdoor, indoor, results };
 }
 
 // ── Netlify handler ───────────────────────────────────────────────────────────
