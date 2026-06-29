@@ -95,45 +95,43 @@ function buildHome() {
   const heroDest = featuredRankings
     ? `rankings.html${rankingsEvent ? '?event=' + encodeURIComponent(rankingsEvent) : ''}`
     : `article.html?id=${heroItem.id}`;
-  const heroImg = imgHTML(heroItem.image, heroItem.title, heroItem.imagePosition, 21/9, 'home-hero-img');
+  const heroImg = imgHTML(heroItem.image, heroItem.title, heroItem.imagePosition, 16/9, 'home-hero-img');
 
   const countdownHtml = buildCountdownPills();
 
   document.getElementById('main').innerHTML = `
-    ${SITE.homeTagline ? `<div class="container"><div class="home-tagline">${SITE.homeTagline}</div></div>` : ''}
-    ${countdownHtml ? `<div class="home-countdown-wrap"><div class="home-countdown">${countdownHtml}</div></div>` : ''}
+    <div class="container">
+      ${SITE.homeTagline ? `<div class="home-tagline">${SITE.homeTagline}</div>` : ''}
+      ${countdownHtml ? `<div class="home-countdown">${countdownHtml}</div>` : ''}
 
-    <div class="home-hero-full" onclick="goTo('${heroDest}')">
-      ${heroImg}
-      <span class="cat-tag">${heroItem.category || 'RANKINGS'}</span>
-      <div class="home-hero-overlay">
-        <div class="container">
-          <h1 class="home-hero-title">${heroItem.title}</h1>
-          ${heroItem.excerpt ? `<p class="home-hero-excerpt">${heroItem.excerpt}</p>` : ''}
-          <div class="home-hero-meta">
-            ${heroItem.author ? `By <span class="author">${heroItem.author}</span><span class="sep">·</span>` : ''}${heroItem.date || ''}
-            ${heroItem.readTime ? `<span class="sep">·</span>${heroItem.readTime}` : ''}
+      <div class="home-top">
+        <div class="home-hero-col">
+          <div class="home-hero-full" onclick="goTo('${heroDest}')">
+            ${heroImg}
+            <span class="cat-tag">${heroItem.category || 'RANKINGS'}</span>
+            <div class="home-hero-overlay">
+              <h1 class="home-hero-title">${heroItem.title}</h1>
+              ${heroItem.excerpt ? `<p class="home-hero-excerpt">${heroItem.excerpt}</p>` : ''}
+              <div class="home-hero-meta">
+                ${heroItem.author ? `By <span class="author">${heroItem.author}</span><span class="sep">·</span>` : ''}${heroItem.date || ''}
+                ${heroItem.readTime ? `<span class="sep">·</span>${heroItem.readTime}` : ''}
+              </div>
+            </div>
           </div>
         </div>
+        ${rankingsWidgetHtml ? `<aside class="home-rankings-col">${rankingsWidgetHtml}</aside>` : ''}
       </div>
-    </div>
 
-    <div class="container">
       ${picksHtml ? `
         <div class="home-ep-row">
           <div class="ep-label">${editorPicksLabel}</div>
           <div class="home-ep-list">${picksHtml}</div>
         </div>` : ''}
 
-      <div class="home-body">
-        <div class="home-main">
-          <div class="section-header">
-            <h2 class="section-title">${latestTitle}</h2>
-          </div>
-          <div class="articles-grid">${latestHtml}</div>
-        </div>
-        ${rankingsWidgetHtml ? `<aside class="home-sidebar">${rankingsWidgetHtml}</aside>` : ''}
+      <div class="section-header">
+        <h2 class="section-title">${latestTitle}</h2>
       </div>
+      <div class="articles-grid">${latestHtml}</div>
     </div>
   `;
 
