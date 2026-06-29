@@ -3,7 +3,7 @@
   "subscribeLabel": "Join the Club",
   "name": "StatTC",
   "podcastUrl": "",
-  "footerCopyright": "© 2026 Running Website. All rights reserved.",
+  "footerCopyright": "© 2026 StatTC. All rights reserved.",
   "youtubeUrl": "",
   "tagline": "Track & Field Rankings and Coverage",
   "homeTagline": "",
@@ -14,17 +14,20 @@
     {
       "name": "Pre Classic",
       "datetime": "2026-07-04T18:00:00-07:00",
-      "color": "#e8500a"
+      "color": "#e8500a",
+      "url": "https://www.preclassic.com/schedule"
     },
     {
       "name": "Monaco Diamond League",
       "datetime": "2026-07-10T19:00:00-07:00",
-      "color": "#e8500a"
+      "color": "#e8500a",
+      "url": "https://monaco.diamondleague.com/en/programme-results/"
     },
     {
       "name": "London Diamond League",
       "datetime": "2026-07-18T13:04:00-07:00",
-      "color": "#e8500a"
+      "color": "#e8500a",
+      "url": "https://london.diamondleague.com/programme-results/"
     }
   ],
   "footerTagline": "",
