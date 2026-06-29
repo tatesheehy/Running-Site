@@ -270,6 +270,9 @@
   white-space: nowrap;
 }
 
+a.rd-countdown-pill { cursor: pointer; }
+a.rd-countdown-pill:hover { opacity: 0.85; }
+
 .rd-view-toggle {
   display: flex;
   align-items: center;

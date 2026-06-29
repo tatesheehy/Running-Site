@@ -46,8 +46,7 @@ function buildNavbar() {
     { label: 'Articles', href: 'articles.html' },
     { label: 'Rankings', href: 'rankings.html' },
     { label: 'Athletes', href: 'athletes.html' },
-    { label: 'News', href: 'articles.html?category=News' },
-    { label: 'Podcast', href: SITE.podcastUrl || '#' },
+    { label: 'Podcast', href: 'podcast.html' },
     { label: 'About', href: 'about.html' },
   ];
 
