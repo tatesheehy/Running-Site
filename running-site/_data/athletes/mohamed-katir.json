@@ -60,5 +60,14 @@
   "event": "MIDDLE DISTANCE/DISTANCE",
   "id": "mohamed-katir",
   "age": "28",
-  "dob": "1998-02-17"
+  "dob": "1998-02-17",
+  "honours": [
+    {
+      "competition": "World Athletics Championships",
+      "short": "WC",
+      "discipline": "1500m",
+      "place": 3,
+      "year": "2022"
+    }
+  ]
 }

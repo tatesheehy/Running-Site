@@ -3,36 +3,36 @@
   "reviewTitle": "Season review",
   "achievements": [
     {
-      "icon": "🌍",
+      "icon": "\ud83c\udf0d",
       "count": "1x",
       "label": "World Champion"
     },
     {
-      "icon": "🥈",
+      "icon": "\ud83e\udd48",
       "count": "1x",
       "label": "Olympic Silver"
     },
     {
-      "icon": "💎",
+      "icon": "\ud83d\udc8e",
       "count": "2x",
       "label": "DL Champion"
     }
   ],
   "traits": [
     {
-      "emoji": "💪",
+      "emoji": "\ud83d\udcaa",
       "label": "Raw Strength"
     },
     {
-      "emoji": "🏃",
+      "emoji": "\ud83c\udfc3",
       "label": "Mid-Race Surge"
     },
     {
-      "emoji": "🧠",
+      "emoji": "\ud83e\udde0",
       "label": "Race Savvy"
     },
     {
-      "emoji": "🏋️",
+      "emoji": "\ud83c\udfcb\ufe0f",
       "label": "Physical Power"
     }
   ],
@@ -118,5 +118,28 @@
   "reviewBody": "Kerr continues to be one of the most physically imposing presences in the 1500m field. His ability to surge mid-race and break the competition is unmatched.",
   "event": "MIDDLE DISTANCE",
   "id": "josh-kerr",
-  "age": "28"
+  "age": "28",
+  "honours": [
+    {
+      "competition": "World Athletics Championships",
+      "short": "WC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2023"
+    },
+    {
+      "competition": "Olympic Games",
+      "short": "OLY",
+      "discipline": "1500m",
+      "place": 2,
+      "year": "2024"
+    },
+    {
+      "competition": "Olympic Games",
+      "short": "OLY",
+      "discipline": "1500m",
+      "place": 3,
+      "year": "2020"
+    }
+  ]
 }

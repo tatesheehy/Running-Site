@@ -160,5 +160,14 @@
   "event": "MIDDLE DISTANCE",
   "id": "jake-wightman",
   "age": "31",
-  "dob": "1994-07-11"
+  "dob": "1994-07-11",
+  "honours": [
+    {
+      "competition": "World Athletics Championships",
+      "short": "WC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2022"
+    }
+  ]
 }

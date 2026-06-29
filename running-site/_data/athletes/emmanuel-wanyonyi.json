@@ -58,5 +58,21 @@
   "event": "MIDDLE DISTANCE",
   "id": "emmanuel-wanyonyi",
   "age": "21",
-  "dob": "2004-08-01"
+  "dob": "2004-08-01",
+  "honours": [
+    {
+      "competition": "World Athletics Championships",
+      "short": "WC",
+      "discipline": "800m",
+      "place": 1,
+      "year": "2025"
+    },
+    {
+      "competition": "Olympic Games",
+      "short": "OLY",
+      "discipline": "800m",
+      "place": 1,
+      "year": "2024"
+    }
+  ]
 }

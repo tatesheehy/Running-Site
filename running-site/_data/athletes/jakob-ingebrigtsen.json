@@ -3,36 +3,36 @@
   "reviewTitle": "Season review",
   "achievements": [
     {
-      "icon": "🥇",
+      "icon": "\ud83e\udd47",
       "count": "2x",
       "label": "Olympic Gold"
     },
     {
-      "icon": "🌍",
+      "icon": "\ud83c\udf0d",
       "count": "1x",
       "label": "World Champ"
     },
     {
-      "icon": "⚡",
+      "icon": "\u26a1",
       "count": "1x",
       "label": "World Record"
     }
   ],
   "traits": [
     {
-      "emoji": "⚡",
+      "emoji": "\u26a1",
       "label": "Explosive Kick"
     },
     {
-      "emoji": "🧠",
+      "emoji": "\ud83e\udde0",
       "label": "Tactical IQ"
     },
     {
-      "emoji": "🏔️",
+      "emoji": "\ud83c\udfd4\ufe0f",
       "label": "Front Runner"
     },
     {
-      "emoji": "🔥",
+      "emoji": "\ud83d\udd25",
       "label": "Mental Edge"
     }
   ],
@@ -122,5 +122,63 @@
   "reviewBody": "Ingebrigtsen has yet to race in 2026. The Norwegian may return from racing in mid-July following surgery to remove damaged tissue and scarring from the sheath surrounding his left Achilles tendon in February of this year. ",
   "event": "MIDDLE DISTANCE + DISTANCE",
   "id": "jakob-ingebrigtsen",
-  "age": "25"
+  "age": "25",
+  "honours": [
+    {
+      "competition": "Olympic Games",
+      "short": "OLY",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2020"
+    },
+    {
+      "competition": "Olympic Games",
+      "short": "OLY",
+      "discipline": "5000m",
+      "place": 1,
+      "year": "2024"
+    },
+    {
+      "competition": "World Athletics Championships",
+      "short": "WC",
+      "discipline": "5000m",
+      "place": 1,
+      "year": "2022"
+    },
+    {
+      "competition": "World Athletics Championships",
+      "short": "WC",
+      "discipline": "5000m",
+      "place": 1,
+      "year": "2023"
+    },
+    {
+      "competition": "World Athletics Championships",
+      "short": "WC",
+      "discipline": "1500m",
+      "place": 2,
+      "year": "2022"
+    },
+    {
+      "competition": "World Athletics Championships",
+      "short": "WC",
+      "discipline": "1500m",
+      "place": 2,
+      "year": "2023"
+    },
+    {
+      "competition": "World Athletics Indoor Championships",
+      "short": "WI",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2025"
+    },
+    {
+      "competition": "World Athletics Indoor Championships",
+      "short": "WI",
+      "discipline": "3000m",
+      "place": 1,
+      "year": "2025"
+    }
+  ]
 }

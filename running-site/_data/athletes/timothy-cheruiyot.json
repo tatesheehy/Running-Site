@@ -3,36 +3,36 @@
   "reviewTitle": "Season review",
   "achievements": [
     {
-      "icon": "🌍",
+      "icon": "\ud83c\udf0d",
       "count": "2x",
       "label": "World Champion"
     },
     {
-      "icon": "🥈",
+      "icon": "\ud83e\udd48",
       "count": "1x",
       "label": "Olympic Silver"
     },
     {
-      "icon": "💎",
+      "icon": "\ud83d\udc8e",
       "count": "4x",
       "label": "Diamond League Win"
     }
   ],
   "traits": [
     {
-      "emoji": "🦁",
+      "emoji": "\ud83e\udd81",
       "label": "Killer Instinct"
     },
     {
-      "emoji": "🏆",
+      "emoji": "\ud83c\udfc6",
       "label": "Championship DNA"
     },
     {
-      "emoji": "🎖️",
+      "emoji": "\ud83c\udf96\ufe0f",
       "label": "Proven Winner"
     },
     {
-      "emoji": "🔄",
+      "emoji": "\ud83d\udd04",
       "label": "Long Stride"
     }
   ],
@@ -156,5 +156,56 @@
   "reviewBody": "Cheruiyot has shown signs of returning to his dominant best after a couple of injury-interrupted campaigns. His Shanghai win was a reminder that when he's right, he can run with anyone.",
   "event": "MIDDLE DISTANCE",
   "id": "timothy-cheruiyot",
-  "age": "28"
+  "age": "28",
+  "honours": [
+    {
+      "competition": "World Athletics Championships",
+      "short": "WC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2019"
+    },
+    {
+      "competition": "Olympic Games",
+      "short": "OLY",
+      "discipline": "1500m",
+      "place": 2,
+      "year": "2020"
+    },
+    {
+      "competition": "World Athletics Championships",
+      "short": "WC",
+      "discipline": "1500m",
+      "place": 2,
+      "year": "2017"
+    },
+    {
+      "competition": "Diamond League Final",
+      "short": "DLF",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2021"
+    },
+    {
+      "competition": "Diamond League Final",
+      "short": "DLF",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2019"
+    },
+    {
+      "competition": "Diamond League Final",
+      "short": "DLF",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2018"
+    },
+    {
+      "competition": "Diamond League Final",
+      "short": "DLF",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2017"
+    }
+  ]
 }

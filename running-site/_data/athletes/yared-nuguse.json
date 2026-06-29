@@ -145,5 +145,14 @@
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "yared-nuguse",
-  "age": "x"
+  "age": "x",
+  "honours": [
+    {
+      "competition": "Olympic Games",
+      "short": "OLY",
+      "discipline": "1500m",
+      "place": 3,
+      "year": "2024"
+    }
+  ]
 }

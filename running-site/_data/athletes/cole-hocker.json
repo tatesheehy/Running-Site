@@ -3,12 +3,12 @@
   "reviewTitle": "Season review",
   "achievements": [
     {
-      "icon": "🥇",
+      "icon": "\ud83e\udd47",
       "count": "1x",
       "label": "Olympic Gold"
     },
     {
-      "icon": "🎓",
+      "icon": "\ud83c\udf93",
       "count": "3x",
       "label": "NCAA Champion"
     },
@@ -20,19 +20,19 @@
   ],
   "traits": [
     {
-      "emoji": "🚀",
+      "emoji": "\ud83d\ude80",
       "label": "Devastating Kick"
     },
     {
-      "emoji": "🧘",
+      "emoji": "\ud83e\uddd8",
       "label": "Race Patience"
     },
     {
-      "emoji": "📐",
+      "emoji": "\ud83d\udcd0",
       "label": "Perfect Form"
     },
     {
-      "emoji": "🌟",
+      "emoji": "\ud83c\udf1f",
       "label": "Rising Star"
     }
   ],
@@ -191,5 +191,14 @@
   "event": "MIDDLE DISTANCE + DISTANCE",
   "id": "cole-hocker",
   "age": "25",
-  "dob": "2001-06-06"
+  "dob": "2001-06-06",
+  "honours": [
+    {
+      "competition": "Olympic Games",
+      "short": "OLY",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2024"
+    }
+  ]
 }
