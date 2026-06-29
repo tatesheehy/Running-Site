@@ -325,14 +325,28 @@ function extractSeasonResults(nd, year) {
 
 // ── Search: find athletes by name ────────────────────────────────────────────
 
+async function waFetch(url) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 8000);
+  try {
+    const r = await fetch(url, { headers: FETCH_HEADERS, signal: controller.signal });
+    return await r.text();
+  } catch (e) {
+    if (e.name === 'AbortError') throw new Error('World Athletics took too long to respond. Try again in a moment.');
+    throw e;
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 async function searchAthletes(name) {
   const q = encodeURIComponent(name);
   const url = `https://www.worldathletics.org/athletes?query=${q}`;
   let html;
   try {
-    html = await fetch(url, { headers: FETCH_HEADERS }).then(r => r.text());
+    html = await waFetch(url);
   } catch (e) {
-    return { error: `Could not reach World Athletics: ${e.message}` };
+    return { error: e.message };
   }
 
   const athletes = [];
@@ -396,9 +410,9 @@ async function searchAthletes(name) {
 async function getAthleteProfile(url) {
   let html;
   try {
-    html = await fetch(url, { headers: FETCH_HEADERS }).then(r => r.text());
+    html = await waFetch(url);
   } catch (e) {
-    return { error: `Could not fetch page: ${e.message}` };
+    return { error: e.message };
   }
 
   // Try to extract name from page <title>
