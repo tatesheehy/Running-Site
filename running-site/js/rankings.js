@@ -356,6 +356,68 @@ function buildRankingsDetail(eventName, opts = {}) {
   } else {
     ev = RANKINGS_EVENTS.find(e => e.name === eventName);
   }
+
+  if (!archiveYear && ev && ev.underConstruction) {
+    document.getElementById('main').innerHTML = `
+      <div class="container">
+        <div class="rankings-detail">
+          <a href="${backUrl}" class="rd-back">&larr; ${backLabel}</a>
+          <div style="display:flex;flex-direction:column;align-items:center;text-align:center;padding:60px 24px 100px;min-height:50vh;">
+            <div style="margin-bottom:28px;opacity:0.8;">
+              <svg viewBox="0 0 100 100" width="90" height="90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="4" y1="88" x2="96" y2="88" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M62 88 L64 81 L77 81 L79 88 Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <rect x="65" y="13" width="11" height="68" stroke="currentColor" stroke-width="2"/>
+                <line x1="65" y1="21" x2="76" y2="29" stroke="currentColor" stroke-width="1.2"/>
+                <line x1="65" y1="29" x2="76" y2="37" stroke="currentColor" stroke-width="1.2"/>
+                <line x1="65" y1="37" x2="76" y2="45" stroke="currentColor" stroke-width="1.2"/>
+                <line x1="65" y1="45" x2="76" y2="53" stroke="currentColor" stroke-width="1.2"/>
+                <line x1="65" y1="53" x2="76" y2="61" stroke="currentColor" stroke-width="1.2"/>
+                <line x1="65" y1="61" x2="76" y2="69" stroke="currentColor" stroke-width="1.2"/>
+                <line x1="65" y1="69" x2="76" y2="77" stroke="currentColor" stroke-width="1.2"/>
+                <line x1="65" y1="77" x2="76" y2="81" stroke="currentColor" stroke-width="1.2"/>
+                <polygon points="65,13 70.5,7 76,13" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <rect x="6" y="8" width="59" height="7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <line x1="6" y1="15" x2="28" y2="8" stroke="currentColor" stroke-width="1.2"/>
+                <line x1="28" y1="15" x2="50" y2="8" stroke="currentColor" stroke-width="1.2"/>
+                <rect x="76" y="8" width="18" height="7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <line x1="26" y1="15" x2="26" y2="28" stroke="currentColor" stroke-width="1.5"/>
+                <polygon points="26,28 32,31.5 32,38.5 26,42 20,38.5 20,31.5" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <polygon points="26,31.5 29,33 29,36.5 26,38 23,36.5 23,33" stroke="currentColor" stroke-width="1.2"/>
+                <line x1="26" y1="42" x2="26" y2="48" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M26 48 Q26 57 33 57 Q40 57 40 50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <rect x="5" y="47" width="14" height="41" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <rect x="8"  y="51" width="3" height="3" fill="currentColor"/>
+                <rect x="13" y="51" width="3" height="3" fill="currentColor"/>
+                <rect x="8"  y="58" width="3" height="3" fill="currentColor"/>
+                <rect x="13" y="58" width="3" height="3" fill="currentColor"/>
+                <rect x="8"  y="65" width="3" height="3" fill="currentColor"/>
+                <rect x="13" y="65" width="3" height="3" fill="currentColor"/>
+                <rect x="8"  y="72" width="3" height="3" fill="currentColor"/>
+                <rect x="13" y="72" width="3" height="3" fill="currentColor"/>
+                <rect x="20" y="63" width="11" height="25" stroke="currentColor" stroke-width="2"/>
+                <rect x="33" y="68" width="24" height="20" stroke="currentColor" stroke-width="2"/>
+                <polyline points="31,68 45,54 59,68" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <rect x="41" y="76" width="8" height="12" stroke="currentColor" stroke-width="1.5"/>
+                <rect x="35" y="70" width="4" height="4" fill="currentColor"/>
+                <rect x="51" y="70" width="4" height="4" fill="currentColor"/>
+                <rect x="42" y="59" width="6" height="6" fill="currentColor"/>
+                <rect x="57" y="73" width="14" height="15" stroke="currentColor" stroke-width="2"/>
+                <polyline points="55,73 64,63 73,73" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                <rect x="60" y="80" width="5" height="8" stroke="currentColor" stroke-width="1.5"/>
+                <rect x="58" y="75" width="3" height="3" fill="currentColor"/>
+                <rect x="67" y="75" width="3" height="3" fill="currentColor"/>
+              </svg>
+            </div>
+            <div style="font-family:var(--font-display);font-size:12px;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;">Coming Soon</div>
+            <h1 style="font-family:var(--font-display);font-size:52px;font-weight:700;text-transform:uppercase;letter-spacing:0.02em;line-height:1;margin:0 0 0;">Under Construction</h1>
+            <div style="width:48px;height:3px;background:var(--accent);border-radius:2px;margin:24px auto 0;"></div>
+          </div>
+        </div>
+      </div>`;
+    return;
+  }
+
   // If the week exists but has no rows yet, fall back to the current live rankings for that event
   const liveEv = archiveYear ? RANKINGS_EVENTS.find(e => e.name === eventName) : null;
   const rows     = (weekObj && (weekObj.rows || []).length)     ? weekObj.rows     : (liveEv ? (liveEv.rows     || []) : ((ev && ev.rows)     || []));

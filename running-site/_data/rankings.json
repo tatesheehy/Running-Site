@@ -230,18 +230,21 @@
       "name": "800m",
       "description": "Pure guts.",
       "photo": "",
+      "underConstruction": true,
       "rows": []
     },
     {
       "name": "5000m",
       "description": "Strength plus speed.",
       "photo": "",
+      "underConstruction": true,
       "rows": []
     },
     {
       "name": "10000m",
       "description": "Only the strong survive.",
       "photo": "",
+      "underConstruction": true,
       "rows": []
     }
   ]
