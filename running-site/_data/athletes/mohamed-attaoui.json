@@ -79,5 +79,14 @@
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "mohamed-attaoui",
-  "age": "24"
+  "age": "24",
+  "honours": [
+    {
+      "competition": "World Athletics Indoor Championships",
+      "short": "WI",
+      "discipline": "800m",
+      "place": 3,
+      "year": "2026"
+    }
+  ]
 }

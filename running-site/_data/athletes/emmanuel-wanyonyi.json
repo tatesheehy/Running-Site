@@ -61,18 +61,18 @@
   "dob": "2004-08-01",
   "honours": [
     {
-      "competition": "World Athletics Championships",
-      "short": "WC",
-      "discipline": "800m",
-      "place": 1,
-      "year": "2025"
-    },
-    {
       "competition": "Olympic Games",
       "short": "OLY",
       "discipline": "800m",
       "place": 1,
       "year": "2024"
+    },
+    {
+      "competition": "World Athletics Championships",
+      "short": "WC",
+      "discipline": "800m",
+      "place": 1,
+      "year": "2025"
     },
     {
       "competition": "World Athletics Championships",

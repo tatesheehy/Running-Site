@@ -3,36 +3,36 @@
   "reviewTitle": "Season review",
   "achievements": [
     {
-      "icon": "\ud83c\udf0d",
+      "icon": "🌍",
       "count": "1x",
       "label": "World Champion"
     },
     {
-      "icon": "\ud83e\udd48",
+      "icon": "🥈",
       "count": "1x",
       "label": "Olympic Silver"
     },
     {
-      "icon": "\ud83d\udc8e",
+      "icon": "💎",
       "count": "2x",
       "label": "DL Champion"
     }
   ],
   "traits": [
     {
-      "emoji": "\ud83d\udcaa",
+      "emoji": "💪",
       "label": "Raw Strength"
     },
     {
-      "emoji": "\ud83c\udfc3",
+      "emoji": "🏃",
       "label": "Mid-Race Surge"
     },
     {
-      "emoji": "\ud83e\udde0",
+      "emoji": "🧠",
       "label": "Race Savvy"
     },
     {
-      "emoji": "\ud83c\udfcb\ufe0f",
+      "emoji": "🏋️",
       "label": "Physical Power"
     }
   ],
@@ -121,13 +121,6 @@
   "age": "28",
   "honours": [
     {
-      "competition": "World Athletics Championships",
-      "short": "WC",
-      "discipline": "1500m",
-      "place": 1,
-      "year": "2023"
-    },
-    {
       "competition": "Olympic Games",
       "short": "OLY",
       "discipline": "1500m",
@@ -140,6 +133,27 @@
       "discipline": "1500m",
       "place": 3,
       "year": "2020"
+    },
+    {
+      "competition": "World Athletics Championships",
+      "short": "WC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2023"
+    },
+    {
+      "competition": "World Athletics Indoor Championships",
+      "short": "WI",
+      "discipline": "3000m",
+      "place": 1,
+      "year": "2026"
+    },
+    {
+      "competition": "World Athletics Indoor Championships",
+      "short": "WI",
+      "discipline": "3000m",
+      "place": 1,
+      "year": "2024"
     }
   ]
 }
