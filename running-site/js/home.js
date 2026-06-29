@@ -16,7 +16,8 @@ function _pillForMeet(meet) {
   else if (hrs > 0)   label = `${hrs}h ${mins}m`;
   else                label = `${mins}m`;
   const style = meet.color ? ` style="background:${meet.color}"` : '';
-  return `<span class="rd-countdown-pill"${style}>⏱ ${label} · ${meet.name}</span>`;
+  const inner = `<span class="rd-countdown-pill"${style}>⏱ ${label} · ${meet.name}</span>`;
+  return meet.url ? `<a href="${meet.url}" target="_blank" rel="noopener" style="text-decoration:none">${inner}</a>` : inner;
 }
 
 function buildCountdownPills() {
