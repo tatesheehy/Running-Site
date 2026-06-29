@@ -3,7 +3,6 @@
    ============================================================ */
 
 @media (max-width: 960px) {
-  .home-hero-full { width: calc(100% - 32px); margin: 0 16px; border-radius: 10px; }
   .home-hero-img, .home-hero-full .img-placeholder { aspect-ratio: 16/9; }
   .home-hero-title { font-size: 36px; }
   .home-ep-list { grid-template-columns: 1fr; }
@@ -30,12 +29,24 @@
   .card-photo, .card-photo-placeholder { height: 200px; }
 }
 
+@media (max-width: 700px) {
+  .home-top {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 8px 0 0;
+  }
+  .home-rankings-col { position: static; }
+  .home-hero-title { font-size: 28px; }
+}
+
 @media (max-width: 640px) {
   .articles-grid { grid-template-columns: 1fr; }
   .rankings-cards-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: 30px; }
   .card-left { grid-template-columns: 1fr; }
   .navbar-nav { display: none; }
+  .rd-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .rd-header-actions { flex-direction: row; align-items: center; flex-wrap: wrap; gap: 8px; }
   .rd-header-event { font-size: 40px; }
   .rd-rank { font-size: 36px; }
   .rd-name { font-size: 20px; }
