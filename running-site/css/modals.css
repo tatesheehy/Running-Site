@@ -1349,3 +1349,127 @@
   font-size: 10px;
   color: var(--muted);
 }
+
+/* ── H2H LIGHT THEME ──────────────────────────────────────── */
+
+/* Card shell */
+.h2h-card {
+  background: #fff;
+  color: #1a1a1a;
+  border-color: #e5e5e5;
+  scrollbar-color: #ddd transparent;
+}
+.h2h-card::-webkit-scrollbar-thumb { background: #ddd; }
+
+/* Header */
+.h2h-header {
+  background: #fff;
+  border-bottom-color: #e5e5e5;
+}
+.h2h-title { color: #1a1a1a; }
+.h2h-close-btn { color: #999; }
+.h2h-close-btn:hover { color: #1a1a1a; }
+
+/* Pickers */
+.h2h-pickers { border-bottom-color: #e5e5e5; }
+.h2h-input {
+  background: #f5f5f5;
+  border-color: #e0e0e0;
+  color: #1a1a1a;
+}
+.h2h-input::placeholder { color: #bbb; }
+.h2h-dropdown {
+  background: #fff;
+  border-color: #e0e0e0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.h2h-dd-item { color: #333; }
+.h2h-dd-item:hover { background: #f5f5f5; color: #111; }
+.h2h-dd-country { color: #aaa; }
+.h2h-dd-empty { color: #aaa; }
+
+/* Prompt */
+.h2h-prompt { color: #aaa; }
+
+/* Columns */
+.h2h-col-divider { background: #e5e5e5; }
+.h2h-photo-ph { background: #e8e8e8; }
+
+/* Athlete identity */
+.h2h-name { color: #1a1a1a; }
+.h2h-country { color: #777; }
+
+/* Section labels */
+.h2h-section-label {
+  color: #aaa;
+  border-top-color: #e5e5e5;
+}
+
+/* Rankings + PRs */
+.h2h-rank-ev { color: #1a1a1a; }
+.h2h-rank-tag {
+  background: rgba(0,0,0,0.04);
+  border-color: rgba(0,0,0,0.1);
+  color: #666;
+}
+.h2h-pr-ev { color: #888; }
+.h2h-pr-t { color: #1a1a1a; }
+.h2h-empty-row { color: #aaa; }
+
+/* Encounters section */
+.h2h-encounters { border-top-color: #e5e5e5; }
+.h2h-enc-ath { color: #888; }
+.h2h-enc-title { color: #ccc; }
+.h2h-enc-row { border-bottom-color: #f0f0f0; }
+.h2h-enc-row--left  { background: linear-gradient(to right,  rgba(232,80,10,0.04), transparent); }
+.h2h-enc-row--right { background: linear-gradient(to left, rgba(232,80,10,0.04), transparent); }
+.h2h-enc-t { color: #ccc; }
+.h2h-enc-winner .h2h-enc-t { color: #1a1a1a; }
+.h2h-enc-loser  .h2h-enc-t { color: #d8d8d8; }
+.h2h-enc-place { color: #ccc; }
+.h2h-enc-loser .h2h-enc-place { color: #e0e0e0; }
+.h2h-enc-meet { color: #444; }
+.h2h-enc-event { color: #bbb; }
+.h2h-enc-none { color: #ccc; }
+
+/* Record section */
+.h2h-record-section { border-top-color: #e5e5e5; }
+.h2h-record-wins { color: #ddd; }
+.h2h-record-leading { color: var(--accent); }
+.h2h-record-label { color: #aaa; }
+.h2h-record-row { border-bottom-color: #f0f0f0; }
+.h2h-record-t { color: #444; }
+.h2h-record-dim { color: #ccc; }
+.h2h-record-place { color: #aaa; }
+.h2h-record-meet { color: #444; }
+.h2h-record-meta { color: #aaa; }
+
+/* PR section */
+.h2h-pr-section { border-top-color: #e5e5e5; }
+.h2h-pr-ath { color: #888; }
+.h2h-pr-label { color: #bbb; }
+.h2h-shared-pr-row { border-bottom-color: #f0f0f0; }
+.h2h-spr-ev { color: #bbb; }
+.h2h-spr-t { color: #555; }
+
+/* Season timeline */
+.season-tl { border-top-color: #e5e5e5; }
+.season-tl-title { color: #aaa; }
+.season-tl-leg { color: #bbb; }
+.tl-mon { color: #bbb; }
+.season-tl-line { background: #e8e8e8; }
+.tl-win  { border-color: #fff; }
+.tl-pod  { border-color: rgba(0,0,0,0.15); }
+.tl-top  { background: #aaa; border-color: #888; }
+.tl-out  { background: #ddd; border-color: #ccc; }
+.tl-dnf  { background: #ebebeb; border-color: #ddd; }
+
+/* Tooltip */
+.season-tl-tip {
+  background: #fff;
+  border-color: #e5e5e5;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+.tl-tip-meet { color: #1a1a1a; }
+.tl-tip-date { color: #aaa; }
+.tl-tip-row  { color: #555; border-top-color: #f0f0f0; }
