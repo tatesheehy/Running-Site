@@ -9,16 +9,92 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&family=Special+Elite&family=Teko:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .podcast-hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 24px 100px;
+      min-height: 60vh;
+    }
+    .podcast-mic {
+      margin-bottom: 36px;
+    }
+    .podcast-eyebrow {
+      font-family: 'Oswald', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+    .podcast-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 68px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      line-height: 1;
+      margin: 0 0 20px;
+    }
+    .podcast-sub {
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 400px;
+      line-height: 1.65;
+      margin: 0;
+    }
+    .podcast-divider {
+      width: 48px;
+      height: 3px;
+      background: var(--accent);
+      border-radius: 2px;
+      margin: 28px auto 0;
+    }
+    @media (max-width: 640px) {
+      .podcast-title { font-size: 44px; }
+    }
+  </style>
 </head>
 <body data-page="podcast">
 
   <div id="nav-placeholder"></div>
 
   <main id="main">
-    <div class="container" style="padding-top: 80px; padding-bottom: 120px; text-align: center;">
-      <div style="font-size: 56px; margin-bottom: 24px;">🎙️</div>
-      <h1 style="font-family: var(--font-display); font-size: 52px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; margin-bottom: 16px;">Podcast</h1>
-      <p style="font-size: 18px; color: var(--muted); max-width: 480px; margin: 0 auto;">Coming soon. We're working on something good.</p>
+    <div class="container">
+      <div class="podcast-hero">
+
+        <div class="podcast-mic">
+          <svg width="80" height="130" viewBox="0 0 80 130" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Microphone">
+            <!-- Capsule body -->
+            <rect x="18" y="4" width="44" height="68" rx="22" fill="#E8500A"/>
+            <!-- Grill lines -->
+            <line x1="20" y1="28" x2="60" y2="28" stroke="rgba(0,0,0,0.18)" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="18" y1="39" x2="62" y2="39" stroke="rgba(0,0,0,0.18)" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="18" y1="50" x2="62" y2="50" stroke="rgba(0,0,0,0.18)" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="20" y1="61" x2="60" y2="61" stroke="rgba(0,0,0,0.18)" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- Collar ring -->
+            <rect x="22" y="70" width="36" height="8" rx="2" fill="#C94008"/>
+            <!-- Handle -->
+            <rect x="27" y="78" width="26" height="38" rx="5" fill="#1a1a1a"/>
+            <!-- Handle grip lines -->
+            <line x1="30" y1="88" x2="50" y2="88" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="30" y1="96" x2="50" y2="96" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="30" y1="104" x2="50" y2="104" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- Cable nub -->
+            <rect x="34" y="116" width="12" height="6" rx="3" fill="#333"/>
+          </svg>
+        </div>
+
+        <div class="podcast-eyebrow">Coming Soon</div>
+        <h1 class="podcast-title">The StatTC Podcast</h1>
+        <p class="podcast-sub">In-depth conversations about track &amp; field, performance, and the sport we love.</p>
+        <div class="podcast-divider"></div>
+
+      </div>
     </div>
   </main>
 
