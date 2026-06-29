@@ -3,36 +3,36 @@
   "reviewTitle": "Season review",
   "achievements": [
     {
-      "icon": "🏟️",
+      "icon": "\ud83c\udfdf\ufe0f",
       "count": "2x",
       "label": "World Indoor Champ"
     },
     {
-      "icon": "💎",
+      "icon": "\ud83d\udc8e",
       "count": "3x",
       "label": "Diamond League Win"
     },
     {
-      "icon": "📋",
+      "icon": "\ud83d\udccb",
       "count": "0x",
       "label": "Olympic Gold"
     }
   ],
   "traits": [
     {
-      "emoji": "💨",
+      "emoji": "\ud83d\udca8",
       "label": "Pure Speed"
     },
     {
-      "emoji": "🎯",
+      "emoji": "\ud83c\udfaf",
       "label": "Consistency"
     },
     {
-      "emoji": "📈",
+      "emoji": "\ud83d\udcc8",
       "label": "Indoor King"
     },
     {
-      "emoji": "🤫",
+      "emoji": "\ud83e\udd2b",
       "label": "Quiet Assassin"
     }
   ],
@@ -151,21 +151,21 @@
     },
     {
       "date": "FEB 19",
-      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Troph\u00e9e EDF",
       "event": "1500 Metres Short Track",
       "time": "3:32.44",
       "place": "1"
     },
     {
       "date": "FEB 15",
-      "meet": "Campeonatos Nacionais de Clubes 1ª e 2ª Divisão",
+      "meet": "Campeonatos Nacionais de Clubes 1\u00aa e 2\u00aa Divis\u00e3o",
       "event": "3000 Metres Short Track",
       "time": "8:11.30",
       "place": "1"
     },
     {
       "date": "FEB 14",
-      "meet": "Campeonatos Nacionais de Clubes 1ª e 2ª Divisão",
+      "meet": "Campeonatos Nacionais de Clubes 1\u00aa e 2\u00aa Divis\u00e3o",
       "event": "1500 Metres Short Track",
       "time": "4:04.97",
       "place": "1"
@@ -180,9 +180,18 @@
   ],
   "weight": "115 lbs",
   "coach": "Self-coached",
-  "reviewBody": "Kejelcha has been a model of consistency in 2026. While he hasn't grabbed the headlines, his results speak for themselves — four top-3 finishes in Diamond League events and a season best of 3:45.12.",
+  "reviewBody": "Kejelcha has been a model of consistency in 2026. While he hasn't grabbed the headlines, his results speak for themselves \u2014 four top-3 finishes in Diamond League events and a season best of 3:45.12.",
   "event": "MIDDLE DISTANCE",
   "id": "isaac-nader",
   "age": "26",
-  "dob": "1999-08-17"
+  "dob": "1999-08-17",
+  "honours": [
+    {
+      "competition": "World Athletics Championships",
+      "short": "WC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2025"
+    }
+  ]
 }

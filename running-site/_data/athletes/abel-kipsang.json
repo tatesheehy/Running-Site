@@ -153,5 +153,14 @@
   "event": "MIDDLE DISTANCE",
   "id": "abel-kipsang",
   "age": "29",
-  "dob": "1996-11-22"
+  "dob": "1996-11-22",
+  "honours": [
+    {
+      "competition": "World Athletics Indoor Championships",
+      "short": "WI",
+      "discipline": "1500m",
+      "place": 3,
+      "year": "2022"
+    }
+  ]
 }
