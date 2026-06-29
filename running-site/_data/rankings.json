@@ -3,12 +3,6 @@
   "criteria": "Our rankings blend season-best performances, consistency across Diamond League and major championship appearances, head-to-head matchup records, and overall depth of the competitive field faced. Rankings update every Monday through the outdoor season.",
   "events": [
     {
-      "name": "800m",
-      "description": "Pure guts.",
-      "photo": "",
-      "rows": []
-    },
-    {
       "name": "1500m",
       "description": "The metric mile.",
       "photo": "",
@@ -231,6 +225,12 @@
       ],
       "weekId": "1500m-06-25-2026",
       "weekLabel": "June 25, 2026"
+    },
+    {
+      "name": "800m",
+      "description": "Pure guts.",
+      "photo": "",
+      "rows": []
     },
     {
       "name": "5000m",
