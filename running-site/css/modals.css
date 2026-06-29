@@ -1188,10 +1188,12 @@
 .similar-list {
   display: flex;
   gap: 10px;
+  justify-content: flex-start;
 }
 
 .similar-card {
-  flex: 1;
+  width: 76px;
+  flex-shrink: 0;
   cursor: pointer;
   text-align: center;
   transition: transform 0.15s;
