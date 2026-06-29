@@ -1171,7 +1171,7 @@
 
 /* ── SIMILAR ATHLETES ─────────────────────────────────────── */
 .similar-section {
-  padding: 20px 28px 28px;
+  padding: 14px 28px 20px;
   border-top: 1px solid var(--border);
   margin-top: 8px;
 }
@@ -1182,12 +1182,12 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 .similar-list {
   display: flex;
-  gap: 12px;
+  gap: 10px;
 }
 
 .similar-card {
@@ -1200,21 +1200,21 @@
 
 .similar-photo {
   width: 100%;
-  aspect-ratio: 3/4;
-  border-radius: 8px;
+  aspect-ratio: 3/2;
+  border-radius: 6px;
   background-size: cover;
   background-position: center top;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .similar-name {
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
 }
 
 .similar-country {
-  font-size: 11px;
+  font-size: 10px;
   color: var(--muted);
 }
