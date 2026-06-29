@@ -114,9 +114,9 @@ function _medalSvg(place, short) {
   // Diamond League Final → trophy icon based on the WDL trophy
   if (short === 'DLF') {
     return `<svg class="ch-icon ch-icon-dlf" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <polygon points="10,1 18,7 10,13 2,7" fill="#B83000"/>
-      <polygon points="10,1 18,7 2,7" fill="#E85010"/>
-      <polygon points="10,1 14,5 10,7 6,5" fill="rgba(255,160,70,0.5)"/>
+      <polygon points="10,1 18,7 10,13 2,7" fill="#1a5fb4"/>
+      <polygon points="10,1 18,7 2,7" fill="#3584e4"/>
+      <polygon points="10,1 14,5 10,7 6,5" fill="rgba(150,210,255,0.45)"/>
       <line x1="2" y1="7" x2="18" y2="7" stroke="rgba(0,0,0,0.12)" stroke-width="0.5"/>
       <rect x="7.5" y="13" width="5" height="1.8" rx="0.5" fill="#bbb"/>
       <rect x="3.5" y="15" width="4.8" height="8" rx="0.5" fill="#B82000"/>
