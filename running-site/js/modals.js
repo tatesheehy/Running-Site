@@ -69,9 +69,7 @@ function buildSeasonTimeline(a) {
       <div class="season-tl-hdr">
         <span class="season-tl-title">Season at a glance</span>
         <span class="season-tl-leg">
-          <span class="tl-dot tl-win" style="width:10px;height:10px;font-size:0;display:inline-block"></span> Win &nbsp;
-          <span class="tl-dot tl-pod" style="width:10px;height:10px;font-size:0;display:inline-block"></span> Podium &nbsp;
-          <span class="tl-dot tl-top" style="width:10px;height:10px;font-size:0;display:inline-block"></span> Top 8
+          <span class="tl-dot tl-win" style="width:10px;height:10px;font-size:0;display:inline-block"></span> Win
         </span>
       </div>
       <div class="season-tl-body">
