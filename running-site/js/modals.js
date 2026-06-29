@@ -111,11 +111,19 @@ window._tlHide = function() {
 
 // ── HONOURS ────────────────────────────────────────────────
 function _medalSvg(place, short) {
-  // Diamond League Final → diamond shape in accent color
+  // Diamond League Final → trophy icon based on the WDL trophy
   if (short === 'DLF') {
-    return `<svg class="ch-icon ch-icon-dlf" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <polygon points="10,1 19,9 10,19 1,9" fill="#E8500A"/>
-      <polygon points="10,4 16,9 10,16 4,9" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.2"/>
+    return `<svg class="ch-icon ch-icon-dlf" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="10,1 18,7 10,13 2,7" fill="#B83000"/>
+      <polygon points="10,1 18,7 2,7" fill="#E85010"/>
+      <polygon points="10,1 14,5 10,7 6,5" fill="rgba(255,160,70,0.5)"/>
+      <line x1="2" y1="7" x2="18" y2="7" stroke="rgba(0,0,0,0.12)" stroke-width="0.5"/>
+      <rect x="7.5" y="13" width="5" height="1.8" rx="0.5" fill="#bbb"/>
+      <rect x="3.5" y="15" width="4.8" height="8" rx="0.5" fill="#B82000"/>
+      <line x1="5.5" y1="15" x2="5.5" y2="23" stroke="rgba(255,255,255,0.22)" stroke-width="0.9"/>
+      <rect x="11.7" y="15" width="4.8" height="8" rx="0.5" fill="#B82000"/>
+      <line x1="14" y1="15" x2="14" y2="23" stroke="rgba(255,255,255,0.22)" stroke-width="0.9"/>
+      <rect x="2" y="23" width="16" height="2.2" rx="0.8" fill="#bbb"/>
     </svg>`;
   }
   const fills   = { 1: '#F5B800', 2: '#9CA3AF', 3: '#B87333' };
