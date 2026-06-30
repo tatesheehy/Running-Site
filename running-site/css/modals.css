@@ -956,6 +956,38 @@
   padding: 0 20px 24px;
 }
 
+.h2h-year-tabs {
+  display: flex;
+  gap: 6px;
+  padding: 8px 0 12px;
+  flex-wrap: wrap;
+}
+
+.h2h-year-tab {
+  background: transparent;
+  border: 1px solid #333;
+  color: #666;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  font-family: inherit;
+}
+
+.h2h-year-tab:hover {
+  border-color: #555;
+  color: #bbb;
+}
+
+.h2h-year-tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
 .h2h-enc-header {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -1468,6 +1500,9 @@
 .h2h-empty-row { color: #aaa; }
 
 /* Encounters section */
+.h2h-year-tab { border-color: #e0e0e0; color: #bbb; }
+.h2h-year-tab:hover { border-color: #ccc; color: #888; }
+.h2h-year-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
 .h2h-encounters { border-top-color: #e5e5e5; }
 .h2h-enc-ath { color: #888; }
 .h2h-enc-title { color: #ccc; }
