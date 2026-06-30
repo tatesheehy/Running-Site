@@ -3,19 +3,19 @@
   "reviewTitle": "Season review",
   "traits": [
     {
-      "emoji": "\ud83e\udd81",
+      "emoji": "🦁",
       "label": "Killer Instinct"
     },
     {
-      "emoji": "\ud83c\udfc6",
+      "emoji": "🏆",
       "label": "Championship DNA"
     },
     {
-      "emoji": "\ud83c\udf96\ufe0f",
+      "emoji": "🎖️",
       "label": "Proven Winner"
     },
     {
-      "emoji": "\ud83d\udd04",
+      "emoji": "🔄",
       "label": "Long Stride"
     }
   ],
@@ -190,5 +190,6 @@
       "place": 1,
       "year": "2017"
     }
-  ]
+  ],
+  "lastSynced": "2026-06-30"
 }
