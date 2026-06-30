@@ -477,13 +477,16 @@ function _buildEncounterRows(a1, a2, year) {
     );
     if (!match) return;
     const p1 = parseInt(race1.place), p2 = parseInt(match.place);
+    const t1s = parseTimeToSecs(race1.time), t2s = parseTimeToSecs(match.time);
+    // If place order contradicts time order, they ran in different heats — skip
+    if (t1s && t2s && !isNaN(p1) && !isNaN(p2) && p1 !== p2) {
+      if ((p1 < p2) !== (t1s < t2s)) return;
+    }
     let a1wins = false, a2wins = false;
     if (!isNaN(p1) && !isNaN(p2)) { a1wins = p1 < p2; a2wins = p2 < p1; }
     else {
-      const t1s = parseTimeToSecs(race1.time), t2s = parseTimeToSecs(match.time);
       if (t1s && t2s) { a1wins = t1s < t2s; a2wins = t2s < t1s; }
     }
-    const t1s = parseTimeToSecs(race1.time), t2s = parseTimeToSecs(match.time);
     const marginSec = (t1s && t2s) ? Math.abs(t1s - t2s) : null;
     const marginStr = marginSec != null
       ? (marginSec < 0.1 ? '<0.1s' : marginSec < 10 ? marginSec.toFixed(2) + 's' : Math.round(marginSec) + 's')
