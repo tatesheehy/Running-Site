@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (page === 'rankings')    buildRankingsPage();
   if (page === 'athletes')    buildAthletesPage();
   if (page === 'about')       buildAboutPage();
+  if (page === 'h2h')         buildH2HPage();
 
   buildAthleteCardModal();
 

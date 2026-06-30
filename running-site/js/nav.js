@@ -39,13 +39,14 @@ function buildTickerHtml() {
 // ── NAVBAR ────────────────────────────────────────────────
 function buildNavbar() {
   const currentPage = document.body.dataset.page;
-  const pageMap = { home: 'index.html', articles: 'articles.html', rankings: 'rankings.html', article: 'articles.html', athletes: 'athletes.html' };
+  const pageMap = { home: 'index.html', articles: 'articles.html', rankings: 'rankings.html', article: 'articles.html', athletes: 'athletes.html', h2h: 'h2h.html' };
   const activeHref = pageMap[currentPage] || '';
 
   const navLinks = [
     { label: 'Articles', href: 'articles.html' },
     { label: 'Rankings', href: 'rankings.html' },
     { label: 'Athletes', href: 'athletes.html' },
+    { label: 'H2H', href: 'h2h.html' },
     { label: 'Podcast', href: 'podcast.html' },
     { label: 'About', href: 'about.html' },
   ];
