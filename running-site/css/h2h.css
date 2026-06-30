@@ -336,6 +336,13 @@
   border: 1px solid var(--border);
 }
 
+.h2h-win-x {
+  opacity: 0.5;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
 /* ── Empty state ──────────────────────────────────────────── */
 
 .h2h-lb-empty {

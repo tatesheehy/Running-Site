@@ -137,8 +137,10 @@ function _renderH2HPage() {
                     const pct      = Math.round((rec.wins / total) * 100);
                     const rankColor = RANK_COLORS[i] || null;
                     const rankClass = i === 0 ? 'h2h-lb-row--gold' : i === 1 ? 'h2h-lb-row--silver' : i === 2 ? 'h2h-lb-row--bronze' : '';
-                    const keyWins  = rec.beatNames.slice(0, 4)
-                      .map(n => `<span class="h2h-lb-win-tag">${n}</span>`).join('');
+                    const keyWins  = Object.entries(rec.beatCounts)
+                      .sort((a, b) => b[1] - a[1])
+                      .slice(0, 4)
+                      .map(([n, ct]) => `<span class="h2h-lb-win-tag">${n}${ct > 1 ? `<span class="h2h-win-x"> ×${ct}</span>` : ''}</span>`).join('');
 
                     const avatar = a.photo
                       ? `<div class="h2h-lb-avatar" style="background-image:url('${a.photo}');background-color:${a.photoBackground || '#111'}"></div>`
@@ -247,13 +249,13 @@ function _computeAllH2HRecords(year, eventFilter, rankedOnly) {
         const countForA2 = !rankedOnly || a1ranked;
 
         if (countForA1) {
-          if (!records[a1.id]) records[a1.id] = { wins: 0, losses: 0, beatNames: [] };
-          if (a1wins) { records[a1.id].wins++; if (!records[a1.id].beatNames.includes(n2)) records[a1.id].beatNames.push(n2); }
+          if (!records[a1.id]) records[a1.id] = { wins: 0, losses: 0, beatCounts: {} };
+          if (a1wins) { records[a1.id].wins++; records[a1.id].beatCounts[n2] = (records[a1.id].beatCounts[n2] || 0) + 1; }
           else if (a2wins) records[a1.id].losses++;
         }
         if (countForA2) {
-          if (!records[a2.id]) records[a2.id] = { wins: 0, losses: 0, beatNames: [] };
-          if (a2wins) { records[a2.id].wins++; if (!records[a2.id].beatNames.includes(n1)) records[a2.id].beatNames.push(n1); }
+          if (!records[a2.id]) records[a2.id] = { wins: 0, losses: 0, beatCounts: {} };
+          if (a2wins) { records[a2.id].wins++; records[a2.id].beatCounts[n1] = (records[a2.id].beatCounts[n1] || 0) + 1; }
           else if (a1wins) records[a2.id].losses++;
         }
 
