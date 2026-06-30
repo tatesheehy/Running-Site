@@ -249,7 +249,7 @@ function openAthleteCard(athleteId, rank) {
         </div>
       </div>
       <div class="card-header-actions">
-        <button class="card-share-btn" onclick="openShareOverlay('${athleteId}')" title="Share athlete card">↗ Share</button>
+        <button class="card-share-btn" onclick="openShareOverlay('${athleteId}',${JSON.stringify(rank)},new URLSearchParams(location.search).get('event'))" title="Share athlete card">↗ Share</button>
         <button class="card-compare-btn" onclick="closeAthleteCard();openH2H('${athleteId}',new URLSearchParams(location.search).get('event'))" title="Compare athletes">⇌ Compare</button>
         <button class="card-close" onclick="closeAthleteCard()" aria-label="Close">×</button>
       </div>
