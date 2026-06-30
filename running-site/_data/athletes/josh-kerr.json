@@ -1,38 +1,21 @@
 {
   "photoBackground": "#0a0a1a",
   "reviewTitle": "Season review",
-  "achievements": [
-    {
-      "icon": "🌍",
-      "count": "1x",
-      "label": "World Champion"
-    },
-    {
-      "icon": "🥈",
-      "count": "1x",
-      "label": "Olympic Silver"
-    },
-    {
-      "icon": "💎",
-      "count": "2x",
-      "label": "DL Champion"
-    }
-  ],
   "traits": [
     {
-      "emoji": "💪",
+      "emoji": "\ud83d\udcaa",
       "label": "Raw Strength"
     },
     {
-      "emoji": "🏃",
+      "emoji": "\ud83c\udfc3",
       "label": "Mid-Race Surge"
     },
     {
-      "emoji": "🧠",
+      "emoji": "\ud83e\udde0",
       "label": "Race Savvy"
     },
     {
-      "emoji": "🏋️",
+      "emoji": "\ud83c\udfcb\ufe0f",
       "label": "Physical Power"
     }
   ],

@@ -1,23 +1,6 @@
 {
   "photoBackground": "#0a1a0a",
   "reviewTitle": "Season review",
-  "achievements": [
-    {
-      "icon": "\ud83c\udf0d",
-      "count": "2x",
-      "label": "World Champion"
-    },
-    {
-      "icon": "\ud83e\udd48",
-      "count": "1x",
-      "label": "Olympic Silver"
-    },
-    {
-      "icon": "\ud83d\udc8e",
-      "count": "4x",
-      "label": "Diamond League Win"
-    }
-  ],
   "traits": [
     {
       "emoji": "\ud83e\udd81",

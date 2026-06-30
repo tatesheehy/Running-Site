@@ -1,23 +1,6 @@
 {
   "photoBackground": "#1a0a0a",
   "reviewTitle": "Season review",
-  "achievements": [
-    {
-      "icon": "\ud83e\udd47",
-      "count": "1x",
-      "label": "Olympic Gold"
-    },
-    {
-      "icon": "\ud83c\udf93",
-      "count": "3x",
-      "label": "NCAA Champion"
-    },
-    {
-      "icon": "US",
-      "count": "1x",
-      "label": "American Record"
-    }
-  ],
   "traits": [
     {
       "emoji": "\ud83d\ude80",

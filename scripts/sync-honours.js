@@ -60,7 +60,7 @@ const COMP_MAP = [
   { match: /\bolympic\b/i,                          short: 'OLY', weight: 0 },
   { match: /world (athletics )?indoor/i,            short: 'WI',  weight: 2 },
   { match: /world athletics championships|world championships/i, short: 'WC',  weight: 1 },
-  { match: /diamond league final/i,                 short: 'DLF', weight: 3 },
+  { match: /diamond league/i,                        short: 'DLF', weight: 3 },
 ];
 
 // Competitions known NOT to be one of our tracked categories. When a medal's
@@ -139,7 +139,7 @@ function parseMedalTable(wikitext) {
       continue;
     }
 
-    const place = type === 'Gold' ? 1 : type === 'Silver' ? 2 : type === 'Bronze' ? 3 : null;
+    const place = (type === 'Gold' || type === '1st') ? 1 : (type === 'Silver' || type === '2nd') ? 2 : (type === 'Bronze' || type === '3rd') ? 3 : null;
     if (!place) continue;
 
     const locationYear = parts[1] || '';
@@ -210,6 +210,7 @@ function mergeHonours(existing, scraped) {
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
 async function main() {
+  const nameFilter = process.argv[2] ? process.argv[2].toLowerCase() : null;
   const files = fs.readdirSync(ATHLETES_DIR).filter(f => f.endsWith('.json')).sort();
   let updated = 0, unchanged = 0, noWiki = 0, noMedals = 0;
 
@@ -217,6 +218,7 @@ async function main() {
     const fpath = path.join(ATHLETES_DIR, file);
     const data  = JSON.parse(fs.readFileSync(fpath, 'utf8'));
     const name  = data.name || file;
+    if (nameFilter && !name.toLowerCase().includes(nameFilter)) continue;
 
     process.stdout.write(`  ${name.padEnd(28)} `);
 
