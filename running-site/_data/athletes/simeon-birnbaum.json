@@ -84,7 +84,7 @@
     {
       "date": "JUN 10",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "",
+      "event": "1500m",
       "time": "3:38.87",
       "place": "2"
     },
@@ -98,14 +98,14 @@
     {
       "date": "MAY 29",
       "meet": "NCAA Division I West First Rounds",
-      "event": "",
+      "event": "5000m",
       "time": "13:42.69",
       "place": "5"
     },
     {
       "date": "MAY 27",
       "meet": "NCAA Division I West First Rounds",
-      "event": "",
+      "event": "1500m",
       "time": "3:41.36",
       "place": "1"
     },
@@ -161,21 +161,21 @@
     {
       "date": "MAR 14",
       "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "3000m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:41.85",
       "place": "2"
     },
     {
       "date": "MAR 13",
       "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "",
+      "event": "Distance Medley Short Track",
       "time": "9:27.49",
       "place": "7"
     },
     {
       "date": "FEB 28",
       "meet": "Big Ten Conference Indoor Track & Field Championships",
-      "event": "",
+      "event": "3000 Metres Short Track",
       "time": "7:59.87",
       "place": "1"
     },
@@ -203,14 +203,14 @@
     {
       "date": "JAN 31",
       "meet": "Razorback Invitational",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "3:55.88",
       "place": "9"
     },
     {
       "date": "JAN 30",
       "meet": "Razorback Invitational",
-      "event": "800m sh",
+      "event": "800 Metres Short Track",
       "time": "1:48.05",
       "place": "1"
     }
