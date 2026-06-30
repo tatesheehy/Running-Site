@@ -1,0 +1,188 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "collegeLogo": "/images/new_mexico_lobos_logo.svg",
+  "waUrl": "https://worldathletics.org/athletes/eritrea/habtom-samuel-14919315",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Habtom Samuel",
+  "headlineKey": "x",
+  "flag": "ER",
+  "seasons": "x",
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:38.60"
+    },
+    {
+      "event": "3000m SC",
+      "time": "8:59.56"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:11.47"
+    },
+    {
+      "event": "5000m",
+      "time": "12:57.22"
+    },
+    {
+      "event": "10000m",
+      "time": "26:51.06"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "59:01"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:59.59"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:39.62"
+    },
+    {
+      "event": "2 Miles Short Track",
+      "time": "8:11.47"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:04.92"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:51"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:28.79"
+    },
+    {
+      "event": "Mile",
+      "time": "3:57.09"
+    },
+    {
+      "event": "3000m",
+      "time": "7:37.44"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "/images/default_card.png",
+  "ncaa": false,
+  "country": "Eritrea",
+  "results": [
+    {
+      "date": "JUN 12",
+      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "event": "",
+      "time": "13:38.93",
+      "place": "1"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "event": "",
+      "time": "27:51.31",
+      "place": "1"
+    },
+    {
+      "date": "MAY 27",
+      "meet": "NCAA Division I West First Rounds",
+      "event": "",
+      "time": "28:42.53",
+      "place": "1"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "5000m",
+      "time": "12:57.22",
+      "place": "1"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Mountain West Outdoor Track and Field Championships",
+      "event": "",
+      "time": "13:25.96",
+      "place": "1"
+    },
+    {
+      "date": "APR 17",
+      "meet": "Bryan Clay Invitational",
+      "event": "",
+      "time": "13:03.47",
+      "place": "1"
+    },
+    {
+      "date": "APR 3",
+      "meet": "Stanford Invitational",
+      "event": "10000m",
+      "time": "27:30.51",
+      "place": ""
+    },
+    {
+      "date": "MAR 14",
+      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "event": "",
+      "time": "DQ",
+      "place": ""
+    },
+    {
+      "date": "MAR 13",
+      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "event": "",
+      "time": "13:36.58",
+      "place": "1"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Mountain West Indoor Track and Field Championships",
+      "event": "",
+      "time": "7:48.35",
+      "place": "1"
+    },
+    {
+      "date": "FEB 26",
+      "meet": "Mountain West Indoor Track and Field Championships",
+      "event": "5000 Metres Short Track",
+      "time": "13:30.40",
+      "place": ""
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Husky Classic",
+      "event": "3000m",
+      "time": "7:37.44",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "3000 Metres Short Track",
+      "time": "7:39.62",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "2 Miles sh",
+      "time": "8:11.47",
+      "place": "9"
+    },
+    {
+      "date": "JAN 11",
+      "meet": "Aramco Houston Half Marathon",
+      "event": "Half Marathon",
+      "time": "59:01",
+      "place": "1"
+    }
+  ],
+  "college": "New Mexico",
+  "weight": "x",
+  "reviewBody": "x",
+  "event": "DISTANCE",
+  "age": "22"
+}
