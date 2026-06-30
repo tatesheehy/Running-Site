@@ -94,34 +94,38 @@
   flex-wrap: wrap;
 }
 
-/* ── Ranked-only toggle ───────────────────────────────────── */
+/* ── Segmented controls ───────────────────────────────────── */
 
-.h2h-ranked-toggle {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  background: transparent;
+.h2h-seg {
+  display: inline-flex;
+  background: var(--bg-light);
   border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 3px;
+  gap: 0;
+}
+
+.h2h-seg-btn {
+  background: transparent;
+  border: none;
   color: var(--muted);
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.04em;
-  padding: 5px 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 5px 14px;
   border-radius: 20px;
   cursor: pointer;
-  transition: background 0.15s, color 0.15s, border-color 0.15s;
   font-family: inherit;
   white-space: nowrap;
-  height: 30px;
+  transition: color 0.15s;
 }
-.h2h-ranked-toggle:hover {
-  border-color: #555;
-  color: #ccc;
+.h2h-seg-btn:hover:not(.active) {
+  color: var(--text);
 }
-.h2h-ranked-toggle.active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
+.h2h-seg-btn.active {
+  color: var(--accent);
+  font-weight: 800;
 }
 
 /* ── Table wrapper ────────────────────────────────────────── */
@@ -333,8 +337,6 @@
 [data-theme="light"] .h2h-lb-th         { background: #fafafa; }
 [data-theme="light"] .h2h-lb-row:hover  { background: rgba(232, 80, 10, 0.04); }
 [data-theme="light"] .h2h-lb-win-tag    { background: rgba(232, 80, 10, 0.06); border-color: rgba(232, 80, 10, 0.12); }
-[data-theme="light"] .h2h-ranked-toggle { border-color: #ddd; color: #aaa; }
-[data-theme="light"] .h2h-ranked-toggle:hover { border-color: #bbb; color: #777; }
 
 /* ── Responsive ───────────────────────────────────────────── */
 

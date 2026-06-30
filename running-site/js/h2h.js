@@ -4,7 +4,7 @@
 
 let _h2hLbYear       = '2026';
 let _h2hLbEvent      = 'all';
-let _h2hLbRankedOnly = false;
+let _h2hLbRankedOnly = true;
 
 const _H2H_MIN_RACES = 3;
 
@@ -24,7 +24,7 @@ function _isRankedAthlete(id) {
 function buildH2HPage() {
   _h2hLbYear       = '2026';
   _h2hLbEvent      = 'all';
-  _h2hLbRankedOnly = false;
+  _h2hLbRankedOnly = true;
   _renderH2HPage();
 }
 
@@ -91,25 +91,25 @@ function _renderH2HPage() {
           <div class="h2h-lb-controls-left">
             <div class="h2h-lb-ctrl-group">
               <div class="h2h-lb-ctrl-label">Season</div>
-              <div class="h2h-year-tabs">
+              <div class="h2h-seg">
                 ${years.map(y => `
-                  <button class="h2h-year-tab${y === _h2hLbYear ? ' active' : ''}"
+                  <button class="h2h-seg-btn${y === _h2hLbYear ? ' active' : ''}"
                     onclick="h2hLbSetYear('${y}')">${y}</button>`).join('')}
               </div>
             </div>
-            <button class="h2h-ranked-toggle${_h2hLbRankedOnly ? ' active' : ''}"
-              onclick="h2hLbToggleRanked()">
-              <svg width="11" height="11" viewBox="0 0 12 12" fill="currentColor" style="flex-shrink:0">
-                <polygon points="6,1 7.5,4.5 11,4.8 8.5,7 9.3,10.5 6,8.5 2.7,10.5 3.5,7 1,4.8 4.5,4.5"/>
-              </svg>
-              Ranked opp. only
-            </button>
+            <div class="h2h-lb-ctrl-group">
+              <div class="h2h-lb-ctrl-label">Opponents</div>
+              <div class="h2h-seg">
+                <button class="h2h-seg-btn${!_h2hLbRankedOnly ? ' active' : ''}" onclick="if(_h2hLbRankedOnly)h2hLbToggleRanked()">All</button>
+                <button class="h2h-seg-btn${_h2hLbRankedOnly ? ' active' : ''}" onclick="if(!_h2hLbRankedOnly)h2hLbToggleRanked()">Ranked only</button>
+              </div>
+            </div>
           </div>
           <div class="h2h-lb-ctrl-group h2h-lb-ctrl-group--right">
             <div class="h2h-lb-ctrl-label">Filter by event</div>
-            <div class="h2h-lb-event-tabs">
+            <div class="h2h-seg">
               ${EVENTS.map(ev => `
-                <button class="h2h-year-tab${ev === _h2hLbEvent ? ' active' : ''}"
+                <button class="h2h-seg-btn${ev === _h2hLbEvent ? ' active' : ''}"
                   onclick="h2hLbSetEvent('${ev}')">${ev === 'all' ? 'All' : ev}</button>`).join('')}
             </div>
           </div>
