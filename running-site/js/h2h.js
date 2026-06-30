@@ -5,6 +5,7 @@
 let _h2hLbYear       = '2026';
 let _h2hLbEvent      = 'all';
 let _h2hLbRankedOnly = true;
+let _h2hLbView       = 'table';
 
 const _H2H_MIN_RACES = 3;
 
@@ -25,6 +26,7 @@ function buildH2HPage() {
   _h2hLbYear       = '2026';
   _h2hLbEvent      = 'all';
   _h2hLbRankedOnly = true;
+  _h2hLbView       = 'table';
   _renderH2HPage();
 }
 
@@ -104,6 +106,19 @@ function _renderH2HPage() {
                 <button class="h2h-seg-btn${!_h2hLbRankedOnly ? ' active' : ''}" onclick="if(_h2hLbRankedOnly)h2hLbToggleRanked()">All</button>
               </div>
             </div>
+            <div class="h2h-lb-ctrl-group">
+              <div class="h2h-lb-ctrl-label">View</div>
+              <div class="h2h-seg">
+                <button class="h2h-seg-btn${_h2hLbView === 'table' ? ' active' : ''}" onclick="h2hLbSetView('table')">
+                  <svg width="12" height="10" viewBox="0 0 12 10" fill="currentColor" style="vertical-align:-1px;margin-right:3px">
+                    <rect x="0" y="0" width="12" height="2" rx="1"/><rect x="0" y="4" width="12" height="2" rx="1"/><rect x="0" y="8" width="12" height="2" rx="1"/>
+                  </svg>List</button>
+                <button class="h2h-seg-btn${_h2hLbView === 'map' ? ' active' : ''}" onclick="h2hLbSetView('map')">
+                  <svg width="11" height="11" viewBox="0 0 11 11" fill="currentColor" style="vertical-align:-1px;margin-right:3px">
+                    <rect x="0" y="0" width="5" height="5" rx="1"/><rect x="6" y="0" width="5" height="5" rx="1"/><rect x="0" y="6" width="5" height="5" rx="1"/><rect x="6" y="6" width="5" height="5" rx="1"/>
+                  </svg>Map</button>
+              </div>
+            </div>
           </div>
           <div class="h2h-lb-ctrl-group h2h-lb-ctrl-group--right">
             <div class="h2h-lb-ctrl-label">Filter by event</div>
@@ -115,79 +130,206 @@ function _renderH2HPage() {
           </div>
         </div>
 
-        <!-- Table -->
-        <div class="h2h-lb-wrap">
-          ${rows.length === 0
-            ? `<div class="h2h-lb-empty">No head-to-head data for this selection${_h2hLbRankedOnly ? ' — try turning off "Ranked opp. only"' : ''}.</div>`
-            : `<table class="h2h-lb-table">
-                <thead>
-                  <tr>
-                    <th class="h2h-lb-th h2h-lb-th--rank">#</th>
-                    <th class="h2h-lb-th h2h-lb-th--athlete">Athlete</th>
-                    <th class="h2h-lb-th h2h-lb-th--record">Record</th>
-                    <th class="h2h-lb-th h2h-lb-th--pct">Win %</th>
-                    <th class="h2h-lb-th h2h-lb-th--wins">Key Wins</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  ${rows.map(([id, rec], i) => {
-                    const a = ATHLETES[id];
-                    if (!a) return '';
-                    const total    = rec.wins + rec.losses;
-                    const pct      = Math.round((rec.wins / total) * 100);
-                    const rankColor = RANK_COLORS[i] || null;
-                    const rankClass = i === 0 ? 'h2h-lb-row--gold' : i === 1 ? 'h2h-lb-row--silver' : i === 2 ? 'h2h-lb-row--bronze' : '';
-                    const keyWins  = Object.entries(rec.beatCounts)
-                      .sort((a, b) => b[1] - a[1])
-                      .slice(0, 4)
-                      .map(([n, ct]) => `<span class="h2h-lb-win-tag">${n}${ct > 1 ? `<span class="h2h-win-x"> ×${ct}</span>` : ''}</span>`).join('');
+        <!-- Content -->
+        ${_h2hLbView === 'map'
+          ? _renderDominanceMap(rows)
+          : `<div class="h2h-lb-wrap">
+              ${rows.length === 0
+                ? `<div class="h2h-lb-empty">No head-to-head data for this selection${_h2hLbRankedOnly ? ' — try switching to "All" opponents' : ''}.</div>`
+                : `<table class="h2h-lb-table">
+                    <thead>
+                      <tr>
+                        <th class="h2h-lb-th h2h-lb-th--rank">#</th>
+                        <th class="h2h-lb-th h2h-lb-th--athlete">Athlete</th>
+                        <th class="h2h-lb-th h2h-lb-th--record">Record</th>
+                        <th class="h2h-lb-th h2h-lb-th--pct">Win %</th>
+                        <th class="h2h-lb-th h2h-lb-th--wins">Key Wins</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      ${rows.map(([id, rec], i) => {
+                        const a = ATHLETES[id];
+                        if (!a) return '';
+                        const total    = rec.wins + rec.losses;
+                        const pct      = Math.round((rec.wins / total) * 100);
+                        const rankColor = RANK_COLORS[i] || null;
+                        const rankClass = i === 0 ? 'h2h-lb-row--gold' : i === 1 ? 'h2h-lb-row--silver' : i === 2 ? 'h2h-lb-row--bronze' : '';
+                        const keyWins  = Object.entries(rec.beatCounts)
+                          .sort((a, b) => b[1] - a[1])
+                          .slice(0, 4)
+                          .map(([n, ct]) => `<span class="h2h-lb-win-tag">${n}${ct > 1 ? `<span class="h2h-win-x"> ×${ct}</span>` : ''}</span>`).join('');
 
-                    const avatar = a.photo
-                      ? `<div class="h2h-lb-avatar" style="background-image:url('${a.photo}');background-color:${a.photoBackground || '#111'}"></div>`
-                      : `<div class="h2h-lb-avatar h2h-lb-avatar--ph" style="background-color:${a.photoBackground || '#1a1a1a'}"></div>`;
+                        const avatar = a.photo
+                          ? `<div class="h2h-lb-avatar" style="background-image:url('${a.photo}');background-color:${a.photoBackground || '#111'}"></div>`
+                          : `<div class="h2h-lb-avatar h2h-lb-avatar--ph" style="background-color:${a.photoBackground || '#1a1a1a'}"></div>`;
 
-                    return `
-                      <tr class="h2h-lb-row ${rankClass}" onclick="openH2H('${id}', '${_h2hLbEvent === 'all' ? '' : _h2hLbEvent}')">
-                        <td class="h2h-lb-td h2h-lb-td--rank"${rankColor ? ` style="box-shadow:inset 4px 0 0 ${rankColor}"` : ''}>
-                          <span class="h2h-lb-rank-num"${rankColor ? ` style="color:${rankColor}"` : ''}>${i + 1}</span>
-                        </td>
-                        <td class="h2h-lb-td h2h-lb-td--athlete">
-                          ${avatar}
-                          <div class="h2h-lb-ath-info">
-                            <span class="h2h-lb-name">${a.name}</span>
-                            <span class="h2h-lb-country">${renderFlag(a.flag)} ${a.country || ''}</span>
-                          </div>
-                        </td>
-                        <td class="h2h-lb-td h2h-lb-td--record">
-                          <div class="h2h-lb-rec">
-                            <span class="h2h-lb-rec-w">${rec.wins}</span><span class="h2h-lb-rec-sep">–</span><span class="h2h-lb-rec-l">${rec.losses}</span>
-                          </div>
-                          <div class="h2h-lb-rec-sub">${total} race${total === 1 ? '' : 's'}</div>
-                        </td>
-                        <td class="h2h-lb-td h2h-lb-td--pct">
-                          <div class="h2h-lb-pct-wrap">
-                            <span class="h2h-lb-pct-val">${pct}%</span>
-                            <div class="h2h-lb-pct-bar">
-                              <div class="h2h-lb-pct-fill" style="width:${pct}%"></div>
-                            </div>
-                          </div>
-                        </td>
-                        <td class="h2h-lb-td h2h-lb-td--wins">${keyWins}</td>
-                      </tr>`;
-                  }).join('')}
-                </tbody>
-              </table>`
-          }
-        </div>
+                        return `
+                          <tr class="h2h-lb-row ${rankClass}" onclick="openH2H('${id}', '${_h2hLbEvent === 'all' ? '' : _h2hLbEvent}')">
+                            <td class="h2h-lb-td h2h-lb-td--rank"${rankColor ? ` style="box-shadow:inset 4px 0 0 ${rankColor}"` : ''}>
+                              <span class="h2h-lb-rank-num"${rankColor ? ` style="color:${rankColor}"` : ''}>${i + 1}</span>
+                            </td>
+                            <td class="h2h-lb-td h2h-lb-td--athlete">
+                              ${avatar}
+                              <div class="h2h-lb-ath-info">
+                                <span class="h2h-lb-name">${a.name}</span>
+                                <span class="h2h-lb-country">${renderFlag(a.flag)} ${a.country || ''}</span>
+                              </div>
+                            </td>
+                            <td class="h2h-lb-td h2h-lb-td--record">
+                              <div class="h2h-lb-rec">
+                                <span class="h2h-lb-rec-w">${rec.wins}</span><span class="h2h-lb-rec-sep">–</span><span class="h2h-lb-rec-l">${rec.losses}</span>
+                              </div>
+                              <div class="h2h-lb-rec-sub">${total} race${total === 1 ? '' : 's'}</div>
+                            </td>
+                            <td class="h2h-lb-td h2h-lb-td--pct">
+                              <div class="h2h-lb-pct-wrap">
+                                <span class="h2h-lb-pct-val">${pct}%</span>
+                                <div class="h2h-lb-pct-bar">
+                                  <div class="h2h-lb-pct-fill" style="width:${pct}%"></div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="h2h-lb-td h2h-lb-td--wins">${keyWins}</td>
+                          </tr>`;
+                      }).join('')}
+                    </tbody>
+                  </table>`
+              }
+            </div>`
+        }
 
       </div>
     </div>
   `;
 }
 
-window.h2hLbSetYear      = y  => { _h2hLbYear  = y;   _renderH2HPage(); };
-window.h2hLbSetEvent     = ev => { _h2hLbEvent = ev;  _renderH2HPage(); };
-window.h2hLbToggleRanked = () => { _h2hLbRankedOnly = !_h2hLbRankedOnly; _renderH2HPage(); };
+window.h2hLbSetYear      = y    => { _h2hLbYear  = y;   _renderH2HPage(); };
+window.h2hLbSetEvent     = ev   => { _h2hLbEvent = ev;  _renderH2HPage(); };
+window.h2hLbToggleRanked = ()   => { _h2hLbRankedOnly = !_h2hLbRankedOnly; _renderH2HPage(); };
+window.h2hLbSetView      = view => { _h2hLbView  = view; _renderH2HPage(); };
+
+// ── Dominance Map ─────────────────────────────────────────────
+
+function _renderDominanceMap(rows) {
+  if (rows.length === 0) {
+    return `<div class="h2h-lb-wrap"><div class="h2h-lb-empty">No head-to-head data for this selection.</div></div>`;
+  }
+
+  const pairwise = _computePairwiseH2H(_h2hLbYear, _h2hLbEvent, _h2hLbRankedOnly);
+  const orderedIds = rows.map(([id]) => id);
+
+  const colHeaders = orderedIds.map((id, ci) => {
+    const a = ATHLETES[id];
+    const name = a ? a.name.split(' ').slice(-1)[0] : id;
+    return `<th class="h2h-map-th" title="${a ? a.name : id}">
+      <div class="h2h-map-col-label">${name}</div>
+    </th>`;
+  }).join('');
+
+  const bodyRows = orderedIds.map((rowId, ri) => {
+    const rowAth = ATHLETES[rowId];
+    const avatar = rowAth?.photo
+      ? `<div class="h2h-map-avatar" style="background-image:url('${rowAth.photo}');background-color:${rowAth.photoBackground || '#111'}"></div>`
+      : `<div class="h2h-map-avatar h2h-map-avatar--ph" style="background-color:${rowAth?.photoBackground || '#1a1a1a'}"></div>`;
+
+    const cells = orderedIds.map(colId => {
+      if (rowId === colId) return `<td class="h2h-map-cell h2h-map-cell--self"></td>`;
+
+      const pw = pairwise[rowId]?.[colId];
+      if (!pw) return `<td class="h2h-map-cell h2h-map-cell--none">–</td>`;
+
+      const cls = pw.wins > pw.losses ? 'h2h-map-cell--win'
+                : pw.losses > pw.wins ? 'h2h-map-cell--loss'
+                : 'h2h-map-cell--split';
+      return `<td class="h2h-map-cell ${cls}" title="${rowAth?.name || rowId} vs ${ATHLETES[colId]?.name || colId}">${pw.wins}–${pw.losses}</td>`;
+    }).join('');
+
+    return `
+      <tr class="h2h-map-row">
+        <td class="h2h-map-row-head">
+          ${avatar}
+          <span class="h2h-map-row-rank">${ri + 1}</span>
+          <span class="h2h-map-row-name">${rowAth ? rowAth.name.split(' ').slice(-1)[0] : rowId}</span>
+        </td>
+        ${cells}
+      </tr>`;
+  }).join('');
+
+  return `
+    <div class="h2h-map-wrap">
+      <table class="h2h-map-table">
+        <thead>
+          <tr>
+            <th class="h2h-map-corner"></th>
+            ${colHeaders}
+          </tr>
+        </thead>
+        <tbody>${bodyRows}</tbody>
+      </table>
+      <div class="h2h-map-legend">
+        <span class="h2h-map-legend-item h2h-map-legend--win">Win</span>
+        <span class="h2h-map-legend-item h2h-map-legend--loss">Loss</span>
+        <span class="h2h-map-legend-item h2h-map-legend--split">Split</span>
+        <span class="h2h-map-legend-item h2h-map-legend--none">No meeting</span>
+      </div>
+    </div>`;
+}
+
+function _computePairwiseH2H(year, eventFilter, rankedOnly) {
+  const pairwise = {};
+
+  const getResults = a =>
+    year === '2026' ? (a.results || []) : ((a.resultsHistory || {})[year] || []);
+
+  const athletes = Object.values(ATHLETES).filter(a => getResults(a).length > 0);
+
+  for (let i = 0; i < athletes.length; i++) {
+    for (let j = i + 1; j < athletes.length; j++) {
+      const a1 = athletes[i], a2 = athletes[j];
+      if (rankedOnly && !_isRankedAthlete(a1.id) && !_isRankedAthlete(a2.id)) continue;
+
+      const r1 = getResults(a1), r2 = getResults(a2);
+
+      r1.forEach(race1 => {
+        if (!race1.meet || !race1.event) return;
+        if (!_h2hEventMatches(race1.event, eventFilter)) return;
+
+        const match = r2.find(race2 =>
+          race2.meet && race2.event &&
+          race1.meet.trim().toLowerCase() === race2.meet.trim().toLowerCase() &&
+          race1.event.trim().toLowerCase() === race2.event.trim().toLowerCase()
+        );
+        if (!match) return;
+
+        const p1 = parseInt(race1.place), p2 = parseInt(match.place);
+        const t1s = parseTimeToSecs(race1.time), t2s = parseTimeToSecs(match.time);
+        if (t1s && t2s && !isNaN(p1) && !isNaN(p2) && p1 !== p2) {
+          if ((p1 < p2) !== (t1s < t2s)) return;
+        }
+
+        let a1wins = false, a2wins = false;
+        if (!isNaN(p1) && !isNaN(p2))  { a1wins = p1 < p2; a2wins = p2 < p1; }
+        else if (t1s && t2s)            { a1wins = t1s < t2s; a2wins = t2s < t1s; }
+        else return;
+
+        if (!pairwise[a1.id]) pairwise[a1.id] = {};
+        if (!pairwise[a2.id]) pairwise[a2.id] = {};
+        if (!pairwise[a1.id][a2.id]) pairwise[a1.id][a2.id] = { wins: 0, losses: 0 };
+        if (!pairwise[a2.id][a1.id]) pairwise[a2.id][a1.id] = { wins: 0, losses: 0 };
+
+        if (a1wins) {
+          pairwise[a1.id][a2.id].wins++;
+          pairwise[a2.id][a1.id].losses++;
+        } else if (a2wins) {
+          pairwise[a2.id][a1.id].wins++;
+          pairwise[a1.id][a2.id].losses++;
+        }
+      });
+    }
+  }
+
+  return pairwise;
+}
 
 // ── Core computation ──────────────────────────────────────────
 
