@@ -100,8 +100,8 @@ function _renderH2HPage() {
             <div class="h2h-lb-ctrl-group">
               <div class="h2h-lb-ctrl-label">Opponents</div>
               <div class="h2h-seg">
+                <button class="h2h-seg-btn${_h2hLbRankedOnly ? ' active' : ''}" onclick="if(!_h2hLbRankedOnly)h2hLbToggleRanked()">Ranked</button>
                 <button class="h2h-seg-btn${!_h2hLbRankedOnly ? ' active' : ''}" onclick="if(_h2hLbRankedOnly)h2hLbToggleRanked()">All</button>
-                <button class="h2h-seg-btn${_h2hLbRankedOnly ? ' active' : ''}" onclick="if(!_h2hLbRankedOnly)h2hLbToggleRanked()">Ranked only</button>
               </div>
             </div>
           </div>
