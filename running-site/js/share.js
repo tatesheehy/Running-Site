@@ -34,151 +34,164 @@ async function renderShareCard(athlete, rank, eventName) {
   await document.fonts.ready;
 
   const W = 1200, H = 630;
+  const SPLIT = 410; // left (photo) / right (content) divider
   const canvas = document.createElement('canvas');
   canvas.width  = W;
   canvas.height = H;
   const ctx = canvas.getContext('2d');
 
-  const ACCENT = '#e8500a';
-  const BG     = athlete.photoBackground || '#111111';
+  const ACCENT   = '#e8500a';
+  const BG_DARK  = athlete.photoBackground || '#111111';
+  const BG_LIGHT = '#ffffff';
 
-  // Background
-  ctx.fillStyle = BG;
-  ctx.fillRect(0, 0, W, H);
+  // ── Left panel (dark, photo) ──
+  ctx.fillStyle = BG_DARK;
+  ctx.fillRect(0, 0, SPLIT, H);
 
-  // Photo + gradient
   if (athlete.photo) {
     try {
       const img = await loadImage(athlete.photo);
       const scale = H / img.height;
-      const pw    = img.width * scale;
-      const px    = W - pw * 1.05;
-      ctx.globalAlpha = 0.38;
+      const pw = img.width * scale;
+      const px = (SPLIT - pw) / 2;
+      ctx.globalAlpha = 0.9;
       ctx.drawImage(img, px, 0, pw, H);
       ctx.globalAlpha = 1;
-
-      const grad = ctx.createLinearGradient(0, 0, W, 0);
-      grad.addColorStop(0,    BG);
-      grad.addColorStop(0.42, BG);
-      grad.addColorStop(0.68, hexToRgba(BG, 0.85));
-      grad.addColorStop(1,    hexToRgba(BG, 0.05));
-      ctx.fillStyle = grad;
-      ctx.fillRect(0, 0, W, H);
-    } catch (_) { /* no photo — plain bg */ }
+      // Fade right edge into split
+      const fade = ctx.createLinearGradient(SPLIT - 140, 0, SPLIT, 0);
+      fade.addColorStop(0, 'rgba(0,0,0,0)');
+      fade.addColorStop(1, BG_DARK);
+      ctx.fillStyle = fade;
+      ctx.fillRect(0, 0, SPLIT, H);
+    } catch (_) {}
   }
 
-  // Orange top bar
+  // ── Right panel (white, content) ──
+  ctx.fillStyle = BG_LIGHT;
+  ctx.fillRect(SPLIT, 0, W - SPLIT, H);
+
+  // ── Orange top bar (full width) ──
   ctx.fillStyle = ACCENT;
-  ctx.fillRect(0, 0, W, 8);
+  ctx.fillRect(0, 0, W, 7);
 
-  const LX = 68;
+  // ── Right panel content ──
+  const RX = SPLIT + 52; // left edge of content
+  const RW = W - RX - 48; // available width
 
-  // ── Site name ──
-  ctx.fillStyle = ACCENT;
-  ctx.font = '700 13px Barlow, "Helvetica Neue", sans-serif';
-  ctx.fillText('STATTC', LX, 54);
-
-  // ── Rank + event ──
-  const rankParts = [
-    rank != null ? `#${rank}` : null,
-    eventName    ? eventName.toUpperCase() : null,
-  ].filter(Boolean);
-  if (rankParts.length) {
-    ctx.fillStyle = 'rgba(255,255,255,0.38)';
-    ctx.font = '500 14px Barlow, "Helvetica Neue", sans-serif';
-    ctx.fillText(rankParts.join('  ·  '), LX, 76);
+  // Rank + event
+  const rankLine = [rank != null ? `#${rank}` : null, eventName ? eventName.toUpperCase() : null]
+    .filter(Boolean).join('  ·  ');
+  if (rankLine) {
+    ctx.fillStyle = ACCENT;
+    ctx.font = '700 13px Barlow, "Helvetica Neue", sans-serif';
+    ctx.fillText(rankLine, RX, 52);
   }
 
-  // ── Athlete name ──
+  // Name
   const nameParts = athlete.name.trim().split(' ');
   const firstName = nameParts.slice(0, -1).join(' ').toUpperCase();
   const lastName  = nameParts[nameParts.length - 1].toUpperCase();
 
   if (firstName) {
-    ctx.fillStyle = 'rgba(255,255,255,0.28)';
-    ctx.font = '400 32px Oswald, "Helvetica Neue", sans-serif';
-    ctx.fillText(firstName, LX, 148);
+    ctx.fillStyle = '#aaaaaa';
+    ctx.font = '400 34px Oswald, "Helvetica Neue", sans-serif';
+    ctx.fillText(firstName, RX, 108);
   }
 
-  ctx.fillStyle = '#ffffff';
-  ctx.font = '700 88px Oswald, "Helvetica Neue", sans-serif';
-  ctx.fillText(lastName, LX - 4, 244); // -4 optical margin correction for Oswald
+  // Auto-fit last name
+  ctx.font = '700 96px Oswald, "Helvetica Neue", sans-serif';
+  let nameSize = 96;
+  while (ctx.measureText(lastName).width > RW && nameSize > 48) {
+    nameSize -= 4;
+    ctx.font = `700 ${nameSize}px Oswald, "Helvetica Neue", sans-serif`;
+  }
+  ctx.fillStyle = '#111111';
+  ctx.fillText(lastName, RX - 4, firstName ? 210 : 180);
 
-  // ── Country ──
-  ctx.fillStyle = 'rgba(255,255,255,0.42)';
+  // Country
+  ctx.fillStyle = '#888888';
   ctx.font = '500 15px Barlow, "Helvetica Neue", sans-serif';
-  ctx.fillText(`${flagToEmoji(athlete.flag)}  ${(athlete.country || '').toUpperCase()}`, LX, 282);
+  ctx.fillText(`${flagToEmoji(athlete.flag)}  ${(athlete.country || '').toUpperCase()}`, RX, firstName ? 242 : 212);
 
-  // ── Best time ──
+  // Divider
+  const div1y = firstName ? 264 : 234;
+  ctx.strokeStyle = '#eeeeee';
+  ctx.lineWidth = 1;
+  ctx.beginPath(); ctx.moveTo(RX, div1y); ctx.lineTo(W - 48, div1y); ctx.stroke();
+
+  // Best time
   const KEY_EVENTS = ['800m', '1500m', 'Mile', '3000m', '5000m', '10000m'];
   const prs    = athlete.prs || [];
   const bestPr = (eventName ? prs.find(p => p.event.toLowerCase() === eventName.toLowerCase()) : null)
               ?? prs.find(p => KEY_EVENTS.includes(p.event));
 
+  let div2y = div1y + 36;
   if (bestPr) {
-    ctx.fillStyle = 'rgba(255,255,255,0.28)';
+    ctx.fillStyle = '#aaaaaa';
     ctx.font = '600 11px Barlow, "Helvetica Neue", sans-serif';
-    ctx.fillText('PERSONAL BEST', LX, 334);
+    ctx.fillText('PERSONAL BEST', RX, div1y + 24);
 
-    ctx.fillStyle = '#ffffff';
-    ctx.font = 'bold 74px "Courier New", Courier, monospace';
-    ctx.fillText(bestPr.time, LX, 414);
+    ctx.fillStyle = '#111111';
+    ctx.font = 'bold 76px "Courier New", Courier, monospace';
+    ctx.fillText(bestPr.time, RX, div1y + 104);
 
-    ctx.fillStyle = 'rgba(255,255,255,0.32)';
-    ctx.font = '500 14px Barlow, "Helvetica Neue", sans-serif';
-    ctx.fillText(bestPr.event, LX, 435);
+    ctx.fillStyle = '#aaaaaa';
+    ctx.font = '500 13px Barlow, "Helvetica Neue", sans-serif';
+    ctx.fillText(bestPr.event, RX, div1y + 124);
+    div2y = div1y + 144;
   }
 
-  // ── Trophy badges ──
-  const COMP_META = {
-    OLY: { label: 'Olympic',      bg: '#d4a000', fg: '#1a1a1a' },
-    WC:  { label: 'World',        bg: '#2563eb', fg: '#ffffff' },
-    WI:  { label: 'World Indoor', bg: '#7c3aed', fg: '#ffffff' },
-    DLF: { label: 'Diamond Lg',   bg: '#e8500a', fg: '#ffffff' },
-  };
-  const COMP_ORDER = ['OLY', 'WC', 'WI', 'DLF'];
+  // Divider 2
+  ctx.strokeStyle = '#eeeeee';
+  ctx.beginPath(); ctx.moveTo(RX, div2y); ctx.lineTo(W - 48, div2y); ctx.stroke();
 
-  const counts = {};
-  for (const h of (athlete.honours || [])) {
-    if (!counts[h.short]) counts[h.short] = { gold: 0, silver: 0, bronze: 0 };
-    if (h.place === 1)      counts[h.short].gold++;
-    else if (h.place === 2) counts[h.short].silver++;
-    else if (h.place === 3) counts[h.short].bronze++;
+  // Trophy case
+  ctx.fillStyle = '#aaaaaa';
+  ctx.font = '600 11px Barlow, "Helvetica Neue", sans-serif';
+  ctx.fillText('TROPHY CASE', RX, div2y + 22);
+
+  const COMP_COLORS = { OLY: '#d4a000', WC: '#2563eb', WI: '#7c3aed', DLF: '#e8500a' };
+  const PLACE_COLORS = ['#d4a000', '#9e9e9e', '#b87333'];
+
+  const honours = (athlete.honours || []).slice(0, 10);
+  ctx.font = '600 12px Barlow, "Helvetica Neue", sans-serif';
+
+  let bx = RX, by = div2y + 36;
+  const BH = 30;
+
+  for (const h of honours) {
+    const placeColor = PLACE_COLORS[(h.place - 1)] || '#888';
+    const compColor  = COMP_COLORS[h.short] || '#555';
+    const label      = `${h.short} '${String(h.year).slice(2)}  ${h.discipline}`;
+    const tw         = ctx.measureText(label).width;
+    const bw         = tw + 38;
+
+    if (bx + bw > W - 48) { bx = RX; by += BH + 7; }
+
+    // Badge bg
+    ctx.fillStyle = '#f5f5f5';
+    ctx.beginPath(); ctx.roundRect(bx, by, bw, BH, 5); ctx.fill();
+
+    // Place-color left strip
+    ctx.fillStyle = placeColor;
+    ctx.beginPath(); ctx.roundRect(bx, by, 4, BH, [5, 0, 0, 5]); ctx.fill();
+
+    // Competition color dot
+    ctx.fillStyle = compColor;
+    ctx.beginPath(); ctx.arc(bx + 15, by + BH / 2, 4.5, 0, Math.PI * 2); ctx.fill();
+
+    // Label
+    ctx.fillStyle = '#333333';
+    ctx.fillText(label, bx + 27, by + BH / 2 + 4);
+
+    bx += bw + 8;
   }
 
-  let bx = LX;
-  const BY = 480, BH = 32;
-  ctx.font = '600 13px Barlow, "Helvetica Neue", sans-serif';
-
-  for (const key of COMP_ORDER) {
-    const c = counts[key];
-    if (!c) continue;
-    const meta = COMP_META[key];
-    const medals = [];
-    if (c.gold)   medals.push(`${c.gold}× 🥇`);
-    if (c.silver) medals.push(`${c.silver}× 🥈`);
-    if (c.bronze) medals.push(`${c.bronze}× 🥉`);
-    if (!medals.length) continue;
-
-    const label = `${meta.label}  ${medals.join('  ')}`;
-    const tw    = ctx.measureText(label).width;
-    const bw    = tw + 28;
-
-    ctx.fillStyle = meta.bg;
-    ctx.beginPath();
-    ctx.roundRect(bx, BY, bw, BH, 5);
-    ctx.fill();
-
-    ctx.fillStyle = meta.fg;
-    ctx.fillText(label, bx + 14, BY + 21);
-
-    bx += bw + 10;
-  }
-
-  // ── Footer URL ──
-  ctx.fillStyle = 'rgba(255,255,255,0.17)';
+  // ── Branding ──
+  ctx.fillStyle = '#cccccc';
   ctx.font = '400 12px Barlow, "Helvetica Neue", sans-serif';
-  ctx.fillText('stattc.com', LX, 610);
+  const brandW = ctx.measureText('stattc.com').width;
+  ctx.fillText('stattc.com', W - 48 - brandW, H - 18);
 
   return canvas;
 }
@@ -226,65 +239,81 @@ async function copyShareCard(athlete, rank, eventName) {
   }
 }
 
-// ── DOM preview card (shown in overlay) ──────────────────────────────────────
+// ── DOM preview card ──────────────────────────────────────────────────────────
 
 function buildShareCardHtml(athlete, rank, eventName) {
-  const siteName   = (SITE && SITE.name) || 'StatTC';
-  const accent     = (SITE && SITE.accentColor) || '#e8500a';
-  const photo      = athlete.photo || '';
-  const bg         = athlete.photoBackground || '#1a1a1a';
-  const nameParts  = athlete.name.trim().split(' ');
-  const firstName  = nameParts.slice(0, -1).join(' ');
-  const lastName   = nameParts[nameParts.length - 1];
+  const siteName  = (SITE && SITE.name) || 'StatTC';
+  const accent    = '#e8500a';
+  const photoBg   = athlete.photoBackground || '#111';
+  const photo     = athlete.photo || '';
+  const nameParts = athlete.name.trim().split(' ');
+  const firstName = nameParts.slice(0, -1).join(' ');
+  const lastName  = nameParts[nameParts.length - 1];
+  const rankLine  = [rank != null ? `#${rank}` : null, eventName ? eventName.toUpperCase() : null]
+    .filter(Boolean).join('  ·  ');
 
-  const KEY_EVENTS = ['800m', '1500m', 'Mile', '3000m', '5000m', '10000m', 'Half Marathon', 'Marathon', '3000m SC'];
-  const prs    = (athlete.prs || []).filter(p => KEY_EVENTS.includes(p.event)).slice(0, 6);
+  const KEY_EVENTS = ['800m', '1500m', 'Mile', '3000m', '5000m', '10000m'];
+  const prs    = (athlete.prs || []).filter(p => KEY_EVENTS.includes(p.event));
   const bestPr = (eventName ? prs.find(p => p.event.toLowerCase() === eventName.toLowerCase()) : null)
               ?? prs[0];
 
-  const prsHtml = prs.map(p => `
-    <div style="margin-bottom:14px">
-      <div style="font-size:11px;color:#666;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:3px">${p.event}</div>
-      <div style="font-size:22px;font-weight:700;font-family:'Courier New',monospace;color:#fff">${p.time}</div>
-    </div>
-  `).join('');
+  const COMP_COLORS = { OLY: '#d4a000', WC: '#2563eb', WI: '#7c3aed', DLF: '#e8500a' };
+  const PLACE_COLORS = ['#d4a000', '#9e9e9e', '#b87333'];
 
-  const rankLine = [rank != null ? `#${rank}` : null, eventName ? eventName.toUpperCase() : null].filter(Boolean).join('  ·  ');
+  const badgesHtml = (athlete.honours || []).slice(0, 8).map(h => {
+    const placeColor = PLACE_COLORS[(h.place - 1)] || '#888';
+    const compColor  = COMP_COLORS[h.short] || '#555';
+    return `
+      <div style="display:flex;align-items:center;gap:5px;background:#f5f5f5;border-radius:4px;
+        padding:3px 8px 3px 4px;border-left:3px solid ${placeColor};font-size:10px;color:#333;
+        font-family:'Helvetica Neue',sans-serif;font-weight:600;white-space:nowrap">
+        <span style="width:7px;height:7px;border-radius:50%;background:${compColor};display:inline-block;flex-shrink:0"></span>
+        ${h.short} '${String(h.year).slice(2)}&nbsp;${h.discipline}
+      </div>`;
+  }).join('');
 
   return `
     <div id="share-card" style="
-      width:600px;height:315px;position:relative;overflow:hidden;
-      background:${bg};border-radius:12px;display:flex;
+      width:600px;height:315px;display:flex;border-radius:10px;overflow:hidden;
       font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      box-shadow:0 8px 32px rgba(0,0,0,0.4);position:relative;
     ">
-      ${photo ? `
-        <div style="position:absolute;inset:0;
-          background-image:url('${photo}');
-          background-size:cover;background-position:center top;opacity:0.35">
-        </div>
-        <div style="position:absolute;inset:0;
-          background:linear-gradient(to right,${bg} 45%,transparent 100%)">
-        </div>
-      ` : ''}
+      <!-- orange top bar -->
+      <div style="position:absolute;top:0;left:0;right:0;height:3.5px;background:${accent};z-index:3"></div>
 
-      <div style="position:absolute;left:0;top:0;right:0;height:4px;background:${accent}"></div>
+      <!-- left photo panel -->
+      <div style="width:205px;flex-shrink:0;background:${photoBg};position:relative;overflow:hidden">
+        ${photo ? `
+          <img src="${photo}" style="width:100%;height:100%;object-fit:cover;object-position:center top;opacity:0.9">
+          <div style="position:absolute;inset:0;background:linear-gradient(to right,transparent 60%,${photoBg} 100%)"></div>
+        ` : ''}
+      </div>
 
-      <div style="position:relative;z-index:2;padding:28px 28px 28px 32px;display:flex;flex-direction:column;justify-content:space-between;width:300px">
+      <!-- right content panel -->
+      <div style="flex:1;background:#fff;padding:20px 20px 14px 22px;display:flex;flex-direction:column;justify-content:space-between;min-width:0">
         <div>
-          <div style="font-size:11px;font-weight:700;letter-spacing:0.1em;color:${accent};margin-bottom:${rankLine ? '4px' : '10px'}">${siteName.toUpperCase()}</div>
-          ${rankLine ? `<div style="font-size:10px;color:rgba(255,255,255,0.4);letter-spacing:0.04em;margin-bottom:12px">${rankLine}</div>` : ''}
-          ${firstName ? `<div style="font-size:18px;font-weight:600;color:rgba(255,255,255,0.35);line-height:1">${firstName.toUpperCase()}</div>` : ''}
-          <div style="font-size:42px;font-weight:900;color:#fff;line-height:1;margin-bottom:4px">${lastName.toUpperCase()}</div>
-          <div style="font-size:13px;color:#666">${athlete.country || ''}</div>
+          ${rankLine ? `<div style="font-size:10px;font-weight:700;color:${accent};margin-bottom:6px">${rankLine}</div>` : ''}
+          ${firstName ? `<div style="font-size:14px;font-weight:400;color:#aaa;line-height:1;font-family:Oswald,sans-serif">${firstName.toUpperCase()}</div>` : ''}
+          <div style="font-size:40px;font-weight:700;color:#111;line-height:1;font-family:Oswald,sans-serif">${lastName.toUpperCase()}</div>
+          <div style="font-size:11px;color:#888;margin-top:3px">${(athlete.country || '').toUpperCase()}</div>
         </div>
-        <div style="font-size:11px;color:#444">${siteName.toLowerCase()}.com</div>
-      </div>
 
-      <div style="position:relative;z-index:2;padding:28px 28px 28px 0;display:flex;flex-wrap:wrap;align-content:flex-start;gap:0 24px;width:240px">
-        ${prsHtml}
+        ${bestPr ? `
+          <div>
+            <div style="font-size:9px;font-weight:600;color:#aaa;letter-spacing:0.05em;margin-bottom:2px">PERSONAL BEST</div>
+            <div style="font-size:30px;font-weight:700;color:#111;font-family:'Courier New',monospace;line-height:1">${bestPr.time}</div>
+            <div style="font-size:10px;color:#aaa;margin-top:1px">${bestPr.event}</div>
+          </div>
+        ` : ''}
+
+        <div>
+          <div style="font-size:9px;font-weight:600;color:#aaa;letter-spacing:0.05em;margin-bottom:5px">TROPHY CASE</div>
+          <div style="display:flex;flex-wrap:wrap;gap:4px">${badgesHtml}</div>
+        </div>
+
+        <div style="font-size:9px;color:#ccc;text-align:right">${siteName.toLowerCase()}.com</div>
       </div>
-    </div>
-  `;
+    </div>`;
 }
 
 // ── Overlay ───────────────────────────────────────────────────────────────────
@@ -305,7 +334,6 @@ function openShareOverlay(athleteId, rank, eventName) {
     ].join(';');
 
     const cardHtml = buildShareCardHtml(athlete, rank, eventName);
-
     const BTN_BASE = 'border:none;padding:10px 22px;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;font-family:Barlow,sans-serif';
     overlay.innerHTML = `
       ${cardHtml}
