@@ -6,7 +6,7 @@
   padding-bottom: 60px;
 }
 
-/* ── Controls ────────────────────────────────────────────────── */
+/* ── Controls ─────────────────────────────────────────────── */
 
 .h2h-lb-controls {
   display: flex;
@@ -17,13 +17,48 @@
   flex-wrap: wrap;
 }
 
+.h2h-lb-controls-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .h2h-lb-event-tabs {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
 }
 
-/* ── Table wrapper ───────────────────────────────────────────── */
+/* Ranked-only toggle — same pill shape but distinct when active */
+.h2h-ranked-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 4px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.h2h-ranked-toggle:hover {
+  border-color: #555;
+  color: #bbb;
+}
+.h2h-ranked-toggle.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* ── Table wrapper ────────────────────────────────────────── */
 
 .h2h-lb-wrap {
   border: 1px solid var(--border);
@@ -36,7 +71,7 @@
   border-collapse: collapse;
 }
 
-/* ── Header ──────────────────────────────────────────────────── */
+/* ── Header ───────────────────────────────────────────────── */
 
 .h2h-lb-th {
   font-size: 10px;
@@ -50,20 +85,19 @@
   text-align: left;
 }
 
-.h2h-lb-th--rank  { width: 48px; text-align: center; padding-left: 20px; }
-.h2h-lb-th--num   { width: 64px; text-align: center; }
-.h2h-lb-th--wins  { text-align: left; }
+.h2h-lb-th--rank   { width: 48px; text-align: center; padding-left: 20px; }
+.h2h-lb-th--record { width: 80px; text-align: center; }
+.h2h-lb-th--pct    { width: 100px; text-align: center; }
+.h2h-lb-th--races  { width: 64px; text-align: center; }
 
-/* ── Rows ────────────────────────────────────────────────────── */
+/* ── Rows ─────────────────────────────────────────────────── */
 
 .h2h-lb-row {
   cursor: pointer;
   border-bottom: 1px solid var(--border);
   transition: background 0.1s;
 }
-
 .h2h-lb-row:last-child { border-bottom: none; }
-
 .h2h-lb-row:hover { background: rgba(232, 80, 10, 0.05); }
 
 .h2h-lb-td {
@@ -87,39 +121,51 @@
   min-width: 180px;
 }
 
-.h2h-lb-flag { font-size: 18px; line-height: 1; flex-shrink: 0; }
+.h2h-lb-flag   { font-size: 18px; line-height: 1; flex-shrink: 0; }
+.h2h-lb-name   { font-weight: 700; font-size: 15px; color: var(--text); }
+.h2h-lb-country { font-size: 11px; color: var(--muted); font-weight: 500; }
 
-.h2h-lb-name {
-  font-weight: 700;
+/* ── Record (W–L) ─────────────────────────────────────────── */
+
+.h2h-lb-td--record { text-align: center; font-variant-numeric: tabular-nums; }
+
+.h2h-lb-rec-w   { font-size: 17px; font-weight: 700; color: var(--text); }
+.h2h-lb-rec-sep { font-size: 14px; color: var(--muted); margin: 0 1px; }
+.h2h-lb-rec-l   { font-size: 15px; color: var(--muted); }
+
+/* ── Win % with bar ───────────────────────────────────────── */
+
+.h2h-lb-td--pct { text-align: center; }
+
+.h2h-lb-pct-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.h2h-lb-pct-val {
   font-size: 15px;
-  color: var(--text);
-}
-
-.h2h-lb-country {
-  font-size: 11px;
-  color: var(--muted);
-  font-weight: 500;
-}
-
-.h2h-lb-td--w {
-  text-align: center;
-  font-size: 17px;
-  font-weight: 700;
-  color: var(--text);
-}
-
-.h2h-lb-td--l {
-  text-align: center;
-  font-size: 15px;
-  color: var(--muted);
-}
-
-.h2h-lb-td--pct {
-  text-align: center;
   font-weight: 700;
   color: var(--accent);
-  font-size: 14px;
+  line-height: 1;
 }
+
+.h2h-lb-pct-bar {
+  width: 52px;
+  height: 3px;
+  background: var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.h2h-lb-pct-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+/* ── Races ────────────────────────────────────────────────── */
 
 .h2h-lb-td--races {
   text-align: center;
@@ -127,7 +173,7 @@
   font-size: 13px;
 }
 
-/* ── Key win badges ──────────────────────────────────────────── */
+/* ── Key win badges ───────────────────────────────────────── */
 
 .h2h-lb-td--wins { min-width: 160px; }
 
@@ -144,7 +190,7 @@
   white-space: nowrap;
 }
 
-/* ── Empty state ─────────────────────────────────────────────── */
+/* ── Empty state ──────────────────────────────────────────── */
 
 .h2h-lb-empty {
   padding: 64px 24px;
@@ -153,29 +199,19 @@
   font-size: 14px;
 }
 
-/* ── Light theme overrides ───────────────────────────────────── */
+/* ── Light theme overrides ────────────────────────────────── */
 
-[data-theme="light"] .h2h-lb-wrap {
-  background: #fff;
-}
+[data-theme="light"] .h2h-lb-wrap       { background: #fff; }
+[data-theme="light"] .h2h-lb-row:hover  { background: rgba(232, 80, 10, 0.04); }
+[data-theme="light"] .h2h-lb-win-tag    { background: rgba(232, 80, 10, 0.08); }
+[data-theme="light"] .h2h-ranked-toggle { border-color: #e0e0e0; color: #bbb; }
+[data-theme="light"] .h2h-ranked-toggle:hover { border-color: #ccc; color: #888; }
 
-[data-theme="light"] .h2h-lb-row:hover {
-  background: rgba(232, 80, 10, 0.04);
-}
-
-[data-theme="light"] .h2h-lb-win-tag {
-  background: rgba(232, 80, 10, 0.08);
-}
-
-/* ── Responsive ──────────────────────────────────────────────── */
+/* ── Responsive ───────────────────────────────────────────── */
 
 @media (max-width: 700px) {
-  .h2h-lb-controls {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .h2h-lb-country { display: none; }
-  .h2h-lb-td--wins { display: none; }
-  .h2h-lb-th--wins { display: none; }
+  .h2h-lb-controls  { flex-direction: column; align-items: flex-start; }
+  .h2h-lb-country   { display: none; }
+  .h2h-lb-td--wins  { display: none; }
+  .h2h-lb-th--wins  { display: none; }
 }
