@@ -85,49 +85,49 @@
     {
       "date": "JUN 10",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "",
+      "event": "800m",
       "time": "1:45.56",
       "place": "2"
     },
     {
       "date": "MAY 29",
       "meet": "NCAA Division I West First Rounds",
-      "event": "",
+      "event": "800m",
       "time": "1:45.66",
       "place": "1"
     },
     {
       "date": "MAY 27",
       "meet": "NCAA Division I West First Rounds",
-      "event": "",
+      "event": "800m",
       "time": "1:47.11",
       "place": "1"
     },
     {
       "date": "MAY 16",
       "meet": "Big Sky Outdoor Track and Field Championships",
-      "event": "4x400 Metres Relay",
-      "time": "3:09.13",
-      "place": ""
-    },
-    {
-      "date": "MAY 16",
-      "meet": "Big Sky Outdoor Track and Field Championships",
-      "event": "",
+      "event": "800m",
       "time": "1:47.48",
       "place": "1"
     },
     {
       "date": "MAY 16",
       "meet": "Big Sky Outdoor Track and Field Championships",
-      "event": "",
+      "event": "1500m",
       "time": "3:45.29",
       "place": "4"
     },
     {
+      "date": "MAY 16",
+      "meet": "Big Sky Outdoor Track and Field Championships",
+      "event": "4x400 Metres Relay",
+      "time": "3:09.13",
+      "place": "1"
+    },
+    {
       "date": "MAY 15",
       "meet": "Big Sky Outdoor Track and Field Championships",
-      "event": "",
+      "event": "800m",
       "time": "1:48.91",
       "place": "1"
     },
@@ -136,12 +136,12 @@
       "meet": "Bryan Clay Invitational",
       "event": "1500m",
       "time": "3:36.03",
-      "place": ""
+      "place": "2"
     },
     {
       "date": "APR 17",
       "meet": "Bryan Clay Invitational",
-      "event": "",
+      "event": "800m",
       "time": "1:44.42",
       "place": "1"
     },
@@ -150,12 +150,12 @@
       "meet": "Stanford Invitational",
       "event": "5000m",
       "time": "13:23.12",
-      "place": ""
+      "place": "5"
     },
     {
       "date": "MAR 14",
       "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "3000m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:41.66",
       "place": "1"
     },
@@ -164,26 +164,26 @@
       "meet": "NCAA Division I Indoor Track and Field Championships",
       "event": "Distance Medley Short Track",
       "time": "9:19.95",
-      "place": ""
+      "place": "1"
     },
     {
       "date": "FEB 28",
       "meet": "Big Sky Conference Indoor Track & Field Championships",
-      "event": "800m sh",
+      "event": "800 Metres Short Track",
       "time": "1:46.11",
       "place": "1"
     },
     {
       "date": "FEB 28",
       "meet": "Big Sky Conference Indoor Track & Field Championships",
-      "event": "",
+      "event": "Mile Short Track",
       "time": "4:10.61",
       "place": "4"
     },
     {
       "date": "FEB 27",
       "meet": "Big Sky Conference Indoor Track & Field Championships",
-      "event": "",
+      "event": "800 Metres Short Track",
       "time": "1:51.25",
       "place": "1"
     },
@@ -192,33 +192,26 @@
       "meet": "Colorado Last Chance",
       "event": "Distance Medley",
       "time": "9:26.58",
-      "place": ""
+      "place": "1"
     },
     {
       "date": "FEB 13",
       "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "1500m sh",
-      "time": "3:37.52",
-      "place": "10"
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "3:52.30",
       "place": "4"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
-      "event": "800m sh",
+      "event": "800 Metres Short Track",
       "time": "1:44.70",
       "place": "1"
     },
     {
       "date": "JAN 31",
       "meet": "6th Annual Brant Tolsma Invitational",
-      "event": "",
+      "event": "Mile Short Track",
       "time": "3:55.66",
       "place": "4"
     },
@@ -227,11 +220,12 @@
       "meet": "Friday Night Axe 'Em Open",
       "event": "400m",
       "time": "47.93",
-      "place": ""
+      "place": "1"
     }
   ],
   "college": "NAU",
   "weight": "x",
   "reviewBody": "x",
-  "event": "MIDDLE DISTANCE/DISTANCE"
+  "event": "MIDDLE DISTANCE/DISTANCE",
+  "lastSynced": "2026-06-30"
 }
