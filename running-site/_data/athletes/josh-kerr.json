@@ -94,7 +94,36 @@
   "photo": "/images/kerrcard.png",
   "club": "Adidas",
   "country": "Scotland",
-  "results": [],
+  "results": [
+    {
+      "date": "JUN 14",
+      "meet": "USATF LA Grand Prix",
+      "event": "800m",
+      "time": "1:45.46",
+      "place": "4"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "800m",
+      "time": "1:44.60",
+      "place": "3"
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "3000 Metres Short Track",
+      "time": "7:35.56",
+      "place": "1"
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "2 Miles Short Track",
+      "time": "8:07.68",
+      "place": "2"
+    }
+  ],
   "dob": "1997-10-08",
   "weight": "150 lbs",
   "coach": "Gary Lough",
