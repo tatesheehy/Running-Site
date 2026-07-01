@@ -437,7 +437,8 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "andrew-coscoran",
-      "age": "30"
+      "age": "30",
+      "dob": "1996-06-18"
     },
     {
       "photoBackground": "#111111",
@@ -1217,7 +1218,9 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "carter-cutting",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-01",
+      "dob": "2005-01-10",
+      "age": "21"
     },
     {
       "photoBackground": "#111111",
@@ -1370,7 +1373,8 @@
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "chris-caudillo",
       "age": "20",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-01",
+      "dob": "2005-08-05"
     },
     {
       "photoBackground": "#111111",
@@ -1964,7 +1968,9 @@
       "weight": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-01",
+      "dob": "2003-10-28",
+      "age": "22"
     },
     {
       "photoBackground": "#111111",
@@ -2857,7 +2863,8 @@
       "reviewBody": "x",
       "event": "DISTANCE",
       "age": "22",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-01",
+      "dob": "2003-11-30"
     },
     {
       "photoBackground": "#111111",
@@ -4466,7 +4473,9 @@
       "event": "DISTANCE",
       "country": "Australia",
       "flag": "AU",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-01",
+      "dob": "1996-04-23",
+      "age": "30"
     },
     {
       "photoBackground": "#111111",
@@ -4841,7 +4850,9 @@
       "weight": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
-      "age": "28"
+      "age": "29",
+      "dob": "1997-01-29",
+      "lastSynced": "2026-07-01"
     },
     {
       "photoBackground": "#111111",
@@ -4913,7 +4924,8 @@
       "event": "MIDDLE DISTANCE",
       "id": "phanuel-koech",
       "age": "19",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-01",
+      "dob": "2006-12-01"
     },
     {
       "photoBackground": "#111111",
@@ -5092,7 +5104,9 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "pierre-attiogbe",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-01",
+      "dob": "2005-03-16",
+      "age": "21"
     },
     {
       "photoBackground": "#111111",
@@ -5351,7 +5365,8 @@
           "year": "2025"
         }
       ],
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-01",
+      "dob": "2004-07-30"
     },
     {
       "photoBackground": "#111111",
@@ -5477,7 +5492,9 @@
       "event": "MIDDLE DISTANCE",
       "country": "Germany",
       "flag": "DE",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-01",
+      "dob": "1997-09-20",
+      "age": "28"
     },
     {
       "photoBackground": "#111111",
@@ -5609,7 +5626,9 @@
       "weight": "x",
       "reviewBody": "x",
       "event": "DISTANCE",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-01",
+      "dob": "2004-09-05",
+      "age": "21"
     },
     {
       "photoBackground": "#111111",
