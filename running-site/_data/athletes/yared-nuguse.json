@@ -145,7 +145,7 @@
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "yared-nuguse",
-  "age": "x",
+  "age": "27",
   "honours": [
     {
       "competition": "Olympic Games",
@@ -162,5 +162,6 @@
       "year": "2024"
     }
   ],
-  "lastSynced": "2026-07-01"
+  "lastSynced": "2026-07-01",
+  "dob": "1999-06-01"
 }
