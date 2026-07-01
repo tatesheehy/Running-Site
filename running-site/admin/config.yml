@@ -92,10 +92,11 @@ collections:
     summary: "{{name}} ({{country}})"
     fields:
       - { label: "Full Name", name: name, widget: string }
-      - { label: "Country", name: country, widget: string }
+      - { label: "Country", name: country, widget: string, required: false }
       - label: "Flag"
         name: flag
         widget: select
+        required: false
         options:
           - { label: "Argentina (AR)", value: "AR" }
           - { label: "Australia (AU)", value: "AU" }
@@ -151,23 +152,24 @@ collections:
           - { label: "Wales (WAL)", value: "WAL" }
       - { label: "World Athletics URL", name: waUrl, widget: string, required: false, hint: "e.g. https://worldathletics.org/athletes/norway/jakob-ingebrigtsen-14528596 — used for auto daily sync" }
       - { label: "Photo", name: photo, widget: image, required: false, default: "" }
-      - { label: "Photo BG Color", name: photoBackground, widget: string, default: "#111111", hint: "Dark hex color, e.g. #0d1b2a" }
-      - { label: "Event", name: event, widget: string, hint: "e.g. MIDDLE DISTANCE" }
+      - { label: "Photo BG Color", name: photoBackground, widget: string, required: false, default: "#111111", hint: "Dark hex color, e.g. #0d1b2a" }
+      - { label: "Event", name: event, widget: string, required: false, hint: "e.g. MIDDLE DISTANCE" }
       - { label: "Age", name: age, widget: string, required: false, hint: "Auto-filled from World Athletics URL on publish. Leave blank." }
-      - { label: "Height", name: height, widget: string }
-      - { label: "Weight", name: weight, widget: string }
-      - { label: "Pro Seasons", name: seasons, widget: string }
+      - { label: "Height", name: height, widget: string, required: false }
+      - { label: "Weight", name: weight, widget: string, required: false }
+      - { label: "Pro Seasons", name: seasons, widget: string, required: false }
       - { label: "Club", name: club, widget: string, required: false }
       - { label: "Coach", name: coach, widget: string, required: false }
-      - { label: "Hometown", name: hometown, widget: string }
+      - { label: "Hometown", name: hometown, widget: string, required: false }
       - { label: "NCAA Athlete", name: ncaa, widget: boolean, default: false, required: false }
       - { label: "College", name: college, widget: string, required: false, hint: "e.g. University of Oregon" }
       - { label: "College Logo", name: collegeLogo, widget: image, required: false }
-      - { name: prs, label: "Personal Records", widget: wa-prs }
+      - { name: prs, label: "Personal Records", widget: wa-prs, required: false }
       - { name: results, label: "Season Results", widget: wa-results, required: false }
       - name: achievements
         label: Achievements
         widget: list
+        required: false
         minimize_collapsed: true
         summary: "{{icon}} {{count}} {{label}}"
         fields:
@@ -177,17 +179,18 @@ collections:
       - name: traits
         label: Trait Badges
         widget: list
+        required: false
         minimize_collapsed: true
         summary: "{{emoji}} {{label}}"
         fields:
           - { label: "Emoji", name: emoji, widget: string }
           - { label: "Label", name: label, widget: string }
-      - { label: "Headline (bold)", name: headlineKey, widget: string }
-      - { label: "Headline (gray)", name: headlineRest, widget: string }
-      - { label: "Review Title", name: reviewTitle, widget: string, default: "Season review", hint: "Usually 'Season review' — only change if needed" }
-      - { label: "Season Review", name: reviewBody, widget: text }
-      - { label: "Question Title", name: questionTitle, widget: string, default: "Next question", hint: "Usually 'Next question' — only change if needed" }
-      - { label: "Next Question", name: questionBody, widget: text }
+      - { label: "Headline (bold)", name: headlineKey, widget: string, required: false }
+      - { label: "Headline (gray)", name: headlineRest, widget: string, required: false }
+      - { label: "Review Title", name: reviewTitle, widget: string, required: false, default: "Season review", hint: "Usually 'Season review' — only change if needed" }
+      - { label: "Season Review", name: reviewBody, widget: text, required: false }
+      - { label: "Question Title", name: questionTitle, widget: string, required: false, default: "Next question", hint: "Usually 'Next question' — only change if needed" }
+      - { label: "Next Question", name: questionBody, widget: text, required: false }
 
   # ── RANKINGS ─────────────────────────────────────────────
   - name: rankings
