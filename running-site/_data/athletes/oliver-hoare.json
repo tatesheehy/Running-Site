@@ -1,0 +1,144 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "collegeLogo": "/images/wisconsin_badgers_logo.svg",
+  "waUrl": "https://worldathletics.org/athletes/australia/oliver-hoare-14667553",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Oliver Hoare",
+  "headlineKey": "x",
+  "flag": "AU",
+  "seasons": "x",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:49.96"
+    },
+    {
+      "event": "1500m",
+      "time": "3:29.41"
+    },
+    {
+      "event": "Mile",
+      "time": "3:47.48"
+    },
+    {
+      "event": "3000m",
+      "time": "7:45.42"
+    },
+    {
+      "event": "5000m",
+      "time": "13:09.96"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:49.96"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:23.84"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:32.35"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:50.77"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:45.42"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:09.96"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:59.44"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:51.0h"
+    },
+    {
+      "event": "Distance Medley",
+      "time": "9:35.19"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:33.27"
+    },
+    {
+      "event": "4x1500 Metres Relay",
+      "time": "15:32.54"
+    },
+    {
+      "event": "4xMile Relay",
+      "time": "16:04.69"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "/images/default_card.png",
+  "ncaa": false,
+  "country": "Australia",
+  "results": [
+    {
+      "date": "JUN 13",
+      "meet": "USATF LA Grand Prix",
+      "event": "",
+      "time": "3:34.20",
+      "place": "3"
+    },
+    {
+      "date": "APR 10",
+      "meet": "Australian Championships",
+      "event": "1500m",
+      "time": "3:32.66",
+      "place": ""
+    },
+    {
+      "date": "APR 9",
+      "meet": "Australian Championships",
+      "event": "",
+      "time": "3:39.68",
+      "place": "1"
+    },
+    {
+      "date": "MAR 28",
+      "meet": "The TEN",
+      "event": "",
+      "time": "3:35.82",
+      "place": "1"
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "1500 Metres Short Track",
+      "time": "3:36.73",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "Mile",
+      "time": "3:53.69",
+      "place": ""
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Relay",
+      "time": "22:23",
+      "place": "1"
+    }
+  ],
+  "college": "Wisconsin",
+  "weight": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "age": "28"
+}
