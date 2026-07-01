@@ -199,9 +199,7 @@ function openAthleteCard(athleteId, rank) {
   const overlay = qs('#athlete-modal');
   const inner = qs('#athlete-card-inner');
 
-  const photoHtml = a.photo
-    ? `<img class="card-photo" src="${a.photo}" alt="${a.name}">`
-    : `<div class="card-photo-placeholder no-photo"></div>`;
+  const photoHtml = `<img class="card-photo" src="${a.photo || '/images/default_card.png'}" alt="${a.name}">`;
 
   const vitalsHtml = Object.entries(a.vitals || {}).map(([k, v]) => `
     <div class="card-vital">
@@ -340,11 +338,11 @@ function openAthleteCard(athleteId, rank) {
           const similar = getSimilarAthletes(a);
           if (!similar.length) return '';
           const cards = similar.map(s => {
-            const photo = s.photo || '';
+            const photo = s.photo || '/images/default_card.png';
             const bg = s.photoBackground || '#111';
             return `
               <div class="similar-card" onclick="openAthleteCard('${s.id}', null)">
-                <div class="similar-photo${photo ? '' : ' no-photo'}" style="${photo ? `background-color:${bg};background-image:url('${photo}')` : ''}"></div>
+                <div class="similar-photo" style="background-color:${bg};background-image:url('${photo}')"></div>
                 <div class="similar-name">${s.name}</div>
                 <div class="similar-country">${renderFlag(s.flag)} ${s.country}</div>
               </div>`;
@@ -721,9 +719,7 @@ function renderH2HComparison(id1, id2) {
 
   const col = (a, isRight) => {
     const { ranked, sectioned } = getRankInfo(a.id);
-    const photoHtml = a.photo
-      ? `<img class="h2h-photo" src="${a.photo}" alt="${a.name}">`
-      : `<div class="h2h-photo-ph no-photo"></div>`;
+    const photoHtml = `<img class="h2h-photo" src="${a.photo || '/images/default_card.png'}" alt="${a.name}">`;
 
     let rankHtml;
     if (ranked.length) {

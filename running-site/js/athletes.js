@@ -16,7 +16,7 @@ function buildAthletesPage() {
   function renderGrid(list) {
     if (!list.length) return '<p class="ath-page-empty">No athletes found.</p>';
     return list.map(a => {
-      const photo = a.photo || '';
+      const photo = a.photo || '/images/default_card.png';
       const bg = a.photoBackground || '#111';
       const allPrs = (a.prs || []).map(pr =>
         `<div class="ath-flip-pr"><span class="ath-flip-pr-event">${pr.event}</span><span class="ath-flip-pr-time">${pr.time}</span></div>`
@@ -26,7 +26,7 @@ function buildAthletesPage() {
         <div class="ath-flip-card" role="button" tabindex="0">
           <div class="ath-flip-inner">
             <div class="ath-flip-front" onclick="openAthleteCard('${a.id}', null)">
-              <div class="ath-flip-photo${photo ? '' : ' no-photo'}" style="${photo ? `background-color:${bg};background-image:url('${photo}')` : ''}"></div>
+              <div class="ath-flip-photo" style="background-color:${bg};background-image:url('${photo}')"></div>
               <div class="ath-flip-front-info">
                 <div class="ath-page-name">${a.name}</div>
                 <div class="ath-page-country">${renderFlag(a.flag)} ${a.country}</div>
