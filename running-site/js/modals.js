@@ -815,24 +815,73 @@ window.handleSearchInput = function(query) {
   const q = query.trim().toLowerCase();
   if (!q) { container.innerHTML = ''; return; }
 
-  const results = ARTICLES.filter(a =>
-    (a.title || '').toLowerCase().includes(q) ||
-    (a.excerpt || '').toLowerCase().includes(q) ||
-    (a.category || '').toLowerCase().includes(q) ||
-    (a.author || '').toLowerCase().includes(q)
-  );
+  // ── Athletes ──────────────────────────────────────────────
+  const athleteResults = Object.values(ATHLETES || {}).filter(a =>
+    (a.name    || '').toLowerCase().includes(q) ||
+    (a.country || '').toLowerCase().includes(q) ||
+    (a.event   || '').toLowerCase().includes(q) ||
+    (a.club    || '').toLowerCase().includes(q)
+  ).slice(0, 5);
 
-  if (!results.length) {
-    container.innerHTML = `<div class="search-no-results">No articles found for "${query}"</div>`;
+  // ── Articles ──────────────────────────────────────────────
+  const articleResults = (ARTICLES || []).filter(a =>
+    a.type !== 'rankings' && (
+      (a.title    || '').toLowerCase().includes(q) ||
+      (a.excerpt  || '').toLowerCase().includes(q) ||
+      (a.category || '').toLowerCase().includes(q) ||
+      (a.author   || '').toLowerCase().includes(q)
+    )
+  ).slice(0, 5);
+
+  // ── Rankings events ───────────────────────────────────────
+  const eventResults = (RANKINGS_EVENTS || []).filter(ev =>
+    (ev.name        || '').toLowerCase().includes(q) ||
+    (ev.description || '').toLowerCase().includes(q)
+  ).slice(0, 3);
+
+  if (!athleteResults.length && !articleResults.length && !eventResults.length) {
+    container.innerHTML = `<div class="search-no-results">No results for "${query}"</div>`;
     return;
   }
 
-  container.innerHTML = results.map(a => `
-    <div class="search-result-item" onclick="goTo('article.html?id=${a.id}');closeSearch();">
-      <div class="search-result-cat">${a.category}</div>
-      <div class="search-result-title">${a.title}</div>
-      ${a.excerpt ? `<div class="search-result-excerpt">${a.excerpt}</div>` : ''}
-      <div class="search-result-meta">${a.author} · ${a.date} · ${a.readTime}</div>
-    </div>
-  `).join('');
+  const sections = [];
+
+  if (athleteResults.length) {
+    const items = athleteResults.map(a => {
+      const photo = a.photo || '/images/default_card.png';
+      const bg = a.photoBackground || '#111';
+      return `
+        <div class="search-result-item search-result-athlete" onclick="openAthleteCard('${a.id}',null);closeSearch();">
+          <div class="search-ath-avatar" style="background-image:url('${photo}');background-color:${bg}"></div>
+          <div class="search-ath-info">
+            <div class="search-result-title">${a.name}</div>
+            <div class="search-result-meta">${renderFlag(a.flag)} ${a.country || ''} · ${a.event || ''}</div>
+          </div>
+        </div>`;
+    }).join('');
+    sections.push(`<div class="search-section"><div class="search-section-hd">Athletes</div>${items}</div>`);
+  }
+
+  if (articleResults.length) {
+    const items = articleResults.map(a => `
+      <div class="search-result-item" onclick="goTo('article.html?id=${a.id}');closeSearch();">
+        <div class="search-result-cat">${a.category || ''}</div>
+        <div class="search-result-title">${a.title}</div>
+        ${a.excerpt ? `<div class="search-result-excerpt">${a.excerpt}</div>` : ''}
+        <div class="search-result-meta">${[a.author, a.date, a.readTime].filter(Boolean).join(' · ')}</div>
+      </div>`).join('');
+    sections.push(`<div class="search-section"><div class="search-section-hd">Articles</div>${items}</div>`);
+  }
+
+  if (eventResults.length) {
+    const items = eventResults.map(ev => `
+      <div class="search-result-item" onclick="goTo('rankings.html');closeSearch();">
+        <div class="search-result-cat">Rankings</div>
+        <div class="search-result-title">${ev.name}</div>
+        ${ev.description ? `<div class="search-result-excerpt">${ev.description}</div>` : ''}
+      </div>`).join('');
+    sections.push(`<div class="search-section"><div class="search-section-hd">Rankings</div>${items}</div>`);
+  }
+
+  container.innerHTML = sections.join('');
 };
