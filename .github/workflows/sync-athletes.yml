@@ -1,0 +1,32 @@
+name: Sync Athlete Data
+
+on:
+  schedule:
+    # Runs every day at 6am UTC (2am ET)
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    # Allows manual trigger from the GitHub website
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run athlete sync
+        run: node scripts/sync-athlete-results.js
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add running-site/_data/athletes/ running-site/_data/athletes.json
+          git diff --staged --quiet || git commit -m "chore: sync athlete data from World Athletics"
+          git push
