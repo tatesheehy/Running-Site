@@ -827,6 +827,315 @@
     {
       "photoBackground": "#111111",
       "reviewTitle": "Season review",
+      "waUrl": "https://worldathletics.org/athletes/kenya/brian-masai-15067660",
+      "name": "Brian Masai",
+      "prs": [
+        {
+          "event": "400m",
+          "time": "50.71"
+        },
+        {
+          "event": "800m",
+          "time": "1:51.65"
+        },
+        {
+          "event": "1500m",
+          "time": "3:33.17"
+        },
+        {
+          "event": "3000m",
+          "time": "7:43.82"
+        },
+        {
+          "event": "3000m SC",
+          "time": "9:11.40"
+        },
+        {
+          "event": "5000m",
+          "time": "13:27.64"
+        },
+        {
+          "event": "10000m",
+          "time": "28:45.78"
+        },
+        {
+          "event": "800 Metres Short Track",
+          "time": "1:52.54"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:43.82"
+        },
+        {
+          "event": "5000 Metres Short Track",
+          "time": "13:43.63"
+        },
+        {
+          "event": "4x400 Metres Relay",
+          "time": "3:20.52"
+        },
+        {
+          "event": "4x400 Metres Relay Short Track",
+          "time": "3:19.44"
+        },
+        {
+          "event": "4x800 Metres Relay",
+          "time": "7:36.43"
+        }
+      ],
+      "questionTitle": "Next question",
+      "photo": "",
+      "ncaa": false,
+      "results": [
+        {
+          "date": "JUN 20",
+          "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+          "event": "",
+          "time": "3:41.03",
+          "place": "12"
+        },
+        {
+          "date": "JUN 18",
+          "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+          "event": "1500m",
+          "time": "3:39.2h",
+          "place": "4"
+        },
+        {
+          "date": "JUN 10",
+          "meet": "NCAA Division I Outdoor Track and Field Championships",
+          "event": "1500m",
+          "time": "3:37.92",
+          "place": "9"
+        },
+        {
+          "date": "MAY 29",
+          "meet": "NCAA Division I West First Rounds",
+          "event": "",
+          "time": "3:44.42",
+          "place": "1"
+        },
+        {
+          "date": "MAY 27",
+          "meet": "NCAA Division I West First Rounds",
+          "event": "",
+          "time": "3:39.77",
+          "place": "1"
+        },
+        {
+          "date": "MAY 16",
+          "meet": "Southeastern Conference Outdoor Track & Field Championships",
+          "event": "",
+          "time": "3:43.52",
+          "place": "1"
+        },
+        {
+          "date": "MAY 16",
+          "meet": "Southeastern Conference Outdoor Track & Field Championships",
+          "event": "",
+          "time": "DNS",
+          "place": ""
+        },
+        {
+          "date": "MAY 15",
+          "meet": "Southeastern Conference Outdoor Track & Field Championships",
+          "event": "",
+          "time": "3:43.36",
+          "place": "1"
+        },
+        {
+          "date": "MAY 8",
+          "meet": "Arkansas Twilight",
+          "event": "1500m",
+          "time": "3:33.17",
+          "place": "2"
+        },
+        {
+          "date": "MAY 1",
+          "meet": "Payton Jordan Invitational",
+          "event": "1500m",
+          "time": "3:38.13",
+          "place": "2"
+        },
+        {
+          "date": "APR 18",
+          "meet": "Bryan Clay Invitational",
+          "event": "",
+          "time": "3:39.54",
+          "place": "4"
+        },
+        {
+          "date": "APR 17",
+          "meet": "Bryan Clay Invitational",
+          "event": "5000m",
+          "time": "13:27.64",
+          "place": ""
+        },
+        {
+          "date": "APR 3",
+          "meet": "Mets Outdoor Championships",
+          "event": "",
+          "time": "1:53.52",
+          "place": "1"
+        },
+        {
+          "date": "MAR 28",
+          "meet": "Raleigh Relays",
+          "event": "",
+          "time": "1:52.29",
+          "place": "5"
+        },
+        {
+          "date": "MAR 21",
+          "meet": "UCF Black & Gold Invite",
+          "event": "",
+          "time": "4:00.61",
+          "place": "6"
+        },
+        {
+          "date": "MAR 20",
+          "meet": "UCF Black & Gold Invite",
+          "event": "800m",
+          "time": "1:51.65",
+          "place": ""
+        },
+        {
+          "date": "MAR 20",
+          "meet": "UCF Black & Gold Invite",
+          "event": "4x400 Metres Relay",
+          "time": "3:20.52",
+          "place": ""
+        },
+        {
+          "date": "MAR 13",
+          "meet": "NCAA Division I Indoor Track and Field Championships",
+          "event": "",
+          "time": "9:21.42",
+          "place": "2"
+        },
+        {
+          "date": "FEB 26",
+          "meet": "Southeastern Conference Indoor Track & Field Championship",
+          "event": "3000m sh",
+          "time": "7:45.42",
+          "place": "1"
+        },
+        {
+          "date": "FEB 26",
+          "meet": "Southeastern Conference Indoor Track & Field Championship",
+          "event": "",
+          "time": "9:30.84",
+          "place": "3"
+        },
+        {
+          "date": "FEB 22",
+          "meet": "Saucony Battle for Boston",
+          "event": "3000m sh",
+          "time": "7:43.82",
+          "place": "3"
+        },
+        {
+          "date": "FEB 20",
+          "meet": "Arkansas Qualifier",
+          "event": "Distance Medley Short Track",
+          "time": "9:17.30",
+          "place": ""
+        },
+        {
+          "date": "FEB 16",
+          "meet": "Northeast Conference Indoor Championships",
+          "event": "4x400 Metres Relay Short Track",
+          "time": "3:19.44",
+          "place": ""
+        },
+        {
+          "date": "FEB 16",
+          "meet": "Northeast Conference Indoor Championships",
+          "event": "",
+          "time": "1:52.55",
+          "place": "1"
+        },
+        {
+          "date": "FEB 16",
+          "meet": "Northeast Conference Indoor Championships",
+          "event": "",
+          "time": "4:14.55",
+          "place": "4"
+        },
+        {
+          "date": "FEB 15",
+          "meet": "Northeast Conference Indoor Championships",
+          "event": "",
+          "time": "1:55.49",
+          "place": "1"
+        },
+        {
+          "date": "FEB 15",
+          "meet": "Northeast Conference Indoor Championships",
+          "event": "",
+          "time": "4:21.30",
+          "place": "2"
+        },
+        {
+          "date": "FEB 13",
+          "meet": "Husky Classic",
+          "event": "",
+          "time": "DNS",
+          "place": ""
+        },
+        {
+          "date": "FEB 13",
+          "meet": "Tyson Invitational",
+          "event": "3000m sh",
+          "time": "7:43.96",
+          "place": "3"
+        },
+        {
+          "date": "JAN 31",
+          "meet": "Boston University John Thomas Terrier Classic",
+          "event": "800 Metres Short Track",
+          "time": "1:52.54",
+          "place": ""
+        },
+        {
+          "date": "JAN 31",
+          "meet": "Razorback Invitational",
+          "event": "Mile sh",
+          "time": "3:58.82",
+          "place": "2"
+        },
+        {
+          "date": "JAN 23",
+          "meet": "Dr. Sander Scorcher",
+          "event": "",
+          "time": "1:52.94",
+          "place": "1"
+        },
+        {
+          "date": "JAN 16",
+          "meet": "NYC Gotham Cup",
+          "event": "",
+          "time": "1:53.15",
+          "place": "1"
+        },
+        {
+          "date": "JAN 16",
+          "meet": "Arkansas Invitational",
+          "event": "Mile sh",
+          "time": "4:00.23",
+          "place": "1"
+        }
+      ],
+      "event": "MIDDLE DISTANCE",
+      "country": "Kenya",
+      "flag": "KE",
+      "dob": "1999-03-02",
+      "age": "27",
+      "lastSynced": "2026-07-01"
+    },
+    {
+      "photoBackground": "#111111",
+      "reviewTitle": "Season review",
       "traits": [],
       "waUrl": "https://worldathletics.org/athletes/australia/cameron-myers-14962470",
       "height": "5'11",
