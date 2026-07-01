@@ -119,6 +119,24 @@ function fillProfileFields(athlete, html) {
   const ndMatch = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
   if (ndMatch) { try { nd = JSON.parse(ndMatch[1]); } catch (_) {} }
 
+  if (DEBUG) {
+    console.log(`  [debug] html length: ${html.length}`);
+    console.log(`  [debug] __NEXT_DATA__ found: ${!!ndMatch}`);
+    console.log(`  [debug] nd parsed: ${!!nd}`);
+    if (nd) {
+      const pp2 = dig(nd,'props','pageProps') || {};
+      const ath2 = pp2.athlete || pp2.data?.athlete || pp2.athleteProfile || {};
+      console.log(`  [debug] ath keys: ${Object.keys(ath2).slice(0,10).join(', ')}`);
+      console.log(`  [debug] raw dob fields: dateOfBirth=${ath2.dateOfBirth} birthDate=${ath2.birthDate}`);
+      const ndStr = JSON.stringify(nd);
+      const dobIdx = ndStr.indexOf('dateOfBirth');
+      console.log(`  [debug] 'dateOfBirth' in nd JSON: ${dobIdx !== -1} (pos ${dobIdx})`);
+      if (dobIdx !== -1) console.log(`  [debug] context: ...${ndStr.slice(dobIdx, dobIdx+60)}...`);
+    }
+    const htmlDobIdx = html.indexOf('dateOfBirth');
+    console.log(`  [debug] 'dateOfBirth' in raw html: ${htmlDobIdx !== -1}`);
+  }
+
   const pp  = nd ? (dig(nd,'props','pageProps') || {}) : {};
   const ath = pp.athlete || pp.data?.athlete || pp.athleteProfile || {};
 
@@ -303,6 +321,8 @@ function needsProfileFill(athlete) {
 function hasCurrentResults(athlete) {
   return (athlete.results || []).length > 0;
 }
+
+const DEBUG = process.argv.includes('--debug');
 
 async function main() {
   const files = fs.readdirSync(ATHLETES_DIR).filter(f => f.endsWith('.json')).sort();

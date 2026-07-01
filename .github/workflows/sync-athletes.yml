@@ -24,7 +24,7 @@ jobs:
           node-version: '20'
 
       - name: Run athlete sync
-        run: node scripts/sync-athlete-results.js
+        run: node scripts/sync-athlete-results.js --debug
 
       - name: Commit and push changes
         run: |
