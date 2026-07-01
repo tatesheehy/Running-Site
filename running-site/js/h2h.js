@@ -164,7 +164,7 @@ function _renderH2HPage() {
                           : `<div class="h2h-lb-avatar h2h-lb-avatar--ph" style="background-color:${a.photoBackground || '#1a1a1a'}"></div>`;
 
                         return `
-                          <tr class="h2h-lb-row ${rankClass}" onclick="openH2H('${id}', '${_h2hLbEvent === 'all' ? '' : _h2hLbEvent}')">
+                          <tr class="h2h-lb-row ${rankClass}" id="h2h-row-${id}" onclick="h2hToggleExpand('${id}')">
                             <td class="h2h-lb-td h2h-lb-td--rank"${rankColor ? ` style="box-shadow:inset 4px 0 0 ${rankColor}"` : ''}>
                               <span class="h2h-lb-rank-num"${rankColor ? ` style="color:${rankColor}"` : ''}>${i + 1}</span>
                             </td>
@@ -174,6 +174,7 @@ function _renderH2HPage() {
                                 <span class="h2h-lb-name">${a.name}</span>
                                 <span class="h2h-lb-country">${renderFlag(a.flag)} ${a.country || ''}</span>
                               </div>
+                              <svg class="h2h-expand-chevron" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </td>
                             <td class="h2h-lb-td h2h-lb-td--record">
                               <div class="h2h-lb-rec">
@@ -190,6 +191,11 @@ function _renderH2HPage() {
                               </div>
                             </td>
                             <td class="h2h-lb-td h2h-lb-td--wins">${keyWins}</td>
+                          </tr>
+                          <tr class="h2h-lb-detail" id="h2h-detail-${id}" style="display:none">
+                            <td colspan="5" class="h2h-lb-detail-td">
+                              <div class="h2h-lb-detail-inner">${_renderExpandDetail(id, rec)}</div>
+                            </td>
                           </tr>`;
                       }).join('')}
                     </tbody>
@@ -207,6 +213,54 @@ window.h2hLbSetYear      = y    => { _h2hLbYear  = y;   _renderH2HPage(); };
 window.h2hLbSetEvent     = ev   => { _h2hLbEvent = ev;  _renderH2HPage(); };
 window.h2hLbToggleRanked = ()   => { _h2hLbRankedOnly = !_h2hLbRankedOnly; _renderH2HPage(); };
 window.h2hLbSetView      = view => { _h2hLbView  = view; _renderH2HPage(); };
+
+window.h2hToggleExpand = (id) => {
+  const detail = document.getElementById('h2h-detail-' + id);
+  const row    = document.getElementById('h2h-row-' + id);
+  if (!detail) return;
+  const isOpen = detail.style.display !== 'none';
+  document.querySelectorAll('.h2h-lb-detail').forEach(d => { d.style.display = 'none'; });
+  document.querySelectorAll('.h2h-lb-row').forEach(r => r.classList.remove('h2h-lb-row--expanded'));
+  if (!isOpen) {
+    detail.style.display = 'table-row';
+    row?.classList.add('h2h-lb-row--expanded');
+  }
+};
+
+function _renderExpandDetail(id, rec) {
+  const matchups = Object.values(rec.matchups || {})
+    .sort((a, b) => (b.wins + b.losses) - (a.wins + a.losses) || b.wins - a.wins);
+
+  return matchups.map(m => {
+    const opp = ATHLETES[m.id];
+    const avatar = opp?.photo
+      ? `<div class="h2h-detail-avatar" style="background-image:url('${opp.photo}');background-color:${opp.photoBackground || '#111'}"></div>`
+      : `<div class="h2h-detail-avatar h2h-detail-avatar--ph" style="background-color:${opp?.photoBackground || '#222'}"></div>`;
+
+    const recCls = m.wins > m.losses ? 'h2h-detail-opp-rec--win'
+                 : m.losses > m.wins ? 'h2h-detail-opp-rec--loss'
+                 : 'h2h-detail-opp-rec--split';
+
+    const raceRows = m.races.map(r => `
+      <div class="h2h-detail-race">
+        <span class="h2h-detail-result ${r.won ? 'h2h-detail-result--w' : 'h2h-detail-result--l'}">${r.won ? 'W' : 'L'}</span>
+        <span class="h2h-detail-date">${r.date || ''}</span>
+        <span class="h2h-detail-event">${r.event}</span>
+        <span class="h2h-detail-meet">${r.meet.length > 38 ? r.meet.slice(0, 36) + '…' : r.meet}</span>
+        <span class="h2h-detail-time">${r.myTime}</span>
+      </div>`).join('');
+
+    return `
+      <div class="h2h-detail-opp">
+        <div class="h2h-detail-opp-hd">
+          ${avatar}
+          <span class="h2h-detail-opp-name">${m.fullName}</span>
+          <span class="h2h-detail-opp-rec ${recCls}">${m.wins}–${m.losses}</span>
+        </div>
+        <div class="h2h-detail-races">${raceRows}</div>
+      </div>`;
+  }).join('');
+}
 
 // ── Dominance Map ─────────────────────────────────────────────
 
@@ -391,14 +445,18 @@ function _computeAllH2HRecords(year, eventFilter, rankedOnly) {
         const countForA2 = !rankedOnly || a1ranked;
 
         if (countForA1) {
-          if (!records[a1.id]) records[a1.id] = { wins: 0, losses: 0, beatCounts: {} };
-          if (a1wins) { records[a1.id].wins++; records[a1.id].beatCounts[n2] = (records[a1.id].beatCounts[n2] || 0) + 1; }
-          else if (a2wins) records[a1.id].losses++;
+          if (!records[a1.id]) records[a1.id] = { wins: 0, losses: 0, beatCounts: {}, matchups: {} };
+          if (!records[a1.id].matchups[a2.id]) records[a1.id].matchups[a2.id] = { fullName: a2.name, id: a2.id, wins: 0, losses: 0, races: [] };
+          if (a1wins) { records[a1.id].wins++; records[a1.id].beatCounts[n2] = (records[a1.id].beatCounts[n2] || 0) + 1; records[a1.id].matchups[a2.id].wins++; }
+          else if (a2wins) { records[a1.id].losses++; records[a1.id].matchups[a2.id].losses++; }
+          records[a1.id].matchups[a2.id].races.push({ date: race1.date, meet: race1.meet, event: race1.event, won: a1wins, myTime: race1.time, theirTime: match.time });
         }
         if (countForA2) {
-          if (!records[a2.id]) records[a2.id] = { wins: 0, losses: 0, beatCounts: {} };
-          if (a2wins) { records[a2.id].wins++; records[a2.id].beatCounts[n1] = (records[a2.id].beatCounts[n1] || 0) + 1; }
-          else if (a1wins) records[a2.id].losses++;
+          if (!records[a2.id]) records[a2.id] = { wins: 0, losses: 0, beatCounts: {}, matchups: {} };
+          if (!records[a2.id].matchups[a1.id]) records[a2.id].matchups[a1.id] = { fullName: a1.name, id: a1.id, wins: 0, losses: 0, races: [] };
+          if (a2wins) { records[a2.id].wins++; records[a2.id].beatCounts[n1] = (records[a2.id].beatCounts[n1] || 0) + 1; records[a2.id].matchups[a1.id].wins++; }
+          else if (a1wins) { records[a2.id].losses++; records[a2.id].matchups[a1.id].losses++; }
+          records[a2.id].matchups[a1.id].races.push({ date: race1.date, meet: race1.meet, event: race1.event, won: a2wins, myTime: match.time, theirTime: race1.time });
         }
 
         totalEncounters++;
