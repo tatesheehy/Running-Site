@@ -77,7 +77,67 @@
   "questionTitle": "Next question",
   "photo": "/images/default_card.png",
   "ncaa": false,
-  "results": [],
+  "results": [
+    {
+      "date": "MAY 23",
+      "meet": "Maurie Plant Meet",
+      "event": "4xMile Relay",
+      "time": "16:39.82",
+      "place": ""
+    },
+    {
+      "date": "MAY 23",
+      "meet": "Müller Anniversary Games",
+      "event": "5000 m sh",
+      "time": "13:13.67",
+      "place": ""
+    },
+    {
+      "date": "MAY 23",
+      "meet": "Maurie Plant Meet, Lakeside Stadium, Melbourne",
+      "event": "3000 m",
+      "time": "7:48.20",
+      "place": "6."
+    },
+    {
+      "date": "APR 11",
+      "meet": "NCAA Div. I Indoor Championships",
+      "event": "5000 m sh",
+      "time": "13:41.76",
+      "place": "1."
+    },
+    {
+      "date": "MAR 28",
+      "meet": "Maurie Plant Meet",
+      "event": "Distance Medley sh",
+      "time": "9:34.74",
+      "place": ""
+    },
+    {
+      "date": "MAR 28",
+      "meet": "NYRR Millrose Games",
+      "event": "3000 m sh",
+      "time": "7:41.55",
+      "place": ""
+    },
+    {
+      "date": "MAR 28",
+      "meet": "NCAA Div. I Indoor Championships",
+      "event": "3000 m sh",
+      "time": "14:06.01",
+      "place": "1."
+    },
+    {
+      "date": "JAN 10",
+      "meet": "Maurie Plant Meet, Lakeside Stadium, Melbourne",
+      "event": "5000 m",
+      "time": "7:48.20",
+      "place": "6."
+    }
+  ],
   "college": "Wisconsin",
-  "event": "DISTANCE"
+  "event": "DISTANCE",
+  "country": "Australia",
+  "flag": "AU",
+  "lastSynced": "2026-07-01"
 }
