@@ -171,7 +171,7 @@ function _renderH2HPage() {
                             <td class="h2h-lb-td h2h-lb-td--athlete">
                               ${avatar}
                               <div class="h2h-lb-ath-info">
-                                <span class="h2h-lb-name">${a.name}</span>
+                                <span class="h2h-lb-name h2h-lb-name--link" onclick="event.stopPropagation();openAthleteCard('${id}',null)">${a.name}</span>
                                 <span class="h2h-lb-country">${renderFlag(a.flag)} ${a.country || ''}</span>
                               </div>
                               <svg class="h2h-expand-chevron" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>

@@ -244,6 +244,14 @@
   line-height: 1.1;
 }
 
+.h2h-lb-name--link {
+  cursor: pointer;
+}
+.h2h-lb-name--link:hover {
+  text-decoration: underline;
+  color: var(--accent);
+}
+
 .h2h-lb-country {
   font-size: 11px;
   color: var(--muted);
