@@ -143,6 +143,7 @@ function _renderH2HPage() {
                         <th class="h2h-lb-th h2h-lb-th--athlete">Athlete</th>
                         <th class="h2h-lb-th h2h-lb-th--record">Record</th>
                         <th class="h2h-lb-th h2h-lb-th--pct">Win %</th>
+                        <th class="h2h-lb-th h2h-lb-th--form">Form</th>
                         <th class="h2h-lb-th h2h-lb-th--wins">Key Wins</th>
                       </tr>
                     </thead>
@@ -154,6 +155,11 @@ function _renderH2HPage() {
                         const pct      = Math.round((rec.wins / total) * 100);
                         const rankColor = RANK_COLORS[i] || null;
                         const rankClass = i === 0 ? 'h2h-lb-row--gold' : i === 1 ? 'h2h-lb-row--silver' : i === 2 ? 'h2h-lb-row--bronze' : '';
+                        const _MONTHS  = {JAN:0,FEB:1,MAR:2,APR:3,MAY:4,JUN:5,JUL:6,AUG:7,SEP:8,OCT:9,NOV:10,DEC:11};
+                        const _dateVal = d => { if (!d) return 0; const [m,dy] = d.split(' '); return (_MONTHS[m]||0)*100+(parseInt(dy)||0); };
+                        const formDots = [...(rec.sequence||[])].sort((a,b)=>_dateVal(a.date)-_dateVal(b.date)).slice(-10)
+                          .map(s=>`<span class="h2h-form-dot h2h-form-dot--${s.won?'w':'l'}" title="${s.date||''}">${s.won?'W':'L'}</span>`).join('');
+
                         const keyWins  = Object.entries(rec.beatCounts)
                           .sort((a, b) => b[1] - a[1])
                           .slice(0, 4)
@@ -190,10 +196,11 @@ function _renderH2HPage() {
                                 </div>
                               </div>
                             </td>
+                            <td class="h2h-lb-td h2h-lb-td--form"><div class="h2h-form-strip">${formDots}</div></td>
                             <td class="h2h-lb-td h2h-lb-td--wins">${keyWins}</td>
                           </tr>
                           <tr class="h2h-lb-detail" id="h2h-detail-${id}" style="display:none">
-                            <td colspan="5" class="h2h-lb-detail-td">
+                            <td colspan="6" class="h2h-lb-detail-td">
                               <div class="h2h-lb-detail-inner">${_renderExpandDetail(id, rec)}</div>
                             </td>
                           </tr>`;
@@ -445,18 +452,20 @@ function _computeAllH2HRecords(year, eventFilter, rankedOnly) {
         const countForA2 = !rankedOnly || a1ranked;
 
         if (countForA1) {
-          if (!records[a1.id]) records[a1.id] = { wins: 0, losses: 0, beatCounts: {}, matchups: {} };
+          if (!records[a1.id]) records[a1.id] = { wins: 0, losses: 0, beatCounts: {}, matchups: {}, sequence: [] };
           if (!records[a1.id].matchups[a2.id]) records[a1.id].matchups[a2.id] = { fullName: a2.name, id: a2.id, wins: 0, losses: 0, races: [] };
           if (a1wins) { records[a1.id].wins++; records[a1.id].beatCounts[n2] = (records[a1.id].beatCounts[n2] || 0) + 1; records[a1.id].matchups[a2.id].wins++; }
           else if (a2wins) { records[a1.id].losses++; records[a1.id].matchups[a2.id].losses++; }
           records[a1.id].matchups[a2.id].races.push({ date: race1.date, meet: race1.meet, event: race1.event, won: a1wins, myTime: race1.time, theirTime: match.time });
+          records[a1.id].sequence.push({ date: race1.date, won: a1wins });
         }
         if (countForA2) {
-          if (!records[a2.id]) records[a2.id] = { wins: 0, losses: 0, beatCounts: {}, matchups: {} };
+          if (!records[a2.id]) records[a2.id] = { wins: 0, losses: 0, beatCounts: {}, matchups: {}, sequence: [] };
           if (!records[a2.id].matchups[a1.id]) records[a2.id].matchups[a1.id] = { fullName: a1.name, id: a1.id, wins: 0, losses: 0, races: [] };
           if (a2wins) { records[a2.id].wins++; records[a2.id].beatCounts[n1] = (records[a2.id].beatCounts[n1] || 0) + 1; records[a2.id].matchups[a1.id].wins++; }
           else if (a1wins) { records[a2.id].losses++; records[a2.id].matchups[a1.id].losses++; }
           records[a2.id].matchups[a1.id].races.push({ date: race1.date, meet: race1.meet, event: race1.event, won: a2wins, myTime: match.time, theirTime: race1.time });
+          records[a2.id].sequence.push({ date: race1.date, won: a2wins });
         }
 
         totalEncounters++;

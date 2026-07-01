@@ -535,6 +535,38 @@
 [data-theme="dark"] .h2h-map-legend--loss::before  { background: rgba(239, 68, 68, 0.1); }
 [data-theme="dark"] .h2h-map-legend--split::before { background: rgba(234, 179, 8, 0.1); }
 
+/* ── Form timeline strip ──────────────────────────────────── */
+
+.h2h-lb-td--form { white-space: nowrap; }
+.h2h-lb-th--form { white-space: nowrap; }
+
+.h2h-form-strip {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.h2h-form-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  font-size: 6px;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+  letter-spacing: 0;
+}
+.h2h-form-dot--w { background: #22c55e; }
+.h2h-form-dot--l { background: #ef4444; }
+
+@media (max-width: 900px) {
+  .h2h-lb-th--form { display: none; }
+  .h2h-lb-td--form { display: none; }
+}
+
 /* ── Expand chevron ───────────────────────────────────────── */
 
 .h2h-expand-chevron {
