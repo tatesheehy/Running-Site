@@ -106,6 +106,9 @@ function calcAge(dob) {
   return String(age);
 }
 
+// Treat 'x' placeholder strings as missing
+function isEmpty(v) { return !v || v === 'x'; }
+
 // Fill missing profile fields (country, flag, dob, age, name) from WA page.
 // Returns { changed: bool, fields: [...changed field names] }
 function fillProfileFields(athlete, html) {
@@ -130,14 +133,14 @@ function fillProfileFields(athlete, html) {
   const countrySlug = urlMatch ? urlMatch[1] : '';
   const slugInfo = SLUG_TO_COUNTRY[countrySlug];
 
-  if (!athlete.country && slugInfo) { athlete.country = slugInfo.country; changed.push('country'); }
-  if (!athlete.flag   && slugInfo) { athlete.flag    = slugInfo.flag;    changed.push('flag'); }
+  if (isEmpty(athlete.country) && slugInfo) { athlete.country = slugInfo.country; changed.push('country'); }
+  if (isEmpty(athlete.flag)   && slugInfo) { athlete.flag    = slugInfo.flag;    changed.push('flag'); }
 
   // IOC nationality may be more precise (e.g. Scotland vs Great Britain)
   const nat = ath.nationality || ath.countryCode || ath.country || ath.basicData?.nationality || '';
   if (nat && IOC_TO_FLAG[nat.toUpperCase()]) {
     const iocFlag = IOC_TO_FLAG[nat.toUpperCase()];
-    if (!athlete.flag) { athlete.flag = iocFlag; changed.push('flag'); }
+    if (isEmpty(athlete.flag)) { athlete.flag = iocFlag; changed.push('flag'); }
   }
 
   // DOB / age
@@ -148,14 +151,14 @@ function fillProfileFields(athlete, html) {
     if (m) dob = parseDob(m[1]);
   }
   if (dob) {
-    if (!athlete.dob)  { athlete.dob  = dob;         changed.push('dob'); }
-    if (!athlete.age)  { athlete.age  = calcAge(dob); changed.push('age'); }
-  }
-
-  // Always refresh age from stored dob (it drifts each year)
-  if (athlete.dob && !dob) {
-    const fresh = calcAge(athlete.dob);
-    if (fresh && fresh !== athlete.age) { athlete.age = fresh; changed.push('age'); }
+    if (!athlete.dob) { athlete.dob = dob; changed.push('dob'); }
+    // Always recalculate age from dob (overwrites 'x' placeholder and keeps it current)
+    const freshAge = calcAge(dob);
+    if (freshAge && freshAge !== athlete.age) { athlete.age = freshAge; changed.push('age'); }
+  } else if (athlete.dob) {
+    // No dob from WA page but we have one stored — still refresh age
+    const freshAge = calcAge(athlete.dob);
+    if (freshAge && freshAge !== athlete.age) { athlete.age = freshAge; changed.push('age'); }
   }
 
   return { changed: changed.length > 0, fields: changed };
@@ -273,7 +276,7 @@ function parseResults(html, year) {
 }
 
 function needsProfileFill(athlete) {
-  return !athlete.country || !athlete.flag || !athlete.age || !athlete.dob;
+  return isEmpty(athlete.country) || isEmpty(athlete.flag) || isEmpty(athlete.age) || !athlete.dob;
 }
 
 function hasCurrentResults(athlete) {
