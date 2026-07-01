@@ -73,12 +73,147 @@
   "ncaa": false,
   "club": "x",
   "country": "Netherlands",
-  "results": [],
+  "results": [
+    {
+      "date": "JUN 28",
+      "meet": "FBK Games",
+      "event": "15 Kilom Road",
+      "time": "47:39",
+      "place": ""
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Runnersworld Utrecht Trackmeeting",
+      "event": "1500 m sh",
+      "time": "3:59.57",
+      "place": ""
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Dutch Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:37.08",
+      "place": "1."
+    },
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "5 Kilom Road",
+      "time": "13:38",
+      "place": ""
+    },
+    {
+      "date": "JUN 21",
+      "meet": "Runners World Utrecht Trackmeeting 1",
+      "event": "1000 m",
+      "time": "1:50.58",
+      "place": ""
+    },
+    {
+      "date": "JUN 21",
+      "meet": "Dutch Championships",
+      "event": "800 m",
+      "time": "1:47.90",
+      "place": "1."
+    },
+    {
+      "date": "FEB 19",
+      "meet": "",
+      "event": "1000 m sh",
+      "time": "2:21.08",
+      "place": ""
+    },
+    {
+      "date": "FEB 19",
+      "meet": "FBK Games",
+      "event": "800 m",
+      "time": "1:48.09",
+      "place": ""
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Dutch U20 Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:53.06",
+      "place": ""
+    },
+    {
+      "date": "FEB 19",
+      "meet": "FBK Games, FBK Stadium, Hengelo",
+      "event": "800 m",
+      "time": "1:48.09",
+      "place": "10."
+    },
+    {
+      "date": "FEB 15",
+      "meet": "FBK Games",
+      "event": "5000 m",
+      "time": "13:23.22",
+      "place": ""
+    },
+    {
+      "date": "FEB 15",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "3000 m",
+      "time": "7:38.48",
+      "place": ""
+    },
+    {
+      "date": "FEB 15",
+      "meet": "Meeting Nikaia",
+      "event": "3000 m Steeplechase",
+      "time": "13:23.22",
+      "place": "12"
+    },
+    {
+      "date": "FEB 15",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF, Arena Stade Couvert, Liévin (i) - Indoor Meeting",
+      "event": "1500 m sh",
+      "time": "3:33.64",
+      "place": "4."
+    },
+    {
+      "date": "FEB 8",
+      "meet": "FBK Games",
+      "event": "1500 m",
+      "time": "3:32.45",
+      "place": ""
+    },
+    {
+      "date": "FEB 8",
+      "meet": "Meeting de Paris",
+      "event": "1500 m sh",
+      "time": "3:33.64",
+      "place": ""
+    },
+    {
+      "date": "FEB 8",
+      "meet": "Dutch U18 Championships",
+      "event": "3000 m",
+      "time": "8:52.45",
+      "place": ""
+    },
+    {
+      "date": "FEB 8",
+      "meet": "INIT Indoor Meeting Karlsruhe",
+      "event": "3000 m sh",
+      "time": "7:38.48",
+      "place": ""
+    },
+    {
+      "date": "FEB 8",
+      "meet": "Meeting de Paris, Stade Charléty, Paris - Promotional Events",
+      "event": "1500 m",
+      "time": "3:32.45",
+      "place": "12."
+    }
+  ],
   "weight": "x",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "stefan-nillessen",
   "age": "23",
-  "lastSynced": "2026-07-01"
+  "lastSynced": "2026-07-01",
+  "dob": "2003-01-02"
 }
