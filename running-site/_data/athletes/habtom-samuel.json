@@ -58,14 +58,6 @@
     {
       "event": "Distance Medley Short Track",
       "time": "9:28.79"
-    },
-    {
-      "event": "Mile",
-      "time": "3:57.09"
-    },
-    {
-      "event": "3000m",
-      "time": "7:37.44"
     }
   ],
   "hometown": "x",
@@ -77,21 +69,21 @@
     {
       "date": "JUN 12",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "",
+      "event": "5000m",
       "time": "13:38.93",
       "place": "1"
     },
     {
       "date": "JUN 10",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "",
+      "event": "10000m",
       "time": "27:51.31",
       "place": "1"
     },
     {
       "date": "MAY 27",
       "meet": "NCAA Division I West First Rounds",
-      "event": "",
+      "event": "10000m",
       "time": "28:42.53",
       "place": "1"
     },
@@ -105,14 +97,14 @@
     {
       "date": "MAY 16",
       "meet": "Mountain West Outdoor Track and Field Championships",
-      "event": "",
+      "event": "5000m",
       "time": "13:25.96",
       "place": "1"
     },
     {
       "date": "APR 17",
       "meet": "Bryan Clay Invitational",
-      "event": "",
+      "event": "5000m",
       "time": "13:03.47",
       "place": "1"
     },
@@ -121,26 +113,26 @@
       "meet": "Stanford Invitational",
       "event": "10000m",
       "time": "27:30.51",
-      "place": ""
+      "place": "1"
     },
     {
       "date": "MAR 14",
       "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "",
+      "event": "3000 Metres Short Track",
       "time": "DQ",
       "place": ""
     },
     {
       "date": "MAR 13",
       "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "",
+      "event": "5000 Metres Short Track",
       "time": "13:36.58",
       "place": "1"
     },
     {
       "date": "FEB 28",
       "meet": "Mountain West Indoor Track and Field Championships",
-      "event": "",
+      "event": "3000 Metres Short Track",
       "time": "7:48.35",
       "place": "1"
     },
@@ -149,26 +141,19 @@
       "meet": "Mountain West Indoor Track and Field Championships",
       "event": "5000 Metres Short Track",
       "time": "13:30.40",
-      "place": ""
+      "place": "1"
     },
     {
       "date": "FEB 13",
       "meet": "Husky Classic",
       "event": "3000m",
       "time": "7:37.44",
-      "place": ""
+      "place": "1"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
-      "event": "3000 Metres Short Track",
-      "time": "7:39.62",
-      "place": ""
-    },
-    {
-      "date": "FEB 1",
-      "meet": "Millrose Games",
-      "event": "2 Miles sh",
+      "event": "2 Miles Short Track",
       "time": "8:11.47",
       "place": "9"
     },
@@ -184,5 +169,6 @@
   "weight": "x",
   "reviewBody": "x",
   "event": "DISTANCE",
-  "age": "22"
+  "age": "22",
+  "lastSynced": "2026-07-01"
 }
