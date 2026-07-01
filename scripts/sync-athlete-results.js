@@ -7,12 +7,159 @@ const fs    = require('fs');
 const path  = require('path');
 const https = require('https');
 
-const ATHLETES_DIR = path.join(__dirname, '../running-site/_data/athletes');
-const FORCE        = process.argv.includes('--force');
-const yearIdx      = process.argv.indexOf('--year');
-const YEAR         = yearIdx !== -1 ? process.argv[yearIdx + 1] : String(new Date().getFullYear());
+const ATHLETES_DIR  = path.join(__dirname, '../running-site/_data/athletes');
+const ATHLETES_JSON = path.join(__dirname, '../running-site/_data/athletes.json');
+const FORCE         = process.argv.includes('--force');
+const yearIdx       = process.argv.indexOf('--year');
+const YEAR          = yearIdx !== -1 ? process.argv[yearIdx + 1] : String(new Date().getFullYear());
 
 const MONTHS = { JAN:0, FEB:1, MAR:2, APR:3, MAY:4, JUN:5, JUL:6, AUG:7, SEP:8, OCT:9, NOV:10, DEC:11 };
+
+// ── Profile field helpers ────────────────────────────────────────────────────
+
+const SLUG_TO_COUNTRY = {
+  'united-states':    { flag: 'US', country: 'United States' },
+  'great-britain-ni': { flag: 'GB', country: 'Great Britain' },
+  'kenya':            { flag: 'KE', country: 'Kenya' },
+  'ethiopia':         { flag: 'ET', country: 'Ethiopia' },
+  'norway':           { flag: 'NO', country: 'Norway' },
+  'france':           { flag: 'FR', country: 'France' },
+  'australia':        { flag: 'AU', country: 'Australia' },
+  'ireland':          { flag: 'IE', country: 'Ireland' },
+  'netherlands':      { flag: 'NL', country: 'Netherlands' },
+  'new-zealand':      { flag: 'NZ', country: 'New Zealand' },
+  'portugal':         { flag: 'PT', country: 'Portugal' },
+  'spain':            { flag: 'ES', country: 'Spain' },
+  'eritrea':          { flag: 'ER', country: 'Eritrea' },
+  'burundi':          { flag: 'BI', country: 'Burundi' },
+  'morocco':          { flag: 'MA', country: 'Morocco' },
+  'algeria':          { flag: 'DZ', country: 'Algeria' },
+  'tanzania':         { flag: 'TZ', country: 'Tanzania' },
+  'uganda':           { flag: 'UG', country: 'Uganda' },
+  'jamaica':          { flag: 'JM', country: 'Jamaica' },
+  'canada':           { flag: 'CA', country: 'Canada' },
+  'belgium':          { flag: 'BE', country: 'Belgium' },
+  'germany':          { flag: 'DE', country: 'Germany' },
+  'poland':           { flag: 'PL', country: 'Poland' },
+  'sweden':           { flag: 'SE', country: 'Sweden' },
+  'denmark':          { flag: 'DK', country: 'Denmark' },
+  'finland':          { flag: 'FI', country: 'Finland' },
+  'italy':            { flag: 'IT', country: 'Italy' },
+  'china':            { flag: 'CN', country: 'China' },
+  'japan':            { flag: 'JP', country: 'Japan' },
+  'bahrain':          { flag: 'BH', country: 'Bahrain' },
+  'qatar':            { flag: 'QA', country: 'Qatar' },
+  'south-africa':     { flag: 'ZA', country: 'South Africa' },
+  'brazil':           { flag: 'BR', country: 'Brazil' },
+  'mexico':           { flag: 'MX', country: 'Mexico' },
+  'switzerland':      { flag: 'CH', country: 'Switzerland' },
+  'austria':          { flag: 'AT', country: 'Austria' },
+  'czech-republic':   { flag: 'CZ', country: 'Czech Republic' },
+  'turkey':           { flag: 'TR', country: 'Turkey' },
+  'namibia':          { flag: 'NA', country: 'Namibia' },
+  'botswana':         { flag: 'BW', country: 'Botswana' },
+  'senegal':          { flag: 'SN', country: 'Senegal' },
+  'rwanda':           { flag: 'RW', country: 'Rwanda' },
+  'scotland':         { flag: 'SCT', country: 'Scotland' },
+  'northern-ireland': { flag: 'NIR', country: 'Northern Ireland' },
+};
+
+const IOC_TO_FLAG = {
+  'USA':'US','GBR':'GB','KEN':'KE','ETH':'ET','NOR':'NO','FRA':'FR',
+  'AUS':'AU','IRL':'IE','NED':'NL','NZL':'NZ','POR':'PT','ESP':'ES',
+  'ERI':'ER','BDI':'BI','MAR':'MA','ALG':'DZ','TAN':'TZ','UGA':'UG',
+  'JAM':'JM','CAN':'CA','BEL':'BE','GER':'DE','POL':'PL','SWE':'SE',
+  'DEN':'DK','FIN':'FI','ITA':'IT','CHN':'CN','JPN':'JP','BRN':'BH',
+  'QAT':'QA','RSA':'ZA','BRA':'BR','MEX':'MX','SUI':'CH','AUT':'AT',
+  'CZE':'CZ','TUR':'TR','NAM':'NA','BOT':'BW','SEN':'SN','RWA':'RW',
+};
+
+function dig(obj, ...keys) {
+  let cur = obj;
+  for (const k of keys) {
+    if (cur == null || typeof cur !== 'object') return undefined;
+    cur = cur[k];
+  }
+  return cur;
+}
+
+function parseDob(raw) {
+  if (!raw) return '';
+  const iso = String(raw).match(/(\d{4})-(\d{2})-(\d{2})/);
+  if (iso) return `${iso[1]}-${iso[2]}-${iso[3]}`;
+  const MO = { jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12 };
+  const dmy = String(raw).match(/(\d{1,2})\s+([A-Z]{3})\s+(\d{4})/i);
+  if (dmy) {
+    const mo = MO[dmy[2].toLowerCase()];
+    if (mo) return `${dmy[3]}-${String(mo).padStart(2,'0')}-${String(parseInt(dmy[1],10)).padStart(2,'0')}`;
+  }
+  return '';
+}
+
+function calcAge(dob) {
+  if (!dob) return '';
+  const birth = new Date(dob);
+  const now   = new Date();
+  let age = now.getFullYear() - birth.getFullYear();
+  const m = now.getMonth() - birth.getMonth();
+  if (m < 0 || (m === 0 && now.getDate() < birth.getDate())) age--;
+  return String(age);
+}
+
+// Fill missing profile fields (country, flag, dob, age, name) from WA page.
+// Returns { changed: bool, fields: [...changed field names] }
+function fillProfileFields(athlete, html) {
+  const changed = [];
+
+  // Parse __NEXT_DATA__
+  let nd = null;
+  const ndMatch = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
+  if (ndMatch) { try { nd = JSON.parse(ndMatch[1]); } catch (_) {} }
+
+  const pp  = nd ? (dig(nd,'props','pageProps') || {}) : {};
+  const ath = pp.athlete || pp.data?.athlete || pp.athleteProfile || {};
+
+  // Name
+  if (!athlete.name) {
+    const n = ath.name || (ath.givenName && ath.familyName ? `${ath.givenName} ${ath.familyName}`.trim() : '');
+    if (n) { athlete.name = n; changed.push('name'); }
+  }
+
+  // Country / flag — derive from URL slug first, then override with IOC code
+  const urlMatch = (athlete.waUrl || '').match(/worldathletics\.org\/athletes\/([a-z-]+)\//i);
+  const countrySlug = urlMatch ? urlMatch[1] : '';
+  const slugInfo = SLUG_TO_COUNTRY[countrySlug];
+
+  if (!athlete.country && slugInfo) { athlete.country = slugInfo.country; changed.push('country'); }
+  if (!athlete.flag   && slugInfo) { athlete.flag    = slugInfo.flag;    changed.push('flag'); }
+
+  // IOC nationality may be more precise (e.g. Scotland vs Great Britain)
+  const nat = ath.nationality || ath.countryCode || ath.country || ath.basicData?.nationality || '';
+  if (nat && IOC_TO_FLAG[nat.toUpperCase()]) {
+    const iocFlag = IOC_TO_FLAG[nat.toUpperCase()];
+    if (!athlete.flag) { athlete.flag = iocFlag; changed.push('flag'); }
+  }
+
+  // DOB / age
+  const rawDob = ath.dateOfBirth || ath.birthDate || ath.basicData?.dateOfBirth || ath.basicData?.birthDate || '';
+  let dob = rawDob ? parseDob(rawDob) : '';
+  if (!dob) {
+    const m = html.match(/"dateOfBirth"\s*:\s*"([^"]+)"/);
+    if (m) dob = parseDob(m[1]);
+  }
+  if (dob) {
+    if (!athlete.dob)  { athlete.dob  = dob;         changed.push('dob'); }
+    if (!athlete.age)  { athlete.age  = calcAge(dob); changed.push('age'); }
+  }
+
+  // Always refresh age from stored dob (it drifts each year)
+  if (athlete.dob && !dob) {
+    const fresh = calcAge(athlete.dob);
+    if (fresh && fresh !== athlete.age) { athlete.age = fresh; changed.push('age'); }
+  }
+
+  return { changed: changed.length > 0, fields: changed };
+}
 
 // "27 MAY 2026" → Date object
 function parseWADate(raw) {
@@ -125,9 +272,11 @@ function parseResults(html, year) {
   return unique.map(({ _date, ...r }) => r);
 }
 
-function has2026Results(athlete) {
-  // Check if athlete already has results from the current year
-  // Our date format is "MON DD" with no year, so we check by count > 0 if not forcing
+function needsProfileFill(athlete) {
+  return !athlete.country || !athlete.flag || !athlete.age || !athlete.dob;
+}
+
+function hasCurrentResults(athlete) {
   return (athlete.results || []).length > 0;
 }
 
@@ -145,15 +294,18 @@ async function main() {
       continue;
     }
 
-    if (!FORCE && has2026Results(athlete)) {
+    const needsProfile = needsProfileFill(athlete);
+    const needsResults = FORCE || !hasCurrentResults(athlete);
+
+    if (!needsProfile && !needsResults) {
       console.log(`✓  ${athlete.name} — already has ${athlete.results.length} results`);
       skipped++;
       continue;
     }
 
     try {
-      process.stdout.write(`🌐 ${athlete.name} — fetching results...`);
-      const html    = await fetchPage(athlete.waUrl);
+      process.stdout.write(`🌐 ${athlete.name || file} — fetching...`);
+      const html = await fetchPage(athlete.waUrl);
 
       if (html.length < 1000) {
         console.log(' ✗ WAF blocked (empty response)');
@@ -162,16 +314,39 @@ async function main() {
         continue;
       }
 
-      const results = parseResults(html, YEAR);
+      let dirty = false;
+      const notes = [];
 
-      if (!results.length) {
-        console.log(` — no ${YEAR} results found on page`);
-        skipped++;
+      // Fill missing profile fields
+      if (needsProfile) {
+        const prof = fillProfileFields(athlete, html);
+        if (prof.changed) { dirty = true; notes.push(`profile: ${prof.fields.join(', ')}`); }
       } else {
-        athlete.results = results;
+        // Still refresh age from stored dob each run
+        const fresh = calcAge(athlete.dob);
+        if (fresh && fresh !== athlete.age) { athlete.age = fresh; dirty = true; notes.push('age'); }
+      }
+
+      // Fetch results
+      if (needsResults) {
+        const results = parseResults(html, YEAR);
+        if (results.length) {
+          athlete.results = results;
+          dirty = true;
+          notes.push(`${results.length} results`);
+        } else {
+          notes.push(`no ${YEAR} results`);
+        }
+      }
+
+      if (dirty) {
+        athlete.lastSynced = new Date().toISOString().slice(0, 10);
         fs.writeFileSync(filePath, JSON.stringify(athlete, null, 2));
-        console.log(` ✓  ${results.length} results saved`);
+        console.log(` ✓  ${notes.join(' | ')}`);
         updated++;
+      } else {
+        console.log(` — ${notes.join(' | ')}`);
+        skipped++;
       }
 
       await sleep(2000);
@@ -183,8 +358,13 @@ async function main() {
   }
 
   console.log(`\nDone: ${updated} updated, ${skipped} skipped, ${failed} failed.`);
+
   if (updated > 0) {
-    console.log('Run `node scripts/build-athletes.js` to rebuild athletes.json.');
+    // Rebuild athletes.json
+    const allFiles   = fs.readdirSync(ATHLETES_DIR).filter(f => f.endsWith('.json')).sort();
+    const allAthletes = allFiles.map(f => JSON.parse(fs.readFileSync(path.join(ATHLETES_DIR, f), 'utf8')));
+    fs.writeFileSync(ATHLETES_JSON, JSON.stringify({ items: allAthletes }, null, 2));
+    console.log(`Rebuilt athletes.json (${allAthletes.length} athletes).`);
   }
 }
 
