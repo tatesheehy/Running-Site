@@ -32,7 +32,36 @@
   "photo": "/images/phanuel_card.png",
   "club": "x",
   "country": "Kenya",
-  "results": [],
+  "results": [
+    {
+      "date": "JUN 20",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "3000 m",
+      "time": "8:18.01",
+      "place": ""
+    },
+    {
+      "date": "JUN 20",
+      "meet": "African U18 Championships",
+      "event": "1500 m",
+      "time": "1:46.93",
+      "place": ""
+    },
+    {
+      "date": "JUN 20",
+      "meet": "World Athletics U20 Championships",
+      "event": "1500 m",
+      "time": "1:47.46",
+      "place": "1."
+    },
+    {
+      "date": "JUN 18",
+      "meet": "World Athletics U20 Championships",
+      "event": "800 m",
+      "time": "1:47.46",
+      "place": "31"
+    }
+  ],
   "weight": "145",
   "coach": "x",
   "reviewBody": "x",

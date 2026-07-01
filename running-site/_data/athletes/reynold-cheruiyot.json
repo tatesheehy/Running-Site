@@ -56,7 +56,190 @@
   "photo": "/images/reynold_card.png",
   "club": "x",
   "country": "Kenya",
-  "results": [],
+  "results": [
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "5 Kilom Road",
+      "time": "13:04",
+      "place": ""
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Night of Athletics",
+      "event": "1500 m",
+      "time": "3:34.02",
+      "place": ""
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Split times",
+      "event": "1500 m sh",
+      "time": "3:32.00",
+      "place": "7."
+    },
+    {
+      "date": "JUN 20",
+      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat, Complexe Sportif Prince Moulay Abdellah, Rabat - Diamond Discipline",
+      "event": "1500 m sh",
+      "time": "3:44.06",
+      "place": "2."
+    },
+    {
+      "date": "JUN 18",
+      "meet": "Athletics Kenya National Police Service Track and Field Championships, Ulinzi Sports Complex, Langata, Nairobi",
+      "event": "1500 m sh",
+      "time": "3:45.33",
+      "place": "1."
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Meeting de Paris",
+      "event": "1500 m",
+      "time": "3:30.28",
+      "place": ""
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "Mile",
+      "time": "3:42.27",
+      "place": ""
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Athletics Kenya National Police Service Track and Field Championships, Ulinzi Sports Complex, Langata, Nairobi",
+      "event": "",
+      "time": "3:45.33",
+      "place": "1."
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Meeting de Paris, Stade Charléty, Paris - Promotional Events",
+      "event": "1500 m sh",
+      "time": "3:32.35",
+      "place": "2."
+    },
+    {
+      "date": "MAY 31",
+      "meet": "Kip Keino Classic, Nyayo National Stadium, Nairobi",
+      "event": "",
+      "time": "3:36.1h",
+      "place": "1."
+    },
+    {
+      "date": "MAY 27",
+      "meet": "Trials For World Athletics Relay Championships, Ulinzi Sports Complex, Langata, Nairobi",
+      "event": "1500 m",
+      "time": "3:39.64",
+      "place": "1."
+    },
+    {
+      "date": "MAY 27",
+      "meet": "Trials For World Athletics Relay Championships, Ulinzi Sports Complex, Langata, Nairobi",
+      "event": "",
+      "time": "3:39.64",
+      "place": "1."
+    },
+    {
+      "date": "MAY 16",
+      "meet": "",
+      "event": "Mile",
+      "time": "3:47.46",
+      "place": ""
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Meeting de Paris",
+      "event": "1500 m sh",
+      "time": "3:42.27",
+      "place": ""
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Oslo Bislett Games",
+      "event": "2000 m",
+      "time": "3:49.72",
+      "place": ""
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF, Arena Stade Couvert, Liévin (i) - Indoor Meeting",
+      "event": "1500 m sh",
+      "time": "3:42.27",
+      "place": "9."
+    },
+    {
+      "date": "APR 24",
+      "meet": "Kenyan Championships",
+      "event": "1500 m",
+      "time": "3:37.23",
+      "place": "1."
+    },
+    {
+      "date": "APR 11",
+      "meet": "Kenyan Championships",
+      "event": "1500 m",
+      "time": "3:33.65",
+      "place": "1."
+    },
+    {
+      "date": "APR 9",
+      "meet": "African U20 Championships",
+      "event": "1500 m",
+      "time": "13:16.40",
+      "place": "1."
+    },
+    {
+      "date": "FEB 19",
+      "meet": "",
+      "event": "800 m",
+      "time": "1:49.64",
+      "place": ""
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Meeting de Paris",
+      "event": "10 Kilom Road",
+      "time": "28:46",
+      "place": ""
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Silesia Kamila Skolimowska Memorial",
+      "event": "1500 m sh",
+      "time": "3:30.30",
+      "place": ""
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games, Nyayo National Stadium, Nairobi",
+      "event": "1500 m sh",
+      "time": "3:39.0h",
+      "place": "1."
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Diamond Discipline",
+      "event": "Mile",
+      "time": "3:49.72",
+      "place": "9."
+    },
+    {
+      "date": "JAN 10",
+      "meet": "World Athletics Championships, Budapest 2023",
+      "event": "1500 m",
+      "time": "3:30.78",
+      "place": "8."
+    },
+    {
+      "date": "JAN 10",
+      "meet": "Wanda Diamond League, China Textile City Sports Centre, Shaoxing/Keqiao - Diamond Discipline",
+      "event": "3000 m",
+      "time": "7:26.11",
+      "place": "2."
+    }
+  ],
   "weight": "140",
   "coach": "x",
   "reviewBody": "x",
