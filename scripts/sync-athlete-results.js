@@ -143,13 +143,34 @@ function fillProfileFields(athlete, html) {
     if (isEmpty(athlete.flag)) { athlete.flag = iocFlag; changed.push('flag'); }
   }
 
-  // DOB / age
-  const rawDob = ath.dateOfBirth || ath.birthDate || ath.basicData?.dateOfBirth || ath.basicData?.birthDate || '';
+  // DOB / age — try multiple paths and field names
+  const rawDob =
+    ath.dateOfBirth || ath.birthDate || ath.dob ||
+    ath.basicData?.dateOfBirth || ath.basicData?.birthDate || ath.basicData?.dob ||
+    pp.dateOfBirth || pp.birthDate || '';
   let dob = rawDob ? parseDob(rawDob) : '';
+
+  // Fallback: search the entire raw HTML for any dateOfBirth/birthDate field
   if (!dob) {
-    const m = html.match(/"dateOfBirth"\s*:\s*"([^"]+)"/);
-    if (m) dob = parseDob(m[1]);
+    const patterns = [
+      /"dateOfBirth"\s*:\s*"([^"]+)"/,
+      /"birthDate"\s*:\s*"([^"]+)"/,
+      /"dob"\s*:\s*"([^"]+)"/,
+      /"birthdate"\s*:\s*"([^"]+)"/i,
+    ];
+    for (const re of patterns) {
+      const m = html.match(re);
+      if (m) { dob = parseDob(m[1]); if (dob) break; }
+    }
   }
+
+  // Last resort: if nd was parsed, stringify the whole thing and grep for ISO dates near dob keys
+  if (!dob && nd) {
+    const ndStr = JSON.stringify(nd);
+    const m = ndStr.match(/"(?:dateOfBirth|birthDate|dob)":"(\d{4}-\d{2}-\d{2})"/i);
+    if (m) dob = m[1];
+  }
+
   if (dob) {
     if (!athlete.dob) { athlete.dob = dob; changed.push('dob'); }
     // Always recalculate age from dob (overwrites 'x' placeholder and keeps it current)
