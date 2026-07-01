@@ -165,9 +165,7 @@ function _renderH2HPage() {
                           .slice(0, 4)
                           .map(([n, ct]) => `<span class="h2h-lb-win-tag">${n}${ct > 1 ? `<span class="h2h-win-x"> ×${ct}</span>` : ''}</span>`).join('');
 
-                        const avatar = a.photo
-                          ? `<div class="h2h-lb-avatar" style="background-image:url('${a.photo}');background-color:${a.photoBackground || '#111'}"></div>`
-                          : `<div class="h2h-lb-avatar h2h-lb-avatar--ph" style="background-color:${a.photoBackground || '#1a1a1a'}"></div>`;
+                        const avatar = `<div class="h2h-lb-avatar" style="background-image:url('${a.photo || '/images/default_card.png'}');background-color:${a.photoBackground || '#111'}"></div>`;
 
                         return `
                           <tr class="h2h-lb-row ${rankClass}" id="h2h-row-${id}" onclick="h2hToggleExpand('${id}')">
@@ -240,9 +238,7 @@ function _renderExpandDetail(id, rec) {
 
   return matchups.map(m => {
     const opp = ATHLETES[m.id];
-    const avatar = opp?.photo
-      ? `<div class="h2h-detail-avatar" style="background-image:url('${opp.photo}');background-color:${opp.photoBackground || '#111'}"></div>`
-      : `<div class="h2h-detail-avatar h2h-detail-avatar--ph" style="background-color:${opp?.photoBackground || '#222'}"></div>`;
+    const avatar = `<div class="h2h-detail-avatar" style="background-image:url('${opp?.photo || '/images/default_card.png'}');background-color:${opp?.photoBackground || '#111'}"></div>`;
 
     const recCls = m.wins > m.losses ? 'h2h-detail-opp-rec--win'
                  : m.losses > m.wins ? 'h2h-detail-opp-rec--loss'
@@ -289,9 +285,7 @@ function _renderDominanceMap(rows) {
 
   const bodyRows = orderedIds.map((rowId, ri) => {
     const rowAth = ATHLETES[rowId];
-    const avatar = rowAth?.photo
-      ? `<div class="h2h-map-avatar" style="background-image:url('${rowAth.photo}');background-color:${rowAth.photoBackground || '#111'}"></div>`
-      : `<div class="h2h-map-avatar h2h-map-avatar--ph" style="background-color:${rowAth?.photoBackground || '#1a1a1a'}"></div>`;
+    const avatar = `<div class="h2h-map-avatar" style="background-image:url('${rowAth?.photo || '/images/default_card.png'}');background-color:${rowAth?.photoBackground || '#111'}"></div>`;
 
     const cells = orderedIds.map(colId => {
       if (rowId === colId) return `<td class="h2h-map-cell h2h-map-cell--self"></td>`;
