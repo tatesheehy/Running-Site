@@ -165,7 +165,7 @@
           "year": "2022"
         }
       ],
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -297,11 +297,85 @@
       "id": "abel-teffra",
       "age": "24",
       "dob": "2002-01-23",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
-      "lastSynced": "2026-07-01",
+      "reviewTitle": "Season review",
+      "collegeLogo": "/images/south_carolina_gamecocks_logo_secondary_19666280.png",
+      "waUrl": "https://worldathletics.org/athletes/morocco/anass-essayi-14805620",
+      "name": "Anass Essayi",
+      "prs": [
+        {
+          "event": "800m",
+          "time": "1:46.06"
+        },
+        {
+          "event": "1500m",
+          "time": "3:30.17"
+        },
+        {
+          "event": "Mile",
+          "time": "3:49.16"
+        },
+        {
+          "event": "3000m",
+          "time": "7:32.45"
+        },
+        {
+          "event": "5000m",
+          "time": "13:34.92"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:33.55"
+        },
+        {
+          "event": "Mile Short Track",
+          "time": "3:50.46"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:32.45"
+        }
+      ],
+      "questionTitle": "Next question",
+      "photo": "/images/essayi_card.png",
+      "ncaa": false,
+      "results": [
+        {
+          "date": "JUN 28",
+          "meet": "Meeting de Paris",
+          "event": "1500m",
+          "time": "3:30.17",
+          "place": "4"
+        },
+        {
+          "date": "JUN 16",
+          "meet": "65th Ostrava Golden Spike",
+          "event": "Mile",
+          "time": "3:49.94",
+          "place": ""
+        },
+        {
+          "date": "MAY 31",
+          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+          "event": "1500m",
+          "time": "3:32.23",
+          "place": "9"
+        }
+      ],
+      "college": "South Carolina",
+      "event": "MIDDLE DISTANCE",
+      "country": "Morocco",
+      "flag": "MA",
+      "dob": "2001-05-18",
+      "age": "25",
+      "lastSynced": "2026-07-02"
+    },
+    {
+      "photoBackground": "#111111",
+      "lastSynced": "2026-07-02",
       "reviewTitle": "Season review",
       "waUrl": "https://worldathletics.org/athletes/ireland/andrew-coscoran-14595170",
       "height": "5'11",
@@ -616,7 +690,7 @@
       "id": "azeddine-habz",
       "age": "32",
       "dob": "1993-07-19",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -822,7 +896,7 @@
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -890,7 +964,7 @@
         {
           "date": "JUN 20",
           "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
-          "event": "",
+          "event": "1500m",
           "time": "3:41.03",
           "place": "12"
         },
@@ -911,35 +985,35 @@
         {
           "date": "MAY 29",
           "meet": "NCAA Division I West First Rounds",
-          "event": "",
+          "event": "1500m",
           "time": "3:44.42",
           "place": "1"
         },
         {
           "date": "MAY 27",
           "meet": "NCAA Division I West First Rounds",
-          "event": "",
+          "event": "1500m",
           "time": "3:39.77",
           "place": "1"
         },
         {
           "date": "MAY 16",
           "meet": "Southeastern Conference Outdoor Track & Field Championships",
-          "event": "",
+          "event": "1500m",
           "time": "3:43.52",
           "place": "1"
         },
         {
           "date": "MAY 16",
           "meet": "Southeastern Conference Outdoor Track & Field Championships",
-          "event": "",
+          "event": "5000m",
           "time": "DNS",
           "place": ""
         },
         {
           "date": "MAY 15",
           "meet": "Southeastern Conference Outdoor Track & Field Championships",
-          "event": "",
+          "event": "1500m",
           "time": "3:43.36",
           "place": "1"
         },
@@ -960,7 +1034,7 @@
         {
           "date": "APR 18",
           "meet": "Bryan Clay Invitational",
-          "event": "",
+          "event": "1500m",
           "time": "3:39.54",
           "place": "4"
         },
@@ -969,26 +1043,26 @@
           "meet": "Bryan Clay Invitational",
           "event": "5000m",
           "time": "13:27.64",
-          "place": ""
+          "place": "10"
         },
         {
           "date": "APR 3",
           "meet": "Mets Outdoor Championships",
-          "event": "",
+          "event": "800m",
           "time": "1:53.52",
           "place": "1"
         },
         {
           "date": "MAR 28",
           "meet": "Raleigh Relays",
-          "event": "",
+          "event": "800m",
           "time": "1:52.29",
           "place": "5"
         },
         {
           "date": "MAR 21",
           "meet": "UCF Black & Gold Invite",
-          "event": "",
+          "event": "1500m",
           "time": "4:00.61",
           "place": "6"
         },
@@ -997,40 +1071,40 @@
           "meet": "UCF Black & Gold Invite",
           "event": "800m",
           "time": "1:51.65",
-          "place": ""
+          "place": "5"
         },
         {
           "date": "MAR 20",
           "meet": "UCF Black & Gold Invite",
           "event": "4x400 Metres Relay",
           "time": "3:20.52",
-          "place": ""
+          "place": "4"
         },
         {
           "date": "MAR 13",
           "meet": "NCAA Division I Indoor Track and Field Championships",
-          "event": "",
+          "event": "Distance Medley Short Track",
           "time": "9:21.42",
           "place": "2"
         },
         {
           "date": "FEB 26",
           "meet": "Southeastern Conference Indoor Track & Field Championship",
-          "event": "3000m sh",
+          "event": "3000 Metres Short Track",
           "time": "7:45.42",
           "place": "1"
         },
         {
           "date": "FEB 26",
           "meet": "Southeastern Conference Indoor Track & Field Championship",
-          "event": "",
+          "event": "Distance Medley Short Track",
           "time": "9:30.84",
           "place": "3"
         },
         {
           "date": "FEB 22",
           "meet": "Saucony Battle for Boston",
-          "event": "3000m sh",
+          "event": "3000 Metres Short Track",
           "time": "7:43.82",
           "place": "3"
         },
@@ -1039,54 +1113,54 @@
           "meet": "Arkansas Qualifier",
           "event": "Distance Medley Short Track",
           "time": "9:17.30",
-          "place": ""
+          "place": "2"
         },
         {
           "date": "FEB 16",
           "meet": "Northeast Conference Indoor Championships",
-          "event": "4x400 Metres Relay Short Track",
-          "time": "3:19.44",
-          "place": ""
-        },
-        {
-          "date": "FEB 16",
-          "meet": "Northeast Conference Indoor Championships",
-          "event": "",
+          "event": "800 Metres Short Track",
           "time": "1:52.55",
           "place": "1"
         },
         {
           "date": "FEB 16",
           "meet": "Northeast Conference Indoor Championships",
-          "event": "",
+          "event": "Mile Short Track",
           "time": "4:14.55",
           "place": "4"
         },
         {
+          "date": "FEB 16",
+          "meet": "Northeast Conference Indoor Championships",
+          "event": "4x400 Metres Relay Short Track",
+          "time": "3:19.44",
+          "place": "3"
+        },
+        {
           "date": "FEB 15",
           "meet": "Northeast Conference Indoor Championships",
-          "event": "",
+          "event": "800 Metres Short Track",
           "time": "1:55.49",
           "place": "1"
         },
         {
           "date": "FEB 15",
           "meet": "Northeast Conference Indoor Championships",
-          "event": "",
+          "event": "Mile Short Track",
           "time": "4:21.30",
           "place": "2"
         },
         {
           "date": "FEB 13",
           "meet": "Husky Classic",
-          "event": "",
+          "event": "3000m",
           "time": "DNS",
           "place": ""
         },
         {
           "date": "FEB 13",
           "meet": "Tyson Invitational",
-          "event": "3000m sh",
+          "event": "3000 Metres Short Track",
           "time": "7:43.96",
           "place": "3"
         },
@@ -1095,33 +1169,33 @@
           "meet": "Boston University John Thomas Terrier Classic",
           "event": "800 Metres Short Track",
           "time": "1:52.54",
-          "place": ""
+          "place": "2"
         },
         {
           "date": "JAN 31",
           "meet": "Razorback Invitational",
-          "event": "Mile sh",
+          "event": "Mile Short Track",
           "time": "3:58.82",
           "place": "2"
         },
         {
           "date": "JAN 23",
           "meet": "Dr. Sander Scorcher",
-          "event": "",
+          "event": "800 Metres Short Track",
           "time": "1:52.94",
           "place": "1"
         },
         {
           "date": "JAN 16",
           "meet": "NYC Gotham Cup",
-          "event": "",
+          "event": "800 Metres Short Track",
           "time": "1:53.15",
           "place": "1"
         },
         {
           "date": "JAN 16",
           "meet": "Arkansas Invitational",
-          "event": "Mile sh",
+          "event": "Mile Short Track",
           "time": "4:00.23",
           "place": "1"
         }
@@ -1131,7 +1205,7 @@
       "flag": "KE",
       "dob": "1999-03-02",
       "age": "27",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -1274,7 +1348,7 @@
       "id": "cameron-myers",
       "age": "20",
       "dob": "2006-06-09",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -1527,7 +1601,7 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "carter-cutting",
-      "lastSynced": "2026-07-01",
+      "lastSynced": "2026-07-02",
       "dob": "2005-01-10",
       "age": "21"
     },
@@ -1682,7 +1756,7 @@
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "chris-caudillo",
       "age": "20",
-      "lastSynced": "2026-07-01",
+      "lastSynced": "2026-07-02",
       "dob": "2005-08-05"
     },
     {
@@ -1837,7 +1911,7 @@
       "weight": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#1a0a0a",
@@ -2046,7 +2120,7 @@
           "year": "2024"
         }
       ],
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -2277,7 +2351,7 @@
       "weight": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
-      "lastSynced": "2026-07-01",
+      "lastSynced": "2026-07-02",
       "dob": "2003-10-28",
       "age": "22"
     },
@@ -2443,7 +2517,7 @@
       "id": "cooper-teare",
       "age": "26",
       "dob": "1999-08-18",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -2550,7 +2624,7 @@
           "year": "2023"
         }
       ],
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -2694,7 +2768,7 @@
       "id": "ethan-strand",
       "age": "23",
       "dob": "2002-10-19",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -2909,7 +2983,7 @@
       "id": "gary-martin",
       "age": "22",
       "dob": "2003-12-23",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -2998,7 +3072,7 @@
       "id": "george-mills",
       "age": "27",
       "dob": "1999-05-12",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -3069,46 +3143,102 @@
       "country": "Eritrea",
       "results": [
         {
+          "date": "JUN 12",
+          "meet": "NCAA Division I Outdoor Track and Field Championships",
+          "event": "5000m",
+          "time": "13:38.93",
+          "place": "1"
+        },
+        {
+          "date": "JUN 10",
+          "meet": "NCAA Division I Outdoor Track and Field Championships",
+          "event": "10000m",
+          "time": "27:51.31",
+          "place": "1"
+        },
+        {
+          "date": "MAY 27",
+          "meet": "NCAA Division I West First Rounds",
+          "event": "10000m",
+          "time": "28:42.53",
+          "place": "1"
+        },
+        {
           "date": "MAY 23",
-          "meet": "",
-          "event": "5000 m",
+          "meet": "LA Track Festival",
+          "event": "5000m",
           "time": "12:57.22",
+          "place": "1"
+        },
+        {
+          "date": "MAY 16",
+          "meet": "Mountain West Outdoor Track and Field Championships",
+          "event": "5000m",
+          "time": "13:25.96",
+          "place": "1"
+        },
+        {
+          "date": "APR 17",
+          "meet": "Bryan Clay Invitational",
+          "event": "5000m",
+          "time": "13:03.47",
+          "place": "1"
+        },
+        {
+          "date": "APR 3",
+          "meet": "Stanford Invitational",
+          "event": "10000m",
+          "time": "27:30.51",
+          "place": "1"
+        },
+        {
+          "date": "MAR 14",
+          "meet": "NCAA Division I Indoor Track and Field Championships",
+          "event": "3000 Metres Short Track",
+          "time": "DQ",
           "place": ""
+        },
+        {
+          "date": "MAR 13",
+          "meet": "NCAA Division I Indoor Track and Field Championships",
+          "event": "5000 Metres Short Track",
+          "time": "13:36.58",
+          "place": "1"
+        },
+        {
+          "date": "FEB 28",
+          "meet": "Mountain West Indoor Track and Field Championships",
+          "event": "3000 Metres Short Track",
+          "time": "7:48.35",
+          "place": "1"
+        },
+        {
+          "date": "FEB 26",
+          "meet": "Mountain West Indoor Track and Field Championships",
+          "event": "5000 Metres Short Track",
+          "time": "13:30.40",
+          "place": "1"
         },
         {
           "date": "FEB 13",
-          "meet": "",
-          "event": "3000 m",
+          "meet": "Husky Classic",
+          "event": "3000m",
           "time": "7:37.44",
-          "place": ""
+          "place": "1"
         },
         {
           "date": "FEB 1",
-          "meet": "",
-          "event": "3000 m sh",
-          "time": "7:39.62",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "",
-          "event": "2 Mi",
+          "meet": "Millrose Games",
+          "event": "2 Miles Short Track",
           "time": "8:11.47",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "",
-          "event": "2 Mi sh",
-          "time": "8:11.47",
-          "place": ""
+          "place": "9"
         },
         {
           "date": "JAN 11",
-          "meet": "",
+          "meet": "Aramco Houston Half Marathon",
           "event": "Half Marathon",
           "time": "59:01",
-          "place": ""
+          "place": "1"
         }
       ],
       "college": "New Mexico",
@@ -3205,31 +3335,59 @@
       "results": [
         {
           "date": "JUN 16",
-          "meet": "",
-          "event": "1000 m",
+          "meet": "65th Ostrava Golden Spike",
+          "event": "1000 Metres",
           "time": "2:15.44",
+          "place": "4"
+        },
+        {
+          "date": "JUN 10",
+          "meet": "Oslo Bislett Games",
+          "event": "Mile",
+          "time": "3:49.13",
+          "place": "4"
+        },
+        {
+          "date": "JUN 7",
+          "meet": "BAUHAUS-Galan",
+          "event": "1500m",
+          "time": "3:31.76",
+          "place": "6"
+        },
+        {
+          "date": "MAY 23",
+          "meet": "LA Track Festival",
+          "event": "800m",
+          "time": "1:46.04",
+          "place": "9"
+        },
+        {
+          "date": "MAY 23",
+          "meet": "LA Track Festival",
+          "event": "1500m",
+          "time": "DNF",
           "place": ""
         },
         {
           "date": "MAY 1",
-          "meet": "",
-          "event": "5000 m",
+          "meet": "Payton Jordan Invitational",
+          "event": "5000m",
           "time": "13:13.94",
-          "place": ""
+          "place": "6"
+        },
+        {
+          "date": "FEB 1",
+          "meet": "Millrose Games",
+          "event": "Mile Short Track",
+          "time": "3:48.68",
+          "place": "3"
         },
         {
           "date": "JAN 24",
-          "meet": "",
-          "event": "2000 m",
+          "meet": "New Balance Indoor Grand Prix",
+          "event": "2000 Metres Short Track",
           "time": "4:48.79",
-          "place": ""
-        },
-        {
-          "date": "JAN 24",
-          "meet": "",
-          "event": "2000 m sh",
-          "time": "4:48.79",
-          "place": ""
+          "place": "1"
         }
       ],
       "weight": "140",
@@ -3327,18 +3485,88 @@
       "country": "Portugal",
       "results": [
         {
+          "date": "JUN 27",
+          "meet": "Campeonato Nacional de Clubes",
+          "event": "1500m",
+          "time": "3:48.63",
+          "place": "1"
+        },
+        {
+          "date": "JUN 16",
+          "meet": "65th Ostrava Golden Spike",
+          "event": "1000 Metres",
+          "time": "2:16.39",
+          "place": "8"
+        },
+        {
+          "date": "JUN 10",
+          "meet": "Oslo Bislett Games",
+          "event": "Mile",
+          "time": "3:50.71",
+          "place": "12"
+        },
+        {
+          "date": "JUN 4",
+          "meet": "Golden Gala Pietro Mennea",
+          "event": "800m",
+          "time": "1:44.28",
+          "place": "5"
+        },
+        {
+          "date": "MAY 31",
+          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+          "event": "1500m",
+          "time": "3:30.43",
+          "place": "2"
+        },
+        {
           "date": "MAR 22",
           "meet": "World Athletics Indoor Championships",
-          "event": "1500 m sh",
+          "event": "1500 Metres Short Track",
           "time": "3:40.06",
-          "place": "2."
+          "place": "2"
         },
         {
           "date": "MAR 20",
           "meet": "World Athletics Indoor Championships",
-          "event": "1500 m sh",
+          "event": "1500 Metres Short Track",
           "time": "3:43.58",
-          "place": "18."
+          "place": "2"
+        },
+        {
+          "date": "FEB 22",
+          "meet": "ORLEN Copernicus Cup",
+          "event": "800 Metres Short Track",
+          "time": "1:45.05",
+          "place": "5"
+        },
+        {
+          "date": "FEB 19",
+          "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+          "event": "1500 Metres Short Track",
+          "time": "3:32.44",
+          "place": "1"
+        },
+        {
+          "date": "FEB 15",
+          "meet": "Campeonatos Nacionais de Clubes 1ª e 2ª Divisão",
+          "event": "3000 Metres Short Track",
+          "time": "8:11.30",
+          "place": "1"
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Campeonatos Nacionais de Clubes 1ª e 2ª Divisão",
+          "event": "1500 Metres Short Track",
+          "time": "4:04.97",
+          "place": "1"
+        },
+        {
+          "date": "FEB 3",
+          "meet": "Czech Indoor Gala",
+          "event": "3000 Metres Short Track",
+          "time": "7:38.05",
+          "place": "1"
         }
       ],
       "weight": "115 lbs",
@@ -3727,7 +3955,7 @@
           "year": "2022"
         }
       ],
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -3861,7 +4089,7 @@
       "id": "josh-hoey",
       "age": "26",
       "dob": "1999-11-01",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#0a0a1a",
@@ -4033,7 +4261,7 @@
           "year": "2024"
         }
       ],
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -4247,7 +4475,7 @@
       "id": "leo-young",
       "age": "21",
       "dob": "2005-02-28",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -4483,7 +4711,7 @@
           "year": "2026"
         }
       ],
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -4564,7 +4792,7 @@
           "year": "2022"
         }
       ],
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -4707,7 +4935,7 @@
       "event": "DISTANCE",
       "country": "Australia",
       "flag": "AU",
-      "lastSynced": "2026-07-01",
+      "lastSynced": "2026-07-02",
       "dob": "1996-04-23",
       "age": "30"
     },
@@ -4860,7 +5088,7 @@
           "year": "2023"
         }
       ],
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -4940,7 +5168,7 @@
       "id": "niels-laros",
       "age": "21",
       "dob": "2005-04-17",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -5086,7 +5314,7 @@
       "event": "MIDDLE DISTANCE",
       "age": "29",
       "dob": "1997-01-29",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -5158,7 +5386,7 @@
       "event": "MIDDLE DISTANCE",
       "id": "phanuel-koech",
       "age": "19",
-      "lastSynced": "2026-07-01",
+      "lastSynced": "2026-07-02",
       "dob": "2006-12-01"
     },
     {
@@ -5338,7 +5566,7 @@
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "pierre-attiogbe",
-      "lastSynced": "2026-07-01",
+      "lastSynced": "2026-07-02",
       "dob": "2005-03-16",
       "age": "21"
     },
@@ -5599,7 +5827,7 @@
           "year": "2025"
         }
       ],
-      "lastSynced": "2026-07-01",
+      "lastSynced": "2026-07-02",
       "dob": "2004-07-30"
     },
     {
@@ -5726,7 +5954,7 @@
       "event": "MIDDLE DISTANCE",
       "country": "Germany",
       "flag": "DE",
-      "lastSynced": "2026-07-01",
+      "lastSynced": "2026-07-02",
       "dob": "1997-09-20",
       "age": "28"
     },
@@ -5860,7 +6088,7 @@
       "weight": "x",
       "reviewBody": "x",
       "event": "DISTANCE",
-      "lastSynced": "2026-07-01",
+      "lastSynced": "2026-07-02",
       "dob": "2004-09-05",
       "age": "21"
     },
@@ -5979,7 +6207,7 @@
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "sam-ruthe",
       "age": "17",
-      "lastSynced": "2026-07-01",
+      "lastSynced": "2026-07-02",
       "dob": "2009-04-12"
     },
     {
@@ -6206,7 +6434,7 @@
       "event": "MIDDLE DISTANCE",
       "id": "simeon-birnbaum",
       "age": "21",
-      "lastSynced": "2026-07-01",
+      "lastSynced": "2026-07-02",
       "dob": "2005-06-23"
     },
     {
@@ -6311,7 +6539,7 @@
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "simon-lane",
       "age": "20",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -6529,7 +6757,7 @@
       "event": "MIDDLE DISTANCE",
       "id": "stefan-nillessen",
       "age": "23",
-      "lastSynced": "2026-07-01",
+      "lastSynced": "2026-07-02",
       "dob": "2003-01-02"
     },
     {
@@ -6725,7 +6953,7 @@
           "year": "2017"
         }
       ],
-      "lastSynced": "2026-07-01",
+      "lastSynced": "2026-07-02",
       "dob": "1995-11-20"
     },
     {
@@ -6902,7 +7130,7 @@
       "weight": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
-      "lastSynced": "2026-07-01"
+      "lastSynced": "2026-07-02"
     },
     {
       "photoBackground": "#111111",
@@ -7002,12 +7230,13 @@
       "event": "MIDDLE DISTANCE",
       "id": "tshepiso-masalela",
       "age": "27",
-      "lastSynced": "2026-07-01",
+      "lastSynced": "2026-07-02",
       "dob": "1999-05-25"
     },
     {
       "photoBackground": "#111111",
       "reviewTitle": "Season review",
+      "collegeLogo": "/images/virginia_tech_hokies_logo.svg.webp",
       "waUrl": "https://worldathletics.org/athletes/united-states/vincent-ciattei-14531160",
       "height": "6'0",
       "questionBody": "x",
@@ -7016,6 +7245,7 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "9",
+      "lastSynced": "2026-07-02",
       "prs": [
         {
           "event": "800m",
@@ -7103,15 +7333,100 @@
       "photo": "/images/ciattei_card.png",
       "club": "x",
       "country": "United States",
-      "results": [],
+      "results": [
+        {
+          "date": "JUN 28",
+          "meet": "Meeting de Paris",
+          "event": "",
+          "time": "3:36.47",
+          "place": "14"
+        },
+        {
+          "date": "JUN 16",
+          "meet": "65th Ostrava Golden Spike",
+          "event": "Mile",
+          "time": "3:49.51",
+          "place": ""
+        },
+        {
+          "date": "JUN 7",
+          "meet": "BAUHAUS-Galan",
+          "event": "1500m",
+          "time": "3:31.63",
+          "place": "4"
+        },
+        {
+          "date": "MAY 31",
+          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+          "event": "1500m",
+          "time": "3:30.90",
+          "place": "4"
+        },
+        {
+          "date": "MAY 23",
+          "meet": "LA Track Festival",
+          "event": "",
+          "time": "3:33.41",
+          "place": "1"
+        },
+        {
+          "date": "MAY 1",
+          "meet": "Payton Jordan Invitational",
+          "event": "5000m",
+          "time": "13:13.20",
+          "place": ""
+        },
+        {
+          "date": "APR 21",
+          "meet": "Grand Blue Mile presented by Wellmark Blue Cross Blue Shield",
+          "event": "Mile Road",
+          "time": "3:54.62",
+          "place": ""
+        },
+        {
+          "date": "MAR 1",
+          "meet": "USA Indoor Championships",
+          "event": "",
+          "time": "3:37.73",
+          "place": "3"
+        },
+        {
+          "date": "FEB 19",
+          "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+          "event": "",
+          "time": "3:35.83",
+          "place": "8"
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Sound Invite",
+          "event": "1500 Metres Short Track",
+          "time": "3:33.74",
+          "place": ""
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Sound Invite",
+          "event": "Mile sh",
+          "time": "3:51.70",
+          "place": "3"
+        },
+        {
+          "date": "JAN 31",
+          "meet": "Boston University John Thomas Terrier Classic",
+          "event": "3000m",
+          "time": "7:39.50",
+          "place": ""
+        }
+      ],
+      "dob": "1995-01-21",
+      "college": "Virginia Tech",
       "weight": "155",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "vincent-ciattei",
-      "age": "31",
-      "lastSynced": "2026-07-01",
-      "dob": "1995-01-21"
+      "age": "31"
     },
     {
       "photoBackground": "#111111",
@@ -7277,7 +7592,7 @@
           "year": "2024"
         }
       ],
-      "lastSynced": "2026-07-01",
+      "lastSynced": "2026-07-02",
       "dob": "1999-06-01"
     }
   ]
