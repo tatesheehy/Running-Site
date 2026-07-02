@@ -99,24 +99,7 @@ function buildHome() {
   const heroDest = featuredRankings
     ? `rankings.html${rankingsEvent ? '?event=' + encodeURIComponent(rankingsEvent) : ''}`
     : `article.html?id=${heroItem.id}`;
-  const heroImg = imgHTML(heroItem.image, heroItem.title, heroItem.imagePosition, 16/7, 'home-hero-img');
-
-  // Two secondary cards shown below the hero (any type except the hero itself)
-  const secondaryArticles = ARTICLES.filter(a => a !== heroItem).slice(0, 2);
-  const secondaryHtml = secondaryArticles.map(a => {
-    const thumb = a.image
-      ? `<div class="home-sec-thumb" style="background-image:url('${a.image}')"></div>`
-      : `<div class="home-sec-thumb home-sec-thumb--empty"></div>`;
-    return `
-      <div class="home-sec-card" onclick="goTo('article.html?id=${a.id}')">
-        ${thumb}
-        <div class="home-sec-body">
-          <div class="home-sec-cat">${a.category || ''}</div>
-          <div class="home-sec-title">${a.title}</div>
-          <div class="home-sec-meta">${a.author ? `${a.author} · ` : ''}${a.readTime || ''}</div>
-        </div>
-      </div>`;
-  }).join('');
+  const heroImg = imgHTML(heroItem.image, heroItem.title, heroItem.imagePosition, 16/9, 'home-hero-img');
 
   const countdownHtml = buildCountdownPills();
 
@@ -139,7 +122,6 @@ function buildHome() {
               </div>
             </div>
           </div>
-          ${secondaryHtml ? `<div class="home-sec-row${secondaryArticles.length === 1 ? ' home-sec-row--single' : ''}">${secondaryHtml}</div>` : ''}
         </div>
         ${rankingsWidgetHtml ? `<aside class="home-rankings-col">${rankingsWidgetHtml}</aside>` : ''}
       </div>

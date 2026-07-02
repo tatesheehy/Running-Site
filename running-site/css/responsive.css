@@ -3,8 +3,7 @@
    ============================================================ */
 
 @media (max-width: 960px) {
-  .home-hero-img, .home-hero-full .img-placeholder { aspect-ratio: 16/7; }
-  .home-sec-row { grid-template-columns: 1fr; }
+  .home-hero-img, .home-hero-full .img-placeholder { aspect-ratio: 16/9; }
   .home-hero-title { font-size: 36px; }
   .home-ep-list { grid-template-columns: 1fr; }
   .home-ep-list .ep-item { border-right: none; margin-right: 0; padding-right: 0; }
@@ -38,7 +37,6 @@
   }
   .home-rankings-col { position: static; }
   .home-hero-title { font-size: 28px; }
-  .home-sec-row { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {

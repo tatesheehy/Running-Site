@@ -54,20 +54,25 @@ function buildAccountPage() {
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
             Username
           </h2>
-          <form class="acct-username-form" onsubmit="saveUsername(event)">
-            <input
-              id="acct-username-input"
-              class="acct-username-input"
-              type="text"
-              value="${username}"
-              placeholder="Choose a username"
-              maxlength="30"
-              autocomplete="off"
-              spellcheck="false"
-            >
-            <button type="submit" class="acct-username-save">Save</button>
-          </form>
-          <p id="acct-username-msg" class="acct-username-msg"></p>
+          ${username
+            ? `<p class="acct-username-set"><span class="acct-username-display">@${username}</span></p>
+               <p class="acct-username-msg">Usernames cannot be changed once set.</p>`
+            : `<form class="acct-username-form" onsubmit="saveUsername(event)">
+                 <input
+                   id="acct-username-input"
+                   class="acct-username-input"
+                   type="text"
+                   value=""
+                   placeholder="Choose a username"
+                   maxlength="30"
+                   autocomplete="off"
+                   spellcheck="false"
+                 >
+                 <button type="submit" class="acct-username-save">Save</button>
+               </form>
+               <p class="acct-username-msg" style="margin-top:8px;color:var(--muted)">Choose carefully — usernames cannot be changed once set.</p>
+               <p id="acct-username-msg" class="acct-username-msg"></p>`
+          }
         </div>
 
         <div class="acct-section">
@@ -85,6 +90,7 @@ function buildAccountPage() {
 
   window.saveUsername = async function(e) {
     e.preventDefault();
+    if (typeof getUsername === 'function' && getUsername()) return;
     const input = document.getElementById('acct-username-input');
     const msg   = document.getElementById('acct-username-msg');
     const val   = input?.value.trim();
