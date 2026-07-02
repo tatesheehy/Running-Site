@@ -7994,6 +7994,455 @@
       ],
       "event": "MIDDLE DISTANCE",
       "id": "paul-anselmini"
+    },
+    {
+      "photoBackground": "#111111",
+      "reviewTitle": "Season review",
+      "waUrl": "https://worldathletics.org/athletes/france/anas-lagtiy-chaoudar-15032059",
+      "name": "Anas Chaoudar",
+      "prs": [
+        {
+          "event": "800m",
+          "time": "1:46.69"
+        },
+        {
+          "event": "1500m",
+          "time": "3:30.31"
+        },
+        {
+          "event": "Mile",
+          "time": "3:57.81"
+        },
+        {
+          "event": "3000m",
+          "time": "7:43.84"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:36.64"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:49.79"
+        },
+        {
+          "event": "5 Kilometres Road",
+          "time": "13:33"
+        },
+        {
+          "event": "10 Kilometres Road",
+          "time": "29:37"
+        }
+      ],
+      "questionTitle": "Next question",
+      "photo": "/images/default_card.png",
+      "ncaa": false,
+      "results": [
+        {
+          "date": "JUN 28",
+          "meet": "Meeting de Paris",
+          "event": "1500m",
+          "time": "3:30.31",
+          "place": "6"
+        },
+        {
+          "date": "JUN 21",
+          "meet": "FBK Games",
+          "event": "",
+          "time": "3:43.99",
+          "place": "15"
+        },
+        {
+          "date": "JUN 13",
+          "meet": "Meeting Nikaia",
+          "event": "1500m",
+          "time": "3:32.29",
+          "place": "3"
+        },
+        {
+          "date": "JUN 6",
+          "meet": "Meeting de Strasbourg",
+          "event": "800m",
+          "time": "1:46.69",
+          "place": ""
+        },
+        {
+          "date": "MAY 29",
+          "meet": "8th Irena Szewińska Memorial",
+          "event": "",
+          "time": "DNF",
+          "place": ""
+        },
+        {
+          "date": "MAY 17",
+          "meet": "Finale interclubs N2A G-E",
+          "event": "",
+          "time": "1:49.11",
+          "place": "1"
+        },
+        {
+          "date": "FEB 8",
+          "meet": "Meeting Metz Moselle Athlélor Crédit Mutuel",
+          "event": "3000m sh",
+          "time": "7:49.79",
+          "place": "4"
+        },
+        {
+          "date": "JAN 30",
+          "meet": "Elite Indoor Track Miramas Meeting",
+          "event": "1500m sh",
+          "time": "3:36.64",
+          "place": "1"
+        }
+      ],
+      "event": "MIDDLE DISTANCE",
+      "id": "anas-lagtiy-chaoudar"
+    },
+    {
+      "photoBackground": "#111111",
+      "reviewTitle": "Season review",
+      "collegeLogo": "/images/wingate_bulldogs_current_logo.svg.webp",
+      "waUrl": "https://worldathletics.org/athletes/france/titouan-le-grix-14948015",
+      "name": "Titouan Le Grix",
+      "prs": [
+        {
+          "event": "800m",
+          "time": "1:56.22"
+        },
+        {
+          "event": "1500m",
+          "time": "3:31.46"
+        },
+        {
+          "event": "Mile",
+          "time": "3:51.90"
+        },
+        {
+          "event": "3000m",
+          "time": "7:40.55"
+        },
+        {
+          "event": "3000m SC",
+          "time": "8:29.02"
+        },
+        {
+          "event": "5000m",
+          "time": "13:28.23"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:36.16"
+        },
+        {
+          "event": "Mile Short Track",
+          "time": "3:51.90"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:40.55"
+        },
+        {
+          "event": "5000 Metres Short Track",
+          "time": "13:52.94"
+        },
+        {
+          "event": "Road Race",
+          "time": "21:12"
+        },
+        {
+          "event": "10 Kilometres Road",
+          "time": "28:20"
+        },
+        {
+          "event": "Distance Medley Short Track",
+          "time": "9:44.62"
+        }
+      ],
+      "questionTitle": "Next question",
+      "photo": "/images/default_card.png",
+      "ncaa": false,
+      "results": [
+        {
+          "date": "JUN 28",
+          "meet": "Meeting de Paris",
+          "event": "1500m",
+          "time": "3:31.46",
+          "place": "8"
+        },
+        {
+          "date": "JUN 21",
+          "meet": "FBK Games",
+          "event": "1500m",
+          "time": "3:33.51",
+          "place": "3"
+        },
+        {
+          "date": "JUN 13",
+          "meet": "Meeting Nikaia",
+          "event": "1500m",
+          "time": "3:33.01",
+          "place": "4"
+        },
+        {
+          "date": "MAY 29",
+          "meet": "8th Irena Szewińska Memorial",
+          "event": "",
+          "time": "3:38.92",
+          "place": "4"
+        },
+        {
+          "date": "MAY 17",
+          "meet": "Championnat de France des clubs N1A Poule 3",
+          "event": "",
+          "time": "3:45.94",
+          "place": "1"
+        },
+        {
+          "date": "MAY 3",
+          "meet": "Duke Twilight",
+          "event": "3000m SC",
+          "time": "8:31.46",
+          "place": ""
+        },
+        {
+          "date": "APR 25",
+          "meet": "116th Drake Relays",
+          "event": "",
+          "time": "3:36.11",
+          "place": "2"
+        },
+        {
+          "date": "APR 17",
+          "meet": "Bryan Clay Invitational",
+          "event": "5000m",
+          "time": "13:36.32",
+          "place": ""
+        },
+        {
+          "date": "MAR 22",
+          "meet": "World Athletics Indoor Championships",
+          "event": "1500 Metres Short Track",
+          "time": "3:42.69",
+          "place": "9"
+        },
+        {
+          "date": "MAR 20",
+          "meet": "World Athletics Indoor Championships",
+          "event": "1500 Metres Short Track",
+          "time": "3:38.92",
+          "place": "2"
+        },
+        {
+          "date": "MAR 8",
+          "meet": "French Cross Country Championships, Carhaix",
+          "event": "",
+          "time": "14:55",
+          "place": "15"
+        },
+        {
+          "date": "MAR 1",
+          "meet": "French Indoor Championships",
+          "event": "1500 Metres Short Track",
+          "time": "3:45.51",
+          "place": "1"
+        },
+        {
+          "date": "FEB 19",
+          "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+          "event": "1500m sh",
+          "time": "3:36.16",
+          "place": "5"
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Sound Invite",
+          "event": "Mile sh",
+          "time": "3:51.90",
+          "place": "4"
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Sound Invite",
+          "event": "1500m sh",
+          "time": "3:36.74",
+          "place": ""
+        },
+        {
+          "date": "JAN 31",
+          "meet": "Boston University John Thomas Terrier Classic",
+          "event": "3000m sh",
+          "time": "7:40.55",
+          "place": "6"
+        },
+        {
+          "date": "JAN 24",
+          "meet": "Dr. Sander Invitational",
+          "event": "Mile sh",
+          "time": "3:56.37",
+          "place": "7"
+        }
+      ],
+      "college": "Wingate",
+      "event": "MIDDLE DISTANCE",
+      "id": "titouan-le-grix"
+    },
+    {
+      "photoBackground": "#111111",
+      "reviewTitle": "Season review",
+      "waUrl": "https://worldathletics.org/athletes/south-africa/tshepo-tshite-14784315",
+      "name": "Tshepo Tshite",
+      "prs": [
+        {
+          "event": "400m",
+          "time": "47.75"
+        },
+        {
+          "event": "800m",
+          "time": "1:44.59"
+        },
+        {
+          "event": "1500m",
+          "time": "3:31.35"
+        },
+        {
+          "event": "Mile",
+          "time": "3:54.10"
+        },
+        {
+          "event": "3000m",
+          "time": "7:36.90"
+        },
+        {
+          "event": "5000m",
+          "time": "13:20.92"
+        },
+        {
+          "event": "800 Metres Short Track",
+          "time": "1:47.52"
+        },
+        {
+          "event": "1000 Metres",
+          "time": "2:15.96"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:35.06"
+        },
+        {
+          "event": "Mile Short Track",
+          "time": "3:54.10"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:36.90"
+        },
+        {
+          "event": "Mile Road",
+          "time": "4:03.26"
+        },
+        {
+          "event": "10 Kilometres Road",
+          "time": "28:09"
+        }
+      ],
+      "questionTitle": "Next question",
+      "photo": "/images/default_card.png",
+      "ncaa": false,
+      "results": [
+        {
+          "date": "JUN 14",
+          "meet": "USATF LA Grand Prix",
+          "event": "",
+          "time": "7:37.57",
+          "place": "1"
+        },
+        {
+          "date": "JUN 10",
+          "meet": "Oslo Bislett Games",
+          "event": "5000m",
+          "time": "13:20.92",
+          "place": ""
+        },
+        {
+          "date": "MAY 31",
+          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+          "event": "1500m",
+          "time": "3:31.53",
+          "place": "5"
+        },
+        {
+          "date": "MAY 17",
+          "meet": "African Athletics Championships",
+          "event": "1500m",
+          "time": "3:42.31",
+          "place": "2"
+        },
+        {
+          "date": "MAY 16",
+          "meet": "African Athletics Championships",
+          "event": "",
+          "time": "3:47.68",
+          "place": "1"
+        },
+        {
+          "date": "APR 28",
+          "meet": "Simbine Classic",
+          "event": "",
+          "time": "7:54.05",
+          "place": "1"
+        },
+        {
+          "date": "APR 18",
+          "meet": "South African Championships",
+          "event": "1500m",
+          "time": "3:42.40",
+          "place": "1"
+        },
+        {
+          "date": "APR 17",
+          "meet": "South African Championships",
+          "event": "",
+          "time": "3:46.23",
+          "place": "1"
+        },
+        {
+          "date": "MAR 1",
+          "meet": "ABSA Run Yor City 10K",
+          "event": "10 Kilometres Road",
+          "time": "28:09",
+          "place": ""
+        },
+        {
+          "date": "FEB 19",
+          "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+          "event": "3000m sh",
+          "time": "7:36.90",
+          "place": "5"
+        },
+        {
+          "date": "FEB 11",
+          "meet": "Belgrade Indoor Meeting",
+          "event": "",
+          "time": "7:50.87",
+          "place": "1"
+        },
+        {
+          "date": "FEB 6",
+          "meet": "World Indoor Tour Gold Madrid 2026",
+          "event": "3000m sh",
+          "time": "7:39.11",
+          "place": "1"
+        },
+        {
+          "date": "FEB 3",
+          "meet": "Czech Indoor Gala",
+          "event": "3000m sh",
+          "time": "7:38.17",
+          "place": "2"
+        }
+      ],
+      "event": "MIDDLE DISTANCE",
+      "id": "tshepo-tshite"
     }
   ]
 }
