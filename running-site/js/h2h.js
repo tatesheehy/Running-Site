@@ -208,10 +208,19 @@ function _renderH2HPage() {
     </div>
   `;
 
-  // Sticky column-labels mask (same pattern as rankings)
-  const sentinel   = document.getElementById('h2h-col-sentinel');
-  const colLabels  = document.querySelector('.h2h-col-labels');
+  // Sticky column-labels: sync widths to table, then activate mask
+  const sentinel  = document.getElementById('h2h-col-sentinel');
+  const colLabels = document.querySelector('.h2h-col-labels');
   if (sentinel && colLabels) {
+    const syncWidths = () => {
+      const firstRow = document.querySelector('.h2h-lb-row');
+      if (!firstRow) return;
+      const widths = [...firstRow.querySelectorAll('td')]
+        .map(td => Math.round(td.getBoundingClientRect().width) + 'px');
+      if (widths.some(w => w !== '0px')) colLabels.style.gridTemplateColumns = widths.join(' ');
+    };
+    setTimeout(syncWidths, 0);
+    window.addEventListener('resize', syncWidths);
     new IntersectionObserver(([entry]) => {
       colLabels.classList.toggle('is-sticky', !entry.isIntersecting);
     }, { rootMargin: '-62px 0px 0px 0px', threshold: 0 }).observe(sentinel);
