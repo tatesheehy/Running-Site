@@ -259,75 +259,100 @@ function fetchPage(url) {
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
-// Extract results from __NEXT_DATA__ JSON embedded in WA page.
-// Recursively finds arrays of result-like objects, handles multiple WA data shapes.
-function parseResultsFromND(nd, year) {
-  const candidates = [];
+const MON = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
 
-  function search(obj, depth) {
-    if (depth > 12 || obj == null || typeof obj !== 'object') return;
-    if (Array.isArray(obj)) {
-      const sample = obj.find(x => x && typeof x === 'object' && !Array.isArray(x));
-      if (sample) {
-        const hasDate = 'date' in sample || 'eventDate' in sample || 'competitionDate' in sample;
-        const hasMark = 'mark' in sample || 'performance' in sample || 'result' in sample;
-        if (hasDate && hasMark) { candidates.push(obj); return; }
-      }
-      for (const item of obj) search(item, depth + 1);
-    } else {
-      for (const val of Object.values(obj)) search(val, depth + 1);
-    }
+// Parse any WA date (ISO "2026-06-16" or "16 JUN 2026") → { date, formatted } or null
+function parseAnyDate(raw) {
+  const s = String(raw || '');
+  const iso = s.match(/(\d{4})-(\d{2})-(\d{2})/);
+  if (iso) {
+    const date = new Date(+iso[1], +iso[2]-1, +iso[3]);
+    return { date, formatted: `${MON[+iso[2]-1]} ${+iso[3]}` };
   }
-  search(nd, 0);
+  const d = parseWADate(s);
+  return d ? { date: d, formatted: formatDate(s) } : null;
+}
 
-  const MON = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
-  const results = [];
-  const seen    = new Set();
+// Convert a WA result object to our standard shape
+function shapeResult(r, formatted, date) {
+  const mark = r.mark || r.performance || r.result || r.time || r.perf || '';
+  const disc = r.discipline || r.event || r.eventName || r.disciplineName || '';
+  const comp = (typeof r.competition === 'object'
+                  ? (r.competition?.name || r.competition?.fullName || '')
+                  : (r.competition || ''))
+               || r.competitionName || r.meet || '';
+  const place = String(r.place || r.position || r.rank || r.placing || '');
+  return { _date: date, date: formatted, meet: comp,
+           event: formatDiscipline(disc), time: mark, place };
+}
 
-  for (const arr of candidates) {
-    for (const r of arr) {
-      if (!r || typeof r !== 'object') continue;
-
-      const rawDate = String(r.date || r.eventDate || r.competitionDate || '');
-      if (!rawDate.includes(year)) continue;
-
-      let date = null;
-      let formatted = '';
-      const iso = rawDate.match(/(\d{4})-(\d{2})-(\d{2})/);
-      if (iso) {
-        date      = new Date(+iso[1], +iso[2] - 1, +iso[3]);
-        formatted = `${MON[+iso[2] - 1]} ${+iso[3]}`;
-      } else {
-        date      = parseWADate(rawDate);
-        formatted = date ? formatDate(rawDate) : '';
-      }
-      if (!date || !formatted) continue;
-
-      const mark        = r.mark || r.performance || r.result || r.time || '';
-      if (!mark) continue;
-      const discipline  = r.discipline || r.event || r.eventName || r.disciplineName || '';
-      const competition = (typeof r.competition === 'object' ? r.competition?.name : r.competition)
-                          || r.competitionName || r.meet || '';
-      const place       = String(r.place || r.position || r.rank || r.placing || '');
-
-      const key = `${formatted}|${competition}|${discipline}|${mark}`;
-      if (seen.has(key)) continue;
-      seen.add(key);
-
-      results.push({ _date: date, date: formatted, meet: competition,
-                     event: formatDiscipline(discipline), time: mark, place });
-    }
+// Turn a flat array of WA result objects into our sorted, deduped format
+function processArray(arr, year) {
+  const results = [], seen = new Set();
+  for (const r of (arr || [])) {
+    if (!r || typeof r !== 'object') continue;
+    const raw = r.date || r.eventDate || r.startDate || r.competitionDate || '';
+    if (year && !String(raw).includes(year)) continue;
+    const parsed = parseAnyDate(raw);
+    if (!parsed) continue;
+    const shaped = shapeResult(r, parsed.formatted, parsed.date);
+    if (!shaped.time) continue;
+    const key = `${shaped.date}|${shaped.meet}|${shaped.event}|${shaped.time}`;
+    if (!seen.has(key)) { seen.add(key); results.push(shaped); }
   }
-
   results.sort((a, b) => b._date - a._date);
   return results.map(({ _date, ...r }) => r);
 }
 
-// Fallback: brace-matching approach — finds the actual JSON object that contains
-// each date occurrence rather than guessing from a fixed window.
+// Search __NEXT_DATA__ for result arrays, tracking parent key so we can
+// skip "allTimeBests / personalBests / seasonBests" arrays and prefer "results" arrays.
+function parseResultsFromND(nd, year) {
+  const candidates = []; // { arr, priority }
+
+  function search(obj, depth, parentKey) {
+    if (depth > 14 || obj == null || typeof obj !== 'object') return;
+    if (Array.isArray(obj)) {
+      const sample = obj.find(x => x && typeof x === 'object' && !Array.isArray(x));
+      if (sample) {
+        const hasDate = 'date' in sample || 'eventDate' in sample || 'startDate' in sample || 'competitionDate' in sample;
+        const hasMark = 'mark' in sample || 'performance' in sample || 'result' in sample || 'time' in sample || 'perf' in sample;
+        if (hasDate && hasMark) {
+          const pk = (parentKey || '').toLowerCase();
+          // Skip bests arrays — they have the same shape but inflate the count
+          if (/best|record|personal|alltime|pb\b/i.test(pk)) return;
+          const priority = /result|performance|competition|race/i.test(pk) ? 2 : 1;
+          candidates.push({ arr: obj, priority });
+          return;
+        }
+      }
+      for (const item of obj) search(item, depth + 1, parentKey);
+    } else {
+      for (const [k, v] of Object.entries(obj)) search(v, depth + 1, k);
+    }
+  }
+  search(nd, 0, '');
+
+  if (DEBUG) {
+    console.log(`  [debug] ND candidates: ${candidates.length}`);
+    candidates.forEach((c, i) => {
+      const s = c.arr[0];
+      console.log(`  [debug]   [${i}] priority=${c.priority} len=${c.arr.length} keys=${s ? Object.keys(s).slice(0,8).join(',') : '?'}`);
+    });
+  }
+
+  // Sort by priority, use the first candidate that yields results
+  candidates.sort((a, b) => b.priority - a.priority || b.arr.length - a.arr.length);
+  for (const { arr } of candidates) {
+    const r = processArray(arr, year);
+    if (r.length) return r;
+  }
+  return [];
+}
+
+// Last-resort regex fallback: scans for date strings and requires BOTH a competition
+// name AND a discipline to be present (filters out bests/PR entries that lack one).
 function parseResultsRegex(html, year) {
-  const results = [];
-  const seen    = new Set();
+  const results = [], seen = new Set();
   const dateRe  = new RegExp(`"date":"(\\d{2} \\w{3} ${year})"`, 'g');
   let match;
 
@@ -337,7 +362,7 @@ function parseResultsRegex(html, year) {
     if (!date) continue;
     const pos = match.index;
 
-    // Scan backwards from the date position to find the opening { of the containing object
+    // Find the JSON object that contains this date via brace-matching
     let depth = 0, start = -1;
     for (let i = pos; i >= Math.max(0, pos - 3000); i--) {
       const c = html[i];
@@ -345,8 +370,6 @@ function parseResultsRegex(html, year) {
       else if (c === '{') { if (depth === 0) { start = i; break; } depth--; }
     }
     if (start === -1) continue;
-
-    // Scan forwards from that { to find the matching }
     depth = 0;
     let end = -1;
     for (let i = start; i < Math.min(html.length, start + 3000); i++) {
@@ -365,18 +388,22 @@ function parseResultsRegex(html, year) {
       return null;
     };
 
-    const mark = get('mark', 'performance', 'result');
-    if (!mark) continue;
+    const mark        = get('mark', 'performance', 'result');
+    const competition = get('competition', 'competitionName');
+    const discipline  = get('discipline', 'event');
 
-    const key = `${formatDate(dateStr)}|${get('competition')||''}|${get('discipline')||''}|${mark}`;
+    // Require all three to be present — bests entries often lack competition or discipline
+    if (!mark || !competition || !discipline) continue;
+
+    const key = `${formatDate(dateStr)}|${competition}|${discipline}|${mark}`;
     if (seen.has(key)) continue;
     seen.add(key);
 
     results.push({
       _date: date,
       date:  formatDate(dateStr),
-      meet:  get('competition', 'competitionName') || '',
-      event: formatDiscipline(get('discipline', 'event') || ''),
+      meet:  competition,
+      event: formatDiscipline(discipline),
       time:  mark,
       place: get('place', 'position', 'rank') || '',
     });
@@ -390,11 +417,38 @@ function parseResults(html, year) {
   const ndMatch = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
   if (ndMatch) {
     try {
-      const nd      = JSON.parse(ndMatch[1]);
-      const results = parseResultsFromND(nd, year);
-      if (results.length) return results;
-    } catch (_) {}
+      const nd = JSON.parse(ndMatch[1]);
+      const pp = nd.props?.pageProps || {};
+      const ath = pp.athlete || pp.data?.athlete || pp.athleteProfile || {};
+
+      if (DEBUG) {
+        console.log(`  [debug] pageProps keys: ${Object.keys(pp).slice(0,12).join(', ')}`);
+        console.log(`  [debug] athlete keys:   ${Object.keys(ath).slice(0,12).join(', ')}`);
+      }
+
+      // Try the specific resultsByYear path WA commonly uses
+      const rby = ath.resultsByYear || pp.resultsByYear;
+      if (Array.isArray(rby)) {
+        const entry = rby.find(e => e.year === +year || String(e.year) === year);
+        if (entry) {
+          const r = processArray(entry.results || entry.performances || [], year);
+          if (DEBUG) console.log(`  [debug] resultsByYear path: ${r.length} results`);
+          if (r.length) return r;
+        }
+      }
+
+      // Generic recursive search (skips bests arrays via parent key check)
+      const r = parseResultsFromND(nd, year);
+      if (DEBUG) console.log(`  [debug] ND recursive: ${r.length} results`);
+      if (r.length) return r;
+    } catch (e) {
+      if (DEBUG) console.log(`  [debug] __NEXT_DATA__ error: ${e.message}`);
+    }
+  } else if (DEBUG) {
+    console.log(`  [debug] no __NEXT_DATA__ in page`);
   }
+
+  if (DEBUG) console.log(`  [debug] using regex fallback`);
   return parseResultsRegex(html, year);
 }
 
