@@ -179,6 +179,36 @@
 .acct-username-msg.error   { color: #ef4444; }
 .acct-username-msg.success { color: #22c55e; }
 
+/* ── Mod users table ─────────────────────────────────────── */
+.mod-users-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.mod-users-table th {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 6px 12px 10px 0;
+  border-bottom: 1.5px solid var(--border);
+}
+
+.mod-users-table td {
+  padding: 11px 12px 11px 0;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.mod-users-table tbody tr:last-child td { border-bottom: none; }
+
+.mod-user-email { font-weight: 500; }
+.mod-user-comments { color: var(--muted); }
+.mod-user-joined { color: var(--muted); white-space: nowrap; }
+
 /* ============================================================
    ARTICLE COMMENTS
    ============================================================ */

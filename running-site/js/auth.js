@@ -73,7 +73,11 @@ window.isModerator    = () => !!_user && _user.email === 'tatesheehy@gmail.com';
 window.updateUsername = async function(username) {
   if (!_sb || !_user) return { error: 'Not signed in' };
   const { data, error } = await _sb.auth.updateUser({ data: { username } });
-  if (!error) _user = data.user;
+  if (!error) {
+    _user = data.user;
+    // Keep profiles table in sync
+    await _sb.from('profiles').update({ username }).eq('id', _user.id);
+  }
   return { error: error?.message || null };
 };
 

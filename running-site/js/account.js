@@ -83,9 +83,69 @@ function buildAccountPage() {
           </h2>
           <div class="acct-fav-list">${cards}</div>
         </div>
+
+        ${typeof isModerator === 'function' && isModerator()
+          ? `<div class="acct-section" id="mod-users-section">
+               <h2 class="acct-section-title">
+                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                 All Users
+               </h2>
+               <div id="mod-users-table"><p style="color:var(--muted);font-size:14px">Loading…</p></div>
+             </div>`
+          : ''}
       </div>`;
 
     window._refreshMyAthletes = render;
+
+    if (typeof isModerator === 'function' && isModerator()) {
+      _loadModUsers();
+    }
+  }
+
+  async function _loadModUsers() {
+    const sb = typeof getSupabase === 'function' ? getSupabase() : null;
+    const wrap = document.getElementById('mod-users-table');
+    if (!sb || !wrap) return;
+
+    const [{ data: profiles }, { data: commentRows }] = await Promise.all([
+      sb.from('profiles').select('id, email, username, created_at').order('created_at', { ascending: false }),
+      sb.from('comments').select('user_id'),
+    ]);
+
+    if (!profiles?.length) {
+      wrap.innerHTML = '<p style="color:var(--muted);font-size:14px">No users yet.</p>';
+      return;
+    }
+
+    const commentCounts = {};
+    for (const c of (commentRows || [])) {
+      commentCounts[c.user_id] = (commentCounts[c.user_id] || 0) + 1;
+    }
+
+    const rows = profiles.map(p => {
+      const joined = new Date(p.created_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      const comments = commentCounts[p.id] || 0;
+      return `
+        <tr class="mod-user-row">
+          <td class="mod-user-email">${p.email || '—'}</td>
+          <td class="mod-user-username">${p.username ? `<span style="color:var(--accent)">@${p.username}</span>` : '<span style="color:var(--muted)">—</span>'}</td>
+          <td class="mod-user-comments">${comments || '—'}</td>
+          <td class="mod-user-joined">${joined}</td>
+        </tr>`;
+    }).join('');
+
+    wrap.innerHTML = `
+      <table class="mod-users-table">
+        <thead>
+          <tr>
+            <th>Email</th>
+            <th>Username</th>
+            <th>Comments</th>
+            <th>Joined</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>`;
   }
 
   window.saveUsername = async function(e) {
