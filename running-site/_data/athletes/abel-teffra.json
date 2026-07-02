@@ -65,220 +65,59 @@
   "results": [
     {
       "date": "JUN 21",
-      "meet": "Portland Track Festival, Griswold Stadium, Portland, OR - WACT",
-      "event": "",
+      "meet": "Portland Track Festival",
+      "event": "800m",
       "time": "1:46.40",
-      "place": "8."
+      "place": "8"
     },
     {
       "date": "JUN 13",
       "meet": "USATF LA Grand Prix",
-      "event": "1500 m",
-      "time": "3:34.08",
-      "place": ""
-    },
-    {
-      "date": "JUN 13",
-      "meet": "USATF LA Grand Prix",
-      "event": "",
-      "time": "3:34.08",
-      "place": ""
-    },
-    {
-      "date": "JUN 13",
-      "meet": "USATF LA Grand Prix, USC Allyson Felix at Loker Track Stadium, Los Angeles, CA",
-      "event": "",
-      "time": "3:34.08",
-      "place": "2."
-    },
-    {
-      "date": "JUN 13",
-      "meet": "USATF LA Grand Prix, USC Allyson Felix at Loker Track Stadium, Los Angeles, CA",
       "event": "1500m",
       "time": "3:34.08",
-      "place": "2."
+      "place": "2"
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
-      "event": "800 m",
+      "event": "800m",
       "time": "1:45.71",
-      "place": ""
-    },
-    {
-      "date": "MAY 23",
-      "meet": "LA Track Festival",
-      "event": "",
-      "time": "1:45.71",
-      "place": ""
-    },
-    {
-      "date": "MAY 23",
-      "meet": "LA Track Festival, Drake Stadium, Los Angeles, CA - National Events",
-      "event": "",
-      "time": "1:45.71",
-      "place": "6."
+      "place": "6"
     },
     {
       "date": "MAR 1",
-      "meet": "USA Indoor Championships, Ocean Breeze Athl. Complex, New York, NY (i)",
-      "event": "",
+      "meet": "USA Indoor Championships",
+      "event": "1500 Metres Short Track",
       "time": "3:38.90",
-      "place": "8."
-    },
-    {
-      "date": "FEB 22",
-      "meet": "",
-      "event": "1500 m sh",
-      "time": "3:35.20",
-      "place": ""
+      "place": "8"
     },
     {
       "date": "FEB 22",
       "meet": "Saucony Battle for Boston",
-      "event": "1500 m sh",
+      "event": "1500 Metres Short Track",
       "time": "3:35.20",
-      "place": ""
-    },
-    {
-      "date": "FEB 22",
-      "meet": "Saucony Battle for Boston",
-      "event": "",
-      "time": "3:35.20",
-      "place": ""
-    },
-    {
-      "date": "FEB 22",
-      "meet": "Saucony Battle for Boston, Boston Univ. Track & Tennis Center, Boston, MA (i)",
-      "event": "",
-      "time": "3:35.20",
-      "place": "3."
-    },
-    {
-      "date": "FEB 22",
-      "meet": "Saucony Battle for Boston, Boston Univ. Track & Tennis Center, Boston, MA (i)",
-      "event": "1500m sh",
-      "time": "3:35.20",
-      "place": "3."
+      "place": "3"
     },
     {
       "date": "FEB 13",
       "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "Mile",
+      "event": "Mile Short Track",
       "time": "3:53.29",
-      "place": ""
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "Mile sh",
-      "time": "3:53.29",
-      "place": ""
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "",
-      "time": "3:53.29",
-      "place": ""
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational, Boston Univ. Track & Tennis Center, Boston, MA (i) - Split Times Invite",
-      "event": "",
-      "time": "3:37.83",
-      "place": "11."
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational, Boston Univ. Track & Tennis Center, Boston, MA (i) - Invitational Events",
-      "event": "",
-      "time": "3:53.29",
-      "place": "10."
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational, Boston Univ. Track & Tennis Center, Boston, MA (i)",
-      "event": "Mile sh",
-      "time": "3:53.29",
-      "place": "10."
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational, Boston Univ. Track & Tennis Center, Boston, MA (i)",
-      "event": "1500m sh",
-      "time": "3:37.83",
-      "place": "11."
-    },
-    {
-      "date": "FEB 7",
-      "meet": "",
-      "event": "3000 m",
-      "time": "7:55.13",
-      "place": ""
-    },
-    {
-      "date": "FEB 7",
-      "meet": "",
-      "event": "3000 m sh",
-      "time": "7:55.13",
-      "place": ""
+      "place": "10"
     },
     {
       "date": "FEB 7",
       "meet": "Penn Classic",
-      "event": "3000 m",
+      "event": "3000 Metres Short Track",
       "time": "7:55.13",
-      "place": ""
-    },
-    {
-      "date": "FEB 7",
-      "meet": "Penn Classic",
-      "event": "3000 m sh",
-      "time": "7:55.13",
-      "place": ""
-    },
-    {
-      "date": "FEB 7",
-      "meet": "Penn Classic",
-      "event": "",
-      "time": "7:55.13",
-      "place": ""
-    },
-    {
-      "date": "FEB 7",
-      "meet": "Penn Classic, Ott Center for Track & Field, Philadelphia, PA (i) - Invitational Events",
-      "event": "",
-      "time": "7:55.13",
-      "place": "1."
+      "place": "1"
     },
     {
       "date": "JAN 24",
       "meet": "Penn Elite",
-      "event": "1000 m",
+      "event": "1000 Metres Short Track",
       "time": "2:20.49",
-      "place": ""
-    },
-    {
-      "date": "JAN 24",
-      "meet": "Penn Elite",
-      "event": "1000 m sh",
-      "time": "2:20.49",
-      "place": ""
-    },
-    {
-      "date": "JAN 24",
-      "meet": "Penn Elite",
-      "event": "",
-      "time": "2:20.49",
-      "place": ""
-    },
-    {
-      "date": "JAN 24",
-      "meet": "Penn Elite, Ott Center for Track & Field, Philadelphia, PA (i)",
-      "event": "",
-      "time": "2:20.49",
-      "place": "1."
+      "place": "1"
     }
   ],
   "college": "Georgetown",
@@ -289,5 +128,5 @@
   "id": "abel-teffra",
   "age": "24",
   "dob": "2002-01-23",
-  "lastSynced": "2026-07-02"
+  "lastSynced": "2026-07-01"
 }

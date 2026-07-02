@@ -56,337 +56,99 @@
   "results": [
     {
       "date": "JUN 4",
-      "meet": "HOKA Festival of Miles, St.Louis University High School, St. Louis - Split times",
-      "event": "",
-      "time": "3:43.03",
-      "place": ""
-    },
-    {
-      "date": "JUN 4",
-      "meet": "HOKA Festival of Miles, St.Louis University High School, St. Louis",
-      "event": "",
+      "meet": "HOKA Festival of Miles",
+      "event": "Mile",
       "time": "3:59.84",
-      "place": "10."
+      "place": "10"
     },
     {
       "date": "MAY 29",
-      "meet": "NCAA Division I West First Rounds, John McDonnell Field, Fayetteville, AR",
-      "event": "",
+      "meet": "NCAA Division I West First Rounds",
+      "event": "1500m",
       "time": "DQ",
       "place": ""
     },
     {
       "date": "MAY 27",
-      "meet": "NCAA Division I West First Rounds, John McDonnell Field, Fayetteville, AR",
-      "event": "",
-      "time": "3:41.22",
-      "place": "8."
-    },
-    {
-      "date": "MAY 27",
-      "meet": "NCAA Division I West First Rounds, John McDonnell Field, Fayetteville, AR",
+      "meet": "NCAA Division I West First Rounds",
       "event": "1500m",
       "time": "3:41.22",
-      "place": "8."
-    },
-    {
-      "date": "MAY 16",
-      "meet": "",
-      "event": "5000 m",
-      "time": "13:58.95",
-      "place": ""
+      "place": "8"
     },
     {
       "date": "MAY 16",
       "meet": "Big Sky Outdoor Track and Field Championships",
-      "event": "5000 m",
-      "time": "13:58.95",
-      "place": ""
-    },
-    {
-      "date": "MAY 16",
-      "meet": "Big Sky Outdoor Track and Field Championships",
-      "event": "",
-      "time": "13:58.95",
-      "place": ""
-    },
-    {
-      "date": "MAY 16",
-      "meet": "Big Sky Outdoor Track and Field Championships, Mt. Hood Community College, Gresham, OR",
-      "event": "",
+      "event": "1500m",
       "time": "3:45.24",
-      "place": "3."
+      "place": "3"
     },
     {
       "date": "MAY 16",
-      "meet": "Big Sky Outdoor Track and Field Championships, Mt. Hood Community College, Gresham, OR",
-      "event": "",
+      "meet": "Big Sky Outdoor Track and Field Championships",
+      "event": "5000m",
       "time": "13:58.95",
-      "place": "4."
-    },
-    {
-      "date": "APR 18",
-      "meet": "",
-      "event": "1500 m",
-      "time": "3:39.35",
-      "place": ""
+      "place": "4"
     },
     {
       "date": "APR 18",
       "meet": "Bryan Clay Invitational",
-      "event": "1500 m",
-      "time": "3:39.35",
-      "place": ""
-    },
-    {
-      "date": "APR 18",
-      "meet": "Bryan Clay Invitational",
-      "event": "",
-      "time": "3:39.35",
-      "place": ""
-    },
-    {
-      "date": "APR 18",
-      "meet": "Bryan Clay Invitational, Cougar Athletic Stadium, Azusa, CA - Invitational Events",
-      "event": "",
-      "time": "3:39.35",
-      "place": "1."
-    },
-    {
-      "date": "APR 18",
-      "meet": "Bryan Clay Invitational, Cougar Athletic Stadium, Azusa, CA",
       "event": "1500m",
       "time": "3:39.35",
-      "place": "1."
+      "place": "1"
     },
     {
       "date": "FEB 28",
       "meet": "Big Sky Conference Indoor Track & Field Championships",
-      "event": "3000 m",
-      "time": "8:28.41",
-      "place": ""
-    },
-    {
-      "date": "FEB 28",
-      "meet": "Big Sky Conference Indoor Track & Field Championships",
-      "event": "3000 m sh",
-      "time": "8:28.41",
-      "place": ""
-    },
-    {
-      "date": "FEB 28",
-      "meet": "Big Sky Conference Indoor Track & Field Championships",
-      "event": "",
-      "time": "8:28.41",
-      "place": ""
-    },
-    {
-      "date": "FEB 28",
-      "meet": "Big Sky Conference Indoor Track & Field Championships, Holt Arena, Pocatello, ID (i)",
-      "event": "",
+      "event": "Mile Short Track",
       "time": "4:09.10",
-      "place": "2."
+      "place": "2"
     },
     {
       "date": "FEB 28",
-      "meet": "Big Sky Conference Indoor Track & Field Championships, Holt Arena, Pocatello, ID (i)",
-      "event": "",
+      "meet": "Big Sky Conference Indoor Track & Field Championships",
+      "event": "3000 Metres Short Track",
       "time": "8:28.41",
-      "place": "8."
-    },
-    {
-      "date": "FEB 27",
-      "meet": "",
-      "event": "Distance Medley sh",
-      "time": "9:53.30",
-      "place": ""
+      "place": "8"
     },
     {
       "date": "FEB 27",
       "meet": "Big Sky Conference Indoor Track & Field Championships",
-      "event": "Distance Medley sh",
+      "event": "Distance Medley Short Track",
       "time": "9:53.30",
-      "place": ""
-    },
-    {
-      "date": "FEB 27",
-      "meet": "Big Sky Conference Indoor Track & Field Championships",
-      "event": "",
-      "time": "9:53.30",
-      "place": ""
-    },
-    {
-      "date": "FEB 27",
-      "meet": "Big Sky Conference Indoor Track & Field Championships, Holt Arena, Pocatello, ID (i)",
-      "event": "",
-      "time": "9:53.30",
-      "place": "1."
-    },
-    {
-      "date": "FEB 20",
-      "meet": "",
-      "event": "Distance Medley",
-      "time": "9:26.58",
-      "place": ""
+      "place": "1"
     },
     {
       "date": "FEB 20",
       "meet": "Colorado Last Chance",
       "event": "Distance Medley",
       "time": "9:26.58",
-      "place": ""
-    },
-    {
-      "date": "FEB 20",
-      "meet": "Colorado Last Chance",
-      "event": "",
-      "time": "9:26.58",
-      "place": ""
-    },
-    {
-      "date": "FEB 20",
-      "meet": "Colorado Last Chance, Colorado-Indoor Practice Facility, Boulder, CO (i)",
-      "event": "",
-      "time": "9:26.58",
-      "place": "1."
-    },
-    {
-      "date": "FEB 13",
-      "meet": "",
-      "event": "1500 m sh",
-      "time": "3:41.44",
-      "place": ""
-    },
-    {
-      "date": "FEB 13",
-      "meet": "",
-      "event": "Mile",
-      "time": "3:56.96",
-      "place": ""
-    },
-    {
-      "date": "FEB 13",
-      "meet": "",
-      "event": "Mile sh",
-      "time": "3:56.96",
-      "place": ""
+      "place": "1"
     },
     {
       "date": "FEB 13",
       "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "1500 m sh",
-      "time": "3:41.44",
-      "place": ""
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "Mile",
+      "event": "Mile Short Track",
       "time": "3:56.96",
-      "place": ""
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "Mile sh",
-      "time": "3:56.96",
-      "place": ""
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "",
-      "time": "3:41.44",
-      "place": ""
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "",
-      "time": "3:56.96",
-      "place": ""
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational, Boston Univ. Track & Tennis Center, Boston, MA (i) - Split Times Invite",
-      "event": "",
-      "time": "3:41.44",
-      "place": "2."
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational, Boston Univ. Track & Tennis Center, Boston, MA (i)",
-      "event": "",
-      "time": "3:56.96",
-      "place": "2."
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational, Boston Univ. Track & Tennis Center, Boston, MA (i)",
-      "event": "Mile sh",
-      "time": "3:56.96",
-      "place": "2."
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational, Boston Univ. Track & Tennis Center, Boston, MA (i)",
-      "event": "1500m sh",
-      "time": "3:41.44",
-      "place": "2."
-    },
-    {
-      "date": "JAN 31",
-      "meet": "",
-      "event": "800 m sh",
-      "time": "1:53.61",
-      "place": ""
+      "place": "2"
     },
     {
       "date": "JAN 31",
       "meet": "6th Annual Brant Tolsma Invitational",
-      "event": "800 m",
+      "event": "800 Metres Short Track",
       "time": "1:53.61",
-      "place": ""
+      "place": "3"
     },
     {
       "date": "JAN 31",
       "meet": "6th Annual Brant Tolsma Invitational",
-      "event": "800 m sh",
-      "time": "1:53.61",
-      "place": ""
-    },
-    {
-      "date": "JAN 31",
-      "meet": "6th Annual Brant Tolsma Invitational",
-      "event": "",
-      "time": "1:53.61",
-      "place": ""
-    },
-    {
-      "date": "JAN 31",
-      "meet": "6th Annual Brant Tolsma Invitational, Liberty Indoor Complex, Lynchburg, VA (i)",
-      "event": "",
-      "time": "1:53.61",
-      "place": "3."
-    },
-    {
-      "date": "JAN 31",
-      "meet": "6th Annual Brant Tolsma Invitational, Liberty Indoor Complex, Lynchburg, VA (i) - Invitational Events",
-      "event": "",
+      "event": "Mile Short Track",
       "time": "4:00.95",
-      "place": "3."
-    },
-    {
-      "date": "JAN 31",
-      "meet": "6th Annual Brant Tolsma Invitational, Liberty Indoor Complex, Lynchburg, VA (i)",
-      "event": "Mile sh",
-      "time": "4:00.95",
-      "place": "3."
+      "place": "3"
     }
   ],
   "college": "NAU",
   "weight": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
-  "lastSynced": "2026-07-02"
+  "lastSynced": "2026-07-01"
 }

@@ -349,8 +349,7 @@ function parseResultsFromND(nd, year) {
   return [];
 }
 
-// Last-resort regex fallback: scans for date strings and requires BOTH a competition
-// name AND a discipline to be present (filters out bests/PR entries that lack one).
+// Regex fallback: original sliding-window approach that works reliably for most athletes.
 function parseResultsRegex(html, year) {
   const results = [], seen = new Set();
   const dateRe  = new RegExp(`"date":"(\\d{2} \\w{3} ${year})"`, 'g');
@@ -360,50 +359,30 @@ function parseResultsRegex(html, year) {
     const dateStr = match[1];
     const date    = parseWADate(dateStr);
     if (!date) continue;
-    const pos = match.index;
 
-    // Find the JSON object that contains this date via brace-matching
-    let depth = 0, start = -1;
-    for (let i = pos; i >= Math.max(0, pos - 3000); i--) {
-      const c = html[i];
-      if      (c === '}') depth++;
-      else if (c === '{') { if (depth === 0) { start = i; break; } depth--; }
-    }
-    if (start === -1) continue;
-    depth = 0;
-    let end = -1;
-    for (let i = start; i < Math.min(html.length, start + 3000); i++) {
-      const c = html[i];
-      if      (c === '{') depth++;
-      else if (c === '}') { depth--; if (depth === 0) { end = i; break; } }
-    }
-    if (end === -1) continue;
-
-    const obj = html.slice(start, end + 1);
-    const get = (...keys) => {
+    const winStart = Math.max(0, match.index - 1500);
+    const winEnd   = Math.min(html.length, match.index + 1500);
+    const win      = html.slice(winStart, winEnd);
+    const get      = (...keys) => {
       for (const k of keys) {
-        const m = obj.match(new RegExp(`"${k}"\\s*:\\s*"([^"]+)"`));
+        const m = win.match(new RegExp(`"${k}"\\s*:\\s*"([^"]+)"`));
         if (m) return m[1];
       }
       return null;
     };
 
-    const mark        = get('mark', 'performance', 'result');
-    const competition = get('competition', 'competitionName');
-    const discipline  = get('discipline', 'event');
+    const mark = get('mark', 'performance', 'result');
+    if (!mark) continue;
 
-    // Require all three to be present — bests entries often lack competition or discipline
-    if (!mark || !competition || !discipline) continue;
-
-    const key = `${formatDate(dateStr)}|${competition}|${discipline}|${mark}`;
+    const key = `${formatDate(dateStr)}|${get('competition')||''}|${get('discipline')||''}|${mark}`;
     if (seen.has(key)) continue;
     seen.add(key);
 
     results.push({
       _date: date,
       date:  formatDate(dateStr),
-      meet:  competition,
-      event: formatDiscipline(discipline),
+      meet:  get('competition', 'competitionName') || '',
+      event: formatDiscipline(get('discipline', 'event') || ''),
       time:  mark,
       place: get('place', 'position', 'rank') || '',
     });
