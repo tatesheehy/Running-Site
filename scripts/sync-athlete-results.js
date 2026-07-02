@@ -259,11 +259,72 @@ function fetchPage(url) {
 
 function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
 
-// Extract 2026 results from raw WA page HTML.
-// WA embeds data in inline JS — results are groups of fields scattered in JSON-like text.
-// Strategy: find all date strings for the target year, then scan nearby text for
-// competition, discipline, mark, and place fields.
-function parseResults(html, year) {
+// Extract results from __NEXT_DATA__ JSON embedded in WA page.
+// Recursively finds arrays of result-like objects, handles multiple WA data shapes.
+function parseResultsFromND(nd, year) {
+  const candidates = [];
+
+  function search(obj, depth) {
+    if (depth > 12 || obj == null || typeof obj !== 'object') return;
+    if (Array.isArray(obj)) {
+      const sample = obj.find(x => x && typeof x === 'object' && !Array.isArray(x));
+      if (sample) {
+        const hasDate = 'date' in sample || 'eventDate' in sample || 'competitionDate' in sample;
+        const hasMark = 'mark' in sample || 'performance' in sample || 'result' in sample;
+        if (hasDate && hasMark) { candidates.push(obj); return; }
+      }
+      for (const item of obj) search(item, depth + 1);
+    } else {
+      for (const val of Object.values(obj)) search(val, depth + 1);
+    }
+  }
+  search(nd, 0);
+
+  const MON = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  const results = [];
+  const seen    = new Set();
+
+  for (const arr of candidates) {
+    for (const r of arr) {
+      if (!r || typeof r !== 'object') continue;
+
+      const rawDate = String(r.date || r.eventDate || r.competitionDate || '');
+      if (!rawDate.includes(year)) continue;
+
+      let date = null;
+      let formatted = '';
+      const iso = rawDate.match(/(\d{4})-(\d{2})-(\d{2})/);
+      if (iso) {
+        date      = new Date(+iso[1], +iso[2] - 1, +iso[3]);
+        formatted = `${MON[+iso[2] - 1]} ${+iso[3]}`;
+      } else {
+        date      = parseWADate(rawDate);
+        formatted = date ? formatDate(rawDate) : '';
+      }
+      if (!date || !formatted) continue;
+
+      const mark        = r.mark || r.performance || r.result || r.time || '';
+      if (!mark) continue;
+      const discipline  = r.discipline || r.event || r.eventName || r.disciplineName || '';
+      const competition = (typeof r.competition === 'object' ? r.competition?.name : r.competition)
+                          || r.competitionName || r.meet || '';
+      const place       = String(r.place || r.position || r.rank || r.placing || '');
+
+      const key = `${formatted}|${competition}|${discipline}|${mark}`;
+      if (seen.has(key)) continue;
+      seen.add(key);
+
+      results.push({ _date: date, date: formatted, meet: competition,
+                     event: formatDiscipline(discipline), time: mark, place });
+    }
+  }
+
+  results.sort((a, b) => b._date - a._date);
+  return results.map(({ _date, ...r }) => r);
+}
+
+// Fallback: sliding-window regex approach (less accurate, kept as safety net).
+function parseResultsRegex(html, year) {
   const results = [];
   const dateRe  = new RegExp(`"date":"(\\d{2} \\w{3} ${year})"`, 'g');
   let match;
@@ -273,34 +334,19 @@ function parseResults(html, year) {
     const date    = parseWADate(dateStr);
     if (!date) continue;
 
-    // Scan a window around the date occurrence for related fields
-    const winStart = Math.max(0, match.index - 1500);
-    const winEnd   = Math.min(html.length, match.index + 1500);
-    const window   = html.slice(winStart, winEnd);
+    const winStart = Math.max(0, match.index - 800);
+    const winEnd   = Math.min(html.length, match.index + 800);
+    const win      = html.slice(winStart, winEnd);
+    const get      = k => { const m = win.match(new RegExp(`"${k}":"([^"]+)"`)); return m ? m[1] : null; };
 
-    const get = (key) => {
-      const m = window.match(new RegExp(`"${key}":"([^"]+)"`));
-      return m ? m[1] : null;
-    };
+    const mark = get('mark');
+    if (!mark) continue;
 
-    const competition = get('competition');
-    const discipline  = get('discipline');
-    const mark        = get('mark');
-    const place       = get('place') || get('position') || get('rank') || '';
-
-    if (!mark) continue; // no time = not a useful result
-
-    results.push({
-      _date: date,
-      date:  formatDate(dateStr),
-      meet:  competition || '',
-      event: discipline  ? formatDiscipline(discipline) : '',
-      time:  mark,
-      place: place,
-    });
+    results.push({ _date: date, date: formatDate(dateStr),
+                   meet: get('competition') || '', event: formatDiscipline(get('discipline') || ''),
+                   time: mark, place: get('place') || get('position') || '' });
   }
 
-  // Deduplicate (same date + meet + event)
   const seen = new Set();
   const unique = results.filter(r => {
     const key = `${r.date}|${r.meet}|${r.event}|${r.time}`;
@@ -308,10 +354,20 @@ function parseResults(html, year) {
     seen.add(key);
     return true;
   });
-
-  // Sort newest first
   unique.sort((a, b) => b._date - a._date);
   return unique.map(({ _date, ...r }) => r);
+}
+
+function parseResults(html, year) {
+  const ndMatch = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
+  if (ndMatch) {
+    try {
+      const nd      = JSON.parse(ndMatch[1]);
+      const results = parseResultsFromND(nd, year);
+      if (results.length) return results;
+    } catch (_) {}
+  }
+  return parseResultsRegex(html, year);
 }
 
 function needsProfileFill(athlete) {
