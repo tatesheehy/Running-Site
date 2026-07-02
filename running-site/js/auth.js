@@ -129,7 +129,7 @@ window.handleAuthSubmit = async function(e) {
   if (errEl) errEl.textContent = '';
 
   const { data, error } = _authMode === 'signup'
-    ? await _sb.auth.signUp({ email, password })
+    ? await _sb.auth.signUp({ email, password, options: { emailRedirectTo: window.location.origin } })
     : await _sb.auth.signInWithPassword({ email, password });
 
   btn.disabled = false;
