@@ -354,3 +354,41 @@
   transition: border-color 0.15s, color 0.15s;
 }
 .cmt-signin-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ── Votes ─────────────────────────────────────────────── */
+.cmt-votes {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.cmt-vote-btn {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 3px 5px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  transition: color 0.12s, background 0.12s;
+  line-height: 1;
+}
+.cmt-vote-btn:hover { background: rgba(255,255,255,0.06); }
+.cmt-vote-btn.cmt-vote-up.active  { color: #22c55e; }
+.cmt-vote-btn.cmt-vote-down.active { color: #ef4444; }
+.cmt-vote-up:not(.active):hover   { color: #22c55e; }
+.cmt-vote-down:not(.active):hover { color: #ef4444; }
+
+.cmt-score {
+  font-size: 12px;
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+  color: var(--muted);
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+.cmt-score.positive { color: #22c55e; }
+.cmt-score.negative { color: #ef4444; }
