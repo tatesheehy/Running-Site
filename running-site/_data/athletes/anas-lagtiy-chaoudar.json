@@ -40,7 +40,7 @@
   "questionTitle": "Next question",
   "photo": "/images/default_card.png",
   "ncaa": false,
-  "country": "",
+  "country": "France",
   "results": [
     {
       "date": "JUN 28",
@@ -99,5 +99,9 @@
       "place": "1"
     }
   ],
-  "event": "MIDDLE DISTANCE"
+  "event": "MIDDLE DISTANCE",
+  "flag": "FR",
+  "dob": "2004-01-17",
+  "age": "22",
+  "lastSynced": "2026-07-02"
 }
