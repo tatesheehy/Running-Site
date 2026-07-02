@@ -2,6 +2,17 @@
 //  RANKINGS — all rankings builders and helpers
 // ============================================================
 
+// ── BEST TIME RESOLVER ────────────────────────────────────
+// Prefer the row's seasonBest; fall back to athlete's PR for the event.
+function _bestTime(r, a, event) {
+  if (r.seasonBest && r.seasonBest !== 'x') return r.seasonBest;
+  if (a && a.prs) {
+    const pr = a.prs.find(p => p.event === event);
+    if (pr && pr.time) return pr.time;
+  }
+  return '';
+}
+
 // ── RANKINGS TABLE HTML ────────────────────────────────────
 function buildRankingsTableHtml(event, compact) {
   const allRows = RANKINGS[event] || [];
@@ -18,12 +29,16 @@ function buildRankingsTableHtml(event, compact) {
       const country = (a && a.country) || r.country || '';
       const flag    = (a && a.flag)    || r.flag    || '';
       const hasCard = r.athleteId && ATHLETES[r.athleteId];
+      const time    = _bestTime(r, a, event);
       return `
         <div class="rw-row ${hasCard ? 'rw-row--clickable' : ''}" ${hasCard ? `onclick="openAthleteCard('${r.athleteId}', ${rank})"` : ''}>
           <span class="rw-rank ${rank === 1 ? 'rw-rank--first' : ''}">${rank}</span>
           <span class="rw-flag">${renderFlag(flag)}</span>
-          <span class="rw-name">${name}</span>
-          <span class="rw-country">${country}</span>
+          <div class="rw-info">
+            <span class="rw-name">${name}</span>
+            <span class="rw-country-sm">${country}</span>
+          </div>
+          ${time ? `<span class="rw-time">${time}</span>` : ''}
         </div>
       `;
     }).join('');
@@ -46,7 +61,7 @@ function buildRankingsTableHtml(event, compact) {
           <div class="country">${renderFlag(flag)} ${country}</div>
         </td>
         <td>${country}</td>
-        <td><span class="best-time">${(r.seasonBest && r.seasonBest !== 'x') ? r.seasonBest : '—'}</span></td>
+        <td><span class="best-time">${_bestTime(r, a, event) || '—'}</span></td>
         <td class="meet-cell">${(r.meet && r.meet !== 'x') ? r.meet : ''}</td>
       </tr>
     `;
