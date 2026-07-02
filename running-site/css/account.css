@@ -372,6 +372,197 @@
   .acct-signout { order: 3; width: 100%; }
 }
 
+/* ── My Lists (account page) ─────────────────────────────── */
+.acct-lists-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.acct-list-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+.acct-list-row:last-child { border-bottom: none; }
+
+.acct-list-thumbs {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.acct-list-thumb {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center top;
+  background-color: #1a1a1a;
+  border: 2px solid var(--card-bg, #111);
+  margin-left: -10px;
+  flex-shrink: 0;
+}
+.acct-list-thumbs .acct-list-thumb:last-child { margin-left: 0; }
+.acct-list-thumb--empty { background: rgba(255,255,255,0.05); }
+
+.acct-list-info { flex: 1; min-width: 0; }
+
+.acct-list-name {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.acct-list-count {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.acct-list-delete {
+  background: none;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  transition: color 0.15s, background 0.15s;
+}
+.acct-list-delete:hover { color: #ef4444; background: rgba(239,68,68,0.08); }
+
+/* ── List picker popover (athlete modal) ─────────────────── */
+.card-list-wrap { position: relative; }
+
+.card-list-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.85);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+.card-list-btn:hover { background: rgba(255,255,255,0.14); border-color: rgba(255,255,255,0.22); }
+
+.list-picker {
+  display: none;
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  width: 220px;
+  background: var(--bg, #0a0a0a);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  z-index: 200;
+  overflow: hidden;
+}
+.list-picker.open { display: block; }
+
+.lp-list { padding: 6px 0; }
+
+.lp-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 14px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+.lp-row:hover { background: rgba(255,255,255,0.05); }
+
+.lp-check {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--accent);
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.lp-name {
+  flex: 1;
+  font-size: 13px;
+  font-weight: 500;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lp-count {
+  font-size: 11px;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.lp-empty {
+  font-size: 13px;
+  color: var(--muted);
+  padding: 10px 14px;
+  margin: 0;
+}
+
+.lp-new-form {
+  display: flex;
+  gap: 0;
+  border-top: 1px solid var(--border);
+}
+
+.lp-new-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 13px;
+  font-family: var(--font-body);
+  padding: 10px 12px;
+  outline: none;
+  min-width: 0;
+}
+.lp-new-input::placeholder { color: var(--muted); }
+
+.lp-new-btn {
+  background: none;
+  border: none;
+  border-left: 1px solid var(--border);
+  color: var(--accent);
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 14px;
+  cursor: pointer;
+  transition: background 0.1s;
+  line-height: 1;
+}
+.lp-new-btn:hover { background: rgba(255,255,255,0.05); }
+
+.lp-signin { padding: 12px 14px; }
+.lp-signin-btn {
+  width: 100%;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  padding: 9px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 /* ============================================================
    ARTICLE COMMENTS
    ============================================================ */

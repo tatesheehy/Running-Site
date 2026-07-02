@@ -250,6 +250,13 @@ function openAthleteCard(athleteId, rank) {
         <button class="card-fav-btn${typeof isFavorited === 'function' && isFavorited(athleteId) ? ' favorited' : ''}" data-fav-id="${athleteId}" onclick="toggleFavorite('${athleteId}')" title="Save athlete">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </button>
+        <div class="card-list-wrap">
+          <button class="card-list-btn" onclick="toggleListPicker('${athleteId}');_renderListPicker('${athleteId}')" title="Add to list">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+            Lists
+          </button>
+          <div id="list-picker" class="list-picker"></div>
+        </div>
         <button class="card-share-btn" onclick="openShareOverlay('${athleteId}',${JSON.stringify(rank)},new URLSearchParams(location.search).get('event'))" title="Share athlete card">↗ Share</button>
         <button class="card-compare-btn" onclick="closeAthleteCard();openH2H('${athleteId}',new URLSearchParams(location.search).get('event'))" title="Compare athletes">⇌ Compare</button>
         <button class="card-close" onclick="closeAthleteCard()" aria-label="Close">×</button>
