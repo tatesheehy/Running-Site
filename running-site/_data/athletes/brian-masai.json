@@ -63,162 +63,351 @@
   "results": [
     {
       "date": "JUN 20",
-      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games, Nyayo National Stadium, Nairobi",
       "event": "",
       "time": "3:41.03",
-      "place": "12"
+      "place": "12."
     },
     {
       "date": "JUN 18",
-      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games, Nyayo National Stadium, Nairobi",
+      "event": "",
+      "time": "3:39.2h",
+      "place": "4."
+    },
+    {
+      "date": "JUN 18",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games, Nyayo National Stadium, Nairobi",
       "event": "1500m",
       "time": "3:39.2h",
-      "place": "4"
+      "place": "4."
     },
     {
       "date": "JUN 10",
-      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "meet": "NCAA Division I Outdoor Track and Field Championships, Hayward Field, Eugene, OR",
+      "event": "",
+      "time": "3:37.92",
+      "place": "9."
+    },
+    {
+      "date": "JUN 10",
+      "meet": "NCAA Division I Outdoor Track and Field Championships, Hayward Field, Eugene, OR",
       "event": "1500m",
       "time": "3:37.92",
-      "place": "9"
+      "place": "9."
     },
     {
       "date": "MAY 29",
-      "meet": "NCAA Division I West First Rounds",
+      "meet": "NCAA Division I West First Rounds, John McDonnell Field, Fayetteville, AR",
       "event": "",
       "time": "3:44.42",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAY 27",
-      "meet": "NCAA Division I West First Rounds",
+      "meet": "NCAA Division I West First Rounds, John McDonnell Field, Fayetteville, AR",
       "event": "",
       "time": "3:39.77",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAY 16",
-      "meet": "Southeastern Conference Outdoor Track & Field Championships",
+      "meet": "Southeastern Conference Outdoor Track & Field Championships, Hutsell-Rosen Track, Auburn, AL",
       "event": "",
       "time": "3:43.52",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAY 16",
-      "meet": "Southeastern Conference Outdoor Track & Field Championships",
+      "meet": "Southeastern Conference Outdoor Track & Field Championships, Hutsell-Rosen Track, Auburn, AL",
       "event": "",
       "time": "DNS",
       "place": ""
     },
     {
       "date": "MAY 15",
-      "meet": "Southeastern Conference Outdoor Track & Field Championships",
+      "meet": "Southeastern Conference Outdoor Track & Field Championships, Hutsell-Rosen Track, Auburn, AL",
       "event": "",
       "time": "3:43.36",
-      "place": "1"
+      "place": "1."
+    },
+    {
+      "date": "MAY 8",
+      "meet": "",
+      "event": "1500 m",
+      "time": "3:33.17",
+      "place": ""
     },
     {
       "date": "MAY 8",
       "meet": "Arkansas Twilight",
+      "event": "1500 m",
+      "time": "3:33.17",
+      "place": ""
+    },
+    {
+      "date": "MAY 8",
+      "meet": "Arkansas Twilight",
+      "event": "",
+      "time": "3:33.17",
+      "place": ""
+    },
+    {
+      "date": "MAY 8",
+      "meet": "Arkansas Twilight, John McDonnell Field, Fayetteville, AR",
+      "event": "",
+      "time": "3:33.17",
+      "place": "2."
+    },
+    {
+      "date": "MAY 8",
+      "meet": "Arkansas Twilight, John McDonnell Field, Fayetteville, AR",
       "event": "1500m",
       "time": "3:33.17",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAY 1",
-      "meet": "Payton Jordan Invitational",
+      "meet": "Payton Jordan Invitational, Cobb Track and Angell Field, Palo Alto, CA - Section 1",
+      "event": "",
+      "time": "3:38.13",
+      "place": "2."
+    },
+    {
+      "date": "MAY 1",
+      "meet": "Payton Jordan Invitational, Cobb Track and Angell Field, Palo Alto, CA",
       "event": "1500m",
       "time": "3:38.13",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "APR 18",
-      "meet": "Bryan Clay Invitational",
+      "meet": "Bryan Clay Invitational, Cougar Athletic Stadium, Azusa, CA - Elite Event",
       "event": "",
       "time": "3:39.54",
-      "place": "4"
+      "place": "4."
     },
     {
       "date": "APR 17",
-      "meet": "Bryan Clay Invitational",
-      "event": "5000m",
+      "meet": "",
+      "event": "5000 m",
       "time": "13:27.64",
       "place": ""
     },
     {
+      "date": "APR 17",
+      "meet": "Bryan Clay Invitational",
+      "event": "5000 m",
+      "time": "13:27.64",
+      "place": ""
+    },
+    {
+      "date": "APR 17",
+      "meet": "Bryan Clay Invitational",
+      "event": "",
+      "time": "13:27.64",
+      "place": ""
+    },
+    {
+      "date": "APR 17",
+      "meet": "Bryan Clay Invitational, Cougar Athletic Stadium, Azusa, CA - Invitational Events",
+      "event": "",
+      "time": "13:27.64",
+      "place": "10."
+    },
+    {
       "date": "APR 3",
-      "meet": "Mets Outdoor Championships",
+      "meet": "Mets Outdoor Championships, Icahn Stadium, New York, NY",
       "event": "",
       "time": "1:53.52",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAR 28",
-      "meet": "Raleigh Relays",
+      "meet": "Raleigh Relays, Paul Derr TF Facility, Raleigh, NC",
       "event": "",
       "time": "1:52.29",
-      "place": "5"
+      "place": "5."
     },
     {
       "date": "MAR 21",
-      "meet": "UCF Black & Gold Invite",
+      "meet": "UCF Black & Gold Invite, UCF Soccer and Track Complex, Orlando, FL",
       "event": "",
       "time": "4:00.61",
-      "place": "6"
+      "place": "6."
+    },
+    {
+      "date": "MAR 20",
+      "meet": "",
+      "event": "800 m",
+      "time": "1:51.65",
+      "place": ""
+    },
+    {
+      "date": "MAR 20",
+      "meet": "",
+      "event": "4x400 m Relay",
+      "time": "3:20.52",
+      "place": ""
     },
     {
       "date": "MAR 20",
       "meet": "UCF Black & Gold Invite",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:51.65",
       "place": ""
     },
     {
       "date": "MAR 20",
       "meet": "UCF Black & Gold Invite",
-      "event": "4x400 Metres Relay",
+      "event": "4x400 m Relay",
       "time": "3:20.52",
       "place": ""
     },
     {
+      "date": "MAR 20",
+      "meet": "UCF Black & Gold Invite",
+      "event": "",
+      "time": "1:51.65",
+      "place": ""
+    },
+    {
+      "date": "MAR 20",
+      "meet": "UCF Black & Gold Invite",
+      "event": "",
+      "time": "3:20.52",
+      "place": ""
+    },
+    {
+      "date": "MAR 20",
+      "meet": "UCF Black & Gold Invite, UCF Soccer and Track Complex, Orlando, FL",
+      "event": "",
+      "time": "1:51.65",
+      "place": "5."
+    },
+    {
+      "date": "MAR 20",
+      "meet": "UCF Black & Gold Invite, UCF Soccer and Track Complex, Orlando, FL",
+      "event": "",
+      "time": "3:20.52",
+      "place": "4."
+    },
+    {
       "date": "MAR 13",
-      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "meet": "NCAA Division I Indoor Track and Field Championships, Randal Tyson Indoor Center, Fayetteville, AR (i)",
       "event": "",
       "time": "9:21.42",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "FEB 26",
-      "meet": "Southeastern Conference Indoor Track & Field Championship",
-      "event": "3000m sh",
+      "meet": "Southeastern Conference Indoor Track & Field Championship, R.A. \"Murray\" Fasken Indoor Track Stadium, College Station, TX (i)",
+      "event": "",
       "time": "7:45.42",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "FEB 26",
-      "meet": "Southeastern Conference Indoor Track & Field Championship",
+      "meet": "Southeastern Conference Indoor Track & Field Championship, R.A. \"Murray\" Fasken Indoor Track Stadium, College Station, TX (i)",
       "event": "",
       "time": "9:30.84",
-      "place": "3"
+      "place": "3."
+    },
+    {
+      "date": "FEB 26",
+      "meet": "Southeastern Conference Indoor Track & Field Championship, R.A. \"Murray\" Fasken Indoor Track Stadium, College Station, TX (i)",
+      "event": "3000m sh",
+      "time": "7:45.42",
+      "place": "1."
+    },
+    {
+      "date": "FEB 22",
+      "meet": "",
+      "event": "3000 m",
+      "time": "7:43.82",
+      "place": ""
+    },
+    {
+      "date": "FEB 22",
+      "meet": "",
+      "event": "3000 m sh",
+      "time": "7:43.82",
+      "place": ""
     },
     {
       "date": "FEB 22",
       "meet": "Saucony Battle for Boston",
+      "event": "3000 m",
+      "time": "7:43.82",
+      "place": ""
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "3000 m sh",
+      "time": "7:43.82",
+      "place": ""
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "",
+      "time": "7:43.82",
+      "place": ""
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston, Boston Univ. Track & Tennis Center, Boston, MA (i) - Invitational Events",
+      "event": "",
+      "time": "7:43.82",
+      "place": "3."
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston, Boston Univ. Track & Tennis Center, Boston, MA (i)",
       "event": "3000m sh",
       "time": "7:43.82",
-      "place": "3"
+      "place": "3."
+    },
+    {
+      "date": "FEB 20",
+      "meet": "",
+      "event": "Distance Medley sh",
+      "time": "9:17.30",
+      "place": ""
     },
     {
       "date": "FEB 20",
       "meet": "Arkansas Qualifier",
-      "event": "Distance Medley Short Track",
+      "event": "Distance Medley sh",
       "time": "9:17.30",
+      "place": ""
+    },
+    {
+      "date": "FEB 20",
+      "meet": "Arkansas Qualifier",
+      "event": "",
+      "time": "9:17.30",
+      "place": ""
+    },
+    {
+      "date": "FEB 20",
+      "meet": "Arkansas Qualifier, Randal Tyson Indoor Center, Fayetteville, AR (i)",
+      "event": "",
+      "time": "9:17.30",
+      "place": "2."
+    },
+    {
+      "date": "FEB 16",
+      "meet": "",
+      "event": "4x400 m Relay sh",
+      "time": "3:19.44",
       "place": ""
     },
     {
       "date": "FEB 16",
       "meet": "Northeast Conference Indoor Championships",
-      "event": "4x400 Metres Relay Short Track",
+      "event": "4x400 m Relay sh",
       "time": "3:19.44",
       "place": ""
     },
@@ -226,49 +415,98 @@
       "date": "FEB 16",
       "meet": "Northeast Conference Indoor Championships",
       "event": "",
-      "time": "1:52.55",
-      "place": "1"
+      "time": "3:19.44",
+      "place": ""
     },
     {
       "date": "FEB 16",
-      "meet": "Northeast Conference Indoor Championships",
+      "meet": "Northeast Conference Indoor Championships, Ocean Breeze Athl. Complex, New York, NY (i) - Collegiate",
+      "event": "",
+      "time": "1:52.55",
+      "place": "1."
+    },
+    {
+      "date": "FEB 16",
+      "meet": "Northeast Conference Indoor Championships, Ocean Breeze Athl. Complex, New York, NY (i) - Collegiate",
       "event": "",
       "time": "4:14.55",
-      "place": "4"
+      "place": "4."
+    },
+    {
+      "date": "FEB 16",
+      "meet": "Northeast Conference Indoor Championships, Ocean Breeze Athl. Complex, New York, NY (i) - Collegiate",
+      "event": "",
+      "time": "3:19.44",
+      "place": "3."
     },
     {
       "date": "FEB 15",
-      "meet": "Northeast Conference Indoor Championships",
+      "meet": "Northeast Conference Indoor Championships, Ocean Breeze Athl. Complex, New York, NY (i) - Collegiate",
       "event": "",
       "time": "1:55.49",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "FEB 15",
-      "meet": "Northeast Conference Indoor Championships",
+      "meet": "Northeast Conference Indoor Championships, Ocean Breeze Athl. Complex, New York, NY (i) - Collegiate",
       "event": "",
       "time": "4:21.30",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "FEB 13",
-      "meet": "Husky Classic",
+      "meet": "Husky Classic, Dempsey Indoor, Seattle, WA (i)",
       "event": "",
       "time": "DNS",
       "place": ""
     },
     {
       "date": "FEB 13",
-      "meet": "Tyson Invitational",
+      "meet": "Tyson Invitational, Randal Tyson Indoor Center, Fayetteville, AR (i) - Championship events",
+      "event": "",
+      "time": "7:43.96",
+      "place": "3."
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Tyson Invitational, Randal Tyson Indoor Center, Fayetteville, AR (i)",
       "event": "3000m sh",
       "time": "7:43.96",
-      "place": "3"
+      "place": "3."
+    },
+    {
+      "date": "JAN 31",
+      "meet": "",
+      "event": "800 m sh",
+      "time": "1:52.54",
+      "place": ""
+    },
+    {
+      "date": "JAN 31",
+      "meet": "",
+      "event": "Mile",
+      "time": "3:58.82",
+      "place": ""
+    },
+    {
+      "date": "JAN 31",
+      "meet": "",
+      "event": "Mile sh",
+      "time": "3:58.82",
+      "place": ""
     },
     {
       "date": "JAN 31",
       "meet": "Boston University John Thomas Terrier Classic",
-      "event": "800 Metres Short Track",
+      "event": "800 m sh",
       "time": "1:52.54",
+      "place": ""
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Razorback Invitational",
+      "event": "Mile",
+      "time": "3:58.82",
       "place": ""
     },
     {
@@ -276,28 +514,70 @@
       "meet": "Razorback Invitational",
       "event": "Mile sh",
       "time": "3:58.82",
-      "place": "2"
+      "place": ""
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "",
+      "time": "1:52.54",
+      "place": ""
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Razorback Invitational",
+      "event": "",
+      "time": "3:58.82",
+      "place": ""
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic, Boston Univ. Track & Tennis Center, Boston, MA (i) - Open Event",
+      "event": "",
+      "time": "1:52.54",
+      "place": "2."
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Razorback Invitational, Randal Tyson Indoor Center, Fayetteville, AR (i)",
+      "event": "",
+      "time": "3:58.82",
+      "place": "2."
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Razorback Invitational, Randal Tyson Indoor Center, Fayetteville, AR (i)",
+      "event": "Mile sh",
+      "time": "3:58.82",
+      "place": "2."
     },
     {
       "date": "JAN 23",
-      "meet": "Dr. Sander Scorcher",
+      "meet": "Dr. Sander Scorcher, Armory Track&Field Center, New York, NY (i) - Invitational Events",
       "event": "",
       "time": "1:52.94",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "JAN 16",
-      "meet": "NYC Gotham Cup",
+      "meet": "NYC Gotham Cup, Ocean Breeze Athl. Complex, New York, NY (i)",
       "event": "",
       "time": "1:53.15",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "JAN 16",
-      "meet": "Arkansas Invitational",
+      "meet": "Arkansas Invitational, Randal Tyson Indoor Center, Fayetteville, AR (i)",
+      "event": "",
+      "time": "4:00.23",
+      "place": "1."
+    },
+    {
+      "date": "JAN 16",
+      "meet": "Arkansas Invitational, Randal Tyson Indoor Center, Fayetteville, AR (i)",
       "event": "Mile sh",
       "time": "4:00.23",
-      "place": "1"
+      "place": "1."
     }
   ],
   "event": "MIDDLE DISTANCE",
@@ -305,5 +585,5 @@
   "flag": "KE",
   "dob": "1999-03-02",
   "age": "27",
-  "lastSynced": "2026-07-01"
+  "lastSynced": "2026-07-02"
 }
