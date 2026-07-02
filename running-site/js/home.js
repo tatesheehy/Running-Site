@@ -146,7 +146,7 @@ function buildHome() {
               </div>
             </div>
           </div>
-          <div class="section-header" style="margin-top:0;padding-top:8px;margin-bottom:8px">
+          <div class="section-header" style="margin-top:0;padding-top:18px;margin-bottom:8px">
             <h2 class="section-title">${latestTitle}</h2>
           </div>
           <div class="articles-grid home-articles-grid">${latestHtml}</div>
