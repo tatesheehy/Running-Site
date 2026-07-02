@@ -228,12 +228,7 @@ function openAthleteCard(athleteId, rank) {
     .map(([k, v]) => `<strong>${k}</strong> ${v}<br>`)
     .join('');
 
-  const traitsHtml = (a.traits || []).map(t => `
-    <div class="card-trait">
-      <div class="card-trait-icon">${t.emoji}</div>
-      <div class="card-trait-label">${t.label}</div>
-    </div>
-  `).join('');
+  const traitsHtml = '';
 
   const an = a.analysis || {};
 
@@ -241,7 +236,7 @@ function openAthleteCard(athleteId, rank) {
     <div class="card-header" style="border-top: 7px solid ${countryColor}">
       ${rank != null ? `<div class="card-rank">${rank}</div>` : ''}
       <div class="card-header-center">
-        <div>
+        <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
           <span class="card-athlete-name">${a.name}</span>
           <span class="card-athlete-country">${renderFlag(a.flag)} ${a.country}</span>
         </div>
