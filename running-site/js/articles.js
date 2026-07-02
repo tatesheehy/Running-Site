@@ -99,6 +99,9 @@ function buildArticlePage() {
       <div style="margin-top:48px;padding-top:24px;border-top:1px solid var(--border);">
         <a href="articles.html" style="color:var(--accent);font-size:14px;font-weight:700;">← All articles</a>
       </div>
+      <div id="comments-section"></div>
     </div>
   `;
+
+  if (typeof buildCommentsSection === 'function') buildCommentsSection(a.id);
 }

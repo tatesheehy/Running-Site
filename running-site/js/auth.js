@@ -67,6 +67,7 @@ window.isFavorited    = id => _favorites.has(id);
 window.getCurrentUser = () => _user;
 window.getFavoriteIds = () => [..._favorites];
 window.getUsername    = () => _user?.user_metadata?.username || '';
+window.getSupabase    = () => _sb;
 
 window.updateUsername = async function(username) {
   if (!_sb || !_user) return { error: 'Not signed in' };
