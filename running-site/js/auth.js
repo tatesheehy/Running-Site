@@ -68,6 +68,7 @@ window.getCurrentUser = () => _user;
 window.getFavoriteIds = () => [..._favorites];
 window.getUsername    = () => _user?.user_metadata?.username || '';
 window.getSupabase    = () => _sb;
+window.isModerator    = () => !!_user && _user.email === 'tatesheehy@gmail.com';
 
 window.updateUsername = async function(username) {
   if (!_sb || !_user) return { error: 'Not signed in' };

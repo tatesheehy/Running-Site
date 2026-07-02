@@ -57,7 +57,7 @@ async function buildCommentsSection(articleId) {
 
     const commentItems = comments.length
       ? comments.map(c => {
-          const isOwn   = user && c.user_id === user.id;
+          const isOwn   = user && (c.user_id === user.id || (typeof isModerator === 'function' && isModerator()));
           const name    = c.username || 'Anonymous';
           const vm      = voteMap[c.id] || { score: 0, userVote: 0 };
           const scoreLabel = vm.score > 0 ? `+${vm.score}` : String(vm.score);
@@ -76,15 +76,18 @@ async function buildCommentsSection(articleId) {
                 </div>
                 <p class="cmt-body">${escHtml(c.body)}</p>
                 <div class="cmt-votes">
-                  <button class="cmt-vote-btn cmt-vote-up${vm.userVote === 1 ? ' active' : ''}"
-                    onclick="window._voteComment('${escHtml(c.id)}',${nextUp})" title="Upvote" aria-label="Upvote">
-                    ${upSvg}
-                  </button>
-                  <span class="cmt-score${vm.score > 0 ? ' positive' : vm.score < 0 ? ' negative' : ''}">${scoreLabel}</span>
-                  <button class="cmt-vote-btn cmt-vote-down${vm.userVote === -1 ? ' active' : ''}"
-                    onclick="window._voteComment('${escHtml(c.id)}',${nextDown})" title="Downvote" aria-label="Downvote">
-                    ${downSvg}
-                  </button>
+                  ${user && c.user_id === user.id
+                    ? `<span class="cmt-score${vm.score > 0 ? ' positive' : vm.score < 0 ? ' negative' : ''}" style="padding:3px 5px">${scoreLabel}</span>`
+                    : `<button class="cmt-vote-btn cmt-vote-up${vm.userVote === 1 ? ' active' : ''}"
+                        onclick="window._voteComment('${escHtml(c.id)}',${nextUp})" title="Upvote" aria-label="Upvote">
+                        ${upSvg}
+                       </button>
+                       <span class="cmt-score${vm.score > 0 ? ' positive' : vm.score < 0 ? ' negative' : ''}">${scoreLabel}</span>
+                       <button class="cmt-vote-btn cmt-vote-down${vm.userVote === -1 ? ' active' : ''}"
+                        onclick="window._voteComment('${escHtml(c.id)}',${nextDown})" title="Downvote" aria-label="Downvote">
+                        ${downSvg}
+                       </button>`
+                  }
                 </div>
               </div>
             </div>`;
