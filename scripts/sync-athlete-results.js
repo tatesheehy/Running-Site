@@ -323,9 +323,11 @@ function parseResultsFromND(nd, year) {
   return results.map(({ _date, ...r }) => r);
 }
 
-// Fallback: sliding-window regex approach (less accurate, kept as safety net).
+// Fallback: brace-matching approach — finds the actual JSON object that contains
+// each date occurrence rather than guessing from a fixed window.
 function parseResultsRegex(html, year) {
   const results = [];
+  const seen    = new Set();
   const dateRe  = new RegExp(`"date":"(\\d{2} \\w{3} ${year})"`, 'g');
   let match;
 
@@ -333,29 +335,55 @@ function parseResultsRegex(html, year) {
     const dateStr = match[1];
     const date    = parseWADate(dateStr);
     if (!date) continue;
+    const pos = match.index;
 
-    const winStart = Math.max(0, match.index - 800);
-    const winEnd   = Math.min(html.length, match.index + 800);
-    const win      = html.slice(winStart, winEnd);
-    const get      = k => { const m = win.match(new RegExp(`"${k}":"([^"]+)"`)); return m ? m[1] : null; };
+    // Scan backwards from the date position to find the opening { of the containing object
+    let depth = 0, start = -1;
+    for (let i = pos; i >= Math.max(0, pos - 3000); i--) {
+      const c = html[i];
+      if      (c === '}') depth++;
+      else if (c === '{') { if (depth === 0) { start = i; break; } depth--; }
+    }
+    if (start === -1) continue;
 
-    const mark = get('mark');
+    // Scan forwards from that { to find the matching }
+    depth = 0;
+    let end = -1;
+    for (let i = start; i < Math.min(html.length, start + 3000); i++) {
+      const c = html[i];
+      if      (c === '{') depth++;
+      else if (c === '}') { depth--; if (depth === 0) { end = i; break; } }
+    }
+    if (end === -1) continue;
+
+    const obj = html.slice(start, end + 1);
+    const get = (...keys) => {
+      for (const k of keys) {
+        const m = obj.match(new RegExp(`"${k}"\\s*:\\s*"([^"]+)"`));
+        if (m) return m[1];
+      }
+      return null;
+    };
+
+    const mark = get('mark', 'performance', 'result');
     if (!mark) continue;
 
-    results.push({ _date: date, date: formatDate(dateStr),
-                   meet: get('competition') || '', event: formatDiscipline(get('discipline') || ''),
-                   time: mark, place: get('place') || get('position') || '' });
+    const key = `${formatDate(dateStr)}|${get('competition')||''}|${get('discipline')||''}|${mark}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+
+    results.push({
+      _date: date,
+      date:  formatDate(dateStr),
+      meet:  get('competition', 'competitionName') || '',
+      event: formatDiscipline(get('discipline', 'event') || ''),
+      time:  mark,
+      place: get('place', 'position', 'rank') || '',
+    });
   }
 
-  const seen = new Set();
-  const unique = results.filter(r => {
-    const key = `${r.date}|${r.meet}|${r.event}|${r.time}`;
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  });
-  unique.sort((a, b) => b._date - a._date);
-  return unique.map(({ _date, ...r }) => r);
+  results.sort((a, b) => b._date - a._date);
+  return results.map(({ _date, ...r }) => r);
 }
 
 function parseResults(html, year) {
