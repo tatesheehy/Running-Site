@@ -47,50 +47,82 @@ async function buildCommentsSection(articleId) {
     return { comments, voteMap };
   }
 
+  function renderComment(c, user, voteMap, { isReply = false } = {}) {
+    const isOwn   = user && (c.user_id === user.id || (typeof isModerator === 'function' && isModerator()));
+    const name    = c.username || 'Anonymous';
+    const vm      = voteMap[c.id] || { score: 0, userVote: 0 };
+    const scoreLabel = vm.score > 0 ? `+${vm.score}` : String(vm.score);
+    const nextUp   = vm.userVote === 1  ? 0 : 1;
+    const nextDown = vm.userVote === -1 ? 0 : -1;
+
+    const upSvg   = `<svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l8 14H4z"/></svg>`;
+    const downSvg = `<svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 20l-8-14h16z"/></svg>`;
+
+    const replyBtn = (!isReply && user)
+      ? `<button class="cmt-reply-btn" onclick="window._toggleReplyForm('${escHtml(c.id)}','${escHtml(name)}')">Reply</button>`
+      : '';
+
+    const voteHtml = user && c.user_id === user.id
+      ? `<span class="cmt-score${vm.score > 0 ? ' positive' : vm.score < 0 ? ' negative' : ''}" style="padding:3px 5px">${scoreLabel}</span>`
+      : `<button class="cmt-vote-btn cmt-vote-up${vm.userVote === 1 ? ' active' : ''}"
+            onclick="window._voteComment('${escHtml(c.id)}',${nextUp})" title="Upvote" aria-label="Upvote">${upSvg}
+          </button>
+          <span class="cmt-score${vm.score > 0 ? ' positive' : vm.score < 0 ? ' negative' : ''}">${scoreLabel}</span>
+          <button class="cmt-vote-btn cmt-vote-down${vm.userVote === -1 ? ' active' : ''}"
+            onclick="window._voteComment('${escHtml(c.id)}',${nextDown})" title="Downvote" aria-label="Downvote">${downSvg}
+          </button>`;
+
+    const inlineReplyForm = (!isReply && user) ? `
+      <div class="cmt-reply-wrap" id="reply-wrap-${escHtml(c.id)}" style="display:none">
+        <form class="cmt-reply-form" onsubmit="window._submitReply(event,'${escHtml(articleId)}','${escHtml(c.id)}','${escHtml(name)}')">
+          <textarea class="cmt-input cmt-reply-input" placeholder="Reply to ${escHtml(name)}…" maxlength="500" rows="2" required></textarea>
+          <div class="cmt-form-footer cmt-reply-footer">
+            <button type="button" class="cmt-cancel-reply" onclick="window._toggleReplyForm('${escHtml(c.id)}')">Cancel</button>
+            <button type="submit" class="cmt-submit cmt-submit--sm">Post Reply</button>
+          </div>
+        </form>
+      </div>` : '';
+
+    return `
+      <div class="cmt-item${isReply ? ' cmt-item--reply' : ''}" data-id="${escHtml(c.id)}">
+        <div class="cmt-avatar cmt-avatar--${isReply ? 'sm' : 'md'}">${name[0].toUpperCase()}</div>
+        <div class="cmt-content">
+          <div class="cmt-header">
+            <span class="cmt-name">${escHtml(name)}</span>
+            <span class="cmt-time">${timeAgo(c.created_at)}</span>
+            ${isOwn ? `<button class="cmt-delete" onclick="window._deleteComment('${escHtml(c.id)}')" title="Delete" aria-label="Delete">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>` : ''}
+          </div>
+          <p class="cmt-body">${escHtml(c.body)}</p>
+          <div class="cmt-actions">
+            <div class="cmt-votes">${voteHtml}</div>
+            ${replyBtn}
+          </div>
+          ${inlineReplyForm}
+        </div>
+      </div>`;
+  }
+
   async function render() {
     const sb   = typeof getSupabase    === 'function' ? getSupabase()    : null;
     const user = typeof getCurrentUser === 'function' ? getCurrentUser() : null;
     const { comments, voteMap } = await loadData(sb, user);
 
-    const upSvg   = `<svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l8 14H4z"/></svg>`;
-    const downSvg = `<svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 20l-8-14h16z"/></svg>`;
+    // Build tree: top-level comments + their replies
+    const topLevel = comments.filter(c => !c.parent_id);
+    const replyMap = {};
+    for (const c of comments.filter(c => c.parent_id)) {
+      (replyMap[c.parent_id] ||= []).push(c);
+    }
 
-    const commentItems = comments.length
-      ? comments.map(c => {
-          const isOwn   = user && (c.user_id === user.id || (typeof isModerator === 'function' && isModerator()));
-          const name    = c.username || 'Anonymous';
-          const vm      = voteMap[c.id] || { score: 0, userVote: 0 };
-          const scoreLabel = vm.score > 0 ? `+${vm.score}` : String(vm.score);
-          const nextUp   = vm.userVote === 1  ? 0 : 1;
-          const nextDown = vm.userVote === -1 ? 0 : -1;
-          return `
-            <div class="cmt-item" data-id="${escHtml(c.id)}">
-              <div class="cmt-avatar">${name[0].toUpperCase()}</div>
-              <div class="cmt-content">
-                <div class="cmt-header">
-                  <span class="cmt-name">${escHtml(name)}</span>
-                  <span class="cmt-time">${timeAgo(c.created_at)}</span>
-                  ${isOwn ? `<button class="cmt-delete" onclick="window._deleteComment('${escHtml(c.id)}')" title="Delete" aria-label="Delete comment">
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-                  </button>` : ''}
-                </div>
-                <p class="cmt-body">${escHtml(c.body)}</p>
-                <div class="cmt-votes">
-                  ${user && c.user_id === user.id
-                    ? `<span class="cmt-score${vm.score > 0 ? ' positive' : vm.score < 0 ? ' negative' : ''}" style="padding:3px 5px">${scoreLabel}</span>`
-                    : `<button class="cmt-vote-btn cmt-vote-up${vm.userVote === 1 ? ' active' : ''}"
-                        onclick="window._voteComment('${escHtml(c.id)}',${nextUp})" title="Upvote" aria-label="Upvote">
-                        ${upSvg}
-                       </button>
-                       <span class="cmt-score${vm.score > 0 ? ' positive' : vm.score < 0 ? ' negative' : ''}">${scoreLabel}</span>
-                       <button class="cmt-vote-btn cmt-vote-down${vm.userVote === -1 ? ' active' : ''}"
-                        onclick="window._voteComment('${escHtml(c.id)}',${nextDown})" title="Downvote" aria-label="Downvote">
-                        ${downSvg}
-                       </button>`
-                  }
-                </div>
-              </div>
-            </div>`;
+    const threadHtml = topLevel.length
+      ? topLevel.map(c => {
+          const replies = (replyMap[c.id] || []);
+          const repliesHtml = replies.length
+            ? `<div class="cmt-replies">${replies.map(r => renderComment(r, user, voteMap, { isReply: true })).join('')}</div>`
+            : '';
+          return renderComment(c, user, voteMap) + repliesHtml;
         }).join('')
       : '<p class="cmt-empty">No comments yet — be the first to share your thoughts.</p>';
 
@@ -113,10 +145,20 @@ async function buildCommentsSection(articleId) {
           Comments
           ${comments.length ? `<span class="cmt-count">${comments.length}</span>` : ''}
         </h2>
-        <div id="cmt-list">${commentItems}</div>
+        <div id="cmt-list">${threadHtml}</div>
         ${formHtml}
       </div>`;
   }
+
+  // ── Actions ───────────────────────────────────────────────
+
+  window._toggleReplyForm = function(commentId, name) {
+    const wrap = document.getElementById(`reply-wrap-${commentId}`);
+    if (!wrap) return;
+    const isOpen = wrap.style.display !== 'none';
+    wrap.style.display = isOpen ? 'none' : 'block';
+    if (!isOpen) wrap.querySelector('textarea')?.focus();
+  };
 
   window._submitComment = async function(e, artId) {
     e.preventDefault();
@@ -137,6 +179,26 @@ async function buildCommentsSection(articleId) {
       if (btn) { btn.disabled = false; btn.textContent = 'Post Comment'; }
     } else {
       if (textarea) textarea.value = '';
+      await render();
+    }
+  };
+
+  window._submitReply = async function(e, artId, parentId, parentName) {
+    e.preventDefault();
+    const sb   = typeof getSupabase    === 'function' ? getSupabase()    : null;
+    const user = typeof getCurrentUser === 'function' ? getCurrentUser() : null;
+    if (!user || !sb) return;
+    const form     = e.target;
+    const textarea = form.querySelector('.cmt-reply-input');
+    const body     = textarea?.value.trim();
+    if (!body) return;
+    const username = (typeof getUsername === 'function' ? getUsername() : '') || user.email.split('@')[0];
+    const btn = form.querySelector('.cmt-submit--sm');
+    if (btn) { btn.disabled = true; btn.textContent = 'Posting…'; }
+    const { error } = await sb.from('comments').insert({ article_id: artId, user_id: user.id, username, body, parent_id: parentId });
+    if (error) {
+      if (btn) { btn.disabled = false; btn.textContent = 'Post Reply'; }
+    } else {
       await render();
     }
   };

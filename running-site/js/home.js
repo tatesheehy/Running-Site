@@ -103,6 +103,29 @@ function buildHome() {
 
   const countdownHtml = buildCountdownPills();
 
+  // ── Athlete of the Week widget ─────────────────────────────
+  const aotwCfg = SITE.athleteOfWeek;
+  const aotwAthlete = aotwCfg?.athleteId ? ATHLETES[aotwCfg.athleteId] : null;
+  const aotwHtml = aotwAthlete ? (() => {
+    const a = aotwAthlete;
+    const pr = a.prs?.[0];
+    const prStr = pr ? `${pr.event} ${pr.time}` : '';
+    return `
+      <div class="aotw-widget" onclick="openAthleteCard('${a.id}', null)" role="button" tabindex="0">
+        <div class="aotw-photo" style="background-image:url('${a.photo || ''}');background-color:${a.photoBackground || '#1a1a2e'}"></div>
+        <div class="aotw-body">
+          <div class="aotw-label">Athlete of the Week</div>
+          <div class="aotw-name">${a.name}</div>
+          <div class="aotw-meta">
+            ${renderFlag(a.flag)} ${a.country || ''}
+            ${prStr ? `<span class="aotw-sep">·</span><span class="aotw-pr">${prStr}</span>` : ''}
+          </div>
+          ${aotwCfg.description ? `<p class="aotw-desc">${aotwCfg.description}</p>` : ''}
+        </div>
+        <div class="aotw-cta">View Profile →</div>
+      </div>`;
+  })() : '';
+
   document.getElementById('main').innerHTML = `
     <div class="container">
       ${SITE.homeTagline ? `<div class="home-tagline">${SITE.homeTagline}</div>` : ''}
@@ -131,6 +154,8 @@ function buildHome() {
           <div class="ep-label">${editorPicksLabel}</div>
           <div class="home-ep-list">${picksHtml}</div>
         </div>` : ''}
+
+      ${aotwHtml}
 
       <div class="section-header">
         <h2 class="section-title">${latestTitle}</h2>

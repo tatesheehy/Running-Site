@@ -356,6 +356,15 @@ collections:
           - { label: "'Editors' Picks' Label", name: editorPicksLabel, widget: string, default: "Editors' Picks", required: false }
           - { label: "Show Rankings Widget on Home Page", name: showRankingsWidget, widget: boolean, default: true, required: false }
 
+          - name: athleteOfWeek
+            label: "Athlete of the Week"
+            widget: object
+            required: false
+            hint: "Appears as a featured widget between Editors' Picks and Latest Articles. Leave Athlete ID blank to hide it."
+            fields:
+              - { label: "Athlete ID", name: athleteId, widget: string, required: false, hint: "The athlete's ID slug (e.g. josh-kerr). Must match an athlete in the Athletes section." }
+              - { label: "Description", name: description, widget: text, required: false, hint: "Why they're the pick this week — shown below their name in the widget." }
+
           - label: "── ARTICLES PAGE ─────────────────────────"
             name: _articles_divider
             widget: hidden

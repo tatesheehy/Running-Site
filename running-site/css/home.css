@@ -224,6 +224,98 @@
   padding-right: 0;
 }
 
+/* ── ATHLETE OF THE WEEK ──────────────────────────────────── */
+.aotw-widget {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: 8px 0 0;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.15s;
+  position: relative;
+}
+.aotw-widget:hover { border-color: var(--accent); }
+
+.aotw-photo {
+  width: 140px;
+  flex-shrink: 0;
+  align-self: stretch;
+  background-size: cover;
+  background-position: center top;
+}
+
+.aotw-body {
+  flex: 1;
+  min-width: 0;
+  padding: 22px 24px;
+}
+
+.aotw-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.aotw-name {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.aotw-meta {
+  font-size: 13px;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.aotw-sep { color: var(--border); }
+
+.aotw-pr {
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.aotw-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+  max-width: 560px;
+}
+
+.aotw-cta {
+  padding: 22px 24px;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  white-space: nowrap;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+@media (max-width: 700px) {
+  .aotw-photo { width: 100px; }
+  .aotw-name  { font-size: 20px; }
+  .aotw-cta   { display: none; }
+}
+
 /* ── COUNTDOWN ────────────────────────────────────────────── */
 .home-countdown-wrap {
   padding: 0 28px;

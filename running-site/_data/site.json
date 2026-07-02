@@ -36,5 +36,9 @@
   "accentColor": "#e8500a",
   "twitterUrl": "",
   "instagramUrl": "",
-  "showRankingsWidget": true
+  "showRankingsWidget": true,
+  "athleteOfWeek": {
+    "athleteId": "josh-kerr",
+    "description": "Kerr delivered a dominant performance at the Pre Classic, clocking 3:28.91 to take the win and remind everyone who holds the world record."
+  }
 }

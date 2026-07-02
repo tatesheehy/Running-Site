@@ -104,15 +104,7 @@ function buildAccountPage() {
 
         </div>
 
-        <div class="acct-card acct-card--full" id="acct-lists-section">
-          <h2 class="acct-card-title">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
-            My Lists
-          </h2>
-          <div id="acct-lists-body"><p class="acct-card-hint">Loading…</p></div>
-        </div>
-
-        ${mod
+${mod
           ? `<div class="acct-card acct-card--full" id="mod-users-section">
                <h2 class="acct-card-title">
                  All Users
@@ -125,54 +117,10 @@ function buildAccountPage() {
       </div>`;
 
     window._refreshMyAthletes = render;
-    window._refreshListsSection = _renderListsSection;
-
-    _renderListsSection();
 
     if (typeof isModerator === 'function' && isModerator()) {
       _loadModUsers();
     }
-  }
-
-  async function _renderListsSection() {
-    const wrap = document.getElementById('acct-lists-body');
-    if (!wrap) return;
-
-    if (typeof loadLists === 'function' && typeof getLists === 'function') {
-      await loadLists();
-    }
-    const lists = typeof getLists === 'function' ? getLists() : [];
-
-    if (!lists.length) {
-      wrap.innerHTML = `
-        <p class="acct-empty-state">No lists yet — open any athlete card and click <strong>Lists</strong> to create one.</p>`;
-      return;
-    }
-
-    const listsHtml = lists.map(l => {
-      const athletes = [...l.items].map(id => ATHLETES[id]).filter(Boolean);
-      const thumbs = athletes.slice(0, 5).map(a =>
-        `<div class="acct-list-thumb" style="background-image:url('${a.photo || '/images/default_card.png'}')"></div>`
-      ).join('');
-      return `
-        <div class="acct-list-row">
-          <div class="acct-list-thumbs">${thumbs || '<div class="acct-list-thumb acct-list-thumb--empty"></div>'}</div>
-          <div class="acct-list-info">
-            <div class="acct-list-name">${l.name}</div>
-            <div class="acct-list-count">${l.items.size} athlete${l.items.size !== 1 ? 's' : ''}</div>
-          </div>
-          <button class="acct-list-delete" onclick="window._deleteListFromAccount('${l.id}')" title="Delete list">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-          </button>
-        </div>`;
-    }).join('');
-
-    wrap.innerHTML = `<div class="acct-lists-list">${listsHtml}</div>`;
-
-    window._deleteListFromAccount = async function(listId) {
-      await deleteList(listId);
-      _renderListsSection();
-    };
   }
 
   async function _loadModUsers() {
