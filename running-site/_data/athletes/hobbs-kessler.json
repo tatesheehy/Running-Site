@@ -84,66 +84,31 @@
   "results": [
     {
       "date": "JUN 16",
-      "meet": "65th Ostrava Golden Spike",
-      "event": "1000 Metres",
+      "meet": "",
+      "event": "1000 m",
       "time": "2:15.44",
       "place": ""
     },
     {
-      "date": "JUN 10",
-      "meet": "Oslo Bislett Games",
-      "event": "",
-      "time": "3:49.13",
-      "place": "4"
-    },
-    {
-      "date": "JUN 7",
-      "meet": "BAUHAUS-Galan",
-      "event": "1500m",
-      "time": "3:31.76",
-      "place": ""
-    },
-    {
-      "date": "MAY 23",
-      "meet": "LA Track Festival",
-      "event": "800m",
-      "time": "1:46.04",
-      "place": ""
-    },
-    {
-      "date": "MAY 23",
-      "meet": "LA Track Festival",
-      "event": "",
-      "time": "DNF",
-      "place": ""
-    },
-    {
       "date": "MAY 1",
-      "meet": "Payton Jordan Invitational",
-      "event": "5000m",
+      "meet": "",
+      "event": "5000 m",
       "time": "13:13.94",
       "place": ""
     },
     {
-      "date": "FEB 1",
-      "meet": "Millrose Games",
-      "event": "1500 Metres Short Track",
-      "time": "3:32.99",
+      "date": "JAN 24",
+      "meet": "",
+      "event": "2000 m",
+      "time": "4:48.79",
       "place": ""
     },
     {
-      "date": "FEB 1",
-      "meet": "Millrose Games",
-      "event": "Mile sh",
-      "time": "3:48.68",
-      "place": "3"
-    },
-    {
       "date": "JAN 24",
-      "meet": "New Balance Indoor Grand Prix",
-      "event": "2000m sh",
+      "meet": "",
+      "event": "2000 m sh",
       "time": "4:48.79",
-      "place": "1"
+      "place": ""
     }
   ],
   "weight": "140",

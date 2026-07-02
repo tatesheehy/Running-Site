@@ -32,6 +32,7 @@
   "results": [
     {
       "date": "JUN 10",
+<<<<<<< HEAD
       "meet": "Oslo Bislett Games",
       "event": "800m",
       "time": "1:42.09",
@@ -50,6 +51,12 @@
       "event": "1500m",
       "time": "3:34.11",
       "place": "1"
+=======
+      "meet": "Oslo Bislett Games, Bislett Stadion, Oslo",
+      "event": "800m",
+      "time": "1:42.09",
+      "place": "2."
+>>>>>>> daa8dd1ce277c991254c41f51688a753093976b2
     }
   ],
   "weight": "x",
