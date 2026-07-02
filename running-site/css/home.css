@@ -285,10 +285,22 @@
 
 .aotw-sep { color: var(--border); }
 
-.aotw-stat { display: flex; align-items: center; gap: 4px; }
+.aotw-stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.aotw-stat-event {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
 
 .aotw-time {
-  font-family: 'Courier New', monospace;
+  font-family: var(--font-mono);
+  font-size: 14px;
   font-weight: 700;
   color: var(--text);
 }
@@ -463,7 +475,7 @@
 .athlete-name-cell .country { color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 .best-time {
-  font-family: 'Courier New', monospace;
+  font-family: var(--font-mono);
   font-weight: 700;
   font-size: 15px;
   letter-spacing: 0.02em;
@@ -526,7 +538,7 @@
 }
 
 .rw-time {
-  font-family: 'Courier New', monospace;
+  font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 700;
   color: var(--text);

@@ -109,7 +109,7 @@ function buildHome() {
   const aotwHtml = aotwAthlete ? (() => {
     const a = aotwAthlete;
     const statStr = (aotwCfg.featuredEvent && aotwCfg.featuredTime)
-      ? `<span class="aotw-sep">·</span><span class="aotw-stat">${aotwCfg.featuredEvent} <span class="aotw-time">${aotwCfg.featuredTime}</span></span>`
+      ? `<span class="aotw-sep">·</span><span class="aotw-stat"><span class="aotw-stat-event">${aotwCfg.featuredEvent}</span><span class="aotw-time">${aotwCfg.featuredTime}</span></span>`
       : '';
     return `
       <div class="aotw-row" onclick="openAthleteCard('${a.id}', null)" role="button" tabindex="0">

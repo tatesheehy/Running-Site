@@ -182,7 +182,7 @@
   color: #555;
 }
 .ath-flip-pr-time {
-  font-family: 'Courier New', monospace;
+  font-family: var(--font-mono);
   font-size: 13px;
   font-weight: 700;
   color: #ccc;

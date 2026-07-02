@@ -502,7 +502,7 @@
 }
 
 .card-pr-time {
-  font-family: 'Courier New', monospace;
+  font-family: var(--font-mono);
   font-size: 16px;
   font-weight: 700;
   color: #fff;
@@ -783,7 +783,7 @@
 .cr-date  { color: #999; font-size: 12px; white-space: nowrap; min-width: 54px; }
 .cr-meet  { color: var(--text); font-weight: 500; }
 .cr-event { color: #888; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
-.cr-time  { font-family: 'Courier New', monospace; font-weight: 700; color: var(--text); }
+.cr-time  { font-family: var(--font-mono); font-weight: 700; color: var(--text); }
 .cr-place { color: #999; font-size: 12px; text-align: right; padding-right: 28px; }
 
 .card-results-empty { color: var(--muted); font-size: 13px; padding: 14px 28px; margin: 0; }
@@ -829,7 +829,7 @@
 .mini-card-stat { text-align: center; }
 
 .mini-card-stat-value {
-  font-family: 'Courier New', monospace;
+  font-family: var(--font-mono);
   font-size: 32px;
   font-weight: 700;
   color: var(--text);
@@ -1232,7 +1232,7 @@
 }
 
 .h2h-enc-t {
-  font-family: 'Courier New', monospace;
+  font-family: var(--font-mono);
   font-size: 17px;
   font-weight: 700;
   color: #555;
@@ -1334,7 +1334,7 @@
   border-bottom: 1px solid #1e1e1e;
 }
 .h2h-record-t {
-  font-family: 'Courier New', monospace;
+  font-family: var(--font-mono);
   font-size: 13px;
   font-weight: 700;
   color: #bbb;
@@ -1415,7 +1415,7 @@
   white-space: nowrap;
 }
 .h2h-spr-t {
-  font-family: 'Courier New', monospace;
+  font-family: var(--font-mono);
   font-size: 14px;
   font-weight: 700;
   color: #bbb;
@@ -1548,7 +1548,7 @@
 .tl-tip-row {
   font-size: 11px;
   color: #aaa;
-  font-family: 'Courier New', monospace;
+  font-family: var(--font-mono);
   padding: 2px 0;
   border-top: 1px solid #222;
   margin-top: 2px;
