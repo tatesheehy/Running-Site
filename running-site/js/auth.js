@@ -63,9 +63,17 @@ async function initAuth() {
 
 // ── Favorites ─────────────────────────────────────────────
 
-window.isFavorited   = id => _favorites.has(id);
+window.isFavorited    = id => _favorites.has(id);
 window.getCurrentUser = () => _user;
 window.getFavoriteIds = () => [..._favorites];
+window.getUsername    = () => _user?.user_metadata?.username || '';
+
+window.updateUsername = async function(username) {
+  if (!_sb || !_user) return { error: 'Not signed in' };
+  const { data, error } = await _sb.auth.updateUser({ data: { username } });
+  if (!error) _user = data.user;
+  return { error: error?.message || null };
+};
 
 window.toggleFavorite = async function(athleteId) {
   if (!_user) { openAuthModal(); return; }

@@ -122,3 +122,49 @@
   transition: color 0.15s, background 0.15s;
 }
 .acct-fav-remove:hover { color: #ef4444; background: rgba(239,68,68,0.08); }
+
+/* ── Username form ──────────────────────────────────────── */
+.acct-username-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.acct-username-input {
+  background: var(--card-bg, #111);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 15px;
+  font-family: var(--font-body);
+  padding: 10px 14px;
+  border-radius: var(--radius);
+  width: 260px;
+  transition: border-color 0.15s;
+  outline: none;
+}
+.acct-username-input:focus { border-color: var(--accent); }
+
+.acct-username-save {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 10px 20px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: opacity 0.15s;
+  white-space: nowrap;
+}
+.acct-username-save:hover { opacity: 0.85; }
+
+.acct-username-msg {
+  font-size: 13px;
+  margin-top: 8px;
+  min-height: 18px;
+  color: var(--muted);
+}
+.acct-username-msg.error   { color: #ef4444; }
+.acct-username-msg.success { color: #22c55e; }
