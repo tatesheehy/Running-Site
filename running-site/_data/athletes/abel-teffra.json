@@ -64,7 +64,6 @@
   "country": "United States",
   "results": [
     {
-<<<<<<< HEAD
       "date": "JUN 21",
       "meet": "Portland Track Festival",
       "event": "800m",
@@ -119,27 +118,6 @@
       "event": "1000 Metres Short Track",
       "time": "2:20.49",
       "place": "1"
-=======
-      "date": "FEB 22",
-      "meet": "",
-      "event": "1500 m sh",
-      "time": "3:35.20",
-      "place": ""
-    },
-    {
-      "date": "FEB 7",
-      "meet": "",
-      "event": "3000 m",
-      "time": "7:55.13",
-      "place": ""
-    },
-    {
-      "date": "FEB 7",
-      "meet": "",
-      "event": "3000 m sh",
-      "time": "7:55.13",
-      "place": ""
->>>>>>> daa8dd1ce277c991254c41f51688a753093976b2
     }
   ],
   "college": "Georgetown",

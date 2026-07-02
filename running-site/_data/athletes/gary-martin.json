@@ -84,7 +84,6 @@
   "country": "United States",
   "results": [
     {
-<<<<<<< HEAD
       "date": "JUN 12",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
       "event": "1500m",
@@ -202,20 +201,6 @@
       "event": "Mile Short Track",
       "time": "3:52.62",
       "place": "8"
-=======
-      "date": "FEB 1",
-      "meet": "Millrose Games, Armory Track&Field Center, New York, NY (i)",
-      "event": "Mile sh",
-      "time": "3:52.62",
-      "place": "8."
-    },
-    {
-      "date": "FEB 1",
-      "meet": "Millrose Games, Armory Track&Field Center, New York, NY (i)",
-      "event": "1500m sh",
-      "time": "3:35.60",
-      "place": ""
->>>>>>> daa8dd1ce277c991254c41f51688a753093976b2
     }
   ],
   "college": "Virginia",

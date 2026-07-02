@@ -77,7 +77,6 @@
   "results": [
     {
       "date": "JUN 12",
-<<<<<<< HEAD
       "meet": "NCAA Division I Outdoor Track and Field Championships",
       "event": "800m",
       "time": "1:44.22",
@@ -222,61 +221,6 @@
       "event": "400m",
       "time": "47.93",
       "place": "1"
-=======
-      "meet": "",
-      "event": "800 m",
-      "time": "1:44.22",
-      "place": ""
-    },
-    {
-      "date": "MAY 16",
-      "meet": "",
-      "event": "4x400 m Relay",
-      "time": "3:09.13",
-      "place": ""
-    },
-    {
-      "date": "APR 3",
-      "meet": "",
-      "event": "5000 m",
-      "time": "13:23.12",
-      "place": ""
-    },
-    {
-      "date": "MAR 13",
-      "meet": "",
-      "event": "Distance Medley sh",
-      "time": "9:19.95",
-      "place": ""
-    },
-    {
-      "date": "FEB 13",
-      "meet": "",
-      "event": "Mile",
-      "time": "3:52.30",
-      "place": ""
-    },
-    {
-      "date": "FEB 13",
-      "meet": "",
-      "event": "Mile sh",
-      "time": "3:52.30",
-      "place": ""
-    },
-    {
-      "date": "FEB 1",
-      "meet": "",
-      "event": "800 m sh",
-      "time": "1:44.70",
-      "place": ""
-    },
-    {
-      "date": "JAN 9",
-      "meet": "",
-      "event": "400 m",
-      "time": "47.93",
-      "place": ""
->>>>>>> daa8dd1ce277c991254c41f51688a753093976b2
     }
   ],
   "college": "NAU",

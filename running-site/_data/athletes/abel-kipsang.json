@@ -64,17 +64,10 @@
   "results": [
     {
       "date": "JUN 28",
-<<<<<<< HEAD
       "meet": "Meeting de Paris",
       "event": "1500m",
       "time": "3:33.52",
       "place": "13"
-=======
-      "meet": "Meeting de Paris, Stade Charléty, Paris - Promotional Events",
-      "event": "",
-      "time": "3:33.52",
-      "place": "13."
->>>>>>> daa8dd1ce277c991254c41f51688a753093976b2
     },
     {
       "date": "JUN 20",
@@ -92,7 +85,6 @@
     },
     {
       "date": "MAY 27",
-<<<<<<< HEAD
       "meet": "Athletics Kenya National Police Service Track and Field Championships",
       "event": "800m",
       "time": "1:50.28",
@@ -109,10 +101,6 @@
       "date": "MAY 27",
       "meet": "Athletics Kenya National Police Service Track and Field Championships",
       "event": "1500m",
-=======
-      "meet": "Athletics Kenya National Police Service Track and Field Championships, Ulinzi Sports Complex, Langata, Nairobi",
-      "event": "",
->>>>>>> daa8dd1ce277c991254c41f51688a753093976b2
       "time": "3:44.94",
       "place": "2"
     },
@@ -124,7 +112,6 @@
       "place": "3"
     },
     {
-<<<<<<< HEAD
       "date": "APR 28",
       "meet": "Simbine Classic",
       "event": "800m",
@@ -132,8 +119,6 @@
       "place": "8"
     },
     {
-=======
->>>>>>> daa8dd1ce277c991254c41f51688a753093976b2
       "date": "APR 24",
       "meet": "Kip Keino Classic",
       "event": "1500m",
@@ -152,7 +137,6 @@
       "meet": "Trials For World Athletics Relay Championships",
       "event": "1500m",
       "time": "3:42.20",
-<<<<<<< HEAD
       "place": "2"
     },
     {
@@ -161,9 +145,6 @@
       "event": "Cross Country",
       "time": "6:16",
       "place": "28"
-=======
-      "place": "2."
->>>>>>> daa8dd1ce277c991254c41f51688a753093976b2
     }
   ],
   "weight": "x",

@@ -75,7 +75,6 @@
   "country": "Ireland",
   "results": [
     {
-<<<<<<< HEAD
       "date": "JUN 28",
       "meet": "Meeting de Paris",
       "event": "1500m",
@@ -97,13 +96,10 @@
       "place": "6"
     },
     {
-=======
->>>>>>> daa8dd1ce277c991254c41f51688a753093976b2
       "date": "MAR 21",
       "meet": "World Athletics Indoor Championships",
       "event": "3000 Metres Short Track",
       "time": "7:43.89",
-<<<<<<< HEAD
       "place": "13"
     },
     {
@@ -133,9 +129,6 @@
       "event": "3000 Metres Short Track",
       "time": "7:30.97",
       "place": "2"
-=======
-      "place": "13."
->>>>>>> daa8dd1ce277c991254c41f51688a753093976b2
     }
   ],
   "weight": "150",

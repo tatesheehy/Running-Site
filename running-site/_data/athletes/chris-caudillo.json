@@ -45,39 +45,26 @@
   "results": [
     {
       "date": "JUN 12",
-<<<<<<< HEAD
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-=======
-      "meet": "NCAA Division I Outdoor Track and Field Championships, Hayward Field, Eugene, OR",
->>>>>>> daa8dd1ce277c991254c41f51688a753093976b2
       "event": "1500m",
       "time": "3:38.06",
       "place": "7"
     },
     {
       "date": "JUN 10",
-<<<<<<< HEAD
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-=======
-      "meet": "NCAA Division I Outdoor Track and Field Championships, Hayward Field, Eugene, OR",
->>>>>>> daa8dd1ce277c991254c41f51688a753093976b2
       "event": "1500m",
       "time": "3:36.30",
       "place": "5"
     },
     {
       "date": "MAY 29",
-<<<<<<< HEAD
       "meet": "NCAA Division I West First Rounds",
-=======
-      "meet": "NCAA Division I West First Rounds, John McDonnell Field, Fayetteville, AR",
->>>>>>> daa8dd1ce277c991254c41f51688a753093976b2
       "event": "1500m",
       "time": "3:38.06",
       "place": "4"
     },
     {
-<<<<<<< HEAD
       "date": "MAY 27",
       "meet": "NCAA Division I West First Rounds",
       "event": "1500m",
@@ -153,20 +140,6 @@
       "event": "Mile",
       "time": "3:56.05",
       "place": "7"
-=======
-      "date": "MAY 9",
-      "meet": "Franson Last Chance, Cougar Athletic Stadium, Azusa, CA",
-      "event": "1500m",
-      "time": "3:35.13",
-      "place": "3."
-    },
-    {
-      "date": "JAN 30",
-      "meet": "UW Invite/Mile City, Dempsey Indoor, Seattle, WA (i)",
-      "event": "Mile",
-      "time": "3:56.05",
-      "place": "7."
->>>>>>> daa8dd1ce277c991254c41f51688a753093976b2
     }
   ],
   "college": "Cal Poly",

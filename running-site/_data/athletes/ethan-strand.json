@@ -83,7 +83,6 @@
   "country": "United States",
   "results": [
     {
-<<<<<<< HEAD
       "date": "JUN 13",
       "meet": "USATF LA Grand Prix",
       "event": "1500m",
@@ -131,34 +130,6 @@
       "event": "Cross Country Relay",
       "time": "22:43",
       "place": "5"
-=======
-      "date": "MAY 23",
-      "meet": "",
-      "event": "800 m",
-      "time": "1:45.79",
-      "place": ""
-    },
-    {
-      "date": "MAY 1",
-      "meet": "",
-      "event": "5000 m",
-      "time": "13:13.11",
-      "place": ""
-    },
-    {
-      "date": "FEB 1",
-      "meet": "",
-      "event": "2 Mi",
-      "time": "8:15.93",
-      "place": ""
-    },
-    {
-      "date": "FEB 1",
-      "meet": "",
-      "event": "2 Mi sh",
-      "time": "8:15.93",
-      "place": ""
->>>>>>> daa8dd1ce277c991254c41f51688a753093976b2
     }
   ],
   "college": "",

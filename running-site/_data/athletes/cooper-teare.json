@@ -83,7 +83,6 @@
   "country": "United States",
   "results": [
     {
-<<<<<<< HEAD
       "date": "JUN 13",
       "meet": "USATF LA Grand Prix",
       "event": "5000m",
@@ -152,62 +151,6 @@
       "event": "2000 Metres Short Track",
       "time": "4:54.74",
       "place": "2"
-=======
-      "date": "APR 18",
-      "meet": "",
-      "event": "5 Kilom Road",
-      "time": "13:25",
-      "place": ""
-    },
-    {
-      "date": "FEB 14",
-      "meet": "",
-      "event": "1500 m sh",
-      "time": "3:34.35",
-      "place": ""
-    },
-    {
-      "date": "FEB 7",
-      "meet": "",
-      "event": "1000 m",
-      "time": "2:17.76",
-      "place": ""
-    },
-    {
-      "date": "FEB 7",
-      "meet": "",
-      "event": "1000 m sh",
-      "time": "2:17.76",
-      "place": ""
-    },
-    {
-      "date": "FEB 1",
-      "meet": "",
-      "event": "2 Mi",
-      "time": "8:08.91",
-      "place": ""
-    },
-    {
-      "date": "FEB 1",
-      "meet": "",
-      "event": "2 Mi sh",
-      "time": "8:08.91",
-      "place": ""
-    },
-    {
-      "date": "JAN 23",
-      "meet": "",
-      "event": "2000 m",
-      "time": "4:54.74",
-      "place": ""
-    },
-    {
-      "date": "JAN 23",
-      "meet": "",
-      "event": "2000 m sh",
-      "time": "4:54.74",
-      "place": ""
->>>>>>> daa8dd1ce277c991254c41f51688a753093976b2
     }
   ],
   "weight": "x",
