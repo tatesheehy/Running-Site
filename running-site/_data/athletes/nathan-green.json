@@ -1,0 +1,130 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "collegeLogo": "/images/washington-huskies-logo.png",
+  "waUrl": "https://worldathletics.org/athletes/united-states/nathan-green-15021942",
+  "name": "Nathan Green",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:45.58"
+    },
+    {
+      "event": "1500m",
+      "time": "3:32.20"
+    },
+    {
+      "event": "Mile",
+      "time": "3:49.44"
+    },
+    {
+      "event": "3000m",
+      "time": "7:40.09"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:18.56"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:18.56"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:34.91"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:53.25"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:40.09"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:14.98"
+    },
+    {
+      "event": "4xMile Relay",
+      "time": "16:24.61"
+    }
+  ],
+  "questionTitle": "Next question",
+  "photo": "/images/green_card.png",
+  "ncaa": false,
+  "results": [
+    {
+      "date": "JUN 26",
+      "meet": "76. Boris Hanžeković Memorial",
+      "event": "1500m",
+      "time": "3:32.46",
+      "place": "1"
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "Mile",
+      "time": "3:49.44",
+      "place": "1"
+    },
+    {
+      "date": "JUN 4",
+      "meet": "Golden Gala Pietro Mennea",
+      "event": "800m",
+      "time": "1:45.58",
+      "place": ""
+    },
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "",
+      "time": "3:33.46",
+      "place": "2"
+    },
+    {
+      "date": "MAR 22",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1500 Metres Short Track",
+      "time": "3:40.78",
+      "place": "6"
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1500 Metres Short Track",
+      "time": "3:40.97",
+      "place": "11"
+    },
+    {
+      "date": "MAR 7",
+      "meet": "The PRTC Indoor Classic",
+      "event": "1500m sh",
+      "time": "3:34.91",
+      "place": "2"
+    },
+    {
+      "date": "MAR 1",
+      "meet": "USA Indoor Championships",
+      "event": "1500 Metres Short Track",
+      "time": "3:37.65",
+      "place": "1"
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Husky Classic",
+      "event": "Mile",
+      "time": "3:50.31",
+      "place": "1"
+    },
+    {
+      "date": "JAN 30",
+      "meet": "UW Invite/Mile City",
+      "event": "",
+      "time": "DNF",
+      "place": ""
+    }
+  ],
+  "college": "Washington",
+  "event": "MIDDLE DISTANCE"
+}
