@@ -64,7 +64,7 @@
     {
       "date": "JUN 20",
       "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
-      "event": "",
+      "event": "1500m",
       "time": "3:41.03",
       "place": "12"
     },
@@ -85,35 +85,35 @@
     {
       "date": "MAY 29",
       "meet": "NCAA Division I West First Rounds",
-      "event": "",
+      "event": "1500m",
       "time": "3:44.42",
       "place": "1"
     },
     {
       "date": "MAY 27",
       "meet": "NCAA Division I West First Rounds",
-      "event": "",
+      "event": "1500m",
       "time": "3:39.77",
       "place": "1"
     },
     {
       "date": "MAY 16",
       "meet": "Southeastern Conference Outdoor Track & Field Championships",
-      "event": "",
+      "event": "1500m",
       "time": "3:43.52",
       "place": "1"
     },
     {
       "date": "MAY 16",
       "meet": "Southeastern Conference Outdoor Track & Field Championships",
-      "event": "",
+      "event": "5000m",
       "time": "DNS",
       "place": ""
     },
     {
       "date": "MAY 15",
       "meet": "Southeastern Conference Outdoor Track & Field Championships",
-      "event": "",
+      "event": "1500m",
       "time": "3:43.36",
       "place": "1"
     },
@@ -134,7 +134,7 @@
     {
       "date": "APR 18",
       "meet": "Bryan Clay Invitational",
-      "event": "",
+      "event": "1500m",
       "time": "3:39.54",
       "place": "4"
     },
@@ -143,26 +143,26 @@
       "meet": "Bryan Clay Invitational",
       "event": "5000m",
       "time": "13:27.64",
-      "place": ""
+      "place": "10"
     },
     {
       "date": "APR 3",
       "meet": "Mets Outdoor Championships",
-      "event": "",
+      "event": "800m",
       "time": "1:53.52",
       "place": "1"
     },
     {
       "date": "MAR 28",
       "meet": "Raleigh Relays",
-      "event": "",
+      "event": "800m",
       "time": "1:52.29",
       "place": "5"
     },
     {
       "date": "MAR 21",
       "meet": "UCF Black & Gold Invite",
-      "event": "",
+      "event": "1500m",
       "time": "4:00.61",
       "place": "6"
     },
@@ -171,40 +171,40 @@
       "meet": "UCF Black & Gold Invite",
       "event": "800m",
       "time": "1:51.65",
-      "place": ""
+      "place": "5"
     },
     {
       "date": "MAR 20",
       "meet": "UCF Black & Gold Invite",
       "event": "4x400 Metres Relay",
       "time": "3:20.52",
-      "place": ""
+      "place": "4"
     },
     {
       "date": "MAR 13",
       "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "",
+      "event": "Distance Medley Short Track",
       "time": "9:21.42",
       "place": "2"
     },
     {
       "date": "FEB 26",
       "meet": "Southeastern Conference Indoor Track & Field Championship",
-      "event": "3000m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:45.42",
       "place": "1"
     },
     {
       "date": "FEB 26",
       "meet": "Southeastern Conference Indoor Track & Field Championship",
-      "event": "",
+      "event": "Distance Medley Short Track",
       "time": "9:30.84",
       "place": "3"
     },
     {
       "date": "FEB 22",
       "meet": "Saucony Battle for Boston",
-      "event": "3000m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:43.82",
       "place": "3"
     },
@@ -213,54 +213,54 @@
       "meet": "Arkansas Qualifier",
       "event": "Distance Medley Short Track",
       "time": "9:17.30",
-      "place": ""
+      "place": "2"
     },
     {
       "date": "FEB 16",
       "meet": "Northeast Conference Indoor Championships",
-      "event": "4x400 Metres Relay Short Track",
-      "time": "3:19.44",
-      "place": ""
-    },
-    {
-      "date": "FEB 16",
-      "meet": "Northeast Conference Indoor Championships",
-      "event": "",
+      "event": "800 Metres Short Track",
       "time": "1:52.55",
       "place": "1"
     },
     {
       "date": "FEB 16",
       "meet": "Northeast Conference Indoor Championships",
-      "event": "",
+      "event": "Mile Short Track",
       "time": "4:14.55",
       "place": "4"
     },
     {
+      "date": "FEB 16",
+      "meet": "Northeast Conference Indoor Championships",
+      "event": "4x400 Metres Relay Short Track",
+      "time": "3:19.44",
+      "place": "3"
+    },
+    {
       "date": "FEB 15",
       "meet": "Northeast Conference Indoor Championships",
-      "event": "",
+      "event": "800 Metres Short Track",
       "time": "1:55.49",
       "place": "1"
     },
     {
       "date": "FEB 15",
       "meet": "Northeast Conference Indoor Championships",
-      "event": "",
+      "event": "Mile Short Track",
       "time": "4:21.30",
       "place": "2"
     },
     {
       "date": "FEB 13",
       "meet": "Husky Classic",
-      "event": "",
+      "event": "3000m",
       "time": "DNS",
       "place": ""
     },
     {
       "date": "FEB 13",
       "meet": "Tyson Invitational",
-      "event": "3000m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:43.96",
       "place": "3"
     },
@@ -269,33 +269,33 @@
       "meet": "Boston University John Thomas Terrier Classic",
       "event": "800 Metres Short Track",
       "time": "1:52.54",
-      "place": ""
+      "place": "2"
     },
     {
       "date": "JAN 31",
       "meet": "Razorback Invitational",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "3:58.82",
       "place": "2"
     },
     {
       "date": "JAN 23",
       "meet": "Dr. Sander Scorcher",
-      "event": "",
+      "event": "800 Metres Short Track",
       "time": "1:52.94",
       "place": "1"
     },
     {
       "date": "JAN 16",
       "meet": "NYC Gotham Cup",
-      "event": "",
+      "event": "800 Metres Short Track",
       "time": "1:53.15",
       "place": "1"
     },
     {
       "date": "JAN 16",
       "meet": "Arkansas Invitational",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "4:00.23",
       "place": "1"
     }
@@ -305,5 +305,5 @@
   "flag": "KE",
   "dob": "1999-03-02",
   "age": "27",
-  "lastSynced": "2026-07-01"
+  "lastSynced": "2026-07-02"
 }
