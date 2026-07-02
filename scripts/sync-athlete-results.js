@@ -442,15 +442,35 @@ function hasCurrentResults(athlete) {
 const DEBUG = process.argv.includes('--debug');
 
 async function main() {
-  const files = fs.readdirSync(ATHLETES_DIR).filter(f => f.endsWith('.json')).sort();
+  // Use athletes.json as the source of truth if it has items (CMS-managed).
+  // Fall back to reading individual files (legacy mode).
+  let allAthletes = [];
+  let cmsMode = false;
+
+  if (fs.existsSync(ATHLETES_JSON)) {
+    try {
+      const parsed = JSON.parse(fs.readFileSync(ATHLETES_JSON, 'utf8'));
+      if (Array.isArray(parsed.items) && parsed.items.length > 0) {
+        allAthletes = parsed.items;
+        cmsMode = true;
+        console.log(`Source: athletes.json (${allAthletes.length} athletes)`);
+      }
+    } catch (_) {}
+  }
+
+  if (!cmsMode) {
+    const files = fs.existsSync(ATHLETES_DIR)
+      ? fs.readdirSync(ATHLETES_DIR).filter(f => f.endsWith('.json')).sort()
+      : [];
+    allAthletes = files.map(f => JSON.parse(fs.readFileSync(path.join(ATHLETES_DIR, f), 'utf8')));
+    console.log(`Source: individual files (${allAthletes.length} athletes)`);
+  }
+
   let updated = 0, skipped = 0, failed = 0;
 
-  for (const file of files) {
-    const filePath = path.join(ATHLETES_DIR, file);
-    const athlete  = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-
+  for (const athlete of allAthletes) {
     if (!athlete.waUrl) {
-      console.log(`⏭  ${athlete.name || file} — no waUrl, skipping`);
+      console.log(`⏭  ${athlete.name || athlete.id || '?'} — no waUrl, skipping`);
       skipped++;
       continue;
     }
@@ -465,7 +485,7 @@ async function main() {
     }
 
     try {
-      process.stdout.write(`🌐 ${athlete.name || file} — fetching...`);
+      process.stdout.write(`🌐 ${athlete.name || athlete.id} — fetching...`);
       const html = await fetchPage(athlete.waUrl);
 
       if (html.length < 1000) {
@@ -502,7 +522,11 @@ async function main() {
 
       if (dirty) {
         athlete.lastSynced = new Date().toISOString().slice(0, 10);
-        fs.writeFileSync(filePath, JSON.stringify(athlete, null, 2));
+        // Also write individual file (athlete.id required; skip silently if missing)
+        if (athlete.id) {
+          if (!fs.existsSync(ATHLETES_DIR)) fs.mkdirSync(ATHLETES_DIR, { recursive: true });
+          fs.writeFileSync(path.join(ATHLETES_DIR, `${athlete.id}.json`), JSON.stringify(athlete, null, 2));
+        }
         console.log(` ✓  ${notes.join(' | ')}`);
         updated++;
       } else {
@@ -521,9 +545,8 @@ async function main() {
   console.log(`\nDone: ${updated} updated, ${skipped} skipped, ${failed} failed.`);
 
   if (updated > 0) {
-    // Rebuild athletes.json
-    const allFiles   = fs.readdirSync(ATHLETES_DIR).filter(f => f.endsWith('.json')).sort();
-    const allAthletes = allFiles.map(f => JSON.parse(fs.readFileSync(path.join(ATHLETES_DIR, f), 'utf8')));
+    // Rebuild athletes.json from the full in-memory list (preserves all athletes,
+    // including those added via CMS that have no individual file).
     fs.writeFileSync(ATHLETES_JSON, JSON.stringify({ items: allAthletes }, null, 2));
     console.log(`Rebuilt athletes.json (${allAthletes.length} athletes).`);
   }
