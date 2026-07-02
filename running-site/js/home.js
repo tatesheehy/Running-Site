@@ -146,8 +146,12 @@ function buildHome() {
               </div>
             </div>
           </div>
+          <div class="section-header" style="padding-top:14px">
+            <h2 class="section-title">${latestTitle}</h2>
+          </div>
+          <div class="articles-grid home-articles-grid">${latestHtml}</div>
         </div>
-        ${rankingsWidgetHtml ? `<aside class="home-rankings-col">${rankingsWidgetHtml}</aside>` : ''}
+        ${rankingsWidgetHtml ? `<aside class="home-rankings-col">${rankingsWidgetHtml}${aotwHtml}</aside>` : ''}
       </div>
 
       ${picksHtml ? `
@@ -155,13 +159,6 @@ function buildHome() {
           <div class="ep-label">${editorPicksLabel}</div>
           <div class="home-ep-list">${picksHtml}</div>
         </div>` : ''}
-
-      ${aotwHtml}
-
-      <div class="section-header">
-        <h2 class="section-title">${latestTitle}</h2>
-      </div>
-      <div class="articles-grid">${latestHtml}</div>
     </div>
   `;
 

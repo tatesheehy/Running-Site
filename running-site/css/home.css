@@ -23,7 +23,11 @@
   padding: 8px 0 0;
 }
 
-.home-hero-col { min-width: 0; }
+.home-hero-col { min-width: 0; display: flex; flex-direction: column; }
+
+.home-articles-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 .home-rankings-col {
   position: sticky;
@@ -227,30 +231,29 @@
 /* ── ATHLETE OF THE WEEK ──────────────────────────────────── */
 .aotw-row {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 20px 0;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-top: 16px;
   border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  margin: 4px 0;
   cursor: pointer;
-  transition: opacity 0.15s;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  transition: border-color 0.15s;
 }
-.aotw-row:hover { opacity: 0.85; }
+.aotw-row:hover { border-color: var(--accent); }
 .aotw-row:hover .aotw-name { color: var(--accent); }
 
 .aotw-photo {
-  width: 88px;
-  height: 88px;
-  border-radius: 10px;
-  flex-shrink: 0;
+  width: 100%;
+  height: 220px;
   background-size: cover;
   background-position: center top;
+  flex-shrink: 0;
 }
 
 .aotw-body {
-  flex: 1;
-  min-width: 0;
+  padding: 14px 14px 12px;
 }
 
 .aotw-label {
@@ -258,29 +261,29 @@
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--accent);
   margin-bottom: 4px;
 }
 
 .aotw-name {
   font-family: var(--font-display);
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   line-height: 1.1;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   transition: color 0.15s;
 }
 
 .aotw-meta {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--muted);
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   flex-wrap: wrap;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .aotw-sep { color: var(--border); }
@@ -288,11 +291,11 @@
 .aotw-stat {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
 }
 
 .aotw-stat-event {
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.04em;
   color: var(--muted);
@@ -300,35 +303,19 @@
 
 .aotw-time {
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   color: var(--text);
 }
 
 .aotw-desc {
-  font-size: 13px;
-  line-height: 1.55;
+  font-size: 12px;
+  line-height: 1.5;
   color: var(--muted);
   margin: 0;
-  max-width: 600px;
 }
 
-.aotw-cta {
-  font-family: var(--font-display);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: var(--accent);
-  white-space: nowrap;
-  flex-shrink: 0;
-  padding-right: 4px;
-}
-
-@media (max-width: 700px) {
-  .aotw-photo { width: 72px; height: 72px; }
-  .aotw-name  { font-size: 18px; }
-  .aotw-cta   { display: none; }
-}
+.aotw-cta { display: none; }
 
 /* ── COUNTDOWN ────────────────────────────────────────────── */
 .home-countdown-wrap {
