@@ -10,10 +10,13 @@ function buildAccountPage() {
 
     if (!user) {
       main.innerHTML = `
-        <div class="container" style="max-width:480px;padding-top:80px;text-align:center">
-          <h1 style="font-family:var(--font-display);font-size:28px;margin-bottom:12px">Sign in to your account</h1>
-          <p style="color:var(--muted);margin-bottom:28px">Save favorite athletes and more.</p>
-          <button onclick="openAuthModal()" style="background:var(--accent);color:#fff;font-family:var(--font-display);font-size:16px;font-weight:600;letter-spacing:.04em;padding:12px 32px;border:none;border-radius:var(--radius);cursor:pointer">Sign In / Sign Up</button>
+        <div class="acct-signed-out">
+          <div class="acct-signed-out-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h1 class="acct-signed-out-title">Sign in to your account</h1>
+          <p class="acct-signed-out-sub">Save favorite athletes, leave comments, and more.</p>
+          <button onclick="openAuthModal()" class="acct-signed-out-btn">Sign In / Sign Up</button>
         </div>`;
       return;
     }
@@ -21,6 +24,8 @@ function buildAccountPage() {
     const username = typeof getUsername === 'function' ? getUsername() : '';
     const favIds = typeof getFavoriteIds === 'function' ? getFavoriteIds() : [];
     const favAthletes = favIds.map(id => ATHLETES[id]).filter(Boolean);
+    const mod = typeof isModerator === 'function' && isModerator();
+    const avatarLetter = (username || user.email || '?')[0].toUpperCase();
 
     const cards = favAthletes.length
       ? favAthletes.map(a => {
@@ -37,62 +42,78 @@ function buildAccountPage() {
               </button>
             </div>`;
         }).join('')
-      : `<p style="color:var(--muted);font-size:15px">No saved athletes yet — click the star on any athlete card to save them.</p>`;
+      : `<p class="acct-empty-state">No saved athletes yet — click the star on any athlete card to save them.</p>`;
 
     main.innerHTML = `
-      <div class="container" style="max-width:700px;padding-top:52px">
-        <div class="acct-header">
-          <div>
-            <h1 class="acct-title">My Account</h1>
-            <p class="acct-email">${user.email}</p>
+      <div class="acct-page">
+
+        <div class="acct-profile-header">
+          <div class="acct-avatar">${avatarLetter}</div>
+          <div class="acct-profile-info">
+            ${username ? `<div class="acct-profile-username">@${username}</div>` : ''}
+            <div class="acct-profile-email">${user.email}</div>
+            ${mod ? `<div class="acct-mod-badge">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l3.22 6.53L22 8.63l-5 4.87 1.18 6.88L12 17.27l-6.18 3.24L7 13.5 2 8.63l6.78-1.1z"/></svg>
+              Moderator
+            </div>` : ''}
           </div>
           <button class="acct-signout" onclick="authSignOut();goTo('index.html')">Sign Out</button>
         </div>
 
-        <div class="acct-section">
-          <h2 class="acct-section-title">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            Username
-          </h2>
-          ${username
-            ? `<p class="acct-username-set"><span class="acct-username-display">@${username}</span></p>
-               <p class="acct-username-msg">Usernames cannot be changed once set.</p>`
-            : `<form class="acct-username-form" onsubmit="saveUsername(event)">
-                 <input
-                   id="acct-username-input"
-                   class="acct-username-input"
-                   type="text"
-                   value=""
-                   placeholder="Choose a username"
-                   maxlength="30"
-                   autocomplete="off"
-                   spellcheck="false"
-                 >
-                 <button type="submit" class="acct-username-save">Save</button>
-               </form>
-               <p class="acct-username-msg" style="margin-top:8px;color:var(--muted)">Choose carefully — usernames cannot be changed once set.</p>
-               <p id="acct-username-msg" class="acct-username-msg"></p>`
-          }
+        <div class="acct-grid">
+
+          <div class="acct-card">
+            <h2 class="acct-card-title">Username</h2>
+            ${username
+              ? `<div class="acct-username-locked">
+                   <span class="acct-username-display">@${username}</span>
+                   <span class="acct-locked-badge">
+                     <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                     Locked
+                   </span>
+                 </div>
+                 <p class="acct-card-hint">Usernames cannot be changed once set.</p>`
+              : `<form class="acct-username-form" onsubmit="saveUsername(event)">
+                   <input
+                     id="acct-username-input"
+                     class="acct-username-input"
+                     type="text"
+                     value=""
+                     placeholder="Choose a username"
+                     maxlength="30"
+                     autocomplete="off"
+                     spellcheck="false"
+                   >
+                   <button type="submit" class="acct-username-save">Save</button>
+                 </form>
+                 <p class="acct-card-hint">
+                   <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                   Choose carefully — this cannot be changed once set.
+                 </p>
+                 <p id="acct-username-msg" class="acct-username-msg"></p>`
+            }
+          </div>
+
+          <div class="acct-card">
+            <h2 class="acct-card-title">
+              Saved Athletes
+              ${favAthletes.length ? `<span class="acct-count">${favAthletes.length}</span>` : ''}
+            </h2>
+            <div class="acct-fav-list">${cards}</div>
+          </div>
+
         </div>
 
-        <div class="acct-section">
-          <h2 class="acct-section-title">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-            Saved Athletes
-            <span class="acct-count">${favAthletes.length}</span>
-          </h2>
-          <div class="acct-fav-list">${cards}</div>
-        </div>
-
-        ${typeof isModerator === 'function' && isModerator()
-          ? `<div class="acct-section" id="mod-users-section">
-               <h2 class="acct-section-title">
-                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        ${mod
+          ? `<div class="acct-card acct-card--full" id="mod-users-section">
+               <h2 class="acct-card-title">
                  All Users
+                 <span class="acct-mod-label">Mod View</span>
                </h2>
-               <div id="mod-users-table"><p style="color:var(--muted);font-size:14px">Loading…</p></div>
+               <div id="mod-users-table"><p class="acct-card-hint">Loading…</p></div>
              </div>`
           : ''}
+
       </div>`;
 
     window._refreshMyAthletes = render;

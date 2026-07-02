@@ -2,28 +2,119 @@
    ACCOUNT PAGE
    ============================================================ */
 
-.acct-header {
+/* ── Signed-out state ────────────────────────────────────── */
+.acct-signed-out {
+  max-width: 400px;
+  margin: 80px auto;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.acct-signed-out-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  color: var(--muted);
+}
+
+.acct-signed-out-title {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0 0 10px;
+}
+
+.acct-signed-out-sub {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0 0 28px;
+}
+
+.acct-signed-out-btn {
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 13px 36px;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.acct-signed-out-btn:hover { opacity: 0.85; }
+
+/* ── Page layout ─────────────────────────────────────────── */
+.acct-page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+/* ── Profile header ──────────────────────────────────────── */
+.acct-profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   margin-bottom: 40px;
-  padding-bottom: 28px;
+  padding-bottom: 32px;
   border-bottom: 1px solid var(--border);
 }
 
-.acct-title {
+.acct-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
   font-family: var(--font-display);
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
-  letter-spacing: 0.02em;
-  margin: 0 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: 0;
 }
 
-.acct-email {
-  color: var(--muted);
+.acct-profile-info { flex: 1; min-width: 0; }
+
+.acct-profile-username {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 2px;
+}
+
+.acct-profile-email {
   font-size: 14px;
-  margin: 0;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.acct-mod-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(234, 88, 12, 0.12);
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(234, 88, 12, 0.25);
 }
 
 .acct-signout {
@@ -38,102 +129,107 @@
   white-space: nowrap;
   transition: color 0.15s, border-color 0.15s;
   flex-shrink: 0;
-  margin-top: 4px;
 }
 .acct-signout:hover { color: #ef4444; border-color: #ef4444; }
 
-.acct-section { margin-bottom: 48px; }
+/* ── Card grid ───────────────────────────────────────────── */
+.acct-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
 
-.acct-section-title {
+.acct-card {
+  background: var(--card-bg, rgba(255,255,255,0.03));
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.acct-card--full {
+  grid-column: 1 / -1;
+  margin-top: 0;
+}
+
+.acct-card-title {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   font-family: var(--font-display);
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  margin: 0 0 20px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 18px;
 }
 
 .acct-count {
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 11px;
+  font-weight: 700;
   background: var(--accent);
   color: #fff;
   border-radius: 20px;
   padding: 1px 8px;
+}
+
+.acct-mod-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  background: rgba(234, 88, 12, 0.12);
+  color: var(--accent);
+  border: 1px solid rgba(234, 88, 12, 0.25);
+  border-radius: 20px;
+  padding: 2px 8px;
   margin-left: 2px;
 }
 
-.acct-fav-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.acct-fav-card {
+.acct-card-hint {
   display: flex;
   align-items: center;
-  gap: 14px;
-  background: var(--card-bg, #111);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 12px 14px;
-  cursor: pointer;
-  transition: border-color 0.15s, background 0.15s;
-  position: relative;
-}
-.acct-fav-card:hover { border-color: var(--accent); background: rgba(255,255,255,0.03); }
-
-.acct-fav-photo {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center top;
-  background-color: #1a1a1a;
-  flex-shrink: 0;
-}
-
-.acct-fav-name {
-  font-family: var(--font-display);
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
-
-.acct-fav-country {
-  font-size: 13px;
+  gap: 5px;
+  font-size: 12px;
   color: var(--muted);
-  margin-top: 2px;
+  margin: 10px 0 0;
+  line-height: 1.4;
 }
 
-.acct-fav-remove {
-  background: none;
-  border: none;
-  color: #444;
-  cursor: pointer;
-  padding: 6px;
-  border-radius: 4px;
+.acct-empty-state {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* ── Username ─────────────────────────────────────────────── */
+.acct-username-locked {
   display: flex;
   align-items: center;
-  margin-left: auto;
-  flex-shrink: 0;
-  transition: color 0.15s, background 0.15s;
+  gap: 12px;
+  flex-wrap: wrap;
 }
-.acct-fav-remove:hover { color: #ef4444; background: rgba(239,68,68,0.08); }
-
-/* ── Username locked display ────────────────────────────── */
-.acct-username-set { margin: 0 0 6px; }
 
 .acct-username-display {
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
 
-/* ── Username form ──────────────────────────────────────── */
+.acct-locked-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--muted);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 3px 10px;
+}
+
 .acct-username-form {
   display: flex;
   gap: 10px;
@@ -148,7 +244,8 @@
   font-family: var(--font-body);
   padding: 10px 14px;
   border-radius: var(--radius);
-  width: 260px;
+  flex: 1;
+  min-width: 0;
   transition: border-color 0.15s;
   outline: none;
 }
@@ -159,9 +256,9 @@
   color: #fff;
   border: none;
   font-family: var(--font-display);
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   padding: 10px 20px;
   border-radius: var(--radius);
   cursor: pointer;
@@ -178,6 +275,65 @@
 }
 .acct-username-msg.error   { color: #ef4444; }
 .acct-username-msg.success { color: #22c55e; }
+
+/* ── Saved athletes ──────────────────────────────────────── */
+.acct-fav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.acct-fav-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  position: relative;
+}
+.acct-fav-card:hover { border-color: var(--accent); background: rgba(255,255,255,0.05); }
+
+.acct-fav-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center top;
+  background-color: #1a1a1a;
+  flex-shrink: 0;
+}
+
+.acct-fav-name {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.acct-fav-country {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.acct-fav-remove {
+  background: none;
+  border: none;
+  color: #444;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex-shrink: 0;
+  transition: color 0.15s, background 0.15s;
+}
+.acct-fav-remove:hover { color: #ef4444; background: rgba(239,68,68,0.08); }
 
 /* ── Mod users table ─────────────────────────────────────── */
 .mod-users-table {
@@ -208,6 +364,13 @@
 .mod-user-email { font-weight: 500; }
 .mod-user-comments { color: var(--muted); }
 .mod-user-joined { color: var(--muted); white-space: nowrap; }
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .acct-grid { grid-template-columns: 1fr; }
+  .acct-profile-header { flex-wrap: wrap; }
+  .acct-signout { order: 3; width: 100%; }
+}
 
 /* ============================================================
    ARTICLE COMMENTS
@@ -318,9 +481,7 @@
 }
 
 /* ── Comment form ──────────────────────────────────────── */
-.cmt-form {
-  margin-top: 8px;
-}
+.cmt-form { margin-top: 8px; }
 
 .cmt-input {
   width: 100%;
@@ -347,10 +508,7 @@
   gap: 12px;
 }
 
-.cmt-char-hint {
-  font-size: 12px;
-  color: var(--muted);
-}
+.cmt-char-hint { font-size: 12px; color: var(--muted); }
 
 .cmt-submit {
   background: var(--accent);
@@ -376,9 +534,7 @@
   min-height: 18px;
 }
 
-.cmt-signin-prompt {
-  margin-top: 8px;
-}
+.cmt-signin-prompt { margin-top: 8px; }
 
 .cmt-signin-btn {
   background: none;
@@ -416,10 +572,10 @@
   line-height: 1;
 }
 .cmt-vote-btn:hover { background: rgba(255,255,255,0.06); }
-.cmt-vote-btn.cmt-vote-up.active  { color: #22c55e; }
+.cmt-vote-btn.cmt-vote-up.active   { color: #22c55e; }
 .cmt-vote-btn.cmt-vote-down.active { color: #ef4444; }
-.cmt-vote-up:not(.active):hover   { color: #22c55e; }
-.cmt-vote-down:not(.active):hover { color: #ef4444; }
+.cmt-vote-up:not(.active):hover    { color: #22c55e; }
+.cmt-vote-down:not(.active):hover  { color: #ef4444; }
 
 .cmt-score {
   font-size: 12px;
