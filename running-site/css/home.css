@@ -46,7 +46,7 @@
 .home-hero-full img,
 .home-hero-full .img-placeholder {
   width: 100%;
-  aspect-ratio: 16/9;
+  aspect-ratio: 16/7;
   object-fit: cover;
   object-position: center top;
   display: block;
@@ -113,6 +113,76 @@
 
 .home-hero-meta .author { color: rgba(255,255,255,0.9); font-weight: 600; }
 .home-hero-meta .sep { margin: 0 5px; }
+
+/* ── SECONDARY CARDS (below hero) ────────────────────────────── */
+.home-sec-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.home-sec-row--single { grid-template-columns: 1fr; }
+
+.home-sec-card {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: var(--card-bg, #111);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  min-width: 0;
+}
+.home-sec-card:hover { border-color: var(--accent); background: rgba(255,255,255,0.03); }
+
+.home-sec-thumb {
+  width: 72px;
+  height: 72px;
+  border-radius: 7px;
+  background-size: cover;
+  background-position: center top;
+  background-color: #1a1a1a;
+  flex-shrink: 0;
+}
+.home-sec-thumb--empty { background: var(--bg-light); }
+
+.home-sec-body { flex: 1; min-width: 0; }
+
+.home-sec-cat {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.home-sec-title {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 6px;
+  transition: color 0.15s;
+}
+.home-sec-card:hover .home-sec-title { color: var(--accent); }
+
+.home-sec-meta {
+  font-size: 11px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /* ── LEGACY HERO (kept for article pages that may reference it) */
 .hero {
