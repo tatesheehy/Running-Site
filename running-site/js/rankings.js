@@ -3,14 +3,23 @@
 // ============================================================
 
 // ── BEST TIME RESOLVER ────────────────────────────────────
-// Prefer the row's seasonBest; fall back to athlete's PR for the event.
+function _parseTimeSecs(t) {
+  if (!t || t === 'x') return Infinity;
+  const parts = t.trim().split(':');
+  if (parts.length === 2) return +parts[0] * 60 + +parts[1];
+  if (parts.length === 3) return +parts[0] * 3600 + +parts[1] * 60 + +parts[2];
+  return Infinity;
+}
+
+// Auto-derives from athlete results for the event; falls back to rankings row seasonBest.
 function _bestTime(r, a, event) {
-  if (r.seasonBest && r.seasonBest !== 'x') return r.seasonBest;
-  if (a && a.prs) {
-    const pr = a.prs.find(p => p.event === event);
-    if (pr && pr.time) return pr.time;
+  if (a && Array.isArray(a.results)) {
+    const valid = a.results
+      .filter(res => res.event === event && res.time && res.time !== 'x' && isFinite(_parseTimeSecs(res.time)))
+      .sort((x, y) => _parseTimeSecs(x.time) - _parseTimeSecs(y.time));
+    if (valid.length) return valid[0].time;
   }
-  return '';
+  return (r.seasonBest && r.seasonBest !== 'x') ? r.seasonBest : '';
 }
 
 // ── RANKINGS TABLE HTML ────────────────────────────────────

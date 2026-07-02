@@ -108,17 +108,18 @@ function buildHome() {
   const aotwAthlete = aotwCfg?.athleteId ? ATHLETES[aotwCfg.athleteId] : null;
   const aotwHtml = aotwAthlete ? (() => {
     const a = aotwAthlete;
-    const pr = a.prs?.[0];
-    const prStr = pr ? `${pr.event} ${pr.time}` : '';
+    const statStr = (aotwCfg.featuredEvent && aotwCfg.featuredTime)
+      ? `<span class="aotw-sep">·</span><span class="aotw-stat">${aotwCfg.featuredEvent} <span class="aotw-time">${aotwCfg.featuredTime}</span></span>`
+      : '';
     return `
-      <div class="aotw-widget" onclick="openAthleteCard('${a.id}', null)" role="button" tabindex="0">
+      <div class="aotw-row" onclick="openAthleteCard('${a.id}', null)" role="button" tabindex="0">
         <div class="aotw-photo" style="background-image:url('${a.photo || ''}');background-color:${a.photoBackground || '#1a1a2e'}"></div>
         <div class="aotw-body">
           <div class="aotw-label">Athlete of the Week</div>
           <div class="aotw-name">${a.name}</div>
           <div class="aotw-meta">
             ${renderFlag(a.flag)} ${a.country || ''}
-            ${prStr ? `<span class="aotw-sep">·</span><span class="aotw-pr">${prStr}</span>` : ''}
+            ${statStr}
           </div>
           ${aotwCfg.description ? `<p class="aotw-desc">${aotwCfg.description}</p>` : ''}
         </div>

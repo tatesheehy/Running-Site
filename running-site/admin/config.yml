@@ -360,10 +360,12 @@ collections:
             label: "Athlete of the Week"
             widget: object
             required: false
-            hint: "Appears as a featured widget between Editors' Picks and Latest Articles. Leave Athlete ID blank to hide it."
+            hint: "Appears as a featured strip between Editors' Picks and Latest Articles. Leave Athlete ID blank to hide it."
             fields:
               - { label: "Athlete ID", name: athleteId, widget: string, required: false, hint: "The athlete's ID slug (e.g. josh-kerr). Must match an athlete in the Athletes section." }
-              - { label: "Description", name: description, widget: text, required: false, hint: "Why they're the pick this week — shown below their name in the widget." }
+              - { label: "Featured Event (e.g. 1500m)", name: featuredEvent, widget: string, required: false, hint: "The event to highlight — shown next to the featured time." }
+              - { label: "Featured Time (e.g. 3:27.79)", name: featuredTime, widget: string, required: false, hint: "The performance to highlight this week." }
+              - { label: "Description", name: description, widget: text, required: false, hint: "Why they're the pick this week — shown below their name." }
 
           - label: "── ARTICLES PAGE ─────────────────────────"
             name: _articles_divider
