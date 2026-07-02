@@ -302,9 +302,11 @@ function _renderDominanceMap(rows) {
     return `
       <tr class="h2h-map-row">
         <td class="h2h-map-row-head">
-          ${avatar}
-          <span class="h2h-map-row-rank">${ri + 1}</span>
-          <span class="h2h-map-row-name">${rowAth ? rowAth.name.split(' ').slice(-1)[0] : rowId}</span>
+          <div class="h2h-map-row-head-inner">
+            ${avatar}
+            <span class="h2h-map-row-rank">${ri + 1}</span>
+            <span class="h2h-map-row-name">${rowAth ? rowAth.name.split(' ').slice(-1)[0] : rowId}</span>
+          </div>
         </td>
         ${cells}
       </tr>`;

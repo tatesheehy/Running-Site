@@ -394,8 +394,7 @@
   background: var(--bg-light);
   position: sticky;
   left: 0;
-  top: 65px;
-  z-index: 3;
+  z-index: 2;
 }
 
 .h2h-map-th {
@@ -405,9 +404,6 @@
   min-width: 58px;
   border-bottom: 1px solid var(--border);
   background: var(--bg-light);
-  position: sticky;
-  top: 65px;
-  z-index: 2;
 }
 
 .h2h-map-col-label {
@@ -427,16 +423,19 @@
 .h2h-map-row:last-child { border-bottom: none; }
 
 .h2h-map-row-head {
-  padding: 10px 14px 10px 16px;
   white-space: nowrap;
   border-right: 1px solid var(--border);
   background: var(--bg-light);
-  display: flex;
-  align-items: center;
-  gap: 8px;
   position: sticky;
   left: 0;
   z-index: 1;
+}
+
+.h2h-map-row-head-inner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px 10px 16px;
 }
 
 .h2h-map-avatar {
