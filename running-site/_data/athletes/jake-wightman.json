@@ -98,60 +98,32 @@
   "country": "Scotland",
   "results": [
     {
-      "date": "JUN 28",
-      "meet": "Meeting de Paris",
-      "event": "1500m",
-      "time": "3:29.95",
-      "place": "3"
-    },
-    {
-      "date": "JUN 21",
-      "meet": "Novuna UK Athletics Championships",
-      "event": "800m",
-      "time": "1:45.40",
-      "place": "1"
-    },
-    {
-      "date": "JUN 20",
-      "meet": "Novuna UK Athletics Championships",
-      "event": "800m",
-      "time": "1:47.07",
-      "place": "1"
-    },
-    {
-      "date": "JUN 10",
-      "meet": "Oslo Bislett Games",
-      "event": "Mile",
-      "time": "3:49.36",
-      "place": "5"
-    },
-    {
-      "date": "JUN 7",
-      "meet": "BAUHAUS-Galan",
-      "event": "800m",
-      "time": "1:44.39",
-      "place": "7"
-    },
-    {
-      "date": "MAY 23",
-      "meet": "LA Track Festival",
-      "event": "800m",
-      "time": "1:44.74",
-      "place": "4"
+      "date": "FEB 1",
+      "meet": "",
+      "event": "2 Mi",
+      "time": "8:20.15",
+      "place": ""
     },
     {
       "date": "FEB 1",
-      "meet": "Millrose Games",
-      "event": "2 Miles Short Track",
+      "meet": "",
+      "event": "2 Mi sh",
       "time": "8:20.15",
-      "place": "12"
+      "place": ""
     },
     {
       "date": "JAN 24",
-      "meet": "New Balance Indoor Grand Prix",
-      "event": "2000 Metres Short Track",
+      "meet": "",
+      "event": "2000 m",
       "time": "4:53.69",
-      "place": "4"
+      "place": ""
+    },
+    {
+      "date": "JAN 24",
+      "meet": "",
+      "event": "2000 m sh",
+      "time": "4:53.69",
+      "place": ""
     }
   ],
   "weight": "145",
@@ -177,5 +149,5 @@
       "year": "2022"
     }
   ],
-  "lastSynced": "2026-07-01"
+  "lastSynced": "2026-07-02"
 }

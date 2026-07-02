@@ -84,81 +84,18 @@
   "country": "Portugal",
   "results": [
     {
-      "date": "JUN 16",
-      "meet": "65th Ostrava Golden Spike",
-      "event": "1000 Metres",
-      "time": "2:16.39",
-      "place": "8"
-    },
-    {
-      "date": "JUN 10",
-      "meet": "Oslo Bislett Games",
-      "event": "Mile",
-      "time": "3:50.71",
-      "place": "12"
-    },
-    {
-      "date": "JUN 4",
-      "meet": "Golden Gala Pietro Mennea",
-      "event": "800m",
-      "time": "1:44.28",
-      "place": "5"
-    },
-    {
-      "date": "MAY 31",
-      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-      "event": "1500m",
-      "time": "3:30.43",
-      "place": "2"
-    },
-    {
       "date": "MAR 22",
       "meet": "World Athletics Indoor Championships",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:40.06",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAR 20",
       "meet": "World Athletics Indoor Championships",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:43.58",
-      "place": "2"
-    },
-    {
-      "date": "FEB 22",
-      "meet": "ORLEN Copernicus Cup",
-      "event": "800 Metres Short Track",
-      "time": "1:45.05",
-      "place": "5"
-    },
-    {
-      "date": "FEB 19",
-      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
-      "event": "1500 Metres Short Track",
-      "time": "3:32.44",
-      "place": "1"
-    },
-    {
-      "date": "FEB 15",
-      "meet": "Campeonatos Nacionais de Clubes 1ª e 2ª Divisão",
-      "event": "3000 Metres Short Track",
-      "time": "8:11.30",
-      "place": "1"
-    },
-    {
-      "date": "FEB 14",
-      "meet": "Campeonatos Nacionais de Clubes 1ª e 2ª Divisão",
-      "event": "1500 Metres Short Track",
-      "time": "4:04.97",
-      "place": "1"
-    },
-    {
-      "date": "FEB 3",
-      "meet": "Czech Indoor Gala",
-      "event": "3000 Metres Short Track",
-      "time": "7:38.05",
-      "place": "1"
+      "place": "18."
     }
   ],
   "weight": "115 lbs",
@@ -184,5 +121,5 @@
       "year": "2026"
     }
   ],
-  "lastSynced": "2026-07-01"
+  "lastSynced": "2026-07-02"
 }
