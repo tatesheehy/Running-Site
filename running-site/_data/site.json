@@ -1,5 +1,9 @@
 {
   "subscribeUrl": "#",
+  "athleteOfWeek": {
+    "athleteId": "cameron-myers",
+    "description": "Myers took away from the field in Paris, clocking 3:28.00 FTW."
+  },
   "subscribeLabel": "Join the Club",
   "name": "StatTC",
   "podcastUrl": "",
@@ -36,9 +40,5 @@
   "accentColor": "#e8500a",
   "twitterUrl": "",
   "instagramUrl": "",
-  "showRankingsWidget": true,
-  "athleteOfWeek": {
-    "athleteId": "josh-kerr",
-    "description": "Kerr delivered a dominant performance at the Pre Classic, clocking 3:28.91 to take the win and remind everyone who holds the world record."
-  }
+  "showRankingsWidget": true
 }
