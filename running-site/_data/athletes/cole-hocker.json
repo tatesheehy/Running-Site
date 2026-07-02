@@ -113,59 +113,283 @@
   "results": [
     {
       "date": "JUN 14",
-      "meet": "USATF LA Grand Prix",
-      "event": "3000m",
+      "meet": "USATF LA Grand Prix, USC Allyson Felix at Loker Track Stadium, Los Angeles, CA",
+      "event": "",
       "time": "7:37.77",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAR 21",
       "meet": "World Athletics Indoor Championships",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m",
       "time": "7:35.70",
-      "place": "2"
+      "place": ""
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "3000 m sh",
+      "time": "7:35.70",
+      "place": ""
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "",
+      "time": "7:35.70",
+      "place": ""
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships, Kujawsko-Pomorska Arena, Toruń (i)",
+      "event": "",
+      "time": "7:35.70",
+      "place": "2."
     },
     {
       "date": "MAR 1",
-      "meet": "USA Indoor Championships",
-      "event": "1500 Metres Short Track",
+      "meet": "USA Indoor Championships, Ocean Breeze Athl. Complex, New York, NY (i)",
+      "event": "",
       "time": "3:38.08",
-      "place": "5"
+      "place": "5."
     },
     {
       "date": "FEB 28",
       "meet": "USA Indoor Championships",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:39.25",
-      "place": "1"
+      "place": "1."
+    },
+    {
+      "date": "FEB 28",
+      "meet": "USA Indoor Championships, Ocean Breeze Athl. Complex, New York, NY (i)",
+      "event": "",
+      "time": "7:39.25",
+      "place": "1."
+    },
+    {
+      "date": "FEB 14",
+      "meet": "",
+      "event": "1500 m sh",
+      "time": "3:30.80",
+      "place": ""
+    },
+    {
+      "date": "FEB 14",
+      "meet": "",
+      "event": "Mile",
+      "time": "3:45.94",
+      "place": ""
+    },
+    {
+      "date": "FEB 14",
+      "meet": "",
+      "event": "Mile sh",
+      "time": "3:45.94",
+      "place": ""
     },
     {
       "date": "FEB 14",
       "meet": "Sound Invite",
-      "event": "Mile Short Track",
+      "event": "1500 m",
+      "time": "3:30.80",
+      "place": ""
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "1500 m sh",
+      "time": "3:30.80",
+      "place": ""
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "Mile",
       "time": "3:45.94",
-      "place": "1"
+      "place": ""
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "Mile sh",
+      "time": "3:45.94",
+      "place": ""
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "",
+      "time": "3:30.80",
+      "place": ""
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "",
+      "time": "3:45.94",
+      "place": ""
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite, JDL Fast Track, Winston Salem, NC (i) - Split Times Invite",
+      "event": "",
+      "time": "3:30.80",
+      "place": ""
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite, JDL Fast Track, Winston Salem, NC (i) - Invitational Events",
+      "event": "",
+      "time": "3:45.94",
+      "place": "1."
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite, JDL Fast Track, Winston Salem, NC (i)",
+      "event": "Mile sh",
+      "time": "3:45.94",
+      "place": "1."
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite, JDL Fast Track, Winston Salem, NC (i)",
+      "event": "1500m sh",
+      "time": "3:30.80",
+      "place": ""
+    },
+    {
+      "date": "FEB 7",
+      "meet": "",
+      "event": "1000 m",
+      "time": "2:16.30",
+      "place": ""
+    },
+    {
+      "date": "FEB 7",
+      "meet": "",
+      "event": "1000 m sh",
+      "time": "2:16.30",
+      "place": ""
     },
     {
       "date": "FEB 7",
       "meet": "Doc Hale Virginia Tech Invitational",
-      "event": "1000 Metres Short Track",
+      "event": "1000 m",
       "time": "2:16.30",
-      "place": "1"
+      "place": ""
+    },
+    {
+      "date": "FEB 7",
+      "meet": "Doc Hale Virginia Tech Invitational",
+      "event": "1000 m sh",
+      "time": "2:16.30",
+      "place": ""
+    },
+    {
+      "date": "FEB 7",
+      "meet": "Doc Hale Virginia Tech Invitational",
+      "event": "",
+      "time": "2:16.30",
+      "place": ""
+    },
+    {
+      "date": "FEB 7",
+      "meet": "Doc Hale Virginia Tech Invitational, Rector Fieldhouse, Blacksburg, VA (i) - Invitational Events",
+      "event": "",
+      "time": "2:16.30",
+      "place": "1."
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
-      "event": "2 Miles Short Track",
+      "event": "2 Mi",
       "time": "8:07.31",
-      "place": "1"
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "2 Mi sh",
+      "time": "8:07.31",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "",
+      "time": "8:07.31",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games, Armory Track&Field Center, New York, NY (i) - Split times",
+      "event": "",
+      "time": "7:37.57",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games, Armory Track&Field Center, New York, NY (i) - World Athletics Indoor Tour",
+      "event": "",
+      "time": "8:07.31",
+      "place": "1."
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games, Armory Track&Field Center, New York, NY (i)",
+      "event": "2 Mi sh",
+      "time": "8:07.31",
+      "place": "1."
+    },
+    {
+      "date": "JAN 23",
+      "meet": "",
+      "event": "2000 m",
+      "time": "4:52.92",
+      "place": ""
+    },
+    {
+      "date": "JAN 23",
+      "meet": "",
+      "event": "2000 m sh",
+      "time": "4:52.92",
+      "place": ""
     },
     {
       "date": "JAN 23",
       "meet": "Hokie Invitational",
-      "event": "2000 Metres Short Track",
+      "event": "2000 m",
       "time": "4:52.92",
-      "place": "1"
+      "place": ""
+    },
+    {
+      "date": "JAN 23",
+      "meet": "Hokie Invitational",
+      "event": "2000 m sh",
+      "time": "4:52.92",
+      "place": ""
+    },
+    {
+      "date": "JAN 23",
+      "meet": "Hokie Invitational",
+      "event": "",
+      "time": "4:52.92",
+      "place": ""
+    },
+    {
+      "date": "JAN 23",
+      "meet": "Hokie Invitational, Rector Fieldhouse, Blacksburg, VA (i)",
+      "event": "",
+      "time": "4:52.92",
+      "place": "1."
+    },
+    {
+      "date": "JAN 23",
+      "meet": "Hokie Invitational, Rector Fieldhouse, Blacksburg, VA (i)",
+      "event": "2000m sh",
+      "time": "4:52.92",
+      "place": "1."
     }
   ],
   "weight": "145 lbs",
@@ -205,5 +429,5 @@
       "year": "2024"
     }
   ],
-  "lastSynced": "2026-07-01"
+  "lastSynced": "2026-07-02"
 }

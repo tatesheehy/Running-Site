@@ -85,122 +85,248 @@
   "results": [
     {
       "date": "JUN 12",
-      "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "1500m",
+      "meet": "NCAA Division I Outdoor Track and Field Championships, Hayward Field, Eugene, OR",
+      "event": "",
       "time": "3:37.21",
-      "place": "3"
+      "place": "3."
     },
     {
       "date": "JUN 12",
-      "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "5000m",
+      "meet": "NCAA Division I Outdoor Track and Field Championships, Hayward Field, Eugene, OR",
+      "event": "",
       "time": "14:10.63",
-      "place": "20"
+      "place": "20."
     },
     {
       "date": "JUN 10",
-      "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "1500m",
+      "meet": "NCAA Division I Outdoor Track and Field Championships, Hayward Field, Eugene, OR",
+      "event": "",
       "time": "3:38.81",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAY 29",
-      "meet": "NCAA Division I East First Rounds",
-      "event": "1500m",
+      "meet": "NCAA Division I East First Rounds, Un. of Kentucky Outdoor Track Facility, Lexington, KY",
+      "event": "",
       "time": "3:42.48",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAY 29",
-      "meet": "NCAA Division I East First Rounds",
-      "event": "5000m",
+      "meet": "NCAA Division I East First Rounds, Un. of Kentucky Outdoor Track Facility, Lexington, KY",
+      "event": "",
       "time": "13:49.63",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAY 27",
-      "meet": "NCAA Division I East First Rounds",
-      "event": "1500m",
+      "meet": "NCAA Division I East First Rounds, Un. of Kentucky Outdoor Track Facility, Lexington, KY",
+      "event": "",
       "time": "3:47.70",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAY 16",
-      "meet": "ACC Outdoor Track & Field Championships",
-      "event": "1500m",
+      "meet": "ACC Outdoor Track & Field Championships, Cardinal Park, Louisville, KY",
+      "event": "",
       "time": "3:39.88",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAY 16",
-      "meet": "ACC Outdoor Track & Field Championships",
-      "event": "5000m",
+      "meet": "ACC Outdoor Track & Field Championships, Cardinal Park, Louisville, KY",
+      "event": "",
       "time": "13:31.43",
-      "place": "4"
+      "place": "4."
     },
     {
       "date": "MAY 14",
-      "meet": "ACC Outdoor Track & Field Championships",
-      "event": "1500m",
+      "meet": "ACC Outdoor Track & Field Championships, Cardinal Park, Louisville, KY",
+      "event": "",
       "time": "3:54.66",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "APR 18",
       "meet": "Virginia Challenge",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:25.42",
-      "place": "1"
+      "place": ""
+    },
+    {
+      "date": "APR 18",
+      "meet": "Virginia Challenge",
+      "event": "",
+      "time": "13:25.42",
+      "place": ""
+    },
+    {
+      "date": "APR 18",
+      "meet": "Virginia Challenge, UVA Lanningan Field, Charlottesville, VA - Invitational Events",
+      "event": "",
+      "time": "13:25.42",
+      "place": "1."
     },
     {
       "date": "APR 3",
-      "meet": "Virginia Grand Prix",
-      "event": "1500m",
+      "meet": "Virginia Grand Prix, UVA Lanningan Field, Charlottesville, VA",
+      "event": "",
       "time": "3:39.92",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAR 14",
-      "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "Mile Short Track",
+      "meet": "NCAA Division I Indoor Track and Field Championships, Randal Tyson Indoor Center, Fayetteville, AR (i)",
+      "event": "",
       "time": "3:59.50",
-      "place": "4"
+      "place": "4."
     },
     {
       "date": "MAR 13",
-      "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "Mile Short Track",
+      "meet": "NCAA Division I Indoor Track and Field Championships, Randal Tyson Indoor Center, Fayetteville, AR (i)",
+      "event": "",
       "time": "3:55.13",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "FEB 28",
       "meet": "ACC Indoor Track & Field Championships",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m",
       "time": "7:43.18",
-      "place": "1"
+      "place": ""
+    },
+    {
+      "date": "FEB 28",
+      "meet": "ACC Indoor Track & Field Championships",
+      "event": "3000 m sh",
+      "time": "7:43.18",
+      "place": ""
+    },
+    {
+      "date": "FEB 28",
+      "meet": "ACC Indoor Track & Field Championships",
+      "event": "",
+      "time": "7:43.18",
+      "place": ""
+    },
+    {
+      "date": "FEB 28",
+      "meet": "ACC Indoor Track & Field Championships, The Track at New Balance, Boston, MA (i)",
+      "event": "",
+      "time": "7:43.18",
+      "place": "1."
     },
     {
       "date": "FEB 26",
       "meet": "ACC Indoor Track & Field Championships",
-      "event": "5000 Metres Short Track",
+      "event": "5000 m sh",
       "time": "13:41.66",
-      "place": "2"
+      "place": ""
+    },
+    {
+      "date": "FEB 26",
+      "meet": "ACC Indoor Track & Field Championships",
+      "event": "",
+      "time": "13:41.66",
+      "place": ""
+    },
+    {
+      "date": "FEB 26",
+      "meet": "ACC Indoor Track & Field Championships, The Track at New Balance, Boston, MA (i)",
+      "event": "",
+      "time": "13:41.66",
+      "place": "2."
     },
     {
       "date": "FEB 22",
       "meet": "Saucony Battle for Boston",
-      "event": "Distance Medley Short Track",
+      "event": "Distance Medley sh",
       "time": "9:16.75",
-      "place": "3"
+      "place": ""
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "",
+      "time": "9:16.75",
+      "place": ""
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston, Boston Univ. Track & Tennis Center, Boston, MA (i)",
+      "event": "",
+      "time": "9:16.75",
+      "place": "3."
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
-      "event": "Mile Short Track",
+      "event": "1500 m",
+      "time": "3:35.60",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "1500 m sh",
+      "time": "3:35.60",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "Mile",
       "time": "3:52.62",
-      "place": "8"
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "Mile sh",
+      "time": "3:52.62",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "",
+      "time": "3:35.60",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "",
+      "time": "3:52.62",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games, Armory Track&Field Center, New York, NY (i) - Split times",
+      "event": "",
+      "time": "3:35.60",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games, Armory Track&Field Center, New York, NY (i) - Indoor Meeting",
+      "event": "",
+      "time": "3:52.62",
+      "place": "8."
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games, Armory Track&Field Center, New York, NY (i)",
+      "event": "Mile sh",
+      "time": "3:52.62",
+      "place": "8."
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games, Armory Track&Field Center, New York, NY (i)",
+      "event": "1500m sh",
+      "time": "3:35.60",
+      "place": ""
     }
   ],
   "college": "Virginia",
@@ -211,5 +337,5 @@
   "id": "gary-martin",
   "age": "22",
   "dob": "2003-12-23",
-  "lastSynced": "2026-07-01"
+  "lastSynced": "2026-07-02"
 }
