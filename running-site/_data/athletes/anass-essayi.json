@@ -1,0 +1,69 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "collegeLogo": "/images/south_carolina_gamecocks_logo_secondary_19666280.png",
+  "waUrl": "https://worldathletics.org/athletes/morocco/anass-essayi-14805620",
+  "name": "Anass Essayi",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:46.06"
+    },
+    {
+      "event": "1500m",
+      "time": "3:30.17"
+    },
+    {
+      "event": "Mile",
+      "time": "3:49.16"
+    },
+    {
+      "event": "3000m",
+      "time": "7:32.45"
+    },
+    {
+      "event": "5000m",
+      "time": "13:34.92"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:33.55"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:50.46"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:32.45"
+    }
+  ],
+  "questionTitle": "Next question",
+  "photo": "/images/essayi_card.png",
+  "ncaa": false,
+  "results": [
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "1500m",
+      "time": "3:30.17",
+      "place": "4"
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "Mile",
+      "time": "3:49.94",
+      "place": ""
+    },
+    {
+      "date": "MAY 31",
+      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+      "event": "1500m",
+      "time": "3:32.23",
+      "place": "9"
+    }
+  ],
+  "college": "South Carolina",
+  "event": "MIDDLE DISTANCE"
+}
