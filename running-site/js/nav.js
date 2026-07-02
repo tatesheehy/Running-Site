@@ -75,6 +75,25 @@ function buildNavbar() {
             <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
           </svg>
         </button>
+        <div class="nav-user-wrap">
+          <button id="nav-user-btn" class="navbar-user-btn" onclick="toggleUserMenu()" aria-label="Sign in" title="Sign in">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+            </svg>
+            <span class="nav-user-dot"></span>
+          </button>
+          <div id="user-menu" class="user-menu">
+            <div class="user-menu-email" id="user-menu-email"></div>
+            <button class="user-menu-item" onclick="goTo('athletes.html');closeUserMenu();setTimeout(()=>typeof _showMyAthletes==='function'&&_showMyAthletes(),300)">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              My Athletes
+            </button>
+            <button class="user-menu-item user-menu-item--signout" onclick="authSignOut()">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+              Sign Out
+            </button>
+          </div>
+        </div>
         <a href="${SITE.subscribeUrl || '#'}" class="navbar-subscribe">${SITE.subscribeLabel || 'Subscribe'}</a>
         <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Open menu">
           <span></span><span></span><span></span>
@@ -107,6 +126,25 @@ function buildNavbar() {
           <button class="search-close-btn" onclick="closeSearch()" aria-label="Close search">×</button>
         </div>
         <div id="search-results-list" class="search-results-list"></div>
+      </div>
+    </div>
+    <div id="auth-modal" class="auth-modal" role="dialog" aria-label="Sign in">
+      <div class="auth-modal-inner">
+        <button class="auth-modal-close" onclick="closeAuthModal()" aria-label="Close">×</button>
+        <div class="auth-brand">
+          <img src="/images/stattc-logo.png" alt="${SITE.name}" class="auth-logo">
+        </div>
+        <div class="auth-tabs">
+          <button class="auth-tab active" data-tab="signin" onclick="switchAuthTab('signin')">Sign In</button>
+          <button class="auth-tab" data-tab="signup" onclick="switchAuthTab('signup')">Sign Up</button>
+        </div>
+        <form id="auth-form" onsubmit="handleAuthSubmit(event)">
+          <input type="email" id="auth-email" placeholder="Email address" autocomplete="email" required>
+          <input type="password" id="auth-password" placeholder="Password (min 6 chars)" autocomplete="current-password" required minlength="6">
+          <div id="auth-error" class="auth-error"></div>
+          <div id="auth-success" class="auth-success" style="display:none"></div>
+          <button type="submit" id="auth-submit-btn" class="auth-submit">Sign In</button>
+        </form>
       </div>
     </div>
   `;

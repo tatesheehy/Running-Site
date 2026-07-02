@@ -137,6 +137,147 @@
 .search-ath-info .search-result-title { font-size: 17px; margin-bottom: 2px; }
 .search-ath-info .search-result-meta { color: #555; }
 
+/* ── AUTH MODAL ───────────────────────────────────────────── */
+.auth-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.auth-modal.open { display: flex; }
+
+.auth-modal-inner {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 380px;
+  padding: 32px 28px 28px;
+  position: relative;
+}
+
+.auth-modal-close {
+  position: absolute;
+  top: 12px; right: 14px;
+  background: none; border: none;
+  color: #555; font-size: 24px;
+  cursor: pointer; line-height: 1;
+  transition: color 0.15s;
+}
+.auth-modal-close:hover { color: #fff; }
+
+.auth-brand { text-align: center; margin-bottom: 24px; }
+.auth-logo { height: 28px; opacity: 0.9; }
+
+.auth-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid #222;
+  margin-bottom: 24px;
+}
+.auth-tab {
+  flex: 1;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  color: #555;
+  font-size: 13px;
+  font-weight: 700;
+  font-family: var(--font-display);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+.auth-tab.active { color: #fff; border-bottom-color: var(--accent); }
+
+#auth-form { display: flex; flex-direction: column; gap: 12px; }
+
+#auth-email, #auth-password {
+  background: #0a0a0a;
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 14px;
+  font-family: var(--font-body);
+  padding: 12px 14px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+#auth-email:focus, #auth-password:focus { border-color: var(--accent); }
+
+.auth-error {
+  color: #ef4444;
+  font-size: 12px;
+  min-height: 16px;
+}
+
+.auth-success {
+  color: #22c55e;
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+.auth-submit {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 13px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  margin-top: 4px;
+}
+.auth-submit:hover { opacity: 0.88; }
+.auth-submit:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* ── HEART / FAVORITE BUTTONS ─────────────────────────────── */
+.ath-fav-btn {
+  position: absolute;
+  top: 8px; right: 8px;
+  z-index: 2;
+  background: rgba(0,0,0,0.5);
+  border: none;
+  border-radius: 50%;
+  width: 30px; height: 30px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.15s, background 0.15s;
+  backdrop-filter: blur(4px);
+}
+.ath-fav-btn:hover { color: #fff; background: rgba(0,0,0,0.75); }
+.ath-fav-btn.favorited { color: var(--accent); }
+.ath-fav-btn.favorited svg { fill: var(--accent); }
+
+.card-fav-btn {
+  background: none;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  padding: 4px 6px;
+  display: flex; align-items: center;
+  transition: color 0.15s;
+  border-radius: 4px;
+}
+.card-fav-btn:hover { color: #fff; }
+.card-fav-btn.favorited { color: var(--accent); }
+.card-fav-btn.favorited svg { fill: var(--accent); }
+
+/* My Athletes sort button heart icon */
+.ath-page-sort.my-athletes-btn svg { vertical-align: -2px; margin-right: 3px; }
+
 /* ── ATHLETE CARD MODAL ───────────────────────────────────── */
 .modal-overlay {
   position: fixed;

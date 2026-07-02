@@ -73,6 +73,7 @@
   aspect-ratio: 2 / 3;
   perspective: 1000px;
   cursor: pointer;
+  position: relative;
 }
 .ath-flip-inner {
   position: relative;

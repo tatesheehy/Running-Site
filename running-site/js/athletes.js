@@ -2,19 +2,30 @@
 //  ATHLETES — buildAthletesPage()
 // ============================================================
 
+const _FAV_HEART = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>`;
+
 function buildAthletesPage() {
   const all = Object.values(ATHLETES);
   let activeSort = 'alpha';
+  let activeView = 'grid';
+  let myAthletesActive = false;
 
   function sortedAthletes() {
-    const list = [...all];
+    const list = myAthletesActive
+      ? all.filter(a => typeof isFavorited === 'function' && isFavorited(a.id))
+      : [...all];
     if (activeSort === 'alpha') list.sort((a, b) => a.name.localeCompare(b.name));
     if (activeSort === 'country') list.sort((a, b) => (a.country || '').localeCompare(b.country || '') || a.name.localeCompare(b.name));
     return list;
   }
 
   function renderGrid(list) {
-    if (!list.length) return '<p class="ath-page-empty">No athletes found.</p>';
+    if (!list.length) {
+      const msg = myAthletesActive
+        ? '<p class="ath-page-empty">No saved athletes yet — click the heart on any athlete card to save them.</p>'
+        : '<p class="ath-page-empty">No athletes found.</p>';
+      return msg;
+    }
     return list.map(a => {
       const photo = a.photo || '/images/default_card.png';
       const bg = a.photoBackground || '#111';
@@ -22,8 +33,13 @@ function buildAthletesPage() {
         `<div class="ath-flip-pr"><span class="ath-flip-pr-event">${pr.event}</span><span class="ath-flip-pr-time">${pr.time}</span></div>`
       ).join('');
       const age = a.dob ? calcAgeFromDob(a.dob) : (a.age || '');
+      const faved = typeof isFavorited === 'function' && isFavorited(a.id);
       return `
         <div class="ath-flip-card" role="button" tabindex="0">
+          <button class="ath-fav-btn${faved ? ' favorited' : ''}" data-fav-id="${a.id}"
+            onclick="event.stopPropagation();toggleFavorite('${a.id}')" aria-label="Save ${a.name}">
+            ${_FAV_HEART}
+          </button>
           <div class="ath-flip-inner">
             <div class="ath-flip-front" onclick="openAthleteCard('${a.id}', null)">
               <div class="ath-flip-photo" style="background-color:${bg};background-image:url('${photo}')"></div>
@@ -49,7 +65,7 @@ function buildAthletesPage() {
     }).join('');
   }
 
-  let activeView = 'grid';
+  const loggedIn = typeof getCurrentUser === 'function' && !!getCurrentUser();
 
   document.getElementById('main').innerHTML = `
     <div class="container">
@@ -61,6 +77,9 @@ function buildAthletesPage() {
         <div class="ath-page-sort-toggle" id="ath-sort-btns">
           <button class="ath-page-sort active" data-sort="alpha" onclick="sortAthletes('alpha')">A – Z</button>
           <button class="ath-page-sort" data-sort="country" onclick="sortAthletes('country')">By Country</button>
+          <button class="ath-page-sort my-athletes-btn" id="my-athletes-btn" onclick="toggleMyAthletes()" style="${loggedIn ? '' : 'display:none'}">
+            ${_FAV_HEART} My Athletes
+          </button>
           <button class="ath-page-sort" id="ath-map-btn" onclick="toggleAthleteMap()">Map</button>
         </div>
       </div>
@@ -78,9 +97,32 @@ function buildAthletesPage() {
 
   window.sortAthletes = function(sort) {
     if (activeView === 'map') setGridView();
+    myAthletesActive = false;
+    qs('#my-athletes-btn')?.classList.remove('active');
     activeSort = sort;
-    document.querySelectorAll('.ath-page-sort').forEach(b => b.classList.toggle('active', b.dataset.sort === sort));
+    document.querySelectorAll('.ath-page-sort[data-sort]').forEach(b => b.classList.toggle('active', b.dataset.sort === sort));
     qs('#ath-page-grid').innerHTML = renderGrid(sortedAthletes());
+  };
+
+  window.toggleMyAthletes = window._showMyAthletes = function() {
+    myAthletesActive = true;
+    activeView = 'grid';
+    document.querySelectorAll('.ath-page-sort').forEach(b => b.classList.remove('active'));
+    qs('#my-athletes-btn')?.classList.add('active');
+    qs('#ath-page-grid').className = 'ath-page-grid';
+    qs('#ath-page-grid').innerHTML = renderGrid(sortedAthletes());
+  };
+
+  window._showAllAthletes = function() {
+    myAthletesActive = false;
+    qs('#my-athletes-btn')?.classList.remove('active');
+    document.querySelector('.ath-page-sort[data-sort="alpha"]')?.classList.add('active');
+    qs('#ath-page-grid').innerHTML = renderGrid(sortedAthletes());
+  };
+
+  // Re-render grid when favorites change (e.g. after auth loads)
+  window._refreshMyAthletes = function() {
+    if (myAthletesActive) qs('#ath-page-grid').innerHTML = renderGrid(sortedAthletes());
   };
 
   window.toggleAthleteMap = function() {
@@ -89,6 +131,7 @@ function buildAthletesPage() {
     activeView = activeView === 'grid' ? 'map' : 'grid';
 
     if (activeView === 'map') {
+      myAthletesActive = false;
       document.querySelectorAll('.ath-page-sort').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       grid.className = 'ath-map-wrap';
