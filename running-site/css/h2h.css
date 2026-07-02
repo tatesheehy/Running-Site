@@ -132,6 +132,38 @@
 
 /* ── Table wrapper ────────────────────────────────────────── */
 
+.h2h-col-labels {
+  display: grid;
+  grid-template-columns: 52px 1fr 100px 120px auto auto;
+  padding: 10px 16px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  position: sticky;
+  top: 62px;
+  background: var(--bg);
+  z-index: 50;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.07);
+}
+
+.h2h-col-labels::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  left: -100px;
+  right: -100px;
+  height: 200px;
+  background: var(--bg);
+  display: none;
+}
+
+.h2h-col-labels.is-sticky::before { display: block; }
+
+.h2h-col-label--form,
+.h2h-col-label--wins { }
+
 .h2h-lb-wrap {
   border: 1px solid var(--border);
   border-top: 3px solid var(--accent);
@@ -146,18 +178,7 @@
 
 /* ── Table header ─────────────────────────────────────────── */
 
-.h2h-lb-th {
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-  padding: 11px 16px;
-  border-bottom: 1px solid var(--border);
-  white-space: nowrap;
-  text-align: left;
-  background: var(--bg-light);
-}
+.h2h-lb-th { display: none; }
 
 .h2h-lb-th--rank   { width: 52px; text-align: center; padding-left: 0; }
 .h2h-lb-th--record { width: 100px; text-align: center; }
@@ -364,7 +385,7 @@
 
 [data-theme="light"] .h2h-lb-wrap       { background: #fff; }
 [data-theme="light"] .h2h-stats-strip   { background: #fafafa; }
-[data-theme="light"] .h2h-lb-th         { background: #fafafa; }
+[data-theme="light"] .h2h-col-labels     { background: #fff; }
 [data-theme="light"] .h2h-lb-row:hover  { background: rgba(232, 80, 10, 0.04); }
 [data-theme="light"] .h2h-lb-win-tag    { background: #f4f4f4; border-color: #e8e8e8; color: #444; }
 
@@ -574,6 +595,8 @@
 @media (max-width: 900px) {
   .h2h-lb-th--form { display: none; }
   .h2h-lb-td--form { display: none; }
+  .h2h-col-label--form { display: none; }
+  .h2h-col-labels { grid-template-columns: 52px 1fr 100px 120px; }
 }
 
 /* ── Expand chevron ───────────────────────────────────────── */
@@ -701,6 +724,7 @@
 @media (max-width: 900px) {
   .h2h-lb-td--wins { display: none; }
   .h2h-lb-th--wins { display: none; }
+  .h2h-col-label--wins { display: none; }
 }
 
 @media (max-width: 700px) {

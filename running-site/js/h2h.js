@@ -133,20 +133,15 @@ function _renderH2HPage() {
         <!-- Content -->
         ${_h2hLbView === 'map'
           ? _renderDominanceMap(rows)
-          : `<div class="h2h-lb-wrap">
+          : `<div id="h2h-col-sentinel"></div>
+            <div class="h2h-col-labels">
+              <span>#</span><span>Athlete</span><span>Record</span><span>Win %</span><span class="h2h-col-label--form">Form</span><span class="h2h-col-label--wins">Key Wins</span>
+            </div>
+            <div class="h2h-lb-wrap">
               ${rows.length === 0
                 ? `<div class="h2h-lb-empty">No head-to-head data for this selection${_h2hLbRankedOnly ? ' — try switching to "All" opponents' : ''}.</div>`
                 : `<table class="h2h-lb-table">
-                    <thead>
-                      <tr>
-                        <th class="h2h-lb-th h2h-lb-th--rank">#</th>
-                        <th class="h2h-lb-th h2h-lb-th--athlete">Athlete</th>
-                        <th class="h2h-lb-th h2h-lb-th--record">Record</th>
-                        <th class="h2h-lb-th h2h-lb-th--pct">Win %</th>
-                        <th class="h2h-lb-th h2h-lb-th--form">Form</th>
-                        <th class="h2h-lb-th h2h-lb-th--wins">Key Wins</th>
-                      </tr>
-                    </thead>
+                    <tbody>
                     <tbody>
                       ${rows.map(([id, rec], i) => {
                         const a = ATHLETES[id];
@@ -212,6 +207,15 @@ function _renderH2HPage() {
       </div>
     </div>
   `;
+
+  // Sticky column-labels mask (same pattern as rankings)
+  const sentinel   = document.getElementById('h2h-col-sentinel');
+  const colLabels  = document.querySelector('.h2h-col-labels');
+  if (sentinel && colLabels) {
+    new IntersectionObserver(([entry]) => {
+      colLabels.classList.toggle('is-sticky', !entry.isIntersecting);
+    }, { rootMargin: '-62px 0px 0px 0px', threshold: 0 }).observe(sentinel);
+  }
 }
 
 window.h2hLbSetYear      = y    => { _h2hLbYear  = y;   _renderH2HPage(); };
