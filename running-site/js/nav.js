@@ -76,7 +76,7 @@ function buildNavbar() {
           </svg>
         </button>
         <div class="nav-user-wrap">
-          <button id="nav-user-btn" class="navbar-user-btn" onclick="toggleUserMenu()" aria-label="Sign in" title="Sign in">
+          <button id="nav-user-btn" class="navbar-user-btn" onclick="getCurrentUser&&getCurrentUser()?goTo('account.html'):openAuthModal()" aria-label="Sign in" title="Sign in">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
             </svg>

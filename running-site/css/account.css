@@ -1,0 +1,124 @@
+/* ============================================================
+   ACCOUNT PAGE
+   ============================================================ */
+
+.acct-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 40px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.acct-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0 0 4px;
+}
+
+.acct-email {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+
+.acct-signout {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 13px;
+  font-family: var(--font-body);
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.15s, border-color 0.15s;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.acct-signout:hover { color: #ef4444; border-color: #ef4444; }
+
+.acct-section { margin-bottom: 48px; }
+
+.acct-section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin: 0 0 20px;
+}
+
+.acct-count {
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 20px;
+  padding: 1px 8px;
+  margin-left: 2px;
+}
+
+.acct-fav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.acct-fav-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--card-bg, #111);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+  position: relative;
+}
+.acct-fav-card:hover { border-color: var(--accent); background: rgba(255,255,255,0.03); }
+
+.acct-fav-photo {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center top;
+  background-color: #1a1a1a;
+  flex-shrink: 0;
+}
+
+.acct-fav-name {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.acct-fav-country {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.acct-fav-remove {
+  background: none;
+  border: none;
+  color: #444;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex-shrink: 0;
+  transition: color 0.15s, background 0.15s;
+}
+.acct-fav-remove:hover { color: #ef4444; background: rgba(239,68,68,0.08); }
