@@ -265,6 +265,46 @@ function buildArchiveWeekHub(year, eventName) {
     </div>`;
 }
 
+let _rdSortCol = 'rank', _rdSortDir = 'asc';
+
+window.sortRankings = function(col) {
+  if (_rdSortCol === col) {
+    _rdSortDir = _rdSortDir === 'asc' ? 'desc' : 'asc';
+  } else {
+    _rdSortCol = col;
+    _rdSortDir = 'asc';
+  }
+
+  const list = document.querySelector('.rd-list-wrap > .rd-list');
+  if (!list) return;
+
+  const rows = [...list.querySelectorAll(':scope > .rd-row')];
+  rows.sort((a, b) => {
+    const dir = _rdSortDir === 'asc' ? 1 : -1;
+    if (col === 'name') {
+      const va = a.dataset.sortName || '', vb = b.dataset.sortName || '';
+      return dir * va.localeCompare(vb);
+    }
+    let va, vb;
+    if (col === 'rank') { va = +a.dataset.sortRank || 999; vb = +b.dataset.sortRank || 999; }
+    else if (col === 'sb') { va = +a.dataset.sortSb || Infinity; vb = +b.dataset.sortSb || Infinity; }
+    else if (col === 'pb') { va = +a.dataset.sortPb || Infinity; vb = +b.dataset.sortPb || Infinity; }
+    else return 0;
+    if (va === Infinity && vb === Infinity) return 0;
+    if (va === Infinity) return 1;
+    if (vb === Infinity) return -1;
+    return dir * (va - vb);
+  });
+  rows.forEach(r => list.appendChild(r));
+
+  document.querySelectorAll('.rd-col-sort').forEach(el => {
+    const active = el.dataset.col === col;
+    el.classList.toggle('rd-col-sort--active', active);
+    const icon = el.querySelector('.rd-sort-icon');
+    if (icon) icon.textContent = active ? (_rdSortDir === 'asc' ? '▲' : '▼') : '⇅';
+  });
+};
+
 function buildRankingRow(r, rank) {
   const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
   const name    = (a && a.name)    || r.name    || r.athleteId || '—';
@@ -276,8 +316,9 @@ function buildRankingRow(r, rank) {
   const rankClass = rank === 1 ? 'gold' : rank === 2 ? 'silver' : rank === 3 ? 'bronze' : '';
   const seasonBest = (r.seasonBest && r.seasonBest !== 'x') ? r.seasonBest : '';
   const meet = (r.meet && r.meet !== 'x') ? r.meet : '';
+  const sbSecs = isFinite(_parseTimeSecs(seasonBest)) ? _parseTimeSecs(seasonBest) : '';
   return `
-    <div class="rd-row${rank <= 3 && rank != null ? ' rd-row--podium' : ''}" data-country="${country}" data-athlete-id="${r.athleteId || ''}" onclick="openRankingRow('${clickData}')">
+    <div class="rd-row${rank <= 3 && rank != null ? ' rd-row--podium' : ''}" data-country="${country}" data-athlete-id="${r.athleteId || ''}" data-sort-rank="${rank || 999}" data-sort-name="${name}" data-sort-sb="${sbSecs}" data-sort-pb="${sbSecs}" onclick="openRankingRow('${clickData}')">
       ${rank != null ? `<div class="rd-rank ${rankClass}">${rank <= 3 ? '<svg class="rd-crown" viewBox="0 0 24 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 13 L4 3 L9 9 L12 0 L15 9 L20 3 L24 13 L24 15 L0 15 Z"/></svg>' : ''}${rank}</div>` : '<div class="rd-rank-empty"></div>'}
       <div class="rd-avatar" style="background-color:${photoBg};background-image:url('${photo}');background-size:cover;background-position:top center"></div>
       <div class="rd-info">
@@ -285,11 +326,11 @@ function buildRankingRow(r, rank) {
         <div class="rd-country">${renderFlag(flag)} ${country}</div>
       </div>
       ${rank != null ? buildMomentumHtml(r.momentum) : ''}
+      <div class="rd-sb">${seasonBest}</div>
       <div class="rd-right">
         ${r.reason ? `<div class="rd-reason">${r.reason}</div>` : ''}
         <div class="rd-time">${seasonBest}</div>
       </div>
-
     </div>
   `;
 }
@@ -510,6 +551,8 @@ function buildRankingsDetail(eventName, opts = {}) {
     `;
   }).join('');
 
+  _rdSortCol = 'rank';
+  _rdSortDir = 'asc';
   const isGrid = window._rdView === 'grid';
   const athleteCount = rows.length;
   document.getElementById('main').innerHTML = `
@@ -540,7 +583,11 @@ function buildRankingsDetail(eventName, opts = {}) {
         ${filterHtml}
         <div id="rd-col-sentinel"></div>
         <div class="rd-col-labels" style="${isGrid ? 'display:none' : ''}">
-          <span>Rank</span><span>Athlete</span><span>Momentum</span><span style="text-align:right">Best</span>
+          <span class="rd-col-sort rd-col-sort--active" data-col="rank" onclick="sortRankings('rank')">Rank <span class="rd-sort-icon">▲</span></span>
+          <span class="rd-col-sort" data-col="name" onclick="sortRankings('name')">Athlete <span class="rd-sort-icon">⇅</span></span>
+          <span>Trend</span>
+          <span class="rd-col-sort rd-col-label--right" data-col="sb" onclick="sortRankings('sb')">SB <span class="rd-sort-icon">⇅</span></span>
+          <span class="rd-col-sort rd-col-label--right" data-col="pb" onclick="sortRankings('pb')">PB <span class="rd-sort-icon">⇅</span></span>
         </div>
         <div class="rd-list-wrap" style="${isGrid ? 'display:none' : ''}">
           <div class="rd-list">${rowsHtml}</div>
@@ -628,11 +675,13 @@ async function enrichRankingsWithWA(eventName) {
     }
     if (!localMark) return;
     const localBadge = (localIsMile && is1500Page) ? ' <span class="rd-mile-badge">Mile</span>' : '';
+    const localPbSecs = _parseTimeSecs(localMark);
     document.querySelectorAll(`#main [data-athlete-id="${athId}"]`).forEach(el2 => {
       const timeEl = el2.querySelector('.rd-time');
       const cardTimeEl = el2.querySelector('.rd-card-time');
       if (timeEl) timeEl.innerHTML = localMark + localBadge;
       if (cardTimeEl) cardTimeEl.innerHTML = localMark + localBadge;
+      if (isFinite(localPbSecs)) el2.dataset.sortPb = String(localPbSecs);
     });
   });
 
@@ -673,6 +722,7 @@ async function enrichRankingsWithWA(eventName) {
 
       if (!mark) return;
       const mileBadge = (isMile && is1500Page) ? ' <span class="rd-mile-badge">Mile</span>' : '';
+      const pbSecs = _parseTimeSecs(mark);
 
       // Update all DOM elements for this athlete (covers both list row and grid card)
       document.querySelectorAll(`#main [data-athlete-id="${athId}"]`).forEach(el => {
@@ -685,6 +735,8 @@ async function enrichRankingsWithWA(eventName) {
         const cardMeetEl = el.querySelector('.rd-card-meet');
         if (cardTimeEl) cardTimeEl.innerHTML = mark + mileBadge;
         if (cardMeetEl) cardMeetEl.textContent = venue || '';
+
+        if (isFinite(pbSecs)) el.dataset.sortPb = String(pbSecs);
       });
     }));
 
