@@ -47,15 +47,29 @@
   "results": [
     {
       "date": "JUN 28",
-      "meet": "Meeting de Paris, Stade Charléty, Paris",
-      "event": "1500m",
+      "meet": "Meeting de Paris",
+      "event": "1500 m",
       "time": "3:30.17",
       "place": "4."
     },
     {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "1500 m",
+      "time": "3:35.22",
+      "place": ""
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "Mile",
+      "time": "3:49.94",
+      "place": "3."
+    },
+    {
       "date": "MAY 31",
-      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat, Complexe Sportif Prince Moulay Abdellah, Rabat",
-      "event": "1500m",
+      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+      "event": "1500 m",
       "time": "3:32.23",
       "place": "9."
     }
