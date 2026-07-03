@@ -265,7 +265,7 @@ function buildArchiveWeekHub(year, eventName) {
     </div>`;
 }
 
-let _rdSortCol = 'rank', _rdSortDir = 'asc';
+let _rdSortCol = 'rank', _rdSortDir = 'asc', _rdCurrentEvent = '';
 
 window.sortRankings = function(col) {
   if (_rdSortCol === col) {
@@ -314,7 +314,7 @@ function buildRankingRow(r, rank) {
   const photoBg = (a && a.photoBackground) || '#111';
   const clickData = encodeURIComponent(JSON.stringify({athleteId: r.athleteId||'', rank: rank||0, name, country, flag, seasonBest: r.seasonBest||'', meet: r.meet||''}));
   const rankClass = rank === 1 ? 'gold' : rank === 2 ? 'silver' : rank === 3 ? 'bronze' : '';
-  const seasonBest = (r.seasonBest && r.seasonBest !== 'x') ? r.seasonBest : '';
+  const seasonBest = _bestTime(r, a, _rdCurrentEvent);
   const meet = (r.meet && r.meet !== 'x') ? r.meet : '';
   const sbSecs = isFinite(_parseTimeSecs(seasonBest)) ? _parseTimeSecs(seasonBest) : '';
   return `
@@ -553,6 +553,7 @@ function buildRankingsDetail(eventName, opts = {}) {
 
   _rdSortCol = 'rank';
   _rdSortDir = 'asc';
+  _rdCurrentEvent = eventName;
   const isGrid = window._rdView === 'grid';
   const athleteCount = rows.length;
   document.getElementById('main').innerHTML = `
