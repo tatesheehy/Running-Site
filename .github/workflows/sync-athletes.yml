@@ -5,7 +5,11 @@ on:
     # Runs every day at 6am UTC (2am ET)
     - cron: '0 6 * * *'
   workflow_dispatch:
-    # Allows manual trigger from the GitHub website
+    inputs:
+      force:
+        description: 'Force re-fetch all athletes (ignore existing results)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -24,7 +28,7 @@ jobs:
           node-version: '24'
 
       - name: Run athlete sync
-        run: node scripts/sync-athlete-results.js --debug
+        run: node scripts/sync-athlete-results.js --debug ${{ inputs.force == true && '--force' || '' }}
 
       - name: Commit and push changes
         run: |
