@@ -516,6 +516,8 @@ function buildRankingsDetail(eventName, opts = {}) {
       </div>`
     : '';
 
+  _rdCurrentEvent = eventName;
+
   const rowsHtml = rows.length
     ? rows.map((r, i) => buildRankingRow(r, i + 1)).join('')
     : `<p class="rankings-empty">No rankings data yet for this event.</p>`;
@@ -553,7 +555,6 @@ function buildRankingsDetail(eventName, opts = {}) {
 
   _rdSortCol = 'rank';
   _rdSortDir = 'asc';
-  _rdCurrentEvent = eventName;
   const isGrid = window._rdView === 'grid';
   const athleteCount = rows.length;
   document.getElementById('main').innerHTML = `
