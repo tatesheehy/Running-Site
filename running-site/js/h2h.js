@@ -35,6 +35,7 @@ function _renderH2HPage() {
   if (!main) return;
 
   const { records, totalEncounters } = _computeAllH2HRecords(_h2hLbYear, _h2hLbEvent, _h2hLbRankedOnly);
+  const allYearsRecs = _computeAllYearsH2H(_h2hLbEvent, _h2hLbRankedOnly);
 
   const rows = Object.entries(records)
     .filter(([, r]) => r.wins + r.losses >= _H2H_MIN_RACES)
@@ -205,7 +206,7 @@ function _renderH2HPage() {
                           </tr>
                           <tr class="h2h-lb-detail" id="h2h-detail-${id}" style="display:none">
                             <td colspan="6" class="h2h-lb-detail-td">
-                              <div class="h2h-lb-detail-inner">${_renderExpandDetail(id, rec)}</div>
+                              <div class="h2h-lb-detail-inner">${_renderExpandDetail(id, allYearsRecs[id] || rec)}</div>
                             </td>
                           </tr>`;
                       }).join('')}
@@ -268,7 +269,7 @@ function _renderExpandDetail(id, rec) {
                  : m.losses > m.wins ? 'h2h-detail-opp-rec--loss'
                  : 'h2h-detail-opp-rec--split';
 
-    const raceRows = m.races.map(r => {
+    const _renderRaceRow = r => {
       const tierBadge = (r.tier || 1) >= 2
         ? `<span class="h2h-detail-tier h2h-detail-tier--${r.tier === 3 ? 'champ' : 'major'}">${r.tier === 3 ? 'WC' : 'DL'}</span>`
         : '';
@@ -284,6 +285,24 @@ function _renderExpandDetail(id, rec) {
         <span class="h2h-detail-meet">${r.meet.length > 38 ? r.meet.slice(0, 36) + '…' : r.meet}</span>
         ${timesHtml}
       </div>`;
+    };
+
+    const byYear = {};
+    m.races.forEach(r => {
+      const y = r.year || '2026';
+      if (!byYear[y]) byYear[y] = { wins: 0, losses: 0, races: [] };
+      byYear[y].races.push(r);
+      if (r.won) byYear[y].wins++; else byYear[y].losses++;
+    });
+    const years = Object.keys(byYear).sort((a, b) => parseInt(b) - parseInt(a));
+    const multiYear = years.length > 1;
+
+    const raceRows = years.map(yr => {
+      const yd = byYear[yr];
+      const header = multiYear
+        ? `<div class="h2h-detail-year-hd"><span class="h2h-detail-year">${yr}</span><span class="h2h-detail-year-rec">${yd.wins}–${yd.losses}</span></div>`
+        : '';
+      return header + yd.races.map(_renderRaceRow).join('');
     }).join('');
 
     return `
@@ -587,7 +606,7 @@ function _computeAllH2HRecords(year, eventFilter, rankedOnly) {
           if (!records[a1.id].matchups[a2.id]) records[a1.id].matchups[a2.id] = { fullName: a2.name, id: a2.id, wins: 0, losses: 0, races: [] };
           if (a1wins) { records[a1.id].wins++; records[a1.id].beatCounts[n2] = (records[a1.id].beatCounts[n2] || 0) + 1; records[a1.id].matchups[a2.id].wins++; }
           else if (a2wins) { records[a1.id].losses++; records[a1.id].matchups[a2.id].losses++; }
-          records[a1.id].matchups[a2.id].races.push({ date: race1.date, meet: race1.meet, event: race1.event, won: a1wins, myTime: race1.time, theirTime: match.time, tier: _meetTier(race1.meet) });
+          records[a1.id].matchups[a2.id].races.push({ year, date: race1.date, meet: race1.meet, event: race1.event, won: a1wins, myTime: race1.time, theirTime: match.time, tier: _meetTier(race1.meet) });
           records[a1.id].sequence.push({ date: race1.date, won: a1wins });
         }
         if (countForA2) {
@@ -595,7 +614,7 @@ function _computeAllH2HRecords(year, eventFilter, rankedOnly) {
           if (!records[a2.id].matchups[a1.id]) records[a2.id].matchups[a1.id] = { fullName: a1.name, id: a1.id, wins: 0, losses: 0, races: [] };
           if (a2wins) { records[a2.id].wins++; records[a2.id].beatCounts[n1] = (records[a2.id].beatCounts[n1] || 0) + 1; records[a2.id].matchups[a1.id].wins++; }
           else if (a1wins) { records[a2.id].losses++; records[a2.id].matchups[a1.id].losses++; }
-          records[a2.id].matchups[a1.id].races.push({ date: race1.date, meet: race1.meet, event: race1.event, won: a2wins, myTime: match.time, theirTime: race1.time, tier: _meetTier(race1.meet) });
+          records[a2.id].matchups[a1.id].races.push({ year, date: race1.date, meet: race1.meet, event: race1.event, won: a2wins, myTime: match.time, theirTime: race1.time, tier: _meetTier(race1.meet) });
           records[a2.id].sequence.push({ date: race1.date, won: a2wins });
         }
 
@@ -605,4 +624,31 @@ function _computeAllH2HRecords(year, eventFilter, rankedOnly) {
   }
 
   return { records, totalEncounters };
+}
+
+function _getAllH2HYears() {
+  const years = new Set(['2026']);
+  Object.values(ATHLETES).forEach(a =>
+    Object.keys(a.resultsHistory || {}).forEach(y => years.add(y))
+  );
+  return [...years].sort((a, b) => parseInt(b) - parseInt(a));
+}
+
+function _computeAllYearsH2H(eventFilter, rankedOnly) {
+  const merged = {};
+  _getAllH2HYears().forEach(year => {
+    const { records } = _computeAllH2HRecords(year, eventFilter, rankedOnly);
+    Object.entries(records).forEach(([athId, rec]) => {
+      if (!merged[athId]) merged[athId] = { matchups: {} };
+      Object.entries(rec.matchups || {}).forEach(([oppId, m]) => {
+        if (!merged[athId].matchups[oppId]) {
+          merged[athId].matchups[oppId] = { fullName: m.fullName, id: m.id, wins: 0, losses: 0, races: [] };
+        }
+        merged[athId].matchups[oppId].wins += m.wins;
+        merged[athId].matchups[oppId].losses += m.losses;
+        merged[athId].matchups[oppId].races.push(...m.races);
+      });
+    });
+  });
+  return merged;
 }

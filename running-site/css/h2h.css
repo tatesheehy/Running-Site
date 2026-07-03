@@ -705,6 +705,29 @@
 .h2h-detail-tier--champ { background: var(--dark); color: #fff; }
 .h2h-detail-tier--major { background: var(--bg-light); color: var(--muted); border: 1px solid var(--border); }
 
+.h2h-detail-year-hd {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0 4px;
+  margin-top: 6px;
+  border-top: 1px solid var(--border);
+}
+.h2h-detail-year-hd:first-child { margin-top: 0; border-top: none; padding-top: 0; }
+.h2h-detail-year {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.h2h-detail-year-rec {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text);
+}
 
 [data-theme="dark"] .h2h-lb-detail-inner { background: #181818; }
 [data-theme="dark"] .h2h-detail-opp      { background: #1e1e1e; }
