@@ -11,8 +11,62 @@ function _tlOrd(dateStr) {
   return (_TL_MONTHS[mon] || 0) * 31 + parseInt(day || 0);
 }
 
+function _parseEventMeters(event) {
+  const e = (event || '').toLowerCase().replace(/,/g, '').trim();
+  if (/relay|medley|hurdle|vault|jump|throw|shot|discus|hammer|javelin|decath|heptath|pentath/.test(e)) return null;
+  const m = e.match(/^(\d+(?:\.\d+)?)\s*(?:m\b|metres|meters)/);
+  if (m) return parseFloat(m[1]);
+  if (/\b2\s*mile/.test(e)) return 3219;
+  if (/\bmile\b/.test(e)) return 1609;
+  return null;
+}
+
+function _dedupeResults(results) {
+  if (!results || results.length < 2) return results;
+
+  const groups = new Map();
+  results.forEach((r, i) => {
+    const key = `${(r.meet || '').trim().toLowerCase()}|||${(r.date || '').trim().toLowerCase()}`;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push({ r, i });
+  });
+
+  const remove = new Set();
+
+  groups.forEach(group => {
+    if (group.length < 2) return;
+
+    // Remove exact event+time duplicates
+    const seen = new Map();
+    group.forEach(({ r, i }) => {
+      const key = `${(r.event || '').trim().toLowerCase().replace(/\s+/g, '')}|||${(r.time || '').trim()}`;
+      if (seen.has(key)) { remove.add(i); } else { seen.set(key, i); }
+    });
+
+    // Remove no-place results when a longer event at same meet+date has a place
+    const active = group.filter(({ i }) => !remove.has(i));
+    active.forEach(({ r, i }) => {
+      const dist = _parseEventMeters(r.event);
+      if (dist === null) return;
+      const placeStr = (r.place || '').toString().replace(/\./g, '').trim();
+      const noPlace = placeStr === '' || placeStr === '0';
+      if (!noPlace) return;
+      const longerHasPlace = active.some(({ r: r2, i: i2 }) => {
+        if (i2 === i || remove.has(i2)) return false;
+        const dist2 = _parseEventMeters(r2.event);
+        if (dist2 === null || dist2 <= dist) return false;
+        const p2 = (r2.place || '').toString().replace(/\./g, '').trim();
+        return p2 !== '' && p2 !== '0';
+      });
+      if (longerHasPlace) remove.add(i);
+    });
+  });
+
+  return results.filter((_, i) => !remove.has(i));
+}
+
 function buildSeasonTimeline(a) {
-  const results = (a.results || []).filter(r => r.date);
+  const results = _dedupeResults(a.results || []).filter(r => r.date);
   if (results.length < 2) return '';
 
   const sorted = [...results].sort((x, y) => _tlOrd(x.date) - _tlOrd(y.date));
@@ -286,7 +340,7 @@ function openAthleteCard(athleteId, rank) {
         <div class="card-honours-placeholder" style="${a.honours === undefined && a.waUrl ? '' : 'display:none'}"></div>
         ${buildSeasonTimeline(a)}
         ${(() => {
-          const results = a.results || [];
+          const results = _dedupeResults(a.results || []);
           return `
           <details class="card-results">
             <summary class="card-results-toggle">
@@ -450,8 +504,8 @@ let _h2hId1 = null, _h2hId2 = null;
 const _H2H_MONTHS = {JAN:1,FEB:2,MAR:3,APR:4,MAY:5,JUN:6,JUL:7,AUG:8,SEP:9,OCT:10,NOV:11,DEC:12};
 
 function _getResultsForYear(athlete, year) {
-  if (year === '2026') return athlete.results || [];
-  return ((athlete.resultsHistory || {})[year]) || [];
+  if (year === '2026') return _dedupeResults(athlete.results || []);
+  return _dedupeResults(((athlete.resultsHistory || {})[year]) || []);
 }
 
 function _getH2HYears(a1, a2) {

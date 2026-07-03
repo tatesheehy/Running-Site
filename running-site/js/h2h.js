@@ -443,6 +443,10 @@ function _renderDominanceMap(rows) {
 }
 
 // Returns { label, cls } for a race margin, or null if times unavailable
+function _normalizeEvent(e) {
+  return (e || '').trim().toLowerCase().replace(/\s+/g, '');
+}
+
 function _raceMargin(myTime, theirTime) {
   const t1 = parseTimeToSecs(myTime), t2 = parseTimeToSecs(theirTime);
   if (!t1 || !t2 || !isFinite(t1) || !isFinite(t2)) return null;
@@ -482,7 +486,7 @@ function _computePairwiseH2H(year, eventFilter, rankedOnly) {
         const match = r2.find(race2 =>
           race2.meet && race2.event &&
           race1.meet.trim().toLowerCase() === race2.meet.trim().toLowerCase() &&
-          race1.event.trim().toLowerCase() === race2.event.trim().toLowerCase()
+          _normalizeEvent(race1.event) === _normalizeEvent(race2.event)
         );
         if (!match) return;
 
@@ -556,7 +560,7 @@ function _computeAllH2HRecords(year, eventFilter, rankedOnly) {
         const match = r2.find(race2 =>
           race2.meet && race2.event &&
           race1.meet.trim().toLowerCase() === race2.meet.trim().toLowerCase() &&
-          race1.event.trim().toLowerCase() === race2.event.trim().toLowerCase()
+          _normalizeEvent(race1.event) === _normalizeEvent(race2.event)
         );
         if (!match) return;
 
