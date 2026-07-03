@@ -88,6 +88,9 @@ function _renderH2HPage() {
           </div>` : ''}
         </div>` : ''}
 
+        <!-- Featured Rivalry -->
+        ${_renderRivalryCard(_h2hLbYear, _h2hLbEvent, _h2hLbRankedOnly)}
+
         <!-- Controls -->
         <div class="h2h-lb-controls">
           <div class="h2h-lb-controls-left">
@@ -276,6 +279,67 @@ function _renderExpandDetail(id, rec) {
         <div class="h2h-detail-races">${raceRows}</div>
       </div>`;
   }).join('');
+}
+
+// ── Featured Rivalry ──────────────────────────────────────────
+
+function _findBiggestRivalry(year, eventFilter, rankedOnly) {
+  const pairwise = _computePairwiseH2H(year, eventFilter, rankedOnly);
+  let bestScore = -1, bestPair = null;
+  const seen = new Set();
+
+  Object.entries(pairwise).forEach(([id1, opponents]) => {
+    Object.entries(opponents).forEach(([id2, rec]) => {
+      const key = [id1, id2].sort().join('|');
+      if (seen.has(key)) return;
+      seen.add(key);
+
+      const total = rec.wins + rec.losses;
+      if (total < 3) return;
+      // score = 2 * min(wins, losses): rewards both volume and closeness
+      const score = total - Math.abs(rec.wins - rec.losses);
+      if (score > bestScore || (score === bestScore && total > (bestPair?.total || 0))) {
+        bestScore = score;
+        bestPair = { id1, id2, a1rec: rec, a2rec: pairwise[id2]?.[id1], total };
+      }
+    });
+  });
+
+  return bestPair;
+}
+
+function _renderRivalryCard(year, eventFilter, rankedOnly) {
+  const r = _findBiggestRivalry(year, eventFilter, rankedOnly);
+  if (!r) return '';
+  const a1 = ATHLETES[r.id1], a2 = ATHLETES[r.id2];
+  if (!a1 || !a2) return '';
+  const rec1 = r.a1rec, rec2 = r.a2rec || { wins: rec1.losses, losses: rec1.wins };
+
+  return `
+    <div class="h2h-rivalry-card">
+      <div class="h2h-rivalry-top">
+        <div class="h2h-rivalry-side">
+          <div class="h2h-rivalry-photo" style="background-image:url('${a1.photo || ''}');background-color:${a1.photoBackground || '#1a1a2e'}"></div>
+          <div class="h2h-rivalry-name">${a1.name}</div>
+          <div class="h2h-rivalry-country">${renderFlag(a1.flag)}<span>${a1.country || ''}</span></div>
+          <div class="h2h-rivalry-record">${rec1.wins}<span>–</span>${rec1.losses}</div>
+        </div>
+        <div class="h2h-rivalry-center">
+          <div class="h2h-rivalry-vs">vs</div>
+          <div class="h2h-rivalry-meetings">${r.total} meetings</div>
+        </div>
+        <div class="h2h-rivalry-side h2h-rivalry-side--right">
+          <div class="h2h-rivalry-photo" style="background-image:url('${a2.photo || ''}');background-color:${a2.photoBackground || '#1a1a2e'}"></div>
+          <div class="h2h-rivalry-name">${a2.name}</div>
+          <div class="h2h-rivalry-country">${renderFlag(a2.flag)}<span>${a2.country || ''}</span></div>
+          <div class="h2h-rivalry-record">${rec2.wins}<span>–</span>${rec2.losses}</div>
+        </div>
+      </div>
+      <div class="h2h-rivalry-bottom">
+        <div class="h2h-rivalry-label"><span class="h2h-rivalry-dot"></span>Season's closest rivalry</div>
+        <div class="h2h-rivalry-season">${year} season</div>
+      </div>
+    </div>`;
 }
 
 // ── Dominance Map ─────────────────────────────────────────────
