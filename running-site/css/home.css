@@ -57,28 +57,12 @@
   max-width: none;
   height: auto;
   position: static;
-  transform: scale(1.04);
-  animation: heroZoom 6s ease-out forwards;
-}
-
-@keyframes heroZoom {
-  to { transform: scale(1); }
 }
 
 .home-hero-full .cat-tag {
   position: absolute;
   top: 16px;
   left: 16px;
-}
-
-.home-hero-full::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: var(--noise);
-  opacity: 0.04;
-  pointer-events: none;
-  z-index: 1;
 }
 .home-hero-overlay {
   position: absolute;
@@ -372,12 +356,11 @@
 .rw-title::before {
   content: '';
   display: block;
-  width: 8px;
-  height: 8px;
+  width: 3px;
+  height: 18px;
   background: var(--accent);
   border-radius: 2px;
   flex-shrink: 0;
-  transform: rotate(45deg);
 }
 
 .event-tabs {
