@@ -435,7 +435,7 @@
   font-size: 18px;
 }
 
-.athlete-name-cell .name { font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.athlete-name-cell .name { font-family: var(--font-display); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .athlete-name-cell .country { color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 .best-time {
@@ -485,8 +485,9 @@
 }
 
 .rw-name {
+  font-family: var(--font-display);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

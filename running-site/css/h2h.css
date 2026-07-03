@@ -258,7 +258,8 @@
 }
 
 .h2h-lb-name {
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-weight: 600;
   font-size: 14px;
   color: var(--text);
   line-height: 1.1;
@@ -478,8 +479,9 @@
 }
 
 .h2h-map-row-name {
+  font-family: var(--font-display);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--text);
 }
 
