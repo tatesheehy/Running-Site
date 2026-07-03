@@ -20,19 +20,19 @@
     {
       "name": "Pre Classic",
       "datetime": "2026-07-04T18:00:00-07:00",
-      "color": "#e8500a",
+      "color": "#000000",
       "url": "https://www.preclassic.com/schedule"
     },
     {
       "name": "Monaco Diamond League",
       "datetime": "2026-07-10T19:00:00-07:00",
-      "color": "#e8500a",
+      "color": "#000000",
       "url": "https://monaco.diamondleague.com/en/programme-results/"
     },
     {
       "name": "London Diamond League",
       "datetime": "2026-07-18T13:04:00-07:00",
-      "color": "#e8500a",
+      "color": "#000000",
       "url": "https://london.diamondleague.com/programme-results/"
     }
   ],
