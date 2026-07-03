@@ -1027,7 +1027,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   pointer-events: none;
 }
 .archive-index-card-event {
-  font-family: 'Special Elite', var(--font-mono);
+  font-family: var(--font-mono);
   font-size: 22px;
   color: #1c0f05;
   line-height: 1.2;
