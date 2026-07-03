@@ -50,7 +50,7 @@
   padding: 14px 0;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
   cursor: pointer;
@@ -132,7 +132,7 @@
   font-family: var(--font-display);
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.35);
   margin-bottom: 6px;
@@ -165,7 +165,7 @@
   gap: 6px;
   font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -202,7 +202,7 @@
 .rd-header-meta {
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
   margin-bottom: 8px;
@@ -242,7 +242,7 @@
 .rd-header-count {
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -509,7 +509,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   padding-left: 19px;
   font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
   border-left: 3px solid transparent;
@@ -659,7 +659,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-family: var(--font-display);
   font-size: 13px;
   font-weight: 900;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -907,7 +907,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
 .archive-season-label {
   font-family: var(--font-mono);
   font-size: 11px;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #7a5020;
   margin-bottom: 16px;
@@ -923,7 +923,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-family: var(--font-mono);
   font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   background: rgba(0,0,0,0.07);
   border: 1px solid #b89040;
@@ -954,7 +954,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-family: var(--font-mono);
   font-size: 9px;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   padding: 2px 7px;
   border-radius: 2px;
@@ -1050,7 +1050,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-family: var(--font-mono);
   font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #8b3a10;
   padding-left: 52px;

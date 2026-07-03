@@ -143,9 +143,7 @@
 .ath-flip-prs-label {
   font-size: 9px;
   font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #444;
+  letter-spacing: 0.06em;color: #444;
   margin-bottom: 10px;
 }
 .ath-flip-prs-wrap {
@@ -177,7 +175,7 @@
 .ath-flip-pr-event {
   font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #555;
 }
@@ -192,7 +190,7 @@
 .ath-flip-cta {
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #888;
   margin-top: auto;
