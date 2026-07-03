@@ -126,7 +126,7 @@ button { font-family: inherit; }
   display: block;
   width: 3px;
   height: 18px;
-  background: var(--accent);
+  background: var(--dark);
   border-radius: 2px;
   flex-shrink: 0;
 }
@@ -141,8 +141,8 @@ button { font-family: inherit; }
 /* ── CATEGORY TAG ─────────────────────────────────────────── */
 .cat-tag {
   display: inline-block;
-  background: var(--accent);
-  color: #fff;
+  background: var(--text);
+  color: var(--bg);
   font-size: 10px;
   font-weight: 700;
   padding: 3px 8px;

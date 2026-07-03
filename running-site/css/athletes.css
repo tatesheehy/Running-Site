@@ -9,7 +9,7 @@
   justify-content: space-between;
   gap: 16px;
   padding: 40px 0 20px;
-  border-bottom: 3px solid var(--accent);
+  border-bottom: 1px solid var(--border);
   margin-bottom: 32px;
 }
 .ath-page-header-left { display: flex; align-items: baseline; gap: 14px; }
@@ -54,7 +54,7 @@
   white-space: nowrap;
 }
 .ath-page-sort:hover { color: #333; }
-.ath-page-sort.active { background: #fff; color: var(--accent); box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+.ath-page-sort.active { background: #fff; color: var(--text); box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
 
 
 .ath-map-wrap {
@@ -194,7 +194,7 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #888;
   margin-top: auto;
   padding-top: 14px;
   border-top: 1px solid #1e1e1e;

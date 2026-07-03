@@ -125,7 +125,7 @@
 }
 .h2h-seg-btn.active {
   background: #fff;
-  color: var(--accent);
+  color: var(--text);
   box-shadow: 0 1px 4px rgba(0,0,0,0.12);
   font-weight: 700;
 }
@@ -166,7 +166,6 @@
 
 .h2h-lb-wrap {
   border: 1px solid var(--border);
-  border-top: 3px solid var(--accent);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -323,7 +322,7 @@
 .h2h-lb-pct-val {
   font-size: 18px;
   font-weight: 800;
-  color: var(--accent);
+  color: var(--text);
   line-height: 1;
   font-family: 'Oswald', 'Arial Narrow', sans-serif;
   letter-spacing: 0.02em;
@@ -392,13 +391,12 @@
 [data-theme="dark"] .h2h-seg            { background: #2a2a2a; }
 [data-theme="dark"] .h2h-seg-btn        { color: #666; }
 [data-theme="dark"] .h2h-seg-btn:hover:not(.active) { color: #aaa; }
-[data-theme="dark"] .h2h-seg-btn.active { background: #444; color: var(--accent); box-shadow: 0 1px 4px rgba(0,0,0,0.4); }
+[data-theme="dark"] .h2h-seg-btn.active { background: #444; color: #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.4); }
 
 /* ── Dominance Map ────────────────────────────────────────── */
 
 .h2h-map-wrap {
   border: 1px solid var(--border);
-  border-top: 3px solid var(--accent);
   border-radius: 10px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;

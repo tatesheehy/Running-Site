@@ -167,7 +167,7 @@
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--muted);
 }
 .ranking-card:hover .ranking-card-cta { color: #fff; }
 
@@ -179,7 +179,7 @@
   align-items: center;
   font-size: 13px;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--text);
   transition: opacity 0.15s;
   margin-bottom: 12px;
 }
@@ -191,7 +191,7 @@
   justify-content: space-between;
   gap: 32px;
   padding: 16px 0 20px;
-  border-bottom: 3px solid var(--accent);
+  border-bottom: 1px solid var(--border);
   margin-bottom: 8px;
 }
 
@@ -252,17 +252,18 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--text);
   background: none;
-  border: 1.5px solid var(--accent);
+  border: 1.5px solid var(--border);
   border-radius: 6px;
   padding: 6px 12px;
   cursor: pointer;
   white-space: nowrap;
-  transition: background 0.15s, color 0.15s;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 .rd-compare-btn:hover {
-  background: var(--accent);
+  background: var(--dark);
+  border-color: var(--dark);
   color: #fff;
 }
 
@@ -270,7 +271,7 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  background: var(--accent);
+  background: var(--dark);
   color: #fff;
   font-family: var(--font-display);
   font-size: 13px;
@@ -307,7 +308,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
 }
 .rd-view-btn svg { width: 16px; height: 16px; }
 .rd-view-btn:hover { color: #444; }
-.rd-view-btn--active { background: #fff; color: var(--accent); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.rd-view-btn--active { background: #fff; color: var(--text); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
 
 .rd-grid {
   display: grid;
@@ -356,7 +357,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   color: #bbb;
   overflow: visible;
 }
-.rd-card-rank.gold   { color: #fff; background: var(--accent); }
+.rd-card-rank.gold   { color: #fff; background: #111; }
 .rd-card-rank.silver { color: #fff; background: #6e6e6e; }
 .rd-card-rank.bronze { color: #fff; background: #8a5a28; }
 .rd-card-rank .rd-crown {
@@ -402,7 +403,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-family: var(--font-mono);
   font-size: 18px;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--text);
   letter-spacing: 0.02em;
   margin-bottom: 3px;
 }
@@ -422,9 +423,9 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--accent);
-  background: rgba(232,80,10,0.1);
-  border: 1px solid rgba(232,80,10,0.25);
+  color: var(--muted);
+  background: rgba(0,0,0,0.04);
+  border: 1px solid var(--border);
   border-radius: 4px;
   padding: 1px 5px;
   vertical-align: middle;
@@ -456,7 +457,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   transition: border-color 0.15s;
 }
 .rd-cs-btn:hover,
-.rd-cs.open .rd-cs-btn { border-color: var(--accent); color: #111; }
+.rd-cs.open .rd-cs-btn { border-color: var(--text); color: #111; }
 .rd-cs-val {
   display: flex;
   align-items: center;
@@ -469,7 +470,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   flex-shrink: 0;
   transition: transform 0.2s;
 }
-.rd-cs.open .rd-cs-arrow { transform: rotate(180deg); color: var(--accent); }
+.rd-cs.open .rd-cs-arrow { transform: rotate(180deg); color: var(--text); }
 .rd-cs-list {
   display: none;
   position: absolute;
@@ -499,7 +500,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   transition: background 0.1s;
 }
 .rd-cs-opt:hover { background: #f5f5f5; }
-.rd-cs-opt--active { color: var(--accent); font-weight: 700; background: rgba(232,80,10,0.04); }
+.rd-cs-opt--active { color: var(--text); font-weight: 700; background: rgba(0,0,0,0.04); }
 
 .rd-col-labels {
   display: grid;
@@ -568,7 +569,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   background: var(--bg-light);
   position: relative;
 }
-.rd-rank.gold   { color: #fff; background: var(--accent); box-shadow: 0 0 0 2px rgba(232,80,10,0.25); }
+.rd-rank.gold   { color: #fff; background: #111; box-shadow: 0 0 0 2px rgba(0,0,0,0.12); }
 .rd-rank.silver { color: #fff; background: #6e6e6e; box-shadow: 0 0 0 2px rgba(160,160,160,0.2); }
 .rd-rank.bronze { color: #fff; background: #8a5a28; box-shadow: 0 0 0 2px rgba(176,117,64,0.2); }
 .rd-crown {
@@ -714,7 +715,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   transition: color 0.15s;
 }
 .rd-col-sort:hover { color: var(--text); }
-.rd-col-sort--active { color: var(--accent); }
+.rd-col-sort--active { color: var(--text); }
 .rd-sort-icon { opacity: 0.35; font-size: 8px; font-style: normal; }
 .rd-col-sort--active .rd-sort-icon { opacity: 1; }
 .rd-col-label--right { text-align: right; justify-content: flex-end; }

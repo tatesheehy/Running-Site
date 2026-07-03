@@ -64,7 +64,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--accent);
+  color: var(--muted);
   margin-bottom: 4px;
 }
 .contrib-bio {
