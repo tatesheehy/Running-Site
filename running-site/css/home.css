@@ -452,45 +452,44 @@
 
 .rw-row {
   display: grid;
-  grid-template-columns: 22px 22px 1fr auto;
+  grid-template-columns: 24px 22px 1fr auto;
   align-items: center;
-  gap: 8px;
-  padding: 10px 8px;
+  gap: 10px;
+  padding: 9px 0;
   border-bottom: 1px solid var(--border);
-  border-radius: 8px;
-  transition: background 0.15s;
-  margin: 0 -8px;
+  transition: background 0.12s;
 }
 .rw-row:last-child { border-bottom: none; }
 .rw-row--clickable { cursor: pointer; }
-.rw-row--clickable:hover { background: var(--bg-light); }
-.rw-row--clickable:hover .rw-name { opacity: 0.7; }
+.rw-row--clickable:hover { background: var(--bg-light); padding-left: 8px; padding-right: 8px; margin: 0 -8px; border-radius: 6px; }
+.rw-row--clickable:hover .rw-name { opacity: 0.75; }
 
 .rw-rank {
-  font-size: 12px;
-  font-weight: 800;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
   color: var(--muted);
   text-align: center;
   flex-shrink: 0;
 }
-.rw-rank--first { color: var(--text); font-size: 12px; font-weight: 800; }
+.rw-rank--first { color: var(--text); font-weight: 700; }
 
-.rw-flag { font-size: 16px; flex-shrink: 0; line-height: 1; }
+.rw-flag { font-size: 14px; flex-shrink: 0; line-height: 1; }
 
 .rw-info {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 2px;
   min-width: 0;
 }
 
 .rw-name {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: color 0.15s;
+  transition: opacity 0.12s;
 }
 
 .rw-country-sm {
@@ -503,11 +502,12 @@
 
 .rw-time {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   color: var(--text);
   white-space: nowrap;
   flex-shrink: 0;
+  letter-spacing: 0.01em;
 }
 
 /* keep old .rw-country for any non-compact usage */
