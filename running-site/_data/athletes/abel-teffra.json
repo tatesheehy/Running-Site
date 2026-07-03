@@ -65,25 +65,67 @@
   "country": "United States",
   "results": [
     {
+      "date": "JUN 21",
+      "meet": "Portland Track Festival",
+      "event": "800 m",
+      "time": "1:46.40",
+      "place": "8."
+    },
+    {
+      "date": "JUN 13",
+      "meet": "USATF LA Grand Prix",
+      "event": "1500 m",
+      "time": "3:34.08",
+      "place": "2."
+    },
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "800 m",
+      "time": "1:45.71",
+      "place": "6."
+    },
+    {
+      "date": "MAR 1",
+      "meet": "USA Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:38.90",
+      "place": "8."
+    },
+    {
       "date": "FEB 22",
-      "meet": "",
+      "meet": "Saucony Battle for Boston",
       "event": "1500 m sh",
       "time": "3:35.20",
-      "place": ""
+      "place": "3."
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Boston University David Hemery Valentine Invitational",
+      "event": "1500 m sh",
+      "time": "3:37.83",
+      "place": "11."
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Boston University David Hemery Valentine Invitational",
+      "event": "Mile sh",
+      "time": "3:53.29",
+      "place": "10."
     },
     {
       "date": "FEB 7",
-      "meet": "",
-      "event": "3000 m",
-      "time": "7:55.13",
-      "place": ""
-    },
-    {
-      "date": "FEB 7",
-      "meet": "",
+      "meet": "Penn Classic",
       "event": "3000 m sh",
       "time": "7:55.13",
-      "place": ""
+      "place": "1."
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Penn Elite",
+      "event": "1000 m sh",
+      "time": "2:20.49",
+      "place": "1."
     }
   ],
   "dob": "2002-01-23",
