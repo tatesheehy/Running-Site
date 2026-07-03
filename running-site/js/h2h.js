@@ -138,7 +138,7 @@ function _renderH2HPage() {
           ? _renderDominanceMap(rows)
           : `<div id="h2h-col-sentinel"></div>
             <div class="h2h-col-labels">
-              <span>#</span><span>Athlete</span><span>Record</span><span>Win %</span><span class="h2h-col-label--form">Form</span><span class="h2h-col-label--wins">Key Wins</span>
+              <span>#</span><span>Athlete</span><span>Record</span><span>Win %</span><span class="h2h-col-label--form">Streak</span><span class="h2h-col-label--wins">Key Wins</span>
             </div>
             <div class="h2h-lb-wrap">
               ${rows.length === 0
@@ -155,8 +155,16 @@ function _renderH2HPage() {
                         const rankClass = i === 0 ? 'h2h-lb-row--gold' : i === 1 ? 'h2h-lb-row--silver' : i === 2 ? 'h2h-lb-row--bronze' : '';
                         const _MONTHS  = {JAN:0,FEB:1,MAR:2,APR:3,MAY:4,JUN:5,JUL:6,AUG:7,SEP:8,OCT:9,NOV:10,DEC:11};
                         const _dateVal = d => { if (!d) return 0; const [m,dy] = d.split(' '); return (_MONTHS[m]||0)*100+(parseInt(dy)||0); };
-                        const formDots = [...(rec.sequence||[])].sort((a,b)=>_dateVal(a.date)-_dateVal(b.date)).slice(-10)
-                          .map(s=>`<span class="h2h-form-dot h2h-form-dot--${s.won?'w':'l'}" title="${s.date||''}">${s.won?'W':'L'}</span>`).join('');
+                        const _seq = [...(rec.sequence||[])].sort((a,b)=>_dateVal(a.date)-_dateVal(b.date));
+                        let _streak = 0, _streakWon = null;
+                        for (let si = _seq.length - 1; si >= 0; si--) {
+                          if (_streakWon === null) { _streakWon = _seq[si].won; _streak = 1; }
+                          else if (_seq[si].won === _streakWon) _streak++;
+                          else break;
+                        }
+                        const streakHtml = _seq.length
+                          ? `<span class="h2h-streak h2h-streak--${_streakWon?'w':'l'}">${_streakWon?'W':'L'}${_streak}</span>`
+                          : '';
 
                         const keyWins  = Object.entries(rec.beatCounts)
                           .sort((a, b) => b[1] - a[1])
@@ -192,7 +200,7 @@ function _renderH2HPage() {
                                 </div>
                               </div>
                             </td>
-                            <td class="h2h-lb-td h2h-lb-td--form"><div class="h2h-form-strip">${formDots}</div></td>
+                            <td class="h2h-lb-td h2h-lb-td--form">${streakHtml}</td>
                             <td class="h2h-lb-td h2h-lb-td--wins">${keyWins}</td>
                           </tr>
                           <tr class="h2h-lb-detail" id="h2h-detail-${id}" style="display:none">
@@ -260,14 +268,23 @@ function _renderExpandDetail(id, rec) {
                  : m.losses > m.wins ? 'h2h-detail-opp-rec--loss'
                  : 'h2h-detail-opp-rec--split';
 
-    const raceRows = m.races.map(r => `
+    const raceRows = m.races.map(r => {
+      const tierBadge = (r.tier || 1) >= 2
+        ? `<span class="h2h-detail-tier h2h-detail-tier--${r.tier === 3 ? 'champ' : 'major'}">${r.tier === 3 ? 'WC' : 'DL'}</span>`
+        : '';
+      const timesHtml = (r.myTime && r.theirTime)
+        ? `<span class="h2h-detail-times">${r.myTime}<span class="h2h-detail-times-sep">to</span>${r.theirTime}</span>`
+        : `<span class="h2h-detail-times">${r.myTime || ''}</span>`;
+      return `
       <div class="h2h-detail-race">
-        <span class="h2h-detail-result ${r.won ? 'h2h-detail-result--w' : 'h2h-detail-result--l'}">${r.won ? 'W' : 'L'}</span>
+        <span class="h2h-detail-arrow ${r.won ? 'h2h-detail-arrow--w' : 'h2h-detail-arrow--l'}">${r.won ? 'beat' : 'lost'}</span>
+        ${tierBadge}
         <span class="h2h-detail-date">${r.date || ''}</span>
         <span class="h2h-detail-event">${r.event}</span>
         <span class="h2h-detail-meet">${r.meet.length > 38 ? r.meet.slice(0, 36) + '…' : r.meet}</span>
-        <span class="h2h-detail-time">${r.myTime}</span>
-      </div>`).join('');
+        ${timesHtml}
+      </div>`;
+    }).join('');
 
     return `
       <div class="h2h-detail-opp">
@@ -316,6 +333,21 @@ function _renderRivalriesSection(year, eventFilter, rankedOnly) {
     const rec2 = r.a2rec || { wins: rec1.losses, losses: rec1.wins };
     const n1 = a1.name.split(' ').slice(-1)[0];
     const n2 = a2.name.split(' ').slice(-1)[0];
+
+    // Championship note: surface when major-meet record differs from overall
+    const cw = rec1.champWins || 0, cl = rec1.champLosses || 0;
+    const champTotal = cw + cl;
+    let champNote = '';
+    if (champTotal > 0) {
+      const overallLeader = rec1.wins > rec1.losses ? n1 : rec1.losses > rec1.wins ? n2 : null;
+      const champLeader   = cw > cl ? n1 : cl > cw ? n2 : null;
+      if (champLeader && overallLeader && champLeader !== overallLeader) {
+        champNote = `but ${champLeader} leads in majors`;
+      } else {
+        champNote = `${cw}–${cl} in majors`;
+      }
+    }
+
     return `
       <div class="h2h-rivalry-row">
         <div class="h2h-rivalry-avatars">
@@ -324,7 +356,7 @@ function _renderRivalriesSection(year, eventFilter, rankedOnly) {
         </div>
         <div class="h2h-rivalry-names">
           <div class="h2h-rivalry-matchup">${n1}<span class="h2h-rivalry-matchup-vs">vs</span>${n2}</div>
-          <div class="h2h-rivalry-meta">${r.total} meetings</div>
+          <div class="h2h-rivalry-meta">${r.total} meetings${champNote ? ` · ${champNote}` : ''}</div>
         </div>
         <div class="h2h-rivalry-result">
           <div class="h2h-rivalry-score">${rec1.wins}<span class="h2h-rivalry-score-sep">–</span>${rec1.losses}</div>
@@ -410,6 +442,24 @@ function _renderDominanceMap(rows) {
     </div>`;
 }
 
+// Returns { label, cls } for a race margin, or null if times unavailable
+function _raceMargin(myTime, theirTime) {
+  const t1 = parseTimeToSecs(myTime), t2 = parseTimeToSecs(theirTime);
+  if (!t1 || !t2 || !isFinite(t1) || !isFinite(t2)) return null;
+  const diff = Math.abs(t1 - t2);
+  if (diff <= 1.50) return { label: `+${diff.toFixed(2)}`, cls: 'close' };
+  const label = diff < 60 ? `+${diff.toFixed(1)}s` : `+${Math.floor(diff / 60)}:${(diff % 60).toFixed(1).padStart(4, '0')}`;
+  return { label, cls: 'dominant' };
+}
+
+// Tier 3 = World/Olympic championships, Tier 2 = Diamond League + major invitationals, Tier 1 = everything else
+function _meetTier(meet) {
+  const m = (meet || '').toLowerCase();
+  if (/world athletics (indoor )?championships|olympic games|world championships in athletics/.test(m)) return 3;
+  if (/bislett|lausanne|zurich|zürich|monaco|golden gala|golden spike|bauhaus|galan|meeting de paris|prefontaine|millrose|new balance (indoor )?grand prix|wanda diamond|diamond league|rabat|meeting international mohammed|ostrava|fbk games/.test(m)) return 2;
+  return 1;
+}
+
 function _computePairwiseH2H(year, eventFilter, rankedOnly) {
   const pairwise = {};
 
@@ -449,15 +499,18 @@ function _computePairwiseH2H(year, eventFilter, rankedOnly) {
 
         if (!pairwise[a1.id]) pairwise[a1.id] = {};
         if (!pairwise[a2.id]) pairwise[a2.id] = {};
-        if (!pairwise[a1.id][a2.id]) pairwise[a1.id][a2.id] = { wins: 0, losses: 0 };
-        if (!pairwise[a2.id][a1.id]) pairwise[a2.id][a1.id] = { wins: 0, losses: 0 };
+        if (!pairwise[a1.id][a2.id]) pairwise[a1.id][a2.id] = { wins: 0, losses: 0, champWins: 0, champLosses: 0 };
+        if (!pairwise[a2.id][a1.id]) pairwise[a2.id][a1.id] = { wins: 0, losses: 0, champWins: 0, champLosses: 0 };
 
+        const tier = _meetTier(race1.meet);
         if (a1wins) {
           pairwise[a1.id][a2.id].wins++;
           pairwise[a2.id][a1.id].losses++;
+          if (tier >= 2) { pairwise[a1.id][a2.id].champWins++; pairwise[a2.id][a1.id].champLosses++; }
         } else if (a2wins) {
           pairwise[a2.id][a1.id].wins++;
           pairwise[a1.id][a2.id].losses++;
+          if (tier >= 2) { pairwise[a2.id][a1.id].champWins++; pairwise[a1.id][a2.id].champLosses++; }
         }
       });
     }
@@ -530,7 +583,7 @@ function _computeAllH2HRecords(year, eventFilter, rankedOnly) {
           if (!records[a1.id].matchups[a2.id]) records[a1.id].matchups[a2.id] = { fullName: a2.name, id: a2.id, wins: 0, losses: 0, races: [] };
           if (a1wins) { records[a1.id].wins++; records[a1.id].beatCounts[n2] = (records[a1.id].beatCounts[n2] || 0) + 1; records[a1.id].matchups[a2.id].wins++; }
           else if (a2wins) { records[a1.id].losses++; records[a1.id].matchups[a2.id].losses++; }
-          records[a1.id].matchups[a2.id].races.push({ date: race1.date, meet: race1.meet, event: race1.event, won: a1wins, myTime: race1.time, theirTime: match.time });
+          records[a1.id].matchups[a2.id].races.push({ date: race1.date, meet: race1.meet, event: race1.event, won: a1wins, myTime: race1.time, theirTime: match.time, tier: _meetTier(race1.meet) });
           records[a1.id].sequence.push({ date: race1.date, won: a1wins });
         }
         if (countForA2) {
@@ -538,7 +591,7 @@ function _computeAllH2HRecords(year, eventFilter, rankedOnly) {
           if (!records[a2.id].matchups[a1.id]) records[a2.id].matchups[a1.id] = { fullName: a1.name, id: a1.id, wins: 0, losses: 0, races: [] };
           if (a2wins) { records[a2.id].wins++; records[a2.id].beatCounts[n1] = (records[a2.id].beatCounts[n1] || 0) + 1; records[a2.id].matchups[a1.id].wins++; }
           else if (a1wins) { records[a2.id].losses++; records[a2.id].matchups[a1.id].losses++; }
-          records[a2.id].matchups[a1.id].races.push({ date: race1.date, meet: race1.meet, event: race1.event, won: a2wins, myTime: match.time, theirTime: race1.time });
+          records[a2.id].matchups[a1.id].races.push({ date: race1.date, meet: race1.meet, event: race1.event, won: a2wins, myTime: match.time, theirTime: race1.time, tier: _meetTier(race1.meet) });
           records[a2.id].sequence.push({ date: race1.date, won: a2wins });
         }
 
