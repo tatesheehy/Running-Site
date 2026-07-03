@@ -78,7 +78,7 @@ function buildAthletesPage() {
           <button class="ath-page-sort active" data-sort="alpha" onclick="sortAthletes('alpha')">A – Z</button>
           <button class="ath-page-sort" data-sort="country" onclick="sortAthletes('country')">By Country</button>
           <button class="ath-page-sort my-athletes-btn" id="my-athletes-btn" onclick="toggleMyAthletes()" style="${loggedIn ? '' : 'display:none'}">
-            ${_FAV_HEART} My Athletes
+            My Athletes
           </button>
           <button class="ath-page-sort" id="ath-map-btn" onclick="toggleAthleteMap()">Map</button>
         </div>

@@ -11,7 +11,7 @@
   justify-content: space-between;
   gap: 16px;
   padding: 40px 0 20px;
-  border-bottom: 3px solid var(--accent);
+  border-bottom: 1px solid var(--border);
   margin-bottom: 32px;
 }
 
@@ -286,29 +286,28 @@ a.rd-countdown-pill { cursor: pointer; }
 a.rd-countdown-pill:hover { opacity: 0.85; }
 
 .rd-view-toggle {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 2px;
-  background: #f0f0f0;
-  border-radius: 8px;
-  padding: 3px;
+  background: none;
+  padding: 0;
 }
 .rd-view-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border: none;
   background: none;
-  border-radius: 6px;
+  border-radius: 4px;
   cursor: pointer;
-  color: #999;
-  transition: background 0.15s, color 0.15s;
+  color: var(--muted);
+  transition: background 0.12s, color 0.12s;
 }
-.rd-view-btn svg { width: 16px; height: 16px; }
-.rd-view-btn:hover { color: #444; }
-.rd-view-btn--active { background: #fff; color: var(--text); box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.rd-view-btn svg { width: 15px; height: 15px; }
+.rd-view-btn:hover:not(.rd-view-btn--active) { color: var(--text); }
+.rd-view-btn--active { background: var(--dark); color: #fff; }
 
 .rd-grid {
   display: grid;
@@ -549,10 +548,10 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
 }
 .rd-row:hover {
   background: var(--bg-light);
-  border-left-color: var(--accent);
+  border-left-color: var(--dark);
 }
 .rd-row--podium { border-left-color: var(--border); padding-top: 22px; }
-.rd-row--podium:hover { border-left-color: var(--accent); }
+.rd-row--podium:hover { border-left-color: var(--dark); }
 
 .rd-rank {
   font-family: var(--font-display);
@@ -778,29 +777,26 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
 /* ── RANKINGS HUB ACTIONS ────────────────────────────────── */
 .rankings-hub-actions {
   display: flex;
-  align-items: stretch;
-  border: 1.5px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
+  align-items: center;
+  gap: 4px;
   flex-shrink: 0;
-  background: var(--bg);
 }
 .rankings-archive-link {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #888;
+  color: var(--muted);
   text-decoration: none;
   white-space: nowrap;
-  padding: 6px 14px;
+  padding: 4px 9px;
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  border-radius: 6px;
-  transition: color 0.15s;
+  border-radius: 4px;
+  transition: color 0.12s;
 }
-.rankings-archive-link:hover { color: #333; }
+.rankings-archive-link:hover { color: var(--text); }
 
 /* ── RANKINGS ARCHIVE — VINTAGE ───────────────────────── */
 
@@ -1059,18 +1055,17 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
 
 /* ── H2H BUTTON (shared, used on rankings pages) ─────────── */
 .h2h-hub-btn {
-  background: #fff;
+  background: var(--dark);
   border: none;
-  color: var(--accent);
-  font-size: 12px;
+  color: #fff;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 6px 14px;
-  border-radius: 6px;
+  padding: 4px 9px;
+  border-radius: 4px;
   cursor: pointer;
-  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+  transition: opacity 0.12s;
   white-space: nowrap;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
-.h2h-hub-btn:hover { background: #fff; opacity: 0.9; }
+.h2h-hub-btn:hover { opacity: 0.8; }
