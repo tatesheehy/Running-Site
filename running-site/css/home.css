@@ -28,8 +28,6 @@
 }
 
 .home-rankings-col {
-  position: sticky;
-  top: 80px;
 }
 
 .home-rankings-col .rw-header { padding-top: 0; }
