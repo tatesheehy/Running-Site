@@ -84,32 +84,53 @@
   "country": "United States",
   "results": [
     {
+      "date": "JUN 13",
+      "meet": "USATF LA Grand Prix",
+      "event": "1500m",
+      "time": "3:33.71",
+      "place": "1"
+    },
+    {
       "date": "MAY 23",
-      "meet": "",
-      "event": "800 m",
+      "meet": "LA Track Festival",
+      "event": "800m",
       "time": "1:45.79",
-      "place": ""
+      "place": "7"
     },
     {
       "date": "MAY 1",
-      "meet": "",
-      "event": "5000 m",
+      "meet": "Payton Jordan Invitational",
+      "event": "5000m",
       "time": "13:13.11",
-      "place": ""
+      "place": "3"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "USA Indoor Championships",
+      "event": "3000 Metres Short Track",
+      "time": "7:47.99",
+      "place": "12"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "3000 Metres Short Track",
+      "time": "7:35.29",
+      "place": "3"
     },
     {
       "date": "FEB 1",
-      "meet": "",
-      "event": "2 Mi",
+      "meet": "Millrose Games",
+      "event": "2 Miles Short Track",
       "time": "8:15.93",
-      "place": ""
+      "place": "11"
     },
     {
-      "date": "FEB 1",
-      "meet": "",
-      "event": "2 Mi sh",
-      "time": "8:15.93",
-      "place": ""
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Relay",
+      "time": "22:43",
+      "place": "5"
     }
   ],
   "dob": "2002-10-19",
