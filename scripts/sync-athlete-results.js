@@ -392,20 +392,60 @@ function parseResultsRegex(html, year) {
   return results.map(({ _date, ...r }) => r);
 }
 
+// Parse competitor.resultsByYear.resultsByEvent[] — newer WA page structure where
+// each resultsByEvent entry holds the discipline name and an array of individual results.
+function parseResultsByEvent(rbye, year) {
+  const results = [], seen = new Set();
+  for (const ev of (rbye || [])) {
+    const discipline = ev.discipline || ev.name || ev.disciplineName || '';
+    for (const r of (ev.results || [])) {
+      const raw = r.date || r.eventDate || '';
+      if (year && !String(raw).includes(year)) continue;
+      const parsed = parseAnyDate(raw);
+      if (!parsed) continue;
+      const mark = r.mark || r.performance || r.result || r.time || '';
+      if (!mark) continue;
+      // competition field includes venue — trim to just the meet name
+      const meet = (r.competition || r.meet || '').split(',')[0].trim();
+      const shaped = {
+        _date: parsed.date,
+        date: parsed.formatted,
+        meet,
+        event: formatDiscipline(discipline),
+        time: mark,
+        place: String(r.place || r.position || ''),
+      };
+      const key = `${shaped.date}|${shaped.meet}|${shaped.event}|${shaped.time}`;
+      if (!seen.has(key)) { seen.add(key); results.push(shaped); }
+    }
+  }
+  results.sort((a, b) => b._date - a._date);
+  return results.map(({ _date, ...r }) => r);
+}
+
 function parseResults(html, year) {
   const ndMatch = html.match(/<script id="__NEXT_DATA__"[^>]*>([\s\S]*?)<\/script>/);
   if (ndMatch) {
     try {
       const nd = JSON.parse(ndMatch[1]);
       const pp = nd.props?.pageProps || {};
-      const ath = pp.athlete || pp.data?.athlete || pp.athleteProfile || {};
+      // WA uses either 'athlete' (older) or 'competitor' (newer page structure)
+      const ath = pp.athlete || pp.data?.athlete || pp.athleteProfile || pp.competitor || {};
 
       if (DEBUG) {
         console.log(`  [debug] pageProps keys: ${Object.keys(pp).slice(0,12).join(', ')}`);
         console.log(`  [debug] athlete keys:   ${Object.keys(ath).slice(0,12).join(', ')}`);
       }
 
-      // Try the specific resultsByYear path WA commonly uses
+      // Newer structure: competitor.resultsByYear.resultsByEvent[{ discipline, results[] }]
+      const rbye = ath.resultsByYear?.resultsByEvent;
+      if (Array.isArray(rbye)) {
+        const r = parseResultsByEvent(rbye, year);
+        if (DEBUG) console.log(`  [debug] resultsByEvent path: ${r.length} results`);
+        if (r.length) return r;
+      }
+
+      // Older structure: resultsByYear[{ year, results[] }]
       const rby = ath.resultsByYear || pp.resultsByYear;
       if (Array.isArray(rby)) {
         const entry = rby.find(e => e.year === +year || String(e.year) === year);
