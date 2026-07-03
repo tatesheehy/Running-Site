@@ -10,6 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
+  "lastSynced": "2026-07-03",
   "prs": [
     {
       "event": "800m",
@@ -64,69 +65,33 @@
   "country": "United States",
   "results": [
     {
-      "date": "JUN 21",
-      "meet": "Portland Track Festival",
-      "event": "800m",
-      "time": "1:46.40",
-      "place": "8"
-    },
-    {
-      "date": "JUN 13",
-      "meet": "USATF LA Grand Prix",
-      "event": "1500m",
-      "time": "3:34.08",
-      "place": "2"
-    },
-    {
-      "date": "MAY 23",
-      "meet": "LA Track Festival",
-      "event": "800m",
-      "time": "1:45.71",
-      "place": "6"
-    },
-    {
-      "date": "MAR 1",
-      "meet": "USA Indoor Championships",
-      "event": "1500 Metres Short Track",
-      "time": "3:38.90",
-      "place": "8"
-    },
-    {
       "date": "FEB 22",
-      "meet": "Saucony Battle for Boston",
-      "event": "1500 Metres Short Track",
+      "meet": "",
+      "event": "1500 m sh",
       "time": "3:35.20",
-      "place": "3"
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "Mile Short Track",
-      "time": "3:53.29",
-      "place": "10"
+      "place": ""
     },
     {
       "date": "FEB 7",
-      "meet": "Penn Classic",
-      "event": "3000 Metres Short Track",
+      "meet": "",
+      "event": "3000 m",
       "time": "7:55.13",
-      "place": "1"
+      "place": ""
     },
     {
-      "date": "JAN 24",
-      "meet": "Penn Elite",
-      "event": "1000 Metres Short Track",
-      "time": "2:20.49",
-      "place": "1"
+      "date": "FEB 7",
+      "meet": "",
+      "event": "3000 m sh",
+      "time": "7:55.13",
+      "place": ""
     }
   ],
+  "dob": "2002-01-23",
   "college": "Georgetown",
   "weight": "x",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "abel-teffra",
-  "age": "24",
-  "dob": "2002-01-23",
-  "lastSynced": "2026-07-02"
+  "age": "24"
 }

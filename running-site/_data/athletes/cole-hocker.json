@@ -26,7 +26,38 @@
   "name": "Cole Hocker",
   "headlineKey": "America's next great miler",
   "flag": "US",
+  "honours": [
+    {
+      "competition": "Olympic Games",
+      "short": "OLY",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2024"
+    },
+    {
+      "competition": "World Athletics Championships",
+      "short": "WC",
+      "discipline": "5000m",
+      "place": 1,
+      "year": "2025"
+    },
+    {
+      "competition": "World Athletics Indoor Championships",
+      "short": "WI",
+      "discipline": "1500m",
+      "place": 2,
+      "year": "2024"
+    },
+    {
+      "competition": "World Athletics Indoor Championships",
+      "short": "WI",
+      "discipline": "3000m",
+      "place": 2,
+      "year": "2024"
+    }
+  ],
   "seasons": "4",
+  "lastSynced": "2026-07-03",
   "prs": [
     {
       "event": "800m",
@@ -112,98 +143,60 @@
   "country": "United States",
   "results": [
     {
-      "date": "JUN 14",
-      "meet": "USATF LA Grand Prix",
-      "event": "3000m",
-      "time": "7:37.77",
-      "place": "2"
-    },
-    {
-      "date": "MAR 21",
-      "meet": "World Athletics Indoor Championships",
-      "event": "3000 Metres Short Track",
-      "time": "7:35.70",
-      "place": "2"
-    },
-    {
-      "date": "MAR 1",
-      "meet": "USA Indoor Championships",
-      "event": "1500 Metres Short Track",
-      "time": "3:38.08",
-      "place": "5"
-    },
-    {
-      "date": "FEB 28",
-      "meet": "USA Indoor Championships",
-      "event": "3000 Metres Short Track",
-      "time": "7:39.25",
-      "place": "1"
+      "date": "FEB 14",
+      "meet": "",
+      "event": "1500 m sh",
+      "time": "3:30.80",
+      "place": ""
     },
     {
       "date": "FEB 14",
-      "meet": "Sound Invite",
-      "event": "Mile Short Track",
+      "meet": "",
+      "event": "Mile",
       "time": "3:45.94",
-      "place": "1"
+      "place": ""
+    },
+    {
+      "date": "FEB 14",
+      "meet": "",
+      "event": "Mile sh",
+      "time": "3:45.94",
+      "place": ""
     },
     {
       "date": "FEB 7",
-      "meet": "Doc Hale Virginia Tech Invitational",
-      "event": "1000 Metres Short Track",
+      "meet": "",
+      "event": "1000 m",
       "time": "2:16.30",
-      "place": "1"
+      "place": ""
     },
     {
-      "date": "FEB 1",
-      "meet": "Millrose Games",
-      "event": "2 Miles Short Track",
-      "time": "8:07.31",
-      "place": "1"
+      "date": "FEB 7",
+      "meet": "",
+      "event": "1000 m sh",
+      "time": "2:16.30",
+      "place": ""
     },
     {
       "date": "JAN 23",
-      "meet": "Hokie Invitational",
-      "event": "2000 Metres Short Track",
+      "meet": "",
+      "event": "2000 m",
       "time": "4:52.92",
-      "place": "1"
+      "place": ""
+    },
+    {
+      "date": "JAN 23",
+      "meet": "",
+      "event": "2000 m sh",
+      "time": "4:52.92",
+      "place": ""
     }
   ],
+  "dob": "2001-06-06",
   "weight": "145 lbs",
   "coach": "Jerry Schumacher",
   "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
   "event": "MIDDLE DISTANCE + DISTANCE",
   "id": "cole-hocker",
-  "age": "25",
-  "dob": "2001-06-06",
-  "honours": [
-    {
-      "competition": "Olympic Games",
-      "short": "OLY",
-      "discipline": "1500m",
-      "place": 1,
-      "year": "2024"
-    },
-    {
-      "competition": "World Athletics Championships",
-      "short": "WC",
-      "discipline": "5000m",
-      "place": 1,
-      "year": "2025"
-    },
-    {
-      "competition": "World Athletics Indoor Championships",
-      "short": "WI",
-      "discipline": "1500m",
-      "place": 2,
-      "year": "2024"
-    },
-    {
-      "competition": "World Athletics Indoor Championships",
-      "short": "WI",
-      "discipline": "3000m",
-      "place": 2,
-      "year": "2024"
-    }
-  ],
-  "lastSynced": "2026-07-02"
+  "age": "25"
 }

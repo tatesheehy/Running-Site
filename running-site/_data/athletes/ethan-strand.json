@@ -9,6 +9,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
+  "lastSynced": "2026-07-03",
   "prs": [
     {
       "event": "800m",
@@ -83,62 +84,40 @@
   "country": "United States",
   "results": [
     {
-      "date": "JUN 13",
-      "meet": "USATF LA Grand Prix",
-      "event": "1500m",
-      "time": "3:33.71",
-      "place": "1"
-    },
-    {
       "date": "MAY 23",
-      "meet": "LA Track Festival",
-      "event": "800m",
+      "meet": "",
+      "event": "800 m",
       "time": "1:45.79",
-      "place": "7"
+      "place": ""
     },
     {
       "date": "MAY 1",
-      "meet": "Payton Jordan Invitational",
-      "event": "5000m",
+      "meet": "",
+      "event": "5000 m",
       "time": "13:13.11",
-      "place": "3"
-    },
-    {
-      "date": "FEB 28",
-      "meet": "USA Indoor Championships",
-      "event": "3000 Metres Short Track",
-      "time": "7:47.99",
-      "place": "12"
-    },
-    {
-      "date": "FEB 14",
-      "meet": "Sound Invite",
-      "event": "3000 Metres Short Track",
-      "time": "7:35.29",
-      "place": "3"
+      "place": ""
     },
     {
       "date": "FEB 1",
-      "meet": "Millrose Games",
-      "event": "2 Miles Short Track",
+      "meet": "",
+      "event": "2 Mi",
       "time": "8:15.93",
-      "place": "11"
+      "place": ""
     },
     {
-      "date": "JAN 10",
-      "meet": "46th World Athletics Cross Country Championships",
-      "event": "Cross Country Relay",
-      "time": "22:43",
-      "place": "5"
+      "date": "FEB 1",
+      "meet": "",
+      "event": "2 Mi sh",
+      "time": "8:15.93",
+      "place": ""
     }
   ],
+  "dob": "2002-10-19",
   "college": "",
   "weight": "x",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",
   "id": "ethan-strand",
-  "age": "23",
-  "dob": "2002-10-19",
-  "lastSynced": "2026-07-02"
+  "age": "23"
 }

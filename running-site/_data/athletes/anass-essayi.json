@@ -4,6 +4,8 @@
   "collegeLogo": "/images/south_carolina_gamecocks_logo_secondary_19666280.png",
   "waUrl": "https://worldathletics.org/athletes/morocco/anass-essayi-14805620",
   "name": "Anass Essayi",
+  "flag": "MA",
+  "lastSynced": "2026-07-03",
   "prs": [
     {
       "event": "800m",
@@ -41,34 +43,26 @@
   "questionTitle": "Next question",
   "photo": "/images/essayi_card.png",
   "ncaa": false,
+  "country": "Morocco",
   "results": [
     {
       "date": "JUN 28",
-      "meet": "Meeting de Paris",
+      "meet": "Meeting de Paris, Stade Charléty, Paris",
       "event": "1500m",
       "time": "3:30.17",
-      "place": "4"
-    },
-    {
-      "date": "JUN 16",
-      "meet": "65th Ostrava Golden Spike",
-      "event": "Mile",
-      "time": "3:49.94",
-      "place": ""
+      "place": "4."
     },
     {
       "date": "MAY 31",
-      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat, Complexe Sportif Prince Moulay Abdellah, Rabat",
       "event": "1500m",
       "time": "3:32.23",
-      "place": "9"
+      "place": "9."
     }
   ],
+  "dob": "2001-05-18",
   "college": "South Carolina",
   "event": "MIDDLE DISTANCE",
-  "country": "Morocco",
-  "flag": "MA",
-  "dob": "2001-05-18",
-  "age": "25",
-  "lastSynced": "2026-07-02"
+  "id": "anass-essayi",
+  "age": "25"
 }

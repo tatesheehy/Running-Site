@@ -10,6 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
+  "lastSynced": "2026-07-03",
   "prs": [
     {
       "event": "1500m",
@@ -45,110 +46,46 @@
   "results": [
     {
       "date": "JUN 12",
-      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "meet": "NCAA Division I Outdoor Track and Field Championships, Hayward Field, Eugene, OR",
       "event": "1500m",
       "time": "3:38.06",
-      "place": "7"
+      "place": "7."
     },
     {
       "date": "JUN 10",
-      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "meet": "NCAA Division I Outdoor Track and Field Championships, Hayward Field, Eugene, OR",
       "event": "1500m",
       "time": "3:36.30",
-      "place": "5"
+      "place": "5."
     },
     {
       "date": "MAY 29",
-      "meet": "NCAA Division I West First Rounds",
+      "meet": "NCAA Division I West First Rounds, John McDonnell Field, Fayetteville, AR",
       "event": "1500m",
       "time": "3:38.06",
-      "place": "4"
-    },
-    {
-      "date": "MAY 27",
-      "meet": "NCAA Division I West First Rounds",
-      "event": "1500m",
-      "time": "3:40.15",
-      "place": "6"
-    },
-    {
-      "date": "MAY 16",
-      "meet": "The Big West Track and Field Championships",
-      "event": "1500m",
-      "time": "3:45.53",
-      "place": "3"
-    },
-    {
-      "date": "MAY 16",
-      "meet": "The Big West Track and Field Championships",
-      "event": "5000m",
-      "time": "14:15.70",
-      "place": "3"
-    },
-    {
-      "date": "MAY 15",
-      "meet": "The Big West Track and Field Championships",
-      "event": "1500m",
-      "time": "3:57.52",
-      "place": "1"
+      "place": "4."
     },
     {
       "date": "MAY 9",
-      "meet": "Franson Last Chance",
+      "meet": "Franson Last Chance, Cougar Athletic Stadium, Azusa, CA",
       "event": "1500m",
       "time": "3:35.13",
-      "place": "3"
-    },
-    {
-      "date": "APR 17",
-      "meet": "Bryan Clay Invitational",
-      "event": "5000m",
-      "time": "13:28.40",
-      "place": "2"
-    },
-    {
-      "date": "APR 3",
-      "meet": "Stanford Invitational",
-      "event": "1500m",
-      "time": "3:39.28",
-      "place": "2"
-    },
-    {
-      "date": "APR 3",
-      "meet": "Stanford Invitational",
-      "event": "10000m",
-      "time": "DNF",
-      "place": ""
-    },
-    {
-      "date": "FEB 21",
-      "meet": "Alex Wilson Invitational",
-      "event": "Distance Medley",
-      "time": "9:25.05",
-      "place": "8"
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Husky Classic",
-      "event": "Mile",
-      "time": "3:57.48",
-      "place": "5"
+      "place": "3."
     },
     {
       "date": "JAN 30",
-      "meet": "UW Invite/Mile City",
+      "meet": "UW Invite/Mile City, Dempsey Indoor, Seattle, WA (i)",
       "event": "Mile",
       "time": "3:56.05",
-      "place": "7"
+      "place": "7."
     }
   ],
+  "dob": "2005-08-05",
   "college": "Cal Poly",
   "weight": "x",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",
   "id": "chris-caudillo",
-  "age": "20",
-  "lastSynced": "2026-07-02",
-  "dob": "2005-08-05"
+  "age": "20"
 }

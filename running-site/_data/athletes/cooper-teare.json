@@ -9,6 +9,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
+  "lastSynced": "2026-07-03",
   "prs": [
     {
       "event": "1500m",
@@ -83,82 +84,67 @@
   "country": "United States",
   "results": [
     {
-      "date": "JUN 13",
-      "meet": "USATF LA Grand Prix",
-      "event": "5000m",
-      "time": "13:18.13",
-      "place": "8"
-    },
-    {
-      "date": "MAY 23",
-      "meet": "LA Track Festival",
-      "event": "1500m",
-      "time": "3:34.23",
-      "place": "5"
-    },
-    {
-      "date": "MAY 2",
-      "meet": "USA 5 km Road Running Championships",
-      "event": "5 Kilometres Road",
-      "time": "13:29",
-      "place": "3"
-    },
-    {
       "date": "APR 18",
-      "meet": "Boston 5K",
-      "event": "5 Kilometres Road",
+      "meet": "",
+      "event": "5 Kilom Road",
       "time": "13:25",
-      "place": "4"
-    },
-    {
-      "date": "MAR 1",
-      "meet": "USA Indoor Championships",
-      "event": "1500 Metres Short Track",
-      "time": "3:38.87",
-      "place": "7"
-    },
-    {
-      "date": "FEB 28",
-      "meet": "USA Indoor Championships",
-      "event": "3000 Metres Short Track",
-      "time": "7:41.62",
-      "place": "7"
+      "place": ""
     },
     {
       "date": "FEB 14",
-      "meet": "Sound Invite",
-      "event": "Mile Short Track",
-      "time": "3:50.49",
-      "place": "2"
+      "meet": "",
+      "event": "1500 m sh",
+      "time": "3:34.35",
+      "place": ""
     },
     {
       "date": "FEB 7",
-      "meet": "Doc Hale Virginia Tech Invitational",
-      "event": "1000 Metres Short Track",
+      "meet": "",
+      "event": "1000 m",
       "time": "2:17.76",
-      "place": "2"
+      "place": ""
+    },
+    {
+      "date": "FEB 7",
+      "meet": "",
+      "event": "1000 m sh",
+      "time": "2:17.76",
+      "place": ""
     },
     {
       "date": "FEB 1",
-      "meet": "Millrose Games",
-      "event": "2 Miles Short Track",
+      "meet": "",
+      "event": "2 Mi",
       "time": "8:08.91",
-      "place": "7"
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "",
+      "event": "2 Mi sh",
+      "time": "8:08.91",
+      "place": ""
     },
     {
       "date": "JAN 23",
-      "meet": "Hokie Invitational",
-      "event": "2000 Metres Short Track",
+      "meet": "",
+      "event": "2000 m",
       "time": "4:54.74",
-      "place": "2"
+      "place": ""
+    },
+    {
+      "date": "JAN 23",
+      "meet": "",
+      "event": "2000 m sh",
+      "time": "4:54.74",
+      "place": ""
     }
   ],
+  "dob": "1999-08-18",
   "weight": "x",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",
   "id": "cooper-teare",
-  "age": "26",
-  "dob": "1999-08-18",
-  "lastSynced": "2026-07-02"
+  "age": "26"
 }

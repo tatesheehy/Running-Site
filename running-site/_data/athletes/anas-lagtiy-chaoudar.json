@@ -3,6 +3,8 @@
   "reviewTitle": "Season review",
   "waUrl": "https://worldathletics.org/athletes/france/anas-lagtiy-chaoudar-15032059",
   "name": "Anas Lagtiy Chaoudar",
+  "flag": "FR",
+  "lastSynced": "2026-07-03",
   "prs": [
     {
       "event": "800m",
@@ -44,64 +46,35 @@
   "results": [
     {
       "date": "JUN 28",
-      "meet": "Meeting de Paris",
+      "meet": "Meeting de Paris, Stade Charléty, Paris",
       "event": "1500m",
       "time": "3:30.31",
-      "place": "6"
-    },
-    {
-      "date": "JUN 21",
-      "meet": "FBK Games",
-      "event": "",
-      "time": "3:43.99",
-      "place": "15"
+      "place": "6."
     },
     {
       "date": "JUN 13",
-      "meet": "Meeting Nikaia",
+      "meet": "Meeting Nikaia, Parc des Sports C. Ehrmann, Nice",
       "event": "1500m",
       "time": "3:32.29",
-      "place": "3"
-    },
-    {
-      "date": "JUN 6",
-      "meet": "Meeting de Strasbourg",
-      "event": "800m",
-      "time": "1:46.69",
-      "place": ""
-    },
-    {
-      "date": "MAY 29",
-      "meet": "8th Irena Szewińska Memorial",
-      "event": "",
-      "time": "DNF",
-      "place": ""
-    },
-    {
-      "date": "MAY 17",
-      "meet": "Finale interclubs N2A G-E",
-      "event": "",
-      "time": "1:49.11",
-      "place": "1"
+      "place": "3."
     },
     {
       "date": "FEB 8",
-      "meet": "Meeting Metz Moselle Athlélor Crédit Mutuel",
+      "meet": "Meeting Metz Moselle Athlélor Crédit Mutuel, L'Anneau-Halle d'athlétisme de Metz, Metz (i)",
       "event": "3000m sh",
       "time": "7:49.79",
-      "place": "4"
+      "place": "4."
     },
     {
       "date": "JAN 30",
-      "meet": "Elite Indoor Track Miramas Meeting",
+      "meet": "Elite Indoor Track Miramas Meeting, Stadium Miramas Métropole, Miramas (i)",
       "event": "1500m sh",
       "time": "3:36.64",
-      "place": "1"
+      "place": "1."
     }
   ],
-  "event": "MIDDLE DISTANCE",
-  "flag": "FR",
   "dob": "2004-01-17",
-  "age": "22",
-  "lastSynced": "2026-07-02"
+  "event": "MIDDLE DISTANCE",
+  "id": "anas-lagtiy-chaoudar",
+  "age": "22"
 }

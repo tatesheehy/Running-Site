@@ -8,57 +8,6 @@
   "name": "Emmanuel Wanyonyi",
   "headlineKey": "x",
   "flag": "KE",
-  "seasons": "x",
-  "prs": [
-    {
-      "event": "800m",
-      "time": "1:41.11"
-    },
-    {
-      "event": "1500m",
-      "time": "3:34.11"
-    },
-    {
-      "event": "Mile Road",
-      "time": "3:52.45"
-    }
-  ],
-  "hometown": "x",
-  "questionTitle": "Next question",
-  "photo": "/images/wanyonyi_card.png",
-  "ncaa": false,
-  "club": "x",
-  "country": "Kenya",
-  "results": [
-    {
-      "date": "JUN 10",
-      "meet": "Oslo Bislett Games",
-      "event": "800m",
-      "time": "1:42.09",
-      "place": "2"
-    },
-    {
-      "date": "MAY 31",
-      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-      "event": "800m",
-      "time": "1:43.56",
-      "place": "2"
-    },
-    {
-      "date": "APR 24",
-      "meet": "Kip Keino Classic",
-      "event": "1500m",
-      "time": "3:34.11",
-      "place": "1"
-    }
-  ],
-  "weight": "x",
-  "coach": "x",
-  "reviewBody": "x",
-  "event": "MIDDLE DISTANCE",
-  "id": "emmanuel-wanyonyi",
-  "age": "21",
-  "dob": "2004-08-01",
   "honours": [
     {
       "competition": "Olympic Games",
@@ -103,5 +52,42 @@
       "year": "2023"
     }
   ],
-  "lastSynced": "2026-07-02"
+  "seasons": "x",
+  "lastSynced": "2026-07-03",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:41.11"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.11"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:52.45"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "/images/wanyonyi_card.png",
+  "ncaa": false,
+  "club": "x",
+  "country": "Kenya",
+  "results": [
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games, Bislett Stadion, Oslo",
+      "event": "800m",
+      "time": "1:42.09",
+      "place": "2."
+    }
+  ],
+  "dob": "2004-08-01",
+  "weight": "x",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "emmanuel-wanyonyi",
+  "age": "21"
 }

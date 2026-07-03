@@ -10,6 +10,7 @@
   "headlineKey": "xx",
   "flag": "AU",
   "seasons": "2",
+  "lastSynced": "2026-07-03",
   "prs": [
     {
       "event": "800m",
@@ -56,88 +57,52 @@
   "results": [
     {
       "date": "JUN 28",
-      "meet": "Meeting de Paris",
+      "meet": "Meeting de Paris, Stade Charléty, Paris",
       "event": "1500m",
       "time": "3:28.00",
-      "place": "1"
-    },
-    {
-      "date": "JUN 10",
-      "meet": "Oslo Bislett Games",
-      "event": "Mile",
-      "time": "3:48.35",
-      "place": "3"
+      "place": "1."
     },
     {
       "date": "JUN 7",
-      "meet": "BAUHAUS-Galan",
+      "meet": "BAUHAUS-Galan, Olympiastadion, Stockholm",
       "event": "1500m",
       "time": "3:30.32",
-      "place": "2"
-    },
-    {
-      "date": "MAY 30",
-      "meet": "10. PUMA NITRO Lange Laufnacht",
-      "event": "800m",
-      "time": "1:44.05",
-      "place": "1"
-    },
-    {
-      "date": "APR 11",
-      "meet": "Australian Championships",
-      "event": "5000m",
-      "time": "13:11.66",
-      "place": "1"
+      "place": "2."
     },
     {
       "date": "APR 10",
-      "meet": "Australian Championships",
+      "meet": "Australian Championships, Olympic Park, Sydney",
       "event": "1500m",
       "time": "3:29.85",
-      "place": "1"
-    },
-    {
-      "date": "APR 9",
-      "meet": "Australian Championships",
-      "event": "1500m",
-      "time": "3:39.69",
-      "place": "1"
-    },
-    {
-      "date": "MAR 28",
-      "meet": "Maurie Plant Meet",
-      "event": "1500m",
-      "time": "3:30.42",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "FEB 1",
-      "meet": "Millrose Games",
-      "event": "Mile Short Track",
+      "meet": "Millrose Games, Armory Track&Field Center, New York, NY (i)",
+      "event": "Mile sh",
       "time": "3:47.57",
-      "place": "1"
+      "place": "1."
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games, Armory Track&Field Center, New York, NY (i)",
+      "event": "1500m sh",
+      "time": "3:32.78",
+      "place": ""
     },
     {
       "date": "JAN 24",
-      "meet": "New Balance Indoor Grand Prix",
-      "event": "3000 Metres Short Track",
+      "meet": "New Balance Indoor Grand Prix, The Track at New Balance, Boston, MA (i)",
+      "event": "3000m sh",
       "time": "7:27.57",
-      "place": "1"
-    },
-    {
-      "date": "JAN 16",
-      "meet": "UW Preview",
-      "event": "Mile",
-      "time": "3:49.81",
-      "place": "1"
+      "place": "1."
     }
   ],
+  "dob": "2006-06-09",
   "weight": "150",
   "coach": "xx",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "cameron-myers",
-  "age": "20",
-  "dob": "2006-06-09",
-  "lastSynced": "2026-07-02"
+  "age": "20"
 }
