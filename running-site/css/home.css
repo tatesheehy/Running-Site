@@ -27,6 +27,22 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.home-latest-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 0 12px;
+  border-bottom: 1.5px solid var(--border);
+  margin-bottom: 20px;
+}
+
+.home-latest-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
 .home-rankings-col {
 }
 
@@ -205,31 +221,30 @@
 
 /* ── ATHLETE OF THE WEEK ──────────────────────────────────── */
 .aotw-row {
-  position: relative;
+  display: flex;
   margin-top: 20px;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
   transition: opacity 0.15s;
-  display: block;
+  background: #111;
 }
-.aotw-row:hover { opacity: 0.88; }
+.aotw-row:hover { opacity: 0.85; }
 
 .aotw-photo {
-  width: 100%;
-  height: 280px;
+  width: 115px;
+  flex-shrink: 0;
   background-size: cover;
   background-position: center top;
-  display: block;
 }
 
 .aotw-body {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 72px 16px 16px;
-  background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.72) 45%, rgba(0,0,0,0.92) 100%);
+  flex: 1;
+  padding: 13px 13px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 0;
 }
 
 .aotw-label {
@@ -237,54 +252,78 @@
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.6);
-  margin-bottom: 4px;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.aotw-label::before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
 }
 
 .aotw-name {
   font-family: var(--font-display);
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.01em;
   line-height: 1.1;
   color: #fff;
-  margin-bottom: 6px;
-  transition: opacity 0.15s;
+  margin-bottom: 3px;
 }
 
 .aotw-meta {
-  font-size: 12px;
-  color: rgba(255,255,255,0.65);
+  font-size: 11px;
+  color: rgba(255,255,255,0.5);
   display: flex;
   align-items: center;
-  gap: 5px;
-  flex-wrap: wrap;
-  margin-bottom: 0;
+  gap: 4px;
 }
 
-.aotw-sep { color: rgba(255,255,255,0.3); }
+.aotw-meta .flag-icon {
+  width: 13px;
+  height: 9px;
+  flex-shrink: 0;
+}
 
-.aotw-stat {
+.aotw-stat-row {
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding-top: 8px;
+  margin-top: 8px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: space-between;
 }
 
 .aotw-stat-event {
-  font-size: 11px;
-  font-weight: 600;
-  color: rgba(255,255,255,0.65);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  background: rgba(255,255,255,0.1);
+  padding: 3px 7px;
+  border-radius: 4px;
 }
 
 .aotw-time {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 700;
   color: #fff;
+  letter-spacing: 0.02em;
 }
 
+.aotw-sep { display: none; }
+.aotw-stat { display: none; }
 .aotw-desc { display: none; }
-
 .aotw-cta { display: none; }
 
 /* ── COUNTDOWN ────────────────────────────────────────────── */
@@ -323,60 +362,49 @@
 
 .rw-header {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   gap: 8px;
-  margin-bottom: 16px;
-  padding-top: 40px;
+  padding-top: 0;
+  padding-bottom: 12px;
+  margin-bottom: 4px;
+  border-bottom: 1.5px solid var(--border);
 }
 
 .rw-title {
   font-family: var(--font-display);
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.rw-title::before {
-  content: '';
-  display: block;
-  width: 3px;
-  height: 18px;
-  background: var(--dark);
-  border-radius: 2px;
-  flex-shrink: 0;
 }
 
 .event-tabs {
   display: inline-flex;
-  background: var(--bg-light);
-  border: 1.5px solid var(--border);
-  border-radius: 20px;
-  padding: 3px;
   gap: 2px;
+  background: none;
+  border: none;
+  padding: 0;
 }
 
 .event-tab {
-  padding: 5px 13px;
-  font-size: 11px;
+  padding: 4px 9px;
+  font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   border: none;
   background: transparent;
   cursor: pointer;
-  border-radius: 16px;
-  transition: all 0.15s;
+  border-radius: 4px;
+  transition: all 0.12s;
   color: var(--muted);
 }
 
 .event-tab.active {
-  background: #fff;
-  color: var(--text);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  background: var(--dark);
+  color: #fff;
+  box-shadow: none;
 }
 
 .event-tab:hover:not(.active) { color: var(--text); }

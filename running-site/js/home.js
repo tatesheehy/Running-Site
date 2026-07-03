@@ -108,22 +108,20 @@ function buildHome() {
   const aotwAthlete = aotwCfg?.athleteId ? ATHLETES[aotwCfg.athleteId] : null;
   const aotwHtml = aotwAthlete ? (() => {
     const a = aotwAthlete;
-    const statStr = (aotwCfg.featuredEvent && aotwCfg.featuredTime)
-      ? `<span class="aotw-sep">·</span><span class="aotw-stat"><span class="aotw-stat-event">${aotwCfg.featuredEvent}</span><span class="aotw-time">${aotwCfg.featuredTime}</span></span>`
+    const statRow = (aotwCfg.featuredEvent && aotwCfg.featuredTime)
+      ? `<div class="aotw-stat-row"><span class="aotw-stat-event">${aotwCfg.featuredEvent}</span><span class="aotw-time">${aotwCfg.featuredTime}</span></div>`
       : '';
     return `
       <div class="aotw-row" onclick="openAthleteCard('${a.id}', null)" role="button" tabindex="0">
         <div class="aotw-photo" style="background-image:url('${a.photo || ''}');background-color:${a.photoBackground || '#1a1a2e'}"></div>
         <div class="aotw-body">
-          <div class="aotw-label">Athlete of the Week</div>
-          <div class="aotw-name">${a.name}</div>
-          <div class="aotw-meta">
-            ${renderFlag(a.flag)} ${a.country || ''}
-            ${statStr}
+          <div>
+            <div class="aotw-label">Athlete of the Week</div>
+            <div class="aotw-name">${a.name}</div>
+            <div class="aotw-meta">${renderFlag(a.flag)}<span>${a.country || ''}</span></div>
           </div>
-          ${aotwCfg.description ? `<p class="aotw-desc">${aotwCfg.description}</p>` : ''}
+          ${statRow}
         </div>
-        <div class="aotw-cta">View Profile →</div>
       </div>`;
   })() : '';
 
@@ -146,8 +144,8 @@ function buildHome() {
               </div>
             </div>
           </div>
-          <div class="section-header" style="margin-top:0;padding-top:18px;margin-bottom:8px">
-            <h2 class="section-title">${latestTitle}</h2>
+          <div class="home-latest-header">
+            <span class="home-latest-title">${latestTitle}</span>
           </div>
           <div class="articles-grid home-articles-grid">${latestHtml}</div>
           ${picksHtml ? `
