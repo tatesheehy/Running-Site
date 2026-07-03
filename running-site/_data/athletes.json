@@ -464,14 +464,14 @@
         {
           "date": "JUN 28",
           "meet": "Meeting de Paris",
-          "event": "1500 m",
+          "event": "1500m",
           "time": "3:30.17",
-          "place": "4."
+          "place": "4"
         },
         {
           "date": "JUN 16",
           "meet": "65th Ostrava Golden Spike",
-          "event": "1500 m",
+          "event": "1500m",
           "time": "3:35.22",
           "place": ""
         },
@@ -480,14 +480,14 @@
           "meet": "65th Ostrava Golden Spike",
           "event": "Mile",
           "time": "3:49.94",
-          "place": "3."
+          "place": "3"
         },
         {
           "date": "MAY 31",
           "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-          "event": "1500 m",
+          "event": "1500m",
           "time": "3:32.23",
-          "place": "9."
+          "place": "9"
         }
       ],
       "dob": "2001-05-18",
@@ -2930,32 +2930,60 @@
       "country": "United States",
       "results": [
         {
+          "date": "JUN 13",
+          "meet": "USATF LA Grand Prix",
+          "event": "1500m",
+          "time": "3:33.71",
+          "place": "1"
+        },
+        {
           "date": "MAY 23",
-          "meet": "",
-          "event": "800 m",
+          "meet": "LA Track Festival",
+          "event": "800m",
           "time": "1:45.79",
-          "place": ""
+          "place": "7"
         },
         {
           "date": "MAY 1",
-          "meet": "",
-          "event": "5000 m",
+          "meet": "Payton Jordan Invitational",
+          "event": "5000m",
           "time": "13:13.11",
+          "place": "3"
+        },
+        {
+          "date": "FEB 28",
+          "meet": "USA Indoor Championships",
+          "event": "3000 Metres Short Track",
+          "time": "7:47.99",
+          "place": "12"
+        },
+        {
+          "date": "FEB 14",
+          "meet": "Sound Invite",
+          "event": "3000 Metres Short Track",
+          "time": "7:35.29",
+          "place": "3"
+        },
+        {
+          "date": "FEB 1",
+          "meet": "Millrose Games",
+          "event": "3000 Metres Short Track",
+          "time": "7:41.28",
           "place": ""
         },
         {
           "date": "FEB 1",
-          "meet": "",
-          "event": "2 Mi",
+          "meet": "Millrose Games",
+          "event": "2 Miles Short Track",
           "time": "8:15.93",
-          "place": ""
+          "place": "11"
         },
         {
-          "date": "FEB 1",
-          "meet": "",
-          "event": "2 Mi sh",
-          "time": "8:15.93",
-          "place": ""
+          "date": "JAN 10",
+          "meet": "46th World Athletics Cross Country Championships",
+          "event": "Cross Country Relay",
+          "time": "22:43",
+          "place": "5"
         }
       ],
       "dob": "2002-10-19",
@@ -3715,7 +3743,88 @@
       ],
       "seasons": "12",
       "lastSynced": "2026-07-02",
-      "prs": [],
+      "prs": [
+        {
+          "event": "400m",
+          "time": "48.34"
+        },
+        {
+          "event": "800m",
+          "time": "1:43.65"
+        },
+        {
+          "event": "1500m",
+          "time": "3:29.23"
+        },
+        {
+          "event": "Mile",
+          "time": "3:47.82"
+        },
+        {
+          "event": "2000m",
+          "time": "4:53.69"
+        },
+        {
+          "event": "3000m",
+          "time": "7:37.81"
+        },
+        {
+          "event": "2 Miles",
+          "time": "8:20.15"
+        },
+        {
+          "event": "5000m",
+          "time": "15:37.32"
+        },
+        {
+          "event": "800 Metres Short Track",
+          "time": "1:47.69"
+        },
+        {
+          "event": "1000 Metres",
+          "time": "2:13.88"
+        },
+        {
+          "event": "1000 Metres Short Track",
+          "time": "2:17.51"
+        },
+        {
+          "event": "1500 Metres Short Track",
+          "time": "3:34.06"
+        },
+        {
+          "event": "Mile Short Track",
+          "time": "3:57.24"
+        },
+        {
+          "event": "2000 Metres Short Track",
+          "time": "4:53.69"
+        },
+        {
+          "event": "3000 Metres Short Track",
+          "time": "7:37.81"
+        },
+        {
+          "event": "2 Miles Short Track",
+          "time": "8:20.15"
+        },
+        {
+          "event": "Mile Road",
+          "time": "4:05.70"
+        },
+        {
+          "event": "Mile Road",
+          "time": "3:50.0h"
+        },
+        {
+          "event": "5 Kilometres Road",
+          "time": "13:52"
+        },
+        {
+          "event": "10 Kilometres Road",
+          "time": "30:10"
+        }
+      ],
       "hometown": "xx",
       "questionTitle": "Next question",
       "photo": "/images/wightman_card.png",
@@ -3723,32 +3832,74 @@
       "country": "Scotland",
       "results": [
         {
-          "date": "FEB 1",
-          "meet": "",
-          "event": "2 Mi",
-          "time": "8:20.15",
+          "date": "JUN 28",
+          "meet": "Meeting de Paris",
+          "event": "1500m",
+          "time": "3:29.95",
+          "place": "3"
+        },
+        {
+          "date": "JUN 21",
+          "meet": "Novuna UK Athletics Championships",
+          "event": "800m",
+          "time": "1:45.40",
+          "place": "1"
+        },
+        {
+          "date": "JUN 20",
+          "meet": "Novuna UK Athletics Championships",
+          "event": "800m",
+          "time": "1:47.07",
+          "place": "1"
+        },
+        {
+          "date": "JUN 10",
+          "meet": "Oslo Bislett Games",
+          "event": "1500m",
+          "time": "3:33.89",
           "place": ""
+        },
+        {
+          "date": "JUN 10",
+          "meet": "Oslo Bislett Games",
+          "event": "Mile",
+          "time": "3:49.36",
+          "place": "5"
+        },
+        {
+          "date": "JUN 7",
+          "meet": "BAUHAUS-Galan",
+          "event": "800m",
+          "time": "1:44.39",
+          "place": "7"
+        },
+        {
+          "date": "MAY 23",
+          "meet": "LA Track Festival",
+          "event": "800m",
+          "time": "1:44.74",
+          "place": "4"
         },
         {
           "date": "FEB 1",
-          "meet": "",
-          "event": "2 Mi sh",
+          "meet": "Millrose Games",
+          "event": "3000 Metres Short Track",
+          "time": "7:42.64",
+          "place": ""
+        },
+        {
+          "date": "FEB 1",
+          "meet": "Millrose Games",
+          "event": "2 Miles Short Track",
           "time": "8:20.15",
-          "place": ""
+          "place": "12"
         },
         {
           "date": "JAN 24",
-          "meet": "",
-          "event": "2000 m",
+          "meet": "New Balance Indoor Grand Prix",
+          "event": "2000 Metres Short Track",
           "time": "4:53.69",
-          "place": ""
-        },
-        {
-          "date": "JAN 24",
-          "meet": "",
-          "event": "2000 m sh",
-          "time": "4:53.69",
-          "place": ""
+          "place": "4"
         }
       ],
       "dob": "1994-07-11",
@@ -7872,85 +8023,7 @@
       "photo": "/images/nuguse_card.png",
       "club": "x",
       "country": "United States",
-      "results": [
-        {
-          "date": "JUN 10",
-          "meet": "Oslo Bislett Games",
-          "event": "1500 m",
-          "time": "3:33.65",
-          "place": ""
-        },
-        {
-          "date": "JUN 10",
-          "meet": "Oslo Bislett Games",
-          "event": "Mile",
-          "time": "3:48.21",
-          "place": "2."
-        },
-        {
-          "date": "JUN 7",
-          "meet": "BAUHAUS-Galan",
-          "event": "1500 m",
-          "time": "3:30.11",
-          "place": "1."
-        },
-        {
-          "date": "MAY 31",
-          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-          "event": "1500 m",
-          "time": "3:30.35",
-          "place": "1."
-        },
-        {
-          "date": "APR 21",
-          "meet": "Grand Blue Mile presented by Wellmark Blue Cross Blue Shield - USATF 1 Mile Road Championships",
-          "event": "Mile Road",
-          "time": "3:54.06",
-          "place": "1."
-        },
-        {
-          "date": "MAR 21",
-          "meet": "World Athletics Indoor Championships",
-          "event": "3000 m sh",
-          "time": "7:37.08",
-          "place": "5."
-        },
-        {
-          "date": "MAR 1",
-          "meet": "USA Indoor Championships",
-          "event": "1500 m sh",
-          "time": "3:38.06",
-          "place": "4."
-        },
-        {
-          "date": "FEB 28",
-          "meet": "USA Indoor Championships",
-          "event": "3000 m sh",
-          "time": "7:39.28",
-          "place": "2."
-        },
-        {
-          "date": "FEB 14",
-          "meet": "Sound Invite",
-          "event": "3000 m sh",
-          "time": "7:33.78",
-          "place": "2."
-        },
-        {
-          "date": "FEB 1",
-          "meet": "Millrose Games",
-          "event": "1500 m sh",
-          "time": "3:33.07",
-          "place": ""
-        },
-        {
-          "date": "FEB 1",
-          "meet": "Millrose Games",
-          "event": "Mile sh",
-          "time": "3:48.31",
-          "place": "2."
-        }
-      ],
+      "results": [],
       "dob": "1999-06-01",
       "weight": "145",
       "coach": "x",
