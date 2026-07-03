@@ -284,6 +284,33 @@ function extractSeasonResults(nd, year) {
     }
   }
 
+  // Strategy A.5: competitor.resultsByYear.resultsByEvent[] (newer WA pages)
+  // Discipline is on the parent event object; results are nested in ev.results[]
+  const compRbye = dig(pp, 'competitor', 'resultsByYear', 'resultsByEvent');
+  if (Array.isArray(compRbye)) {
+    for (const ev of compRbye) {
+      const discipline = ev.discipline || ev.name || ev.disciplineName || '';
+      for (const r of (ev.results || [])) {
+        const rawDate = r.date || r.eventDate || r.dateFormatted || '';
+        const entryYear = getYear(rawDate);
+        if (entryYear !== year) continue;
+        const mark = parseMark(r.mark || r.performance || r.result || r.time || '');
+        if (!mark) continue;
+        const meet = cleanMeetName(r.competition || r.meet || r.competitionName || '');
+        const meetLower = meet.toLowerCase();
+        if (meetLower.includes('split time') || meetLower.includes('- splits')) continue;
+        raw.push({
+          date:     parseResultDate(rawDate),
+          meet,
+          event:    normalizeEvent(discipline),
+          time:     mark,
+          place:    String(r.place || r.position || r.rank || '').replace(/\.$/, ''),
+          _rawDate: rawDate,
+        });
+      }
+    }
+  }
+
   // Strategy B: named arrays at known paths
   for (const path of [
     ['results'], ['athlete', 'results'],
@@ -521,7 +548,7 @@ async function getAthleteProfile(url) {
 
       // DOB — WA stores it at various paths depending on page version
       const pp = nd?.props?.pageProps || {};
-      const athObj = pp.athlete || pp.data?.athlete || pp.athleteProfile || {};
+      const athObj = pp.athlete || pp.data?.athlete || pp.athleteProfile || pp.competitor || {};
       const rawDob =
         athObj.dateOfBirth || athObj.birthDate ||
         athObj.basicData?.dateOfBirth || athObj.basicData?.birthDate ||
