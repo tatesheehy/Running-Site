@@ -207,86 +207,85 @@
 
 /* ── ATHLETE OF THE WEEK ──────────────────────────────────── */
 .aotw-row {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   margin-top: 20px;
-  border-top: 1px solid var(--border);
-  cursor: pointer;
   border-radius: 10px;
   overflow: hidden;
-  border: 1px solid var(--border);
-  transition: border-color 0.15s;
+  cursor: pointer;
+  transition: opacity 0.15s;
+  display: block;
 }
-.aotw-row:hover { border-color: var(--text); }
-.aotw-row:hover .aotw-name { opacity: 0.75; }
+.aotw-row:hover { opacity: 0.88; }
 
 .aotw-photo {
   width: 100%;
-  height: 220px;
+  height: 280px;
   background-size: cover;
   background-position: center top;
-  flex-shrink: 0;
+  display: block;
 }
 
 .aotw-body {
-  padding: 14px 14px 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 72px 16px 16px;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.72) 45%, rgba(0,0,0,0.92) 100%);
 }
 
 .aotw-label {
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 700;
-  letter-spacing: 0.06em;color: var(--muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
   margin-bottom: 4px;
 }
 
 .aotw-name {
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   line-height: 1.1;
+  color: #fff;
   margin-bottom: 6px;
-  transition: color 0.15s;
+  transition: opacity 0.15s;
 }
 
 .aotw-meta {
   font-size: 12px;
-  color: var(--muted);
+  color: rgba(255,255,255,0.65);
   display: flex;
   align-items: center;
   gap: 5px;
   flex-wrap: wrap;
-  margin-bottom: 8px;
+  margin-bottom: 0;
 }
 
-.aotw-sep { color: var(--border); }
+.aotw-sep { color: rgba(255,255,255,0.3); }
 
 .aotw-stat {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
 }
 
 .aotw-stat-event {
   font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.04em;
-  color: var(--muted);
+  color: rgba(255,255,255,0.65);
 }
 
 .aotw-time {
   font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 700;
-  color: var(--text);
+  color: #fff;
 }
 
-.aotw-desc {
-  font-size: 12px;
-  line-height: 1.5;
-  color: var(--muted);
-  margin: 0;
-}
+.aotw-desc { display: none; }
 
 .aotw-cta { display: none; }
 
@@ -452,7 +451,7 @@
 
 .rw-row {
   display: grid;
-  grid-template-columns: 24px 22px 1fr auto;
+  grid-template-columns: 24px 1fr auto;
   align-items: center;
   gap: 10px;
   padding: 9px 0;
@@ -474,8 +473,6 @@
 }
 .rw-rank--first { color: var(--text); font-weight: 700; }
 
-.rw-flag { font-size: 14px; flex-shrink: 0; line-height: 1; }
-
 .rw-info {
   display: flex;
   flex-direction: column;
@@ -493,11 +490,25 @@
 }
 
 .rw-country-sm {
+  display: flex;
+  align-items: center;
+  gap: 4px;
   font-size: 11px;
   color: var(--muted);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.rw-country-sm .flag-icon {
+  width: 14px;
+  height: 10px;
+  flex-shrink: 0;
+}
+
+.rw-country-sm .flag-emoji {
+  font-size: 11px;
+  line-height: 1;
 }
 
 .rw-time {

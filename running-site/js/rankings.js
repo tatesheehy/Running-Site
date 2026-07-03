@@ -42,10 +42,9 @@ function buildRankingsTableHtml(event, compact) {
       return `
         <div class="rw-row ${hasCard ? 'rw-row--clickable' : ''}" ${hasCard ? `onclick="openAthleteCard('${r.athleteId}', ${rank})"` : ''}>
           <span class="rw-rank ${rank === 1 ? 'rw-rank--first' : ''}">${rank}</span>
-          <span class="rw-flag">${renderFlag(flag)}</span>
           <div class="rw-info">
             <span class="rw-name">${name}</span>
-            <span class="rw-country-sm">${country}</span>
+            <span class="rw-country-sm">${renderFlag(flag)}<span>${country}</span></span>
           </div>
           ${time ? `<span class="rw-time">${time}</span>` : ''}
         </div>
