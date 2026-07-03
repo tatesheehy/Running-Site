@@ -65,6 +65,71 @@ function _dedupeResults(results) {
   return results.filter((_, i) => !remove.has(i));
 }
 
+const _CR_NF = new Set(['DNF','DNS','DQ','NM','NH','DSQ']);
+
+function _buildResultsTable(results) {
+  if (!results.length) return `<p class="card-results-empty">No results found.</p>`;
+  return `<table class="card-results-table">
+    <thead><tr><th>Date</th><th>Meet</th><th>Event</th><th>Time</th><th>Pl.</th></tr></thead>
+    <tbody>
+      ${results.map(r => `
+        <tr>
+          <td class="cr-date">${r.date || ''}</td>
+          <td class="cr-meet">${r.meet || ''}</td>
+          <td class="cr-event">${r.event || ''}</td>
+          <td class="cr-time">${_CR_NF.has((r.time||'').toUpperCase()) ? `<span class="cr-nonfinish">${r.time}</span>` : (r.time || '')}</td>
+          <td class="cr-place">${_CR_NF.has((r.time||'').toUpperCase()) ? '' : (r.place || '')}</td>
+        </tr>`).join('')}
+    </tbody>
+  </table>`;
+}
+
+function buildResultsSection(a) {
+  const results2026 = _dedupeResults(a.results || []);
+  const history     = a.resultsHistory || {};
+  const histYears   = Object.keys(history)
+    .filter(y => (history[y] || []).length > 0)
+    .sort((a, b) => parseInt(b) - parseInt(a));
+  const allYears    = ['2026', ...histYears];
+
+  const lastSyncedHtml = a.lastSynced
+    ? `<span class="card-results-synced">updated ${new Date(a.lastSynced + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}</span>`
+    : '';
+
+  const yearPillsHtml = allYears.length > 1
+    ? `<div class="cr-year-tabs">${allYears.map((yr, i) => {
+        const cnt = yr === '2026' ? results2026.length : (history[yr] || []).length;
+        return `<button class="cr-year-tab${i === 0 ? ' active' : ''}" onclick="cardSetYear('${a.id}','${yr}',this)">${yr}</button>`;
+      }).join('')}</div>`
+    : '';
+
+  const tablesHtml = allYears.map((yr, i) => {
+    const res = yr === '2026' ? results2026 : _dedupeResults(history[yr] || []);
+    return `<div class="cr-year-table" data-year="${yr}"${i !== 0 ? ' style="display:none"' : ''}>${_buildResultsTable(res)}</div>`;
+  }).join('');
+
+  return `<details class="card-results">
+    <summary class="card-results-toggle">
+      <span class="card-results-label">Results</span>
+      <span class="card-results-count">${results2026.length} race${results2026.length === 1 ? '' : 's'}</span>
+      ${lastSyncedHtml}
+      <span class="card-results-arrow">▸</span>
+    </summary>
+    ${yearPillsHtml}
+    ${tablesHtml}
+  </details>`;
+}
+
+window.cardSetYear = (athId, year, btn) => {
+  const card = btn.closest('.card-results');
+  if (!card) return;
+  card.querySelectorAll('.cr-year-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  card.querySelectorAll('.cr-year-table').forEach(t => {
+    t.style.display = t.dataset.year === year ? '' : 'none';
+  });
+};
+
 function buildSeasonTimeline(a) {
   const results = _dedupeResults(a.results || []).filter(r => r.date);
   if (results.length < 2) return '';
@@ -339,42 +404,7 @@ function openAthleteCard(athleteId, rank) {
         ${buildHonoursHtml(a.honours)}
         <div class="card-honours-placeholder" style="${a.honours === undefined && a.waUrl ? '' : 'display:none'}"></div>
         ${buildSeasonTimeline(a)}
-        ${(() => {
-          const results = _dedupeResults(a.results || []);
-          return `
-          <details class="card-results">
-            <summary class="card-results-toggle">
-              <span class="card-results-label">2026 Season Results</span>
-              <span class="card-results-count">${results.length} race${results.length === 1 ? '' : 's'}</span>
-              ${a.lastSynced ? `<span class="card-results-synced">updated ${(() => { const d = new Date(a.lastSynced + 'T12:00:00'); return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }); })()}</span>` : ''}
-              <span class="card-results-arrow">▸</span>
-            </summary>
-            ${results.length > 0 ? `
-            <table class="card-results-table">
-              <thead>
-                <tr>
-                  <th>Date</th>
-                  <th>Meet</th>
-                  <th>Event</th>
-                  <th>Time</th>
-                  <th>Pl.</th>
-                </tr>
-              </thead>
-              <tbody>
-                ${results.map(r => `
-                  <tr>
-                    <td class="cr-date">${r.date || ''}</td>
-                    <td class="cr-meet">${r.meet || ''}</td>
-                    <td class="cr-event">${r.event || ''}</td>
-                    <td class="cr-time">${['DNF','DNS','DQ','NM','NH','DSQ'].includes((r.time||'').toUpperCase()) ? `<span class="cr-nonfinish">${r.time}</span>` : (r.time || '')}</td>
-                    <td class="cr-place">${['DNF','DNS','DQ','NM','NH','DSQ'].includes((r.time||'').toUpperCase()) ? '' : (r.place || '')}</td>
-                  </tr>
-                `).join('')}
-              </tbody>
-            </table>
-            ` : `<p class="card-results-empty">No results yet this season.</p>`}
-          </details>`;
-        })()}
+        ${buildResultsSection(a)}
         <div class="card-analysis-label">Analysis</div>
         ${an.reviewTitle ? `
           <div class="card-analysis-section">
