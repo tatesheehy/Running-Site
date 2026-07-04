@@ -147,11 +147,11 @@
   ],
   "dob": "1996-06-18",
   "weight": "150",
+  "lastHistorySynced": "2026-07-03",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",
   "id": "andrew-coscoran",
-  "age": "30",
   "resultsHistory": {
     "2022": [
       {
@@ -680,5 +680,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-03"
+  "age": "30"
 }

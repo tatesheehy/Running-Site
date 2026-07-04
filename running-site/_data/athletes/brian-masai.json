@@ -304,9 +304,9 @@
     }
   ],
   "dob": "1999-03-02",
+  "lastHistorySynced": "2026-07-04",
   "event": "MIDDLE DISTANCE",
   "id": "brian-masai",
-  "age": "27",
   "resultsHistory": {
     "2022": [],
     "2023": [
@@ -645,5 +645,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-04"
+  "age": "27"
 }

@@ -268,11 +268,11 @@
   "dob": "2005-01-10",
   "college": "BYU",
   "weight": "x",
+  "lastHistorySynced": "2026-07-04",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "carter-cutting",
-  "age": "21",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -616,5 +616,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-04"
+  "age": "21"
 }

@@ -177,11 +177,11 @@
   ],
   "dob": "1993-07-19",
   "weight": "155",
+  "lastHistorySynced": "2026-07-03",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "azeddine-habz",
-  "age": "32",
   "resultsHistory": {
     "2022": [
       {
@@ -738,5 +738,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-03"
+  "age": "32"
 }

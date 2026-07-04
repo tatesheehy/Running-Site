@@ -159,11 +159,11 @@
   ],
   "dob": "1996-11-22",
   "weight": "x",
+  "lastHistorySynced": "2026-07-03",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "abel-kipsang",
-  "age": "29",
   "resultsHistory": {
     "2022": [
       {
@@ -608,5 +608,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-03"
+  "age": "29"
 }

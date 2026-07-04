@@ -99,11 +99,11 @@
   ],
   "dob": "2004-08-01",
   "weight": "x",
+  "lastHistorySynced": "2026-07-03",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "emmanuel-wanyonyi",
-  "age": "21",
   "resultsHistory": {
     "2022": [
       {
@@ -450,5 +450,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-03"
+  "age": "21"
 }

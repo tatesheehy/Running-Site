@@ -149,11 +149,11 @@
   ],
   "dob": "2006-06-09",
   "weight": "150",
+  "lastHistorySynced": "2026-07-03",
   "coach": "xx",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "cameron-myers",
-  "age": "20",
   "resultsHistory": {
     "2022": [
       {
@@ -584,5 +584,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-03"
+  "age": "20"
 }

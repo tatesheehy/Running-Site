@@ -1,6 +1,11 @@
 {
   "photoBackground": "#1a0a0a",
   "reviewTitle": "Season review",
+  "ncaaTitle": [
+    "1500m",
+    "Mile",
+    "3000m"
+  ],
   "traits": [
     {
       "emoji": "🚀",
@@ -215,11 +220,11 @@
   ],
   "dob": "2001-06-06",
   "weight": "145 lbs",
+  "lastHistorySynced": "2026-07-04",
   "coach": "Jerry Schumacher",
   "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
   "event": "MIDDLE DISTANCE + DISTANCE",
   "id": "cole-hocker",
-  "age": "25",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -1028,10 +1033,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-04",
-  "ncaaTitle": [
-    "1500m",
-    "Mile",
-    "3000m"
-  ]
+  "age": "25"
 }

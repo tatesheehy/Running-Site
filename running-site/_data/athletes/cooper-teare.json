@@ -177,11 +177,11 @@
   ],
   "dob": "1999-08-18",
   "weight": "x",
+  "lastHistorySynced": "2026-07-03",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",
   "id": "cooper-teare",
-  "age": "26",
   "resultsHistory": {
     "2022": [
       {
@@ -661,5 +661,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-03"
+  "age": "26"
 }

@@ -109,9 +109,9 @@
     }
   ],
   "dob": "2004-01-17",
+  "lastHistorySynced": "2026-07-03",
   "event": "MIDDLE DISTANCE",
   "id": "anas-lagtiy-chaoudar",
-  "age": "22",
   "resultsHistory": {
     "2022": [
       {
@@ -507,5 +507,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-03"
+  "age": "22"
 }
