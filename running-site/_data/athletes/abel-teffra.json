@@ -10,7 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-07-03",
+  "lastSynced": "2026-07-04",
   "prs": [
     {
       "event": "800m",
@@ -22,7 +22,7 @@
     },
     {
       "event": "Mile",
-      "time": "3:52.44"
+      "time": "3:51.13"
     },
     {
       "event": "3000m",
@@ -64,6 +64,13 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "Mile",
+      "time": "3:51.13",
+      "place": "3"
+    },
     {
       "date": "JUN 21",
       "meet": "Portland Track Festival",

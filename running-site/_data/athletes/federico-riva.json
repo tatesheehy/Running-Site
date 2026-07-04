@@ -44,10 +44,6 @@
       "time": "5:02.67"
     },
     {
-      "event": "3000m",
-      "time": "7:45.25"
-    },
-    {
       "event": "5000m",
       "time": "15:03.82"
     },
@@ -72,10 +68,6 @@
       "time": "5:02.67"
     },
     {
-      "event": "3000 Metres Short Track",
-      "time": "7:45.25"
-    },
-    {
       "event": "5 Kilometres Road",
       "time": "14:38"
     },
@@ -88,51 +80,51 @@
     {
       "date": "MAR 22",
       "meet": "World Athletics Indoor Championships",
-      "event": "1500 m sh",
+      "event": "1500 Metres Short Track",
       "time": "3:40.98",
-      "place": "7."
+      "place": "7"
     },
     {
       "date": "MAR 20",
       "meet": "World Athletics Indoor Championships",
-      "event": "1500 m sh",
+      "event": "1500 Metres Short Track",
       "time": "3:40.52",
-      "place": "1."
+      "place": "1"
     },
     {
       "date": "MAR 1",
       "meet": "Italian Indoor Championships",
-      "event": "3000 m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:45.25",
-      "place": "1."
+      "place": "1"
     },
     {
       "date": "FEB 28",
       "meet": "Italian Indoor Championships",
-      "event": "1500 m sh",
+      "event": "1500 Metres Short Track",
       "time": "3:59.34",
-      "place": "1."
+      "place": "1"
     },
     {
       "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
-      "event": "1500 m sh",
+      "event": "1500 Metres Short Track",
       "time": "3:33.04",
-      "place": "2."
+      "place": "2"
     },
     {
       "date": "FEB 13",
       "meet": "13. Erfurt Indoor 2026",
-      "event": "800 m sh",
+      "event": "800 Metres Short Track",
       "time": "1:46.61",
-      "place": "2."
+      "place": "2"
     },
     {
       "date": "FEB 8",
       "meet": "INIT Indoor Meeting Karlsruhe",
-      "event": "1500 m sh",
+      "event": "1500 Metres Short Track",
       "time": "3:33.94",
-      "place": "2."
+      "place": "2"
     }
   ],
   "lastSynced": "2026-07-04"
