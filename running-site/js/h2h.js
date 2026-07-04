@@ -35,7 +35,6 @@ function _renderH2HPage() {
   if (!main) return;
 
   const { records, totalEncounters } = _computeAllH2HRecords(_h2hLbYear, _h2hLbEvent, _h2hLbRankedOnly);
-  const allYearsRecs = _computeAllYearsH2H(_h2hLbEvent, _h2hLbRankedOnly);
 
   const rows = Object.entries(records)
     .filter(([, r]) => r.wins + r.losses >= _H2H_MIN_RACES)
@@ -206,7 +205,7 @@ function _renderH2HPage() {
                           </tr>
                           <tr class="h2h-lb-detail" id="h2h-detail-${id}" style="display:none">
                             <td colspan="6" class="h2h-lb-detail-td">
-                              <div class="h2h-lb-detail-inner">${_renderExpandDetail(id, allYearsRecs[id] || rec)}</div>
+                              <div class="h2h-lb-detail-inner">${_renderExpandDetail(id, rec)}</div>
                             </td>
                           </tr>`;
                       }).join('')}
@@ -624,31 +623,4 @@ function _computeAllH2HRecords(year, eventFilter, rankedOnly) {
   }
 
   return { records, totalEncounters };
-}
-
-function _getAllH2HYears() {
-  const years = new Set(['2026']);
-  Object.values(ATHLETES).forEach(a =>
-    Object.keys(a.resultsHistory || {}).forEach(y => years.add(y))
-  );
-  return [...years].sort((a, b) => parseInt(b) - parseInt(a));
-}
-
-function _computeAllYearsH2H(eventFilter, rankedOnly) {
-  const merged = {};
-  _getAllH2HYears().forEach(year => {
-    const { records } = _computeAllH2HRecords(year, eventFilter, rankedOnly);
-    Object.entries(records).forEach(([athId, rec]) => {
-      if (!merged[athId]) merged[athId] = { matchups: {} };
-      Object.entries(rec.matchups || {}).forEach(([oppId, m]) => {
-        if (!merged[athId].matchups[oppId]) {
-          merged[athId].matchups[oppId] = { fullName: m.fullName, id: m.id, wins: 0, losses: 0, races: [] };
-        }
-        merged[athId].matchups[oppId].wins += m.wins;
-        merged[athId].matchups[oppId].losses += m.losses;
-        merged[athId].matchups[oppId].races.push(...m.races);
-      });
-    });
-  });
-  return merged;
 }
