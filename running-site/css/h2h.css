@@ -135,7 +135,7 @@
 
 .h2h-col-labels {
   display: grid;
-  grid-template-columns: 52px 1fr 100px 120px auto auto;
+  grid-template-columns: 52px 1fr 100px 120px;
   padding: 10px 16px;
   font-size: 10px;
   font-weight: 700;
@@ -162,8 +162,6 @@
 
 .h2h-col-labels.is-sticky::before { display: block; }
 
-.h2h-col-label--form,
-.h2h-col-label--wins { }
 
 .h2h-lb-wrap {
   border: 1px solid var(--border);
@@ -248,6 +246,21 @@
   display: flex;
   flex-direction: column;
   gap: 3px;
+  min-width: 0;
+}
+
+.h2h-lb-ath-name-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-wrap: wrap;
+}
+
+.h2h-lb-ath-sub {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .h2h-lb-name {
@@ -266,6 +279,50 @@
   opacity: 0.7;
 }
 
+/* Inline streak pill */
+.h2h-streak-pill {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 2px 6px;
+  border-radius: 3px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.h2h-streak-pill--w {
+  background: var(--dark);
+  color: #fff;
+}
+.h2h-streak-pill--l {
+  background: var(--bg-light);
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+[data-theme="dark"] .h2h-streak-pill--w { background: #fff; color: #111; }
+[data-theme="dark"] .h2h-streak-pill--l { background: transparent; }
+
+/* Beat chips in athlete cell */
+.h2h-lb-beat-chips {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.h2h-lb-beat-chip {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--muted);
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+.h2h-lb-beat-chip + .h2h-lb-beat-chip::before {
+  content: '·';
+  margin-right: 4px;
+  opacity: 0.5;
+}
+
 .h2h-lb-country {
   font-size: 11px;
   color: var(--muted);
@@ -273,6 +330,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
+  white-space: nowrap;
 }
 
 /* ── Record column ────────────────────────────────────────── */
@@ -555,26 +613,6 @@
 [data-theme="dark"] .h2h-map-legend--loss::before  { background: rgba(255,255,255,0.02); }
 [data-theme="dark"] .h2h-map-legend--split::before { background: rgba(255,255,255,0.04); }
 
-/* ── Form timeline strip ──────────────────────────────────── */
-
-.h2h-lb-td--form { white-space: nowrap; }
-.h2h-lb-th--form { white-space: nowrap; }
-
-.h2h-streak {
-  font-family: var(--font-display);
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
-.h2h-streak--w { color: var(--text); }
-.h2h-streak--l { color: var(--muted); }
-
-@media (max-width: 900px) {
-  .h2h-lb-th--form { display: none; }
-  .h2h-lb-td--form { display: none; }
-  .h2h-col-label--form { display: none; }
-  .h2h-col-labels { grid-template-columns: 52px 1fr 100px 120px; }
-}
 
 /* ── Expand chevron ───────────────────────────────────────── */
 
@@ -856,25 +894,17 @@
   margin: 0 2px;
 }
 
-.h2h-rivalry-races {
-  font-size: 10px;
-  color: var(--muted);
-  text-align: right;
-  margin-top: 2px;
-  letter-spacing: 0.02em;
+/* ── Rivalry leader name highlight ───────────────────────── */
+
+.h2h-rivalry-name--lead {
+  font-weight: 800;
 }
 
 /* ── Responsive ───────────────────────────────────────────── */
 
-@media (max-width: 900px) {
-  .h2h-lb-td--wins { display: none; }
-  .h2h-lb-th--wins { display: none; }
-  .h2h-col-label--wins { display: none; }
-}
-
 @media (max-width: 700px) {
   .h2h-lb-controls  { flex-direction: column; align-items: flex-start; }
-  .h2h-lb-ctrl-group--right { align-items: flex-start; }
+  .h2h-lb-beat-chips { display: none; }
   .h2h-lb-country   { display: none; }
   .h2h-stats-strip  { flex-wrap: wrap; gap: 16px; }
   .h2h-stat-div     { display: none; }

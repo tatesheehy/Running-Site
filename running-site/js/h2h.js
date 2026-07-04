@@ -122,13 +122,13 @@ function _renderH2HPage() {
                   </svg>Map</button>
               </div>
             </div>
-          </div>
-          <div class="h2h-lb-ctrl-group h2h-lb-ctrl-group--right">
-            <div class="h2h-lb-ctrl-label">Filter by event</div>
-            <div class="h2h-seg">
-              ${EVENTS.map(ev => `
-                <button class="h2h-seg-btn${ev === _h2hLbEvent ? ' active' : ''}"
-                  onclick="h2hLbSetEvent('${ev}')">${ev === 'all' ? 'All' : ev}</button>`).join('')}
+            <div class="h2h-lb-ctrl-group">
+              <div class="h2h-lb-ctrl-label">Event</div>
+              <div class="h2h-seg">
+                ${EVENTS.map(ev => `
+                  <button class="h2h-seg-btn${ev === _h2hLbEvent ? ' active' : ''}"
+                    onclick="h2hLbSetEvent('${ev}')">${ev === 'all' ? 'All' : ev}</button>`).join('')}
+              </div>
             </div>
           </div>
         </div>
@@ -138,13 +138,12 @@ function _renderH2HPage() {
           ? _renderDominanceMap(rows)
           : `<div id="h2h-col-sentinel"></div>
             <div class="h2h-col-labels">
-              <span>#</span><span>Athlete</span><span>Record</span><span>Win %</span><span class="h2h-col-label--form">Streak</span><span class="h2h-col-label--wins">Key Wins</span>
+              <span>#</span><span>Athlete</span><span>Record</span><span>Win %</span>
             </div>
             <div class="h2h-lb-wrap">
               ${rows.length === 0
                 ? `<div class="h2h-lb-empty">No head-to-head data for this selection${_h2hLbRankedOnly ? ' — try switching to "All" opponents' : ''}.</div>`
                 : `<table class="h2h-lb-table">
-                    <tbody>
                     <tbody>
                       ${rows.map(([id, rec], i) => {
                         const a = ATHLETES[id];
@@ -162,14 +161,11 @@ function _renderH2HPage() {
                           else if (_seq[si].won === _streakWon) _streak++;
                           else break;
                         }
-                        const streakHtml = _seq.length
-                          ? `<span class="h2h-streak h2h-streak--${_streakWon?'w':'l'}">${_streakWon?'W':'L'}${_streak}</span>`
-                          : '';
 
-                        const keyWins  = Object.entries(rec.beatCounts)
+                        const beatChips = Object.entries(rec.beatCounts)
                           .sort((a, b) => b[1] - a[1])
-                          .slice(0, 4)
-                          .map(([n, ct]) => `<span class="h2h-lb-win-tag">${n}${ct > 1 ? `<span class="h2h-win-x"> ×${ct}</span>` : ''}</span>`).join('');
+                          .slice(0, 3)
+                          .map(([n, ct]) => `<span class="h2h-lb-beat-chip">${n}${ct > 1 ? ` ×${ct}` : ''}</span>`).join('');
 
                         const avatar = `<div class="h2h-lb-avatar" style="background-image:url('${a.photo || '/images/default_card.png'}');background-color:${a.photoBackground || '#111'}"></div>`;
 
@@ -181,8 +177,14 @@ function _renderH2HPage() {
                             <td class="h2h-lb-td h2h-lb-td--athlete">
                               ${avatar}
                               <div class="h2h-lb-ath-info">
-                                <span class="h2h-lb-name h2h-lb-name--link" onclick="event.stopPropagation();openAthleteCard('${id}',null)">${a.name}</span>
-                                <span class="h2h-lb-country">${renderFlag(a.flag)} ${a.country || ''}</span>
+                                <div class="h2h-lb-ath-name-row">
+                                  <span class="h2h-lb-name h2h-lb-name--link" onclick="event.stopPropagation();openAthleteCard('${id}',null)">${a.name}</span>
+                                  ${_seq.length ? `<span class="h2h-streak-pill h2h-streak-pill--${_streakWon?'w':'l'}">${_streakWon?'W':'L'}${_streak}</span>` : ''}
+                                </div>
+                                <div class="h2h-lb-ath-sub">
+                                  <span class="h2h-lb-country">${renderFlag(a.flag)} ${a.country || ''}</span>
+                                  ${beatChips ? `<span class="h2h-lb-beat-chips">${beatChips}</span>` : ''}
+                                </div>
                               </div>
                               <svg class="h2h-expand-chevron" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </td>
@@ -200,11 +202,9 @@ function _renderH2HPage() {
                                 </div>
                               </div>
                             </td>
-                            <td class="h2h-lb-td h2h-lb-td--form">${streakHtml}</td>
-                            <td class="h2h-lb-td h2h-lb-td--wins">${keyWins}</td>
                           </tr>
                           <tr class="h2h-lb-detail" id="h2h-detail-${id}" style="display:none">
-                            <td colspan="6" class="h2h-lb-detail-td">
+                            <td colspan="4" class="h2h-lb-detail-td">
                               <div class="h2h-lb-detail-inner">${_renderExpandDetail(id, rec)}</div>
                             </td>
                           </tr>`;
@@ -351,20 +351,24 @@ function _renderRivalriesSection(year, eventFilter, rankedOnly) {
     const rec2 = r.a2rec || { wins: rec1.losses, losses: rec1.wins };
     const n1 = a1.name.split(' ').slice(-1)[0];
     const n2 = a2.name.split(' ').slice(-1)[0];
+    const overallLeader = rec1.wins > rec1.losses ? n1 : rec1.losses > rec1.wins ? n2 : null;
 
     // Championship note: surface when major-meet record differs from overall
     const cw = rec1.champWins || 0, cl = rec1.champLosses || 0;
     const champTotal = cw + cl;
     let champNote = '';
     if (champTotal > 0) {
-      const overallLeader = rec1.wins > rec1.losses ? n1 : rec1.losses > rec1.wins ? n2 : null;
-      const champLeader   = cw > cl ? n1 : cl > cw ? n2 : null;
+      const champLeader = cw > cl ? n1 : cl > cw ? n2 : null;
       if (champLeader && overallLeader && champLeader !== overallLeader) {
         champNote = `but ${champLeader} leads in majors`;
-      } else {
-        champNote = `${cw}–${cl} in majors`;
+      } else if (champLeader) {
+        champNote = `${champLeader} ${cw}–${cl} in majors`;
       }
     }
+
+    // Show score from the leader's perspective so it's always X-Y where X > Y
+    const scoreA = rec1.wins >= rec1.losses ? rec1.wins : rec1.losses;
+    const scoreB = rec1.wins >= rec1.losses ? rec1.losses : rec1.wins;
 
     return `
       <div class="h2h-rivalry-row">
@@ -373,12 +377,13 @@ function _renderRivalriesSection(year, eventFilter, rankedOnly) {
           <div class="h2h-rivalry-avatar" style="background-image:url('${a2.photo || ''}');background-color:${a2.photoBackground || '#1a1a2e'}"></div>
         </div>
         <div class="h2h-rivalry-names">
-          <div class="h2h-rivalry-matchup">${n1}<span class="h2h-rivalry-matchup-vs">vs</span>${n2}</div>
-          <div class="h2h-rivalry-meta">${r.total} meetings${champNote ? ` · ${champNote}` : ''}</div>
+          <div class="h2h-rivalry-matchup">
+            <span class="${overallLeader === n1 ? 'h2h-rivalry-name--lead' : ''}">${n1}</span><span class="h2h-rivalry-matchup-vs">vs</span><span class="${overallLeader === n2 ? 'h2h-rivalry-name--lead' : ''}">${n2}</span>
+          </div>
+          <div class="h2h-rivalry-meta">${overallLeader ? `${overallLeader} leads` : 'tied'} · ${r.total} meetings${champNote ? ` · ${champNote}` : ''}</div>
         </div>
         <div class="h2h-rivalry-result">
-          <div class="h2h-rivalry-score">${rec1.wins}<span class="h2h-rivalry-score-sep">–</span>${rec1.losses}</div>
-          <div class="h2h-rivalry-races">${r.total} races</div>
+          <div class="h2h-rivalry-score">${scoreA}<span class="h2h-rivalry-score-sep">–</span>${scoreB}</div>
         </div>
       </div>`;
   }).join('');
