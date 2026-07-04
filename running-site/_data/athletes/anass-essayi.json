@@ -5,7 +5,7 @@
   "waUrl": "https://worldathletics.org/athletes/morocco/anass-essayi-14805620",
   "name": "Anass Essayi",
   "flag": "MA",
-  "lastSynced": "2026-07-03",
+  "lastSynced": "2026-07-04",
   "prs": [
     {
       "event": "800m",
@@ -45,6 +45,13 @@
   "ncaa": false,
   "country": "Morocco",
   "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Meeting Stanislas Nancy",
+      "event": "1500m",
+      "time": "3:31.78",
+      "place": "2"
+    },
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
