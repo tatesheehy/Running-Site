@@ -4,18 +4,43 @@
 
 const _FAV_HEART = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>`;
 
+const _ICON_GRID = `<svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><rect x="0" y="0" width="6" height="6" rx="1"/><rect x="8" y="0" width="6" height="6" rx="1"/><rect x="0" y="8" width="6" height="6" rx="1"/><rect x="8" y="8" width="6" height="6" rx="1"/></svg>`;
+const _ICON_LIST = `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="0" y1="3" x2="14" y2="3"/><line x1="0" y1="7" x2="14" y2="7"/><line x1="0" y1="11" x2="14" y2="11"/></svg>`;
+
+// Parse a time string like "3:29.87" or "1:46.23" into total seconds
+function _parseTime(str) {
+  if (!str || str === '—') return Infinity;
+  const clean = str.replace(/[^\d:.]/g, '');
+  const parts = clean.split(':');
+  if (parts.length === 2) return parseFloat(parts[0]) * 60 + parseFloat(parts[1] || 0);
+  return parseFloat(parts[0] || 0);
+}
+
 function buildAthletesPage() {
   const all = Object.values(ATHLETES);
   let activeSort    = 'alpha';
-  let activeView    = 'grid';
+  let activeView    = 'grid';   // 'grid' | 'list' | 'map'
   let myAthletesActive = false;
   let activeSearch  = '';
   let activeCountry = 'all';
+  let activePreset  = null;
+  let listSortKey   = '1500m';
+  let listSortDir   = 1;        // 1 = asc (fastest first), -1 = desc
+
+  const PRESETS = [
+    { key: 'sub330', label: 'Sub-3:30', fn: a => _parseTime(getPr(a, '1500m')) < _parseTime('3:30.00') },
+    { key: 'sub332', label: 'Sub-3:32', fn: a => _parseTime(getPr(a, '1500m')) < _parseTime('3:32.00') },
+    { key: 'u23',    label: 'U23',      fn: a => { const ag = a.dob ? calcAgeFromDob(a.dob) : null; return ag !== null && ag <= 22; } },
+  ];
 
   // Build country list sorted by count descending
   const countryCounts = {};
   all.forEach(a => { if (a.country) countryCounts[a.country] = (countryCounts[a.country] || 0) + 1; });
   const countryList = Object.entries(countryCounts).sort((a, b) => b[1] - a[1]).map(([c]) => c);
+
+  function getPr(a, event) {
+    return (a.prs || []).find(p => p.event === event)?.time || null;
+  }
 
   function sortedAthletes() {
     let list = myAthletesActive
@@ -29,13 +54,34 @@ function buildAthletesPage() {
         (a.country || '').toLowerCase().includes(q)
       );
     }
-
     if (activeCountry !== 'all') {
       list = list.filter(a => a.country === activeCountry);
     }
+    if (activePreset) {
+      const preset = PRESETS.find(p => p.key === activePreset);
+      if (preset) list = list.filter(preset.fn);
+    }
 
-    if (activeSort === 'alpha')   list.sort((a, b) => a.name.localeCompare(b.name));
-    if (activeSort === 'country') list.sort((a, b) => (a.country || '').localeCompare(b.country || '') || a.name.localeCompare(b.name));
+    if (activeView === 'list') {
+      const dir = listSortDir;
+      list.sort((a, b) => {
+        if (listSortKey === 'name')    return dir * a.name.localeCompare(b.name);
+        if (listSortKey === 'country') return dir * (a.country || '').localeCompare(b.country || '') || a.name.localeCompare(b.name);
+        if (listSortKey === 'age') {
+          const ageA = a.dob ? calcAgeFromDob(a.dob) : (a.age || 0);
+          const ageB = b.dob ? calcAgeFromDob(b.dob) : (b.age || 0);
+          return dir * (ageA - ageB);
+        }
+        // PR columns — faster (lower seconds) = better = asc
+        const tA = _parseTime(getPr(a, listSortKey));
+        const tB = _parseTime(getPr(b, listSortKey));
+        if (tA === tB) return a.name.localeCompare(b.name);
+        return dir * (tA - tB);
+      });
+    } else {
+      if (activeSort === 'alpha')   list.sort((a, b) => a.name.localeCompare(b.name));
+      if (activeSort === 'country') list.sort((a, b) => (a.country || '').localeCompare(b.country || '') || a.name.localeCompare(b.name));
+    }
     return list;
   }
 
@@ -48,6 +94,67 @@ function buildAthletesPage() {
       </button>`;
     }).join('');
     return `<button class="ath-country-chip${activeCountry === 'all' ? ' active' : ''}" data-country="all" onclick="filterByCountry('all')">All</button>${chips}`;
+  }
+
+  function renderPresetChips() {
+    return PRESETS.map(p => {
+      const active = activePreset === p.key ? ' active' : '';
+      const count = all.filter(p.fn).length;
+      return `<button class="ath-preset-chip${active}" data-preset="${p.key}" onclick="filterByPreset('${p.key}')">
+        ${p.label} <span class="ath-preset-count">${count}</span>
+      </button>`;
+    }).join('');
+  }
+
+  const LIST_COLS = [
+    { key: 'name',    label: 'Athlete',  cls: 'ath-list-name' },
+    { key: 'country', label: 'Country',  cls: 'ath-list-country' },
+    { key: '1500m',   label: '1500m',    cls: 'ath-list-pr' },
+    { key: 'Mile',    label: 'Mile',     cls: 'ath-list-pr' },
+    { key: '800m',    label: '800m',     cls: 'ath-list-pr' },
+    { key: '3000m',   label: '3000m',    cls: 'ath-list-pr' },
+    { key: 'age',     label: 'Age',      cls: 'ath-list-age' },
+  ];
+
+  function sortArrow(key) {
+    if (listSortKey !== key) return `<span class="ath-list-arrow inactive">↕</span>`;
+    return `<span class="ath-list-arrow">${listSortDir === 1 ? '↑' : '↓'}</span>`;
+  }
+
+  function renderList(list) {
+    if (!list.length) return '<p class="ath-page-empty">No athletes found.</p>';
+
+    const header = LIST_COLS.map(c =>
+      `<th class="ath-list-th ${c.cls}" onclick="sortListBy('${c.key}')" title="Sort by ${c.label}">${c.label} ${sortArrow(c.key)}</th>`
+    ).join('');
+
+    const rows = list.map((a, i) => {
+      const age = a.dob ? calcAgeFromDob(a.dob) : (a.age || '—');
+      const pr1500 = getPr(a, '1500m') || '—';
+      const prMile = getPr(a, 'Mile')  || '—';
+      const pr800  = getPr(a, '800m')  || '—';
+      const pr3000 = getPr(a, '3000m') || '—';
+      return `<tr class="ath-list-row" onclick="openAthleteCard('${a.id}', null)" tabindex="0">
+        <td class="ath-list-td ath-list-name">
+          <span class="ath-list-num">${i + 1}</span>
+          ${renderFlag(a.flag)}
+          <span class="ath-list-athlete-name">${a.name}</span>
+        </td>
+        <td class="ath-list-td ath-list-country">${a.country || '—'}</td>
+        <td class="ath-list-td ath-list-pr${pr1500 === '—' ? ' dim' : ''}">${pr1500}</td>
+        <td class="ath-list-td ath-list-pr${prMile === '—' ? ' dim' : ''}">${prMile}</td>
+        <td class="ath-list-td ath-list-pr${pr800 === '—' ? ' dim' : ''}">${pr800}</td>
+        <td class="ath-list-td ath-list-pr${pr3000 === '—' ? ' dim' : ''}">${pr3000}</td>
+        <td class="ath-list-td ath-list-age">${age}</td>
+      </tr>`;
+    }).join('');
+
+    return `<div class="ath-list-wrap">
+      <table class="ath-list-table">
+        <thead><tr>${header}</tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
   }
 
   function renderGrid(list) {
@@ -106,12 +213,33 @@ function buildAthletesPage() {
   }
 
   function refreshGrid() {
-    qs('#ath-page-grid').innerHTML = renderGrid(sortedAthletes());
-    qs('#ath-page-count').textContent = getResultCount();
+    const grid = qs('#ath-page-grid');
+    if (!grid) return;
+    const list = sortedAthletes();
+    if (activeView === 'list') {
+      grid.className = 'ath-list-container';
+      grid.innerHTML = renderList(list);
+    } else {
+      grid.className = 'ath-page-grid';
+      grid.innerHTML = renderGrid(list);
+    }
+    const countEl = qs('#ath-page-count');
+    if (countEl) countEl.textContent = getResultCount();
   }
 
   function refreshChips() {
-    qs('#ath-country-chips').innerHTML = renderCountryChips();
+    const el = qs('#ath-country-chips');
+    if (el) el.innerHTML = renderCountryChips();
+  }
+
+  function refreshPresets() {
+    const el = qs('#ath-preset-chips');
+    if (el) el.innerHTML = renderPresetChips();
+  }
+
+  function setViewBtns() {
+    qs('#ath-grid-btn')?.classList.toggle('active', activeView === 'grid');
+    qs('#ath-list-btn')?.classList.toggle('active', activeView === 'list');
   }
 
   const loggedIn = typeof getCurrentUser === 'function' && !!getCurrentUser();
@@ -123,13 +251,19 @@ function buildAthletesPage() {
           <h1 class="ath-page-title">Athletes</h1>
           <span class="ath-page-count" id="ath-page-count">${getResultCount()}</span>
         </div>
-        <div class="ath-page-sort-toggle" id="ath-sort-btns">
-          <button class="ath-page-sort active" data-sort="alpha" onclick="sortAthletes('alpha')">A – Z</button>
-          <button class="ath-page-sort" data-sort="country" onclick="sortAthletes('country')">By Country</button>
-          <button class="ath-page-sort my-athletes-btn" id="my-athletes-btn" onclick="toggleMyAthletes()" style="${loggedIn ? '' : 'display:none'}">
-            My Athletes
-          </button>
-          <button class="ath-page-sort" id="ath-map-btn" onclick="toggleAthleteMap()">Map</button>
+        <div class="ath-page-controls">
+          <div class="ath-page-sort-toggle" id="ath-sort-btns">
+            <button class="ath-page-sort active" data-sort="alpha" onclick="sortAthletes('alpha')">A – Z</button>
+            <button class="ath-page-sort" data-sort="country" onclick="sortAthletes('country')">By Country</button>
+            <button class="ath-page-sort my-athletes-btn" id="my-athletes-btn" onclick="toggleMyAthletes()" style="${loggedIn ? '' : 'display:none'}">
+              My Athletes
+            </button>
+            <button class="ath-page-sort" id="ath-map-btn" onclick="toggleAthleteMap()">Map</button>
+          </div>
+          <div class="ath-view-toggle">
+            <button class="ath-view-btn active" id="ath-grid-btn" onclick="setAthleteView('grid')" title="Grid view">${_ICON_GRID}</button>
+            <button class="ath-view-btn" id="ath-list-btn" onclick="setAthleteView('list')" title="List view">${_ICON_LIST}</button>
+          </div>
         </div>
       </div>
 
@@ -141,25 +275,45 @@ function buildAthletesPage() {
           <button class="ath-search-clear" id="ath-search-clear" onclick="clearSearch()" aria-label="Clear search">✕</button>
         </div>
         <div class="ath-country-chips" id="ath-country-chips">${renderCountryChips()}</div>
+        <div class="ath-preset-chips" id="ath-preset-chips">${renderPresetChips()}</div>
       </div>
 
       <div id="ath-page-grid" class="ath-page-grid">${renderGrid(sortedAthletes())}</div>
     </div>`;
 
   window._mapRenderGrid  = list => { qs('#ath-page-grid').className = 'ath-page-grid'; qs('#ath-page-grid').innerHTML = renderGrid(list); };
-  window._mapRestoreGrid = ()   => { qs('#ath-page-grid').className = 'ath-page-grid'; qs('#ath-page-grid').innerHTML = renderGrid(sortedAthletes()); };
+  window._mapRestoreGrid = ()   => { activeView = 'grid'; setViewBtns(); refreshGrid(); };
 
-  function setGridView() {
-    activeView = 'grid';
-    qs('#ath-page-grid').className = 'ath-page-grid';
-    qs('#ath-page-grid').innerHTML = renderGrid(sortedAthletes());
-  }
+  window.setAthleteView = function(view) {
+    if (view === activeView) return;
+    // Exit map if switching to grid/list
+    if (activeView === 'map') {
+      qs('#ath-map-btn')?.classList.remove('active');
+    }
+    activeView = view;
+    setViewBtns();
+    // In list view, A-Z / By Country sort buttons don't apply — dim them
+    document.querySelectorAll('.ath-page-sort[data-sort]').forEach(b => {
+      b.classList.toggle('ath-sort-inactive', view === 'list');
+    });
+    refreshGrid();
+  };
+
+  window.sortListBy = function(key) {
+    if (listSortKey === key) {
+      listSortDir = listSortDir === 1 ? -1 : 1;
+    } else {
+      listSortKey = key;
+      listSortDir = 1;
+    }
+    refreshGrid();
+  };
 
   window.searchAthletes = function(val) {
     activeSearch = val.trim();
     qs('#ath-search-clear').style.opacity = activeSearch ? '1' : '0';
     qs('#ath-search-clear').style.pointerEvents = activeSearch ? 'auto' : 'none';
-    if (activeView === 'map') setGridView();
+    if (activeView === 'map') { activeView = 'grid'; setViewBtns(); qs('#ath-map-btn')?.classList.remove('active'); }
     refreshGrid();
   };
 
@@ -169,28 +323,38 @@ function buildAthletesPage() {
     qs('#ath-search-input').focus();
   };
 
+  window.filterByPreset = function(key) {
+    activePreset = activePreset === key ? null : key;  // toggle off if already active
+    if (activeView === 'map') { activeView = 'grid'; setViewBtns(); qs('#ath-map-btn')?.classList.remove('active'); }
+    refreshPresets();
+    refreshGrid();
+  };
+
   window.filterByCountry = function(country) {
     activeCountry = country;
-    if (activeView === 'map') setGridView();
+    if (activeView === 'map') { activeView = 'grid'; setViewBtns(); qs('#ath-map-btn')?.classList.remove('active'); }
     refreshChips();
     refreshGrid();
   };
 
   window.sortAthletes = function(sort) {
-    if (activeView === 'map') setGridView();
+    if (activeView === 'map') { activeView = 'grid'; setViewBtns(); }
+    if (activeView === 'list') { activeView = 'grid'; setViewBtns(); }
     myAthletesActive = false;
     qs('#my-athletes-btn')?.classList.remove('active');
     activeSort = sort;
-    document.querySelectorAll('.ath-page-sort[data-sort]').forEach(b => b.classList.toggle('active', b.dataset.sort === sort));
+    document.querySelectorAll('.ath-page-sort[data-sort]').forEach(b => {
+      b.classList.toggle('active', b.dataset.sort === sort);
+      b.classList.remove('ath-sort-inactive');
+    });
     refreshGrid();
   };
 
   window.toggleMyAthletes = window._showMyAthletes = function() {
     myAthletesActive = true;
-    activeView = 'grid';
+    if (activeView === 'map') { activeView = 'grid'; setViewBtns(); qs('#ath-map-btn')?.classList.remove('active'); }
     document.querySelectorAll('.ath-page-sort').forEach(b => b.classList.remove('active'));
     qs('#my-athletes-btn')?.classList.add('active');
-    qs('#ath-page-grid').className = 'ath-page-grid';
     refreshGrid();
   };
 
@@ -208,19 +372,21 @@ function buildAthletesPage() {
   window.toggleAthleteMap = function() {
     const grid = qs('#ath-page-grid');
     const btn  = qs('#ath-map-btn');
-    activeView = activeView === 'grid' ? 'map' : 'grid';
+    const wasMap = activeView === 'map';
+    activeView = wasMap ? 'grid' : 'map';
 
     if (activeView === 'map') {
       myAthletesActive = false;
       document.querySelectorAll('.ath-page-sort').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
+      setViewBtns();
       grid.className = 'ath-map-wrap';
       grid.innerHTML = buildWorldMap(all);
       initMapInteractions(all);
     } else {
       btn.classList.remove('active');
       document.querySelectorAll('.ath-page-sort[data-sort]').forEach(b => b.classList.toggle('active', b.dataset.sort === activeSort));
-      grid.className = 'ath-page-grid';
+      setViewBtns();
       refreshGrid();
     }
   };
