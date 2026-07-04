@@ -23,15 +23,16 @@ function buildAthletesPage() {
   let myAthletesActive = false;
   let activeSearch  = '';
   let activeCountry = 'all';
-  let activePreset  = null;
+  let activePresets = new Set();
   let listSortKey   = '1500m';
   let listSortDir   = 1;        // 1 = asc (fastest first), -1 = desc
 
   const PRESETS = [
-    { key: 'sub330', label: 'Sub-3:30', fn: a => _parseTime(getPr(a, '1500m')) < _parseTime('3:30.00') },
-    { key: 'sub332', label: 'Sub-3:32', fn: a => _parseTime(getPr(a, '1500m')) < _parseTime('3:32.00') },
-    { key: 'u23',    label: 'U23',      fn: a => { const ag = a.dob ? calcAgeFromDob(a.dob) : null; return ag !== null && ag <= 22; } },
+    { key: 'sub330', label: 'Sub-3:30', section: 'time', fn: a => _parseTime(getPr(a, '1500m')) < _parseTime('3:30.00') },
+    { key: 'sub332', label: 'Sub-3:32', section: 'time', fn: a => _parseTime(getPr(a, '1500m')) < _parseTime('3:32.00') },
+    { key: 'u23',    label: 'U23',      section: 'age',  fn: a => { const ag = a.dob ? calcAgeFromDob(a.dob) : null; return ag !== null && ag <= 22; } },
   ];
+  let filterPanelOpen = false;
 
   // Build country list sorted by count descending
   const countryCounts = {};
@@ -57,9 +58,9 @@ function buildAthletesPage() {
     if (activeCountry !== 'all') {
       list = list.filter(a => a.country === activeCountry);
     }
-    if (activePreset) {
-      const preset = PRESETS.find(p => p.key === activePreset);
-      if (preset) list = list.filter(preset.fn);
+    if (activePresets.size > 0) {
+      const active = PRESETS.filter(p => activePresets.has(p.key));
+      list = list.filter(a => active.every(p => p.fn(a)));
     }
 
     if (activeView === 'list') {
@@ -85,7 +86,11 @@ function buildAthletesPage() {
     return list;
   }
 
-  function renderCountryChips() {
+  function activeFilterCount() {
+    return (activeCountry !== 'all' ? 1 : 0) + activePresets.size;
+  }
+
+  function renderNationalityChips() {
     const chips = countryList.map(c => {
       const flag = all.find(a => a.country === c)?.flag || '';
       const active = activeCountry === c ? ' active' : '';
@@ -96,14 +101,50 @@ function buildAthletesPage() {
     return `<button class="ath-country-chip${activeCountry === 'all' ? ' active' : ''}" data-country="all" onclick="filterByCountry('all')">All</button>${chips}`;
   }
 
-  function renderPresetChips() {
-    return PRESETS.map(p => {
-      const active = activePreset === p.key ? ' active' : '';
+  function renderPresetSection(section) {
+    return PRESETS.filter(p => p.section === section).map(p => {
+      const active = activePresets.has(p.key) ? ' active' : '';
       const count = all.filter(p.fn).length;
       return `<button class="ath-preset-chip${active}" data-preset="${p.key}" onclick="filterByPreset('${p.key}')">
         ${p.label} <span class="ath-preset-count">${count}</span>
       </button>`;
     }).join('');
+  }
+
+  function renderFilterPanel() {
+    const n = activeFilterCount();
+    const clearBtn = n > 0 ? `<button class="ath-filter-clear-all" onclick="clearAllFilters()">Clear all</button>` : '';
+    return `
+      <div class="ath-filter-section">
+        <div class="ath-filter-section-header">
+          <span class="ath-filter-section-label">Nationality</span>
+        </div>
+        <div class="ath-country-chips">${renderNationalityChips()}</div>
+      </div>
+      <div class="ath-filter-section">
+        <div class="ath-filter-section-header">
+          <span class="ath-filter-section-label">Time</span>
+        </div>
+        <div class="ath-preset-chips">${renderPresetSection('time')}</div>
+      </div>
+      <div class="ath-filter-section">
+        <div class="ath-filter-section-header">
+          <span class="ath-filter-section-label">Age</span>
+        </div>
+        <div class="ath-preset-chips">${renderPresetSection('age')}</div>
+      </div>
+      ${clearBtn ? `<div class="ath-filter-panel-footer">${clearBtn}</div>` : ''}
+    `;
+  }
+
+  function updateFilterToggle() {
+    const n = activeFilterCount();
+    const badge = qs('#ath-filter-badge');
+    if (badge) {
+      badge.textContent = n;
+      badge.style.display = n > 0 ? 'inline-flex' : 'none';
+    }
+    qs('#ath-filter-toggle')?.classList.toggle('has-filters', n > 0);
   }
 
   const LIST_COLS = [
@@ -227,14 +268,10 @@ function buildAthletesPage() {
     if (countEl) countEl.textContent = getResultCount();
   }
 
-  function refreshChips() {
-    const el = qs('#ath-country-chips');
-    if (el) el.innerHTML = renderCountryChips();
-  }
-
-  function refreshPresets() {
-    const el = qs('#ath-preset-chips');
-    if (el) el.innerHTML = renderPresetChips();
+  function refreshFilterPanel() {
+    const panel = qs('#ath-filter-panel-inner');
+    if (panel) panel.innerHTML = renderFilterPanel();
+    updateFilterToggle();
   }
 
   function setViewBtns() {
@@ -268,14 +305,22 @@ function buildAthletesPage() {
       </div>
 
       <div class="ath-filter-bar">
-        <div class="ath-search-wrap">
-          <svg class="ath-search-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="13" y1="13" x2="18" y2="18"/></svg>
-          <input class="ath-search-input" id="ath-search-input" type="text" placeholder="Search athletes…" autocomplete="off"
-            oninput="searchAthletes(this.value)" />
-          <button class="ath-search-clear" id="ath-search-clear" onclick="clearSearch()" aria-label="Clear search">✕</button>
+        <div class="ath-search-row">
+          <div class="ath-search-wrap">
+            <svg class="ath-search-icon" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="13" y1="13" x2="18" y2="18"/></svg>
+            <input class="ath-search-input" id="ath-search-input" type="text" placeholder="Search athletes…" autocomplete="off"
+              oninput="searchAthletes(this.value)" />
+            <button class="ath-search-clear" id="ath-search-clear" onclick="clearSearch()" aria-label="Clear search">✕</button>
+          </div>
+          <button class="ath-filter-toggle" id="ath-filter-toggle" onclick="toggleFilterPanel()">
+            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><line x1="1" y1="3" x2="12" y2="3"/><line x1="3" y1="6.5" x2="10" y2="6.5"/><line x1="5" y1="10" x2="8" y2="10"/></svg>
+            Filter
+            <span class="ath-filter-badge" id="ath-filter-badge" style="display:none">0</span>
+          </button>
         </div>
-        <div class="ath-country-chips" id="ath-country-chips">${renderCountryChips()}</div>
-        <div class="ath-preset-chips" id="ath-preset-chips">${renderPresetChips()}</div>
+        <div class="ath-filter-panel" id="ath-filter-panel">
+          <div class="ath-filter-panel-inner" id="ath-filter-panel-inner">${renderFilterPanel()}</div>
+        </div>
       </div>
 
       <div id="ath-page-grid" class="ath-page-grid">${renderGrid(sortedAthletes())}</div>
@@ -323,17 +368,32 @@ function buildAthletesPage() {
     qs('#ath-search-input').focus();
   };
 
+  window.toggleFilterPanel = function() {
+    filterPanelOpen = !filterPanelOpen;
+    const panel = qs('#ath-filter-panel');
+    const toggle = qs('#ath-filter-toggle');
+    if (panel) panel.classList.toggle('open', filterPanelOpen);
+    if (toggle) toggle.classList.toggle('open', filterPanelOpen);
+  };
+
+  window.clearAllFilters = function() {
+    activeCountry = 'all';
+    activePresets.clear();
+    refreshFilterPanel();
+    refreshGrid();
+  };
+
   window.filterByPreset = function(key) {
-    activePreset = activePreset === key ? null : key;  // toggle off if already active
+    if (activePresets.has(key)) activePresets.delete(key); else activePresets.add(key);
     if (activeView === 'map') { activeView = 'grid'; setViewBtns(); qs('#ath-map-btn')?.classList.remove('active'); }
-    refreshPresets();
+    refreshFilterPanel();
     refreshGrid();
   };
 
   window.filterByCountry = function(country) {
     activeCountry = country;
     if (activeView === 'map') { activeView = 'grid'; setViewBtns(); qs('#ath-map-btn')?.classList.remove('active'); }
-    refreshChips();
+    refreshFilterPanel();
     refreshGrid();
   };
 

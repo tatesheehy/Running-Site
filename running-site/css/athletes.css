@@ -89,18 +89,25 @@
 .ath-page-sort.active { background: var(--dark); color: #fff; box-shadow: none; }
 
 
-/* ── FILTER BAR (search + country chips) ─────────────────── */
+/* ── FILTER BAR ───────────────────────────────────────────── */
 .ath-filter-bar {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0;
   margin-bottom: 28px;
+}
+
+.ath-search-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .ath-search-wrap {
   position: relative;
   display: flex;
   align-items: center;
+  flex: 1;
 }
 .ath-search-icon {
   position: absolute;
@@ -141,7 +148,106 @@
 }
 .ath-search-clear:hover { color: var(--text); }
 
-.ath-country-chips {
+/* Filter toggle button */
+.ath-filter-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.12s, border-color 0.12s;
+  flex-shrink: 0;
+}
+.ath-filter-toggle:hover { border-color: var(--text); }
+.ath-filter-toggle.open,
+.ath-filter-toggle.has-filters { border-color: var(--dark); }
+
+.ath-filter-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 99px;
+  background: var(--dark);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Filter panel */
+.ath-filter-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.22s ease;
+}
+.ath-filter-panel.open {
+  grid-template-rows: 1fr;
+}
+.ath-filter-panel-inner {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  background: var(--surface);
+}
+/* Attach border-radius to top when panel opens */
+.ath-search-row + .ath-filter-panel.open .ath-filter-panel-inner {
+  margin-top: -1px;
+}
+
+.ath-filter-section {
+  padding: 16px 18px;
+}
+.ath-filter-section + .ath-filter-section {
+  border-top: 1px solid var(--border);
+}
+.ath-filter-section-header {
+  margin-bottom: 10px;
+}
+.ath-filter-section-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.ath-filter-panel-footer {
+  padding: 12px 18px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: flex-end;
+}
+.ath-filter-clear-all {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 0;
+  transition: color 0.12s;
+}
+.ath-filter-clear-all:hover { color: var(--text); }
+
+/* chips shared base */
+.ath-country-chips,
+.ath-preset-chips {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -163,15 +269,8 @@
   white-space: nowrap;
   transition: background 0.12s, color 0.12s, border-color 0.12s;
 }
-.ath-country-chip:hover:not(.active) {
-  color: var(--text);
-  border-color: var(--text);
-}
-.ath-country-chip.active {
-  background: var(--dark);
-  color: #fff;
-  border-color: var(--dark);
-}
+.ath-country-chip:hover:not(.active) { color: var(--text); border-color: var(--text); }
+.ath-country-chip.active { background: var(--dark); color: #fff; border-color: var(--dark); }
 
 @media (max-width: 768px) {
   .ath-country-chips { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; }
