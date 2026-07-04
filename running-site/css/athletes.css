@@ -58,6 +58,95 @@
 .ath-page-sort.active { background: var(--dark); color: #fff; box-shadow: none; }
 
 
+/* ── FILTER BAR (search + country chips) ─────────────────── */
+.ath-filter-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.ath-search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.ath-search-icon {
+  position: absolute;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  color: var(--muted);
+  pointer-events: none;
+  flex-shrink: 0;
+}
+.ath-search-input {
+  width: 100%;
+  padding: 9px 36px 9px 36px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.ath-search-input::placeholder { color: var(--muted); }
+.ath-search-input:focus { border-color: var(--accent, #555); }
+.ath-search-clear {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 13px;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s;
+}
+.ath-search-clear:hover { color: var(--text); }
+
+.ath-country-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.ath-country-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.12s, color 0.12s, border-color 0.12s;
+}
+.ath-country-chip:hover:not(.active) {
+  color: var(--text);
+  border-color: var(--text);
+}
+.ath-country-chip.active {
+  background: var(--dark);
+  color: #fff;
+  border-color: var(--dark);
+}
+
+@media (max-width: 768px) {
+  .ath-country-chips { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; }
+  .ath-country-chips::-webkit-scrollbar { display: none; }
+}
+
 .ath-map-wrap {
   padding-bottom: 80px;
 }
