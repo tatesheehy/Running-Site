@@ -638,7 +638,8 @@ function _renderEncountersInner(a1, a2, n1, n2, year) {
 
 function parseTimeToSecs(t) {
   if (!t) return null;
-  const parts = String(t).trim().split(':').map(Number);
+  const parts = String(t).trim().replace(/h$/, '').split(':').map(Number);
+  if (parts.some(isNaN)) return null;
   if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
   if (parts.length === 2) return parts[0] * 60 + parts[1];
   return parts[0];

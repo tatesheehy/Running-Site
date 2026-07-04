@@ -518,13 +518,15 @@ function _computePairwiseH2H(year, eventFilter, rankedOnly) {
 
         const p1 = parseInt(race1.place), p2 = parseInt(match.place);
         const t1s = parseTimeToSecs(race1.time), t2s = parseTimeToSecs(match.time);
+
+        // If both times and places exist but disagree on order → different heats → skip
         if (t1s && t2s && !isNaN(p1) && !isNaN(p2) && p1 !== p2) {
           if ((p1 < p2) !== (t1s < t2s)) return;
         }
 
         let a1wins = false, a2wins = false;
-        if (!isNaN(p1) && !isNaN(p2))  { a1wins = p1 < p2; a2wins = p2 < p1; }
-        else if (t1s && t2s)            { a1wins = t1s < t2s; a2wins = t2s < t1s; }
+        if (t1s && t2s)                    { a1wins = t1s < t2s; a2wins = t2s < t1s; }
+        else if (!isNaN(p1) && !isNaN(p2)) { a1wins = p1 < p2;  a2wins = p2 < p1;  }
         else return;
 
         if (!pairwise[a1.id]) pairwise[a1.id] = {};
@@ -592,13 +594,15 @@ function _computeAllH2HRecords(year, eventFilter, rankedOnly) {
 
         const p1 = parseInt(race1.place), p2 = parseInt(match.place);
         const t1s = parseTimeToSecs(race1.time), t2s = parseTimeToSecs(match.time);
+
+        // If both times and places exist but disagree on order → different heats → skip
         if (t1s && t2s && !isNaN(p1) && !isNaN(p2) && p1 !== p2) {
           if ((p1 < p2) !== (t1s < t2s)) return;
         }
 
         let a1wins = false, a2wins = false;
-        if (!isNaN(p1) && !isNaN(p2))  { a1wins = p1 < p2; a2wins = p2 < p1; }
-        else if (t1s && t2s)            { a1wins = t1s < t2s; a2wins = t2s < t1s; }
+        if (t1s && t2s)                    { a1wins = t1s < t2s; a2wins = t2s < t1s; }
+        else if (!isNaN(p1) && !isNaN(p2)) { a1wins = p1 < p2;  a2wins = p2 < p1;  }
         else return;
 
         const n1 = a1.name.split(' ').slice(-1)[0];
