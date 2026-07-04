@@ -473,6 +473,25 @@ function parseResults(html, year) {
   return parseResultsRegex(html, year);
 }
 
+function isNcaaDivIChampionship(meet) {
+  const m = (meet || '').toLowerCase();
+  if (!m.includes('ncaa') || !m.includes('champion')) return false;
+  if (m.includes(' iii') || m.includes('div. iii')) return false;
+  if (m.includes('prelim') || m.includes('first round') || m.includes('second round') || m.includes('regional')) return false;
+  return true;
+}
+
+function sweepNcaaTitles(athletes) {
+  let changed = 0;
+  for (const a of athletes) {
+    const all = [...(a.results || []), ...Object.values(a.resultsHistory || {}).flat()];
+    const hasTitle = all.some(r => r.place === '1' && isNcaaDivIChampionship(r.meet));
+    if (hasTitle && !a.ncaaTitle) { a.ncaaTitle = true; changed++; }
+    else if (!hasTitle && a.ncaaTitle) { delete a.ncaaTitle; changed++; }
+  }
+  return changed;
+}
+
 function needsProfileFill(athlete) {
   return isEmpty(athlete.country) || isEmpty(athlete.flag) || isEmpty(athlete.age) || !athlete.dob;
 }
@@ -586,7 +605,10 @@ async function main() {
 
   console.log(`\nDone: ${updated} updated, ${skipped} skipped, ${failed} failed.`);
 
-  if (updated > 0) {
+  const ncaaChanged = sweepNcaaTitles(allAthletes);
+  if (ncaaChanged) console.log(`NCAA title sweep: ${ncaaChanged} athlete(s) updated`);
+
+  if (updated > 0 || ncaaChanged) {
     // Rebuild athletes.json from the full in-memory list (preserves all athletes,
     // including those added via CMS that have no individual file).
     fs.writeFileSync(ATHLETES_JSON, JSON.stringify({ items: allAthletes }, null, 2));

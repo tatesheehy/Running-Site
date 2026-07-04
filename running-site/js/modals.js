@@ -230,16 +230,42 @@ window._tlHide = function() {
 
 // ── HONOURS ────────────────────────────────────────────────
 function _medalSvg(place, short) {
-  // NCAA Championship trophy: two maroon wood pillars, arch, gold medallion
+  // NCAA Championship trophy: two mahogany pillars with arch, gold medallion on top
   if (short === 'NCAA') {
     return `<svg class="ch-icon ch-icon-ncaa" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path fill-rule="evenodd" d="M1.5,24 L1.5,13 Q1.5,7.5 10,7.5 Q18.5,7.5 18.5,13 L18.5,24 L14,24 L14,14 Q14,11 10,11 Q6,11 6,14 L6,24 Z" fill="#7B2333"/>
-      <rect x="1.5" y="13" width="1.5" height="11" fill="rgba(255,255,255,0.08)"/>
-      <circle cx="10" cy="5" r="4.2" fill="#C47F00"/>
-      <circle cx="10" cy="5" r="3.5" fill="#F5C400"/>
-      <circle cx="10" cy="5" r="2.8" stroke="rgba(200,150,0,0.4)" stroke-width="0.6" fill="none"/>
-      <text x="10" y="6.8" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="2.8" fill="#3D1500">NCAA</text>
-      <rect x="0.5" y="24" width="19" height="1.8" rx="0.6" fill="#c0c0c0"/>
+      <!-- Trophy arch body with inner cutout between pillars -->
+      <path fill-rule="evenodd" d="M1.5,23 L1.5,12.5 Q1.5,7 10,7 Q18.5,7 18.5,12.5 L18.5,23 L14,23 L14,14 Q14,11.2 10,11.2 Q6,11.2 6,14 L6,23 Z" fill="#7A1C2E"/>
+      <!-- Right-side shadow on pillars for depth -->
+      <rect x="16.8" y="13.5" width="1.7" height="9.5" fill="rgba(0,0,0,0.22)"/>
+      <!-- Left pillar highlight -->
+      <rect x="1.5" y="13.5" width="1.1" height="9.5" fill="rgba(255,200,180,0.13)"/>
+      <!-- Column capitals -->
+      <rect x="1" y="11.8" width="6" height="1.9" rx="0.35" fill="#9B2840"/>
+      <rect x="1.2" y="11.8" width="5.6" height="0.7" fill="rgba(255,210,190,0.18)"/>
+      <rect x="13" y="11.8" width="6" height="1.9" rx="0.35" fill="#9B2840"/>
+      <rect x="13.2" y="11.8" width="5.6" height="0.7" fill="rgba(255,210,190,0.18)"/>
+      <!-- Column plinths -->
+      <rect x="1" y="21.5" width="6" height="1.6" rx="0.35" fill="#9B2840"/>
+      <rect x="13" y="21.5" width="6" height="1.6" rx="0.35" fill="#9B2840"/>
+      <!-- Base upper tier -->
+      <rect x="0.3" y="23" width="19.4" height="1.5" rx="0.4" fill="#7A1C2E"/>
+      <rect x="0.3" y="23" width="19.4" height="0.55" fill="rgba(255,200,180,0.14)"/>
+      <!-- Base lower tier -->
+      <rect x="0" y="24.4" width="20" height="1.6" rx="0.55" fill="#5C1220"/>
+      <!-- Gold medallion outer halo -->
+      <circle cx="10" cy="4.8" r="4.6" fill="#7A5200"/>
+      <!-- Gold disc -->
+      <circle cx="10" cy="4.8" r="4" fill="#C98000"/>
+      <!-- Bright gold surface -->
+      <circle cx="10" cy="4.8" r="3.4" fill="#F5C000"/>
+      <!-- Engraved inner ring -->
+      <circle cx="10" cy="4.8" r="2.75" stroke="#A86800" stroke-width="0.5" fill="none"/>
+      <!-- Glint highlight -->
+      <ellipse cx="7.9" cy="2.9" rx="1.9" ry="0.85" fill="rgba(255,255,255,0.32)" transform="rotate(-28,7.9,2.9)"/>
+      <!-- NCAA text -->
+      <text x="10" y="4.45" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="2.2" fill="#3A1400" letter-spacing="0.2">NCAA</text>
+      <!-- Decorative star -->
+      <polygon points="10,5.8 10.35,6.75 11.35,6.75 10.55,7.3 10.85,8.25 10,7.65 9.15,8.25 9.45,7.3 8.65,6.75 9.65,6.75" fill="#8B5000" opacity="0.7"/>
     </svg>`;
   }
   // Diamond League Final → trophy icon based on the WDL trophy
@@ -393,10 +419,9 @@ function openAthleteCard(athleteId, rank) {
           ${prsHtml ? `<div class="card-prs"><div class="card-prs-label">Personal Records</div>${prsHtml}</div>` : ''}
           ${achieveHtml ? `<div class="card-achievements">${achieveHtml}</div>` : ''}
           ${extraHtml ? `<div class="card-extra">${extraHtml}</div>` : ''}
-          ${(a.ncaa || a.college || a.collegeLogo) ? `
+          ${(a.college || a.collegeLogo) ? `
             <div class="card-ncaa">
               <div class="card-ncaa-logos">
-                ${a.ncaa ? `<svg class="card-ncaa-logo" viewBox="0 0 72 28" xmlns="http://www.w3.org/2000/svg" aria-label="NCAA"><rect width="72" height="28" rx="5" fill="#003087"/><text x="36" y="20" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="15" fill="#ffffff" letter-spacing="1">NCAA</text></svg>` : ''}
                 ${a.collegeLogo ? `<img class="card-college-logo" src="${a.collegeLogo}" alt="${a.college || 'College logo'}">` : ''}
               </div>
               ${a.college ? `<div class="card-college-name">${a.college}</div>` : ''}
@@ -413,8 +438,8 @@ function openAthleteCard(athleteId, rank) {
           </div>
         ` : ''}
         ${traitsHtml ? `<div class="card-traits">${traitsHtml}</div>` : ''}
-        ${buildHonoursHtml(a.ncaa ? [{ short: 'NCAA', discipline: '1500m', place: 1, year: '' }, ...(a.honours || [])] : a.honours)}
-        <div class="card-honours-placeholder" style="${a.honours === undefined && !a.ncaa && a.waUrl ? '' : 'display:none'}"></div>
+        ${buildHonoursHtml(a.ncaaTitle ? [{ short: 'NCAA', discipline: '1500m', place: 1, year: '' }, ...(a.honours || [])] : a.honours)}
+        <div class="card-honours-placeholder" style="${a.honours === undefined && !a.ncaaTitle && a.waUrl ? '' : 'display:none'}"></div>
         ${buildSeasonTimeline(a)}
         ${buildResultsSection(a)}
         <div class="card-analysis-label">Analysis</div>
@@ -482,7 +507,7 @@ function openAthleteCard(athleteId, rank) {
         // Cache result (empty array = "checked, none found"; undefined = "not checked")
         a.honours = (data.honours && data.honours.length) ? data.honours : [];
         const placeholder = qs('#athlete-card-inner .card-honours-placeholder');
-        const honoursToShow = a.ncaa ? [{ short: 'NCAA', discipline: '1500m', place: 1, year: '' }, ...a.honours] : a.honours;
+        const honoursToShow = a.ncaaTitle ? [{ short: 'NCAA', discipline: '1500m', place: 1, year: '' }, ...a.honours] : a.honours;
         if (placeholder && honoursToShow.length) {
           const honoursHtml = buildHonoursHtml(honoursToShow);
           placeholder.insertAdjacentHTML('beforebegin', honoursHtml);

@@ -198,6 +198,27 @@ function eventsToResults(resultsByEvent) {
     .map(({ _score, _raw, ...r }) => r);
 }
 
+// ── NCAA title detection ──────────────────────────────────────────────────────
+
+function isNcaaDivIChampionship(meet) {
+  const m = (meet || '').toLowerCase();
+  if (!m.includes('ncaa') || !m.includes('champion')) return false;
+  if (m.includes(' iii') || m.includes('div. iii')) return false;
+  if (m.includes('prelim') || m.includes('first round') || m.includes('second round') || m.includes('regional')) return false;
+  return true;
+}
+
+function sweepNcaaTitles(athletes) {
+  let changed = 0;
+  for (const a of athletes) {
+    const all = [...(a.results || []), ...Object.values(a.resultsHistory || {}).flat()];
+    const hasTitle = all.some(r => r.place === '1' && isNcaaDivIChampionship(r.meet));
+    if (hasTitle && !a.ncaaTitle) { a.ncaaTitle = true; changed++; }
+    else if (!hasTitle && a.ncaaTitle) { delete a.ncaaTitle; changed++; }
+  }
+  return changed;
+}
+
 // ── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -286,6 +307,12 @@ async function main() {
 
     // Save after every athlete so a crash doesn't lose progress
     fs.writeFileSync(ATHLETES_JSON, JSON.stringify(data, null, 2));
+  }
+
+  const ncaaChanged = sweepNcaaTitles(athletes);
+  if (ncaaChanged) {
+    fs.writeFileSync(ATHLETES_JSON, JSON.stringify(data, null, 2));
+    console.log(`NCAA title sweep: ${ncaaChanged} athlete(s) updated`);
   }
 
   console.log(`\nDone. ${updated} updated, ${skipped} skipped, ${errors} errors.`);
