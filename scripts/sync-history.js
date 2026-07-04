@@ -25,7 +25,7 @@ const ONLY_ID       = idIdx !== -1 ? process.argv[idIdx + 1] : null;
 const yearsIdx      = process.argv.indexOf('--years');
 const YEARS         = yearsIdx !== -1
   ? process.argv[yearsIdx + 1].split(',').map(Number)
-  : [2022, 2023, 2024, 2025];
+  : [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
 
 const DELAY_BASE_MS = 700;  // base delay between API calls
 const DELAY_JITTER  = 500;  // add up to this many ms randomly
@@ -213,7 +213,9 @@ function isNcaaDivIChampionship(meet, event) {
 }
 
 function normalizeNcaaEvent(e) {
-  return (e || '').replace(/ sh$/i, '').replace(/ short track$/i, '').trim();
+  return (e || '')
+    .replace(/ sh$/i, '').replace(/ short track$/i, '').trim()
+    .replace(/^(\d[\d,]*)\s+metres$/i, (_, n) => n.replace(',','') + 'm');
 }
 
 function sweepNcaaTitles(athletes) {

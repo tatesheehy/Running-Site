@@ -486,7 +486,9 @@ function isNcaaDivIChampionship(meet, event) {
 }
 
 function normalizeNcaaEvent(e) {
-  return (e || '').replace(/ sh$/i, '').replace(/ short track$/i, '').trim();
+  return (e || '')
+    .replace(/ sh$/i, '').replace(/ short track$/i, '').trim()
+    .replace(/^(\d[\d,]*)\s+metres$/i, (_, n) => n.replace(',','') + 'm');
 }
 
 function sweepNcaaTitles(athletes) {
