@@ -87,6 +87,182 @@
   "id": "anass-essayi",
   "age": "25",
   "resultsHistory": {
+    "2018": [
+      {
+        "date": "OCT 15",
+        "meet": "Buenos Aires Youth Olympic Games, Buenos Aires",
+        "event": "Cross Country 4000m",
+        "time": "11:35",
+        "place": "6"
+      },
+      {
+        "date": "OCT 12",
+        "meet": "Buenos Aires Youth Olympic Games, Buenos Aires",
+        "event": "1500m",
+        "time": "3:53.75",
+        "place": "2"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "Algiers African Youth Games, Algiers",
+        "event": "1500m",
+        "time": "3:49.68",
+        "place": "2"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "IAAF World U20 Championships",
+        "event": "1500m",
+        "time": "3:46.68",
+        "place": "6"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Rabat 4ème Meeting à Thème, Rabat",
+        "event": "1500m",
+        "time": "3:43.0",
+        "place": "1"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Rabat 2ème Challenge Performance, Rabat",
+        "event": "1500m",
+        "time": "3:47.21",
+        "place": "9"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Rabat Engagement Test, Rabat",
+        "event": "1500m",
+        "time": "3:45.83",
+        "place": "3"
+      }
+    ],
+    "2019": [
+      {
+        "date": "AUG 3",
+        "meet": "Memorial Geert Rasschaert, Ninove",
+        "event": "1500m",
+        "time": "3:39.67",
+        "place": "7"
+      },
+      {
+        "date": "JUL 28",
+        "meet": "Moroccan U20 Championships, Sale",
+        "event": "1500m",
+        "time": "3:44.23",
+        "place": "2"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "Meeting Pro Athlé Tour de Sotteville les Rouen, Sotteville-lès-Rouen",
+        "event": "3000m",
+        "time": "7:52.72",
+        "place": "7"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Finale Coupe du Trone, Sidi Kacem",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "JUN 21",
+        "meet": "Meeting National de Carquefou, Carquefou",
+        "event": "1500m",
+        "time": "3:39.05",
+        "place": "6"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "1500m",
+        "time": "3:42.27",
+        "place": "4"
+      },
+      {
+        "date": "APR 17",
+        "meet": "African U20 Championships, Abidjan",
+        "event": "1500m",
+        "time": "3:52.19",
+        "place": "6"
+      }
+    ],
+    "2020": [
+      {
+        "date": "FEB 1",
+        "meet": "Meeting Elite en salle de Mondeville",
+        "event": "3000m sh",
+        "time": "7:54.43",
+        "place": "2"
+      }
+    ],
+    "2021": [
+      {
+        "date": "AUG 3",
+        "meet": "The XXXII Olympic Games",
+        "event": "1500m",
+        "time": "3:45.92",
+        "place": "11"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "VIII Trofeo Diputacion de Castellón-Memorial José Antonio Cansino, Castellón",
+        "event": "1500m",
+        "time": "3:34.64",
+        "place": "1"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Arab Championships",
+        "event": "1500m",
+        "time": "3:35.59",
+        "place": "3"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Meeting National de Carquefou",
+        "event": "1500m",
+        "time": "3:35.20",
+        "place": "1"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Ethiopian Trials",
+        "event": "1500m",
+        "time": "3:34.58",
+        "place": "7"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "Meeting INA",
+        "event": "1500m",
+        "time": "3:36.47",
+        "place": "1"
+      },
+      {
+        "date": "MAR 27",
+        "meet": "2éme Meeting Elite",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAR 21",
+        "meet": "9ème Meeting Federal",
+        "event": "1500m",
+        "time": "3:40.01",
+        "place": "6"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "Elite Meeting",
+        "event": "1500m",
+        "time": "3:37.13",
+        "place": "2"
+      }
+    ],
     "2022": [
       {
         "date": "JUL 16",
@@ -509,6 +685,8 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-03",
-  "ncaaTitle": true
+  "lastHistorySynced": "2026-07-04",
+  "ncaaTitle": [
+    "1500m"
+  ]
 }

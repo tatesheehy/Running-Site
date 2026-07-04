@@ -239,6 +239,55 @@
   "id": "colin-sahlman",
   "age": "22",
   "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "APR 18",
+        "meet": "Ventura County Championships",
+        "event": "800m",
+        "time": "1:57.10",
+        "place": "3"
+      },
+      {
+        "date": "APR 6",
+        "meet": "Arcadia Invitational",
+        "event": "Mile",
+        "time": "4:16.44",
+        "place": "1"
+      }
+    ],
+    "2020": [
+      {
+        "date": "DEC 5",
+        "meet": "Sundown 5000",
+        "event": "5000m",
+        "time": "14:27.03",
+        "place": "1"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Rossi Relays, Burns Track Complex",
+        "event": "3000m",
+        "time": "8:34.68",
+        "place": "7"
+      }
+    ],
+    "2021": [
+      {
+        "date": "JUN 6",
+        "meet": "Music City Track Carnival National Events",
+        "event": "Mile",
+        "time": "4:05.79",
+        "place": "1"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Track Meet",
+        "event": "1500m",
+        "time": "3:46.39",
+        "place": "11"
+      }
+    ],
     "2022": [
       {
         "date": "JUN 15",
@@ -745,5 +794,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-03"
+  "lastHistorySynced": "2026-07-04"
 }

@@ -144,6 +144,26 @@
   "id": "abel-teffra",
   "age": "24",
   "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "MAR 23",
+        "meet": "Central Valley Classic",
+        "event": "800m",
+        "time": "1:59.62",
+        "place": "1"
+      }
+    ],
+    "2020": [],
+    "2021": [
+      {
+        "date": "DEC 4",
+        "meet": "Bill Ward Invitational",
+        "event": "Mile sh",
+        "time": "4:13.86",
+        "place": "2"
+      }
+    ],
     "2022": [
       {
         "date": "JUN 9",
@@ -629,6 +649,8 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-03",
-  "ncaaTitle": true
+  "lastHistorySynced": "2026-07-04",
+  "ncaaTitle": [
+    "Mile"
+  ]
 }
