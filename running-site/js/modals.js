@@ -230,6 +230,18 @@ window._tlHide = function() {
 
 // ── HONOURS ────────────────────────────────────────────────
 function _medalSvg(place, short) {
+  // NCAA Championship trophy: two maroon wood pillars, arch, gold medallion
+  if (short === 'NCAA') {
+    return `<svg class="ch-icon ch-icon-ncaa" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M1.5,24 L1.5,13 Q1.5,7.5 10,7.5 Q18.5,7.5 18.5,13 L18.5,24 L14,24 L14,14 Q14,11 10,11 Q6,11 6,14 L6,24 Z" fill="#7B2333"/>
+      <rect x="1.5" y="13" width="1.5" height="11" fill="rgba(255,255,255,0.08)"/>
+      <circle cx="10" cy="5" r="4.2" fill="#C47F00"/>
+      <circle cx="10" cy="5" r="3.5" fill="#F5C400"/>
+      <circle cx="10" cy="5" r="2.8" stroke="rgba(200,150,0,0.4)" stroke-width="0.6" fill="none"/>
+      <text x="10" y="6.8" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="2.8" fill="#3D1500">NCAA</text>
+      <rect x="0.5" y="24" width="19" height="1.8" rx="0.6" fill="#c0c0c0"/>
+    </svg>`;
+  }
   // Diamond League Final → trophy icon based on the WDL trophy
   if (short === 'DLF') {
     return `<svg class="ch-icon ch-icon-dlf" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -401,8 +413,8 @@ function openAthleteCard(athleteId, rank) {
           </div>
         ` : ''}
         ${traitsHtml ? `<div class="card-traits">${traitsHtml}</div>` : ''}
-        ${buildHonoursHtml(a.honours)}
-        <div class="card-honours-placeholder" style="${a.honours === undefined && a.waUrl ? '' : 'display:none'}"></div>
+        ${buildHonoursHtml(a.ncaa ? [{ short: 'NCAA', discipline: '1500m', place: 1, year: '' }, ...(a.honours || [])] : a.honours)}
+        <div class="card-honours-placeholder" style="${a.honours === undefined && !a.ncaa && a.waUrl ? '' : 'display:none'}"></div>
         ${buildSeasonTimeline(a)}
         ${buildResultsSection(a)}
         <div class="card-analysis-label">Analysis</div>
@@ -470,8 +482,9 @@ function openAthleteCard(athleteId, rank) {
         // Cache result (empty array = "checked, none found"; undefined = "not checked")
         a.honours = (data.honours && data.honours.length) ? data.honours : [];
         const placeholder = qs('#athlete-card-inner .card-honours-placeholder');
-        if (placeholder && a.honours.length) {
-          const honoursHtml = buildHonoursHtml(a.honours);
+        const honoursToShow = a.ncaa ? [{ short: 'NCAA', discipline: '1500m', place: 1, year: '' }, ...a.honours] : a.honours;
+        if (placeholder && honoursToShow.length) {
+          const honoursHtml = buildHonoursHtml(honoursToShow);
           placeholder.insertAdjacentHTML('beforebegin', honoursHtml);
         }
         if (placeholder) placeholder.remove();

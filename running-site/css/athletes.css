@@ -189,6 +189,7 @@
 .ath-filter-panel {
   display: grid;
   grid-template-rows: 0fr;
+  overflow: hidden;
   transition: grid-template-rows 0.22s ease;
 }
 .ath-filter-panel.open {
