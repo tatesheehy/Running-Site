@@ -274,6 +274,10 @@
   "id": "carter-cutting",
   "age": "21",
   "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
     "2022": [
       {
         "date": "JUN 19",
@@ -612,5 +616,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-03"
+  "lastHistorySynced": "2026-07-04"
 }

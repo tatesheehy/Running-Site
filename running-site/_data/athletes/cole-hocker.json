@@ -221,6 +221,258 @@
   "id": "cole-hocker",
   "age": "25",
   "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "JUN 16",
+        "meet": "New Balance Nationals Outdoor",
+        "event": "Distance Medley",
+        "time": "9:58.91",
+        "place": "1"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Monumental Mile",
+        "event": "Mile",
+        "time": "4:08.0",
+        "place": "2"
+      }
+    ],
+    "2020": [
+      {
+        "date": "DEC 4",
+        "meet": "The Track Meet",
+        "event": "5000m",
+        "time": "13:32.95",
+        "place": "2"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "Boston University Last Chance Invitational",
+        "event": "Mile sh",
+        "time": "3:58.20",
+        "place": "5"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Husky Classic",
+        "event": "3000m",
+        "time": "7:57.26",
+        "place": "1"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Razorback Invitational",
+        "event": "3000m sh",
+        "time": "8:15.41",
+        "place": "1"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Washington Indoor Preview",
+        "event": "Mile",
+        "time": "4:08.84",
+        "place": "8"
+      }
+    ],
+    "2021": [
+      {
+        "date": "AUG 7",
+        "meet": "The XXXII Olympic Games",
+        "event": "1500m",
+        "time": "3:31.40",
+        "place": "6"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "The XXXII Olympic Games",
+        "event": "1500m",
+        "time": "3:33.87",
+        "place": "2"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "The XXXII Olympic Games",
+        "event": "1500m",
+        "time": "3:36.16",
+        "place": "4"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "U.S. Olympic Trials",
+        "event": "1500m",
+        "time": "3:35.28",
+        "place": "1"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "U.S. Olympic Trials",
+        "event": "1500m",
+        "time": "3:43.00",
+        "place": "2"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "U.S. Olympic Trials",
+        "event": "1500m",
+        "time": "3:39.72",
+        "place": "1"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "NCAA Div. I Outdoor Championships",
+        "event": "1500m",
+        "time": "3:35.35",
+        "place": "1"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "NCAA Div. I Outdoor Championships",
+        "event": "5000m",
+        "time": "13:18.95",
+        "place": "4"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "NCAA Div. I Outdoor Championships",
+        "event": "1500m",
+        "time": "3:38.34",
+        "place": "1"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "NCAA Preliminary West Round",
+        "event": "1500m",
+        "time": "3:38.29",
+        "place": "1"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "NCAA Preliminary West Round",
+        "event": "5000m",
+        "time": "13:57.02",
+        "place": "2"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "NCAA Preliminary West Round",
+        "event": "1500m",
+        "time": "3:45.04",
+        "place": "1"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "PAC-12 Conference Championships",
+        "event": "800m",
+        "time": "1:46.39",
+        "place": "3"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "PAC-12 Conference Championships",
+        "event": "5000m",
+        "time": "13:32.68",
+        "place": "1"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "PAC-12 Conference Championships",
+        "event": "800m",
+        "time": "1:47.90",
+        "place": "1"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Oregon Twilight",
+        "event": "1500m",
+        "time": "3:36.47",
+        "place": "3"
+      },
+      {
+        "date": "APR 23",
+        "meet": "Oregon Relays",
+        "event": "5000m",
+        "time": "13:19.98",
+        "place": "1"
+      },
+      {
+        "date": "APR 3",
+        "meet": "Hayward Premiere",
+        "event": "800m",
+        "time": "1:46.60",
+        "place": "1"
+      },
+      {
+        "date": "APR 2",
+        "meet": "Hayward Premiere",
+        "event": "1500m",
+        "time": "3:38.99",
+        "place": "1"
+      },
+      {
+        "date": "MAR 13",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "Mile sh",
+        "time": "3:53.71",
+        "place": "1"
+      },
+      {
+        "date": "MAR 13",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:46.15",
+        "place": "1"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "Mile sh",
+        "time": "3:56.57",
+        "place": "1"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:19.98",
+        "place": "1"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Hayward Time Trial",
+        "event": "3000m",
+        "time": "8:49.33",
+        "place": "4"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Tyson Invitational",
+        "event": "800m sh",
+        "time": "1:48.44",
+        "place": "1"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Tyson Invitational",
+        "event": "Mile sh",
+        "time": "3:50.55",
+        "place": "2"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "Razorback Invitational",
+        "event": "3000m sh",
+        "time": "7:46.44",
+        "place": "2"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Razorback Invitational",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:19.42",
+        "place": "1"
+      }
+    ],
     "2022": [
       {
         "date": "SEP 11",
@@ -776,5 +1028,10 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-03"
+  "lastHistorySynced": "2026-07-04",
+  "ncaaTitle": [
+    "1500m",
+    "Mile",
+    "3000m"
+  ]
 }
