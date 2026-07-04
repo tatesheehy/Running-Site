@@ -1,0 +1,113 @@
+{
+  "id": "jochem-vermeulen",
+  "name": "Jochem Vermeulen",
+  "flag": "BE",
+  "country": "Belgium",
+  "waUrl": "https://worldathletics.org/athletes/belgium/jochem-vermeulen-14627506",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "27",
+  "dob": "1998-08-02",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "400m",
+      "time": "50.59"
+    },
+    {
+      "event": "800m",
+      "time": "1:46.38"
+    },
+    {
+      "event": "1500m",
+      "time": "3:31.74"
+    },
+    {
+      "event": "Mile",
+      "time": "3:51.00"
+    },
+    {
+      "event": "2000m",
+      "time": "5:03.24"
+    },
+    {
+      "event": "300 Metres",
+      "time": "37.18"
+    },
+    {
+      "event": "300 Metres Short Track",
+      "time": "37.18"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:48.04"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:26.31"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:33.71"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:53.68"
+    }
+  ],
+  "results": [
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:44.55",
+      "place": "5."
+    },
+    {
+      "date": "MAR 1",
+      "meet": "Belgian Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:39.03",
+      "place": "1."
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "1500 m sh",
+      "time": "3:33.71",
+      "place": "5."
+    },
+    {
+      "date": "FEB 8",
+      "meet": "INIT Indoor Meeting Karlsruhe",
+      "event": "1500 m sh",
+      "time": "3:35.48",
+      "place": "3."
+    },
+    {
+      "date": "JAN 31",
+      "meet": "IFAM Gent Indoor",
+      "event": "800 m sh",
+      "time": "1:48.04",
+      "place": "2."
+    }
+  ],
+  "lastSynced": "2026-07-04"
+}

@@ -242,7 +242,9 @@ function fetchPage(url) {
       if (redirects > 5) return reject(new Error('Too many redirects'));
       https.get(url, opts, (res) => {
         if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-          return get(res.headers.location, redirects + 1);
+          const loc = res.headers.location;
+          const next = loc.startsWith('http') ? loc : new URL(loc, url).href;
+          return get(next, redirects + 1);
         }
         if (res.statusCode !== 200) {
           res.resume();

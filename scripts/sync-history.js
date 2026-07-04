@@ -231,9 +231,13 @@ async function main() {
 
     if (!a.resultsHistory || typeof a.resultsHistory !== 'object') a.resultsHistory = {};
 
+    const CURRENT_YEAR = new Date().getFullYear();
     const yearsToFetch = FORCE
       ? YEARS
-      : YEARS.filter(y => !Array.isArray(a.resultsHistory[y]) || a.resultsHistory[y].length === 0);
+      : YEARS.filter(y => {
+          if (y === CURRENT_YEAR) return FORCE || !Array.isArray(a.results) || a.results.length === 0;
+          return !Array.isArray(a.resultsHistory[y]) || a.resultsHistory[y].length === 0;
+        });
 
     if (yearsToFetch.length === 0) {
       console.log(`${prefix} — skipped (all years present, use --force to overwrite)`);
@@ -259,11 +263,17 @@ async function main() {
         continue;
       }
 
+      const CURRENT_YEAR = new Date().getFullYear();
       const results = eventsToResults(res && res.resultsByEvent);
       if (results.length === 0) {
-        // Genuinely no results this year — record empty so we don't re-fetch
-        a.resultsHistory[year] = [];
+        if (year !== CURRENT_YEAR) a.resultsHistory[year] = [];
         console.log(`    · no results`);
+      } else if (year === CURRENT_YEAR) {
+        // Current season goes into athlete.results (used by the site's year tab)
+        a.results = results;
+        a.lastSynced = new Date().toISOString().slice(0, 10);
+        console.log(`    ✓ ${results.length} results → athlete.results`);
+        athleteUpdated = true;
       } else {
         a.resultsHistory[year] = results;
         console.log(`    ✓ ${results.length} results`);

@@ -1,0 +1,202 @@
+{
+  "id": "foster-malleck",
+  "name": "Foster Malleck",
+  "flag": "CA",
+  "country": "Canada",
+  "waUrl": "https://worldathletics.org/athletes/canada/foster-malleck-14803986",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "24",
+  "dob": "2001-08-12",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:47.81"
+    },
+    {
+      "event": "1500m",
+      "time": "3:32.38"
+    },
+    {
+      "event": "Mile",
+      "time": "3:51.39"
+    },
+    {
+      "event": "2000m",
+      "time": "4:54.08"
+    },
+    {
+      "event": "3000m",
+      "time": "7:42.80"
+    },
+    {
+      "event": "2 Miles",
+      "time": "9:26.51"
+    },
+    {
+      "event": "5000m",
+      "time": "13:48.80"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:51.63"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:27.45"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:27.45"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:33.39"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:51.39"
+    },
+    {
+      "event": "2000 Metres Short Track",
+      "time": "4:54.08"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:42.80"
+    },
+    {
+      "event": "2 Miles Short Track",
+      "time": "9:26.51"
+    },
+    {
+      "event": "2000 Metres Steeplechase",
+      "time": "6:17.75"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:07.01"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "30:41"
+    },
+    {
+      "event": "4x800 Metres Relay",
+      "time": "7:35.39"
+    },
+    {
+      "event": "4x800 Metres Relay Short Track",
+      "time": "7:33.03"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:53.09"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 27",
+      "meet": "Pan American Athletics Championships",
+      "event": "1500 m",
+      "time": "3:40.20",
+      "place": "1."
+    },
+    {
+      "date": "JUN 21",
+      "meet": "Canadian Championships",
+      "event": "1500 m",
+      "time": "3:37.68",
+      "place": "1."
+    },
+    {
+      "date": "JUN 20",
+      "meet": "Canadian Championships",
+      "event": "1500 m",
+      "time": "3:47.71",
+      "place": "1."
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Motonet GP Lahti",
+      "event": "1500 m",
+      "time": "3:36.13",
+      "place": "2."
+    },
+    {
+      "date": "JUN 3",
+      "meet": "Paavo Nurmi Games",
+      "event": "1500 m",
+      "time": "3:34.17",
+      "place": "8."
+    },
+    {
+      "date": "APR 18",
+      "meet": "B.A.A. Invitational Mile",
+      "event": "Mile Road",
+      "time": "4:07.01",
+      "place": "3."
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:39.05",
+      "place": "4."
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "1500 m sh",
+      "time": "3:33.39",
+      "place": "1."
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "1500 m sh",
+      "time": "3:34.99",
+      "place": ""
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "Mile sh",
+      "time": "3:51.39",
+      "place": "4."
+    },
+    {
+      "date": "JAN 24",
+      "meet": "New Balance Indoor Grand Prix",
+      "event": "2000 m sh",
+      "time": "4:54.08",
+      "place": "5."
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Relay",
+      "time": "23:43",
+      "place": "9."
+    }
+  ],
+  "lastSynced": "2026-07-04"
+}

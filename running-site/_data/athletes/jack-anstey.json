@@ -1,0 +1,210 @@
+{
+  "id": "jack-anstey",
+  "name": "Jack Anstey",
+  "flag": "AU",
+  "country": "Australia",
+  "waUrl": "https://worldathletics.org/athletes/australia/jack-anstey-014670317",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "29",
+  "dob": "1997-04-08",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:47.12"
+    },
+    {
+      "event": "1500m",
+      "time": "3:33.36"
+    },
+    {
+      "event": "Mile",
+      "time": "3:51.51"
+    },
+    {
+      "event": "3000m",
+      "time": "7:40.46"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:22.36"
+    },
+    {
+      "event": "600 Metres Short Track",
+      "time": "1:22.36"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:47.12"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:16.95"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:16.95"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:35.29"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:51.51"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:40.46"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:57.25"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:56.42"
+    },
+    {
+      "event": "Distance Medley",
+      "time": "9:48.69"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:57.06"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Meeting Stanislas Nancy",
+      "event": "1500 m",
+      "time": "DNF",
+      "place": ""
+    },
+    {
+      "date": "JUN 26",
+      "meet": "76. Boris Hanžeković Memorial",
+      "event": "1500 m",
+      "time": "3:33.36",
+      "place": "7."
+    },
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "1500 m",
+      "time": "3:33.92",
+      "place": "4."
+    },
+    {
+      "date": "JUN 3",
+      "meet": "Paavo Nurmi Games",
+      "event": "1500 m",
+      "time": "3:34.21",
+      "place": "9."
+    },
+    {
+      "date": "MAY 29",
+      "meet": "8th Irena Szewińska Memorial",
+      "event": "1500 m",
+      "time": "3:39.32",
+      "place": "7."
+    },
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "1500 m",
+      "time": "3:35.86",
+      "place": "11."
+    },
+    {
+      "date": "APR 10",
+      "meet": "Australian Championships",
+      "event": "1500 m",
+      "time": "3:35.26",
+      "place": "5."
+    },
+    {
+      "date": "APR 9",
+      "meet": "Australian Championships",
+      "event": "1500 m",
+      "time": "3:38.68",
+      "place": "2."
+    },
+    {
+      "date": "MAR 28",
+      "meet": "Maurie Plant Meet",
+      "event": "1500 m",
+      "time": "DNF",
+      "place": ""
+    },
+    {
+      "date": "MAR 7",
+      "meet": "The PRTC Indoor Classic",
+      "event": "1500 m sh",
+      "time": "3:35.62",
+      "place": "3."
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "1500 m sh",
+      "time": "3:35.88",
+      "place": ""
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "Mile sh",
+      "time": "3:52.48",
+      "place": "1."
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "1500 m sh",
+      "time": "3:35.29",
+      "place": ""
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "Mile sh",
+      "time": "3:52.09",
+      "place": "6."
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "3000 m sh",
+      "time": "7:40.46",
+      "place": "5."
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Relay",
+      "time": "22:23",
+      "place": "1."
+    }
+  ],
+  "lastSynced": "2026-07-04"
+}

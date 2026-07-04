@@ -426,12 +426,28 @@ async function main() {
   console.log(`  PRs:     ${prs.length} events`);
   console.log(`  Honours: ${honours.length} podium finishes`);
 
-  // ── Rebuild athletes.json ─────────────────────────────────────────────────
-  console.log('\n📦 Rebuilding athletes.json...');
-  const files   = fs.readdirSync(ATHLETES_DIR).filter(f => f.endsWith('.json')).sort();
-  const athletes = files.map(f => JSON.parse(fs.readFileSync(path.join(ATHLETES_DIR, f), 'utf8')));
-  fs.writeFileSync(ATHLETES_JSON, JSON.stringify({ items: athletes }, null, 2));
-  console.log(`✓ athletes.json updated (${athletes.length} athletes)\n`);
+  // ── Merge into athletes.json (source of truth) ────────────────────────────
+  // Do NOT rebuild from _data/athletes/*.json — those files are stale and a
+  // rebuild would wipe synced results / resultsHistory. Append (or replace by
+  // id) into the live athletes.json instead.
+  console.log('\n📦 Updating athletes.json...');
+  let data = { items: [] };
+  if (fs.existsSync(ATHLETES_JSON)) {
+    try { data = JSON.parse(fs.readFileSync(ATHLETES_JSON, 'utf8')); } catch (_) {}
+  }
+  if (!Array.isArray(data.items)) data.items = [];
+  const existingIdx = data.items.findIndex(a => a.id === id);
+  if (existingIdx !== -1) {
+    // Preserve any already-synced results/history on replace.
+    const prev = data.items[existingIdx];
+    stub.results        = prev.results && prev.results.length ? prev.results : stub.results;
+    stub.resultsHistory = prev.resultsHistory || stub.resultsHistory;
+    data.items[existingIdx] = stub;
+  } else {
+    data.items.push(stub);
+  }
+  fs.writeFileSync(ATHLETES_JSON, JSON.stringify(data, null, 2));
+  console.log(`✓ athletes.json updated (${data.items.length} athletes)\n`);
 
   console.log('Next steps:');
   console.log(`  1. Add a photo → running-site/images/${id}.png`);

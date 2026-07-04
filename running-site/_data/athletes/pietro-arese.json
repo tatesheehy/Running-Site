@@ -1,0 +1,170 @@
+{
+  "id": "pietro-arese",
+  "name": "Pietro Arese",
+  "flag": "IT",
+  "country": "Italy",
+  "waUrl": "https://worldathletics.org/athletes/italy/pietro-arese-14701882",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "26",
+  "dob": "1999-10-08",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:47.14"
+    },
+    {
+      "event": "1500m",
+      "time": "3:30.74"
+    },
+    {
+      "event": "Mile",
+      "time": "3:52.82"
+    },
+    {
+      "event": "3000m",
+      "time": "7:38.42"
+    },
+    {
+      "event": "3000m SC",
+      "time": "8:53.84"
+    },
+    {
+      "event": "5000m",
+      "time": "13:35.97"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:49.59"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:19.46"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:34.75"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:54.64"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:38.42"
+    },
+    {
+      "event": "2000 Metres Steeplechase",
+      "time": "5:58.68"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "29:38"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 26",
+      "meet": "76. Boris Hanžeković Memorial",
+      "event": "1500 m",
+      "time": "3:32.76",
+      "place": "4."
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "1500 m",
+      "time": "3:37.56",
+      "place": ""
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "Mile",
+      "time": "3:52.82",
+      "place": "10."
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Meeting de Marseille",
+      "event": "1500 m",
+      "time": "3:41.96",
+      "place": "10."
+    },
+    {
+      "date": "MAY 23",
+      "meet": "1000m Verso la Coppa Europa",
+      "event": "1000 m",
+      "time": "2:19.46",
+      "place": "2."
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:40.91",
+      "place": "8."
+    },
+    {
+      "date": "MAR 1",
+      "meet": "Italian Indoor Championships",
+      "event": "3000 m sh",
+      "time": "7:45.26",
+      "place": "2."
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Italian Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:59.81",
+      "place": "2."
+    },
+    {
+      "date": "FEB 22",
+      "meet": "ORLEN Copernicus Cup",
+      "event": "1500 m sh",
+      "time": "3:34.75",
+      "place": "5."
+    },
+    {
+      "date": "FEB 8",
+      "meet": "Meeting Metz Moselle Athlélor Crédit Mutuel",
+      "event": "1500 m sh",
+      "time": "3:41.14",
+      "place": "8."
+    },
+    {
+      "date": "FEB 3",
+      "meet": "Czech Indoor Gala",
+      "event": "3000 m sh",
+      "time": "7:46.20",
+      "place": "6."
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Campionato Regionale Prove Multiple Indoor",
+      "event": "Mile sh",
+      "time": "3:54.64",
+      "place": "1."
+    }
+  ],
+  "lastSynced": "2026-07-04"
+}

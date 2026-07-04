@@ -1,0 +1,204 @@
+{
+  "id": "flavien-szot",
+  "name": "Flavien Szot",
+  "flag": "FR",
+  "country": "France",
+  "waUrl": "https://worldathletics.org/athletes/france/flavien-szot-14851721",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "24",
+  "dob": "2001-09-06",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:45.71"
+    },
+    {
+      "event": "1500m",
+      "time": "3:30.74"
+    },
+    {
+      "event": "Mile",
+      "time": "3:52.67"
+    },
+    {
+      "event": "2000m",
+      "time": "5:00.86"
+    },
+    {
+      "event": "3000m",
+      "time": "7:39.89"
+    },
+    {
+      "event": "5000m",
+      "time": "13:51.27"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:50.44"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:18.21"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:36.37"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:52.67"
+    },
+    {
+      "event": "2000 Metres Short Track",
+      "time": "5:00.86"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:39.89"
+    },
+    {
+      "event": "Road Race",
+      "time": "21:13"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:58.6h"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:51.2h"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:18"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "28:59"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:15.45"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "1500 m",
+      "time": "3:31.81",
+      "place": "9."
+    },
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "1500 m",
+      "time": "3:34.58",
+      "place": "7."
+    },
+    {
+      "date": "JUN 17",
+      "meet": "Meeting International de Montreuil",
+      "event": "800 m",
+      "time": "1:45.71",
+      "place": "5."
+    },
+    {
+      "date": "JUN 7",
+      "meet": "BAUHAUS-Galan",
+      "event": "1500 m",
+      "time": "3:34.27",
+      "place": "10."
+    },
+    {
+      "date": "MAY 31",
+      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+      "event": "1500 m",
+      "time": "3:32.24",
+      "place": "10."
+    },
+    {
+      "date": "MAY 17",
+      "meet": "Championnats de France des Clubs Elite 1",
+      "event": "1500 m",
+      "time": "3:39.99",
+      "place": "1."
+    },
+    {
+      "date": "MAY 17",
+      "meet": "Championnats de France des Clubs Elite 1",
+      "event": "4x400 m Relay",
+      "time": "3:15.45",
+      "place": "3."
+    },
+    {
+      "date": "APR 4",
+      "meet": "Urban Trail de Lille - 5 et 10km",
+      "event": "5 Kilom Road",
+      "time": "13:18",
+      "place": "10."
+    },
+    {
+      "date": "FEB 28",
+      "meet": "French Indoor Championships",
+      "event": "3000 m sh",
+      "time": "8:12.73",
+      "place": "2."
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "3000 m sh",
+      "time": "7:39.89",
+      "place": "9."
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "3000 m sh",
+      "time": "7:39.98",
+      "place": "4."
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Dr. Sander Invitational",
+      "event": "1500 m sh",
+      "time": "3:38.57",
+      "place": ""
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Dr. Sander Invitational",
+      "event": "Mile sh",
+      "time": "3:54.00",
+      "place": "1."
+    },
+    {
+      "date": "JAN 17",
+      "meet": "Tempo Run League Eacpa indoor",
+      "event": "2000 m sh",
+      "time": "5:00.86",
+      "place": "1."
+    }
+  ],
+  "lastSynced": "2026-07-04"
+}

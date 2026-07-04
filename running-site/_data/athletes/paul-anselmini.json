@@ -1,0 +1,149 @@
+{
+  "id": "paul-anselmini",
+  "name": "Paul Anselmini",
+  "flag": "FR",
+  "country": "France",
+  "waUrl": "https://worldathletics.org/athletes/france/paul-anselmini-14880182",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "22",
+  "dob": "2003-08-02",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "200m",
+      "time": "22.95"
+    },
+    {
+      "event": "400m",
+      "time": "48.64"
+    },
+    {
+      "event": "800m",
+      "time": "1:44.40"
+    },
+    {
+      "event": "1500m",
+      "time": "3:31.36"
+    },
+    {
+      "event": "Mile",
+      "time": "3:52.80"
+    },
+    {
+      "event": "200 Metres Short Track",
+      "time": "22.95"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:16.62"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:47.09"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:15.78"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:36.46"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:55.18"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:12.38"
+    },
+    {
+      "event": "Road Relay",
+      "time": "2:04:40"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "1500 m",
+      "time": "3:31.36",
+      "place": "7."
+    },
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "1500 m",
+      "time": "3:33.26",
+      "place": "2."
+    },
+    {
+      "date": "JUN 17",
+      "meet": "Meeting International de Montreuil",
+      "event": "800 m",
+      "time": "1:45.29",
+      "place": "4."
+    },
+    {
+      "date": "JUN 13",
+      "meet": "Meeting Nikaia",
+      "event": "1500 m",
+      "time": "3:32.21",
+      "place": "2."
+    },
+    {
+      "date": "MAY 29",
+      "meet": "8th Irena Szewińska Memorial",
+      "event": "1500 m",
+      "time": "3:38.67",
+      "place": "2."
+    },
+    {
+      "date": "MAY 23",
+      "meet": "IFAM Outdoor",
+      "event": "800 m",
+      "time": "1:45.62",
+      "place": "3."
+    },
+    {
+      "date": "MAY 17",
+      "meet": "Championnats de France des Clubs Elite 1",
+      "event": "800 m",
+      "time": "1:46.87",
+      "place": "2."
+    },
+    {
+      "date": "FEB 8",
+      "meet": "Meeting Metz Moselle Athlélor Crédit Mutuel",
+      "event": "1500 m sh",
+      "time": "3:36.46",
+      "place": "4."
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Meeting Indoor de Lyon",
+      "event": "800 m sh",
+      "time": "1:47.41",
+      "place": "5."
+    }
+  ],
+  "lastSynced": "2026-07-04"
+}

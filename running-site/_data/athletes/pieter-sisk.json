@@ -1,0 +1,193 @@
+{
+  "id": "pieter-sisk",
+  "name": "Pieter Sisk",
+  "flag": "BE",
+  "country": "Belgium",
+  "waUrl": "https://worldathletics.org/athletes/belgium/pieter-sisk-14681333",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "26",
+  "dob": "1999-12-08",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "400m",
+      "time": "50.06"
+    },
+    {
+      "event": "800m",
+      "time": "1:43.48"
+    },
+    {
+      "event": "1500m",
+      "time": "3:31.85"
+    },
+    {
+      "event": "Mile",
+      "time": "3:50.31"
+    },
+    {
+      "event": "2000m",
+      "time": "4:52.41"
+    },
+    {
+      "event": "3000m",
+      "time": "7:51.07"
+    },
+    {
+      "event": "400 Metres Short Track",
+      "time": "50.16"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:15.19"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:46.10"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:15.29"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:17.17"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:33.32"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:50.31"
+    },
+    {
+      "event": "2000 Metres Short Track",
+      "time": "4:52.41"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:51.38"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:04.76"
+    },
+    {
+      "event": "4x400 Metres Relay Mixed",
+      "time": "3:26.24"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 28",
+      "meet": "Czesław Cybulski Memorial",
+      "event": "1500 m",
+      "time": "3:37.01",
+      "place": "2."
+    },
+    {
+      "date": "JUN 26",
+      "meet": "76. Boris Hanžeković Memorial",
+      "event": "1500 m",
+      "time": "3:34.09",
+      "place": "11."
+    },
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "1500 m",
+      "time": "3:36.10",
+      "place": "11."
+    },
+    {
+      "date": "JUN 17",
+      "meet": "Meeting International de Montreuil",
+      "event": "1500 m",
+      "time": "3:33.92",
+      "place": "1."
+    },
+    {
+      "date": "JUN 3",
+      "meet": "Paavo Nurmi Games",
+      "event": "1500 m",
+      "time": "DNF",
+      "place": ""
+    },
+    {
+      "date": "MAY 17",
+      "meet": "Super League Interclub M+V",
+      "event": "800 m",
+      "time": "1:46.38",
+      "place": "1."
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:42.45",
+      "place": "6."
+    },
+    {
+      "date": "MAR 1",
+      "meet": "Belgian Indoor Championships",
+      "event": "3000 m sh",
+      "time": "7:51.38",
+      "place": "1."
+    },
+    {
+      "date": "FEB 8",
+      "meet": "INIT Indoor Meeting Karlsruhe",
+      "event": "1500 m sh",
+      "time": "3:35.82",
+      "place": "5."
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "1500 m sh",
+      "time": "3:33.32",
+      "place": ""
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "Mile sh",
+      "time": "3:50.31",
+      "place": "2."
+    },
+    {
+      "date": "JAN 24",
+      "meet": "New Balance Indoor Grand Prix",
+      "event": "2000 m sh",
+      "time": "4:52.41",
+      "place": "3."
+    },
+    {
+      "date": "JAN 18",
+      "meet": "CMCM Luxembourg Indoor Meeting",
+      "event": "1500 m sh",
+      "time": "3:34.63",
+      "place": "1."
+    }
+  ],
+  "lastSynced": "2026-07-04"
+}

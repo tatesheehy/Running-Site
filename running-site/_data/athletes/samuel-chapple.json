@@ -1,0 +1,169 @@
+{
+  "id": "samuel-chapple",
+  "name": "Samuel Chapple",
+  "flag": "NL",
+  "country": "Netherlands",
+  "waUrl": "https://worldathletics.org/athletes/netherlands/samuel-chapple-14742576",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "27",
+  "dob": "1998-11-23",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "400m",
+      "time": "50.50"
+    },
+    {
+      "event": "800m",
+      "time": "1:43.96"
+    },
+    {
+      "event": "1500m",
+      "time": "3:31.65"
+    },
+    {
+      "event": "Mile",
+      "time": "4:01.41"
+    },
+    {
+      "event": "3000m",
+      "time": "8:47.84"
+    },
+    {
+      "event": "400 Metres Short Track",
+      "time": "50.70"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:44.75"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:15.20"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:16.09"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:32.68"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:09.17"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "800 m",
+      "time": "1:44.63",
+      "place": "2."
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "1000 m",
+      "time": "2:15.20",
+      "place": "2."
+    },
+    {
+      "date": "JUN 3",
+      "meet": "Paavo Nurmi Games",
+      "event": "1500 m",
+      "time": "3:34.41",
+      "place": "11."
+    },
+    {
+      "date": "MAY 29",
+      "meet": "8th Irena Szewińska Memorial",
+      "event": "800 m",
+      "time": "1:46.65",
+      "place": "7."
+    },
+    {
+      "date": "MAR 22",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:40.59",
+      "place": "5."
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:39.03",
+      "place": "3."
+    },
+    {
+      "date": "MAR 1",
+      "meet": "Dutch Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:47.91",
+      "place": "1."
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Dutch Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:51.56",
+      "place": "1."
+    },
+    {
+      "date": "FEB 22",
+      "meet": "ORLEN Copernicus Cup",
+      "event": "1500 m sh",
+      "time": "3:32.68",
+      "place": "2."
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "800 m sh",
+      "time": "1:45.37",
+      "place": "5."
+    },
+    {
+      "date": "FEB 8",
+      "meet": "Meeting Metz Moselle Athlélor Crédit Mutuel",
+      "event": "1500 m sh",
+      "time": "3:35.83",
+      "place": "1."
+    },
+    {
+      "date": "FEB 3",
+      "meet": "Czech Indoor Gala",
+      "event": "800 m sh",
+      "time": "1:44.75",
+      "place": "4."
+    },
+    {
+      "date": "JAN 30",
+      "meet": "Elite Indoor Track Miramas Meeting",
+      "event": "1500 m sh",
+      "time": "3:36.65",
+      "place": "2."
+    }
+  ],
+  "lastSynced": "2026-07-04"
+}

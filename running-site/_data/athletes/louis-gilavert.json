@@ -1,0 +1,96 @@
+{
+  "id": "louis-gilavert",
+  "name": "Louis Gilavert",
+  "flag": "FR",
+  "country": "France",
+  "waUrl": "https://worldathletics.org/athletes/france/louis-gilavert-14652627",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "28",
+  "dob": "1998-01-01",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:46.29"
+    },
+    {
+      "event": "1500m",
+      "time": "3:32.25"
+    },
+    {
+      "event": "Mile",
+      "time": "3:58.00"
+    },
+    {
+      "event": "3000m",
+      "time": "7:49.74"
+    },
+    {
+      "event": "3000m SC",
+      "time": "8:11.49"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:22.62"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:36.25"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:49.74"
+    },
+    {
+      "event": "2000 Metres Steeplechase",
+      "time": "5:44.13"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:11.1h"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:58"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "28:48"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 28",
+      "meet": "Meeting International Troyes Aube",
+      "event": "1500 m",
+      "time": "3:35.28",
+      "place": "6."
+    },
+    {
+      "date": "MAY 17",
+      "meet": "Championnat de France des clubs N1A Poule 3",
+      "event": "3000 m",
+      "time": "8:15.08",
+      "place": "1."
+    }
+  ],
+  "lastSynced": "2026-07-04"
+}

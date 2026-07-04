@@ -1,0 +1,139 @@
+{
+  "id": "federico-riva",
+  "name": "Federico Riva",
+  "flag": "IT",
+  "country": "Italy",
+  "waUrl": "https://worldathletics.org/athletes/italy/federico-riva-14723644",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "25",
+  "dob": "2000-11-09",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:44.80"
+    },
+    {
+      "event": "1500m",
+      "time": "3:31.42"
+    },
+    {
+      "event": "Mile",
+      "time": "3:48.11"
+    },
+    {
+      "event": "2000m",
+      "time": "5:02.67"
+    },
+    {
+      "event": "3000m",
+      "time": "7:45.25"
+    },
+    {
+      "event": "5000m",
+      "time": "15:03.82"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:46.61"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:24.82"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:33.04"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "4:09.75"
+    },
+    {
+      "event": "2000 Metres Short Track",
+      "time": "5:02.67"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:45.25"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "14:38"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "30:55"
+    }
+  ],
+  "results": [
+    {
+      "date": "MAR 22",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:40.98",
+      "place": "7."
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:40.52",
+      "place": "1."
+    },
+    {
+      "date": "MAR 1",
+      "meet": "Italian Indoor Championships",
+      "event": "3000 m sh",
+      "time": "7:45.25",
+      "place": "1."
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Italian Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:59.34",
+      "place": "1."
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "1500 m sh",
+      "time": "3:33.04",
+      "place": "2."
+    },
+    {
+      "date": "FEB 13",
+      "meet": "13. Erfurt Indoor 2026",
+      "event": "800 m sh",
+      "time": "1:46.61",
+      "place": "2."
+    },
+    {
+      "date": "FEB 8",
+      "meet": "INIT Indoor Meeting Karlsruhe",
+      "event": "1500 m sh",
+      "time": "3:33.94",
+      "place": "2."
+    }
+  ],
+  "lastSynced": "2026-07-04"
+}
