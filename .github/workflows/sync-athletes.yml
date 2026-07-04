@@ -27,8 +27,11 @@ jobs:
         with:
           node-version: '24'
 
-      - name: Run athlete sync
+      - name: Sync current season results
         run: node scripts/sync-athlete-results.js --debug ${{ inputs.force == true && '--force' || '' }}
+
+      - name: Sync historical results
+        run: node scripts/sync-history.js ${{ inputs.force == true && '--force' || '' }}
 
       - name: Commit and push changes
         run: |
