@@ -162,10 +162,14 @@ function _renderH2HPage() {
                           else break;
                         }
 
-                        const beatChips = Object.entries(rec.beatCounts)
-                          .sort((a, b) => b[1] - a[1])
+                        const beatChips = Object.values(rec.matchups)
+                          .filter(m => m.wins > 0)
+                          .sort((a, b) => b.wins - a.wins || (b.wins + b.losses) - (a.wins + a.losses))
                           .slice(0, 3)
-                          .map(([n, ct]) => `<span class="h2h-lb-beat-chip">${n}${ct > 1 ? ` ×${ct}` : ''}</span>`).join('');
+                          .map(m => {
+                            const n = m.fullName.split(' ').slice(-1)[0];
+                            return `<span class="h2h-lb-beat-chip">${n}<span class="h2h-lb-beat-rec">&thinsp;${m.wins}–${m.losses}</span></span>`;
+                          }).join('');
 
                         const avatar = `<div class="h2h-lb-avatar" style="background-image:url('${a.photo || '/images/default_card.png'}');background-color:${a.photoBackground || '#111'}"></div>`;
 
@@ -192,7 +196,6 @@ function _renderH2HPage() {
                               <div class="h2h-lb-rec">
                                 <span class="h2h-lb-rec-w">${rec.wins}</span><span class="h2h-lb-rec-sep">–</span><span class="h2h-lb-rec-l">${rec.losses}</span>
                               </div>
-                              <div class="h2h-lb-rec-sub">${total} race${total === 1 ? '' : 's'}</div>
                             </td>
                             <td class="h2h-lb-td h2h-lb-td--pct">
                               <div class="h2h-lb-pct-wrap">

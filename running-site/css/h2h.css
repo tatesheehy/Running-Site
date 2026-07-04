@@ -194,7 +194,7 @@
 .h2h-lb-row:hover { background: var(--bg-light); }
 
 .h2h-lb-td {
-  padding: 15px 16px;
+  padding: 11px 16px;
   font-size: 14px;
   vertical-align: middle;
 }
@@ -204,7 +204,7 @@
 .h2h-lb-td--rank {
   text-align: center;
   width: 52px;
-  padding: 15px 0;
+  padding: 11px 0;
 }
 
 .h2h-lb-rank-num {
@@ -229,8 +229,8 @@
 }
 
 .h2h-lb-avatar {
-  width: 46px;
-  height: 46px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background-size: cover;
   background-position: center top;
@@ -311,17 +311,26 @@
 }
 
 .h2h-lb-beat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
   font-size: 10px;
   font-weight: 600;
   color: var(--muted);
   white-space: nowrap;
   letter-spacing: 0.01em;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 1px 7px 1px 6px;
 }
-.h2h-lb-beat-chip + .h2h-lb-beat-chip::before {
-  content: '·';
-  margin-right: 4px;
-  opacity: 0.5;
+.h2h-lb-beat-rec {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+  opacity: 0.6;
 }
+[data-theme="light"] .h2h-lb-beat-chip { background: #f5f5f5; border-color: #e0e0e0; }
 
 .h2h-lb-country {
   font-size: 11px;
@@ -348,32 +357,32 @@
   line-height: 1;
 }
 
-.h2h-lb-rec-w   { font-size: 21px; font-weight: 800; color: var(--text); }
-.h2h-lb-rec-sep { font-size: 14px; color: var(--muted); margin: 0 3px; }
-.h2h-lb-rec-l   { font-size: 17px; font-weight: 600; color: var(--muted); }
+.h2h-lb-rec-w   { font-size: 20px; font-weight: 800; color: var(--text); }
+.h2h-lb-rec-sep { font-size: 13px; color: var(--muted); margin: 0 3px; }
+.h2h-lb-rec-l   { font-size: 16px; font-weight: 600; color: var(--muted); }
 
 .h2h-lb-rec-sub {
   font-size: 10px;
   color: var(--muted);
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  margin-top: 4px;
-  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  margin-top: 3px;
+  opacity: 0.7;
 }
 
 /* ── Win % column ─────────────────────────────────────────── */
 
-.h2h-lb-td--pct { min-width: 120px; }
+.h2h-lb-td--pct { min-width: 110px; }
 
 .h2h-lb-pct-wrap {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
 }
 
 .h2h-lb-pct-val {
-  font-size: 18px;
-  font-weight: 800;
+  font-size: 15px;
+  font-weight: 700;
   color: var(--text);
   line-height: 1;
   font-family: 'Oswald', 'Arial Narrow', sans-serif;
@@ -382,7 +391,7 @@
 
 .h2h-lb-pct-bar {
   width: 100%;
-  height: 5px;
+  height: 6px;
   background: var(--border);
   border-radius: 3px;
   overflow: hidden;
@@ -819,9 +828,10 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 11px 16px;
+  padding: 13px 16px;
   border-bottom: 1px solid var(--border);
   transition: background 0.12s;
+  cursor: default;
 }
 
 .h2h-rivalry-row:last-child { border-bottom: none; }
@@ -851,26 +861,33 @@
 
 .h2h-rivalry-matchup {
   font-family: var(--font-display);
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.2;
 }
 
+.h2h-rivalry-name--lead {
+  font-weight: 800;
+  color: var(--text);
+}
+
 .h2h-rivalry-matchup-vs {
   color: var(--muted);
   font-weight: 400;
-  font-size: 12px;
+  font-size: 11px;
   margin: 0 4px;
+  opacity: 0.5;
 }
 
 .h2h-rivalry-meta {
   font-size: 11px;
   color: var(--muted);
-  margin-top: 1px;
+  margin-top: 2px;
+  opacity: 0.8;
 }
 
 .h2h-rivalry-result {
@@ -880,25 +897,21 @@
 
 .h2h-rivalry-score {
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 700;
   color: var(--text);
   letter-spacing: -0.01em;
   line-height: 1;
+  white-space: nowrap;
 }
 
 .h2h-rivalry-score-sep {
   color: var(--muted);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   margin: 0 2px;
 }
 
-/* ── Rivalry leader name highlight ───────────────────────── */
-
-.h2h-rivalry-name--lead {
-  font-weight: 800;
-}
 
 /* ── Responsive ───────────────────────────────────────────── */
 
