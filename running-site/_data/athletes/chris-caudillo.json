@@ -146,11 +146,11 @@
   "dob": "2005-08-05",
   "college": "Cal Poly",
   "weight": "x",
+  "lastHistorySynced": "2026-07-04",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",
   "id": "chris-caudillo",
-  "age": "20",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -361,5 +361,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-04"
+  "age": "20"
 }

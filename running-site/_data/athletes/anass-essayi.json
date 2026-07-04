@@ -2,6 +2,9 @@
   "photoBackground": "#111111",
   "reviewTitle": "Season review",
   "collegeLogo": "/images/south_carolina_gamecocks_logo_secondary_19666280.png",
+  "ncaaTitle": [
+    "1500m"
+  ],
   "waUrl": "https://worldathletics.org/athletes/morocco/anass-essayi-14805620",
   "name": "Anass Essayi",
   "flag": "MA",
@@ -83,9 +86,9 @@
   ],
   "dob": "2001-05-18",
   "college": "South Carolina",
+  "lastHistorySynced": "2026-07-04",
   "event": "MIDDLE DISTANCE",
   "id": "anass-essayi",
-  "age": "25",
   "resultsHistory": {
     "2018": [
       {
@@ -685,8 +688,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-04",
-  "ncaaTitle": [
-    "1500m"
-  ]
+  "age": "25"
 }

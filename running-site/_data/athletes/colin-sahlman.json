@@ -234,10 +234,10 @@
   "dob": "2003-10-28",
   "college": "NAU",
   "weight": "x",
+  "lastHistorySynced": "2026-07-04",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",
   "id": "colin-sahlman",
-  "age": "22",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -794,5 +794,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-04"
+  "age": "22"
 }
