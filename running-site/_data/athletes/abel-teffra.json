@@ -22,7 +22,7 @@
     },
     {
       "event": "Mile",
-      "time": "3:51.13"
+      "time": "3:52.44"
     },
     {
       "event": "3000m",
@@ -69,63 +69,70 @@
       "meet": "Prefontaine Classic",
       "event": "Mile",
       "time": "3:51.13",
-      "place": "3"
+      "place": "3."
     },
     {
       "date": "JUN 21",
       "meet": "Portland Track Festival",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:46.40",
-      "place": "8"
+      "place": "8."
     },
     {
       "date": "JUN 13",
       "meet": "USATF LA Grand Prix",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:34.08",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:45.71",
-      "place": "6"
+      "place": "6."
     },
     {
       "date": "MAR 1",
       "meet": "USA Indoor Championships",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:38.90",
-      "place": "8"
+      "place": "8."
     },
     {
       "date": "FEB 22",
       "meet": "Saucony Battle for Boston",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:35.20",
-      "place": "3"
+      "place": "3."
     },
     {
       "date": "FEB 13",
       "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "Mile Short Track",
+      "event": "1500 m sh",
+      "time": "3:37.83",
+      "place": "11."
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Boston University David Hemery Valentine Invitational",
+      "event": "Mile sh",
       "time": "3:53.29",
-      "place": "10"
+      "place": "10."
     },
     {
       "date": "FEB 7",
       "meet": "Penn Classic",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:55.13",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "JAN 24",
       "meet": "Penn Elite",
-      "event": "1000 Metres Short Track",
+      "event": "1000 m sh",
       "time": "2:20.49",
-      "place": "1"
+      "place": "1."
     }
   ],
   "dob": "2002-01-23",
@@ -135,5 +142,493 @@
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "abel-teffra",
-  "age": "24"
+  "age": "24",
+  "resultsHistory": {
+    "2022": [
+      {
+        "date": "JUN 9",
+        "meet": "Maryland Qualifier",
+        "event": "800m",
+        "time": "1:48.64",
+        "place": "5"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "NCAA East Preliminary Round",
+        "event": "1500m",
+        "time": "3:41.93",
+        "place": "10"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "NCAA East Preliminary Round",
+        "event": "1500m",
+        "time": "3:44.29",
+        "place": "6"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Big East Championships",
+        "event": "800m",
+        "time": "1:48.94",
+        "place": "3"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Big East Championships",
+        "event": "800m",
+        "time": "1:49.38",
+        "place": "1"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Virginia High Performance",
+        "event": "Mile",
+        "time": "3:59.82",
+        "place": "4"
+      },
+      {
+        "date": "APR 23",
+        "meet": "Virginia Challenge",
+        "event": "800m",
+        "time": "1:49.94",
+        "place": "1"
+      },
+      {
+        "date": "APR 22",
+        "meet": "Virginia Challenge",
+        "event": "1500m",
+        "time": "3:42.55",
+        "place": "4"
+      },
+      {
+        "date": "APR 9",
+        "meet": "Joe Walker Invitational",
+        "event": "800m",
+        "time": "1:50.31",
+        "place": "2"
+      },
+      {
+        "date": "APR 9",
+        "meet": "Joe Walker Invitational",
+        "event": "1500m",
+        "time": "3:45.97",
+        "place": "4"
+      },
+      {
+        "date": "MAR 26",
+        "meet": "Raleigh Relays",
+        "event": "800m",
+        "time": "1:51.68",
+        "place": "1"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "Big East Championships",
+        "event": "800m sh",
+        "time": "1:52.60",
+        "place": "5"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Fresno Pacific Sunbird Invitational",
+        "event": "1500m",
+        "time": "3:58.89",
+        "place": "4"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "Mile sh",
+        "time": "4:04.96",
+        "place": "1"
+      },
+      {
+        "date": "FEB 5",
+        "meet": "Boston University Bruce Lehane Scarlet and White Invite",
+        "event": "800m sh",
+        "time": "1:51.19",
+        "place": "2"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "Hokie Invitational",
+        "event": "800m sh",
+        "time": "1:52.54",
+        "place": "6"
+      },
+      {
+        "date": "JAN 15",
+        "meet": "Nittany Lion Challenge",
+        "event": "1000m sh",
+        "time": "2:23.65",
+        "place": "6"
+      }
+    ],
+    "2023": [
+      {
+        "date": "JUN 10",
+        "meet": "Adrian Martinez Classic",
+        "event": "1500m",
+        "time": "3:47.42",
+        "place": "8"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "1500m",
+        "time": "3:46.70",
+        "place": "6"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Big East Outdoor Track and Field Championships",
+        "event": "800m",
+        "time": "1:51.33",
+        "place": "3"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Big East Outdoor Track and Field Championships",
+        "event": "800m",
+        "time": "1:49.27",
+        "place": "2"
+      },
+      {
+        "date": "APR 29",
+        "meet": "The Penn Relays Carnival",
+        "event": "4xMile Relay",
+        "time": "16:14.64",
+        "place": "5"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Virginia Challenge",
+        "event": "1500m",
+        "time": "3:40.17",
+        "place": "6"
+      },
+      {
+        "date": "APR 15",
+        "meet": "Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "3:43.20",
+        "place": "9"
+      },
+      {
+        "date": "APR 7",
+        "meet": "Duke Invitational",
+        "event": "800m",
+        "time": "1:52.04",
+        "place": "3"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "2023 Big East Indoor Track and Field Championships",
+        "event": "800m sh",
+        "time": "1:48.85",
+        "place": "3"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "2023 Big East Indoor Track and Field Championships",
+        "event": "800m sh",
+        "time": "1:49.70",
+        "place": "2"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "Mile sh",
+        "time": "4:18.86",
+        "place": "14"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "Mile sh",
+        "time": "3:57.76",
+        "place": "6"
+      }
+    ],
+    "2024": [
+      {
+        "date": "JUN 21",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "1500m",
+        "time": "3:44.27",
+        "place": "12"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Portland Track Festival",
+        "event": "1500m",
+        "time": "3:36.52",
+        "place": "4"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "1500m",
+        "time": "3:41.98",
+        "place": "10"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "1500m",
+        "time": "3:43.60",
+        "place": "4"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Big East Outdoor Track and Field Championships",
+        "event": "1500m",
+        "time": "3:40.46",
+        "place": "3"
+      },
+      {
+        "date": "APR 27",
+        "meet": "The Penn Relay Carnival",
+        "event": "4xMile Relay",
+        "time": "15:52.56",
+        "place": "3"
+      },
+      {
+        "date": "APR 26",
+        "meet": "The Penn Relay Carnival",
+        "event": "Distance Medley",
+        "time": "9:36.37",
+        "place": "2"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "3:38.25",
+        "place": "2"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Ebanks Invitational",
+        "event": "800m",
+        "time": "1:50.64",
+        "place": "2"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "Mile sh",
+        "time": "4:02.57",
+        "place": "5"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "Mile sh",
+        "time": "3:58.77",
+        "place": "4"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Big East Indoor Track and Field Championships",
+        "event": "800m sh",
+        "time": "1:48.58",
+        "place": "5"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Big East Indoor Track and Field Championships",
+        "event": "800m sh",
+        "time": "1:50.48",
+        "place": "2"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Boston University DMR Challenge",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:23.78",
+        "place": "2"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "Mile sh",
+        "time": "3:54.62",
+        "place": "3"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Boston University Bruce Lehane Scarlet and White Invitational",
+        "event": "Mile sh",
+        "time": "3:56.33",
+        "place": "2"
+      },
+      {
+        "date": "JAN 19",
+        "meet": "Hokie Invitational",
+        "event": "1000m sh",
+        "time": "2:19.17",
+        "place": "3"
+      }
+    ],
+    "2025": [
+      {
+        "date": "JUL 31",
+        "meet": "USA Championships",
+        "event": "1500m",
+        "time": "3:35.60",
+        "place": "7"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Sunset Tour, Jack Kemp Stadium",
+        "event": "800m",
+        "time": "1:46.82",
+        "place": "5"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "1500m",
+        "time": "3:53.52",
+        "place": "11"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "1500m",
+        "time": "3:38.65",
+        "place": "1"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "1500m",
+        "time": "3:40.21",
+        "place": "2"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "Big East Outdoor Track and Field Championships",
+        "event": "800m",
+        "time": "1:45.67",
+        "place": "2"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Big East Outdoor Track and Field Championships",
+        "event": "800m",
+        "time": "1:49.03",
+        "place": "1"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Duke Twilight",
+        "event": "1500m",
+        "time": "3:33.84",
+        "place": "2"
+      },
+      {
+        "date": "APR 26",
+        "meet": "The Penn Relays",
+        "event": "4x800 Metres Relay",
+        "time": "7:13.95",
+        "place": "1"
+      },
+      {
+        "date": "APR 25",
+        "meet": "The Penn Relays",
+        "event": "Distance Medley",
+        "time": "9:28.29",
+        "place": "6"
+      },
+      {
+        "date": "APR 18",
+        "meet": "Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "3:35.81",
+        "place": "3"
+      },
+      {
+        "date": "APR 4",
+        "meet": "Ebanks Invitational",
+        "event": "800m",
+        "time": "1:46.62",
+        "place": "1"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "Mile sh",
+        "time": "3:53.60",
+        "place": "1"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "Mile sh",
+        "time": "4:01.28",
+        "place": "1"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "Big East Indoor Track and Field Championships",
+        "event": "Mile sh",
+        "time": "4:02.75",
+        "place": "1"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "Big East Indoor Track and Field Championships",
+        "event": "4x800 Metres Relay Short Track sh",
+        "time": "7:28.30",
+        "place": "1"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "Big East Indoor Track and Field Championships",
+        "event": "Mile sh",
+        "time": "4:06.83",
+        "place": "1"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Boston University DMR Challenge",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:19.24",
+        "place": "4"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Boston University Bruce Lehane Scarlet and White Invitational",
+        "event": "1500m sh",
+        "time": "3:37.70",
+        "place": ""
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Boston University Bruce Lehane Scarlet and White Invitational",
+        "event": "Mile sh",
+        "time": "3:52.44",
+        "place": "1"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Nittany Lion Challenge",
+        "event": "1000m sh",
+        "time": "2:17.39",
+        "place": "2"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Nittany Lion Challenge",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:15.31",
+        "place": "3"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-03",
+  "ncaaTitle": true
 }
