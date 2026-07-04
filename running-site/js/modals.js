@@ -230,42 +230,22 @@ window._tlHide = function() {
 
 // ── HONOURS ────────────────────────────────────────────────
 function _medalSvg(place, short) {
-  // NCAA Championship trophy: two mahogany pillars with arch, gold medallion on top
+  // NCAA Championship trophy: gold coin on two dark wood pillars, DLF-inspired
   if (short === 'NCAA') {
     return `<svg class="ch-icon ch-icon-ncaa" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <!-- Trophy arch body with inner cutout between pillars -->
-      <path fill-rule="evenodd" d="M1.5,23 L1.5,12.5 Q1.5,7 10,7 Q18.5,7 18.5,12.5 L18.5,23 L14,23 L14,14 Q14,11.2 10,11.2 Q6,11.2 6,14 L6,23 Z" fill="#7A1C2E"/>
-      <!-- Right-side shadow on pillars for depth -->
-      <rect x="16.8" y="13.5" width="1.7" height="9.5" fill="rgba(0,0,0,0.22)"/>
-      <!-- Left pillar highlight -->
-      <rect x="1.5" y="13.5" width="1.1" height="9.5" fill="rgba(255,200,180,0.13)"/>
-      <!-- Column capitals -->
-      <rect x="1" y="11.8" width="6" height="1.9" rx="0.35" fill="#9B2840"/>
-      <rect x="1.2" y="11.8" width="5.6" height="0.7" fill="rgba(255,210,190,0.18)"/>
-      <rect x="13" y="11.8" width="6" height="1.9" rx="0.35" fill="#9B2840"/>
-      <rect x="13.2" y="11.8" width="5.6" height="0.7" fill="rgba(255,210,190,0.18)"/>
-      <!-- Column plinths -->
-      <rect x="1" y="21.5" width="6" height="1.6" rx="0.35" fill="#9B2840"/>
-      <rect x="13" y="21.5" width="6" height="1.6" rx="0.35" fill="#9B2840"/>
-      <!-- Base upper tier -->
-      <rect x="0.3" y="23" width="19.4" height="1.5" rx="0.4" fill="#7A1C2E"/>
-      <rect x="0.3" y="23" width="19.4" height="0.55" fill="rgba(255,200,180,0.14)"/>
-      <!-- Base lower tier -->
-      <rect x="0" y="24.4" width="20" height="1.6" rx="0.55" fill="#5C1220"/>
-      <!-- Gold medallion outer halo -->
-      <circle cx="10" cy="4.8" r="4.6" fill="#7A5200"/>
-      <!-- Gold disc -->
-      <circle cx="10" cy="4.8" r="4" fill="#C98000"/>
-      <!-- Bright gold surface -->
-      <circle cx="10" cy="4.8" r="3.4" fill="#F5C000"/>
-      <!-- Engraved inner ring -->
-      <circle cx="10" cy="4.8" r="2.75" stroke="#A86800" stroke-width="0.5" fill="none"/>
-      <!-- Glint highlight -->
-      <ellipse cx="7.9" cy="2.9" rx="1.9" ry="0.85" fill="rgba(255,255,255,0.32)" transform="rotate(-28,7.9,2.9)"/>
-      <!-- NCAA text -->
-      <text x="10" y="4.45" text-anchor="middle" font-family="Arial Black,Arial,sans-serif" font-weight="900" font-size="2.2" fill="#3A1400" letter-spacing="0.2">NCAA</text>
-      <!-- Decorative star -->
-      <polygon points="10,5.8 10.35,6.75 11.35,6.75 10.55,7.3 10.85,8.25 10,7.65 9.15,8.25 9.45,7.3 8.65,6.75 9.65,6.75" fill="#8B5000" opacity="0.7"/>
+      <circle cx="10" cy="5" r="5" fill="#7A5000"/>
+      <circle cx="10" cy="5" r="4.2" fill="#C88000"/>
+      <circle cx="10" cy="5" r="3.5" fill="#F0B200"/>
+      <circle cx="10" cy="5" r="2.7" fill="#F8C830"/>
+      <ellipse cx="7.6" cy="2.9" rx="2" ry="0.85" fill="rgba(255,255,255,0.38)" transform="rotate(-28,7.6,2.9)"/>
+      <circle cx="10" cy="5" r="2" stroke="rgba(160,100,0,0.45)" stroke-width="0.4" fill="none"/>
+      <rect x="8" y="9.8" width="4" height="1.8" rx="0.5" fill="#9B2840"/>
+      <rect x="3.5" y="11.5" width="4.8" height="10" rx="0.5" fill="#7A1C2E"/>
+      <line x1="5.4" y1="11.5" x2="5.4" y2="21.5" stroke="rgba(255,210,190,0.22)" stroke-width="0.9"/>
+      <rect x="11.7" y="11.5" width="4.8" height="10" rx="0.5" fill="#7A1C2E"/>
+      <line x1="14" y1="11.5" x2="14" y2="21.5" stroke="rgba(255,210,190,0.22)" stroke-width="0.9"/>
+      <rect x="2" y="21.5" width="16" height="2.8" rx="0.8" fill="#9B2840"/>
+      <rect x="2" y="21.5" width="16" height="0.8" fill="rgba(255,210,190,0.14)"/>
     </svg>`;
   }
   // Diamond League Final → trophy icon based on the WDL trophy
@@ -508,9 +488,12 @@ function openAthleteCard(athleteId, rank) {
         a.honours = (data.honours && data.honours.length) ? data.honours : [];
         const placeholder = qs('#athlete-card-inner .card-honours-placeholder');
         const honoursToShow = a.ncaaTitle ? [{ short: 'NCAA', discipline: '1500m', place: 1, year: '' }, ...a.honours] : a.honours;
-        if (placeholder && honoursToShow.length) {
-          const honoursHtml = buildHonoursHtml(honoursToShow);
-          placeholder.insertAdjacentHTML('beforebegin', honoursHtml);
+        const existingHonours = qs('#athlete-card-inner .card-honours');
+        if (existingHonours) {
+          if (honoursToShow.length) existingHonours.outerHTML = buildHonoursHtml(honoursToShow);
+          else existingHonours.remove();
+        } else if (placeholder && honoursToShow.length) {
+          placeholder.insertAdjacentHTML('beforebegin', buildHonoursHtml(honoursToShow));
         }
         if (placeholder) placeholder.remove();
       })

@@ -473,11 +473,15 @@ function parseResults(html, year) {
   return parseResultsRegex(html, year);
 }
 
-function isNcaaDivIChampionship(meet) {
+function isNcaaDivIChampionship(meet, event) {
   const m = (meet || '').toLowerCase();
+  const e = (event || '').toLowerCase();
   if (!m.includes('ncaa') || !m.includes('champion')) return false;
-  if (m.includes(' iii') || m.includes('div. iii')) return false;
-  if (m.includes('prelim') || m.includes('first round') || m.includes('second round') || m.includes('regional')) return false;
+  // Must be explicitly D1 — positive match only
+  const isD1 = m.includes('division i ') || m.includes('div. i ') || m.includes('d1 ');
+  if (!isD1) return false;
+  // Exclude relay and non-track events
+  if (e.includes('medley') || e.includes('relay') || e.includes('cross country')) return false;
   return true;
 }
 
@@ -485,7 +489,7 @@ function sweepNcaaTitles(athletes) {
   let changed = 0;
   for (const a of athletes) {
     const all = [...(a.results || []), ...Object.values(a.resultsHistory || {}).flat()];
-    const hasTitle = all.some(r => r.place === '1' && isNcaaDivIChampionship(r.meet));
+    const hasTitle = all.some(r => r.place === '1' && isNcaaDivIChampionship(r.meet, r.event));
     if (hasTitle && !a.ncaaTitle) { a.ncaaTitle = true; changed++; }
     else if (!hasTitle && a.ncaaTitle) { delete a.ncaaTitle; changed++; }
   }
