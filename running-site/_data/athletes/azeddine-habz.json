@@ -93,79 +93,86 @@
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:29.80",
-      "place": "2"
+      "place": "2."
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "1500 m",
+      "time": "3:34.10",
+      "place": ""
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
       "event": "Mile",
       "time": "3:49.63",
-      "place": "7"
+      "place": "7."
     },
     {
       "date": "JUN 7",
       "meet": "BAUHAUS-Galan",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:33.84",
-      "place": "9"
+      "place": "9."
     },
     {
       "date": "MAY 31",
       "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:30.68",
-      "place": "3"
+      "place": "3."
     },
     {
       "date": "MAY 17",
-      "meet": "Chpts Interclubs LIFA",
-      "event": "1500m",
+      "meet": "Chpts Interclubs LIFA - Finale Nationale 3",
+      "event": "1500 m",
       "time": "3:38.25",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAR 21",
       "meet": "World Athletics Indoor Championships",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:39.87",
-      "place": "11"
+      "place": "11."
     },
     {
       "date": "FEB 28",
       "meet": "French Indoor Championships",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "8:12.21",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "FEB 22",
       "meet": "ORLEN Copernicus Cup",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:32.56",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:35.79",
-      "place": "4"
+      "place": "4."
     },
     {
       "date": "FEB 8",
       "meet": "INIT Indoor Meeting Karlsruhe",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:33.36",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "JAN 11",
-      "meet": "10K Valencia Ibercaja by Kiprun, Valencia",
-      "event": "10 Kilometres Road",
+      "meet": "10K Valencia Ibercaja by Kiprun",
+      "event": "10 Kilom Road",
       "time": "27:43",
-      "place": "21"
+      "place": "21."
     }
   ],
   "dob": "1993-07-19",
@@ -174,5 +181,562 @@
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "azeddine-habz",
-  "age": "32"
+  "age": "32",
+  "resultsHistory": {
+    "2022": [
+      {
+        "date": "DEC 18",
+        "meet": "Corrida Internationale de Houilles, Houilles",
+        "event": "10K",
+        "time": "28:48",
+        "place": "15"
+      },
+      {
+        "date": "DEC 11",
+        "meet": "28th SPAR European Cross Country Championships, Piemonte-La Mandria Park",
+        "event": "Cross Country Relay",
+        "time": "17:31",
+        "place": "3"
+      },
+      {
+        "date": "NOV 6",
+        "meet": "10km ETPM des Quais de Bordeaux, Bordeaux",
+        "event": "10K",
+        "time": "29:10",
+        "place": "1"
+      },
+      {
+        "date": "SEP 7",
+        "meet": "Pfungstädter Abendsportfest",
+        "event": "1500m",
+        "time": "3:35.05",
+        "place": "1"
+      },
+      {
+        "date": "AUG 18",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:40.92",
+        "place": "10"
+      },
+      {
+        "date": "AUG 15",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:38.47",
+        "place": "6"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "XIX Mediterranean Games",
+        "event": "1500m",
+        "time": "3:41.65",
+        "place": "1"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "French Championships",
+        "event": "1500m",
+        "time": "3:40.25",
+        "place": "1"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "French Championships",
+        "event": "1500m",
+        "time": "3:43.52",
+        "place": "2"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Meeting International de Marseille",
+        "event": "1500m",
+        "time": "3:36.22",
+        "place": "1"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Meeting National à thème de l'Est Lyonnais",
+        "event": "1500m",
+        "time": "3:36.61",
+        "place": "3"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "1500m",
+        "time": "3:41.22",
+        "place": "15"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Montreuil International Meeting",
+        "event": "1500m",
+        "time": "3:36.27",
+        "place": "1"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "6. Lange Laufnacht, Karlsruhe",
+        "event": "1500m",
+        "time": "3:36.62",
+        "place": "1"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Night of the 10",
+        "event": "Mile",
+        "time": "3:57.76",
+        "place": "6"
+      },
+      {
+        "date": "MAR 13",
+        "meet": "French Cross Country Championships, Les Mureaux",
+        "event": "Cross Country",
+        "time": "32:23",
+        "place": "7"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "French Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:41.77",
+        "place": "1"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "2000m sh",
+        "time": "4:57.22",
+        "place": "3"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "1500m sh",
+        "time": "3:39.16",
+        "place": "7"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "3000m sh",
+        "time": "7:43.33",
+        "place": "8"
+      },
+      {
+        "date": "JAN 9",
+        "meet": "10K Valencia Ibercaja, Valencia",
+        "event": "10K",
+        "time": "28:24",
+        "place": "18"
+      }
+    ],
+    "2023": [
+      {
+        "date": "SEP 16",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:48.64",
+        "place": "8"
+      },
+      {
+        "date": "SEP 10",
+        "meet": "New Balance 5th Avenue Mile",
+        "event": "Mile",
+        "time": "3:50.5",
+        "place": "5"
+      },
+      {
+        "date": "AUG 31",
+        "meet": "Weltklasse Zürich",
+        "event": "1500m",
+        "time": "3:31.36",
+        "place": "5"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:33.14",
+        "place": "11"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:32.79",
+        "place": "4"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:35.16",
+        "place": "6"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "French Championships",
+        "event": "1500m",
+        "time": "3:40.20",
+        "place": "1"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "French Championships",
+        "event": "1500m",
+        "time": "3:43.63",
+        "place": "1"
+      },
+      {
+        "date": "JUL 23",
+        "meet": "London Athletics Meet",
+        "event": "1500m",
+        "time": "3:31.58",
+        "place": "9"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "1500m",
+        "time": "3:31.61",
+        "place": "9"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Oslo Bislett Games",
+        "event": "1500m",
+        "time": "3:29.26",
+        "place": "6"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "1:43.90",
+        "place": "7"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "Montreuil International Meeting",
+        "event": "800m",
+        "time": "1:45.15",
+        "place": "2"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "1500m",
+        "time": "3:33.90",
+        "place": "4"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Chpts Interclubs LIFA",
+        "event": "800m",
+        "time": "1:48.38",
+        "place": "1"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "French Cross Country Championships",
+        "event": "Cross Country Short Race",
+        "time": "14:18",
+        "place": "1"
+      },
+      {
+        "date": "MAR 3",
+        "meet": "European Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:35.39",
+        "place": "3"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "European Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:49.88",
+        "place": "1"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "French Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:40.93",
+        "place": "1"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "1500m sh",
+        "time": "3:35.27",
+        "place": "2"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "ORLEN Copernicus Cup",
+        "event": "1500m sh",
+        "time": "3:35.59",
+        "place": "1"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "IFAM Gent Indoor",
+        "event": "800m sh",
+        "time": "1:46.85",
+        "place": "1"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Folksam GP Stockholm Indoor 2023",
+        "event": "1500m sh",
+        "time": "3:38.93",
+        "place": "1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "SEP 13",
+        "meet": "Memorial van Damme",
+        "event": "1500m",
+        "time": "3:31.97",
+        "place": "4"
+      },
+      {
+        "date": "SEP 5",
+        "meet": "Weltklasse Zürich",
+        "event": "1500m",
+        "time": "3:32.39",
+        "place": "7"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Athletissima Lausanne",
+        "event": "1500m",
+        "time": "3:31.89",
+        "place": "7"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:34.35",
+        "place": "12"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:35.10",
+        "place": "2"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:37.95",
+        "place": "9"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "1500m",
+        "time": "3:31.79",
+        "place": "8"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "1:43.79",
+        "place": "8"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "French Championships",
+        "event": "1500m",
+        "time": "3:43.99",
+        "place": "3"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "French Championships",
+        "event": "1500m",
+        "time": "3:40.36",
+        "place": "1"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:33.70",
+        "place": "7"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:38.37",
+        "place": "3"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "Oslo Bislett Games",
+        "event": "1500m",
+        "time": "3:30.80",
+        "place": "3"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Meeting International Mohammed VI d’Athlétisme de Rabat/Marrakech",
+        "event": "1500m",
+        "time": "3:32.86",
+        "place": "1"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "French Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:38.07",
+        "place": "1"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "1500m sh",
+        "time": "3:34.39",
+        "place": "1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 14",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:36.62",
+        "place": "7"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Weltklasse Zürich",
+        "event": "1500m",
+        "time": "3:30.39",
+        "place": "5"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "French Championships",
+        "event": "1500m",
+        "time": "3:33.33",
+        "place": "1"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "French Championships",
+        "event": "1500m",
+        "time": "3:40.19",
+        "place": "1"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:46.65",
+        "place": "3"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Paris",
+        "event": "1500m",
+        "time": "3:27.49",
+        "place": "1"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Golden Gala",
+        "event": "1500m",
+        "time": "3:29.72",
+        "place": "1"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Meeting International Mohammed VI d'Athlétisme de Rabat",
+        "event": "1500m",
+        "time": "3:32.25",
+        "place": "4"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Championnats Interclubs LIFA",
+        "event": "1500m",
+        "time": "3:37.27",
+        "place": "1"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "European Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:50.48",
+        "place": "3"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "European Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:51.61",
+        "place": "4"
+      },
+      {
+        "date": "MAR 7",
+        "meet": "European Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:36.92",
+        "place": "2"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "European Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:40.43",
+        "place": "2"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "French Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:54.88",
+        "place": "1"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "1500m sh",
+        "time": "3:32.29",
+        "place": "1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Millrose Games",
+        "event": "Mile sh",
+        "time": "3:47.56",
+        "place": "4"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "3000m sh",
+        "time": "7:31.50",
+        "place": "2"
+      },
+      {
+        "date": "JAN 5",
+        "meet": "Prom'Classic, Nice",
+        "event": "10K",
+        "time": "27:44",
+        "place": "1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-03"
 }

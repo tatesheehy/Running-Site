@@ -78,23 +78,23 @@
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:42.09",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAY 31",
       "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:43.56",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "APR 24",
       "meet": "Kip Keino Classic",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:34.11",
-      "place": "1"
+      "place": "1."
     }
   ],
   "dob": "2004-08-01",
@@ -103,5 +103,352 @@
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "emmanuel-wanyonyi",
-  "age": "21"
+  "age": "21",
+  "resultsHistory": {
+    "2022": [
+      {
+        "date": "JUL 23",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.54",
+        "place": "4"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.42",
+        "place": "3"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:46.45",
+        "place": "2"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Kenyan Trials for World Championships and Commonwealth Games 2022",
+        "event": "800m",
+        "time": "1:44.01",
+        "place": "2"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "800m",
+        "time": "1:45.47",
+        "place": "1"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "61st Golden Spike",
+        "event": "800m",
+        "time": "1:44.15",
+        "place": "1"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Kip Keino Classic",
+        "event": "800m",
+        "time": "1:45.01",
+        "place": "1"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "3rd Weekend Meeting",
+        "event": "800m",
+        "time": "1:45.56",
+        "place": "1"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "3rd Weekend Meeting",
+        "event": "1500m",
+        "time": "3:43.19",
+        "place": "1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "SEP 17",
+        "meet": "Prefontaine Classic",
+        "event": "800m",
+        "time": "1:42.80",
+        "place": "1"
+      },
+      {
+        "date": "SEP 2",
+        "meet": "Wanda Diamond League Xiamen",
+        "event": "800m",
+        "time": "1:43.20",
+        "place": "1"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.53",
+        "place": "2"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:43.83",
+        "place": "1"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.92",
+        "place": "1"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Herculis Meeting International d’Athlétisme EBS",
+        "event": "800m",
+        "time": "1:44.35",
+        "place": "8"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Trials For World Athletics Championships Budapest 2023",
+        "event": "800m",
+        "time": "1:44.09",
+        "place": "1"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Trials For World Athletics Championships Budapest 2023",
+        "event": "800m",
+        "time": "1:46.38",
+        "place": "2"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "1:43.27",
+        "place": "1"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "800m",
+        "time": "1:44.36",
+        "place": "1"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Kip Keino Classic",
+        "event": "800m",
+        "time": "1:43.32",
+        "place": "1"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "44th World Athletics Cross Country Championships, Bathurst",
+        "event": "Cross Country Relay",
+        "time": "23:14",
+        "place": "1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "SEP 14",
+        "meet": "Memorial van Damme",
+        "event": "800m",
+        "time": "1:42.70",
+        "place": "1"
+      },
+      {
+        "date": "AUG 25",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "800m",
+        "time": "1:43.23",
+        "place": "2"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Athletissima Lausanne",
+        "event": "800m",
+        "time": "1:41.11",
+        "place": "1"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:41.19",
+        "place": "1"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:43.32",
+        "place": "1"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:44.64",
+        "place": "1"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "1:41.58",
+        "place": "2"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "National Trials for the XXXIII Olympics Games",
+        "event": "800m",
+        "time": "1:41.70",
+        "place": "1"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "National Trials for the XXXIII Olympics Games",
+        "event": "800m",
+        "time": "1:51.76",
+        "place": "6"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Meeting International Mohammed VI d’Athlétisme de Rabat/Marrakech",
+        "event": "800m",
+        "time": "1:43.84",
+        "place": "1"
+      },
+      {
+        "date": "APR 27",
+        "meet": "adizero Road to Records",
+        "event": "Mile",
+        "time": "3:54.6",
+        "place": "1"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Kip Keino Classic",
+        "event": "800m",
+        "time": "1:43.57",
+        "place": "1"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Kenyan Cross Country Championships",
+        "event": "Cross Country",
+        "time": "5:34",
+        "place": "2"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 20",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:41.86",
+        "place": "1"
+      },
+      {
+        "date": "SEP 18",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:43.47",
+        "place": "2"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.05",
+        "place": "1"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Weltklasse Zürich",
+        "event": "800m",
+        "time": "1:42.37",
+        "place": "1"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Athletissima Lausanne",
+        "event": "800m",
+        "time": "1:43.29",
+        "place": "2"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "London Athletics Meet",
+        "event": "800m",
+        "time": "1:42.00",
+        "place": "1"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "800m",
+        "time": "1:41.44",
+        "place": "1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "BAUHAUS-Galan",
+        "event": "800m",
+        "time": "1:41.95",
+        "place": "1"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Oslo Bislett Games",
+        "event": "800m",
+        "time": "1:42.78",
+        "place": "1"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Meeting International Mohammed VI d'Athlétisme de Rabat",
+        "event": "800m",
+        "time": "1:43.37",
+        "place": "3"
+      },
+      {
+        "date": "APR 26",
+        "meet": "adizero: Road to Records, Herzogenaurach",
+        "event": "Mile",
+        "time": "3:52.45",
+        "place": "1"
+      },
+      {
+        "date": "APR 6",
+        "meet": "Grand Slam Track Kingston",
+        "event": "800m",
+        "time": "1:46.44",
+        "place": "2"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Grand Slam Track Kingston",
+        "event": "1500m",
+        "time": "3:35.18",
+        "place": "1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Kenyan Cross Country Championships, Nairobi",
+        "event": "Cross Country",
+        "time": "6:14",
+        "place": "1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-03"
 }
