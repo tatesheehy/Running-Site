@@ -230,22 +230,20 @@ window._tlHide = function() {
 
 // ── HONOURS ────────────────────────────────────────────────
 function _medalSvg(place, short) {
-  // NCAA Championship trophy: gold coin on two dark wood pillars, DLF-inspired
+  // NCAA Championship trophy: arch gateway (two pillars + open gap) with gold coin at apex
   if (short === 'NCAA') {
     return `<svg class="ch-icon ch-icon-ncaa" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="10" cy="5" r="5" fill="#7A5000"/>
-      <circle cx="10" cy="5" r="4.2" fill="#C88000"/>
-      <circle cx="10" cy="5" r="3.5" fill="#F0B200"/>
-      <circle cx="10" cy="5" r="2.7" fill="#F8C830"/>
-      <ellipse cx="7.6" cy="2.9" rx="2" ry="0.85" fill="rgba(255,255,255,0.38)" transform="rotate(-28,7.6,2.9)"/>
-      <circle cx="10" cy="5" r="2" stroke="rgba(160,100,0,0.45)" stroke-width="0.4" fill="none"/>
-      <rect x="8" y="9.8" width="4" height="1.8" rx="0.5" fill="#9B2840"/>
-      <rect x="3.5" y="11.5" width="4.8" height="10" rx="0.5" fill="#7A1C2E"/>
-      <line x1="5.4" y1="11.5" x2="5.4" y2="21.5" stroke="rgba(255,210,190,0.22)" stroke-width="0.9"/>
-      <rect x="11.7" y="11.5" width="4.8" height="10" rx="0.5" fill="#7A1C2E"/>
-      <line x1="14" y1="11.5" x2="14" y2="21.5" stroke="rgba(255,210,190,0.22)" stroke-width="0.9"/>
-      <rect x="2" y="21.5" width="16" height="2.8" rx="0.8" fill="#9B2840"/>
-      <rect x="2" y="21.5" width="16" height="0.8" fill="rgba(255,210,190,0.14)"/>
+      <path fill-rule="evenodd" d="M2.5,23 L2.5,13 Q2.5,9 10,9 Q17.5,9 17.5,13 L17.5,23 L13,23 L13,13 L7,13 L7,23 Z" fill="#7A1C2E"/>
+      <rect x="2.5" y="13" width="1.4" height="10" fill="rgba(255,210,190,0.13)"/>
+      <rect x="16.1" y="13" width="1.4" height="10" fill="rgba(0,0,0,0.22)"/>
+      <rect x="1.5" y="23" width="17" height="2.5" rx="0.7" fill="#9B2840"/>
+      <rect x="1.5" y="23" width="17" height="0.8" fill="rgba(255,210,190,0.13)"/>
+      <circle cx="10" cy="4.8" r="4.8" fill="#7A5000"/>
+      <circle cx="10" cy="4.8" r="4.1" fill="#C88000"/>
+      <circle cx="10" cy="4.8" r="3.4" fill="#F0B200"/>
+      <circle cx="10" cy="4.8" r="2.7" fill="#F8C830"/>
+      <ellipse cx="7.6" cy="2.8" rx="2" ry="0.85" fill="rgba(255,255,255,0.38)" transform="rotate(-28,7.6,2.8)"/>
+      <circle cx="10" cy="4.8" r="2" stroke="rgba(160,100,0,0.45)" stroke-width="0.4" fill="none"/>
     </svg>`;
   }
   // Diamond League Final → trophy icon based on the WDL trophy
