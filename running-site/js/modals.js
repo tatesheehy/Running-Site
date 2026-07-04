@@ -416,7 +416,7 @@ function openAthleteCard(athleteId, rank) {
           </div>
         ` : ''}
         ${traitsHtml ? `<div class="card-traits">${traitsHtml}</div>` : ''}
-        ${buildHonoursHtml(a.ncaaTitle ? [{ short: 'NCAA', discipline: '1500m', place: 1, year: '' }, ...(a.honours || [])] : a.honours)}
+        ${buildHonoursHtml(a.ncaaTitle ? [...(Array.isArray(a.ncaaTitle) ? a.ncaaTitle : [a.ncaaTitle]).map(ev => ({ short: 'NCAA', discipline: ev, place: 1, year: '' })), ...(a.honours || [])] : a.honours)}
         <div class="card-honours-placeholder" style="${a.honours === undefined && !a.ncaaTitle && a.waUrl ? '' : 'display:none'}"></div>
         ${buildSeasonTimeline(a)}
         ${buildResultsSection(a)}
@@ -485,7 +485,7 @@ function openAthleteCard(athleteId, rank) {
         // Cache result (empty array = "checked, none found"; undefined = "not checked")
         a.honours = (data.honours && data.honours.length) ? data.honours : [];
         const placeholder = qs('#athlete-card-inner .card-honours-placeholder');
-        const honoursToShow = a.ncaaTitle ? [{ short: 'NCAA', discipline: '1500m', place: 1, year: '' }, ...a.honours] : a.honours;
+        const honoursToShow = a.ncaaTitle ? [...(Array.isArray(a.ncaaTitle) ? a.ncaaTitle : [a.ncaaTitle]).map(ev => ({ short: 'NCAA', discipline: ev, place: 1, year: '' })), ...a.honours] : a.honours;
         const existingHonours = qs('#athlete-card-inner .card-honours');
         if (existingHonours) {
           if (honoursToShow.length) existingHonours.outerHTML = buildHonoursHtml(honoursToShow);

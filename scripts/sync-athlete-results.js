@@ -485,13 +485,24 @@ function isNcaaDivIChampionship(meet, event) {
   return true;
 }
 
+function normalizeNcaaEvent(e) {
+  return (e || '').replace(/ sh$/i, '').replace(/ short track$/i, '').trim();
+}
+
 function sweepNcaaTitles(athletes) {
   let changed = 0;
   for (const a of athletes) {
     const all = [...(a.results || []), ...Object.values(a.resultsHistory || {}).flat()];
-    const hasTitle = all.some(r => r.place === '1' && isNcaaDivIChampionship(r.meet, r.event));
-    if (hasTitle && !a.ncaaTitle) { a.ncaaTitle = true; changed++; }
-    else if (!hasTitle && a.ncaaTitle) { delete a.ncaaTitle; changed++; }
+    const events = [...new Set(
+      all
+        .filter(r => r.place === '1' && isNcaaDivIChampionship(r.meet, r.event))
+        .map(r => normalizeNcaaEvent(r.event))
+        .filter(Boolean)
+    )];
+    const before = JSON.stringify(a.ncaaTitle);
+    if (events.length) a.ncaaTitle = events;
+    else delete a.ncaaTitle;
+    if (JSON.stringify(a.ncaaTitle) !== before) changed++;
   }
   return changed;
 }

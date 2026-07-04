@@ -1237,7 +1237,9 @@
         ]
       },
       "lastHistorySynced": "2026-07-03",
-      "ncaaTitle": true
+      "ncaaTitle": [
+        "Mile"
+      ]
     },
     {
       "photoBackground": "#111111",
@@ -2248,7 +2250,9 @@
         ]
       },
       "lastHistorySynced": "2026-07-03",
-      "ncaaTitle": true
+      "ncaaTitle": [
+        "1500m"
+      ]
     },
     {
       "photoBackground": "#111111",
@@ -9817,7 +9821,9 @@
         ]
       },
       "lastHistorySynced": "2026-07-03",
-      "ncaaTitle": true
+      "ncaaTitle": [
+        "3000m"
+      ]
     },
     {
       "photoBackground": "#111111",
@@ -11549,7 +11555,11 @@
         ]
       },
       "lastHistorySynced": "2026-07-03",
-      "ncaaTitle": true
+      "ncaaTitle": [
+        "5000m",
+        "10000m",
+        "5000 Metres"
+      ]
     },
     {
       "photoBackground": "#111111",
@@ -18872,7 +18882,10 @@
         ]
       },
       "lastHistorySynced": "2026-07-04",
-      "ncaaTitle": true
+      "ncaaTitle": [
+        "1500m",
+        "Mile"
+      ]
     },
     {
       "photoBackground": "#111111",
@@ -22825,7 +22838,9 @@
         ]
       },
       "lastHistorySynced": "2026-07-04",
-      "ncaaTitle": true
+      "ncaaTitle": [
+        "1500m"
+      ]
     },
     {
       "photoBackground": "#111111",
@@ -36737,7 +36752,10 @@
         ]
       },
       "lastHistorySynced": "2026-07-04",
-      "ncaaTitle": true
+      "ncaaTitle": [
+        "Mile",
+        "1500m"
+      ]
     },
     {
       "id": "jack-anstey",
@@ -40827,7 +40845,9 @@
         ]
       },
       "lastHistorySynced": "2026-07-04",
-      "ncaaTitle": true
+      "ncaaTitle": [
+        "3000m"
+      ]
     },
     {
       "id": "adrian-ben",
@@ -44897,7 +44917,9 @@
         ]
       },
       "lastHistorySynced": "2026-07-04",
-      "ncaaTitle": true
+      "ncaaTitle": [
+        "Mile"
+      ]
     },
     {
       "id": "wes-porter",
