@@ -9,6 +9,8 @@ let _h2hLbView       = 'table';
 let _h2hCmpA         = null;
 let _h2hCmpB         = null;
 let _h2hSearch       = '';
+const _h2hDetailMode = {};   // athleteId → 'beaten' | 'lost'
+let _h2hCurrentRecs  = {};   // athleteId → rec (cached for toggle re-render)
 
 const _H2H_MIN_RACES = 3;
 
@@ -38,6 +40,7 @@ function _renderH2HPage() {
   if (!main) return;
 
   const { records, totalEncounters } = _computeAllH2HRecords(_h2hLbYear, _h2hLbEvent, _h2hLbRankedOnly);
+  _h2hCurrentRecs = records;
 
   const rows = Object.entries(records)
     .filter(([, r]) => r.wins + r.losses >= _H2H_MIN_RACES)
@@ -273,10 +276,24 @@ window.h2hToggleExpand = (id) => {
 };
 
 function _renderExpandDetail(id, rec) {
-  const matchups = Object.values(rec.matchups || {})
-    .sort((a, b) => (b.wins + b.losses) - (a.wins + a.losses) || b.wins - a.wins);
+  const mode = _h2hDetailMode[id] || 'beaten';
 
-  return matchups.map(m => {
+  const all = Object.values(rec.matchups || {});
+  const beaten = all.filter(m => m.wins > 0).sort((a, b) => b.wins - a.wins || (b.wins + b.losses) - (a.wins + a.losses));
+  const lostTo = all.filter(m => m.losses > 0).sort((a, b) => b.losses - a.losses || (b.wins + b.losses) - (a.wins + a.losses));
+  const matchups = mode === 'beaten' ? beaten : lostTo;
+
+  const toggle = `
+    <div class="h2h-detail-toggle">
+      <button class="h2h-detail-tab${mode === 'beaten' ? ' active' : ''}" onclick="h2hDetailToggle('${id}','beaten')">Beaten&thinsp;·&thinsp;${beaten.length}</button>
+      <button class="h2h-detail-tab${mode === 'lost' ? ' active' : ''}" onclick="h2hDetailToggle('${id}','lost')">Lost to&thinsp;·&thinsp;${lostTo.length}</button>
+    </div>`;
+
+  if (matchups.length === 0) {
+    return toggle + `<div class="h2h-detail-empty">${mode === 'beaten' ? 'No wins recorded' : 'No losses recorded'}</div>`;
+  }
+
+  const cards = matchups.map(m => {
     const opp = ATHLETES[m.id];
     const avatar = `<div class="h2h-detail-avatar" style="background-image:url('${opp?.photo || '/images/default_card.png'}');background-color:${opp?.photoBackground || '#111'}"></div>`;
 
@@ -330,7 +347,15 @@ function _renderExpandDetail(id, rec) {
         <div class="h2h-detail-races">${raceRows}</div>
       </div>`;
   }).join('');
+
+  return toggle + cards;
 }
+
+window.h2hDetailToggle = (id, mode) => {
+  _h2hDetailMode[id] = mode;
+  const inner = document.querySelector(`#h2h-detail-${id} .h2h-lb-detail-inner`);
+  if (inner && _h2hCurrentRecs[id]) inner.innerHTML = _renderExpandDetail(id, _h2hCurrentRecs[id]);
+};
 
 // ── Top Rivalries ─────────────────────────────────────────────
 

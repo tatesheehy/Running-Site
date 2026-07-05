@@ -637,6 +637,39 @@
   color: var(--text);
 }
 
+/* ── Detail toggle (Beaten / Lost to) ─────────────────────── */
+
+.h2h-detail-toggle {
+  flex: 0 0 100%;
+  display: flex;
+  gap: 3px;
+  margin-bottom: 4px;
+}
+
+.h2h-detail-tab {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 3px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.h2h-detail-tab:hover { color: var(--text); }
+.h2h-detail-tab.active { background: var(--dark); color: #fff; }
+[data-theme="dark"] .h2h-detail-tab.active { background: #fff; color: #111; }
+
+.h2h-detail-empty {
+  flex: 0 0 100%;
+  font-size: 12px;
+  color: var(--muted);
+  padding: 4px 2px;
+}
+
 /* ── Expandable detail rows ────────────────────────────────── */
 
 .h2h-lb-detail-td {
