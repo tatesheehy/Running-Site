@@ -751,14 +751,25 @@
 
 .h2h-detail-arrow {
   font-size: 9px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
   flex-shrink: 0;
-  min-width: 28px;
+  min-width: 20px;
+  width: 20px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
 }
-.h2h-detail-arrow--w { color: var(--text); }
-.h2h-detail-arrow--l { color: var(--muted); }
+.h2h-detail-arrow--w {
+  background: color-mix(in srgb, #22c55e 18%, transparent);
+  color: #16a34a;
+}
+.h2h-detail-arrow--l {
+  background: color-mix(in srgb, #ef4444 12%, transparent);
+  color: #dc2626;
+}
 
 .h2h-detail-date  { flex-shrink: 0; min-width: 42px; font-size: 10px; }
 .h2h-detail-event { flex-shrink: 0; font-weight: 600; color: var(--text); font-size: 10px; min-width: 55px; }

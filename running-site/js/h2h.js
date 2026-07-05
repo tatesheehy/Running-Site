@@ -310,7 +310,7 @@ function _renderExpandDetail(id, rec) {
         : `<span class="h2h-detail-times">${r.myTime || ''}</span>`;
       return `
       <div class="h2h-detail-race">
-        <span class="h2h-detail-arrow ${r.won ? 'h2h-detail-arrow--w' : 'h2h-detail-arrow--l'}">${r.won ? 'beat' : 'lost'}</span>
+        <span class="h2h-detail-arrow ${r.won ? 'h2h-detail-arrow--w' : 'h2h-detail-arrow--l'}">${r.won ? 'W' : 'L'}</span>
         ${tierBadge}
         <span class="h2h-detail-date">${r.date || ''}</span>
         <span class="h2h-detail-event">${r.event}</span>
@@ -764,6 +764,7 @@ function _renderCompareSection() {
   return `
     <div class="h2h-compare-section">
       <div class="h2h-compare-hd">
+        <span class="h2h-rivalries-dot"></span>
         <span class="h2h-compare-title">Compare Athletes</span>
       </div>
       <div class="h2h-compare-pickers">
@@ -818,7 +819,7 @@ function _renderCompareMatchup() {
     const dateStr = r.year !== '2026' ? `${r.year} ${r.date || ''}` : (r.date || '');
     return `
       <div class="h2h-detail-race${isRecent ? ' h2h-detail-race--recent' : ''}">
-        <span class="h2h-detail-arrow ${r.won ? 'h2h-detail-arrow--w' : 'h2h-detail-arrow--l'}">${r.won ? 'beat' : 'lost'}</span>
+        <span class="h2h-detail-arrow ${r.won ? 'h2h-detail-arrow--w' : 'h2h-detail-arrow--l'}">${r.won ? 'W' : 'L'}</span>
         ${tierBadge}
         <span class="h2h-detail-date">${dateStr}</span>
         <span class="h2h-detail-event">${r.event}</span>
