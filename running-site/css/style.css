@@ -8,7 +8,7 @@
 @import "home.css";
 @import "articles.css";
 @import "rankings.css";
-@import "athletes.css";
+@import "athletes.css?v=2";
 @import "modals.css";
 @import "about.css";
 @import "h2h.css";
