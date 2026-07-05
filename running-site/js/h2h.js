@@ -790,39 +790,59 @@ function _renderCompareMatchup() {
   const n1 = a1.name.split(' ').slice(-1)[0], n2 = a2.name.split(' ').slice(-1)[0];
   const leader = wins > losses ? n1 : losses > wins ? n2 : null;
 
-  const byYear = {};
-  races.forEach(r => {
-    const y = r.year || '2026';
-    if (!byYear[y]) byYear[y] = { wins: 0, losses: 0, races: [] };
-    byYear[y].races.push(r);
-    if (r.won) byYear[y].wins++; else byYear[y].losses++;
-  });
-  const yearKeys = Object.keys(byYear).sort((a, b) => parseInt(b) - parseInt(a));
-  const multiYear = yearKeys.length > 1;
+  // Sort all races most-recent first
+  const _MO = {JAN:0,FEB:1,MAR:2,APR:3,MAY:4,JUN:5,JUL:6,AUG:7,SEP:8,OCT:9,NOV:10,DEC:11};
+  const _raceDate = r => {
+    const p = (r.date || '').split(' ');
+    return parseInt(r.year || 0) * 10000 + (_MO[p[0]] || 0) * 100 + (parseInt(p[1]) || 0);
+  };
+  const sorted = [...races].sort((a, b) => _raceDate(b) - _raceDate(a));
 
-  const raceRows = yearKeys.map(yr => {
-    const yd = byYear[yr];
-    const header = multiYear
-      ? `<div class="h2h-detail-year-hd"><span class="h2h-detail-year">${yr}</span><span class="h2h-detail-year-rec">${yd.wins}–${yd.losses}</span></div>`
+  // Split into recent (top 3) and earlier — only when there are enough meetings
+  const RECENT_N = 3;
+  const splitView = total > RECENT_N;
+  const recent = splitView ? sorted.slice(0, RECENT_N) : sorted;
+  const older  = splitView ? sorted.slice(RECENT_N) : [];
+
+  const recentW = recent.filter(r => r.won).length;
+  const recentL = recent.length - recentW;
+  const recentLeader = recentW > recentL ? n1 : recentL > recentW ? n2 : null;
+
+  const renderRow = (r, isRecent) => {
+    const tierBadge = (r.tier || 1) >= 2
+      ? `<span class="h2h-detail-tier h2h-detail-tier--${r.tier === 3 ? 'champ' : 'major'}">${r.tier === 3 ? 'WC' : 'DL'}</span>`
       : '';
-    return header + yd.races.map(r => {
-      const tierBadge = (r.tier || 1) >= 2
-        ? `<span class="h2h-detail-tier h2h-detail-tier--${r.tier === 3 ? 'champ' : 'major'}">${r.tier === 3 ? 'WC' : 'DL'}</span>`
-        : '';
-      const timesHtml = (r.myTime && r.theirTime)
-        ? `<span class="h2h-detail-times">${r.myTime}<span class="h2h-detail-times-sep">vs</span>${r.theirTime}</span>`
-        : `<span class="h2h-detail-times">${r.myTime || ''}</span>`;
-      return `
-        <div class="h2h-detail-race">
-          <span class="h2h-detail-arrow ${r.won ? 'h2h-detail-arrow--w' : 'h2h-detail-arrow--l'}">${r.won ? 'beat' : 'lost'}</span>
-          ${tierBadge}
-          <span class="h2h-detail-date">${r.date || ''}</span>
-          <span class="h2h-detail-event">${r.event}</span>
-          <span class="h2h-detail-meet">${r.meet.length > 38 ? r.meet.slice(0, 36) + '…' : r.meet}</span>
-          ${timesHtml}
-        </div>`;
-    }).join('');
-  }).join('');
+    const timesHtml = (r.myTime && r.theirTime)
+      ? `<span class="h2h-detail-times">${r.myTime}<span class="h2h-detail-times-sep">vs</span>${r.theirTime}</span>`
+      : `<span class="h2h-detail-times">${r.myTime || ''}</span>`;
+    const dateStr = r.year !== '2026' ? `${r.year} ${r.date || ''}` : (r.date || '');
+    return `
+      <div class="h2h-detail-race${isRecent ? ' h2h-detail-race--recent' : ''}">
+        <span class="h2h-detail-arrow ${r.won ? 'h2h-detail-arrow--w' : 'h2h-detail-arrow--l'}">${r.won ? 'beat' : 'lost'}</span>
+        ${tierBadge}
+        <span class="h2h-detail-date">${dateStr}</span>
+        <span class="h2h-detail-event">${r.event}</span>
+        <span class="h2h-detail-meet">${r.meet.length > 38 ? r.meet.slice(0, 36) + '…' : r.meet}</span>
+        ${timesHtml}
+      </div>`;
+  };
+
+  const recentHeader = splitView
+    ? `<div class="h2h-cmp-section-hd">
+         <span class="h2h-cmp-section-title">Recent form</span>
+         <span class="h2h-cmp-section-rec">${recentW}–${recentL}${recentLeader ? ` · ${recentLeader}` : ' · tied'}</span>
+       </div>`
+    : '';
+  const olderHeader = older.length
+    ? `<div class="h2h-cmp-section-hd h2h-cmp-section-hd--faded">
+         <span class="h2h-cmp-section-title">Earlier</span>
+       </div>`
+    : '';
+
+  const raceRows = recentHeader
+    + recent.map(r => renderRow(r, splitView)).join('')
+    + olderHeader
+    + older.map(r => renderRow(r, false)).join('');
 
   return `
     <div class="h2h-compare-result">
