@@ -147,14 +147,56 @@ function buildAthletesPage() {
     qs('#ath-filter-toggle')?.classList.toggle('has-filters', n > 0);
   }
 
+  const _CANONICAL_EVENTS = [
+    { key: '60m',                         label: '60m'      },
+    { key: '200 Metres Short Track',      label: '200i'     },
+    { key: '200m',                        label: '200m'     },
+    { key: '300 Metres Short Track',      label: '300i'     },
+    { key: '300 Metres',                  label: '300m'     },
+    { key: '400 Metres Short Track',      label: '400i'     },
+    { key: '400m',                        label: '400m'     },
+    { key: '500 Metres',                  label: '500m'     },
+    { key: '600 Metres Short Track',      label: '600i'     },
+    { key: '600 Metres',                  label: '600m'     },
+    { key: '600 Metres Road',             label: '600 Rd'   },
+    { key: '800 Metres Short Track',      label: '800i'     },
+    { key: '800m',                        label: '800m'     },
+    { key: '1000 Metres Short Track',     label: '1000i'    },
+    { key: '1000 Metres',                 label: '1000m'    },
+    { key: '1500 Metres Short Track',     label: '1500i'    },
+    { key: '1500m',                       label: '1500m'    },
+    { key: 'Mile Short Track',            label: 'Mi (i)'  },
+    { key: 'Mile',                        label: 'Mile'     },
+    { key: 'Mile Road',                   label: 'Mi Rd'   },
+    { key: '2000 Metres Short Track',     label: '2000i'    },
+    { key: '2000m',                       label: '2000m'    },
+    { key: '2000 Metres Steeplechase',    label: '2000 SC'  },
+    { key: '2 Miles Short Track',         label: '2 Mi (i)' },
+    { key: '2 Miles',                     label: '2 Mi'     },
+    { key: '3000 Metres Short Track',     label: '3000i'    },
+    { key: '3000m',                       label: '3000m'    },
+    { key: '3000m SC',                    label: '3000 SC'  },
+    { key: 'Distance Medley Short Track', label: 'DM (i)'  },
+    { key: 'Distance Medley',             label: 'DM'       },
+    { key: '5000 Metres Short Track',     label: '5000i'    },
+    { key: '5000m',                       label: '5000m'    },
+    { key: '10000m',                      label: '10000m'   },
+    { key: '5 Kilometres Road',           label: '5K Rd'   },
+    { key: '5 Miles Road',                label: '5 Mi Rd' },
+    { key: '10 Kilometres Road',          label: '10K Rd'  },
+    { key: '15 Kilometres Road',          label: '15K Rd'  },
+    { key: 'Half Marathon',               label: 'HM'       },
+  ];
+
+  const _allEventKeys = new Set();
+  all.forEach(a => (a.prs || []).forEach(p => _allEventKeys.add(p.event)));
+  const _activeEventCols = _CANONICAL_EVENTS.filter(e => _allEventKeys.has(e.key));
+
   const LIST_COLS = [
-    { key: 'name',    label: 'Athlete',  cls: 'ath-list-name' },
-    { key: 'country', label: 'Country',  cls: 'ath-list-country' },
-    { key: '1500m',   label: '1500m',    cls: 'ath-list-pr' },
-    { key: 'Mile',    label: 'Mile',     cls: 'ath-list-pr' },
-    { key: '800m',    label: '800m',     cls: 'ath-list-pr' },
-    { key: '3000m',   label: '3000m',    cls: 'ath-list-pr' },
-    { key: 'age',     label: 'Age',      cls: 'ath-list-age' },
+    { key: 'name',    label: 'Athlete', cls: 'ath-list-name'    },
+    { key: 'country', label: 'Country', cls: 'ath-list-country' },
+    { key: 'age',     label: 'Age',     cls: 'ath-list-age'     },
+    ..._activeEventCols.map(e => ({ key: e.key, label: e.label, cls: 'ath-list-pr' })),
   ];
 
   function sortArrow(key) {
@@ -171,10 +213,10 @@ function buildAthletesPage() {
 
     const rows = list.map((a, i) => {
       const age = a.dob ? calcAgeFromDob(a.dob) : (a.age || '—');
-      const pr1500 = getPr(a, '1500m') || '—';
-      const prMile = getPr(a, 'Mile')  || '—';
-      const pr800  = getPr(a, '800m')  || '—';
-      const pr3000 = getPr(a, '3000m') || '—';
+      const eventCells = _activeEventCols.map(e => {
+        const v = getPr(a, e.key) || '—';
+        return `<td class="ath-list-td ath-list-pr${v === '—' ? ' dim' : ''}">${v}</td>`;
+      }).join('');
       return `<tr class="ath-list-row" onclick="openAthleteCard('${a.id}', null)" tabindex="0">
         <td class="ath-list-td ath-list-name">
           <span class="ath-list-num">${i + 1}</span>
@@ -182,11 +224,8 @@ function buildAthletesPage() {
           <span class="ath-list-athlete-name">${a.name}</span>
         </td>
         <td class="ath-list-td ath-list-country">${a.country || '—'}</td>
-        <td class="ath-list-td ath-list-pr${pr1500 === '—' ? ' dim' : ''}">${pr1500}</td>
-        <td class="ath-list-td ath-list-pr${prMile === '—' ? ' dim' : ''}">${prMile}</td>
-        <td class="ath-list-td ath-list-pr${pr800 === '—' ? ' dim' : ''}">${pr800}</td>
-        <td class="ath-list-td ath-list-pr${pr3000 === '—' ? ' dim' : ''}">${pr3000}</td>
         <td class="ath-list-td ath-list-age">${age}</td>
+        ${eventCells}
       </tr>`;
     }).join('');
 
