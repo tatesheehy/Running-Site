@@ -10,7 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-07-04",
+  "lastSynced": "2026-07-05",
   "prs": [
     {
       "event": "400m",
@@ -76,6 +76,13 @@
   "club": "",
   "country": "United States",
   "results": [
+    {
+      "date": "JUL 4",
+      "meet": "Prefontaine Classic",
+      "event": "Mile",
+      "time": "3:57.13",
+      "place": "12."
+    },
     {
       "date": "JUN 12",
       "meet": "NCAA Division I Outdoor Track and Field Championships",

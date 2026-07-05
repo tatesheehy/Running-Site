@@ -9,7 +9,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-07-04",
+  "lastSynced": "2026-07-05",
   "prs": [
     {
       "event": "1500m",
@@ -177,12 +177,405 @@
   ],
   "dob": "1999-08-18",
   "weight": "x",
-  "lastHistorySynced": "2026-07-03",
+  "lastHistorySynced": "2026-07-04",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",
   "id": "cooper-teare",
   "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUL 14",
+        "meet": "IAAF World U20 Championships",
+        "event": "5000m",
+        "time": "14:24.30",
+        "place": "10"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "IAAF World U20 Championships",
+        "event": "1500m",
+        "time": "3:46.18",
+        "place": "10"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "IAAF World U20 Championships",
+        "event": "1500m",
+        "time": "3:45.06",
+        "place": "3"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Bloomington USA U20 Championships",
+        "event": "1500m",
+        "time": "3:49.88",
+        "place": "2"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Bloomington USA U20 Championships",
+        "event": "5000m",
+        "time": "14:33.54",
+        "place": "2"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Eugene NCAA Div. I Championships",
+        "event": "5000m",
+        "time": "14:08.18",
+        "place": "17"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Sacramento NCAA West Preliminary Round",
+        "event": "5000m",
+        "time": "13:52.19",
+        "place": "6"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Palo Alto Pac-12 Ch.",
+        "event": "5000m",
+        "time": "14:13.74",
+        "place": "6"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Eugene Oregon Twilight",
+        "event": "1500m",
+        "time": "3:43.91",
+        "place": "5"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Azusa Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "APR 19",
+        "meet": "Azusa Bryan Clay Invitational",
+        "event": "5000m",
+        "time": "13:46.46",
+        "place": "8"
+      },
+      {
+        "date": "APR 7",
+        "meet": "Eugene Pepsi Invitational",
+        "event": "1500m",
+        "time": "3:50.97",
+        "place": "6"
+      },
+      {
+        "date": "APR 7",
+        "meet": "Eugene Pepsi Invitational",
+        "event": "3000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAR 30",
+        "meet": "Palo Alto Stanford Invitational",
+        "event": "5000m",
+        "time": "14:06.10",
+        "place": "17"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Seattle MPSF Championships",
+        "event": "3000m",
+        "time": "7:56.43",
+        "place": "3"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Seattle Husky Classic",
+        "event": "3000m",
+        "time": "7:53.66",
+        "place": "10"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "New York Columbia Challenge-Dr.Sander Inv.",
+        "event": "Mile sh",
+        "time": "3:59.29",
+        "place": "4"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "New York Columbia Challenge-Dr.Sander Inv.",
+        "event": "3000m sh",
+        "time": "DNF",
+        "place": ""
+      }
+    ],
+    "2019": [
+      {
+        "date": "JUN 7",
+        "meet": "NCAA Div. I Outdoor Championships",
+        "event": "5000m",
+        "time": "15:04.51",
+        "place": "22"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "NCAA West Preliminary Round",
+        "event": "5000m",
+        "time": "13:46.92",
+        "place": "3"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Pac-12 Ch.",
+        "event": "5000m",
+        "time": "13:49.77",
+        "place": "1"
+      },
+      {
+        "date": "MAY 2",
+        "meet": "Payton Jordan Invitational",
+        "event": "1500m",
+        "time": "3:43.13",
+        "place": "4"
+      },
+      {
+        "date": "APR 19",
+        "meet": "Cardinal Classic",
+        "event": "5000m",
+        "time": "13:32.73",
+        "place": "2"
+      },
+      {
+        "date": "APR 6",
+        "meet": "Sun Angel Classic",
+        "event": "Mile",
+        "time": "4:00.85",
+        "place": "1"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:55.50",
+        "place": "4"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:41.27",
+        "place": "9"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Mountain Pacific Conference Championships",
+        "event": "3000m",
+        "time": "7:51.55",
+        "place": "4"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "UW Last Chance College Elite",
+        "event": "Distance Medley",
+        "time": "9:28.62",
+        "place": "2"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Husky Classic",
+        "event": "3000m",
+        "time": "7:50.66",
+        "place": "1"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Razorback Invitational",
+        "event": "Mile sh",
+        "time": "3:59.21",
+        "place": "1"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Razorback Invitational",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:53.52",
+        "place": "3"
+      }
+    ],
+    "2020": [
+      {
+        "date": "DEC 4",
+        "meet": "The Track Meet",
+        "event": "5000m",
+        "time": "13:17.13",
+        "place": "2"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "Boston University Last Chance Invitational",
+        "event": "Mile sh",
+        "time": "3:55.50",
+        "place": "2"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Husky Classic",
+        "event": "3000m",
+        "time": "7:46.45",
+        "place": "4"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Razorback Invitational",
+        "event": "Mile sh",
+        "time": "4:00.21",
+        "place": "1"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "Razorback Invitational",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:24.52",
+        "place": "1"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Washington Indoor Preview",
+        "event": "1000m",
+        "time": "2:22.28",
+        "place": "1"
+      }
+    ],
+    "2021": [
+      {
+        "date": "JUN 27",
+        "meet": "U.S. Olympic Trials",
+        "event": "5000m",
+        "time": "13:28.08",
+        "place": "4"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "U.S. Olympic Trials",
+        "event": "5000m",
+        "time": "13:43.78",
+        "place": "4"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "NCAA Div. I Outdoor Championships",
+        "event": "5000m",
+        "time": "13:12.27",
+        "place": "1"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "NCAA Preliminary West Round",
+        "event": "5000m",
+        "time": "13:52.94",
+        "place": "4"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "PAC-12 Conference Championships",
+        "event": "1500m",
+        "time": "3:39.81",
+        "place": "1"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "PAC-12 Conference Championships",
+        "event": "5000m",
+        "time": "13:34.45",
+        "place": "2"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "PAC-12 Conference Championships",
+        "event": "1500m",
+        "time": "3:42.60",
+        "place": "1"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Oregon Twilight",
+        "event": "1500m",
+        "time": "3:35.97",
+        "place": "2"
+      },
+      {
+        "date": "APR 23",
+        "meet": "Oregon Relays",
+        "event": "5000m",
+        "time": "13:20.24",
+        "place": "2"
+      },
+      {
+        "date": "APR 3",
+        "meet": "Hayward Premiere",
+        "event": "800m",
+        "time": "1:48.99",
+        "place": "2"
+      },
+      {
+        "date": "APR 2",
+        "meet": "Hayward Premiere",
+        "event": "10000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAR 13",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:46.23",
+        "place": "2"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:19.98",
+        "place": "1"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Hayward Time Trial",
+        "event": "3000m",
+        "time": "8:49.11",
+        "place": "3"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Tyson Invitational",
+        "event": "800m sh",
+        "time": "1:49.29",
+        "place": "2"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Tyson Invitational",
+        "event": "Mile sh",
+        "time": "3:50.39",
+        "place": "1"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "Razorback Invitational",
+        "event": "3000m sh",
+        "time": "7:46.10",
+        "place": "1"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Razorback Invitational",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:19.42",
+        "place": "1"
+      }
+    ],
     "2022": [
       {
         "date": "JUL 16",
@@ -661,5 +1054,8 @@
       }
     ]
   },
-  "age": "26"
+  "age": "26",
+  "ncaaTitle": [
+    "5000m"
+  ]
 }

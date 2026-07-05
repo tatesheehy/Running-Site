@@ -10,7 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-07-04",
+  "lastSynced": "2026-07-05",
   "prs": [
     {
       "event": "800m",
@@ -85,131 +85,669 @@
   "country": "United States",
   "results": [
     {
-      "date": "JUN 12",
-      "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "1500m",
-      "time": "3:37.21",
-      "place": "3"
+      "date": "JUL 4",
+      "meet": "Prefontaine Classic",
+      "event": "Mile",
+      "time": "3:48.76",
+      "place": "10."
     },
     {
       "date": "JUN 12",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "5000m",
+      "event": "1500 m",
+      "time": "3:37.21",
+      "place": "3."
+    },
+    {
+      "date": "JUN 12",
+      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "event": "5000 m",
       "time": "14:10.63",
-      "place": "20"
+      "place": "20."
     },
     {
       "date": "JUN 10",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:38.81",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAY 29",
       "meet": "NCAA Division I East First Rounds",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:42.48",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAY 29",
       "meet": "NCAA Division I East First Rounds",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:49.63",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAY 27",
       "meet": "NCAA Division I East First Rounds",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:47.70",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAY 16",
       "meet": "ACC Outdoor Track & Field Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:39.88",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAY 16",
       "meet": "ACC Outdoor Track & Field Championships",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:31.43",
-      "place": "4"
+      "place": "4."
     },
     {
       "date": "MAY 14",
       "meet": "ACC Outdoor Track & Field Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:54.66",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "APR 18",
       "meet": "Virginia Challenge",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:25.42",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "APR 3",
       "meet": "Virginia Grand Prix",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:39.92",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAR 14",
       "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "Mile Short Track",
+      "event": "Mile sh",
       "time": "3:59.50",
-      "place": "4"
+      "place": "4."
     },
     {
       "date": "MAR 13",
       "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "Mile Short Track",
+      "event": "Mile sh",
       "time": "3:55.13",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "FEB 28",
       "meet": "ACC Indoor Track & Field Championships",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:43.18",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "FEB 26",
       "meet": "ACC Indoor Track & Field Championships",
-      "event": "5000 Metres Short Track",
+      "event": "5000 m sh",
       "time": "13:41.66",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "FEB 22",
       "meet": "Saucony Battle for Boston",
-      "event": "Distance Medley Short Track",
+      "event": "Distance Medley sh",
       "time": "9:16.75",
-      "place": "3"
+      "place": "3."
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
-      "event": "Mile Short Track",
+      "event": "1500 m sh",
+      "time": "3:35.60",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "Mile sh",
       "time": "3:52.62",
-      "place": "8"
+      "place": "8."
     }
   ],
   "dob": "2003-12-23",
   "college": "Virginia",
   "weight": "x",
+  "lastHistorySynced": "2026-07-04",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",
   "id": "gary-martin",
-  "age": "22"
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [
+      {
+        "date": "JUL 2",
+        "meet": "Brooks PR Invitational",
+        "event": "Mile",
+        "time": "4:04.93",
+        "place": "3"
+      },
+      {
+        "date": "MAR 27",
+        "meet": "GSTC East Coast Winter Championships",
+        "event": "800m",
+        "time": "1:54.98",
+        "place": "3"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "Adidas Indoor Nationals",
+        "event": "Mile sh",
+        "time": "4:11.72",
+        "place": "3"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "Adidas Indoor Nationals",
+        "event": "2 Miles sh",
+        "time": "9:02.93",
+        "place": "2"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "East Coast Invitational",
+        "event": "2000m sh",
+        "time": "5:25.71",
+        "place": "2"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "East Coast Invitational",
+        "event": "2 Miles sh",
+        "time": "9:13.85",
+        "place": "1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "JUN 19",
+        "meet": "New Balance Nationals",
+        "event": "Mile",
+        "time": "4:03.57",
+        "place": "1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Results",
+        "event": "800m",
+        "time": "1:48.59",
+        "place": "3"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "HOKA Festival of Miles",
+        "event": "Mile",
+        "time": "3:57.89",
+        "place": "4"
+      },
+      {
+        "date": "APR 28",
+        "meet": "The Penn Relays Carnival",
+        "event": "Mile",
+        "time": "4:01.04",
+        "place": "1"
+      },
+      {
+        "date": "MAR 11",
+        "meet": "New Balance HS Indoor Nationals",
+        "event": "Mile sh",
+        "time": "4:02.34",
+        "place": "1"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Millrose Games",
+        "event": "1500m sh",
+        "time": "3:47.81",
+        "place": ""
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Millrose Games",
+        "event": "Mile sh",
+        "time": "4:05.47",
+        "place": "8"
+      },
+      {
+        "date": "JAN 15",
+        "meet": "The VA Showcase",
+        "event": "2 Miles sh",
+        "time": "9:04.65",
+        "place": "1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "MAY 13",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:43.40",
+        "place": "8"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAY 11",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:41.16",
+        "place": "1"
+      },
+      {
+        "date": "APR 29",
+        "meet": "The Penn Relays Carnival",
+        "event": "4xMile Relay",
+        "time": "16:14.48",
+        "place": "4"
+      },
+      {
+        "date": "APR 28",
+        "meet": "The Penn Relays Carnival",
+        "event": "Distance Medley",
+        "time": "9:35.60",
+        "place": "3"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Virginia Challenge",
+        "event": "1500m",
+        "time": "3:39.53",
+        "place": "2"
+      },
+      {
+        "date": "APR 15",
+        "meet": "Virginia Grand Prix",
+        "event": "800m",
+        "time": "1:47.74",
+        "place": "1"
+      },
+      {
+        "date": "MAR 23",
+        "meet": "Raleigh Relays",
+        "event": "1500m",
+        "time": "3:40.08",
+        "place": "2"
+      },
+      {
+        "date": "MAR 23",
+        "meet": "Raleigh Relays",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "FEB 25",
+        "meet": "ACC Indoor Track & Field Championships",
+        "event": "Mile sh",
+        "time": "4:05.03",
+        "place": "10"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "ACC Indoor Track & Field Championships",
+        "event": "Mile sh",
+        "time": "4:06.04",
+        "place": "2"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Arkansas Qualifier",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:23.71",
+        "place": "4"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "Mile sh",
+        "time": "3:56.83",
+        "place": "4"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "3000m sh",
+        "time": "7:36.09",
+        "place": "4"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "1500m",
+        "time": "3:39.23",
+        "place": "10"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Portland Track Festival",
+        "event": "1500m",
+        "time": "3:35.77",
+        "place": "3"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "1500m",
+        "time": "3:41.43",
+        "place": "9"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "1500m",
+        "time": "3:45.54",
+        "place": "2"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "1500m",
+        "time": "3:41.29",
+        "place": "2"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:40.87",
+        "place": "2"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "5000m",
+        "time": "13:47.57",
+        "place": "8"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:43.52",
+        "place": "1"
+      },
+      {
+        "date": "APR 27",
+        "meet": "The Penn Relay Carnival",
+        "event": "4xMile Relay",
+        "time": "15:52.30",
+        "place": "2"
+      },
+      {
+        "date": "APR 26",
+        "meet": "The Penn Relay Carnival",
+        "event": "Distance Medley",
+        "time": "9:36.61",
+        "place": "3"
+      },
+      {
+        "date": "APR 19",
+        "meet": "Virginia Challenge",
+        "event": "800m",
+        "time": "1:47.46",
+        "place": "1"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "3:37.66",
+        "place": "1"
+      },
+      {
+        "date": "MAR 28",
+        "meet": "Raleigh Relays",
+        "event": "5000m",
+        "time": "13:31.51",
+        "place": "2"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "Mile sh",
+        "time": "4:12.44",
+        "place": "10"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "Mile sh",
+        "time": "3:57.29",
+        "place": "4"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "ACC Indoor Track & Field Championships",
+        "event": "Mile sh",
+        "time": "3:56.15",
+        "place": "2"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "ACC Indoor Track & Field Championships",
+        "event": "3000m sh",
+        "time": "7:54.59",
+        "place": "3"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "ACC Indoor Track & Field Championships",
+        "event": "Mile sh",
+        "time": "4:05.48",
+        "place": "1"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Arkansas Qualifier",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:18.95",
+        "place": "2"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "800m sh",
+        "time": "1:48.71",
+        "place": "6"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Penn State National Open",
+        "event": "3000m sh",
+        "time": "7:47.49",
+        "place": "1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 6",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:05.57",
+        "place": "3"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "USA Championships",
+        "event": "1500m",
+        "time": "3:32.03",
+        "place": "6"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "USA Championships",
+        "event": "1500m",
+        "time": "3:33.01",
+        "place": "2"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Sunset Tour, Jack Kemp Stadium",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:49.73",
+        "place": "3"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "1500m",
+        "time": "3:47.58",
+        "place": "5"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "1500m",
+        "time": "3:52.37",
+        "place": "5"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "1500m",
+        "time": "3:38.94",
+        "place": "3"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "5000m",
+        "time": "14:24.90",
+        "place": "16"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "1500m",
+        "time": "3:40.52",
+        "place": "1"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:44.20",
+        "place": "1"
+      },
+      {
+        "date": "APR 27",
+        "meet": "Virginia High Performance",
+        "event": "800m",
+        "time": "1:48.08",
+        "place": "1"
+      },
+      {
+        "date": "APR 26",
+        "meet": "The Penn Relays",
+        "event": "4xMile Relay",
+        "time": "16:25.40",
+        "place": "4"
+      },
+      {
+        "date": "APR 25",
+        "meet": "The Penn Relays",
+        "event": "Distance Medley",
+        "time": "9:26.84",
+        "place": "4"
+      },
+      {
+        "date": "APR 18",
+        "meet": "Virginia Challenge",
+        "event": "5000m",
+        "time": "13:16.82",
+        "place": "1"
+      },
+      {
+        "date": "MAR 27",
+        "meet": "Raleigh Relays",
+        "event": "1500m",
+        "time": "3:33.71",
+        "place": "3"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "3000m sh",
+        "time": "7:52.69",
+        "place": "2"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:15.12",
+        "place": "1"
+      },
+      {
+        "date": "MAR 3",
+        "meet": "ACC Indoor Track & Field Championships",
+        "event": "3000m sh",
+        "time": "7:36.69",
+        "place": "1"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "ACC Indoor Track & Field Championships",
+        "event": "5000m sh",
+        "time": "13:30.69",
+        "place": "2"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Arkansas Qualifier",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:14.19",
+        "place": "1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Millrose Games",
+        "event": "Mile sh",
+        "time": "3:48.82",
+        "place": "5"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Penn 10 Elite",
+        "event": "Mile sh",
+        "time": "3:54.94",
+        "place": "3"
+      }
+    ]
+  },
+  "age": "22",
+  "ncaaTitle": [
+    "1500m",
+    "Mile"
+  ]
 }

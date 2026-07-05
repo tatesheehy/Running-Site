@@ -12,7 +12,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-07-04",
+  "lastSynced": "2026-07-05",
   "prs": [
     {
       "event": "800m",
@@ -87,6 +87,13 @@
   "country": "United States",
   "results": [
     {
+      "date": "JUL 4",
+      "meet": "Prefontaine Classic",
+      "event": "Mile",
+      "time": "3:46.97",
+      "place": "3."
+    },
+    {
       "date": "JUN 13",
       "meet": "USATF LA Grand Prix",
       "event": "1500 m",
@@ -146,12 +153,67 @@
   "dob": "2002-10-19",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-07-03",
+  "lastHistorySynced": "2026-07-04",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",
   "id": "ethan-strand",
   "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "JUN 1",
+        "meet": "Music City Distance Carnival",
+        "event": "Mile",
+        "time": "4:11.85",
+        "place": "1"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "AHSAA State 4A-7A",
+        "event": "800m",
+        "time": "1:54.52",
+        "place": "1"
+      }
+    ],
+    "2020": [],
+    "2021": [
+      {
+        "date": "JUN 6",
+        "meet": "Music City Track Carnival National Events",
+        "event": "Mile",
+        "time": "4:10.35",
+        "place": "8"
+      },
+      {
+        "date": "MAY 1",
+        "meet": "AHSAA State Track and Field 4A-7A",
+        "event": "800m",
+        "time": "1:52.73",
+        "place": "1"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "Adidas Indoor Nationals",
+        "event": "Mile sh",
+        "time": "4:10.31",
+        "place": "1"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "AHSAA State Indoor Meet",
+        "event": "800m sh",
+        "time": "1:51.08",
+        "place": "1"
+      },
+      {
+        "date": "JAN 24",
+        "meet": "Magic City Elite Meet #1",
+        "event": "800m sh",
+        "time": "1:52.91",
+        "place": "1"
+      }
+    ],
     "2022": [
       {
         "date": "FEB 11",
