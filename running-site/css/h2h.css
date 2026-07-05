@@ -1267,6 +1267,49 @@
   margin-left: -10px;
 }
 
+/* ── BBRef-inspired: dark headers · zebra rows · sharp corners ── */
+
+/* Sharp corners on all section wrappers */
+.h2h-lb-wrap,
+.h2h-rivalries-section,
+.h2h-compare-section,
+.h2h-map-wrap,
+.h2h-detail-opp { border-radius: 0; }
+
+/* Dark section headers */
+.h2h-rivalries-header,
+.h2h-compare-hd {
+  background: var(--dark);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+.h2h-rivalries-title,
+.h2h-compare-title { color: rgba(255, 255, 255, 0.9); }
+.h2h-rivalries-dot { background: var(--accent); }
+.h2h-rivalries-season { color: rgba(255, 255, 255, 0.45); }
+
+/* Sticky column labels — dark band */
+.h2h-col-labels {
+  background: var(--dark);
+  color: rgba(255, 255, 255, 0.55);
+  box-shadow: none;
+  border-bottom: 2px solid var(--accent);
+}
+
+/* Zebra rows */
+.h2h-lb-row:nth-child(even) { background: var(--bg-light); }
+.h2h-rivalry-row:nth-child(odd) { background: var(--bg-light); }
+
+/* Warm accent hover */
+.h2h-lb-row:hover,
+.h2h-rivalry-row:hover { background: rgba(232, 80, 10, 0.07); }
+
+/* Dark mode adjustments */
+[data-theme="dark"] .h2h-lb-row:nth-child(even) { background: rgba(255, 255, 255, 0.03); }
+[data-theme="dark"] .h2h-rivalry-row:nth-child(odd) { background: rgba(255, 255, 255, 0.03); }
+[data-theme="dark"] .h2h-lb-row:hover,
+[data-theme="dark"] .h2h-rivalry-row:hover { background: rgba(232, 80, 10, 0.14); }
+[data-theme="dark"] .h2h-col-labels { border-bottom-color: var(--accent); }
+
 /* ── Responsive ───────────────────────────────────────────── */
 
 @media (max-width: 700px) {
