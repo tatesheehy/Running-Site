@@ -839,6 +839,23 @@ function _renderCompareMatchup() {
        </div>`
     : '';
 
+  // Build season-by-season record from sorted races
+  const byYear = {};
+  sorted.forEach(r => {
+    const y = r.year || '2026';
+    if (!byYear[y]) byYear[y] = { w: 0, l: 0 };
+    if (r.won) byYear[y].w++; else byYear[y].l++;
+  });
+  const yearKeys = Object.keys(byYear).sort((a, b) => parseInt(a) - parseInt(b));
+  const seasonCells = yearKeys.map(y => {
+    const { w, l } = byYear[y];
+    const cls = w > l ? 'h2h-cmp-season--win' : l > w ? 'h2h-cmp-season--loss' : 'h2h-cmp-season--tie';
+    return `<span class="h2h-cmp-season-cell ${cls}"><span class="h2h-cmp-season-yr">${y}</span><span class="h2h-cmp-season-rec">${w}–${l}</span></span>`;
+  }).join('');
+  const seasonBar = yearKeys.length > 1
+    ? `<div class="h2h-cmp-season-bar">${seasonCells}</div>`
+    : '';
+
   const raceRows = recentHeader
     + recent.map(r => renderRow(r, splitView)).join('')
     + olderHeader
@@ -862,6 +879,7 @@ function _renderCompareMatchup() {
           <span class="h2h-cmp-ath-name">${a2.name}</span>
         </div>
       </div>
+      ${seasonBar}
       <div class="h2h-compare-races">${raceRows}</div>
     </div>`;
 }
