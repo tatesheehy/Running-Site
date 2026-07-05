@@ -362,6 +362,28 @@ function extractSeasonResults(nd, year) {
   return Array.from(seen.values()).map(({ _rawDate, ...r }) => r);
 }
 
+// ── Fallback: serve cached data from our own athletes.json ───────────────────
+// Loaded once per warm Lambda container, refreshed every 5 minutes.
+
+let _athletesCache = null;
+let _athletesCacheTime = 0;
+const CACHE_TTL = 5 * 60 * 1000;
+
+async function getAthletesFallback() {
+  const now = Date.now();
+  if (_athletesCache && now - _athletesCacheTime < CACHE_TTL) return _athletesCache;
+  try {
+    const r = await fetch('https://stattc.com/_data/athletes.json');
+    if (!r.ok) throw new Error(`status ${r.status}`);
+    const d = await r.json();
+    _athletesCache = d.items || [];
+    _athletesCacheTime = now;
+  } catch (_) {
+    _athletesCache = _athletesCache || [];
+  }
+  return _athletesCache;
+}
+
 // ── Search: find athletes by name ────────────────────────────────────────────
 
 async function waFetch(url) {
@@ -385,7 +407,14 @@ async function searchAthletes(name) {
   try {
     html = await waFetch(url);
   } catch (e) {
-    return { error: e.message };
+    // WA unreachable — search our cached athletes instead
+    const cached = await getAthletesFallback();
+    const lower = name.toLowerCase();
+    const matches = cached
+      .filter(a => a.name.toLowerCase().includes(lower))
+      .slice(0, 8)
+      .map(a => ({ name: a.name, country: a.country, url: a.waUrl, id: a.id || '' }));
+    return { athletes: matches, cached: true };
   }
 
   const athletes = [];
@@ -521,12 +550,27 @@ function extractHonours(nd) {
 
 // ── Profile: fetch PRs for a given athlete page URL ──────────────────────────
 
+async function _cachedProfileFallback(url) {
+  const cached = await getAthletesFallback();
+  const athlete = cached.find(a => a.waUrl === url);
+  if (!athlete) return null;
+  return {
+    name: athlete.name,
+    dob: athlete.dob || '',
+    outdoor: athlete.prs || [],
+    indoor: [],
+    results: athlete.results || [],
+    honours: athlete.honours || [],
+    cached: true,
+  };
+}
+
 async function getAthleteProfile(url) {
   let html;
   try {
     html = await waFetch(url);
   } catch (e) {
-    return { error: e.message };
+    return (await _cachedProfileFallback(url)) || { error: e.message };
   }
 
   // Try to extract name from page <title>
@@ -613,6 +657,12 @@ async function getAthleteProfile(url) {
       }
     }
     outdoor = sortBests(outdoor);
+  }
+
+  // If WA responded but we got nothing useful, fall back to cached data
+  if (outdoor.length === 0 && results.length === 0) {
+    const fallback = await _cachedProfileFallback(url);
+    if (fallback) return fallback;
   }
 
   return { name: athleteName, dob, outdoor, indoor, results, honours };
