@@ -51,35 +51,42 @@
     {
       "date": "JUL 3",
       "meet": "Meeting Stanislas Nancy",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:31.78",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:30.17",
-      "place": "4"
+      "place": "4."
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "1500 m",
+      "time": "3:35.22",
+      "place": ""
     },
     {
       "date": "JUN 16",
       "meet": "65th Ostrava Golden Spike",
       "event": "Mile",
       "time": "3:49.94",
-      "place": "3"
+      "place": "3."
     },
     {
       "date": "MAY 31",
       "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:32.23",
-      "place": "9"
+      "place": "9."
     }
   ],
   "dob": "2001-05-18",
   "college": "South Carolina",
-  "lastHistorySynced": "2026-07-04",
+  "lastHistorySynced": "2026-07-05",
   "event": "MIDDLE DISTANCE",
   "id": "anass-essayi",
   "resultsHistory": {
