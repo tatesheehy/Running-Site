@@ -1,0 +1,559 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "collegeLogo": "",
+  "traits": [],
+  "waUrl": "https://worldathletics.org/athletes/morocco/hafid-rizqy-14842130",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Hafid Rizqy",
+  "headlineKey": "x",
+  "flag": "MA",
+  "honours": [],
+  "seasons": "0",
+  "lastSynced": "2026-07-05",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:46.26"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.52"
+    },
+    {
+      "event": "3000m",
+      "time": "7:37.76"
+    },
+    {
+      "event": "5000m",
+      "time": "14:23.32"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:44"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "28:20"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "",
+  "ncaa": false,
+  "club": "x",
+  "country": "Morocco",
+  "results": [
+    {
+      "date": "APR 25",
+      "meet": "20 km de Lausanne - 5km",
+      "event": "5 Kilom Road",
+      "time": "13:44",
+      "place": "3."
+    },
+    {
+      "date": "APR 4",
+      "meet": "Urban Trail de Lille - 5 et 10km",
+      "event": "10 Kilom Road",
+      "time": "28:20",
+      "place": "35."
+    },
+    {
+      "date": "FEB 15",
+      "meet": "Tamesna 10K",
+      "event": "10 Kilom Road",
+      "time": "28:31",
+      "place": "1."
+    }
+  ],
+  "dob": "1997-10-26",
+  "college": "",
+  "weight": "x",
+  "lastHistorySynced": "2026-07-05",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "hafid-rizqy",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUL 25",
+        "meet": "Moroccan Championships, Kenitra",
+        "event": "1500m",
+        "time": "3:47.74",
+        "place": "5"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "1500m",
+        "time": "3:53.29",
+        "place": "3"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Rabat 4ème Meeting à Thème, Rabat",
+        "event": "1500m",
+        "time": "3:45.5",
+        "place": "2"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Rabat 2ème Challenge Performance, Rabat",
+        "event": "1500m",
+        "time": "3:49.14",
+        "place": "13"
+      },
+      {
+        "date": "APR 29",
+        "meet": "Benguerir",
+        "event": "1500m",
+        "time": "3:49.96",
+        "place": "11"
+      },
+      {
+        "date": "APR 14",
+        "meet": "Laayoune",
+        "event": "800m",
+        "time": "1:54.45",
+        "place": "5"
+      }
+    ],
+    "2019": [
+      {
+        "date": "JUL 28",
+        "meet": "Moroccan Championships, Sale",
+        "event": "1500m",
+        "time": "3:46.15",
+        "place": "4"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "Moroccan Championships, Sale",
+        "event": "800m",
+        "time": "1:48.84",
+        "place": "4"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "6ème Meeting Federal, Casablanca",
+        "event": "800m",
+        "time": "1:48.01",
+        "place": "4"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "1500m",
+        "time": "3:41.16",
+        "place": "2"
+      },
+      {
+        "date": "APR 28",
+        "meet": "Demi Final Coupe Du Trone, Boujaad",
+        "event": "800m",
+        "time": "1:51.19",
+        "place": "3"
+      },
+      {
+        "date": "MAR 17",
+        "meet": "3er Meeting de Zone, Boujaad",
+        "event": "1500m",
+        "time": "3:48.01",
+        "place": "1"
+      },
+      {
+        "date": "MAR 3",
+        "meet": "2éme Meeting Federal, Sale",
+        "event": "800m",
+        "time": "1:51.41",
+        "place": "1"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Meeting Federal, Fes",
+        "event": "1500m",
+        "time": "3:48.52",
+        "place": "6"
+      },
+      {
+        "date": "JAN 6",
+        "meet": "Meeting de Zone Juniors/Seniors, Ben Slimane",
+        "event": "1500m",
+        "time": "3:48.13",
+        "place": "1"
+      }
+    ],
+    "2020": [],
+    "2021": [
+      {
+        "date": "JUN 25",
+        "meet": "Moroccan Championships",
+        "event": "1500m",
+        "time": "3:42.15",
+        "place": "3"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "8eme Meeting elite INA",
+        "event": "1500m",
+        "time": "3:39.8",
+        "place": "2"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "12eme Meeting Federal",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "JUN 2",
+        "meet": "7eme Meeting Elite INA",
+        "event": "1500m",
+        "time": "3:39.11",
+        "place": "2"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "6eme MEETING ELITE INA",
+        "event": "1500m",
+        "time": "3:38.08",
+        "place": "4"
+      },
+      {
+        "date": "APR 7",
+        "meet": "3eme Meeting Elite Ina Sale",
+        "event": "1500m",
+        "time": "3:42.84",
+        "place": "4"
+      },
+      {
+        "date": "MAR 27",
+        "meet": "2éme Meeting Elite",
+        "event": "1500m",
+        "time": "3:39.29",
+        "place": "2"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "9ème Meeting Federal",
+        "event": "1500m",
+        "time": "3:42.44",
+        "place": "8"
+      }
+    ],
+    "2022": [
+      {
+        "date": "AUG 10",
+        "meet": "5th Islamic Solidarity Games",
+        "event": "800m",
+        "time": "1:48.22",
+        "place": "3"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "5th Islamic Solidarity Games",
+        "event": "800m",
+        "time": "1:51.37",
+        "place": "2"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "Moroccan Championships",
+        "event": "800m",
+        "time": "1:46.26",
+        "place": "1"
+      },
+      {
+        "date": "JUL 23",
+        "meet": "Moroccan Championships",
+        "event": "1500m",
+        "time": "3:38.26",
+        "place": "1"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "4ème Meeting Fédéral",
+        "event": "800m",
+        "time": "1:47.62",
+        "place": "1"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "Test INA",
+        "event": "800m",
+        "time": "1:51.03",
+        "place": "2"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "1500m",
+        "time": "3:40.15",
+        "place": "13"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "Test FRMA, Rabat",
+        "event": "800m",
+        "time": "1:46.39",
+        "place": "2"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "2éme Meeting Federal",
+        "event": "1500m",
+        "time": "3:36.74",
+        "place": "2"
+      },
+      {
+        "date": "APR 27",
+        "meet": "2éme Test INA",
+        "event": "1500m",
+        "time": "3:36.48",
+        "place": "3"
+      },
+      {
+        "date": "APR 15",
+        "meet": "Meeting Test Ina",
+        "event": "800m",
+        "time": "1:46.28",
+        "place": "3"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "1er Meeting Fédéral J/S Rabat",
+        "event": "1500m",
+        "time": "3:48.49",
+        "place": "1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "AUG 4",
+        "meet": "Jeux de la Francophonie",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Jeux de la Francophonie",
+        "event": "1500m",
+        "time": "3:41.89",
+        "place": "2"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "Moroccan Championships",
+        "event": "1500m",
+        "time": "3:36.60",
+        "place": "2"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Arab Games Algiers 2023",
+        "event": "5000m",
+        "time": "14:23.32",
+        "place": "2"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "Arab Championships",
+        "event": "5000m",
+        "time": "14:31.55",
+        "place": "3"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "Kladno hází a Kladenské Memoriály 2023",
+        "event": "1500m",
+        "time": "3:39.37",
+        "place": "2"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Atletica Geneve",
+        "event": "1500m",
+        "time": "3:39.24",
+        "place": "7"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "Memorial Josef Odložil",
+        "event": "1500m",
+        "time": "3:38.68",
+        "place": "2"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "1500m",
+        "time": "3:38.80",
+        "place": "11"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "44th World Athletics Cross Country Championships, Bathurst",
+        "event": "Cross Country Relay",
+        "time": "24:48",
+        "place": "7"
+      }
+    ],
+    "2024": [
+      {
+        "date": "JUL 16",
+        "meet": "Spitzen Leichtathletik Luzern",
+        "event": "3000m",
+        "time": "7:37.76",
+        "place": "2"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Meeting International Sotteville 2024",
+        "event": "1500m",
+        "time": "3:37.27",
+        "place": "2"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Moroccan Championships, Sale",
+        "event": "1500m",
+        "time": "3:37.74",
+        "place": "1"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "BAUHAUS-Galan",
+        "event": "1500m",
+        "time": "3:35.14",
+        "place": "9"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "IFAM Outdoor",
+        "event": "1500m",
+        "time": "3:35.85",
+        "place": "1"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Kladno hází a Kladenské Memoriály",
+        "event": "1500m",
+        "time": "3:46.40",
+        "place": "2"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Meeting International Mohammed VI d’Athlétisme de Rabat/Marrakech",
+        "event": "1500m",
+        "time": "3:34.52",
+        "place": "6"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "45th World Athletics Cross Country Championships",
+        "event": "Cross Country Relay",
+        "time": "23:08",
+        "place": "4"
+      },
+      {
+        "date": "MAR 7",
+        "meet": "Arab Cross Country Championships, Amman",
+        "event": "Cross Country",
+        "time": "30:40",
+        "place": "3"
+      }
+    ],
+    "2025": [
+      {
+        "date": "NOV 19",
+        "meet": "6th Islamic Solidarity Games, Riyadh",
+        "event": "1500m",
+        "time": "3:44.66",
+        "place": "4"
+      },
+      {
+        "date": "NOV 17",
+        "meet": "6th Islamic Solidarity Games, Riyadh",
+        "event": "1500m",
+        "time": "3:51.52",
+        "place": "1"
+      },
+      {
+        "date": "SEP 14",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:41.55",
+        "place": "7"
+      },
+      {
+        "date": "AUG 15",
+        "meet": "Internationales Nordthüringer Leichtathletikmeeting",
+        "event": "1500m",
+        "time": "3:35.95",
+        "place": "1"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "IFAM Oordegem",
+        "event": "1500m",
+        "time": "3:35.53",
+        "place": "4"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "Moroccan Championships",
+        "event": "1500m",
+        "time": "3:47.43",
+        "place": "1"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Spitzen Leichtathletik Luzern",
+        "event": "1500m",
+        "time": "3:35.48",
+        "place": "5"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Meeting International Sotteville 2025",
+        "event": "1500m",
+        "time": "3:37.04",
+        "place": "4"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Meeting National Est Lyonnais",
+        "event": "1500m",
+        "time": "3:34.75",
+        "place": "4"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Goldenes Oval 2025",
+        "event": "1500m",
+        "time": "3:35.57",
+        "place": "10"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "7th Irena Szewińska Memorial",
+        "event": "1500m",
+        "time": "3:35.52",
+        "place": "6"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Meeting International Mohammed VI d'Athlétisme de Rabat",
+        "event": "1500m",
+        "time": "3:36.67",
+        "place": "16"
+      }
+    ]
+  },
+  "age": "28"
+}

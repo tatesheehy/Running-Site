@@ -2,6 +2,7 @@
   "photoBackground": "#111111",
   "reviewTitle": "Season review",
   "collegeLogo": "/images/villanova_wildcats_logo.svg.png",
+  "waUrl": "https://worldathletics.org/athletes/united-states/marco-langon-14970208",
   "height": "5'9",
   "questionBody": "x",
   "headlineRest": ".",
@@ -23,8 +24,48 @@
       "time": "7:34.00"
     },
     {
+      "event": "2 Miles",
+      "time": "8:14.32"
+    },
+    {
       "event": "5000m",
       "time": "13:05.21"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:50.69"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:54.60"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:34.00"
+    },
+    {
+      "event": "2 Miles Short Track",
+      "time": "9:21.47"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:05.21"
+    },
+    {
+      "event": "4x800 Metres Relay",
+      "time": "7:24.09"
+    },
+    {
+      "event": "Distance Medley",
+      "time": "9:28.14"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:16.10"
+    },
+    {
+      "event": "4xMile Relay",
+      "time": "15:51.91"
     }
   ],
   "hometown": "x",
@@ -33,12 +74,402 @@
   "ncaa": true,
   "club": "x",
   "country": "United States",
-  "results": [],
+  "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "2 Miles",
+      "time": "8:14.32",
+      "place": "14"
+    },
+    {
+      "date": "JUN 12",
+      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "event": "5000m",
+      "time": "13:42.77",
+      "place": "4"
+    },
+    {
+      "date": "MAY 29",
+      "meet": "NCAA Division I East First Rounds",
+      "event": "5000m",
+      "time": "13:27.93",
+      "place": "1"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Big East Outdoor Track and Field Championships",
+      "event": "1500m",
+      "time": "3:39.68",
+      "place": "1"
+    },
+    {
+      "date": "MAY 15",
+      "meet": "Big East Outdoor Track and Field Championships",
+      "event": "1500m",
+      "time": "3:48.80",
+      "place": "1"
+    },
+    {
+      "date": "MAY 9",
+      "meet": "Franson Last Chance",
+      "event": "1500m",
+      "time": "3:32.79",
+      "place": "1"
+    },
+    {
+      "date": "APR 10",
+      "meet": "Duke Invitational",
+      "event": "5000m",
+      "time": "13:28.43",
+      "place": "1"
+    },
+    {
+      "date": "MAR 14",
+      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "event": "3000 Metres Short Track",
+      "time": "7:42.56",
+      "place": "3"
+    },
+    {
+      "date": "MAR 13",
+      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "event": "5000 Metres Short Track",
+      "time": "13:36.98",
+      "place": "2"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Big East Indoor Track and Field Championships",
+      "event": "3000 Metres Short Track",
+      "time": "7:57.65",
+      "place": "1"
+    },
+    {
+      "date": "FEB 27",
+      "meet": "Big East Indoor Track and Field Championships",
+      "event": "Distance Medley Short Track",
+      "time": "9:43.92",
+      "place": "1"
+    },
+    {
+      "date": "FEB 20",
+      "meet": "Philadelphia Metro",
+      "event": "Distance Medley Short Track",
+      "time": "9:16.10",
+      "place": "1"
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Boston University David Hemery Valentine Invitational",
+      "event": "3000 Metres Short Track",
+      "time": "7:34.00",
+      "place": "1"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "New Balance Indoor Grand Prix",
+      "event": "3000 Metres Short Track",
+      "time": "7:34.56",
+      "place": "5"
+    }
+  ],
   "college": "Villanova",
   "weight": "145",
   "coach": "x",
   "reviewBody": "x",
   "event": "DISTANCE",
   "id": "marco-langon",
-  "age": "21"
+  "age": "21",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [
+      {
+        "date": "JUL 3",
+        "meet": "NSAF Nationals Outdoor Presented by Nike",
+        "event": "Mile",
+        "time": "4:13.91",
+        "place": "4"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "Adidas Indoor Nationals",
+        "event": "Mile sh",
+        "time": "4:22.16",
+        "place": "11"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "The 757 Showdown!",
+        "event": "2 Miles sh",
+        "time": "9:21.47",
+        "place": "3"
+      }
+    ],
+    "2022": [
+      {
+        "date": "JUN 19",
+        "meet": "New Balance Nationals",
+        "event": "Mile",
+        "time": "4:13.54",
+        "place": "7"
+      },
+      {
+        "date": "JUN 3",
+        "meet": "John Hay Pennsylvania Distance Festival presented by BMRC",
+        "event": "Mile",
+        "time": "4:05.91",
+        "place": "2"
+      },
+      {
+        "date": "APR 28",
+        "meet": "The Penn Relays Carnival",
+        "event": "3000m",
+        "time": "8:35.06",
+        "place": "6"
+      },
+      {
+        "date": "MAR 11",
+        "meet": "New Balance HS Indoor Nationals",
+        "event": "Mile sh",
+        "time": "4:04.60",
+        "place": "5"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "Mile sh",
+        "time": "4:07.18",
+        "place": "2"
+      }
+    ],
+    "2023": [
+      {
+        "date": "MAY 19",
+        "meet": "Track Night NYC",
+        "event": "1500m",
+        "time": "3:49.97",
+        "place": "8"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "44th World Athletics Cross Country Championships, Bathurst",
+        "event": "Cross Country U20 Race",
+        "time": "26:16",
+        "place": "19"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:14.11",
+        "place": "4"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "5000m",
+        "time": "14:10.41",
+        "place": "21"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "5000m",
+        "time": "13:58.89",
+        "place": "2"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Big East Outdoor Track and Field Championships",
+        "event": "4x800 Metres Relay",
+        "time": "7:24.09",
+        "place": "2"
+      },
+      {
+        "date": "MAY 10",
+        "meet": "Big East Outdoor Track and Field Championships",
+        "event": "5000m",
+        "time": "13:45.50",
+        "place": "1"
+      },
+      {
+        "date": "APR 27",
+        "meet": "The Penn Relay Carnival",
+        "event": "4xMile Relay",
+        "time": "15:51.91",
+        "place": "1"
+      },
+      {
+        "date": "APR 12",
+        "meet": "Bryan Clay Invitational",
+        "event": "5000m",
+        "time": "13:28.44",
+        "place": "11"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:00.83",
+        "place": "14"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Big East Indoor Track and Field Championships",
+        "event": "3000m sh",
+        "time": "7:43.83",
+        "place": "2"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Big East Indoor Track and Field Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:37.24",
+        "place": "1"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "The Badgers Windy City Invite",
+        "event": "3000m sh",
+        "time": "7:47.43",
+        "place": "3"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Penn State National Open",
+        "event": "Mile sh",
+        "time": "3:56.24",
+        "place": "4"
+      },
+      {
+        "date": "JAN 20",
+        "meet": "Villanova Invitational",
+        "event": "Mile sh",
+        "time": "3:57.88",
+        "place": "1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 6",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:05.21",
+        "place": "2"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Night of Athletics",
+        "event": "5000m",
+        "time": "13:12.89",
+        "place": "2"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Cork City Sports",
+        "event": "Mile",
+        "time": "3:54.59",
+        "place": "1"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "5000m",
+        "time": "13:21.17",
+        "place": "3"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "5000m",
+        "time": "14:06.40",
+        "place": "1"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Big East Outdoor Track and Field Championships",
+        "event": "5000m",
+        "time": "13:27.21",
+        "place": "1"
+      },
+      {
+        "date": "APR 26",
+        "meet": "The Penn Relays",
+        "event": "4xMile Relay",
+        "time": "16:24.92",
+        "place": "2"
+      },
+      {
+        "date": "APR 25",
+        "meet": "The Penn Relays",
+        "event": "Distance Medley",
+        "time": "9:28.14",
+        "place": "5"
+      },
+      {
+        "date": "APR 18",
+        "meet": "Wake Forest Invitational",
+        "event": "1500m",
+        "time": "3:37.25",
+        "place": "1"
+      },
+      {
+        "date": "MAR 27",
+        "meet": "Raleigh Relays",
+        "event": "1500m",
+        "time": "3:33.38",
+        "place": "2"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "3000m sh",
+        "time": "7:54.25",
+        "place": "7"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "5000m sh",
+        "time": "13:14.16",
+        "place": "6"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "Big East Indoor Track and Field Championships",
+        "event": "5000m sh",
+        "time": "13:57.03",
+        "place": "1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Boston University Bruce Lehane Scarlet and White Invitational",
+        "event": "3000m sh",
+        "time": "7:36.87",
+        "place": "2"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Penn 10 Elite",
+        "event": "Mile sh",
+        "time": "3:54.60",
+        "place": "1"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Penn 10 Elite",
+        "event": "3000m sh",
+        "time": "DNF",
+        "place": ""
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-05",
+  "dob": "2004-08-31",
+  "lastSynced": "2026-07-05"
 }
