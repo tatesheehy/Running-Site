@@ -913,6 +913,235 @@
 }
 
 
+/* ── Search input ─────────────────────────────────────────── */
+
+.h2h-lb-search {
+  padding: 5px 10px;
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  outline: none;
+  width: 160px;
+}
+.h2h-lb-search:focus { border-color: var(--dark); }
+.h2h-lb-search::placeholder { color: var(--muted); }
+
+/* ── Compare Tool ─────────────────────────────────────────── */
+
+.h2h-compare-section {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.h2h-compare-hd {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-light);
+}
+
+.h2h-compare-title {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.h2h-compare-pickers {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+}
+
+.h2h-compare-picker { flex: 1; position: relative; }
+
+.h2h-compare-vs {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.h2h-cmp-input-wrap { position: relative; }
+
+.h2h-compare-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 12px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  outline: none;
+}
+.h2h-compare-input:focus { border-color: var(--dark); }
+.h2h-compare-input::placeholder { color: var(--muted); }
+
+.h2h-cmp-list {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  right: 0;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 200;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.h2h-cmp-item {
+  padding: 8px 12px;
+  font-size: 13px;
+  color: var(--text);
+  cursor: pointer;
+}
+.h2h-cmp-item:hover { background: var(--bg-light); }
+
+.h2h-cmp-selected {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 8px 6px 6px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-light);
+}
+
+.h2h-cmp-sel-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center top;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+
+.h2h-cmp-sel-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.h2h-cmp-clear {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 2px;
+  flex-shrink: 0;
+}
+.h2h-cmp-clear:hover { color: var(--text); }
+
+.h2h-compare-empty {
+  padding: 14px 16px;
+  font-size: 12px;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+
+/* Compare result panel */
+
+.h2h-compare-result {
+  border-top: 1px solid var(--border);
+}
+
+.h2h-compare-summary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.h2h-cmp-ath {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.h2h-cmp-ath--right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.h2h-cmp-ath-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center top;
+  flex-shrink: 0;
+  border: 1.5px solid var(--border);
+}
+
+.h2h-cmp-ath-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.h2h-cmp-score {
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.h2h-cmp-score-main {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--muted);
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+.h2h-cmp-score--lead { color: var(--text); }
+
+.h2h-cmp-score-sep {
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0 3px;
+  opacity: 0.5;
+}
+
+.h2h-cmp-score-meta {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 3px;
+}
+
+.h2h-compare-races {
+  padding: 10px 16px 14px;
+}
+
 /* ── Responsive ───────────────────────────────────────────── */
 
 @media (max-width: 700px) {

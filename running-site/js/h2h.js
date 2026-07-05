@@ -6,6 +6,9 @@ let _h2hLbYear       = '2026';
 let _h2hLbEvent      = 'all';
 let _h2hLbRankedOnly = true;
 let _h2hLbView       = 'table';
+let _h2hCmpA         = null;
+let _h2hCmpB         = null;
+let _h2hSearch       = '';
 
 const _H2H_MIN_RACES = 3;
 
@@ -91,6 +94,9 @@ function _renderH2HPage() {
         <!-- Top Rivalries -->
         ${_renderRivalriesSection(_h2hLbYear, _h2hLbEvent, _h2hLbRankedOnly)}
 
+        <!-- Compare Tool -->
+        ${_renderCompareSection()}
+
         <!-- Controls -->
         <div class="h2h-lb-controls">
           <div class="h2h-lb-controls-left">
@@ -130,6 +136,11 @@ function _renderH2HPage() {
                     onclick="h2hLbSetEvent('${ev}')">${ev === 'all' ? 'All' : ev}</button>`).join('')}
               </div>
             </div>
+          </div>
+          <div class="h2h-lb-ctrl-group">
+            <div class="h2h-lb-ctrl-label">Search</div>
+            <input class="h2h-lb-search" placeholder="Filter athletes…" autocomplete="off"
+              oninput="h2hLbSearch(this.value)" value="${_h2hSearch}">
           </div>
         </div>
 
@@ -239,6 +250,8 @@ function _renderH2HPage() {
       colLabels.classList.toggle('is-sticky', !entry.isIntersecting);
     }, { rootMargin: '-62px 0px 0px 0px', threshold: 0 }).observe(sentinel);
   }
+
+  if (_h2hSearch) window.h2hLbSearch(_h2hSearch);
 }
 
 window.h2hLbSetYear      = y    => { _h2hLbYear  = y;   _renderH2HPage(); };
@@ -636,3 +649,214 @@ function _computeAllH2HRecords(year, eventFilter, rankedOnly) {
 
   return { records, totalEncounters };
 }
+
+// ── Compare Tool ──────────────────────────────────────────────
+
+function _computePairMatchup(id1, id2) {
+  const a1 = ATHLETES[id1], a2 = ATHLETES[id2];
+  if (!a1 || !a2) return null;
+
+  const getResults = (a, year) =>
+    year === '2026' ? (a.results || []) : ((a.resultsHistory || {})[year] || []);
+
+  const allYears = new Set(['2026']);
+  Object.keys(a1.resultsHistory || {}).forEach(y => allYears.add(y));
+  Object.keys(a2.resultsHistory || {}).forEach(y => allYears.add(y));
+
+  const races = [];
+  let wins = 0, losses = 0;
+
+  [...allYears].sort((a, b) => parseInt(b) - parseInt(a)).forEach(year => {
+    const r1 = getResults(a1, year), r2 = getResults(a2, year);
+    r1.forEach(race1 => {
+      if (!race1.meet || !race1.event) return;
+      const match = r2.find(r => r.meet && r.event &&
+        race1.meet.trim().toLowerCase() === r.meet.trim().toLowerCase() &&
+        _normalizeEvent(race1.event) === _normalizeEvent(r.event)
+      );
+      if (!match) return;
+
+      const p1 = parseInt(race1.place), p2 = parseInt(match.place);
+      const t1s = parseTimeToSecs(race1.time), t2s = parseTimeToSecs(match.time);
+
+      if (t1s && t2s && !isNaN(p1) && !isNaN(p2) && p1 !== p2) {
+        if ((p1 < p2) !== (t1s < t2s)) return;
+      }
+
+      let won;
+      if (t1s && t2s)                    won = t1s < t2s;
+      else if (!isNaN(p1) && !isNaN(p2)) won = p1 < p2;
+      else return;
+
+      if (won) wins++; else losses++;
+      races.push({ year, date: race1.date, meet: race1.meet, event: race1.event, won, myTime: race1.time, theirTime: match.time, tier: _meetTier(race1.meet) });
+    });
+  });
+
+  return { wins, losses, races };
+}
+
+function _renderComparePicker(slot) {
+  const selId    = slot === 'a' ? _h2hCmpA : _h2hCmpB;
+  const otherId  = slot === 'a' ? _h2hCmpB : _h2hCmpA;
+  const athlete  = selId ? ATHLETES[selId] : null;
+
+  if (athlete) {
+    return `
+      <div class="h2h-cmp-selected">
+        <div class="h2h-cmp-sel-avatar" style="background-image:url('${athlete.photo || '/images/default_card.png'}');background-color:${athlete.photoBackground || '#111'}"></div>
+        <span class="h2h-cmp-sel-name">${athlete.name}</span>
+        <button class="h2h-cmp-clear" onclick="event.stopPropagation();h2hCmpClear('${slot}')">×</button>
+      </div>`;
+  }
+
+  const athletes = Object.values(ATHLETES)
+    .filter(a => a.name && a.id !== otherId)
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  const items = athletes.map(a =>
+    `<div class="h2h-cmp-item" onclick="h2hCmpSelect('${slot}','${a.id}')">${a.name}</div>`
+  ).join('');
+
+  return `
+    <div class="h2h-cmp-input-wrap">
+      <input class="h2h-compare-input" placeholder="Search athlete…" autocomplete="off"
+        oninput="h2hCmpFilter(this,'${slot}')"
+        onfocus="h2hCmpShowList('${slot}')"
+        onblur="setTimeout(()=>h2hCmpHideList('${slot}'),150)">
+      <div class="h2h-cmp-list" id="h2h-cmp-list-${slot}" style="display:none">
+        ${items}
+      </div>
+    </div>`;
+}
+
+function _renderCompareSection() {
+  const hasResult = _h2hCmpA && _h2hCmpB;
+  const body = hasResult
+    ? _renderCompareMatchup()
+    : `<div class="h2h-compare-empty">Select two athletes to compare their head-to-head record</div>`;
+
+  return `
+    <div class="h2h-compare-section">
+      <div class="h2h-compare-hd">
+        <span class="h2h-compare-title">Compare Athletes</span>
+      </div>
+      <div class="h2h-compare-pickers">
+        <div class="h2h-compare-picker">${_renderComparePicker('a')}</div>
+        <div class="h2h-compare-vs">vs</div>
+        <div class="h2h-compare-picker">${_renderComparePicker('b')}</div>
+      </div>
+      ${body}
+    </div>`;
+}
+
+function _renderCompareMatchup() {
+  const a1 = ATHLETES[_h2hCmpA], a2 = ATHLETES[_h2hCmpB];
+  if (!a1 || !a2) return '';
+
+  const { wins, losses, races } = _computePairMatchup(_h2hCmpA, _h2hCmpB);
+  const total = wins + losses;
+
+  if (total === 0) {
+    const n1 = a1.name.split(' ').slice(-1)[0], n2 = a2.name.split(' ').slice(-1)[0];
+    return `<div class="h2h-compare-empty">No head-to-head meetings found between ${n1} and ${n2}.</div>`;
+  }
+
+  const n1 = a1.name.split(' ').slice(-1)[0], n2 = a2.name.split(' ').slice(-1)[0];
+  const leader = wins > losses ? n1 : losses > wins ? n2 : null;
+
+  const byYear = {};
+  races.forEach(r => {
+    const y = r.year || '2026';
+    if (!byYear[y]) byYear[y] = { wins: 0, losses: 0, races: [] };
+    byYear[y].races.push(r);
+    if (r.won) byYear[y].wins++; else byYear[y].losses++;
+  });
+  const yearKeys = Object.keys(byYear).sort((a, b) => parseInt(b) - parseInt(a));
+  const multiYear = yearKeys.length > 1;
+
+  const raceRows = yearKeys.map(yr => {
+    const yd = byYear[yr];
+    const header = multiYear
+      ? `<div class="h2h-detail-year-hd"><span class="h2h-detail-year">${yr}</span><span class="h2h-detail-year-rec">${yd.wins}–${yd.losses}</span></div>`
+      : '';
+    return header + yd.races.map(r => {
+      const tierBadge = (r.tier || 1) >= 2
+        ? `<span class="h2h-detail-tier h2h-detail-tier--${r.tier === 3 ? 'champ' : 'major'}">${r.tier === 3 ? 'WC' : 'DL'}</span>`
+        : '';
+      const timesHtml = (r.myTime && r.theirTime)
+        ? `<span class="h2h-detail-times">${r.myTime}<span class="h2h-detail-times-sep">vs</span>${r.theirTime}</span>`
+        : `<span class="h2h-detail-times">${r.myTime || ''}</span>`;
+      return `
+        <div class="h2h-detail-race">
+          <span class="h2h-detail-arrow ${r.won ? 'h2h-detail-arrow--w' : 'h2h-detail-arrow--l'}">${r.won ? 'beat' : 'lost'}</span>
+          ${tierBadge}
+          <span class="h2h-detail-date">${r.date || ''}</span>
+          <span class="h2h-detail-event">${r.event}</span>
+          <span class="h2h-detail-meet">${r.meet.length > 38 ? r.meet.slice(0, 36) + '…' : r.meet}</span>
+          ${timesHtml}
+        </div>`;
+    }).join('');
+  }).join('');
+
+  return `
+    <div class="h2h-compare-result">
+      <div class="h2h-compare-summary">
+        <div class="h2h-cmp-ath">
+          <div class="h2h-cmp-ath-avatar" style="background-image:url('${a1.photo || '/images/default_card.png'}');background-color:${a1.photoBackground || '#111'}"></div>
+          <span class="h2h-cmp-ath-name">${a1.name}</span>
+        </div>
+        <div class="h2h-cmp-score">
+          <div class="h2h-cmp-score-main">
+            <span class="${wins > losses ? 'h2h-cmp-score--lead' : ''}">${wins}</span><span class="h2h-cmp-score-sep">–</span><span class="${losses > wins ? 'h2h-cmp-score--lead' : ''}">${losses}</span>
+          </div>
+          <div class="h2h-cmp-score-meta">${total} meeting${total !== 1 ? 's' : ''}${leader ? ` · ${leader} leads` : ' · tied'}</div>
+        </div>
+        <div class="h2h-cmp-ath h2h-cmp-ath--right">
+          <div class="h2h-cmp-ath-avatar" style="background-image:url('${a2.photo || '/images/default_card.png'}');background-color:${a2.photoBackground || '#111'}"></div>
+          <span class="h2h-cmp-ath-name">${a2.name}</span>
+        </div>
+      </div>
+      <div class="h2h-compare-races">${raceRows}</div>
+    </div>`;
+}
+
+window.h2hCmpFilter = (input, slot) => {
+  const q = input.value.toLowerCase();
+  const list = document.getElementById(`h2h-cmp-list-${slot}`);
+  if (!list) return;
+  list.querySelectorAll('.h2h-cmp-item').forEach(item => {
+    item.style.display = item.textContent.toLowerCase().includes(q) ? '' : 'none';
+  });
+};
+
+window.h2hCmpShowList = (slot) => {
+  const list = document.getElementById(`h2h-cmp-list-${slot}`);
+  if (list) list.style.display = '';
+};
+
+window.h2hCmpHideList = (slot) => {
+  const list = document.getElementById(`h2h-cmp-list-${slot}`);
+  if (list) list.style.display = 'none';
+};
+
+window.h2hCmpSelect = (slot, id) => {
+  if (slot === 'a') _h2hCmpA = id; else _h2hCmpB = id;
+  _renderH2HPage();
+};
+
+window.h2hCmpClear = (slot) => {
+  if (slot === 'a') _h2hCmpA = null; else _h2hCmpB = null;
+  _renderH2HPage();
+};
+
+window.h2hLbSearch = (q) => {
+  _h2hSearch = (q || '').toLowerCase();
+  document.querySelectorAll('.h2h-lb-row').forEach(row => {
+    const name = (row.querySelector('.h2h-lb-name')?.textContent || '').toLowerCase();
+    const show = !_h2hSearch || name.includes(_h2hSearch);
+    row.style.display = show ? '' : 'none';
+    const detail = document.getElementById(row.id.replace('h2h-row-', 'h2h-detail-'));
+    if (detail && !show) detail.style.display = 'none';
+  });
+};
