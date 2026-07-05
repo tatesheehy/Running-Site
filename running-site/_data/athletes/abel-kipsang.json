@@ -18,7 +18,7 @@
     }
   ],
   "seasons": "x",
-  "lastSynced": "2026-07-04",
+  "lastSynced": "2026-07-05",
   "prs": [
     {
       "event": "800m",
@@ -159,12 +159,271 @@
   ],
   "dob": "1996-11-22",
   "weight": "x",
-  "lastHistorySynced": "2026-07-03",
+  "lastHistorySynced": "2026-07-04",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "abel-kipsang",
   "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "SEP 13",
+        "meet": "Kenya World Championship Trials",
+        "event": "800m",
+        "time": "1:46.68",
+        "place": "5"
+      },
+      {
+        "date": "SEP 12",
+        "meet": "Kenya World Championship Trials",
+        "event": "800m",
+        "time": "1:46.8",
+        "place": "2"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "African Games",
+        "event": "800m",
+        "time": "1:45.43",
+        "place": "4"
+      },
+      {
+        "date": "AUG 27",
+        "meet": "African Games",
+        "event": "800m",
+        "time": "1:47.91",
+        "place": "1"
+      },
+      {
+        "date": "AUG 27",
+        "meet": "African Games",
+        "event": "4x100 Metres Relay",
+        "time": "41.28",
+        "place": "5"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "African Games",
+        "event": "800m",
+        "time": "1:48.34",
+        "place": "1"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Kenyan Championships",
+        "event": "800m",
+        "time": "1:46.19",
+        "place": "5"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "Kenyan Championships",
+        "event": "800m",
+        "time": "1:46.20",
+        "place": "2"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Kenyan Championships",
+        "event": "800m",
+        "time": "1:46.50",
+        "place": "2"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "African Games Trials, Nairobi",
+        "event": "800m",
+        "time": "1:45.70",
+        "place": "3"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "African Games Trials, Nairobi",
+        "event": "800m",
+        "time": "1:48.1",
+        "place": "4"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "AK Meeting, Narok",
+        "event": "800m",
+        "time": "1:50.7",
+        "place": "7"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "AK Meeting",
+        "event": "800m",
+        "time": "1:50.4",
+        "place": "9"
+      }
+    ],
+    "2020": [
+      {
+        "date": "OCT 3",
+        "meet": "Kip Keino Classic",
+        "event": "1500m",
+        "time": "3:35.43",
+        "place": "3"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "AK Meeting",
+        "event": "1500m",
+        "time": "3:45.6",
+        "place": "1"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "AK Meeting",
+        "event": "1500m",
+        "time": "3:38.7",
+        "place": "1"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Weekend Meet, Eldoret",
+        "event": "1500m",
+        "time": "3:44.3",
+        "place": "1"
+      }
+    ],
+    "2021": [
+      {
+        "date": "SEP 3",
+        "meet": "Allianz Memorial Van Damme",
+        "event": "1500m",
+        "time": "3:34.08",
+        "place": "4"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "Athletissima Lausanne",
+        "event": "3000m",
+        "time": "7:42.21",
+        "place": "8"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:52.20",
+        "place": "7"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXII Olympic Games",
+        "event": "1500m",
+        "time": "3:29.56",
+        "place": "4"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "The XXXII Olympic Games",
+        "event": "1500m",
+        "time": "3:31.65",
+        "place": "1"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "The XXXII Olympic Games",
+        "event": "1500m",
+        "time": "3:40.68",
+        "place": "1"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Meeting Stanislas Nancy",
+        "event": "800m",
+        "time": "1:45.14",
+        "place": "3"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "KBC Nacht van de Atletiek",
+        "event": "1500m",
+        "time": "3:33.96",
+        "place": "1"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Meeting International de la Province de Liège",
+        "event": "3000m",
+        "time": "7:50.02",
+        "place": "1"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "Kenya Olympic Games Trials",
+        "event": "1500m",
+        "time": "3:34.36",
+        "place": "3"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Meeting International",
+        "event": "1500m",
+        "time": "3:32.68",
+        "place": "1"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "FBK Games",
+        "event": "1500m",
+        "time": "3:35.63",
+        "place": "2"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Meeting International de Montreuil",
+        "event": "1500m",
+        "time": "3:33.99",
+        "place": "1"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "56. Internationales Pfingstsportfest",
+        "event": "1500m",
+        "time": "3:36.62",
+        "place": "1"
+      },
+      {
+        "date": "MAR 13",
+        "meet": "2nd AK Weekend Meeting",
+        "event": "1500m",
+        "time": "3:37.7",
+        "place": "1"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "2nd AK Weekend Meeting",
+        "event": "1500m",
+        "time": "3:38.0",
+        "place": "1"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "1st Weekend Meeting",
+        "event": "1500m",
+        "time": "3:36.3",
+        "place": "1"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "1st Weekend Meeting",
+        "event": "1500m",
+        "time": "3:45.2",
+        "place": "1"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "3rd AK Relay Series",
+        "event": "800m",
+        "time": "1:46.36",
+        "place": "3"
+      }
+    ],
     "2022": [
       {
         "date": "SEP 8",

@@ -53,7 +53,7 @@
     }
   ],
   "seasons": "x",
-  "lastSynced": "2026-07-04",
+  "lastSynced": "2026-07-05",
   "prs": [
     {
       "event": "800m",
@@ -99,12 +99,73 @@
   ],
   "dob": "2004-08-01",
   "weight": "x",
-  "lastHistorySynced": "2026-07-03",
+  "lastHistorySynced": "2026-07-04",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "emmanuel-wanyonyi",
   "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [
+      {
+        "date": "AUG 22",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:43.76",
+        "place": "1"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:46.15",
+        "place": "1"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:46.51",
+        "place": "1"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "Nairobi Kenya World U20 Trials",
+        "event": "800m",
+        "time": "1:45.81",
+        "place": "2"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Nairobi Kenya World U20 Trials",
+        "event": "800m",
+        "time": "1:47.49",
+        "place": "2"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Nairobi Kenya World U20 Trials",
+        "event": "800m",
+        "time": "1:51.27",
+        "place": "1"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "2nd AK Weekend Meeting",
+        "event": "800m",
+        "time": "1:48.6",
+        "place": "3"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "2nd AK Weekend Meeting",
+        "event": "800m",
+        "time": "1:48.03",
+        "place": "5"
+      }
+    ],
     "2022": [
       {
         "date": "JUL 23",

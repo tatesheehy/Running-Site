@@ -10,7 +10,7 @@
   "headlineKey": "xx",
   "flag": "AU",
   "seasons": "2",
-  "lastSynced": "2026-07-04",
+  "lastSynced": "2026-07-05",
   "prs": [
     {
       "event": "800m",
@@ -55,6 +55,13 @@
   "club": "xx",
   "country": "Australia",
   "results": [
+    {
+      "date": "JUL 4",
+      "meet": "Prefontaine Classic",
+      "event": "Mile",
+      "time": "3:46.06",
+      "place": "1."
+    },
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
@@ -149,12 +156,81 @@
   ],
   "dob": "2006-06-09",
   "weight": "150",
-  "lastHistorySynced": "2026-07-03",
+  "lastHistorySynced": "2026-07-04",
   "coach": "xx",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "cameron-myers",
   "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [
+      {
+        "date": "DEC 19",
+        "meet": "AACT Summer Series Meet Number 8",
+        "event": "800m",
+        "time": "1:58.10",
+        "place": "3"
+      },
+      {
+        "date": "NOV 22",
+        "meet": "AACT Summer Series Meet Number 5",
+        "event": "1500m",
+        "time": "4:08.03",
+        "place": "5"
+      }
+    ],
+    "2021": [
+      {
+        "date": "APR 15",
+        "meet": "Australian U16 Championships",
+        "event": "800m",
+        "time": "1:55.61",
+        "place": "1"
+      },
+      {
+        "date": "APR 14",
+        "meet": "Australian U16 Championships",
+        "event": "800m",
+        "time": "1:59.83",
+        "place": "1"
+      },
+      {
+        "date": "APR 12",
+        "meet": "Australian U16 Championships",
+        "event": "1500m",
+        "time": "4:04.35",
+        "place": "1"
+      },
+      {
+        "date": "MAR 31",
+        "meet": "AACT Summer Series Meet Number 13",
+        "event": "1500m",
+        "time": "3:54.33",
+        "place": "7"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "AACT Under Age Ch.",
+        "event": "800m",
+        "time": "1:57.41",
+        "place": "1"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "AACT Championships",
+        "event": "800m",
+        "time": "1:59.71",
+        "place": "1"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "AACT Summer Series Meet Number 10",
+        "event": "800m",
+        "time": "1:58.91",
+        "place": "7"
+      }
+    ],
     "2022": [
       {
         "date": "DEC 15",

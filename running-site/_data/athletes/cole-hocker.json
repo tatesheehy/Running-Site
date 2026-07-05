@@ -62,7 +62,7 @@
     }
   ],
   "seasons": "4",
-  "lastSynced": "2026-07-04",
+  "lastSynced": "2026-07-05",
   "prs": [
     {
       "event": "800m",
@@ -147,6 +147,13 @@
   "club": "Nike",
   "country": "United States",
   "results": [
+    {
+      "date": "JUL 4",
+      "meet": "Prefontaine Classic",
+      "event": "Mile",
+      "time": "3:47.57",
+      "place": "6."
+    },
     {
       "date": "JUN 14",
       "meet": "USATF LA Grand Prix",
