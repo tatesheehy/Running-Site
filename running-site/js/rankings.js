@@ -676,14 +676,15 @@ function buildRankingsDetail(eventName, opts = {}) {
       <div class="rankings-detail">
         <a href="${backUrl}" class="rd-back">&larr; ${backLabel}</a>
         <div class="rd-header">
-          ${headerPhoto ? `<div class="rd-header-photo-bg" style="background-image:url('${headerPhoto}')"></div>` : ''}
-          <div class="rd-header-left">
-            <div class="rd-header-meta">${displayYear} Season Rankings${archiveYear ? ' <span class="archive-stamp">Archive</span>' : ''}</div>
-            <h1 class="rd-header-event">${eventName}</h1>
-            ${weekLabel ? `<p class="rd-header-desc">${weekLabel}</p>` : (ev && ev.description ? `<p class="rd-header-desc">${ev.description}</p>` : '')}
+          <div class="rd-header-hero" data-ghost="${eventName.replace(/[^0-9]/g,'')||eventName}">
+            <div class="rd-header-left">
+              <div class="rd-header-meta">${displayYear} Season Rankings${archiveYear ? ' <span class="archive-stamp">Archive</span>' : ''}</div>
+              <h1 class="rd-header-event">${eventName}</h1>
+              ${weekLabel ? `<p class="rd-header-desc">${weekLabel}</p>` : (ev && ev.description ? `<p class="rd-header-desc">${ev.description}</p>` : '')}
+            </div>
           </div>
-          <div class="rd-header-actions">
-            ${athleteCount ? `<span class="rd-header-count">${athleteCount} athletes ranked</span>` : ''}
+          <div class="rd-header-controls">
+            ${athleteCount ? `<span class="rd-header-count">${athleteCount} athletes ranked</span>` : '<span></span>'}
             <div class="rd-header-btns">
               <div class="rd-skim-toggle" id="rd-skim-toggle">
                 <button class="rd-skim-btn rd-skim-btn--active" id="rd-skim-casual"   onclick="setRdSkim('casual')">Casual</button>
