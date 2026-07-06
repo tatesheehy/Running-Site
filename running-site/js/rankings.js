@@ -431,7 +431,7 @@ window.setRdSkim = function(mode) {
   wrap.classList.toggle('rd-deep',     mode === 'invested' || mode === 'die-hard');
   wrap.classList.toggle('rd-die-hard', mode === 'die-hard');
   ['casual', 'invested', 'die-hard'].forEach(m => {
-    document.getElementById(`rd-skim-${m}`)?.classList.toggle('rd-sidebar-depth-btn--active', mode === m);
+    document.getElementById(`rd-skim-${m}`)?.classList.toggle('rd-skim-btn--active', mode === m);
   });
   if (mode === 'die-hard') {
     wrap.querySelectorAll('.rd-dd-panel').forEach(p => p.classList.add('open'));
@@ -440,12 +440,6 @@ window.setRdSkim = function(mode) {
     wrap.querySelectorAll('.rd-dd-panel.open').forEach(p => p.classList.remove('open'));
     wrap.querySelectorAll('.rd-row.dd-open').forEach(r => r.classList.remove('dd-open'));
   }
-};
-
-window.filterRankingsSidebar = function(btn, country) {
-  document.querySelectorAll('.rd-sidebar-country-btn').forEach(b => b.classList.remove('rd-sidebar-country-btn--active'));
-  btn.classList.add('rd-sidebar-country-btn--active');
-  filterRankings(country);
 };
 
 window.openRankingRowDeepDive = function(row) {
@@ -667,45 +661,35 @@ function buildRankingsDetail(eventName, opts = {}) {
   const isGrid = window._rdView === 'grid';
   const athleteCount = rows.length;
 
-  const description = weekLabel || (ev && ev.description) || '';
-  const sidebarCountryHtml = countries.length > 1
-    ? `<div class="rd-sidebar-section">
-        <div class="rd-sidebar-label">Filter by Country</div>
-        <div class="rd-sidebar-country-list">
-          <button class="rd-sidebar-country-btn rd-sidebar-country-btn--active" onclick="filterRankingsSidebar(this,'')">All Countries</button>
-          ${countries.map(c => `<button class="rd-sidebar-country-btn" onclick="filterRankingsSidebar(this,'${c.replace(/'/g, "\\'")}')">${renderFlag(countryInfo[c])} ${c}</button>`).join('')}
-        </div>
-      </div>`
-    : '';
+  // Use event photo if set, else fall back to the #1 ranked athlete's photo
+  const headerPhoto = (() => {
+    if (ev?.photo) return ev.photo;
+    if (!archiveYear && rows[0]) {
+      const a = rows[0].athleteId && ATHLETES[rows[0].athleteId];
+      return (a && a.photo) || null;
+    }
+    return null;
+  })();
 
   document.getElementById('main').innerHTML = `
     <div class="container">
       <div class="rankings-detail">
         <a href="${backUrl}" class="rd-back">&larr; ${backLabel}</a>
-
-        <div class="rd-hero">
-          <div class="rd-hero-meta">${displayYear} Season Rankings${archiveYear ? ' <span class="archive-stamp">Archive</span>' : ''}</div>
-          <h1 class="rd-hero-event">${eventName}</h1>
-          ${description ? `<p class="rd-hero-desc">${description}</p>` : ''}
-          <div class="rd-hero-badges">
-            ${athleteCount ? `<span>${athleteCount} athletes ranked</span>` : ''}
-            ${athleteCount ? `<span class="rd-hero-badge-sep">|</span>` : ''}
-            <span>Updated ${displayYear}</span>
+        <div class="rd-header">
+          ${headerPhoto ? `<div class="rd-header-photo-bg" style="background-image:url('${headerPhoto}')"></div>` : ''}
+          <div class="rd-header-left">
+            <div class="rd-header-meta">${displayYear} Season Rankings${archiveYear ? ' <span class="archive-stamp">Archive</span>' : ''}</div>
+            <h1 class="rd-header-event">${eventName}</h1>
+            ${weekLabel ? `<p class="rd-header-desc">${weekLabel}</p>` : (ev && ev.description ? `<p class="rd-header-desc">${ev.description}</p>` : '')}
           </div>
-        </div>
-
-        <div class="rd-layout">
-          <aside class="rd-sidebar">
-            <div class="rd-sidebar-section">
-              <div class="rd-sidebar-label">How much do<br>you want to know?</div>
-              <div class="rd-sidebar-depth-list">
-                <button class="rd-sidebar-depth-btn rd-sidebar-depth-btn--active" id="rd-skim-casual" onclick="setRdSkim('casual')">Casual</button>
-                <button class="rd-sidebar-depth-btn" id="rd-skim-invested" onclick="setRdSkim('invested')">Invested</button>
-                <button class="rd-sidebar-depth-btn" id="rd-skim-die-hard" onclick="setRdSkim('die-hard')">Die Hard</button>
+          <div class="rd-header-actions">
+            ${athleteCount ? `<span class="rd-header-count">${athleteCount} athletes ranked</span>` : ''}
+            <div class="rd-header-btns">
+              <div class="rd-skim-toggle" id="rd-skim-toggle">
+                <button class="rd-skim-btn rd-skim-btn--active" id="rd-skim-casual"   onclick="setRdSkim('casual')">Casual</button>
+                <button class="rd-skim-btn" id="rd-skim-invested" onclick="setRdSkim('invested')">Invested</button>
+                <button class="rd-skim-btn" id="rd-skim-die-hard" onclick="setRdSkim('die-hard')">Die Hard</button>
               </div>
-            </div>
-            ${sidebarCountryHtml}
-            <div class="rd-sidebar-section rd-sidebar-actions">
               <button class="rd-compare-btn" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">⇌ Compare Athletes</button>
               <div class="rd-view-toggle">
                 <button class="rd-view-btn${!isGrid ? ' rd-view-btn--active' : ''}" onclick="toggleRdView('list')" title="List view">
@@ -716,28 +700,25 @@ function buildRankingsDetail(eventName, opts = {}) {
                 </button>
               </div>
             </div>
-          </aside>
-
-          <div class="rd-main-content">
-            <div id="rd-col-sentinel"></div>
-            <div class="rd-col-labels" style="${isGrid ? 'display:none' : ''}">
-              <span class="rd-col-sort rd-col-sort--active" data-col="rank" onclick="sortRankings('rank')">Rank <span class="rd-sort-icon">▲</span></span>
-              <span class="rd-col-sort" data-col="name" onclick="sortRankings('name')">Athlete <span class="rd-sort-icon">⇅</span></span>
-              <span>Trend</span>
-              <span class="rd-col-sort rd-col-label--right" data-col="sb" onclick="sortRankings('sb')">SB <span class="rd-sort-icon">⇅</span></span>
-              <span class="rd-col-sort rd-col-label--right" data-col="pb" onclick="sortRankings('pb')">PB <span class="rd-sort-icon">⇅</span></span>
-            </div>
-            <div class="rd-list-wrap" style="${isGrid ? 'display:none' : ''}">
-              <div class="rd-list">${rowsHtml}</div>
-              ${sectionsHtml}
-            </div>
-            <div class="rd-grid-wrap" style="${isGrid ? '' : 'display:none'}">
-              <div class="rd-grid">${cardsHtml}</div>
-              ${sectionCardsHtml}
-            </div>
           </div>
         </div>
-
+        ${filterHtml}
+        <div id="rd-col-sentinel"></div>
+        <div class="rd-col-labels" style="${isGrid ? 'display:none' : ''}">
+          <span class="rd-col-sort rd-col-sort--active" data-col="rank" onclick="sortRankings('rank')">Rank <span class="rd-sort-icon">▲</span></span>
+          <span class="rd-col-sort" data-col="name" onclick="sortRankings('name')">Athlete <span class="rd-sort-icon">⇅</span></span>
+          <span>Trend</span>
+          <span class="rd-col-sort rd-col-label--right" data-col="sb" onclick="sortRankings('sb')">SB <span class="rd-sort-icon">⇅</span></span>
+          <span class="rd-col-sort rd-col-label--right" data-col="pb" onclick="sortRankings('pb')">PB <span class="rd-sort-icon">⇅</span></span>
+        </div>
+        <div class="rd-list-wrap" style="${isGrid ? 'display:none' : ''}">
+          <div class="rd-list">${rowsHtml}</div>
+          ${sectionsHtml}
+        </div>
+        <div class="rd-grid-wrap" style="${isGrid ? '' : 'display:none'}">
+          <div class="rd-grid">${cardsHtml}</div>
+          ${sectionCardsHtml}
+        </div>
       </div>
     </div>
   `;
