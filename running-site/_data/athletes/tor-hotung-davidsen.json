@@ -10,6 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
+  "lastSynced": "2026-07-06",
   "prs": [
     {
       "event": "400m",
@@ -37,140 +38,463 @@
     {
       "date": "JUN 10",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:41.24",
-      "place": "8"
+      "place": "8."
     },
     {
       "date": "MAY 29",
       "meet": "NCAA Division I West First Rounds",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:38.34",
-      "place": "7"
+      "place": "7."
     },
     {
       "date": "MAY 27",
       "meet": "NCAA Division I West First Rounds",
-      "event": "",
+      "event": "1500 m",
       "time": "3:42.13",
-      "place": "3"
+      "place": "3."
     },
     {
       "date": "MAY 16",
       "meet": "Big Sky Outdoor Track and Field Championships",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:47.88",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAY 16",
       "meet": "Big Sky Outdoor Track and Field Championships",
-      "event": "",
+      "event": "1500 m",
       "time": "3:44.56",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAY 15",
       "meet": "Big Sky Outdoor Track and Field Championships",
-      "event": "",
+      "event": "800 m",
       "time": "1:49.39",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "APR 18",
       "meet": "Bryan Clay Invitational",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:37.28",
-      "place": "5"
+      "place": "5."
     },
     {
       "date": "APR 17",
       "meet": "Bryan Clay Invitational",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:45.36",
-      "place": "2"
-    },
-    {
-      "date": "MAR 13",
-      "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "Distance Medley Short Track",
-      "time": "9:19.95",
-      "place": ""
+      "place": "2."
     },
     {
       "date": "MAR 13",
       "meet": "NCAA Division I Indoor Track and Field Championships",
       "event": "Mile sh",
       "time": "3:59.87",
-      "place": "8"
+      "place": "8."
+    },
+    {
+      "date": "MAR 13",
+      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "event": "Distance Medley sh",
+      "time": "9:19.95",
+      "place": "1."
     },
     {
       "date": "FEB 28",
       "meet": "Big Sky Conference Indoor Track & Field Championships",
-      "event": "",
+      "event": "800 m sh",
       "time": "1:54.68",
-      "place": "8"
+      "place": "8."
     },
     {
       "date": "FEB 28",
       "meet": "Big Sky Conference Indoor Track & Field Championships",
-      "event": "",
+      "event": "Mile sh",
       "time": "4:10.60",
-      "place": "3"
+      "place": "3."
     },
     {
       "date": "FEB 27",
       "meet": "Big Sky Conference Indoor Track & Field Championships",
-      "event": "",
+      "event": "800 m sh",
       "time": "1:51.68",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "FEB 20",
       "meet": "Colorado Last Chance",
       "event": "Distance Medley",
       "time": "9:26.58",
-      "place": ""
+      "place": "1."
     },
     {
       "date": "FEB 14",
       "meet": "Husky Classic",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:47.89",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "JAN 31",
       "meet": "6th Annual Brant Tolsma Invitational",
-      "event": "800m sh",
+      "event": "800 m sh",
       "time": "1:48.18",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "JAN 31",
       "meet": "6th Annual Brant Tolsma Invitational",
       "event": "Mile sh",
       "time": "3:55.56",
-      "place": "3"
+      "place": "3."
     },
     {
       "date": "JAN 16",
       "meet": "Lumberjack Team Challenge",
-      "event": "",
+      "event": "Mile",
       "time": "4:02.31",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "JAN 9",
       "meet": "Friday Night Axe 'Em Open",
-      "event": "",
+      "event": "800 m",
       "time": "1:54.54",
-      "place": "1"
+      "place": "1."
     }
   ],
   "college": "NAU",
   "weight": "x",
+  "lastHistorySynced": "2026-07-05",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
-  "lastSynced": "2026-07-06"
+  "id": "tor-hotung-davidsen",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [
+      {
+        "date": "APR 30",
+        "meet": "ODAC Ch.",
+        "event": "800m",
+        "time": "1:55.14",
+        "place": "4"
+      },
+      {
+        "date": "APR 3",
+        "meet": "Colonial Relays, Zable Stadium",
+        "event": "800m",
+        "time": "1:54.20",
+        "place": "1"
+      },
+      {
+        "date": "MAR 26",
+        "meet": "Dr. Jack Toms Invite",
+        "event": "800m",
+        "time": "1:55.76",
+        "place": "3"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "LR Bears Open",
+        "event": "400m",
+        "time": "51.02",
+        "place": "1"
+      },
+      {
+        "date": "MAR 13",
+        "meet": "Lynchburg Hornet Open",
+        "event": "800m",
+        "time": "1:56.77",
+        "place": "1"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "North River T&F Meet",
+        "event": "1500m",
+        "time": "4:14.44",
+        "place": "2"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "Finn Pincus Invitational",
+        "event": "800m sh",
+        "time": "1:58.31",
+        "place": "2"
+      }
+    ],
+    "2022": [
+      {
+        "date": "MAY 28",
+        "meet": "NCAA Division III Ch.",
+        "event": "800m",
+        "time": "1:50.86",
+        "place": "6"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "NCAA Division III Ch.",
+        "event": "800m",
+        "time": "1:50.92",
+        "place": "2"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Lee University Last Chance",
+        "event": "800m",
+        "time": "1:50.02",
+        "place": "1"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Liberty Twilight Qualifier",
+        "event": "1500m",
+        "time": "3:50.13",
+        "place": "1"
+      },
+      {
+        "date": "APR 23",
+        "meet": "Virginia Challenge",
+        "event": "800m",
+        "time": "1:49.53",
+        "place": "6"
+      },
+      {
+        "date": "APR 16",
+        "meet": "Dennis Craddock Coaches Invitational",
+        "event": "800m",
+        "time": "1:49.04",
+        "place": "1"
+      },
+      {
+        "date": "APR 16",
+        "meet": "Dennis Craddock Coaches Invitational",
+        "event": "4x400 Metres Relay",
+        "time": "3:17.97",
+        "place": "1"
+      },
+      {
+        "date": "APR 15",
+        "meet": "Dennis Craddock Coaches Invitational",
+        "event": "Mile",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "APR 2",
+        "meet": "Colonial Relays, Zable Stadium",
+        "event": "800m",
+        "time": "1:51.47",
+        "place": "1"
+      },
+      {
+        "date": "MAR 26",
+        "meet": "Dr. Jack M. Toms Alumni Invitational",
+        "event": "400m",
+        "time": "50.78",
+        "place": "1"
+      },
+      {
+        "date": "MAR 26",
+        "meet": "Dr. Jack M. Toms Alumni Invitational",
+        "event": "1500m",
+        "time": "3:58.54",
+        "place": "2"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "NCAA Div. III Indoor Championships",
+        "event": "800m sh",
+        "time": "1:54.39",
+        "place": "6"
+      },
+      {
+        "date": "MAR 11",
+        "meet": "NCAA Div. III Indoor Championships",
+        "event": "800m sh",
+        "time": "1:52.78",
+        "place": "3"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "800m sh",
+        "time": "1:51.75",
+        "place": "4"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:55.08",
+        "place": "7"
+      },
+      {
+        "date": "FEB 5",
+        "meet": "Liberty Open",
+        "event": "Mile sh",
+        "time": "4:18.18",
+        "place": "9"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Wittenberg Steemer Meet",
+        "event": "800m",
+        "time": "1:52.41",
+        "place": "1"
+      },
+      {
+        "date": "JAN 15",
+        "meet": "VMI Team Challenge",
+        "event": "Mile sh",
+        "time": "4:17.99",
+        "place": "1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "MAY 26",
+        "meet": "NCAA Division III Outdoor Track and Field Championships",
+        "event": "800m",
+        "time": "1:51.71",
+        "place": "8"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Liberty Twilight Qualifier",
+        "event": "800m",
+        "time": "1:53.56",
+        "place": "7"
+      },
+      {
+        "date": "MAR 17",
+        "meet": "Bob Davidson Memorial Invitational",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAR 11",
+        "meet": "NCAA Division III Indoor Track and Field Championships",
+        "event": "800m sh",
+        "time": "1:50.01",
+        "place": "2"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "NCAA Division III Indoor Track and Field Championships",
+        "event": "800m sh",
+        "time": "1:51.67",
+        "place": "1"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "NCAA Division III Indoor Track and Field Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:49.53",
+        "place": "4"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "800m sh",
+        "time": "1:49.17",
+        "place": "2"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:53.93",
+        "place": "8"
+      }
+    ],
+    "2024": [],
+    "2025": [
+      {
+        "date": "JUN 14",
+        "meet": "Run Unbridled Track Fest",
+        "event": "Mile",
+        "time": "4:03.51",
+        "place": "2"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division III Outdoor Track and Field Championships",
+        "event": "1500m",
+        "time": "3:48.75",
+        "place": "1"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "NCAA Division III Outdoor Track and Field Championships",
+        "event": "1500m",
+        "time": "3:53.16",
+        "place": "2"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Widener Final Qualifier",
+        "event": "800m",
+        "time": "1:48.30",
+        "place": "1"
+      },
+      {
+        "date": "APR 18",
+        "meet": "Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "3:42.12",
+        "place": "3"
+      },
+      {
+        "date": "APR 17",
+        "meet": "Bryan Clay Invitational",
+        "event": "800m",
+        "time": "1:48.47",
+        "place": "2"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "NCAA Division III Indoor Track and Field Championships",
+        "event": "800m sh",
+        "time": "1:50.37",
+        "place": "2"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "NCAA Division III Indoor Track and Field Championships",
+        "event": "800m sh",
+        "time": "1:51.40",
+        "place": "1"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "NCAA Division III Indoor Track and Field Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:52.92",
+        "place": "2"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "800m sh",
+        "time": "1:50.58",
+        "place": "1"
+      },
+      {
+        "date": "JAN 17",
+        "meet": "Virginia Tech Invitational",
+        "event": "Mile sh",
+        "time": "4:12.33",
+        "place": "5"
+      }
+    ]
+  }
 }

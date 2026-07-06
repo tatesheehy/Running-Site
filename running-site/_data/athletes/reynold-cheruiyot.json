@@ -8,7 +8,17 @@
   "name": "Reynold Cheruiyot",
   "headlineKey": "x",
   "flag": "KE",
+  "honours": [
+    {
+      "competition": "World Athletics Championships",
+      "short": "WC",
+      "discipline": "1500m",
+      "place": 3,
+      "year": "2025"
+    }
+  ],
   "seasons": "3",
+  "lastSynced": "2026-07-06",
   "prs": [
     {
       "event": "800m",
@@ -58,203 +68,594 @@
   "country": "Kenya",
   "results": [
     {
-      "date": "JUN 28",
-      "meet": "Meeting de Paris",
-      "event": "5 Kilom Road",
-      "time": "13:04",
-      "place": ""
+      "date": "JUL 4",
+      "meet": "Prefontaine Classic",
+      "event": "Mile",
+      "time": "3:51.31",
+      "place": "11."
     },
     {
       "date": "JUN 28",
-      "meet": "Night of Athletics",
-      "event": "1500 m",
-      "time": "3:34.02",
-      "place": ""
-    },
-    {
-      "date": "JUN 28",
-      "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Split times",
-      "event": "1500 m sh",
-      "time": "3:32.00",
-      "place": "7."
-    },
-    {
-      "date": "JUN 20",
-      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat, Complexe Sportif Prince Moulay Abdellah, Rabat - Diamond Discipline",
-      "event": "1500 m sh",
-      "time": "3:44.06",
-      "place": "2."
-    },
-    {
-      "date": "JUN 18",
-      "meet": "Athletics Kenya National Police Service Track and Field Championships, Ulinzi Sports Complex, Langata, Nairobi",
-      "event": "1500 m sh",
-      "time": "3:45.33",
-      "place": "1."
-    },
-    {
-      "date": "JUN 10",
       "meet": "Meeting de Paris",
       "event": "1500 m",
       "time": "3:30.28",
-      "place": ""
+      "place": "5."
     },
     {
-      "date": "JUN 10",
-      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
-      "event": "Mile",
-      "time": "3:42.27",
-      "place": ""
-    },
-    {
-      "date": "JUN 10",
-      "meet": "Athletics Kenya National Police Service Track and Field Championships, Ulinzi Sports Complex, Langata, Nairobi",
-      "event": "",
-      "time": "3:45.33",
-      "place": "1."
-    },
-    {
-      "date": "JUN 10",
-      "meet": "Meeting de Paris, Stade Charléty, Paris - Promotional Events",
-      "event": "1500 m sh",
+      "date": "JUN 20",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "1500 m",
       "time": "3:32.35",
       "place": "2."
     },
     {
-      "date": "MAY 31",
-      "meet": "Kip Keino Classic, Nyayo National Stadium, Nairobi",
-      "event": "",
-      "time": "3:36.1h",
-      "place": "1."
-    },
-    {
-      "date": "MAY 27",
-      "meet": "Trials For World Athletics Relay Championships, Ulinzi Sports Complex, Langata, Nairobi",
+      "date": "JUN 18",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
       "event": "1500 m",
-      "time": "3:39.64",
-      "place": "1."
-    },
-    {
-      "date": "MAY 27",
-      "meet": "Trials For World Athletics Relay Championships, Ulinzi Sports Complex, Langata, Nairobi",
-      "event": "",
-      "time": "3:39.64",
-      "place": "1."
-    },
-    {
-      "date": "MAY 16",
-      "meet": "",
-      "event": "Mile",
-      "time": "3:47.46",
-      "place": ""
-    },
-    {
-      "date": "MAY 16",
-      "meet": "Meeting de Paris",
-      "event": "1500 m sh",
-      "time": "3:42.27",
-      "place": ""
-    },
-    {
-      "date": "MAY 16",
-      "meet": "Oslo Bislett Games",
-      "event": "2000 m",
-      "time": "3:49.72",
-      "place": ""
-    },
-    {
-      "date": "MAY 16",
-      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF, Arena Stade Couvert, Liévin (i) - Indoor Meeting",
-      "event": "1500 m sh",
-      "time": "3:42.27",
-      "place": "9."
-    },
-    {
-      "date": "APR 24",
-      "meet": "Kenyan Championships",
-      "event": "1500 m",
-      "time": "3:37.23",
-      "place": "1."
-    },
-    {
-      "date": "APR 11",
-      "meet": "Kenyan Championships",
-      "event": "1500 m",
-      "time": "3:33.65",
-      "place": "1."
-    },
-    {
-      "date": "APR 9",
-      "meet": "African U20 Championships",
-      "event": "1500 m",
-      "time": "13:16.40",
-      "place": "1."
-    },
-    {
-      "date": "FEB 19",
-      "meet": "",
-      "event": "800 m",
-      "time": "1:49.64",
-      "place": ""
-    },
-    {
-      "date": "FEB 19",
-      "meet": "Meeting de Paris",
-      "event": "10 Kilom Road",
-      "time": "28:46",
-      "place": ""
-    },
-    {
-      "date": "FEB 19",
-      "meet": "Silesia Kamila Skolimowska Memorial",
-      "event": "1500 m sh",
-      "time": "3:30.30",
-      "place": ""
-    },
-    {
-      "date": "FEB 19",
-      "meet": "Kenyan Championships Cum Trials for Commonwealth Games, Nyayo National Stadium, Nairobi",
-      "event": "1500 m sh",
       "time": "3:39.0h",
       "place": "1."
     },
     {
-      "date": "FEB 14",
-      "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Diamond Discipline",
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "1500 m",
+      "time": "3:34.50",
+      "place": ""
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
       "event": "Mile",
       "time": "3:49.72",
       "place": "9."
     },
     {
-      "date": "JAN 10",
-      "meet": "World Athletics Championships, Budapest 2023",
+      "date": "MAY 31",
+      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
       "event": "1500 m",
-      "time": "3:30.78",
-      "place": "8."
+      "time": "3:32.00",
+      "place": "7."
     },
     {
-      "date": "JAN 10",
-      "meet": "Wanda Diamond League, China Textile City Sports Centre, Shaoxing/Keqiao - Diamond Discipline",
+      "date": "MAY 27",
+      "meet": "Athletics Kenya National Police Service Track and Field Championships",
+      "event": "1500 m",
+      "time": "3:45.33",
+      "place": "1."
+    },
+    {
+      "date": "MAY 27",
+      "meet": "Athletics Kenya National Police Service Track and Field Championships",
+      "event": "1500 m",
+      "time": "3:44.06",
+      "place": "2."
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Wanda Diamond League",
       "event": "3000 m",
       "time": "7:26.11",
       "place": "2."
+    },
+    {
+      "date": "APR 24",
+      "meet": "Kip Keino Classic",
+      "event": "1500 m",
+      "time": "3:34.73",
+      "place": "2."
+    },
+    {
+      "date": "APR 11",
+      "meet": "Trials For World Athletics Relay Championships",
+      "event": "1500 m",
+      "time": "3:36.1h",
+      "place": "1."
+    },
+    {
+      "date": "APR 9",
+      "meet": "Trials For World Athletics Relay Championships",
+      "event": "1500 m",
+      "time": "3:39.64",
+      "place": "1."
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "1500 m sh",
+      "time": "3:42.27",
+      "place": "9."
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sirikwa Classic Continental Tour Gold",
+      "event": "Cross Country",
+      "time": "5:52",
+      "place": "1."
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Relay",
+      "time": "22:42",
+      "place": "4."
     }
   ],
+  "dob": "2004-07-30",
   "weight": "140",
+  "lastHistorySynced": "2026-07-05",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "reynold-cheruiyot",
-  "age": "21",
-  "honours": [
-    {
-      "competition": "World Athletics Championships",
-      "short": "WC",
-      "discipline": "1500m",
-      "place": 3,
-      "year": "2025"
-    }
-  ],
-  "lastSynced": "2026-07-06",
-  "dob": "2004-07-30"
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [
+      {
+        "date": "SEP 18",
+        "meet": "Kip Keino Classic",
+        "event": "5000m",
+        "time": "13:39.07",
+        "place": "5"
+      }
+    ],
+    "2022": [
+      {
+        "date": "SEP 11",
+        "meet": "Memorial Borisa Hanžekovića",
+        "event": "3000m",
+        "time": "7:38.83",
+        "place": "2"
+      },
+      {
+        "date": "SEP 7",
+        "meet": "Meeting d'athlétisme Michel Bernard, Anzin",
+        "event": "1500m",
+        "time": "3:42.96",
+        "place": "3"
+      },
+      {
+        "date": "SEP 4",
+        "meet": "ISTAF 2022",
+        "event": "1500m",
+        "time": "3:35.04",
+        "place": "1"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "World Athletics U20 Championships",
+        "event": "1500m",
+        "time": "3:35.83",
+        "place": "1"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "World Athletics U20 Championships",
+        "event": "1500m",
+        "time": "3:40.96",
+        "place": "1"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Night of Athletics",
+        "event": "1500m",
+        "time": "3:34.02",
+        "place": "1"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Kenyan Trials for World Championships and Commonwealth Games 2022",
+        "event": "1500m",
+        "time": "3:34.77",
+        "place": "4"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "TCS World 10K Bengaluru, Bengaluru",
+        "event": "10K",
+        "time": "28:46",
+        "place": "9"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Kip Keino Classic",
+        "event": "1500m",
+        "time": "3:35.50",
+        "place": "2"
+      },
+      {
+        "date": "MAY 1",
+        "meet": "Epreuves ouvertes",
+        "event": "800m",
+        "time": "1:49.64",
+        "place": "1"
+      },
+      {
+        "date": "APR 17",
+        "meet": "Annecy 10km, Annecy",
+        "event": "10K",
+        "time": "28:36",
+        "place": "1"
+      },
+      {
+        "date": "MAR 25",
+        "meet": "Meeting International",
+        "event": "3000m",
+        "time": "7:39.09",
+        "place": "1"
+      },
+      {
+        "date": "MAR 4",
+        "meet": "3rd Weekend Meeting",
+        "event": "5000m",
+        "time": "13:33.05",
+        "place": "6"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Agnes Tirop Cross Country Classic, Eldoret",
+        "event": "Cross Country",
+        "time": "31:56",
+        "place": "26"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 9",
+        "meet": "Annual Charity Run, Al Khobar",
+        "event": "5K",
+        "time": "13:15",
+        "place": "8"
+      },
+      {
+        "date": "NOV 18",
+        "meet": "Urban Trail de Lille",
+        "event": "5K",
+        "time": "13:21",
+        "place": "1"
+      },
+      {
+        "date": "OCT 1",
+        "meet": "World Athletics Road Running Championships, Riga",
+        "event": "Mile",
+        "time": "4:05.91",
+        "place": "22"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:48.06",
+        "place": "5"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "Memorial van Damme",
+        "event": "2000m",
+        "time": "4:48.14",
+        "place": "2"
+      },
+      {
+        "date": "SEP 4",
+        "meet": "Gala dei Castelli",
+        "event": "1500m",
+        "time": "3:33.98",
+        "place": "1"
+      },
+      {
+        "date": "AUG 31",
+        "meet": "Weltklasse Zürich",
+        "event": "1500m",
+        "time": "3:31.97",
+        "place": "8"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:30.78",
+        "place": "8"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:35.53",
+        "place": "6"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:34.24",
+        "place": "3"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "1500m",
+        "time": "3:30.30",
+        "place": "3"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Trials For World Athletics Championships Budapest 2023",
+        "event": "1500m",
+        "time": "3:34.34",
+        "place": "3"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Kenyan Championships",
+        "event": "1500m",
+        "time": "3:40.07",
+        "place": "1"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Meeting Stanislas Nancy",
+        "event": "1500m",
+        "time": "3:31.60",
+        "place": "1"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "USATF Los Angeles Grand Prix",
+        "event": "1500m",
+        "time": "3:32.01",
+        "place": "2"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Kip Keino Classic",
+        "event": "1500m",
+        "time": "3:32.01",
+        "place": "1"
+      },
+      {
+        "date": "APR 30",
+        "meet": "African U20 Championships",
+        "event": "1500m",
+        "time": "3:33.65",
+        "place": "1"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "Semi Marathon de Lille, Lille",
+        "event": "5K",
+        "time": "13:04",
+        "place": "2"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "44th World Athletics Cross Country Championships, Bathurst",
+        "event": "Cross Country U20 Race",
+        "time": "24:30",
+        "place": "2"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 14",
+        "meet": "Al Sharqiyah International 5KM, Al Khobar",
+        "event": "5K",
+        "time": "13:19",
+        "place": "6"
+      },
+      {
+        "date": "NOV 16",
+        "meet": "Urban Trail de Lille",
+        "event": "5K",
+        "time": "13:16",
+        "place": "2"
+      },
+      {
+        "date": "SEP 13",
+        "meet": "Memorial van Damme",
+        "event": "1500m",
+        "time": "3:32.50",
+        "place": "7"
+      },
+      {
+        "date": "SEP 5",
+        "meet": "Weltklasse Zürich",
+        "event": "1500m",
+        "time": "3:32.15",
+        "place": "6"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Athletissima Lausanne",
+        "event": "1500m",
+        "time": "3:30.88",
+        "place": "4"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:35.32",
+        "place": "10"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:37.12",
+        "place": "4"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "National Trials for the XXXIII Olympics Games",
+        "event": "1500m",
+        "time": "3:35.63",
+        "place": "1"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:48.59",
+        "place": "6"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "USATF Los Angeles Grand Prix",
+        "event": "1500m",
+        "time": "3:34.83",
+        "place": "2"
+      },
+      {
+        "date": "MAY 10",
+        "meet": "Seashore Group Doha Meeting",
+        "event": "1500m",
+        "time": "3:32.96",
+        "place": "3"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Kip Keino Classic",
+        "event": "1500m",
+        "time": "3:31.96",
+        "place": "1"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "45th World Athletics Cross Country Championships",
+        "event": "Cross Country Relay",
+        "time": "22:15",
+        "place": "1"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Kenyan Cross Country Championships",
+        "event": "Cross Country",
+        "time": "5:32",
+        "place": "1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 13",
+        "meet": "Al Sharqiyah International Race",
+        "event": "Mile",
+        "time": "4:09.05",
+        "place": "8"
+      },
+      {
+        "date": "OCT 25",
+        "meet": "Kenya Trials for World Cross Country Championships, Eldoret",
+        "event": "Cross Country",
+        "time": "6:14",
+        "place": "1"
+      },
+      {
+        "date": "SEP 17",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:34.25",
+        "place": "3"
+      },
+      {
+        "date": "SEP 15",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:36.64",
+        "place": "1"
+      },
+      {
+        "date": "SEP 14",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:41.17",
+        "place": "4"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Weltklasse Zürich",
+        "event": "1500m",
+        "time": "3:29.91",
+        "place": "2"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Memorial van Damme",
+        "event": "1500m",
+        "time": "3:31.86",
+        "place": "5"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "1500m",
+        "time": "3:33.42",
+        "place": "4"
+      },
+      {
+        "date": "JUL 22",
+        "meet": "Trials for World Athletics Championships Tokyo 2025",
+        "event": "1500m",
+        "time": "3:48.96",
+        "place": "1"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:47.46",
+        "place": "5"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "Kenyan Championships",
+        "event": "1500m",
+        "time": "3:37.23",
+        "place": "1"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Kenyan Championships",
+        "event": "1500m",
+        "time": "3:38.30",
+        "place": "1"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Golden Gala",
+        "event": "1500m",
+        "time": "3:30.94",
+        "place": "6"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Meeting International Mohammed VI d'Athlétisme de Rabat",
+        "event": "1500m",
+        "time": "3:31.78",
+        "place": "2"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Doha Meeting",
+        "event": "5000m",
+        "time": "13:16.40",
+        "place": "1"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Sirikwa Classic Cross Country Tour – Gold",
+        "event": "Cross Country",
+        "time": "6:01",
+        "place": "1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Kenyan Cross Country Championships, Nairobi",
+        "event": "Cross Country",
+        "time": "6:16",
+        "place": "2"
+      }
+    ]
+  },
+  "age": "21"
 }

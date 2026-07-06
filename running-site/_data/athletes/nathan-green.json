@@ -2,8 +2,14 @@
   "photoBackground": "#111111",
   "reviewTitle": "Season review",
   "collegeLogo": "/images/washington-huskies-logo.png",
+  "ncaaTitle": [
+    "1500m",
+    "Mile"
+  ],
   "waUrl": "https://worldathletics.org/athletes/united-states/nathan-green-15021942",
   "name": "Nathan Green",
+  "flag": "US",
+  "lastSynced": "2026-07-06",
   "prs": [
     {
       "event": "800m",
@@ -53,83 +59,709 @@
   "questionTitle": "Next question",
   "photo": "/images/green_card.png",
   "ncaa": false,
+  "country": "United States",
   "results": [
     {
       "date": "JUN 26",
       "meet": "76. Boris Hanžeković Memorial",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:32.46",
-      "place": "1"
+      "place": "1."
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "1500 m",
+      "time": "3:35.00",
+      "place": ""
     },
     {
       "date": "JUN 16",
       "meet": "65th Ostrava Golden Spike",
       "event": "Mile",
       "time": "3:49.44",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "JUN 4",
       "meet": "Golden Gala Pietro Mennea",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:45.58",
-      "place": ""
+      "place": "9."
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
-      "event": "",
+      "event": "1500 m",
       "time": "3:33.46",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAR 22",
       "meet": "World Athletics Indoor Championships",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:40.78",
-      "place": "6"
+      "place": "6."
     },
     {
       "date": "MAR 20",
       "meet": "World Athletics Indoor Championships",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:40.97",
-      "place": "11"
+      "place": "3."
     },
     {
       "date": "MAR 7",
       "meet": "The PRTC Indoor Classic",
-      "event": "1500m sh",
+      "event": "1500 m sh",
       "time": "3:34.91",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAR 1",
       "meet": "USA Indoor Championships",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:37.65",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "FEB 13",
       "meet": "Husky Classic",
       "event": "Mile",
       "time": "3:50.31",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "JAN 30",
       "meet": "UW Invite/Mile City",
-      "event": "",
+      "event": "Mile",
       "time": "DNF",
       "place": ""
     }
   ],
-  "college": "Washington",
-  "event": "MIDDLE DISTANCE",
-  "country": "United States",
-  "flag": "US",
   "dob": "2003-04-10",
-  "age": "23",
-  "lastSynced": "2026-07-06"
+  "college": "Washington",
+  "lastHistorySynced": "2026-07-05",
+  "event": "MIDDLE DISTANCE",
+  "id": "nathan-green",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "JUN 15",
+        "meet": "Brooks PR Invitational",
+        "event": "Mile",
+        "time": "4:06.20",
+        "place": "6"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Nike Jesuit Twilight Relays",
+        "event": "Mile",
+        "time": "4:07.84",
+        "place": "1"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "New Balance Indoor Nationals",
+        "event": "Mile sh",
+        "time": "4:12.51",
+        "place": "1"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Jacksons Invitational",
+        "event": "Mile sh",
+        "time": "4:18.97",
+        "place": "1"
+      }
+    ],
+    "2020": [
+      {
+        "date": "FEB 8",
+        "meet": "Nike Boise Jackson Invite",
+        "event": "Mile sh",
+        "time": "4:09.45",
+        "place": "1"
+      }
+    ],
+    "2021": [
+      {
+        "date": "JUL 3",
+        "meet": "NSAF Nationals Outdoor Presented by Nike",
+        "event": "Mile",
+        "time": "4:03.30",
+        "place": "1"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Brooks PR Invitational",
+        "event": "Mile",
+        "time": "4:01.76",
+        "place": "1"
+      },
+      {
+        "date": "JAN 16",
+        "meet": "VA Showcase",
+        "event": "Mile sh",
+        "time": "4:13.25",
+        "place": "1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "AUG 3",
+        "meet": "World Athletics U20 Championships",
+        "event": "1500m",
+        "time": "3:39.44",
+        "place": "5"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "World Athletics U20 Championships",
+        "event": "1500m",
+        "time": "3:45.80",
+        "place": "2"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "USA U20 Championships",
+        "event": "1500m",
+        "time": "3:45.19",
+        "place": "1"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Victoria International Track Classic",
+        "event": "800m",
+        "time": "1:49.95",
+        "place": "2"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "NCAA Div. I Outdoor Championships",
+        "event": "1500m",
+        "time": "3:46.26",
+        "place": "7"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "NCAA Div. I Outdoor Championships",
+        "event": "1500m",
+        "time": "3:37.46",
+        "place": "2"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "NCAA West Preliminary Round",
+        "event": "1500m",
+        "time": "3:43.00",
+        "place": "5"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "NCAA West Preliminary Round",
+        "event": "1500m",
+        "time": "3:45.41",
+        "place": "2"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Pac-12 Ch.",
+        "event": "4x400 Metres Relay",
+        "time": "3:14.98",
+        "place": "4"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Pac-12 Ch.",
+        "event": "800m",
+        "time": "1:49.38",
+        "place": "1"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Pac-12 Ch.",
+        "event": "800m",
+        "time": "1:50.50",
+        "place": "5"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Track Meet",
+        "event": "1500m",
+        "time": "3:39.70",
+        "place": "4"
+      },
+      {
+        "date": "APR 22",
+        "meet": "Washington-Washington State",
+        "event": "800m",
+        "time": "1:50.24",
+        "place": "1"
+      },
+      {
+        "date": "APR 22",
+        "meet": "Washington-Washington State",
+        "event": "3000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "APR 15",
+        "meet": "Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "3:39.63",
+        "place": "11"
+      },
+      {
+        "date": "MAR 26",
+        "meet": "Raleigh Relays",
+        "event": "800m",
+        "time": "1:52.17",
+        "place": "2"
+      },
+      {
+        "date": "MAR 24",
+        "meet": "Raleigh Relays",
+        "event": "1500m",
+        "time": "3:41.37",
+        "place": "2"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Husky Classic",
+        "event": "Mile",
+        "time": "DNF",
+        "place": ""
+      }
+    ],
+    "2023": [
+      {
+        "date": "JUL 8",
+        "meet": "USA Championships",
+        "event": "1500m",
+        "time": "3:36.29",
+        "place": "7"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "USA Championships",
+        "event": "1500m",
+        "time": "3:37.03",
+        "place": "5"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "1500m",
+        "time": "3:42.78",
+        "place": "1"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "1500m",
+        "time": "3:39.69",
+        "place": "3"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "NCAA Division I West First Rounds, Hornet Stadium",
+        "event": "1500m",
+        "time": "3:38.13",
+        "place": "1"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I West First Rounds, Hornet Stadium",
+        "event": "1500m",
+        "time": "3:44.17",
+        "place": "2"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Pac 12 Men's and Women's Track and Field Championships",
+        "event": "1500m",
+        "time": "3:42.22",
+        "place": "1"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Pac 12 Men's and Women's Track and Field Championships",
+        "event": "1500m",
+        "time": "3:43.07",
+        "place": "1"
+      },
+      {
+        "date": "MAR 11",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "Mile sh",
+        "time": "4:03.86",
+        "place": "5"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "Mile sh",
+        "time": "4:09.41",
+        "place": "2"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "Last Chance Indoor Qualifier",
+        "event": "1500m sh",
+        "time": "3:38.10",
+        "place": ""
+      },
+      {
+        "date": "FEB 26",
+        "meet": "Last Chance Indoor Qualifier",
+        "event": "Mile sh",
+        "time": "3:53.25",
+        "place": "7"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Husky Classic",
+        "event": "800m",
+        "time": "1:46.99",
+        "place": "2"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "Washington Indoor Invitational",
+        "event": "Mile",
+        "time": "3:52.76",
+        "place": "3"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "3000m sh",
+        "time": "7:40.09",
+        "place": "5"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "CAS Meeting International",
+        "event": "1500m",
+        "time": "3:38.69",
+        "place": "2"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Morton Games",
+        "event": "800m",
+        "time": "1:46.23",
+        "place": "2"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Cork City Sports",
+        "event": "Mile",
+        "time": "3:53.67",
+        "place": "1"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "1500m",
+        "time": "3:32.20",
+        "place": "5"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "1500m",
+        "time": "3:34.49",
+        "place": "4"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "1500m",
+        "time": "3:35.71",
+        "place": "4"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "1500m",
+        "time": "3:40.98",
+        "place": "10"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "1500m",
+        "time": "3:37.51",
+        "place": "4"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "1500m",
+        "time": "3:40.04",
+        "place": "2"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "1500m",
+        "time": "3:39.97",
+        "place": "1"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "PAC 12 Track and Field Championships",
+        "event": "800m",
+        "time": "1:49.97",
+        "place": "4"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "PAC 12 Track and Field Championships",
+        "event": "1500m",
+        "time": "3:54.57",
+        "place": "2"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "PAC 12 Track and Field Championships",
+        "event": "800m",
+        "time": "1:47.84",
+        "place": "2"
+      },
+      {
+        "date": "MAY 10",
+        "meet": "PAC 12 Track and Field Championships",
+        "event": "1500m",
+        "time": "3:48.43",
+        "place": "2"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "3:34.79",
+        "place": "2"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "Stanford Invitational",
+        "event": "4x400 Metres Relay",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Stanford Invitational",
+        "event": "1500m",
+        "time": "3:40.18",
+        "place": "2"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.38",
+        "place": "6"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Ken Shannon Last Chance",
+        "event": "800m",
+        "time": "1:46.50",
+        "place": "2"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Arkansas Qualifier",
+        "event": "800m sh",
+        "time": "1:47.68",
+        "place": "4"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Arkansas Qualifier",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:18.81",
+        "place": "1"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "1000m sh",
+        "time": "2:18.56",
+        "place": "7"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "UW Invitational/Mile City",
+        "event": "Mile",
+        "time": "3:53.74",
+        "place": "4"
+      },
+      {
+        "date": "JAN 13",
+        "meet": "UW Preview",
+        "event": "1000m",
+        "time": "DNF",
+        "place": ""
+      }
+    ],
+    "2025": [
+      {
+        "date": "AUG 2",
+        "meet": "USA Championships",
+        "event": "1500m",
+        "time": "3:33.25",
+        "place": "8"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "USA Championships",
+        "event": "1500m",
+        "time": "3:33.17",
+        "place": "4"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Stumptown Twilight",
+        "event": "800m",
+        "time": "1:46.71",
+        "place": "7"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "The Jerome Classic",
+        "event": "1500m",
+        "time": "3:34.97",
+        "place": "1"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "1500m",
+        "time": "3:47.26",
+        "place": "1"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "1500m",
+        "time": "3:52.19",
+        "place": "3"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "1500m",
+        "time": "3:46.47",
+        "place": "1"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "1500m",
+        "time": "3:50.66",
+        "place": "2"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Big Ten Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:45.52",
+        "place": "1"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Big Ten Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:53.25",
+        "place": "2"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Big Ten Outdoor Track & Field Championships",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "APR 26",
+        "meet": "The Penn Relays",
+        "event": "4xMile Relay",
+        "time": "16:24.61",
+        "place": "1"
+      },
+      {
+        "date": "APR 25",
+        "meet": "The Penn Relays",
+        "event": "Distance Medley",
+        "time": "9:25.22",
+        "place": "1"
+      },
+      {
+        "date": "APR 18",
+        "meet": "Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "3:35.52",
+        "place": "1"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "Mile sh",
+        "time": "3:53.99",
+        "place": "2"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "Mile sh",
+        "time": "3:56.91",
+        "place": "1"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "Big Ten Conference Indoor Track & Field Championships",
+        "event": "3000m sh",
+        "time": "7:53.88",
+        "place": "1"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "Big Ten Conference Indoor Track & Field Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:31.75",
+        "place": "1"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Husky Classic",
+        "event": "3000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Husky Classic",
+        "event": "Distance Medley",
+        "time": "9:14.10",
+        "place": "1"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "UW Preview/Mile City",
+        "event": "Mile",
+        "time": "3:50.74",
+        "place": "1"
+      }
+    ]
+  },
+  "age": "23"
 }

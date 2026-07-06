@@ -10,6 +10,7 @@
   "headlineKey": "x",
   "flag": "FR",
   "seasons": "x",
+  "lastSynced": "2026-07-06",
   "prs": [
     {
       "event": "1500m",
@@ -66,92 +67,99 @@
     {
       "date": "JUN 12",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "",
+      "event": "5000 m",
       "time": "13:47.43",
-      "place": "7"
+      "place": "7."
     },
     {
       "date": "MAY 29",
       "meet": "NCAA Division I East First Rounds",
-      "event": "",
+      "event": "5000 m",
       "time": "13:50.81",
-      "place": "3"
+      "place": "3."
     },
     {
       "date": "MAY 17",
       "meet": "Ivy League Heptagonal Outdoor Track and Field Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:38.25",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAY 16",
       "meet": "Ivy League Heptagonal Outdoor Track and Field Championships",
-      "event": "",
+      "event": "1500 m",
       "time": "3:50.89",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "APR 23",
       "meet": "Penn Relay Carnival",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:37.70",
-      "place": ""
+      "place": "1."
     },
     {
       "date": "APR 17",
       "meet": "Wake Forest Invitational",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:36.69",
-      "place": "6"
+      "place": "6."
     },
     {
       "date": "MAR 13",
       "meet": "NCAA Division I Indoor Track and Field Championships",
       "event": "Mile sh",
       "time": "3:57.84",
-      "place": "6"
+      "place": "6."
     },
     {
       "date": "MAR 1",
       "meet": "Ivy League Heptagonal Track and Field Championships",
-      "event": "Distance Medley Short Track",
-      "time": "9:41.01",
-      "place": ""
-    },
-    {
-      "date": "MAR 1",
-      "meet": "Ivy League Heptagonal Track and Field Championships",
-      "event": "",
+      "event": "Mile sh",
       "time": "4:02.51",
-      "place": "2"
+      "place": "2."
+    },
+    {
+      "date": "MAR 1",
+      "meet": "Ivy League Heptagonal Track and Field Championships",
+      "event": "Distance Medley sh",
+      "time": "9:41.01",
+      "place": "1."
     },
     {
       "date": "FEB 28",
       "meet": "Ivy League Heptagonal Track and Field Championships",
-      "event": "",
+      "event": "Mile sh",
       "time": "4:10.74",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "FEB 13",
       "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "1500m sh",
+      "event": "1500 m sh",
       "time": "3:36.78",
-      "place": "6"
+      "place": "6."
     },
     {
       "date": "FEB 13",
       "meet": "Boston University David Hemery Valentine Invitational",
       "event": "Mile sh",
       "time": "3:52.44",
-      "place": "7"
+      "place": "7."
     },
     {
       "date": "FEB 13",
       "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "",
+      "event": "5000 m sh",
       "time": "DNF",
+      "place": ""
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Dr. Sander Invitational",
+      "event": "1500 m sh",
+      "time": "3:40.07",
       "place": ""
     },
     {
@@ -159,23 +167,163 @@
       "meet": "Dr. Sander Invitational",
       "event": "Mile sh",
       "time": "3:55.77",
-      "place": "5"
-    },
-    {
-      "date": "JAN 24",
-      "meet": "Dr. Sander Invitational",
-      "event": "1500m sh",
-      "time": "3:40.07",
-      "place": ""
+      "place": "5."
     }
   ],
+  "dob": "2005-03-16",
   "college": "Cornell",
   "weight": "x",
+  "lastHistorySynced": "2026-07-05",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",
   "id": "pierre-attiogbe",
-  "lastSynced": "2026-07-06",
-  "dob": "2005-03-16",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [
+      {
+        "date": "MAR 11",
+        "meet": "New Balance HS Indoor Nationals",
+        "event": "2 Miles sh",
+        "time": "9:08.78",
+        "place": "1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 2",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "3000m sh",
+        "time": "8:05.55",
+        "place": "2"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "New Balance Nationals Indoor",
+        "event": "2 Miles sh",
+        "time": "9:08.56",
+        "place": "1"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "3000m sh",
+        "time": "8:27.86",
+        "place": "2"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "3000m sh",
+        "time": "7:51.84",
+        "place": "5"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Alex Wilson Invite",
+        "event": "Distance Medley",
+        "time": "9:24.49",
+        "place": "6"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Dr. Sander Invitational Columbia Challenge",
+        "event": "Mile sh",
+        "time": "4:00.47",
+        "place": "1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "MAY 28",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "1500m",
+        "time": "3:44.72",
+        "place": "7"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Ivy League Heptagonal Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:43.58",
+        "place": "4"
+      },
+      {
+        "date": "MAY 10",
+        "meet": "Ivy League Heptagonal Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "4:01.72",
+        "place": "1"
+      },
+      {
+        "date": "APR 25",
+        "meet": "The Penn Relays",
+        "event": "Distance Medley",
+        "time": "9:29.30",
+        "place": "7"
+      },
+      {
+        "date": "APR 18",
+        "meet": "Wake Forest Invitational",
+        "event": "1500m",
+        "time": "3:39.44",
+        "place": "4"
+      },
+      {
+        "date": "MAR 27",
+        "meet": "Raleigh Relays",
+        "event": "1500m",
+        "time": "3:37.13",
+        "place": "6"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Ivy League Heptagonal Championship",
+        "event": "3000m sh",
+        "time": "8:00.88",
+        "place": "1"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Ivy League Heptagonal Championship",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:46.17",
+        "place": "2"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Alex Wilson",
+        "event": "Distance Medley",
+        "time": "9:22.09",
+        "place": "4"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Sykes Sabock Challenge",
+        "event": "Mile sh",
+        "time": "3:56.38",
+        "place": "1"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Penn 10 Elite",
+        "event": "Mile sh",
+        "time": "3:58.65",
+        "place": "1"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Penn 10 Elite",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:58.25",
+        "place": "3"
+      }
+    ]
+  },
   "age": "21"
 }

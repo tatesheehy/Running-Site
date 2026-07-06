@@ -2,6 +2,35 @@
 //  RANKINGS — all rankings builders and helpers
 // ============================================================
 
+// ── TRAIT SYSTEM ──────────────────────────────────────────
+const TRAIT_SENTIMENT = {
+  'Rising':          'positive',
+  'Peaking':         'positive',
+  'Bouncing Back':   'positive',
+  'Locked In':       'positive',
+  'The Threat':      'positive',
+  'Breakthrough':    'positive',
+  'Comeback Season': 'positive',
+  'Fading':          'warning',
+  'Vulnerable':      'warning',
+  'Overranked':      'warning',
+  'Injury Concern':  'warning',
+  'Dark Horse':      'caution',
+  'Wildcard':        'caution',
+  'Watch This Space':'caution',
+  'Under the Radar': 'caution',
+  'Need to See More':'neutral',
+};
+
+function buildTraitsHtml(traits) {
+  if (!traits?.length) return '';
+  const pills = traits.map(t => {
+    const sentiment = TRAIT_SENTIMENT[t] || 'neutral';
+    return `<span class="rd-trait rd-trait--${sentiment}">${t}</span>`;
+  }).join('');
+  return `<div class="rd-traits">${pills}</div>`;
+}
+
 // ── BEST TIME RESOLVER ────────────────────────────────────
 function _parseTimeSecs(t) {
   if (!t || t === 'x') return Infinity;
@@ -332,6 +361,7 @@ function buildRankingRow(r, rank) {
       <div class="rd-dd-panel-photo" style="background-color:${photoBg};background-image:url('${a?.photo || photo}')"></div>
       <div class="rd-dd-panel-body">
         ${headlineHtml}
+        ${r.traits?.length ? `<div class="rd-dd-traits">${buildTraitsHtml(r.traits)}</div>` : ''}
         <div class="rd-dd-panel-prs">
           <div class="rd-dd-panel-label">Personal Records</div>
           ${prsHtml}
@@ -351,6 +381,11 @@ function buildRankingRow(r, rank) {
       <div class="rd-info">
         <div class="rd-name">${name}</div>
         <div class="rd-country">${renderFlag(flag)} ${country}</div>
+        ${buildTraitsHtml(r.traits)}
+        <div class="rd-row-stats">
+          ${seasonBest && seasonBest !== '—' ? `<div class="rd-row-stat"><span class="rd-row-stat-label">SB</span><span class="rd-row-stat-val">${seasonBest}${meet ? ` <span class="rd-row-stat-meet">· ${meet}</span>` : ''}</span></div>` : ''}
+          ${(a?.prs || []).slice(0, 3).map(pr => `<div class="rd-row-stat"><span class="rd-row-stat-label">${pr.event}</span><span class="rd-row-stat-val">${pr.time}</span></div>`).join('')}
+        </div>
       </div>
       ${rank != null ? buildMomentumHtml(r.momentum) : ''}
       <div class="rd-sb">${seasonBest}</div>
@@ -391,10 +426,12 @@ function buildRankingCard(r, rank) {
 window.setRdSkim = function(mode) {
   const wrap = document.querySelector('.rd-list-wrap');
   if (!wrap) return;
-  wrap.classList.toggle('rd-deep', mode === 'deep');
-  document.getElementById('rd-skim-skim')?.classList.toggle('rd-skim-btn--active', mode === 'skim');
-  document.getElementById('rd-skim-deep')?.classList.toggle('rd-skim-btn--active', mode === 'deep');
-  if (mode === 'deep') {
+  wrap.classList.toggle('rd-deep',     mode === 'invested' || mode === 'die-hard');
+  wrap.classList.toggle('rd-die-hard', mode === 'die-hard');
+  ['casual', 'invested', 'die-hard'].forEach(m => {
+    document.getElementById(`rd-skim-${m}`)?.classList.toggle('rd-skim-btn--active', mode === m);
+  });
+  if (mode === 'die-hard') {
     wrap.querySelectorAll('.rd-dd-panel').forEach(p => p.classList.add('open'));
     wrap.querySelectorAll('.rd-row').forEach(r => r.classList.add('dd-open'));
   } else {
@@ -405,7 +442,7 @@ window.setRdSkim = function(mode) {
 
 window.openRankingRowDeepDive = function(row) {
   const wrap = row.closest('.rd-list-wrap');
-  if (!wrap?.classList.contains('rd-deep')) {
+  if (!wrap?.classList.contains('rd-deep') && !wrap?.classList.contains('rd-die-hard')) {
     // Not in deep dive — use normal modal
     const encoded = row.dataset.clickData || row.getAttribute('data-click-data');
     if (encoded) openRankingRow(encoded);
@@ -635,8 +672,9 @@ function buildRankingsDetail(eventName, opts = {}) {
             ${athleteCount ? `<span class="rd-header-count">${athleteCount} athletes ranked</span>` : ''}
             <div class="rd-header-btns">
               <div class="rd-skim-toggle" id="rd-skim-toggle">
-                <button class="rd-skim-btn rd-skim-btn--active" id="rd-skim-skim" onclick="setRdSkim('skim')">Skim</button>
-                <button class="rd-skim-btn" id="rd-skim-deep" onclick="setRdSkim('deep')">Deep Dive</button>
+                <button class="rd-skim-btn rd-skim-btn--active" id="rd-skim-casual"   onclick="setRdSkim('casual')">Casual</button>
+                <button class="rd-skim-btn" id="rd-skim-invested" onclick="setRdSkim('invested')">Invested</button>
+                <button class="rd-skim-btn" id="rd-skim-die-hard" onclick="setRdSkim('die-hard')">Die Hard</button>
               </div>
               <button class="rd-compare-btn" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">⇌ Compare Athletes</button>
               <div class="rd-view-toggle">

@@ -10,6 +10,7 @@ const https = require('https');
 const ATHLETES_DIR  = path.join(__dirname, '../running-site/_data/athletes');
 const ATHLETES_JSON = path.join(__dirname, '../running-site/_data/athletes.json');
 const FORCE         = process.argv.includes('--force');
+const SKIP_EXISTING = process.argv.includes('--skip-existing');
 const yearIdx       = process.argv.indexOf('--year');
 const YEAR          = yearIdx !== -1 ? process.argv[yearIdx + 1] : String(new Date().getFullYear());
 
@@ -546,79 +547,91 @@ async function main() {
 
   let updated = 0, skipped = 0, failed = 0;
 
+  const concurrencyArg = process.argv.find(a => a.startsWith('--concurrency='));
+  const CONCURRENCY = concurrencyArg ? parseInt(concurrencyArg.split('=')[1], 10) : 5;
+
+  // Split into work queue vs immediate skips
+  const queue = [];
   for (const athlete of allAthletes) {
     if (!athlete.waUrl) {
       console.log(`⏭  ${athlete.name || athlete.id || '?'} — no waUrl, skipping`);
       skipped++;
       continue;
     }
-
     const needsProfile = needsProfileFill(athlete);
-    const needsResults = FORCE || !hasCurrentResults(athlete);
-
+    const needsResults = !SKIP_EXISTING || !hasCurrentResults(athlete);
     if (!needsProfile && !needsResults) {
       console.log(`✓  ${athlete.name} — already has ${athlete.results.length} results`);
       skipped++;
       continue;
     }
+    queue.push(athlete);
+  }
 
+  async function processAthlete(athlete) {
+    const label = athlete.name || athlete.id;
+    const needsProfile = needsProfileFill(athlete);
     try {
-      process.stdout.write(`🌐 ${athlete.name || athlete.id} — fetching...`);
+      process.stdout.write(`🌐 ${label} — fetching...\n`);
       const html = await fetchPage(athlete.waUrl);
 
       if (html.length < 1000) {
-        console.log(' ✗ WAF blocked (empty response)');
+        console.log(`  ✗ ${label} — WAF blocked`);
         failed++;
-        await sleep(3000);
-        continue;
+        await sleep(1000);
+        return;
       }
 
       let dirty = false;
       const notes = [];
 
-      // Fill missing profile fields
       if (needsProfile) {
         const prof = fillProfileFields(athlete, html);
         if (prof.changed) { dirty = true; notes.push(`profile: ${prof.fields.join(', ')}`); }
       } else {
-        // Still refresh age from stored dob each run
         const fresh = calcAge(athlete.dob);
         if (fresh && fresh !== athlete.age) { athlete.age = fresh; dirty = true; notes.push('age'); }
       }
 
-      // Fetch results
-      if (needsResults) {
-        const results = parseResults(html, YEAR);
-        if (results.length) {
-          athlete.results = results;
-          dirty = true;
-          notes.push(`${results.length} results`);
-        } else {
-          notes.push(`no ${YEAR} results`);
-        }
+      const results = parseResults(html, YEAR);
+      if (results.length) {
+        athlete.results = results;
+        dirty = true;
+        notes.push(`${results.length} results`);
+      } else {
+        notes.push(`no ${YEAR} results`);
       }
 
       if (dirty) {
         athlete.lastSynced = new Date().toISOString().slice(0, 10);
-        // Also write individual file (athlete.id required; skip silently if missing)
         if (athlete.id) {
           if (!fs.existsSync(ATHLETES_DIR)) fs.mkdirSync(ATHLETES_DIR, { recursive: true });
           fs.writeFileSync(path.join(ATHLETES_DIR, `${athlete.id}.json`), JSON.stringify(athlete, null, 2));
         }
-        console.log(` ✓  ${notes.join(' | ')}`);
+        console.log(`  ✓ ${label} — ${notes.join(' | ')}`);
         updated++;
       } else {
-        console.log(` — ${notes.join(' | ')}`);
+        console.log(`  — ${label} — ${notes.join(' | ')}`);
         skipped++;
       }
 
-      await sleep(2000);
+      await sleep(800);
     } catch (err) {
-      console.log(` ✗ ${err.message}`);
+      console.log(`  ✗ ${label} — ${err.message}`);
       failed++;
-      await sleep(2000);
+      await sleep(800);
     }
   }
+
+  // Worker pool: CONCURRENCY workers pulling from shared queue
+  async function worker() {
+    while (queue.length) {
+      await processAthlete(queue.shift());
+    }
+  }
+
+  console.log(`Running ${CONCURRENCY} concurrent workers for ${queue.length} athletes...`);
+  await Promise.all(Array.from({ length: CONCURRENCY }, worker));
 
   console.log(`\nDone: ${updated} updated, ${skipped} skipped, ${failed} failed.`);
 

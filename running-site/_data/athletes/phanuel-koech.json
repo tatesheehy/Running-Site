@@ -9,6 +9,7 @@
   "headlineKey": "x",
   "flag": "KE",
   "seasons": "xx",
+  "lastSynced": "2026-07-06",
   "prs": [
     {
       "event": "800m",
@@ -36,38 +37,163 @@
     {
       "date": "JUN 20",
       "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
-      "event": "3000 m",
-      "time": "8:18.01",
-      "place": ""
-    },
-    {
-      "date": "JUN 20",
-      "meet": "African U18 Championships",
       "event": "1500 m",
-      "time": "1:46.93",
-      "place": ""
-    },
-    {
-      "date": "JUN 20",
-      "meet": "World Athletics U20 Championships",
-      "event": "1500 m",
-      "time": "1:47.46",
-      "place": "1."
+      "time": "3:34.85",
+      "place": "6."
     },
     {
       "date": "JUN 18",
-      "meet": "World Athletics U20 Championships",
-      "event": "800 m",
-      "time": "1:47.46",
-      "place": "31"
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "1500 m",
+      "time": "3:43.1h",
+      "place": "1."
     }
   ],
+  "dob": "2006-12-01",
   "weight": "145",
+  "lastHistorySynced": "2026-07-05",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "phanuel-koech",
-  "age": "19",
-  "lastSynced": "2026-07-06",
-  "dob": "2006-12-01"
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [],
+    "2023": [
+      {
+        "date": "MAY 3",
+        "meet": "African U18 Championships",
+        "event": "800m",
+        "time": "1:52.59",
+        "place": "6"
+      },
+      {
+        "date": "MAY 2",
+        "meet": "African U18 Championships",
+        "event": "800m",
+        "time": "1:49.27",
+        "place": "1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "AUG 30",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:47.46",
+        "place": "5"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:48.24",
+        "place": "1"
+      },
+      {
+        "date": "AUG 27",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:50.20",
+        "place": "4"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "National Trials For World Athletics Under 20 Championships",
+        "event": "800m",
+        "time": "1:46.93",
+        "place": "2"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "National Trials For World Athletics Under 20 Championships",
+        "event": "3000m",
+        "time": "8:18.01",
+        "place": "12"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 14",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:42.77",
+        "place": "12"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Weltklasse Zürich",
+        "event": "1500m",
+        "time": "3:30.02",
+        "place": "3"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Memorial van Damme",
+        "event": "1500m",
+        "time": "3:31.41",
+        "place": "2"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "London Athletics Meet",
+        "event": "1500m",
+        "time": "3:28.82",
+        "place": "1"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "64th Ostrava Golden Spike",
+        "event": "1500m",
+        "time": "3:29.05",
+        "place": "1"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Paris",
+        "event": "1500m",
+        "time": "3:27.72",
+        "place": "2"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "4th Lucca International Meeting",
+        "event": "1500m",
+        "time": "3:32.26",
+        "place": "1"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "6th AK Track & Field Weekend Meeting/Relay Series",
+        "event": "800m",
+        "time": "1:47.00",
+        "place": "1"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "6th AK Track & Field Weekend Meeting/Relay Series",
+        "event": "800m",
+        "time": "1:47.48",
+        "place": "5"
+      },
+      {
+        "date": "APR 26",
+        "meet": "adizero: Road to Records, Herzogenaurach",
+        "event": "Mile",
+        "time": "3:56.08",
+        "place": "4"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Sirikwa Classic Cross Country Tour – Gold",
+        "event": "Cross Country",
+        "time": "6:02",
+        "place": "2"
+      }
+    ]
+  },
+  "age": "19"
 }

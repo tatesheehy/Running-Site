@@ -2,6 +2,9 @@
   "photoBackground": "#111111",
   "reviewTitle": "Season review",
   "collegeLogo": "/images/oregon_ducks_logo.svg.png",
+  "ncaaTitle": [
+    "1500m"
+  ],
   "waUrl": "https://worldathletics.org/athletes/united-states/simeon-birnbaum-15027172",
   "height": "5'11",
   "questionBody": "x",
@@ -10,6 +13,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "0",
+  "lastSynced": "2026-07-06",
   "prs": [
     {
       "event": "800m",
@@ -70,158 +74,410 @@
     {
       "date": "JUN 12",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:36.05",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "JUN 12",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "",
+      "event": "5000 m",
       "time": "DNF",
       "place": ""
     },
     {
       "date": "JUN 10",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:38.87",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAY 29",
       "meet": "NCAA Division I West First Rounds",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:37.00",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAY 29",
       "meet": "NCAA Division I West First Rounds",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:42.69",
-      "place": "5"
+      "place": "5."
     },
     {
       "date": "MAY 27",
       "meet": "NCAA Division I West First Rounds",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:41.36",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAY 17",
       "meet": "Big Ten Outdoor Track & Field Championships",
-      "event": "",
+      "event": "5000 m",
       "time": "DNF",
       "place": ""
     },
     {
       "date": "MAY 15",
       "meet": "Big Ten Outdoor Track & Field Championships",
-      "event": "",
+      "event": "1500 m",
       "time": "3:54.45",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAY 15",
       "meet": "Big Ten Outdoor Track & Field Championships",
-      "event": "",
+      "event": "1500 m",
       "time": "4:00.98",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAY 8",
       "meet": "Oregon Twilight",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:44.67",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "MAY 8",
       "meet": "Oregon Twilight",
-      "event": "",
+      "event": "1500 m",
       "time": "DNF",
       "place": ""
     },
     {
       "date": "APR 18",
       "meet": "Oregon Team Invitational",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:31.69",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "APR 3",
       "meet": "Stanford Invitational",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:19.73",
-      "place": ""
+      "place": "1."
     },
     {
       "date": "MAR 14",
       "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:41.85",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAR 13",
       "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "Distance Medley Short Track",
+      "event": "Distance Medley sh",
       "time": "9:27.49",
-      "place": "7"
+      "place": "7."
     },
     {
       "date": "FEB 28",
       "meet": "Big Ten Conference Indoor Track & Field Championships",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:59.87",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "FEB 26",
       "meet": "Big Ten Conference Indoor Track & Field Championships",
-      "event": "5000 Metres Short Track",
+      "event": "5000 m sh",
       "time": "13:45.78",
-      "place": ""
+      "place": "1."
     },
     {
       "date": "FEB 22",
       "meet": "Saucony Battle for Boston",
-      "event": "Distance Medley Short Track",
+      "event": "Distance Medley sh",
       "time": "9:14.88",
-      "place": ""
+      "place": "1."
     },
     {
       "date": "FEB 20",
       "meet": "Arkansas Qualifier",
-      "event": "",
+      "event": "Distance Medley sh",
       "time": "DQ",
       "place": ""
     },
     {
       "date": "JAN 31",
       "meet": "Razorback Invitational",
-      "event": "Mile Short Track",
+      "event": "Mile sh",
       "time": "3:55.88",
-      "place": "9"
+      "place": "9."
     },
     {
       "date": "JAN 30",
       "meet": "Razorback Invitational",
-      "event": "800 Metres Short Track",
+      "event": "800 m sh",
       "time": "1:48.05",
-      "place": "1"
+      "place": "1."
     }
   ],
+  "dob": "2005-06-23",
   "college": "Oregon",
   "weight": "145",
+  "lastHistorySynced": "2026-07-05",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "simeon-birnbaum",
-  "age": "21",
-  "lastSynced": "2026-07-06",
-  "dob": "2005-06-23"
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [
+      {
+        "date": "JUN 19",
+        "meet": "Nike Outdoor Nationals",
+        "event": "800m",
+        "time": "1:50.12",
+        "place": "1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Results",
+        "event": "Mile",
+        "time": "3:59.51",
+        "place": "1"
+      },
+      {
+        "date": "APR 9",
+        "meet": "Arcadia Invitational",
+        "event": "Mile",
+        "time": "4:07.88",
+        "place": "1"
+      },
+      {
+        "date": "MAR 11",
+        "meet": "New Balance HS Indoor Nationals",
+        "event": "Mile sh",
+        "time": "4:12.39",
+        "place": "1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "AUG 6",
+        "meet": "Pan American U20 Championships",
+        "event": "800m",
+        "time": "1:49.31",
+        "place": "2"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "USA U20 Championships",
+        "event": "800m",
+        "time": "1:47.96",
+        "place": "2"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "USA U20 Championships",
+        "event": "800m",
+        "time": "1:50.54",
+        "place": "1"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "USA Championships",
+        "event": "1500m",
+        "time": "3:44.14",
+        "place": "6"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Nike Outdoor Nationals",
+        "event": "1500m",
+        "time": "3:37.93",
+        "place": "3"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "HOKA Festival of Miles",
+        "event": "Mile",
+        "time": "3:57.53",
+        "place": "1"
+      },
+      {
+        "date": "APR 28",
+        "meet": "Drake Relays",
+        "event": "Mile",
+        "time": "4:02.36",
+        "place": "1"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "New Balance Nationals Indoor",
+        "event": "Mile sh",
+        "time": "4:06.13",
+        "place": "4"
+      },
+      {
+        "date": "MAR 11",
+        "meet": "New Balance Nationals Indoor",
+        "event": "800m sh",
+        "time": "1:51.03",
+        "place": "5"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "Mile sh",
+        "time": "4:05.29",
+        "place": "3"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "3000m sh",
+        "time": "7:52.04",
+        "place": "6"
+      },
+      {
+        "date": "MAR 23",
+        "meet": "Oregon Preview",
+        "event": "1500m",
+        "time": "3:45.27",
+        "place": "2"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 6",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "3000m sh",
+        "time": "7:39.65",
+        "place": "4"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:56.64",
+        "place": "9"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "1500m",
+        "time": "3:47.64",
+        "place": "7"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "1500m",
+        "time": "3:41.77",
+        "place": "2"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "1500m",
+        "time": "3:39.79",
+        "place": "1"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "5000m",
+        "time": "14:10.98",
+        "place": "17"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "1500m",
+        "time": "3:55.83",
+        "place": "2"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Big Ten Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:56.61",
+        "place": "1"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Big Ten Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:53.38",
+        "place": "3"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Big Ten Outdoor Track & Field Championships",
+        "event": "5000m",
+        "time": "13:31.87",
+        "place": "1"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "Oregon Twilight",
+        "event": "1500m",
+        "time": "3:37.02",
+        "place": "1"
+      },
+      {
+        "date": "APR 26",
+        "meet": "The Penn Relays",
+        "event": "4x800 Metres Relay",
+        "time": "7:14.10",
+        "place": "2"
+      },
+      {
+        "date": "APR 25",
+        "meet": "The Penn Relays",
+        "event": "Distance Medley",
+        "time": "9:26.38",
+        "place": "2"
+      },
+      {
+        "date": "APR 19",
+        "meet": "Oregon Open",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAR 14",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "Mile sh",
+        "time": "4:09.64",
+        "place": "8"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Razorback Invitational",
+        "event": "Mile sh",
+        "time": "3:52.81",
+        "place": "2"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Graduate Classic",
+        "event": "800m sh",
+        "time": "1:49.27",
+        "place": "1"
+      },
+      {
+        "date": "JAN 17",
+        "meet": "Graduate Classic",
+        "event": "1000m sh",
+        "time": "2:22.84",
+        "place": "2"
+      }
+    ]
+  },
+  "age": "21"
 }

@@ -10,6 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
+  "lastSynced": "2026-07-06",
   "prs": [
     {
       "event": "800m",
@@ -70,65 +71,283 @@
     {
       "date": "JUN 12",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "",
+      "event": "5000 m",
       "time": "13:39.91",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAY 29",
       "meet": "NCAA Division I East First Rounds",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:28.19",
-      "place": ""
+      "place": "2."
     },
     {
       "date": "MAY 16",
       "meet": "ACC Outdoor Track & Field Championships",
-      "event": "",
+      "event": "1500 m",
       "time": "3:41.40",
-      "place": "4"
+      "place": "4."
     },
     {
       "date": "MAY 15",
       "meet": "ACC Outdoor Track & Field Championships",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:49.27",
-      "place": ""
+      "place": "4."
     },
     {
       "date": "MAY 14",
       "meet": "ACC Outdoor Track & Field Championships",
-      "event": "",
+      "event": "1500 m",
       "time": "3:39.41",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "APR 17",
       "meet": "Wake Forest Invitational",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:35.75",
-      "place": "5"
+      "place": "5."
     },
     {
       "date": "APR 10",
       "meet": "Duke Invitational",
-      "event": "",
+      "event": "5000 m",
       "time": "13:29.53",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "JAN 10",
       "meet": "46th World Athletics Cross Country Championships",
-      "event": "",
+      "event": "Cross Country Senior Race",
       "time": "DNS",
       "place": ""
     }
   ],
+  "dob": "2004-09-05",
   "college": "Wake Forest",
   "weight": "x",
+  "lastHistorySynced": "2026-07-05",
   "reviewBody": "x",
   "event": "DISTANCE",
-  "lastSynced": "2026-07-06",
-  "dob": "2004-09-05",
+  "id": "rocky-hansen",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [
+      {
+        "date": "JUN 19",
+        "meet": "New Balance Nationals",
+        "event": "Mile",
+        "time": "4:06.21",
+        "place": "2"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "New Balance Nationals",
+        "event": "2 Miles",
+        "time": "8:46.97",
+        "place": "1"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "Music City Track Carnival Festival",
+        "event": "Mile",
+        "time": "4:03.99",
+        "place": "1"
+      },
+      {
+        "date": "MAR 20",
+        "meet": "Adidas Nationals",
+        "event": "Mile sh",
+        "time": "4:14.27",
+        "place": "1"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "Adidas Nationals",
+        "event": "2 Miles sh",
+        "time": "9:07.36",
+        "place": "1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "JUN 1",
+        "meet": "HOKA Festival of Miles",
+        "event": "Mile",
+        "time": "3:58.23",
+        "place": "2"
+      },
+      {
+        "date": "APR 30",
+        "meet": "Virginia High Performance",
+        "event": "Mile",
+        "time": "3:59.56",
+        "place": "1"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Wake Forest Invitational",
+        "event": "1500m",
+        "time": "3:42.41",
+        "place": "11"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Millrose Games",
+        "event": "Mile sh",
+        "time": "4:00.84",
+        "place": "5"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "Mile sh",
+        "time": "4:01.11",
+        "place": "1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "JUN 7",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "5000m",
+        "time": "14:04.44",
+        "place": "16"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "5000m",
+        "time": "13:52.18",
+        "place": "4"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:43.52",
+        "place": "6"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:44.05",
+        "place": "2"
+      },
+      {
+        "date": "APR 19",
+        "meet": "Wake Forest Invitational",
+        "event": "5000m",
+        "time": "13:44.16",
+        "place": "11"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "ACC Indoor Track & Field Championships",
+        "event": "3000m sh",
+        "time": "7:56.53",
+        "place": "2"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 6",
+        "meet": "USATF Cross Country Championships",
+        "event": "Cross Country",
+        "time": "29:25",
+        "place": "2"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Sunset Tour, Jack Kemp Stadium",
+        "event": "5000m",
+        "time": "13:07.77",
+        "place": "2"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "5000m",
+        "time": "13:22.47",
+        "place": "5"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "5000m",
+        "time": "13:36.54",
+        "place": "1"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:45.73",
+        "place": "6"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAY 15",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:40.19",
+        "place": "2"
+      },
+      {
+        "date": "APR 18",
+        "meet": "Wake Forest Invitational",
+        "event": "1500m",
+        "time": "3:38.74",
+        "place": "2"
+      },
+      {
+        "date": "MAR 27",
+        "meet": "Raleigh Relays",
+        "event": "5000m",
+        "time": "13:22.06",
+        "place": "1"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "5000m sh",
+        "time": "13:12.65",
+        "place": "3"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Boston University DMR Challenge",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:17.17",
+        "place": "1"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "5000m sh",
+        "time": "13:14.43",
+        "place": "1"
+      },
+      {
+        "date": "JAN 17",
+        "meet": "Virginia Tech Invitational",
+        "event": "Mile sh",
+        "time": "3:57.90",
+        "place": "1"
+      }
+    ]
+  },
   "age": "21"
 }

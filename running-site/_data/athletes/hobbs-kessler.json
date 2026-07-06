@@ -18,6 +18,7 @@
     }
   ],
   "seasons": "4",
+  "lastSynced": "2026-07-06",
   "prs": [
     {
       "event": "800m",
@@ -83,68 +84,650 @@
   "country": "United States",
   "results": [
     {
+      "date": "JUL 4",
+      "meet": "Prefontaine Classic",
+      "event": "Mile",
+      "time": "3:47.38",
+      "place": "4."
+    },
+    {
       "date": "JUN 16",
       "meet": "65th Ostrava Golden Spike",
-      "event": "1000 Metres",
+      "event": "1000 m",
       "time": "2:15.44",
-      "place": "4"
+      "place": "4."
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "1500 m",
+      "time": "3:34.49",
+      "place": ""
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
       "event": "Mile",
       "time": "3:49.13",
-      "place": "4"
+      "place": "4."
     },
     {
       "date": "JUN 7",
       "meet": "BAUHAUS-Galan",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:31.76",
-      "place": "6"
+      "place": "6."
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:46.04",
-      "place": "9"
+      "place": "9."
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "DNF",
       "place": ""
     },
     {
       "date": "MAY 1",
       "meet": "Payton Jordan Invitational",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:13.94",
-      "place": "6"
+      "place": "6."
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
-      "event": "Mile Short Track",
+      "event": "1500 m sh",
+      "time": "3:32.99",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "Mile sh",
       "time": "3:48.68",
-      "place": "3"
+      "place": "3."
     },
     {
       "date": "JAN 24",
       "meet": "New Balance Indoor Grand Prix",
-      "event": "2000 Metres Short Track",
+      "event": "2000 m sh",
       "time": "4:48.79",
-      "place": "1"
+      "place": "1."
     }
   ],
+  "dob": "2003-03-15",
   "weight": "140",
+  "lastHistorySynced": "2026-07-05",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "hobbs-kessler",
-  "age": "23",
-  "dob": "2003-03-15",
-  "lastSynced": "2026-07-06"
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [
+      {
+        "date": "JUN 25",
+        "meet": "U.S. Olympic Trials",
+        "event": "1500m",
+        "time": "3:45.50",
+        "place": "8"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "U.S. Olympic Trials",
+        "event": "1500m",
+        "time": "3:45.63",
+        "place": "1"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "Portland Track Festival",
+        "event": "1500m",
+        "time": "3:34.36",
+        "place": "5"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "Farmington New Balance Invitational",
+        "event": "800m",
+        "time": "1:49.67",
+        "place": "1"
+      },
+      {
+        "date": "APR 30",
+        "meet": "Barnyard Invitational Elite Mile & Hansons-Brooks ODP 3000m",
+        "event": "Mile",
+        "time": "4:14.95",
+        "place": "1"
+      },
+      {
+        "date": "APR 24",
+        "meet": "USATF Grand Prix",
+        "event": "1500m",
+        "time": "3:40.46",
+        "place": "6"
+      },
+      {
+        "date": "MAR 25",
+        "meet": "NSAF USA Meet of Champions",
+        "event": "2 Miles",
+        "time": "8:39.04",
+        "place": "1"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "Trials of Miles",
+        "event": "1500m",
+        "time": "3:52.80",
+        "place": "10"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "LAB Indoor Meet #1",
+        "event": "800m",
+        "time": "1:52.92",
+        "place": "1"
+      },
+      {
+        "date": "FEB 7",
+        "meet": "American Track League 3",
+        "event": "Mile sh",
+        "time": "3:57.66",
+        "place": "3"
+      }
+    ],
+    "2022": [
+      {
+        "date": "SEP 4",
+        "meet": "XXXV Meeting Città di Padova",
+        "event": "1500m",
+        "time": "3:44.59",
+        "place": "13"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "BMC Regional Races",
+        "event": "800m",
+        "time": "1:46.87",
+        "place": "2"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "BMC Regional Races",
+        "event": "Mile",
+        "time": "3:58.73",
+        "place": "1"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "Herculis Meeting International d’Athlétisme EBS",
+        "event": "1000m",
+        "time": "2:16.46",
+        "place": "8"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "XXV Meeting Internazionale Città di Nembro",
+        "event": "800m",
+        "time": "1:49.35",
+        "place": "2"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "33° Meeting Internazionale Sport e Solidarieta",
+        "event": "1500m",
+        "time": "3:36.99",
+        "place": "2"
+      },
+      {
+        "date": "JUL 23",
+        "meet": "Ryan Shay Memorial Mile",
+        "event": "Mile",
+        "time": "3:54.0",
+        "place": "2"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Toyota USATF Outdoor Championships",
+        "event": "1500m",
+        "time": "3:42.56",
+        "place": "5"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Portland Track Festival",
+        "event": "1500m",
+        "time": "3:37.28",
+        "place": "11"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Prefontaine Classic",
+        "event": "1500m",
+        "time": "3:36.63",
+        "place": "5"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "USATF Distance Classic",
+        "event": "1500m",
+        "time": "3:38.98",
+        "place": "9"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Len Paddock Open",
+        "event": "800m",
+        "time": "1:49.97",
+        "place": "3"
+      },
+      {
+        "date": "APR 23",
+        "meet": "Jesse Owens Classic",
+        "event": "800m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "APR 22",
+        "meet": "Jesse Owens Classic",
+        "event": "1500m",
+        "time": "3:45.06",
+        "place": "2"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "Mile sh",
+        "time": "3:57.10",
+        "place": "7"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Millrose Games",
+        "event": "Mile sh",
+        "time": "3:59.66",
+        "place": "8"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "Michigan Invitational",
+        "event": "3000m sh",
+        "time": "7:59.41",
+        "place": "1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 9",
+        "meet": "Start to the Park 10k and Kalakaua Merrie Mile",
+        "event": "Mile",
+        "time": "3:57.12",
+        "place": "3"
+      },
+      {
+        "date": "OCT 1",
+        "meet": "World Athletics Road Running Championships, Riga",
+        "event": "Mile",
+        "time": "3:56.13",
+        "place": "1"
+      },
+      {
+        "date": "SEP 10",
+        "meet": "Memorial Borisa Hanžekovića",
+        "event": "800m",
+        "time": "1:46.09",
+        "place": "1"
+      },
+      {
+        "date": "SEP 3",
+        "meet": "ISTAF",
+        "event": "1500m",
+        "time": "3:35.69",
+        "place": "4"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "USA Championships",
+        "event": "1500m",
+        "time": "3:36.08",
+        "place": "6"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "USA Championships",
+        "event": "1500m",
+        "time": "3:42.95",
+        "place": "2"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "USATF NYC Grand Prix",
+        "event": "800m",
+        "time": "1:45.80",
+        "place": "3"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "USATF Los Angeles Grand Prix",
+        "event": "1500m",
+        "time": "3:32.61",
+        "place": "3"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "adidas Atlanta City Games",
+        "event": "Mile",
+        "time": "4:03.7",
+        "place": "2"
+      },
+      {
+        "date": "APR 15",
+        "meet": "B.A.A. 5K",
+        "event": "Mile",
+        "time": "4:08.0",
+        "place": "1"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "Mile sh",
+        "time": "4:05.01",
+        "place": "10"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "3000m sh",
+        "time": "7:39.00",
+        "place": "6"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Kalākaua Merrie Mile",
+        "event": "Mile",
+        "time": "3:56.85",
+        "place": "1"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "New Balance 5th Avenue Mile",
+        "event": "Mile",
+        "time": "3:52.1",
+        "place": "9"
+      },
+      {
+        "date": "AUG 25",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "800m",
+        "time": "1:43.97",
+        "place": "8"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Athletissima Lausanne",
+        "event": "1500m",
+        "time": "3:30.47",
+        "place": "3"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:46.20",
+        "place": "6"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:46.15",
+        "place": "3"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:29.45",
+        "place": "5"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:31.97",
+        "place": "2"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:36.87",
+        "place": "2"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "800m",
+        "time": "1:43.64",
+        "place": "2"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "800m",
+        "time": "1:43.71",
+        "place": "1"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "800m",
+        "time": "1:46.85",
+        "place": "2"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "1500m",
+        "time": "3:31.53",
+        "place": "3"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "1500m",
+        "time": "3:34.16",
+        "place": "2"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "1500m",
+        "time": "3:37.50",
+        "place": "1"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "USATF New York City Grand Prix",
+        "event": "1500m",
+        "time": "3:34.41",
+        "place": "3"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAY 17",
+        "meet": "USATF Los Angeles Grand Prix",
+        "event": "800m",
+        "time": "1:45.07",
+        "place": "1"
+      },
+      {
+        "date": "APR 27",
+        "meet": "adizero Road to Records",
+        "event": "Mile",
+        "time": "3:56.2",
+        "place": "2"
+      },
+      {
+        "date": "MAR 3",
+        "meet": "World Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:36.72",
+        "place": "3"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "World Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:39.07",
+        "place": "2"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "USA Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:38.76",
+        "place": "2"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Millrose Games",
+        "event": "Mile sh",
+        "time": "3:48.66",
+        "place": "2"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "1500m sh",
+        "time": "3:33.66",
+        "place": "1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 13",
+        "meet": "Honolulu Marathon",
+        "event": "Mile",
+        "time": "3:56.21",
+        "place": "2"
+      },
+      {
+        "date": "SEP 7",
+        "meet": "New Balance 5th Avenue Mile",
+        "event": "Mile",
+        "time": "3:49.6",
+        "place": "10"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Memorial van Damme",
+        "event": "1500m",
+        "time": "3:36.65",
+        "place": "14"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "1500m",
+        "time": "3:34.14",
+        "place": "7"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "USA Championships",
+        "event": "1500m",
+        "time": "3:31.12",
+        "place": "4"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "USA Championships",
+        "event": "1500m",
+        "time": "3:34.44",
+        "place": "2"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Sunset Tour, Jack Kemp Stadium",
+        "event": "800m",
+        "time": "1:44.77",
+        "place": "4"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:48.32",
+        "place": "10"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Grand Slam Track Philadelphia",
+        "event": "1500m",
+        "time": "3:34.91",
+        "place": "3"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "Grand Slam Track Philadelphia",
+        "event": "800m",
+        "time": "1:45.60",
+        "place": "4"
+      },
+      {
+        "date": "APR 26",
+        "meet": "adizero: Road to Records, Herzogenaurach",
+        "event": "Mile",
+        "time": "3:54.34",
+        "place": "2"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "USA Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:38.82",
+        "place": "1"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "USA Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:38.00",
+        "place": "1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Millrose Games",
+        "event": "Mile sh",
+        "time": "3:46.90",
+        "place": "2"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "3000m sh",
+        "time": "7:35.06",
+        "place": "4"
+      }
+    ]
+  },
+  "age": "23"
 }

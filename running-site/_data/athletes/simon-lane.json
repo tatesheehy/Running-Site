@@ -10,6 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
+  "lastSynced": "2026-07-06",
   "prs": [
     {
       "event": "800m",
@@ -46,59 +47,69 @@
     {
       "date": "MAY 23",
       "meet": "NCAA Division III Outdoor Track and Field Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:46.64",
-      "place": "6"
+      "place": "6."
     },
     {
       "date": "MAY 21",
       "meet": "NCAA Division III Outdoor Track and Field Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:50.58",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAY 11",
       "meet": "Widener Final Qualifier",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:48.09",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "APR 18",
       "meet": "Paul Donahue Invitational",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:53.20",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "APR 4",
       "meet": "Sam Howell Invitational",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "14:21.86",
-      "place": "6"
+      "place": "6."
     },
     {
       "date": "MAR 13",
       "meet": "NCAA Division III Indoor Track and Field Championships",
-      "event": "Distance Medley Short Track",
+      "event": "Distance Medley sh",
       "time": "10:03.55",
-      "place": ""
+      "place": "12."
     },
     {
       "date": "FEB 13",
       "meet": "Boston University David Hemery Valentine Invitational",
       "event": "Mile sh",
       "time": "4:07.62",
-      "place": "2"
+      "place": "2."
     }
   ],
   "college": "Haverford",
   "weight": "x",
+  "lastHistorySynced": "2026-07-05",
   "coach": "Matthew Cohen",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",
   "id": "simon-lane",
-  "age": "20",
-  "lastSynced": "2026-07-06"
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [],
+    "2023": [],
+    "2024": [],
+    "2025": []
+  },
+  "age": "20"
 }

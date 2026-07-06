@@ -293,7 +293,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   overflow: hidden;
 }
 .rd-skim-btn {
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -713,6 +713,37 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   align-items: center;
   gap: 5px;
 }
+
+/* ── TRAIT PILLS ──────────────────────────────────────────── */
+.rd-traits { display: none; flex-wrap: wrap; gap: 4px; margin-top: 5px; }
+.rd-list-wrap.rd-deep     .rd-traits,
+.rd-list-wrap.rd-die-hard .rd-traits { display: flex; }
+
+.rd-row-stats { display: none; flex-direction: column; gap: 3px; margin-top: 7px; }
+.rd-list-wrap.rd-die-hard .rd-row-stats { display: flex; }
+
+.rd-row-stat { display: flex; align-items: baseline; gap: 8px; font-size: 11px; line-height: 1.3; }
+.rd-row-stat-label { font-family: var(--font-body); font-weight: 700; font-size: 9px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); min-width: 36px; }
+.rd-row-stat-val { font-family: var(--font-mono); font-size: 11px; color: var(--text); }
+.rd-row-stat-meet { font-family: var(--font-body); font-size: 10px; color: var(--muted); font-weight: 400; }
+
+.rd-trait {
+  font-family: var(--font-body);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border: 1px solid;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+.rd-trait--positive { color: #2a9d60; border-color: rgba(42,157,96,0.35); background: rgba(42,157,96,0.08); }
+.rd-trait--warning  { color: #cc3f30; border-color: rgba(204,63,48,0.35); background: rgba(204,63,48,0.08); }
+.rd-trait--caution  { color: #b07820; border-color: rgba(176,120,32,0.35); background: rgba(176,120,32,0.08); }
+.rd-trait--neutral  { color: var(--muted); border-color: var(--border); background: transparent; }
+
+.rd-dd-traits { grid-column: 1 / -1; padding-bottom: 4px; }
 
 .rd-right { text-align: right; }
 

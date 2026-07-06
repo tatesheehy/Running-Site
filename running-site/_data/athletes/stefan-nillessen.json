@@ -9,6 +9,7 @@
   "headlineKey": "x",
   "flag": "NL",
   "seasons": "x",
+  "lastSynced": "2026-07-06",
   "prs": [
     {
       "event": "400m",
@@ -75,145 +76,806 @@
   "country": "Netherlands",
   "results": [
     {
-      "date": "JUN 28",
-      "meet": "FBK Games",
-      "event": "15 Kilom Road",
-      "time": "47:39",
-      "place": ""
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "Mile",
+      "time": "3:50.50",
+      "place": "2."
     },
     {
       "date": "JUN 28",
-      "meet": "Runnersworld Utrecht Trackmeeting",
-      "event": "1500 m sh",
-      "time": "3:59.57",
-      "place": ""
-    },
-    {
-      "date": "JUN 28",
-      "meet": "Dutch Indoor Championships",
-      "event": "1500 m sh",
-      "time": "3:37.08",
-      "place": "1."
+      "meet": "Meeting de Paris",
+      "event": "1500 m",
+      "time": "3:32.45",
+      "place": "12."
     },
     {
       "date": "JUN 21",
       "meet": "FBK Games",
-      "event": "5 Kilom Road",
-      "time": "13:38",
-      "place": ""
-    },
-    {
-      "date": "JUN 21",
-      "meet": "Runners World Utrecht Trackmeeting 1",
-      "event": "1000 m",
-      "time": "1:50.58",
-      "place": ""
-    },
-    {
-      "date": "JUN 21",
-      "meet": "Dutch Championships",
-      "event": "800 m",
-      "time": "1:47.90",
-      "place": "1."
-    },
-    {
-      "date": "FEB 19",
-      "meet": "",
-      "event": "1000 m sh",
-      "time": "2:21.08",
-      "place": ""
-    },
-    {
-      "date": "FEB 19",
-      "meet": "FBK Games",
-      "event": "800 m",
-      "time": "1:48.09",
-      "place": ""
-    },
-    {
-      "date": "FEB 19",
-      "meet": "Dutch U20 Indoor Championships",
-      "event": "1500 m sh",
-      "time": "3:53.06",
-      "place": ""
-    },
-    {
-      "date": "FEB 19",
-      "meet": "FBK Games, FBK Stadium, Hengelo",
       "event": "800 m",
       "time": "1:48.09",
       "place": "10."
     },
     {
-      "date": "FEB 15",
-      "meet": "FBK Games",
-      "event": "5000 m",
-      "time": "13:23.22",
-      "place": ""
-    },
-    {
-      "date": "FEB 15",
+      "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
-      "event": "3000 m",
-      "time": "7:38.48",
-      "place": ""
-    },
-    {
-      "date": "FEB 15",
-      "meet": "Meeting Nikaia",
-      "event": "3000 m Steeplechase",
-      "time": "13:23.22",
-      "place": "12"
-    },
-    {
-      "date": "FEB 15",
-      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF, Arena Stade Couvert, Liévin (i) - Indoor Meeting",
       "event": "1500 m sh",
       "time": "3:33.64",
       "place": "4."
     },
     {
-      "date": "FEB 8",
-      "meet": "FBK Games",
-      "event": "1500 m",
-      "time": "3:32.45",
-      "place": ""
-    },
-    {
-      "date": "FEB 8",
-      "meet": "Meeting de Paris",
-      "event": "1500 m sh",
-      "time": "3:33.64",
-      "place": ""
-    },
-    {
-      "date": "FEB 8",
-      "meet": "Dutch U18 Championships",
-      "event": "3000 m",
-      "time": "8:52.45",
-      "place": ""
+      "date": "FEB 15",
+      "meet": "MONACO RUN",
+      "event": "5 Kilom Road",
+      "time": "13:38",
+      "place": "4."
     },
     {
       "date": "FEB 8",
       "meet": "INIT Indoor Meeting Karlsruhe",
       "event": "3000 m sh",
       "time": "7:38.48",
-      "place": ""
-    },
-    {
-      "date": "FEB 8",
-      "meet": "Meeting de Paris, Stade Charléty, Paris - Promotional Events",
-      "event": "1500 m",
-      "time": "3:32.45",
-      "place": "12."
+      "place": "1."
     }
   ],
+  "dob": "2003-01-02",
   "weight": "x",
+  "lastHistorySynced": "2026-07-05",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "stefan-nillessen",
-  "age": "23",
-  "lastSynced": "2026-07-06",
-  "dob": "2003-01-02"
+  "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "SEP 20",
+        "meet": "Wageningen Track Meeting 3, Wageningen",
+        "event": "1500m",
+        "time": "4:03.65",
+        "place": "2"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "Dutch U18 Championships, Alphen aan den Rijn",
+        "event": "3000m",
+        "time": "8:52.45",
+        "place": "1"
+      }
+    ],
+    "2020": [
+      {
+        "date": "SEP 13",
+        "meet": "Dutch U18 Championships",
+        "event": "1500m",
+        "time": "4:33.67",
+        "place": "1"
+      },
+      {
+        "date": "SEP 12",
+        "meet": "Dutch U18 Championships",
+        "event": "1500m",
+        "time": "4:15.84",
+        "place": "1"
+      },
+      {
+        "date": "AUG 15",
+        "meet": "Next Generation Athletics ism Nijmegen Atletiek",
+        "event": "1500m",
+        "time": "3:59.07",
+        "place": "2"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "KroeseWevers Trackmeeting Winterswijk, Winterswijk",
+        "event": "1500m",
+        "time": "4:02.87",
+        "place": "1"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Dutch U18 Indoor Championships",
+        "event": "3000m sh",
+        "time": "DNF",
+        "place": ""
+      }
+    ],
+    "2021": [
+      {
+        "date": "SEP 24",
+        "meet": "Wageningen Track Meeting 2",
+        "event": "400m",
+        "time": "51.00",
+        "place": "2"
+      },
+      {
+        "date": "SEP 24",
+        "meet": "Wageningen Track Meeting 2",
+        "event": "800m",
+        "time": "1:56.68",
+        "place": "5"
+      },
+      {
+        "date": "SEP 12",
+        "meet": "Dutch U20 Championships",
+        "event": "1500m",
+        "time": "4:05.66",
+        "place": "5"
+      },
+      {
+        "date": "SEP 11",
+        "meet": "Dutch U20 Championships",
+        "event": "1500m",
+        "time": "4:20.26",
+        "place": "1"
+      },
+      {
+        "date": "SEP 3",
+        "meet": "Runnersworld Utrecht Trackmeeting",
+        "event": "1500m",
+        "time": "3:59.57",
+        "place": "5"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "Runners World Utrecht Trackmeeting 1",
+        "event": "800m",
+        "time": "1:54.79",
+        "place": "6"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "Runners World Utrecht Trackmeeting 1",
+        "event": "1500m",
+        "time": "3:59.78",
+        "place": "6"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Twinson Xtra Energie Track Meeting",
+        "event": "800m",
+        "time": "1:56.02",
+        "place": "1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 11",
+        "meet": "28th SPAR European Cross Country Championships, Piemonte-La Mandria Park",
+        "event": "Cross Country U20 Race",
+        "time": "18:15",
+        "place": "15"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "World Athletics U20 Championships",
+        "event": "3000m",
+        "time": "8:16.34",
+        "place": "7"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "World Athletics U20 Championships",
+        "event": "1500m",
+        "time": "3:50.36",
+        "place": "10"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Dutch Championships",
+        "event": "1500m",
+        "time": "3:44.93",
+        "place": "6"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Dutch Championships",
+        "event": "1500m",
+        "time": "3:48.16",
+        "place": "2"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "Dutch U20 Championships",
+        "event": "1500m",
+        "time": "3:57.08",
+        "place": "1"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Dutch U20 Championships",
+        "event": "800m",
+        "time": "1:54.45",
+        "place": "1"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Dutch U20 Championships",
+        "event": "1500m",
+        "time": "4:10.85",
+        "place": "1"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Dutch U20 Championships",
+        "event": "800m",
+        "time": "1:54.60",
+        "place": "1"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Runnersworld Utrecht Track Meeting",
+        "event": "800m",
+        "time": "1:50.58",
+        "place": "1"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Runnersworld Utrecht Track Meeting",
+        "event": "3000m",
+        "time": "8:05.65",
+        "place": "1"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Next Generation Athletics",
+        "event": "1500m",
+        "time": "3:44.05",
+        "place": "1"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "Wageningen Track Meeting 1",
+        "event": "800m",
+        "time": "1:50.83",
+        "place": "1"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Ter Specke Bokaal",
+        "event": "3000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "APR 22",
+        "meet": "Runnersworld Utrecht Track Meeting",
+        "event": "1500m",
+        "time": "3:51.75",
+        "place": "2"
+      },
+      {
+        "date": "MAR 20",
+        "meet": "Alfa Laval Stevensloop, Nijmegen",
+        "event": "5K",
+        "time": "15:36",
+        "place": "13"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "FISU Cross Country Championships, Aveiro",
+        "event": "Cross Country",
+        "time": "31:30",
+        "place": "40"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "Dutch U20 Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:53.06",
+        "place": "1"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Dutch U20 Indoor Championships",
+        "event": "1500m sh",
+        "time": "4:08.47",
+        "place": "1"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "ECCC Cross Country, Oeiras",
+        "event": "Cross Country U20 Race",
+        "time": "19:43",
+        "place": "14"
+      }
+    ],
+    "2023": [
+      {
+        "date": "SEP 3",
+        "meet": "ISTAF",
+        "event": "1500m",
+        "time": "3:37.17",
+        "place": "11"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "Antrim Coast Half Marathon Classic Street Mile, Larne",
+        "event": "Mile",
+        "time": "4:01.0",
+        "place": "1"
+      },
+      {
+        "date": "AUG 12",
+        "meet": "BMW Louyet Meeting",
+        "event": "800m",
+        "time": "1:48.68",
+        "place": "1"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "Flanders Cup DCLA/Polsstokgala",
+        "event": "1500m",
+        "time": "3:41.58",
+        "place": "3"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "Dutch Championships",
+        "event": "1500m",
+        "time": "DNS",
+        "place": ""
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Dutch Championships",
+        "event": "800m",
+        "time": "1:49.11",
+        "place": "5"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Dutch Championships",
+        "event": "1500m",
+        "time": "3:51.17",
+        "place": "4"
+      },
+      {
+        "date": "JUL 28",
+        "meet": "Dutch Championships",
+        "event": "800m",
+        "time": "1:47.37",
+        "place": "1"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "European Athletics U23 Championships",
+        "event": "1500m",
+        "time": "3:43.35",
+        "place": "1"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "European Athletics U23 Championships",
+        "event": "1500m",
+        "time": "3:49.06",
+        "place": "4"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Next Generation Athletics",
+        "event": "1500m",
+        "time": "3:39.34",
+        "place": "3"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Gouden Spike",
+        "event": "800m",
+        "time": "1:50.34",
+        "place": "9"
+      },
+      {
+        "date": "JUN 4",
+        "meet": "FBK Games",
+        "event": "800m",
+        "time": "1:48.88",
+        "place": "4"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "IFAM Oordegem",
+        "event": "1500m",
+        "time": "3:42.40",
+        "place": "1"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "Dutch Cross Country Championships, Nijverdal",
+        "event": "Cross Country",
+        "time": "7:56",
+        "place": "2"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Dutch Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:13.70",
+        "place": "8"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Dutch Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:50.75",
+        "place": "5"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 15",
+        "meet": "Dutch Cross Country Championships",
+        "event": "Cross Country",
+        "time": "29:48",
+        "place": "6"
+      },
+      {
+        "date": "DEC 15",
+        "meet": "Dutch Cross Country Championships",
+        "event": "Cross Country",
+        "time": "7:25",
+        "place": "2"
+      },
+      {
+        "date": "DEC 8",
+        "meet": "30th SPAR European Cross Country Championships, Antalya",
+        "event": "Cross Country U23 Race",
+        "time": "18:52",
+        "place": "12"
+      },
+      {
+        "date": "DEC 8",
+        "meet": "30th SPAR European Cross Country Championships, Antalya",
+        "event": "Cross Country Relay",
+        "time": "18:12",
+        "place": "4"
+      },
+      {
+        "date": "NOV 24",
+        "meet": "International Warandecross Tilburg",
+        "event": "Cross Country",
+        "time": "31:05",
+        "place": "25"
+      },
+      {
+        "date": "NOV 9",
+        "meet": "Cardiff Cross Challenge",
+        "event": "Cross Country",
+        "time": "28:21",
+        "place": "18"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "Boris Hanžeković Memorial",
+        "event": "1000m",
+        "time": "2:15.78",
+        "place": "3"
+      },
+      {
+        "date": "SEP 5",
+        "meet": "Weltklasse Zürich",
+        "event": "1500m",
+        "time": "3:33.08",
+        "place": "10"
+      },
+      {
+        "date": "AUG 30",
+        "meet": "Stadioneröffnung Dresden",
+        "event": "800m",
+        "time": "1:47.76",
+        "place": "7"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Athletissima Lausanne",
+        "event": "1500m",
+        "time": "3:32.16",
+        "place": "8"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:30.75",
+        "place": "9"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:32.73",
+        "place": "5"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:36.77",
+        "place": "1"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "FBK Games",
+        "event": "1000m",
+        "time": "2:17.11",
+        "place": "4"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Dutch Championships",
+        "event": "1500m",
+        "time": "3:35.80",
+        "place": "1"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Dutch Championships",
+        "event": "1500m",
+        "time": "3:50.33",
+        "place": "1"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "6th Irena Szewińska Memorial",
+        "event": "1500m",
+        "time": "3:37.03",
+        "place": "2"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Paavo Nurmi Games",
+        "event": "1500m",
+        "time": "3:34.32",
+        "place": "3"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "Bislett Games pre-programme",
+        "event": "1500m",
+        "time": "3:36.93",
+        "place": "1"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "IFAM Outdoor",
+        "event": "1500m",
+        "time": "3:36.60",
+        "place": "5"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Next Generation Athletics",
+        "event": "1500m",
+        "time": "3:36.16",
+        "place": "1"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Puma Nitro Lange Laufnacht",
+        "event": "1500m",
+        "time": "3:36.32",
+        "place": "2"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Meeting National Est Lyonnais",
+        "event": "800m",
+        "time": "1:48.48",
+        "place": "1"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Dutch Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:47.31",
+        "place": "7"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Dutch Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:50.67",
+        "place": "1"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "MONACO RUN 5 km, Monaco",
+        "event": "5K",
+        "time": "14:10",
+        "place": "21"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "IFAM Gent Indoor",
+        "event": "1000m sh",
+        "time": "2:21.08",
+        "place": "4"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "14e AV PEC 1910 Indoor",
+        "event": "1500m sh",
+        "time": "3:43.07",
+        "place": "4"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 14",
+        "meet": "31st SPAR European Cross Country Championships, Lagoa",
+        "event": "Cross Country U23 Race",
+        "time": "18:07",
+        "place": "7"
+      },
+      {
+        "date": "NOV 30",
+        "meet": "International Warandecross Tilburg",
+        "event": "Cross Country",
+        "time": "30:09",
+        "place": "3"
+      },
+      {
+        "date": "NOV 16",
+        "meet": "NN Zevenheuvelenloop, Nijmegen",
+        "event": "15 Kilometres Road",
+        "time": "47:39",
+        "place": "51"
+      },
+      {
+        "date": "SEP 15",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:37.12",
+        "place": "8"
+      },
+      {
+        "date": "SEP 14",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:36.28",
+        "place": "5"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "1500m",
+        "time": "3:34.65",
+        "place": "9"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Dutch Championships",
+        "event": "800m",
+        "time": "1:47.90",
+        "place": "1"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "Dutch Championships",
+        "event": "800m",
+        "time": "1:50.32",
+        "place": "2"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "European Athletics U23 Championships",
+        "event": "3000m SC",
+        "time": "8:20.48",
+        "place": "2"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "European Athletics U23 Championships",
+        "event": "1500m",
+        "time": "3:44.87",
+        "place": "1"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "European Athletics U23 Championships",
+        "event": "3000m SC",
+        "time": "8:42.05",
+        "place": "3"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "European Athletics U23 Championships",
+        "event": "1500m",
+        "time": "3:43.90",
+        "place": "1"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:49.53",
+        "place": "13"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "European Athletics Team Championships First Division",
+        "event": "1500m",
+        "time": "3:39.97",
+        "place": "2"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Paris",
+        "event": "1500m",
+        "time": "3:29.23",
+        "place": "5"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Oslo Bislett Games",
+        "event": "Mile",
+        "time": "3:49.02",
+        "place": "3"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "FBK Games",
+        "event": "800m",
+        "time": "1:45.09",
+        "place": "6"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "Meeting Nikaia",
+        "event": "5000m",
+        "time": "13:23.22",
+        "place": "8"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "Next Generation Athletics",
+        "event": "3000m SC",
+        "time": "8:32.78",
+        "place": "1"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "European Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:55.83",
+        "place": "8"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "European Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:56.23",
+        "place": "4"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Dutch Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:37.08",
+        "place": "1"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Dutch Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:52.35",
+        "place": "1"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "Mile sh",
+        "time": "3:52.70",
+        "place": "2"
+      },
+      {
+        "date": "FEB 7",
+        "meet": "INIT Indoor Meeting Karlsruhe",
+        "event": "3000m sh",
+        "time": "7:37.10",
+        "place": "1"
+      }
+    ]
+  },
+  "age": "23"
 }

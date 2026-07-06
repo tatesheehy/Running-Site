@@ -9,6 +9,7 @@
   "headlineKey": "x",
   "flag": "NZ",
   "seasons": "x",
+  "lastSynced": "2026-07-06",
   "prs": [
     {
       "event": "800m",
@@ -53,35 +54,35 @@
     {
       "date": "MAR 5",
       "meet": "New Zealand Track & Field Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:41.43",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "FEB 22",
       "meet": "Saucony Battle for Boston",
-      "event": "3000m sh",
+      "event": "3000 m sh",
       "time": "7:43.16",
-      "place": "2"
+      "place": "2."
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "1500 m sh",
+      "time": "3:34.66",
+      "place": ""
     },
     {
       "date": "FEB 14",
       "meet": "Sound Invite",
       "event": "Mile sh",
       "time": "3:52.46",
-      "place": "7"
-    },
-    {
-      "date": "FEB 14",
-      "meet": "Sound Invite",
-      "event": "1500m sh",
-      "time": "3:34.66",
-      "place": ""
+      "place": "7."
     },
     {
       "date": "JAN 31",
       "meet": "Boston University John Thomas Terrier Classic",
-      "event": "1500m",
+      "event": "1500 m sh",
       "time": "3:33.25",
       "place": ""
     },
@@ -90,29 +91,216 @@
       "meet": "Boston University John Thomas Terrier Classic",
       "event": "Mile sh",
       "time": "3:48.88",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "JAN 24",
       "meet": "Pak'n Save Cooks International Classic",
       "event": "Mile",
       "time": "3:53.83",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "JAN 17",
       "meet": "Allan & Sylvia Potts Classic",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:45.86",
-      "place": "1"
+      "place": "1."
     }
   ],
+  "dob": "2009-04-12",
   "weight": "x",
+  "lastHistorySynced": "2026-07-05",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",
   "id": "sam-ruthe",
-  "age": "17",
-  "lastSynced": "2026-07-06",
-  "dob": "2009-04-12"
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [],
+    "2023": [],
+    "2024": [
+      {
+        "date": "DEC 14",
+        "meet": "On Track Nights: Zatopek: 10",
+        "event": "3000m",
+        "time": "8:06.56",
+        "place": "13"
+      },
+      {
+        "date": "DEC 8",
+        "meet": "New Zealand Secondary Schools Championships",
+        "event": "800m",
+        "time": "1:51.23",
+        "place": "1"
+      },
+      {
+        "date": "DEC 8",
+        "meet": "New Zealand Secondary Schools Championships",
+        "event": "1500m",
+        "time": "4:06.10",
+        "place": "1"
+      },
+      {
+        "date": "DEC 7",
+        "meet": "New Zealand Secondary Schools Championships",
+        "event": "1500m",
+        "time": "3:49.29",
+        "place": "1"
+      },
+      {
+        "date": "NOV 20",
+        "meet": "ACA Race Night #2 Fast and Furious Under Lights",
+        "event": "3000m",
+        "time": "8:09.68",
+        "place": "1"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "New Zealand U16 Championships",
+        "event": "1500m",
+        "time": "3:59.03",
+        "place": "1"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "New Zealand U16 Championships",
+        "event": "800m",
+        "time": "DQ",
+        "place": ""
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Porritt Classic",
+        "event": "3000m",
+        "time": "8:33.63",
+        "place": "2"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 20",
+        "meet": "Night of 5's",
+        "event": "5000m",
+        "time": "13:40.48",
+        "place": "2"
+      },
+      {
+        "date": "DEC 7",
+        "meet": "New Zealand Secondary Schools Track& Field Championships",
+        "event": "800m",
+        "time": "1:46.81",
+        "place": "1"
+      },
+      {
+        "date": "DEC 7",
+        "meet": "New Zealand Secondary Schools Track& Field Championships",
+        "event": "1500m",
+        "time": "3:49.47",
+        "place": "1"
+      },
+      {
+        "date": "DEC 6",
+        "meet": "New Zealand Secondary Schools Track& Field Championships",
+        "event": "1500m",
+        "time": "3:38.62",
+        "place": "1"
+      },
+      {
+        "date": "NOV 19",
+        "meet": "ACA Race Night #2",
+        "event": "800m",
+        "time": "1:49.59",
+        "place": "1"
+      },
+      {
+        "date": "NOV 19",
+        "meet": "ACA Race Night #2",
+        "event": "1500m",
+        "time": "3:46.14",
+        "place": "1"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Sunset Tour, Jack Kemp Stadium",
+        "event": "1500m",
+        "time": "3:39.17",
+        "place": "5"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "4:00.65",
+        "place": "13"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Maurie Plant Meet",
+        "event": "1500m",
+        "time": "3:40.12",
+        "place": "7"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "New Zealand Championships",
+        "event": "1500m",
+        "time": "3:44.31",
+        "place": "1"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "New Zealand Championships",
+        "event": "1500m",
+        "time": "4:05.53",
+        "place": "2"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Porritt Classic",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Sir Graeme Douglas International",
+        "event": "1500m",
+        "time": "3:41.25",
+        "place": "2"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Potts Classic",
+        "event": "3000m",
+        "time": "7:56.18",
+        "place": "1"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Capital Classic",
+        "event": "800m",
+        "time": "1:50.57",
+        "place": "3"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Cooks Classic",
+        "event": "Mile",
+        "time": "4:01.72",
+        "place": "4"
+      },
+      {
+        "date": "JAN 11",
+        "meet": "AAI Track and Field Championships and McKinnon Shield 7",
+        "event": "Mile",
+        "time": "4:10.43",
+        "place": "1"
+      }
+    ]
+  },
+  "age": "17"
 }
