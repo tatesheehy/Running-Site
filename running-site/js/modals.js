@@ -409,28 +409,11 @@ function openAthleteCard(athleteId, rank) {
         </div>
       </div>
       <div class="card-right">
-        ${a.headline ? `
-          <div class="card-headline">
-            <span class="hl-key">${a.headline.keyWord}</span>
-            <span class="hl-rest"> ${a.headline.rest}</span>
-          </div>
-        ` : ''}
         ${traitsHtml ? `<div class="card-traits">${traitsHtml}</div>` : ''}
         ${buildHonoursHtml(a.ncaaTitle ? [...(Array.isArray(a.ncaaTitle) ? a.ncaaTitle : [a.ncaaTitle]).map(ev => ({ short: 'NCAA', discipline: ev, place: 1, year: '' })), ...(a.honours || [])] : a.honours)}
         <div class="card-honours-placeholder" style="${a.honours === undefined && !a.ncaaTitle && a.waUrl ? '' : 'display:none'}"></div>
         ${buildSeasonTimeline(a)}
         ${buildResultsSection(a)}
-        <div class="card-analysis-label">Analysis</div>
-        ${an.reviewTitle ? `
-          <div class="card-analysis-section">
-            <p><strong>${an.reviewTitle}:</strong> ${an.reviewBody || ''}</p>
-          </div>
-        ` : ''}
-        ${an.questionTitle ? `
-          <div class="card-analysis-section">
-            <p><strong>${an.questionTitle}:</strong> <em>${an.questionBody || ''}</em></p>
-          </div>
-        ` : ''}
         ${(() => {
           const similar = getSimilarAthletes(a);
           if (!similar.length) return '';

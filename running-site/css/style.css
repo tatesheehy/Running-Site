@@ -7,13 +7,13 @@
 @import "navbar.css";
 @import "home.css?v=12";
 @import "articles.css";
-@import "rankings.css?v=3";
+@import "rankings.css?v=11";
 @import "athletes.css?v=3";
 @import "modals.css";
 @import "about.css";
 @import "h2h.css";
 @import "account.css";
-@import "utilities.css?v=2";
+@import "utilities.css?v=3";
 @import "responsive.css";
 
 /* Override with fresh values — force-busts import cache */

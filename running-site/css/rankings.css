@@ -311,7 +311,21 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
 .rd-skim-btn:hover:not(.rd-skim-btn--active) { color: var(--text); }
 
 /* Deep dive mode: rows are clickable to expand inline */
-.rd-list-wrap.rd-deep .rd-row { cursor: pointer; }
+.rd-list-wrap.rd-deep .rd-avatar { display: none; }
+.rd-list-wrap.rd-deep .rd-row {
+  cursor: pointer;
+  grid-template-columns: 64px 1fr 160px 85px 95px;
+}
+.rd-list-wrap.rd-deep .rd-info {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 10px;
+}
+.rd-list-wrap.rd-deep .rd-country {
+  font-size: 12px;
+  color: var(--muted);
+}
 .rd-list-wrap.rd-deep .rd-row.dd-open { border-bottom: none; }
 
 /* Inline deep-dive panel */
@@ -448,11 +462,11 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
 .rd-card-rank.bronze { color: #fff; background: #8a5a28; }
 .rd-card-rank .rd-crown {
   position: absolute;
-  top: -14px;
+  top: -12px;
   left: 50%;
   transform: translateX(-50%);
-  width: 20px;
-  height: 13px;
+  width: 40px;
+  height: 16px;
   display: block;
   pointer-events: none;
 }
@@ -642,8 +656,8 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
 
 .rd-rank {
   font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
   color: var(--muted);
   line-height: 1;
   width: 44px;
@@ -651,20 +665,19 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  background: var(--bg-light);
+  background: transparent;
   position: relative;
 }
-.rd-rank.gold   { color: #fff; background: #111; box-shadow: 0 0 0 2px rgba(0,0,0,0.12); }
-.rd-rank.silver { color: #fff; background: #6e6e6e; box-shadow: 0 0 0 2px rgba(160,160,160,0.2); }
-.rd-rank.bronze { color: #fff; background: #8a5a28; box-shadow: 0 0 0 2px rgba(176,117,64,0.2); }
+.rd-rank.gold   { background: transparent; color: #E2A800; font-size: 22px; font-weight: 700; }
+.rd-rank.silver { background: transparent; color: #ADADAD; font-size: 22px; font-weight: 700; }
+.rd-rank.bronze { background: transparent; color: #C07838; font-size: 22px; font-weight: 700; }
 .rd-crown {
   position: absolute;
-  top: -14px;
+  top: -12px;
   left: 50%;
   transform: translateX(-50%);
-  width: 20px;
-  height: 13px;
+  width: 40px;
+  height: 16px;
   display: block;
   pointer-events: none;
 }

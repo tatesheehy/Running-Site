@@ -118,5 +118,4 @@
 .h2h-lb-avatar, .h2h-map-avatar, .h2h-photo-ph, .h2h-rivalries-dot,
 .h2h-rivalry-avatar, .rd-avatar, .rd-momentum-marker,
 .search-ath-avatar, .nav-user-dot, .tl-dot, .flag-emoji,
-.aotw-label::before, .archive-index-card::after, .ath-fav-btn,
-.rd-rank { border-radius: 50% !important; }
+.aotw-label::before, .archive-index-card::after, .ath-fav-btn { border-radius: 50% !important; }
