@@ -149,9 +149,10 @@ function buildRankingsHub() {
   const cardsHtml = RANKINGS_EVENTS.map((ev, i) => {
     const count = (ev.rows || []).length;
     const num = String(i + 1).padStart(2, '0');
-    const photoStyle = ev.photo ? `style="background-image:url('${ev.photo}');"` : '';
+    const hasPhoto = !!ev.photo;
+    const photoStyle = hasPhoto ? `style="background-image:url('${ev.photo}');"` : '';
     return `
-      <div class="ranking-card" onclick="goTo('rankings.html?event=${encodeURIComponent(ev.name)}')">
+      <div class="ranking-card${hasPhoto ? ' ranking-card--visual' : ''}" onclick="goTo('rankings.html?event=${encodeURIComponent(ev.name)}')">
         <div class="ranking-card-left">
           <div class="ranking-card-num">${num}</div>
           <div class="ranking-card-event">${ev.name}</div>
@@ -703,6 +704,10 @@ function buildRankingsDetail(eventName, opts = {}) {
             </div>
           </div>
         </div>
+        ${!archiveYear ? (ev?.photo
+          ? `<div class="rd-event-banner" style="background-image:url('${ev.photo}')"></div>`
+          : `<div class="rd-event-banner rd-event-banner--empty"></div>`)
+          : ''}
         ${filterHtml}
         <div id="rd-col-sentinel"></div>
         <div class="rd-col-labels" style="${isGrid ? 'display:none' : ''}">
