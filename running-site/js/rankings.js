@@ -704,10 +704,7 @@ function buildRankingsDetail(eventName, opts = {}) {
             </div>
           </div>
         </div>
-        ${!archiveYear ? (ev?.photo
-          ? `<div class="rd-event-banner" style="background-image:url('${ev.photo}')"></div>`
-          : `<div class="rd-event-banner rd-event-banner--empty"></div>`)
-          : ''}
+        ${ev?.photo && !archiveYear ? `<div class="rd-event-banner" style="background-image:url('${ev.photo}')"></div>` : ''}
         ${filterHtml}
         <div id="rd-col-sentinel"></div>
         <div class="rd-col-labels" style="${isGrid ? 'display:none' : ''}">
