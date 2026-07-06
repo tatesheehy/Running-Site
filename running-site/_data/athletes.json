@@ -21462,7 +21462,9 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-07-05"
+      "lastHistorySynced": "2026-07-05",
+      "dob": "2004-08-31",
+      "lastSynced": "2026-07-05"
     },
     {
       "photoBackground": "#111111",
@@ -83369,7 +83371,7 @@
       "flag": "MA",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-07-04",
+      "lastSynced": "2026-07-05",
       "prs": [
         {
           "event": "800m",
@@ -83402,7 +83404,29 @@
       "ncaa": false,
       "club": "x",
       "country": "Morocco",
-      "results": [],
+      "results": [
+        {
+          "date": "APR 25",
+          "meet": "20 km de Lausanne - 5km",
+          "event": "5 Kilom Road",
+          "time": "13:44",
+          "place": "3."
+        },
+        {
+          "date": "APR 4",
+          "meet": "Urban Trail de Lille - 5 et 10km",
+          "event": "10 Kilom Road",
+          "time": "28:20",
+          "place": "35."
+        },
+        {
+          "date": "FEB 15",
+          "meet": "Tamesna 10K",
+          "event": "10 Kilom Road",
+          "time": "28:31",
+          "place": "1."
+        }
+      ],
       "dob": "1997-10-26",
       "college": "",
       "weight": "x",
