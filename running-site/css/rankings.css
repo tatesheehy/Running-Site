@@ -285,6 +285,93 @@
 a.rd-countdown-pill { cursor: pointer; }
 a.rd-countdown-pill:hover { opacity: 0.85; }
 
+/* ── SKIM / DEEP DIVE TOGGLE ─────────────────────────────── */
+.rd-skim-toggle {
+  display: inline-flex;
+  align-items: center;
+  border: 1.5px solid var(--border);
+  overflow: hidden;
+}
+.rd-skim-btn {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border: none;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s;
+  white-space: nowrap;
+}
+.rd-skim-btn + .rd-skim-btn { border-left: 1.5px solid var(--border); }
+.rd-skim-btn--active { background: var(--dark); color: #fff; }
+.rd-skim-btn:hover:not(.rd-skim-btn--active) { color: var(--text); }
+
+/* Deep dive mode: rows are clickable to expand inline */
+.rd-list-wrap.rd-deep .rd-row { cursor: pointer; }
+.rd-list-wrap.rd-deep .rd-row.dd-open { border-bottom: none; }
+
+/* Inline deep-dive panel */
+.rd-dd-panel {
+  display: none;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-light);
+}
+.rd-dd-panel.open { display: flex; }
+.rd-dd-panel-photo {
+  width: 120px;
+  min-width: 120px;
+  background-size: cover;
+  background-position: top center;
+  background-color: #111;
+}
+.rd-dd-panel-body {
+  flex: 1;
+  padding: 20px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 32px;
+}
+.rd-dd-panel-prs { display: flex; flex-direction: column; gap: 4px; }
+.rd-dd-panel-label {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+.rd-dd-pr-row { display: flex; justify-content: space-between; gap: 16px; font-size: 13px; }
+.rd-dd-pr-event { color: var(--muted); }
+.rd-dd-pr-time { font-weight: 600; font-family: var(--font-mono); color: var(--text); }
+.rd-dd-panel-analysis { font-size: 13px; line-height: 1.6; color: var(--muted); }
+.rd-dd-panel-analysis strong { color: var(--text); }
+.rd-dd-headline {
+  grid-column: 1 / -1;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+  margin-bottom: 4px;
+}
+.rd-dd-headline .hl-key { color: var(--accent); }
+.rd-dd-close {
+  align-self: flex-start;
+  padding: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1;
+}
+.rd-dd-close:hover { color: var(--text); }
+
 .rd-view-toggle {
   display: inline-flex;
   align-items: center;

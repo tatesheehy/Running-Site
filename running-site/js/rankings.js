@@ -316,8 +316,36 @@ function buildRankingRow(r, rank) {
   const seasonBest = _bestTime(r, a, _rdCurrentEvent);
   const meet = (r.meet && r.meet !== 'x') ? r.meet : '';
   const sbSecs = isFinite(_parseTimeSecs(seasonBest)) ? _parseTimeSecs(seasonBest) : '';
+  // Build inline deep-dive panel
+  const prsHtml = a ? (a.prs || []).slice(0, 5).map(pr =>
+    `<div class="rd-dd-pr-row"><span class="rd-dd-pr-event">${pr.event}</span><span class="rd-dd-pr-time">${pr.time}</span></div>`
+  ).join('') : `<div class="rd-dd-pr-row"><span class="rd-dd-pr-event">Season Best</span><span class="rd-dd-pr-time">${seasonBest || '—'}</span></div>`;
+  const an = a?.analysis || {};
+  const analysisHtml = an.reviewTitle
+    ? `<p><strong>${an.reviewTitle}:</strong> ${an.reviewBody || ''}</p>`
+    : (an.questionTitle ? `<p><strong>${an.questionTitle}:</strong> <em>${an.questionBody || ''}</em></p>` : '<p class="rd-dd-panel-analysis">No analysis available.</p>');
+  const headlineHtml = a?.headline
+    ? `<div class="rd-dd-headline"><span class="hl-key">${a.headline.keyWord}</span><span> ${a.headline.rest}</span></div>`
+    : '';
+  const ddPanel = `
+    <div class="rd-dd-panel">
+      <div class="rd-dd-panel-photo" style="background-color:${photoBg};background-image:url('${a?.photo || photo}')"></div>
+      <div class="rd-dd-panel-body">
+        ${headlineHtml}
+        <div class="rd-dd-panel-prs">
+          <div class="rd-dd-panel-label">Personal Records</div>
+          ${prsHtml}
+        </div>
+        <div class="rd-dd-panel-analysis">
+          <div class="rd-dd-panel-label">Analysis</div>
+          ${analysisHtml}
+        </div>
+      </div>
+      <button class="rd-dd-close" onclick="event.stopPropagation();this.closest('.rd-dd-panel').classList.remove('open');this.closest('.rd-dd-panel').previousElementSibling.classList.remove('dd-open')">×</button>
+    </div>`;
+
   return `
-    <div class="rd-row${rank <= 3 && rank != null ? ' rd-row--podium' : ''}" data-country="${country}" data-athlete-id="${r.athleteId || ''}" data-sort-rank="${rank || 999}" data-sort-name="${name}" data-sort-sb="${sbSecs}" data-sort-pb="${sbSecs}" onclick="openRankingRow('${clickData}')">
+    <div class="rd-row${rank <= 3 && rank != null ? ' rd-row--podium' : ''}" data-country="${country}" data-athlete-id="${r.athleteId || ''}" data-sort-rank="${rank || 999}" data-sort-name="${name}" data-sort-sb="${sbSecs}" data-sort-pb="${sbSecs}" data-click-data="${clickData}" onclick="openRankingRowDeepDive(this)">
       ${rank != null ? `<div class="rd-rank ${rankClass}">${rank <= 3 ? '<svg class="rd-crown" viewBox="0 0 24 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M0 13 L4 3 L9 9 L12 0 L15 9 L20 3 L24 13 L24 15 L0 15 Z"/></svg>' : ''}${rank}</div>` : '<div class="rd-rank-empty"></div>'}
       <div class="rd-avatar" style="background-color:${photoBg};background-image:url('${photo}');background-size:cover;background-position:top center"></div>
       <div class="rd-info">
@@ -331,7 +359,7 @@ function buildRankingRow(r, rank) {
         <div class="rd-time">${seasonBest}</div>
       </div>
     </div>
-  `;
+    ${ddPanel}`;
 }
 
 function buildRankingCard(r, rank) {
@@ -359,6 +387,39 @@ function buildRankingCard(r, rank) {
     </div>
   `;
 }
+
+window.setRdSkim = function(mode) {
+  const wrap = document.querySelector('.rd-list-wrap');
+  if (!wrap) return;
+  // Close any open panels when switching modes
+  wrap.querySelectorAll('.rd-dd-panel.open').forEach(p => p.classList.remove('open'));
+  wrap.querySelectorAll('.rd-row.dd-open').forEach(r => r.classList.remove('dd-open'));
+  wrap.classList.toggle('rd-deep', mode === 'deep');
+  document.getElementById('rd-skim-skim')?.classList.toggle('rd-skim-btn--active', mode === 'skim');
+  document.getElementById('rd-skim-deep')?.classList.toggle('rd-skim-btn--active', mode === 'deep');
+};
+
+window.openRankingRowDeepDive = function(row) {
+  const wrap = row.closest('.rd-list-wrap');
+  if (!wrap?.classList.contains('rd-deep')) {
+    // Not in deep dive — use normal modal
+    const encoded = row.dataset.clickData || row.getAttribute('data-click-data');
+    if (encoded) openRankingRow(encoded);
+    return;
+  }
+  // Find the panel — it's the next sibling div with class rd-dd-panel
+  let panel = row.nextElementSibling;
+  while (panel && !panel.classList.contains('rd-dd-panel')) panel = panel.nextElementSibling;
+  if (!panel) return;
+  const isOpen = panel.classList.contains('open');
+  // Close all others
+  wrap.querySelectorAll('.rd-dd-panel.open').forEach(p => p.classList.remove('open'));
+  wrap.querySelectorAll('.rd-row.dd-open').forEach(r => r.classList.remove('dd-open'));
+  if (!isOpen) {
+    panel.classList.add('open');
+    row.classList.add('dd-open');
+  }
+};
 
 window.filterRankings = function(country) {
   document.querySelectorAll('#main .rd-row, #main .rd-card').forEach(el => {
@@ -569,6 +630,10 @@ function buildRankingsDetail(eventName, opts = {}) {
           <div class="rd-header-actions">
             ${athleteCount ? `<span class="rd-header-count">${athleteCount} athletes ranked</span>` : ''}
             <div class="rd-header-btns">
+              <div class="rd-skim-toggle" id="rd-skim-toggle">
+                <button class="rd-skim-btn rd-skim-btn--active" id="rd-skim-skim" onclick="setRdSkim('skim')">Skim</button>
+                <button class="rd-skim-btn" id="rd-skim-deep" onclick="setRdSkim('deep')">Deep Dive</button>
+              </div>
               <button class="rd-compare-btn" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">⇌ Compare Athletes</button>
               <div class="rd-view-toggle">
                 <button class="rd-view-btn${!isGrid ? ' rd-view-btn--active' : ''}" onclick="toggleRdView('list')" title="List view">
