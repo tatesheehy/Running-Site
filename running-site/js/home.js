@@ -90,29 +90,17 @@ function buildHome() {
       <div class="fp-ticks">${tickerItems.join('<span class="fp-tick-sep">·</span>')}</div>
     </div>` : '';
 
-  // Hero
-  const heroHtml = heroItem ? `
-    <div class="fp-hero" onclick="goTo('${heroDest}')" role="button" tabindex="0">
-      <div class="fp-hero-eyebrow">${heroItem.category || 'Featured'}${heroItem.date ? ` · ${heroItem.date}` : ''}</div>
-      <h1 class="fp-hero-hed">${heroItem.title}</h1>
-      ${heroItem.excerpt ? `<p class="fp-hero-dek">${heroItem.excerpt}</p>` : ''}
-      <span class="fp-hero-read">Read ${heroItem.type === 'rankings' ? 'rankings' : 'article'} →</span>
-    </div>` : '';
-
-  // Secondary stories
-  const secondaryHtml = secondary.length ? `
-    <div class="fp-secondary">
-      ${secondary.map(a => {
-        const dest = a.type === 'rankings'
-          ? `rankings.html${a.rankingsEvent ? '?event=' + encodeURIComponent(a.rankingsEvent) : ''}`
-          : `article.html?id=${a.id}`;
-        return `<div class="fp-sec-item" onclick="goTo('${dest}')" role="button" tabindex="0">
-          <div class="fp-sec-tag">${a.category || 'Article'}</div>
-          <div class="fp-sec-hed">${a.title}</div>
-          ${a.excerpt ? `<div class="fp-sec-dek">${a.excerpt.slice(0, 90)}${a.excerpt.length > 90 ? '…' : ''}</div>` : ''}
-        </div>`;
-      }).join('')}
-    </div>` : '';
+  // Secondary rail items
+  const railHtml = secondary.map(a => {
+    const dest = a.type === 'rankings'
+      ? `rankings.html${a.rankingsEvent ? '?event=' + encodeURIComponent(a.rankingsEvent) : ''}`
+      : `article.html?id=${a.id}`;
+    return `<div class="fp-rail-item" onclick="goTo('${dest}')" role="button" tabindex="0">
+      <div class="fp-rail-tag">${a.category || 'Article'}</div>
+      <div class="fp-rail-hed">${a.title}</div>
+      ${a.excerpt ? `<div class="fp-rail-dek">${a.excerpt.slice(0, 80)}${a.excerpt.length > 80 ? '…' : ''}</div>` : ''}
+    </div>`;
+  }).join('');
 
   // Rankings strip
   const firstEvent = Object.keys(RANKINGS)[0] || '';
@@ -134,8 +122,19 @@ function buildHome() {
     <div class="fp-wrap">
       ${tickerHtml}
       <div class="fp-body">
-        ${heroHtml}
-        ${secondaryHtml}
+        <div class="fp-top">
+          ${heroItem ? `
+          <div class="fp-hero" onclick="goTo('${heroDest}')" role="button" tabindex="0">
+            ${heroItem.image ? `<div class="fp-hero-img-wrap">${imgHTML(heroItem.image, heroItem.title, heroItem.imagePosition, 16/9, 'fp-hero-img')}</div>` : ''}
+            <div class="fp-hero-text">
+              <div class="fp-hero-eyebrow">${heroItem.category || 'Featured'}${heroItem.date ? ` · ${heroItem.date}` : ''}</div>
+              <h1 class="fp-hero-hed">${heroItem.title}</h1>
+              ${heroItem.excerpt ? `<p class="fp-hero-dek">${heroItem.excerpt}</p>` : ''}
+              <span class="fp-hero-read">Read ${heroItem.type === 'rankings' ? 'rankings' : 'article'} →</span>
+            </div>
+          </div>` : ''}
+          ${railHtml ? `<div class="fp-rail">${railHtml}</div>` : ''}
+        </div>
         ${rankingsHtml}
       </div>
     </div>`;

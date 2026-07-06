@@ -19,9 +19,9 @@
   --font-body: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
   --font-mono: 'Space Mono', monospace;
   --max-width: 1440px;
-  --radius-sm: 4px;
-  --radius: 6px;
-  --radius-lg: 10px;
+  --radius-sm: 0px;
+  --radius: 0px;
+  --radius-lg: 0px;
 }
 
 /* ── DARK MODE ────────────────────────────────────────────── */

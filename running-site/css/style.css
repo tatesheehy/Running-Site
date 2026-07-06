@@ -5,15 +5,15 @@
 
 @import "base.css";
 @import "navbar.css";
-@import "home.css?v=2";
+@import "home.css?v=12";
 @import "articles.css";
 @import "rankings.css";
-@import "athletes.css?v=2";
+@import "athletes.css?v=3";
 @import "modals.css";
 @import "about.css";
 @import "h2h.css";
 @import "account.css";
-@import "utilities.css";
+@import "utilities.css?v=2";
 @import "responsive.css";
 
 /* Override with fresh values — force-busts import cache */
