@@ -148,13 +148,15 @@ function buildRankingsPage() {
 function buildRankingsHub() {
   const cardsHtml = RANKINGS_EVENTS.map((ev, i) => {
     const count = (ev.rows || []).length;
-    const num = String(i + 1).padStart(2, '0');
     const hasPhoto = !!ev.photo;
+    const isActive = count > 0;
     const photoStyle = hasPhoto ? `style="background-image:url('${ev.photo}');"` : '';
+    const ghostNum = ev.name.replace(/[^0-9]/g, '') || ev.name;
     return `
-      <div class="ranking-card${hasPhoto ? ' ranking-card--visual' : ''}" onclick="goTo('rankings.html?event=${encodeURIComponent(ev.name)}')">
+      <div class="ranking-card${hasPhoto ? ' ranking-card--visual' : ''}${isActive ? ' ranking-card--active' : ''}" onclick="goTo('rankings.html?event=${encodeURIComponent(ev.name)}')">
+        <div class="ranking-card-ghost">${ghostNum}</div>
         <div class="ranking-card-left">
-          <div class="ranking-card-num">${num}</div>
+          <div class="ranking-card-badge${isActive ? ' ranking-card-badge--active' : ''}">${isActive ? 'Ranked' : 'Coming Soon'}</div>
           <div class="ranking-card-event">${ev.name}</div>
           ${ev.description ? `<div class="ranking-card-desc">${ev.description}</div>` : ''}
           <div class="ranking-card-cta">${count ? `${count} athletes ranked` : 'Under construction'} &rarr;</div>
@@ -168,14 +170,14 @@ function buildRankingsHub() {
     <div class="container">
       <div class="rankings-hub">
         <div class="rankings-page-header">
-          <div class="rankings-page-header-left">
-            <h1 class="rankings-page-title">${RANKINGS_YEAR} Rankings</h1>
-            ${SITE.rankingsIntro ? `<p class="rankings-page-intro">${SITE.rankingsIntro}</p>` : ''}
+          <div class="rankings-page-header-main">
+            <h1 class="rankings-page-title"><span class="rankings-page-title-eyebrow">${RANKINGS_YEAR} Outdoor Season</span>Rankings</h1>
+            <div class="rankings-hub-actions">
+              <button class="h2h-hub-btn" onclick="openH2H()">⇌ Compare Head to Head</button>
+              ${RANKINGS_ARCHIVE.length ? `<a href="rankings.html?view=archive" class="rankings-archive-link"><svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:-2px;margin-right:6px"><path d="M1 2.5C1 1.67 1.67 1 2.5 1H5.5L7 3H12.5C13.33 3 14 3.67 14 4.5V10.5C14 11.33 13.33 12 12.5 12H2.5C1.67 12 1 11.33 1 10.5V2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>Rankings Archive &rarr;</a>` : ''}
+            </div>
           </div>
-          <div class="rankings-hub-actions">
-            <button class="h2h-hub-btn" onclick="openH2H()">⇌ Compare Head to Head</button>
-            ${RANKINGS_ARCHIVE.length ? `<a href="rankings.html?view=archive" class="rankings-archive-link"><svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:-2px;margin-right:6px"><path d="M1 2.5C1 1.67 1.67 1 2.5 1H5.5L7 3H12.5C13.33 3 14 3.67 14 4.5V10.5C14 11.33 13.33 12 12.5 12H2.5C1.67 12 1 11.33 1 10.5V2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>Rankings Archive &rarr;</a>` : ''}
-          </div>
+          ${SITE.rankingsIntro ? `<p class="rankings-page-intro">${SITE.rankingsIntro}</p>` : ''}
         </div>
         ${RANKINGS_CRITERIA ? `
         <div class="rankings-criteria">
