@@ -55,115 +55,96 @@ function articleCard(a) {
 
 // ── HOME PAGE ─────────────────────────────────────────────
 function buildHome() {
+  // Hero: prefer featured article, fall back to featured rankings, then first article
   const featuredRankings = ARTICLES.find(a => a.featured && a.type === 'rankings');
   const featured = ARTICLES.find(a => a.featured && a.type !== 'rankings') || ARTICLES.find(a => a.type !== 'rankings') || ARTICLES[0];
-  const picks = ARTICLES.filter(a => a.editorsPick && a.type !== 'rankings').slice(0, 5);
-  const latest = ARTICLES.filter(a => !a.featured).slice(0, 6);
-
-  const picksHtml = picks.map(p => `
-    <div class="ep-item" onclick="goTo('article.html?id=${p.id}')">
-      <div class="ep-text">
-        <div class="ep-cat">${p.category}</div>
-        <div class="ep-title">${p.title}</div>
-        <div class="ep-meta">${p.author} · ${p.readTime}</div>
-      </div>
-      ${p.image ? `<img class="ep-thumb" src="${p.image}" alt="${p.title}" loading="lazy">` : ''}
-    </div>
-  `).join('');
-
-  const editorPicksLabel = SITE.editorPicksLabel || "Editors' Picks";
-  const latestTitle = SITE.latestArticlesTitle || 'Latest Articles';
-
-  const latestHtml = latest.map((a, i) => articleCard(a).replace('class="article-card reveal"', `class="article-card reveal" style="transition-delay:${i * 60}ms"`)).join('');
-
-  const firstEvent = Object.keys(RANKINGS)[0] || '';
-
-  const TAB_LABELS = { '800m':'800', '1500m':'1500', '5000m':'5K', '10000m':'10K', 'Mile':'Mile', 'Marathon':'Mar.' };
-  const eventTabsHtml = Object.keys(RANKINGS).map((ev, i) =>
-    `<button class="event-tab ${i === 0 ? 'active' : ''}" data-event="${ev}">${TAB_LABELS[ev] || ev}</button>`
-  ).join('');
-
-  const rankingsWidgetHtml = SITE.showRankingsWidget === false ? '' : `
-    <div class="rankings-widget">
-      <div class="rw-header">
-        <div class="rw-title">Latest Rankings</div>
-        <div class="event-tabs" id="home-tabs">${eventTabsHtml}</div>
-      </div>
-      <div id="rankings-table-wrap">${buildRankingsTableHtml(firstEvent, true)}</div>
-      <a href="rankings.html" class="view-all-link">View full rankings →</a>
-    </div>
-  `;
-
-  const heroItem = featuredRankings || featured;
+  const heroItem = featured || featuredRankings || ARTICLES[0];
   const rankingsEvent = featuredRankings && featuredRankings.rankingsEvent;
-  const heroDest = featuredRankings
+  const heroDest = heroItem?.type === 'rankings'
     ? `rankings.html${rankingsEvent ? '?event=' + encodeURIComponent(rankingsEvent) : ''}`
-    : `article.html?id=${heroItem.id}`;
-  const heroImg = imgHTML(heroItem.image, heroItem.title, heroItem.imagePosition, 16/9, 'home-hero-img');
+    : `article.html?id=${heroItem?.id}`;
 
-  const countdownHtml = buildCountdownPills();
+  // Secondary: up to 2 non-hero articles
+  const secondary = ARTICLES.filter(a => a !== heroItem).slice(0, 2);
 
-  // ── Athlete of the Week widget ─────────────────────────────
-  const aotwCfg = SITE.athleteOfWeek;
-  const aotwAthlete = aotwCfg?.athleteId ? ATHLETES[aotwCfg.athleteId] : null;
-  const aotwHtml = aotwAthlete ? (() => {
-    const a = aotwAthlete;
-    const statRow = (aotwCfg.featuredEvent && aotwCfg.featuredTime)
-      ? `<div class="aotw-stat-row"><span class="aotw-stat-event">${aotwCfg.featuredEvent}</span><span class="aotw-time">${aotwCfg.featuredTime}</span></div>`
-      : '';
-    return `
-      <div class="aotw-row" onclick="openAthleteCard('${a.id}', null)" role="button" tabindex="0">
-        <div class="aotw-photo" style="background-image:url('${a.photo || ''}');background-color:${a.photoBackground || '#1a1a2e'}"></div>
-        <div class="aotw-body">
-          <div>
-            <div class="aotw-label">Athlete of the Week</div>
-            <div class="aotw-name">${a.name}</div>
-            <div class="aotw-meta">${renderFlag(a.flag)}<span>${a.country || ''}</span></div>
-          </div>
-          ${statRow}
-        </div>
-      </div>`;
-  })() : '';
+  // Ticker: upcoming meets within 30 days
+  const now = Date.now();
+  const tickerMeets = (SITE.upcomingMeets || []).filter(m => {
+    if (!m.name || !m.datetime) return false;
+    const diff = new Date(m.datetime) - now;
+    return diff > -86400000 && diff < 30 * 86400000;
+  });
+  const tickerItems = [];
+  if (SITE.breakingNews) tickerItems.push(`<span class="fp-tick">${SITE.breakingNews}</span>`);
+  tickerMeets.forEach(m => {
+    const d = new Date(m.datetime);
+    const label = `${d.toLocaleString('en-US', { month: 'short' })} ${d.getDate()}`;
+    const inner = `<span class="fp-tick-dim">Next ·</span> ${m.name}, ${label}`;
+    tickerItems.push(m.url
+      ? `<a class="fp-tick fp-tick--link" href="${m.url}" target="_blank" rel="noopener">${inner}</a>`
+      : `<span class="fp-tick">${inner}</span>`);
+  });
+  const tickerHtml = tickerItems.length ? `
+    <div class="fp-ticker">
+      <span class="fp-ticker-label">Latest</span>
+      <div class="fp-ticks">${tickerItems.join('<span class="fp-tick-sep">·</span>')}</div>
+    </div>` : '';
+
+  // Hero
+  const heroHtml = heroItem ? `
+    <div class="fp-hero" onclick="goTo('${heroDest}')" role="button" tabindex="0">
+      <div class="fp-hero-eyebrow">${heroItem.category || 'Featured'}${heroItem.date ? ` · ${heroItem.date}` : ''}</div>
+      <h1 class="fp-hero-hed">${heroItem.title}</h1>
+      ${heroItem.excerpt ? `<p class="fp-hero-dek">${heroItem.excerpt}</p>` : ''}
+      <span class="fp-hero-read">Read ${heroItem.type === 'rankings' ? 'rankings' : 'article'} →</span>
+    </div>` : '';
+
+  // Secondary stories
+  const secondaryHtml = secondary.length ? `
+    <div class="fp-secondary">
+      ${secondary.map(a => {
+        const dest = a.type === 'rankings'
+          ? `rankings.html${a.rankingsEvent ? '?event=' + encodeURIComponent(a.rankingsEvent) : ''}`
+          : `article.html?id=${a.id}`;
+        return `<div class="fp-sec-item" onclick="goTo('${dest}')" role="button" tabindex="0">
+          <div class="fp-sec-tag">${a.category || 'Article'}</div>
+          <div class="fp-sec-hed">${a.title}</div>
+          ${a.excerpt ? `<div class="fp-sec-dek">${a.excerpt.slice(0, 90)}${a.excerpt.length > 90 ? '…' : ''}</div>` : ''}
+        </div>`;
+      }).join('')}
+    </div>` : '';
+
+  // Rankings strip
+  const firstEvent = Object.keys(RANKINGS)[0] || '';
+  const TAB_LABELS = { '800m': '800m', '1500m': '1500m', '5000m': '5K', '10000m': '10K', 'Mile': 'Mile' };
+  const tabsHtml = Object.keys(RANKINGS).map((ev, i) =>
+    `<button class="fp-rank-tab ${i === 0 ? 'active' : ''}" data-event="${ev}">${TAB_LABELS[ev] || ev}</button>`
+  ).join('');
+  const rankingsHtml = `
+    <div class="fp-rankings">
+      <div class="fp-rank-hd">
+        <span class="fp-rank-title">Current rankings</span>
+        <div class="fp-rank-tabs" id="fp-rank-tabs">${tabsHtml}</div>
+      </div>
+      <div id="fp-rank-rows">${buildRankingsTableHtml(firstEvent, true)}</div>
+      <a href="rankings.html" class="fp-rank-more">View all rankings →</a>
+    </div>`;
 
   document.getElementById('main').innerHTML = `
-    <div class="container">
-      ${SITE.homeTagline ? `<div class="home-tagline">${SITE.homeTagline}</div>` : ''}
-      ${countdownHtml ? `<div class="home-countdown">${countdownHtml}</div>` : ''}
-
-      <div class="home-top">
-        <div class="home-hero-col">
-          <div class="home-hero-full" onclick="goTo('${heroDest}')">
-            ${heroImg}
-            <span class="cat-tag">${heroItem.category || 'RANKINGS'}</span>
-            <div class="home-hero-overlay">
-              <h1 class="home-hero-title">${heroItem.title}</h1>
-              ${heroItem.excerpt ? `<p class="home-hero-excerpt">${heroItem.excerpt}</p>` : ''}
-              <div class="home-hero-meta">
-                ${heroItem.author ? `By <span class="author">${heroItem.author}</span><span class="sep">·</span>` : ''}${heroItem.date || ''}
-                ${heroItem.readTime ? `<span class="sep">·</span>${heroItem.readTime}` : ''}
-              </div>
-            </div>
-          </div>
-          <div class="home-latest-header">
-            <span class="home-latest-title">${latestTitle}</span>
-          </div>
-          <div class="articles-grid home-articles-grid">${latestHtml}</div>
-          ${picksHtml ? `
-            <div class="home-ep-row">
-              <div class="ep-label">${editorPicksLabel}</div>
-              <div class="home-ep-list">${picksHtml}</div>
-            </div>` : ''}
-        </div>
-        ${rankingsWidgetHtml ? `<aside class="home-rankings-col">${rankingsWidgetHtml}${aotwHtml}</aside>` : ''}
+    <div class="fp-wrap">
+      ${tickerHtml}
+      <div class="fp-body">
+        ${heroHtml}
+        ${secondaryHtml}
+        ${rankingsHtml}
       </div>
-    </div>
-  `;
+    </div>`;
 
-  qsa('.event-tab', qs('#home-tabs')).forEach(btn => {
+  qsa('.fp-rank-tab').forEach(btn => {
     btn.addEventListener('click', () => {
-      qsa('.event-tab', qs('#home-tabs')).forEach(b => b.classList.remove('active'));
+      qsa('.fp-rank-tab').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      qs('#rankings-table-wrap').innerHTML = buildRankingsTableHtml(btn.dataset.event, true);
+      qs('#fp-rank-rows').innerHTML = buildRankingsTableHtml(btn.dataset.event, true);
     });
   });
 }

@@ -5,7 +5,7 @@
 
 @import "base.css";
 @import "navbar.css";
-@import "home.css";
+@import "home.css?v=2";
 @import "articles.css";
 @import "rankings.css";
 @import "athletes.css?v=2";
