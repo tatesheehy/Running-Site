@@ -372,78 +372,61 @@ function buildRankingRow(r, rank) {
   const seasonBest = _bestTime(r, a, _rdCurrentEvent);
   const meet = (r.meet && r.meet !== 'x') ? r.meet : '';
   const sbSecs = isFinite(_parseTimeSecs(seasonBest)) ? _parseTimeSecs(seasonBest) : '';
-  // Build inline deep-dive panel (Die Hard scouting card)
+  // Build inline deep-dive panel (Die Hard race card)
   const fx = v => (v && v !== 'x') ? v : '';
   const evNorm = s => (s || '').replace(/\s+/g, '').toLowerCase();
-  const heightV = fx(a?.height), weightV = fx(a?.weight), seasonsV = fx(a?.seasons);
-  const ageV = fx(a?.vitals?.AGE || a?.age);
-  const clubV = fx(a?.extra?.CLUB), coachV = fx(a?.extra?.COACH), hometownV = fx(a?.hometown);
+  const ordinal = p => { const n = parseInt(p, 10); if (!n) return fx(p) || ''; const s = ['th','st','nd','rd'][(n % 100 > 10 && n % 100 < 14) ? 0 : Math.min(n % 10, 4) % 4] || 'th'; return n + s; };
   const evPB = a ? (((a.prs || []).find(p => evNorm(p.event) === evNorm(_rdCurrentEvent)) || {}).time || '') : '';
-  const raceCount = a ? (a.results || []).filter(res => evNorm(res.event) === evNorm(_rdCurrentEvent)).length : 0;
+  const raceCount = a ? (a.results || []).length : 0;
   const hon = a?.honours || [];
   const medalCounts = [1, 2, 3].map(p => hon.filter(h => +h.place === p).length);
+  const totalMedals = medalCounts[0] + medalCounts[1] + medalCounts[2];
   const hlKey = fx(a?.headline?.keyWord), hlRest = fx(a?.headline?.rest);
   const an = a?.analysis || {};
   const reviewBody = fx(an.reviewBody), questionBody = fx(an.questionBody);
-  const traitBadges = (a?.traits || []).slice(0, 4).map(t =>
-    `<div class="rdx-trait"><span class="rdx-trait-ic">${t.emoji || '&bull;'}</span><span class="rdx-trait-lb">${t.label || ''}</span></div>`
+  const traitPills = (a?.traits || []).slice(0, 4).map(t =>
+    `<span class="rdc-trait">${t.emoji ? `${t.emoji} ` : ''}${t.label || ''}</span>`
   ).join('');
-  const prsHtml = (a?.prs || []).slice(0, 5).map(pr =>
+  const recentHtml = (a?.results || []).slice(0, 3).map(res => `
+    <div class="rdc-race">
+      <span class="rdc-race-date">${fx(res.date)}</span>
+      <span class="rdc-race-meet">${fx(res.meet)}<span class="rdc-race-ev">${fx(res.event)}</span></span>
+      <span class="rdc-race-time">${fx(res.time)}${fx(res.place) ? `<span class="rdc-race-place">${ordinal(res.place)}</span>` : ''}</span>
+    </div>`).join('');
+  const prsHtml = (a?.prs || []).slice(0, 4).map(pr =>
     `<div class="rd-dd-pr-row"><span class="rd-dd-pr-event">${pr.event}</span><span class="rd-dd-pr-time">${pr.time}</span></div>`
   ).join('');
-  const bioCells = [
-    heightV ? `<div class="rdx-bio-cell"><span>Height</span>${heightV}</div>` : '',
-    ageV ? `<div class="rdx-bio-cell"><span>Age</span>${ageV}</div>` : '',
-    weightV ? `<div class="rdx-bio-cell"><span>Weight</span>${weightV}</div>` : '',
-    seasonsV ? `<div class="rdx-bio-cell"><span>Seasons</span>${seasonsV}</div>` : '',
-  ].join('');
-  const medalNames = ['Gold', 'Silver', 'Bronze'];
-  const medalIcons = ['🥇', '🥈', '🥉'];
-  const medalsHtml = hon.length ? `<div class="rdx-medals">${medalCounts.map((n, mi) =>
-    `<div class="rdx-medal${n ? '' : ' rdx-medal--none'}"><span class="rdx-medal-ic">${medalIcons[mi]}</span><span class="rdx-medal-lb">${n}&times; ${medalNames[mi]}</span></div>`
-  ).join('')}</div>` : '';
-  const factsHtml = (clubV || coachV || hometownV) ? `<div class="rdx-facts">
-    ${clubV ? `<div class="rdx-fact"><span>Club</span>${clubV}</div>` : ''}
-    ${coachV ? `<div class="rdx-fact"><span>Coach</span>${coachV}</div>` : ''}
-    ${hometownV ? `<div class="rdx-fact"><span>Hometown</span>${hometownV}</div>` : ''}
-  </div>` : '';
-  const headlineHtml = (hlKey || r.bite)
-    ? `<div class="rdx-headline">${hlKey ? `<strong>${hlKey}</strong> <span>${hlRest}</span>` : `<strong>${r.bite}</strong>`}</div>`
-    : '';
+  const ribbonCells = [
+    `<div class="rdc-rib-cell"><span class="rdc-rib-num">${seasonBest || '—'}</span><span class="rdc-rib-lb">${RANKINGS_YEAR} best${meet ? ` · ${meet}` : ''}</span></div>`,
+    evPB ? `<div class="rdc-rib-cell"><span class="rdc-rib-num">${evPB}</span><span class="rdc-rib-lb">${_rdCurrentEvent} PB</span></div>` : '',
+    raceCount ? `<div class="rdc-rib-cell"><span class="rdc-rib-num">${raceCount}</span><span class="rdc-rib-lb">races this season</span></div>` : '',
+    totalMedals ? `<div class="rdc-rib-cell"><span class="rdc-rib-num">${medalCounts.map((n, mi) => n ? `${['🥇','🥈','🥉'][mi]}${n}` : '').filter(Boolean).join(' ')}</span><span class="rdc-rib-lb">global medals</span></div>` : '',
+  ].filter(Boolean).join('');
   const analysisHtml = (reviewBody || questionBody) ? `
-    <div class="rdx-analysis">
-      <div class="rdx-label">Analysis</div>
-      ${reviewBody ? `<p><strong>${fx(an.reviewTitle) || 'Season review'}:</strong> ${reviewBody}</p>` : ''}
-      ${questionBody ? `<p><strong>${fx(an.questionTitle) || 'Next question'}:</strong> ${questionBody}</p>` : ''}
-    </div>` : '';
+    ${reviewBody ? `<p><strong>${fx(an.reviewTitle) || 'Season review'}:</strong> ${reviewBody}</p>` : ''}
+    ${questionBody ? `<p><strong>${fx(an.questionTitle) || 'Next question'}:</strong> ${questionBody}</p>` : ''}` : '';
   const ddPanel = `
     <div class="rd-dd-panel">
-      <div class="rdx">
-        <div class="rdx-hd">
-          ${rank != null ? `<span class="rdx-hd-rank">${String(rank).padStart(2, '0')}</span>` : ''}
-          ${a && r.athleteId ? `<button class="rdx-hd-profile" onclick="event.stopPropagation();openAthleteCard('${r.athleteId}', ${rank || 0})">Full<br>Profile</button>` : ''}
-          <h3 class="rdx-hd-name">${name} <span class="rdx-hd-sub">${renderFlag(flag)} ${country}</span></h3>
-          <button class="rd-dd-close" onclick="event.stopPropagation();this.closest('.rd-dd-panel').classList.remove('open');this.closest('.rd-dd-panel').previousElementSibling.classList.remove('dd-open')">×</button>
+      <div class="rdc">
+        <div class="rdc-photo-col">
+          <div class="rdc-photo" style="background-color:${photoBg};background-image:url('${a?.photo || photo}')">
+            ${rank != null ? `<span class="rdc-rank-stamp">#${rank}</span>` : ''}
+          </div>
         </div>
-        <div class="rdx-body">
-          <aside class="rdx-side">
-            <div class="rdx-photo" style="background-color:${photoBg};background-image:url('${a?.photo || photo}')"></div>
-            ${bioCells ? `<div class="rdx-bio">${bioCells}</div>` : ''}
-            <div class="rdx-stats">
-              <div class="rdx-stat"><span class="rdx-stat-lb">SB</span><span class="rdx-stat-num">${seasonBest || '—'}</span>${meet ? `<span class="rdx-stat-sub">${meet}</span>` : `<span class="rdx-stat-sub">${RANKINGS_YEAR}</span>`}</div>
-              ${evPB ? `<div class="rdx-stat"><span class="rdx-stat-lb">PB</span><span class="rdx-stat-num">${evPB}</span><span class="rdx-stat-sub">${_rdCurrentEvent}</span></div>` : ''}
-              ${raceCount ? `<div class="rdx-stat"><span class="rdx-stat-lb">Races</span><span class="rdx-stat-num">${raceCount}</span><span class="rdx-stat-sub">this season</span></div>` : ''}
+        <div class="rdc-content">
+          <button class="rd-dd-close" onclick="event.stopPropagation();this.closest('.rd-dd-panel').classList.remove('open');this.closest('.rd-dd-panel').previousElementSibling.classList.remove('dd-open')">×</button>
+          <div class="rdc-eyebrow">${renderFlag(flag)} ${country}${a && r.athleteId ? ` &middot; <button class="rdc-profile-link" onclick="event.stopPropagation();openAthleteCard('${r.athleteId}', ${rank || 0})">full profile</button>` : ''}${a?.waUrl ? ` &middot; <a class="rdc-profile-link" href="${a.waUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()">world athletics ↗</a>` : ''}</div>
+          <h3 class="rdc-name">${name}</h3>
+          ${(hlKey || r.bite) ? `<div class="rdc-headline">${hlKey ? `<strong>${hlKey}</strong> ${hlRest}` : `<strong>${r.bite}</strong>`}</div>` : ''}
+          ${traitPills ? `<div class="rdc-traits">${traitPills}</div>` : ''}
+          <div class="rdc-ribbon">${ribbonCells}</div>
+          <div class="rdc-cols">
+            <div class="rdc-analysis">
+              ${analysisHtml || '<p class="rdc-empty">Full analysis coming soon.</p>'}
             </div>
-            ${medalsHtml}
-            ${factsHtml}
-            ${a?.waUrl ? `<a class="rdx-walink" href="${a.waUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()">World Athletics profile ↗</a>` : ''}
-          </aside>
-          <div class="rdx-main">
-            ${headlineHtml}
-            ${traitBadges ? `<div class="rdx-traits">${traitBadges}</div>` : ''}
-            <div class="rdx-main-cols">
-              ${analysisHtml || '<div class="rdx-analysis rdx-analysis--empty">Full analysis coming soon.</div>'}
-              ${prsHtml ? `<div class="rdx-prs"><div class="rdx-label">Personal Bests</div>${prsHtml}</div>` : ''}
+            <div class="rdc-side">
+              ${recentHtml ? `<div class="rdc-block"><div class="rdc-block-lb">Last time out</div>${recentHtml}</div>` : ''}
+              ${prsHtml ? `<div class="rdc-block"><div class="rdc-block-lb">Personal bests</div>${prsHtml}</div>` : ''}
             </div>
           </div>
         </div>
