@@ -734,15 +734,28 @@ function buildRankingsDetail(eventName, opts = {}) {
       <div class="rankings-detail">
         <a href="${backUrl}" class="rd-back">&larr; ${backLabel}</a>
         <div class="rd-header">
-          <div class="rd-header-hero" data-ghost="${eventName.replace(/[^0-9]/g,'')||eventName}">
-            <div class="rd-header-left">
-              <div class="rd-header-meta">${displayYear} Season Rankings${archiveYear ? ' <span class="archive-stamp">Archive</span>' : ''}</div>
-              <h1 class="rd-header-event">${eventName}</h1>
-              ${weekLabel ? `<p class="rd-header-desc">${weekLabel}</p>` : (ev && ev.description ? `<p class="rd-header-desc">${ev.description}</p>` : '')}
+          <div class="rd-hero-band">
+            <div class="rd-hero-band-inner" data-ghost="${eventName.replace(/[^0-9]/g,'')||eventName}">
+              <div class="rd-hero-left">
+                <div class="rd-header-meta">${displayYear} Season Rankings${archiveYear ? ' <span class="archive-stamp">Archive</span>' : ''}</div>
+                <h1 class="rd-header-event">${eventName}</h1>
+                ${weekLabel ? `<p class="rd-header-desc">${weekLabel}</p>` : (ev && ev.description ? `<p class="rd-header-desc">${ev.description}</p>` : '')}
+                ${athleteCount ? `<div class="rd-hero-stats"><b>${athleteCount}</b> Athletes Ranked</div>` : ''}
+              </div>
+              ${(() => {
+                if (!headerPhoto) return '';
+                const topA = rows[0] && rows[0].athleteId && ATHLETES[rows[0].athleteId];
+                const isAthletePhoto = !ev?.photo && topA;
+                return `
+                <div class="rd-hero-photo-wrap">
+                  <div class="rd-hero-photo" style="background-color:${(topA && topA.photoBackground) || '#1c1c1c'};background-image:url('${headerPhoto}')">
+                    ${isAthletePhoto ? `<span class="rdc-rank-stamp">#1</span>` : ''}
+                  </div>
+                  ${isAthletePhoto ? `<div class="rd-hero-photo-cap">No. 1 &middot; <b>${topA.name}</b></div>` : ''}
+                </div>`;
+              })()}
             </div>
-            ${athleteCount ? `<div class="rd-header-stat"><span class="rd-header-stat-num">${String(athleteCount).padStart(2, '0')}</span><span class="rd-header-stat-lb">Athletes Ranked</span></div>` : ''}
           </div>
-          <div class="rd-rule"></div>
           <div class="rd-header-controls">
             <div class="rd-header-controls-left">${filterHtml || '<span></span>'}</div>
             <div class="rd-header-btns">
