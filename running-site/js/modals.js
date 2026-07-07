@@ -380,7 +380,7 @@ function openAthleteCard(athleteId, rank) {
         <button class="card-fav-btn${typeof isFavorited === 'function' && isFavorited(athleteId) ? ' favorited' : ''}" data-fav-id="${athleteId}" onclick="toggleFavorite('${athleteId}')" title="Save athlete">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </button>
-<button class="card-share-btn" onclick="openShareOverlay('${athleteId}',${JSON.stringify(rank)},new URLSearchParams(location.search).get('event'))" title="Share athlete card">↗ Share</button>
+        <button class="card-share-btn" onclick="openShareOverlay('${athleteId}',${JSON.stringify(rank)},new URLSearchParams(location.search).get('event'))" title="Share athlete card">↗ Share</button>
         <button class="card-compare-btn" onclick="closeAthleteCard();openH2H('${athleteId}',new URLSearchParams(location.search).get('event'))" title="Compare athletes">⇌ Compare</button>
         <button class="card-close" onclick="closeAthleteCard()" aria-label="Close">×</button>
       </div>
@@ -394,7 +394,7 @@ function openAthleteCard(athleteId, rank) {
         </div>
         <div class="card-info">
           <div class="card-vitals">${vitalsHtml}</div>
-          ${prsHtml ? `<div class="card-prs"><div class="card-prs-label">Personal Records</div>${prsHtml}</div>` : ''}
+          ${prsHtml ? `<div class="card-prs"><div class="card-prs-label">Personal Bests</div>${prsHtml}</div>` : ''}
           ${achieveHtml ? `<div class="card-achievements">${achieveHtml}</div>` : ''}
           ${extraHtml ? `<div class="card-extra">${extraHtml}</div>` : ''}
           ${(a.college || a.collegeLogo) ? `

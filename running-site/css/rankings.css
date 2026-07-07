@@ -503,59 +503,148 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
 .rd-dd-panel {
   display: none;
   border-bottom: 1px solid var(--border);
-  background: var(--bg-light);
+  background: #2a2a2a;
 }
 .rd-dd-panel.open { display: flex; }
+
 .rd-dd-panel-photo {
-  width: 120px;
-  min-width: 120px;
+  width: 180px;
+  min-width: 180px;
   background-size: cover;
   background-position: top center;
   background-color: #111;
+  border-right: 1px solid rgba(255,255,255,0.06);
 }
+
 .rd-dd-panel-body {
   flex: 1;
   padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.rd-dd-panel-hd {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.rd-dd-panel-nameblock { min-width: 0; }
+
+.rd-dd-sb-block {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 10px 14px;
+  background: rgba(255,255,255,0.05);
+  border-left: 3px solid var(--accent);
+}
+
+.rd-dd-sb-label {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.4);
+  flex-shrink: 0;
+}
+
+.rd-dd-sb-time {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.rd-dd-sb-meet {
+  font-size: 11px;
+  color: rgba(255,255,255,0.4);
+  font-family: var(--font-body);
+  font-weight: 400;
+}
+
+.rd-dd-panel-name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rd-dd-panel-country {
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.rd-dd-panel-lower {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px 32px;
+  gap: 0 32px;
 }
-.rd-dd-panel-prs { display: flex; flex-direction: column; gap: 4px; }
+
+.rd-dd-panel-prs { display: flex; flex-direction: column; gap: 0; }
+
 .rd-dd-panel-label {
   font-size: 9px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--muted);
-  margin-bottom: 6px;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 8px;
 }
-.rd-dd-pr-row { display: flex; justify-content: space-between; gap: 16px; font-size: 13px; }
-.rd-dd-pr-event { color: var(--muted); }
-.rd-dd-pr-time { font-weight: 600; font-family: var(--font-mono); color: var(--text); }
-.rd-dd-panel-analysis { font-size: 13px; line-height: 1.6; color: var(--muted); }
-.rd-dd-panel-analysis strong { color: var(--text); }
+
+.rd-dd-pr-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 13px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.rd-dd-pr-row:last-child { border-bottom: none; }
+.rd-dd-pr-event { color: rgba(255,255,255,0.4); font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+.rd-dd-pr-time { font-weight: 700; font-family: var(--font-mono); color: #fff; }
+
+.rd-dd-panel-analysis { font-size: 13px; line-height: 1.65; color: rgba(255,255,255,0.5); }
+.rd-dd-panel-analysis strong { color: #fff; }
+.rd-dd-panel-analysis p { margin: 0; }
+
 .rd-dd-headline {
-  grid-column: 1 / -1;
-  font-family: var(--font-display);
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--text);
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 12px;
-  margin-bottom: 4px;
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.5;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
-.rd-dd-headline .hl-key { color: var(--accent); }
+.rd-dd-headline .hl-key { color: #fff; font-style: normal; }
+
 .rd-dd-close {
   align-self: flex-start;
-  padding: 8px;
+  padding: 10px 8px;
   background: none;
   border: none;
   cursor: pointer;
-  color: var(--muted);
+  color: rgba(255,255,255,0.3);
   font-size: 18px;
   line-height: 1;
+  flex-shrink: 0;
 }
-.rd-dd-close:hover { color: var(--text); }
+.rd-dd-close:hover { color: #fff; }
 
 .rd-view-toggle {
   display: inline-flex;

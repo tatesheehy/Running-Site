@@ -94,9 +94,6 @@ function _renderH2HPage() {
           </div>` : ''}
         </div>` : ''}
 
-        <!-- Top Rivalries -->
-        ${_renderRivalriesSection(_h2hLbYear, _h2hLbEvent, _h2hLbRankedOnly)}
-
         <!-- Compare Tool -->
         ${_renderCompareSection()}
 

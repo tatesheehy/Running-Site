@@ -365,15 +365,30 @@ function buildRankingRow(r, rank) {
     <div class="rd-dd-panel">
       <div class="rd-dd-panel-photo" style="background-color:${photoBg};background-image:url('${a?.photo || photo}')"></div>
       <div class="rd-dd-panel-body">
+        <div class="rd-dd-panel-hd">
+          <div class="rd-dd-panel-nameblock">
+            <div class="rd-dd-panel-name">${name}</div>
+            <div class="rd-dd-panel-country">${renderFlag(flag)} ${country}</div>
+          </div>
+        </div>
         ${headlineHtml}
         ${r.traits?.length ? `<div class="rd-dd-traits">${buildTraitsHtml(r.traits)}</div>` : ''}
-        <div class="rd-dd-panel-prs">
-          <div class="rd-dd-panel-label">Personal Records</div>
-          ${prsHtml}
-        </div>
-        <div class="rd-dd-panel-analysis">
-          <div class="rd-dd-panel-label">Analysis</div>
-          ${analysisHtml}
+        ${seasonBest && seasonBest !== '—' ? `
+          <div class="rd-dd-sb-block">
+            <span class="rd-dd-sb-label">${RANKINGS_YEAR} Season Best</span>
+            <span class="rd-dd-sb-time">${seasonBest}${meet ? ` <span class="rd-dd-sb-meet">· ${meet}</span>` : ''}</span>
+          </div>` : ''}
+        <div class="rd-dd-panel-lower">
+          <div class="rd-dd-panel-prs">
+            <div class="rd-dd-panel-label">Personal Bests</div>
+            ${prsHtml}
+          </div>
+          ${analysisHtml ? `
+            <div class="rd-dd-panel-analysis">
+              <div class="rd-dd-panel-label">Analysis</div>
+              ${analysisHtml}
+            </div>
+          ` : ''}
         </div>
       </div>
       <button class="rd-dd-close" onclick="event.stopPropagation();this.closest('.rd-dd-panel').classList.remove('open');this.closest('.rd-dd-panel').previousElementSibling.classList.remove('dd-open')">×</button>
@@ -389,7 +404,6 @@ function buildRankingRow(r, rank) {
         ${buildTraitsHtml(r.traits)}
         <div class="rd-row-stats">
           ${seasonBest && seasonBest !== '—' ? `<div class="rd-row-stat"><span class="rd-row-stat-label">SB</span><span class="rd-row-stat-val">${seasonBest}${meet ? ` <span class="rd-row-stat-meet">· ${meet}</span>` : ''}</span></div>` : ''}
-          ${(a?.prs || []).slice(0, 3).map(pr => `<div class="rd-row-stat"><span class="rd-row-stat-label">${pr.event}</span><span class="rd-row-stat-val">${pr.time}</span></div>`).join('')}
         </div>
       </div>
       ${rank != null ? buildMomentumHtml(r.momentum) : ''}
