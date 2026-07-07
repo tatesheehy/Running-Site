@@ -19,5 +19,5 @@
 /* Override with fresh values — force-busts import cache */
 :root {
   --font-mono: 'Space Mono', monospace;
-  --accent: #115796;
+  --accent: #E8500A;
 }
