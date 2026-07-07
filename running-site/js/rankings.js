@@ -167,15 +167,18 @@ function buildRankingsHub() {
   }).join('');
 
   document.getElementById('main').innerHTML = `
+    <div class="rankings-hero-banner">
+      <div class="rankings-hero-wordmark">
+        <img src="/images/stattc-logo.png" alt="StatTC" class="rankings-hero-logo-img">
+      </div>
+      <h1 class="rankings-hero-title">Rankings Center</h1>
+    </div>
     <div class="container">
       <div class="rankings-hub">
         <div class="rankings-page-header">
-          <div class="rankings-page-header-main">
-            <h1 class="rankings-page-title"><span class="rankings-page-title-eyebrow">${RANKINGS_YEAR} Outdoor Season</span>Rankings</h1>
-            <div class="rankings-hub-actions">
-              <button class="h2h-hub-btn" onclick="openH2H()">⇌ Compare Head to Head</button>
-              ${RANKINGS_ARCHIVE.length ? `<a href="rankings.html?view=archive" class="rankings-archive-link"><svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:-2px;margin-right:6px"><path d="M1 2.5C1 1.67 1.67 1 2.5 1H5.5L7 3H12.5C13.33 3 14 3.67 14 4.5V10.5C14 11.33 13.33 12 12.5 12H2.5C1.67 12 1 11.33 1 10.5V2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>Rankings Archive &rarr;</a>` : ''}
-            </div>
+          <div class="rankings-hub-actions">
+            <button class="h2h-hub-btn" onclick="openH2H()">⇌ Compare Head to Head</button>
+            ${RANKINGS_ARCHIVE.length ? `<a href="rankings.html?view=archive" class="rankings-archive-link"><svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:-2px;margin-right:6px"><path d="M1 2.5C1 1.67 1.67 1 2.5 1H5.5L7 3H12.5C13.33 3 14 3.67 14 4.5V10.5C14 11.33 13.33 12 12.5 12H2.5C1.67 12 1 11.33 1 10.5V2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>Rankings Archive &rarr;</a>` : ''}
           </div>
           ${SITE.rankingsIntro ? `<p class="rankings-page-intro">${SITE.rankingsIntro}</p>` : ''}
         </div>

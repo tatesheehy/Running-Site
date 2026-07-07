@@ -2,11 +2,42 @@
    RANKINGS — all .rd-*, .rankings-*, archive, ranking-card
    ============================================================ */
 
+/* ── RANKINGS HERO BANNER ─────────────────────────────────── */
+.rankings-hero-banner {
+  background: var(--accent);
+  text-align: center;
+  padding: 28px 24px 36px;
+  width: 100%;
+}
+
+.rankings-hero-wordmark {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.rankings-hero-logo-img {
+  height: 32px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+.rankings-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(48px, 11vw, 120px);
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 0.9;
+  margin: 0;
+}
+
 /* ── RANKINGS HUB ─────────────────────────────────────────── */
 .rankings-hub { padding-bottom: 60px; }
 
 .rankings-page-header {
-  padding: 48px 0 28px;
+  padding: 28px 0 20px;
   border-bottom: 1px solid var(--border);
   margin-bottom: 32px;
 }
