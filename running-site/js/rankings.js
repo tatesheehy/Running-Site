@@ -166,11 +166,12 @@ function buildRankingsHub() {
     return `
       <div class="ranking-card${hasPhoto ? ' ranking-card--visual' : ''}${isActive ? ' ranking-card--active ranking-card--featured' : ''}" onclick="goTo('rankings.html?event=${encodeURIComponent(ev.name)}')">
         <div class="ranking-card-ghost">${ghostNum}</div>
+        <div class="ranking-card-index">${String(i + 1).padStart(2, '0')}</div>
         <div class="ranking-card-left">
-          <div class="ranking-card-badge${isActive ? ' ranking-card-badge--active' : ''}">${isActive ? 'Ranked' : 'Coming Soon'}</div>
+          <div class="ranking-card-badge${isActive ? ' ranking-card-badge--active' : ''}">${isActive ? '● Live' : 'Coming Soon'}</div>
           <div class="ranking-card-event">${ev.name}</div>
           ${ev.description ? `<div class="ranking-card-desc">${ev.description}</div>` : ''}
-          <div class="ranking-card-cta">${count ? `${count} athletes ranked` : 'Under construction'} &rarr;</div>
+          <div class="ranking-card-cta"><span>${count ? `${count} athletes ranked` : 'Under construction'}</span><span class="ranking-card-cta-arrow">&rarr;</span></div>
         </div>
         ${podium ? `<div class="ranking-card-podium"><div class="ranking-card-podium-label">Top 3</div>${podium}</div>` : ''}
         ${ev.photo ? `<div class="ranking-card-photo" ${photoStyle}></div>` : ''}
