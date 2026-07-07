@@ -372,50 +372,82 @@ function buildRankingRow(r, rank) {
   const seasonBest = _bestTime(r, a, _rdCurrentEvent);
   const meet = (r.meet && r.meet !== 'x') ? r.meet : '';
   const sbSecs = isFinite(_parseTimeSecs(seasonBest)) ? _parseTimeSecs(seasonBest) : '';
-  // Build inline deep-dive panel
-  const prsHtml = a ? (a.prs || []).slice(0, 5).map(pr =>
-    `<div class="rd-dd-pr-row"><span class="rd-dd-pr-event">${pr.event}</span><span class="rd-dd-pr-time">${pr.time}</span></div>`
-  ).join('') : `<div class="rd-dd-pr-row"><span class="rd-dd-pr-event">Season Best</span><span class="rd-dd-pr-time">${seasonBest || '—'}</span></div>`;
+  // Build inline deep-dive panel (Die Hard scouting card)
+  const fx = v => (v && v !== 'x') ? v : '';
+  const evNorm = s => (s || '').replace(/\s+/g, '').toLowerCase();
+  const heightV = fx(a?.height), weightV = fx(a?.weight), seasonsV = fx(a?.seasons);
+  const ageV = fx(a?.vitals?.AGE || a?.age);
+  const clubV = fx(a?.extra?.CLUB), coachV = fx(a?.extra?.COACH), hometownV = fx(a?.hometown);
+  const evPB = a ? (((a.prs || []).find(p => evNorm(p.event) === evNorm(_rdCurrentEvent)) || {}).time || '') : '';
+  const raceCount = a ? (a.results || []).filter(res => evNorm(res.event) === evNorm(_rdCurrentEvent)).length : 0;
+  const hon = a?.honours || [];
+  const medalCounts = [1, 2, 3].map(p => hon.filter(h => +h.place === p).length);
+  const hlKey = fx(a?.headline?.keyWord), hlRest = fx(a?.headline?.rest);
   const an = a?.analysis || {};
-  const reviewBody   = an.reviewBody   && an.reviewBody   !== 'x' ? an.reviewBody   : '';
-  const questionBody = an.questionBody && an.questionBody !== 'x' ? an.questionBody : '';
-  const analysisHtml = reviewBody
-    ? `<p>${reviewBody}</p>`
-    : (questionBody ? `<p><em>${questionBody}</em></p>` : '');
-  const headlineHtml = r.bite
-    ? `<div class="rd-dd-headline"><span class="hl-key rd-bite">${r.bite}</span></div>`
+  const reviewBody = fx(an.reviewBody), questionBody = fx(an.questionBody);
+  const traitBadges = (a?.traits || []).slice(0, 4).map(t =>
+    `<div class="rdx-trait"><span class="rdx-trait-ic">${t.emoji || '&bull;'}</span><span class="rdx-trait-lb">${t.label || ''}</span></div>`
+  ).join('');
+  const prsHtml = (a?.prs || []).slice(0, 5).map(pr =>
+    `<div class="rd-dd-pr-row"><span class="rd-dd-pr-event">${pr.event}</span><span class="rd-dd-pr-time">${pr.time}</span></div>`
+  ).join('');
+  const bioCells = [
+    heightV ? `<div class="rdx-bio-cell"><span>Height</span>${heightV}</div>` : '',
+    ageV ? `<div class="rdx-bio-cell"><span>Age</span>${ageV}</div>` : '',
+    weightV ? `<div class="rdx-bio-cell"><span>Weight</span>${weightV}</div>` : '',
+    seasonsV ? `<div class="rdx-bio-cell"><span>Seasons</span>${seasonsV}</div>` : '',
+  ].join('');
+  const medalNames = ['Gold', 'Silver', 'Bronze'];
+  const medalIcons = ['🥇', '🥈', '🥉'];
+  const medalsHtml = hon.length ? `<div class="rdx-medals">${medalCounts.map((n, mi) =>
+    `<div class="rdx-medal${n ? '' : ' rdx-medal--none'}"><span class="rdx-medal-ic">${medalIcons[mi]}</span><span class="rdx-medal-lb">${n}&times; ${medalNames[mi]}</span></div>`
+  ).join('')}</div>` : '';
+  const factsHtml = (clubV || coachV || hometownV) ? `<div class="rdx-facts">
+    ${clubV ? `<div class="rdx-fact"><span>Club</span>${clubV}</div>` : ''}
+    ${coachV ? `<div class="rdx-fact"><span>Coach</span>${coachV}</div>` : ''}
+    ${hometownV ? `<div class="rdx-fact"><span>Hometown</span>${hometownV}</div>` : ''}
+  </div>` : '';
+  const headlineHtml = (hlKey || r.bite)
+    ? `<div class="rdx-headline">${hlKey ? `<strong>${hlKey}</strong> <span>${hlRest}</span>` : `<strong>${r.bite}</strong>`}</div>`
     : '';
+  const analysisHtml = (reviewBody || questionBody) ? `
+    <div class="rdx-analysis">
+      <div class="rdx-label">Analysis</div>
+      ${reviewBody ? `<p><strong>${fx(an.reviewTitle) || 'Season review'}:</strong> ${reviewBody}</p>` : ''}
+      ${questionBody ? `<p><strong>${fx(an.questionTitle) || 'Next question'}:</strong> ${questionBody}</p>` : ''}
+    </div>` : '';
   const ddPanel = `
     <div class="rd-dd-panel">
-      <div class="rd-dd-panel-photo" style="background-color:${photoBg};background-image:url('${a?.photo || photo}')"></div>
-      <div class="rd-dd-panel-body">
-        <div class="rd-dd-panel-hd">
-          <div class="rd-dd-panel-nameblock">
-            <div class="rd-dd-panel-name">${name}</div>
-            <div class="rd-dd-panel-country">${renderFlag(flag)} ${country}</div>
-          </div>
+      <div class="rdx">
+        <div class="rdx-hd">
+          ${rank != null ? `<span class="rdx-hd-rank">${String(rank).padStart(2, '0')}</span>` : ''}
+          ${a && r.athleteId ? `<button class="rdx-hd-profile" onclick="event.stopPropagation();openAthleteCard('${r.athleteId}', ${rank || 0})">Full<br>Profile</button>` : ''}
+          <h3 class="rdx-hd-name">${name} <span class="rdx-hd-sub">${renderFlag(flag)} ${country}</span></h3>
+          <button class="rd-dd-close" onclick="event.stopPropagation();this.closest('.rd-dd-panel').classList.remove('open');this.closest('.rd-dd-panel').previousElementSibling.classList.remove('dd-open')">×</button>
         </div>
-        ${headlineHtml}
-        ${r.traits?.length ? `<div class="rd-dd-traits">${buildTraitsHtml(r.traits)}</div>` : ''}
-        ${seasonBest && seasonBest !== '—' ? `
-          <div class="rd-dd-sb-block">
-            <span class="rd-dd-sb-label">${RANKINGS_YEAR} Season Best</span>
-            <span class="rd-dd-sb-time">${seasonBest}${meet ? ` <span class="rd-dd-sb-meet">· ${meet}</span>` : ''}</span>
-          </div>` : ''}
-        <div class="rd-dd-panel-lower">
-          <div class="rd-dd-panel-prs">
-            <div class="rd-dd-panel-label">Personal Bests</div>
-            ${prsHtml}
-          </div>
-          ${analysisHtml ? `
-            <div class="rd-dd-panel-analysis">
-              <div class="rd-dd-panel-label">Analysis</div>
-              ${analysisHtml}
+        <div class="rdx-body">
+          <aside class="rdx-side">
+            <div class="rdx-photo" style="background-color:${photoBg};background-image:url('${a?.photo || photo}')"></div>
+            ${bioCells ? `<div class="rdx-bio">${bioCells}</div>` : ''}
+            <div class="rdx-stats">
+              <div class="rdx-stat"><span class="rdx-stat-lb">SB</span><span class="rdx-stat-num">${seasonBest || '—'}</span>${meet ? `<span class="rdx-stat-sub">${meet}</span>` : `<span class="rdx-stat-sub">${RANKINGS_YEAR}</span>`}</div>
+              ${evPB ? `<div class="rdx-stat"><span class="rdx-stat-lb">PB</span><span class="rdx-stat-num">${evPB}</span><span class="rdx-stat-sub">${_rdCurrentEvent}</span></div>` : ''}
+              ${raceCount ? `<div class="rdx-stat"><span class="rdx-stat-lb">Races</span><span class="rdx-stat-num">${raceCount}</span><span class="rdx-stat-sub">this season</span></div>` : ''}
             </div>
-          ` : ''}
+            ${medalsHtml}
+            ${factsHtml}
+            ${a?.waUrl ? `<a class="rdx-walink" href="${a.waUrl}" target="_blank" rel="noopener" onclick="event.stopPropagation()">World Athletics profile ↗</a>` : ''}
+          </aside>
+          <div class="rdx-main">
+            ${headlineHtml}
+            ${traitBadges ? `<div class="rdx-traits">${traitBadges}</div>` : ''}
+            <div class="rdx-main-cols">
+              ${analysisHtml || '<div class="rdx-analysis rdx-analysis--empty">Full analysis coming soon.</div>'}
+              ${prsHtml ? `<div class="rdx-prs"><div class="rdx-label">Personal Bests</div>${prsHtml}</div>` : ''}
+            </div>
+          </div>
         </div>
       </div>
-      <button class="rd-dd-close" onclick="event.stopPropagation();this.closest('.rd-dd-panel').classList.remove('open');this.closest('.rd-dd-panel').previousElementSibling.classList.remove('dd-open')">×</button>
     </div>`;
 
   return `
@@ -472,6 +504,7 @@ window.setRdSkim = function(mode) {
   if (!wrap) return;
   wrap.classList.toggle('rd-deep',     mode === 'invested' || mode === 'die-hard');
   wrap.classList.toggle('rd-die-hard', mode === 'die-hard');
+  document.querySelector('.rankings-detail')?.classList.toggle('rd-mode-die-hard', mode === 'die-hard');
   ['casual', 'invested', 'die-hard'].forEach(m => {
     document.getElementById(`rd-skim-${m}`)?.classList.toggle('rd-skim-btn--active', mode === m);
   });
