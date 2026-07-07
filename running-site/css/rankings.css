@@ -11,12 +11,13 @@
 }
 
 .rankings-hero-wordmark {
-  display: block;
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 14px;
 }
 
 .rankings-hero-logo-img {
-  height: 32px;
+  height: 44px;
   width: auto;
   filter: brightness(0) invert(1);
   opacity: 0.9;
