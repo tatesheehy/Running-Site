@@ -15,8 +15,6 @@
   margin-bottom: 14px;
 }
 
-.rhub-ast { font-size: 14px; }
-
 .rhub-hd-main {
   display: flex;
   align-items: flex-end;
@@ -75,14 +73,6 @@
   text-transform: uppercase;
   color: var(--muted);
   margin-top: 6px;
-}
-
-.rhub-footnote {
-  font-family: var(--font-body);
-  font-style: italic;
-  font-size: 13px;
-  color: var(--muted);
-  margin-top: 14px;
 }
 
 /* Hand-drawn squiggle rule under the masthead */
