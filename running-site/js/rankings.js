@@ -740,9 +740,11 @@ function buildRankingsDetail(eventName, opts = {}) {
               <h1 class="rd-header-event">${eventName}</h1>
               ${weekLabel ? `<p class="rd-header-desc">${weekLabel}</p>` : (ev && ev.description ? `<p class="rd-header-desc">${ev.description}</p>` : '')}
             </div>
+            ${athleteCount ? `<div class="rd-header-stat"><span class="rd-header-stat-num">${String(athleteCount).padStart(2, '0')}</span><span class="rd-header-stat-lb">Athletes Ranked</span></div>` : ''}
           </div>
+          <div class="rd-rule"></div>
           <div class="rd-header-controls">
-            ${athleteCount ? `<span class="rd-header-count">${athleteCount} athletes ranked</span>` : '<span></span>'}
+            <div class="rd-header-controls-left">${filterHtml || '<span></span>'}</div>
             <div class="rd-header-btns">
               <div class="rd-skim-toggle" id="rd-skim-toggle">
                 <button class="rd-skim-btn rd-skim-btn--active" id="rd-skim-casual"   onclick="setRdSkim('casual')">Casual</button>
@@ -762,7 +764,6 @@ function buildRankingsDetail(eventName, opts = {}) {
           </div>
         </div>
         ${ev?.photo && !archiveYear ? `<div class="rd-event-banner" style="background-image:url('${ev.photo}')"></div>` : ''}
-        ${filterHtml}
         <div id="rd-col-sentinel"></div>
         <div class="rd-col-labels" style="${isGrid ? 'display:none' : ''}">
           <span class="rd-col-sort rd-col-sort--active" data-col="rank" onclick="sortRankings('rank')">Rank <span class="rd-sort-icon">▲</span></span>
