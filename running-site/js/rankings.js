@@ -401,6 +401,7 @@ function buildRankingRow(r, rank) {
       <div class="rd-info">
         <div class="rd-name">${name}</div>
         <div class="rd-country">${renderFlag(flag)} ${country}</div>
+        ${r.bite ? `<div class="rd-bite-row">${r.bite}</div>` : ''}
         ${buildTraitsHtml(r.traits)}
         <div class="rd-row-stats">
           ${seasonBest && seasonBest !== '—' ? `<div class="rd-row-stat"><span class="rd-row-stat-label">SB</span><span class="rd-row-stat-val">${seasonBest}${meet ? ` <span class="rd-row-stat-meet">· ${meet}</span>` : ''}</span></div>` : ''}
