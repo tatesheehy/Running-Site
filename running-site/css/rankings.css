@@ -4,7 +4,7 @@
 
 /* ── RANKINGS HERO BANNER ─────────────────────────────────── */
 .rankings-hero-banner {
-  background: #115796;
+  background: var(--accent);
   text-align: center;
   padding: 28px 24px 36px;
   width: 100%;

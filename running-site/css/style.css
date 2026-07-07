@@ -3,11 +3,11 @@
    Imports all partial CSS files in dependency order.
    ============================================================ */
 
-@import "base.css";
+@import "base.css?v=2";
 @import "navbar.css";
 @import "home.css?v=12";
 @import "articles.css";
-@import "rankings.css?v=33";
+@import "rankings.css?v=34";
 @import "athletes.css?v=3";
 @import "modals.css";
 @import "about.css";
@@ -19,4 +19,5 @@
 /* Override with fresh values — force-busts import cache */
 :root {
   --font-mono: 'Space Mono', monospace;
+  --accent: #115796;
 }
