@@ -6,24 +6,16 @@
 .rhub-hd { padding: 48px 0 0; }
 
 .rhub-eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 10px;
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-transform: lowercase;
   color: var(--accent);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
-.rhub-tick {
-  display: block;
-  width: 28px;
-  height: 2px;
-  background: var(--accent);
-}
+.rhub-ast { font-size: 14px; }
 
 .rhub-hd-main {
   display: flex;
@@ -43,13 +35,14 @@
   margin: 0;
 }
 
-.rhub-title-outline {
-  display: block;
-  color: transparent;
-  -webkit-text-stroke: 1.5px rgba(17, 17, 17, 0.32);
+.rhub-title-hl {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  padding: 0 16px 6px;
+  transform: rotate(-1.4deg);
+  transform-origin: left bottom;
 }
-
-[data-theme="dark"] .rhub-title-outline { -webkit-text-stroke-color: rgba(255, 255, 255, 0.35); }
 
 .rhub-stats {
   display: flex;
@@ -84,12 +77,20 @@
   margin-top: 6px;
 }
 
-/* Broadsheet double rule under the masthead */
-.rhub-rule {
-  margin-top: 24px;
-  border-top: 3px solid var(--text);
-  border-bottom: 1px solid var(--text);
-  height: 5px;
+.rhub-footnote {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 14px;
+}
+
+/* Hand-drawn squiggle rule under the masthead */
+.rhub-squiggle {
+  height: 8px;
+  margin-top: 18px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="8" viewBox="0 0 24 8"><path d="M0 4 Q6 0 12 4 T24 4" fill="none" stroke="%23E8500A" stroke-width="2.2" stroke-linecap="round"/></svg>') repeat-x left center;
+  background-size: 24px 8px;
 }
 
 .rhub-hd-row {
@@ -151,12 +152,21 @@
 
 .ranking-card-podium-label {
   font-family: var(--font-display);
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.35);
   margin-bottom: 8px;
+}
+
+.ranking-card-podium-label em {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .ranking-card-pod-row {
@@ -317,6 +327,10 @@
   border-left-color: var(--accent);
 }
 
+.ranking-card:not(.ranking-card--featured):hover {
+  transform: translateY(-3px) rotate(0.5deg);
+}
+
 .ranking-card--active {
   border-left-color: var(--accent);
 }
@@ -377,14 +391,17 @@
   text-transform: uppercase;
   padding: 3px 8px;
   margin-bottom: 12px;
-  border: 1px solid rgba(255,255,255,0.1);
-  color: rgba(255,255,255,0.25);
+  border: 1px dashed rgba(255,255,255,0.22);
+  color: rgba(255,255,255,0.4);
+  transform: rotate(-2deg);
+  transform-origin: left center;
 }
 
 .ranking-card-badge--active {
   background: var(--accent);
-  border-color: var(--accent);
+  border: 1px solid var(--accent);
   color: #fff;
+  box-shadow: 2px 2px 0 rgba(255,255,255,0.18);
 }
 
 /* ── Full-bleed visual mode (when event photo is set) */

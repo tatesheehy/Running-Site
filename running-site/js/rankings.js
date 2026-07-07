@@ -168,12 +168,12 @@ function buildRankingsHub() {
         <div class="ranking-card-ghost">${ghostNum}</div>
         <div class="ranking-card-index">${String(i + 1).padStart(2, '0')}</div>
         <div class="ranking-card-left">
-          <div class="ranking-card-badge${isActive ? ' ranking-card-badge--active' : ''}">${isActive ? '● Live' : 'Coming Soon'}</div>
+          <div class="ranking-card-badge${isActive ? ' ranking-card-badge--active' : ''}">${isActive ? '● Live' : 'Still Cooking'}</div>
           <div class="ranking-card-event">${ev.name}</div>
           ${ev.description ? `<div class="ranking-card-desc">${ev.description}</div>` : ''}
-          <div class="ranking-card-cta"><span>${count ? `${count} athletes ranked` : 'Under construction'}</span><span class="ranking-card-cta-arrow">&rarr;</span></div>
+          <div class="ranking-card-cta"><span>${count ? `All ${count} ranked, argue away` : 'Give us a minute'}</span><span class="ranking-card-cta-arrow">&rarr;</span></div>
         </div>
-        ${podium ? `<div class="ranking-card-podium"><div class="ranking-card-podium-label">Top 3</div>${podium}</div>` : ''}
+        ${podium ? `<div class="ranking-card-podium"><div class="ranking-card-podium-label">The podium <em>(for now)</em></div>${podium}</div>` : ''}
         ${ev.photo ? `<div class="ranking-card-photo" ${photoStyle}></div>` : ''}
       </div>
     `;
@@ -186,20 +186,22 @@ function buildRankingsHub() {
     <div class="container">
       <div class="rankings-hub">
         <header class="rhub-hd">
-          <div class="rhub-eyebrow"><span class="rhub-tick"></span>StatTC Official &middot; ${RANKINGS_YEAR || new Date().getFullYear()}</div>
+          <div class="rhub-eyebrow">StatTC's completely objective<span class="rhub-ast">*</span> ${RANKINGS_YEAR || new Date().getFullYear()} rankings</div>
           <div class="rhub-hd-main">
-            <h1 class="rhub-title">Rankings<span class="rhub-title-outline">Center</span></h1>
+            <h1 class="rhub-title">Rankings <span class="rhub-title-hl">Center</span></h1>
             <div class="rhub-stats">
               <div class="rhub-stat"><span class="rhub-stat-num">${String(eventCount).padStart(2, '0')}</span><span class="rhub-stat-label">Events</span></div>
               <div class="rhub-stat"><span class="rhub-stat-num">${String(athleteCount).padStart(2, '0')}</span><span class="rhub-stat-label">Athletes Ranked</span></div>
+              <div class="rhub-stat"><span class="rhub-stat-num">&infin;</span><span class="rhub-stat-label">Hot Takes</span></div>
             </div>
           </div>
-          <div class="rhub-rule"></div>
+          <div class="rhub-footnote">*as objective as track fans with a spreadsheet can be.</div>
+          <div class="rhub-squiggle"></div>
           <div class="rhub-hd-row">
             ${SITE.rankingsIntro ? `<p class="rankings-page-intro">${SITE.rankingsIntro}</p>` : '<span></span>'}
             <div class="rankings-hub-actions">
-              <button class="h2h-hub-btn" onclick="openH2H()">⇌ Compare Head to Head</button>
-              ${RANKINGS_ARCHIVE.length ? `<a href="rankings.html?view=archive" class="rankings-archive-link"><svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:-2px;margin-right:6px"><path d="M1 2.5C1 1.67 1.67 1 2.5 1H5.5L7 3H12.5C13.33 3 14 3.67 14 4.5V10.5C14 11.33 13.33 12 12.5 12H2.5C1.67 12 1 11.33 1 10.5V2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>Rankings Archive &rarr;</a>` : ''}
+              <button class="h2h-hub-btn" onclick="openH2H()">⇌ Settle an Argument</button>
+              ${RANKINGS_ARCHIVE.length ? `<a href="rankings.html?view=archive" class="rankings-archive-link"><svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:-2px;margin-right:6px"><path d="M1 2.5C1 1.67 1.67 1 2.5 1H5.5L7 3H12.5C13.33 3 14 3.67 14 4.5V10.5C14 11.33 13.33 12 12.5 12H2.5C1.67 12 1 11.33 1 10.5V2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>Dig through the archives &rarr;</a>` : ''}
             </div>
           </div>
         </header>
