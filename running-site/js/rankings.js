@@ -153,7 +153,7 @@ function buildRankingsHub() {
     const photoStyle = hasPhoto ? `style="background-image:url('${ev.photo}');"` : '';
     const ghostNum = ev.name.replace(/[^0-9]/g, '') || ev.name;
     return `
-      <div class="ranking-card${hasPhoto ? ' ranking-card--visual' : ''}${isActive ? ' ranking-card--active' : ''}" onclick="goTo('rankings.html?event=${encodeURIComponent(ev.name)}')">
+      <div class="ranking-card${hasPhoto ? ' ranking-card--visual' : ''}${isActive ? ' ranking-card--active ranking-card--featured' : ''}" onclick="goTo('rankings.html?event=${encodeURIComponent(ev.name)}')">
         <div class="ranking-card-ghost">${ghostNum}</div>
         <div class="ranking-card-left">
           <div class="ranking-card-badge${isActive ? ' ranking-card-badge--active' : ''}">${isActive ? 'Ranked' : 'Coming Soon'}</div>
@@ -166,15 +166,23 @@ function buildRankingsHub() {
     `;
   }).join('');
 
-  document.body.classList.add('rankings-realm');
+  const eventCount = RANKINGS_EVENTS.length;
+  const athleteCount = RANKINGS_EVENTS.reduce((n, ev) => n + (ev.rows || []).length, 0);
 
   document.getElementById('main').innerHTML = `
     <div class="container">
       <div class="rankings-hub">
-        <header class="realm-hd">
-          <div class="realm-hd-eyebrow"><span class="realm-hd-tick"></span>StatTC Official</div>
-          <h1 class="realm-hd-title">Rankings<span class="realm-hd-title-outline">Center</span></h1>
-          <div class="realm-hd-row">
+        <header class="rhub-hd">
+          <div class="rhub-eyebrow"><span class="rhub-tick"></span>StatTC Official &middot; ${RANKINGS_YEAR || new Date().getFullYear()}</div>
+          <div class="rhub-hd-main">
+            <h1 class="rhub-title">Rankings<span class="rhub-title-outline">Center</span></h1>
+            <div class="rhub-stats">
+              <div class="rhub-stat"><span class="rhub-stat-num">${String(eventCount).padStart(2, '0')}</span><span class="rhub-stat-label">Events</span></div>
+              <div class="rhub-stat"><span class="rhub-stat-num">${String(athleteCount).padStart(2, '0')}</span><span class="rhub-stat-label">Athletes Ranked</span></div>
+            </div>
+          </div>
+          <div class="rhub-rule"></div>
+          <div class="rhub-hd-row">
             ${SITE.rankingsIntro ? `<p class="rankings-page-intro">${SITE.rankingsIntro}</p>` : '<span></span>'}
             <div class="rankings-hub-actions">
               <button class="h2h-hub-btn" onclick="openH2H()">⇌ Compare Head to Head</button>

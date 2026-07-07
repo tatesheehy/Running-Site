@@ -2,17 +2,10 @@
    RANKINGS — all .rd-*, .rankings-*, archive, ranking-card
    ============================================================ */
 
-/* ── RANKINGS REALM (dark hub environment) ────────────────── */
-body.rankings-realm {
-  background:
-    radial-gradient(ellipse 90% 44% at 50% -6%, rgba(232, 80, 10, 0.09), transparent 62%),
-    #101010;
-  color: #f0f0f0;
-}
+/* ── RANKINGS HUB MASTHEAD (editorial, light) ─────────────── */
+.rhub-hd { padding: 48px 0 0; }
 
-.realm-hd { padding: 52px 0 26px; }
-
-.realm-hd-eyebrow {
+.rhub-eyebrow {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -25,70 +18,105 @@ body.rankings-realm {
   margin-bottom: 16px;
 }
 
-.realm-hd-tick {
+.rhub-tick {
   display: block;
   width: 28px;
   height: 2px;
   background: var(--accent);
 }
 
-.realm-hd-title {
-  font-family: var(--font-display);
-  font-size: clamp(52px, 9vw, 104px);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: -0.01em;
-  line-height: 0.92;
-  color: #fff;
-  margin: 0;
-}
-
-.realm-hd-title-outline {
-  display: block;
-  color: transparent;
-  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.35);
-}
-
-.realm-hd-row {
+.rhub-hd-main {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  gap: 32px;
+}
+
+.rhub-title {
+  font-family: var(--font-display);
+  font-size: clamp(52px, 8.5vw, 100px);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 0.9;
+  color: var(--text);
+  margin: 0;
+}
+
+.rhub-title-outline {
+  display: block;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(17, 17, 17, 0.32);
+}
+
+[data-theme="dark"] .rhub-title-outline { -webkit-text-stroke-color: rgba(255, 255, 255, 0.35); }
+
+.rhub-stats {
+  display: flex;
+  gap: 36px;
+  padding-bottom: 8px;
+  flex-shrink: 0;
+}
+
+.rhub-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.rhub-stat-num {
+  font-family: var(--font-mono);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.rhub-stat-label {
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+/* Broadsheet double rule under the masthead */
+.rhub-rule {
+  margin-top: 24px;
+  border-top: 3px solid var(--text);
+  border-bottom: 1px solid var(--text);
+  height: 5px;
+}
+
+.rhub-hd-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 24px;
-  margin-top: 22px;
+  padding: 14px 0 18px;
 }
 
-/* Dark-realm overrides for shared hub pieces */
-.rankings-realm .rankings-page-intro { color: #999; max-width: 520px; }
-.rankings-realm .rankings-criteria {
-  border-top-color: rgba(255, 255, 255, 0.09);
-  border-bottom-color: rgba(255, 255, 255, 0.09);
-}
-.rankings-realm .rankings-criteria-toggle { color: #777; }
-.rankings-realm .rankings-criteria-toggle:hover { color: #fff; }
-.rankings-realm .rankings-criteria-body { color: #aaa; }
-.rankings-realm .rankings-archive-link { color: #777; }
-.rankings-realm .rankings-archive-link:hover { color: #fff; }
-.rankings-realm .h2h-hub-btn { background: var(--accent); }
-.rankings-realm .ranking-card {
-  background: #161616;
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  border-left: 3px solid rgba(255, 255, 255, 0.07);
-  box-shadow: none;
-}
-.rankings-realm .ranking-card--active { border-left-color: var(--accent); }
-.rankings-realm .ranking-card:hover {
-  border-color: rgba(255, 255, 255, 0.14);
-  border-left-color: var(--accent);
-  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
-}
-.rankings-realm .ranking-card-photo::before {
-  background: linear-gradient(to right, #161616 0%, transparent 32%);
+.rankings-hub .rankings-page-intro { max-width: 560px; }
+.rankings-hub .h2h-hub-btn { background: var(--accent); }
+
+@media (max-width: 720px) {
+  .rhub-hd { padding: 32px 0 0; }
+  .rhub-hd-main { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .rhub-stats { gap: 28px; padding-bottom: 0; }
+  .rhub-stat { align-items: flex-start; text-align: left; }
+  .rhub-stat-num { font-size: 32px; }
+  .rhub-hd-row { flex-direction: column; align-items: flex-start; gap: 12px; }
 }
 
-@media (max-width: 640px) {
-  .realm-hd { padding: 36px 0 20px; }
-  .realm-hd-row { flex-direction: column; align-items: flex-start; gap: 14px; margin-top: 16px; }
-}
+/* Featured (live) cards span the full grid width */
+.ranking-card--featured { grid-column: 1 / -1; }
+.ranking-card--featured.ranking-card--visual { height: 320px; }
+.ranking-card--featured .ranking-card-event { font-size: 44px; }
+.ranking-card--featured .ranking-card-ghost { font-size: 220px; bottom: -40px; }
 
 /* ── RANKINGS HUB ─────────────────────────────────────────── */
 .rankings-hub { padding-bottom: 60px; }
