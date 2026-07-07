@@ -1,31 +1,18 @@
 {
-  "id": "hakon-moe-berg",
-  "name": "Håkon Moe Berg",
-  "flag": "NO",
-  "country": "Norway",
-  "waUrl": "https://worldathletics.org/athletes/norway/hakon-moe-berg-15034954",
-  "photo": "",
   "photoBackground": "#111111",
-  "event": "MIDDLE DISTANCE",
-  "age": "20",
-  "dob": "2006-06-26",
-  "height": "x",
-  "weight": "x",
-  "hometown": "x",
-  "coach": "x",
-  "club": "x",
-  "seasons": "0",
-  "ncaa": false,
-  "collegeLogo": "",
-  "college": "",
-  "headlineKey": "x",
-  "headlineRest": "x",
-  "questionTitle": "Next question",
-  "questionBody": "x",
   "reviewTitle": "Season review",
-  "reviewBody": "x",
+  "collegeLogo": "",
   "traits": [],
+  "waUrl": "https://worldathletics.org/athletes/norway/hakon-moe-berg-15034954",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Håkon Moe Berg",
+  "headlineKey": "x",
+  "flag": "NO",
   "honours": [],
+  "seasons": "0",
+  "lastSynced": "2026-07-07",
   "prs": [
     {
       "event": "800m",
@@ -48,6 +35,12 @@
       "time": "3:33.96"
     }
   ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "",
+  "ncaa": false,
+  "club": "x",
+  "country": "Norway",
   "results": [
     {
       "date": "JUN 3",
@@ -113,8 +106,19 @@
       "place": "1."
     }
   ],
-  "lastSynced": "2026-07-07",
+  "dob": "2006-06-26",
+  "college": "",
+  "weight": "x",
+  "lastHistorySynced": "2026-07-06",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "hakon-moe-berg",
   "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
     "2022": [
       {
         "date": "SEP 21",
@@ -621,5 +625,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-04"
+  "age": "20"
 }

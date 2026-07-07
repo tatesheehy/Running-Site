@@ -1,6 +1,9 @@
 {
   "photoBackground": "#111111",
   "reviewTitle": "Season review",
+  "ncaaTitle": [
+    "1500m"
+  ],
   "waUrl": "https://worldathletics.org/athletes/united-states/yared-nuguse-14798735",
   "height": "5'11",
   "questionBody": "x",
@@ -87,6 +90,13 @@
   "country": "United States",
   "results": [
     {
+      "date": "JUL 4",
+      "meet": "Prefontaine Classic",
+      "event": "Mile",
+      "time": "3:46.61",
+      "place": "2."
+    },
+    {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
       "event": "1500 m",
@@ -166,9 +176,798 @@
   ],
   "dob": "1999-06-01",
   "weight": "145",
+  "lastHistorySynced": "2026-07-05",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "yared-nuguse",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUL 10",
+        "meet": "IAAF World U20 Championships",
+        "event": "1500m",
+        "time": "3:49.68",
+        "place": "8"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Bloomington USA U20 Championships",
+        "event": "1500m",
+        "time": "3:49.65",
+        "place": "1"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Tampa NCAA East Preliminary Round",
+        "event": "1500m",
+        "time": "3:48.92",
+        "place": "12"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "Tampa NCAA East Preliminary Round",
+        "event": "1500m",
+        "time": "3:45.76",
+        "place": "4"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Coral Gables ACC Ch.",
+        "event": "1500m",
+        "time": "3:46.86",
+        "place": "3"
+      },
+      {
+        "date": "MAY 10",
+        "meet": "Coral Gables ACC Ch.",
+        "event": "1500m",
+        "time": "3:42.44",
+        "place": "1"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:31.22",
+        "place": "2"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Clemson ACC Indoor Championships",
+        "event": "Mile sh",
+        "time": "4:05.29",
+        "place": "5"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Clemson ACC Indoor Championships",
+        "event": "Mile sh",
+        "time": "4:06.81",
+        "place": "2"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Clemson ACC Indoor Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:40.14",
+        "place": "2"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Notre Dame Alex Wilson Invitational",
+        "event": "Distance Medley",
+        "time": "9:28.79",
+        "place": "5"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Ames Iowa State Classic",
+        "event": "3000m",
+        "time": "8:04.67",
+        "place": "4"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "South Bend Meyo Invitational",
+        "event": "Mile",
+        "time": "4:02.44",
+        "place": "1"
+      },
+      {
+        "date": "JAN 20",
+        "meet": "Notre Dame Invitational",
+        "event": "3000m",
+        "time": "8:16.15",
+        "place": "1"
+      }
+    ],
+    "2019": [
+      {
+        "date": "JUN 7",
+        "meet": "NCAA Div. I Outdoor Championships",
+        "event": "1500m",
+        "time": "3:41.39",
+        "place": "1"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "NCAA Div. I Outdoor Championships",
+        "event": "1500m",
+        "time": "3:44.33",
+        "place": "2"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "NCAA East Preliminary Round",
+        "event": "1500m",
+        "time": "3:41.86",
+        "place": "1"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "NCAA East Preliminary Round",
+        "event": "1500m",
+        "time": "3:45.06",
+        "place": "1"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Atlantic Coast Conference Ch;",
+        "event": "1500m",
+        "time": "3:41.34",
+        "place": "1"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "Atlantic Coast Conference Ch;",
+        "event": "1500m",
+        "time": "3:46.86",
+        "place": "1"
+      },
+      {
+        "date": "APR 26",
+        "meet": "Penn Relays",
+        "event": "Distance Medley",
+        "time": "9:47.94",
+        "place": "3"
+      },
+      {
+        "date": "APR 19",
+        "meet": "Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "3:38.32",
+        "place": "3"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "Stanford Invitational",
+        "event": "800m",
+        "time": "1:48.29",
+        "place": "1"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:31.55",
+        "place": "1"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Atlantic Coast Conference Championships",
+        "event": "Mile sh",
+        "time": "3:57.93",
+        "place": "1"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Atlantic Coast Conference Championships",
+        "event": "Mile sh",
+        "time": "4:06.96",
+        "place": "1"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Alex Wilson Invitational",
+        "event": "Distance Medley",
+        "time": "9:26.10",
+        "place": "1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Iowa State Classic",
+        "event": "3000m",
+        "time": "7:57.55",
+        "place": "7"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Meyo Invitational",
+        "event": "Mile",
+        "time": "4:01.10",
+        "place": "1"
+      },
+      {
+        "date": "JAN 19",
+        "meet": "Notre Dame Invitational",
+        "event": "1000m",
+        "time": "DNF",
+        "place": ""
+      }
+    ],
+    "2020": [
+      {
+        "date": "FEB 29",
+        "meet": "Atlantic Coast Conference Championships",
+        "event": "Mile",
+        "time": "3:55.62",
+        "place": "1"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "Atlantic Coast Conference Championships",
+        "event": "Mile",
+        "time": "4:02.59",
+        "place": "1"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "Atlantic Coast Conference Championships",
+        "event": "Distance Medley",
+        "time": "9:43.55",
+        "place": "1"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Alex Wilson Invitational",
+        "event": "Distance Medley",
+        "time": "9:25.80",
+        "place": "1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Meyo Invitational",
+        "event": "3000m",
+        "time": "7:46.71",
+        "place": "1"
+      }
+    ],
+    "2021": [
+      {
+        "date": "AUG 3",
+        "meet": "The XXXII Olympic Games",
+        "event": "1500m",
+        "time": "DNS",
+        "place": ""
+      },
+      {
+        "date": "JUN 27",
+        "meet": "U.S. Olympic Trials",
+        "event": "1500m",
+        "time": "3:36.19",
+        "place": "3"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "U.S. Olympic Trials",
+        "event": "1500m",
+        "time": "3:38.60",
+        "place": "2"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "U.S. Olympic Trials",
+        "event": "1500m",
+        "time": "3:39.09",
+        "place": "2"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "NCAA Div. I Outdoor Championships",
+        "event": "1500m",
+        "time": "3:35.60",
+        "place": "2"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "NCAA Div. I Outdoor Championships",
+        "event": "1500m",
+        "time": "3:37.36",
+        "place": "1"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "NCAA East Preliminary",
+        "event": "1500m",
+        "time": "3:36.85",
+        "place": "2"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "NCAA East Preliminary",
+        "event": "1500m",
+        "time": "3:44.34",
+        "place": "1"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "ACC Ch.",
+        "event": "1500m",
+        "time": "3:40.86",
+        "place": "1"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "ACC Ch.",
+        "event": "1500m",
+        "time": "3:34.68",
+        "place": "1"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Oregon Twilight",
+        "event": "1500m",
+        "time": "3:35.96",
+        "place": "1"
+      },
+      {
+        "date": "MAR 25",
+        "meet": "Raleigh Relays",
+        "event": "5000m",
+        "time": "13:40.62",
+        "place": "1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 1",
+        "meet": "Cross Champs",
+        "event": "Cross Country",
+        "time": "23:31",
+        "place": "2"
+      },
+      {
+        "date": "SEP 4",
+        "meet": "XXXV Meeting Città di Padova",
+        "event": "1500m",
+        "time": "3:33.26",
+        "place": "1"
+      },
+      {
+        "date": "AUG 30",
+        "meet": "Spitzen Leichtathletik",
+        "event": "1500m",
+        "time": "3:36.34",
+        "place": "1"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "Sir Walter Miler",
+        "event": "Mile",
+        "time": "3:53.34",
+        "place": "1"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Murphey Classic",
+        "event": "1500m",
+        "time": "3:34.95",
+        "place": "1"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Toyota USATF Outdoor Championships",
+        "event": "1500m",
+        "time": "3:47.46",
+        "place": "11"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Toyota USATF Outdoor Championships",
+        "event": "1500m",
+        "time": "3:38.99",
+        "place": "1"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Portland Track Festival",
+        "event": "1500m",
+        "time": "3:34.98",
+        "place": "1"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Track Meet",
+        "event": "1500m",
+        "time": "3:39.29",
+        "place": "6"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:01.53",
+        "place": "9"
+      },
+      {
+        "date": "MAR 11",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:25.77",
+        "place": "2"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "ACC Indoor Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:37.10",
+        "place": "2"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Alex Wilson Invitational",
+        "event": "Distance Medley",
+        "time": "9:21.73",
+        "place": "1"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "3000m sh",
+        "time": "7:38.13",
+        "place": "1"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "Notre Dame Invitational",
+        "event": "Mile",
+        "time": "3:54.46",
+        "place": "1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 9",
+        "meet": "Start to the Park 10k and Kalakaua Merrie Mile",
+        "event": "Mile",
+        "time": "3:56.58",
+        "place": "1"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:43.97",
+        "place": "2"
+      },
+      {
+        "date": "AUG 31",
+        "meet": "Weltklasse Zürich",
+        "event": "1500m",
+        "time": "3:30.49",
+        "place": "1"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:30.25",
+        "place": "5"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:32.69",
+        "place": "1"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:34.16",
+        "place": "2"
+      },
+      {
+        "date": "JUL 23",
+        "meet": "London Athletics Meet",
+        "event": "1500m",
+        "time": "3:30.44",
+        "place": "1"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "USA Championships",
+        "event": "1500m",
+        "time": "3:34.90",
+        "place": "1"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "USA Championships",
+        "event": "1500m",
+        "time": "3:35.37",
+        "place": "1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Oslo Bislett Games",
+        "event": "1500m",
+        "time": "3:29.02",
+        "place": "3"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "1500m",
+        "time": "3:33.02",
+        "place": "2"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Track Festival",
+        "event": "800m",
+        "time": "1:46.30",
+        "place": "1"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "World Indoor Tour Madrid 2023",
+        "event": "1500m sh",
+        "time": "3:33.69",
+        "place": "1"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Millrose Games",
+        "event": "Mile sh",
+        "time": "3:47.38",
+        "place": "1"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "3000m sh",
+        "time": "7:28.23",
+        "place": "1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "SEP 13",
+        "meet": "Memorial van Damme",
+        "event": "1500m",
+        "time": "3:32.30",
+        "place": "6"
+      },
+      {
+        "date": "SEP 5",
+        "meet": "Weltklasse Zürich",
+        "event": "1500m",
+        "time": "3:29.21",
+        "place": "1"
+      },
+      {
+        "date": "SEP 1",
+        "meet": "New Balance KÖ MEILE, Düsseldorf",
+        "event": "Mile",
+        "time": "3:51.9",
+        "place": "2"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:27.80",
+        "place": "3"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:31.72",
+        "place": "1"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:36.56",
+        "place": "5"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "1500m",
+        "time": "3:29.13",
+        "place": "4"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "1500m",
+        "time": "3:30.86",
+        "place": "2"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "1500m",
+        "time": "3:34.09",
+        "place": "1"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "1500m",
+        "time": "3:37.61",
+        "place": "2"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:46.22",
+        "place": "3"
+      },
+      {
+        "date": "APR 27",
+        "meet": "The Penn Relay Carnival",
+        "event": "Mile",
+        "time": "3:51.06",
+        "place": "1"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "World Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:43.59",
+        "place": "2"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "USA Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:55.76",
+        "place": "1"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Millrose Games",
+        "event": "Mile sh",
+        "time": "3:47.83",
+        "place": "1"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "5000m sh",
+        "time": "13:02.09",
+        "place": "3"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 13",
+        "meet": "Honolulu Marathon",
+        "event": "Mile",
+        "time": "3:57.25",
+        "place": "3"
+      },
+      {
+        "date": "SEP 7",
+        "meet": "New Balance 5th Avenue Mile",
+        "event": "Mile",
+        "time": "3:47.7",
+        "place": "1"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Weltklasse Zürich",
+        "event": "1500m",
+        "time": "3:30.84",
+        "place": "7"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Memorial van Damme",
+        "event": "1500m",
+        "time": "3:31.51",
+        "place": "3"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "1500m",
+        "time": "3:33.19",
+        "place": "1"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "USA Championships",
+        "event": "1500m",
+        "time": "3:31.34",
+        "place": "5"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "USA Championships",
+        "event": "1500m",
+        "time": "3:32.66",
+        "place": "1"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:45.95",
+        "place": "2"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Grand Slam Track Philadelphia",
+        "event": "1500m",
+        "time": "3:35.59",
+        "place": "6"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "Grand Slam Track Philadelphia",
+        "event": "800m",
+        "time": "1:45.36",
+        "place": "3"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Grand Slam Track Miami",
+        "event": "800m",
+        "time": "1:44.77",
+        "place": "4"
+      },
+      {
+        "date": "MAY 2",
+        "meet": "Grand Slam Track Miami",
+        "event": "1500m",
+        "time": "3:34.65",
+        "place": "2"
+      },
+      {
+        "date": "APR 6",
+        "meet": "Grand Slam Track Kingston",
+        "event": "800m",
+        "time": "1:48.16",
+        "place": "6"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Grand Slam Track Kingston",
+        "event": "1500m",
+        "time": "3:35.36",
+        "place": "2"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Last Chance Indoor National Qualifier",
+        "event": "Mile sh",
+        "time": "3:47.22",
+        "place": "1"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Last Chance Indoor National Qualifier",
+        "event": "5000m sh",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Millrose Games",
+        "event": "Mile sh",
+        "time": "3:46.63",
+        "place": "1"
+      }
+    ]
+  },
   "age": "27"
 }

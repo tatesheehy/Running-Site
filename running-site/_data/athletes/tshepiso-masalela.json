@@ -9,6 +9,7 @@
   "headlineKey": "x",
   "flag": "BI",
   "seasons": "x",
+  "lastSynced": "2026-07-07",
   "prs": [
     {
       "event": "400m",
@@ -55,47 +56,709 @@
   "country": "Botswana",
   "results": [
     {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "800 m",
+      "time": "1:45.70",
+      "place": "8."
+    },
+    {
+      "date": "JUN 26",
+      "meet": "76. Boris Hanžeković Memorial",
+      "event": "800 m",
+      "time": "1:44.99",
+      "place": "2."
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "1500 m",
+      "time": "3:36.08",
+      "place": ""
+    },
+    {
       "date": "JUN 16",
       "meet": "65th Ostrava Golden Spike",
       "event": "Mile",
       "time": "3:52.07",
-      "place": ""
+      "place": "7."
     },
     {
       "date": "JUN 5",
       "meet": "Znamensky Memorial",
-      "event": "",
+      "event": "1500 m",
       "time": "3:37.78",
-      "place": "3"
+      "place": "3."
     },
     {
       "date": "APR 10",
       "meet": "Cape Miller Continental Tour",
-      "event": "",
+      "event": "1500 m",
       "time": "3:35.99",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "APR 5",
       "meet": "Botswana Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:35.06",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "FEB 22",
       "meet": "ORLEN Copernicus Cup",
-      "event": "",
+      "event": "1500 m sh",
       "time": "DQ",
       "place": ""
     }
   ],
+  "dob": "1999-05-25",
   "weight": "x",
+  "lastHistorySynced": "2026-07-05",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "tshepiso-masalela",
-  "age": "27",
-  "lastSynced": "2026-07-07",
-  "dob": "1999-05-25"
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "DEC 14",
+        "meet": "Gaborone AUSC Region 5 Youth Games, Gaborone",
+        "event": "800m",
+        "time": "1:49.06",
+        "place": "1"
+      },
+      {
+        "date": "DEC 12",
+        "meet": "Gaborone AUSC Region 5 Youth Games, Gaborone",
+        "event": "800m",
+        "time": "1:53.19",
+        "place": "1"
+      },
+      {
+        "date": "DEC 12",
+        "meet": "Gaborone AUSC Region 5 Youth Games, Gaborone",
+        "event": "1500m",
+        "time": "3:44.59",
+        "place": "1"
+      },
+      {
+        "date": "APR 28",
+        "meet": "Boksburg CAA U20/U18 Southern Regional Championships, Boksburg",
+        "event": "800m",
+        "time": "1:50.74",
+        "place": "1"
+      },
+      {
+        "date": "APR 27",
+        "meet": "Boksburg CAA U20/U18 Southern Regional Championships, Boksburg",
+        "event": "1500m",
+        "time": "3:55.14",
+        "place": "2"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Francistown BAA Super Night, Francistown",
+        "event": "1500m",
+        "time": "3:53.13",
+        "place": "1"
+      }
+    ],
+    "2019": [
+      {
+        "date": "AUG 29",
+        "meet": "African Games",
+        "event": "1500m",
+        "time": "3:50.29",
+        "place": "10"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "African Games",
+        "event": "800m",
+        "time": "1:46.82",
+        "place": "8"
+      },
+      {
+        "date": "AUG 27",
+        "meet": "African Games",
+        "event": "800m",
+        "time": "1:48.92",
+        "place": "3"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "African Games",
+        "event": "800m",
+        "time": "1:50.77",
+        "place": "2"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "CAA/SAR Ch., Réduit",
+        "event": "800m",
+        "time": "1:49.73",
+        "place": "1"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Botswana Championships, Francistown",
+        "event": "1500m",
+        "time": "3:50.51",
+        "place": "1"
+      },
+      {
+        "date": "APR 27",
+        "meet": "International Meet, Gaborone",
+        "event": "800m",
+        "time": "1:50.16",
+        "place": "1"
+      },
+      {
+        "date": "APR 17",
+        "meet": "Athletics Grand Prix Series, Potchefstroom",
+        "event": "800m",
+        "time": "1:48.21",
+        "place": "1"
+      },
+      {
+        "date": "APR 12",
+        "meet": "Sasol/NWU-Pukke International Athletics Meeting, Sasolburg",
+        "event": "800m",
+        "time": "1:47.1",
+        "place": "1"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "ACNW League 5, Potchefstroom",
+        "event": "1500m",
+        "time": "3:48.82",
+        "place": "1"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "UBAC Classic Showdown, Gaborone",
+        "event": "400m",
+        "time": "48.30",
+        "place": "2"
+      }
+    ],
+    "2020": [
+      {
+        "date": "FEB 15",
+        "meet": "BAA Series",
+        "event": "1500m",
+        "time": "3:50.15",
+        "place": "1"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "BAA Series, Maun",
+        "event": "1500m",
+        "time": "3:44.23",
+        "place": "1"
+      }
+    ],
+    "2021": [
+      {
+        "date": "JUN 16",
+        "meet": "BAA Series",
+        "event": "800m",
+        "time": "1:46.78",
+        "place": "2"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "AGN League 3",
+        "event": "800m",
+        "time": "1:46.34",
+        "place": "1"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Botswana Championships",
+        "event": "800m",
+        "time": "1:46.97",
+        "place": "1"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Botswana Championships",
+        "event": "800m",
+        "time": "1:54.43",
+        "place": "1"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "ACNW Open T&F Meeting",
+        "event": "800m",
+        "time": "1:47.43",
+        "place": "1"
+      },
+      {
+        "date": "APR 17",
+        "meet": "BAA Series Meet",
+        "event": "800m",
+        "time": "1:50.51",
+        "place": "1"
+      },
+      {
+        "date": "JAN 23",
+        "meet": "5th BAA Interzonal Meet, Gaborone",
+        "event": "800m",
+        "time": "1:52.95",
+        "place": "1"
+      },
+      {
+        "date": "JAN 23",
+        "meet": "5th BAA Interzonal Meet, Gaborone",
+        "event": "1500m",
+        "time": "3:45.50",
+        "place": "1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "AUG 3",
+        "meet": "XXII Commonwealth Games",
+        "event": "800m",
+        "time": "1:49.12",
+        "place": "5"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "African Athletics Championships",
+        "event": "800m",
+        "time": "1:46.65",
+        "place": "3"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "African Athletics Championships",
+        "event": "800m",
+        "time": "1:46.80",
+        "place": "4"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "African Athletics Championships",
+        "event": "800m",
+        "time": "1:48.69",
+        "place": "1"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "AVT Ch.",
+        "event": "1500m",
+        "time": "4:06.48",
+        "place": "1"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Botswana Championships",
+        "event": "800m",
+        "time": "1:46.79",
+        "place": "1"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Botswana Championships",
+        "event": "800m",
+        "time": "1:54.12",
+        "place": "2"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Botswana Championships",
+        "event": "1500m",
+        "time": "3:49.34",
+        "place": "1"
+      },
+      {
+        "date": "APR 30",
+        "meet": "Gaborone International Meet",
+        "event": "800m",
+        "time": "1:46.90",
+        "place": "4"
+      },
+      {
+        "date": "APR 13",
+        "meet": "ASA Athletics Grand Prix 4",
+        "event": "800m",
+        "time": "1:48.35",
+        "place": "2"
+      },
+      {
+        "date": "APR 6",
+        "meet": "ASA Athletics Grand Prix 3",
+        "event": "800m",
+        "time": "1:46.40",
+        "place": "1"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "Road to GIM2022",
+        "event": "1500m",
+        "time": "3:44.74",
+        "place": "1"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "BAA Athletics Series 3",
+        "event": "1500m",
+        "time": "3:47.11",
+        "place": "1"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "BAA Athletics Series 2",
+        "event": "5000m",
+        "time": "14:57.29",
+        "place": "1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "SEP 8",
+        "meet": "Memorial van Damme",
+        "event": "800m",
+        "time": "1:44.03",
+        "place": "3"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.57",
+        "place": "6"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.14",
+        "place": "2"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.60",
+        "place": "4"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Night of Athletics",
+        "event": "800m",
+        "time": "1:48.11",
+        "place": "7"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Meeting Internationald'Athletisme de la Province de Liège",
+        "event": "600m",
+        "time": "1:16.13",
+        "place": "4"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Guldensporenmeeting",
+        "event": "800m",
+        "time": "1:45.67",
+        "place": "1"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Meeting National d'Athlétisme de Troyes",
+        "event": "800m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Next Generation Athletics",
+        "event": "800m",
+        "time": "1:45.80",
+        "place": "2"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Putbos Memoria Leon Buyle VS Flanders Cup",
+        "event": "800m",
+        "time": "1:46.07",
+        "place": "1"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "Botswana Championships",
+        "event": "800m",
+        "time": "1:48.21",
+        "place": "1"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "Botswana Championships",
+        "event": "1500m",
+        "time": "3:49.47",
+        "place": "1"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Kip Keino Classic",
+        "event": "800m",
+        "time": "1:45.24",
+        "place": "4"
+      },
+      {
+        "date": "APR 29",
+        "meet": "Botswana Golden Grand Prix",
+        "event": "800m",
+        "time": "1:45.4",
+        "place": "4"
+      },
+      {
+        "date": "APR 12",
+        "meet": "ASA Athletics Grand Prix 1",
+        "event": "800m",
+        "time": "1:48.66",
+        "place": "5"
+      },
+      {
+        "date": "MAR 25",
+        "meet": "Botswana Golden Grand Prix Pre Meet",
+        "event": "800m",
+        "time": "1:46.33",
+        "place": "1"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "AGN Track & Field League 5",
+        "event": "400m",
+        "time": "48.21",
+        "place": "2"
+      },
+      {
+        "date": "JAN 21",
+        "meet": "AGN Track and Field League 2",
+        "event": "1500m",
+        "time": "3:48.07",
+        "place": "1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "SEP 14",
+        "meet": "Memorial van Damme",
+        "event": "800m",
+        "time": "1:44.34",
+        "place": "8"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:42.82",
+        "place": "7"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:45.33",
+        "place": "2"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:45.58",
+        "place": "3"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "1:44.96",
+        "place": "10"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "BAUHAUS-Galan",
+        "event": "800m",
+        "time": "1:44.44",
+        "place": "3"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Meeting International Mohammed VI d’Athlétisme de Rabat/Marrakech",
+        "event": "800m",
+        "time": "1:44.14",
+        "place": "4"
+      },
+      {
+        "date": "APR 27",
+        "meet": "Yangtze Delta Athletics Diamond Gala",
+        "event": "800m",
+        "time": "1:47.27",
+        "place": "11"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Wanda Diamond League Xiamen",
+        "event": "800m",
+        "time": "1:43.88",
+        "place": "3"
+      },
+      {
+        "date": "MAR 27",
+        "meet": "ASA Athletics Grand Prix 3 / Continental Tour Challenger",
+        "event": "1500m",
+        "time": "3:42.39",
+        "place": "1"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.44",
+        "place": "5"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.76",
+        "place": "2"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "ORLEN Copernicus Cup",
+        "event": "800m sh",
+        "time": "1:46.07",
+        "place": "1"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Metz Moselle Athleor",
+        "event": "800m sh",
+        "time": "1:45.56",
+        "place": "1"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "Czech Indoor Gala",
+        "event": "800m sh",
+        "time": "1:46.41",
+        "place": "1"
+      },
+      {
+        "date": "JAN 20",
+        "meet": "AGN League 1",
+        "event": "1500m",
+        "time": "3:44.24",
+        "place": "1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 20",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:42.77",
+        "place": "8"
+      },
+      {
+        "date": "SEP 18",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:43.80",
+        "place": "4"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.74",
+        "place": "2"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Weltklasse Zürich",
+        "event": "800m",
+        "time": "1:43.16",
+        "place": "5"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Athletissima Lausanne",
+        "event": "800m",
+        "time": "1:44.51",
+        "place": "6"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Night of Athletics",
+        "event": "800m",
+        "time": "1:44.15",
+        "place": "1"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "800m",
+        "time": "1:43.82",
+        "place": "8"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "1:44.16",
+        "place": "8"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Meeting International Mohammed VI d'Athlétisme de Rabat",
+        "event": "800m",
+        "time": "1:42.70",
+        "place": "1"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Doha Meeting",
+        "event": "800m",
+        "time": "1:43.11",
+        "place": "1"
+      },
+      {
+        "date": "APR 12",
+        "meet": "FNB Botswana Golden Grand Prix",
+        "event": "800m",
+        "time": "1:44.77",
+        "place": "2"
+      },
+      {
+        "date": "APR 4",
+        "meet": "Cape Milers Club/Endurocad Middle Distance Invitational Continental Tour Challenger",
+        "event": "1500m",
+        "time": "3:30.71",
+        "place": "1"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "ASA Athletics Grand Prix 2",
+        "event": "1500m",
+        "time": "3:35.26",
+        "place": "1"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "ASA Athletics Grand Prix 1",
+        "event": "3000m",
+        "time": "7:58.99",
+        "place": "1"
+      }
+    ]
+  },
+  "age": "27"
 }
