@@ -2,36 +2,92 @@
    RANKINGS — all .rd-*, .rankings-*, archive, ranking-card
    ============================================================ */
 
-/* ── RANKINGS HERO BANNER ─────────────────────────────────── */
-.rankings-hero-banner {
-  background: var(--accent);
-  text-align: center;
-  padding: 28px 24px 36px;
-  width: 100%;
+/* ── RANKINGS REALM (dark hub environment) ────────────────── */
+body.rankings-realm {
+  background:
+    radial-gradient(ellipse 90% 44% at 50% -6%, rgba(232, 80, 10, 0.09), transparent 62%),
+    #101010;
+  color: #f0f0f0;
 }
 
-.rankings-hero-wordmark {
+.realm-hd { padding: 52px 0 26px; }
+
+.realm-hd-eyebrow {
   display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
 }
 
-.rankings-hero-logo-img {
-  height: 64px;
-  width: auto;
-  filter: brightness(0) invert(1);
-  opacity: 0.9;
+.realm-hd-tick {
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: var(--accent);
 }
 
-.rankings-hero-title {
+.realm-hd-title {
   font-family: var(--font-display);
-  font-size: clamp(48px, 11vw, 120px);
-  font-weight: 900;
-  color: #fff;
+  font-size: clamp(52px, 9vw, 104px);
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.01em;
-  line-height: 0.9;
+  line-height: 0.92;
+  color: #fff;
   margin: 0;
+}
+
+.realm-hd-title-outline {
+  display: block;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.35);
+}
+
+.realm-hd-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 22px;
+}
+
+/* Dark-realm overrides for shared hub pieces */
+.rankings-realm .rankings-page-intro { color: #999; max-width: 520px; }
+.rankings-realm .rankings-criteria {
+  border-top-color: rgba(255, 255, 255, 0.09);
+  border-bottom-color: rgba(255, 255, 255, 0.09);
+}
+.rankings-realm .rankings-criteria-toggle { color: #777; }
+.rankings-realm .rankings-criteria-toggle:hover { color: #fff; }
+.rankings-realm .rankings-criteria-body { color: #aaa; }
+.rankings-realm .rankings-archive-link { color: #777; }
+.rankings-realm .rankings-archive-link:hover { color: #fff; }
+.rankings-realm .h2h-hub-btn { background: var(--accent); }
+.rankings-realm .ranking-card {
+  background: #161616;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-left: 3px solid rgba(255, 255, 255, 0.07);
+  box-shadow: none;
+}
+.rankings-realm .ranking-card--active { border-left-color: var(--accent); }
+.rankings-realm .ranking-card:hover {
+  border-color: rgba(255, 255, 255, 0.14);
+  border-left-color: var(--accent);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
+}
+.rankings-realm .ranking-card-photo::before {
+  background: linear-gradient(to right, #161616 0%, transparent 32%);
+}
+
+@media (max-width: 640px) {
+  .realm-hd { padding: 36px 0 20px; }
+  .realm-hd-row { flex-direction: column; align-items: flex-start; gap: 14px; margin-top: 16px; }
 }
 
 /* ── RANKINGS HUB ─────────────────────────────────────────── */
