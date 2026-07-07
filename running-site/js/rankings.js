@@ -152,6 +152,17 @@ function buildRankingsHub() {
     const isActive = count > 0;
     const photoStyle = hasPhoto ? `style="background-image:url('${ev.photo}');"` : '';
     const ghostNum = ev.name.replace(/[^0-9]/g, '') || ev.name;
+    const podium = (isActive && !hasPhoto) ? (ev.rows || []).slice(0, 3).map((r, idx) => {
+      const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
+      const nm = (a && a.name) || r.name || r.athleteId || '—';
+      const t = _bestTime(r, a, ev.name);
+      return `
+        <div class="ranking-card-pod-row">
+          <span class="ranking-card-pod-rank${idx === 0 ? ' first' : ''}">${idx + 1}</span>
+          <span class="ranking-card-pod-name">${nm}</span>
+          ${t ? `<span class="ranking-card-pod-time">${t}</span>` : ''}
+        </div>`;
+    }).join('') : '';
     return `
       <div class="ranking-card${hasPhoto ? ' ranking-card--visual' : ''}${isActive ? ' ranking-card--active ranking-card--featured' : ''}" onclick="goTo('rankings.html?event=${encodeURIComponent(ev.name)}')">
         <div class="ranking-card-ghost">${ghostNum}</div>
@@ -161,6 +172,7 @@ function buildRankingsHub() {
           ${ev.description ? `<div class="ranking-card-desc">${ev.description}</div>` : ''}
           <div class="ranking-card-cta">${count ? `${count} athletes ranked` : 'Under construction'} &rarr;</div>
         </div>
+        ${podium ? `<div class="ranking-card-podium"><div class="ranking-card-podium-label">Top 3</div>${podium}</div>` : ''}
         ${ev.photo ? `<div class="ranking-card-photo" ${photoStyle}></div>` : ''}
       </div>
     `;

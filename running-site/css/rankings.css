@@ -118,6 +118,67 @@
 .ranking-card--featured .ranking-card-event { font-size: 44px; }
 .ranking-card--featured .ranking-card-ghost { font-size: 220px; bottom: -40px; }
 
+/* Top-3 podium preview on featured cards */
+.ranking-card-podium {
+  position: relative;
+  z-index: 1;
+  align-self: center;
+  width: 300px;
+  flex-shrink: 0;
+  margin-right: 44px;
+}
+
+.ranking-card-podium-label {
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 8px;
+}
+
+.ranking-card-pod-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.ranking-card-pod-row:last-child { border-bottom: none; }
+
+.ranking-card-pod-rank {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.35);
+  min-width: 14px;
+}
+.ranking-card-pod-rank.first { color: var(--accent); }
+
+.ranking-card-pod-name {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  color: #eee;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ranking-card-pod-time {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+@media (max-width: 720px) {
+  .ranking-card-podium { display: none; }
+  .ranking-card--featured .ranking-card-event { font-size: 36px; }
+}
+
 /* ── RANKINGS HUB ─────────────────────────────────────────── */
 .rankings-hub { padding-bottom: 60px; }
 
