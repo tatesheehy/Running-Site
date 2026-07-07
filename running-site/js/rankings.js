@@ -168,7 +168,7 @@ function buildRankingsHub() {
         <div class="ranking-card-ghost">${ghostNum}</div>
         <div class="ranking-card-index">${String(i + 1).padStart(2, '0')}</div>
         <div class="ranking-card-left">
-          <div class="ranking-card-badge${isActive ? ' ranking-card-badge--active' : ''}">${isActive ? '● Live' : 'Coming Soon'}</div>
+          <div class="ranking-card-badge${isActive ? ' ranking-card-badge--active' : ''}">${isActive ? 'Live' : 'Coming Soon'}</div>
           <div class="ranking-card-event">${ev.name}</div>
           ${ev.description ? `<div class="ranking-card-desc">${ev.description}</div>` : ''}
           <div class="ranking-card-cta"><span>${count ? `${count} athletes ranked` : 'In the works'}</span><span class="ranking-card-cta-arrow">&rarr;</span></div>
@@ -198,7 +198,7 @@ function buildRankingsHub() {
           <div class="rhub-hd-row">
             ${SITE.rankingsIntro ? `<p class="rankings-page-intro">${SITE.rankingsIntro}</p>` : '<span></span>'}
             <div class="rankings-hub-actions">
-              <button class="h2h-hub-btn" onclick="openH2H()">⇌ Settle an Argument</button>
+              <button class="h2h-hub-btn" onclick="openH2H()">Settle an Argument</button>
               ${RANKINGS_ARCHIVE.length ? `<a href="rankings.html?view=archive" class="rankings-archive-link"><svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:-2px;margin-right:6px"><path d="M1 2.5C1 1.67 1.67 1 2.5 1H5.5L7 3H12.5C13.33 3 14 3.67 14 4.5V10.5C14 11.33 13.33 12 12.5 12H2.5C1.67 12 1 11.33 1 10.5V2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>Dig through the archives &rarr;</a>` : ''}
             </div>
           </div>
@@ -385,7 +385,7 @@ function buildRankingRow(r, rank) {
   const an = a?.analysis || {};
   const reviewBody = fx(an.reviewBody), questionBody = fx(an.questionBody);
   const traitPills = (a?.traits || []).slice(0, 4).map(t =>
-    `<span class="rdc-trait">${t.emoji ? `${t.emoji} ` : ''}${t.label || ''}</span>`
+    `<span class="rdc-trait">${t.label || ''}</span>`
   ).join('');
   const recentHtml = (a?.results || []).slice(0, 3).map(res => `
     <div class="rdc-race">
@@ -400,7 +400,7 @@ function buildRankingRow(r, rank) {
     `<div class="rdc-rib-cell"><span class="rdc-rib-num">${seasonBest || '—'}</span><span class="rdc-rib-lb">${RANKINGS_YEAR} best${meet ? ` · ${meet}` : ''}</span></div>`,
     evPB ? `<div class="rdc-rib-cell"><span class="rdc-rib-num">${evPB}</span><span class="rdc-rib-lb">${_rdCurrentEvent} PB</span></div>` : '',
     raceCount ? `<div class="rdc-rib-cell"><span class="rdc-rib-num">${raceCount}</span><span class="rdc-rib-lb">races this season</span></div>` : '',
-    totalMedals ? `<div class="rdc-rib-cell"><span class="rdc-rib-num">${medalCounts.map((n, mi) => n ? `${['🥇','🥈','🥉'][mi]}${n}` : '').filter(Boolean).join(' ')}</span><span class="rdc-rib-lb">global medals</span></div>` : '',
+    totalMedals ? `<div class="rdc-rib-cell"><span class="rdc-rib-num">${totalMedals}</span><span class="rdc-rib-lb">${medalCounts.map((n, mi) => n ? `${n} ${['gold', 'silver', 'bronze'][mi]}` : '').filter(Boolean).join(' · ')}</span></div>` : '',
   ].filter(Boolean).join('');
   const analysisHtml = (reviewBody || questionBody) ? `
     ${reviewBody ? `<p><strong>${fx(an.reviewTitle) || 'Season review'}:</strong> ${reviewBody}</p>` : ''}
@@ -749,7 +749,7 @@ function buildRankingsDetail(eventName, opts = {}) {
                 <button class="rd-skim-btn" id="rd-skim-invested" onclick="setRdSkim('invested')">Invested</button>
                 <button class="rd-skim-btn" id="rd-skim-die-hard" onclick="setRdSkim('die-hard')">Die Hard</button>
               </div>
-              <button class="rd-compare-btn" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">⇌ Compare Athletes</button>
+              <button class="rd-compare-btn" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">Compare Athletes</button>
               <div class="rd-view-toggle">
                 <button class="rd-view-btn${!isGrid ? ' rd-view-btn--active' : ''}" onclick="toggleRdView('list')" title="List view">
                   <svg viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="20" height="3" rx="1.5" fill="currentColor"/><rect x="0" y="6.5" width="20" height="3" rx="1.5" fill="currentColor"/><rect x="0" y="13" width="20" height="3" rx="1.5" fill="currentColor"/></svg>

@@ -6,11 +6,11 @@
 .rhub-hd { padding: 48px 0 0; }
 
 .rhub-eyebrow {
-  font-family: var(--font-mono);
-  font-size: 12px;
+  font-family: var(--font-body);
+  font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: lowercase;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 14px;
 }
@@ -38,8 +38,6 @@
   background: var(--accent);
   color: #fff;
   padding: 0 16px 6px;
-  transform: rotate(-1.4deg);
-  transform-origin: left bottom;
 }
 
 .rhub-stats {
@@ -75,12 +73,12 @@
   margin-top: 6px;
 }
 
-/* Hand-drawn squiggle rule under the masthead */
+/* Broadsheet double rule under the masthead */
 .rhub-squiggle {
-  height: 8px;
-  margin-top: 18px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="8" viewBox="0 0 24 8"><path d="M0 4 Q6 0 12 4 T24 4" fill="none" stroke="%23E8500A" stroke-width="2.2" stroke-linecap="round"/></svg>') repeat-x left center;
-  background-size: 24px 8px;
+  height: 6px;
+  margin-top: 22px;
+  border-top: 3px solid var(--text);
+  border-bottom: 1px solid var(--text);
 }
 
 .rhub-hd-row {
@@ -317,10 +315,6 @@
   border-left-color: var(--accent);
 }
 
-.ranking-card:not(.ranking-card--featured):hover {
-  transform: translateY(-3px) rotate(0.5deg);
-}
-
 .ranking-card--active {
   border-left-color: var(--accent);
 }
@@ -381,17 +375,14 @@
   text-transform: uppercase;
   padding: 3px 8px;
   margin-bottom: 12px;
-  border: 1px dashed rgba(255,255,255,0.22);
-  color: rgba(255,255,255,0.4);
-  transform: rotate(-2deg);
-  transform-origin: left center;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.45);
 }
 
 .ranking-card-badge--active {
   background: var(--accent);
   border: 1px solid var(--accent);
   color: #fff;
-  box-shadow: 2px 2px 0 rgba(255,255,255,0.18);
 }
 
 /* ── Full-bleed visual mode (when event photo is set) */
@@ -534,14 +525,8 @@
 }
 .ranking-card:hover .ranking-card-cta { color: #fff; }
 
-.ranking-card-cta-arrow {
-  display: inline-block;
-  transition: transform 0.2s ease;
-}
-.ranking-card:hover .ranking-card-cta-arrow {
-  transform: translateX(4px);
-  color: var(--accent);
-}
+.ranking-card-cta-arrow { display: inline-block; }
+.ranking-card:hover .ranking-card-cta-arrow { color: var(--accent); }
 
 /* ── RANKINGS DETAIL PAGE ─────────────────────────────────── */
 .rankings-detail { padding: 36px 0 80px; }
@@ -807,9 +792,8 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-family: var(--font-mono);
   font-size: 15px;
   font-weight: 700;
-  padding: 4px 9px;
-  transform: rotate(-4deg);
-  box-shadow: 2px 2px 0 rgba(0,0,0,0.25);
+  padding: 4px 10px;
+  box-shadow: 3px 3px 0 var(--dark);
 }
 
 .rdc-content {
@@ -834,16 +818,16 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
 .rdc-content .rd-dd-close:hover { color: var(--text); }
 
 .rdc-eyebrow {
-  font-family: var(--font-mono);
-  font-size: 11px;
+  font-family: var(--font-body);
+  font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: lowercase;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   color: var(--muted);
   display: flex;
   align-items: center;
   gap: 6px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .rdc-profile-link {
@@ -852,83 +836,93 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   padding: 0;
   cursor: pointer;
   font: inherit;
+  letter-spacing: inherit;
+  text-transform: uppercase;
   color: var(--accent);
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  text-decoration: none;
 }
-.rdc-profile-link:hover { opacity: 0.75; }
+.rdc-profile-link:hover { text-decoration: underline; text-underline-offset: 2px; }
 
 .rdc-name {
   font-family: var(--font-display);
-  font-size: 34px;
+  font-size: 38px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.01em;
   line-height: 1;
   color: var(--text);
-  margin: 0 0 10px;
+  margin: 0 0 6px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--text);
 }
 
 .rdc-headline {
-  font-family: var(--font-serif, 'Source Serif 4', serif);
-  font-size: 17px;
-  font-style: italic;
-  line-height: 1.45;
+  font-size: 16px;
+  line-height: 1.5;
   color: var(--muted);
-  margin-bottom: 12px;
-  max-width: 640px;
+  margin: 12px 0;
+  max-width: 680px;
 }
-.rdc-headline strong { color: var(--text); font-weight: 600; font-style: normal; }
+.rdc-headline strong { color: var(--text); font-weight: 700; }
 
 .rdc-traits {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .rdc-trait {
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 700;
-  letter-spacing: 0.03em;
-  padding: 3px 9px;
-  border: 1px dashed var(--border);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border: 1px solid var(--border);
+  background: var(--bg-light);
   color: var(--text);
   white-space: nowrap;
 }
 
-/* Stat ribbon — one horizontal strip of numbers */
+/* Stat ribbon — boxed broadcast strip */
 .rdc-ribbon {
-  display: flex;
-  flex-wrap: wrap;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 16px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  border: 1px solid var(--border);
+  background: var(--bg-light);
+  margin-bottom: 20px;
 }
 
 .rdc-rib-cell {
   display: flex;
   flex-direction: column;
-  gap: 3px;
-  padding: 10px 22px 10px 0;
-  margin-right: 22px;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  padding: 13px 12px 11px;
 }
-.rdc-rib-cell + .rdc-rib-cell { border-left: 1px solid var(--border); padding-left: 22px; }
+.rdc-rib-cell + .rdc-rib-cell { border-left: 1px solid var(--border); }
 
 .rdc-rib-num {
   font-family: var(--font-mono);
-  font-size: 19px;
+  font-size: 21px;
   font-weight: 700;
   color: var(--text);
   line-height: 1.1;
+  letter-spacing: -0.01em;
 }
 
 .rdc-rib-lb {
   font-size: 9px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 .rdc-cols {
@@ -947,13 +941,15 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
 .rdc-side { display: flex; flex-direction: column; gap: 16px; }
 
 .rdc-block-lb {
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: lowercase;
-  color: var(--accent);
-  margin-bottom: 7px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text);
+  padding-bottom: 6px;
+  border-bottom: 2px solid var(--text);
+  margin-bottom: 6px;
 }
 
 .rdc-race {
