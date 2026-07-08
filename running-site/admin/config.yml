@@ -186,9 +186,25 @@ collections:
               - { label: "Club", name: club, widget: string, required: false }
               - { label: "Coach", name: coach, widget: string, required: false }
               - { label: "Hometown", name: hometown, widget: string, required: false }
-              - { label: "NCAA Athlete", name: ncaa, widget: boolean, default: false, required: false }
+              - { label: "NCAA Athlete (currently competing in college)", name: ncaa, widget: boolean, default: false, required: false }
               - { label: "College", name: college, widget: string, required: false, hint: "e.g. University of Oregon" }
               - { label: "College Logo", name: collegeLogo, widget: image, required: false }
+              - name: ncaaTitle
+                label: "NCAA Titles"
+                label_singular: "NCAA Title"
+                widget: list
+                required: false
+                minimize_collapsed: true
+                summary: "{{year}} {{season}} {{event}}"
+                hint: "One entry per individual NCAA championship won. Always include the event and year — these show in the athlete's Trophy Case."
+                fields:
+                  - { label: "Event (e.g. 1500m, Mile, 3000m)", name: event, widget: string }
+                  - { label: "Year (e.g. 2024)", name: year, widget: string, required: false }
+                  - label: "Season"
+                    name: season
+                    widget: select
+                    required: false
+                    options: [Indoor, Outdoor]
               - { name: prs, label: "Personal Records", widget: wa-prs, required: false }
               - { name: results, label: "Season Results", widget: wa-results, required: false }
               - name: achievements

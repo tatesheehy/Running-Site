@@ -876,7 +876,11 @@
    "reviewTitle": "Season review",
    "collegeLogo": "/images/856623ecea6c457a427a1cdaf6bb421e.png",
    "ncaaTitle": [
-    "Mile"
+    {
+     "event": "Mile",
+     "year": "2025",
+     "season": "Indoor"
+    }
    ],
    "waUrl": "https://worldathletics.org/athletes/united-states/abel-teffra-14888013",
    "height": "x",
@@ -2046,9 +2050,6 @@
    "photoBackground": "#111111",
    "reviewTitle": "Season review",
    "collegeLogo": "/images/south_carolina_gamecocks_logo_secondary_19666280.png",
-   "ncaaTitle": [
-    "1500m"
-   ],
    "waUrl": "https://worldathletics.org/athletes/morocco/anass-essayi-14805620",
    "name": "Anass Essayi",
    "flag": "MA",
@@ -3724,7 +3725,8 @@
      }
     ]
    },
-   "age": "30"
+   "age": "30",
+   "ncaa": false
   },
   {
    "photoBackground": "#111111",
@@ -4852,7 +4854,8 @@
      }
     ]
    },
-   "age": "32"
+   "age": "32",
+   "ncaa": false
   },
   {
    "photoBackground": "#111111",
@@ -6579,7 +6582,8 @@
      }
     ]
    },
-   "age": "20"
+   "age": "20",
+   "ncaa": false
   },
   {
    "photoBackground": "#111111",
@@ -7901,9 +7905,21 @@
    "photoBackground": "#1a0a0a",
    "reviewTitle": "Season review",
    "ncaaTitle": [
-    "1500m",
-    "Mile",
-    "3000m"
+    {
+     "event": "Mile",
+     "year": "2021",
+     "season": "Indoor"
+    },
+    {
+     "event": "3000m",
+     "year": "2021",
+     "season": "Indoor"
+    },
+    {
+     "event": "1500m",
+     "year": "2021",
+     "season": "Outdoor"
+    }
    ],
    "traits": [
     "Devastating Kick",
@@ -8927,7 +8943,9 @@
      }
     ]
    },
-   "age": "25"
+   "age": "25",
+   "college": "Oregon",
+   "ncaa": false
   },
   {
    "photoBackground": "#111111",
@@ -10792,8 +10810,13 @@
    },
    "age": "26",
    "ncaaTitle": [
-    "5000m"
-   ]
+    {
+     "event": "5000m",
+     "year": "2021",
+     "season": "Outdoor"
+    }
+   ],
+   "college": "Oregon"
   },
   {
    "photoBackground": "#111111",
@@ -11314,7 +11337,11 @@
    "photoBackground": "#111111",
    "reviewTitle": "Season review",
    "ncaaTitle": [
-    "3000m"
+    {
+     "event": "3000m",
+     "year": "2025",
+     "season": "Indoor"
+    }
    ],
    "waUrl": "https://worldathletics.org/athletes/united-states/ethan-strand-14969299",
    "height": "x",
@@ -11463,7 +11490,7 @@
     }
    ],
    "dob": "2002-10-19",
-   "college": "",
+   "college": "North Carolina",
    "weight": "x",
    "lastHistorySynced": "2026-07-07",
    "coach": "x",
@@ -13708,7 +13735,26 @@
    "reviewTitle": "Season review",
    "collegeLogo": "/images/new_mexico_lobos_logo.svg",
    "ncaaTitle": [
-    "10000m"
+    {
+     "event": "10000m",
+     "year": "2024",
+     "season": "Outdoor"
+    },
+    {
+     "event": "Cross Country",
+     "year": "2025",
+     "season": ""
+    },
+    {
+     "event": "5000m",
+     "year": "2026",
+     "season": "Indoor"
+    },
+    {
+     "event": "10000m",
+     "year": "2026",
+     "season": "Outdoor"
+    }
    ],
    "waUrl": "https://worldathletics.org/athletes/eritrea/habtom-samuel-14919315",
    "height": "x",
@@ -15149,7 +15195,8 @@
      }
     ]
    },
-   "age": "23"
+   "age": "23",
+   "ncaa": false
   },
   {
    "photoBackground": "#0a1a0d",
@@ -16562,7 +16609,8 @@
      }
     ]
    },
-   "age": "26"
+   "age": "26",
+   "ncaa": false
   },
   {
    "photoBackground": "#111111",
@@ -17441,7 +17489,8 @@
      }
     ]
    },
-   "age": "31"
+   "age": "31",
+   "ncaa": false
   },
   {
    "photoBackground": "#0d1b2a",
@@ -18638,7 +18687,8 @@
      }
     ]
    },
-   "age": "25"
+   "age": "25",
+   "ncaa": false
   },
   {
    "photoBackground": "#111111",
@@ -18679,7 +18729,8 @@
    "reviewBody": "x",
    "event": "MIDDLE DISTANCE",
    "id": "jonah-koech",
-   "age": "29"
+   "age": "29",
+   "ncaa": false
   },
   {
    "photoBackground": "#111111",
@@ -19483,8 +19534,21 @@
    "photoBackground": "#0a0a1a",
    "reviewTitle": "Season review",
    "ncaaTitle": [
-    "1500m",
-    "Mile"
+    {
+     "event": "Mile",
+     "year": "2017",
+     "season": "Indoor"
+    },
+    {
+     "event": "1500m",
+     "year": "2017",
+     "season": "Outdoor"
+    },
+    {
+     "event": "Mile",
+     "year": "2018",
+     "season": "Indoor"
+    }
    ],
    "traits": [
     "Raw Strength",
@@ -20409,7 +20473,9 @@
      }
     ]
    },
-   "age": "28"
+   "age": "28",
+   "college": "New Mexico",
+   "ncaa": false
   },
   {
    "photoBackground": "#111111",
@@ -22541,7 +22607,8 @@
      }
     ]
    },
-   "age": "24"
+   "age": "24",
+   "ncaa": false
   },
   {
    "photoBackground": "#111111",
@@ -23262,8 +23329,26 @@
    "reviewTitle": "Season review",
    "collegeLogo": "/images/wisconsin_badgers_logo.svg",
    "ncaaTitle": [
-    "5000m",
-    "3000m"
+    {
+     "event": "Cross Country",
+     "year": "2018",
+     "season": ""
+    },
+    {
+     "event": "3000m",
+     "year": "2019",
+     "season": "Indoor"
+    },
+    {
+     "event": "5000m",
+     "year": "2019",
+     "season": "Indoor"
+    },
+    {
+     "event": "5000m",
+     "year": "2019",
+     "season": "Outdoor"
+    }
    ],
    "waUrl": "https://worldathletics.org/athletes/australia/morgan-mcdonald-14496066",
    "name": "Morgan McDonald",
@@ -24770,8 +24855,16 @@
    "reviewTitle": "Season review",
    "collegeLogo": "/images/washington-huskies-logo.png",
    "ncaaTitle": [
-    "1500m",
-    "Mile"
+    {
+     "event": "1500m",
+     "year": "2023",
+     "season": "Outdoor"
+    },
+    {
+     "event": "1500m",
+     "year": "2025",
+     "season": "Outdoor"
+    }
    ],
    "waUrl": "https://worldathletics.org/athletes/united-states/nathan-green-15021942",
    "name": "Nathan Green",
@@ -26230,14 +26323,19 @@
      }
     ]
    },
-   "age": "21"
+   "age": "21",
+   "ncaa": false
   },
   {
    "photoBackground": "#111111",
    "reviewTitle": "Season review",
    "collegeLogo": "/images/wisconsin_badgers_logo.svg",
    "ncaaTitle": [
-    "1500m"
+    {
+     "event": "1500m",
+     "year": "2018",
+     "season": "Outdoor"
+    }
    ],
    "waUrl": "https://worldathletics.org/athletes/australia/oliver-hoare-14667553",
    "height": "x",
@@ -27424,7 +27522,8 @@
      }
     ]
    },
-   "age": "19"
+   "age": "19",
+   "ncaa": false
   },
   {
    "photoBackground": "#111111",
@@ -28414,7 +28513,8 @@
      }
     ]
    },
-   "age": "21"
+   "age": "21",
+   "ncaa": false
   },
   {
    "photoBackground": "#111111",
@@ -32265,7 +32365,8 @@
      }
     ]
    },
-   "age": "30"
+   "age": "30",
+   "ncaa": false
   },
   {
    "photoBackground": "#111111",
@@ -35249,13 +35350,18 @@
      }
     ]
    },
-   "age": "31"
+   "age": "31",
+   "ncaa": false
   },
   {
    "photoBackground": "#111111",
    "reviewTitle": "Season review",
    "ncaaTitle": [
-    "1500m"
+    {
+     "event": "1500m",
+     "year": "2019",
+     "season": "Outdoor"
+    }
    ],
    "waUrl": "https://worldathletics.org/athletes/united-states/yared-nuguse-14798735",
    "height": "5'11",
@@ -36222,7 +36328,9 @@
      }
     ]
    },
-   "age": "27"
+   "age": "27",
+   "college": "Notre Dame",
+   "ncaa": false
   },
   {
    "photoBackground": "#111111",
@@ -42570,7 +42678,7 @@
     }
    ],
    "dob": "1994-10-29",
-   "college": "",
+   "college": "Oregon",
    "weight": "x",
    "lastHistorySynced": "2026-07-05",
    "coach": "x",
@@ -43932,11 +44040,7 @@
      }
     ]
    },
-   "age": "31",
-   "ncaaTitle": [
-    "1500m",
-    "Mile"
-   ]
+   "age": "31"
   },
   {
    "photoBackground": "#111111",
@@ -48320,10 +48424,6 @@
    "photoBackground": "#111111",
    "reviewTitle": "Season review",
    "collegeLogo": "",
-   "ncaaTitle": [
-    "Mile",
-    "1500m"
-   ],
    "traits": [],
    "waUrl": "https://worldathletics.org/athletes/australia/adam-spencer-14743176",
    "height": "x",
@@ -48450,7 +48550,7 @@
     }
    ],
    "dob": "2001-10-04",
-   "college": "",
+   "college": "Wisconsin",
    "weight": "x",
    "lastHistorySynced": "2026-07-05",
    "coach": "x",
@@ -54713,7 +54813,11 @@
    "reviewTitle": "Season review",
    "collegeLogo": "",
    "ncaaTitle": [
-    "3000m"
+    {
+     "event": "3000m",
+     "year": "2023",
+     "season": "Indoor"
+    }
    ],
    "traits": [],
    "waUrl": "https://worldathletics.org/athletes/morocco/fouad-messaoudi-14793942",
@@ -54830,7 +54934,7 @@
     }
    ],
    "dob": "2001-01-07",
-   "college": "",
+   "college": "Oklahoma State",
    "weight": "x",
    "lastHistorySynced": "2026-07-07",
    "coach": "x",
@@ -56978,7 +57082,7 @@
     }
    ],
    "dob": "1996-10-10",
-   "college": "",
+   "college": "Iowa State",
    "weight": "x",
    "lastHistorySynced": "2026-07-07",
    "coach": "x",
@@ -57835,10 +57939,7 @@
      }
     ]
    },
-   "age": "29",
-   "ncaaTitle": [
-    "800m"
-   ]
+   "age": "29"
   },
   {
    "photoBackground": "#111111",
@@ -60827,7 +60928,16 @@
    "reviewTitle": "Season review",
    "collegeLogo": "",
    "ncaaTitle": [
-    "Mile"
+    {
+     "event": "Mile",
+     "year": "2023",
+     "season": "Indoor"
+    },
+    {
+     "event": "Mile",
+     "year": "2024",
+     "season": "Indoor"
+    }
    ],
    "traits": [],
    "waUrl": "https://worldathletics.org/athletes/united-states/luke-houser-14894053",
@@ -61006,7 +61116,7 @@
     }
    ],
    "dob": "2001-05-02",
-   "college": "",
+   "college": "Washington",
    "weight": "x",
    "lastHistorySynced": "2026-07-07",
    "coach": "x",
@@ -66368,7 +66478,7 @@
    "country": "United States",
    "results": [],
    "dob": "1996-12-12",
-   "college": "",
+   "college": "Texas Tech",
    "weight": "x",
    "lastHistorySynced": "2026-07-07",
    "coach": "x",
@@ -67092,10 +67202,7 @@
      }
     ]
    },
-   "age": "29",
-   "ncaaTitle": [
-    "800m"
-   ]
+   "age": "29"
   },
   {
    "photoBackground": "#111111",

@@ -274,6 +274,20 @@ function _medalSvg(place, short) {
   </svg>`;
 }
 
+// NCAA titles (from the CMS) rendered as Trophy Case badges alongside the
+// World Athletics honours. Accepts both the structured {event, year, season}
+// shape and legacy plain-string entries.
+function ncaaHonours(a) {
+  if (!a || !a.ncaaTitle) return [];
+  const titles = Array.isArray(a.ncaaTitle) ? a.ncaaTitle : [a.ncaaTitle];
+  return titles.map(t => {
+    const event  = typeof t === 'string' ? t : (t.event || '');
+    const year   = typeof t === 'string' ? '' : (t.year || '');
+    const season = typeof t === 'string' ? '' : (t.season || '');
+    return { short: 'NCAA', discipline: season ? `${event} · ${season}` : event, place: 1, year };
+  });
+}
+
 function buildHonoursHtml(honours) {
   if (!honours || !honours.length) return '';
   const classes = ['ch-gold', 'ch-silver', 'ch-bronze'];
@@ -410,7 +424,7 @@ function openAthleteCard(athleteId, rank) {
       </div>
       <div class="card-right">
         ${traitsHtml ? `<div class="card-traits">${traitsHtml}</div>` : ''}
-        ${buildHonoursHtml(a.ncaaTitle ? [...(Array.isArray(a.ncaaTitle) ? a.ncaaTitle : [a.ncaaTitle]).map(ev => ({ short: 'NCAA', discipline: ev, place: 1, year: '' })), ...(a.honours || [])] : a.honours)}
+        ${buildHonoursHtml([...ncaaHonours(a), ...(a.honours || [])])}
         <div class="card-honours-placeholder" style="${a.honours === undefined && !a.ncaaTitle && a.waUrl ? '' : 'display:none'}"></div>
         ${buildSeasonTimeline(a)}
         ${buildResultsSection(a)}
@@ -468,7 +482,7 @@ function openAthleteCard(athleteId, rank) {
         // Cache result (empty array = "checked, none found"; undefined = "not checked")
         a.honours = (data.honours && data.honours.length) ? data.honours : [];
         const placeholder = qs('#athlete-card-inner .card-honours-placeholder');
-        const honoursToShow = a.ncaaTitle ? [...(Array.isArray(a.ncaaTitle) ? a.ncaaTitle : [a.ncaaTitle]).map(ev => ({ short: 'NCAA', discipline: ev, place: 1, year: '' })), ...a.honours] : a.honours;
+        const honoursToShow = [...ncaaHonours(a), ...a.honours];
         const existingHonours = qs('#athlete-card-inner .card-honours');
         if (existingHonours) {
           if (honoursToShow.length) existingHonours.outerHTML = buildHonoursHtml(honoursToShow);
