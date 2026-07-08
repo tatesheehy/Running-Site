@@ -614,8 +614,7 @@
 .ath-list-th {
   background: var(--dark);
   color: rgba(255, 255, 255, 0.55);
-  border-bottom: none;
-  box-shadow: inset 0 -2px 0 var(--accent);
+  border-bottom: 2px solid var(--accent);
 }
 .ath-list-th:hover { color: rgba(255, 255, 255, 0.85); }
 
@@ -625,8 +624,7 @@
 [data-theme="dark"] .ath-list-th {
   background: var(--bg-light);
   color: rgba(255, 255, 255, 0.5);
-  border-bottom: none;
-  box-shadow: inset 0 -2px 0 var(--accent);
+  border-bottom: 2px solid var(--accent);
 }
 [data-theme="dark"] .ath-list-th:hover { color: rgba(255, 255, 255, 0.85); }
 [data-theme="dark"] .ath-list-row:nth-child(even) { background: rgba(255, 255, 255, 0.03); }

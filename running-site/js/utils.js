@@ -40,6 +40,38 @@ function normalizeAthlete(a) {
   };
 }
 
+// ── PERSONAL BEST SELECTION ───────────────────────────────
+// Recognizable distances first, roughly in order of prestige/familiarity.
+const _PR_PRIORITY = ['60m', '100m', '200m', '400m', '600m', '800m', '1000m', '1500m', 'mile', '2000m', '3000m', '3000m steeplechase', '5000m', '10000m', 'half marathon', 'marathon'];
+
+// "1500 Metres Short Track" and "1500m" are the same distance run indoors vs
+// outdoors — collapse them to one canonical key so they dedupe correctly.
+function _prCanonicalKey(event) {
+  let s = String(event || '').trim().replace(/\s*short track$/i, '').trim();
+  const m = s.match(/^(\d+)\s*(metres|meters)$/i);
+  return m ? `${m[1]}m` : s.toLowerCase();
+}
+
+// Dedupes indoor/outdoor variants of the same distance (keeping the faster
+// time), then surfaces the most recognizable distances first.
+function pickTopPRs(prs, limit) {
+  limit = limit || 4;
+  const byKey = new Map();
+  (prs || []).forEach(pr => {
+    const key = _prCanonicalKey(pr.event);
+    const existing = byKey.get(key);
+    if (!existing) { byKey.set(key, pr); return; }
+    const t1 = parseTimeToSecs(pr.time);
+    const t2 = parseTimeToSecs(existing.time);
+    if (t1 != null && (t2 == null || t1 < t2)) byKey.set(key, pr);
+  });
+  return [...byKey.values()].sort((a, b) => {
+    const ia = _PR_PRIORITY.indexOf(_prCanonicalKey(a.event));
+    const ib = _PR_PRIORITY.indexOf(_prCanonicalKey(b.event));
+    return (ia === -1 ? _PR_PRIORITY.length : ia) - (ib === -1 ? _PR_PRIORITY.length : ib);
+  }).slice(0, limit);
+}
+
 function buildMomentumHtml(val) {
   if (val == null || val === '') return '<div class="rd-momentum-col"></div>';
   const v   = Math.max(-10, Math.min(10, Number(val)));

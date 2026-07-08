@@ -357,7 +357,7 @@ function buildRankingRow(r, rank) {
       <span class="rdc-race-meet">${fx(res.meet)}<span class="rdc-race-ev">${fx(res.event)}</span></span>
       <span class="rdc-race-time">${fx(res.time)}${fx(res.place) ? `<span class="rdc-race-place">${ordinal(res.place)}</span>` : ''}</span>
     </div>`).join('');
-  const prsHtml = (a?.prs || []).slice(0, 4).map(pr =>
+  const prsHtml = pickTopPRs(a?.prs, 4).map(pr =>
     `<div class="rd-dd-pr-row"><span class="rd-dd-pr-event">${pr.event}</span><span class="rd-dd-pr-time">${pr.time}</span></div>`
   ).join('');
   const ribbonCells = [

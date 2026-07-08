@@ -343,7 +343,7 @@ function openAthleteCard(athleteId, rank) {
     </div>
   `).join('');
 
-  const prsHtml = (a.prs || []).slice(0, 4).map(pr => `
+  const prsHtml = pickTopPRs(a.prs, 4).map(pr => `
     <div class="card-pr-row">
       <span class="card-pr-event">${pr.event || ''}</span>
       <span class="card-pr-time">${pr.time || ''}</span>
