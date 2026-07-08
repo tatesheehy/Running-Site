@@ -2,22 +2,10 @@
   "photoBackground": "#0a1a0d",
   "reviewTitle": "Season review",
   "traits": [
-    {
-      "emoji": "💨",
-      "label": "Pure Speed"
-    },
-    {
-      "emoji": "🎯",
-      "label": "Consistency"
-    },
-    {
-      "emoji": "📈",
-      "label": "Indoor King"
-    },
-    {
-      "emoji": "🤫",
-      "label": "Quiet Assassin"
-    }
+    "Pure Speed",
+    "Consistency",
+    "Indoor King",
+    "Quiet Assassin"
   ],
   "waUrl": "https://worldathletics.org/athletes/portugal/isaac-nader-14756630",
   "height": "5'5\"",
