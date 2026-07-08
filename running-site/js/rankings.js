@@ -146,38 +146,60 @@ function buildRankingsPage() {
 }
 
 function buildRankingsHub() {
-  const cardsHtml = RANKINGS_EVENTS.map((ev, i) => {
+  const liveEvents = RANKINGS_EVENTS.filter(ev => (ev.rows || []).length > 0);
+  const soonEvents  = RANKINGS_EVENTS.filter(ev => !(ev.rows || []).length);
+
+  const liveRowsHtml = liveEvents.map((ev, i) => {
     const count = (ev.rows || []).length;
     const hasPhoto = !!ev.photo;
-    const isActive = count > 0;
     const photoStyle = hasPhoto ? `style="background-image:url('${ev.photo}');"` : '';
     const ghostNum = ev.name.replace(/[^0-9]/g, '') || ev.name;
-    const podium = (isActive && !hasPhoto) ? (ev.rows || []).slice(0, 3).map((r, idx) => {
+    const podium = !hasPhoto ? (ev.rows || []).slice(0, 3).map((r, idx) => {
       const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
       const nm = (a && a.name) || r.name || r.athleteId || '—';
       const t = _bestTime(r, a, ev.name);
       return `
-        <div class="ranking-card-pod-row">
-          <span class="ranking-card-pod-rank${idx === 0 ? ' first' : ''}">${idx + 1}</span>
-          <span class="ranking-card-pod-name">${nm}</span>
-          ${t ? `<span class="ranking-card-pod-time">${t}</span>` : ''}
+        <div class="rr-pod-row">
+          <span class="rr-pod-rank${idx === 0 ? ' first' : ''}">${idx + 1}</span>
+          <span class="rr-pod-name">${nm}</span>
+          ${t ? `<span class="rr-pod-time">${t}</span>` : ''}
         </div>`;
     }).join('') : '';
     return `
-      <div class="ranking-card${hasPhoto ? ' ranking-card--visual' : ''}${isActive ? ' ranking-card--active ranking-card--featured' : ''}" onclick="goTo('rankings.html?event=${encodeURIComponent(ev.name)}')">
-        <div class="ranking-card-ghost">${ghostNum}</div>
-        <div class="ranking-card-index">${String(i + 1).padStart(2, '0')}</div>
-        <div class="ranking-card-left">
-          <div class="ranking-card-badge${isActive ? ' ranking-card-badge--active' : ''}">${isActive ? 'Live' : 'Coming Soon'}</div>
-          <div class="ranking-card-event">${ev.name}</div>
-          ${ev.description ? `<div class="ranking-card-desc">${ev.description}</div>` : ''}
-          <div class="ranking-card-cta"><span>${count ? `${count} athletes ranked` : 'In the works'}</span><span class="ranking-card-cta-arrow">&rarr;</span></div>
+      <div class="rr-row${hasPhoto ? ' rr-row--visual' : ''}" onclick="goTo('rankings.html?event=${encodeURIComponent(ev.name)}')">
+        <div class="rr-row-ghost">${ghostNum}</div>
+        <div class="rr-row-index">${String(i + 1).padStart(2, '0')}</div>
+        <div class="rr-row-main">
+          <div class="rr-row-badge">Live</div>
+          <div class="rr-row-name">${ev.name}</div>
+          ${ev.description ? `<div class="rr-row-desc">${ev.description}</div>` : ''}
+          <div class="rr-row-cta"><span>${count} athletes ranked</span><span class="rr-row-cta-arrow">&rarr;</span></div>
         </div>
-        ${podium ? `<div class="ranking-card-podium"><div class="ranking-card-podium-label">The Podium</div>${podium}</div>` : ''}
-        ${ev.photo ? `<div class="ranking-card-photo" ${photoStyle}></div>` : ''}
-      </div>
-    `;
+        ${podium ? `<div class="rr-row-podium"><div class="rr-row-podium-label">The Podium</div>${podium}</div>` : ''}
+        ${hasPhoto ? `<div class="rr-row-photo" ${photoStyle}></div>` : ''}
+      </div>`;
   }).join('');
+
+  const soonRowsHtml = soonEvents.map((ev, i) => {
+    const idx = liveEvents.length + i + 1;
+    return `
+      <div class="rr-soon-row" onclick="goTo('rankings.html?event=${encodeURIComponent(ev.name)}')">
+        <span class="rr-soon-index">${String(idx).padStart(2, '0')}</span>
+        <span class="rr-soon-name">${ev.name}</span>
+        <span class="rr-soon-desc">${ev.description || ''}</span>
+        <span class="rr-soon-tag">In the works</span>
+        <span class="rr-soon-arrow">&rarr;</span>
+      </div>`;
+  }).join('');
+
+  const cardsHtml = `
+    ${liveRowsHtml ? `<div class="rr-live-stack">${liveRowsHtml}</div>` : ''}
+    ${soonRowsHtml ? `
+      <div class="rr-soon-panel">
+        <div class="rr-soon-panel-label">${liveEvents.length ? 'Also on the board' : 'Coming soon'}</div>
+        <div class="rr-soon-list">${soonRowsHtml}</div>
+      </div>` : ''}
+  `;
 
   const eventCount = RANKINGS_EVENTS.length;
   const athleteCount = RANKINGS_EVENTS.reduce((n, ev) => n + (ev.rows || []).length, 0);
@@ -212,7 +234,7 @@ function buildRankingsHub() {
           <div class="rankings-criteria-body" id="criteria-body" hidden>${RANKINGS_CRITERIA}</div>
         </div>
         ` : ''}
-        <div class="rankings-cards-grid">${cardsHtml}</div>
+        <div class="rankings-board">${cardsHtml}</div>
       </div>
     </div>
   `;

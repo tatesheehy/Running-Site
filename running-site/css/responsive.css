@@ -41,7 +41,6 @@
 
 @media (max-width: 640px) {
   .articles-grid { grid-template-columns: 1fr; }
-  .rankings-cards-grid { grid-template-columns: 1fr; }
   .hero-title { font-size: 30px; }
   .card-left { grid-template-columns: 1fr; }
   .navbar-nav { display: none; }
