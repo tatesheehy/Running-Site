@@ -7,22 +7,10 @@
     "3000m"
   ],
   "traits": [
-    {
-      "emoji": "🚀",
-      "label": "Devastating Kick"
-    },
-    {
-      "emoji": "🧘",
-      "label": "Race Patience"
-    },
-    {
-      "emoji": "📐",
-      "label": "Perfect Form"
-    },
-    {
-      "emoji": "🌟",
-      "label": "Rising Star"
-    }
+    "Devastating Kick",
+    "Race Patience",
+    "Perfect Form",
+    "Rising Star"
   ],
   "waUrl": "https://worldathletics.org/athletes/united-states/cole-hocker-14905834",
   "height": "6'0\"",
@@ -152,68 +140,82 @@
       "meet": "Prefontaine Classic",
       "event": "Mile",
       "time": "3:47.57",
-      "place": "6"
+      "place": "6."
     },
     {
       "date": "JUN 14",
       "meet": "USATF LA Grand Prix",
-      "event": "3000m",
+      "event": "3000 m",
       "time": "7:37.77",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAR 21",
       "meet": "World Athletics Indoor Championships",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:35.70",
-      "place": "2"
+      "place": "2."
     },
     {
       "date": "MAR 1",
       "meet": "USA Indoor Championships",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:38.08",
-      "place": "5"
+      "place": "5."
     },
     {
       "date": "FEB 28",
       "meet": "USA Indoor Championships",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:39.25",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "FEB 14",
       "meet": "Sound Invite",
-      "event": "Mile Short Track",
+      "event": "1500 m sh",
+      "time": "3:30.80",
+      "place": ""
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "Mile sh",
       "time": "3:45.94",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "FEB 7",
       "meet": "Doc Hale Virginia Tech Invitational",
-      "event": "1000 Metres Short Track",
+      "event": "1000 m sh",
       "time": "2:16.30",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
-      "event": "2 Miles Short Track",
+      "event": "3000 m sh",
+      "time": "7:37.57",
+      "place": ""
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "2 Mi sh",
       "time": "8:07.31",
-      "place": "1"
+      "place": "1."
     },
     {
       "date": "JAN 23",
       "meet": "Hokie Invitational",
-      "event": "2000 Metres Short Track",
+      "event": "2000 m sh",
       "time": "4:52.92",
-      "place": "1"
+      "place": "1."
     }
   ],
   "dob": "2001-06-06",
   "weight": "145 lbs",
-  "lastHistorySynced": "2026-07-06",
+  "lastHistorySynced": "2026-07-07",
   "coach": "Jerry Schumacher",
   "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
   "event": "MIDDLE DISTANCE + DISTANCE",

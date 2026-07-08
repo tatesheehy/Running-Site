@@ -2,22 +2,10 @@
   "photoBackground": "#0a1a0a",
   "reviewTitle": "Season review",
   "traits": [
-    {
-      "emoji": "🦁",
-      "label": "Killer Instinct"
-    },
-    {
-      "emoji": "🏆",
-      "label": "Championship DNA"
-    },
-    {
-      "emoji": "🎖️",
-      "label": "Proven Winner"
-    },
-    {
-      "emoji": "🔄",
-      "label": "Long Stride"
-    }
+    "Killer Instinct",
+    "Championship DNA",
+    "Proven Winner",
+    "Long Stride"
   ],
   "waUrl": "https://worldathletics.org/athletes/kenya/timothy-cheruiyot-14643526",
   "height": "5'10\"",
