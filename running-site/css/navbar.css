@@ -64,11 +64,12 @@
 }
 
 .navbar-nav a {
-  color: #aaa;
+  color: #999;
   font-family: var(--font-display);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
   transition: color 0.15s;
 }
 
@@ -194,7 +195,9 @@
 
 /* ── BREAKING NEWS BAR ────────────────────────────────────── */
 .breaking-bar {
-  background: var(--accent);
+  background: #161616;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
   padding: 8px 0 8px 24px;
   display: flex;
   align-items: center;
@@ -203,7 +206,7 @@
 }
 
 .breaking-badge {
-  background: #000;
+  background: var(--accent);
   color: #fff;
   font-size: 10px;
   font-weight: 800;
@@ -214,9 +217,9 @@
   border-radius: var(--radius-sm);
   text-decoration: none;
   cursor: pointer;
-  transition: background 0.15s;
+  transition: opacity 0.15s;
 }
-.breaking-badge:hover { background: #222; }
+.breaking-badge:hover { opacity: 0.85; }
 
 .ticker-track {
   flex: 1;
@@ -242,10 +245,10 @@
 }
 
 .ticker-item {
-  color: #fff;
+  color: rgba(255,255,255,0.85);
   font-family: var(--font-display);
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 13px;
+  font-weight: 500;
   letter-spacing: 0.03em;
   padding: 0 10px;
 }

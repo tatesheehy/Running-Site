@@ -133,9 +133,8 @@ function buildHome() {
               <span class="fp-hero-read">Read ${heroItem.type === 'rankings' ? 'rankings' : 'article'} →</span>
             </div>
           </div>` : ''}
-          ${railHtml ? `<div class="fp-rail">${railHtml}</div>` : ''}
+          <div class="fp-rail">${railHtml}${rankingsHtml}</div>
         </div>
-        ${rankingsHtml}
       </div>
     </div>`;
 

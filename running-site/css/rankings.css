@@ -35,8 +35,8 @@
 
 .rhub-title-hl {
   display: inline-block;
-  background: var(--accent);
-  color: #fff;
+  background: var(--text);
+  color: var(--bg);
   padding: 0 16px 6px;
 }
 
@@ -319,13 +319,27 @@
   border-left-color: var(--accent);
 }
 
-/* Coming-soon cards: quieter, textured */
+/* Coming-soon cards: light, quiet — dark treatment is reserved for live content */
 .ranking-card:not(.ranking-card--active) {
-  background:
-    repeating-linear-gradient(-45deg, rgba(255,255,255,0.016) 0 1px, transparent 1px 9px),
-    #141414;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--border);
+  box-shadow: none;
 }
-.ranking-card:not(.ranking-card--active) .ranking-card-event { color: rgba(255,255,255,0.82); }
+.ranking-card:not(.ranking-card--active):hover {
+  border-left-color: var(--text);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+.ranking-card:not(.ranking-card--active) .ranking-card-event { color: var(--text); }
+.ranking-card:not(.ranking-card--active) .ranking-card-desc { color: var(--muted); }
+.ranking-card:not(.ranking-card--active) .ranking-card-cta { color: var(--muted); }
+.ranking-card:not(.ranking-card--active):hover .ranking-card-cta { color: var(--text); }
+.ranking-card:not(.ranking-card--active):hover .ranking-card-cta-arrow { color: var(--text); }
+.ranking-card:not(.ranking-card--active) .ranking-card-index { color: var(--muted); opacity: 0.6; }
+.ranking-card:not(.ranking-card--active) .ranking-card-badge {
+  border-color: var(--border);
+  color: var(--muted);
+}
 
 .ranking-card-ghost {
   position: absolute;
@@ -337,14 +351,12 @@
   line-height: 1;
   letter-spacing: -0.04em;
   color: transparent;
-  -webkit-text-stroke: 1.5px rgba(255,255,255,0.07);
+  -webkit-text-stroke: 1.5px rgba(0,0,0,0.05);
   user-select: none;
   pointer-events: none;
   z-index: 0;
-  transition: -webkit-text-stroke-color 0.25s ease;
 }
-
-.ranking-card:hover .ranking-card-ghost { -webkit-text-stroke-color: rgba(255,255,255,0.13); }
+[data-theme="dark"] .ranking-card-ghost { -webkit-text-stroke-color: rgba(255,255,255,0.06); }
 
 .ranking-card--active .ranking-card-ghost,
 .ranking-card--active:hover .ranking-card-ghost {
@@ -912,10 +924,11 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font: inherit;
   letter-spacing: inherit;
   text-transform: uppercase;
-  color: var(--accent);
-  text-decoration: none;
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
-.rdc-profile-link:hover { text-decoration: underline; text-underline-offset: 2px; }
+.rdc-profile-link:hover { color: var(--text); }
 
 .rdc-name {
   font-family: var(--font-display);

@@ -632,7 +632,6 @@
   display: grid;
   grid-template-columns: 3fr 2fr;
   border-bottom: 1px solid var(--border);
-  min-height: 280px;
 }
 
 .fp-hero {
@@ -706,9 +705,11 @@
 .fp-hero-read {
   font-size: 11px;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--text);
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* Right rail of secondary stories */
@@ -717,19 +718,18 @@
   flex-direction: column;
 }
 .fp-rail-item {
-  flex: 1;
-  padding: 20px 0 20px 24px;
+  flex: 0 0 auto;
+  padding: 18px 0 18px 24px;
   border-bottom: 1px solid var(--border);
   cursor: pointer;
 }
-.fp-rail-item:last-child { border-bottom: none; }
 .fp-rail-item:hover .fp-rail-hed { color: var(--accent); }
 .fp-rail-tag {
   font-size: 9px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--accent);
+  color: var(--muted);
   margin-bottom: 5px;
 }
 .fp-rail-hed {
@@ -768,7 +768,7 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--accent);
+  color: var(--muted);
   margin-bottom: 6px;
 }
 .fp-sec-hed {
@@ -787,6 +787,18 @@
 
 .fp-rankings {
   padding: 24px 0 32px;
+}
+
+/* Rankings widget inside the right rail: dense sidebar module */
+.fp-rail .fp-rankings {
+  padding: 18px 0 22px 24px;
+  flex: 1;
+}
+.fp-rail .fp-rank-hd {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 12px;
 }
 .fp-rank-hd {
   display: flex;
@@ -826,12 +838,13 @@
   margin-top: 14px;
   font-size: 12px;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--text);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
-.fp-rank-more:hover { text-decoration: underline; }
+.fp-rank-more:hover { color: var(--accent); }
 
 
 /* ── RESPONSIVE: stack hero + rail on mobile ─────────────── */
