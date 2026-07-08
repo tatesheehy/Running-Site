@@ -146,60 +146,24 @@ function buildRankingsPage() {
 }
 
 function buildRankingsHub() {
-  const liveEvents = RANKINGS_EVENTS.filter(ev => (ev.rows || []).length > 0);
-  const soonEvents  = RANKINGS_EVENTS.filter(ev => !(ev.rows || []).length);
-
-  const liveRowsHtml = liveEvents.map((ev, i) => {
+  const rowsHtml = RANKINGS_EVENTS.map((ev, i) => {
     const count = (ev.rows || []).length;
-    const hasPhoto = !!ev.photo;
-    const photoStyle = hasPhoto ? `style="background-image:url('${ev.photo}');"` : '';
-    const ghostNum = ev.name.replace(/[^0-9]/g, '') || ev.name;
-    const podium = !hasPhoto ? (ev.rows || []).slice(0, 3).map((r, idx) => {
-      const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
-      const nm = (a && a.name) || r.name || r.athleteId || '—';
-      const t = _bestTime(r, a, ev.name);
-      return `
-        <div class="rr-pod-row">
-          <span class="rr-pod-rank${idx === 0 ? ' first' : ''}">${idx + 1}</span>
-          <span class="rr-pod-name">${nm}</span>
-          ${t ? `<span class="rr-pod-time">${t}</span>` : ''}
-        </div>`;
-    }).join('') : '';
-    return `
-      <div class="rr-row${hasPhoto ? ' rr-row--visual' : ''}" onclick="goTo('rankings.html?event=${encodeURIComponent(ev.name)}')">
-        <div class="rr-row-ghost">${ghostNum}</div>
-        <div class="rr-row-index">${String(i + 1).padStart(2, '0')}</div>
-        <div class="rr-row-main">
-          <div class="rr-row-badge">Live</div>
-          <div class="rr-row-name">${ev.name}</div>
-          ${ev.description ? `<div class="rr-row-desc">${ev.description}</div>` : ''}
-          <div class="rr-row-cta"><span>${count} athletes ranked</span><span class="rr-row-cta-arrow">&rarr;</span></div>
-        </div>
-        ${podium ? `<div class="rr-row-podium"><div class="rr-row-podium-label">The Podium</div>${podium}</div>` : ''}
-        ${hasPhoto ? `<div class="rr-row-photo" ${photoStyle}></div>` : ''}
-      </div>`;
-  }).join('');
-
-  const soonRowsHtml = soonEvents.map((ev, i) => {
-    const idx = liveEvents.length + i + 1;
+    const isLive = count > 0;
     return `
       <div class="rr-soon-row" onclick="goTo('rankings.html?event=${encodeURIComponent(ev.name)}')">
-        <span class="rr-soon-index">${String(idx).padStart(2, '0')}</span>
+        <span class="rr-soon-index">${String(i + 1).padStart(2, '0')}</span>
         <span class="rr-soon-name">${ev.name}</span>
         <span class="rr-soon-desc">${ev.description || ''}</span>
-        <span class="rr-soon-tag">In the works</span>
+        <span class="rr-soon-tag${isLive ? ' rr-soon-tag--live' : ''}">${isLive ? `${count} ranked` : 'Coming soon'}</span>
         <span class="rr-soon-arrow">&rarr;</span>
       </div>`;
   }).join('');
 
-  const cardsHtml = `
-    ${liveRowsHtml ? `<div class="rr-live-stack">${liveRowsHtml}</div>` : ''}
-    ${soonRowsHtml ? `
-      <div class="rr-soon-panel">
-        <div class="rr-soon-panel-label">${liveEvents.length ? 'Also on the board' : 'Coming soon'}</div>
-        <div class="rr-soon-list">${soonRowsHtml}</div>
-      </div>` : ''}
-  `;
+  const cardsHtml = rowsHtml ? `
+    <div class="rr-soon-panel">
+      <div class="rr-soon-panel-label">All Events</div>
+      <div class="rr-soon-list">${rowsHtml}</div>
+    </div>` : '';
 
   const eventCount = RANKINGS_EVENTS.length;
   const athleteCount = RANKINGS_EVENTS.reduce((n, ev) => n + (ev.rows || []).length, 0);
@@ -225,30 +189,11 @@ function buildRankingsHub() {
             </div>
           </div>
         </header>
-        ${RANKINGS_CRITERIA ? `
-        <div class="rankings-criteria">
-          <button class="rankings-criteria-toggle" onclick="window.toggleCriteria()" aria-expanded="false">
-            <span>How We Rank</span>
-            <span class="criteria-chevron">&#9660;</span>
-          </button>
-          <div class="rankings-criteria-body" id="criteria-body" hidden>${RANKINGS_CRITERIA}</div>
-        </div>
-        ` : ''}
         <div class="rankings-board">${cardsHtml}</div>
       </div>
     </div>
   `;
 }
-
-window.toggleCriteria = function() {
-  const body = document.getElementById('criteria-body');
-  const btn = document.querySelector('.rankings-criteria-toggle');
-  const chevron = btn.querySelector('.criteria-chevron');
-  const isOpen = body.hasAttribute('hidden');
-  if (isOpen) { body.removeAttribute('hidden'); } else { body.setAttribute('hidden', ''); }
-  btn.setAttribute('aria-expanded', isOpen);
-  chevron.style.transform = isOpen ? 'rotate(180deg)' : '';
-};
 
 function buildArchiveHub() {
   const seasons = RANKINGS_ARCHIVE || [];

@@ -101,197 +101,13 @@
   .rhub-hd-row { flex-direction: column; align-items: flex-start; gap: 12px; }
 }
 
-/* ── THE BOARD — rankings hub rundown ─────────────────────── */
+/* ── THE BOARD — rankings hub event directory ─────────────── */
 .rankings-board {
   display: flex;
   flex-direction: column;
   gap: 28px;
 }
 
-/* Live events: full-width dark scoreboard rows, stacked */
-.rr-live-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-
-.rr-row {
-  position: relative;
-  display: flex;
-  align-items: stretch;
-  min-height: 216px;
-  overflow: hidden;
-  cursor: pointer;
-  background:
-    radial-gradient(ellipse 55% 100% at 88% 0%, rgba(232, 80, 10, 0.09), transparent 60%),
-    #111;
-  border-left: 3px solid var(--accent);
-  transition: box-shadow 0.2s ease;
-}
-.rr-row:hover { box-shadow: 0 10px 32px rgba(0,0,0,0.35); }
-
-.rr-row-ghost {
-  position: absolute;
-  left: 38%;
-  bottom: -48px;
-  font-family: var(--font-display);
-  font-size: 230px;
-  font-weight: 900;
-  line-height: 1;
-  letter-spacing: -0.04em;
-  color: transparent;
-  -webkit-text-stroke: 1.5px rgba(234, 88, 12, 0.13);
-  user-select: none;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.rr-row-index {
-  position: absolute;
-  top: 18px;
-  right: 20px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  color: rgba(255,255,255,0.25);
-  z-index: 1;
-}
-
-.rr-row-main {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 32px 40px;
-  min-width: 0;
-}
-
-.rr-row-badge {
-  display: inline-block;
-  align-self: flex-start;
-  width: fit-content;
-  background: var(--accent);
-  color: #fff;
-  font-family: var(--font-display);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 3px 8px;
-  margin-bottom: 14px;
-}
-
-.rr-row-name {
-  font-family: var(--font-display);
-  font-size: 52px;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: 0.01em;
-  line-height: 1;
-  margin-bottom: 10px;
-}
-
-.rr-row-desc {
-  font-size: 13px;
-  color: rgba(255,255,255,0.5);
-  line-height: 1.4;
-  margin-bottom: 16px;
-}
-
-.rr-row-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.rr-row:hover .rr-row-cta { color: #fff; }
-.rr-row:hover .rr-row-cta-arrow { color: var(--accent); }
-
-/* Podium panel docked to the right of each live row */
-.rr-row-podium {
-  position: relative;
-  z-index: 1;
-  align-self: center;
-  width: 320px;
-  flex-shrink: 0;
-  margin: 0 40px 0 auto;
-  padding: 16px 20px 12px;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.08);
-}
-
-.rr-row-podium-label {
-  font-family: var(--font-display);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(255,255,255,0.35);
-  margin-bottom: 8px;
-}
-
-.rr-pod-row {
-  display: flex;
-  align-items: baseline;
-  gap: 12px;
-  padding: 9px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-.rr-pod-row:last-child { border-bottom: none; }
-
-.rr-pod-rank {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 700;
-  color: rgba(255,255,255,0.35);
-  min-width: 14px;
-}
-.rr-pod-rank.first { color: var(--accent); }
-
-.rr-pod-name {
-  font-family: var(--font-display);
-  font-size: 16px;
-  font-weight: 600;
-  color: #eee;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.rr-pod-time {
-  font-family: var(--font-mono);
-  font-size: 13px;
-  color: rgba(255,255,255,0.45);
-  margin-left: auto;
-  flex-shrink: 0;
-}
-
-/* Photo variant: full-bleed image with text pinned bottom-left */
-.rr-row--visual { align-items: flex-end; }
-.rr-row-photo {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center top;
-  transition: transform 0.4s ease;
-}
-.rr-row-photo::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,0.1) 100%);
-}
-.rr-row--visual:hover .rr-row-photo { transform: scale(1.03); }
-.rr-row--visual .rr-row-main { padding-bottom: 36px; }
-.rr-row--visual .rr-row-name { font-size: 40px; }
-
-/* Coming-soon: single compact directory panel — deliberately quiet */
 .rr-soon-panel {
   background: var(--bg);
   border: 1px solid var(--border);
@@ -358,6 +174,11 @@
   white-space: nowrap;
 }
 
+.rr-soon-tag--live {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
 .rr-soon-arrow {
   color: var(--muted);
   transition: color 0.15s;
@@ -365,16 +186,8 @@
 .rr-soon-row:hover .rr-soon-arrow { color: var(--text); }
 
 @media (max-width: 860px) {
-  .rr-row { flex-direction: column; min-height: 0; }
-  .rr-row-podium { width: auto; margin: 0 32px 28px; }
-  .rr-row-main { padding: 28px 32px 20px; }
-  .rr-row-ghost { left: auto; right: -20px; font-size: 170px; bottom: -30px; }
   .rr-soon-row { grid-template-columns: 24px 1fr auto; }
   .rr-soon-desc, .rr-soon-tag { display: none; }
-}
-
-@media (max-width: 640px) {
-  .rr-row-name { font-size: 38px; }
 }
 
 /* ── RANKINGS HUB ─────────────────────────────────────────── */
@@ -420,43 +233,6 @@
   font-size: 14px;
   color: var(--muted);
   margin: 0;
-}
-
-.rankings-criteria {
-  margin-bottom: 32px;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-
-.rankings-criteria-toggle {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: none;
-  border: none;
-  padding: 14px 0;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--muted);
-  cursor: pointer;
-  transition: color 0.15s;
-}
-.rankings-criteria-toggle:hover { color: var(--text); }
-
-.criteria-chevron {
-  font-size: 9px;
-  transition: transform 0.2s;
-}
-
-.rankings-criteria-body {
-  font-size: 14px;
-  line-height: 1.75;
-  color: #555;
-  padding-bottom: 18px;
-  max-width: 680px;
 }
 
 /* ── EVENT PAGE BANNER ───────────────────────────────────── */
