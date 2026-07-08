@@ -74,11 +74,13 @@ function buildArticlePage() {
   document.title = `${a.title} — ${SITE.name}`;
 
   const detailCrop = parseCropStr(a.imagePosition);
-  const imgHtml = a.image
-    ? (detailCrop
-        ? `<div class="article-detail-image-wrap"><img class="cropped-img" src="${a.image}" alt="${a.title}" style="${cropImgStyle(detailCrop, 16/9)}"></div>`
-        : `<img class="article-detail-image" src="${a.image}" alt="${a.title}" style="object-position:${a.imagePosition || 'center'};">`)
-    : `<div class="article-detail-image-placeholder"></div>`;
+  const imgHtml = a.gettyEmbed
+    ? `<div class="article-detail-getty">${a.gettyEmbed}</div>`
+    : (a.image
+        ? (detailCrop
+            ? `<div class="article-detail-image-wrap"><img class="cropped-img" src="${a.image}" alt="${a.title}" style="${cropImgStyle(detailCrop, 16/9)}"></div>`
+            : `<img class="article-detail-image" src="${a.image}" alt="${a.title}" style="object-position:${a.imagePosition || 'center'};">`)
+        : `<div class="article-detail-image-placeholder"></div>`);
 
   // Render markdown body if marked is available, otherwise use as-is
   const bodyHtml = (window.marked && a.body)
@@ -103,5 +105,6 @@ function buildArticlePage() {
     </div>
   `;
 
+  if (a.gettyEmbed) runScriptsIn(qs('.article-detail-getty'));
   if (typeof buildCommentsSection === 'function') buildCommentsSection(a.id);
 }

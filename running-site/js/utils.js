@@ -118,6 +118,18 @@ function imgHTML(src, alt, cropStr, containerAR, cssClass) {
   return `<img class="${cssClass}" src="${src}" alt="${alt}" loading="lazy" style="object-position:${pos};">`;
 }
 
+// <script> tags set via innerHTML don't execute — re-create them so embeds
+// (e.g. a Getty Images widget snippet) actually run.
+function runScriptsIn(container) {
+  if (!container) return;
+  qsa('script', container).forEach(old => {
+    const s = document.createElement('script');
+    [...old.attributes].forEach(attr => s.setAttribute(attr.name, attr.value));
+    s.textContent = old.textContent;
+    old.replaceWith(s);
+  });
+}
+
 // ── SIMILAR ATHLETES ──────────────────────────────────────
 function timeToSecs(t) {
   if (!t || typeof t !== 'string') return null;

@@ -89,12 +89,13 @@ collections:
               - { label: "Author", name: author, widget: string, required: false }
               - { label: "Date (e.g. June 21, 2026)", name: date, widget: string }
               - { label: "Read Time (e.g. 8 min read)", name: readTime, widget: string }
-              - { label: "Cover Image", name: image, widget: image, required: false, default: "" }
+              - { label: "Cover Image", name: image, widget: image, required: false, default: "", hint: "Used for article cards and the thumbnail grid. Ignored on the article page itself if a Getty Images Embed is set below." }
               - label: "Image Focus / Crop"
                 name: imagePosition
                 widget: image-crop
                 default: "50% 50%"
                 required: false
+              - { label: "Getty Images Embed", name: gettyEmbed, widget: text, required: false, hint: "Paste the full 'Embed' snippet from a Getty Images photo page (the <a> tag plus the two <script> tags). When set, this replaces the Cover Image at the top of the article page — the Cover Image above is still used for article cards and thumbnails." }
               - { label: "Excerpt (one sentence summary)", name: excerpt, widget: text }
               - { label: "Article Body", name: body, widget: markdown }
 
