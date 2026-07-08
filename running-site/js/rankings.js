@@ -345,14 +345,11 @@ function buildRankingRow(r, rank) {
   const ordinal = p => { const n = parseInt(p, 10); if (!n) return fx(p) || ''; const s = ['th','st','nd','rd'][(n % 100 > 10 && n % 100 < 14) ? 0 : Math.min(n % 10, 4) % 4] || 'th'; return n + s; };
   const evPB = a ? (((a.prs || []).find(p => evNorm(p.event) === evNorm(_rdCurrentEvent)) || {}).time || '') : '';
   const raceCount = a ? (a.results || []).length : 0;
-  const hon = a?.honours || [];
-  const medalCounts = [1, 2, 3].map(p => hon.filter(h => +h.place === p).length);
-  const totalMedals = medalCounts[0] + medalCounts[1] + medalCounts[2];
   const hlKey = fx(a?.headline?.keyWord), hlRest = fx(a?.headline?.rest);
   const an = a?.analysis || {};
   const reviewBody = fx(an.reviewBody), questionBody = fx(an.questionBody);
   const traitPills = (a?.traits || []).slice(0, 4).map(t =>
-    `<span class="rdc-trait">${t.label || ''}</span>`
+    `<span class="rdc-trait">${t}</span>`
   ).join('');
   const recentHtml = (a?.results || []).slice(0, 3).map(res => `
     <div class="rdc-race">
@@ -367,7 +364,6 @@ function buildRankingRow(r, rank) {
     `<div class="rdc-rib-cell"><span class="rdc-rib-num">${seasonBest || '—'}</span><span class="rdc-rib-lb">${RANKINGS_YEAR} best${meet ? ` · ${meet}` : ''}</span></div>`,
     evPB ? `<div class="rdc-rib-cell"><span class="rdc-rib-num">${evPB}</span><span class="rdc-rib-lb">${_rdCurrentEvent} PB</span></div>` : '',
     raceCount ? `<div class="rdc-rib-cell"><span class="rdc-rib-num">${raceCount}</span><span class="rdc-rib-lb">races this season</span></div>` : '',
-    totalMedals ? `<div class="rdc-rib-cell"><span class="rdc-rib-num">${totalMedals}</span><span class="rdc-rib-lb">${medalCounts.map((n, mi) => n ? `${n} ${['gold', 'silver', 'bronze'][mi]}` : '').filter(Boolean).join(' · ')}</span></div>` : '',
   ].filter(Boolean).join('');
   const analysisHtml = (reviewBody || questionBody) ? `
     ${reviewBody ? `<p><strong>${fx(an.reviewTitle) || 'Season review'}:</strong> ${reviewBody}</p>` : ''}
@@ -387,14 +383,13 @@ function buildRankingRow(r, rank) {
           ${(hlKey || r.bite) ? `<div class="rdc-headline">${hlKey ? `<strong>${hlKey}</strong> ${hlRest}` : `<strong>${r.bite}</strong>`}</div>` : ''}
           ${traitPills ? `<div class="rdc-traits">${traitPills}</div>` : ''}
           <div class="rdc-ribbon">${ribbonCells}</div>
-          <div class="rdc-cols">
-            <div class="rdc-analysis">
-              ${analysisHtml || '<p class="rdc-empty">Full analysis coming soon.</p>'}
-            </div>
-            <div class="rdc-side">
-              ${recentHtml ? `<div class="rdc-block"><div class="rdc-block-lb">Last time out</div>${recentHtml}</div>` : ''}
-              ${prsHtml ? `<div class="rdc-block"><div class="rdc-block-lb">Personal bests</div>${prsHtml}</div>` : ''}
-            </div>
+          ${(recentHtml || prsHtml) ? `
+          <div class="rdc-recap">
+            ${recentHtml ? `<div class="rdc-block"><div class="rdc-block-lb">Last time out</div>${recentHtml}</div>` : ''}
+            ${prsHtml ? `<div class="rdc-block"><div class="rdc-block-lb">Personal bests</div>${prsHtml}</div>` : ''}
+          </div>` : ''}
+          <div class="rdc-analysis">
+            ${analysisHtml || '<p class="rdc-empty">Full analysis coming soon.</p>'}
           </div>
         </div>
       </div>
@@ -685,44 +680,24 @@ function buildRankingsDetail(eventName, opts = {}) {
   _rdSortDir = 'asc';
   const isGrid = window._rdView === 'grid';
   const athleteCount = rows.length;
-
-  // Use event photo if set, else fall back to the #1 ranked athlete's photo
-  const headerPhoto = (() => {
-    if (ev?.photo) return ev.photo;
-    if (!archiveYear && rows[0]) {
-      const a = rows[0].athleteId && ATHLETES[rows[0].athleteId];
-      return (a && a.photo) || null;
-    }
-    return null;
-  })();
+  const eventDesc = weekLabel || (ev && ev.description) || '';
 
   document.getElementById('main').innerHTML = `
     <div class="container">
       <div class="rankings-detail">
         <a href="${backUrl}" class="rd-back">&larr; ${backLabel}</a>
         <div class="rd-header">
-          <div class="rd-hero-band">
-            <div class="rd-hero-band-inner" data-ghost="${eventName.replace(/[^0-9]/g,'')||eventName}">
-              <div class="rd-hero-left">
-                <div class="rd-header-meta">${displayYear} Season Rankings${archiveYear ? ' <span class="archive-stamp">Archive</span>' : ''}</div>
-                <h1 class="rd-header-event">${eventName}</h1>
-                ${weekLabel ? `<p class="rd-header-desc">${weekLabel}</p>` : (ev && ev.description ? `<p class="rd-header-desc">${ev.description}</p>` : '')}
-                ${athleteCount ? `<div class="rd-hero-stats"><b>${athleteCount}</b> Athletes Ranked</div>` : ''}
+          <header class="rhub-hd">
+            <div class="rhub-eyebrow">${displayYear} Season Rankings${archiveYear ? ' <span class="archive-stamp">Archive</span>' : ''}</div>
+            <div class="rhub-hd-main">
+              <div class="rd-event-titleblock">
+                <h1 class="rhub-title">${eventName}</h1>
+                ${eventDesc ? `<p class="rd-event-desc">${eventDesc}</p>` : ''}
               </div>
-              ${(() => {
-                if (!headerPhoto) return '';
-                const topA = rows[0] && rows[0].athleteId && ATHLETES[rows[0].athleteId];
-                const isAthletePhoto = !ev?.photo && topA;
-                return `
-                <div class="rd-hero-photo-wrap">
-                  <div class="rd-hero-photo" style="background-color:${(topA && topA.photoBackground) || '#1c1c1c'};background-image:url('${headerPhoto}')">
-                    ${isAthletePhoto ? `<span class="rdc-rank-stamp">#1</span>` : ''}
-                  </div>
-                  ${isAthletePhoto ? `<div class="rd-hero-photo-cap">No. 1 &middot; <b>${topA.name}</b></div>` : ''}
-                </div>`;
-              })()}
+              ${athleteCount ? `<div class="rhub-stats"><div class="rhub-stat"><span class="rhub-stat-num">${String(athleteCount).padStart(2, '0')}</span><span class="rhub-stat-label">Athletes Ranked</span></div></div>` : ''}
             </div>
-          </div>
+            <div class="rhub-squiggle"></div>
+          </header>
           <div class="rd-header-controls">
             <div class="rd-header-controls-left">${filterHtml || '<span></span>'}</div>
             <div class="rd-header-btns">

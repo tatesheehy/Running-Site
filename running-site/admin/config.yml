@@ -7,6 +7,25 @@ public_folder: /images
 
 collections:
 
+  # ── TRAIT LIBRARY ────────────────────────────────────────
+  # Shared pool of athlete trait badges (e.g. "Raw Strength", "Race Savvy").
+  # Add as many as you want here — they'll show up as options on every
+  # athlete's Trait Badges field below.
+  - name: trait-library
+    label: "Trait Library"
+    files:
+      - name: traits
+        label: "Trait Library"
+        file: running-site/_data/traits.json
+        fields:
+          - name: items
+            label: Traits
+            label_singular: Trait
+            widget: list
+            summary: "{{label}}"
+            fields:
+              - { label: "Label (e.g. Raw Strength)", name: label, widget: string }
+
   # ── CONTRIBUTORS ─────────────────────────────────────────
   - name: contributors
     label: Contributors
@@ -182,14 +201,16 @@ collections:
                   - { label: "Count", name: count, widget: string, hint: "e.g. 2x" }
                   - { label: "Label", name: label, widget: string }
               - name: traits
-                label: Trait Badges
-                widget: list
+                label: "Trait Badges"
+                widget: relation
+                collection: "trait-library"
+                file: "traits"
+                search_fields: ["items.*.label"]
+                value_field: "items.*.label"
+                display_fields: ["items.*.label"]
+                multiple: true
                 required: false
-                minimize_collapsed: true
-                summary: "{{emoji}} {{label}}"
-                fields:
-                  - { label: "Emoji", name: emoji, widget: string }
-                  - { label: "Label", name: label, widget: string }
+                hint: "Pick as many as apply. Need a new one? Add it in Trait Library first, then it'll show up here."
               - { label: "Headline (bold)", name: headlineKey, widget: string, required: false }
               - { label: "Headline (gray)", name: headlineRest, widget: string, required: false }
               - { label: "Review Title", name: reviewTitle, widget: string, required: false, default: "Season review", hint: "Usually 'Season review' — only change if needed" }
