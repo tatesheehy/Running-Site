@@ -578,7 +578,7 @@
   display: flex;
   align-items: center;
   gap: 0;
-  padding: 0 24px 0 32px;
+  padding: 0 24px 0 28px;
   overflow: hidden;
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
@@ -657,7 +657,7 @@
 }
 .fp-hero:hover .fp-hero-img { transform: scale(1.02); }
 .fp-hero-text {
-  padding: 24px 28px 28px 0;
+  padding: 16px 28px 20px 0;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -686,7 +686,7 @@
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--accent);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .fp-hero-hed {
   font-family: var(--font-display);
@@ -694,13 +694,13 @@
   font-weight: 700;
   line-height: 1.1;
   color: var(--text);
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .fp-hero-dek {
   font-size: 14px;
   color: var(--muted);
-  line-height: 1.6;
-  margin-bottom: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 .fp-hero-read {
   font-size: 11px;
