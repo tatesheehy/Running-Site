@@ -55,8 +55,7 @@
   font-size: 22px;
   font-weight: 700;
   color: var(--text);
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   line-height: 1.1;
 }
 .contrib-role {

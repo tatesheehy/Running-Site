@@ -26,18 +26,10 @@
   font-family: var(--font-display);
   font-size: clamp(52px, 8.5vw, 100px);
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: -0.01em;
   line-height: 0.9;
   color: var(--text);
   margin: 0;
-}
-
-.rhub-title-hl {
-  display: inline-block;
-  background: var(--text);
-  color: var(--bg);
-  padding: 0 16px 6px;
 }
 
 .rhub-stats {
@@ -211,7 +203,6 @@
   font-family: var(--font-display);
   font-size: 88px;
   font-weight: 900;
-  text-transform: uppercase;
   letter-spacing: -0.01em;
   color: var(--text);
   margin: 0;
@@ -534,7 +525,6 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-family: var(--font-display);
   font-size: 38px;
   font-weight: 700;
-  text-transform: uppercase;
   letter-spacing: 0.01em;
   line-height: 1;
   color: var(--text);
@@ -1289,8 +1279,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-family: var(--font-display);
   font-size: 56px;
   font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.01em;
   color: #2a1a08;
   line-height: 1;
   margin: 0;

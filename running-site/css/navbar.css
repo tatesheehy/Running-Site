@@ -194,10 +194,8 @@
 
 /* ── BREAKING NEWS BAR ────────────────────────────────────── */
 .breaking-bar {
-  background: #161616;
-  border-top: 1px solid rgba(255,255,255,0.08);
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-  padding: 8px 0 8px 38.36px;
+  background: var(--accent);
+  padding: 4px 0 4px 38.36px;
   display: flex;
   align-items: center;
   gap: 14px;
@@ -205,20 +203,20 @@
 }
 
 .breaking-badge {
-  background: var(--accent);
+  background: #000;
   color: #fff;
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 800;
-  padding: 3px 8px;
+  padding: 2px 6px;
   letter-spacing: 0.06em;
   white-space: nowrap;
   flex-shrink: 0;
   border-radius: var(--radius-sm);
   text-decoration: none;
   cursor: pointer;
-  transition: opacity 0.15s;
+  transition: background 0.15s;
 }
-.breaking-badge:hover { opacity: 0.85; }
+.breaking-badge:hover { background: #222; }
 
 .ticker-track {
   flex: 1;
@@ -246,7 +244,7 @@
 .ticker-item {
   color: rgba(255,255,255,0.85);
   font-family: var(--font-display);
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.03em;
   padding: 0 10px;
@@ -261,14 +259,14 @@
 .ticker-rank {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 11px;
+  font-size: 10px;
   opacity: 0.7;
   margin-right: 4px;
 }
 
 .ticker-sep {
   color: rgba(255,255,255,0.4);
-  font-size: 13px;
+  font-size: 11px;
   padding: 0 2px;
 }
 

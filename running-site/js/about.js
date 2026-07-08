@@ -31,7 +31,7 @@ function buildAboutPage() {
       <div class="container">
         <div class="ath-page-header">
           <div class="ath-page-header-left">
-            <h1 class="ath-page-title">ABOUT</h1>
+            <h1 class="ath-page-title">About</h1>
             ${SITE.aboutIntro ? `<p class="ath-page-subtitle">${SITE.aboutIntro}</p>` : ''}
           </div>
         </div>

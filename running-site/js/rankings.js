@@ -174,7 +174,7 @@ function buildRankingsHub() {
         <header class="rhub-hd">
           <div class="rhub-eyebrow">stattc rankings &middot; ${RANKINGS_YEAR || new Date().getFullYear()}</div>
           <div class="rhub-hd-main">
-            <h1 class="rhub-title">Rankings <span class="rhub-title-hl">Center</span></h1>
+            <h1 class="rhub-title">Rankings</h1>
             <div class="rhub-stats">
               <div class="rhub-stat"><span class="rhub-stat-num">${String(eventCount).padStart(2, '0')}</span><span class="rhub-stat-label">Events</span></div>
               <div class="rhub-stat"><span class="rhub-stat-num">${String(athleteCount).padStart(2, '0')}</span><span class="rhub-stat-label">Athletes Ranked</span></div>
