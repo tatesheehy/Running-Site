@@ -61,6 +61,13 @@
   gap: 20px;
   list-style: none;
   flex: 1;
+  align-self: stretch;
+}
+
+.navbar-nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-nav a {
@@ -73,6 +80,83 @@
 }
 
 .navbar-nav a:hover, .navbar-nav a.active { color: #fff; }
+
+/* ── RANKINGS NAV DROPDOWN ────────────────────────────────── */
+.nav-rankings-dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  min-width: 300px;
+  z-index: 9000;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.16), 0 2px 8px rgba(0,0,0,0.06);
+  padding: 10px 0 12px;
+}
+
+.navbar-nav-item--dropdown:hover .nav-rankings-dropdown,
+.navbar-nav-item--dropdown:focus-within .nav-rankings-dropdown {
+  display: block;
+}
+
+.nav-rank-eyebrow {
+  padding: 8px 22px 14px;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.nav-rankings-dropdown .nav-rank-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 13px 22px;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+  transition: background 0.1s;
+}
+.nav-rankings-dropdown .nav-rank-item:hover {
+  background: var(--bg-light);
+  color: var(--text);
+}
+
+.nav-rank-item-tag {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.nav-rank-item-tag--live { color: var(--accent); }
+
+.nav-rankings-dropdown .nav-rank-viewall {
+  display: block;
+  padding: 12px 22px 4px;
+  margin-top: 6px;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+.nav-rankings-dropdown .nav-rank-viewall:hover { color: var(--accent); }
+
+.nav-rank-empty {
+  padding: 12px 22px;
+  font-size: 12px;
+  color: var(--muted);
+}
 
 .navbar-subscribe {
   background: var(--accent);

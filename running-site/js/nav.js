@@ -51,9 +51,30 @@ function buildNavbar() {
     { label: 'About', href: 'about.html' },
   ];
 
-  const links = navLinks.map(l =>
-    `<li><a href="${l.href}" class="${l.href.includes(activeHref) && activeHref ? 'active' : ''}">${l.label}</a></li>`
-  ).join('');
+  const rankingsEventsHtml = (typeof RANKINGS_EVENTS !== 'undefined' ? RANKINGS_EVENTS : []).map(ev => {
+    const count = (ev.rows || []).length;
+    const isLive = count > 0;
+    return `
+      <a class="nav-rank-item" href="rankings.html?event=${encodeURIComponent(ev.name)}">
+        <span class="nav-rank-item-name">${ev.name}</span>
+        <span class="nav-rank-item-tag${isLive ? ' nav-rank-item-tag--live' : ''}">${isLive ? `${count} ranked` : 'Coming soon'}</span>
+      </a>`;
+  }).join('');
+
+  const links = navLinks.map(l => {
+    if (l.label === 'Rankings') {
+      return `
+        <li class="navbar-nav-item navbar-nav-item--dropdown">
+          <a href="${l.href}" class="${l.href.includes(activeHref) && activeHref ? 'active' : ''}">${l.label}</a>
+          <div class="nav-rankings-dropdown">
+            <div class="nav-rank-eyebrow">Events</div>
+            ${rankingsEventsHtml || '<div class="nav-rank-empty">No events yet.</div>'}
+            <a class="nav-rank-viewall" href="rankings.html">View All Rankings &rarr;</a>
+          </div>
+        </li>`;
+    }
+    return `<li class="navbar-nav-item"><a href="${l.href}" class="${l.href.includes(activeHref) && activeHref ? 'active' : ''}">${l.label}</a></li>`;
+  }).join('');
 
   return `
     <nav class="navbar" role="navigation" aria-label="Main navigation">

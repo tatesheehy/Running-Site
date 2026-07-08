@@ -610,7 +610,6 @@ function buildRankingsDetail(eventName, opts = {}) {
   const liveEv = archiveYear ? RANKINGS_EVENTS.find(e => e.name === eventName) : null;
   const rows     = (weekObj && (weekObj.rows || []).length)     ? weekObj.rows     : (liveEv ? (liveEv.rows     || []) : ((ev && ev.rows)     || []));
   const sections = (weekObj && (weekObj.sections || []).length) ? weekObj.sections : (liveEv ? (liveEv.sections || []) : ((ev && ev.sections) || []));
-  const weekLabel = weekObj ? (weekObj.label || null) : null;
   const displayYear = archiveYear || RANKINGS_YEAR;
 
   // Collect unique countries for filter pills
@@ -680,7 +679,6 @@ function buildRankingsDetail(eventName, opts = {}) {
   _rdSortDir = 'asc';
   const isGrid = window._rdView === 'grid';
   const athleteCount = rows.length;
-  const eventDesc = weekLabel || (ev && ev.description) || '';
 
   document.getElementById('main').innerHTML = `
     <div class="container">
@@ -692,11 +690,9 @@ function buildRankingsDetail(eventName, opts = {}) {
             <div class="rhub-hd-main">
               <div class="rd-event-titleblock">
                 <h1 class="rhub-title">${eventName}</h1>
-                ${eventDesc ? `<p class="rd-event-desc">${eventDesc}</p>` : ''}
               </div>
               ${athleteCount ? `<div class="rhub-stats"><div class="rhub-stat"><span class="rhub-stat-num">${String(athleteCount).padStart(2, '0')}</span><span class="rhub-stat-label">Athletes Ranked</span></div></div>` : ''}
             </div>
-            <div class="rhub-squiggle"></div>
           </header>
           <div class="rd-header-controls">
             <div class="rd-header-controls-left">${filterHtml || '<span></span>'}</div>

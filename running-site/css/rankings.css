@@ -297,13 +297,6 @@
 
 .rd-event-titleblock { min-width: 0; }
 
-.rd-event-desc {
-  font-size: 14px;
-  color: var(--muted);
-  line-height: 1.6;
-  margin-top: 10px;
-}
-
 /* Controls bar below hero */
 .rd-header-controls {
   display: flex;
@@ -379,7 +372,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 5px 14px;
+  padding: 6px 14px;
   border: none;
   background: none;
   color: var(--muted);
