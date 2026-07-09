@@ -42,7 +42,7 @@ const GQL_QUERY = `query GetSingleCompetitorResultsDiscipline($id: Int, $results
   getSingleCompetitorResultsDiscipline(id: $id, resultsByYear: $resultsByYear, resultsByYearOrderBy: $resultsByYearOrderBy) {
     resultsByEvent {
       discipline
-      results { date competition venue place mark }
+      results { date competition venue place mark race }
     }
   }
 }`;
@@ -180,12 +180,17 @@ function eventsToResults(resultsByEvent) {
       const date  = parseResultDate(r.date);
       const event = normalizeEvent(discipline);
       const place = String(r.place || '').replace(/\.$/, '');
+      // WA's round/heat label ("H1", "SF2", "F", …) — lets the H2H page tell
+      // whether two athletes actually shared a race vs. ran parallel heats.
+      const round = String(r.race || '').trim();
       const key   = `${r.date}|${mark.replace(/[hi]$/, '')}`;
 
       const score = (event ? 2 : 0) + (place ? 1 : 0) - meet.length * 0.001;
       const existing = byKey.get(key);
       if (!existing || score > existing._score) {
-        byKey.set(key, { date, meet, event, time: mark, place, _score: score, _raw: r.date });
+        const rec = { date, meet, event, time: mark, place, _score: score, _raw: r.date };
+        if (round) rec.round = round;
+        byKey.set(key, rec);
       }
     }
   }

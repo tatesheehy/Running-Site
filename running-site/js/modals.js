@@ -560,24 +560,55 @@ function _getH2HYears(a1, a2) {
   return [...years].sort((a, b) => parseInt(b) - parseInt(a));
 }
 
+// Decides whether two result rows represent the SAME actual race (a true
+// head-to-head), not just the same distance at the same meet. Two athletes
+// can run the same event at one meet without ever racing each other — in
+// separate heats, semis/finals on different days, or parallel A/B sections.
+//
+// When both rows carry World Athletics' round/heat label (`round`, e.g. "H1",
+// "SF2", "F") this is DEFINITIVE: same meet + event + date + round = the same
+// race; a different label means different sections, so it does not count. This
+// correctly counts every round two athletes genuinely shared (e.g. they met in
+// H1, SF2 and the final at one championship — three real head-to-heads).
+//
+// Legacy results synced before the round label existed fall back to logical
+// invariants of a single race, so nothing breaks until the data re-syncs:
+//   1. Same date when both have one (different date = different round).
+//   2. Different finishing place (two runners can't share one place).
+//   3. Place order must agree with time order (else different heats).
+function _sameRace(r1, r2) {
+  if (!r1.meet || !r1.event || !r2.meet || !r2.event) return false;
+  const norm = s => String(s).trim().toLowerCase();
+  if (norm(r1.meet) !== norm(r2.meet)) return false;
+  if (norm(r1.event) !== norm(r2.event)) return false;
+  if (r1.date && r2.date && norm(r1.date) !== norm(r2.date)) return false;
+
+  // Definitive path: exact round/heat label from WA.
+  if (r1.round && r2.round) return norm(r1.round) === norm(r2.round);
+
+  // Fallback path for legacy data without a round label.
+  const p1 = parseInt(r1.place), p2 = parseInt(r2.place);
+  const t1 = parseTimeToSecs(r1.time), t2 = parseTimeToSecs(r2.time);
+  if (!isNaN(p1) && !isNaN(p2)) {
+    if (p1 === p2) return false;                       // can't share a place
+    if (t1 && t2 && ((p1 < p2) !== (t1 < t2))) return false; // heat mismatch
+  }
+  return true;
+}
+
 function _buildEncounterRows(a1, a2, year) {
   const r1all = _getResultsForYear(a1, year);
   const r2all = _getResultsForYear(a2, year);
   const races = [];
+  const usedR2 = new Set(); // don't match one of a2's results to two of a1's
   r1all.forEach(race1 => {
     if (!race1.meet || !race1.event) return;
-    const match = r2all.find(race2 =>
-      race2.meet && race2.event &&
-      race1.meet.trim().toLowerCase() === race2.meet.trim().toLowerCase() &&
-      race1.event.trim().toLowerCase() === race2.event.trim().toLowerCase()
-    );
-    if (!match) return;
+    const matchIdx = r2all.findIndex((race2, i) => !usedR2.has(i) && _sameRace(race1, race2));
+    if (matchIdx === -1) return;
+    usedR2.add(matchIdx);
+    const match = r2all[matchIdx];
     const p1 = parseInt(race1.place), p2 = parseInt(match.place);
     const t1s = parseTimeToSecs(race1.time), t2s = parseTimeToSecs(match.time);
-    // If place order contradicts time order, they ran in different heats — skip
-    if (t1s && t2s && !isNaN(p1) && !isNaN(p2) && p1 !== p2) {
-      if ((p1 < p2) !== (t1s < t2s)) return;
-    }
     let a1wins = false, a2wins = false;
     if (!isNaN(p1) && !isNaN(p2)) { a1wins = p1 < p2; a2wins = p2 < p1; }
     else {
@@ -588,14 +619,24 @@ function _buildEncounterRows(a1, a2, year) {
       ? (marginSec < 0.1 ? '<0.1s' : marginSec < 10 ? marginSec.toFixed(2) + 's' : Math.round(marginSec) + 's')
       : null;
     races.push({ date: race1.date, meet: race1.meet, event: race1.event,
+      round: race1.round || match.round || '',
       time1: race1.time, time2: match.time, place1: race1.place, place2: match.place,
       a1wins, a2wins, marginStr });
   });
-  races.sort((a, b) => {
-    const ord = r => { const [m, d] = String(r.date || '').split(' '); return (_H2H_MONTHS[m] || 0) * 31 + parseInt(d || 0); };
-    return ord(b) - ord(a);
+  const ord = r => { const [m, d] = String(r.date || '').split(' '); return (_H2H_MONTHS[m] || 0) * 31 + parseInt(d || 0); };
+  races.sort((a, b) => ord(b) - ord(a));
+  // Dedupe per meet + event + round. When round labels are present each shared
+  // round (H1 / SF2 / F) is a distinct key and correctly counts on its own.
+  // Legacy rows have no round, so they collapse to one per meet + event (the
+  // latest, since sorted newest-first) rather than double-counting rounds the
+  // athletes may never have shared.
+  const seenMeet = new Set();
+  return races.filter(r => {
+    const key = String(r.meet).trim().toLowerCase() + '|' + String(r.event).trim().toLowerCase() + '|' + String(r.round).trim().toLowerCase();
+    if (seenMeet.has(key)) return false;
+    seenMeet.add(key);
+    return true;
   });
-  return races;
 }
 
 function _renderEncountersInner(a1, a2, n1, n2, year) {

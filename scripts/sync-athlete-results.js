@@ -410,6 +410,7 @@ function parseResultsByEvent(rbye, year) {
       if (!mark) continue;
       // competition field includes venue — trim to just the meet name
       const meet = (r.competition || r.meet || '').split(',')[0].trim();
+      const round = String(r.race || r.round || '').trim();
       const shaped = {
         _date: parsed.date,
         date: parsed.formatted,
@@ -418,6 +419,9 @@ function parseResultsByEvent(rbye, year) {
         time: mark,
         place: String(r.place || r.position || ''),
       };
+      // WA round/heat label ("H1", "SF2", "F") — used by H2H to distinguish
+      // shared races from parallel heats. Omitted when the source lacks it.
+      if (round) shaped.round = round;
       const key = `${shaped.date}|${shaped.meet}|${shaped.event}|${shaped.time}`;
       if (!seen.has(key)) { seen.add(key); results.push(shaped); }
     }
