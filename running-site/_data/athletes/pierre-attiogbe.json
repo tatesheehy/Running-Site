@@ -69,111 +69,126 @@
       "meet": "NCAA Division I Outdoor Track and Field Championships",
       "event": "5000 m",
       "time": "13:47.43",
-      "place": "7."
+      "place": "7.",
+      "round": "F1"
     },
     {
       "date": "MAY 29",
       "meet": "NCAA Division I East First Rounds",
       "event": "5000 m",
       "time": "13:50.81",
-      "place": "3."
+      "place": "3.",
+      "round": "H2"
     },
     {
       "date": "MAY 17",
       "meet": "Ivy League Heptagonal Outdoor Track and Field Championships",
       "event": "1500 m",
       "time": "3:38.25",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "MAY 16",
       "meet": "Ivy League Heptagonal Outdoor Track and Field Championships",
       "event": "1500 m",
       "time": "3:50.89",
-      "place": "1."
+      "place": "1.",
+      "round": "H1"
     },
     {
       "date": "APR 23",
       "meet": "Penn Relay Carnival",
       "event": "5000 m",
       "time": "13:37.70",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "APR 17",
       "meet": "Wake Forest Invitational",
       "event": "1500 m",
       "time": "3:36.69",
-      "place": "6."
+      "place": "6.",
+      "round": "F6"
     },
     {
       "date": "MAR 13",
       "meet": "NCAA Division I Indoor Track and Field Championships",
       "event": "Mile sh",
       "time": "3:57.84",
-      "place": "6."
+      "place": "6.",
+      "round": "H2"
     },
     {
       "date": "MAR 1",
       "meet": "Ivy League Heptagonal Track and Field Championships",
       "event": "Mile sh",
       "time": "4:02.51",
-      "place": "2."
+      "place": "2.",
+      "round": "F1"
     },
     {
       "date": "MAR 1",
       "meet": "Ivy League Heptagonal Track and Field Championships",
       "event": "Distance Medley sh",
       "time": "9:41.01",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "FEB 28",
       "meet": "Ivy League Heptagonal Track and Field Championships",
       "event": "Mile sh",
       "time": "4:10.74",
-      "place": "1."
+      "place": "1.",
+      "round": "H1"
     },
     {
       "date": "FEB 13",
       "meet": "Boston University David Hemery Valentine Invitational",
       "event": "1500 m sh",
       "time": "3:36.78",
-      "place": "6."
+      "place": "6.",
+      "round": "F1"
     },
     {
       "date": "FEB 13",
       "meet": "Boston University David Hemery Valentine Invitational",
       "event": "Mile sh",
       "time": "3:52.44",
-      "place": "7."
+      "place": "7.",
+      "round": "F1"
     },
     {
       "date": "FEB 13",
       "meet": "Boston University David Hemery Valentine Invitational",
       "event": "5000 m sh",
       "time": "DNF",
-      "place": ""
+      "place": "",
+      "round": "F4"
     },
     {
       "date": "JAN 24",
       "meet": "Dr. Sander Invitational",
       "event": "1500 m sh",
       "time": "3:40.07",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "JAN 24",
       "meet": "Dr. Sander Invitational",
       "event": "Mile sh",
       "time": "3:55.77",
-      "place": "5."
+      "place": "5.",
+      "round": "F"
     }
   ],
   "dob": "2005-03-16",
   "college": "Cornell",
   "weight": "x",
-  "lastHistorySynced": "2026-07-07",
+  "lastHistorySynced": "2026-07-08",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",

@@ -46,166 +46,189 @@
       "meet": "Prefontaine Classic",
       "event": "Mile",
       "time": "3:52.21",
-      "place": "6."
+      "place": "6.",
+      "round": "F"
     },
     {
       "date": "JUN 12",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
       "event": "1500 m",
       "time": "3:37.18",
-      "place": "2."
+      "place": "2.",
+      "round": "F1"
     },
     {
       "date": "JUN 10",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
       "event": "1500 m",
       "time": "3:36.07",
-      "place": "3."
+      "place": "3.",
+      "round": "SF2"
     },
     {
       "date": "MAY 29",
       "meet": "NCAA Division I East First Rounds",
       "event": "1500 m",
       "time": "3:38.04",
-      "place": "1."
+      "place": "1.",
+      "round": "H2"
     },
     {
       "date": "MAY 27",
       "meet": "NCAA Division I East First Rounds",
       "event": "1500 m",
       "time": "3:43.66",
-      "place": "1."
+      "place": "1.",
+      "round": "PR4"
     },
     {
       "date": "MAY 17",
       "meet": "Big Ten Outdoor Track & Field Championships",
       "event": "5000 m",
       "time": "DNF",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "MAY 15",
       "meet": "Big Ten Outdoor Track & Field Championships",
       "event": "1500 m",
       "time": "3:50.20",
-      "place": "1."
+      "place": "1.",
+      "round": "H2"
     },
     {
       "date": "MAY 15",
       "meet": "Big Ten Outdoor Track & Field Championships",
       "event": "1500 m",
       "time": "4:01.49",
-      "place": "2."
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "APR 17",
       "meet": "Wake Forest Invitational",
       "event": "1500 m",
       "time": "3:33.17",
-      "place": "1."
+      "place": "1.",
+      "round": "F6"
     },
     {
       "date": "MAR 28",
       "meet": "Raleigh Relays",
       "event": "800 m",
       "time": "1:47.25",
-      "place": "3."
+      "place": "3.",
+      "round": "F19"
     },
     {
       "date": "MAR 26",
       "meet": "Raleigh Relays",
       "event": "1500 m",
       "time": "3:35.80",
-      "place": "1."
+      "place": "1.",
+      "round": "F18"
     },
     {
       "date": "MAR 14",
       "meet": "NCAA Division I Indoor Track and Field Championships",
       "event": "Mile sh",
       "time": "3:59.45",
-      "place": "3."
+      "place": "3.",
+      "round": "F1"
     },
     {
       "date": "MAR 13",
       "meet": "NCAA Division I Indoor Track and Field Championships",
       "event": "Mile sh",
       "time": "3:56.80",
-      "place": "2."
+      "place": "2.",
+      "round": "H2"
     },
     {
       "date": "MAR 13",
       "meet": "NCAA Division I Indoor Track and Field Championships",
       "event": "Distance Medley sh",
       "time": "9:22.77",
-      "place": "4."
+      "place": "4.",
+      "round": "F1"
     },
     {
       "date": "FEB 28",
       "meet": "Big Ten Conference Indoor Track & Field Championships",
       "event": "Mile sh",
       "time": "4:11.03",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "FEB 28",
       "meet": "Big Ten Conference Indoor Track & Field Championships",
       "event": "3000 m sh",
       "time": "DNS",
-      "place": ""
+      "place": "",
+      "round": "F2"
     },
     {
       "date": "FEB 27",
       "meet": "Big Ten Conference Indoor Track & Field Championships",
       "event": "Mile sh",
       "time": "4:00.93",
-      "place": "1."
+      "place": "1.",
+      "round": "H3"
     },
     {
       "date": "FEB 26",
       "meet": "Big Ten Conference Indoor Track & Field Championships",
       "event": "Distance Medley sh",
       "time": "9:38.72",
-      "place": "1."
+      "place": "1.",
+      "round": "F2"
     },
     {
       "date": "FEB 21",
       "meet": "Alex Wilson Invitational",
       "event": "Distance Medley",
       "time": "9:14.80",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "FEB 13",
       "meet": "Boston University David Hemery Valentine Invitational",
       "event": "3000 m sh",
       "time": "7:50.75",
-      "place": "14."
+      "place": "14.",
+      "round": "F"
     },
     {
       "date": "FEB 7",
       "meet": "Michigan Invitational",
       "event": "Mile sh",
       "time": "DNF",
-      "place": ""
+      "place": "",
+      "round": "F1"
     },
     {
       "date": "JAN 31",
       "meet": "Razorback Invitational",
       "event": "Mile sh",
       "time": "3:52.73",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "JAN 17",
       "meet": "Simmons-Harvey Invitational",
       "event": "Mile sh",
       "time": "3:56.41",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     }
   ],
   "dob": "2005-06-01",
   "college": "Michigan",
-  "lastHistorySynced": "2026-07-07",
+  "lastHistorySynced": "2026-07-08",
   "event": "MIDDLE DISTANCE",
   "id": "trent-mcfarland",
   "resultsHistory": {

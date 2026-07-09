@@ -86,79 +86,106 @@
     {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
-      "event": "2 Miles",
+      "event": "2 Mi",
       "time": "8:12.00",
-      "place": "6"
+      "place": "6.",
+      "round": "F"
     },
     {
       "date": "JUN 13",
       "meet": "USATF LA Grand Prix",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:18.13",
-      "place": "8"
+      "place": "8.",
+      "round": "F"
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:34.23",
-      "place": "5"
+      "place": "5.",
+      "round": "F"
     },
     {
       "date": "MAY 2",
       "meet": "USA 5 km Road Running Championships",
-      "event": "5 Kilometres Road",
+      "event": "5 Kilom Road",
       "time": "13:29",
-      "place": "3"
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "APR 18",
       "meet": "Boston 5K",
-      "event": "5 Kilometres Road",
+      "event": "5 Kilom Road",
       "time": "13:25",
-      "place": "4"
+      "place": "4.",
+      "round": "F"
     },
     {
       "date": "MAR 1",
       "meet": "USA Indoor Championships",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:38.87",
-      "place": "7"
+      "place": "7.",
+      "round": "F"
     },
     {
       "date": "FEB 28",
       "meet": "USA Indoor Championships",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:41.62",
-      "place": "7"
+      "place": "7.",
+      "round": "F"
     },
     {
       "date": "FEB 14",
       "meet": "Sound Invite",
-      "event": "Mile Short Track",
+      "event": "1500 m sh",
+      "time": "3:34.35",
+      "place": "",
+      "round": "F3"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "Mile sh",
       "time": "3:50.49",
-      "place": "2"
+      "place": "2.",
+      "round": "F2"
     },
     {
       "date": "FEB 7",
       "meet": "Doc Hale Virginia Tech Invitational",
-      "event": "1000 Metres Short Track",
+      "event": "1000 m sh",
       "time": "2:17.76",
-      "place": "2"
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
-      "event": "2 Miles Short Track",
+      "event": "3000 m sh",
+      "time": "7:38.16",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "2 Mi sh",
       "time": "8:08.91",
-      "place": "7"
+      "place": "7.",
+      "round": "F"
     },
     {
       "date": "JAN 23",
       "meet": "Hokie Invitational",
-      "event": "2000 Metres Short Track",
+      "event": "2000 m sh",
       "time": "4:54.74",
-      "place": "2"
+      "place": "2.",
+      "round": "F"
     }
   ],
   "dob": "1999-08-18",
@@ -1042,6 +1069,11 @@
   },
   "age": "26",
   "ncaaTitle": [
-    "5000m"
-  ]
+    {
+      "event": "5000m",
+      "year": "2021",
+      "season": "Outdoor"
+    }
+  ],
+  "college": "Oregon"
 }

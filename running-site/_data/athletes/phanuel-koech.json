@@ -39,19 +39,21 @@
       "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
       "event": "1500 m",
       "time": "3:34.85",
-      "place": "6."
+      "place": "6.",
+      "round": "F1"
     },
     {
       "date": "JUN 18",
       "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
       "event": "1500 m",
       "time": "3:43.1h",
-      "place": "1."
+      "place": "1.",
+      "round": "H3"
     }
   ],
   "dob": "2006-12-01",
   "weight": "145",
-  "lastHistorySynced": "2026-07-07",
+  "lastHistorySynced": "2026-07-08",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
@@ -195,5 +197,6 @@
       }
     ]
   },
-  "age": "19"
+  "age": "19",
+  "ncaa": false
 }

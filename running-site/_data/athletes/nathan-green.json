@@ -3,8 +3,16 @@
   "reviewTitle": "Season review",
   "collegeLogo": "/images/washington-huskies-logo.png",
   "ncaaTitle": [
-    "1500m",
-    "Mile"
+    {
+      "event": "1500m",
+      "year": "2023",
+      "season": "Outdoor"
+    },
+    {
+      "event": "1500m",
+      "year": "2025",
+      "season": "Outdoor"
+    }
   ],
   "waUrl": "https://worldathletics.org/athletes/united-states/nathan-green-15021942",
   "name": "Nathan Green",
@@ -66,82 +74,93 @@
       "meet": "76. Boris Hanžeković Memorial",
       "event": "1500 m",
       "time": "3:32.46",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "JUN 16",
       "meet": "65th Ostrava Golden Spike",
       "event": "1500 m",
       "time": "3:35.00",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "JUN 16",
       "meet": "65th Ostrava Golden Spike",
       "event": "Mile",
       "time": "3:49.44",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "JUN 4",
       "meet": "Golden Gala Pietro Mennea",
       "event": "800 m",
       "time": "1:45.58",
-      "place": "9."
+      "place": "9.",
+      "round": "F"
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
       "event": "1500 m",
       "time": "3:33.46",
-      "place": "2."
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "MAR 22",
       "meet": "World Athletics Indoor Championships",
       "event": "1500 m sh",
       "time": "3:40.78",
-      "place": "6."
+      "place": "6.",
+      "round": "F"
     },
     {
       "date": "MAR 20",
       "meet": "World Athletics Indoor Championships",
       "event": "1500 m sh",
       "time": "3:40.97",
-      "place": "3."
+      "place": "3.",
+      "round": "H1"
     },
     {
       "date": "MAR 7",
       "meet": "The PRTC Indoor Classic",
       "event": "1500 m sh",
       "time": "3:34.91",
-      "place": "2."
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "MAR 1",
       "meet": "USA Indoor Championships",
       "event": "1500 m sh",
       "time": "3:37.65",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "FEB 13",
       "meet": "Husky Classic",
       "event": "Mile",
       "time": "3:50.31",
-      "place": "1."
+      "place": "1.",
+      "round": "F2"
     },
     {
       "date": "JAN 30",
       "meet": "UW Invite/Mile City",
       "event": "Mile",
       "time": "DNF",
-      "place": ""
+      "place": "",
+      "round": "F2"
     }
   ],
   "dob": "2003-04-10",
   "college": "Washington",
-  "lastHistorySynced": "2026-07-07",
+  "lastHistorySynced": "2026-07-08",
   "event": "MIDDLE DISTANCE",
   "id": "nathan-green",
   "resultsHistory": {

@@ -93,91 +93,104 @@
       "meet": "Campeonato Nacional de Clubes - 1ª divisão",
       "event": "1500 m",
       "time": "3:48.63",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "JUN 16",
       "meet": "65th Ostrava Golden Spike",
       "event": "1000 m",
       "time": "2:16.39",
-      "place": "8."
+      "place": "8.",
+      "round": "F"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
       "event": "1500 m",
       "time": "3:33.57",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
       "event": "Mile",
       "time": "3:50.71",
-      "place": "12."
+      "place": "12.",
+      "round": "F"
     },
     {
       "date": "JUN 4",
       "meet": "Golden Gala Pietro Mennea",
       "event": "800 m",
       "time": "1:44.28",
-      "place": "5."
+      "place": "5.",
+      "round": "F"
     },
     {
       "date": "MAY 31",
       "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
       "event": "1500 m",
       "time": "3:30.43",
-      "place": "2."
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "MAR 22",
       "meet": "World Athletics Indoor Championships",
       "event": "1500 m sh",
       "time": "3:40.06",
-      "place": "2."
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "MAR 20",
       "meet": "World Athletics Indoor Championships",
       "event": "1500 m sh",
       "time": "3:43.58",
-      "place": "2."
+      "place": "2.",
+      "round": "H2"
     },
     {
       "date": "FEB 22",
       "meet": "ORLEN Copernicus Cup",
       "event": "800 m sh",
       "time": "1:45.05",
-      "place": "5."
+      "place": "5.",
+      "round": "F"
     },
     {
       "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
       "event": "1500 m sh",
       "time": "3:32.44",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "FEB 15",
       "meet": "Campeonatos Nacionais de Clubes 1ª e 2ª Divisão - Final",
       "event": "3000 m sh",
       "time": "8:11.30",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "FEB 14",
       "meet": "Campeonatos Nacionais de Clubes 1ª e 2ª Divisão - Final",
       "event": "1500 m sh",
       "time": "4:04.97",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "FEB 3",
       "meet": "Czech Indoor Gala",
       "event": "3000 m sh",
       "time": "7:38.05",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     }
   ],
   "dob": "1999-08-17",
@@ -1409,5 +1422,6 @@
       }
     ]
   },
-  "age": "26"
+  "age": "26",
+  "ncaa": false
 }

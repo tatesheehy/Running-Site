@@ -67,19 +67,21 @@
       "meet": "Meeting de Paris",
       "event": "800 m",
       "time": "1:43.60",
-      "place": "2."
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "JUN 21",
       "meet": "FBK Games",
       "event": "800 m",
       "time": "1:43.83",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     }
   ],
   "dob": "2005-04-17",
   "weight": "145",
-  "lastHistorySynced": "2026-07-07",
+  "lastHistorySynced": "2026-07-08",
   "coach": "xx",
   "reviewBody": "xx",
   "event": "MIDDLE DISTANCE",
@@ -696,5 +698,6 @@
       }
     ]
   },
-  "age": "21"
+  "age": "21",
+  "ncaa": false
 }

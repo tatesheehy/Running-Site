@@ -2,8 +2,21 @@
   "photoBackground": "#0a0a1a",
   "reviewTitle": "Season review",
   "ncaaTitle": [
-    "1500m",
-    "Mile"
+    {
+      "event": "Mile",
+      "year": "2017",
+      "season": "Indoor"
+    },
+    {
+      "event": "1500m",
+      "year": "2017",
+      "season": "Outdoor"
+    },
+    {
+      "event": "Mile",
+      "year": "2018",
+      "season": "Indoor"
+    }
   ],
   "traits": [
     "Raw Strength",
@@ -130,35 +143,40 @@
       "meet": "USATF LA Grand Prix",
       "event": "800 m",
       "time": "1:45.46",
-      "place": "4."
+      "place": "4.",
+      "round": "F"
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
       "event": "800 m",
       "time": "1:44.60",
-      "place": "3."
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "MAR 21",
       "meet": "World Athletics Indoor Championships",
       "event": "3000 m sh",
       "time": "7:35.56",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
       "event": "3000 m sh",
       "time": "7:37.34",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
       "event": "2 Mi sh",
       "time": "8:07.68",
-      "place": "2."
+      "place": "2.",
+      "round": "F"
     }
   ],
   "dob": "1997-10-08",
@@ -928,5 +946,7 @@
       }
     ]
   },
-  "age": "28"
+  "age": "28",
+  "college": "New Mexico",
+  "ncaa": false
 }

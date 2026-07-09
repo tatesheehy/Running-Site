@@ -3,7 +3,26 @@
   "reviewTitle": "Season review",
   "collegeLogo": "/images/new_mexico_lobos_logo.svg",
   "ncaaTitle": [
-    "10000m"
+    {
+      "event": "10000m",
+      "year": "2024",
+      "season": "Outdoor"
+    },
+    {
+      "event": "Cross Country",
+      "year": "2025",
+      "season": ""
+    },
+    {
+      "event": "5000m",
+      "year": "2026",
+      "season": "Indoor"
+    },
+    {
+      "event": "10000m",
+      "year": "2026",
+      "season": "Outdoor"
+    }
   ],
   "waUrl": "https://worldathletics.org/athletes/eritrea/habtom-samuel-14919315",
   "height": "x",
@@ -75,111 +94,126 @@
       "meet": "NCAA Division I Outdoor Track and Field Championships",
       "event": "5000 m",
       "time": "13:38.93",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "JUN 10",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
       "event": "10,000 m",
       "time": "27:51.31",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "MAY 27",
       "meet": "NCAA Division I West First Rounds",
       "event": "10,000 m",
       "time": "28:42.53",
-      "place": "1."
+      "place": "1.",
+      "round": "H1"
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
       "event": "5000 m",
       "time": "12:57.22",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "MAY 16",
       "meet": "Mountain West Outdoor Track and Field Championships",
       "event": "5000 m",
       "time": "13:25.96",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "APR 17",
       "meet": "Bryan Clay Invitational",
       "event": "5000 m",
       "time": "13:03.47",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "APR 3",
       "meet": "Stanford Invitational",
       "event": "10,000 m",
       "time": "27:30.51",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "MAR 14",
       "meet": "NCAA Division I Indoor Track and Field Championships",
       "event": "3000 m sh",
       "time": "DQ",
-      "place": ""
+      "place": "",
+      "round": "F1"
     },
     {
       "date": "MAR 13",
       "meet": "NCAA Division I Indoor Track and Field Championships",
       "event": "5000 m sh",
       "time": "13:36.58",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "FEB 28",
       "meet": "Mountain West Indoor Track and Field Championships",
       "event": "3000 m sh",
       "time": "7:48.35",
-      "place": "1."
+      "place": "1.",
+      "round": "F2"
     },
     {
       "date": "FEB 26",
       "meet": "Mountain West Indoor Track and Field Championships",
       "event": "5000 m sh",
       "time": "13:30.40",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "FEB 13",
       "meet": "Husky Classic",
       "event": "3000 m",
       "time": "7:37.44",
-      "place": "1."
+      "place": "1.",
+      "round": "F6"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
       "event": "3000 m sh",
       "time": "7:39.62",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
       "event": "2 Mi sh",
       "time": "8:11.47",
-      "place": "9."
+      "place": "9.",
+      "round": "F"
     },
     {
       "date": "JAN 11",
       "meet": "Aramco Houston Half Marathon",
       "event": "Half Marathon",
       "time": "59:01",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     }
   ],
   "dob": "2003-11-30",
   "college": "New Mexico",
   "weight": "x",
-  "lastHistorySynced": "2026-07-07",
+  "lastHistorySynced": "2026-07-08",
   "reviewBody": "x",
   "event": "DISTANCE",
   "id": "habtom-samuel",

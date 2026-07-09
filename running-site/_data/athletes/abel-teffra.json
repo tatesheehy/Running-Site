@@ -3,7 +3,11 @@
   "reviewTitle": "Season review",
   "collegeLogo": "/images/856623ecea6c457a427a1cdaf6bb421e.png",
   "ncaaTitle": [
-    "Mile"
+    {
+      "event": "Mile",
+      "year": "2025",
+      "season": "Indoor"
+    }
   ],
   "waUrl": "https://worldathletics.org/athletes/united-states/abel-teffra-14888013",
   "height": "x",
@@ -25,7 +29,7 @@
     },
     {
       "event": "Mile",
-      "time": "3:51.13"
+      "time": "3:52.44"
     },
     {
       "event": "3000m",
@@ -72,69 +76,86 @@
       "meet": "Prefontaine Classic",
       "event": "Mile",
       "time": "3:51.13",
-      "place": "3"
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "JUN 21",
       "meet": "Portland Track Festival",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:46.40",
-      "place": "8"
+      "place": "8.",
+      "round": "F1"
     },
     {
       "date": "JUN 13",
       "meet": "USATF LA Grand Prix",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:34.08",
-      "place": "2"
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:45.71",
-      "place": "6"
+      "place": "6.",
+      "round": "F2"
     },
     {
       "date": "MAR 1",
       "meet": "USA Indoor Championships",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:38.90",
-      "place": "8"
+      "place": "8.",
+      "round": "F"
     },
     {
       "date": "FEB 22",
       "meet": "Saucony Battle for Boston",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:35.20",
-      "place": "3"
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "FEB 13",
       "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "Mile Short Track",
+      "event": "1500 m sh",
+      "time": "3:37.83",
+      "place": "11.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Boston University David Hemery Valentine Invitational",
+      "event": "Mile sh",
       "time": "3:53.29",
-      "place": "10"
+      "place": "10.",
+      "round": "F1"
     },
     {
       "date": "FEB 7",
       "meet": "Penn Classic",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:55.13",
-      "place": "1"
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "JAN 24",
       "meet": "Penn Elite",
-      "event": "1000 Metres Short Track",
+      "event": "1000 m sh",
       "time": "2:20.49",
-      "place": "1"
+      "place": "1.",
+      "round": "F1"
     }
   ],
   "dob": "2002-01-23",
   "college": "Georgetown",
   "weight": "x",
-  "lastHistorySynced": "2026-07-07",
+  "lastHistorySynced": "2026-07-08",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

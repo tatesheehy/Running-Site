@@ -89,63 +89,72 @@
       "meet": "Meeting de Paris",
       "event": "1500 m",
       "time": "3:32.05",
-      "place": "10."
+      "place": "10.",
+      "round": "F"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
       "event": "1500 m",
       "time": "3:36.96",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
       "event": "Mile",
       "time": "3:53.87",
-      "place": "13."
+      "place": "13.",
+      "round": "F"
     },
     {
       "date": "JUN 7",
       "meet": "BAUHAUS-Galan",
       "event": "1500 m",
       "time": "3:31.74",
-      "place": "5."
+      "place": "5.",
+      "round": "F"
     },
     {
       "date": "MAY 31",
       "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
       "event": "1500 m",
       "time": "3:33.45",
-      "place": "12."
+      "place": "12.",
+      "round": "F"
     },
     {
       "date": "MAY 24",
       "meet": "61. Internationales Pfingstsportfest Rehlingen",
       "event": "1500 m",
       "time": "3:32.52",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "MAY 20",
       "meet": "15th Savona International Meeting",
       "event": "1500 m",
       "time": "3:34.37",
-      "place": "4."
+      "place": "4.",
+      "round": "F"
     },
     {
       "date": "APR 4",
       "meet": "Urban Trail de Lille - 5 et 10km",
       "event": "5 Kilom Road",
       "time": "13:10",
-      "place": "7."
+      "place": "7.",
+      "round": "F"
     },
     {
       "date": "MAR 1",
       "meet": "Norwegian Indoor Championships",
       "event": "3000 m sh",
       "time": "7:41.44",
-      "place": "1."
+      "place": "1.",
+      "round": "F3"
     }
   ],
   "dob": "1998-09-30",

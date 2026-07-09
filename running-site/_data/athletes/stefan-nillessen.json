@@ -80,47 +80,53 @@
       "meet": "Prefontaine Classic",
       "event": "Mile",
       "time": "3:50.50",
-      "place": "2."
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
       "event": "1500 m",
       "time": "3:32.45",
-      "place": "12."
+      "place": "12.",
+      "round": "F"
     },
     {
       "date": "JUN 21",
       "meet": "FBK Games",
       "event": "800 m",
       "time": "1:48.09",
-      "place": "10."
+      "place": "10.",
+      "round": "F"
     },
     {
       "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
       "event": "1500 m sh",
       "time": "3:33.64",
-      "place": "4."
+      "place": "4.",
+      "round": "F1"
     },
     {
       "date": "FEB 15",
       "meet": "MONACO RUN",
       "event": "5 Kilom Road",
       "time": "13:38",
-      "place": "4."
+      "place": "4.",
+      "round": "F"
     },
     {
       "date": "FEB 8",
       "meet": "INIT Indoor Meeting Karlsruhe",
       "event": "3000 m sh",
       "time": "7:38.48",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     }
   ],
   "dob": "2003-01-02",
   "weight": "x",
-  "lastHistorySynced": "2026-07-07",
+  "lastHistorySynced": "2026-07-08",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

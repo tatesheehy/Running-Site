@@ -88,82 +88,93 @@
       "meet": "Prefontaine Classic",
       "event": "Mile",
       "time": "3:47.38",
-      "place": "4."
+      "place": "4.",
+      "round": "F"
     },
     {
       "date": "JUN 16",
       "meet": "65th Ostrava Golden Spike",
       "event": "1000 m",
       "time": "2:15.44",
-      "place": "4."
+      "place": "4.",
+      "round": "F"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
       "event": "1500 m",
       "time": "3:34.49",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
       "event": "Mile",
       "time": "3:49.13",
-      "place": "4."
+      "place": "4.",
+      "round": "F"
     },
     {
       "date": "JUN 7",
       "meet": "BAUHAUS-Galan",
       "event": "1500 m",
       "time": "3:31.76",
-      "place": "6."
+      "place": "6.",
+      "round": "F"
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
       "event": "800 m",
       "time": "1:46.04",
-      "place": "9."
+      "place": "9.",
+      "round": "F"
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
       "event": "1500 m",
       "time": "DNF",
-      "place": ""
+      "place": "",
+      "round": "F2"
     },
     {
       "date": "MAY 1",
       "meet": "Payton Jordan Invitational",
       "event": "5000 m",
       "time": "13:13.94",
-      "place": "6."
+      "place": "6.",
+      "round": "F1"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
       "event": "1500 m sh",
       "time": "3:32.99",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
       "event": "Mile sh",
       "time": "3:48.68",
-      "place": "3."
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "JAN 24",
       "meet": "New Balance Indoor Grand Prix",
       "event": "2000 m sh",
       "time": "4:48.79",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     }
   ],
   "dob": "2003-03-15",
   "weight": "140",
-  "lastHistorySynced": "2026-07-07",
+  "lastHistorySynced": "2026-07-08",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
@@ -729,5 +740,6 @@
       }
     ]
   },
-  "age": "23"
+  "age": "23",
+  "ncaa": false
 }

@@ -49,54 +49,61 @@
       "meet": "NCAA Division III Outdoor Track and Field Championships",
       "event": "1500 m",
       "time": "3:46.64",
-      "place": "6."
+      "place": "6.",
+      "round": "F1"
     },
     {
       "date": "MAY 21",
       "meet": "NCAA Division III Outdoor Track and Field Championships",
       "event": "1500 m",
       "time": "3:50.58",
-      "place": "2."
+      "place": "2.",
+      "round": "H1"
     },
     {
       "date": "MAY 11",
       "meet": "Widener Final Qualifier",
       "event": "1500 m",
       "time": "3:48.09",
-      "place": "1."
+      "place": "1.",
+      "round": "F2"
     },
     {
       "date": "APR 18",
       "meet": "Paul Donahue Invitational",
       "event": "800 m",
       "time": "1:53.20",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "APR 4",
       "meet": "Sam Howell Invitational",
       "event": "5000 m",
       "time": "14:21.86",
-      "place": "6."
+      "place": "6.",
+      "round": "F1"
     },
     {
       "date": "MAR 13",
       "meet": "NCAA Division III Indoor Track and Field Championships",
       "event": "Distance Medley sh",
       "time": "10:03.55",
-      "place": "12."
+      "place": "12.",
+      "round": "F1"
     },
     {
       "date": "FEB 13",
       "meet": "Boston University David Hemery Valentine Invitational",
       "event": "Mile sh",
       "time": "4:07.62",
-      "place": "2."
+      "place": "2.",
+      "round": "F15"
     }
   ],
   "college": "Haverford",
   "weight": "x",
-  "lastHistorySynced": "2026-07-07",
+  "lastHistorySynced": "2026-07-08",
   "coach": "Matthew Cohen",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",

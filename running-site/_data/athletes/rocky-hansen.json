@@ -73,62 +73,70 @@
       "meet": "NCAA Division I Outdoor Track and Field Championships",
       "event": "5000 m",
       "time": "13:39.91",
-      "place": "2."
+      "place": "2.",
+      "round": "F1"
     },
     {
       "date": "MAY 29",
       "meet": "NCAA Division I East First Rounds",
       "event": "5000 m",
       "time": "13:28.19",
-      "place": "2."
+      "place": "2.",
+      "round": "H1"
     },
     {
       "date": "MAY 16",
       "meet": "ACC Outdoor Track & Field Championships",
       "event": "1500 m",
       "time": "3:41.40",
-      "place": "4."
+      "place": "4.",
+      "round": "F1"
     },
     {
       "date": "MAY 15",
       "meet": "ACC Outdoor Track & Field Championships",
       "event": "800 m",
       "time": "1:49.27",
-      "place": "4."
+      "place": "4.",
+      "round": "H4"
     },
     {
       "date": "MAY 14",
       "meet": "ACC Outdoor Track & Field Championships",
       "event": "1500 m",
       "time": "3:39.41",
-      "place": "1."
+      "place": "1.",
+      "round": "H3"
     },
     {
       "date": "APR 17",
       "meet": "Wake Forest Invitational",
       "event": "1500 m",
       "time": "3:35.75",
-      "place": "5."
+      "place": "5.",
+      "round": "F6"
     },
     {
       "date": "APR 10",
       "meet": "Duke Invitational",
       "event": "5000 m",
       "time": "13:29.53",
-      "place": "2."
+      "place": "2.",
+      "round": "F3"
     },
     {
       "date": "JAN 10",
       "meet": "46th World Athletics Cross Country Championships",
       "event": "Cross Country Senior Race",
       "time": "DNS",
-      "place": ""
+      "place": "",
+      "round": "F"
     }
   ],
   "dob": "2004-09-05",
   "college": "Wake Forest",
   "weight": "x",
-  "lastHistorySynced": "2026-07-07",
+  "lastHistorySynced": "2026-07-08",
   "reviewBody": "x",
   "event": "DISTANCE",
   "id": "rocky-hansen",

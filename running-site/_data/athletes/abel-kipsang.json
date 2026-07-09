@@ -75,91 +75,103 @@
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:33.52",
-      "place": "13"
+      "place": "13.",
+      "round": "F"
     },
     {
       "date": "JUN 20",
       "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:42.89",
-      "place": "15"
+      "place": "15.",
+      "round": "F1"
     },
     {
       "date": "JUN 18",
       "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:39.9h",
-      "place": "6"
+      "place": "6.",
+      "round": "H1"
     },
     {
       "date": "MAY 27",
       "meet": "Athletics Kenya National Police Service Track and Field Championships",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:50.28",
-      "place": "1"
+      "place": "1.",
+      "round": "H2"
     },
     {
       "date": "MAY 27",
       "meet": "Athletics Kenya National Police Service Track and Field Championships",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:47.09",
-      "place": "1"
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "MAY 27",
       "meet": "Athletics Kenya National Police Service Track and Field Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:44.94",
-      "place": "2"
+      "place": "2.",
+      "round": "H2"
     },
     {
       "date": "MAY 27",
       "meet": "Athletics Kenya National Police Service Track and Field Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:44.45",
-      "place": "3"
+      "place": "3.",
+      "round": "F1"
     },
     {
       "date": "APR 28",
       "meet": "Simbine Classic",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:47.43",
-      "place": "8"
+      "place": "8.",
+      "round": "F"
     },
     {
       "date": "APR 24",
       "meet": "Kip Keino Classic",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:40.97",
-      "place": "10"
+      "place": "10.",
+      "round": "F"
     },
     {
       "date": "APR 11",
       "meet": "Trials For World Athletics Relay Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:38.1h",
-      "place": "5"
+      "place": "5.",
+      "round": "F"
     },
     {
       "date": "APR 9",
       "meet": "Trials For World Athletics Relay Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:42.20",
-      "place": "2"
+      "place": "2.",
+      "round": "H1"
     },
     {
       "date": "FEB 14",
       "meet": "Sirikwa Classic Continental Tour Gold",
       "event": "Cross Country",
       "time": "6:16",
-      "place": "28"
+      "place": "28.",
+      "round": "F"
     }
   ],
   "dob": "1996-11-22",
   "weight": "x",
-  "lastHistorySynced": "2026-07-07",
+  "lastHistorySynced": "2026-07-08",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

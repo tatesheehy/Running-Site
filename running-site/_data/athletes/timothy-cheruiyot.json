@@ -108,98 +108,112 @@
       "meet": "Prefontaine Classic",
       "event": "Mile",
       "time": "3:47.39",
-      "place": "5."
+      "place": "5.",
+      "round": "F"
     },
     {
       "date": "JUN 20",
       "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
       "event": "1500 m",
       "time": "3:32.28",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "JUN 18",
       "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
       "event": "1500 m",
       "time": "3:38.6h",
-      "place": "3."
+      "place": "3.",
+      "round": "H1"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
       "event": "1500 m",
       "time": "3:33.76",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
       "event": "Mile",
       "time": "3:48.21",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "JUN 7",
       "meet": "BAUHAUS-Galan",
       "event": "1500 m",
       "time": "3:30.67",
-      "place": "3."
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "MAY 23",
       "meet": "Wanda Diamond League Xiamen",
       "event": "5000 m",
       "time": "13:16.41",
-      "place": "13."
+      "place": "13.",
+      "round": "F"
     },
     {
       "date": "MAY 16",
       "meet": "Wanda Diamond League",
       "event": "3000 m",
       "time": "7:27.24",
-      "place": "4."
+      "place": "4.",
+      "round": "F"
     },
     {
       "date": "MAY 9",
       "meet": "Athletics Kenya Prison Services Track and Field Championships",
       "event": "800 m",
       "time": "1:50.1h",
-      "place": "2."
+      "place": "2.",
+      "round": "F1"
     },
     {
       "date": "MAY 8",
       "meet": "Athletics Kenya Prison Services Track and Field Championships",
       "event": "800 m",
       "time": "1:56.1h",
-      "place": "1."
+      "place": "1.",
+      "round": "H2"
     },
     {
       "date": "MAY 8",
       "meet": "Athletics Kenya Prison Services Track and Field Championships",
       "event": "1500 m",
       "time": "3:58.6h",
-      "place": "1."
+      "place": "1.",
+      "round": "H1"
     },
     {
       "date": "MAY 8",
       "meet": "Athletics Kenya Prison Services Track and Field Championships",
       "event": "1500 m",
       "time": "3:48.7h",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "APR 24",
       "meet": "Kip Keino Classic",
       "event": "1500 m",
       "time": "3:38.16",
-      "place": "6."
+      "place": "6.",
+      "round": "F"
     },
     {
       "date": "FEB 14",
       "meet": "Sirikwa Classic Continental Tour Gold",
       "event": "Cross Country",
       "time": "5:54",
-      "place": "3."
+      "place": "3.",
+      "round": "F"
     }
   ],
   "dob": "1995-11-20",
@@ -913,5 +927,6 @@
       }
     ]
   },
-  "age": "30"
+  "age": "30",
+  "ncaa": false
 }

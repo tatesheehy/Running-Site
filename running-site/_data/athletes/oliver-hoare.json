@@ -3,7 +3,11 @@
   "reviewTitle": "Season review",
   "collegeLogo": "/images/wisconsin_badgers_logo.svg",
   "ncaaTitle": [
-    "1500m"
+    {
+      "event": "1500m",
+      "year": "2018",
+      "season": "Outdoor"
+    }
   ],
   "waUrl": "https://worldathletics.org/athletes/australia/oliver-hoare-14667553",
   "height": "x",
@@ -95,56 +99,64 @@
       "meet": "Prefontaine Classic",
       "event": "Mile",
       "time": "3:55.35",
-      "place": "11."
+      "place": "11.",
+      "round": "F"
     },
     {
       "date": "JUN 13",
       "meet": "USATF LA Grand Prix",
       "event": "1500 m",
       "time": "3:34.20",
-      "place": "3."
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "APR 10",
       "meet": "Australian Championships",
       "event": "1500 m",
       "time": "3:32.66",
-      "place": "2."
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "APR 9",
       "meet": "Australian Championships",
       "event": "1500 m",
       "time": "3:39.68",
-      "place": "1."
+      "place": "1.",
+      "round": "H2"
     },
     {
       "date": "MAR 28",
       "meet": "The TEN",
       "event": "1500 m",
       "time": "3:35.82",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
       "event": "1500 m sh",
       "time": "3:36.73",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
       "event": "Mile sh",
       "time": "3:53.69",
-      "place": "9."
+      "place": "9.",
+      "round": "F"
     },
     {
       "date": "JAN 10",
       "meet": "46th World Athletics Cross Country Championships",
       "event": "Cross Country Relay",
       "time": "22:23",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     }
   ],
   "dob": "1997-01-29",

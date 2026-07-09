@@ -88,117 +88,133 @@
       "meet": "Fribourg International Meeting",
       "event": "800 m",
       "time": "1:44.28",
-      "place": "1."
+      "place": "1.",
+      "round": "F2"
     },
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
       "event": "800 m",
       "time": "1:45.09",
-      "place": "9."
+      "place": "9.",
+      "round": "F"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
       "event": "800 m",
       "time": "1:45.66",
-      "place": "8."
+      "place": "8.",
+      "round": "F"
     },
     {
       "date": "JUN 7",
       "meet": "BAUHAUS-Galan",
       "event": "800 m",
       "time": "1:46.92",
-      "place": "10."
+      "place": "10.",
+      "round": "F"
     },
     {
       "date": "JUN 3",
       "meet": "Paavo Nurmi Games",
       "event": "1500 m",
       "time": "3:31.82",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "MAR 22",
       "meet": "World Athletics Indoor Championships",
       "event": "800 m sh",
       "time": "1:44.66",
-      "place": "3."
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "MAR 21",
       "meet": "World Athletics Indoor Championships",
       "event": "800 m sh",
       "time": "1:44.48",
-      "place": "2."
+      "place": "2.",
+      "round": "SF2"
     },
     {
       "date": "MAR 20",
       "meet": "World Athletics Indoor Championships",
       "event": "800 m sh",
       "time": "1:45.75",
-      "place": "2."
+      "place": "2.",
+      "round": "H3"
     },
     {
       "date": "MAR 1",
       "meet": "Spanish Indoor Championships",
       "event": "800 m sh",
       "time": "1:45.62",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "FEB 28",
       "meet": "Spanish Indoor Championships",
       "event": "800 m sh",
       "time": "1:48.21",
-      "place": "1."
+      "place": "1.",
+      "round": "H3"
     },
     {
       "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
       "event": "1500 m sh",
       "time": "3:41.31",
-      "place": "8."
+      "place": "8.",
+      "round": "F2"
     },
     {
       "date": "FEB 13",
       "meet": "13. Erfurt Indoor 2026",
       "event": "800 m sh",
       "time": "1:45.76",
-      "place": "1."
+      "place": "1.",
+      "round": "F2"
     },
     {
       "date": "FEB 6",
       "meet": "World Indoor Tour Gold Madrid 2026",
       "event": "800 m sh",
       "time": "1:47.58",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "FEB 6",
       "meet": "World Indoor Tour Gold Madrid 2026",
       "event": "1000 m sh",
       "time": "2:14.52",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
       "event": "800 m sh",
       "time": "1:44.98",
-      "place": "2."
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "JAN 17",
       "meet": "Antequera Indoor Match",
       "event": "1500 m sh",
       "time": "3:35.65",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     }
   ],
   "dob": "2001-09-26",
   "weight": "145",
-  "lastHistorySynced": "2026-07-07",
+  "lastHistorySynced": "2026-07-08",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
@@ -1066,5 +1082,6 @@
       }
     ]
   },
-  "age": "24"
+  "age": "24",
+  "ncaa": false
 }
