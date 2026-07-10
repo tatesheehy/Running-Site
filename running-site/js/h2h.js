@@ -139,8 +139,10 @@ function _renderH2HPage() {
           </div>
           <div class="h2h-lb-ctrl-group">
             <div class="h2h-lb-ctrl-label">Search</div>
-            <input class="h2h-lb-search" placeholder="Filter athletes…" autocomplete="off"
-              oninput="h2hLbSearch(this.value)" value="${_h2hSearch}">
+            <div class="h2h-lb-search-wrap">
+              <input class="h2h-lb-search" placeholder="Filter athletes…" autocomplete="off"
+                oninput="h2hLbSearch(this.value)" value="${_h2hSearch}">
+            </div>
           </div>
         </div>
 
@@ -163,15 +165,6 @@ function _renderH2HPage() {
                         const pct      = Math.round((rec.wins / total) * 100);
                         const rankColor = RANK_COLORS[i] || null;
                         const rankClass = i === 0 ? 'h2h-lb-row--gold' : i === 1 ? 'h2h-lb-row--silver' : i === 2 ? 'h2h-lb-row--bronze' : '';
-                        const _MONTHS  = {JAN:0,FEB:1,MAR:2,APR:3,MAY:4,JUN:5,JUL:6,AUG:7,SEP:8,OCT:9,NOV:10,DEC:11};
-                        const _dateVal = d => { if (!d) return 0; const [m,dy] = d.split(' '); return (_MONTHS[m]||0)*100+(parseInt(dy)||0); };
-                        const _seq = [...(rec.sequence||[])].sort((a,b)=>_dateVal(a.date)-_dateVal(b.date));
-                        let _streak = 0, _streakWon = null;
-                        for (let si = _seq.length - 1; si >= 0; si--) {
-                          if (_streakWon === null) { _streakWon = _seq[si].won; _streak = 1; }
-                          else if (_seq[si].won === _streakWon) _streak++;
-                          else break;
-                        }
 
                         const beatChips = Object.values(rec.matchups)
                           .filter(m => m.wins > 0)
@@ -182,19 +175,15 @@ function _renderH2HPage() {
                             return `<span class="h2h-lb-beat-chip">${n}<span class="h2h-lb-beat-rec">&thinsp;${m.wins}–${m.losses}</span></span>`;
                           }).join('');
 
-                        const avatar = `<div class="h2h-lb-avatar" style="background-image:url('${a.photo || '/images/default_card.png'}');background-color:${a.photoBackground || '#111'}"></div>`;
-
                         return `
                           <tr class="h2h-lb-row ${rankClass}" id="h2h-row-${id}" onclick="h2hToggleExpand('${id}')">
                             <td class="h2h-lb-td h2h-lb-td--rank"${rankColor ? ` style="box-shadow:inset 4px 0 0 ${rankColor}"` : ''}>
                               <span class="h2h-lb-rank-num"${rankColor ? ` style="color:${rankColor}"` : ''}>${i + 1}</span>
                             </td>
                             <td class="h2h-lb-td h2h-lb-td--athlete">
-                              ${avatar}
                               <div class="h2h-lb-ath-info">
                                 <div class="h2h-lb-ath-name-row">
                                   <span class="h2h-lb-name h2h-lb-name--link" onclick="event.stopPropagation();openAthleteCard('${id}',null)">${a.name}</span>
-                                  ${_seq.length ? `<span class="h2h-streak-pill h2h-streak-pill--${_streakWon?'w':'l'}">${_streakWon?'W':'L'}${_streak}</span>` : ''}
                                 </div>
                                 <div class="h2h-lb-ath-sub">
                                   <span class="h2h-lb-country">${renderFlag(a.flag)} ${a.country || ''}</span>
@@ -292,7 +281,6 @@ function _renderExpandDetail(id, rec) {
 
   const cards = matchups.map(m => {
     const opp = ATHLETES[m.id];
-    const avatar = `<div class="h2h-detail-avatar" style="background-image:url('${opp?.photo || '/images/default_card.png'}');background-color:${opp?.photoBackground || '#111'}"></div>`;
 
     const recCls = m.wins > m.losses ? 'h2h-detail-opp-rec--win'
                  : m.losses > m.wins ? 'h2h-detail-opp-rec--loss'
@@ -337,7 +325,6 @@ function _renderExpandDetail(id, rec) {
     return `
       <div class="h2h-detail-opp">
         <div class="h2h-detail-opp-hd">
-          ${avatar}
           <span class="h2h-detail-opp-name">${m.fullName}</span>
           <span class="h2h-detail-opp-rec ${recCls}">${m.wins}–${m.losses}</span>
         </div>
@@ -410,10 +397,6 @@ function _renderRivalriesSection(year, eventFilter, rankedOnly) {
 
     return `
       <div class="h2h-rivalry-row">
-        <div class="h2h-rivalry-avatars">
-          <div class="h2h-rivalry-avatar" style="background-image:url('${a1.photo || ''}');background-color:${a1.photoBackground || '#1a1a2e'}"></div>
-          <div class="h2h-rivalry-avatar" style="background-image:url('${a2.photo || ''}');background-color:${a2.photoBackground || '#1a1a2e'}"></div>
-        </div>
         <div class="h2h-rivalry-names">
           <div class="h2h-rivalry-matchup">
             <span class="${overallLeader === n1 ? 'h2h-rivalry-name--lead' : ''}">${n1}</span><span class="h2h-rivalry-matchup-vs">vs</span><span class="${overallLeader === n2 ? 'h2h-rivalry-name--lead' : ''}">${n2}</span>
@@ -456,7 +439,6 @@ function _renderDominanceMap(rows) {
 
   const bodyRows = orderedIds.map((rowId, ri) => {
     const rowAth = ATHLETES[rowId];
-    const avatar = `<div class="h2h-map-avatar" style="background-image:url('${rowAth?.photo || '/images/default_card.png'}');background-color:${rowAth?.photoBackground || '#111'}"></div>`;
 
     const cells = orderedIds.map(colId => {
       if (rowId === colId) return `<td class="h2h-map-cell h2h-map-cell--self"></td>`;
@@ -474,7 +456,6 @@ function _renderDominanceMap(rows) {
       <tr class="h2h-map-row">
         <td class="h2h-map-row-head">
           <div class="h2h-map-row-head-inner">
-            ${avatar}
             <span class="h2h-map-row-rank">${ri + 1}</span>
             <span class="h2h-map-row-name">${rowAth ? rowAth.name.split(' ').slice(-1)[0] : rowId}</span>
           </div>
@@ -726,7 +707,6 @@ function _renderComparePicker(slot) {
   if (athlete) {
     return `
       <div class="h2h-cmp-selected">
-        <div class="h2h-cmp-sel-avatar" style="background-image:url('${athlete.photo || '/images/default_card.png'}');background-color:${athlete.photoBackground || '#111'}"></div>
         <span class="h2h-cmp-sel-name">${athlete.name}</span>
         <button class="h2h-cmp-clear" onclick="event.stopPropagation();h2hCmpClear('${slot}')">×</button>
       </div>`;
@@ -761,7 +741,6 @@ function _renderCompareSection() {
   return `
     <div class="h2h-compare-section">
       <div class="h2h-compare-hd">
-        <span class="h2h-rivalries-dot"></span>
         <span class="h2h-compare-title">Compare Athletes</span>
       </div>
       <div class="h2h-compare-pickers">
@@ -863,7 +842,6 @@ function _renderCompareMatchup() {
     <div class="h2h-compare-result">
       <div class="h2h-compare-summary">
         <div class="h2h-cmp-ath">
-          <div class="h2h-cmp-ath-avatar" style="background-image:url('${a1.photo || '/images/default_card.png'}');background-color:${a1.photoBackground || '#111'}"></div>
           <span class="h2h-cmp-ath-name">${a1.name}</span>
         </div>
         <div class="h2h-cmp-score">
@@ -873,7 +851,6 @@ function _renderCompareMatchup() {
           <div class="h2h-cmp-score-meta">${total} meeting${total !== 1 ? 's' : ''}${leader ? ` · ${leader} leads` : ' · tied'}</div>
         </div>
         <div class="h2h-cmp-ath h2h-cmp-ath--right">
-          <div class="h2h-cmp-ath-avatar" style="background-image:url('${a2.photo || '/images/default_card.png'}');background-color:${a2.photoBackground || '#111'}"></div>
           <span class="h2h-cmp-ath-name">${a2.name}</span>
         </div>
       </div>

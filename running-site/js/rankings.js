@@ -888,86 +888,28 @@ function buildRankingsDetail(eventName, opts = {}) {
     `;
   }).join('');
 
-  const cardsHtml = rows.length
-    ? rows.map((r, i) => buildRankingCard(r, i + 1)).join('')
-    : '';
-
-  const sectionCardsHtml = sections.map(sec => {
-    if (!sec.entries || !sec.entries.length) return '';
-    return `
-      <div class="rd-section">
-        <div class="rd-section-header">
-          <span class="rd-section-title">${sec.title || ''}</span>
-          ${sec.description ? `<span class="rd-section-desc">${sec.description}</span>` : ''}
-        </div>
-        <div class="rd-grid">${sec.entries.map(e => buildRankingCard(e, null)).join('')}</div>
-      </div>
-    `;
-  }).join('');
-
   _rdSortCol = 'rank';
   _rdSortDir = 'asc';
-  const viewMode = window._rdView || 'terminal';
-  const isGrid = viewMode === 'grid';
-  const isTerminal = viewMode === 'terminal';
   const athleteCount = rows.length;
   const terminalHtml = buildTerminalHtml(rows);
 
   document.getElementById('main').innerHTML = `
     <div class="container">
       <div class="rankings-detail">
-        <a href="${backUrl}" class="rd-back">&larr; ${backLabel}</a>
         <div class="rd-header">
-          <header class="rhub-hd">
-            <div class="rhub-eyebrow">${displayYear} Season Rankings${archiveYear ? ' <span class="archive-stamp">Archive</span>' : ''}</div>
-            <div class="rhub-hd-main">
-              <div class="rd-event-titleblock">
-                <h1 class="rhub-title">${eventName}</h1>
-              </div>
-              ${athleteCount ? `<div class="rhub-stats"><div class="rhub-stat"><span class="rhub-stat-num">${String(athleteCount).padStart(2, '0')}</span><span class="rhub-stat-label">Athletes Ranked</span></div></div>` : ''}
+          <div class="rd-header-controls rd-header-controls--compact">
+            <div class="rd-header-controls-left">
+              <a href="${backUrl}" class="rd-back rd-back--mini" title="${backLabel}">&larr;</a>
+              <span class="rd-mini-title">${eventName}</span>
+              ${filterHtml}
             </div>
-          </header>
-          <div class="rd-header-controls">
-            <div class="rd-header-controls-left">${filterHtml || '<span></span>'}</div>
             <div class="rd-header-btns">
-              <div class="rd-skim-toggle" id="rd-skim-toggle" style="${isTerminal ? 'display:none' : ''}">
-                <button class="rd-skim-btn rd-skim-btn--active" id="rd-skim-casual"   onclick="setRdSkim('casual')">Casual</button>
-                <button class="rd-skim-btn" id="rd-skim-invested" onclick="setRdSkim('invested')">Invested</button>
-                <button class="rd-skim-btn" id="rd-skim-die-hard" onclick="setRdSkim('die-hard')">Die Hard</button>
-              </div>
               <button class="rd-compare-btn" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">Compare Athletes</button>
-              <div class="rd-view-toggle">
-                <button class="rd-view-btn${isTerminal ? ' rd-view-btn--active' : ''}" data-mode="terminal" onclick="toggleRdView('terminal')" title="Terminal view">
-                  <svg viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="20" height="16" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M3 5L6.5 8L3 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><line x1="9" y1="11" x2="15" y2="11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
-                </button>
-                <button class="rd-view-btn${viewMode === 'list' ? ' rd-view-btn--active' : ''}" data-mode="list" onclick="toggleRdView('list')" title="List view">
-                  <svg viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="20" height="3" rx="1.5" fill="currentColor"/><rect x="0" y="6.5" width="20" height="3" rx="1.5" fill="currentColor"/><rect x="0" y="13" width="20" height="3" rx="1.5" fill="currentColor"/></svg>
-                </button>
-                <button class="rd-view-btn${isGrid ? ' rd-view-btn--active' : ''}" data-mode="grid" onclick="toggleRdView('grid')" title="Card view">
-                  <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="9" height="9" rx="1.5" fill="currentColor"/><rect x="11" y="0" width="9" height="9" rx="1.5" fill="currentColor"/><rect x="0" y="11" width="9" height="9" rx="1.5" fill="currentColor"/><rect x="11" y="11" width="9" height="9" rx="1.5" fill="currentColor"/></svg>
-                </button>
-              </div>
             </div>
           </div>
         </div>
         ${ev?.photo && !archiveYear ? `<div class="rd-event-banner" style="background-image:url('${ev.photo}')"></div>` : ''}
-        <div id="rd-col-sentinel"></div>
-        <div class="rd-col-labels" style="${viewMode === 'list' ? '' : 'display:none'}">
-          <span class="rd-col-sort rd-col-sort--active" data-col="rank" onclick="sortRankings('rank')">Rank <span class="rd-sort-icon">▲</span></span>
-          <span class="rd-col-sort" data-col="name" onclick="sortRankings('name')">Athlete <span class="rd-sort-icon">⇅</span></span>
-          <span>Trend</span>
-          <span class="rd-col-sort rd-col-label--right" data-col="sb" onclick="sortRankings('sb')">SB <span class="rd-sort-icon">⇅</span></span>
-          <span class="rd-col-sort rd-col-label--right" data-col="pb" onclick="sortRankings('pb')">PB <span class="rd-sort-icon">⇅</span></span>
-        </div>
-        <div class="rd-list-wrap" style="${viewMode === 'list' ? '' : 'display:none'}">
-          <div class="rd-list">${rowsHtml}</div>
-          ${sectionsHtml}
-        </div>
-        <div class="rd-grid-wrap" style="${isGrid ? '' : 'display:none'}">
-          <div class="rd-grid">${cardsHtml}</div>
-          ${sectionCardsHtml}
-        </div>
-        <div class="rd-terminal-wrap" style="${isTerminal ? '' : 'display:none'}">${terminalHtml}</div>
+        <div class="rd-terminal-wrap">${terminalHtml}</div>
       </div>
     </div>
   `;
