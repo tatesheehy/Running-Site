@@ -119,6 +119,7 @@ function buildRankingsTableHtml(event, compact) {
 
 // ── RANKINGS PAGE ─────────────────────────────────────────
 function buildRankingsPage() {
+  document.body.classList.remove('rd-terminal-page');
   const eventParam = getParam('event');
   const yearParam  = getParam('year');
   const viewParam  = getParam('view');
@@ -749,12 +750,13 @@ window.toggleRdView = function(mode) {
   if (termWrap) termWrap.style.display = mode === 'terminal' ? '' : 'none';
   if (colLabels) colLabels.style.display = mode === 'list' ? '' : 'none';
   if (skimToggle) skimToggle.style.display = mode === 'terminal' ? 'none' : '';
-  document.querySelectorAll('.rd-view-btn').forEach((btn, i) => {
-    btn.classList.toggle('rd-view-btn--active', (i === 0 && mode === 'list') || (i === 1 && mode === 'grid') || (i === 2 && mode === 'terminal'));
+  document.querySelectorAll('.rd-view-btn').forEach(btn => {
+    btn.classList.toggle('rd-view-btn--active', btn.dataset.mode === mode);
   });
 };
 
 function buildRankingsDetail(eventName, opts = {}) {
+  document.body.classList.add('rd-terminal-page');
   const {
     archiveYear   = null,
     archiveWeekId = null,
@@ -905,7 +907,7 @@ function buildRankingsDetail(eventName, opts = {}) {
 
   _rdSortCol = 'rank';
   _rdSortDir = 'asc';
-  const viewMode = window._rdView || 'list';
+  const viewMode = window._rdView || 'terminal';
   const isGrid = viewMode === 'grid';
   const isTerminal = viewMode === 'terminal';
   const athleteCount = rows.length;
@@ -935,14 +937,14 @@ function buildRankingsDetail(eventName, opts = {}) {
               </div>
               <button class="rd-compare-btn" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">Compare Athletes</button>
               <div class="rd-view-toggle">
-                <button class="rd-view-btn${viewMode === 'list' ? ' rd-view-btn--active' : ''}" onclick="toggleRdView('list')" title="List view">
+                <button class="rd-view-btn${isTerminal ? ' rd-view-btn--active' : ''}" data-mode="terminal" onclick="toggleRdView('terminal')" title="Terminal view">
+                  <svg viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="20" height="16" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M3 5L6.5 8L3 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><line x1="9" y1="11" x2="15" y2="11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+                </button>
+                <button class="rd-view-btn${viewMode === 'list' ? ' rd-view-btn--active' : ''}" data-mode="list" onclick="toggleRdView('list')" title="List view">
                   <svg viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="20" height="3" rx="1.5" fill="currentColor"/><rect x="0" y="6.5" width="20" height="3" rx="1.5" fill="currentColor"/><rect x="0" y="13" width="20" height="3" rx="1.5" fill="currentColor"/></svg>
                 </button>
-                <button class="rd-view-btn${isGrid ? ' rd-view-btn--active' : ''}" onclick="toggleRdView('grid')" title="Card view">
+                <button class="rd-view-btn${isGrid ? ' rd-view-btn--active' : ''}" data-mode="grid" onclick="toggleRdView('grid')" title="Card view">
                   <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="9" height="9" rx="1.5" fill="currentColor"/><rect x="11" y="0" width="9" height="9" rx="1.5" fill="currentColor"/><rect x="0" y="11" width="9" height="9" rx="1.5" fill="currentColor"/><rect x="11" y="11" width="9" height="9" rx="1.5" fill="currentColor"/></svg>
-                </button>
-                <button class="rd-view-btn${isTerminal ? ' rd-view-btn--active' : ''}" onclick="toggleRdView('terminal')" title="Terminal view">
-                  <svg viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="20" height="16" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M3 5L6.5 8L3 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><line x1="9" y1="11" x2="15" y2="11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
                 </button>
               </div>
             </div>

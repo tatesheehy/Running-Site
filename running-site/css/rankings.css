@@ -1737,3 +1737,35 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   .rdt-detail { padding-left: 16px; }
   .rdt-dd-grid { grid-template-columns: 1fr; gap: 12px; }
 }
+
+/* ── WHOLE-PAGE DARK THEME — rankings event detail page ──────
+   Applied via body.rd-terminal-page (set in buildRankingsDetail).
+   Repoints the site's own theme variables to the Terminal's
+   palette so every .rd-*/.rhub-* rule (already var()-driven)
+   goes dark for free; only components with hardcoded light
+   colors (country-select dropdown) need explicit overrides. ── */
+body.rd-terminal-page {
+  background: #0a0a0a;
+  --bg: #0a0a0a;
+  --bg-light: #141414;
+  --text: #f0f0f0;
+  --muted: #8a8a8a;
+  --border: rgba(255,255,255,0.12);
+  --dark: #1e1e1e;
+}
+
+body.rd-terminal-page .rd-cs-btn {
+  background: #141414;
+  border-color: rgba(255,255,255,0.16);
+  color: #eee;
+}
+body.rd-terminal-page .rd-cs-btn:hover,
+body.rd-terminal-page .rd-cs.open .rd-cs-btn { border-color: rgba(255,255,255,0.4); color: #fff; }
+body.rd-terminal-page .rd-cs-list {
+  background: #141414;
+  border-color: rgba(255,255,255,0.16);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+body.rd-terminal-page .rd-cs-opt { color: #ccc; }
+body.rd-terminal-page .rd-cs-opt:hover { background: rgba(255,255,255,0.06); }
+body.rd-terminal-page .rd-cs-opt--active { background: rgba(255,255,255,0.08); }
