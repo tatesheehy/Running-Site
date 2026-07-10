@@ -444,6 +444,230 @@ function buildRankingCard(r, rank) {
   `;
 }
 
+// ── DATA TERMINAL VIEW ────────────────────────────────────
+// A dense, mono-type alternative to the list/grid views: sortable columns,
+// a gap-to-leader stat, per-athlete race count, and an expandable detail
+// row built entirely from data already on the athlete record.
+function _rdtEvNorm(s) { return (s || '').replace(/\s+/g, '').toLowerCase(); }
+
+function _rdtOrdinal(p) {
+  const n = parseInt(p, 10);
+  if (!n) return '';
+  const s = ['th', 'st', 'nd', 'rd'][(n % 100 > 10 && n % 100 < 14) ? 0 : Math.min(n % 10, 4) % 4] || 'th';
+  return n + s;
+}
+
+// Pulls everything the terminal row/detail needs out of the athlete's own
+// results — no fields are invented, only counted/sorted from real data.
+function _rdtAthleteMeta(a, event) {
+  const results = (a?.results || []);
+  const idxThisEvent = results.findIndex(r => _rdtEvNorm(r.event) === _rdtEvNorm(event));
+  const thisEventResults = results.filter(r => _rdtEvNorm(r.event) === _rdtEvNorm(event));
+  const pb = ((a?.prs || []).find(p => _rdtEvNorm(p.event) === _rdtEvNorm(event)) || {}).time || '';
+  const lastPlace = idxThisEvent === -1 ? '' : _rdtOrdinal((results[idxThisEvent].place || '').replace(/\.$/, ''));
+  // Sparkline: last up to 4 races in this event, oldest→newest (left→right)
+  const spark = thisEventResults.slice(0, 4).reverse().map(r => _parseTimeSecs(r.time)).filter(t => isFinite(t));
+  return {
+    pb,
+    pbSecs: isFinite(_parseTimeSecs(pb)) ? _parseTimeSecs(pb) : null,
+    racesThisEvent: thisEventResults.length,
+    lastRaceGap: idxThisEvent === -1 ? null : idxThisEvent + 1, // 1 = most recent race overall WAS this event
+    lastPlace,
+    spark,
+  };
+}
+
+function _rdtSparklineHtml(spark) {
+  if (!spark.length) return '<div class="rdt-spark"></div>';
+  const min = Math.min(...spark), max = Math.max(...spark);
+  const range = max - min || 1;
+  const bars = spark.map((t, i) => {
+    const h = 6 + Math.round(((max - t) / range) * 10); // faster time = taller bar
+    const prev = spark[i - 1];
+    const cls = prev == null ? '' : (t < prev ? 'hot' : t > prev ? 'cold' : '');
+    return `<i style="height:${h}px" class="${cls}"></i>`;
+  }).join('');
+  return `<div class="rdt-spark">${bars}</div>`;
+}
+
+function buildTerminalItem(r, rank, leaderPbSecs) {
+  const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
+  const name    = (a && a.name)    || r.name    || r.athleteId || '—';
+  const country = (a && a.country) || r.country || '';
+  const flag    = (a && a.flag)    || r.flag    || '';
+  const seasonBest = _bestTime(r, a, _rdCurrentEvent);
+  const sbSecs = isFinite(_parseTimeSecs(seasonBest)) ? _parseTimeSecs(seasonBest) : '';
+  const meta = _rdtAthleteMeta(a, _rdCurrentEvent);
+  const gapSecs = (meta.pbSecs != null && leaderPbSecs != null) ? meta.pbSecs - leaderPbSecs : null;
+  const gapStr = gapSecs == null ? '—' : (gapSecs === 0 ? '0.00' : (gapSecs > 0 ? '+' : '−') + Math.abs(gapSecs).toFixed(2));
+  const momentum = typeof r.momentum === 'number' ? r.momentum : null;
+  const moveHtml = momentum == null || momentum === 0
+    ? '<span class="rdt-mv hd">—</span>'
+    : momentum > 0 ? `<span class="rdt-mv up">▲</span>` : `<span class="rdt-mv dn">▼</span>`;
+  const rankClass = rank === 1 ? 'top' : '';
+  const clickData = encodeURIComponent(JSON.stringify({ athleteId: r.athleteId || '', rank: rank || 0, name, country, flag, seasonBest: r.seasonBest || '', meet: r.meet || '' }));
+
+  const recentHtml = (a?.results || []).slice(0, 3).map(res => `
+    <div class="rdt-dd-race"><span>${res.meet || ''}</span><b>${res.time || '—'}</b></div>
+  `).join('') || '<div class="rdt-dd-empty">No races logged yet.</div>';
+
+  const wins = (a?.results || []).filter(res => (res.place || '').replace(/\.$/, '') === '1').length;
+
+  return `
+    <div class="rdt-item" data-country="${country}" data-name="${name.toLowerCase()}"
+         data-sort-rank="${rank || 999}" data-sort-name="${name}" data-sort-sb="${sbSecs || ''}"
+         data-sort-pb="${meta.pbSecs != null ? meta.pbSecs : ''}" data-sort-gap="${gapSecs != null ? gapSecs : ''}">
+      <div class="rdt-row" onclick="toggleRdtDetail(this)">
+        <div class="rdt-rk ${rankClass}">${rank}</div>
+        <div class="rdt-flag">${renderFlag(flag)}</div>
+        <div class="rdt-nm-wrap"><span class="rdt-nm">${name}</span><span class="rdt-ct">${country}</span></div>
+        <div class="rdt-c dim">${seasonBest && seasonBest !== '—' ? seasonBest : '—'}</div>
+        <div class="rdt-c hi">${meta.pb || '—'}</div>
+        <div class="rdt-c rdt-gap${gapSecs === 0 ? ' zero' : ''}">${gapStr}</div>
+        <div class="rdt-c dim">${meta.lastRaceGap ? 'L' + meta.lastRaceGap : '—'}</div>
+        <div class="rdt-c">${meta.lastPlace || '—'}</div>
+        ${_rdtSparklineHtml(meta.spark)}
+      </div>
+      <div class="rdt-detail" hidden>
+        <div class="rdt-dd-grid">
+          <div>
+            <div class="rdt-dd-lb">Last 3 races</div>
+            ${recentHtml}
+          </div>
+          <div>
+            <div class="rdt-dd-lb">Season snapshot</div>
+            <div class="rdt-dd-race"><span>Races run</span><b>${(a?.results || []).length}</b></div>
+            <div class="rdt-dd-race"><span>Wins</span><b>${wins}</b></div>
+            <div class="rdt-dd-race"><span>Races this event</span><b>${meta.racesThisEvent}</b></div>
+          </div>
+          <div>
+            <div class="rdt-dd-lb">Personal bests</div>
+            ${(a?.prs || []).slice(0, 3).map(pr => `<div class="rdt-dd-race"><span>${pr.event}</span><b>${pr.time}</b></div>`).join('') || '<div class="rdt-dd-empty">—</div>'}
+          </div>
+        </div>
+        <button class="rdt-dd-full" onclick="event.stopPropagation();openRankingRow('${clickData}')">Full profile &rarr;</button>
+      </div>
+    </div>`;
+}
+
+function buildTerminalTicker(rows) {
+  const items = rows.slice(0, 12).map((r, i) => {
+    const a = r.athleteId && ATHLETES[r.athleteId];
+    const name = (a && a.name) || r.name || r.athleteId || '—';
+    const pb = ((a?.prs || []).find(p => _rdtEvNorm(p.event) === _rdtEvNorm(_rdCurrentEvent)) || {}).time || '';
+    const momentum = typeof r.momentum === 'number' ? r.momentum : 0;
+    const arrow = momentum > 0 ? '<span class="rdt-tk-up">▲</span>' : momentum < 0 ? '<span class="rdt-tk-dn">▼</span>' : '';
+    return `<span class="rdt-tk-item">${i + 1}&nbsp;${name}&nbsp;<b>${pb || '—'}</b>&nbsp;${arrow}</span>`;
+  }).join('<span class="rdt-tk-sep">·</span>');
+  return `
+    <div class="rdt-ticker">
+      <div class="rdt-ticker-track">
+        <div class="rdt-ticker-content">${items}<span class="rdt-tk-sep">·</span>${items}<span class="rdt-tk-sep">·</span></div>
+      </div>
+    </div>`;
+}
+
+function buildTerminalHtml(rows) {
+  if (!rows.length) return '<p class="rankings-empty">No rankings data yet for this event.</p>';
+  // "Gap" reads as distance behind whoever is ranked #1 — not the fastest
+  // lifetime PB in the field, which can belong to a lower-ranked athlete
+  // (rankings here factor in current form, not just all-time best).
+  const leaderAthlete = rows[0]?.athleteId && ATHLETES[rows[0].athleteId];
+  const leaderPb = ((leaderAthlete?.prs || []).find(p => _rdtEvNorm(p.event) === _rdtEvNorm(_rdCurrentEvent)) || {}).time || '';
+  const leaderPbSecs = isFinite(_parseTimeSecs(leaderPb)) ? _parseTimeSecs(leaderPb) : null;
+
+  const countryInfo = {};
+  rows.forEach(r => {
+    const a = r.athleteId && ATHLETES[r.athleteId];
+    const c = (a && a.country) || r.country || '';
+    if (c) countryInfo[c] = (countryInfo[c] || 0) + 1;
+  });
+  const topCountries = Object.entries(countryInfo).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([c]) => c);
+
+  const itemsHtml = rows.map((r, i) => buildTerminalItem(r, i + 1, leaderPbSecs)).join('');
+
+  return `
+    ${buildTerminalTicker(rows)}
+    <div class="rdt-bar">
+      <div class="rdt-search"><input type="text" placeholder="search athlete or country" oninput="filterRdt(this.value)"></div>
+      <button class="rdt-chip rdt-chip--active" onclick="filterRdtChip(this, null)">All</button>
+      ${topCountries.map(c => `<button class="rdt-chip" onclick="filterRdtChip(this, '${c.replace(/'/g, "\\'")}')">${c}</button>`).join('')}
+      <button class="rdt-chip" onclick="filterRdtChip(this, 'top10')">Top 10</button>
+    </div>
+    <div class="rdt-cols">
+      <span class="rdt-col-sort" data-col="rank" onclick="sortRdt('rank')">Rk <span class="arw">▼</span></span>
+      <span></span>
+      <span class="rdt-col-sort" data-col="name" onclick="sortRdt('name')">Athlete</span>
+      <span class="rdt-col-sort" data-col="sb" onclick="sortRdt('sb')">SB</span>
+      <span class="rdt-col-sort" data-col="pb" onclick="sortRdt('pb')">PB</span>
+      <span class="rdt-col-sort" data-col="gap" onclick="sortRdt('gap')">Gap</span>
+      <span>Last</span>
+      <span>Pl</span>
+      <span>Form</span>
+    </div>
+    <div class="rdt-body" id="rdt-body">${itemsHtml}</div>
+    <div class="rdt-ft"><span>Gap = to leader PB · Last = races since this event · click row for detail</span></div>`;
+}
+
+window.toggleRdtDetail = function(row) {
+  const item = row.closest('.rdt-item');
+  if (!item) return;
+  const detail = item.querySelector('.rdt-detail');
+  const isOpen = !detail.hidden;
+  document.querySelectorAll('#rdt-body .rdt-item.sel').forEach(el => {
+    el.classList.remove('sel');
+    const d = el.querySelector('.rdt-detail');
+    if (d) d.hidden = true;
+  });
+  if (!isOpen) { item.classList.add('sel'); detail.hidden = false; }
+};
+
+window.filterRdt = function(query) {
+  const q = query.trim().toLowerCase();
+  document.querySelectorAll('#rdt-body .rdt-item').forEach(el => {
+    const hay = el.dataset.name + ' ' + (el.dataset.country || '').toLowerCase();
+    el.style.display = (!q || hay.includes(q)) ? '' : 'none';
+  });
+};
+
+window.filterRdtChip = function(chip, value) {
+  document.querySelectorAll('.rdt-bar .rdt-chip').forEach(c => c.classList.remove('rdt-chip--active'));
+  chip.classList.add('rdt-chip--active');
+  document.querySelectorAll('#rdt-body .rdt-item').forEach(el => {
+    if (!value) { el.style.display = ''; return; }
+    if (value === 'top10') { el.style.display = (+el.dataset.sortRank <= 10) ? '' : 'none'; return; }
+    el.style.display = (el.dataset.country === value) ? '' : 'none';
+  });
+};
+
+let _rdtSortCol = 'rank', _rdtSortDir = 'asc';
+window.sortRdt = function(col) {
+  if (_rdtSortCol === col) { _rdtSortDir = _rdtSortDir === 'asc' ? 'desc' : 'asc'; }
+  else { _rdtSortCol = col; _rdtSortDir = 'asc'; }
+  const body = document.getElementById('rdt-body');
+  if (!body) return;
+  const items = [...body.querySelectorAll(':scope > .rdt-item')];
+  items.sort((a, b) => {
+    const dir = _rdtSortDir === 'asc' ? 1 : -1;
+    if (col === 'name') return dir * (a.dataset.sortName || '').localeCompare(b.dataset.sortName || '');
+    const key = 'sort' + col[0].toUpperCase() + col.slice(1);
+    const va = a.dataset[key], vb = b.dataset[key];
+    const na = va === '' || va == null ? Infinity : +va;
+    const nb = vb === '' || vb == null ? Infinity : +vb;
+    if (na === Infinity && nb === Infinity) return 0;
+    if (na === Infinity) return 1;
+    if (nb === Infinity) return -1;
+    return dir * (na - nb);
+  });
+  items.forEach(el => body.appendChild(el));
+  document.querySelectorAll('.rdt-col-sort').forEach(el => {
+    el.classList.toggle('rdt-col-sort--active', el.dataset.col === col);
+    const arw = el.querySelector('.arw');
+    if (arw) arw.textContent = el.dataset.col === col ? (_rdtSortDir === 'asc' ? '▲' : '▼') : '';
+    else if (el.dataset.col === col) el.insertAdjacentHTML('beforeend', ` <span class="arw">${_rdtSortDir === 'asc' ? '▲' : '▼'}</span>`);
+  });
+};
+
 window.setRdSkim = function(mode) {
   const wrap = document.querySelector('.rd-list-wrap');
   if (!wrap) return;
@@ -517,12 +741,16 @@ window.toggleRdView = function(mode) {
   window._rdView = mode;
   const listWrap = document.querySelector('.rd-list-wrap');
   const gridWrap = document.querySelector('.rd-grid-wrap');
+  const termWrap = document.querySelector('.rd-terminal-wrap');
   const colLabels = document.querySelector('.rd-col-labels');
-  if (listWrap) listWrap.style.display = mode === 'grid' ? 'none' : '';
+  const skimToggle = document.getElementById('rd-skim-toggle');
+  if (listWrap) listWrap.style.display = mode === 'list' ? '' : 'none';
   if (gridWrap) gridWrap.style.display = mode === 'grid' ? '' : 'none';
-  if (colLabels) colLabels.style.display = mode === 'grid' ? 'none' : '';
+  if (termWrap) termWrap.style.display = mode === 'terminal' ? '' : 'none';
+  if (colLabels) colLabels.style.display = mode === 'list' ? '' : 'none';
+  if (skimToggle) skimToggle.style.display = mode === 'terminal' ? 'none' : '';
   document.querySelectorAll('.rd-view-btn').forEach((btn, i) => {
-    btn.classList.toggle('rd-view-btn--active', (i === 0 && mode === 'list') || (i === 1 && mode === 'grid'));
+    btn.classList.toggle('rd-view-btn--active', (i === 0 && mode === 'list') || (i === 1 && mode === 'grid') || (i === 2 && mode === 'terminal'));
   });
 };
 
@@ -677,8 +905,11 @@ function buildRankingsDetail(eventName, opts = {}) {
 
   _rdSortCol = 'rank';
   _rdSortDir = 'asc';
-  const isGrid = window._rdView === 'grid';
+  const viewMode = window._rdView || 'list';
+  const isGrid = viewMode === 'grid';
+  const isTerminal = viewMode === 'terminal';
   const athleteCount = rows.length;
+  const terminalHtml = buildTerminalHtml(rows);
 
   document.getElementById('main').innerHTML = `
     <div class="container">
@@ -697,18 +928,21 @@ function buildRankingsDetail(eventName, opts = {}) {
           <div class="rd-header-controls">
             <div class="rd-header-controls-left">${filterHtml || '<span></span>'}</div>
             <div class="rd-header-btns">
-              <div class="rd-skim-toggle" id="rd-skim-toggle">
+              <div class="rd-skim-toggle" id="rd-skim-toggle" style="${isTerminal ? 'display:none' : ''}">
                 <button class="rd-skim-btn rd-skim-btn--active" id="rd-skim-casual"   onclick="setRdSkim('casual')">Casual</button>
                 <button class="rd-skim-btn" id="rd-skim-invested" onclick="setRdSkim('invested')">Invested</button>
                 <button class="rd-skim-btn" id="rd-skim-die-hard" onclick="setRdSkim('die-hard')">Die Hard</button>
               </div>
               <button class="rd-compare-btn" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">Compare Athletes</button>
               <div class="rd-view-toggle">
-                <button class="rd-view-btn${!isGrid ? ' rd-view-btn--active' : ''}" onclick="toggleRdView('list')" title="List view">
+                <button class="rd-view-btn${viewMode === 'list' ? ' rd-view-btn--active' : ''}" onclick="toggleRdView('list')" title="List view">
                   <svg viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="20" height="3" rx="1.5" fill="currentColor"/><rect x="0" y="6.5" width="20" height="3" rx="1.5" fill="currentColor"/><rect x="0" y="13" width="20" height="3" rx="1.5" fill="currentColor"/></svg>
                 </button>
                 <button class="rd-view-btn${isGrid ? ' rd-view-btn--active' : ''}" onclick="toggleRdView('grid')" title="Card view">
                   <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="9" height="9" rx="1.5" fill="currentColor"/><rect x="11" y="0" width="9" height="9" rx="1.5" fill="currentColor"/><rect x="0" y="11" width="9" height="9" rx="1.5" fill="currentColor"/><rect x="11" y="11" width="9" height="9" rx="1.5" fill="currentColor"/></svg>
+                </button>
+                <button class="rd-view-btn${isTerminal ? ' rd-view-btn--active' : ''}" onclick="toggleRdView('terminal')" title="Terminal view">
+                  <svg viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="20" height="16" rx="1.5" stroke="currentColor" stroke-width="1.4"/><path d="M3 5L6.5 8L3 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><line x1="9" y1="11" x2="15" y2="11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
                 </button>
               </div>
             </div>
@@ -716,14 +950,14 @@ function buildRankingsDetail(eventName, opts = {}) {
         </div>
         ${ev?.photo && !archiveYear ? `<div class="rd-event-banner" style="background-image:url('${ev.photo}')"></div>` : ''}
         <div id="rd-col-sentinel"></div>
-        <div class="rd-col-labels" style="${isGrid ? 'display:none' : ''}">
+        <div class="rd-col-labels" style="${viewMode === 'list' ? '' : 'display:none'}">
           <span class="rd-col-sort rd-col-sort--active" data-col="rank" onclick="sortRankings('rank')">Rank <span class="rd-sort-icon">▲</span></span>
           <span class="rd-col-sort" data-col="name" onclick="sortRankings('name')">Athlete <span class="rd-sort-icon">⇅</span></span>
           <span>Trend</span>
           <span class="rd-col-sort rd-col-label--right" data-col="sb" onclick="sortRankings('sb')">SB <span class="rd-sort-icon">⇅</span></span>
           <span class="rd-col-sort rd-col-label--right" data-col="pb" onclick="sortRankings('pb')">PB <span class="rd-sort-icon">⇅</span></span>
         </div>
-        <div class="rd-list-wrap" style="${isGrid ? 'display:none' : ''}">
+        <div class="rd-list-wrap" style="${viewMode === 'list' ? '' : 'display:none'}">
           <div class="rd-list">${rowsHtml}</div>
           ${sectionsHtml}
         </div>
@@ -731,6 +965,7 @@ function buildRankingsDetail(eventName, opts = {}) {
           <div class="rd-grid">${cardsHtml}</div>
           ${sectionCardsHtml}
         </div>
+        <div class="rd-terminal-wrap" style="${isTerminal ? '' : 'display:none'}">${terminalHtml}</div>
       </div>
     </div>
   `;
