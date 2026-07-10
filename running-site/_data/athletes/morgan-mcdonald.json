@@ -3,26 +3,8 @@
   "reviewTitle": "Season review",
   "collegeLogo": "/images/wisconsin_badgers_logo.svg",
   "ncaaTitle": [
-    {
-      "event": "Cross Country",
-      "year": "2018",
-      "season": ""
-    },
-    {
-      "event": "3000m",
-      "year": "2019",
-      "season": "Indoor"
-    },
-    {
-      "event": "5000m",
-      "year": "2019",
-      "season": "Indoor"
-    },
-    {
-      "event": "5000m",
-      "year": "2019",
-      "season": "Outdoor"
-    }
+    "5000m",
+    "3000m"
   ],
   "waUrl": "https://worldathletics.org/athletes/australia/morgan-mcdonald-14496066",
   "name": "Morgan McDonald",

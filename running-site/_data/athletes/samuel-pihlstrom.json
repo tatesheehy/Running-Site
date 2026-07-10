@@ -83,111 +83,126 @@
       "meet": "65th Ostrava Golden Spike",
       "event": "1000 m",
       "time": "2:17.21",
-      "place": "11."
+      "place": "11.",
+      "round": "F"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
       "event": "1500 m",
       "time": "3:35.03",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
       "event": "Mile",
       "time": "3:50.27",
-      "place": "11."
+      "place": "11.",
+      "round": "F"
     },
     {
       "date": "JUN 7",
       "meet": "BAUHAUS-Galan",
       "event": "1500 m",
       "time": "3:34.53",
-      "place": "11."
+      "place": "11.",
+      "round": "F"
     },
     {
       "date": "MAY 31",
       "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
       "event": "1500 m",
       "time": "DNF",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "MAY 24",
       "meet": "61. Internationales Pfingstsportfest Rehlingen",
       "event": "800 m",
       "time": "1:46.78",
-      "place": "5."
+      "place": "5.",
+      "round": "F1"
     },
     {
       "date": "MAR 22",
       "meet": "World Athletics Indoor Championships",
       "event": "1500 m sh",
       "time": "3:40.59",
-      "place": "4."
+      "place": "4.",
+      "round": "F"
     },
     {
       "date": "MAR 20",
       "meet": "World Athletics Indoor Championships",
       "event": "1500 m sh",
       "time": "3:43.38",
-      "place": "1."
+      "place": "1.",
+      "round": "H2"
     },
     {
       "date": "MAR 1",
       "meet": "Swedish Indoor Championships",
       "event": "1500 m sh",
       "time": "3:42.21",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "FEB 28",
       "meet": "Swedish Indoor Championships",
       "event": "800 m sh",
       "time": "1:49.53",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "FEB 28",
       "meet": "Swedish Indoor Championships",
       "event": "1500 m sh",
       "time": "3:58.37",
-      "place": "1."
+      "place": "1.",
+      "round": "H2"
     },
     {
       "date": "FEB 27",
       "meet": "Swedish Indoor Championships",
       "event": "800 m sh",
       "time": "1:53.49",
-      "place": "1."
+      "place": "1.",
+      "round": "H4"
     },
     {
       "date": "FEB 22",
       "meet": "ORLEN Copernicus Cup",
       "event": "1500 m sh",
       "time": "3:33.47",
-      "place": "3."
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "FEB 8",
       "meet": "INIT Indoor Meeting Karlsruhe",
       "event": "1500 m sh",
       "time": "3:36.52",
-      "place": "6."
+      "place": "6.",
+      "round": "F"
     },
     {
       "date": "FEB 1",
       "meet": "Nordic Indoor Match",
       "event": "3000 m sh",
       "time": "7:44.94",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     }
   ],
   "dob": "2001-03-08",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-07-06",
+  "lastHistorySynced": "2026-07-10",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

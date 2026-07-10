@@ -60,56 +60,64 @@
       "meet": "Prefontaine Classic",
       "event": "800 m",
       "time": "1:45.70",
-      "place": "8."
+      "place": "8.",
+      "round": "F"
     },
     {
       "date": "JUN 26",
       "meet": "76. Boris Hanžeković Memorial",
       "event": "800 m",
       "time": "1:44.99",
-      "place": "2."
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "JUN 16",
       "meet": "65th Ostrava Golden Spike",
       "event": "1500 m",
       "time": "3:36.08",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "JUN 16",
       "meet": "65th Ostrava Golden Spike",
       "event": "Mile",
       "time": "3:52.07",
-      "place": "7."
+      "place": "7.",
+      "round": "F"
     },
     {
       "date": "JUN 5",
       "meet": "Znamensky Memorial",
       "event": "1500 m",
       "time": "3:37.78",
-      "place": "3."
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "APR 10",
       "meet": "Cape Miller Continental Tour",
       "event": "1500 m",
       "time": "3:35.99",
-      "place": "2."
+      "place": "2.",
+      "round": "F3"
     },
     {
       "date": "APR 5",
       "meet": "Botswana Championships",
       "event": "1500 m",
       "time": "3:35.06",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "FEB 22",
       "meet": "ORLEN Copernicus Cup",
       "event": "1500 m sh",
       "time": "DQ",
-      "place": ""
+      "place": "",
+      "round": "F"
     }
   ],
   "dob": "1999-05-25",

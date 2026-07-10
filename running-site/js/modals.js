@@ -596,9 +596,41 @@ function _sameRace(r1, r2) {
   return true;
 }
 
+// Some meets report an intermediate split (e.g. the 1500m mark during a
+// Mile race, like Oslo Bislett Games) as its own result entry alongside
+// the actual race. That split isn't a separate race, and World Athletics'
+// own data marks it as such: a real race result always carries a finishing
+// place, while a split reading never does. So whenever an athlete has two+
+// results at the same meet on the same date and at least one of them has
+// an actual place, any entry WITHOUT a place is a split (or otherwise
+// unofficial reading) — drop it and keep only the placed result(s).
+// This is data-driven (not a hardcoded list of event-name pairs), so it
+// self-adapts to every split-reporting pattern already in the data and to
+// any new ones that show up as future results get synced in.
+function _stripSplitDupes(results) {
+  const norm = s => String(s).trim().toLowerCase();
+  const hasPlace = r => String(r.place || '').trim() !== '';
+
+  const groups = {};
+  results.forEach(r => {
+    if (!r.meet || !r.event) return;
+    const key = norm(r.meet) + '|' + norm(r.date);
+    (groups[key] = groups[key] || []).push(r);
+  });
+
+  const drop = new Set();
+  Object.values(groups).forEach(group => {
+    if (group.length < 2) return;
+    if (!group.some(hasPlace)) return; // nothing placed to prefer — leave group alone
+    group.forEach(r => { if (!hasPlace(r)) drop.add(r); });
+  });
+
+  return results.filter(r => !drop.has(r));
+}
+
 function _buildEncounterRows(a1, a2, year) {
-  const r1all = _getResultsForYear(a1, year);
-  const r2all = _getResultsForYear(a2, year);
+  const r1all = _stripSplitDupes(_getResultsForYear(a1, year));
+  const r2all = _stripSplitDupes(_getResultsForYear(a2, year));
   const races = [];
   const usedR2 = new Set(); // don't match one of a2's results to two of a1's
   r1all.forEach(race1 => {

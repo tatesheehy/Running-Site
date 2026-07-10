@@ -47,69 +47,78 @@
       "meet": "Paavo Nurmi Games",
       "event": "1500 m",
       "time": "3:33.92",
-      "place": "4."
+      "place": "4.",
+      "round": "F"
     },
     {
       "date": "MAY 28",
       "meet": "Trond Mohn Games",
       "event": "800 m",
       "time": "1:47.08",
-      "place": "5."
+      "place": "5.",
+      "round": "F"
     },
     {
       "date": "MAY 24",
       "meet": "61. Internationales Pfingstsportfest Rehlingen",
       "event": "1500 m",
       "time": "3:33.41",
-      "place": "2."
+      "place": "2.",
+      "round": "F1"
     },
     {
       "date": "MAR 20",
       "meet": "World Athletics Indoor Championships",
       "event": "1500 m sh",
       "time": "3:39.29",
-      "place": "5."
+      "place": "5.",
+      "round": "H3"
     },
     {
       "date": "MAR 14",
       "meet": "Team Trøndelag 800m stevne",
       "event": "800 m sh",
       "time": "1:48.52",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
       "event": "1500 m sh",
       "time": "3:33.96",
-      "place": "6."
+      "place": "6.",
+      "round": "F1"
     },
     {
       "date": "FEB 8",
       "meet": "Sparkassen Indoor Meeting Dortmund",
       "event": "1500 m sh",
       "time": "3:34.02",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "FEB 1",
       "meet": "Nordic Indoor Match",
       "event": "800 m sh",
       "time": "1:47.90",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "JAN 22",
       "meet": "BAUHAUS-galan Indoor",
       "event": "1500 m sh",
       "time": "3:34.32",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     }
   ],
   "dob": "2006-06-26",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-07-06",
+  "lastHistorySynced": "2026-07-10",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

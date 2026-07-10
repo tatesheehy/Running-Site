@@ -95,70 +95,80 @@
       "meet": "FBK Games",
       "event": "1500 m",
       "time": "3:37.71",
-      "place": "14."
+      "place": "14.",
+      "round": "F"
     },
     {
       "date": "JUN 7",
       "meet": "BAUHAUS-Galan",
       "event": "1500 m",
       "time": "3:32.91",
-      "place": "7."
+      "place": "7.",
+      "round": "F"
     },
     {
       "date": "JUN 3",
       "meet": "Paavo Nurmi Games",
       "event": "1500 m",
       "time": "3:32.71",
-      "place": "2."
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "MAY 31",
       "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
       "event": "1500 m",
       "time": "3:32.38",
-      "place": "11."
+      "place": "11.",
+      "round": "F"
     },
     {
       "date": "MAY 23",
       "meet": "IFAM Outdoor",
       "event": "800 m",
       "time": "1:46.11",
-      "place": "9."
+      "place": "9.",
+      "round": "F1"
     },
     {
       "date": "FEB 22",
       "meet": "ORLEN Copernicus Cup",
       "event": "1500 m sh",
       "time": "3:37.29",
-      "place": "7."
+      "place": "7.",
+      "round": "F"
     },
     {
       "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
       "event": "1500 m sh",
       "time": "3:40.07",
-      "place": "7."
+      "place": "7.",
+      "round": "F2"
     },
     {
       "date": "FEB 8",
       "meet": "Meeting Metz Moselle Athlélor Crédit Mutuel",
       "event": "3000 m sh",
       "time": "DNF",
-      "place": ""
+      "place": "",
+      "round": "F1"
     },
     {
       "date": "FEB 1",
       "meet": "Meeting de L'Eure",
       "event": "Mile sh",
       "time": "3:55.35",
-      "place": "2."
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "JAN 18",
       "meet": "CMCM Luxembourg Indoor Meeting",
       "event": "3000 m sh",
       "time": "7:40.31",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     }
   ],
   "dob": "2000-12-22",

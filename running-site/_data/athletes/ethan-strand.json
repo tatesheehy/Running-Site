@@ -2,11 +2,7 @@
   "photoBackground": "#111111",
   "reviewTitle": "Season review",
   "ncaaTitle": [
-    {
-      "event": "3000m",
-      "year": "2025",
-      "season": "Indoor"
-    }
+    "3000m"
   ],
   "waUrl": "https://worldathletics.org/athletes/united-states/ethan-strand-14969299",
   "height": "x",
@@ -166,7 +162,7 @@
   "dob": "2002-10-19",
   "college": "North Carolina",
   "weight": "x",
-  "lastHistorySynced": "2026-07-08",
+  "lastHistorySynced": "2026-07-10",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",

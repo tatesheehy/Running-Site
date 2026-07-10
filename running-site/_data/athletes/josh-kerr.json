@@ -2,21 +2,8 @@
   "photoBackground": "#0a0a1a",
   "reviewTitle": "Season review",
   "ncaaTitle": [
-    {
-      "event": "Mile",
-      "year": "2017",
-      "season": "Indoor"
-    },
-    {
-      "event": "1500m",
-      "year": "2017",
-      "season": "Outdoor"
-    },
-    {
-      "event": "Mile",
-      "year": "2018",
-      "season": "Indoor"
-    }
+    "1500m",
+    "Mile"
   ],
   "traits": [
     "Raw Strength",

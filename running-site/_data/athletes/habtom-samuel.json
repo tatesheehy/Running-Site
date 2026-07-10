@@ -3,26 +3,7 @@
   "reviewTitle": "Season review",
   "collegeLogo": "/images/new_mexico_lobos_logo.svg",
   "ncaaTitle": [
-    {
-      "event": "10000m",
-      "year": "2024",
-      "season": "Outdoor"
-    },
-    {
-      "event": "Cross Country",
-      "year": "2025",
-      "season": ""
-    },
-    {
-      "event": "5000m",
-      "year": "2026",
-      "season": "Indoor"
-    },
-    {
-      "event": "10000m",
-      "year": "2026",
-      "season": "Outdoor"
-    }
+    "10000m"
   ],
   "waUrl": "https://worldathletics.org/athletes/eritrea/habtom-samuel-14919315",
   "height": "x",
@@ -213,7 +194,7 @@
   "dob": "2003-11-30",
   "college": "New Mexico",
   "weight": "x",
-  "lastHistorySynced": "2026-07-08",
+  "lastHistorySynced": "2026-07-10",
   "reviewBody": "x",
   "event": "DISTANCE",
   "id": "habtom-samuel",

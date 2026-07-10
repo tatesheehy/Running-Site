@@ -510,7 +510,7 @@ function _computePairwiseH2H(year, eventFilter, rankedOnly) {
   const pairwise = {};
 
   const getResults = a =>
-    year === '2026' ? (a.results || []) : ((a.resultsHistory || {})[year] || []);
+    _stripSplitDupes(year === '2026' ? (a.results || []) : ((a.resultsHistory || {})[year] || []));
 
   const athletes = Object.values(ATHLETES).filter(a => getResults(a).length > 0);
 
@@ -586,7 +586,7 @@ function _computeAllH2HRecords(year, eventFilter, rankedOnly) {
   let totalEncounters = 0;
 
   const getResults = a =>
-    year === '2026' ? (a.results || []) : ((a.resultsHistory || {})[year] || []);
+    _stripSplitDupes(year === '2026' ? (a.results || []) : ((a.resultsHistory || {})[year] || []));
 
   const athletes = Object.values(ATHLETES).filter(a => getResults(a).length > 0);
 
@@ -660,7 +660,7 @@ function _computePairMatchup(id1, id2) {
   if (!a1 || !a2) return null;
 
   const getResults = (a, year) =>
-    year === '2026' ? (a.results || []) : ((a.resultsHistory || {})[year] || []);
+    _stripSplitDupes(year === '2026' ? (a.results || []) : ((a.resultsHistory || {})[year] || []));
 
   const allYears = new Set(['2026']);
   Object.keys(a1.resultsHistory || {}).forEach(y => allYears.add(y));

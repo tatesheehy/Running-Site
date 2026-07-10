@@ -47,69 +47,78 @@
     {
       "date": "JUL 3",
       "meet": "Meeting Stanislas Nancy",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:31.40",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:30.31",
-      "place": "6"
+      "place": "6.",
+      "round": "F"
     },
     {
       "date": "JUN 21",
       "meet": "FBK Games",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:43.99",
-      "place": "15"
+      "place": "15.",
+      "round": "F"
     },
     {
       "date": "JUN 13",
       "meet": "Meeting Nikaia",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:32.29",
-      "place": "3"
+      "place": "3.",
+      "round": "F1"
     },
     {
       "date": "JUN 6",
       "meet": "Meeting de Strasbourg",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:46.69",
-      "place": "2"
+      "place": "2.",
+      "round": "F6"
     },
     {
       "date": "MAY 29",
       "meet": "8th Irena Szewińska Memorial",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "DNF",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "MAY 17",
       "meet": "Finale interclubs N2A G-E",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:49.11",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "FEB 8",
       "meet": "Meeting Metz Moselle Athlélor Crédit Mutuel",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:49.79",
-      "place": "4"
+      "place": "4.",
+      "round": "F1"
     },
     {
       "date": "JAN 30",
       "meet": "Elite Indoor Track Miramas Meeting",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:36.64",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     }
   ],
   "dob": "2004-01-17",
-  "lastHistorySynced": "2026-07-08",
+  "lastHistorySynced": "2026-07-10",
   "event": "MIDDLE DISTANCE",
   "id": "anas-lagtiy-chaoudar",
   "resultsHistory": {
