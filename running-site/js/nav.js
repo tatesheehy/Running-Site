@@ -45,8 +45,8 @@ function buildNavbar() {
   const navLinks = [
     { label: 'Articles', href: 'articles.html' },
     { label: 'Rankings', href: 'rankings.html' },
-    { label: 'Athletes', href: 'athletes.html' },
     { label: 'H2H', href: 'h2h.html' },
+    { label: 'Athletes', href: 'athletes.html' },
     { label: 'Podcast', href: 'podcast.html' },
     { label: 'About', href: 'about.html' },
   ];

@@ -479,6 +479,26 @@
   z-index: 1;
 }
 .ath-list-th:hover { color: var(--text); }
+
+/* .ath-list-name / -country / -age / -pr are shared with the body <td>
+   (flex layout, larger font sizes, muted color, mono numerals, etc.) —
+   undo all of that on the header <th> so every column header renders with
+   the same uppercase label style instead of picking up its body styling. */
+th.ath-list-name {
+  display: table-cell;
+  min-width: 0;
+}
+th.ath-list-name,
+th.ath-list-country,
+th.ath-list-age,
+th.ath-list-pr {
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  text-align: left;
+}
 .ath-list-arrow { margin-left: 4px; font-style: normal; }
 .ath-list-arrow.inactive { opacity: 0.3; }
 
