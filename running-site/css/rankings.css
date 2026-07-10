@@ -1741,7 +1741,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
 /* ── WHOLE-PAGE DARK THEME — rankings event detail page ──────
    Applied via body.rd-terminal-page (set in buildRankingsDetail).
    Repoints the site's own theme variables to the Terminal's
-   palette so every .rd-*/.rhub-* rule (already var()-driven)
+   palette so every rd- and rhub- prefixed rule (already var()-driven)
    goes dark for free; only components with hardcoded light
    colors (country-select dropdown) need explicit overrides. ── */
 body.rd-terminal-page {
@@ -1752,6 +1752,21 @@ body.rd-terminal-page {
   --muted: #8a8a8a;
   --border: rgba(255,255,255,0.12);
   --dark: #1e1e1e;
+}
+
+/* Full-bleed: the terminal layout ignores the site's 1440px content
+   cap and stretches edge to edge (nav bar keeps its own width/rules). */
+body.rd-terminal-page #main > .container {
+  max-width: none;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media (max-width: 720px) {
+  body.rd-terminal-page #main > .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 body.rd-terminal-page .rd-cs-btn {
