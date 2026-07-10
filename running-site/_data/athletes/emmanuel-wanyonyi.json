@@ -53,7 +53,7 @@
     }
   ],
   "seasons": "x",
-  "lastSynced": "2026-07-09",
+  "lastSynced": "2026-07-10",
   "prs": [
     {
       "event": "800m",
@@ -78,26 +78,23 @@
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
-      "event": "800 m",
+      "event": "800m",
       "time": "1:42.09",
-      "place": "2.",
-      "round": "F"
+      "place": "2"
     },
     {
       "date": "MAY 31",
       "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-      "event": "800 m",
+      "event": "800m",
       "time": "1:43.56",
-      "place": "2.",
-      "round": "F"
+      "place": "2"
     },
     {
       "date": "APR 24",
       "meet": "Kip Keino Classic",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:34.11",
-      "place": "1.",
-      "round": "F"
+      "place": "1"
     }
   ],
   "dob": "2004-08-01",
