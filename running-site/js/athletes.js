@@ -16,12 +16,6 @@ function _parseTime(str) {
   return parseFloat(parts[0] || 0);
 }
 
-document.addEventListener('click', e => {
-  if (e.target.closest('.ath-lists-btn-wrap')) return;
-  const panel = document.getElementById('ath-lists-panel');
-  if (panel && panel.style.display === 'block') panel.style.display = 'none';
-});
-
 function buildAthletesPage() {
   const all = Object.values(ATHLETES);
   let activeSort    = 'alpha';
@@ -96,7 +90,7 @@ function buildAthletesPage() {
   }
 
   function activeFilterCount() {
-    return (activeCountry !== 'all' ? 1 : 0) + activePresets.size;
+    return (activeCountry !== 'all' ? 1 : 0) + activePresets.size + (activeListFilter ? 1 : 0);
   }
 
   function renderNationalityChips() {
@@ -118,6 +112,24 @@ function buildAthletesPage() {
         ${p.label} <span class="ath-preset-count">${count}</span>
       </button>`;
     }).join('');
+  }
+
+  function renderListsFilterSection() {
+    const user = typeof getCurrentUser === 'function' && getCurrentUser();
+    if (!user) return '';
+    const lists = typeof getLists === 'function' ? getLists() : [];
+    if (!lists.length) return '';
+    const chips = lists.map(l => {
+      const active = activeListFilter === l.id ? ' active' : '';
+      return `<button class="ath-preset-chip${active}" data-list="${l.id}" onclick="filterByList('${l.id}')">${l.name}</button>`;
+    }).join('');
+    return `
+      <div class="ath-filter-section">
+        <div class="ath-filter-section-header">
+          <span class="ath-filter-section-label">My Lists</span>
+        </div>
+        <div class="ath-preset-chips">${chips}</div>
+      </div>`;
   }
 
   function renderFilterPanel() {
@@ -142,6 +154,7 @@ function buildAthletesPage() {
         </div>
         <div class="ath-preset-chips">${renderPresetSection('age')}</div>
       </div>
+      ${renderListsFilterSection()}
       ${clearBtn ? `<div class="ath-filter-panel-footer">${clearBtn}</div>` : ''}
     `;
   }
@@ -187,7 +200,7 @@ function buildAthletesPage() {
   function renderList(list) {
     if (!list.length) {
       return activeListFilter
-        ? '<p class="ath-page-empty">This list has no athletes yet — open the My Lists panel to add some.</p>'
+        ? '<p class="ath-page-empty">This list has no athletes yet — add some from the athlete card or your account page.</p>'
         : '<p class="ath-page-empty">No athletes found.</p>';
     }
 
@@ -229,7 +242,7 @@ function buildAthletesPage() {
       const msg = myAthletesActive
         ? '<p class="ath-page-empty">No saved athletes yet — click the heart on any athlete card to save them.</p>'
         : activeListFilter
-        ? '<p class="ath-page-empty">This list has no athletes yet — open the My Lists panel to add some.</p>'
+        ? '<p class="ath-page-empty">This list has no athletes yet — add some from the athlete card or your account page.</p>'
         : '<p class="ath-page-empty">No athletes found.</p>';
       return msg;
     }
@@ -283,37 +296,6 @@ function buildAthletesPage() {
     return `${list.length} of ${total}`;
   }
 
-  function renderListsPanel() {
-    const user = typeof getCurrentUser === 'function' && getCurrentUser();
-    if (!user) {
-      return `<div class="ath-lists-panel-signin">
-        <p>Sign in to create and view your athlete lists.</p>
-        <button onclick="openAuthModal()">Sign In</button>
-      </div>`;
-    }
-    const lists = typeof getLists === 'function' ? getLists() : [];
-    const rows = lists.map(l => {
-      const count = typeof getListMemberIds === 'function' ? getListMemberIds(l.id).length : 0;
-      const active = activeListFilter === l.id ? ' active' : '';
-      return `<div class="ath-lists-panel-row${active}">
-        <button class="ath-lists-panel-name" onclick="filterByList('${l.id}')">${l.name}</button>
-        <span class="ath-lists-panel-count">${count}</span>
-        <button class="ath-lists-panel-rename" onclick="event.stopPropagation();renameAthleteList('${l.id}')" title="Rename list" aria-label="Rename list">✎</button>
-        <button class="ath-lists-panel-delete" onclick="event.stopPropagation();deleteAthleteList('${l.id}')" title="Delete list" aria-label="Delete list">✕</button>
-      </div>`;
-    }).join('');
-    return `
-      <div class="ath-lists-panel-new-row">
-        <input type="text" id="ath-lists-new-input" class="ath-lists-panel-input" placeholder="New list name…" maxlength="40" autocomplete="off"
-          onkeydown="if(event.key==='Enter'){event.preventDefault();createAthleteList();}">
-        <button class="ath-lists-panel-add" onclick="createAthleteList()">Create</button>
-      </div>
-      ${activeListFilter ? `<button class="ath-lists-panel-clear" onclick="clearListFilter()">✕ Clear list filter</button>` : ''}
-      <div class="ath-lists-panel-rows">
-        ${lists.length ? rows : '<p class="ath-lists-panel-empty">No lists yet — create one above.</p>'}
-      </div>`;
-  }
-
   function refreshGrid() {
     const grid = qs('#ath-page-grid');
     if (!grid) return;
@@ -356,12 +338,9 @@ function buildAthletesPage() {
             <button class="ath-page-sort my-athletes-btn" id="my-athletes-btn" onclick="toggleMyAthletes()" style="${loggedIn ? '' : 'display:none'}">
               My Athletes
             </button>
-            <div class="ath-lists-btn-wrap" style="${loggedIn ? '' : 'display:none'}">
-              <button class="ath-page-sort my-lists-btn" id="my-lists-btn" onclick="toggleListsPanel()">
-                My Lists
-              </button>
-              <div class="ath-lists-panel" id="ath-lists-panel" style="display:none"></div>
-            </div>
+            <button class="ath-page-sort my-lists-btn" id="my-lists-btn" onclick="location.href='account.html'" style="${loggedIn ? '' : 'display:none'}">
+              My Lists
+            </button>
             <button class="ath-page-sort" id="ath-map-btn" onclick="toggleAthleteMap()">Map</button>
           </div>
           <div class="ath-view-toggle">
@@ -446,6 +425,7 @@ function buildAthletesPage() {
   window.clearAllFilters = function() {
     activeCountry = 'all';
     activePresets.clear();
+    activeListFilter = null;
     refreshFilterPanel();
     refreshGrid();
   };
@@ -496,69 +476,22 @@ function buildAthletesPage() {
     if (myAthletesActive) refreshGrid();
   };
 
-  window.toggleListsPanel = function() {
-    const panel = qs('#ath-lists-panel');
-    if (!panel) return;
-    const willOpen = panel.style.display !== 'block';
-    panel.innerHTML = renderListsPanel();
-    panel.style.display = willOpen ? 'block' : 'none';
-  };
-
   window.filterByList = function(listId) {
-    activeListFilter = listId;
+    activeListFilter = activeListFilter === listId ? null : listId;
     myAthletesActive = false;
     qs('#my-athletes-btn')?.classList.remove('active');
     document.querySelectorAll('.ath-page-sort[data-sort]').forEach(b => b.classList.remove('active'));
     if (activeView === 'map') { activeView = 'grid'; setViewBtns(); qs('#ath-map-btn')?.classList.remove('active'); }
-    qs('#my-lists-btn')?.classList.add('active');
-    const panel = qs('#ath-lists-panel');
-    if (panel) panel.style.display = 'none';
+    refreshFilterPanel();
     refreshGrid();
-  };
-
-  window.clearListFilter = function() {
-    activeListFilter = null;
-    qs('#my-lists-btn')?.classList.remove('active');
-    document.querySelector('.ath-page-sort[data-sort="alpha"]')?.classList.add('active');
-    const panel = qs('#ath-lists-panel');
-    if (panel) panel.style.display = 'none';
-    refreshGrid();
-  };
-
-  window.createAthleteList = async function() {
-    const input = qs('#ath-lists-new-input');
-    const name = input?.value.trim();
-    if (!name) return;
-    await createList(name);
-    if (input) input.value = '';
-  };
-
-  window.renameAthleteList = async function(listId) {
-    const lists = typeof getLists === 'function' ? getLists() : [];
-    const list = lists.find(l => l.id === listId);
-    const name = prompt('Rename list', list?.name || '');
-    if (name === null) return;
-    const trimmed = name.trim();
-    if (!trimmed) return;
-    await renameList(listId, trimmed);
-  };
-
-  window.deleteAthleteList = async function(listId) {
-    const lists = typeof getLists === 'function' ? getLists() : [];
-    const list = lists.find(l => l.id === listId);
-    if (!confirm(`Delete list "${list?.name || ''}"? This can't be undone.`)) return;
-    if (activeListFilter === listId) window.clearListFilter();
-    await deleteList(listId);
   };
 
   window._refreshAthleteListsPanel = function() {
-    const panel = qs('#ath-lists-panel');
-    if (panel && panel.style.display === 'block') panel.innerHTML = renderListsPanel();
-    if (activeListFilter) refreshGrid();
-    const btn = qs('#my-lists-btn');
-    if (btn && typeof getLists === 'function' && !getLists().some(l => l.id === activeListFilter) && activeListFilter) {
-      window.clearListFilter();
+    if (activeListFilter && typeof getLists === 'function' && !getLists().some(l => l.id === activeListFilter)) {
+      activeListFilter = null;
     }
+    refreshFilterPanel();
+    refreshGrid();
   };
 
   window.toggleAthleteMap = function() {
