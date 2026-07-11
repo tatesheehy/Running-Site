@@ -8,6 +8,7 @@ let _h2hLbRankedOnly = true;
 let _h2hLbView       = 'table';
 let _h2hCmpA         = null;
 let _h2hCmpB         = null;
+let _h2hFindIds      = [null, null, null, null, null];
 let _h2hSearch       = '';
 const _h2hDetailMode = {};   // athleteId → 'beaten' | 'lost'
 let _h2hCurrentRecs  = {};   // athleteId → rec (cached for toggle re-render)
@@ -32,6 +33,7 @@ function buildH2HPage() {
   _h2hLbEvent      = 'all';
   _h2hLbRankedOnly = true;
   _h2hLbView       = 'table';
+  _h2hFindIds      = [null, null, null, null, null];
   _renderH2HPage();
 }
 
@@ -96,6 +98,9 @@ function _renderH2HPage() {
 
         <!-- Compare Tool -->
         ${_renderCompareSection()}
+
+        <!-- Find Shared Races -->
+        ${_renderFindSection()}
 
         <!-- Controls -->
         <div class="h2h-lb-controls">
@@ -698,6 +703,183 @@ function _computePairMatchup(id1, id2) {
 
   return { wins, losses, races };
 }
+
+// ── Find Shared Races ─────────────────────────────────────────
+
+const _H2H_FIND_SLOTS = 5;
+
+// Races where every one of `ids` (2+) appears, using the same round-aware
+// _sameRace() match (and _stripSplitDupes()) the leaderboard/compare tool
+// use, so a Mile's reported 1500m split still doesn't count as one more
+// shared race, and heat/semi/final rounds are told apart correctly.
+function _computeSharedRaces(ids) {
+  const selected = ids.filter(Boolean);
+  if (selected.length < 2) return [];
+
+  const allResults = a => {
+    const withYear = [];
+    (a.results || []).forEach(r => withYear.push({ ...r, year: '2026' }));
+    Object.entries(a.resultsHistory || {}).forEach(([y, list]) =>
+      (list || []).forEach(r => withYear.push({ ...r, year: y })));
+    return _stripSplitDupes(withYear);
+  };
+
+  const [anchorId, ...restIds] = selected;
+  const anchorResults = allResults(ATHLETES[anchorId]);
+  const restPools = restIds.map(id => ({ id, results: allResults(ATHLETES[id]) }));
+
+  const shared = [];
+  const seenKeys = new Set();
+  anchorResults.forEach(race => {
+    if (!race.meet || !race.event) return;
+    const entries = [{ id: anchorId, race }];
+    for (const { id, results } of restPools) {
+      const match = results.find(r2 => _sameRace(race, r2));
+      if (!match) return; // not shared by every selected athlete
+      entries.push({ id, race: match });
+    }
+
+    const key = [race.meet, race.event, race.round, race.date, race.year]
+      .map(s => String(s || '').trim().toLowerCase()).join('|');
+    if (seenKeys.has(key)) return;
+    seenKeys.add(key);
+
+    entries.sort((a, b) => {
+      const pa = parseInt(a.race.place), pb = parseInt(b.race.place);
+      if (!isNaN(pa) && !isNaN(pb) && pa !== pb) return pa - pb;
+      const ta = parseTimeToSecs(a.race.time), tb = parseTimeToSecs(b.race.time);
+      if (ta && tb) return ta - tb;
+      return 0;
+    });
+
+    shared.push({ date: race.date, year: race.year, meet: race.meet, event: race.event, round: race.round || '', entries });
+  });
+
+  const MONTHS = { JAN:1,FEB:2,MAR:3,APR:4,MAY:5,JUN:6,JUL:7,AUG:8,SEP:9,OCT:10,NOV:11,DEC:12 };
+  const ord = r => parseInt(r.year || 0) * 400 + (MONTHS[String(r.date || '').split(' ')[0]] || 0) * 31 + (parseInt(String(r.date || '').split(' ')[1]) || 0);
+  shared.sort((a, b) => ord(b) - ord(a));
+
+  return shared;
+}
+
+function _findSentence(ids) {
+  const names = ids.filter(Boolean).map(id => (ATHLETES[id]?.name || '').split(' ').slice(-1)[0]).filter(Boolean);
+  if (names.length < 2) {
+    return 'Add at least two athletes to find a race where they all raced each other';
+  }
+  const joined = names.length === 2
+    ? `${names[0]} and ${names[1]}`
+    : `${names.slice(0, -1).join(', ')}, and ${names[names.length - 1]}`;
+  return `Find me a race where ${joined} raced each other`;
+}
+
+function _renderFindPicker(slot) {
+  const selId   = _h2hFindIds[slot];
+  const otherIds = _h2hFindIds.filter((id, i) => i !== slot && id);
+  const athlete = selId ? ATHLETES[selId] : null;
+
+  if (athlete) {
+    return `
+      <div class="h2h-cmp-selected">
+        <span class="h2h-cmp-sel-name">${athlete.name}</span>
+        <button class="h2h-cmp-clear" onclick="event.stopPropagation();h2hFindClear(${slot})">×</button>
+      </div>`;
+  }
+
+  const athletes = Object.values(ATHLETES)
+    .filter(a => a.name && !otherIds.includes(a.id))
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+  const items = athletes.map(a =>
+    `<div class="h2h-cmp-item" onclick="h2hFindSelect(${slot},'${a.id}')">${a.name}</div>`
+  ).join('');
+
+  return `
+    <div class="h2h-cmp-input-wrap">
+      <input class="h2h-compare-input" placeholder="Search athlete…" autocomplete="off"
+        oninput="h2hFindFilter(this,${slot})"
+        onfocus="h2hFindShowList(${slot})"
+        onblur="setTimeout(()=>h2hFindHideList(${slot}),150)">
+      <div class="h2h-cmp-list" id="h2h-find-list-${slot}" style="display:none">
+        ${items}
+      </div>
+    </div>`;
+}
+
+function _renderFindResults() {
+  const races = _computeSharedRaces(_h2hFindIds);
+  const selectedCount = _h2hFindIds.filter(Boolean).length;
+
+  if (selectedCount < 2) return '';
+  if (races.length === 0) {
+    return `<div class="h2h-compare-empty">No shared races found for this group.</div>`;
+  }
+
+  return `
+    <div class="h2h-find-results">
+      ${races.map(r => `
+        <div class="h2h-find-race">
+          <div class="h2h-find-race-hd">
+            <span class="h2h-find-race-meet">${r.meet}</span>
+            <span class="h2h-find-race-meta">${r.event}${r.round ? ` &middot; ${r.round}` : ''} &middot; ${r.date || ''} ${r.year || ''}</span>
+          </div>
+          ${r.entries.map((e, i) => {
+            const a = ATHLETES[e.id];
+            return `
+              <div class="h2h-find-row${i === 0 ? ' h2h-find-row--win' : ''}">
+                <span class="h2h-find-place">${e.race.place ? e.race.place.replace(/\.$/, '') : '–'}</span>
+                <span class="h2h-find-name">${a ? a.name : e.id}</span>
+                <span class="h2h-find-time">${e.race.time || ''}</span>
+              </div>`;
+          }).join('')}
+        </div>`).join('')}
+    </div>`;
+}
+
+function _renderFindSection() {
+  const pickersHtml = Array.from({ length: _H2H_FIND_SLOTS })
+    .map((_, i) => `<div class="h2h-compare-picker h2h-find-picker">${_renderFindPicker(i)}</div>`)
+    .join('');
+
+  return `
+    <div class="h2h-compare-section h2h-find-section">
+      <div class="h2h-compare-hd">
+        <span class="h2h-compare-title">Find Shared Races</span>
+      </div>
+      <div class="h2h-find-sentence">${_findSentence(_h2hFindIds)}</div>
+      <div class="h2h-find-pickers">${pickersHtml}</div>
+      ${_renderFindResults()}
+    </div>`;
+}
+
+window.h2hFindSelect = (slot, id) => {
+  _h2hFindIds[slot] = id;
+  _renderH2HPage();
+};
+
+window.h2hFindClear = (slot) => {
+  _h2hFindIds[slot] = null;
+  _renderH2HPage();
+};
+
+window.h2hFindFilter = (input, slot) => {
+  const q = input.value.toLowerCase();
+  const list = document.getElementById(`h2h-find-list-${slot}`);
+  if (!list) return;
+  list.querySelectorAll('.h2h-cmp-item').forEach(item => {
+    item.style.display = item.textContent.toLowerCase().includes(q) ? '' : 'none';
+  });
+};
+
+window.h2hFindShowList = (slot) => {
+  const list = document.getElementById(`h2h-find-list-${slot}`);
+  if (list) list.style.display = '';
+};
+
+window.h2hFindHideList = (slot) => {
+  const list = document.getElementById(`h2h-find-list-${slot}`);
+  if (list) list.style.display = 'none';
+};
 
 function _renderComparePicker(slot) {
   const selId    = slot === 'a' ? _h2hCmpA : _h2hCmpB;

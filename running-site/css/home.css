@@ -619,7 +619,6 @@
   font-size: 10px;
   flex-shrink: 0;
 }
-[data-theme="dark"] .fp-ticker { background: #000; }
 
 .fp-body {
   max-width: var(--max-width);

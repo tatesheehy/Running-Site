@@ -641,11 +641,3 @@ th.ath-list-pr {
 .ath-list-row:nth-child(even) { background: var(--bg-light); }
 .ath-list-row:hover { background: rgba(232, 80, 10, 0.07); }
 
-[data-theme="dark"] .ath-list-th {
-  background: var(--bg-light);
-  color: rgba(255, 255, 255, 0.5);
-  border-bottom: 2px solid var(--accent);
-}
-[data-theme="dark"] .ath-list-th:hover { color: rgba(255, 255, 255, 0.85); }
-[data-theme="dark"] .ath-list-row:nth-child(even) { background: rgba(255, 255, 255, 0.03); }
-[data-theme="dark"] .ath-list-row:hover { background: rgba(232, 80, 10, 0.14); }

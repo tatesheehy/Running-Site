@@ -1,20 +1,9 @@
 // ============================================================
-//  THEME — initTheme(), toggleTheme(), back-to-top
+//  THEME — light mode only, back-to-top
 // ============================================================
 
-function initTheme() {
-  const saved = localStorage.getItem('theme') || 'light';
-  document.documentElement.setAttribute('data-theme', saved);
-}
-function toggleTheme() {
-  const current = document.documentElement.getAttribute('data-theme') || 'light';
-  const next = current === 'dark' ? 'light' : 'dark';
-  document.documentElement.setAttribute('data-theme', next);
-  localStorage.setItem('theme', next);
-}
-
-// Runs immediately to prevent flash of wrong theme
-initTheme();
+document.documentElement.setAttribute('data-theme', 'light');
+localStorage.removeItem('theme');
 
 // ── BACK TO TOP ───────────────────────────────────────────
 (function() {

@@ -414,9 +414,6 @@
 [data-theme="light"] .h2h-lb-row:hover  { background: rgba(232,80,10,0.06); }
 [data-theme="light"] .h2h-lb-win-tag    { background: #f4f4f4; color: #444; }
 
-[data-theme="dark"] .h2h-seg-btn.active { color: var(--accent); border-color: var(--accent); box-shadow: none; }
-[data-theme="dark"] .h2h-detail-opp-rec--win { background: var(--accent); color: #fff; }
-
 /* ── Dominance Map ────────────────────────────────────────── */
 
 .h2h-map-wrap {
@@ -569,15 +566,6 @@
 .h2h-map-legend--split::before { background: rgba(0,0,0,0.03); border-color: var(--border); }
 .h2h-map-legend--none::before  { background: transparent; }
 
-/* Dark mode */
-[data-theme="dark"] .h2h-map-cell--win   { background: rgba(255,255,255,0.08); color: #fff; }
-[data-theme="dark"] .h2h-map-cell--loss  { background: rgba(255,255,255,0.02); color: #666; }
-[data-theme="dark"] .h2h-map-cell--split { background: rgba(255,255,255,0.04); color: #888; }
-[data-theme="dark"] .h2h-map-legend--win::before   { background: rgba(255,255,255,0.08); }
-[data-theme="dark"] .h2h-map-legend--loss::before  { background: rgba(255,255,255,0.02); }
-[data-theme="dark"] .h2h-map-legend--split::before { background: rgba(255,255,255,0.04); }
-
-
 /* ── Expand chevron ───────────────────────────────────────── */
 
 .h2h-expand-chevron {
@@ -616,7 +604,6 @@
 }
 .h2h-detail-tab:hover { color: var(--text); }
 .h2h-detail-tab.active { background: none; color: var(--accent); border-color: var(--accent); }
-[data-theme="dark"] .h2h-detail-tab.active { color: var(--accent); border-color: var(--accent); }
 
 .h2h-detail-empty {
   flex: 0 0 100%;
@@ -764,9 +751,6 @@
   font-weight: 700;
   color: var(--text);
 }
-
-[data-theme="dark"] .h2h-lb-detail-inner { background: #181818; }
-[data-theme="dark"] .h2h-detail-opp      { background: #1e1e1e; }
 
 /* ── Top Rivalries Section ────────────────────────────────── */
 .h2h-rivalries-section {
@@ -1032,6 +1016,95 @@
   text-align: center;
 }
 
+/* ── Find Shared Races ─────────────────────────────────────── */
+
+.h2h-find-section { margin-top: 20px; }
+
+.h2h-find-sentence {
+  padding: 12px 16px 0;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text);
+}
+
+.h2h-find-pickers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px 16px 14px;
+}
+
+.h2h-find-picker {
+  flex: 1 1 160px;
+  min-width: 140px;
+}
+
+.h2h-find-results {
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
+
+.h2h-find-race {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+}
+.h2h-find-race:last-child { border-bottom: none; }
+
+.h2h-find-race-hd {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.h2h-find-race-meet {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.h2h-find-race-meta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.h2h-find-row {
+  display: grid;
+  grid-template-columns: 28px 1fr 80px;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 0;
+  font-size: 13px;
+}
+
+.h2h-find-place {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--muted);
+  text-align: center;
+}
+.h2h-find-row--win .h2h-find-place { color: var(--accent); }
+
+.h2h-find-name {
+  font-weight: 600;
+  color: var(--text);
+}
+.h2h-find-row--win .h2h-find-name { color: var(--accent); }
+
+.h2h-find-time {
+  font-family: var(--font-mono);
+  text-align: right;
+  color: var(--text);
+}
+
+@media (max-width: 700px) {
+  .h2h-find-picker { flex: 1 1 100%; }
+}
+
 /* Compare result panel */
 
 .h2h-compare-result {
@@ -1224,18 +1297,6 @@
 /* Warm accent hover, matching .rdt-row:hover */
 .h2h-lb-row:hover,
 .h2h-rivalry-row:hover { background: rgba(232, 80, 10, 0.06); }
-
-/* Dark mode — headers stay visually distinct using bg-light (#1C1C1C) */
-[data-theme="dark"] .h2h-rivalries-header,
-[data-theme="dark"] .h2h-compare-hd,
-[data-theme="dark"] .h2h-col-labels { background: var(--bg-light); border-bottom-color: var(--border); }
-[data-theme="dark"] .h2h-rivalries-title,
-[data-theme="dark"] .h2h-compare-title { color: rgba(255, 255, 255, 0.6); }
-[data-theme="dark"] .h2h-col-labels { color: rgba(255, 255, 255, 0.42); }
-[data-theme="dark"] .h2h-lb-row:nth-child(even) { background: rgba(255, 255, 255, 0.03); }
-[data-theme="dark"] .h2h-rivalry-row:nth-child(odd) { background: rgba(255, 255, 255, 0.03); }
-[data-theme="dark"] .h2h-lb-row:hover,
-[data-theme="dark"] .h2h-rivalry-row:hover { background: rgba(232, 80, 10, 0.14); }
 
 /* ── Responsive ───────────────────────────────────────────── */
 
