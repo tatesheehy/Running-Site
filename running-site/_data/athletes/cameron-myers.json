@@ -22,7 +22,7 @@
     },
     {
       "event": "Mile",
-      "time": "3:46.06"
+      "time": "3:47.48"
     },
     {
       "event": "3000m",
@@ -60,84 +60,112 @@
       "meet": "Prefontaine Classic",
       "event": "Mile",
       "time": "3:46.06",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:28.00",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "1500 m",
+      "time": "3:33.98",
+      "place": "",
+      "round": "F"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
       "event": "Mile",
       "time": "3:48.35",
-      "place": "3"
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "JUN 7",
       "meet": "BAUHAUS-Galan",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:30.32",
-      "place": "2"
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "MAY 30",
       "meet": "10. PUMA NITRO Lange Laufnacht",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:44.05",
-      "place": "1"
+      "place": "1.",
+      "round": "F19"
     },
     {
       "date": "APR 11",
       "meet": "Australian Championships",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:11.66",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "APR 10",
       "meet": "Australian Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:29.85",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "APR 9",
       "meet": "Australian Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:39.69",
-      "place": "1"
+      "place": "1.",
+      "round": "H1"
     },
     {
       "date": "MAR 28",
       "meet": "Maurie Plant Meet",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:30.42",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
-      "event": "Mile Short Track",
+      "event": "1500 m sh",
+      "time": "3:32.78",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "Mile sh",
       "time": "3:47.57",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "JAN 24",
       "meet": "New Balance Indoor Grand Prix",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:27.57",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "JAN 16",
       "meet": "UW Preview",
       "event": "Mile",
       "time": "3:49.81",
-      "place": "1"
+      "place": "1.",
+      "round": "F5"
     }
   ],
   "dob": "2006-06-09",

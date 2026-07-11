@@ -64,10 +64,6 @@
       "time": "3:34.11"
     },
     {
-      "event": "1000 Metres",
-      "time": "2:11.83"
-    },
-    {
       "event": "Mile Road",
       "time": "3:52.45"
     }
@@ -82,30 +78,34 @@
     {
       "date": "JUL 10",
       "meet": "Meeting International d’Athlétisme Herculis EBS",
-      "event": "1000 Metres",
+      "event": "1000 m",
       "time": "2:11.83",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:42.09",
-      "place": "2"
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "MAY 31",
       "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:43.56",
-      "place": "2"
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "APR 24",
       "meet": "Kip Keino Classic",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:34.11",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     }
   ],
   "dob": "2004-08-01",

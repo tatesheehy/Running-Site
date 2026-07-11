@@ -24,7 +24,7 @@
     },
     {
       "event": "Mile",
-      "time": "3:46.97"
+      "time": "3:48.32"
     },
     {
       "event": "3000m",
@@ -91,56 +91,72 @@
       "meet": "Prefontaine Classic",
       "event": "Mile",
       "time": "3:46.97",
-      "place": "3"
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "JUN 13",
       "meet": "USATF LA Grand Prix",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:33.71",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:45.79",
-      "place": "7"
+      "place": "7.",
+      "round": "F2"
     },
     {
       "date": "MAY 1",
       "meet": "Payton Jordan Invitational",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:13.11",
-      "place": "3"
+      "place": "3.",
+      "round": "F1"
     },
     {
       "date": "FEB 28",
       "meet": "USA Indoor Championships",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:47.99",
-      "place": "12"
+      "place": "12.",
+      "round": "F"
     },
     {
       "date": "FEB 14",
       "meet": "Sound Invite",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:35.29",
-      "place": "3"
+      "place": "3.",
+      "round": "F2"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
-      "event": "2 Miles Short Track",
+      "event": "3000 m sh",
+      "time": "7:41.28",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "2 Mi sh",
       "time": "8:15.93",
-      "place": "11"
+      "place": "11.",
+      "round": "F"
     },
     {
       "date": "JAN 10",
       "meet": "46th World Athletics Cross Country Championships",
       "event": "Cross Country Relay",
       "time": "22:43",
-      "place": "5"
+      "place": "5.",
+      "round": "F"
     }
   ],
   "dob": "2002-10-19",
