@@ -5,7 +5,7 @@
   "waUrl": "https://worldathletics.org/athletes/morocco/anass-essayi-14805620",
   "name": "Anass Essayi",
   "flag": "MA",
-  "lastSynced": "2026-07-10",
+  "lastSynced": "2026-07-11",
   "prs": [
     {
       "event": "800m",
@@ -48,42 +48,30 @@
     {
       "date": "JUL 3",
       "meet": "Meeting Stanislas Nancy",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:31.78",
-      "place": "2.",
-      "round": "F"
+      "place": "2"
     },
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:30.17",
-      "place": "4.",
-      "round": "F"
-    },
-    {
-      "date": "JUN 16",
-      "meet": "65th Ostrava Golden Spike",
-      "event": "1500 m",
-      "time": "3:35.22",
-      "place": "",
-      "round": "F"
+      "place": "4"
     },
     {
       "date": "JUN 16",
       "meet": "65th Ostrava Golden Spike",
       "event": "Mile",
       "time": "3:49.94",
-      "place": "3.",
-      "round": "F"
+      "place": "3"
     },
     {
       "date": "MAY 31",
       "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:32.23",
-      "place": "9.",
-      "round": "F"
+      "place": "9"
     }
   ],
   "dob": "2001-05-18",

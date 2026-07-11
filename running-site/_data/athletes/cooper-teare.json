@@ -9,7 +9,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-07-10",
+  "lastSynced": "2026-07-11",
   "prs": [
     {
       "event": "1500m",
@@ -86,106 +86,79 @@
     {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
-      "event": "2 Mi",
+      "event": "2 Miles",
       "time": "8:12.00",
-      "place": "6.",
-      "round": "F"
+      "place": "6"
     },
     {
       "date": "JUN 13",
       "meet": "USATF LA Grand Prix",
-      "event": "5000 m",
+      "event": "5000m",
       "time": "13:18.13",
-      "place": "8.",
-      "round": "F"
+      "place": "8"
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:34.23",
-      "place": "5.",
-      "round": "F"
+      "place": "5"
     },
     {
       "date": "MAY 2",
       "meet": "USA 5 km Road Running Championships",
-      "event": "5 Kilom Road",
+      "event": "5 Kilometres Road",
       "time": "13:29",
-      "place": "3.",
-      "round": "F"
+      "place": "3"
     },
     {
       "date": "APR 18",
       "meet": "Boston 5K",
-      "event": "5 Kilom Road",
+      "event": "5 Kilometres Road",
       "time": "13:25",
-      "place": "4.",
-      "round": "F"
+      "place": "4"
     },
     {
       "date": "MAR 1",
       "meet": "USA Indoor Championships",
-      "event": "1500 m sh",
+      "event": "1500 Metres Short Track",
       "time": "3:38.87",
-      "place": "7.",
-      "round": "F"
+      "place": "7"
     },
     {
       "date": "FEB 28",
       "meet": "USA Indoor Championships",
-      "event": "3000 m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:41.62",
-      "place": "7.",
-      "round": "F"
+      "place": "7"
     },
     {
       "date": "FEB 14",
       "meet": "Sound Invite",
-      "event": "1500 m sh",
-      "time": "3:34.35",
-      "place": "",
-      "round": "F3"
-    },
-    {
-      "date": "FEB 14",
-      "meet": "Sound Invite",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "3:50.49",
-      "place": "2.",
-      "round": "F2"
+      "place": "2"
     },
     {
       "date": "FEB 7",
       "meet": "Doc Hale Virginia Tech Invitational",
-      "event": "1000 m sh",
+      "event": "1000 Metres Short Track",
       "time": "2:17.76",
-      "place": "2.",
-      "round": "F"
+      "place": "2"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
-      "event": "3000 m sh",
-      "time": "7:38.16",
-      "place": "",
-      "round": "F"
-    },
-    {
-      "date": "FEB 1",
-      "meet": "Millrose Games",
-      "event": "2 Mi sh",
+      "event": "2 Miles Short Track",
       "time": "8:08.91",
-      "place": "7.",
-      "round": "F"
+      "place": "7"
     },
     {
       "date": "JAN 23",
       "meet": "Hokie Invitational",
-      "event": "2000 m sh",
+      "event": "2000 Metres Short Track",
       "time": "4:54.74",
-      "place": "2.",
-      "round": "F"
+      "place": "2"
     }
   ],
   "dob": "1999-08-18",

@@ -9,7 +9,7 @@
   "headlineKey": "x",
   "flag": "FR",
   "seasons": "10",
-  "lastSynced": "2026-07-10",
+  "lastSynced": "2026-07-11",
   "prs": [
     {
       "event": "800m",
@@ -49,7 +49,7 @@
     },
     {
       "event": "1000 Metres",
-      "time": "2:22.34"
+      "time": "2:14.02"
     },
     {
       "event": "1500 Metres Short Track",
@@ -91,108 +91,95 @@
   "country": "France",
   "results": [
     {
+      "date": "JUL 10",
+      "meet": "Meeting International d’Athlétisme Herculis EBS",
+      "event": "1000 Metres",
+      "time": "2:14.02",
+      "place": "4"
+    },
+    {
       "date": "JUL 4",
       "meet": "Prefontaine Classic",
       "event": "Mile",
       "time": "3:48.43",
-      "place": "9.",
-      "round": "F"
+      "place": "9"
     },
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:29.80",
-      "place": "2.",
-      "round": "F"
-    },
-    {
-      "date": "JUN 10",
-      "meet": "Oslo Bislett Games",
-      "event": "1500 m",
-      "time": "3:34.10",
-      "place": "",
-      "round": "F"
+      "place": "2"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
       "event": "Mile",
       "time": "3:49.63",
-      "place": "7.",
-      "round": "F"
+      "place": "7"
     },
     {
       "date": "JUN 7",
       "meet": "BAUHAUS-Galan",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:33.84",
-      "place": "9.",
-      "round": "F"
+      "place": "9"
     },
     {
       "date": "MAY 31",
       "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:30.68",
-      "place": "3.",
-      "round": "F"
+      "place": "3"
     },
     {
       "date": "MAY 17",
-      "meet": "Chpts Interclubs LIFA - Finale Nationale 3",
-      "event": "1500 m",
+      "meet": "Chpts Interclubs LIFA",
+      "event": "1500m",
       "time": "3:38.25",
-      "place": "1.",
-      "round": "F"
+      "place": "1"
     },
     {
       "date": "MAR 21",
       "meet": "World Athletics Indoor Championships",
-      "event": "3000 m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:39.87",
-      "place": "11.",
-      "round": "F"
+      "place": "11"
     },
     {
       "date": "FEB 28",
       "meet": "French Indoor Championships",
-      "event": "3000 m sh",
+      "event": "3000 Metres Short Track",
       "time": "8:12.21",
-      "place": "1.",
-      "round": "F"
+      "place": "1"
     },
     {
       "date": "FEB 22",
       "meet": "ORLEN Copernicus Cup",
-      "event": "1500 m sh",
+      "event": "1500 Metres Short Track",
       "time": "3:32.56",
-      "place": "1.",
-      "round": "F"
+      "place": "1"
     },
     {
       "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
-      "event": "3000 m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:35.79",
-      "place": "4.",
-      "round": "F"
+      "place": "4"
     },
     {
       "date": "FEB 8",
       "meet": "INIT Indoor Meeting Karlsruhe",
-      "event": "1500 m sh",
+      "event": "1500 Metres Short Track",
       "time": "3:33.36",
-      "place": "1.",
-      "round": "F"
+      "place": "1"
     },
     {
       "date": "JAN 11",
-      "meet": "10K Valencia Ibercaja by Kiprun",
-      "event": "10 Kilom Road",
+      "meet": "10K Valencia Ibercaja by Kiprun, Valencia",
+      "event": "10 Kilometres Road",
       "time": "27:43",
-      "place": "21.",
-      "round": "F"
+      "place": "21"
     }
   ],
   "dob": "1993-07-19",

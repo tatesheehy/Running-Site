@@ -10,7 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-07-10",
+  "lastSynced": "2026-07-11",
   "prs": [
     {
       "event": "800m",
@@ -73,224 +73,182 @@
       "meet": "Prefontaine Classic",
       "event": "Mile",
       "time": "3:53.07",
-      "place": "8.",
-      "round": "F"
+      "place": "8"
     },
     {
       "date": "JUN 21",
       "meet": "Portland Track Festival",
-      "event": "800 m",
+      "event": "800m",
       "time": "1:45.80",
-      "place": "3.",
-      "round": "F1"
+      "place": "3"
     },
     {
       "date": "JUN 12",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:38.10",
-      "place": "8.",
-      "round": "F1"
+      "place": "8"
     },
     {
       "date": "JUN 10",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:35.95",
-      "place": "2.",
-      "round": "SF2"
+      "place": "2"
     },
     {
       "date": "MAY 29",
       "meet": "NCAA Division I West First Rounds",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:37.64",
-      "place": "2.",
-      "round": "H2"
+      "place": "2"
     },
     {
       "date": "MAY 27",
       "meet": "NCAA Division I West First Rounds",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:39.63",
-      "place": "1.",
-      "round": "PR2"
+      "place": "1"
     },
     {
       "date": "MAY 16",
       "meet": "Big 12 Outdoor Track & Field Championship",
-      "event": "800 m",
+      "event": "800m",
       "time": "1:47.88",
-      "place": "5.",
-      "round": "F1"
+      "place": "5"
     },
     {
       "date": "MAY 16",
       "meet": "Big 12 Outdoor Track & Field Championship",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:58.63",
-      "place": "1.",
-      "round": "F1"
+      "place": "1"
     },
     {
       "date": "MAY 15",
       "meet": "Big 12 Outdoor Track & Field Championship",
-      "event": "800 m",
+      "event": "800m",
       "time": "1:47.97",
-      "place": "1.",
-      "round": "H1"
+      "place": "1"
     },
     {
       "date": "MAY 14",
       "meet": "Big 12 Outdoor Track & Field Championship",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:47.08",
-      "place": "1.",
-      "round": "H3"
+      "place": "1"
     },
     {
       "date": "MAY 1",
       "meet": "BYU Robison Invitational",
-      "event": "800 m",
+      "event": "800m",
       "time": "1:47.02",
-      "place": "1.",
-      "round": "F1"
+      "place": "1"
     },
     {
       "date": "APR 29",
       "meet": "BYU Robison Invitational",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:40.20",
-      "place": "1.",
-      "round": "F1"
+      "place": "1"
     },
     {
       "date": "APR 17",
       "meet": "Bryan Clay Invitational",
-      "event": "5000 m",
+      "event": "5000m",
       "time": "13:51.05",
-      "place": "25.",
-      "round": "F2"
+      "place": "25"
     },
     {
       "date": "APR 3",
       "meet": "Stanford Invitational",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:41.32",
-      "place": "1.",
-      "round": "F1"
+      "place": "1"
     },
     {
       "date": "APR 3",
       "meet": "Stanford Invitational",
-      "event": "10,000 m",
+      "event": "10000m",
       "time": "DNF",
-      "place": "",
-      "round": "F1"
+      "place": ""
     },
     {
       "date": "MAR 14",
       "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "3:58.94",
-      "place": "1.",
-      "round": "F1"
+      "place": "1"
     },
     {
       "date": "MAR 13",
       "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "3:56.72",
-      "place": "1.",
-      "round": "H2"
+      "place": "1"
     },
     {
       "date": "MAR 13",
       "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "Distance Medley sh",
+      "event": "Distance Medley Short Track",
       "time": "9:25.81",
-      "place": "6.",
-      "round": "F1"
+      "place": "6"
     },
     {
       "date": "FEB 28",
       "meet": "Big 12 Indoor Track & Field Championship",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "4:05.23",
-      "place": "1.",
-      "round": "F1"
+      "place": "1"
     },
     {
       "date": "FEB 27",
       "meet": "Big 12 Indoor Track & Field Championship",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "4:06.64",
-      "place": "2.",
-      "round": "H1"
+      "place": "2"
     },
     {
       "date": "FEB 27",
       "meet": "Big 12 Indoor Track & Field Championship",
-      "event": "Distance Medley sh",
+      "event": "Distance Medley Short Track",
       "time": "9:35.98",
-      "place": "1.",
-      "round": "F1"
+      "place": "1"
     },
     {
       "date": "FEB 20",
       "meet": "Colorado Last Chance",
       "event": "Distance Medley",
       "time": "9:28.60",
-      "place": "2.",
-      "round": "F"
+      "place": "2"
     },
     {
       "date": "FEB 13",
       "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "1500 m sh",
-      "time": "3:37.03",
-      "place": "8.",
-      "round": "F1"
-    },
-    {
-      "date": "FEB 13",
-      "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "3:52.84",
-      "place": "8.",
-      "round": "F1"
+      "place": "8"
     },
     {
       "date": "FEB 13",
       "meet": "Boston University David Hemery Valentine Invitational",
-      "event": "3000 m sh",
+      "event": "3000 Metres Short Track",
       "time": "DNF",
-      "place": "",
-      "round": "F1"
+      "place": ""
     },
     {
       "date": "JAN 31",
       "meet": "Boston University John Thomas Terrier Classic",
-      "event": "1500 m sh",
-      "time": "3:38.80",
-      "place": "",
-      "round": "F2"
-    },
-    {
-      "date": "JAN 31",
-      "meet": "Boston University John Thomas Terrier Classic",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "3:54.38",
-      "place": "5.",
-      "round": "F2"
+      "place": "5"
     },
     {
       "date": "JAN 31",
       "meet": "Boston University John Thomas Terrier Classic",
-      "event": "3000 m sh",
+      "event": "3000 Metres Short Track",
       "time": "NM",
-      "place": "",
-      "round": "F1"
+      "place": ""
     }
   ],
   "dob": "2005-01-10",
