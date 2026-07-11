@@ -9,6 +9,8 @@ let _sb   = null;
 let _user = null;
 let _favorites = new Set();
 let _authMode  = 'signin';
+let _lists = [];          // [{id, name, created_at}]
+let _listMembers = {};    // { [list_id]: Set(athlete_id) }
 
 function _initSb() {
   if (_sb || typeof supabase === 'undefined') return;
@@ -20,6 +22,19 @@ async function _loadFavorites() {
   const { data } = await _sb.from('favorites').select('athlete_id');
   _favorites = new Set((data || []).map(r => r.athlete_id));
   _syncFavBtns();
+}
+
+async function _loadLists() {
+  if (!_sb || !_user) return;
+  const { data: lists } = await _sb.from('athlete_lists').select('*').order('created_at');
+  _lists = lists || [];
+  const { data: members } = await _sb.from('athlete_list_members').select('list_id, athlete_id');
+  _listMembers = {};
+  (members || []).forEach(m => {
+    if (!_listMembers[m.list_id]) _listMembers[m.list_id] = new Set();
+    _listMembers[m.list_id].add(m.athlete_id);
+  });
+  _syncListUI();
 }
 
 function _syncNavUser() {
@@ -40,22 +55,30 @@ function _syncFavBtns() {
   });
 }
 
+function _syncListUI() {
+  if (typeof window._refreshMyAthletes === 'function') window._refreshMyAthletes();
+  if (typeof window._refreshListModal === 'function') window._refreshListModal();
+}
+
 async function initAuth() {
   _initSb();
   if (!_sb) return;
 
   const { data: { session } } = await _sb.auth.getSession();
   _user = session?.user || null;
-  if (_user) await _loadFavorites();
+  if (_user) await Promise.all([_loadFavorites(), _loadLists()]);
   _syncNavUser();
 
   _sb.auth.onAuthStateChange(async (_event, session) => {
     _user = session?.user || null;
     if (_user) {
-      await _loadFavorites();
+      await Promise.all([_loadFavorites(), _loadLists()]);
     } else {
       _favorites.clear();
+      _lists = [];
+      _listMembers = {};
       _syncFavBtns();
+      _syncListUI();
     }
     _syncNavUser();
   });
@@ -93,6 +116,60 @@ window.toggleFavorite = async function(athleteId) {
   _syncFavBtns();
   // If My Athletes filter is active, re-render
   if (typeof _refreshMyAthletes === 'function') _refreshMyAthletes();
+};
+
+// ── Custom athlete lists ──────────────────────────────────
+
+window.getLists           = () => _lists;
+window.getListMemberIds   = listId => [...(_listMembers[listId] || [])];
+window.getListsForAthlete = athleteId => _lists.filter(l => _listMembers[l.id]?.has(athleteId));
+window.isInList           = (listId, athleteId) => !!_listMembers[listId]?.has(athleteId);
+
+window.createList = async function(name) {
+  if (!_user) { openAuthModal(); return null; }
+  const trimmed = (name || '').trim();
+  if (!trimmed) return null;
+  const { data, error } = await _sb.from('athlete_lists')
+    .insert({ user_id: _user.id, name: trimmed }).select().single();
+  if (error || !data) return null;
+  _lists.push(data);
+  _listMembers[data.id] = new Set();
+  _syncListUI();
+  return data;
+};
+
+window.renameList = async function(listId, newName) {
+  const trimmed = (newName || '').trim();
+  if (!trimmed) return false;
+  const { error } = await _sb.from('athlete_lists').update({ name: trimmed }).eq('id', listId);
+  if (error) return false;
+  const l = _lists.find(x => x.id === listId);
+  if (l) l.name = trimmed;
+  _syncListUI();
+  return true;
+};
+
+window.deleteList = async function(listId) {
+  const { error } = await _sb.from('athlete_lists').delete().eq('id', listId);
+  if (error) return false;
+  _lists = _lists.filter(l => l.id !== listId);
+  delete _listMembers[listId];
+  _syncListUI();
+  return true;
+};
+
+window.toggleListMember = async function(listId, athleteId) {
+  if (!_user) { openAuthModal(); return; }
+  if (!_listMembers[listId]) _listMembers[listId] = new Set();
+  const set = _listMembers[listId];
+  if (set.has(athleteId)) {
+    await _sb.from('athlete_list_members').delete().eq('list_id', listId).eq('athlete_id', athleteId);
+    set.delete(athleteId);
+  } else {
+    await _sb.from('athlete_list_members').insert({ list_id: listId, user_id: _user.id, athlete_id: athleteId });
+    set.add(athleteId);
+  }
+  _syncListUI();
 };
 
 // ── Auth modal ────────────────────────────────────────────
@@ -173,7 +250,10 @@ window.authSignOut = async function() {
   if (_sb) await _sb.auth.signOut();
   closeUserMenu();
   _favorites.clear();
+  _lists = [];
+  _listMembers = {};
   _syncFavBtns();
+  _syncListUI();
   if (typeof _showAllAthletes === 'function') _showAllAthletes();
 };
 

@@ -394,6 +394,12 @@ function openAthleteCard(athleteId, rank) {
         <button class="card-fav-btn${typeof isFavorited === 'function' && isFavorited(athleteId) ? ' favorited' : ''}" data-fav-id="${athleteId}" onclick="toggleFavorite('${athleteId}')" title="Save athlete">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </button>
+        <div class="card-list-wrap">
+          <button class="card-list-btn" onclick="event.stopPropagation();toggleListPopover('${athleteId}')" title="Add to list">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="15" y2="6"/><line x1="3" y1="12" x2="15" y2="12"/><line x1="3" y1="18" x2="11" y2="18"/><line x1="18" y1="15" x2="18" y2="21"/><line x1="15" y1="18" x2="21" y2="18"/></svg>
+          </button>
+          <div class="card-list-popover" id="card-list-popover-${athleteId}" style="display:none"></div>
+        </div>
         <button class="card-share-btn" onclick="openShareOverlay('${athleteId}',${JSON.stringify(rank)},new URLSearchParams(location.search).get('event'))" title="Share athlete card">↗ Share</button>
         <button class="card-compare-btn" onclick="closeAthleteCard();openH2H('${athleteId}',new URLSearchParams(location.search).get('event'))" title="Compare athletes">Compare</button>
         <button class="card-close" onclick="closeAthleteCard()" aria-label="Close">×</button>
@@ -506,6 +512,66 @@ function closeAthleteCard() {
 
 window.openAthleteCard = openAthleteCard;
 window.closeAthleteCard = closeAthleteCard;
+
+// ── Add-to-list popover (athlete card) ───────────────────────
+
+function _renderListPopoverBody(athleteId) {
+  const user = typeof getCurrentUser === 'function' ? getCurrentUser() : null;
+  if (!user) {
+    return `<div class="card-list-popover-signin">
+      <p>Sign in to save athletes to lists.</p>
+      <button onclick="closeAthleteCard();openAuthModal()">Sign In</button>
+    </div>`;
+  }
+  const lists = typeof getLists === 'function' ? getLists() : [];
+  const rows = lists.map(l => {
+    const checked = typeof isInList === 'function' && isInList(l.id, athleteId);
+    return `
+      <label class="card-list-popover-row">
+        <input type="checkbox" ${checked ? 'checked' : ''} onchange="toggleListMember('${l.id}','${athleteId}')">
+        <span>${l.name}</span>
+      </label>`;
+  }).join('');
+  return `
+    ${lists.length ? `<div class="card-list-popover-rows">${rows}</div><div class="card-list-popover-divider"></div>` : ''}
+    <div class="card-list-popover-new">
+      <input type="text" placeholder="New list name…" maxlength="40" autocomplete="off"
+        onkeydown="if(event.key==='Enter'){event.preventDefault();_createListAndAdd(this,'${athleteId}');}">
+      <button onclick="_createListAndAdd(this.previousElementSibling,'${athleteId}')">+</button>
+    </div>`;
+}
+
+window._createListAndAdd = async function(input, athleteId) {
+  const val = input?.value.trim();
+  if (!val) return;
+  const list = await createList(val);
+  if (list) await toggleListMember(list.id, athleteId);
+  if (input) input.value = '';
+};
+
+window.toggleListPopover = function(athleteId) {
+  const pop = document.getElementById('card-list-popover-' + athleteId);
+  if (!pop) return;
+  const willOpen = pop.style.display === 'none';
+  document.querySelectorAll('.card-list-popover').forEach(p => p.style.display = 'none');
+  if (willOpen) {
+    pop.innerHTML = _renderListPopoverBody(athleteId);
+    pop.style.display = 'block';
+  }
+};
+
+window._refreshListModal = function() {
+  document.querySelectorAll('.card-list-popover').forEach(pop => {
+    if (pop.style.display === 'none') return;
+    const athleteId = pop.id.replace('card-list-popover-', '');
+    pop.innerHTML = _renderListPopoverBody(athleteId);
+  });
+};
+
+document.addEventListener('click', e => {
+  if (e.target.closest('.card-list-wrap')) return;
+  document.querySelectorAll('.card-list-popover').forEach(p => p.style.display = 'none');
+});
 
 // Opens full card if athlete profile exists, otherwise shows a compact mini card
 window.openRankingRow = function(encodedData) {

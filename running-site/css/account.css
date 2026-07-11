@@ -334,6 +334,180 @@
 }
 .acct-fav-remove:hover { color: #ef4444; background: rgba(239,68,68,0.08); }
 
+/* ── My lists ─────────────────────────────────────────────── */
+.acct-list-new-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.acct-list-new-input {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 14px;
+  font-family: var(--font-body);
+  padding: 9px 12px;
+  border-radius: var(--radius);
+  flex: 1;
+  min-width: 0;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.acct-list-new-input:focus { border-color: var(--accent); }
+
+.acct-list-new-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 9px 18px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.15s;
+}
+.acct-list-new-btn:hover { opacity: 0.85; }
+
+.acct-lists-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.acct-list-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.acct-list-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.acct-list-name {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+.acct-list-name:hover { color: var(--accent); }
+
+.acct-list-count {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  background: rgba(255,255,255,0.06);
+  border-radius: 20px;
+  padding: 1px 8px;
+}
+
+.acct-list-delete {
+  background: none;
+  border: none;
+  color: #444;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex-shrink: 0;
+  transition: color 0.15s, background 0.15s;
+}
+.acct-list-delete:hover { color: #ef4444; background: rgba(239,68,68,0.08); }
+
+.acct-list-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.acct-list-empty {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.acct-list-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 4px 6px 4px 10px;
+  font-size: 12px;
+}
+
+.acct-list-chip-name { color: var(--text); }
+
+.acct-list-chip-remove {
+  background: none;
+  border: none;
+  color: var(--muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  border-radius: 50%;
+  transition: color 0.15s, background 0.15s;
+}
+.acct-list-chip-remove:hover { color: #ef4444; background: rgba(239,68,68,0.1); }
+
+.acct-list-add-row { position: relative; }
+
+.acct-list-search {
+  width: 100%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 13px;
+  font-family: var(--font-body);
+  padding: 7px 10px;
+  border-radius: var(--radius);
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.15s;
+}
+.acct-list-search:focus { border-color: var(--accent); }
+
+.acct-list-search-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #1a1a1a;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  max-height: 180px;
+  overflow-y: auto;
+  z-index: 50;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.acct-list-search-item {
+  padding: 8px 12px;
+  font-size: 13px;
+  color: var(--text);
+  cursor: pointer;
+}
+.acct-list-search-item:hover { background: rgba(255,255,255,0.06); }
+
+.acct-list-search-empty {
+  padding: 8px 12px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
 /* ── Mod users table ─────────────────────────────────────── */
 .mod-users-table {
   width: 100%;

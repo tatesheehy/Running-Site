@@ -26,6 +26,7 @@ function buildAccountPage() {
     const favAthletes = favIds.map(id => ATHLETES[id]).filter(Boolean);
     const mod = typeof isModerator === 'function' && isModerator();
     const avatarLetter = (username || user.email || '?')[0].toUpperCase();
+    const lists = typeof getLists === 'function' ? getLists() : [];
 
     const cards = favAthletes.length
       ? favAthletes.map(a => {
@@ -104,6 +105,23 @@ function buildAccountPage() {
 
         </div>
 
+        <div class="acct-card acct-card--full">
+          <h2 class="acct-card-title">
+            My Lists
+            ${lists.length ? `<span class="acct-count">${lists.length}</span>` : ''}
+          </h2>
+          <div class="acct-list-new-row">
+            <input id="acct-new-list-input" class="acct-list-new-input" type="text"
+              placeholder="New list name…" maxlength="40" autocomplete="off"
+              onkeydown="if(event.key==='Enter'){event.preventDefault();acctCreateList();}">
+            <button class="acct-list-new-btn" onclick="acctCreateList()">Create</button>
+          </div>
+          <div class="acct-lists-wrap">
+            ${lists.length ? lists.map(l => _renderListCard(l)).join('')
+              : '<p class="acct-empty-state">No lists yet — create one to group athletes for head-to-head comparisons.</p>'}
+          </div>
+        </div>
+
 ${mod
           ? `<div class="acct-card acct-card--full" id="mod-users-section">
                <h2 class="acct-card-title">
@@ -122,6 +140,92 @@ ${mod
       _loadModUsers();
     }
   }
+
+  function _renderListCard(l) {
+    const memberIds = typeof getListMemberIds === 'function' ? getListMemberIds(l.id) : [];
+    const members = memberIds.map(id => ATHLETES[id]).filter(Boolean);
+    const chips = members.length
+      ? members.map(a => `
+          <span class="acct-list-chip">
+            <span class="acct-list-chip-name">${a.name}</span>
+            <button class="acct-list-chip-remove" onclick="acctRemoveFromList('${l.id}','${a.id}')" title="Remove">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+          </span>`).join('')
+      : '<span class="acct-list-empty">No athletes yet</span>';
+
+    return `
+      <div class="acct-list-card" data-list-id="${l.id}">
+        <div class="acct-list-header">
+          <span class="acct-list-name" onclick="acctRenameList('${l.id}')" title="Rename">${l.name}</span>
+          <span class="acct-list-count">${memberIds.length}</span>
+          <button class="acct-list-delete" onclick="acctDeleteList('${l.id}')" title="Delete list">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+          </button>
+        </div>
+        <div class="acct-list-members">${chips}</div>
+        <div class="acct-list-add-row">
+          <input class="acct-list-search" placeholder="Add athlete…" autocomplete="off"
+            oninput="acctListSearch(this,'${l.id}')"
+            onfocus="acctListShowDropdown('${l.id}')"
+            onblur="setTimeout(()=>acctListHideDropdown('${l.id}'),150)">
+          <div class="acct-list-search-dropdown" id="acct-list-dropdown-${l.id}" style="display:none"></div>
+        </div>
+      </div>`;
+  }
+
+  window.acctCreateList = async function() {
+    const input = document.getElementById('acct-new-list-input');
+    const val = input?.value.trim();
+    if (!val) return;
+    await createList(val);
+    if (input) input.value = '';
+  };
+
+  window.acctRenameList = async function(listId) {
+    const list = (typeof getLists === 'function' ? getLists() : []).find(l => l.id === listId);
+    const next = prompt('Rename list', list ? list.name : '');
+    if (next === null) return;
+    await renameList(listId, next);
+  };
+
+  window.acctDeleteList = async function(listId) {
+    const list = (typeof getLists === 'function' ? getLists() : []).find(l => l.id === listId);
+    if (!confirm(`Delete "${list ? list.name : 'this list'}"? This can't be undone.`)) return;
+    await deleteList(listId);
+  };
+
+  window.acctRemoveFromList = async function(listId, athleteId) {
+    await toggleListMember(listId, athleteId);
+  };
+
+  window.acctListSearch = function(input, listId) {
+    const q = input.value.trim().toLowerCase();
+    const dd = document.getElementById(`acct-list-dropdown-${listId}`);
+    if (!dd) return;
+    if (!q) { dd.innerHTML = ''; return; }
+    const memberIds = new Set(typeof getListMemberIds === 'function' ? getListMemberIds(listId) : []);
+    const matches = Object.values(ATHLETES)
+      .filter(a => a.name && !memberIds.has(a.id) && a.name.toLowerCase().includes(q))
+      .slice(0, 8);
+    dd.innerHTML = matches.length
+      ? matches.map(a => `<div class="acct-list-search-item" onmousedown="event.preventDefault();acctAddToList('${listId}','${a.id}')">${a.name}</div>`).join('')
+      : '<div class="acct-list-search-empty">No matches</div>';
+  };
+
+  window.acctListShowDropdown = function(listId) {
+    const dd = document.getElementById(`acct-list-dropdown-${listId}`);
+    if (dd && dd.innerHTML) dd.style.display = '';
+  };
+
+  window.acctListHideDropdown = function(listId) {
+    const dd = document.getElementById(`acct-list-dropdown-${listId}`);
+    if (dd) dd.style.display = 'none';
+  };
+
+  window.acctAddToList = async function(listId, athleteId) {
+    await toggleListMember(listId, athleteId);
+  };
 
   async function _loadModUsers() {
     const sb = typeof getSupabase === 'function' ? getSupabase() : null;

@@ -6,6 +6,7 @@ let _h2hLbYear       = '2026';
 let _h2hLbEvent      = 'all';
 let _h2hLbRankedOnly = false;
 let _h2hLbView       = 'table';
+let _h2hLbListId     = 'all';
 let _h2hCmpA         = null;
 let _h2hCmpB         = null;
 let _h2hFindIds      = [null, null, null, null, null];
@@ -56,6 +57,7 @@ function buildH2HPage() {
   _h2hLbEvent      = 'all';
   _h2hLbRankedOnly = false;
   _h2hLbView       = 'table';
+  _h2hLbListId     = 'all';
   _h2hFindIds      = [null, null, null, null, null];
   _h2hFindGo       = false;
   _renderH2HPage();
@@ -68,8 +70,13 @@ function _renderH2HPage() {
   const { records, totalEncounters } = _computeAllH2HRecords(_h2hLbYear, _h2hLbEvent, _h2hLbRankedOnly);
   _h2hCurrentRecs = records;
 
+  // Curated lists are often small (a handful of friends, hometown athletes,
+  // medal picks) — the usual 3-race minimum would empty out most of them,
+  // so drop it to 1 whenever a specific list is selected.
+  const minRaces = _h2hLbListId === 'all' ? _H2H_MIN_RACES : 1;
   const rows = Object.entries(records)
-    .filter(([, r]) => r.wins + r.losses >= _H2H_MIN_RACES)
+    .filter(([, r]) => r.wins + r.losses >= minRaces)
+    .filter(([id]) => _h2hLbListId === 'all' || (typeof isInList === 'function' && isInList(_h2hLbListId, id)))
     .sort((a, b) => {
       const sa = _wilsonScore(a[1].wins, a[1].wins + a[1].losses);
       const sb = _wilsonScore(b[1].wins, b[1].wins + b[1].losses);
@@ -165,6 +172,7 @@ function _renderH2HPage() {
                     onclick="h2hLbSetEvent('${ev}')">${ev === 'all' ? 'All' : ev}</button>`).join('')}
               </div>
             </div>
+            ${_renderH2HListFilter()}
           </div>
           <div class="h2h-lb-ctrl-group">
             <div class="h2h-lb-ctrl-label">Search</div>
@@ -184,7 +192,7 @@ function _renderH2HPage() {
             </div>
             <div class="h2h-lb-wrap">
               ${rows.length === 0
-                ? `<div class="h2h-lb-empty">No head-to-head data for this selection${_h2hLbRankedOnly ? ' — try switching to "All" opponents' : ''}.</div>`
+                ? `<div class="h2h-lb-empty">No head-to-head data for this selection${_h2hLbRankedOnly ? ' — try switching to "All" opponents' : ''}${_h2hLbListId !== 'all' ? ' — this list may not have any members who\'ve raced each other yet' : ''}.</div>`
                 : `<table class="h2h-lb-table">
                     <tbody>
                       ${rows.map(([id, rec], i) => {
@@ -282,6 +290,28 @@ window.h2hLbSetYear      = y    => { _h2hLbYear  = y;   _renderH2HPage(); };
 window.h2hLbSetEvent     = ev   => { _h2hLbEvent = ev;  _renderH2HPage(); };
 window.h2hLbToggleRanked = ()   => { _h2hLbRankedOnly = !_h2hLbRankedOnly; _renderH2HPage(); };
 window.h2hLbSetView      = view => { _h2hLbView  = view; _renderH2HPage(); };
+window.h2hLbSetList      = id   => { _h2hLbListId = id;  _renderH2HPage(); };
+
+function _renderH2HListFilter() {
+  const user = typeof getCurrentUser === 'function' ? getCurrentUser() : null;
+  if (!user) {
+    return `
+      <div class="h2h-lb-ctrl-group">
+        <div class="h2h-lb-ctrl-label">List</div>
+        <span class="h2h-lb-list-hint"><a href="#" onclick="event.preventDefault();openAuthModal()">Sign in</a> to filter by your lists</span>
+      </div>`;
+  }
+  const lists = typeof getLists === 'function' ? getLists() : [];
+  if (!lists.length) return '';
+  return `
+    <div class="h2h-lb-ctrl-group">
+      <div class="h2h-lb-ctrl-label">List</div>
+      <select class="h2h-lb-list-select" onchange="h2hLbSetList(this.value)">
+        <option value="all"${_h2hLbListId === 'all' ? ' selected' : ''}>All Athletes</option>
+        ${lists.map(l => `<option value="${l.id}"${l.id === _h2hLbListId ? ' selected' : ''}>${l.name}</option>`).join('')}
+      </select>
+    </div>`;
+}
 
 window.h2hToggleExpand = (id) => {
   const detail = document.getElementById('h2h-detail-' + id);

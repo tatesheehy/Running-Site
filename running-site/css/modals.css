@@ -275,6 +275,97 @@
 .card-fav-btn.favorited { color: var(--accent); }
 .card-fav-btn.favorited svg { fill: var(--accent); }
 
+.card-list-wrap { position: relative; display: flex; }
+.card-list-btn {
+  background: none;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  padding: 4px 6px;
+  display: flex; align-items: center;
+  transition: color 0.15s;
+  border-radius: 4px;
+}
+.card-list-btn:hover { color: #fff; }
+
+.card-list-popover {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 220px;
+  background: #1a1a1a;
+  border: 1px solid rgba(255,255,255,0.14);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  z-index: 100;
+  padding: 8px;
+}
+
+.card-list-popover-rows {
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.card-list-popover-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 4px;
+  font-size: 13px;
+  color: #eee;
+  cursor: pointer;
+}
+.card-list-popover-row:hover { background: rgba(255,255,255,0.06); }
+
+.card-list-popover-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+  margin: 6px 0;
+}
+
+.card-list-popover-new {
+  display: flex;
+  gap: 6px;
+}
+.card-list-popover-new input {
+  flex: 1;
+  min-width: 0;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.14);
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 8px;
+  outline: none;
+}
+.card-list-popover-new input:focus { border-color: var(--accent); }
+.card-list-popover-new button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 12px;
+  cursor: pointer;
+}
+.card-list-popover-new button:hover { opacity: 0.85; }
+
+.card-list-popover-signin {
+  padding: 8px 4px;
+  font-size: 13px;
+  color: #ccc;
+  text-align: center;
+}
+.card-list-popover-signin p { margin-bottom: 8px; }
+.card-list-popover-signin button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+.card-list-popover-signin button:hover { opacity: 0.85; }
+
 /* Small inline heart used in row-based lists (Athletes list view, H2H
    leaderboard, Rankings terminal) — same favorite/toggleFavorite() wiring
    as the grid/card hearts, just sized to sit inline next to a name. */
