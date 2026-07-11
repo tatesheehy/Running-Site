@@ -591,6 +591,48 @@ th.ath-list-pr {
 
 .ath-sort-inactive { opacity: 0.4; pointer-events: none; }
 
+/* ── MY LISTS view (athletes page) ───────────────────────── */
+.ath-lists-view-wrap { padding-bottom: 80px; }
+.ath-lists-view { max-width: 720px; }
+
+.ath-lists-view-btn {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: color 0.15s, border-color 0.15s;
+}
+.ath-lists-view-btn:hover { color: var(--text); border-color: var(--text); }
+
+.ath-lists-view-signin {
+  padding: 48px 16px;
+  text-align: center;
+}
+.ath-lists-view-signin p {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.ath-lists-view-signin button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.ath-lists-view-signin button:hover { opacity: 0.85; }
+
 @media (max-width: 640px) {
   .ath-list-th.ath-list-country,
   .ath-list-td.ath-list-country { display: none; }

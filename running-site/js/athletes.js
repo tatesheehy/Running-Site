@@ -19,7 +19,7 @@ function _parseTime(str) {
 function buildAthletesPage() {
   const all = Object.values(ATHLETES);
   let activeSort    = 'alpha';
-  let activeView    = 'grid';   // 'grid' | 'list' | 'map'
+  let activeView    = 'grid';   // 'grid' | 'list' | 'map' | 'lists'
   let myAthletesActive = false;
   let activeListFilter = null; // list id or null
   let activeSearch  = '';
@@ -200,7 +200,7 @@ function buildAthletesPage() {
   function renderList(list) {
     if (!list.length) {
       return activeListFilter
-        ? '<p class="ath-page-empty">This list has no athletes yet — add some from the athlete card or your account page.</p>'
+        ? '<p class="ath-page-empty">This list has no athletes yet — add some from the My Lists section or an athlete card.</p>'
         : '<p class="ath-page-empty">No athletes found.</p>';
     }
 
@@ -242,7 +242,7 @@ function buildAthletesPage() {
       const msg = myAthletesActive
         ? '<p class="ath-page-empty">No saved athletes yet — click the heart on any athlete card to save them.</p>'
         : activeListFilter
-        ? '<p class="ath-page-empty">This list has no athletes yet — add some from the athlete card or your account page.</p>'
+        ? '<p class="ath-page-empty">This list has no athletes yet — add some from the My Lists section or an athlete card.</p>'
         : '<p class="ath-page-empty">No athletes found.</p>';
       return msg;
     }
@@ -296,9 +296,74 @@ function buildAthletesPage() {
     return `${list.length} of ${total}`;
   }
 
+  function renderAthListsView() {
+    const user = typeof getCurrentUser === 'function' && getCurrentUser();
+    if (!user) {
+      return `<div class="ath-lists-view-signin">
+        <p>Sign in to create and manage athlete lists.</p>
+        <button onclick="openAuthModal()">Sign In</button>
+      </div>`;
+    }
+    const lists = typeof getLists === 'function' ? getLists() : [];
+    return `
+      <div class="ath-lists-view">
+        <div class="acct-list-new-row">
+          <input id="acct-new-list-input" class="acct-list-new-input" type="text"
+            placeholder="New list name…" maxlength="40" autocomplete="off"
+            onkeydown="if(event.key==='Enter'){event.preventDefault();athListsCreate();}">
+          <button class="acct-list-new-btn" onclick="athListsCreate()">Create</button>
+        </div>
+        <div class="acct-lists-wrap">
+          ${lists.length ? lists.map(l => _renderAthListCard(l)).join('')
+            : '<p class="acct-empty-state">No lists yet — create one above to group athletes for head-to-head comparisons.</p>'}
+        </div>
+      </div>`;
+  }
+
+  function _renderAthListCard(l) {
+    const memberIds = typeof getListMemberIds === 'function' ? getListMemberIds(l.id) : [];
+    const members = memberIds.map(id => ATHLETES[id]).filter(Boolean);
+    const chips = members.length
+      ? members.map(a => `
+          <span class="acct-list-chip">
+            <span class="acct-list-chip-name">${a.name}</span>
+            <button class="acct-list-chip-remove" onclick="athListsRemove('${l.id}','${a.id}')" title="Remove">
+              <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+          </span>`).join('')
+      : '<span class="acct-list-empty">No athletes yet</span>';
+
+    return `
+      <div class="acct-list-card" data-list-id="${l.id}">
+        <div class="acct-list-header">
+          <span class="acct-list-name" onclick="athListsRename('${l.id}')" title="Rename">${l.name}</span>
+          <span class="acct-list-count">${memberIds.length}</span>
+          <button class="ath-lists-view-btn" onclick="filterByList('${l.id}');setAthleteView('grid')" title="View these athletes in the grid">View</button>
+          <button class="acct-list-delete" onclick="athListsDelete('${l.id}')" title="Delete list">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></svg>
+          </button>
+        </div>
+        <div class="acct-list-members">${chips}</div>
+        <div class="acct-list-add-row">
+          <input class="acct-list-search" placeholder="Add athlete…" autocomplete="off"
+            oninput="athListsSearch(this,'${l.id}')"
+            onfocus="athListsShowDropdown('${l.id}')"
+            onblur="setTimeout(()=>athListsHideDropdown('${l.id}'),150)">
+          <div class="acct-list-search-dropdown" id="acct-list-dropdown-${l.id}" style="display:none"></div>
+        </div>
+      </div>`;
+  }
+
   function refreshGrid() {
     const grid = qs('#ath-page-grid');
     if (!grid) return;
+    if (activeView === 'lists') {
+      grid.className = 'ath-lists-view-wrap';
+      grid.innerHTML = renderAthListsView();
+      const countEl = qs('#ath-page-count');
+      if (countEl) countEl.textContent = typeof getLists === 'function' ? `${getLists().length} lists` : '0 lists';
+      return;
+    }
     const list = sortedAthletes();
     if (activeView === 'list') {
       grid.className = 'ath-list-container';
@@ -338,7 +403,7 @@ function buildAthletesPage() {
             <button class="ath-page-sort my-athletes-btn" id="my-athletes-btn" onclick="toggleMyAthletes()" style="${loggedIn ? '' : 'display:none'}">
               My Athletes
             </button>
-            <button class="ath-page-sort my-lists-btn" id="my-lists-btn" onclick="location.href='account.html'" style="${loggedIn ? '' : 'display:none'}">
+            <button class="ath-page-sort my-lists-btn" id="my-lists-btn" onclick="toggleAthleteLists()" style="${loggedIn ? '' : 'display:none'}">
               My Lists
             </button>
             <button class="ath-page-sort" id="ath-map-btn" onclick="toggleAthleteMap()">Map</button>
@@ -377,9 +442,12 @@ function buildAthletesPage() {
 
   window.setAthleteView = function(view) {
     if (view === activeView) return;
-    // Exit map if switching to grid/list
+    // Exit map/lists if switching to grid/list
     if (activeView === 'map') {
       qs('#ath-map-btn')?.classList.remove('active');
+    }
+    if (activeView === 'lists') {
+      qs('#my-lists-btn')?.classList.remove('active');
     }
     activeView = view;
     setViewBtns();
@@ -405,6 +473,7 @@ function buildAthletesPage() {
     qs('#ath-search-clear').style.opacity = activeSearch ? '1' : '0';
     qs('#ath-search-clear').style.pointerEvents = activeSearch ? 'auto' : 'none';
     if (activeView === 'map') { activeView = 'grid'; setViewBtns(); qs('#ath-map-btn')?.classList.remove('active'); }
+    if (activeView === 'lists') { activeView = 'grid'; setViewBtns(); qs('#my-lists-btn')?.classList.remove('active'); }
     refreshGrid();
   };
 
@@ -433,6 +502,7 @@ function buildAthletesPage() {
   window.filterByPreset = function(key) {
     if (activePresets.has(key)) activePresets.delete(key); else activePresets.add(key);
     if (activeView === 'map') { activeView = 'grid'; setViewBtns(); qs('#ath-map-btn')?.classList.remove('active'); }
+    if (activeView === 'lists') { activeView = 'grid'; setViewBtns(); qs('#my-lists-btn')?.classList.remove('active'); }
     refreshFilterPanel();
     refreshGrid();
   };
@@ -440,6 +510,7 @@ function buildAthletesPage() {
   window.filterByCountry = function(country) {
     activeCountry = country;
     if (activeView === 'map') { activeView = 'grid'; setViewBtns(); qs('#ath-map-btn')?.classList.remove('active'); }
+    if (activeView === 'lists') { activeView = 'grid'; setViewBtns(); qs('#my-lists-btn')?.classList.remove('active'); }
     refreshFilterPanel();
     refreshGrid();
   };
@@ -447,6 +518,7 @@ function buildAthletesPage() {
   window.sortAthletes = function(sort) {
     if (activeView === 'map') { activeView = 'grid'; setViewBtns(); }
     if (activeView === 'list') { activeView = 'grid'; setViewBtns(); }
+    if (activeView === 'lists') { activeView = 'grid'; setViewBtns(); qs('#my-lists-btn')?.classList.remove('active'); }
     myAthletesActive = false;
     qs('#my-athletes-btn')?.classList.remove('active');
     activeSort = sort;
@@ -460,6 +532,7 @@ function buildAthletesPage() {
   window.toggleMyAthletes = window._showMyAthletes = function() {
     myAthletesActive = true;
     if (activeView === 'map') { activeView = 'grid'; setViewBtns(); qs('#ath-map-btn')?.classList.remove('active'); }
+    if (activeView === 'lists') { activeView = 'grid'; setViewBtns(); }
     document.querySelectorAll('.ath-page-sort').forEach(b => b.classList.remove('active'));
     qs('#my-athletes-btn')?.classList.add('active');
     refreshGrid();
@@ -482,6 +555,7 @@ function buildAthletesPage() {
     qs('#my-athletes-btn')?.classList.remove('active');
     document.querySelectorAll('.ath-page-sort[data-sort]').forEach(b => b.classList.remove('active'));
     if (activeView === 'map') { activeView = 'grid'; setViewBtns(); qs('#ath-map-btn')?.classList.remove('active'); }
+    if (activeView === 'lists') { activeView = 'grid'; setViewBtns(); qs('#my-lists-btn')?.classList.remove('active'); }
     refreshFilterPanel();
     refreshGrid();
   };
@@ -492,6 +566,78 @@ function buildAthletesPage() {
     }
     refreshFilterPanel();
     refreshGrid();
+  };
+
+  window.toggleAthleteLists = function() {
+    const btn = qs('#my-lists-btn');
+    const wasLists = activeView === 'lists';
+    if (wasLists) {
+      activeView = 'grid';
+      btn?.classList.remove('active');
+      document.querySelectorAll('.ath-page-sort[data-sort]').forEach(b => b.classList.toggle('active', b.dataset.sort === activeSort));
+      setViewBtns();
+    } else {
+      activeView = 'lists';
+      myAthletesActive = false;
+      document.querySelectorAll('.ath-page-sort').forEach(b => b.classList.remove('active'));
+      qs('#ath-map-btn')?.classList.remove('active');
+      btn?.classList.add('active');
+      setViewBtns();
+    }
+    refreshGrid();
+  };
+
+  window.athListsCreate = async function() {
+    const input = qs('#acct-new-list-input');
+    const name = input?.value.trim();
+    if (!name) return;
+    await createList(name);
+    if (input) input.value = '';
+  };
+
+  window.athListsRename = async function(listId) {
+    const list = (typeof getLists === 'function' ? getLists() : []).find(l => l.id === listId);
+    const next = prompt('Rename list', list ? list.name : '');
+    if (next === null) return;
+    await renameList(listId, next);
+  };
+
+  window.athListsDelete = async function(listId) {
+    const list = (typeof getLists === 'function' ? getLists() : []).find(l => l.id === listId);
+    if (!confirm(`Delete "${list ? list.name : 'this list'}"? This can't be undone.`)) return;
+    await deleteList(listId);
+  };
+
+  window.athListsRemove = async function(listId, athleteId) {
+    await toggleListMember(listId, athleteId);
+  };
+
+  window.athListsSearch = function(input, listId) {
+    const q = input.value.trim().toLowerCase();
+    const dd = document.getElementById(`acct-list-dropdown-${listId}`);
+    if (!dd) return;
+    if (!q) { dd.innerHTML = ''; return; }
+    const memberIds = new Set(typeof getListMemberIds === 'function' ? getListMemberIds(listId) : []);
+    const matches = Object.values(ATHLETES)
+      .filter(a => a.name && !memberIds.has(a.id) && a.name.toLowerCase().includes(q))
+      .slice(0, 8);
+    dd.innerHTML = matches.length
+      ? matches.map(a => `<div class="acct-list-search-item" onmousedown="event.preventDefault();athListsAddToList('${listId}','${a.id}')">${a.name}</div>`).join('')
+      : '<div class="acct-list-search-empty">No matches</div>';
+  };
+
+  window.athListsShowDropdown = function(listId) {
+    const dd = document.getElementById(`acct-list-dropdown-${listId}`);
+    if (dd && dd.innerHTML) dd.style.display = '';
+  };
+
+  window.athListsHideDropdown = function(listId) {
+    const dd = document.getElementById(`acct-list-dropdown-${listId}`);
+    if (dd) dd.style.display = 'none';
+  };
+
+  window.athListsAddToList = async function(listId, athleteId) {
+    await toggleListMember(listId, athleteId);
   };
 
   window.toggleAthleteMap = function() {
