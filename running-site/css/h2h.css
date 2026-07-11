@@ -268,6 +268,26 @@
   opacity: 0.7;
 }
 
+/* Fun persona tags — race-frequency based, see _h2hPersonaTag() */
+.h2h-persona-tag {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 2px 6px;
+  white-space: nowrap;
+  cursor: help;
+}
+.h2h-persona-tag--loves {
+  background: var(--accent);
+  color: #fff;
+}
+.h2h-persona-tag--homebody {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
 /* Beat chips in athlete cell */
 .h2h-lb-beat-chips {
   display: flex;

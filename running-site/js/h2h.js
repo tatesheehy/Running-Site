@@ -29,6 +29,28 @@ function _isRankedAthlete(id) {
   );
 }
 
+// Fun persona tag for the leaderboard, based on this season's race count.
+// Thresholds are picked off the real distribution (median ~10 races):
+// 20+ is a real outlier on the busy end, 1-4 on the sparse end.
+function _h2hPersonaTag(a) {
+  const races = (a.results || []).length;
+  if (races >= 20) {
+    return {
+      cls: 'loves',
+      label: 'Loves racing!',
+      title: `Raced ${races} times this season — one of the busiest race schedules tracked.`,
+    };
+  }
+  if (races >= 1 && races <= 4 && _isRankedAthlete(a.id)) {
+    return {
+      cls: 'homebody',
+      label: 'Homebody',
+      title: `Raced just ${races} time${races === 1 ? '' : 's'} this season — picks their races carefully.`,
+    };
+  }
+  return null;
+}
+
 function buildH2HPage() {
   _h2hLbYear       = '2026';
   _h2hLbEvent      = 'all';
@@ -182,6 +204,8 @@ function _renderH2HPage() {
                             return `<span class="h2h-lb-beat-chip">${n}<span class="h2h-lb-beat-rec">&thinsp;${m.wins}–${m.losses}</span></span>`;
                           }).join('');
 
+                        const persona = _h2hPersonaTag(a);
+
                         return `
                           <tr class="h2h-lb-row ${rankClass}" id="h2h-row-${id}" onclick="h2hToggleExpand('${id}')">
                             <td class="h2h-lb-td h2h-lb-td--rank"${rankColor ? ` style="box-shadow:inset 4px 0 0 ${rankColor}"` : ''}>
@@ -191,6 +215,7 @@ function _renderH2HPage() {
                               <div class="h2h-lb-ath-info">
                                 <div class="h2h-lb-ath-name-row">
                                   <span class="h2h-lb-name h2h-lb-name--link" onclick="event.stopPropagation();openAthleteCard('${id}',null)">${a.name}</span>
+                                  ${persona ? `<span class="h2h-persona-tag h2h-persona-tag--${persona.cls}" title="${persona.title}">${persona.label}</span>` : ''}
                                 </div>
                                 <div class="h2h-lb-ath-sub">
                                   <span class="h2h-lb-country">${renderFlag(a.flag)} ${a.country || ''}</span>
