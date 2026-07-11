@@ -899,6 +899,20 @@ function _renderFindResults() {
 }
 
 function _renderFindSection() {
+  const user = typeof getCurrentUser === 'function' && getCurrentUser();
+  if (!user) {
+    return `
+      <div class="h2h-compare-section h2h-find-section">
+        <div class="h2h-compare-hd">
+          <span class="h2h-compare-title">Find Shared Races Tool</span>
+        </div>
+        <div class="h2h-tool-signin-gate">
+          <p>Sign in to use the Find Shared Races Tool.</p>
+          <button onclick="openAuthModal()">Sign In</button>
+        </div>
+      </div>`;
+  }
+
   const pickersHtml = Array.from({ length: _H2H_FIND_SLOTS })
     .map((_, i) => `<div class="h2h-compare-picker h2h-find-picker">${_renderFindPicker(i)}</div>`)
     .join('');

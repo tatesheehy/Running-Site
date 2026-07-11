@@ -58,6 +58,7 @@ function _syncFavBtns() {
 function _syncListUI() {
   if (typeof window._refreshMyAthletes === 'function') window._refreshMyAthletes();
   if (typeof window._refreshListModal === 'function') window._refreshListModal();
+  if (typeof window._refreshAthleteListsPanel === 'function') window._refreshAthleteListsPanel();
 }
 
 async function initAuth() {
