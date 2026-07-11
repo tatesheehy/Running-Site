@@ -4,11 +4,12 @@
 
 let _h2hLbYear       = '2026';
 let _h2hLbEvent      = 'all';
-let _h2hLbRankedOnly = true;
+let _h2hLbRankedOnly = false;
 let _h2hLbView       = 'table';
 let _h2hCmpA         = null;
 let _h2hCmpB         = null;
 let _h2hFindIds      = [null, null, null, null, null];
+let _h2hFindGo       = false;
 let _h2hSearch       = '';
 const _h2hDetailMode = {};   // athleteId → 'beaten' | 'lost'
 let _h2hCurrentRecs  = {};   // athleteId → rec (cached for toggle re-render)
@@ -31,9 +32,10 @@ function _isRankedAthlete(id) {
 function buildH2HPage() {
   _h2hLbYear       = '2026';
   _h2hLbEvent      = 'all';
-  _h2hLbRankedOnly = true;
+  _h2hLbRankedOnly = false;
   _h2hLbView       = 'table';
   _h2hFindIds      = [null, null, null, null, null];
+  _h2hFindGo       = false;
   _renderH2HPage();
 }
 
@@ -807,6 +809,8 @@ function _renderFindPicker(slot) {
 }
 
 function _renderFindResults() {
+  if (!_h2hFindGo) return '';
+
   const races = _computeSharedRaces(_h2hFindIds);
   const selectedCount = _h2hFindIds.filter(Boolean).length;
 
@@ -840,25 +844,38 @@ function _renderFindSection() {
   const pickersHtml = Array.from({ length: _H2H_FIND_SLOTS })
     .map((_, i) => `<div class="h2h-compare-picker h2h-find-picker">${_renderFindPicker(i)}</div>`)
     .join('');
+  const selectedCount = _h2hFindIds.filter(Boolean).length;
+  const canGo = selectedCount >= 2;
 
   return `
     <div class="h2h-compare-section h2h-find-section">
       <div class="h2h-compare-hd">
-        <span class="h2h-compare-title">Find Shared Races</span>
+        <span class="h2h-compare-title">Find Shared Races Tool</span>
       </div>
       <div class="h2h-find-sentence">${_findSentence(_h2hFindIds)}</div>
       <div class="h2h-find-pickers">${pickersHtml}</div>
+      <div class="h2h-find-go-wrap">
+        <button class="h2h-find-go-btn" onclick="h2hFindGoClick()" ${canGo ? '' : 'disabled'}>Find me the races!</button>
+      </div>
       ${_renderFindResults()}
     </div>`;
 }
 
+window.h2hFindGoClick = () => {
+  if (_h2hFindIds.filter(Boolean).length < 2) return;
+  _h2hFindGo = true;
+  _renderH2HPage();
+};
+
 window.h2hFindSelect = (slot, id) => {
   _h2hFindIds[slot] = id;
+  _h2hFindGo = false;
   _renderH2HPage();
 };
 
 window.h2hFindClear = (slot) => {
   _h2hFindIds[slot] = null;
+  _h2hFindGo = false;
   _renderH2HPage();
 };
 
@@ -923,7 +940,7 @@ function _renderCompareSection() {
   return `
     <div class="h2h-compare-section">
       <div class="h2h-compare-hd">
-        <span class="h2h-compare-title">Compare Athletes</span>
+        <span class="h2h-compare-title">Compare Athletes Tool</span>
       </div>
       <div class="h2h-compare-pickers">
         <div class="h2h-compare-picker">${_renderComparePicker('a')}</div>

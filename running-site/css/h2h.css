@@ -895,25 +895,27 @@
 
 .h2h-compare-section {
   border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
   border-radius: 8px;
-  overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 3px 14px rgba(0,0,0,0.07);
 }
 
 .h2h-compare-hd {
   display: flex;
   align-items: center;
-  padding: 10px 16px;
+  gap: 8px;
+  padding: 14px 16px;
   border-bottom: 1px solid var(--border);
   background: var(--bg-light);
 }
 
 .h2h-compare-title {
-  font-size: 10px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--text);
 }
 
 .h2h-compare-pickers {
@@ -1037,6 +1039,31 @@
 .h2h-find-picker {
   flex: 1 1 160px;
   min-width: 140px;
+}
+
+.h2h-find-go-wrap {
+  padding: 0 16px 16px;
+}
+
+.h2h-find-go-btn {
+  width: 100%;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: opacity 0.12s;
+}
+.h2h-find-go-btn:hover:not(:disabled) { opacity: 0.85; }
+.h2h-find-go-btn:disabled {
+  background: var(--bg-light);
+  color: var(--muted);
+  cursor: not-allowed;
 }
 
 .h2h-find-results {
@@ -1273,11 +1300,11 @@
   background: var(--bg-light);
   border-bottom-color: var(--border);
 }
-.h2h-rivalries-title,
-.h2h-compare-title {
+.h2h-rivalries-title {
   font-family: var(--font-mono);
   color: rgba(0, 0, 0, 0.6);
 }
+.h2h-compare-title { font-family: var(--font-mono); }
 .h2h-rivalries-dot { background: var(--accent); }
 .h2h-rivalries-season { font-family: var(--font-mono); color: rgba(0, 0, 0, 0.35); }
 
