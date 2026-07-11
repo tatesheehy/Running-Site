@@ -270,22 +270,73 @@
 
 /* Fun persona tags — race-frequency based, see _h2hPersonaTag() */
 .h2h-persona-tag {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
   font-family: var(--font-mono);
   font-size: 9px;
   font-weight: 700;
-  letter-spacing: 0.03em;
-  padding: 2px 6px;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  padding: 4px 7px;
+  border: 1px solid transparent;
   white-space: nowrap;
   cursor: help;
 }
 .h2h-persona-tag--loves {
-  background: var(--accent);
-  color: #fff;
+  background: rgba(232, 80, 10, 0.1);
+  border-color: rgba(232, 80, 10, 0.4);
+  color: var(--accent);
 }
 .h2h-persona-tag--homebody {
-  background: none;
-  border: 1px solid var(--border);
-  color: var(--muted);
+  background: rgba(17, 17, 17, 0.06);
+  border-color: rgba(17, 17, 17, 0.3);
+  color: var(--text);
+}
+
+/* Custom tooltip — native title attrs are slow/inconsistent, so show our
+   own bubble on hover instead, driven by the data-tip attribute. */
+.h2h-persona-tag[data-tip]::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: calc(100% + 7px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 220px;
+  background: var(--dark);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: normal;
+  padding: 7px 10px;
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.12s;
+  pointer-events: none;
+}
+.h2h-persona-tag[data-tip]::before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% + 3px);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid transparent;
+  border-top-color: var(--dark);
+  z-index: 50;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.12s;
+  pointer-events: none;
+}
+.h2h-persona-tag[data-tip]:hover::after,
+.h2h-persona-tag[data-tip]:hover::before {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Beat chips in athlete cell */

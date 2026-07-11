@@ -215,7 +215,7 @@ function _renderH2HPage() {
                               <div class="h2h-lb-ath-info">
                                 <div class="h2h-lb-ath-name-row">
                                   <span class="h2h-lb-name h2h-lb-name--link" onclick="event.stopPropagation();openAthleteCard('${id}',null)">${a.name}</span>
-                                  ${persona ? `<span class="h2h-persona-tag h2h-persona-tag--${persona.cls}" title="${persona.title}">${persona.label}</span>` : ''}
+                                  ${persona ? `<span class="h2h-persona-tag h2h-persona-tag--${persona.cls}" data-tip="${persona.title}">${persona.label}</span>` : ''}
                                 </div>
                                 <div class="h2h-lb-ath-sub">
                                   <span class="h2h-lb-country">${renderFlag(a.flag)} ${a.country || ''}</span>
