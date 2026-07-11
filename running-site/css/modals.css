@@ -275,6 +275,26 @@
 .card-fav-btn.favorited { color: var(--accent); }
 .card-fav-btn.favorited svg { fill: var(--accent); }
 
+/* Small inline heart used in row-based lists (Athletes list view, H2H
+   leaderboard, Rankings terminal) — same favorite/toggleFavorite() wiring
+   as the grid/card hearts, just sized to sit inline next to a name. */
+.inline-fav-btn {
+  background: none;
+  border: none;
+  padding: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  color: var(--border);
+  transition: color 0.15s;
+}
+.inline-fav-btn svg { width: 13px; height: 13px; }
+.inline-fav-btn:hover { color: var(--muted); }
+.inline-fav-btn.favorited { color: var(--accent); }
+.inline-fav-btn.favorited svg { fill: var(--accent); }
+
 /* My Athletes sort button heart icon */
 .ath-page-sort.my-athletes-btn svg { vertical-align: -2px; margin-right: 3px; }
 

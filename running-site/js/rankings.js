@@ -513,6 +513,7 @@ function buildTerminalItem(r, rank, leaderPbSecs) {
   `).join('') || '<div class="rdt-dd-empty">No races logged yet.</div>';
 
   const wins = (a?.results || []).filter(res => (res.place || '').replace(/\.$/, '') === '1').length;
+  const faved = r.athleteId && typeof isFavorited === 'function' && isFavorited(r.athleteId);
 
   return `
     <div class="rdt-item" data-country="${country}" data-name="${name.toLowerCase()}"
@@ -521,7 +522,14 @@ function buildTerminalItem(r, rank, leaderPbSecs) {
       <div class="rdt-row" onclick="toggleRdtDetail(this)">
         <div class="rdt-rk ${rankClass}">${rank}</div>
         <div class="rdt-flag">${renderFlag(flag)}</div>
-        <div class="rdt-nm-wrap"><span class="rdt-nm">${name}</span><span class="rdt-ct">${country}</span></div>
+        <div class="rdt-nm-wrap">
+          <span class="rdt-nm-line">
+            ${r.athleteId ? `<button class="inline-fav-btn${faved ? ' favorited' : ''}" data-fav-id="${r.athleteId}"
+              onclick="event.stopPropagation();toggleFavorite('${r.athleteId}')" aria-label="Save ${name}">${_FAV_HEART}</button>` : ''}
+            <span class="rdt-nm">${name}</span>
+          </span>
+          <span class="rdt-ct">${country}</span>
+        </div>
         <div class="rdt-c dim">${seasonBest && seasonBest !== '—' ? seasonBest : '—'}</div>
         <div class="rdt-c hi">${meta.pb || '—'}</div>
         <div class="rdt-c rdt-gap${gapSecs === 0 ? ' zero' : ''}">${gapStr}</div>

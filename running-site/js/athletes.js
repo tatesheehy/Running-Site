@@ -184,6 +184,7 @@ function buildAthletesPage() {
 
     const rows = list.map((a, i) => {
       const age = a.dob ? calcAgeFromDob(a.dob) : (a.age || '—');
+      const faved = typeof isFavorited === 'function' && isFavorited(a.id);
       const eventCells = _activeEventCols.map(e => {
         const v = getPr(a, e.key) || '—';
         return `<td class="ath-list-td ath-list-pr${v === '—' ? ' dim' : ''}">${v}</td>`;
@@ -191,6 +192,8 @@ function buildAthletesPage() {
       return `<tr class="ath-list-row" onclick="openAthleteCard('${a.id}', null)" tabindex="0">
         <td class="ath-list-td ath-list-name">
           <span class="ath-list-num">${i + 1}</span>
+          <button class="inline-fav-btn${faved ? ' favorited' : ''}" data-fav-id="${a.id}"
+            onclick="event.stopPropagation();toggleFavorite('${a.id}')" aria-label="Save ${a.name}">${_FAV_HEART}</button>
           ${renderFlag(a.flag)}
           <span class="ath-list-athlete-name">${a.name}</span>
         </td>

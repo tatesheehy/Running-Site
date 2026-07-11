@@ -205,6 +205,7 @@ function _renderH2HPage() {
                           }).join('');
 
                         const persona = _h2hPersonaTag(a);
+                        const faved = typeof isFavorited === 'function' && isFavorited(id);
 
                         return `
                           <tr class="h2h-lb-row ${rankClass}" id="h2h-row-${id}" onclick="h2hToggleExpand('${id}')">
@@ -214,6 +215,8 @@ function _renderH2HPage() {
                             <td class="h2h-lb-td h2h-lb-td--athlete">
                               <div class="h2h-lb-ath-info">
                                 <div class="h2h-lb-ath-name-row">
+                                  <button class="inline-fav-btn${faved ? ' favorited' : ''}" data-fav-id="${id}"
+                                    onclick="event.stopPropagation();toggleFavorite('${id}')" aria-label="Save ${a.name}">${_FAV_HEART}</button>
                                   <span class="h2h-lb-name h2h-lb-name--link" onclick="event.stopPropagation();openAthleteCard('${id}',null)">${a.name}</span>
                                   ${persona ? `<span class="h2h-persona-tag h2h-persona-tag--${persona.cls}" data-tip="${persona.title}">${persona.label}</span>` : ''}
                                 </div>
