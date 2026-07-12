@@ -166,7 +166,7 @@ function trendRow(c) {
   const cls = c.isPB ? 'fp-trend--pb' : c.isDominant ? 'fp-trend--dominant' : 'fp-trend--prominent';
   return `
     <div class="fp-trend-row ${cls}" onclick="openAthleteCard('${a.id}', null)" role="button" tabindex="0">
-      <span class="cat-tag fp-trend-tag">${_trendTypeTag(c)}</span>
+      <span class="fp-trend-tag">${_trendTypeTag(c)}</span>
       <span class="fp-trend-row-name">${renderFlag(a.flag)} ${a.name}</span>
       <span class="fp-trend-row-stat">${r.event.trim()} · ${r.time}${r.place ? ` · ${r.place.replace(/\.$/, '')}` : ''}</span>
       <span class="fp-trend-row-meta">${r.meet}${r.date ? ` · ${r.date}` : ''}</span>

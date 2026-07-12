@@ -630,12 +630,13 @@
 .fp-top {
   display: grid;
   grid-template-columns: 3fr 2fr;
+  gap: 48px;
+  padding-bottom: 32px;
   border-bottom: 1px solid var(--border);
 }
 
 .fp-hero {
-  padding: 0 0 0 0;
-  border-right: 1px solid var(--border);
+  padding: 0;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -715,11 +716,10 @@
 .fp-rail {
   display: flex;
   flex-direction: column;
+  gap: 28px;
 }
 .fp-rail-item {
   flex: 0 0 auto;
-  padding: 18px 0 18px 24px;
-  border-bottom: 1px solid var(--border);
   cursor: pointer;
 }
 .fp-rail-item:hover .fp-rail-hed { color: var(--accent); }
@@ -790,7 +790,7 @@
 
 /* Rankings widget inside the right rail: dense sidebar module */
 .fp-rail .fp-rankings {
-  padding: 18px 0 22px 24px;
+  padding: 0;
   flex: 1;
 }
 .fp-rail .fp-rank-hd {
@@ -847,9 +847,9 @@
 
 /* ── TRENDING PERFORMANCES ────────────────────────────────── */
 .fp-trending {
-  padding: 24px 0 4px;
+  padding: 32px 0 40px;
 }
-.fp-trending-hd { margin-bottom: 10px; }
+.fp-trending-hd { margin-bottom: 14px; }
 .fp-trending-title {
   font-family: var(--font-display);
   font-size: 13px;
@@ -867,20 +867,24 @@
 .fp-trend-row {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 10px 0;
-  border-top: 1px solid var(--border);
+  gap: 14px;
+  padding: 11px 12px;
   cursor: pointer;
   transition: background 0.12s;
 }
-.fp-trend-row:hover { background: var(--bg-light); }
+.fp-trend-row:nth-child(even) { background: var(--bg-light); }
+.fp-trend-row:hover { background: #efefef; }
 
 .fp-trend-tag {
   flex-shrink: 0;
-  background: var(--accent);
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  width: 82px;
 }
-.fp-trend-row.fp-trend--dominant .fp-trend-tag { background: var(--dark); }
-.fp-trend-row.fp-trend--prominent .fp-trend-tag { background: #B8860B; }
+.fp-trend-row.fp-trend--pb .fp-trend-tag { color: var(--accent); }
 
 .fp-trend-row-name {
   font-family: var(--font-display);
