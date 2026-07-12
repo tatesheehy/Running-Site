@@ -155,40 +155,21 @@ function _buildTrendingPerformances(limit = 4) {
     .slice(0, limit);
 }
 
-function _trendBlurb(c) {
-  const parts = [];
-  if (c.isPB) parts.push('a new personal best');
-  if (c.isDominant) parts.push(`a dominant win by ${c.marginLabel}`);
-  if (c.isProminent) parts.push(c.tier === 3 ? 'a major championship result' : 'a statement on the Diamond League circuit');
-  if (!parts.length) return '';
-  const joined = parts.length === 1 ? parts[0]
-    : parts.length === 2 ? parts.join(' and ')
-    : `${parts.slice(0, -1).join(', ')}, and ${parts[parts.length - 1]}`;
-  return joined.charAt(0).toUpperCase() + joined.slice(1) + '.';
-}
-
 function _trendTypeTag(c) {
   if (c.isPB) return _TREND_TYPE_LABELS.pb;
   if (c.isDominant) return _TREND_TYPE_LABELS.dominant;
   return _TREND_TYPE_LABELS.prominent;
 }
 
-function trendCard(c) {
+function trendRow(c) {
   const a = c.athlete, r = c.result;
   const cls = c.isPB ? 'fp-trend--pb' : c.isDominant ? 'fp-trend--dominant' : 'fp-trend--prominent';
-  const img = imgHTML(a.photo, a.name, '', 16 / 10, 'fp-trend-photo-img');
   return `
-    <div class="fp-trend-card reveal ${cls}" onclick="openAthleteCard('${a.id}', null)" role="button" tabindex="0">
-      <div class="fp-trend-photo-wrap" style="${a.photoBackground ? `background-color:${a.photoBackground}` : ''}">
-        ${img}
-        <span class="cat-tag fp-trend-tag">${_trendTypeTag(c)}</span>
-      </div>
-      <div class="fp-trend-body">
-        <div class="fp-trend-name">${renderFlag(a.flag)} ${a.name}</div>
-        <div class="fp-trend-stat">${r.event.trim()} · ${r.time}${r.place ? ` · ${r.place.replace(/\.$/, '')}` : ''}</div>
-        <p class="fp-trend-blurb">${_trendBlurb(c)}</p>
-        <div class="fp-trend-meta">${r.meet}${r.date ? ` · ${r.date}` : ''}</div>
-      </div>
+    <div class="fp-trend-row ${cls}" onclick="openAthleteCard('${a.id}', null)" role="button" tabindex="0">
+      <span class="cat-tag fp-trend-tag">${_trendTypeTag(c)}</span>
+      <span class="fp-trend-row-name">${renderFlag(a.flag)} ${a.name}</span>
+      <span class="fp-trend-row-stat">${r.event.trim()} · ${r.time}${r.place ? ` · ${r.place.replace(/\.$/, '')}` : ''}</span>
+      <span class="fp-trend-row-meta">${r.meet}${r.date ? ` · ${r.date}` : ''}</span>
     </div>`;
 }
 
@@ -200,7 +181,7 @@ function buildTrendingSection() {
       <div class="fp-trending-hd">
         <span class="fp-trending-title">Trending Performances</span>
       </div>
-      <div class="fp-trending-row">${items.map(trendCard).join('')}</div>
+      <div class="fp-trending-list">${items.map(trendRow).join('')}</div>
     </div>`;
 }
 
@@ -272,7 +253,6 @@ function buildHome() {
   document.getElementById('main').innerHTML = `
     <div class="fp-wrap">
       ${tickerHtml}
-      ${buildTrendingSection()}
       <div class="fp-body">
         <div class="fp-top">
           ${heroItem ? `
@@ -287,6 +267,7 @@ function buildHome() {
           </div>` : ''}
           <div class="fp-rail">${railHtml}${rankingsHtml}</div>
         </div>
+        ${buildTrendingSection()}
       </div>
     </div>`;
 
