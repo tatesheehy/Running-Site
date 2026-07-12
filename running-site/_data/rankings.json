@@ -16,8 +16,11 @@
           "seasonBest": "x",
           "meet": "x",
           "momentum": 3,
-          "traits": ["Locked In", "The Threat"],
-          "bite": "The defending world champion who turns middle distance into a strength competition — and usually wins."
+          "traits": [
+            "Locked In",
+            "The Threat"
+          ],
+          "bite": "The defending world champion who turns middle distance into a strength competition \u2014 and usually wins."
         },
         {
           "rank": 10,
@@ -28,8 +31,11 @@
           "seasonBest": "3:30.11",
           "meet": "BAUHAUS-Galan",
           "momentum": 6,
-          "traits": ["Rising", "Under the Radar"],
-          "bite": "America's best miler — silky smooth and dangerous in the final 200."
+          "traits": [
+            "Rising",
+            "Under the Radar"
+          ],
+          "bite": "America's best miler \u2014 silky smooth and dangerous in the final 200."
         },
         {
           "rank": 7,
@@ -40,7 +46,10 @@
           "seasonBest": "3:28.00",
           "meet": "Meeting de Paris",
           "momentum": 2,
-          "traits": ["Breakthrough", "Watch This Space"],
+          "traits": [
+            "Breakthrough",
+            "Watch This Space"
+          ],
           "bite": "The teenage Australian who ran 3:28 and made everyone recalibrate their expectations."
         },
         {
@@ -52,7 +61,9 @@
           "seasonBest": "x",
           "meet": "x",
           "momentum": 1,
-          "traits": ["Locked In"],
+          "traits": [
+            "Locked In"
+          ],
           "bite": "Olympic champion with a kick that ends races in the last 100 meters."
         },
         {
@@ -64,8 +75,11 @@
           "seasonBest": "3:30.43",
           "meet": "Rabat DL",
           "momentum": -3,
-          "traits": ["Under the Radar", "Vulnerable"],
-          "bite": "The most underrated man in the event — consistent, unflappable, and always in contention."
+          "traits": [
+            "Under the Radar",
+            "Vulnerable"
+          ],
+          "bite": "The most underrated man in the event \u2014 consistent, unflappable, and always in contention."
         },
         {
           "rank": 6,
@@ -76,7 +90,10 @@
           "seasonBest": "x",
           "meet": "x",
           "momentum": 2,
-          "traits": ["Breakthrough", "Watch This Space"]
+          "traits": [
+            "Breakthrough",
+            "Watch This Space"
+          ]
         },
         {
           "rank": 8,
@@ -87,7 +104,9 @@
           "seasonBest": "x",
           "meet": "x",
           "momentum": -2,
-          "traits": ["Fading"]
+          "traits": [
+            "Fading"
+          ]
         },
         {
           "rank": 5,
@@ -98,7 +117,9 @@
           "seasonBest": "x",
           "meet": "x",
           "momentum": 0,
-          "traits": ["Need to See More"]
+          "traits": [
+            "Need to See More"
+          ]
         },
         {
           "rank": 11,
@@ -109,7 +130,10 @@
           "meet": "x",
           "athleteId": "mohamed-attaoui",
           "momentum": 3,
-          "traits": ["Dark Horse", "Rising"]
+          "traits": [
+            "Dark Horse",
+            "Rising"
+          ]
         },
         {
           "rank": 12,
@@ -120,7 +144,10 @@
           "meet": "x",
           "athleteId": "hobbs-kessler",
           "momentum": 1,
-          "traits": ["Comeback Season", "Need to See More"]
+          "traits": [
+            "Comeback Season",
+            "Need to See More"
+          ]
         },
         {
           "rank": 13,
@@ -165,8 +192,146 @@
       "name": "5000m",
       "description": "Strength plus speed.",
       "photo": "",
-      "underConstruction": true,
-      "rows": []
+      "rows": [
+        {
+          "rank": 1,
+          "athleteId": "addisu-yihune",
+          "name": "Addisu Yihune",
+          "country": "Ethiopia",
+          "flag": "ET",
+          "seasonBest": "12:47.62",
+          "meet": "Oslo Bislett Games"
+        },
+        {
+          "rank": 2,
+          "athleteId": "birhanu-balew",
+          "name": "Birhanu Balew",
+          "country": "Bahrain",
+          "flag": "BH",
+          "seasonBest": "12:47.73",
+          "meet": "Oslo Bislett Games"
+        },
+        {
+          "rank": 3,
+          "athleteId": "andreas-almgren",
+          "name": "Andreas Almgren",
+          "country": "Sweden",
+          "flag": "SE",
+          "seasonBest": "12:48.61",
+          "meet": "Oslo Bislett Games"
+        },
+        {
+          "rank": 4,
+          "athleteId": "parker-wolfe",
+          "name": "Parker Wolfe",
+          "country": "United States",
+          "flag": "US",
+          "seasonBest": "12:49.45",
+          "meet": "Oslo Bislett Games"
+        },
+        {
+          "rank": 5,
+          "athleteId": "grant-fisher",
+          "name": "Grant Fisher",
+          "country": "United States",
+          "flag": "US",
+          "seasonBest": "12:49.61",
+          "meet": "Oslo Bislett Games"
+        },
+        {
+          "rank": 6,
+          "athleteId": "graham-blanks",
+          "name": "Graham Blanks",
+          "country": "United States",
+          "flag": "US",
+          "seasonBest": "12:49.99",
+          "meet": "Oslo Bislett Games"
+        },
+        {
+          "rank": 7,
+          "athleteId": "mezgebu-sime",
+          "name": "Mezgebu Sime",
+          "country": "Ethiopia",
+          "flag": "ET",
+          "seasonBest": "12:50.17",
+          "meet": "Oslo Bislett Games"
+        },
+        {
+          "rank": 8,
+          "athleteId": "ky-robinson",
+          "name": "Ky Robinson",
+          "country": "Australia",
+          "flag": "AU",
+          "seasonBest": "12:50.82",
+          "meet": "Oslo Bislett Games"
+        },
+        {
+          "rank": 9,
+          "athleteId": "dominic-lokinyomo-lobalu",
+          "name": "Dominic Lokinyomo Lobalu",
+          "country": "Switzerland",
+          "flag": "CH",
+          "seasonBest": "12:52.54",
+          "meet": "Meeting International d\u2019Athl\u00e9tisme Herculis EBS"
+        },
+        {
+          "rank": 10,
+          "athleteId": "jacob-krop",
+          "name": "Jacob Krop",
+          "country": "Kenya",
+          "flag": "KE",
+          "seasonBest": "12:53.71",
+          "meet": "Meeting International d\u2019Athl\u00e9tisme Herculis EBS"
+        },
+        {
+          "rank": 11,
+          "athleteId": "biniam-mehary",
+          "name": "Biniam Mehary",
+          "country": "Ethiopia",
+          "flag": "ET",
+          "seasonBest": "12:54.35",
+          "meet": "Oslo Bislett Games"
+        },
+        {
+          "rank": 12,
+          "athleteId": "cornelius-kemboi",
+          "name": "Cornelius Kemboi",
+          "country": "Kenya",
+          "flag": "KE",
+          "seasonBest": "12:56.02",
+          "meet": "Oslo Bislett Games"
+        },
+        {
+          "rank": 13,
+          "athleteId": "egide-ntakarutimana",
+          "name": "Egide Ntakarutimana",
+          "country": "Burundi",
+          "flag": "BI",
+          "seasonBest": "12:56.06",
+          "meet": "Meeting de Paris"
+        },
+        {
+          "rank": 14,
+          "athleteId": "florian-bremm",
+          "name": "Florian Bremm",
+          "country": "Germany",
+          "flag": "DE",
+          "seasonBest": "12:56.80",
+          "meet": "Paavo Nurmi Games"
+        },
+        {
+          "rank": 15,
+          "athleteId": "ishmael-rokitto-kipkurui",
+          "name": "Ishmael Rokitto Kipkurui",
+          "country": "Kenya",
+          "flag": "KE",
+          "seasonBest": "12:56.96",
+          "meet": "Oslo Bislett Games"
+        }
+      ],
+      "weekId": "5000m-07-12-2026",
+      "weekLabel": "July 12, 2026",
+      "sections": []
     },
     {
       "name": "10000m",
