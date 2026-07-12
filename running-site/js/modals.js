@@ -676,6 +676,8 @@ function _sameRace(r1, r2) {
 function _stripSplitDupes(results) {
   const norm = s => String(s).trim().toLowerCase();
   const hasPlace = r => String(r.place || '').trim() !== '';
+  const isMile = r => /^mile\b/i.test(String(r.event || '').trim());
+  const is1500 = r => /^1500\s?m\b/i.test(String(r.event || '').trim());
 
   const groups = {};
   results.forEach(r => {
@@ -687,6 +689,15 @@ function _stripSplitDupes(results) {
   const drop = new Set();
   Object.values(groups).forEach(group => {
     if (group.length < 2) return;
+
+    // A Mile and a 1500m at the same meet on the same date is essentially
+    // always the mile's in-race 1500m split point misreported as its own
+    // placed result — drop the 1500m entry even if it carries a place,
+    // since split times sometimes get one assigned too.
+    if (group.some(isMile) && group.some(is1500)) {
+      group.forEach(r => { if (is1500(r)) drop.add(r); });
+    }
+
     if (!group.some(hasPlace)) return; // nothing placed to prefer — leave group alone
     group.forEach(r => { if (!hasPlace(r)) drop.add(r); });
   });
