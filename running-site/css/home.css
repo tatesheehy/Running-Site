@@ -631,7 +631,7 @@
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 48px;
-  padding-bottom: 32px;
+  padding: 28px 0 32px;
   border-bottom: 1px solid var(--border);
 }
 
