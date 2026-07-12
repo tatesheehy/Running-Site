@@ -1,0 +1,126 @@
+{
+  "id": "thomas-ratcliffe",
+  "name": "Thomas Ratcliffe",
+  "flag": "US",
+  "country": "United States",
+  "waUrl": "https://worldathletics.org/athletes/united-states/thomas-ratcliffe-14629436",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "28",
+  "dob": "1997-09-03",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:33.28"
+    },
+    {
+      "event": "Mile",
+      "time": "3:52.27"
+    },
+    {
+      "event": "3000m",
+      "time": "7:37.92"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:11.68"
+    },
+    {
+      "event": "5000m",
+      "time": "13:08.50"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:36.43"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:52.30"
+    },
+    {
+      "event": "2 Miles Short Track",
+      "time": "8:16.55"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:14.64"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:54.0h"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:25.80"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "2 Mi",
+      "time": "8:11.68",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 13",
+      "meet": "USATF LA Grand Prix",
+      "event": "5000 m",
+      "time": "13:08.50",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 8",
+      "meet": "Oregon Twilight",
+      "event": "1500 m",
+      "time": "3:36.53",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Boston University David Hemery Valentine Invitational",
+      "event": "1500 m sh",
+      "time": "3:36.43",
+      "place": "5.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Boston University David Hemery Valentine Invitational",
+      "event": "Mile sh",
+      "time": "3:52.30",
+      "place": "4.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 30",
+      "meet": "UW Invite/Mile City",
+      "event": "Mile",
+      "time": "3:52.27",
+      "place": "2.",
+      "round": "F2"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

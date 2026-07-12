@@ -1,0 +1,162 @@
+{
+  "id": "miguel-angel-martinez",
+  "name": "Miguel Angel Martínez",
+  "flag": "ES",
+  "country": "Spain",
+  "waUrl": "https://worldathletics.org/athletes/spain/miguel-angel-martinez-14834111",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "24",
+  "dob": "2002-05-22",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:39.13"
+    },
+    {
+      "event": "3000m",
+      "time": "7:46.86"
+    },
+    {
+      "event": "5000m",
+      "time": "13:21.61"
+    },
+    {
+      "event": "10000m",
+      "time": "28:53.17"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:41.93"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:46.86"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "14:00"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "28:01"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 8",
+      "meet": "Cork City Sports",
+      "event": "3000 m",
+      "time": "7:49.93",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
+      "date": "JUL 1",
+      "meet": "GP Diputacion Castellon - Memorial Jose Antonio Cansino",
+      "event": "1500 m",
+      "time": "3:41.70",
+      "place": "9.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 27",
+      "meet": "Spanish Championships by Regional Federations",
+      "event": "3000 m",
+      "time": "8:06.20",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 20",
+      "meet": "Track Night Vienna",
+      "event": "5000 m",
+      "time": "13:39.02",
+      "place": "12.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "IFAM Outdoor",
+      "event": "5000 m",
+      "time": "13:31.42",
+      "place": "4.",
+      "round": "F1"
+    },
+    {
+      "date": "APR 18",
+      "meet": "10 km en Ruta Villa de Laredo",
+      "event": "10 Kilom Road",
+      "time": "28:01",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Spanish Indoor Championships",
+      "event": "3000 m sh",
+      "time": "7:53.22",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 27",
+      "meet": "Spanish Indoor Championships",
+      "event": "3000 m sh",
+      "time": "8:13.42",
+      "place": "3.",
+      "round": "H2"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Spanish Indoor Clubs Championships (Joma Trophy and Iberdrola Trophy)",
+      "event": "3000 m sh",
+      "time": "8:17.35",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 8",
+      "meet": "49.º Cross Internacional das Amendoeiras em Flor",
+      "event": "Cross Country",
+      "time": "27:51",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Gran Premio Ciudad de Valencia",
+      "event": "1500 m sh",
+      "time": "3:41.93",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Meeting Indoor de Lyon",
+      "event": "3000 m sh",
+      "time": "7:52.25",
+      "place": "2.",
+      "round": "F1"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

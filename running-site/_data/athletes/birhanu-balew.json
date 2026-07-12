@@ -1,0 +1,126 @@
+{
+  "id": "birhanu-balew",
+  "name": "Birhanu Balew",
+  "flag": "BH",
+  "country": "Bahrain",
+  "waUrl": "https://worldathletics.org/athletes/bahrain/birhanu-balew-14695983",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "DISTANCE",
+  "age": "30",
+  "dob": "1996-02-27",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "2000m",
+      "time": "5:00.34"
+    },
+    {
+      "event": "3000m",
+      "time": "7:29.60"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:20.56"
+    },
+    {
+      "event": "5000m",
+      "time": "12:47.73"
+    },
+    {
+      "event": "10000m",
+      "time": "27:07.49"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "58:23"
+    },
+    {
+      "event": "2000 Metres Short Track",
+      "time": "5:00.34"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:31.77"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:02"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "26:54"
+    },
+    {
+      "event": "15 Kilometres Road",
+      "time": "43:19"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 10",
+      "meet": "Meeting International d’Athlétisme Herculis EBS",
+      "event": "5000 m",
+      "time": "12:52.91",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "5000 m",
+      "time": "12:56.66",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "5000 m",
+      "time": "12:47.73",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "Wanda Diamond League Xiamen",
+      "event": "5000 m",
+      "time": "13:07.75",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Wanda Diamond League",
+      "event": "3000 m",
+      "time": "7:29.60",
+      "place": "12.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Ras Al Khaimah Half Marathon",
+      "event": "Half Marathon",
+      "time": "58:23",
+      "place": "2.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

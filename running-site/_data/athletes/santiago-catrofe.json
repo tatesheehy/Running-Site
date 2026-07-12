@@ -1,0 +1,170 @@
+{
+  "id": "santiago-catrofe",
+  "name": "Santiago Catrofe",
+  "flag": "UR",
+  "country": "uruguay",
+  "waUrl": "https://worldathletics.org/athletes/uruguay/santiago-catrofe-14706109",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "27",
+  "dob": "1999-02-13",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:54.37"
+    },
+    {
+      "event": "1500m",
+      "time": "3:35.82"
+    },
+    {
+      "event": "Mile",
+      "time": "3:55.51"
+    },
+    {
+      "event": "2000m",
+      "time": "5:08.49"
+    },
+    {
+      "event": "3000m",
+      "time": "7:29.72"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:18.09"
+    },
+    {
+      "event": "5000m",
+      "time": "12:59.26"
+    },
+    {
+      "event": "10000m",
+      "time": "28:28.49"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "1:00:21"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:54.37"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:23.01"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:42.94"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:50.03"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:14.0h"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "12:57"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:16"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "2 Mi",
+      "time": "8:18.09",
+      "place": "16.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "5000 m",
+      "time": "13:02.57",
+      "place": "11.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 31",
+      "meet": "Great Manchester Run",
+      "event": "10 Kilom Road",
+      "time": "27:39",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "Wanda Diamond League Xiamen",
+      "event": "5000 m",
+      "time": "13:08.72",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Wanda Diamond League",
+      "event": "3000 m",
+      "time": "7:29.72",
+      "place": "13.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 29",
+      "meet": "Yangzhou Half Marathon",
+      "event": "Half Marathon",
+      "time": "1:00:58",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 15",
+      "meet": "Spanish 10 km Road Running Championships",
+      "event": "10 Kilom Road",
+      "time": "28:02",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 1",
+      "meet": "78th Kagawa Marugame International Half Marathon",
+      "event": "Half Marathon",
+      "time": "1:00:21",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 18",
+      "meet": "LXXXII Elgoibar Cross Country Juan Muguerza Memorial",
+      "event": "Cross Country",
+      "time": "30:15",
+      "place": "5.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

@@ -1,0 +1,94 @@
+{
+  "id": "victor-kimutai",
+  "name": "Victor Kimutai",
+  "flag": "KE",
+  "country": "Kenya",
+  "waUrl": "https://worldathletics.org/athletes/kenya/victor-kimutai-15031040",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "25",
+  "dob": "2000-10-20",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:37.36"
+    },
+    {
+      "event": "3000m",
+      "time": "7:42.44"
+    },
+    {
+      "event": "5000m",
+      "time": "13:11.77"
+    },
+    {
+      "event": "10000m",
+      "time": "27:41.04"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:37"
+    }
+  ],
+  "results": [
+    {
+      "date": "MAY 30",
+      "meet": "Twolaps Middle Distance Circuit",
+      "event": "1500 m",
+      "time": "3:37.36",
+      "place": "3.",
+      "round": "F2"
+    },
+    {
+      "date": "MAY 17",
+      "meet": "SEIKO Golden Grand Prix",
+      "event": "3000 m",
+      "time": "7:42.44",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 4",
+      "meet": "37th Golden Games in Nobeoka",
+      "event": "5000 m",
+      "time": "13:22.20",
+      "place": "13.",
+      "round": "F2"
+    },
+    {
+      "date": "APR 11",
+      "meet": "34rd Kanakuri Memorial Middle and Long Distance Invitational Meet",
+      "event": "5000 m",
+      "time": "13:15.68",
+      "place": "3.",
+      "round": "F4"
+    },
+    {
+      "date": "MAR 21",
+      "meet": "Spring Trial in Waseda",
+      "event": "1500 m",
+      "time": "3:42.66",
+      "place": "1.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

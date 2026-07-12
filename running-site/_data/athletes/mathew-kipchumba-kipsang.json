@@ -1,0 +1,118 @@
+{
+  "id": "mathew-kipchumba-kipsang",
+  "name": "Mathew Kipchumba Kipsang",
+  "flag": "KE",
+  "country": "Kenya",
+  "waUrl": "https://worldathletics.org/athletes/kenya/mathew-kipchumba-kipsang-14909441",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "30",
+  "dob": "1995-11-16",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:47.60"
+    },
+    {
+      "event": "1500m",
+      "time": "3:35.87"
+    },
+    {
+      "event": "1500m",
+      "time": "3:35.87="
+    },
+    {
+      "event": "Mile",
+      "time": "3:56.71"
+    },
+    {
+      "event": "3000m",
+      "time": "7:27.58"
+    },
+    {
+      "event": "5000m",
+      "time": "12:58.61"
+    },
+    {
+      "event": "10000m",
+      "time": "29:54.31"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:18.86"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:38.54"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:38.00"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:08"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "5000 m",
+      "time": "12:58.95",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 20",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "5000 m",
+      "time": "13:45.37",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "Wanda Diamond League Xiamen",
+      "event": "5000 m",
+      "time": "13:12.82",
+      "place": "11.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Wanda Diamond League",
+      "event": "3000 m",
+      "time": "7:27.58",
+      "place": "6.",
+      "round": "F"
+    },
+    {
+      "date": "APR 24",
+      "meet": "Kip Keino Classic",
+      "event": "1500 m",
+      "time": "3:36.27",
+      "place": "4.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

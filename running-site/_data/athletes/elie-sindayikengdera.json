@@ -1,0 +1,122 @@
+{
+  "id": "elie-sindayikengdera",
+  "name": "Elie Sindayikengdera",
+  "flag": "BI",
+  "country": "Burundi",
+  "waUrl": "https://worldathletics.org/athletes/burundi/elie-sindayikengdera-15099598",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "22",
+  "dob": "2004-01-01",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:41.64"
+    },
+    {
+      "event": "3000m",
+      "time": "7:46.67"
+    },
+    {
+      "event": "5000m",
+      "time": "13:01.96"
+    },
+    {
+      "event": "10000m",
+      "time": "29:38.61"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "28:28"
+    },
+    {
+      "event": "10 Miles Road",
+      "time": "47:45"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 21",
+      "meet": "C.D.S. Assoluto su Pista - Finale \"A\" Argento",
+      "event": "5000 m",
+      "time": "14:13.06",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 18",
+      "meet": "Trofeo di Mezza Estate",
+      "event": "3000 m",
+      "time": "7:54.41",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "IFAM Outdoor",
+      "event": "5000 m",
+      "time": "13:39.77",
+      "place": "18.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 3",
+      "meet": "ESET WMD-Night",
+      "event": "5000 m",
+      "time": "13:30.64",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "APR 25",
+      "meet": "Meeting della Liberazione - Siena",
+      "event": "3000 m",
+      "time": "7:58.41",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "APR 19",
+      "meet": "5° Meeting Cus Unimore",
+      "event": "1500 m",
+      "time": "3:45.74",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "MAR 7",
+      "meet": "II 10K Internacional de Bilbao",
+      "event": "10 Kilom Road",
+      "time": "28:28",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 25",
+      "meet": "69° Campaccio - International Cross Country",
+      "event": "Cross Country",
+      "time": "31:41",
+      "place": "13.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

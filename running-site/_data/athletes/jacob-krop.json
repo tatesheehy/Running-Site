@@ -1,0 +1,122 @@
+{
+  "id": "jacob-krop",
+  "name": "Jacob Krop",
+  "flag": "KE",
+  "country": "Kenya",
+  "waUrl": "https://worldathletics.org/athletes/kenya/jacob-krop-14808798",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "DISTANCE",
+  "age": "25",
+  "dob": "2001-06-04",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "3000m",
+      "time": "7:28.72"
+    },
+    {
+      "event": "5000m",
+      "time": "12:45.71"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:31.35"
+    },
+    {
+      "event": "2000 Metres Steeplechase",
+      "time": "5:47.7h"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:02"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:04"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 10",
+      "meet": "Meeting International d’Athlétisme Herculis EBS",
+      "event": "5000 m",
+      "time": "12:53.71",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "5000 m",
+      "time": "12:55.22",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "5000 m",
+      "time": "13:01.51",
+      "place": "12.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Wanda Diamond League",
+      "event": "3000 m",
+      "time": "7:28.72",
+      "place": "8.",
+      "round": "F"
+    },
+    {
+      "date": "APR 24",
+      "meet": "Kip Keino Classic",
+      "event": "5000 m",
+      "time": "13:13.59",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "3000 m sh",
+      "time": "7:36.76",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "3000 m sh",
+      "time": "7:34.68",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 8",
+      "meet": "INIT Indoor Meeting Karlsruhe",
+      "event": "3000 m sh",
+      "time": "7:38.64",
+      "place": "2.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

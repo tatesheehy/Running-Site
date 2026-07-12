@@ -1,0 +1,78 @@
+{
+  "id": "magnus-tuv-myhre",
+  "name": "Magnus Tuv Myhre",
+  "flag": "NO",
+  "country": "Norway",
+  "waUrl": "https://worldathletics.org/athletes/norway/magnus-tuv-myhre-14910807",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "26",
+  "dob": "2000-06-15",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:50.95"
+    },
+    {
+      "event": "1500m",
+      "time": "3:37.89"
+    },
+    {
+      "event": "3000m",
+      "time": "7:48.07"
+    },
+    {
+      "event": "5000m",
+      "time": "13:06.98"
+    },
+    {
+      "event": "10000m",
+      "time": "28:02.18"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:57.62"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:51.30"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:13"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:22"
+    }
+  ],
+  "results": [
+    {
+      "date": "JAN 11",
+      "meet": "10K Valencia Ibercaja by Kiprun",
+      "event": "10 Kilom Road",
+      "time": "27:22",
+      "place": "6.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

@@ -1,0 +1,118 @@
+{
+  "id": "egide-ntakarutimana",
+  "name": "Egide Ntakarutimana",
+  "flag": "BI",
+  "country": "Burundi",
+  "waUrl": "https://worldathletics.org/athletes/burundi/egide-ntakarutimana-14987250",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "28",
+  "dob": "1997-10-21",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:42.42"
+    },
+    {
+      "event": "3000m",
+      "time": "7:35.16"
+    },
+    {
+      "event": "5000m",
+      "time": "12:56.06"
+    },
+    {
+      "event": "10000m",
+      "time": "27:24.59"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "1:00:34"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:35"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:45"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "5000 m",
+      "time": "12:56.06",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 3",
+      "meet": "Paavo Nurmi Games",
+      "event": "5000 m",
+      "time": "12:59.45",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "APR 25",
+      "meet": "Meeting della Liberazione - Siena",
+      "event": "3000 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "APR 12",
+      "meet": "Regional Senior 10",
+      "event": "10,000 m",
+      "time": "27:59.74",
+      "place": "1.",
+      "round": "F4"
+    },
+    {
+      "date": "MAR 8",
+      "meet": "EDP Lisbon Half Marathon",
+      "event": "Half Marathon",
+      "time": "1:00:34",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Italian Cross Country Championships",
+      "event": "Cross Country",
+      "time": "30:16",
+      "place": "OC",
+      "round": "F"
+    },
+    {
+      "date": "JAN 25",
+      "meet": "69° Campaccio - International Cross Country",
+      "event": "Cross Country",
+      "time": "30:38",
+      "place": "1.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

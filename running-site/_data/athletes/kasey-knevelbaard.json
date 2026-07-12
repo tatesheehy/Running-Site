@@ -1,0 +1,210 @@
+{
+  "id": "kasey-knevelbaard",
+  "name": "Kasey Knevelbaard",
+  "flag": "US",
+  "country": "United States",
+  "waUrl": "https://worldathletics.org/athletes/united-states/kasey-knevelbaard-14654151",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "29",
+  "dob": "1996-09-02",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:48.48"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.55"
+    },
+    {
+      "event": "Mile",
+      "time": "3:53.06"
+    },
+    {
+      "event": "3000m",
+      "time": "7:40.44"
+    },
+    {
+      "event": "5000m",
+      "time": "13:04.98"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "1:04:58"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:51.63"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:37.15"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:53.06"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:41.88"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:20.94"
+    },
+    {
+      "event": "Road Race",
+      "time": "33:21"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:58.33"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:48.9h"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:39"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:40.80"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 21",
+      "meet": "Portland Track Festival",
+      "event": "1500 m",
+      "time": "3:39.48",
+      "place": "9.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 14",
+      "meet": "USATF LA Grand Prix",
+      "event": "3000 m",
+      "time": "7:49.29",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 4",
+      "meet": "HOKA Festival of Miles",
+      "event": "1500 m",
+      "time": "3:41.37",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 4",
+      "meet": "HOKA Festival of Miles",
+      "event": "Mile",
+      "time": "3:57.24",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "5000 m",
+      "time": "13:30.98",
+      "place": "12.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 2",
+      "meet": "USA 5 km Road Running Championships",
+      "event": "5 Kilom Road",
+      "time": "13:39",
+      "place": "11.",
+      "round": "F"
+    },
+    {
+      "date": "APR 18",
+      "meet": "Boston 5K",
+      "event": "5 Kilom Road",
+      "time": "13:47",
+      "place": "11.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "USA Indoor Championships",
+      "event": "3000 m sh",
+      "time": "7:44.61",
+      "place": "10.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "1500 m sh",
+      "time": "3:38.84",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "Mile sh",
+      "time": "3:55.05",
+      "place": "8.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "5000 m sh",
+      "time": "13:27.44",
+      "place": "6.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "1500 m sh",
+      "time": "3:37.15",
+      "place": "",
+      "round": "F2"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "Mile sh",
+      "time": "3:53.06",
+      "place": "2.",
+      "round": "F2"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "New Balance Indoor Grand Prix",
+      "event": "3000 m sh",
+      "time": "7:41.88",
+      "place": "8.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

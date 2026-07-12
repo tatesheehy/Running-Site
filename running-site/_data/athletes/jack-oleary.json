@@ -1,0 +1,174 @@
+{
+  "id": "jack-oleary",
+  "name": "Jack O'Leary",
+  "flag": "IE",
+  "country": "Ireland",
+  "waUrl": "https://worldathletics.org/athletes/ireland/jack-oleary-14648669",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "28",
+  "dob": "1997-11-04",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:50.21"
+    },
+    {
+      "event": "1500m",
+      "time": "3:45.12"
+    },
+    {
+      "event": "Mile",
+      "time": "4:07.05"
+    },
+    {
+      "event": "3000m",
+      "time": "7:42.57"
+    },
+    {
+      "event": "3000m SC",
+      "time": "9:10.88"
+    },
+    {
+      "event": "5000m",
+      "time": "13:22.67"
+    },
+    {
+      "event": "10000m",
+      "time": "28:23.64"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:54.02"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "4:08.99"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:42.57"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:30.43"
+    },
+    {
+      "event": "2000 Metres Steeplechase",
+      "time": "6:03.67"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:10.9h"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:31"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:41"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 11",
+      "meet": "British Milers Club Grand Prix",
+      "event": "800 m",
+      "time": "1:50.21",
+      "place": "5.",
+      "round": "F4"
+    },
+    {
+      "date": "JUL 10",
+      "meet": "Morton Games",
+      "event": "5000 m",
+      "time": "13:35.99",
+      "place": "10.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 13",
+      "meet": "Meeting Nikaia",
+      "event": "Mile Road",
+      "time": "4:10.9h",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Meeting de Marseille",
+      "event": "3000 m",
+      "time": "7:52.39",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 20",
+      "meet": "más. 5k by BFL",
+      "event": "5 Kilom Road",
+      "time": "13:31",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 9",
+      "meet": "The Belfast Classic - formerly the Belfast Irish milers meet",
+      "event": "800 m",
+      "time": "1:52.18",
+      "place": "4.",
+      "round": "F3"
+    },
+    {
+      "date": "MAY 9",
+      "meet": "The Belfast Classic - formerly the Belfast Irish milers meet",
+      "event": "3000 m",
+      "time": "7:48.50",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Boston University David Hemery Valentine Invitational",
+      "event": "5000 m sh",
+      "time": "13:30.43",
+      "place": "12.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "3000 m sh",
+      "time": "7:42.57",
+      "place": "8.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 11",
+      "meet": "10K Valencia Ibercaja by Kiprun",
+      "event": "10 Kilom Road",
+      "time": "27:41",
+      "place": "18.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

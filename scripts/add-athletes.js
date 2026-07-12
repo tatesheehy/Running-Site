@@ -110,7 +110,19 @@ async function main() {
     const prefix = `[${i + 1}/${fresh.length}] ${c.name || c.waUrl}`;
     process.stdout.write(`${prefix} — `);
     try {
-      const p = await fetchAndParseProfile(c.waUrl, { name: c.name, dob: c.dob, countryCode: c.countryCode });
+      // WA's profile pages start throttling (HTTP 202 "please wait" holding
+      // page) after a burst of rapid requests — back off and retry a couple
+      // times with a longer pause rather than giving up on the first hiccup.
+      let p;
+      for (let attempt = 0; ; attempt++) {
+        try {
+          p = await fetchAndParseProfile(c.waUrl, { name: c.name, dob: c.dob, countryCode: c.countryCode });
+          break;
+        } catch (err) {
+          if (attempt >= 2) throw err;
+          await sleep(15000 * (attempt + 1));
+        }
+      }
       let id = nameToId(p.name);
       // Ensure unique slug
       if (existingSlugs.has(id)) {
@@ -132,7 +144,7 @@ async function main() {
       failed++;
       console.log(`✗ ${err.message}`);
     }
-    if (i < fresh.length - 1) await sleep(1200 + Math.random() * 800); // polite pacing
+    if (i < fresh.length - 1) await sleep(3000 + Math.random() * 1500); // polite pacing
   }
 
   console.log(`\nDone. ${added} added, ${failed} failed. athletes.json now has ${data.items.length} athletes.`);

@@ -1,0 +1,114 @@
+{
+  "id": "justyn-knight",
+  "name": "Justyn Knight",
+  "flag": "CA",
+  "country": "Canada",
+  "waUrl": "https://worldathletics.org/athletes/canada/justyn-knight-14603387",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "29",
+  "dob": "1996-07-19",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:52.08"
+    },
+    {
+      "event": "1500m",
+      "time": "3:33.41"
+    },
+    {
+      "event": "Mile",
+      "time": "3:55.82"
+    },
+    {
+      "event": "3000m",
+      "time": "7:41.10"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:13.92"
+    },
+    {
+      "event": "5000m",
+      "time": "12:51.93"
+    },
+    {
+      "event": "10000m",
+      "time": "29:46.41"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:36.13"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:55.82"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:44.61"
+    },
+    {
+      "event": "2 Miles Short Track",
+      "time": "8:13.92"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:50.79"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:46"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:36.74"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 18",
+      "meet": "Canadian Championships",
+      "event": "5000 m",
+      "time": "14:33.69",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 8",
+      "meet": "Oregon Twilight",
+      "event": "1500 m",
+      "time": "3:48.68",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 30",
+      "meet": "UW Invite/Mile City",
+      "event": "3000 m",
+      "time": "7:50.67",
+      "place": "2.",
+      "round": "F1"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

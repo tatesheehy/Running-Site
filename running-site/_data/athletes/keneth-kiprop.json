@@ -1,0 +1,114 @@
+{
+  "id": "keneth-kiprop",
+  "name": "Keneth Kiprop",
+  "flag": "UG",
+  "country": "Uganda",
+  "waUrl": "https://worldathletics.org/athletes/uganda/keneth-kiprop-15041078",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "DISTANCE",
+  "age": "21",
+  "dob": "2005-05-13",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "3000m",
+      "time": "7:33.70"
+    },
+    {
+      "event": "5000m",
+      "time": "13:00.49"
+    },
+    {
+      "event": "10000m",
+      "time": "27:47.91"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:00.77"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:09"
+    },
+    {
+      "event": "10 Miles Road",
+      "time": "48:26"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "5000 m",
+      "time": "13:13.43",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "Wanda Diamond League Xiamen",
+      "event": "5000 m",
+      "time": "13:08.79",
+      "place": "10.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Wanda Diamond League",
+      "event": "3000 m",
+      "time": "7:33.70",
+      "place": "16.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 29",
+      "meet": "2nd National Trial",
+      "event": "5000 m",
+      "time": "13:31.69",
+      "place": "2.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 8",
+      "meet": "Groet uit Schoorl Run",
+      "event": "10 Kilom Road",
+      "time": "27:56",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 25",
+      "meet": "Cross Cup de Hannut",
+      "event": "Cross Country",
+      "time": "24:21",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Senior Race",
+      "time": "29:20",
+      "place": "10.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

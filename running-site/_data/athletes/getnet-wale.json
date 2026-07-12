@@ -1,0 +1,142 @@
+{
+  "id": "getnet-wale",
+  "name": "Getnet Wale",
+  "flag": "ET",
+  "country": "Ethiopia",
+  "waUrl": "https://worldathletics.org/athletes/ethiopia/getnet-wale-14760253",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "25",
+  "dob": "2000-07-16",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:35.54"
+    },
+    {
+      "event": "2000m",
+      "time": "4:58.26"
+    },
+    {
+      "event": "3000m",
+      "time": "7:24.98"
+    },
+    {
+      "event": "3000m SC",
+      "time": "8:05.15"
+    },
+    {
+      "event": "5000m",
+      "time": "12:53.28"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:35.54"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:24.98"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:16"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:33"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "5000 m",
+      "time": "13:15.68",
+      "place": "16.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 14",
+      "meet": "C.D.S. Assoluto su Pista - Finale \"B\"",
+      "event": "5000 m",
+      "time": "14:06.59",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 13",
+      "meet": "C.D.S. Assoluto su Pista - Finale \"B\"",
+      "event": "3000 m Steeplechase",
+      "time": "8:45.72",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 3",
+      "meet": "Paavo Nurmi Games",
+      "event": "5000 m",
+      "time": "13:03.95",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Wanda Diamond League",
+      "event": "3000 m",
+      "time": "7:29.98",
+      "place": "14.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "3000 m sh",
+      "time": "7:40.21",
+      "place": "12.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "3000 m sh",
+      "time": "7:35.44",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 8",
+      "meet": "INIT Indoor Meeting Karlsruhe",
+      "event": "3000 m sh",
+      "time": "7:41.13",
+      "place": "8.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 6",
+      "meet": "World Indoor Tour Gold Madrid 2026",
+      "event": "3000 m sh",
+      "time": "7:39.98",
+      "place": "3.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

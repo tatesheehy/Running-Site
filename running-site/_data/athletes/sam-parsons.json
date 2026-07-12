@@ -1,0 +1,98 @@
+{
+  "id": "sam-parsons",
+  "name": "Sam Parsons",
+  "flag": "DE",
+  "country": "Germany",
+  "waUrl": "https://worldathletics.org/athletes/germany/sam-parsons-14628221",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "32",
+  "dob": "1994-06-18",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:36.22"
+    },
+    {
+      "event": "Mile",
+      "time": "3:54.08"
+    },
+    {
+      "event": "3000m",
+      "time": "7:38.06"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:22.14"
+    },
+    {
+      "event": "5000m",
+      "time": "13:12.69"
+    },
+    {
+      "event": "10000m",
+      "time": "28:43.74"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:41.97"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "4:07.53"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:38.06"
+    },
+    {
+      "event": "2 Miles Short Track",
+      "time": "8:22.14"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:12.78"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:58.61"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:55.0h"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:47"
+    }
+  ],
+  "results": [
+    {
+      "date": "APR 4",
+      "meet": "Top Flight by RunThrough - Battersea 5k",
+      "event": "5 Kilom Road",
+      "time": "15:26",
+      "place": "37.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

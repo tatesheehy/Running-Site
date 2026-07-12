@@ -1,0 +1,118 @@
+{
+  "id": "mezgebu-sime",
+  "name": "Mezgebu Sime",
+  "flag": "ET",
+  "country": "Ethiopia",
+  "waUrl": "https://worldathletics.org/athletes/ethiopia/mezgebu-sime-15024068",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "DISTANCE",
+  "age": "20",
+  "dob": "2005-10-07",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "3000m",
+      "time": "7:39.40"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:14.12"
+    },
+    {
+      "event": "5000m",
+      "time": "12:49.80"
+    },
+    {
+      "event": "10000m",
+      "time": "27:04.17"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:40.81"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:01"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:01="
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:55"
+    },
+    {
+      "event": "15 Kilometres Road",
+      "time": "43:35"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "2 Mi",
+      "time": "8:14.12",
+      "place": "13.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "5000 m",
+      "time": "12:50.17",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "Wanda Diamond League Xiamen",
+      "event": "5000 m",
+      "time": "13:13.17",
+      "place": "12.",
+      "round": "F"
+    },
+    {
+      "date": "APR 18",
+      "meet": "Boston 5K",
+      "event": "5 Kilom Road",
+      "time": "13:21",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 7",
+      "meet": "Gate River Run 15K",
+      "event": "15 Kilom Road",
+      "time": "43:35",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Senior Race",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

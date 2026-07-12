@@ -1,0 +1,182 @@
+{
+  "id": "mike-foppen",
+  "name": "Mike Foppen",
+  "flag": "NL",
+  "country": "Netherlands",
+  "waUrl": "https://worldathletics.org/athletes/netherlands/mike-foppen-14631296",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "29",
+  "dob": "1996-11-29",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:51.87"
+    },
+    {
+      "event": "1500m",
+      "time": "3:33.79"
+    },
+    {
+      "event": "Mile",
+      "time": "3:54.82"
+    },
+    {
+      "event": "2000m",
+      "time": "4:58.92"
+    },
+    {
+      "event": "3000m",
+      "time": "7:34.47"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:14.81"
+    },
+    {
+      "event": "5000m",
+      "time": "13:02.43"
+    },
+    {
+      "event": "10000m",
+      "time": "27:20.52"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:23.54"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:38.99"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:54.82"
+    },
+    {
+      "event": "2000 Metres Short Track",
+      "time": "5:04.10"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:38.20"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:08.60"
+    },
+    {
+      "event": "Road Race",
+      "time": "20:48"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:17"
+    },
+    {
+      "event": "8 Kilometres Road",
+      "time": "23:23"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:39"
+    },
+    {
+      "event": "15 Kilometres Road",
+      "time": "42:42"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "2 Mi",
+      "time": "8:14.81",
+      "place": "15.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "5000 m",
+      "time": "13:19.47",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 3",
+      "meet": "Paavo Nurmi Games",
+      "event": "5000 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "MAY 24",
+      "meet": "61. Internationales Pfingstsportfest Rehlingen",
+      "event": "1500 m",
+      "time": "3:36.27",
+      "place": "7.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Next Generation Athletics",
+      "event": "1500 m",
+      "time": "3:42.32",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
+      "date": "APR 18",
+      "meet": "Seven Hills Record Run",
+      "event": "5 Kilom Road",
+      "time": "13:17",
+      "place": "1.",
+      "round": "F3"
+    },
+    {
+      "date": "MAR 28",
+      "meet": "The TEN",
+      "event": "10,000 m",
+      "time": "27:20.52",
+      "place": "3.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "5K Breakfast Run Zurich Maratón Sevilla",
+      "event": "5 Kilom Road",
+      "time": "13:29",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 11",
+      "meet": "10K Valencia Ibercaja by Kiprun",
+      "event": "10 Kilom Road",
+      "time": "27:39",
+      "place": "13.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

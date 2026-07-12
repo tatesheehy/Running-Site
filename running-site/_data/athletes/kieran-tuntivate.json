@@ -1,0 +1,154 @@
+{
+  "id": "kieran-tuntivate",
+  "name": "Kieran Tuntivate",
+  "flag": "TH",
+  "country": "thailand",
+  "waUrl": "https://worldathletics.org/athletes/thailand/kieran-tuntivate-14647807",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "29",
+  "dob": "1997-02-16",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:57.04"
+    },
+    {
+      "event": "1500m",
+      "time": "3:36.16"
+    },
+    {
+      "event": "Mile",
+      "time": "3:54.72"
+    },
+    {
+      "event": "Mile",
+      "time": "3:54.72="
+    },
+    {
+      "event": "3000m",
+      "time": "7:43.75"
+    },
+    {
+      "event": "3000m SC",
+      "time": "9:20.87"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:23.62"
+    },
+    {
+      "event": "5000m",
+      "time": "13:08.41"
+    },
+    {
+      "event": "10000m",
+      "time": "27:17.14"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "1:02:39"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:28.14"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:28.14"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:39.69"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:54.72"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:49.15"
+    },
+    {
+      "event": "2 Miles Short Track",
+      "time": "8:23.62"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:08.41"
+    },
+    {
+      "event": "Road Race",
+      "time": "32:09"
+    },
+    {
+      "event": "8 Kilometres Road",
+      "time": "24:26"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "28:52"
+    },
+    {
+      "event": "10 Miles Road",
+      "time": "46:32"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:58.71"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 7",
+      "meet": "Bank of America Chicago 13.1",
+      "event": "Half Marathon",
+      "time": "1:03:22",
+      "place": "8.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "5000 m",
+      "time": "13:28.30",
+      "place": "11.",
+      "round": "F"
+    },
+    {
+      "date": "APR 12",
+      "meet": "Credit Union Cherry Blossom 10 Mile",
+      "event": "10 Mi Road",
+      "time": "46:32",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 15",
+      "meet": "United Airlines NYC Half",
+      "event": "Half Marathon",
+      "time": "1:02:39",
+      "place": "19.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

@@ -1,0 +1,90 @@
+{
+  "id": "festus-kimorwa",
+  "name": "Festus Kimorwa",
+  "flag": "KE",
+  "country": "Kenya",
+  "waUrl": "https://worldathletics.org/athletes/kenya/festus-kimorwa-15041993",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "DISTANCE",
+  "age": "20",
+  "dob": "2006-06-07",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "5000m",
+      "time": "13:14.94"
+    },
+    {
+      "event": "10000m",
+      "time": "29:09.90"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 20",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "5000 m",
+      "time": "13:48.10",
+      "place": "4.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 18",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "5000 m",
+      "time": "13:51.05",
+      "place": "1.",
+      "round": "H1"
+    },
+    {
+      "date": "MAY 4",
+      "meet": "37th Golden Games in Nobeoka",
+      "event": "5000 m",
+      "time": "13:14.94",
+      "place": "3.",
+      "round": "F2"
+    },
+    {
+      "date": "APR 29",
+      "meet": "60th Oda Mikio Memorial",
+      "event": "5000 m",
+      "time": "13:23.40",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "APR 11",
+      "meet": "34rd Kanakuri Memorial Middle and Long Distance Invitational Meet",
+      "event": "5000 m",
+      "time": "13:19.59",
+      "place": "1.",
+      "round": "F3"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sirikwa Classic Continental Tour Gold",
+      "event": "Cross Country",
+      "time": "31:12",
+      "place": "47.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

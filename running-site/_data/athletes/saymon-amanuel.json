@@ -1,0 +1,110 @@
+{
+  "id": "saymon-amanuel",
+  "name": "Saymon Amanuel",
+  "flag": "ER",
+  "country": "Eritrea",
+  "waUrl": "https://worldathletics.org/athletes/eritrea/saymon-amanuel-15186316",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "DISTANCE",
+  "age": "19",
+  "dob": "2007-05-27",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "5000m",
+      "time": "12:59.37"
+    },
+    {
+      "event": "10000m",
+      "time": "28:41.92"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:10"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 10",
+      "meet": "Meeting International d’Athlétisme Herculis EBS",
+      "event": "5000 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "5000 m",
+      "time": "12:59.37",
+      "place": "10.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "5000 m",
+      "time": "13:13.48",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 17",
+      "meet": "African Athletics Championships",
+      "event": "5000 m",
+      "time": "13:27.39",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 13",
+      "meet": "African Athletics Championships",
+      "event": "10,000 m",
+      "time": "28:41.92",
+      "place": "6.",
+      "round": "F"
+    },
+    {
+      "date": "APR 26",
+      "meet": "TCS World 10K Bengaluru",
+      "event": "10 Kilom Road",
+      "time": "27:44",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 25",
+      "meet": "Cross Cup de Hannut",
+      "event": "Cross Country",
+      "time": "24:33",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 18",
+      "meet": "LXXXII Elgoibar Cross Country Juan Muguerza Memorial",
+      "event": "Cross Country",
+      "time": "29:40",
+      "place": "2.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

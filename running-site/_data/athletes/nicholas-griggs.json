@@ -1,0 +1,190 @@
+{
+  "id": "nicholas-griggs",
+  "name": "Nicholas Griggs",
+  "flag": "IE",
+  "country": "Ireland",
+  "waUrl": "https://worldathletics.org/athletes/ireland/nicholas-griggs-14982087",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "21",
+  "dob": "2004-12-18",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:49.57"
+    },
+    {
+      "event": "1500m",
+      "time": "3:35.04"
+    },
+    {
+      "event": "Mile",
+      "time": "3:52.42"
+    },
+    {
+      "event": "2000m",
+      "time": "5:01.98"
+    },
+    {
+      "event": "3000m",
+      "time": "7:32.79"
+    },
+    {
+      "event": "5000m",
+      "time": "13:05.75"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:39.94"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:56.40"
+    },
+    {
+      "event": "2000 Metres Short Track",
+      "time": "5:01.98"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:32.79"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:19.90"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:48.4h"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:39"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 10",
+      "meet": "Morton Games",
+      "event": "5000 m",
+      "time": "13:16.19",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "5000 m",
+      "time": "13:19.01",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "1500 m",
+      "time": "3:36.92",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "Mile",
+      "time": "3:52.81",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 13",
+      "meet": "Northern Ireland & Ulster Senior Championships",
+      "event": "800 m",
+      "time": "1:52.13",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 3",
+      "meet": "Paavo Nurmi Games",
+      "event": "5000 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "MAY 29",
+      "meet": "8th Irena Szewińska Memorial",
+      "event": "1500 m",
+      "time": "3:38.92",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "British Milers Club Record Breaker with Lagan Valley AC",
+      "event": "1500 m",
+      "time": "3:40.12",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "British Milers Club Record Breaker with Lagan Valley AC",
+      "event": "Mile",
+      "time": "3:57.76",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "3000 m sh",
+      "time": "7:39.03",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 1",
+      "meet": "Irish Senior Indoor Championships",
+      "event": "3000 m sh",
+      "time": "8:14.52",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "5000 m sh",
+      "time": "13:19.90",
+      "place": "4.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "New Balance Indoor Grand Prix",
+      "event": "3000 m sh",
+      "time": "7:32.79",
+      "place": "4.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

@@ -1,0 +1,170 @@
+{
+  "id": "brian-fay",
+  "name": "Brian Fay",
+  "flag": "IE",
+  "country": "Ireland",
+  "waUrl": "https://worldathletics.org/athletes/ireland/brian-fay-14781522",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "27",
+  "dob": "1998-11-09",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:50.20"
+    },
+    {
+      "event": "1500m",
+      "time": "3:36.52"
+    },
+    {
+      "event": "Mile",
+      "time": "3:52.03"
+    },
+    {
+      "event": "3000m",
+      "time": "7:34.48"
+    },
+    {
+      "event": "3000m SC",
+      "time": "8:29.75"
+    },
+    {
+      "event": "5000m",
+      "time": "13:01.40"
+    },
+    {
+      "event": "10000m",
+      "time": "27:43.45"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:50.53"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:41.73"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:58.50"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:40.09"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:16.77"
+    },
+    {
+      "event": "2000 Metres Steeplechase",
+      "time": "6:07.68"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "14:11"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "28:47"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:21.10"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 10",
+      "meet": "Morton Games",
+      "event": "5000 m",
+      "time": "13:18.32",
+      "place": "7.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 3",
+      "meet": "Paavo Nurmi Games",
+      "event": "5000 m",
+      "time": "13:23.11",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 17",
+      "meet": "SEIKO Golden Grand Prix",
+      "event": "3000 m",
+      "time": "7:45.26",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 4",
+      "meet": "37th Golden Games in Nobeoka",
+      "event": "5000 m",
+      "time": "13:13.30",
+      "place": "1.",
+      "round": "F2"
+    },
+    {
+      "date": "APR 29",
+      "meet": "60th Oda Mikio Memorial",
+      "event": "1500 m",
+      "time": "3:40.32",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 28",
+      "meet": "Maurie Plant Meet",
+      "event": "3000 m",
+      "time": "7:42.85",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "5000 m sh",
+      "time": "13:21.68",
+      "place": "6.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "New Balance Indoor Grand Prix",
+      "event": "3000 m sh",
+      "time": "7:42.58",
+      "place": "10.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Senior Race",
+      "time": "29:37",
+      "place": "16.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

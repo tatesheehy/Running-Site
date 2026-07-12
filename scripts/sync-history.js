@@ -31,11 +31,11 @@ const DELAY_BASE_MS = 700;  // base delay between API calls
 const DELAY_JITTER  = 500;  // add up to this many ms randomly
 
 // ── WA AppSync GraphQL API ────────────────────────────────────────────────────
-// Endpoint + api-key pairs harvested from the site JS bundle. First is primary;
-// the rest are fallbacks if a region is unreachable.
+// Endpoint + api-key pairs harvested from the site JS bundle. First is primary.
+// The ap-east-1 fallback that used to sit here has been decommissioned (DNS no
+// longer resolves) — removed so retries don't waste attempts on a dead host.
 const GQL_ENDPOINTS = [
   ['https://ak33a7mldndxdfb6sznwcinjxy.appsync-api.eu-west-1.amazonaws.com/graphql', 'da2-tul3z5puffbebn4pptbgqj253i'],
-  ['https://7hck43pzvfgsbplwx2gxzplk6u.appsync-api.ap-east-1.amazonaws.com/graphql', 'da2-7nbysvfryzhurp4tciuutbupve'],
 ];
 
 const GQL_QUERY = `query GetSingleCompetitorResultsDiscipline($id: Int, $resultsByYearOrderBy: String, $resultsByYear: Int) {

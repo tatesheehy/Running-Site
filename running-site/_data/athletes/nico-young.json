@@ -1,0 +1,138 @@
+{
+  "id": "nico-young",
+  "name": "Nico Young",
+  "flag": "US",
+  "country": "United States",
+  "waUrl": "https://worldathletics.org/athletes/united-states/nico-young-14882782",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "23",
+  "dob": "2002-07-27",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:47.65"
+    },
+    {
+      "event": "1500m",
+      "time": "3:33.98"
+    },
+    {
+      "event": "Mile",
+      "time": "3:48.72"
+    },
+    {
+      "event": "3000m",
+      "time": "7:33.32"
+    },
+    {
+      "event": "5000m",
+      "time": "12:45.27"
+    },
+    {
+      "event": "10000m",
+      "time": "26:52.72"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:49.61"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:33.98"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:48.72"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:33.32"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "12:51.56"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:54.50"
+    },
+    {
+      "event": "Distance Medley",
+      "time": "9:17.43"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:50.86"
+    }
+  ],
+  "results": [
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "1500 m",
+      "time": "3:34.56",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "USA Indoor Championships",
+      "event": "3000 m sh",
+      "time": "7:39.29",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "3000 m sh",
+      "time": "7:33.32",
+      "place": "1.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "1500 m sh",
+      "time": "3:33.98",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "Mile sh",
+      "time": "3:48.72",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Senior Race",
+      "time": "30:19",
+      "place": "36.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

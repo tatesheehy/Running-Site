@@ -1,0 +1,98 @@
+{
+  "id": "dawit-seare",
+  "name": "Dawit Seare",
+  "flag": "ER",
+  "country": "Eritrea",
+  "waUrl": "https://worldathletics.org/athletes/eritrea/dawit-seare-14985194",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "21",
+  "dob": "2004-12-29",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:39.31"
+    },
+    {
+      "event": "3000m",
+      "time": "7:37.52"
+    },
+    {
+      "event": "5000m",
+      "time": "13:07.77"
+    },
+    {
+      "event": "10000m",
+      "time": "28:57.83"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:39.31"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:46.03"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:21"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:21"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 4",
+      "meet": "Northside Hospital Peachtree Road Race",
+      "event": "10 Kilom Road",
+      "time": "28:21",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 21",
+      "meet": "B.A.A. 10K",
+      "event": "10 Kilom Road",
+      "time": "28:06",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 17",
+      "meet": "African Athletics Championships",
+      "event": "5000 m",
+      "time": "13:16.92",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 13",
+      "meet": "African Athletics Championships",
+      "event": "10,000 m",
+      "time": "28:57.83",
+      "place": "8.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

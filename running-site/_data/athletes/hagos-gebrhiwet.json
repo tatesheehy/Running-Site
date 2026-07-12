@@ -1,0 +1,90 @@
+{
+  "id": "hagos-gebrhiwet",
+  "name": "Hagos Gebrhiwet",
+  "flag": "ET",
+  "country": "Ethiopia",
+  "waUrl": "https://worldathletics.org/athletes/ethiopia/hagos-gebrhiwet-14477352",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "DISTANCE",
+  "age": "32",
+  "dob": "1994-05-11",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "3000m",
+      "time": "7:30.36"
+    },
+    {
+      "event": "5000m",
+      "time": "12:36.73"
+    },
+    {
+      "event": "10000m",
+      "time": "26:48.95"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "57:41"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:32.87"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "12:58"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "28:15"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:57"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 4",
+      "meet": "Northside Hospital Peachtree Road Race",
+      "event": "10 Kilom Road",
+      "time": "41:33",
+      "place": "22.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 21",
+      "meet": "B.A.A. 10K",
+      "event": "10 Kilom Road",
+      "time": "28:15",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 15",
+      "meet": "Hyundai Mitja Marató de Barcelona by Brooks",
+      "event": "Half Marathon",
+      "time": "58:05",
+      "place": "1.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

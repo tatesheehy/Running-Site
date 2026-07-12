@@ -1,0 +1,130 @@
+{
+  "id": "kazuya-shiojiri",
+  "name": "Kazuya Shiojiri",
+  "flag": "JP",
+  "country": "Japan",
+  "waUrl": "https://worldathletics.org/athletes/japan/kazuya-shiojiri-14648834",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "29",
+  "dob": "1996-11-08",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:42.26"
+    },
+    {
+      "event": "3000m",
+      "time": "7:43.20"
+    },
+    {
+      "event": "3000m SC",
+      "time": "8:27.25"
+    },
+    {
+      "event": "5000m",
+      "time": "13:13.59"
+    },
+    {
+      "event": "10000m",
+      "time": "27:09.80"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "1:01:22"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:53.87"
+    },
+    {
+      "event": "2000 Metres Steeplechase",
+      "time": "5:35.17"
+    },
+    {
+      "event": "10 Miles Road",
+      "time": "46:06"
+    },
+    {
+      "event": "20 Kilometres Road",
+      "time": "59:36"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 14",
+      "meet": "Japanese Championships",
+      "event": "5000 m",
+      "time": "13:31.60",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 12",
+      "meet": "Japanese Championships",
+      "event": "5000 m",
+      "time": "13:27.53",
+      "place": "2.",
+      "round": "H2"
+    },
+    {
+      "date": "MAY 17",
+      "meet": "SEIKO Golden Grand Prix",
+      "event": "3000 m",
+      "time": "7:43.20",
+      "place": "6.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 4",
+      "meet": "37th Golden Games in Nobeoka",
+      "event": "5000 m",
+      "time": "13:18.16",
+      "place": "5.",
+      "round": "F2"
+    },
+    {
+      "date": "APR 25",
+      "meet": "21st Nittaidai Challenge Games",
+      "event": "1500 m",
+      "time": "3:42.26",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
+      "date": "APR 11",
+      "meet": "34rd Kanakuri Memorial Middle and Long Distance Invitational Meet",
+      "event": "5000 m",
+      "time": "13:38.21",
+      "place": "14.",
+      "round": "F4"
+    },
+    {
+      "date": "FEB 7",
+      "meet": "12th Asian Indoor Athletics Championships",
+      "event": "3000 m sh",
+      "time": "7:53.87",
+      "place": "1.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

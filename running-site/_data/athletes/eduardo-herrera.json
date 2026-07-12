@@ -1,0 +1,178 @@
+{
+  "id": "eduardo-herrera",
+  "name": "Eduardo Herrera",
+  "flag": "MX",
+  "country": "Mexico",
+  "waUrl": "https://worldathletics.org/athletes/mexico/eduardo-herrera-14668389",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "28",
+  "dob": "1997-09-23",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:52.90"
+    },
+    {
+      "event": "1500m",
+      "time": "3:35.03"
+    },
+    {
+      "event": "Mile",
+      "time": "3:52.58"
+    },
+    {
+      "event": "3000m",
+      "time": "7:27.63"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:13.72"
+    },
+    {
+      "event": "5000m",
+      "time": "12:58.57"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:54.07"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:37.07"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:52.58"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:39.17"
+    },
+    {
+      "event": "2 Miles Short Track",
+      "time": "9:30.78"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:06.36"
+    },
+    {
+      "event": "Road Race",
+      "time": "21:15"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:30"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "2 Mi",
+      "time": "8:13.72",
+      "place": "12.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "5000 m",
+      "time": "13:16.18",
+      "place": "17.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 14",
+      "meet": "USATF LA Grand Prix",
+      "event": "3000 m",
+      "time": "7:38.53",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "Wanda Diamond League Xiamen",
+      "event": "5000 m",
+      "time": "13:00.69",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Wanda Diamond League",
+      "event": "3000 m",
+      "time": "7:27.63",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:42.70",
+      "place": "8.",
+      "round": "H1"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "1500 m sh",
+      "time": "3:37.07",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "Mile sh",
+      "time": "3:53.05",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "3000 m sh",
+      "time": "7:39.66",
+      "place": "8.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "1500 m sh",
+      "time": "3:38.20",
+      "place": "",
+      "round": "F3"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "Mile sh",
+      "time": "3:54.12",
+      "place": "8.",
+      "round": "F2"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

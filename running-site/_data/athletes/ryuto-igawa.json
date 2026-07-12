@@ -1,0 +1,114 @@
+{
+  "id": "ryuto-igawa",
+  "name": "Ryuto Igawa",
+  "flag": "JP",
+  "country": "Japan",
+  "waUrl": "https://worldathletics.org/athletes/japan/ryuto-igawa-14854888",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "DISTANCE",
+  "age": "25",
+  "dob": "2000-09-05",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "3000m",
+      "time": "7:39.36"
+    },
+    {
+      "event": "5000m",
+      "time": "13:14.58"
+    },
+    {
+      "event": "10000m",
+      "time": "27:39.05"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "1:02:39"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "29:44"
+    },
+    {
+      "event": "30 Kilometres Road",
+      "time": "1:34:57"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 14",
+      "meet": "Japanese Championships",
+      "event": "5000 m",
+      "time": "13:22.97",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 12",
+      "meet": "Japanese Championships",
+      "event": "5000 m",
+      "time": "13:28.42",
+      "place": "4.",
+      "round": "H3"
+    },
+    {
+      "date": "MAY 17",
+      "meet": "SEIKO Golden Grand Prix",
+      "event": "3000 m",
+      "time": "7:39.36",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 4",
+      "meet": "37th Golden Games in Nobeoka",
+      "event": "5000 m",
+      "time": "13:27.82",
+      "place": "17.",
+      "round": "F2"
+    },
+    {
+      "date": "MAR 28",
+      "meet": "The TEN",
+      "event": "10,000 m",
+      "time": "28:46.85",
+      "place": "22.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 21",
+      "meet": "18th Asian Cross Country Championships",
+      "event": "Cross Country",
+      "time": "29:30",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Senior Race",
+      "time": "31:13",
+      "place": "51.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

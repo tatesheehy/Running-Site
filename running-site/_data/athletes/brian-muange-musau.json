@@ -1,0 +1,126 @@
+{
+  "id": "brian-muange-musau",
+  "name": "Brian Muange Musau",
+  "flag": "KE",
+  "country": "Kenya",
+  "waUrl": "https://worldathletics.org/athletes/kenya/brian-muange-musau-15090723",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "19",
+  "dob": "2006-12-29",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:39.27"
+    },
+    {
+      "event": "Mile",
+      "time": "3:54.78"
+    },
+    {
+      "event": "3000m",
+      "time": "7:38.04"
+    },
+    {
+      "event": "5000m",
+      "time": "12:59.82"
+    },
+    {
+      "event": "10000m",
+      "time": "28:42.39"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:24.54"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:24.54"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:54.78"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:38.04"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:11.29"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:16.24"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 12",
+      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "event": "5000 m",
+      "time": "13:47.18",
+      "place": "6.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 14",
+      "meet": "Big 12 Outdoor Track & Field Championship",
+      "event": "10,000 m",
+      "time": "30:43.87",
+      "place": "13.",
+      "round": "F1"
+    },
+    {
+      "date": "APR 18",
+      "meet": "Oregon Team Invitational",
+      "event": "1500 m",
+      "time": "3:39.27",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "APR 3",
+      "meet": "Stanford Invitational",
+      "event": "5000 m",
+      "time": "13:23.86",
+      "place": "6.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Big 12 Indoor Track & Field Championship",
+      "event": "3000 m sh",
+      "time": "DNS",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 27",
+      "meet": "Big 12 Indoor Track & Field Championship",
+      "event": "5000 m sh",
+      "time": "DNF",
+      "place": "",
+      "round": "F1"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

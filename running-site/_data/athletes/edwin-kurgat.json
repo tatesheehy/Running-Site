@@ -1,0 +1,166 @@
+{
+  "id": "edwin-kurgat",
+  "name": "Edwin Kurgat",
+  "flag": "KE",
+  "country": "Kenya",
+  "waUrl": "https://worldathletics.org/athletes/kenya/edwin-kurgat-14401023",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "30",
+  "dob": "1996-05-19",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:56.83"
+    },
+    {
+      "event": "1500m",
+      "time": "3:45.57"
+    },
+    {
+      "event": "Mile",
+      "time": "3:58.62"
+    },
+    {
+      "event": "3000m",
+      "time": "7:28.53"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:11.89"
+    },
+    {
+      "event": "5000m",
+      "time": "12:57.52"
+    },
+    {
+      "event": "10000m",
+      "time": "26:46.35"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "4:06.05"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:38.54"
+    },
+    {
+      "event": "2 Miles Short Track",
+      "time": "8:11.89"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "12:57.52"
+    },
+    {
+      "event": "Road Race",
+      "time": "20:54"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:56.0h"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:23"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "28:01"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:50"
+    },
+    {
+      "event": "4x800 Metres Relay",
+      "time": "7:20.77"
+    },
+    {
+      "event": "Distance Medley",
+      "time": "9:48.63"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:28.22"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 19",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "10,000 m",
+      "time": "28:29.05",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "Wanda Diamond League Xiamen",
+      "event": "5000 m",
+      "time": "13:01.47",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Wanda Diamond League",
+      "event": "3000 m",
+      "time": "7:33.91",
+      "place": "17.",
+      "round": "F"
+    },
+    {
+      "date": "APR 18",
+      "meet": "Boston 5K",
+      "event": "5 Kilom Road",
+      "time": "13:23",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "3000 m sh",
+      "time": "7:38.54",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "3000 m sh",
+      "time": "7:38.86",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "2 Mi sh",
+      "time": "8:11.89",
+      "place": "10.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

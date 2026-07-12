@@ -1,0 +1,162 @@
+{
+  "id": "sean-mcgorty",
+  "name": "Sean Mcgorty",
+  "flag": "US",
+  "country": "United States",
+  "waUrl": "https://worldathletics.org/athletes/united-states/sean-mcgorty-14463588",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "31",
+  "dob": "1995-03-08",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:53.00"
+    },
+    {
+      "event": "1500m",
+      "time": "3:33.67"
+    },
+    {
+      "event": "Mile",
+      "time": "3:52.39"
+    },
+    {
+      "event": "2000m",
+      "time": "5:09.75"
+    },
+    {
+      "event": "3000m",
+      "time": "7:32.79"
+    },
+    {
+      "event": "3000m SC",
+      "time": "8:20.77"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:33.41"
+    },
+    {
+      "event": "5000m",
+      "time": "13:02.13"
+    },
+    {
+      "event": "10000m",
+      "time": "27:18.15"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:22.17"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:32.75"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:32.75"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:58.54"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:47.97"
+    },
+    {
+      "event": "2 Miles Short Track",
+      "time": "8:33.41"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:09.21"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:40"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:27.27"
+    },
+    {
+      "event": "4x1500 Metres Relay",
+      "time": "14:34.97"
+    },
+    {
+      "event": "4xMile Relay",
+      "time": "16:20.44"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 11",
+      "meet": "Sunset Tour",
+      "event": "1500 m",
+      "time": "3:37.37",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 13",
+      "meet": "USATF LA Grand Prix",
+      "event": "5000 m",
+      "time": "13:18.82",
+      "place": "10.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 2",
+      "meet": "USA 5 km Road Running Championships",
+      "event": "5 Kilom Road",
+      "time": "13:40",
+      "place": "12.",
+      "round": "F"
+    },
+    {
+      "date": "APR 18",
+      "meet": "Boston 5K",
+      "event": "5 Kilom Road",
+      "time": "13:41",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Boston University David Hemery Valentine Invitational",
+      "event": "5000 m sh",
+      "time": "13:22.56",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "6th Annual Brant Tolsma Invitational",
+      "event": "Mile sh",
+      "time": "3:59.72",
+      "place": "5.",
+      "round": "F1"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

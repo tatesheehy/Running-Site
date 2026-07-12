@@ -1,0 +1,122 @@
+{
+  "id": "yann-schrub",
+  "name": "Yann Schrub",
+  "flag": "FR",
+  "country": "France",
+  "waUrl": "https://worldathletics.org/athletes/france/yann-schrub-14528844",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "30",
+  "dob": "1996-03-20",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:51.49"
+    },
+    {
+      "event": "1500m",
+      "time": "3:31.42"
+    },
+    {
+      "event": "3000m",
+      "time": "7:29.38"
+    },
+    {
+      "event": "5000m",
+      "time": "12:56.57"
+    },
+    {
+      "event": "10000m",
+      "time": "27:47.13"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:38.82"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:48.49"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:29.38"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "12:56"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "26:43"
+    },
+    {
+      "event": "20 Kilometres Road",
+      "time": "58:04"
+    },
+    {
+      "event": "Road Relay",
+      "time": "2:04:40"
+    }
+  ],
+  "results": [
+    {
+      "date": "APR 4",
+      "meet": "Urban Trail de Lille - 5 et 10km",
+      "event": "5 Kilom Road",
+      "time": "12:56",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "3000 m sh",
+      "time": "7:35.71",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "10K Facsa Castellón",
+      "event": "10 Kilom Road",
+      "time": "26:43",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 8",
+      "meet": "Meeting Metz Moselle Athlélor Crédit Mutuel",
+      "event": "3000 m sh",
+      "time": "7:29.38",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Senior Race",
+      "time": "29:22",
+      "place": "11.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

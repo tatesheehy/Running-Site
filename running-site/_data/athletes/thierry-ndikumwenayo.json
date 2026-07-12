@@ -1,0 +1,110 @@
+{
+  "id": "thierry-ndikumwenayo",
+  "name": "Thierry Ndikumwenayo",
+  "flag": "ES",
+  "country": "Spain",
+  "waUrl": "https://worldathletics.org/athletes/spain/thierry-ndikumwenayo-14661449",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "29",
+  "dob": "1997-03-26",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:37.25"
+    },
+    {
+      "event": "3000m",
+      "time": "7:25.93"
+    },
+    {
+      "event": "5000m",
+      "time": "12:47.67"
+    },
+    {
+      "event": "10000m",
+      "time": "26:49.49"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "59:42"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:42.60"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:48.38"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:17.0h"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:08"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:50"
+    },
+    {
+      "event": "15 Kilometres Road",
+      "time": "43:45"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 10",
+      "meet": "Meeting International d’Athlétisme Herculis EBS",
+      "event": "5000 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "FEB 8",
+      "meet": "49.º Cross Internacional das Amendoeiras em Flor",
+      "event": "Cross Country",
+      "time": "27:45",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 18",
+      "meet": "LXXXII Elgoibar Cross Country Juan Muguerza Memorial",
+      "event": "Cross Country",
+      "time": "30:12",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Senior Race",
+      "time": "29:16",
+      "place": "8.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

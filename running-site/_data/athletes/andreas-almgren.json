@@ -1,0 +1,186 @@
+{
+  "id": "andreas-almgren",
+  "name": "Andreas Almgren",
+  "flag": "SE",
+  "country": "Sweden",
+  "waUrl": "https://worldathletics.org/athletes/sweden/andreas-almgren-14460738",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "31",
+  "dob": "1995-06-12",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "100m",
+      "time": "11.65"
+    },
+    {
+      "event": "200m",
+      "time": "22.88"
+    },
+    {
+      "event": "400m",
+      "time": "48.33"
+    },
+    {
+      "event": "800m",
+      "time": "1:45.59"
+    },
+    {
+      "event": "1500m",
+      "time": "3:32.00"
+    },
+    {
+      "event": "2000m",
+      "time": "5:00.23"
+    },
+    {
+      "event": "3000m",
+      "time": "7:26.48"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:11.12"
+    },
+    {
+      "event": "5000m",
+      "time": "12:44.27"
+    },
+    {
+      "event": "10000m",
+      "time": "26:52.87"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "58:41"
+    },
+    {
+      "event": "400 Metres Short Track",
+      "time": "48.38"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:23.30"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:46.56"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:21.23"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "4:04.68"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:34.31"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:05"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "26:45"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "26:45="
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:12.13"
+    },
+    {
+      "event": "4x800 Metres Relay",
+      "time": "7:27.65"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "2 Mi",
+      "time": "8:11.12",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "5000 m",
+      "time": "12:55.38",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "5000 m",
+      "time": "12:48.61",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 7",
+      "meet": "BAUHAUS-Galan",
+      "event": "1500 m",
+      "time": "3:36.81",
+      "place": "14.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "Wanda Diamond League Xiamen",
+      "event": "5000 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Wanda Diamond League",
+      "event": "3000 m",
+      "time": "7:26.48",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "10K Facsa Castellón",
+      "event": "10 Kilom Road",
+      "time": "26:45",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 11",
+      "meet": "10K Valencia Ibercaja by Kiprun",
+      "event": "10 Kilom Road",
+      "time": "26:45",
+      "place": "1.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

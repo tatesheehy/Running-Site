@@ -577,7 +577,18 @@ async function main() {
     const needsProfile = needsProfileFill(athlete);
     try {
       process.stdout.write(`🌐 ${label} — fetching...\n`);
-      const html = await fetchPage(athlete.waUrl);
+      // WA throttles bursts of concurrent requests (HTTP 202 holding page) —
+      // back off and retry rather than treating it as a hard failure.
+      let html;
+      for (let attempt = 0; ; attempt++) {
+        try {
+          html = await fetchPage(athlete.waUrl);
+          break;
+        } catch (err) {
+          if (attempt >= 3) throw err;
+          await sleep(15000 * (attempt + 1));
+        }
+      }
 
       if (html.length < 1000) {
         console.log(`  ✗ ${label} — WAF blocked`);

@@ -1,0 +1,114 @@
+{
+  "id": "seth-odonnell",
+  "name": "Seth O'Donnell",
+  "flag": "AU",
+  "country": "Australia",
+  "waUrl": "https://worldathletics.org/athletes/australia/seth-odonnell-14928262",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "24",
+  "dob": "2001-09-14",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:37.68"
+    },
+    {
+      "event": "3000m",
+      "time": "7:29.49"
+    },
+    {
+      "event": "5000m",
+      "time": "13:12.42"
+    },
+    {
+      "event": "10000m",
+      "time": "27:59.65"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "1:03:25"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "28:42"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 11",
+      "meet": "Moore-Guldensporenmeeting",
+      "event": "1500 m",
+      "time": "3:37.68",
+      "place": "8.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "Wanda Diamond League Xiamen",
+      "event": "5000 m",
+      "time": "13:18.68",
+      "place": "14.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Wanda Diamond League",
+      "event": "3000 m",
+      "time": "7:29.49",
+      "place": "11.",
+      "round": "F"
+    },
+    {
+      "date": "APR 11",
+      "meet": "Australian Championships",
+      "event": "5000 m",
+      "time": "13:12.42",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 28",
+      "meet": "Maurie Plant Meet",
+      "event": "3000 m",
+      "time": "7:41.11",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Box Hill Burn",
+      "event": "5000 m",
+      "time": "13:29.40",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Senior Race",
+      "time": "30:53",
+      "place": "45.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

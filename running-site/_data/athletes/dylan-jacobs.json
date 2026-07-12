@@ -1,0 +1,146 @@
+{
+  "id": "dylan-jacobs",
+  "name": "Dylan Jacobs",
+  "flag": "US",
+  "country": "United States",
+  "waUrl": "https://worldathletics.org/athletes/united-states/dylan-jacobs-14800894",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "26",
+  "dob": "2000-06-15",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:36.10"
+    },
+    {
+      "event": "Mile",
+      "time": "3:56.10"
+    },
+    {
+      "event": "3000m",
+      "time": "7:30.45"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:13.37"
+    },
+    {
+      "event": "5000m",
+      "time": "13:07.89"
+    },
+    {
+      "event": "10000m",
+      "time": "28:01.53"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:24.22"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "4:17.29"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:30.45"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:07.89"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:56.05"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:28"
+    },
+    {
+      "event": "Distance Medley",
+      "time": "9:47.94"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:31.55"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 11",
+      "meet": "Sunset Tour",
+      "event": "5000 m",
+      "time": "13:20.71",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "2 Mi",
+      "time": "8:13.37",
+      "place": "10.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 14",
+      "meet": "USATF LA Grand Prix",
+      "event": "3000 m",
+      "time": "7:43.99",
+      "place": "6.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "5000 m",
+      "time": "13:09.09",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 2",
+      "meet": "USA 5 km Road Running Championships",
+      "event": "5 Kilom Road",
+      "time": "13:28",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "APR 21",
+      "meet": "Grand Blue Mile presented by Wellmark Blue Cross Blue Shield - USATF 1 Mile Road Championships",
+      "event": "Mile Road",
+      "time": "3:56.05",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 28",
+      "meet": "The TEN",
+      "event": "1500 m",
+      "time": "3:36.10",
+      "place": "3.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

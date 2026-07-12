@@ -1,0 +1,150 @@
+{
+  "id": "jimmy-gressier",
+  "name": "Jimmy Gressier",
+  "flag": "FR",
+  "country": "France",
+  "waUrl": "https://worldathletics.org/athletes/france/jimmy-gressier-14694062",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "29",
+  "dob": "1997-05-04",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:54.33"
+    },
+    {
+      "event": "1500m",
+      "time": "3:32.71"
+    },
+    {
+      "event": "Mile",
+      "time": "3:52.06"
+    },
+    {
+      "event": "2000m",
+      "time": "4:57.97"
+    },
+    {
+      "event": "3000m",
+      "time": "7:28.67"
+    },
+    {
+      "event": "3000m SC",
+      "time": "8:24.72"
+    },
+    {
+      "event": "5000m",
+      "time": "12:51.59"
+    },
+    {
+      "event": "10000m",
+      "time": "26:58.67"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "59:45"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:18.87"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:37.41"
+    },
+    {
+      "event": "2000 Metres Short Track",
+      "time": "4:57.97"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:30.18"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "12:54.92"
+    },
+    {
+      "event": "Road Race",
+      "time": "20:35"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "12:51"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:07"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "5000 m",
+      "time": "12:57.79",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 17",
+      "meet": "Meeting International de Montreuil",
+      "event": "3000 m",
+      "time": "7:28.67",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 7",
+      "meet": "BAUHAUS-Galan",
+      "event": "1500 m",
+      "time": "3:34.63",
+      "place": "12.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 10",
+      "meet": "10km de Troyes - French 10 km Road Running Championships",
+      "event": "10 Kilom Road",
+      "time": "27:47",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "APR 4",
+      "meet": "Urban Trail de Lille - 5 et 10km",
+      "event": "5 Kilom Road",
+      "time": "12:51",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Senior Race",
+      "time": "29:36",
+      "place": "15.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

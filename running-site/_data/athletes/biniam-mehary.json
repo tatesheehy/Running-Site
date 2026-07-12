@@ -1,0 +1,106 @@
+{
+  "id": "biniam-mehary",
+  "name": "Biniam Mehary",
+  "flag": "ET",
+  "country": "Ethiopia",
+  "waUrl": "https://worldathletics.org/athletes/ethiopia/biniam-mehary-15118094",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "19",
+  "dob": "2006-12-20",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:34.83"
+    },
+    {
+      "event": "3000m",
+      "time": "7:29.99"
+    },
+    {
+      "event": "5000m",
+      "time": "12:45.93"
+    },
+    {
+      "event": "10000m",
+      "time": "26:37.93"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:34.83"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:29.99"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:04"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "26:55"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 10",
+      "meet": "Meeting International d’Athlétisme Herculis EBS",
+      "event": "5000 m",
+      "time": "12:58.37",
+      "place": "6.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "5000 m",
+      "time": "12:54.35",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "Wanda Diamond League Xiamen",
+      "event": "5000 m",
+      "time": "12:58.51",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "APR 18",
+      "meet": "10 km en Ruta Villa de Laredo",
+      "event": "10 Kilom Road",
+      "time": "26:55",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Senior Race",
+      "time": "29:03",
+      "place": "6.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

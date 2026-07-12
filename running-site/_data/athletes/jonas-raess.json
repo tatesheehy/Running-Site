@@ -1,0 +1,118 @@
+{
+  "id": "jonas-raess",
+  "name": "Jonas Raess",
+  "flag": "CH",
+  "country": "Switzerland",
+  "waUrl": "https://worldathletics.org/athletes/switzerland/jonas-raess-14427180",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "32",
+  "dob": "1994-03-08",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:53.01"
+    },
+    {
+      "event": "1500m",
+      "time": "3:37.46"
+    },
+    {
+      "event": "Mile",
+      "time": "3:58.83"
+    },
+    {
+      "event": "2000m",
+      "time": "5:00.47"
+    },
+    {
+      "event": "3000m",
+      "time": "7:35.12"
+    },
+    {
+      "event": "5000m",
+      "time": "13:07.95"
+    },
+    {
+      "event": "10000m",
+      "time": "27:26.40"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "1:02:18"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:25.79"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:46.65"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:35.24"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:07.95"
+    },
+    {
+      "event": "Road Race",
+      "time": "21:04"
+    },
+    {
+      "event": "Road Race",
+      "time": "20:52"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:31"
+    },
+    {
+      "event": "8 Kilometres Road",
+      "time": "23:22"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "29:27"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 10",
+      "meet": "Morton Games",
+      "event": "5000 m",
+      "time": "13:17.32",
+      "place": "4.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "5000 m",
+      "time": "13:39.45",
+      "place": "9.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

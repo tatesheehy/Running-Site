@@ -1,0 +1,162 @@
+{
+  "id": "david-mullarkey",
+  "name": "David Mullarkey",
+  "flag": "GB",
+  "country": "Great Britain",
+  "waUrl": "https://worldathletics.org/athletes/great-britain-ni/david-mullarkey-14769889",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "26",
+  "dob": "2000-03-07",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:50.21"
+    },
+    {
+      "event": "1500m",
+      "time": "3:39.14"
+    },
+    {
+      "event": "Mile",
+      "time": "3:58.71"
+    },
+    {
+      "event": "3000m",
+      "time": "7:38.58"
+    },
+    {
+      "event": "5000m",
+      "time": "13:09.40"
+    },
+    {
+      "event": "10000m",
+      "time": "27:26.58"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:44.20"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:42.89"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:18.40"
+    },
+    {
+      "event": "Road Race",
+      "time": "20:58"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "14:19"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "29:13"
+    },
+    {
+      "event": "15 Kilometres Road",
+      "time": "43:53"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:36.76"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 1",
+      "meet": "Fribourg International Meeting",
+      "event": "1500 m",
+      "time": "3:39.14",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 21",
+      "meet": "Novuna UK Athletics Championships",
+      "event": "5000 m",
+      "time": "13:27.00",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 14",
+      "meet": "USATF LA Grand Prix",
+      "event": "3000 m",
+      "time": "7:38.58",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "5000 m",
+      "time": "13:09.40",
+      "place": "6.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 28",
+      "meet": "The TEN",
+      "event": "10,000 m",
+      "time": "27:26.58",
+      "place": "9.",
+      "round": "F2"
+    },
+    {
+      "date": "MAR 7",
+      "meet": "Gate River Run 15K",
+      "event": "15 Kilom Road",
+      "time": "43:53",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "5000 m sh",
+      "time": "13:18.40",
+      "place": "4.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "6th Annual Brant Tolsma Invitational",
+      "event": "Mile sh",
+      "time": "DNF",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Senior Race",
+      "time": "30:00",
+      "place": "26.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

@@ -11,9 +11,12 @@
 
 const https = require('https');
 
+// The ap-east-1 endpoint that used to sit alongside this one has been
+// decommissioned (DNS no longer resolves) — keeping only the live endpoint
+// so every retry attempt actually queries WA instead of wasting half the
+// attempt budget on a dead host.
 const GQL_ENDPOINTS = [
   ['https://ak33a7mldndxdfb6sznwcinjxy.appsync-api.eu-west-1.amazonaws.com/graphql', 'da2-tul3z5puffbebn4pptbgqj253i'],
-  ['https://7hck43pzvfgsbplwx2gxzplk6u.appsync-api.ap-east-1.amazonaws.com/graphql', 'da2-7nbysvfryzhurp4tciuutbupve'],
 ];
 
 const DISCIPLINE_QUERY = `query GetRandomWorldRankingDiscipline($limit: Int, $rankingLimit: Int) {
@@ -78,10 +81,18 @@ async function harvestRankings(wantedLabels, top = 30, { maxAttempts = 12, onPro
   const wanted = new Set(wantedLabels.map(normLabel));
   const found = new Map(); // normLabel → discipline object
 
+  // The "random discipline" endpoint's response is cached per exact
+  // (limit, rankingLimit) variable pair rather than actually re-randomized
+  // per call — so an exact round number like rankingLimit:100 can be a
+  // permanent cache miss for a given discipline no matter how many times
+  // you retry with those same variables. Requesting one extra row sidesteps
+  // that; the final output below still slices down to the requested `top`.
+  const rankingLimit = top + 1;
+
   for (let attempt = 0; attempt < maxAttempts && found.size < wanted.size; attempt++) {
     let disciplines;
     try {
-      disciplines = await gqlCall({ limit: 80, rankingLimit: top }, attempt);
+      disciplines = await gqlCall({ limit: 80, rankingLimit }, attempt);
     } catch (err) {
       if (onProgress) onProgress(`  [attempt ${attempt + 1}: ${err.message}, retrying]`);
       await sleep(1500 * (attempt + 1));

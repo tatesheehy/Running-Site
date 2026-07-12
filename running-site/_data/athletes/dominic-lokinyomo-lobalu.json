@@ -1,0 +1,166 @@
+{
+  "id": "dominic-lokinyomo-lobalu",
+  "name": "Dominic Lokinyomo Lobalu",
+  "flag": "CH",
+  "country": "Switzerland",
+  "waUrl": "https://worldathletics.org/athletes/switzerland/dominic-lokinyomo-lobalu-14792211",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "27",
+  "dob": "1998-08-16",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:50.90"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.39"
+    },
+    {
+      "event": "2000m",
+      "time": "5:12.20"
+    },
+    {
+      "event": "3000m",
+      "time": "7:27.68"
+    },
+    {
+      "event": "5000m",
+      "time": "12:50.87"
+    },
+    {
+      "event": "10000m",
+      "time": "27:36.29"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "59:12"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:48.63"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:39.32"
+    },
+    {
+      "event": "Road Race",
+      "time": "20:38"
+    },
+    {
+      "event": "Road Race",
+      "time": "20:24"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:00"
+    },
+    {
+      "event": "8 Kilometres Road",
+      "time": "23:21"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "26:54"
+    },
+    {
+      "event": "10 Miles Road",
+      "time": "47:06"
+    },
+    {
+      "event": "20 Kilometres Road",
+      "time": "58:15"
+    },
+    {
+      "event": "4x800 Metres Relay",
+      "time": "8:12.57"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 10",
+      "meet": "Meeting International d’Athlétisme Herculis EBS",
+      "event": "5000 m",
+      "time": "12:52.54",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 20",
+      "meet": "Track Night Vienna",
+      "event": "5000 m",
+      "time": "13:12.80",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "5000 m",
+      "time": "13:08.78",
+      "place": "13.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 30",
+      "meet": "10. PUMA NITRO Lange Laufnacht",
+      "event": "1500 m",
+      "time": "3:36.63",
+      "place": "9.",
+      "round": "F12"
+    },
+    {
+      "date": "MAR 29",
+      "meet": "Generali Berliner Halbmarathon",
+      "event": "Half Marathon",
+      "time": "59:23",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 7",
+      "meet": "II 10K Internacional de Bilbao",
+      "event": "10 Kilom Road",
+      "time": "27:36",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 1",
+      "meet": "Swiss Indoor Championships",
+      "event": "3000 m sh",
+      "time": "8:24.89",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 15",
+      "meet": "Hyundai Mitja Marató de Barcelona by Brooks",
+      "event": "Half Marathon",
+      "time": "59:26",
+      "place": "2.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

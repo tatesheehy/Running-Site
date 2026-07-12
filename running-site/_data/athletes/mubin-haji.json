@@ -1,0 +1,114 @@
+{
+  "id": "mubin-haji",
+  "name": "Mubin Haji",
+  "flag": "ET",
+  "country": "Ethiopia",
+  "waUrl": "https://worldathletics.org/athletes/ethiopia/mubin-haji-15024070",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "DISTANCE",
+  "age": "20",
+  "dob": "2005-12-09",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "3000m",
+      "time": "7:46.33"
+    },
+    {
+      "event": "5000m",
+      "time": "13:18.33"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:46.33"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:24"
+    }
+  ],
+  "results": [
+    {
+      "date": "MAY 17",
+      "meet": "African Athletics Championships",
+      "event": "5000 m",
+      "time": "13:18.33",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "APR 24",
+      "meet": "Kip Keino Classic",
+      "event": "5000 m",
+      "time": "13:43.90",
+      "place": "8.",
+      "round": "F"
+    },
+    {
+      "date": "APR 18",
+      "meet": "Addis Ababa Grand Prix",
+      "event": "5000 m",
+      "time": "14:11.38",
+      "place": "8.",
+      "round": "F"
+    },
+    {
+      "date": "APR 17",
+      "meet": "Meeting International de Djibouti",
+      "event": "5000 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "APR 4",
+      "meet": "Urban Trail de Lille - 5 et 10km",
+      "event": "5 Kilom Road",
+      "time": "13:24",
+      "place": "13.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 29",
+      "meet": "Ethiopian Championships",
+      "event": "5000 m",
+      "time": "14:14.19",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 27",
+      "meet": "Ethiopian Championships",
+      "event": "5000 m",
+      "time": "14:20.17",
+      "place": "6.",
+      "round": "H1"
+    },
+    {
+      "date": "FEB 7",
+      "meet": "Russian Winter",
+      "event": "3000 m sh",
+      "time": "7:46.33",
+      "place": "3.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

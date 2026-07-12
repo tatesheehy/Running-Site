@@ -1,0 +1,158 @@
+{
+  "id": "morgan-beadlescomb",
+  "name": "Morgan Beadlescomb",
+  "flag": "US",
+  "country": "United States",
+  "waUrl": "https://worldathletics.org/athletes/united-states/morgan-beadlescomb-14708130",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "28",
+  "dob": "1998-06-01",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:47.85"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.20"
+    },
+    {
+      "event": "Mile",
+      "time": "3:52.03"
+    },
+    {
+      "event": "3000m",
+      "time": "7:36.10"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:12.24"
+    },
+    {
+      "event": "5000m",
+      "time": "13:03.57"
+    },
+    {
+      "event": "10000m",
+      "time": "28:54.93"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:50.31"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:52.03"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:38.55"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:03.57"
+    },
+    {
+      "event": "Road Race",
+      "time": "20:59"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:58.01"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:54.5h"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:25"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:44"
+    },
+    {
+      "event": "Distance Medley",
+      "time": "9:26.75"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "2 Mi",
+      "time": "8:12.24",
+      "place": "8.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 13",
+      "meet": "USATF LA Grand Prix",
+      "event": "5000 m",
+      "time": "13:18.32",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 31",
+      "meet": "Great Manchester Run",
+      "event": "10 Kilom Road",
+      "time": "27:44",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "USA Indoor Championships",
+      "event": "3000 m sh",
+      "time": "7:40.83",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "1500 m sh",
+      "time": "VST",
+      "place": "",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "Mile sh",
+      "time": "DNS",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "New Balance Indoor Grand Prix",
+      "event": "3000 m sh",
+      "time": "7:38.59",
+      "place": "7.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

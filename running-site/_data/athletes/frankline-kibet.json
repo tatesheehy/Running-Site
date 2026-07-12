@@ -1,0 +1,106 @@
+{
+  "id": "frankline-kibet",
+  "name": "Frankline Kibet",
+  "flag": "KE",
+  "country": "Kenya",
+  "waUrl": "https://worldathletics.org/athletes/kenya/frankline-kibet-15223756",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "DISTANCE",
+  "age": "18",
+  "dob": "2007-07-28",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "100m",
+      "time": "11.06"
+    },
+    {
+      "event": "200m",
+      "time": "22.51"
+    },
+    {
+      "event": "3000m",
+      "time": "7:43.01"
+    },
+    {
+      "event": "5000m",
+      "time": "13:08.32"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:43.01"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:45"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "5000 m",
+      "time": "13:08.32",
+      "place": "13.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 18",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "100 m",
+      "time": "11.06",
+      "place": "3.",
+      "round": "H5"
+    },
+    {
+      "date": "JUN 18",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "200 m",
+      "time": "22.51",
+      "place": "3.",
+      "round": "H2"
+    },
+    {
+      "date": "APR 24",
+      "meet": "Kip Keino Classic",
+      "event": "5000 m",
+      "time": "13:10.70",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "3000 m sh",
+      "time": "7:43.01",
+      "place": "10.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country U20 Race",
+      "time": "23:18",
+      "place": "1.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

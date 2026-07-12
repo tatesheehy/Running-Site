@@ -1,0 +1,162 @@
+{
+  "id": "abdihamid-nur",
+  "name": "Abdihamid Nur",
+  "flag": "US",
+  "country": "United States",
+  "waUrl": "https://worldathletics.org/athletes/united-states/abdihamid-nur-14840626",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "28",
+  "dob": "1997-10-14",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "60m",
+      "time": "7.2h"
+    },
+    {
+      "event": "800m",
+      "time": "1:58.20"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.31"
+    },
+    {
+      "event": "Mile",
+      "time": "3:55.94"
+    },
+    {
+      "event": "3000m",
+      "time": "7:40.66"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:13.44"
+    },
+    {
+      "event": "5000m",
+      "time": "13:03.17"
+    },
+    {
+      "event": "10000m",
+      "time": "27:17.28"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "4:03.98"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:45.90"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:03.17"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:35"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:24"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:50.86"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 10",
+      "meet": "Meeting International d’Athlétisme Herculis EBS",
+      "event": "5000 m",
+      "time": "13:09.49",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "2 Mi",
+      "time": "8:13.44",
+      "place": "11.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 13",
+      "meet": "USATF LA Grand Prix",
+      "event": "5000 m",
+      "time": "13:07.46",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "1500 m",
+      "time": "3:34.31",
+      "place": "1.",
+      "round": "F2"
+    },
+    {
+      "date": "MAY 2",
+      "meet": "USA 5 km Road Running Championships",
+      "event": "5 Kilom Road",
+      "time": "13:35",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "5000 m sh",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "5000 m sh",
+      "time": "13:11.59",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "Mile sh",
+      "time": "NM",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "3000 m sh",
+      "time": "7:45.90",
+      "place": "4.",
+      "round": "F1"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

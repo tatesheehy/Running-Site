@@ -1,0 +1,122 @@
+{
+  "id": "dolphine-chelimo",
+  "name": "Dolphine Chelimo",
+  "flag": "UG",
+  "country": "Uganda",
+  "waUrl": "https://worldathletics.org/athletes/uganda/dolphine-chelimo-15035409",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "DISTANCE",
+  "age": "21",
+  "dob": "2005-07-10",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "3000m SC",
+      "time": "8:43.25"
+    },
+    {
+      "event": "5000m",
+      "time": "13:13.72"
+    },
+    {
+      "event": "10000m",
+      "time": "28:38.35"
+    },
+    {
+      "event": "2000 Metres Steeplechase (0.84)",
+      "time": "5:49.54"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:46"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "28:13"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "5000 m",
+      "time": "13:13.72",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 17",
+      "meet": "African Athletics Championships",
+      "event": "5000 m",
+      "time": "13:26.19",
+      "place": "8.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 13",
+      "meet": "African Athletics Championships",
+      "event": "10,000 m",
+      "time": "28:59.03",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "APR 26",
+      "meet": "TCS World 10K Bengaluru",
+      "event": "10 Kilom Road",
+      "time": "28:21",
+      "place": "12.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 29",
+      "meet": "2nd National Trial",
+      "event": "5000 m",
+      "time": "13:32.61",
+      "place": "3.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sirikwa Classic Continental Tour Gold",
+      "event": "Cross Country",
+      "time": "30:42",
+      "place": "20.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 25",
+      "meet": "69° Campaccio - International Cross Country",
+      "event": "Cross Country",
+      "time": "30:45",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Senior Race",
+      "time": "29:07",
+      "place": "7.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

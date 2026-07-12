@@ -1,0 +1,138 @@
+{
+  "id": "nagiya-mori",
+  "name": "Nagiya Mori",
+  "flag": "JP",
+  "country": "Japan",
+  "waUrl": "https://worldathletics.org/athletes/japan/nagiya-mori-14841940",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "27",
+  "dob": "1999-07-03",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:36.53"
+    },
+    {
+      "event": "3000m",
+      "time": "7:38.98"
+    },
+    {
+      "event": "3000m SC",
+      "time": "9:06.46"
+    },
+    {
+      "event": "5000m",
+      "time": "13:14.18"
+    },
+    {
+      "event": "10000m",
+      "time": "28:15.17"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "1:02:08"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:48.82"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:32.07"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "28:51"
+    },
+    {
+      "event": "15 Kilometres Road",
+      "time": "44:43"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 14",
+      "meet": "Japanese Championships",
+      "event": "5000 m",
+      "time": "13:22.41",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 12",
+      "meet": "Japanese Championships",
+      "event": "5000 m",
+      "time": "13:35.48",
+      "place": "3.",
+      "round": "H1"
+    },
+    {
+      "date": "MAY 30",
+      "meet": "Twolaps Middle Distance Circuit",
+      "event": "1500 m",
+      "time": "3:36.53",
+      "place": "2.",
+      "round": "F2"
+    },
+    {
+      "date": "MAY 17",
+      "meet": "SEIKO Golden Grand Prix",
+      "event": "3000 m",
+      "time": "7:38.98",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 4",
+      "meet": "37th Golden Games in Nobeoka",
+      "event": "5000 m",
+      "time": "13:14.18",
+      "place": "2.",
+      "round": "F2"
+    },
+    {
+      "date": "MAR 28",
+      "meet": "Maurie Plant Meet",
+      "event": "3000 m",
+      "time": "7:45.40",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "5000 m sh",
+      "time": "13:32.07",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "3000 m sh",
+      "time": "7:48.82",
+      "place": "4.",
+      "round": "F1"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

@@ -1,0 +1,94 @@
+{
+  "id": "elzan-bibic",
+  "name": "Elzan BibiĆ",
+  "flag": "SE",
+  "country": "serbia",
+  "waUrl": "https://worldathletics.org/athletes/serbia/elzan-bibic-14645235",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "27",
+  "dob": "1999-01-08",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:50.31"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.20"
+    },
+    {
+      "event": "Mile",
+      "time": "3:55.90"
+    },
+    {
+      "event": "2000m",
+      "time": "4:56.13"
+    },
+    {
+      "event": "3000m",
+      "time": "7:37.03"
+    },
+    {
+      "event": "5000m",
+      "time": "13:13.06"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "1:01:47"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:51.11"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:37.84"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:55.90"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:39.96"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "14:29"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "29:23"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 21",
+      "meet": "Balkan Senior Championships",
+      "event": "3000 m",
+      "time": "7:57.59",
+      "place": "3.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}

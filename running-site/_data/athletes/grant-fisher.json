@@ -1,0 +1,154 @@
+{
+  "id": "grant-fisher",
+  "name": "Grant Fisher",
+  "flag": "US",
+  "country": "United States",
+  "waUrl": "https://worldathletics.org/athletes/united-states/grant-fisher-14591210",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "29",
+  "dob": "1997-04-22",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:51.86"
+    },
+    {
+      "event": "1500m",
+      "time": "3:33.72"
+    },
+    {
+      "event": "Mile",
+      "time": "3:48.29"
+    },
+    {
+      "event": "2000m",
+      "time": "4:49.48"
+    },
+    {
+      "event": "3000m",
+      "time": "7:22.91"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:03.62"
+    },
+    {
+      "event": "5000m",
+      "time": "12:44.09"
+    },
+    {
+      "event": "10000m",
+      "time": "26:33.84"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "1:00:53"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:24.49"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:55.76"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:33.99"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "4:03.54"
+    },
+    {
+      "event": "2000 Metres Short Track",
+      "time": "4:49.48"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:22.91"
+    },
+    {
+      "event": "2 Miles Short Track",
+      "time": "8:03.62"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "12:44.09"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:01"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:31.70"
+    },
+    {
+      "event": "4x1500 Metres Relay",
+      "time": "14:34.97"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "2 Mi",
+      "time": "8:10.96",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "5000 m",
+      "time": "12:54.80",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "5000 m",
+      "time": "12:49.61",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 15",
+      "meet": "United Airlines NYC Half",
+      "event": "Half Marathon",
+      "time": "1:00:53",
+      "place": "14.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "New Balance Indoor Grand Prix",
+      "event": "2000 m sh",
+      "time": "4:49.48",
+      "place": "2.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-12"
+}
