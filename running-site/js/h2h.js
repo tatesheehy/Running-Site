@@ -4,7 +4,7 @@
 
 let _h2hLbYear       = '2026';
 let _h2hLbEvent      = 'all';
-let _h2hLbRankedOnly = false;
+let _h2hLbOpponentMode = 'all'; // 'ranked' | 'all' | 'list' — 'list' restricts records to intra-list matchups only
 let _h2hLbView       = 'table';
 let _h2hLbListId     = 'all';
 let _h2hCmpA         = null;
@@ -55,7 +55,7 @@ function _h2hPersonaTag(a) {
 function buildH2HPage() {
   _h2hLbYear       = '2026';
   _h2hLbEvent      = 'all';
-  _h2hLbRankedOnly = false;
+  _h2hLbOpponentMode = 'all';
   _h2hLbView       = 'table';
   _h2hLbListId     = 'all';
   _h2hFindIds      = [null, null, null, null, null];
@@ -67,7 +67,7 @@ function _renderH2HPage() {
   const main = qs('#main');
   if (!main) return;
 
-  const { records, totalEncounters } = _computeAllH2HRecords(_h2hLbYear, _h2hLbEvent, _h2hLbRankedOnly);
+  const { records, totalEncounters } = _computeAllH2HRecords(_h2hLbYear, _h2hLbEvent, _h2hLbOpponentMode, _h2hLbListId);
   _h2hCurrentRecs = records;
 
   // Curated lists are often small (a handful of friends, hometown athletes,
@@ -147,8 +147,9 @@ function _renderH2HPage() {
             <div class="h2h-lb-ctrl-group">
               <div class="h2h-lb-ctrl-label">Opponents</div>
               <div class="h2h-seg">
-                <button class="h2h-seg-btn${_h2hLbRankedOnly ? ' active' : ''}" onclick="if(!_h2hLbRankedOnly)h2hLbToggleRanked()">Ranked</button>
-                <button class="h2h-seg-btn${!_h2hLbRankedOnly ? ' active' : ''}" onclick="if(_h2hLbRankedOnly)h2hLbToggleRanked()">All</button>
+                <button class="h2h-seg-btn${_h2hLbOpponentMode === 'ranked' ? ' active' : ''}" onclick="h2hLbSetOpponentMode('ranked')">Ranked</button>
+                <button class="h2h-seg-btn${_h2hLbOpponentMode === 'all' ? ' active' : ''}" onclick="h2hLbSetOpponentMode('all')">All</button>
+                ${_h2hLbListId !== 'all' ? `<button class="h2h-seg-btn${_h2hLbOpponentMode === 'list' ? ' active' : ''}" onclick="h2hLbSetOpponentMode('list')" title="Only count races against other members of this list">${_h2hCurrentListName()}</button>` : ''}
               </div>
             </div>
             <div class="h2h-lb-ctrl-group">
@@ -192,7 +193,7 @@ function _renderH2HPage() {
             </div>
             <div class="h2h-lb-wrap">
               ${rows.length === 0
-                ? `<div class="h2h-lb-empty">No head-to-head data for this selection${_h2hLbRankedOnly ? ' — try switching to "All" opponents' : ''}${_h2hLbListId !== 'all' ? ' — this list may not have any members who\'ve raced each other yet' : ''}.</div>`
+                ? `<div class="h2h-lb-empty">No head-to-head data for this selection${_h2hLbOpponentMode === 'ranked' ? ' — try switching to "All" opponents' : ''}${_h2hLbOpponentMode === 'list' ? ' — no members of this list have raced each other yet' : _h2hLbListId !== 'all' ? ' — this list may not have any members who\'ve raced each other yet' : ''}.</div>`
                 : `<table class="h2h-lb-table">
                     <tbody>
                       ${rows.map(([id, rec], i) => {
@@ -278,9 +279,18 @@ function _renderH2HPage() {
 
 window.h2hLbSetYear      = y    => { _h2hLbYear  = y;   _renderH2HPage(); };
 window.h2hLbSetEvent     = ev   => { _h2hLbEvent = ev;  _renderH2HPage(); };
-window.h2hLbToggleRanked = ()   => { _h2hLbRankedOnly = !_h2hLbRankedOnly; _renderH2HPage(); };
+window.h2hLbSetOpponentMode = mode => { _h2hLbOpponentMode = mode; _renderH2HPage(); };
 window.h2hLbSetView      = view => { _h2hLbView  = view; _renderH2HPage(); };
-window.h2hLbSetList      = id   => { _h2hLbListId = id;  _renderH2HPage(); };
+window.h2hLbSetList      = id   => {
+  _h2hLbListId = id;
+  if (id === 'all' && _h2hLbOpponentMode === 'list') _h2hLbOpponentMode = 'all';
+  _renderH2HPage();
+};
+
+function _h2hCurrentListName() {
+  const lists = typeof getLists === 'function' ? getLists() : [];
+  return lists.find(l => l.id === _h2hLbListId)?.name || 'This List';
+}
 
 function _renderH2HListFilter() {
   const user = typeof getCurrentUser === 'function' ? getCurrentUser() : null;
@@ -481,7 +491,7 @@ function _renderDominanceMap(rows) {
     return `<div class="h2h-lb-wrap"><div class="h2h-lb-empty">No head-to-head data for this selection.</div></div>`;
   }
 
-  const pairwise = _computePairwiseH2H(_h2hLbYear, _h2hLbEvent, _h2hLbRankedOnly);
+  const pairwise = _computePairwiseH2H(_h2hLbYear, _h2hLbEvent, _h2hLbOpponentMode, _h2hLbListId);
   const orderedIds = rows.map(([id]) => id);
 
   const colHeaders = orderedIds.map((id, ci) => {
@@ -561,7 +571,7 @@ function _meetTier(meet) {
   return 1;
 }
 
-function _computePairwiseH2H(year, eventFilter, rankedOnly) {
+function _computePairwiseH2H(year, eventFilter, opponentMode, listId) {
   const pairwise = {};
 
   const getResults = a =>
@@ -572,7 +582,8 @@ function _computePairwiseH2H(year, eventFilter, rankedOnly) {
   for (let i = 0; i < athletes.length; i++) {
     for (let j = i + 1; j < athletes.length; j++) {
       const a1 = athletes[i], a2 = athletes[j];
-      if (rankedOnly && !_isRankedAthlete(a1.id) && !_isRankedAthlete(a2.id)) continue;
+      if (opponentMode === 'ranked' && !_isRankedAthlete(a1.id) && !_isRankedAthlete(a2.id)) continue;
+      if (opponentMode === 'list' && !(typeof isInList === 'function' && isInList(listId, a1.id) && isInList(listId, a2.id))) continue;
 
       const r1 = getResults(a1), r2 = getResults(a2);
 
@@ -636,7 +647,7 @@ function _h2hEventMatches(event, filter) {
   return e.includes(f);
 }
 
-function _computeAllH2HRecords(year, eventFilter, rankedOnly) {
+function _computeAllH2HRecords(year, eventFilter, opponentMode, listId) {
   const records = {};
   let totalEncounters = 0;
 
@@ -648,7 +659,8 @@ function _computeAllH2HRecords(year, eventFilter, rankedOnly) {
   for (let i = 0; i < athletes.length; i++) {
     for (let j = i + 1; j < athletes.length; j++) {
       const a1 = athletes[i], a2 = athletes[j];
-      if (rankedOnly && !_isRankedAthlete(a1.id) && !_isRankedAthlete(a2.id)) continue;
+      if (opponentMode === 'ranked' && !_isRankedAthlete(a1.id) && !_isRankedAthlete(a2.id)) continue;
+      if (opponentMode === 'list' && !(typeof isInList === 'function' && isInList(listId, a1.id) && isInList(listId, a2.id))) continue;
 
       const r1 = getResults(a1), r2 = getResults(a2);
 
@@ -680,8 +692,8 @@ function _computeAllH2HRecords(year, eventFilter, rankedOnly) {
         const n2 = a2.name.split(' ').slice(-1)[0];
         const a1ranked = _isRankedAthlete(a1.id);
         const a2ranked = _isRankedAthlete(a2.id);
-        const countForA1 = !rankedOnly || a2ranked;
-        const countForA2 = !rankedOnly || a1ranked;
+        const countForA1 = opponentMode === 'ranked' ? a2ranked : true;
+        const countForA2 = opponentMode === 'ranked' ? a1ranked : true;
 
         if (countForA1) {
           if (!records[a1.id]) records[a1.id] = { wins: 0, losses: 0, beatCounts: {}, matchups: {}, sequence: [] };
