@@ -212,10 +212,10 @@ function _renderH2HPage() {
                               <span class="h2h-lb-rank-num"${rankColor ? ` style="color:${rankColor}"` : ''}>${i + 1}</span>
                             </td>
                             <td class="h2h-lb-td h2h-lb-td--athlete">
+                              <button class="inline-fav-btn${faved ? ' favorited' : ''}" data-fav-id="${id}"
+                                onclick="event.stopPropagation();toggleFavorite('${id}')" aria-label="Save ${a.name}">${_FAV_HEART}</button>
                               <div class="h2h-lb-ath-info">
                                 <div class="h2h-lb-ath-name-row">
-                                  <button class="inline-fav-btn${faved ? ' favorited' : ''}" data-fav-id="${id}"
-                                    onclick="event.stopPropagation();toggleFavorite('${id}')" aria-label="Save ${a.name}">${_FAV_HEART}</button>
                                   <span class="h2h-lb-name h2h-lb-name--link" onclick="event.stopPropagation();openAthleteCard('${id}',null)">${a.name}</span>
                                   ${persona ? `<span class="h2h-persona-tag h2h-persona-tag--${persona.cls}" data-tip="${persona.title}">${persona.label}</span>` : ''}
                                 </div>

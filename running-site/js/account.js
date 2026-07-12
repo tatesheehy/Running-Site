@@ -203,7 +203,7 @@ ${mod
     const q = input.value.trim().toLowerCase();
     const dd = document.getElementById(`acct-list-dropdown-${listId}`);
     if (!dd) return;
-    if (!q) { dd.innerHTML = ''; return; }
+    if (!q) { dd.innerHTML = ''; dd.style.display = 'none'; return; }
     const memberIds = new Set(typeof getListMemberIds === 'function' ? getListMemberIds(listId) : []);
     const matches = Object.values(ATHLETES)
       .filter(a => a.name && !memberIds.has(a.id) && a.name.toLowerCase().includes(q))
@@ -211,6 +211,7 @@ ${mod
     dd.innerHTML = matches.length
       ? matches.map(a => `<div class="acct-list-search-item" onmousedown="event.preventDefault();acctAddToList('${listId}','${a.id}')">${a.name}</div>`).join('')
       : '<div class="acct-list-search-empty">No matches</div>';
+    dd.style.display = '';
   };
 
   window.acctListShowDropdown = function(listId) {
