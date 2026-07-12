@@ -3,7 +3,7 @@
    Imports all partial CSS files in dependency order.
    ============================================================ */
 
-@import "base.css?v=3";
+@import "base.css?v=4";
 @import "navbar.css?v=11";
 @import "home.css?v=21";
 @import "articles.css?v=3";
@@ -18,6 +18,6 @@
 
 /* Override with fresh values — force-busts import cache */
 :root {
-  --font-mono: 'Space Mono', monospace;
+  --font-mono: 'IBM Plex Mono', monospace;
   --accent: #E8500A;
 }
