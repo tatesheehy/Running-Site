@@ -53,6 +53,157 @@ function articleCard(a) {
   `;
 }
 
+// ── TRENDING PERFORMANCES ──────────────────────────────────
+// Surfaces recent (last 30d) results that are a PB, a dominant win,
+// or a podium at a major meet. Uses parseTimeToSecs (modals.js, loaded
+// on every page). _normalizeEvent/_meetTier/_raceMargin are duplicated
+// from h2h.js below since h2h.js itself isn't loaded on every page.
+function _normalizeEvent(e) {
+  return (e || '').trim().toLowerCase().replace(/\s+/g, '');
+}
+
+function _meetTier(meet) {
+  const m = (meet || '').toLowerCase();
+  if (/world athletics (indoor )?championships|olympic games|world championships in athletics/.test(m)) return 3;
+  if (/bislett|lausanne|zurich|zürich|monaco|golden gala|golden spike|bauhaus|galan|meeting de paris|prefontaine|millrose|new balance (indoor )?grand prix|wanda diamond|diamond league|rabat|meeting international mohammed|ostrava|fbk games/.test(m)) return 2;
+  return 1;
+}
+
+function _raceMargin(myTime, theirTime) {
+  const t1 = parseTimeToSecs(myTime), t2 = parseTimeToSecs(theirTime);
+  if (!t1 || !t2 || !isFinite(t1) || !isFinite(t2)) return null;
+  const diff = Math.abs(t1 - t2);
+  if (diff <= 1.50) return { label: `+${diff.toFixed(2)}`, cls: 'close' };
+  const label = diff < 60 ? `+${diff.toFixed(1)}s` : `+${Math.floor(diff / 60)}:${(diff % 60).toFixed(1).padStart(4, '0')}`;
+  return { label, cls: 'dominant' };
+}
+
+const _TREND_TYPE_LABELS = { pb: 'PERSONAL BEST', dominant: 'DOMINANT WIN', prominent: 'MAJOR MEET' };
+
+function _trendParseDate(dateStr) {
+  if (!dateStr) return 0;
+  const d = new Date(`${dateStr} ${new Date().getFullYear()}`);
+  return isNaN(d) ? 0 : d.getTime();
+}
+
+function _isPbResult(athlete, result) {
+  const secs = parseTimeToSecs(result.time);
+  if (secs == null) return false;
+  const ev = _normalizeEvent(result.event);
+  const pr = (athlete.prs || []).find(p => _normalizeEvent(p.event) === ev);
+  if (!pr) return false;
+  const prSecs = parseTimeToSecs(pr.time);
+  if (prSecs == null) return false;
+  return secs <= prSecs + 0.005;
+}
+
+function _buildTrendingPerformances(limit = 4) {
+  const all = Object.values(ATHLETES);
+  const cutoff = Date.now() - 30 * 86400000;
+
+  // Group same-race finishers so we can compute winning margins
+  const groups = {};
+  all.forEach(a => {
+    (a.results || []).forEach(r => {
+      if (!r.meet || !r.event || !r.time) return;
+      const key = `${_normalizeEvent(r.event)}|${r.meet.trim().toLowerCase()}|${r.round || ''}`;
+      (groups[key] = groups[key] || []).push({ athlete: a, result: r });
+    });
+  });
+
+  const candidates = [];
+  all.forEach(a => {
+    (a.results || []).forEach(r => {
+      const ts = _trendParseDate(r.date);
+      if (ts < cutoff) return;
+      if (parseTimeToSecs(r.time) == null) return;
+      const place = parseInt(r.place, 10);
+
+      const isPB = _isPbResult(a, r);
+
+      let isDominant = false, marginLabel = '';
+      if (place === 1) {
+        const key = `${_normalizeEvent(r.event)}|${r.meet.trim().toLowerCase()}|${r.round || ''}`;
+        const others = (groups[key] || []).filter(e => e.athlete !== a && parseTimeToSecs(e.result.time) != null);
+        const nextBest = others.reduce((best, e) =>
+          (!best || parseTimeToSecs(e.result.time) < parseTimeToSecs(best.result.time)) ? e : best, null);
+        if (nextBest) {
+          const margin = _raceMargin(r.time, nextBest.result.time);
+          if (margin && margin.cls === 'dominant') { isDominant = true; marginLabel = margin.label; }
+        }
+      }
+
+      const tier = _meetTier(r.meet);
+      const isProminent = tier >= 2 && place >= 1 && place <= 3;
+
+      if (!isPB && !isDominant && !isProminent) return;
+
+      const score = (isPB ? 3 : 0) + (isDominant ? 2 : 0) + (isProminent ? (tier === 3 ? 2 : 1) : 0);
+      candidates.push({ athlete: a, result: r, isPB, isDominant, isProminent, tier, marginLabel, score, ts });
+    });
+  });
+
+  // Keep only the best-scoring result per athlete so the row stays diverse
+  const byAthlete = {};
+  candidates.forEach(c => {
+    const cur = byAthlete[c.athlete.id];
+    if (!cur || c.score > cur.score || (c.score === cur.score && c.ts > cur.ts)) byAthlete[c.athlete.id] = c;
+  });
+
+  return Object.values(byAthlete)
+    .sort((x, y) => y.ts - x.ts || y.score - x.score)
+    .slice(0, limit);
+}
+
+function _trendBlurb(c) {
+  const parts = [];
+  if (c.isPB) parts.push('a new personal best');
+  if (c.isDominant) parts.push(`a dominant win by ${c.marginLabel}`);
+  if (c.isProminent) parts.push(c.tier === 3 ? 'a major championship result' : 'a statement on the Diamond League circuit');
+  if (!parts.length) return '';
+  const joined = parts.length === 1 ? parts[0]
+    : parts.length === 2 ? parts.join(' and ')
+    : `${parts.slice(0, -1).join(', ')}, and ${parts[parts.length - 1]}`;
+  return joined.charAt(0).toUpperCase() + joined.slice(1) + '.';
+}
+
+function _trendTypeTag(c) {
+  if (c.isPB) return _TREND_TYPE_LABELS.pb;
+  if (c.isDominant) return _TREND_TYPE_LABELS.dominant;
+  return _TREND_TYPE_LABELS.prominent;
+}
+
+function trendCard(c) {
+  const a = c.athlete, r = c.result;
+  const cls = c.isPB ? 'fp-trend--pb' : c.isDominant ? 'fp-trend--dominant' : 'fp-trend--prominent';
+  const img = imgHTML(a.photo, a.name, '', 16 / 10, 'fp-trend-photo-img');
+  return `
+    <div class="fp-trend-card reveal ${cls}" onclick="openAthleteCard('${a.id}', null)" role="button" tabindex="0">
+      <div class="fp-trend-photo-wrap" style="${a.photoBackground ? `background-color:${a.photoBackground}` : ''}">
+        ${img}
+        <span class="cat-tag fp-trend-tag">${_trendTypeTag(c)}</span>
+      </div>
+      <div class="fp-trend-body">
+        <div class="fp-trend-name">${renderFlag(a.flag)} ${a.name}</div>
+        <div class="fp-trend-stat">${r.event.trim()} · ${r.time}${r.place ? ` · ${r.place.replace(/\.$/, '')}` : ''}</div>
+        <p class="fp-trend-blurb">${_trendBlurb(c)}</p>
+        <div class="fp-trend-meta">${r.meet}${r.date ? ` · ${r.date}` : ''}</div>
+      </div>
+    </div>`;
+}
+
+function buildTrendingSection() {
+  const items = _buildTrendingPerformances(4);
+  if (!items.length) return '';
+  return `
+    <div class="fp-trending">
+      <div class="fp-trending-hd">
+        <span class="fp-trending-title">Trending Performances</span>
+      </div>
+      <div class="fp-trending-row">${items.map(trendCard).join('')}</div>
+    </div>`;
+}
+
 // ── HOME PAGE ─────────────────────────────────────────────
 function buildHome() {
   // Hero: prefer featured article, fall back to featured rankings, then first article
@@ -121,6 +272,7 @@ function buildHome() {
   document.getElementById('main').innerHTML = `
     <div class="fp-wrap">
       ${tickerHtml}
+      ${buildTrendingSection()}
       <div class="fp-body">
         <div class="fp-top">
           ${heroItem ? `
