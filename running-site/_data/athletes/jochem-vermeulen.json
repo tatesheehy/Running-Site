@@ -1,31 +1,18 @@
 {
-  "id": "jochem-vermeulen",
-  "name": "Jochem Vermeulen",
-  "flag": "BE",
-  "country": "Belgium",
-  "waUrl": "https://worldathletics.org/athletes/belgium/jochem-vermeulen-14627506",
-  "photo": "",
   "photoBackground": "#111111",
-  "event": "MIDDLE DISTANCE",
-  "age": "27",
-  "dob": "1998-08-02",
-  "height": "x",
-  "weight": "x",
-  "hometown": "x",
-  "coach": "x",
-  "club": "x",
-  "seasons": "0",
-  "ncaa": false,
-  "collegeLogo": "",
-  "college": "",
-  "headlineKey": "x",
-  "headlineRest": "x",
-  "questionTitle": "Next question",
-  "questionBody": "x",
   "reviewTitle": "Season review",
-  "reviewBody": "x",
+  "collegeLogo": "",
   "traits": [],
+  "waUrl": "https://worldathletics.org/athletes/belgium/jochem-vermeulen-14627506",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Jochem Vermeulen",
+  "headlineKey": "x",
+  "flag": "BE",
   "honours": [],
+  "seasons": "0",
+  "lastSynced": "2026-07-12",
   "prs": [
     {
       "event": "400m",
@@ -72,42 +59,505 @@
       "time": "3:53.68"
     }
   ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "",
+  "ncaa": false,
+  "club": "x",
+  "country": "Belgium",
   "results": [
     {
       "date": "MAR 20",
       "meet": "World Athletics Indoor Championships",
       "event": "1500 m sh",
       "time": "3:44.55",
-      "place": "5."
+      "place": "5.",
+      "round": "H2"
     },
     {
       "date": "MAR 1",
       "meet": "Belgian Indoor Championships",
       "event": "1500 m sh",
       "time": "3:39.03",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
       "event": "1500 m sh",
       "time": "3:33.71",
-      "place": "5."
+      "place": "5.",
+      "round": "F1"
     },
     {
       "date": "FEB 8",
       "meet": "INIT Indoor Meeting Karlsruhe",
       "event": "1500 m sh",
       "time": "3:35.48",
-      "place": "3."
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "JAN 31",
       "meet": "IFAM Gent Indoor",
       "event": "800 m sh",
       "time": "1:48.04",
-      "place": "2."
+      "place": "2.",
+      "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-12"
+  "dob": "1998-08-02",
+  "college": "",
+  "weight": "x",
+  "lastHistorySynced": "2026-07-11",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "jochem-vermeulen",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "MAR 3",
+        "meet": "Gent Belgian U23/U20 Indoor Championships, Gent (i)",
+        "event": "1500m sh",
+        "time": "4:15.91",
+        "place": "1"
+      }
+    ],
+    "2019": [
+      {
+        "date": "SEP 1",
+        "meet": "Belgian Championships",
+        "event": "1500m",
+        "time": "3:51.87",
+        "place": "4"
+      },
+      {
+        "date": "AUG 31",
+        "meet": "Belgian Championships",
+        "event": "1500m",
+        "time": "3:51.66",
+        "place": "2"
+      },
+      {
+        "date": "AUG 17",
+        "meet": "Meeting voor Mon, Kessel-Lo",
+        "event": "800m",
+        "time": "1:49.62",
+        "place": "1"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Memorial Geert Rasschaert, Ninove",
+        "event": "1500m",
+        "time": "3:41.24",
+        "place": "1"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "KBC Night of Athletics, Heusden-Zolder",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      }
+    ],
+    "2020": [],
+    "2021": [
+      {
+        "date": "SEP 3",
+        "meet": "Allianz Memorial Van Damme",
+        "event": "1500m",
+        "time": "3:53.36",
+        "place": "12"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "KBC Nacht van de Atletiek",
+        "event": "1500m",
+        "time": "3:35.21",
+        "place": "3"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Meeting du Stadium",
+        "event": "1500m",
+        "time": "3:37.02",
+        "place": "1"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "European Athletics Team Championships First League",
+        "event": "1500m",
+        "time": "3:40.02",
+        "place": "3"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "Next Generation Athletics",
+        "event": "1500m",
+        "time": "3:36.40",
+        "place": "2"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "5. Lange Laufnacht",
+        "event": "1500m",
+        "time": "3:39.56",
+        "place": "2"
+      }
+    ],
+    "2022": [
+      {
+        "date": "SEP 4",
+        "meet": "ISTAF 2022",
+        "event": "1500m",
+        "time": "3:37.51",
+        "place": "9"
+      },
+      {
+        "date": "AUG 30",
+        "meet": "Spitzen Leichtathletik",
+        "event": "1500m",
+        "time": "3:45.93",
+        "place": "12"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "VS sprintmeeting",
+        "event": "800m",
+        "time": "1:46.6",
+        "place": "2"
+      },
+      {
+        "date": "JUL 26",
+        "meet": "Last Minute Qualifikation EM München",
+        "event": "1500m",
+        "time": "3:36.09",
+        "place": "1"
+      },
+      {
+        "date": "JUL 23",
+        "meet": "BMW Louyet Flanders Cup OEH",
+        "event": "1500m",
+        "time": "3:37.25",
+        "place": "1"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "Flanders Cup VITA",
+        "event": "1500m",
+        "time": "3:37.92",
+        "place": "4"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Miting Internacional d’Atletisme Ciutat de Barcelona",
+        "event": "1500m",
+        "time": "3:40.16",
+        "place": "1"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Night of Athletics",
+        "event": "1500m",
+        "time": "3:37.73",
+        "place": "9"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Belgian Championships",
+        "event": "1500m",
+        "time": "3:39.01",
+        "place": "2"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "Belgian Championships",
+        "event": "1500m",
+        "time": "3:46.34",
+        "place": "2"
+      },
+      {
+        "date": "JUN 3",
+        "meet": "4th Irena Szewinska Memorial",
+        "event": "1500m",
+        "time": "3:47.36",
+        "place": "15"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "IFAM Oordegem",
+        "event": "1500m",
+        "time": "3:43.24",
+        "place": "11"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "Nationale interclub mannen",
+        "event": "1500m",
+        "time": "3:52.47",
+        "place": "1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "SEP 8",
+        "meet": "Memorial van Damme",
+        "event": "2000m",
+        "time": "5:03.24",
+        "place": "11"
+      },
+      {
+        "date": "SEP 3",
+        "meet": "ISTAF",
+        "event": "1500m",
+        "time": "3:36.13",
+        "place": "6"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:35.45",
+        "place": "9"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "Belgian Championships",
+        "event": "1500m",
+        "time": "3:42.07",
+        "place": "3"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Belgian Championships",
+        "event": "1500m",
+        "time": "3:45.58",
+        "place": "1"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Night of Athletics",
+        "event": "1500m",
+        "time": "3:34.16",
+        "place": "4"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Guldensporenmeeting",
+        "event": "1500m",
+        "time": "3:34.97",
+        "place": "1"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "25th International Athletics Meeting Anhalt 2023",
+        "event": "1500m",
+        "time": "3:36.18",
+        "place": "3"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Putbos Memoria Leon Buyle VS Flanders Cup",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "JUN 6",
+        "meet": "5th Irena Szewińska Memorial",
+        "event": "1500m",
+        "time": "3:36.09",
+        "place": "11"
+      },
+      {
+        "date": "JUN 4",
+        "meet": "FBK Games",
+        "event": "1500m",
+        "time": "3:41.44",
+        "place": "14"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "Lange Laufnacht",
+        "event": "1500m",
+        "time": "3:35.80",
+        "place": "1"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Interclubs mixtes TC | Super League",
+        "event": "800m",
+        "time": "1:47.25",
+        "place": "2"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Belgian Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:55.44",
+        "place": "1"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Sparkassen Indoor Meeting Dortmund",
+        "event": "1500m sh",
+        "time": "3:39.17",
+        "place": "1"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "Mile sh",
+        "time": "3:59.32",
+        "place": "7"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "Meeting National Indoor Lyon",
+        "event": "1500m sh",
+        "time": "3:43.45",
+        "place": "8"
+      }
+    ],
+    "2024": [
+      {
+        "date": "SEP 13",
+        "meet": "Memorial van Damme",
+        "event": "1500m",
+        "time": "3:32.15",
+        "place": "5"
+      },
+      {
+        "date": "SEP 5",
+        "meet": "Weltklasse Zürich",
+        "event": "1500m",
+        "time": "3:33.07",
+        "place": "9"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Athletissima Lausanne",
+        "event": "1500m",
+        "time": "3:31.74",
+        "place": "6"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:36.14",
+        "place": "6"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:36.66",
+        "place": "7"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "London Athletics Meet",
+        "event": "Mile",
+        "time": "3:51.00",
+        "place": "10"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Night of Athletics",
+        "event": "800m",
+        "time": "1:46.38",
+        "place": "2"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:33.30",
+        "place": "2"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:40.21",
+        "place": "8"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Meeting Stanislas Nancy",
+        "event": "1500m",
+        "time": "3:36.78",
+        "place": "5"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "59. Internationales Pfingstsportfest Rehlingen",
+        "event": "1500m",
+        "time": "3:33.70",
+        "place": "2"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Super League Interclub M+V",
+        "event": "1500m",
+        "time": "3:59.11",
+        "place": "1"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Puma Nitro Lange Laufnacht",
+        "event": "1500m",
+        "time": "3:35.21",
+        "place": "1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 14",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:37.33",
+        "place": "8"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Memorial van Damme",
+        "event": "1500m",
+        "time": "3:33.42",
+        "place": "12"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "Meeting voor Mon",
+        "event": "1500m",
+        "time": "3:36.69",
+        "place": "2"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "European Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:54.33",
+        "place": "8"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Millrose Games",
+        "event": "Mile sh",
+        "time": "3:53.68",
+        "place": "9"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "1500m sh",
+        "time": "3:36.17",
+        "place": "6"
+      }
+    ]
+  },
+  "age": "27"
 }

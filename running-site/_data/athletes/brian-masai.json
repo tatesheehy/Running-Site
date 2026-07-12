@@ -67,244 +67,278 @@
     {
       "date": "JUN 20",
       "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:41.03",
-      "place": "12"
+      "place": "12.",
+      "round": "F1"
     },
     {
       "date": "JUN 18",
       "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:39.2h",
-      "place": "4"
+      "place": "4.",
+      "round": "H1"
     },
     {
       "date": "JUN 10",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:37.92",
-      "place": "9"
+      "place": "9.",
+      "round": "SF2"
     },
     {
       "date": "MAY 29",
       "meet": "NCAA Division I West First Rounds",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:44.42",
-      "place": "1"
+      "place": "1.",
+      "round": "H1"
     },
     {
       "date": "MAY 27",
       "meet": "NCAA Division I West First Rounds",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:39.77",
-      "place": "1"
+      "place": "1.",
+      "round": "PR4"
     },
     {
       "date": "MAY 16",
       "meet": "Southeastern Conference Outdoor Track & Field Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:43.52",
-      "place": "1"
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "MAY 16",
       "meet": "Southeastern Conference Outdoor Track & Field Championships",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "DNS",
-      "place": ""
+      "place": "",
+      "round": "F1"
     },
     {
       "date": "MAY 15",
       "meet": "Southeastern Conference Outdoor Track & Field Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:43.36",
-      "place": "1"
+      "place": "1.",
+      "round": "H2"
     },
     {
       "date": "MAY 8",
       "meet": "Arkansas Twilight",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:33.17",
-      "place": "2"
+      "place": "2.",
+      "round": "F1"
     },
     {
       "date": "MAY 1",
       "meet": "Payton Jordan Invitational",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:38.13",
-      "place": "2"
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "APR 18",
       "meet": "Bryan Clay Invitational",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:39.54",
-      "place": "4"
+      "place": "4.",
+      "round": "F2"
     },
     {
       "date": "APR 17",
       "meet": "Bryan Clay Invitational",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:27.64",
-      "place": "10"
+      "place": "10.",
+      "round": "F1"
     },
     {
       "date": "APR 3",
       "meet": "Mets Outdoor Championships",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:53.52",
-      "place": "1"
+      "place": "1.",
+      "round": "F4"
     },
     {
       "date": "MAR 28",
       "meet": "Raleigh Relays",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:52.29",
-      "place": "5"
+      "place": "5.",
+      "round": "F11"
     },
     {
       "date": "MAR 21",
       "meet": "UCF Black & Gold Invite",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "4:00.61",
-      "place": "6"
+      "place": "6.",
+      "round": "F4"
     },
     {
       "date": "MAR 20",
       "meet": "UCF Black & Gold Invite",
-      "event": "800m",
+      "event": "800 m",
       "time": "1:51.65",
-      "place": "5"
+      "place": "5.",
+      "round": "F3"
     },
     {
       "date": "MAR 20",
       "meet": "UCF Black & Gold Invite",
-      "event": "4x400 Metres Relay",
+      "event": "4x400 m Relay",
       "time": "3:20.52",
-      "place": "4"
+      "place": "4.",
+      "round": "F3"
     },
     {
       "date": "MAR 13",
       "meet": "NCAA Division I Indoor Track and Field Championships",
-      "event": "Distance Medley Short Track",
+      "event": "Distance Medley sh",
       "time": "9:21.42",
-      "place": "2"
+      "place": "2.",
+      "round": "F1"
     },
     {
       "date": "FEB 26",
       "meet": "Southeastern Conference Indoor Track & Field Championship",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:45.42",
-      "place": "1"
+      "place": "1.",
+      "round": "F2"
     },
     {
       "date": "FEB 26",
       "meet": "Southeastern Conference Indoor Track & Field Championship",
-      "event": "Distance Medley Short Track",
+      "event": "Distance Medley sh",
       "time": "9:30.84",
-      "place": "3"
+      "place": "3.",
+      "round": "F1"
     },
     {
       "date": "FEB 22",
       "meet": "Saucony Battle for Boston",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:43.82",
-      "place": "3"
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "FEB 20",
       "meet": "Arkansas Qualifier",
-      "event": "Distance Medley Short Track",
+      "event": "Distance Medley sh",
       "time": "9:17.30",
-      "place": "2"
+      "place": "2.",
+      "round": "F1"
     },
     {
       "date": "FEB 16",
       "meet": "Northeast Conference Indoor Championships",
-      "event": "800 Metres Short Track",
+      "event": "800 m sh",
       "time": "1:52.55",
-      "place": "1"
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "FEB 16",
       "meet": "Northeast Conference Indoor Championships",
-      "event": "Mile Short Track",
+      "event": "Mile sh",
       "time": "4:14.55",
-      "place": "4"
+      "place": "4.",
+      "round": "F1"
     },
     {
       "date": "FEB 16",
       "meet": "Northeast Conference Indoor Championships",
-      "event": "4x400 Metres Relay Short Track",
+      "event": "4x400 m Relay sh",
       "time": "3:19.44",
-      "place": "3"
+      "place": "3.",
+      "round": "F2"
     },
     {
       "date": "FEB 15",
       "meet": "Northeast Conference Indoor Championships",
-      "event": "800 Metres Short Track",
+      "event": "800 m sh",
       "time": "1:55.49",
-      "place": "1"
+      "place": "1.",
+      "round": "H2"
     },
     {
       "date": "FEB 15",
       "meet": "Northeast Conference Indoor Championships",
-      "event": "Mile Short Track",
+      "event": "Mile sh",
       "time": "4:21.30",
-      "place": "2"
+      "place": "2.",
+      "round": "H2"
     },
     {
       "date": "FEB 13",
       "meet": "Husky Classic",
-      "event": "3000m",
+      "event": "3000 m",
       "time": "DNS",
-      "place": ""
+      "place": "",
+      "round": "F6"
     },
     {
       "date": "FEB 13",
       "meet": "Tyson Invitational",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:43.96",
-      "place": "3"
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "JAN 31",
       "meet": "Boston University John Thomas Terrier Classic",
-      "event": "800 Metres Short Track",
+      "event": "800 m sh",
       "time": "1:52.54",
-      "place": "2"
+      "place": "2.",
+      "round": "F4"
     },
     {
       "date": "JAN 31",
       "meet": "Razorback Invitational",
-      "event": "Mile Short Track",
+      "event": "Mile sh",
       "time": "3:58.82",
-      "place": "2"
+      "place": "2.",
+      "round": "F2"
     },
     {
       "date": "JAN 23",
       "meet": "Dr. Sander Scorcher",
-      "event": "800 Metres Short Track",
+      "event": "800 m sh",
       "time": "1:52.94",
-      "place": "1"
+      "place": "1.",
+      "round": "F4"
     },
     {
       "date": "JAN 16",
       "meet": "NYC Gotham Cup",
-      "event": "800 Metres Short Track",
+      "event": "800 m sh",
       "time": "1:53.15",
-      "place": "1"
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "JAN 16",
       "meet": "Arkansas Invitational",
-      "event": "Mile Short Track",
+      "event": "Mile sh",
       "time": "4:00.23",
-      "place": "1"
+      "place": "1.",
+      "round": "F3"
     }
   ],
   "dob": "1999-03-02",
-  "lastHistorySynced": "2026-07-10",
+  "lastHistorySynced": "2026-07-11",
   "event": "MIDDLE DISTANCE",
   "id": "brian-masai",
   "resultsHistory": {
