@@ -203,15 +203,6 @@ function _renderH2HPage() {
                         const rankColor = RANK_COLORS[i] || null;
                         const rankClass = i === 0 ? 'h2h-lb-row--gold' : i === 1 ? 'h2h-lb-row--silver' : i === 2 ? 'h2h-lb-row--bronze' : '';
 
-                        const beatChips = Object.values(rec.matchups)
-                          .filter(m => m.wins > 0)
-                          .sort((a, b) => b.wins - a.wins || (b.wins + b.losses) - (a.wins + a.losses))
-                          .slice(0, 3)
-                          .map(m => {
-                            const n = m.fullName.split(' ').slice(-1)[0];
-                            return `<span class="h2h-lb-beat-chip">${n} <span class="h2h-lb-beat-rec">${m.wins}–${m.losses}</span></span>`;
-                          }).join('<span class="h2h-lb-beat-sep">·</span>');
-
                         const persona = _h2hPersonaTag(a);
                         const faved = typeof isFavorited === 'function' && isFavorited(id);
 
@@ -230,7 +221,6 @@ function _renderH2HPage() {
                                 </div>
                                 <div class="h2h-lb-ath-sub">
                                   <span class="h2h-lb-country">${renderFlag(a.flag)} ${a.country || ''}</span>
-                                  ${beatChips ? `<span class="h2h-lb-beat-chips"><span class="h2h-lb-beat-label">Beat</span>${beatChips}</span>` : ''}
                                 </div>
                               </div>
                               <svg class="h2h-expand-chevron" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
