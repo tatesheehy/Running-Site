@@ -164,10 +164,12 @@ window.toggleListMember = async function(listId, athleteId) {
   if (!_listMembers[listId]) _listMembers[listId] = new Set();
   const set = _listMembers[listId];
   if (set.has(athleteId)) {
-    await _sb.from('athlete_list_members').delete().eq('list_id', listId).eq('athlete_id', athleteId);
+    const { error } = await _sb.from('athlete_list_members').delete().eq('list_id', listId).eq('athlete_id', athleteId);
+    if (error) { console.error('Failed to remove athlete from list:', error); return; }
     set.delete(athleteId);
   } else {
-    await _sb.from('athlete_list_members').insert({ list_id: listId, user_id: _user.id, athlete_id: athleteId });
+    const { error } = await _sb.from('athlete_list_members').insert({ list_id: listId, user_id: _user.id, athlete_id: athleteId });
+    if (error) { console.error('Failed to add athlete to list:', error); return; }
     set.add(athleteId);
   }
   _syncListUI();
