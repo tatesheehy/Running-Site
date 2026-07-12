@@ -287,6 +287,31 @@ window.h2hLbSetList      = id   => {
   _renderH2HPage();
 };
 
+window.h2hLbToggleListMenu = function() {
+  const menu = document.getElementById('h2h-lb-list-menu');
+  if (!menu) return;
+  menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+};
+
+window.h2hLbListMenuSelect = function(id) {
+  window.h2hLbSetList(id);
+};
+
+window.h2hLbCreateList = async function() {
+  if (typeof getCurrentUser === 'function' && !getCurrentUser()) { openAuthModal(); return; }
+  const input = document.getElementById('h2h-lb-new-list-input');
+  const name = input?.value.trim();
+  if (!name) return;
+  const list = await createList(name);
+  if (list) window.h2hLbSetList(list.id);
+};
+
+document.addEventListener('click', e => {
+  if (e.target.closest('.h2h-lb-list-menu-wrap')) return;
+  const menu = document.getElementById('h2h-lb-list-menu');
+  if (menu && menu.style.display !== 'none') menu.style.display = 'none';
+});
+
 function _h2hCurrentListName() {
   const lists = typeof getLists === 'function' ? getLists() : [];
   return lists.find(l => l.id === _h2hLbListId)?.name || 'This List';
@@ -302,14 +327,29 @@ function _renderH2HListFilter() {
       </div>`;
   }
   const lists = typeof getLists === 'function' ? getLists() : [];
-  if (!lists.length) return '';
+  const currentLabel = _h2hLbListId === 'all' ? 'All Athletes' : _h2hCurrentListName();
+  const items = [{ id: 'all', name: 'All Athletes' }, ...lists].map(l => `
+    <div class="h2h-lb-list-menu-item${l.id === _h2hLbListId ? ' active' : ''}" onclick="h2hLbListMenuSelect('${l.id}')">${l.name}</div>
+  `).join('');
+
   return `
     <div class="h2h-lb-ctrl-group">
       <div class="h2h-lb-ctrl-label">List</div>
-      <select class="h2h-lb-list-select" onchange="h2hLbSetList(this.value)">
-        <option value="all"${_h2hLbListId === 'all' ? ' selected' : ''}>All Athletes</option>
-        ${lists.map(l => `<option value="${l.id}"${l.id === _h2hLbListId ? ' selected' : ''}>${l.name}</option>`).join('')}
-      </select>
+      <div class="h2h-lb-list-menu-wrap">
+        <button class="h2h-seg-btn h2h-lb-list-btn" onclick="h2hLbToggleListMenu()">
+          ${currentLabel}
+          <svg width="8" height="6" viewBox="0 0 8 6" fill="none" style="margin-left:5px;vertical-align:1px"><path d="M1 1l3 3 3-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="h2h-lb-list-menu" id="h2h-lb-list-menu" style="display:none">
+          ${items}
+          <div class="h2h-lb-list-menu-divider"></div>
+          <div class="h2h-lb-list-menu-new">
+            <input type="text" id="h2h-lb-new-list-input" placeholder="New list name…" maxlength="40" autocomplete="off"
+              onkeydown="if(event.key==='Enter'){event.preventDefault();h2hLbCreateList();}">
+            <button onclick="h2hLbCreateList()">+</button>
+          </div>
+        </div>
+      </div>
     </div>`;
 }
 
