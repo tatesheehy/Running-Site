@@ -209,8 +209,8 @@ function _renderH2HPage() {
                           .slice(0, 3)
                           .map(m => {
                             const n = m.fullName.split(' ').slice(-1)[0];
-                            return `<span class="h2h-lb-beat-chip">${n}<span class="h2h-lb-beat-rec">&thinsp;${m.wins}–${m.losses}</span></span>`;
-                          }).join('');
+                            return `<span class="h2h-lb-beat-chip">${n} <span class="h2h-lb-beat-rec">${m.wins}–${m.losses}</span></span>`;
+                          }).join('<span class="h2h-lb-beat-sep">·</span>');
 
                         const persona = _h2hPersonaTag(a);
                         const faved = typeof isFavorited === 'function' && isFavorited(id);
@@ -230,7 +230,7 @@ function _renderH2HPage() {
                                 </div>
                                 <div class="h2h-lb-ath-sub">
                                   <span class="h2h-lb-country">${renderFlag(a.flag)} ${a.country || ''}</span>
-                                  ${beatChips ? `<span class="h2h-lb-beat-chips">${beatChips}</span>` : ''}
+                                  ${beatChips ? `<span class="h2h-lb-beat-chips"><span class="h2h-lb-beat-label">Beat</span>${beatChips}</span>` : ''}
                                 </div>
                               </div>
                               <svg class="h2h-expand-chevron" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
