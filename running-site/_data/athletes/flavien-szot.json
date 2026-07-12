@@ -102,103 +102,117 @@
   ],
   "results": [
     {
+      "date": "JUL 8",
+      "meet": "Meeting Lignano",
+      "event": "1500m",
+      "time": "3:34.75",
+      "place": "2"
+    },
+    {
+      "date": "JUL 4",
+      "meet": "Meeting National Est Lyonnais",
+      "event": "800m",
+      "time": "1:46.09",
+      "place": "4"
+    },
+    {
+      "date": "JUL 4",
+      "meet": "Meeting National Est Lyonnais",
+      "event": "5000m",
+      "time": "DNF",
+      "place": ""
+    },
+    {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:31.81",
-      "place": "9."
+      "place": "9"
     },
     {
       "date": "JUN 21",
       "meet": "FBK Games",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:34.58",
-      "place": "7."
+      "place": "7"
     },
     {
       "date": "JUN 17",
       "meet": "Meeting International de Montreuil",
-      "event": "800 m",
+      "event": "800m",
       "time": "1:45.71",
-      "place": "5."
+      "place": "5"
     },
     {
       "date": "JUN 7",
       "meet": "BAUHAUS-Galan",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:34.27",
-      "place": "10."
+      "place": "10"
     },
     {
       "date": "MAY 31",
       "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:32.24",
-      "place": "10."
+      "place": "10"
     },
     {
       "date": "MAY 17",
       "meet": "Championnats de France des Clubs Elite 1",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:39.99",
-      "place": "1."
+      "place": "1"
     },
     {
       "date": "MAY 17",
       "meet": "Championnats de France des Clubs Elite 1",
-      "event": "4x400 m Relay",
+      "event": "4x400 Metres Relay",
       "time": "3:15.45",
-      "place": "3."
+      "place": "3"
     },
     {
       "date": "APR 4",
-      "meet": "Urban Trail de Lille - 5 et 10km",
-      "event": "5 Kilom Road",
+      "meet": "Urban Trail de Lille",
+      "event": "5 Kilometres Road",
       "time": "13:18",
-      "place": "10."
+      "place": "10"
     },
     {
       "date": "FEB 28",
       "meet": "French Indoor Championships",
-      "event": "3000 m sh",
+      "event": "3000 Metres Short Track",
       "time": "8:12.73",
-      "place": "2."
+      "place": "2"
     },
     {
       "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
-      "event": "3000 m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:39.89",
-      "place": "9."
+      "place": "9"
     },
     {
       "date": "JAN 31",
       "meet": "Boston University John Thomas Terrier Classic",
-      "event": "3000 m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:39.98",
-      "place": "4."
+      "place": "4"
     },
     {
       "date": "JAN 24",
       "meet": "Dr. Sander Invitational",
-      "event": "1500 m sh",
-      "time": "3:38.57",
-      "place": ""
-    },
-    {
-      "date": "JAN 24",
-      "meet": "Dr. Sander Invitational",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "3:54.00",
-      "place": "1."
+      "place": "1"
     },
     {
       "date": "JAN 17",
       "meet": "Tempo Run League Eacpa indoor",
-      "event": "2000 m sh",
+      "event": "2000 Metres Short Track",
       "time": "5:00.86",
-      "place": "1."
+      "place": "1"
     }
   ],
-  "lastSynced": "2026-07-11"
+  "lastSynced": "2026-07-12"
 }
