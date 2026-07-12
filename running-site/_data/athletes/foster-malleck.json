@@ -1,31 +1,18 @@
 {
-  "id": "foster-malleck",
-  "name": "Foster Malleck",
-  "flag": "CA",
-  "country": "Canada",
-  "waUrl": "https://worldathletics.org/athletes/canada/foster-malleck-14803986",
-  "photo": "",
   "photoBackground": "#111111",
-  "event": "MIDDLE DISTANCE",
-  "age": "24",
-  "dob": "2001-08-12",
-  "height": "x",
-  "weight": "x",
-  "hometown": "x",
-  "coach": "x",
-  "club": "x",
-  "seasons": "0",
-  "ncaa": false,
-  "collegeLogo": "",
-  "college": "",
-  "headlineKey": "x",
-  "headlineRest": "x",
-  "questionTitle": "Next question",
-  "questionBody": "x",
   "reviewTitle": "Season review",
-  "reviewBody": "x",
+  "collegeLogo": "",
   "traits": [],
+  "waUrl": "https://worldathletics.org/athletes/canada/foster-malleck-14803986",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Foster Malleck",
+  "headlineKey": "x",
+  "flag": "CA",
   "honours": [],
+  "seasons": "0",
+  "lastSynced": "2026-07-12",
   "prs": [
     {
       "event": "800m",
@@ -112,91 +99,989 @@
       "time": "9:53.09"
     }
   ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "",
+  "ncaa": false,
+  "club": "x",
+  "country": "Canada",
   "results": [
     {
       "date": "JUN 27",
       "meet": "Pan American Athletics Championships",
       "event": "1500 m",
       "time": "3:40.20",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "JUN 21",
       "meet": "Canadian Championships",
       "event": "1500 m",
       "time": "3:37.68",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "JUN 20",
       "meet": "Canadian Championships",
       "event": "1500 m",
       "time": "3:47.71",
-      "place": "1."
+      "place": "1.",
+      "round": "H2"
     },
     {
       "date": "JUN 10",
       "meet": "Motonet GP Lahti",
       "event": "1500 m",
       "time": "3:36.13",
-      "place": "2."
+      "place": "2.",
+      "round": "F1"
     },
     {
       "date": "JUN 3",
       "meet": "Paavo Nurmi Games",
       "event": "1500 m",
       "time": "3:34.17",
-      "place": "8."
+      "place": "8.",
+      "round": "F"
     },
     {
       "date": "APR 18",
       "meet": "B.A.A. Invitational Mile",
       "event": "Mile Road",
       "time": "4:07.01",
-      "place": "3."
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "MAR 20",
       "meet": "World Athletics Indoor Championships",
       "event": "1500 m sh",
       "time": "3:39.05",
-      "place": "4."
+      "place": "4.",
+      "round": "H3"
     },
     {
       "date": "FEB 22",
       "meet": "Saucony Battle for Boston",
       "event": "1500 m sh",
       "time": "3:33.39",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "JAN 31",
       "meet": "Boston University John Thomas Terrier Classic",
       "event": "1500 m sh",
       "time": "3:34.99",
-      "place": ""
+      "place": "",
+      "round": "F1"
     },
     {
       "date": "JAN 31",
       "meet": "Boston University John Thomas Terrier Classic",
       "event": "Mile sh",
       "time": "3:51.39",
-      "place": "4."
+      "place": "4.",
+      "round": "F1"
     },
     {
       "date": "JAN 24",
       "meet": "New Balance Indoor Grand Prix",
       "event": "2000 m sh",
       "time": "4:54.08",
-      "place": "5."
+      "place": "5.",
+      "round": "F"
     },
     {
       "date": "JAN 10",
       "meet": "46th World Athletics Cross Country Championships",
       "event": "Cross Country Relay",
       "time": "23:43",
-      "place": "9."
+      "place": "9.",
+      "round": "F"
     }
   ],
-  "lastSynced": "2026-07-12"
+  "dob": "2001-08-12",
+  "college": "",
+  "weight": "x",
+  "lastHistorySynced": "2026-07-05",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "foster-malleck",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "AUG 12",
+        "meet": "Brandon Royal Canadian Legion Ch., Brandon",
+        "event": "800m",
+        "time": "1:56.55",
+        "place": "4"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "Brandon Royal Canadian Legion Ch., Brandon",
+        "event": "1500m",
+        "time": "3:57.58",
+        "place": "1"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "Guelph Speed River Twilight, Guelph",
+        "event": "3000m",
+        "time": "8:28.77",
+        "place": "3"
+      },
+      {
+        "date": "JUL 22",
+        "meet": "Windsor AO U18 Championships, Windsor",
+        "event": "800m",
+        "time": "1:55.90",
+        "place": "1"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Windsor AO U18 Championships, Windsor",
+        "event": "2000 Metres Steeplechase",
+        "time": "6:17.75",
+        "place": "1"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Ottawa Canadian U20 Championships, Ottawa",
+        "event": "1500m",
+        "time": "3:52.76",
+        "place": "5"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "Ottawa Canadian U20 Championships, Ottawa",
+        "event": "1500m",
+        "time": "3:59.08",
+        "place": "3"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Kingston International U18 Meet, Kingston",
+        "event": "1500m",
+        "time": "4:08.78",
+        "place": "2"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "Toronto Ontario Ch., Toronto",
+        "event": "800m",
+        "time": "1:54.77",
+        "place": "1"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "London 1500m Night, London",
+        "event": "1500m",
+        "time": "3:51.97",
+        "place": "5"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Toronto OFSAA Ch., Toronto",
+        "event": "3000m",
+        "time": "8:50.28",
+        "place": "13"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Toronto OFSAA Ch., Toronto",
+        "event": "1500m",
+        "time": "3:55.95",
+        "place": "5"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Windsor OFSAA West Regional Championships, Windsor",
+        "event": "3000m",
+        "time": "8:39.85",
+        "place": "4"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Windsor OFSAA West Regional Championships, Windsor",
+        "event": "1500m",
+        "time": "3:55.73",
+        "place": "2"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Windsor Johnny Loaring Classic, Windsor",
+        "event": "1500m",
+        "time": "3:56.94",
+        "place": "8"
+      },
+      {
+        "date": "APR 28",
+        "meet": "Hillsdale GINA Relays",
+        "event": "1500m",
+        "time": "4:04.98",
+        "place": "1"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "New York New Balance Indoor Nationals",
+        "event": "2 Miles sh",
+        "time": "9:26.51",
+        "place": "5"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Geneva SPIRE NCAA D1 Invitational",
+        "event": "3000m",
+        "time": "8:47.40",
+        "place": "6"
+      },
+      {
+        "date": "JAN 20",
+        "meet": "Toronto Fred Foot Memorial, Toronto (i)",
+        "event": "3000m sh",
+        "time": "8:56.72",
+        "place": "3"
+      }
+    ],
+    "2019": [
+      {
+        "date": "NOV 15",
+        "meet": "NCAA Division I Northeast Region Cross Country Ch. (road)",
+        "event": "10K",
+        "time": "30:41",
+        "place": "98"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "Canadian U20 Championships, Montréal",
+        "event": "1500m",
+        "time": "3:50.97",
+        "place": "1"
+      },
+      {
+        "date": "JUL 26",
+        "meet": "Canadian U20 Championships, Montréal",
+        "event": "1500m",
+        "time": "4:01.48",
+        "place": "3"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Pan American U20 Championships, San José",
+        "event": "1500m",
+        "time": "3:47.05",
+        "place": "1"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "Ontario Ch., Toronto",
+        "event": "800m",
+        "time": "1:52.69",
+        "place": "1"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Distance Series Finale, London",
+        "event": "3000m",
+        "time": "8:11.45",
+        "place": "1"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Last Chance Twilight, Hamilton",
+        "event": "1500m",
+        "time": "3:47.95",
+        "place": "4"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "OFSAA Ch., Guelph",
+        "event": "3000m",
+        "time": "8:34.39",
+        "place": "1"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "OFSAA Ch., Guelph",
+        "event": "1500m",
+        "time": "3:51.15",
+        "place": "1"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "OFSAA Ch., Guelph",
+        "event": "1500m",
+        "time": "3:58.68",
+        "place": "2"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Johnny Loaring Classic, Windsor",
+        "event": "1500m",
+        "time": "3:48.38",
+        "place": "2"
+      },
+      {
+        "date": "APR 26",
+        "meet": "Penn Relays",
+        "event": "Mile",
+        "time": "4:18.22",
+        "place": "1"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "New Balance Indoor Nationals",
+        "event": "Mile sh",
+        "time": "4:09.27",
+        "place": "4"
+      },
+      {
+        "date": "MAR 3",
+        "meet": "Ontario Indoor Championships Series #3, Toronto (i)",
+        "event": "800m sh",
+        "time": "1:54.52",
+        "place": "1"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Ontario Indoor Championships Series #3, Toronto (i)",
+        "event": "1500m sh",
+        "time": "3:57.82",
+        "place": "1"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Boston University Last Chance Qualifier",
+        "event": "Mile sh",
+        "time": "4:07.28",
+        "place": "4"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "SPIRE Scholastic Showcase",
+        "event": "800m",
+        "time": "1:55.20",
+        "place": "3"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "SPIRE NCAA D-1 Classic",
+        "event": "Mile",
+        "time": "4:11.45",
+        "place": "1"
+      },
+      {
+        "date": "JAN 11",
+        "meet": "Sharon Anderson Memorial, Toronto (i)",
+        "event": "3000m sh",
+        "time": "8:20.07",
+        "place": "1"
+      }
+    ],
+    "2020": [
+      {
+        "date": "MAR 1",
+        "meet": "Patriot League Indoor Championships",
+        "event": "Mile sh",
+        "time": "4:18.97",
+        "place": "4"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "Patriot League Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:39.12",
+        "place": "10"
+      },
+      {
+        "date": "FEB 29",
+        "meet": "Patriot League Indoor Championships",
+        "event": "Mile sh",
+        "time": "4:20.98",
+        "place": "3"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "BU David Hemery Valentine Invitational",
+        "event": "Mile sh",
+        "time": "4:06.48",
+        "place": "5"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "John Thomas Terrier Classic",
+        "event": "3000m sh",
+        "time": "8:14.27",
+        "place": "10"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "BU Multi-team Meet",
+        "event": "1000m sh",
+        "time": "2:27.45",
+        "place": "3"
+      }
+    ],
+    "2021": [
+      {
+        "date": "JUN 29",
+        "meet": "La Classique D'athlétisme De Montréal",
+        "event": "1500m",
+        "time": "3:43.23",
+        "place": "6"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "Laurel Creek Twilight #1",
+        "event": "1500m",
+        "time": "3:44.28",
+        "place": "1"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Inferno Track and Field Festival, Guelph",
+        "event": "800m",
+        "time": "1:51.69",
+        "place": "4"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "ECAC/IC4A Ch.",
+        "event": "1500m",
+        "time": "3:47.67",
+        "place": "2"
+      },
+      {
+        "date": "MAY 1",
+        "meet": "Patriot League Outdoor T&F Ch.",
+        "event": "1500m",
+        "time": "3:52.82",
+        "place": "4"
+      },
+      {
+        "date": "APR 30",
+        "meet": "Patriot League Outdoor T&F Ch.",
+        "event": "800m",
+        "time": "1:55.32",
+        "place": "3"
+      },
+      {
+        "date": "APR 30",
+        "meet": "Patriot League Outdoor T&F Ch.",
+        "event": "1500m",
+        "time": "3:56.83",
+        "place": "4"
+      },
+      {
+        "date": "APR 16",
+        "meet": "Boston University at Army West Point",
+        "event": "1500m",
+        "time": "3:51.88",
+        "place": "1"
+      },
+      {
+        "date": "APR 9",
+        "meet": "Ocean State Invitational",
+        "event": "800m",
+        "time": "1:54.76",
+        "place": "1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "MAY 25",
+        "meet": "NCAA East Preliminary Round",
+        "event": "1500m",
+        "time": "3:49.20",
+        "place": "8"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Princeton Elite Invitational",
+        "event": "1500m",
+        "time": "3:42.05",
+        "place": "3"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Patriot League Outdoor T&F Ch.",
+        "event": "1500m",
+        "time": "3:48.26",
+        "place": "1"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Patriot League Outdoor T&F Ch.",
+        "event": "5000m",
+        "time": "14:26.77",
+        "place": "6"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Patriot League Outdoor T&F Ch.",
+        "event": "1500m",
+        "time": "3:56.87",
+        "place": "2"
+      },
+      {
+        "date": "APR 15",
+        "meet": "Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "3:42.46",
+        "place": "7"
+      },
+      {
+        "date": "APR 8",
+        "meet": "Duke Invitational",
+        "event": "1500m",
+        "time": "3:43.66",
+        "place": "4"
+      },
+      {
+        "date": "APR 8",
+        "meet": "Duke Invitational",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "APR 2",
+        "meet": "UConn Dog Fight",
+        "event": "800m",
+        "time": "1:51.39",
+        "place": "2"
+      },
+      {
+        "date": "FEB 5",
+        "meet": "Boston University Bruce Lehane Scarlet and White Invite",
+        "event": "Mile sh",
+        "time": "4:09.48",
+        "place": "11"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "800m sh",
+        "time": "1:51.63",
+        "place": "2"
+      }
+    ],
+    "2023": [
+      {
+        "date": "JUL 23",
+        "meet": "NACAC U23 Championships, Estadio Nacional",
+        "event": "1500m",
+        "time": "4:02.43",
+        "place": "3"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "1500m",
+        "time": "3:47.57",
+        "place": "6"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Patriot League Outdoor Track and Field Championships",
+        "event": "1500m",
+        "time": "3:45.44",
+        "place": "1"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "Patriot League Outdoor Track and Field Championships",
+        "event": "1500m",
+        "time": "3:50.81",
+        "place": "1"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "Patriot League Outdoor Track and Field Championships",
+        "event": "4x800 Metres Relay",
+        "time": "7:35.39",
+        "place": "3"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Wake Forest Invitational",
+        "event": "1500m",
+        "time": "3:40.10",
+        "place": "7"
+      },
+      {
+        "date": "APR 8",
+        "meet": "Duke Invitational",
+        "event": "800m",
+        "time": "1:52.36",
+        "place": "1"
+      },
+      {
+        "date": "APR 7",
+        "meet": "Duke Invitational",
+        "event": "1500m",
+        "time": "3:44.80",
+        "place": "3"
+      },
+      {
+        "date": "MAR 23",
+        "meet": "Raleigh Relays",
+        "event": "5000m",
+        "time": "14:12.95",
+        "place": "14"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "Mile sh",
+        "time": "3:59.18",
+        "place": "5"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "3000m sh",
+        "time": "8:04.93",
+        "place": "12"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "Mile sh",
+        "time": "4:00.98",
+        "place": "9"
+      },
+      {
+        "date": "DEC 7",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Canadian Championships",
+        "event": "1500m",
+        "time": "3:46.34",
+        "place": "3"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Canadian Championships",
+        "event": "1500m",
+        "time": "3:42.16",
+        "place": "2"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Harry Jerome Track Classic",
+        "event": "1500m",
+        "time": "3:38.00",
+        "place": "3"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "The Adrian Martinez Classic",
+        "event": "1500m",
+        "time": "3:37.87",
+        "place": "3"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "1500m",
+        "time": "3:46.68",
+        "place": "8"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAY 22",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "1500m",
+        "time": "3:42.76",
+        "place": "5"
+      },
+      {
+        "date": "APR 19",
+        "meet": "Wake Forest Invitational",
+        "event": "1500m",
+        "time": "3:40.72",
+        "place": "7"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "3:41.86",
+        "place": "8"
+      },
+      {
+        "date": "MAR 28",
+        "meet": "Raleigh Relays",
+        "event": "5000m",
+        "time": "13:48.80",
+        "place": "5"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "Patriot League Indoor Track and Field Championships",
+        "event": "Mile sh",
+        "time": "4:11.19",
+        "place": "1"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "Patriot League Indoor Track and Field Championships",
+        "event": "3000m sh",
+        "time": "8:06.99",
+        "place": "3"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "Patriot League Indoor Track and Field Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:53.09",
+        "place": "2"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Patriot League Indoor Track and Field Championships",
+        "event": "Mile sh",
+        "time": "4:07.26",
+        "place": "1"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Patriot League Indoor Track and Field Championships",
+        "event": "4x800 Metres Relay Short Track sh",
+        "time": "7:33.03",
+        "place": "2"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Boston University DMR Challenge",
+        "event": "Mile sh",
+        "time": "3:57.75",
+        "place": "6"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "Mile sh",
+        "time": "3:55.80",
+        "place": "7"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Boston University Bruce Lehane Scarlet and White Invitational",
+        "event": "Mile sh",
+        "time": "3:57.00",
+        "place": "4"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "3000m sh",
+        "time": "7:56.78",
+        "place": "4"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 6",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "3000m sh",
+        "time": "7:42.80",
+        "place": "9"
+      },
+      {
+        "date": "SEP 15",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "4:14.09",
+        "place": "10"
+      },
+      {
+        "date": "SEP 14",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:41.53",
+        "place": "6"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "800m Series #2",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "AUG 16",
+        "meet": "NACAC Championships",
+        "event": "1500m",
+        "time": "3:37.54",
+        "place": "1"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "La Classique d'athlétisme de Montréal",
+        "event": "1500m",
+        "time": "3:32.38",
+        "place": "1"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Canadian Championships",
+        "event": "1500m",
+        "time": "3:58.88",
+        "place": "2"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "Canadian Championships",
+        "event": "1500m",
+        "time": "3:48.15",
+        "place": "2"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Penn Relays Summer Showcase Presented by Toyota",
+        "event": "800m",
+        "time": "1:47.81",
+        "place": "4"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Penn Relays Summer Showcase Presented by Toyota",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Sunset Tour, Jack Kemp Stadium",
+        "event": "1500m",
+        "time": "3:34.15",
+        "place": "4"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Bob Vigars Classic",
+        "event": "Mile",
+        "time": "3:54.13",
+        "place": "1"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Royal City Inferno Track and Field Festival",
+        "event": "1500m",
+        "time": "3:36.82",
+        "place": "1"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "800m Series #1",
+        "event": "800m",
+        "time": "1:47.97",
+        "place": "11"
+      },
+      {
+        "date": "APR 26",
+        "meet": "115th Drake Relays presented by Xtream powered by Mediacom",
+        "event": "1500m",
+        "time": "3:42.62",
+        "place": "9"
+      },
+      {
+        "date": "APR 19",
+        "meet": "B.A.A. Invitational Mile",
+        "event": "Mile",
+        "time": "4:09.35",
+        "place": "7"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "World Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:42.55",
+        "place": "5"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "Mile sh",
+        "time": "3:54.42",
+        "place": "3"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "Mile sh",
+        "time": "3:57.36",
+        "place": "4"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Patriot League Indoor Track and Field Championships",
+        "event": "Mile sh",
+        "time": "3:58.11",
+        "place": "1"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Patriot League Indoor Track and Field Championships",
+        "event": "3000m sh",
+        "time": "8:03.75",
+        "place": "1"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "Patriot League Indoor Track and Field Championships",
+        "event": "Mile sh",
+        "time": "4:07.21",
+        "place": "1"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Boston University DMR Challenge",
+        "event": "Mile sh",
+        "time": "3:53.82",
+        "place": "4"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "Mile sh",
+        "time": "3:58.67",
+        "place": "10"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "Mile sh",
+        "time": "3:54.20",
+        "place": "2"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Boston University Battle in Beantown",
+        "event": "3000m sh",
+        "time": "7:50.96",
+        "place": "2"
+      }
+    ]
+  },
+  "age": "24"
 }

@@ -1,31 +1,18 @@
 {
-  "id": "titouan-le-grix",
-  "name": "Titouan Le Grix",
-  "flag": "FR",
-  "country": "France",
-  "waUrl": "https://worldathletics.org/athletes/france/titouan-le-grix-14948015",
-  "photo": "",
   "photoBackground": "#111111",
-  "event": "MIDDLE DISTANCE",
-  "age": "24",
-  "dob": "2002-06-16",
-  "height": "x",
-  "weight": "x",
-  "hometown": "x",
-  "coach": "x",
-  "club": "x",
-  "seasons": "0",
-  "ncaa": false,
-  "collegeLogo": "",
-  "college": "",
-  "headlineKey": "x",
-  "headlineRest": "x",
-  "questionTitle": "Next question",
-  "questionBody": "x",
   "reviewTitle": "Season review",
-  "reviewBody": "x",
+  "collegeLogo": "",
   "traits": [],
+  "waUrl": "https://worldathletics.org/athletes/france/titouan-le-grix-14948015",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Titouan Le Grix",
+  "headlineKey": "x",
+  "flag": "FR",
   "honours": [],
+  "seasons": "0",
+  "lastSynced": "2026-07-12",
   "prs": [
     {
       "event": "800m",
@@ -80,133 +67,643 @@
       "time": "9:44.62"
     }
   ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "",
+  "ncaa": false,
+  "club": "x",
+  "country": "France",
   "results": [
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
       "event": "1500 m",
       "time": "3:31.46",
-      "place": "8."
+      "place": "8.",
+      "round": "F"
     },
     {
       "date": "JUN 21",
       "meet": "FBK Games",
       "event": "1500 m",
       "time": "3:33.51",
-      "place": "3."
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "JUN 13",
       "meet": "Meeting Nikaia",
       "event": "1500 m",
       "time": "3:33.01",
-      "place": "4."
+      "place": "4.",
+      "round": "F1"
     },
     {
       "date": "MAY 29",
       "meet": "8th Irena Szewińska Memorial",
       "event": "1500 m",
       "time": "3:38.92",
-      "place": "4."
+      "place": "4.",
+      "round": "F"
     },
     {
       "date": "MAY 17",
       "meet": "Championnat de France des clubs N1A Poule 3",
       "event": "1500 m",
       "time": "3:45.94",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "MAY 3",
       "meet": "Duke Twilight",
       "event": "3000 m Steeplechase",
       "time": "8:31.46",
-      "place": "1."
+      "place": "1.",
+      "round": "F1"
     },
     {
       "date": "APR 25",
       "meet": "116th Drake Relays",
       "event": "1500 m",
       "time": "3:36.11",
-      "place": "2."
+      "place": "2.",
+      "round": "F1"
     },
     {
       "date": "APR 17",
       "meet": "Bryan Clay Invitational",
       "event": "5000 m",
       "time": "13:36.32",
-      "place": "19."
+      "place": "19.",
+      "round": "F1"
     },
     {
       "date": "MAR 22",
       "meet": "World Athletics Indoor Championships",
       "event": "1500 m sh",
       "time": "3:42.69",
-      "place": "9."
+      "place": "9.",
+      "round": "F"
     },
     {
       "date": "MAR 20",
       "meet": "World Athletics Indoor Championships",
       "event": "1500 m sh",
       "time": "3:38.92",
-      "place": "2."
+      "place": "2.",
+      "round": "H3"
     },
     {
       "date": "MAR 8",
       "meet": "French Cross Country Championships",
       "event": "Cross Country",
       "time": "14:55",
-      "place": "15."
+      "place": "15.",
+      "round": "F"
     },
     {
       "date": "MAR 1",
       "meet": "French Indoor Championships",
       "event": "1500 m sh",
       "time": "3:45.51",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
       "event": "1500 m sh",
       "time": "3:36.16",
-      "place": "5."
+      "place": "5.",
+      "round": "F2"
     },
     {
       "date": "FEB 14",
       "meet": "Sound Invite",
       "event": "1500 m sh",
       "time": "3:36.74",
-      "place": ""
+      "place": "",
+      "round": "F3"
     },
     {
       "date": "FEB 14",
       "meet": "Sound Invite",
       "event": "Mile sh",
       "time": "3:51.90",
-      "place": "4."
+      "place": "4.",
+      "round": "F2"
     },
     {
       "date": "JAN 31",
       "meet": "Boston University John Thomas Terrier Classic",
       "event": "3000 m sh",
       "time": "7:40.55",
-      "place": "6."
+      "place": "6.",
+      "round": "F1"
     },
     {
       "date": "JAN 24",
       "meet": "Dr. Sander Invitational",
       "event": "1500 m sh",
       "time": "3:41.45",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "JAN 24",
       "meet": "Dr. Sander Invitational",
       "event": "Mile sh",
       "time": "3:56.37",
-      "place": "7."
+      "place": "7.",
+      "round": "F"
     }
   ],
-  "lastSynced": "2026-07-12"
+  "dob": "2002-06-16",
+  "college": "",
+  "weight": "x",
+  "lastHistorySynced": "2026-07-11",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "titouan-le-grix",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [
+      {
+        "date": "OCT 3",
+        "meet": "Championnat AURA",
+        "event": "3000m SC",
+        "time": "9:29.31",
+        "place": "3"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "Pré-Régionaux Demi-Fond",
+        "event": "3000m SC",
+        "time": "9:39.77",
+        "place": "10"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "Meeting National à thème de l'Est Lyonnais",
+        "event": "3000m SC",
+        "time": "9:39.95",
+        "place": "7"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "Meeting Régional ACM",
+        "event": "3000m SC",
+        "time": "9:47.97",
+        "place": "7"
+      }
+    ],
+    "2021": [
+      {
+        "date": "JUL 16",
+        "meet": "European Athletics U20 Championships",
+        "event": "3000m SC",
+        "time": "9:13.50",
+        "place": "7"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "Meeting National à thème de l'Est Lyonnais",
+        "event": "3000m SC",
+        "time": "8:55.78",
+        "place": "5"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "IFAM Meeting",
+        "event": "3000m SC",
+        "time": "9:04.53",
+        "place": "10"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Animation et prises de performances",
+        "event": "1500m",
+        "time": "3:57.34",
+        "place": "1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 9",
+        "meet": "Grand Valley State Holiday Open",
+        "event": "5000m",
+        "time": "14:54.42",
+        "place": "21"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Meeting de Bron",
+        "event": "1500m",
+        "time": "4:00.73",
+        "place": "16"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Championnats OCC 1/2 Fond",
+        "event": "3000m SC",
+        "time": "9:24.30",
+        "place": "1"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Meeting National à thème de l'Est Lyonnais",
+        "event": "3000m SC",
+        "time": "9:17.62",
+        "place": "16"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Meeting \"international\" du SATUC",
+        "event": "1500m",
+        "time": "3:54.05",
+        "place": "9"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Championnat de France des clubs",
+        "event": "3000m SC",
+        "time": "9:17.43",
+        "place": "4"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Lee University Last Chance",
+        "event": "3000m SC",
+        "time": "9:05.40",
+        "place": "12"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "SAC Outdoor Championships",
+        "event": "3000m SC",
+        "time": "9:39.37",
+        "place": "8"
+      },
+      {
+        "date": "APR 22",
+        "meet": "Virginia Challenge",
+        "event": "3000m SC",
+        "time": "9:08.81",
+        "place": "13"
+      },
+      {
+        "date": "APR 9",
+        "meet": "Flames Invitational",
+        "event": "3000m SC",
+        "time": "9:30.44",
+        "place": "5"
+      },
+      {
+        "date": "APR 8",
+        "meet": "Flames Invitational",
+        "event": "1500m",
+        "time": "4:01.20",
+        "place": "11"
+      },
+      {
+        "date": "MAR 25",
+        "meet": "Raleigh Relays",
+        "event": "3000m SC",
+        "time": "9:20.54",
+        "place": "8"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "South Atlantic Conference Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:32.37",
+        "place": "9"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "GVSU Big Meet- Saturday",
+        "event": "800m",
+        "time": "1:56.22",
+        "place": "4"
+      },
+      {
+        "date": "FEB 5",
+        "meet": "Camel City Invitational",
+        "event": "3000m sh",
+        "time": "8:32.41",
+        "place": "10"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 10",
+        "meet": "29th SPAR European Cross Country Championships",
+        "event": "Cross Country U23 Race",
+        "time": "25:18",
+        "place": "48"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Meeting National de Pézenas",
+        "event": "1500m",
+        "time": "3:59.39",
+        "place": "1"
+      },
+      {
+        "date": "JUN 3",
+        "meet": "Pré-Régionaux de Demi-Fond",
+        "event": "3000m SC",
+        "time": "9:29.96",
+        "place": "9"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Championnat de France des clubs Elite 2",
+        "event": "3000m SC",
+        "time": "9:24.09",
+        "place": "9"
+      },
+      {
+        "date": "APR 28",
+        "meet": "Charlotte Invitational",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAR 23",
+        "meet": "Raleigh Relays",
+        "event": "3000m SC",
+        "time": "9:29.10",
+        "place": "14"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "3000m sh",
+        "time": "8:31.88",
+        "place": "8"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:52.94",
+        "place": "15"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "NCAA Division II Outdoor Track and Field Championships",
+        "event": "5000m",
+        "time": "15:00.25",
+        "place": "11"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division II Outdoor Track and Field Championships",
+        "event": "3000m SC",
+        "time": "8:38.15",
+        "place": "1"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "NCAA Division II Outdoor Track and Field Championships",
+        "event": "3000m SC",
+        "time": "9:06.82",
+        "place": "5"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Track Fest, Jack Kemp Stadium",
+        "event": "3000m SC",
+        "time": "8:39.38",
+        "place": "2"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "3:47.29",
+        "place": "1"
+      },
+      {
+        "date": "MAR 28",
+        "meet": "Raleigh Relays",
+        "event": "5000m",
+        "time": "13:49.65",
+        "place": "2"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "NCAA Division II Indoor Track and Field Championships",
+        "event": "Mile",
+        "time": "4:19.63",
+        "place": "5"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "NCAA Division II Indoor Track and Field Championships",
+        "event": "Mile",
+        "time": "4:11.32",
+        "place": "2"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "3000m sh",
+        "time": "8:04.76",
+        "place": "4"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:44.62",
+        "place": "3"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "Mile sh",
+        "time": "4:06.43",
+        "place": "3"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 21",
+        "meet": "3ème Corrida de Houilles, Houilles",
+        "event": "10K",
+        "time": "28:20",
+        "place": "6"
+      },
+      {
+        "date": "DEC 7",
+        "meet": "Course de l'Escalade, Genève",
+        "event": "Road Race",
+        "time": "21:12",
+        "place": "7"
+      },
+      {
+        "date": "NOV 23",
+        "meet": "Cross International Le Maine Libre-Allonnes-Sarthe, Allonnes",
+        "event": "Cross Country",
+        "time": "21:55",
+        "place": "19"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "French Championships",
+        "event": "1500m",
+        "time": "3:34.91",
+        "place": "7"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "French Championships",
+        "event": "1500m",
+        "time": "3:41.31",
+        "place": "4"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "FISU World University Games",
+        "event": "1500m",
+        "time": "3:46.32",
+        "place": "2"
+      },
+      {
+        "date": "JUL 22",
+        "meet": "FISU World University Games",
+        "event": "1500m",
+        "time": "3:43.87",
+        "place": "1"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Meeting International Sotteville 2025",
+        "event": "1500m",
+        "time": "3:40.53",
+        "place": "10"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Meeting Stanislas Nancy",
+        "event": "1500m",
+        "time": "3:32.81",
+        "place": "4"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "64th Ostrava Golden Spike",
+        "event": "1500m",
+        "time": "3:35.73",
+        "place": "3"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division II Outdoor Track and Field Championships, CSU",
+        "event": "1500m",
+        "time": "3:50.09",
+        "place": "2"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division II Outdoor Track and Field Championships, CSU",
+        "event": "5000m",
+        "time": "14:54.37",
+        "place": "11"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "NCAA Division II Outdoor Track and Field Championships, CSU",
+        "event": "3000m SC",
+        "time": "8:47.62",
+        "place": "1"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "NCAA Division II Outdoor Track and Field Championships, CSU",
+        "event": "1500m",
+        "time": "3:51.28",
+        "place": "2"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "NCAA Division II Outdoor Track and Field Championships, CSU",
+        "event": "3000m SC",
+        "time": "9:08.37",
+        "place": "1"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Duke Twilight",
+        "event": "1500m",
+        "time": "3:34.30",
+        "place": "4"
+      },
+      {
+        "date": "APR 16",
+        "meet": "Bryan Clay Invitational",
+        "event": "3000m SC",
+        "time": "8:29.02",
+        "place": "5"
+      },
+      {
+        "date": "APR 11",
+        "meet": "Duke Invitational",
+        "event": "1500m",
+        "time": "3:41.39",
+        "place": "1"
+      },
+      {
+        "date": "MAR 27",
+        "meet": "Raleigh Relays",
+        "event": "5000m",
+        "time": "13:28.23",
+        "place": "2"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "NCAA Division II Indoor Track and Field Championships",
+        "event": "Mile sh",
+        "time": "3:59.15",
+        "place": "1"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "NCAA Division II Indoor Track and Field Championships",
+        "event": "3000m sh",
+        "time": "8:13.00",
+        "place": "15"
+      },
+      {
+        "date": "MAR 13",
+        "meet": "NCAA Division II Indoor Track and Field Championships",
+        "event": "Mile sh",
+        "time": "4:04.37",
+        "place": "1"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "3000m sh",
+        "time": "7:51.83",
+        "place": "5"
+      },
+      {
+        "date": "FEB 7",
+        "meet": "Doc Hale Virginia Tech Invitational",
+        "event": "Mile sh",
+        "time": "3:59.46",
+        "place": "3"
+      }
+    ]
+  },
+  "age": "24"
 }
