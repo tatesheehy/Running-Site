@@ -300,6 +300,7 @@ function buildAthletesPage() {
     const user = typeof getCurrentUser === 'function' && getCurrentUser();
     if (!user) {
       return `<div class="ath-lists-view-signin">
+        <p class="ath-lists-view-desc">Make custom lists to group athletes however you want — by country, by event, by "athletes I've met" — then filter the grid to just that list or compare them head-to-head on the H2H page.</p>
         <p>Sign in to create and manage athlete lists.</p>
         <button onclick="openAuthModal()">Sign In</button>
       </div>`;
@@ -307,6 +308,7 @@ function buildAthletesPage() {
     const lists = typeof getLists === 'function' ? getLists() : [];
     return `
       <div class="ath-lists-view">
+        <p class="ath-lists-view-desc">Group athletes into custom lists — filter the grid to a list, or pick it as a category on the H2H leaderboard to compare just those athletes.</p>
         <div class="acct-list-new-row">
           <input id="acct-new-list-input" class="acct-list-new-input" type="text"
             placeholder="New list name…" maxlength="40" autocomplete="off"
@@ -403,7 +405,7 @@ function buildAthletesPage() {
             <button class="ath-page-sort my-athletes-btn" id="my-athletes-btn" onclick="toggleMyAthletes()" style="${loggedIn ? '' : 'display:none'}">
               My Athletes
             </button>
-            <button class="ath-page-sort my-lists-btn" id="my-lists-btn" onclick="toggleAthleteLists()" style="${loggedIn ? '' : 'display:none'}">
+            <button class="ath-page-sort my-lists-btn" id="my-lists-btn" onclick="toggleAthleteLists()">
               My Lists
             </button>
             <button class="ath-page-sort" id="ath-map-btn" onclick="toggleAthleteMap()">Map</button>

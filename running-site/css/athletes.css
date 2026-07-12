@@ -612,6 +612,14 @@ th.ath-list-pr {
 }
 .ath-lists-view-btn:hover { color: var(--text); border-color: var(--text); }
 
+.ath-lists-view-desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  max-width: 520px;
+}
+
 .ath-lists-view-signin {
   padding: 48px 16px;
   text-align: center;
@@ -620,6 +628,10 @@ th.ath-list-pr {
   font-size: 13px;
   color: var(--muted);
   margin-bottom: 12px;
+}
+.ath-lists-view-signin .ath-lists-view-desc {
+  margin-left: auto;
+  margin-right: auto;
 }
 .ath-lists-view-signin button {
   background: var(--accent);
