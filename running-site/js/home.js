@@ -199,17 +199,18 @@ function buildHome() {
 
   const now = Date.now();
 
-  // ── Row 1: hero card ─────────────────────────────────────
+  // ── Cinematic hero media (left side of the hero band) ────
   const heroCard = heroItem ? `
-    <div class="dash-card dash-card--clickable dash-hero" onclick="goTo('${heroDest}')" role="button" tabindex="0">
-      ${heroItem.image ? `<div class="dash-hero-img-wrap">${imgHTML(heroItem.image, heroItem.title, heroItem.imagePosition, 16/9, 'dash-hero-img')}</div>` : ''}
-      <div class="dash-hero-body">
-        <div class="dash-eyebrow">${heroItem.category || 'Featured'}${heroItem.date ? ` · ${heroItem.date}` : ''}</div>
-        <h1 class="dash-hero-hed">${heroItem.title}</h1>
-        ${heroItem.excerpt ? `<p class="dash-hero-dek">${heroItem.excerpt}</p>` : ''}
-        <span class="dash-link">Read ${heroItem.type === 'rankings' ? 'rankings' : 'article'} →</span>
+    <a class="home-hero-media${heroItem.image ? '' : ' home-hero-media--noimg'}" href="${heroDest}">
+      ${heroItem.image ? `<img class="home-hero-img" src="${heroItem.image}" alt="${heroItem.title}">` : ''}
+      <div class="home-hero-scrim"></div>
+      <div class="home-hero-content">
+        <div class="home-hero-eyebrow">${heroItem.category || 'Featured'}${heroItem.date ? ` · ${heroItem.date}` : ''}</div>
+        <h1 class="home-hero-title">${heroItem.title}</h1>
+        ${heroItem.excerpt ? `<p class="home-hero-dek">${heroItem.excerpt}</p>` : ''}
+        <span class="home-hero-cta">Read ${heroItem.type === 'rankings' ? 'the rankings' : 'the story'} <span class="home-hero-arrow">→</span></span>
       </div>
-    </div>` : '';
+    </a>` : '';
 
   // ── Row 1: upcoming meets card ────────────────────────────
   const allAthletes = Object.values(ATHLETES);
@@ -257,33 +258,26 @@ function buildHome() {
       const kingPct = Math.round(kingRec.wins / (kingRec.wins + kingRec.losses) * 100);
       const photo = king && king.photo;
       const bg = (king && king.photoBackground) || '#111';
-      const avatar = `<div class="dash-ldr-avatar${photo ? '' : ' no-photo'}" style="background-color:${bg};${photo ? `background-image:url('${photo}');` : ''}"></div>`;
       const runners = top3.slice(1).map(([id, r]) => `
-        <div class="dash-ldr-runner" onclick="event.stopPropagation();openAthleteCard('${id}', null)" role="button" tabindex="0">
+        <div class="dash-king-runner" onclick="event.stopPropagation();openAthleteCard('${id}', null)" role="button" tabindex="0">
           <span class="dash-ldr-rtime">${r.wins}–${r.losses}</span>
           <span class="dash-ldr-rname">${ATHLETES[id] ? ATHLETES[id].name : id}</span>
         </div>`).join('');
       h2hKingCard = `
-        <div class="dash-card dash-h2hking">
+        <div class="dash-card dash-card--clickable dash-h2hking" style="background:${bg}" onclick="openAthleteCard('${kingId}', null)" role="button" tabindex="0">
           <div class="dash-card-title">H2H leader · 2026</div>
-          <div class="dash-ldr-body" onclick="openAthleteCard('${kingId}', null)" role="button" tabindex="0">
-            <div class="dash-ldr-main">
-              <div class="dash-ldr-hero-row">
-                <span class="dash-ldr-badge">${kingRec.wins}–${kingRec.losses}</span>
-                <span class="dash-ldr-name">${king ? king.name : kingId}</span>
-              </div>
-              <div class="dash-ldr-kingpct">${kingPct}% win rate in direct meetings</div>
-              <div class="dash-ldr-runners">${runners}</div>
-            </div>
-            ${avatar}
-          </div>
-          <a href="h2h.html" class="dash-link dash-card-foot">Full H2H leaderboard →</a>
+          <div class="dash-king-record">${kingRec.wins}<span class="dash-king-dash">–</span>${kingRec.losses}</div>
+          <div class="dash-king-name">${king ? king.name : kingId}</div>
+          <div class="dash-king-pct">${kingPct}% win rate in direct meetings</div>
+          <div class="dash-king-runners">${runners}</div>
+          <a href="h2h.html" class="dash-link dash-card-foot" onclick="event.stopPropagation()">Full H2H leaderboard →</a>
+          ${photo ? `<img class="dash-king-photo" src="${photo}" alt="${king ? king.name : ''}">` : ''}
         </div>`;
     }
   }
 
   // ── Barrier clubs card (career PRs under classic marks) ───
-  const clubRows = [
+  const clubCounts = [
     { label: '800m', barrier: 'Sub-1:44', time: '1:44.00' },
     { label: '1500m', barrier: 'Sub-3:30', time: '3:30.00' },
     { label: '5000m', barrier: 'Sub-13:00', time: '13:00.00' },
@@ -295,15 +289,18 @@ function buildHome() {
       const s = pr ? parseTimeToSecs(pr.time) : null;
       return s != null && s < limit;
     }).length;
-    return `
+    return { ...c, n };
+  });
+  const clubMax = Math.max(1, ...clubCounts.map(c => c.n));
+  const clubRows = clubCounts.map(c => `
       <div class="dash-club-row">
-        <span class="dash-club-count">${n}</span>
+        <span class="dash-club-count">${c.n}</span>
         <span class="dash-club-main">
           <span class="dash-club-barrier">${c.barrier} ${c.label}</span>
-          <span class="dash-club-note">athlete${n === 1 ? '' : 's'} tracked with a career PR under</span>
+          <span class="dash-club-note">athlete${c.n === 1 ? '' : 's'} tracked with a career PR under</span>
+          <span class="dash-club-bar-track"><span class="dash-club-bar" style="width:${Math.max(4, Math.round(c.n / clubMax * 100))}%"></span></span>
         </span>
-      </div>`;
-  }).join('');
+      </div>`).join('');
   const clubsCard = `
     <div class="dash-card dash-clubs">
       <div class="dash-card-title">Barrier clubs</div>
@@ -348,7 +345,7 @@ function buildHome() {
   const leadersCard = leaderSections ? `
     <div class="dash-card dash-leaders">
       <div class="dash-card-title">Event Leaders</div>
-      ${leaderSections}
+      <div class="dash-ldr-grid">${leaderSections}</div>
     </div>` : '';
 
   // ── Row 3: analytics — results logged per month (last 6) ──
@@ -424,16 +421,24 @@ function buildHome() {
   document.getElementById('main').innerHTML = `
     <div class="fp-wrap">
       <div class="fp-body">
-        <div class="dash-grid">
+        <div class="home-hero">
           ${heroCard}
-          ${meetsCard}
-          ${leadersCard}
-          ${h2hKingCard}
-          ${clubsCard}
-          ${analyticsCard}
-          ${activityCard}
-          ${leaderboardCard}
-          ${updatesCard}
+          <div class="home-hero-board">
+            ${leaderboardCard}
+          </div>
+        </div>
+        <div class="home-split">
+          <div class="home-main">
+            ${leadersCard}
+            ${activityCard}
+            ${analyticsCard}
+          </div>
+          <aside class="home-rail">
+            ${meetsCard}
+            ${h2hKingCard}
+            ${clubsCard}
+            ${updatesCard}
+          </aside>
         </div>
       </div>
     </div>`;

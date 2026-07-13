@@ -941,11 +941,20 @@
    DASHBOARD HOMEPAGE — SaaS card grid
    ============================================================ */
 
-.dash-grid {
+/* ── Home layout: main content column + right rail ────────── */
+.home-split {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 16px;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 20px;
+  align-items: start;
   padding: 24px 0 64px;
+}
+.home-main,
+.home-rail {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
 }
 
 /* ── Card base ────────────────────────────────────────────── */
@@ -1015,35 +1024,116 @@
   color: var(--muted);
 }
 
-/* ── Grid placement (varied widths) ───────────────────────── */
-.dash-hero        { grid-column: span 8; padding: 0; overflow: hidden; }
-.dash-meets       { grid-column: span 4; }
-.dash-h2hking     { grid-column: span 5; }
-.dash-clubs       { grid-column: span 5; }
-.dash-leaderboard { grid-column: span 7; }
-.dash-activity    { grid-column: span 5; }
-.dash-analytics   { grid-column: span 7; }
-.dash-updates     { grid-column: span 5; }
-
-/* ── Hero card ────────────────────────────────────────────── */
-.dash-hero-img-wrap { overflow: hidden; }
-.dash-hero-img { width: 100%; aspect-ratio: 21/9; object-fit: cover; display: block; }
-.dash-hero-body { padding: 20px 24px 24px; }
-.dash-hero-hed {
-  font-family: var(--font-display);
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.1;
-  color: var(--text);
-  margin: 0 0 8px;
+/* ── CINEMATIC HERO BAND (feature media + docked leaderboard) */
+.home-hero {
+  display: flex;
+  min-height: 460px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 24px;
+  background: var(--dark);
+  box-shadow: var(--shadow-card);
+  isolation: isolate;
 }
-.dash-hero-dek {
-  font-family: 'Lota Grotesque', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  color: var(--muted);
+.home-hero-media {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  display: block;
+  overflow: hidden;
+}
+.home-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 22%;
+  z-index: 0;
+  transition: transform 0.6s cubic-bezier(0.2,0,0.2,1);
+}
+.home-hero-media:hover .home-hero-img { transform: scale(1.03); }
+
+/* Docked leaderboard panel on the right edge of the hero */
+.home-hero-board {
+  width: 320px;
+  flex-shrink: 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid var(--border);
+}
+.home-hero-board .dash-card {
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  overflow: hidden;
+}
+.home-hero-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  /* Short bottom-anchored fade — keeps the photo mostly visible */
+  background: linear-gradient(to top, rgba(8,8,11,0.90) 0%, rgba(8,8,11,0.62) 14%, rgba(8,8,11,0.12) 30%, transparent 46%);
+}
+.home-hero-content {
+  position: absolute;
+  inset: auto 0 0 0;
+  z-index: 2;
+  padding: 22px 26px;
+  max-width: 640px;
+  color: #fff;
+}
+.home-hero-eyebrow {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 7px;
+}
+.home-hero-title {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.04;
+  letter-spacing: -0.02em;
+  margin: 0 0 6px;
+  text-wrap: balance;
+}
+.home-hero-dek {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 14px;
   line-height: 1.45;
-  margin-bottom: 14px;
+  color: rgba(255,255,255,0.8);
+  max-width: 500px;
+  margin: 0 0 14px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.home-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #fff;
+  background: var(--accent);
+  padding: 9px 17px;
+  border-radius: 999px;
+}
+.home-hero-arrow { transition: transform 0.2s ease; }
+.home-hero:hover .home-hero-arrow { transform: translateX(3px); }
+.home-hero-media--noimg .home-hero-scrim {
+  background: linear-gradient(135deg, var(--dark), var(--dark-2));
 }
 
 /* ── Upcoming meets card ──────────────────────────────────── */
@@ -1095,6 +1185,81 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
   margin-bottom: 10px;
 }
 
+/* StatMuse-style player card: solid color block from the athlete's own
+   photo background, cut-out photo bleeding off the corner, oversized stat. */
+.dash-h2hking {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  color: #fff;
+  min-height: 240px;
+}
+.dash-h2hking .dash-card-title { color: rgba(255,255,255,0.65); }
+.dash-h2hking .dash-king-record {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin: 2px 0 4px;
+}
+.dash-king-dash { opacity: 0.45; font-weight: 600; }
+.dash-king-name {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.dash-king-pct {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 14px;
+}
+.dash-king-runners {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  position: relative;
+  z-index: 1;
+}
+.dash-king-runner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: rgba(255,255,255,0.75);
+  cursor: pointer;
+}
+.dash-king-runner:hover .dash-ldr-rname { color: #fff; }
+.dash-h2hking .dash-ldr-rtime { color: #fff; }
+.dash-h2hking .dash-link { color: #fff; position: relative; z-index: 2; }
+/* Full-bleed athlete art as the card background, dark scrim for legibility */
+.dash-h2hking .dash-king-photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  z-index: 0;
+  pointer-events: none;
+}
+.dash-h2hking::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(8,8,10,0.92) 0%, rgba(8,8,10,0.62) 55%, rgba(8,8,10,0.18) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+.dash-h2hking .dash-card-title,
+.dash-h2hking .dash-king-record,
+.dash-h2hking .dash-king-name,
+.dash-h2hking .dash-king-pct,
+.dash-h2hking .dash-king-runners { position: relative; z-index: 2; }
+
 /* ── Barrier clubs card ───────────────────────────────────── */
 .dash-club-list { display: flex; flex-direction: column; flex: 1; }
 .dash-club-row {
@@ -1114,7 +1279,7 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
   text-align: center;
   flex-shrink: 0;
 }
-.dash-club-main { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.dash-club-main { display: flex; flex-direction: column; gap: 4px; min-width: 0; flex: 1; }
 .dash-club-barrier {
   font-family: var(--font-display);
   font-size: 15px;
@@ -1125,6 +1290,18 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
   font-family: var(--font-body);
   font-size: 11px;
   color: var(--muted);
+}
+.dash-club-bar-track {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--bg-light);
+  overflow: hidden;
+}
+.dash-club-bar {
+  display: block;
+  height: 100%;
+  border-radius: 2px;
+  background: var(--accent);
 }
 
 /* ── Analytics card ───────────────────────────────────────── */
@@ -1210,27 +1387,36 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
 }
 
 /* ── Responsive ───────────────────────────────────────────── */
-@media (max-width: 1100px) {
-  .dash-hero  { grid-column: span 7; }
-  .dash-meets { grid-column: span 5; }
+/* Collapse to a single column (rail drops below main) when the sidebar
+   nav switches to the mobile drawer at 960px. */
+@media (max-width: 960px) {
+  .home-split { grid-template-columns: 1fr; gap: 16px; }
 }
 @media (max-width: 960px) {
-  .dash-hero, .dash-meets { grid-column: span 12; }
+  .home-hero { flex-direction: column; min-height: 0; }
+  .home-hero-media { min-height: 360px; }
+  .home-hero-board { width: 100%; border-left: none; border-top: 1px solid var(--border); }
+  .home-hero-title { font-size: 30px; }
 }
 @media (max-width: 640px) {
-  .dash-grid { gap: 14px; padding: 18px 0 56px; }
-  .dash-h2hking, .dash-clubs, .dash-analytics, .dash-activity, .dash-leaderboard, .dash-updates { grid-column: span 12; }
-  .dash-hero-hed { font-size: 24px; }
+  .home-split { gap: 14px; padding: 18px 0 56px; }
+  .home-main, .home-rail { gap: 14px; }
+  .home-hero { margin-bottom: 16px; }
+  .home-hero-media { min-height: 300px; }
+  .home-hero-title { font-size: 26px; }
+  .home-hero-dek { display: none; }
+  .home-hero-content { padding: 20px 20px; }
 }
 
 /* ── EVENT LEADERS card (StatMuse League Leaders style) ───── */
-.dash-leaders { grid-column: span 7; grid-row: span 2; }
-
 .dash-ldr-section {
   padding: 16px 0;
   border-bottom: 1px solid var(--bg-light);
 }
-.dash-ldr-section:last-child { border-bottom: none; padding-bottom: 0; }
+.dash-ldr-grid .dash-ldr-section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
 
 .dash-ldr-label {
   display: inline-block;
@@ -1311,9 +1497,6 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
   flex-shrink: 0;
   background-size: cover;
   background-position: top center;
-  border: 1px solid var(--border);
+  border: 2px solid var(--border);
 }
 
-@media (max-width: 640px) {
-  .dash-leaders { grid-column: span 12; grid-row: auto; }
-}
