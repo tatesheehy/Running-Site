@@ -211,48 +211,104 @@ function buildHome() {
       </div>
     </div>` : '';
 
-  // ── Row 1: summary card (real site-wide numbers) ─────────
+  // ── Row 1: upcoming meets card ────────────────────────────
   const allAthletes = Object.values(ATHLETES);
-  const liveEvents = (typeof RANKINGS_EVENTS !== 'undefined' ? RANKINGS_EVENTS : []).filter(e => (e.rows || []).length > 0).length;
-  let resultsCount = 0;
-  allAthletes.forEach(a => { resultsCount += (a.results || []).length; });
-  const nextMeet = (SITE.upcomingMeets || [])
+  const upcomingMeets = (SITE.upcomingMeets || [])
     .filter(m => m.name && m.datetime && new Date(m.datetime) > now)
-    .sort((a, b) => new Date(a.datetime) - new Date(b.datetime))[0];
-  const nextMeetDate = nextMeet
-    ? new Date(nextMeet.datetime).toLocaleString('en-US', { month: 'short', day: 'numeric' })
-    : '';
-  const summaryCard = `
-    <div class="dash-card dash-summary">
-      <div class="dash-card-title">At a glance</div>
-      <div class="dash-sum-list">
-        <div class="dash-sum-row"><span class="dash-sum-num">${allAthletes.length}</span><span class="dash-sum-label">Athletes tracked</span></div>
-        <div class="dash-sum-row"><span class="dash-sum-num">${resultsCount.toLocaleString()}</span><span class="dash-sum-label">Results logged</span></div>
-        <div class="dash-sum-row"><span class="dash-sum-num">${liveEvents}</span><span class="dash-sum-label">Events ranked</span></div>
-        ${nextMeet ? `<div class="dash-sum-row"><span class="dash-sum-num dash-sum-num--sm">${nextMeetDate}</span><span class="dash-sum-label">${nextMeet.name}</span></div>` : ''}
-      </div>
+    .sort((a, b) => new Date(a.datetime) - new Date(b.datetime))
+    .slice(0, 4);
+  const meetRows = upcomingMeets.map(m => {
+    const d = new Date(m.datetime);
+    const days = Math.ceil((d - now) / 86400000);
+    const when = days <= 0 ? 'Today' : days === 1 ? 'Tomorrow' : `in ${days} days`;
+    const dateChip = d.toLocaleString('en-US', { month: 'short', day: 'numeric' });
+    const inner = `
+      <span class="dash-meet-date">${dateChip}</span>
+      <span class="dash-meet-main">
+        <span class="dash-meet-name">${m.name}</span>
+        <span class="dash-meet-when">${when}</span>
+      </span>`;
+    return m.url
+      ? `<a class="dash-meet-row" href="${m.url}" target="_blank" rel="noopener">${inner}</a>`
+      : `<div class="dash-meet-row">${inner}</div>`;
+  }).join('');
+  const meetsCard = `
+    <div class="dash-card dash-meets">
+      <div class="dash-card-title">Upcoming meets</div>
+      ${meetRows
+        ? `<div class="dash-meet-list">${meetRows}</div>`
+        : '<p class="dash-empty">No meets on the calendar yet.</p>'}
     </div>`;
 
-  // ── Row 2: feature cards ─────────────────────────────────
-  const eventChips = ['800m', '1500m', '5000m', '10000m'].map(ev =>
-    `<a class="dash-chip" href="event-tracker.html?event=${encodeURIComponent(ev)}" onclick="event.stopPropagation()">${ev}</a>`
-  ).join('');
-  const featureCards = `
-    <div class="dash-card dash-card--clickable dash-feature" onclick="goTo('h2h.html')" role="button" tabindex="0">
-      <div class="dash-feature-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
-      </div>
-      <div class="dash-feature-hed">Head to Head</div>
-      <p class="dash-feature-dek">Season win-loss records from every direct race encounter — compare any two athletes.</p>
-      <span class="dash-link">Explore H2H →</span>
-    </div>
-    <div class="dash-card dash-card--clickable dash-feature" onclick="goTo('event-tracker.html')" role="button" tabindex="0">
-      <div class="dash-feature-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-      </div>
-      <div class="dash-feature-hed">Event Tracker</div>
-      <p class="dash-feature-dek">Recent form, season rankings and head-to-head records — one event at a time.</p>
-      <div class="dash-chips">${eventChips}</div>
+  // ── H2H leader card (real season records, needs h2h.js) ───
+  let h2hKingCard = '';
+  if (typeof _computeAllH2HRecords === 'function') {
+    const minRaces = typeof _H2H_MIN_RACES !== 'undefined' ? _H2H_MIN_RACES : 3;
+    const { records } = _computeAllH2HRecords('2026', 'all', 'all', 'all');
+    const top3 = Object.entries(records)
+      .filter(([, r]) => r.wins + r.losses >= minRaces)
+      .sort((a, b) =>
+        _wilsonScore(b[1].wins, b[1].wins + b[1].losses) - _wilsonScore(a[1].wins, a[1].wins + a[1].losses)
+        || b[1].wins - a[1].wins)
+      .slice(0, 3);
+    if (top3.length) {
+      const [kingId, kingRec] = top3[0];
+      const king = ATHLETES[kingId];
+      const kingPct = Math.round(kingRec.wins / (kingRec.wins + kingRec.losses) * 100);
+      const photo = king && king.photo;
+      const bg = (king && king.photoBackground) || '#111';
+      const avatar = `<div class="dash-ldr-avatar${photo ? '' : ' no-photo'}" style="background-color:${bg};${photo ? `background-image:url('${photo}');` : ''}"></div>`;
+      const runners = top3.slice(1).map(([id, r]) => `
+        <div class="dash-ldr-runner" onclick="event.stopPropagation();openAthleteCard('${id}', null)" role="button" tabindex="0">
+          <span class="dash-ldr-rtime">${r.wins}–${r.losses}</span>
+          <span class="dash-ldr-rname">${ATHLETES[id] ? ATHLETES[id].name : id}</span>
+        </div>`).join('');
+      h2hKingCard = `
+        <div class="dash-card dash-h2hking">
+          <div class="dash-card-title">H2H leader · 2026</div>
+          <div class="dash-ldr-body" onclick="openAthleteCard('${kingId}', null)" role="button" tabindex="0">
+            <div class="dash-ldr-main">
+              <div class="dash-ldr-hero-row">
+                <span class="dash-ldr-badge">${kingRec.wins}–${kingRec.losses}</span>
+                <span class="dash-ldr-name">${king ? king.name : kingId}</span>
+              </div>
+              <div class="dash-ldr-kingpct">${kingPct}% win rate in direct meetings</div>
+              <div class="dash-ldr-runners">${runners}</div>
+            </div>
+            ${avatar}
+          </div>
+          <a href="h2h.html" class="dash-link dash-card-foot">Full H2H leaderboard →</a>
+        </div>`;
+    }
+  }
+
+  // ── Barrier clubs card (career PRs under classic marks) ───
+  const clubRows = [
+    { label: '800m', barrier: 'Sub-1:44', time: '1:44.00' },
+    { label: '1500m', barrier: 'Sub-3:30', time: '3:30.00' },
+    { label: '5000m', barrier: 'Sub-13:00', time: '13:00.00' },
+    { label: '10000m', barrier: 'Sub-27:00', time: '27:00.00' },
+  ].map(c => {
+    const limit = parseTimeToSecs(c.time);
+    const n = allAthletes.filter(a => {
+      const pr = (a.prs || []).find(p => p.event === c.label);
+      const s = pr ? parseTimeToSecs(pr.time) : null;
+      return s != null && s < limit;
+    }).length;
+    return `
+      <div class="dash-club-row">
+        <span class="dash-club-count">${n}</span>
+        <span class="dash-club-main">
+          <span class="dash-club-barrier">${c.barrier} ${c.label}</span>
+          <span class="dash-club-note">athlete${n === 1 ? '' : 's'} tracked with a career PR under</span>
+        </span>
+      </div>`;
+  }).join('');
+  const clubsCard = `
+    <div class="dash-card dash-clubs">
+      <div class="dash-card-title">Barrier clubs</div>
+      <div class="dash-club-list">${clubRows}</div>
+      <a href="athletes.html" class="dash-link dash-card-foot">Find them with Multi-PR Search →</a>
     </div>`;
 
   // ── Event Leaders by season best (StatMuse League Leaders) ─
@@ -315,7 +371,7 @@ function buildHome() {
     </div>`).join('');
   const analyticsCard = `
     <div class="dash-card dash-analytics">
-      <div class="dash-card-title">Results logged by month</div>
+      <div class="dash-card-title">Race results by month</div>
       <div class="dash-bars">${barsHtml}</div>
     </div>`;
 
@@ -370,9 +426,10 @@ function buildHome() {
       <div class="fp-body">
         <div class="dash-grid">
           ${heroCard}
-          ${summaryCard}
-          ${featureCards}
+          ${meetsCard}
           ${leadersCard}
+          ${h2hKingCard}
+          ${clubsCard}
           ${analyticsCard}
           ${activityCard}
           ${leaderboardCard}

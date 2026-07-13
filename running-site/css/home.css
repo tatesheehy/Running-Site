@@ -1009,14 +1009,15 @@
   color: var(--muted);
 }
 
-/* ── Grid placement ───────────────────────────────────────── */
+/* ── Grid placement (varied widths) ───────────────────────── */
 .dash-hero        { grid-column: span 8; padding: 0; overflow: hidden; }
-.dash-summary     { grid-column: span 4; }
-.dash-feature     { grid-column: span 6; }
-.dash-analytics   { grid-column: span 6; }
-.dash-activity    { grid-column: span 6; }
-.dash-leaderboard { grid-column: span 6; }
-.dash-updates     { grid-column: span 6; }
+.dash-meets       { grid-column: span 4; }
+.dash-h2hking     { grid-column: span 5; }
+.dash-clubs       { grid-column: span 5; }
+.dash-leaderboard { grid-column: span 7; }
+.dash-activity    { grid-column: span 5; }
+.dash-analytics   { grid-column: span 7; }
+.dash-updates     { grid-column: span 5; }
 
 /* ── Hero card ────────────────────────────────────────────── */
 .dash-hero-img-wrap { overflow: hidden; }
@@ -1039,74 +1040,86 @@
   margin-bottom: 14px;
 }
 
-/* ── Summary card ─────────────────────────────────────────── */
-.dash-sum-list { display: flex; flex-direction: column; gap: 0; flex: 1; }
-.dash-sum-row {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  padding: 12px 0;
-  border-bottom: 1px solid var(--bg-light);
-}
-.dash-sum-row:last-child { border-bottom: none; }
-.dash-sum-num {
-  font-family: var(--font-display);
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1;
-  color: var(--text);
-}
-.dash-sum-num--sm { font-size: 20px; }
-.dash-sum-label {
-  font-family: var(--font-body);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-/* ── Feature cards ────────────────────────────────────────── */
-.dash-feature-icon {
-  width: 42px;
-  height: 42px;
-  border-radius: var(--radius-sm);
-  background: rgba(232,80,10,0.09);
-  color: var(--accent);
+/* ── Upcoming meets card ──────────────────────────────────── */
+.dash-meet-list { display: flex; flex-direction: column; flex: 1; }
+.dash-meet-row {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 14px;
+  gap: 14px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--bg-light);
+  text-decoration: none;
 }
-.dash-feature-hed {
+.dash-meet-row:last-child { border-bottom: none; }
+a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
+.dash-meet-date {
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
-  color: var(--text);
-  margin-bottom: 6px;
-}
-.dash-feature-dek {
-  font-family: var(--font-body);
-  font-size: 13px;
-  color: var(--muted);
-  line-height: 1.55;
-  margin-bottom: 14px;
-}
-.dash-chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; }
-.dash-chip {
-  font-family: var(--font-display);
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
   color: var(--text);
   background: var(--bg-light);
   border: 1px solid var(--border);
   border-radius: 999px;
-  padding: 5px 14px;
-  text-decoration: none;
-  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  padding: 5px 12px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
-.dash-chip:hover { background: rgba(232,80,10,0.09); border-color: var(--accent); color: var(--accent); }
+.dash-meet-main { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.dash-meet-name {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  transition: color 0.15s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dash-meet-when {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* ── H2H leader card extras ───────────────────────────────── */
+.dash-ldr-kingpct {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+/* ── Barrier clubs card ───────────────────────────────────── */
+.dash-club-list { display: flex; flex-direction: column; flex: 1; }
+.dash-club-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--bg-light);
+}
+.dash-club-row:last-child { border-bottom: none; }
+.dash-club-count {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--accent);
+  min-width: 44px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.dash-club-main { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.dash-club-barrier {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+}
+.dash-club-note {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--muted);
+}
 
 /* ── Analytics card ───────────────────────────────────────── */
 .dash-bars {
@@ -1192,22 +1205,20 @@
 
 /* ── Responsive ───────────────────────────────────────────── */
 @media (max-width: 1100px) {
-  .dash-hero    { grid-column: span 7; }
-  .dash-summary { grid-column: span 5; }
+  .dash-hero  { grid-column: span 7; }
+  .dash-meets { grid-column: span 5; }
 }
 @media (max-width: 960px) {
-  .dash-hero, .dash-summary { grid-column: span 12; }
-  .dash-summary .dash-sum-list { flex-direction: row; flex-wrap: wrap; gap: 0 28px; }
-  .dash-summary .dash-sum-row { border-bottom: none; flex: 1; min-width: 120px; }
+  .dash-hero, .dash-meets { grid-column: span 12; }
 }
 @media (max-width: 640px) {
   .dash-grid { gap: 14px; padding: 18px 0 56px; }
-  .dash-feature, .dash-analytics, .dash-activity, .dash-leaderboard, .dash-updates { grid-column: span 12; }
+  .dash-h2hking, .dash-clubs, .dash-analytics, .dash-activity, .dash-leaderboard, .dash-updates { grid-column: span 12; }
   .dash-hero-hed { font-size: 24px; }
 }
 
 /* ── EVENT LEADERS card (StatMuse League Leaders style) ───── */
-.dash-leaders { grid-column: span 6; grid-row: span 2; }
+.dash-leaders { grid-column: span 7; grid-row: span 2; }
 
 .dash-ldr-section {
   padding: 16px 0;
