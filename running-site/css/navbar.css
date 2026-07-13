@@ -129,7 +129,7 @@
 }
 .notif-menu.open { display: block; }
 
-/* ── SIDEBAR (light) ──────────────────────────────────────── */
+/* ── SIDEBAR (floating card groups, StatMuse-style) ───────── */
 /* top:0 + padding-top (not top:62px) so it's anchored to the same
    viewport-fixed frame as .navbar — nothing to ever drift apart on scroll.
    The navbar (z-index 100) draws over the sidebar's top 62px. */
@@ -138,26 +138,35 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 220px;
-  padding-top: 62px;
-  background: #fff;
-  border-right: 1px solid var(--border);
+  width: 236px;
+  padding: 78px 14px 20px;
+  background: transparent;
   overflow-y: auto;
   z-index: 90;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 /* Content offset to clear the sidebar — reset to 0 below 960px in responsive.css */
-#main, footer, .breaking-bar { margin-left: 220px; }
+#main, footer, .breaking-bar { margin-left: 236px; }
 
-.sidebar-nav {
+.sidebar-group {
   list-style: none;
-  padding: 14px 10px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 10px;
+  flex-shrink: 0;
 }
 
-.sidebar-nav li a {
-  display: block;
+.sidebar-group li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin: 2px 0;
-  padding: 11px 14px;
+  padding: 10px 12px;
   color: #444;
   text-decoration: none;
   font-family: var(--font-display);
@@ -167,11 +176,21 @@
   border-radius: var(--radius-sm);
   transition: background 0.18s ease, color 0.18s ease;
 }
-.sidebar-nav li a:hover { color: var(--text); background: #F4F4F5; }
-.sidebar-nav li a.active {
+.sidebar-group li a:hover { color: var(--text); background: #F4F4F5; }
+.sidebar-group li a.active {
   color: var(--accent);
-  background: rgba(232,80,10,0.09);
+  background: rgba(232,80,10,0.08);
 }
+
+.sidebar-ico {
+  display: flex;
+  align-items: center;
+  color: #9a9a9a;
+  flex-shrink: 0;
+  transition: color 0.18s ease;
+}
+.sidebar-group li a:hover .sidebar-ico,
+.sidebar-group li a.active .sidebar-ico { color: inherit; }
 
 .navbar-subscribe {
   background: var(--accent);
@@ -439,7 +458,9 @@
   overflow-y: auto;
 }
 .mobile-drawer-nav li a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   padding: 13px 24px;
   color: #fff;
   text-decoration: none;
@@ -449,6 +470,7 @@
   transition: color 0.15s, background 0.15s;
 }
 .mobile-drawer-nav li a:hover { color: #fff; background: rgba(255,255,255,0.05); }
+.mobile-drawer-nav .sidebar-ico { color: rgba(255,255,255,0.55); }
 
 .mobile-drawer-footer {
   padding: 16px 20px;

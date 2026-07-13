@@ -2,24 +2,50 @@
 //  NAV — buildNavbar(), buildFooter(), toggleMobileMenu()
 // ============================================================
 
+// ── NAV ICONS (17px stroke icons, inherit currentColor) ───
+const _NAV_ICONS = {
+  home:     '<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>',
+  articles: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>',
+  rankings: '<line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/>',
+  h2h:      '<polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>',
+  tracker:  '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>',
+  athletes: '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
+  podcast:  '<path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/>',
+  about:    '<circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>',
+};
+
+function _navIcon(name) {
+  return `<span class="sidebar-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${_NAV_ICONS[name] || ''}</svg></span>`;
+}
+
 // ── NAVBAR ────────────────────────────────────────────────
 function buildNavbar() {
   const currentPage = document.body.dataset.page;
   const pageMap = { home: 'index.html', articles: 'articles.html', rankings: 'rankings.html', article: 'articles.html', athletes: 'athletes.html', h2h: 'h2h.html', 'event-tracker': 'event-tracker.html' };
   const activeHref = pageMap[currentPage] || '';
 
-  const navLinks = [
-    { label: 'Articles', href: 'articles.html' },
-    { label: 'Rankings', href: 'rankings.html' },
-    { label: 'H2H', href: 'h2h.html' },
-    { label: 'Event Tracker', href: 'event-tracker.html' },
-    { label: 'Athletes', href: 'athletes.html' },
-    { label: 'Podcast', href: 'podcast.html' },
-    { label: 'About', href: 'about.html' },
+  // Sidebar link groups — rendered as separate floating cards (StatMuse-style)
+  const navGroups = [
+    [
+      { label: 'Home', href: 'index.html', icon: 'home' },
+      { label: 'Articles', href: 'articles.html', icon: 'articles' },
+      { label: 'Rankings', href: 'rankings.html', icon: 'rankings' },
+      { label: 'H2H', href: 'h2h.html', icon: 'h2h' },
+      { label: 'Event Tracker', href: 'event-tracker.html', icon: 'tracker' },
+      { label: 'Athletes', href: 'athletes.html', icon: 'athletes' },
+    ],
+    [
+      { label: 'Podcast', href: 'podcast.html', icon: 'podcast' },
+      { label: 'About', href: 'about.html', icon: 'about' },
+    ],
   ];
+  const navLinks = navGroups.flat();
 
-  const sidebarLinksHtml = navLinks.map(l =>
-    `<li><a href="${l.href}" class="${l.href.includes(activeHref) && activeHref ? 'active' : ''}">${l.label}</a></li>`
+  const linkHtml = l =>
+    `<li><a href="${l.href}" class="${l.href.includes(activeHref) && activeHref ? 'active' : ''}">${_navIcon(l.icon)}${l.label}</a></li>`;
+
+  const sidebarGroupsHtml = navGroups.map(group =>
+    `<ul class="sidebar-group">${group.map(linkHtml).join('')}</ul>`
   ).join('');
 
   return `
@@ -72,7 +98,7 @@ function buildNavbar() {
       </div>
     </nav>
     <aside class="app-sidebar" aria-label="Primary">
-      <ul class="sidebar-nav">${sidebarLinksHtml}</ul>
+      ${sidebarGroupsHtml}
     </aside>
     <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
       <div class="mobile-drawer-top">
@@ -81,7 +107,7 @@ function buildNavbar() {
         <button class="mobile-drawer-close" onclick="toggleMobileMenu()" aria-label="Close menu">×</button>
       </div>
       <ul class="mobile-drawer-nav">
-        ${navLinks.map(l => `<li><a href="${l.href}">${l.label}</a></li>`).join('')}
+        ${navLinks.map(l => `<li><a href="${l.href}">${_navIcon(l.icon)}${l.label}</a></li>`).join('')}
       </ul>
       <div class="mobile-drawer-footer">
         <button class="mobile-drawer-search" onclick="toggleMobileMenu();openSearch()">
