@@ -40,10 +40,6 @@
       "time": "3:54.80"
     },
     {
-      "event": "3000m",
-      "time": "7:39.77"
-    },
-    {
       "event": "2 Miles",
       "time": "8:10.91"
     },
@@ -70,10 +66,6 @@
     {
       "event": "Mile Short Track",
       "time": "3:55.52"
-    },
-    {
-      "event": "3000 Metres Short Track",
-      "time": "7:39.77"
     },
     {
       "event": "2 Miles Short Track",
@@ -112,67 +104,52 @@
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
-      "event": "5000 m",
+      "event": "5000m",
       "time": "13:05.60",
-      "place": "4.",
-      "round": "F"
+      "place": "4"
     },
     {
       "date": "MAY 2",
       "meet": "USA 5 km Road Running Championships",
-      "event": "5 Kilom Road",
+      "event": "5 Kilometres Road",
       "time": "13:28",
-      "place": "1.",
-      "round": "F"
+      "place": "1"
     },
     {
       "date": "APR 21",
-      "meet": "Grand Blue Mile presented by Wellmark Blue Cross Blue Shield - USATF 1 Mile Road Championships",
+      "meet": "Grand Blue Mile presented by Wellmark Blue Cross Blue Shield",
       "event": "Mile Road",
       "time": "3:55.29",
-      "place": "3.",
-      "round": "F"
+      "place": "3"
     },
     {
       "date": "APR 12",
       "meet": "The Carlsbad 5000",
-      "event": "5 Kilom Road",
+      "event": "5 Kilometres Road",
       "time": "13:47",
-      "place": "1.",
-      "round": "F"
+      "place": "1"
     },
     {
       "date": "FEB 14",
       "meet": "Sound Invite",
-      "event": "5000 m sh",
+      "event": "5000 Metres Short Track",
       "time": "13:10.87",
-      "place": "1.",
-      "round": "F1"
+      "place": "1"
     },
     {
       "date": "FEB 1",
       "meet": "Millrose Games",
-      "event": "3000 m sh",
-      "time": "7:39.94",
-      "place": "",
-      "round": "F"
-    },
-    {
-      "date": "FEB 1",
-      "meet": "Millrose Games",
-      "event": "2 Mi sh",
+      "event": "2 Miles Short Track",
       "time": "8:10.91",
-      "place": "8.",
-      "round": "F"
+      "place": "8"
     },
     {
       "date": "JAN 16",
       "meet": "Thane Baker Invitational",
-      "event": "3000 m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:39.77",
-      "place": "1.",
-      "round": "F1"
+      "place": "1"
     }
   ],
-  "lastSynced": "2026-07-12"
+  "lastSynced": "2026-07-13"
 }

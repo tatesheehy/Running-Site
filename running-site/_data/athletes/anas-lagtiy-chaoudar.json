@@ -4,7 +4,7 @@
   "waUrl": "https://worldathletics.org/athletes/france/anas-lagtiy-chaoudar-15032059",
   "name": "Anas Lagtiy Chaoudar",
   "flag": "FR",
-  "lastSynced": "2026-07-12",
+  "lastSynced": "2026-07-13",
   "prs": [
     {
       "event": "800m",
@@ -47,74 +47,65 @@
     {
       "date": "JUL 3",
       "meet": "Meeting Stanislas Nancy",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:31.40",
-      "place": "1.",
-      "round": "F"
+      "place": "1"
     },
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:30.31",
-      "place": "6.",
-      "round": "F"
+      "place": "6"
     },
     {
       "date": "JUN 21",
       "meet": "FBK Games",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:43.99",
-      "place": "15.",
-      "round": "F"
+      "place": "15"
     },
     {
       "date": "JUN 13",
       "meet": "Meeting Nikaia",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:32.29",
-      "place": "3.",
-      "round": "F1"
+      "place": "3"
     },
     {
       "date": "JUN 6",
       "meet": "Meeting de Strasbourg",
-      "event": "800 m",
+      "event": "800m",
       "time": "1:46.69",
-      "place": "2.",
-      "round": "F6"
+      "place": "2"
     },
     {
       "date": "MAY 29",
       "meet": "8th Irena Szewińska Memorial",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "DNF",
-      "place": "",
-      "round": "F"
+      "place": ""
     },
     {
       "date": "MAY 17",
       "meet": "Finale interclubs N2A G-E",
-      "event": "800 m",
+      "event": "800m",
       "time": "1:49.11",
-      "place": "1.",
-      "round": "F"
+      "place": "1"
     },
     {
       "date": "FEB 8",
       "meet": "Meeting Metz Moselle Athlélor Crédit Mutuel",
-      "event": "3000 m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:49.79",
-      "place": "4.",
-      "round": "F1"
+      "place": "4"
     },
     {
       "date": "JAN 30",
       "meet": "Elite Indoor Track Miramas Meeting",
-      "event": "1500 m sh",
+      "event": "1500 Metres Short Track",
       "time": "3:36.64",
-      "place": "1.",
-      "round": "F"
+      "place": "1"
     }
   ],
   "dob": "2004-01-17",

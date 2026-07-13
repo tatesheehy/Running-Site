@@ -32,10 +32,6 @@
       "time": "3:39.27"
     },
     {
-      "event": "Mile",
-      "time": "3:54.78"
-    },
-    {
       "event": "3000m",
       "time": "7:38.04"
     },
@@ -56,71 +52,57 @@
       "time": "2:24.54"
     },
     {
-      "event": "Mile Short Track",
-      "time": "3:54.78"
-    },
-    {
       "event": "3000 Metres Short Track",
       "time": "7:38.04"
     },
     {
       "event": "5000 Metres Short Track",
       "time": "13:11.29"
-    },
-    {
-      "event": "Distance Medley Short Track",
-      "time": "9:16.24"
     }
   ],
   "results": [
     {
       "date": "JUN 12",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "5000 m",
+      "event": "5000m",
       "time": "13:47.18",
-      "place": "6.",
-      "round": "F1"
+      "place": "6"
     },
     {
       "date": "MAY 14",
       "meet": "Big 12 Outdoor Track & Field Championship",
-      "event": "10,000 m",
+      "event": "10000m",
       "time": "30:43.87",
-      "place": "13.",
-      "round": "F1"
+      "place": "13"
     },
     {
       "date": "APR 18",
       "meet": "Oregon Team Invitational",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:39.27",
-      "place": "2.",
-      "round": "F1"
+      "place": "2"
     },
     {
       "date": "APR 3",
       "meet": "Stanford Invitational",
-      "event": "5000 m",
+      "event": "5000m",
       "time": "13:23.86",
-      "place": "6.",
-      "round": "F1"
+      "place": "6"
     },
     {
       "date": "FEB 28",
       "meet": "Big 12 Indoor Track & Field Championship",
-      "event": "3000 m sh",
+      "event": "3000 Metres Short Track",
       "time": "DNS",
-      "place": "",
-      "round": "F1"
+      "place": ""
     },
     {
       "date": "FEB 27",
       "meet": "Big 12 Indoor Track & Field Championship",
-      "event": "5000 m sh",
+      "event": "5000 Metres Short Track",
       "time": "DNF",
-      "place": "",
-      "round": "F1"
+      "place": ""
     }
   ],
-  "lastSynced": "2026-07-12"
+  "lastSynced": "2026-07-13"
 }
