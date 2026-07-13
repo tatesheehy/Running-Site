@@ -51,7 +51,7 @@
   position: relative;
   width: 100%;
   margin: 0;
-  border-radius: 14px;
+  border-radius: var(--radius);
   cursor: pointer;
   overflow: hidden;
   display: block;
@@ -928,4 +928,280 @@
   .fp-rail-item {
     padding: 16px 0;
   }
+}
+
+/* ============================================================
+   DASHBOARD HOMEPAGE — SaaS card grid
+   ============================================================ */
+
+.dash-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+  padding: 28px 0 72px;
+}
+
+/* ── Card base ────────────────────────────────────────────── */
+.dash-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 24px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.dash-card--clickable {
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+.dash-card--clickable:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-2px);
+  border-color: #DDD;
+}
+
+.dash-card-title {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.dash-card-hd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.dash-card-hd .dash-card-title { margin-bottom: 0; }
+
+.dash-link {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+.dash-link:hover { text-decoration: underline; }
+.dash-card-foot { margin-top: auto; padding-top: 16px; }
+
+.dash-eyebrow {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.dash-empty {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* ── Grid placement ───────────────────────────────────────── */
+.dash-hero        { grid-column: span 8; padding: 0; overflow: hidden; }
+.dash-summary     { grid-column: span 4; }
+.dash-feature     { grid-column: span 6; }
+.dash-analytics   { grid-column: span 6; }
+.dash-activity    { grid-column: span 6; }
+.dash-leaderboard { grid-column: span 6; }
+.dash-updates     { grid-column: span 6; }
+
+/* ── Hero card ────────────────────────────────────────────── */
+.dash-hero-img-wrap { overflow: hidden; }
+.dash-hero-img { width: 100%; aspect-ratio: 21/9; object-fit: cover; display: block; }
+.dash-hero-body { padding: 22px 26px 26px; }
+.dash-hero-hed {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--text);
+  margin: 0 0 8px;
+}
+.dash-hero-dek {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.45;
+  margin-bottom: 14px;
+}
+
+/* ── Summary card ─────────────────────────────────────────── */
+.dash-sum-list { display: flex; flex-direction: column; gap: 0; flex: 1; }
+.dash-sum-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--bg-light);
+}
+.dash-sum-row:last-child { border-bottom: none; }
+.dash-sum-num {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text);
+}
+.dash-sum-num--sm { font-size: 20px; }
+.dash-sum-label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ── Feature cards ────────────────────────────────────────── */
+.dash-feature-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  background: rgba(232,80,10,0.09);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+.dash-feature-hed {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+.dash-feature-dek {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+.dash-chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: auto; }
+.dash-chip {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 5px 14px;
+  text-decoration: none;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.dash-chip:hover { background: rgba(232,80,10,0.09); border-color: var(--accent); color: var(--accent); }
+
+/* ── Analytics card ───────────────────────────────────────── */
+.dash-bars {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  flex: 1;
+  min-height: 180px;
+  padding-top: 8px;
+}
+.dash-bar-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.dash-bar-val {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.dash-bar-track {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.dash-bar {
+  width: 100%;
+  background: linear-gradient(to top, var(--accent), #F0742E);
+  border-radius: 6px 6px 3px 3px;
+  min-height: 3px;
+}
+.dash-bar-label {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+/* ── Latest updates card ──────────────────────────────────── */
+.dash-update-list { display: flex; flex-direction: column; flex: 1; }
+.dash-update-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--bg-light);
+  cursor: pointer;
+}
+.dash-update-row:last-child { border-bottom: none; }
+.dash-update-row:hover .dash-update-hed { color: var(--accent); }
+.dash-update-main { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.dash-update-tag {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.dash-update-hed {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  transition: color 0.15s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dash-update-date {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 1100px) {
+  .dash-hero    { grid-column: span 7; }
+  .dash-summary { grid-column: span 5; }
+}
+@media (max-width: 960px) {
+  .dash-hero, .dash-summary { grid-column: span 12; }
+  .dash-summary .dash-sum-list { flex-direction: row; flex-wrap: wrap; gap: 0 28px; }
+  .dash-summary .dash-sum-row { border-bottom: none; flex: 1; min-width: 120px; }
+}
+@media (max-width: 640px) {
+  .dash-grid { gap: 14px; padding: 18px 0 56px; }
+  .dash-feature, .dash-analytics, .dash-activity, .dash-leaderboard, .dash-updates { grid-column: span 12; }
+  .dash-hero-hed { font-size: 24px; }
 }

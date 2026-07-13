@@ -3,9 +3,10 @@
    ticker, mobile drawer, hamburger
    ============================================================ */
 
-/* ── NAVBAR ───────────────────────────────────────────────── */
+/* ── NAVBAR (light SaaS header) ───────────────────────────── */
 .navbar {
-  background: var(--dark);
+  background: #fff;
+  border-bottom: 1px solid var(--border);
   height: 62px;
   display: flex;
   align-items: center;
@@ -15,15 +16,15 @@
 }
 
 .navbar-inner {
-  padding: 0 28px;
+  padding: 0 24px;
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 14px;
 }
 
 .navbar-brand {
-  color: #fff;
+  color: var(--text);
   white-space: nowrap;
   line-height: 1;
   flex-shrink: 0;
@@ -31,6 +32,10 @@
   align-items: center;
   gap: 5px;
 }
+
+/* The logo asset is pure white — invert it to black on the light header.
+   Footer/drawer (dark surfaces) keep the original white version. */
+.navbar .brand-logo { filter: invert(1); }
 
 .brand-pencil {
   width: 12px;
@@ -52,28 +57,30 @@
 .navbar-brand-sep {
   width: 1px;
   height: 18px;
-  background: rgba(255,255,255,0.18);
+  background: rgba(0,0,0,0.10);
   flex-shrink: 0;
 }
 
-/* ── SEARCH BAR (top bar) ─────────────────────────────────── */
+/* ── SEARCH BAR (centered pill) ───────────────────────────── */
 .navbar-search-btn {
   display: flex;
   align-items: center;
   gap: 10px;
   flex: 1;
-  max-width: 420px;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.14);
-  border-radius: 14px;
-  padding: 9px 14px;
-  color: rgba(255,255,255,0.55);
+  max-width: 520px;
+  margin: 0 auto;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 10px 18px;
+  color: #999;
   cursor: pointer;
-  transition: background 0.15s, border-color 0.15s;
+  transition: background 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
 }
 .navbar-search-btn:hover {
-  background: rgba(255,255,255,0.13);
-  border-color: rgba(255,255,255,0.22);
+  background: #F0F0F0;
+  border-color: #DDD;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 .navbar-search-btn svg { flex-shrink: 0; }
 .navbar-search-placeholder {
@@ -85,7 +92,44 @@
   text-align: left;
 }
 
-/* ── SIDEBAR ──────────────────────────────────────────────── */
+/* ── ICON BUTTONS (notifications / settings) ──────────────── */
+.navbar-icon-btn {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  color: #555;
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+.navbar-icon-btn:hover { background: #F2F2F2; color: var(--text); }
+
+.nav-notif-wrap { position: relative; display: flex; align-items: center; }
+
+.notif-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card-hover);
+  padding: 16px 20px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--muted);
+  white-space: nowrap;
+  z-index: 9000;
+}
+.notif-menu.open { display: block; }
+
+/* ── SIDEBAR (light) ──────────────────────────────────────── */
 /* top:0 + padding-top (not top:62px) so it's anchored to the same
    viewport-fixed frame as .navbar — nothing to ever drift apart on scroll.
    The navbar (z-index 100) draws over the sidebar's top 62px. */
@@ -96,8 +140,8 @@
   bottom: 0;
   width: 220px;
   padding-top: 62px;
-  background: var(--dark);
-  border-right: 1px solid rgba(255,255,255,0.08);
+  background: #fff;
+  border-right: 1px solid var(--border);
   overflow-y: auto;
   z-index: 90;
 }
@@ -107,25 +151,26 @@
 
 .sidebar-nav {
   list-style: none;
-  padding: 12px 0;
+  padding: 14px 10px;
 }
 
 .sidebar-nav li a {
   display: block;
-  padding: 13px 24px;
-  color: #fff;
+  margin: 2px 0;
+  padding: 11px 14px;
+  color: #444;
   text-decoration: none;
   font-family: var(--font-display);
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.03em;
-  transition: color 0.15s, background 0.15s;
+  border-radius: var(--radius-sm);
+  transition: background 0.18s ease, color 0.18s ease;
 }
-.sidebar-nav li a:hover { color: #fff; background: rgba(255,255,255,0.05); }
+.sidebar-nav li a:hover { color: var(--text); background: #F4F4F5; }
 .sidebar-nav li a.active {
-  color: #fff;
-  background: rgba(232,80,10,0.16);
-  box-shadow: inset 3px 0 0 var(--accent);
+  color: var(--accent);
+  background: rgba(232,80,10,0.09);
 }
 
 .navbar-subscribe {
@@ -142,22 +187,25 @@
 
 .navbar-subscribe:hover { opacity: 0.88; }
 
-/* ── USER BUTTON + DROPDOWN ──────────────────────────────── */
+/* ── USER AVATAR + DROPDOWN ───────────────────────────────── */
 .nav-user-wrap { position: relative; display: flex; align-items: center; }
 
 .navbar-user-btn {
-  background: none;
-  border: none;
-  color: #999;
+  width: 38px;
+  height: 38px;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  color: #555;
   cursor: pointer;
-  padding: 6px;
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
-  transition: color 0.15s;
+  transition: background 0.18s ease, color 0.18s ease;
   flex-shrink: 0;
 }
-.navbar-user-btn:hover { color: #fff; }
+.navbar-user-btn:hover { background: #F0F0F0; color: var(--text); }
 .navbar-user-btn.is-logged-in { color: var(--accent); }
 
 .nav-user-dot {
@@ -173,23 +221,23 @@
 .user-menu {
   display: none;
   position: absolute;
-  top: calc(100% + 8px);
+  top: calc(100% + 10px);
   right: 0;
-  background: #111;
-  border: 1px solid #2a2a2a;
-  border-radius: 14px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
   min-width: 180px;
   z-index: 9000;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  box-shadow: var(--shadow-card-hover);
 }
 .user-menu.open { display: block; }
 
 .user-menu-email {
   font-size: 11px;
-  color: #555;
+  color: #999;
   padding: 10px 14px 8px;
-  border-bottom: 1px solid #1e1e1e;
+  border-bottom: 1px solid var(--border);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -202,16 +250,16 @@
   width: 100%;
   background: none;
   border: none;
-  color: #ccc;
+  color: #444;
   font-size: 13px;
   font-family: var(--font-body);
   padding: 10px 14px;
   cursor: pointer;
   text-align: left;
-  transition: background 0.1s, color 0.1s;
+  transition: background 0.15s ease, color 0.15s ease;
 }
-.user-menu-item:hover { background: #1a1a1a; color: #fff; }
-.user-menu-item--signout { color: #666; border-top: 1px solid #1e1e1e; }
+.user-menu-item:hover { background: var(--bg-light); color: var(--text); }
+.user-menu-item--signout { color: #999; border-top: 1px solid var(--border); }
 .user-menu-item--signout:hover { color: #ef4444; }
 
 /* ── BREAKING NEWS BAR ────────────────────────────────────── */
@@ -318,12 +366,12 @@
   border-radius: 6px;
   transition: background 0.15s;
 }
-.hamburger:hover { background: rgba(255,255,255,0.08); }
+.hamburger:hover { background: rgba(0,0,0,0.06); }
 .hamburger span {
   display: block;
   width: 22px;
   height: 2px;
-  background: #fff;
+  background: #111;
   border-radius: 2px;
   transition: transform 0.22s, opacity 0.15s;
 }

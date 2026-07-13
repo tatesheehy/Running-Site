@@ -197,9 +197,6 @@ function buildHome() {
     ? `rankings.html${rankingsEvent ? '?event=' + encodeURIComponent(rankingsEvent) : ''}`
     : `article.html?id=${heroItem?.id}`;
 
-  // Secondary: up to 2 non-hero articles
-  const secondary = ARTICLES.filter(a => a !== heroItem).slice(0, 2);
-
   // Ticker: upcoming meets within 30 days
   const now = Date.now();
   const tickerMeets = (SITE.upcomingMeets || []).filter(m => {
@@ -223,52 +220,145 @@ function buildHome() {
       <div class="fp-ticks">${tickerItems.join('<span class="fp-tick-sep">·</span>')}</div>
     </div>` : '';
 
-  // Secondary rail items
-  const railHtml = secondary.map(a => {
-    const dest = a.type === 'rankings'
-      ? `rankings.html${a.rankingsEvent ? '?event=' + encodeURIComponent(a.rankingsEvent) : ''}`
-      : `article.html?id=${a.id}`;
-    return `<div class="fp-rail-item" onclick="goTo('${dest}')" role="button" tabindex="0">
-      <div class="fp-rail-tag">${a.category || 'Article'}</div>
-      <div class="fp-rail-hed">${a.title}</div>
-      ${a.excerpt ? `<div class="fp-rail-dek">${a.excerpt.slice(0, 80)}${a.excerpt.length > 80 ? '…' : ''}</div>` : ''}
-    </div>`;
-  }).join('');
+  // ── Row 1: hero card ─────────────────────────────────────
+  const heroCard = heroItem ? `
+    <div class="dash-card dash-card--clickable dash-hero" onclick="goTo('${heroDest}')" role="button" tabindex="0">
+      ${heroItem.image ? `<div class="dash-hero-img-wrap">${imgHTML(heroItem.image, heroItem.title, heroItem.imagePosition, 16/9, 'dash-hero-img')}</div>` : ''}
+      <div class="dash-hero-body">
+        <div class="dash-eyebrow">${heroItem.category || 'Featured'}${heroItem.date ? ` · ${heroItem.date}` : ''}</div>
+        <h1 class="dash-hero-hed">${heroItem.title}</h1>
+        ${heroItem.excerpt ? `<p class="dash-hero-dek">${heroItem.excerpt}</p>` : ''}
+        <span class="dash-link">Read ${heroItem.type === 'rankings' ? 'rankings' : 'article'} →</span>
+      </div>
+    </div>` : '';
 
-  // Rankings strip
+  // ── Row 1: summary card (real site-wide numbers) ─────────
+  const allAthletes = Object.values(ATHLETES);
+  const liveEvents = (typeof RANKINGS_EVENTS !== 'undefined' ? RANKINGS_EVENTS : []).filter(e => (e.rows || []).length > 0).length;
+  let resultsCount = 0;
+  allAthletes.forEach(a => { resultsCount += (a.results || []).length; });
+  const nextMeet = (SITE.upcomingMeets || [])
+    .filter(m => m.name && m.datetime && new Date(m.datetime) > now)
+    .sort((a, b) => new Date(a.datetime) - new Date(b.datetime))[0];
+  const nextMeetDate = nextMeet
+    ? new Date(nextMeet.datetime).toLocaleString('en-US', { month: 'short', day: 'numeric' })
+    : '';
+  const summaryCard = `
+    <div class="dash-card dash-summary">
+      <div class="dash-card-title">At a glance</div>
+      <div class="dash-sum-list">
+        <div class="dash-sum-row"><span class="dash-sum-num">${allAthletes.length}</span><span class="dash-sum-label">Athletes tracked</span></div>
+        <div class="dash-sum-row"><span class="dash-sum-num">${resultsCount.toLocaleString()}</span><span class="dash-sum-label">Results logged</span></div>
+        <div class="dash-sum-row"><span class="dash-sum-num">${liveEvents}</span><span class="dash-sum-label">Events ranked</span></div>
+        ${nextMeet ? `<div class="dash-sum-row"><span class="dash-sum-num dash-sum-num--sm">${nextMeetDate}</span><span class="dash-sum-label">${nextMeet.name}</span></div>` : ''}
+      </div>
+    </div>`;
+
+  // ── Row 2: feature cards ─────────────────────────────────
+  const eventChips = ['800m', '1500m', '5000m', '10000m'].map(ev =>
+    `<a class="dash-chip" href="event-tracker.html?event=${encodeURIComponent(ev)}" onclick="event.stopPropagation()">${ev}</a>`
+  ).join('');
+  const featureCards = `
+    <div class="dash-card dash-card--clickable dash-feature" onclick="goTo('h2h.html')" role="button" tabindex="0">
+      <div class="dash-feature-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+      </div>
+      <div class="dash-feature-hed">Head to Head</div>
+      <p class="dash-feature-dek">Season win-loss records from every direct race encounter — compare any two athletes.</p>
+      <span class="dash-link">Explore H2H →</span>
+    </div>
+    <div class="dash-card dash-card--clickable dash-feature" onclick="goTo('event-tracker.html')" role="button" tabindex="0">
+      <div class="dash-feature-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+      </div>
+      <div class="dash-feature-hed">Event Tracker</div>
+      <p class="dash-feature-dek">Recent form, season rankings and head-to-head records — one event at a time.</p>
+      <div class="dash-chips">${eventChips}</div>
+    </div>`;
+
+  // ── Row 3: analytics — results logged per month (last 6) ──
+  const MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
+  const nowMonth = new Date().getMonth();
+  const monthWindow = [];
+  for (let i = 5; i >= 0; i--) monthWindow.push(MONTHS[(nowMonth - i + 12) % 12]);
+  const monthCounts = {};
+  monthWindow.forEach(m => { monthCounts[m] = 0; });
+  allAthletes.forEach(a => (a.results || []).forEach(r => {
+    const tok = (r.date || '').trim().slice(0, 3).toUpperCase();
+    if (tok in monthCounts) monthCounts[tok]++;
+  }));
+  const maxCount = Math.max(1, ...monthWindow.map(m => monthCounts[m]));
+  const barsHtml = monthWindow.map(m => `
+    <div class="dash-bar-col">
+      <span class="dash-bar-val">${monthCounts[m]}</span>
+      <div class="dash-bar-track"><div class="dash-bar" style="height:${Math.max(3, Math.round(monthCounts[m] / maxCount * 100))}%"></div></div>
+      <span class="dash-bar-label">${m}</span>
+    </div>`).join('');
+  const analyticsCard = `
+    <div class="dash-card dash-analytics">
+      <div class="dash-card-title">Results logged by month</div>
+      <div class="dash-bars">${barsHtml}</div>
+    </div>`;
+
+  // ── Row 3: recent activity (trending performances) ───────
+  const trendItems = _buildTrendingPerformances(5);
+  const activityCard = `
+    <div class="dash-card dash-activity">
+      <div class="dash-card-title">Recent activity</div>
+      ${trendItems.length
+        ? `<div class="fp-trending-list">${trendItems.map(trendRow).join('')}</div>`
+        : '<p class="dash-empty">No notable performances in the last 30 days.</p>'}
+    </div>`;
+
+  // ── Row 3: leaderboard (current rankings w/ event tabs) ──
   const firstEvent = Object.keys(RANKINGS)[0] || '';
   const TAB_LABELS = { '800m': '800m', '1500m': '1500m', '5000m': '5K', '10000m': '10K', 'Mile': 'Mile' };
   const tabsHtml = Object.keys(RANKINGS).map((ev, i) =>
     `<button class="fp-rank-tab ${i === 0 ? 'active' : ''}" data-event="${ev}">${TAB_LABELS[ev] || ev}</button>`
   ).join('');
-  const rankingsHtml = `
-    <div class="fp-rankings">
-      <div class="fp-rank-hd">
-        <span class="fp-rank-title">Current rankings</span>
+  const leaderboardCard = `
+    <div class="dash-card dash-leaderboard">
+      <div class="dash-card-hd">
+        <span class="dash-card-title">Leaderboard</span>
         <div class="fp-rank-tabs" id="fp-rank-tabs">${tabsHtml}</div>
       </div>
       <div id="fp-rank-rows">${buildRankingsTableHtml(firstEvent, true)}</div>
-      <a href="rankings.html" class="fp-rank-more">View all rankings →</a>
+      <a href="rankings.html" class="dash-link dash-card-foot">View all rankings →</a>
+    </div>`;
+
+  // ── Row 3: latest updates (articles) ─────────────────────
+  const updates = ARTICLES.slice(0, 4).map(a => {
+    const dest = a.type === 'rankings'
+      ? `rankings.html${a.rankingsEvent ? '?event=' + encodeURIComponent(a.rankingsEvent) : ''}`
+      : `article.html?id=${a.id}`;
+    return `<div class="dash-update-row" onclick="goTo('${dest}')" role="button" tabindex="0">
+      <div class="dash-update-main">
+        <span class="dash-update-tag">${a.category || 'Article'}</span>
+        <span class="dash-update-hed">${a.title}</span>
+      </div>
+      ${a.date ? `<span class="dash-update-date">${a.date}</span>` : ''}
+    </div>`;
+  }).join('');
+  const updatesCard = `
+    <div class="dash-card dash-updates">
+      <div class="dash-card-title">Latest updates</div>
+      <div class="dash-update-list">${updates || '<p class="dash-empty">No updates yet.</p>'}</div>
+      <a href="articles.html" class="dash-link dash-card-foot">All articles →</a>
     </div>`;
 
   document.getElementById('main').innerHTML = `
     <div class="fp-wrap">
       ${tickerHtml}
       <div class="fp-body">
-        <div class="fp-top">
-          ${heroItem ? `
-          <div class="fp-hero" onclick="goTo('${heroDest}')" role="button" tabindex="0">
-            ${heroItem.image ? `<div class="fp-hero-img-wrap">${imgHTML(heroItem.image, heroItem.title, heroItem.imagePosition, 16/9, 'fp-hero-img')}</div>` : ''}
-            <div class="fp-hero-text">
-              <div class="fp-hero-eyebrow">${heroItem.category || 'Featured'}${heroItem.date ? ` · ${heroItem.date}` : ''}</div>
-              <h1 class="fp-hero-hed">${heroItem.title}</h1>
-              ${heroItem.excerpt ? `<p class="fp-hero-dek">${heroItem.excerpt}</p>` : ''}
-              <span class="fp-hero-read">Read ${heroItem.type === 'rankings' ? 'rankings' : 'article'} →</span>
-            </div>
-          </div>` : ''}
-          <div class="fp-rail">${railHtml}${rankingsHtml}</div>
+        <div class="dash-grid">
+          ${heroCard}
+          ${summaryCard}
+          ${featureCards}
+          ${analyticsCard}
+          ${activityCard}
+          ${leaderboardCard}
+          ${updatesCard}
         </div>
-        ${buildTrendingSection()}
       </div>
     </div>`;
 
