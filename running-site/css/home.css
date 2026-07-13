@@ -1205,3 +1205,98 @@
   .dash-feature, .dash-analytics, .dash-activity, .dash-leaderboard, .dash-updates { grid-column: span 12; }
   .dash-hero-hed { font-size: 24px; }
 }
+
+/* ── EVENT LEADERS card (StatMuse League Leaders style) ───── */
+.dash-leaders { grid-column: span 6; grid-row: span 2; }
+
+.dash-ldr-section {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--bg-light);
+}
+.dash-ldr-section:last-child { border-bottom: none; padding-bottom: 0; }
+
+.dash-ldr-label {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.dash-ldr-label:hover { color: var(--accent); }
+
+.dash-ldr-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.dash-ldr-main { flex: 1; min-width: 0; }
+
+.dash-ldr-hero-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.dash-ldr-badge {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  background: var(--accent);
+  border-radius: 999px;
+  padding: 4px 13px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.dash-ldr-name {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dash-ldr-body:hover .dash-ldr-name { color: var(--accent); }
+
+.dash-ldr-runners { display: flex; flex-direction: column; gap: 3px; }
+
+.dash-ldr-runner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--muted);
+  border-radius: 6px;
+}
+.dash-ldr-runner[onclick]:hover .dash-ldr-rname { color: var(--text); }
+
+.dash-ldr-rtime {
+  font-family: var(--font-display);
+  font-weight: 600;
+  min-width: 64px;
+  text-align: center;
+}
+.dash-ldr-rname { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.dash-ldr-avatar {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: top center;
+  border: 1px solid var(--border);
+}
+
+@media (max-width: 640px) {
+  .dash-leaders { grid-column: span 12; grid-row: auto; }
+}

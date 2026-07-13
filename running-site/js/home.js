@@ -255,6 +255,46 @@ function buildHome() {
       <div class="dash-chips">${eventChips}</div>
     </div>`;
 
+  // ── Event Leaders by season best (StatMuse League Leaders) ─
+  const sbLeaders = ev => (RANKINGS[ev] || [])
+    .filter(r => r.seasonBest && r.seasonBest !== '—' && parseTimeToSecs(r.seasonBest) != null)
+    .sort((a, b) => parseTimeToSecs(a.seasonBest) - parseTimeToSecs(b.seasonBest))
+    .slice(0, 3);
+
+  const leaderSections = ['800m', '1500m', '5000m', '10000m'].map(ev => {
+    const rows = sbLeaders(ev);
+    if (!rows.length) return '';
+    const [top, ...rest] = rows;
+    const a = top.athleteId ? ATHLETES[top.athleteId] : null;
+    const photo = a && a.photo;
+    const bg = (a && a.photoBackground) || '#111';
+    const avatar = `<div class="dash-ldr-avatar${photo ? '' : ' no-photo'}" style="background-color:${bg};${photo ? `background-image:url('${photo}');` : ''}"></div>`;
+    const runners = rest.map(r => `
+      <div class="dash-ldr-runner"${r.athleteId ? ` onclick="event.stopPropagation();openAthleteCard('${r.athleteId}', null)" role="button" tabindex="0"` : ''}>
+        <span class="dash-ldr-rtime">${r.seasonBest}</span>
+        <span class="dash-ldr-rname">${r.name}</span>
+      </div>`).join('');
+    return `
+      <div class="dash-ldr-section">
+        <a class="dash-ldr-label" href="event-tracker.html?event=${encodeURIComponent(ev)}">${ev} · Season Best</a>
+        <div class="dash-ldr-body"${top.athleteId ? ` onclick="openAthleteCard('${top.athleteId}', null)" role="button" tabindex="0"` : ''}>
+          <div class="dash-ldr-main">
+            <div class="dash-ldr-hero-row">
+              <span class="dash-ldr-badge">${top.seasonBest}</span>
+              <span class="dash-ldr-name">${top.name}</span>
+            </div>
+            <div class="dash-ldr-runners">${runners}</div>
+          </div>
+          ${avatar}
+        </div>
+      </div>`;
+  }).join('');
+  const leadersCard = leaderSections ? `
+    <div class="dash-card dash-leaders">
+      <div class="dash-card-title">Event Leaders</div>
+      ${leaderSections}
+    </div>` : '';
+
   // ── Row 3: analytics — results logged per month (last 6) ──
   const MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
   const nowMonth = new Date().getMonth();
@@ -332,6 +372,7 @@ function buildHome() {
           ${heroCard}
           ${summaryCard}
           ${featureCards}
+          ${leadersCard}
           ${analyticsCard}
           ${activityCard}
           ${leaderboardCard}
