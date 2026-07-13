@@ -3,15 +3,18 @@
    ticker, mobile drawer, hamburger
    ============================================================ */
 
-/* ── NAVBAR (transparent, floating — StatMuse-style) ──────── */
+/* ── NAVBAR (opaque, same color as page — StatMuse-style) ─── */
+/* Solid page-colored bar so scrolled content hides cleanly behind it. */
 .navbar {
-  background: transparent;
+  background: #F7F8FA;
   border-bottom: none;
-  height: 62px;
+  height: 68px;
   display: flex;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
 }
 
@@ -139,7 +142,7 @@
   left: 0;
   bottom: 0;
   width: 236px;
-  padding: 78px 16px 24px;
+  padding: 84px 16px 24px;
   background: transparent;
   overflow-y: auto;
   z-index: 90;
@@ -148,8 +151,12 @@
   gap: 12px;
 }
 
-/* Content offset to clear the sidebar — reset to 0 below 960px in responsive.css */
-#main, footer { margin-left: 236px; }
+/* Sidebar clears the content on the left; a matching right gutter of the same
+   width centers the content in the viewport and makes the sidebar's left gutter
+   symmetric with the empty right gutter. Reset to 0 below 960px (responsive.css). */
+#main, footer { margin-left: 236px; margin-right: 236px; }
+/* Top breathing room below the (fixed) navbar — matches sidebar's 16px gap */
+#main { padding-top: 16px; }
 
 .sidebar-group {
   list-style: none;

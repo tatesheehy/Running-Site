@@ -291,7 +291,7 @@
   text-transform: uppercase;
   color: var(--muted);
   position: sticky;
-  top: 62px;
+  top: 68px;
   background: var(--bg);
   z-index: 50;
   box-shadow: 0 3px 8px rgba(0,0,0,0.07);

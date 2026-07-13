@@ -92,12 +92,18 @@ html { scroll-behavior: smooth; }
   transform: translateY(0);
 }
 
+/* clip (not hidden) so off-canvas drawer can't scroll the page,
+   without creating a scroll container that would break sticky nav */
+html { overflow-x: clip; }
+
 body {
   font-family: var(--font-body);
   color: var(--text);
   background: #F7F8FA;
   font-size: 16px;
   line-height: 1.5;
+  overflow-x: clip;
+  padding-top: 68px; /* clear the fixed navbar */
 }
 
 a { color: inherit; text-decoration: none; }
