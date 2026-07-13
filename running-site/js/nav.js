@@ -52,30 +52,9 @@ function buildNavbar() {
     { label: 'About', href: 'about.html' },
   ];
 
-  const rankingsEventsHtml = (typeof RANKINGS_EVENTS !== 'undefined' ? RANKINGS_EVENTS : []).map(ev => {
-    const count = (ev.rows || []).length;
-    const isLive = count > 0;
-    return `
-      <a class="nav-rank-item" href="rankings.html?event=${encodeURIComponent(ev.name)}">
-        <span class="nav-rank-item-name">${ev.name}</span>
-        <span class="nav-rank-item-tag${isLive ? ' nav-rank-item-tag--live' : ''}">${isLive ? `${count} ranked` : 'Coming soon'}</span>
-      </a>`;
-  }).join('');
-
-  const links = navLinks.map(l => {
-    if (l.label === 'Rankings') {
-      return `
-        <li class="navbar-nav-item navbar-nav-item--dropdown">
-          <a href="${l.href}" class="${l.href.includes(activeHref) && activeHref ? 'active' : ''}">${l.label}</a>
-          <div class="nav-rankings-dropdown">
-            <div class="nav-rank-eyebrow">Events</div>
-            ${rankingsEventsHtml || '<div class="nav-rank-empty">No events yet.</div>'}
-            <a class="nav-rank-viewall" href="rankings.html">View All Rankings &rarr;</a>
-          </div>
-        </li>`;
-    }
-    return `<li class="navbar-nav-item"><a href="${l.href}" class="${l.href.includes(activeHref) && activeHref ? 'active' : ''}">${l.label}</a></li>`;
-  }).join('');
+  const sidebarLinksHtml = navLinks.map(l =>
+    `<li><a href="${l.href}" class="${l.href.includes(activeHref) && activeHref ? 'active' : ''}">${l.label}</a></li>`
+  ).join('');
 
   return `
     <nav class="navbar" role="navigation" aria-label="Main navigation">
@@ -83,11 +62,11 @@ function buildNavbar() {
         <a href="index.html" class="navbar-brand">
           <img src="/images/stattc-logo.png" alt="${SITE.name}" class="brand-logo"></a>
         <div class="navbar-brand-sep" aria-hidden="true"></div>
-        <ul class="navbar-nav">${links}</ul>
         <button class="navbar-search-btn" onclick="openSearch()" aria-label="Search">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
           </svg>
+          <span class="navbar-search-placeholder">Search athletes, articles, rankings…</span>
         </button>
         <div class="nav-user-wrap">
           <button id="nav-user-btn" class="navbar-user-btn" onclick="getCurrentUser&&getCurrentUser()?goTo('account.html'):openAuthModal()" aria-label="Sign in" title="Sign in">
@@ -114,6 +93,9 @@ function buildNavbar() {
         </button>
       </div>
     </nav>
+    <aside class="app-sidebar" aria-label="Primary">
+      <ul class="sidebar-nav">${sidebarLinksHtml}</ul>
+    </aside>
     <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
       <div class="mobile-drawer-top">
         <a href="index.html" class="navbar-brand">
