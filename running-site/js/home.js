@@ -197,28 +197,7 @@ function buildHome() {
     ? `rankings.html${rankingsEvent ? '?event=' + encodeURIComponent(rankingsEvent) : ''}`
     : `article.html?id=${heroItem?.id}`;
 
-  // Ticker: upcoming meets within 30 days
   const now = Date.now();
-  const tickerMeets = (SITE.upcomingMeets || []).filter(m => {
-    if (!m.name || !m.datetime) return false;
-    const diff = new Date(m.datetime) - now;
-    return diff > -86400000 && diff < 30 * 86400000;
-  });
-  const tickerItems = [];
-  if (SITE.breakingNews) tickerItems.push(`<span class="fp-tick">${SITE.breakingNews}</span>`);
-  tickerMeets.forEach(m => {
-    const d = new Date(m.datetime);
-    const label = `${d.toLocaleString('en-US', { month: 'short' })} ${d.getDate()}`;
-    const inner = `<span class="fp-tick-dim">Next ·</span> ${m.name}, ${label}`;
-    tickerItems.push(m.url
-      ? `<a class="fp-tick fp-tick--link" href="${m.url}" target="_blank" rel="noopener">${inner}</a>`
-      : `<span class="fp-tick">${inner}</span>`);
-  });
-  const tickerHtml = tickerItems.length ? `
-    <div class="fp-ticker">
-      <span class="fp-ticker-label">Latest</span>
-      <div class="fp-ticks">${tickerItems.join('<span class="fp-tick-sep">·</span>')}</div>
-    </div>` : '';
 
   // ── Row 1: hero card ─────────────────────────────────────
   const heroCard = heroItem ? `
@@ -348,7 +327,6 @@ function buildHome() {
 
   document.getElementById('main').innerHTML = `
     <div class="fp-wrap">
-      ${tickerHtml}
       <div class="fp-body">
         <div class="dash-grid">
           ${heroCard}

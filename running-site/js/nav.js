@@ -2,40 +2,6 @@
 //  NAV — buildNavbar(), buildFooter(), toggleMobileMenu()
 // ============================================================
 
-// ── RANKINGS TICKER ───────────────────────────────────────
-function buildTickerHtml() {
-  const rows = RANKINGS['1500m'] || [];
-  if (!rows.length && !SITE.breakingNews) return '';
-
-  let tickerContent = '';
-
-  if (rows.length) {
-    const items = rows.map((r, i) => {
-      const rank = i + 1;
-      const a = (r.athleteId && ATHLETES[r.athleteId]) ? ATHLETES[r.athleteId] : null;
-      const name = (a && a.name) || r.name || r.athleteId || '—';
-      const clickAttr = r.athleteId
-        ? `onclick="if(window.openAthleteCard){window.openAthleteCard('${r.athleteId}',${rank})}else{window.location.href='rankings.html'}" role="button" tabindex="0"`
-        : `onclick="window.location.href='rankings.html'" role="button" tabindex="0"`;
-      return `<span class="ticker-item ticker-item-link" ${clickAttr}><span class="ticker-rank">${rank}</span> ${name}</span>`;
-    }).join('<span class="ticker-sep">·</span>');
-
-    // Duplicate for seamless loop
-    tickerContent = `
-      <div class="ticker-track">
-        <div class="ticker-content">${items}<span class="ticker-sep">·</span>${items}<span class="ticker-sep">·</span></div>
-      </div>`;
-  } else if (SITE.breakingNews) {
-    tickerContent = `<span class="ticker-static">${SITE.breakingNews}</span>`;
-  }
-
-  return `
-    <div class="breaking-bar" role="marquee">
-      <a class="breaking-badge" href="rankings.html">1500m</a>
-      ${tickerContent}
-    </div>`;
-}
-
 // ── NAVBAR ────────────────────────────────────────────────
 function buildNavbar() {
   const currentPage = document.body.dataset.page;
@@ -126,7 +92,6 @@ function buildNavbar() {
       </div>
     </div>
     <div class="mobile-overlay" id="mobile-overlay" onclick="toggleMobileMenu()"></div>
-    ${buildTickerHtml()}
     <div id="search-overlay" class="search-overlay" role="dialog" aria-label="Search">
       <div class="search-inner">
         <div class="search-header">
