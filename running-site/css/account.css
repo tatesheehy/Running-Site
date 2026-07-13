@@ -25,9 +25,8 @@
 
 .acct-signed-out-title {
   font-family: var(--font-display);
-  font-size: 33px;
+  font-size: 26px;
   font-weight: 700;
-  letter-spacing: 0.04em;
   margin: 0 0 10px;
 }
 
@@ -42,9 +41,8 @@
   background: var(--accent);
   color: #fff;
   font-family: var(--font-display);
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: 0.07em;
   padding: 13px 36px;
   border: none;
   border-radius: var(--radius);
@@ -77,7 +75,7 @@
   background: var(--accent);
   color: #fff;
   font-family: var(--font-display);
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -90,9 +88,8 @@
 
 .acct-profile-username {
   font-family: var(--font-display);
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
-  letter-spacing: 0.04em;
   margin-bottom: 2px;
 }
 
@@ -155,9 +152,8 @@
   align-items: center;
   gap: 10px;
   font-family: var(--font-display);
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.04em;
   color: var(--muted);
   margin: 0 0 18px;
 }
@@ -209,9 +205,8 @@
 
 .acct-username-display {
   font-family: var(--font-display);
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
-  letter-spacing: 0.04em;
 }
 
 .acct-locked-badge {
@@ -253,9 +248,8 @@
   color: #fff;
   border: none;
   font-family: var(--font-display);
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.07em;
   padding: 10px 20px;
   border-radius: var(--radius);
   cursor: pointer;
@@ -303,9 +297,8 @@
 
 .acct-fav-name {
   font-family: var(--font-display);
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 600;
-  letter-spacing: 0.04em;
 }
 
 .acct-fav-country {
@@ -356,9 +349,8 @@
   color: #fff;
   border: none;
   font-family: var(--font-display);
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.07em;
   padding: 9px 18px;
   border-radius: var(--radius);
   cursor: pointer;
@@ -387,9 +379,8 @@
 
 .acct-list-name {
   font-family: var(--font-display);
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 600;
-  letter-spacing: 0.04em;
   cursor: pointer;
 }
 .acct-list-name:hover { color: var(--accent); }
@@ -552,9 +543,8 @@
   align-items: center;
   gap: 10px;
   font-family: var(--font-display);
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 700;
-  letter-spacing: 0.05em;
   margin: 0 0 28px;
 }
 
@@ -610,10 +600,9 @@
   background: none;
   border: none;
   color: var(--muted);
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   font-family: var(--font-display);
-  letter-spacing: 0.06em;
   cursor: pointer;
   padding: 2px 0;
   transition: color 0.12s;
@@ -673,9 +662,8 @@
 
 .cmt-name {
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.04em;
 }
 
 .cmt-time {
@@ -741,9 +729,8 @@
   color: #fff;
   border: none;
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.06em;
   padding: 10px 22px;
   border-radius: var(--radius);
   cursor: pointer;
@@ -767,9 +754,8 @@
   border: 1px solid var(--border);
   color: var(--text);
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.06em;
   padding: 10px 22px;
   border-radius: var(--radius);
   cursor: pointer;
@@ -803,13 +789,12 @@
 .cmt-vote-down:not(.active):hover  { color: #ef4444; }
 
 .cmt-score {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 600;
   min-width: 20px;
   text-align: center;
   color: var(--muted);
   font-family: var(--font-display);
-  letter-spacing: 0.04em;
 }
 .cmt-score.positive { color: #22c55e; }
 .cmt-score.negative { color: #ef4444; }
