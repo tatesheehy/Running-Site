@@ -1,0 +1,1453 @@
+{
+  "id": "maciej-wyderka",
+  "name": "Maciej Wyderka",
+  "flag": "PL",
+  "country": "Poland",
+  "waUrl": "https://worldathletics.org/athletes/poland/maciej-wyderka-14797452",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "23",
+  "dob": "2002-07-29",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "400m",
+      "time": "48.87"
+    },
+    {
+      "event": "800m",
+      "time": "1:44.07"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.77"
+    },
+    {
+      "event": "2000m",
+      "time": "5:33.92"
+    },
+    {
+      "event": "400 Metres Short Track",
+      "time": "49.00"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:16.83"
+    },
+    {
+      "event": "600 Metres Short Track",
+      "time": "1:16.83"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:44.07"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:16.45"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:20.25"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:37.57"
+    },
+    {
+      "event": "2000 Metres Short Track",
+      "time": "5:33.92"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:19.46"
+    },
+    {
+      "event": "4x400 Metres Relay Mixed Short Track",
+      "time": "3:30.78"
+    }
+  ],
+  "results": [
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:44.59",
+      "place": "3.",
+      "round": "SF2"
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:46.15",
+      "place": "2.",
+      "round": "H6"
+    },
+    {
+      "date": "MAR 1",
+      "meet": "Polish Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:44.76",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Polish Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:49.41",
+      "place": "1.",
+      "round": "H1"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "ORLEN Copernicus Cup",
+      "event": "800 m sh",
+      "time": "1:44.30",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "800 m sh",
+      "time": "1:44.64",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 8",
+      "meet": "Sparkassen Indoor Meeting Dortmund",
+      "event": "800 m sh",
+      "time": "1:45.81",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 3",
+      "meet": "Czech Indoor Gala",
+      "event": "800 m sh",
+      "time": "1:44.07",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Meeting Indoor de Lyon",
+      "event": "800 m sh",
+      "time": "1:46.79",
+      "place": "4.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 18",
+      "meet": "CMCM Luxembourg Indoor Meeting",
+      "event": "800 m sh",
+      "time": "1:45.38",
+      "place": "2.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "SEP 1",
+        "meet": "Ruda Śląska, Ruda Slaska",
+        "event": "800m",
+        "time": "1:59.85",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Chorzów Polish U18 Championships",
+        "event": "800m",
+        "time": "1:54.83",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "Chorzów Polish U18 Championships",
+        "event": "800m",
+        "time": "1:56.00",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "Wrocław Memoriał Edward Listos, Wrocław",
+        "event": "1500m",
+        "time": "3:56.02",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Kraków",
+        "event": "800m",
+        "time": "1:53.56",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "Częstochowa, Czestochowa",
+        "event": "800m",
+        "time": "1:54.52",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Chorzów",
+        "event": "1500m",
+        "time": "4:00.06",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Kraków",
+        "event": "1000m",
+        "time": "2:30.01",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Toruń Polish U18 Indoor Championships, Toruń (i)",
+        "event": "1000m sh",
+        "time": "2:32.33",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "Spała, Spala (i)",
+        "event": "600m sh",
+        "time": "1:24.55",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JAN 20",
+        "meet": "Toruń (i)",
+        "event": "600m sh",
+        "time": "1:24.41",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "SEP 15",
+        "meet": "Polish U20 Club Championships",
+        "event": "400m",
+        "time": "50.98",
+        "place": "7",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 31",
+        "meet": "Jubilee Meeting",
+        "event": "800m",
+        "time": "1:55.66",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Regional Meeting, Bialogard",
+        "event": "800m",
+        "time": "1:51.43",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Polish U18 Championships, Poznan",
+        "event": "800m",
+        "time": "1:54.43",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "Polish U18 Championships, Poznan",
+        "event": "800m",
+        "time": "1:59.21",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "Holiday Meeting, Czestochowa",
+        "event": "600m",
+        "time": "1:19.62",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Malopolski Stars Memorial, Kraków",
+        "event": "800m",
+        "time": "1:51.30",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Karkonoski Meeting",
+        "event": "800m",
+        "time": "1:53.06",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Józef Żylewicz Memorial, Gdansk",
+        "event": "1500m",
+        "time": "3:53.40",
+        "place": "15",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "Sławomir Rosłon Memorial, Piaseczno",
+        "event": "800m",
+        "time": "1:54.07",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "Memoriał Edward Listos, Wrocław",
+        "event": "1500m",
+        "time": "3:56.58",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Regional Championships, Bielsko-Biala",
+        "event": "400m",
+        "time": "50.50",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Qualification Meet, Ruda Slaska",
+        "event": "400m",
+        "time": "50.72",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "International Meeting",
+        "event": "800m",
+        "time": "1:55.87",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Polish U18 Indoor Championships, Toruń (i)",
+        "event": "600m sh",
+        "time": "1:20.33",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Polish U18 Indoor Championships, Toruń (i)",
+        "event": "600m sh",
+        "time": "1:24.37",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Regional U16 Indoor Championships, Toruń (i)",
+        "event": "800m sh",
+        "time": "1:54.50",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Ostrava Indoor Meeting, Ostrava (i)",
+        "event": "600m sh",
+        "time": "1:21.41",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "SEP 27",
+        "meet": "Regional U20 Championships",
+        "event": "800m",
+        "time": "1:53.58",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "SEP 13",
+        "meet": "Polish U20 Championships",
+        "event": "1500m",
+        "time": "4:08.58",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 12",
+        "meet": "Polish U20 Championships",
+        "event": "800m",
+        "time": "1:52.72",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "SEP 11",
+        "meet": "Polish U20 Championships",
+        "event": "800m",
+        "time": "1:54.14",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "Polish Championships",
+        "event": "800m",
+        "time": "1:51.67",
+        "place": "5",
+        "round": "H3"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Memoriał Edward Listos",
+        "event": "1500m",
+        "time": "3:49.54",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 13",
+        "meet": "Janusz Sidło Memorial",
+        "event": "800m",
+        "time": "1:51.81",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 28",
+        "meet": "Memorial Grzegorz Duneckie",
+        "event": "1500m",
+        "time": "3:53.94",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "National Qualifying Meet",
+        "event": "800m",
+        "time": "1:51.88",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 18",
+        "meet": "National Qualifying Meet",
+        "event": "1000m",
+        "time": "2:27.88",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Polish U20 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:52.46",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Polish U20 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:56.32",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 7",
+        "meet": "Athletics Indoor Ostrava",
+        "event": "800m sh",
+        "time": "1:51.98",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Regional Indoor Championships",
+        "event": "600m sh",
+        "time": "1:20.36",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "National Indoor Meeting",
+        "event": "1000m sh",
+        "time": "2:28.66",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JAN 11",
+        "meet": "Indoor Meeting",
+        "event": "1500m sh",
+        "time": "3:57.91",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "JUL 17",
+        "meet": "European Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:50.87",
+        "place": "6",
+        "round": "SF1"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "European Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:50.43",
+        "place": "5",
+        "round": "H4"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Polish U20 Championships",
+        "event": "1500m",
+        "time": "3:50.68",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "Polish U20 Championships",
+        "event": "800m",
+        "time": "1:51.19",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Polish U20 Championships",
+        "event": "800m",
+        "time": "1:55.28",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "67° ORLEN Janusz Kusocinski Memorial",
+        "event": "800m",
+        "time": "1:50.74",
+        "place": "7",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Memoriał Gwiazd",
+        "event": "400m",
+        "time": "48.87",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "Athletics Grand Prix",
+        "event": "1500m",
+        "time": "3:48.96",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "Sławomir Rosłon Memorial",
+        "event": "800m",
+        "time": "1:49.20",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Wiesław Kiryk Memorial",
+        "event": "800m",
+        "time": "1:49.62",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Józef Żylewicz Memorial",
+        "event": "1500m",
+        "time": "3:50.80",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Memoriał Zygmunt Szelest",
+        "event": "800m",
+        "time": "1:50.25",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "Opening Meeting",
+        "event": "400m",
+        "time": "49.75",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Polish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:50.83",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "Polish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:51.59",
+        "place": "4",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Polish U20 Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:50.18",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "National Indoor Meeting",
+        "event": "600m sh",
+        "time": "1:19.02",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "Regional Indoor Championships",
+        "event": "800m sh",
+        "time": "1:51.79",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 23",
+        "meet": "National Indoor Meeting",
+        "event": "2000m sh",
+        "time": "5:33.92",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "National Indoor Meeting",
+        "event": "1000m sh",
+        "time": "2:25.81",
+        "place": "2",
+        "round": "F1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "NOV 26",
+        "meet": "Polish Cross Country Championships, Olesno",
+        "event": "Cross Country",
+        "time": "12:38",
+        "place": "29",
+        "round": "F"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "International U23 Four Countries Match",
+        "event": "800m",
+        "time": "1:54.07",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "Polish U23 Championships",
+        "event": "1500m",
+        "time": "3:46.98",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "Polish U23 Championships",
+        "event": "800m",
+        "time": "1:49.67",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 23",
+        "meet": "National Meeting",
+        "event": "1500m",
+        "time": "3:42.24",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Anniversary Meeting",
+        "event": "800m",
+        "time": "1:50.86",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Meeting National à thème d'Halluin",
+        "event": "800m",
+        "time": "1:48.41",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "Grand Prix Gliwic",
+        "event": "800m",
+        "time": "1:48.39",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "Kladno hází a Kladenské Memoriály 2022",
+        "event": "1500m",
+        "time": "3:43.01",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Polish Championships",
+        "event": "800m",
+        "time": "1:51.42",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Polish Championships",
+        "event": "800m",
+        "time": "1:55.29",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "68° ORLEN Janusz Kusociński Memorial",
+        "event": "800m",
+        "time": "1:48.45",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "Józef Żylewicz Memorial",
+        "event": "1500m",
+        "time": "3:49.63",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Polish University Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:19.46",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Polish University Championships",
+        "event": "800m",
+        "time": "1:52.45",
+        "place": "2",
+        "round": "F8"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "SZLA Anniversary Meeting",
+        "event": "800m",
+        "time": "1:50.09",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Regional Meeting",
+        "event": "600m",
+        "time": "1:18.11",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "Polish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:51.87",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "Polish Indoor Championships",
+        "event": "4x400 Metres Relay Mixed Short Track sh",
+        "time": "3:39.59",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "Polish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:50.62",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Ostrava Indoor II",
+        "event": "800m sh",
+        "time": "1:47.79",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Youth Ostrava Indoor a vložené závody",
+        "event": "1500m sh",
+        "time": "3:45.11",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 5",
+        "meet": "National Indoor Meeting",
+        "event": "800m sh",
+        "time": "1:49.71",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "Halowych Mistrzostw Śląska juniorów młodszych",
+        "event": "400m sh",
+        "time": "49.00",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "National Indoor Meeting",
+        "event": "600m sh",
+        "time": "1:18.38",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "AUG 6",
+        "meet": "FISU World University Games",
+        "event": "800m",
+        "time": "1:49.09",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "FISU World University Games",
+        "event": "800m",
+        "time": "1:47.00",
+        "place": "1",
+        "round": "SF3"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "FISU World University Games",
+        "event": "800m",
+        "time": "1:50.29",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "Polish Championships",
+        "event": "1500m",
+        "time": "3:42.85",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 22",
+        "meet": "Małopolski Memoriał Trenerów",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "European Athletics U23 Championships",
+        "event": "1500m",
+        "time": "3:45.68",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "European Athletics U23 Championships",
+        "event": "1500m",
+        "time": "3:45.20",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Polish U23 Championships",
+        "event": "1500m",
+        "time": "3:53.11",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Polish U23 Championships",
+        "event": "800m",
+        "time": "1:47.54",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "Kladno hází a Kladenské Memoriály 2023",
+        "event": "800m",
+        "time": "1:47.08",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "5th Irena Szewińska Memorial",
+        "event": "1500m",
+        "time": "3:36.21",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "JUN 4",
+        "meet": "69° ORLEN Janusz Kusociński Memorial",
+        "event": "800m",
+        "time": "1:46.83",
+        "place": "10",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "Grifone Meeting",
+        "event": "1500m",
+        "time": "3:41.13",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "7. Memorial Edwarda Szklarczyka. Małopolski mityng LA",
+        "event": "800m",
+        "time": "1:48.96",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Mityng Kwalifikacyjny TL Pogoń Ruda Śląska",
+        "event": "400m",
+        "time": "49.80",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Polish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:50.18",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Polish Indoor Championships",
+        "event": "4x400 Metres Relay Mixed Short Track sh",
+        "time": "3:30.78",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Polish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:51.56",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Zawody kontrolne PZLA",
+        "event": "400m sh",
+        "time": "49.37",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "ORLEN Copernicus Cup",
+        "event": "1500m sh",
+        "time": "3:44.35",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "10. Breuninger Hallenmeeting",
+        "event": "1500m sh",
+        "time": "3:40.99",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "3. Ogólnopolskie Halowe Zawody LA Toruń",
+        "event": "600m sh",
+        "time": "1:18.18",
+        "place": "2",
+        "round": "F1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "AUG 3",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:36.79",
+        "place": "9",
+        "round": "RR1"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:38.79",
+        "place": "12",
+        "round": "H3"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "Polish U23 Championships",
+        "event": "1500m",
+        "time": "3:42.89",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Polish U23 Championships",
+        "event": "800m",
+        "time": "1:49.59",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "Polish Championships",
+        "event": "1500m",
+        "time": "3:37.78",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Czesław Cybulski Memorial",
+        "event": "800m",
+        "time": "1:45.66",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "6th Irena Szewińska Memorial",
+        "event": "1500m",
+        "time": "3:40.13",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:40.37",
+        "place": "9",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "Lubelski Koziołki",
+        "event": "800m",
+        "time": "1:45.72",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "63rd Ostrava Golden Spike",
+        "event": "1500m",
+        "time": "3:35.09",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "70. ORLEN Janusz Kusocinski Memorial",
+        "event": "1500m",
+        "time": "3:35.51",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Memoriał Czesławy Mentlewicz",
+        "event": "800m",
+        "time": "1:47.15",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "Internationales thallos Läufermeeting",
+        "event": "600m",
+        "time": "1:17.02",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Polish Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:50.27",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "ORLEN Copernicus Cup",
+        "event": "1500m sh",
+        "time": "3:39.31",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "Czech Indoor Gala",
+        "event": "1500m sh",
+        "time": "3:38.49",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JAN 23",
+        "meet": "Tampere Indoor Meeting",
+        "event": "800m",
+        "time": "1:49.23",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JAN 21",
+        "meet": "CMCM Indoor Meeting",
+        "event": "1500m sh",
+        "time": "3:41.03",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JAN 13",
+        "meet": "Ogólnopolskie halowe zawody lekkoatletyczne",
+        "event": "1000m sh",
+        "time": "2:20.25",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 18",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.55",
+        "place": "4",
+        "round": "SF1"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:46.30",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "Polish Championships",
+        "event": "800m",
+        "time": "1:47.57",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Polish Championships",
+        "event": "800m",
+        "time": "1:47.65",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "1500m",
+        "time": "3:34.77",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "Mityng Ambasadorów Białostockiego i Podlaskiego Sportu",
+        "event": "1000m",
+        "time": "2:16.45",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "FISU World University Games",
+        "event": "800m",
+        "time": "1:48.01",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 26",
+        "meet": "FISU World University Games",
+        "event": "800m",
+        "time": "1:46.52",
+        "place": "1",
+        "round": "SF1"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "FISU World University Games",
+        "event": "800m",
+        "time": "1:48.02",
+        "place": "1",
+        "round": "H4"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Morton Games",
+        "event": "800m",
+        "time": "1:44.40",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Czesław Cybulski Memorial",
+        "event": "800m",
+        "time": "1:44.23",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "64th Ostrava Golden Spike",
+        "event": "1500m",
+        "time": "3:35.81",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting Internazionale Città di Pergine",
+        "event": "800m",
+        "time": "1:44.72",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Janusz Sidlo Memorial",
+        "event": "800m",
+        "time": "1:44.63",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "7th Irena Szewińska Memorial",
+        "event": "1500m",
+        "time": "3:37.11",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "71. ORLEN Janusz Kusocinski Memorial",
+        "event": "800m",
+        "time": "1:47.87",
+        "place": "12",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Memoriał Czesławy Mentlewicz",
+        "event": "800m",
+        "time": "1:47.58",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "European Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.17",
+        "place": "4",
+        "round": "SF1"
+      },
+      {
+        "date": "MAR 7",
+        "meet": "European Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.11",
+        "place": "2",
+        "round": "H4"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Polish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.14",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Polish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:51.10",
+        "place": "2",
+        "round": "H3"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "ORLEN Copernicus Cup",
+        "event": "1500m sh",
+        "time": "3:37.57",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "FEB 7",
+        "meet": "Gran Premio Ciudad de Valencia",
+        "event": "800m sh",
+        "time": "1:47.18",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "Czech Indoor Gala",
+        "event": "800m sh",
+        "time": "1:45.99",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Belgrade Indoor Meeting",
+        "event": "1500m sh",
+        "time": "3:40.01",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Sparkassen Indoor Meeting Dortmund",
+        "event": "800m sh",
+        "time": "1:48.46",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 12",
+        "meet": "Halowy mityng ogólnopolski DZLA",
+        "event": "600m sh",
+        "time": "1:16.83",
+        "place": "1",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-10"
+}

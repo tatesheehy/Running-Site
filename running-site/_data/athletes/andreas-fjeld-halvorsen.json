@@ -72,59 +72,940 @@
     {
       "date": "JUN 24",
       "meet": "Boysen Memorial",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:29.69",
-      "place": "1"
+      "place": "1.",
+      "round": "F2"
     },
     {
       "date": "JUN 13",
       "meet": "Merck Laufgala Pfungstadt",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:36.48",
-      "place": "4"
+      "place": "4.",
+      "round": "F2"
     },
     {
       "date": "JUN 10",
       "meet": "Bislett Games pre-event",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:35.08",
-      "place": "3"
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "JUN 5",
       "meet": "1500m Elite Jessheim",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:38.62",
-      "place": "2"
+      "place": "2.",
+      "round": "F6"
     },
     {
       "date": "MAY 28",
       "meet": "Trond Mohn Games",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:40.76",
-      "place": "12"
+      "place": "12.",
+      "round": "F"
     },
     {
       "date": "MAY 15",
       "meet": "Per Halle invitational",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:18.44",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "APR 4",
-      "meet": "Urban Trail de Lille",
-      "event": "5 Kilometres Road",
+      "meet": "Urban Trail de Lille - 5 et 10km",
+      "event": "5 Kilom Road",
       "time": "13:27",
-      "place": "16"
+      "place": "16.",
+      "round": "F"
     },
     {
       "date": "MAR 6",
       "meet": "Norwegian U23 Indoor Championships",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:48.56",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [
+      {
+        "date": "SEP 23",
+        "meet": "SK Vidar",
+        "event": "1500m",
+        "time": "3:56.26",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "Åpent klubbmesterskap",
+        "event": "800m",
+        "time": "1:55.72",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 15",
+        "meet": "PLUGGEN elektro",
+        "event": "600m",
+        "time": "1:23.26",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 30",
+        "meet": "Norwegian U16 Championships",
+        "event": "2000m",
+        "time": "5:36.54",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Nittedalslekene",
+        "event": "1500m",
+        "time": "4:03.26",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "Norgeslekene",
+        "event": "1500m",
+        "time": "4:00.82",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "OFIKs Julistevne",
+        "event": "800m",
+        "time": "1:58.93",
+        "place": "2",
+        "round": "F3"
+      }
+    ],
+    "2021": [
+      {
+        "date": "SEP 11",
+        "meet": "Norwegian Championships",
+        "event": "800m",
+        "time": "1:54.38",
+        "place": "4",
+        "round": "H1"
+      },
+      {
+        "date": "SEP 10",
+        "meet": "Norwegian Championships",
+        "event": "1500m",
+        "time": "4:03.39",
+        "place": "8",
+        "round": "H2"
+      },
+      {
+        "date": "SEP 4",
+        "meet": "Norwegian U17 Championships",
+        "event": "800m",
+        "time": "1:56.32",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 25",
+        "meet": "Nasjonalt Friidrettstevne",
+        "event": "1500m",
+        "time": "3:53.48",
+        "place": "11",
+        "round": "F3"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "Nittedalslekene",
+        "event": "800m",
+        "time": "1:55.27",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "Norgeslekene",
+        "event": "3000m",
+        "time": "8:12.82",
+        "place": "19",
+        "round": "F3"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "Norwegian U20 Championships",
+        "event": "1500m",
+        "time": "3:58.82",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "Norwegian U20 Championships",
+        "event": "1500m",
+        "time": "4:07.64",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "European Athletics U20 Championships",
+        "event": "1500m",
+        "time": "3:52.84",
+        "place": "11",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Julistevnet",
+        "event": "800m",
+        "time": "1:54.14",
+        "place": "3",
+        "round": "F4"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Allianseklubbenes stevneserie del 2",
+        "event": "1500m",
+        "time": "3:50.99",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Boysen Memorial",
+        "event": "800m",
+        "time": "1:53.41",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "1500m Elite",
+        "event": "1500m",
+        "time": "3:48.39",
+        "place": "2",
+        "round": "F6"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "Allianseklubbenes stevneserie del 1",
+        "event": "800m",
+        "time": "1:53.98",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Per Halle Invitational",
+        "event": "800m",
+        "time": "1:54.37",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Bislett Running Elite",
+        "event": "3000m",
+        "time": "8:16.06",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "Invitasjonsstevne 3",
+        "event": "1500m sh",
+        "time": "3:56.86",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "Treningstevne",
+        "event": "1500m sh",
+        "time": "3:56.86",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 11",
+        "meet": "28th SPAR European Cross Country Championships, Piemonte-La Mandria Park",
+        "event": "Cross Country U20 Race",
+        "time": "19:12",
+        "place": "67",
+        "round": "F"
+      },
+      {
+        "date": "OCT 1",
+        "meet": "Norgesløpet 5, Jessheim",
+        "event": "5K",
+        "time": "14:44",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Norwegian U20 Championships",
+        "event": "5000m",
+        "time": "14:16.75",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 27",
+        "meet": "Norwegian U20 Championships",
+        "event": "1500m",
+        "time": "3:45.98",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "BMC Gold Standard Races",
+        "event": "1500m",
+        "time": "3:45.61",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Nittedalslekene",
+        "event": "800m",
+        "time": "1:54.00",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "Norgeslekene",
+        "event": "3000m",
+        "time": "8:06.67",
+        "place": "6",
+        "round": "F3"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "European Athletics U18 Championships",
+        "event": "1500m",
+        "time": "3:52.14",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "European Athletics U18 Championships",
+        "event": "3000m",
+        "time": "8:13.48",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "European Athletics U18 Championships",
+        "event": "1500m",
+        "time": "3:54.90",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Norwegian Championships",
+        "event": "1500m",
+        "time": "3:44.49",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "Norwegian Championships",
+        "event": "1500m",
+        "time": "3:52.51",
+        "place": "4",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Oslo Bislett Games",
+        "event": "1500m",
+        "time": "3:45.20",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Tyrvinglekene",
+        "event": "800m",
+        "time": "1:52.86",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Arne Risa 3000m Classic",
+        "event": "3000m",
+        "time": "8:11.16",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Jessheim 1500m Elite",
+        "event": "1500m",
+        "time": "3:45.60",
+        "place": "13",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Per Halle Invitational",
+        "event": "800m",
+        "time": "1:52.09",
+        "place": "5",
+        "round": "F3"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "Extra UM",
+        "event": "800m sh",
+        "time": "1:53.34",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAR 4",
+        "meet": "Extra UM",
+        "event": "1500m sh",
+        "time": "3:49.93",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "Norwegian Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:33.41",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "Norgeslekene",
+        "event": "1500m sh",
+        "time": "3:50.93",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 10",
+        "meet": "29th SPAR European Cross Country Championships",
+        "event": "Cross Country U20 Race",
+        "time": "17:50",
+        "place": "50",
+        "round": "F"
+      },
+      {
+        "date": "DEC 2",
+        "meet": "Låvefesten",
+        "event": "3000m sh",
+        "time": "8:26.02",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 30",
+        "meet": "Norgesløpet, Jessheim",
+        "event": "5K",
+        "time": "14:12",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "SEP 23",
+        "meet": "Mohagen bilcup 4",
+        "event": "1500m",
+        "time": "3:40.33",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "22. Volksbank Trier Flutlichtmeeting",
+        "event": "3000m",
+        "time": "7:47.04",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "Norwegian U20 Championships",
+        "event": "1500m",
+        "time": "3:45.07",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 25",
+        "meet": "Norwegian U20 Championships",
+        "event": "1500m",
+        "time": "4:05.38",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "Nittedalslekene",
+        "event": "3000m",
+        "time": "7:58.38",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "European Athletics U20 Championships",
+        "event": "3000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "European Athletics U20 Championships",
+        "event": "3000m",
+        "time": "8:32.20",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Norwegian Championships",
+        "event": "1500m",
+        "time": "3:51.50",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Norwegian Championships",
+        "event": "1500m",
+        "time": "3:50.76",
+        "place": "2",
+        "round": "H3"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Oslo Bislett Games",
+        "event": "1500m",
+        "time": "3:47.61",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Jessheim 1500m Elite",
+        "event": "1500m",
+        "time": "3:48.83",
+        "place": "13",
+        "round": "F6"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "Distansestevne",
+        "event": "1500m sh",
+        "time": "3:53.56",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Norwegian Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:55.21",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "Norgeslekene",
+        "event": "1500m sh",
+        "time": "3:47.53",
+        "place": "2",
+        "round": "F3"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 8",
+        "meet": "30th SPAR European Cross Country Championships, Antalya",
+        "event": "Cross Country U20 Race",
+        "time": "14:16",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "SEP 22",
+        "meet": "Mohagen Bil Cup 4",
+        "event": "800m",
+        "time": "1:55.87",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 31",
+        "meet": "World Athletics U20 Championships",
+        "event": "1500m",
+        "time": "3:49.45",
+        "place": "13",
+        "round": "F"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "World Athletics U20 Championships",
+        "event": "3000m",
+        "time": "8:20.56",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "World Athletics U20 Championships",
+        "event": "1500m",
+        "time": "3:43.81",
+        "place": "3",
+        "round": "H3"
+      },
+      {
+        "date": "AUG 17",
+        "meet": "Nittedalslekene",
+        "event": "800m",
+        "time": "1:50.85",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "Norgeslekene",
+        "event": "3000m",
+        "time": "8:00.61",
+        "place": "10",
+        "round": "F3"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Folksam Grand Prix Karlstad",
+        "event": "3000m",
+        "time": "8:05.43",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "Norwegian Championships",
+        "event": "1500m",
+        "time": "3:47.78",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "Norwegian Championships",
+        "event": "1500m",
+        "time": "3:58.60",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "Meeting Internazionale Città di Nembro",
+        "event": "3000m",
+        "time": "7:51.43",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "Bislett Games pre-programme",
+        "event": "1500m",
+        "time": "3:49.11",
+        "place": "13",
+        "round": "F"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "1500m Elite Jessheim",
+        "event": "1500m",
+        "time": "3:38.32",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Next Generation Athletics",
+        "event": "1500m",
+        "time": "3:41.01",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Belfast Irish Milers Meet In Association with Tripadvisor",
+        "event": "1500m",
+        "time": "3:44.09",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "APR 28",
+        "meet": "Løpstevne",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "Norwegian U20 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:52.47",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "Norwegian U20 Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:45.52",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Norwegian Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:48.35",
+        "place": "4",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Nordic indoor match",
+        "event": "1500m sh",
+        "time": "3:41.77",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "IFAM Gent Indoor",
+        "event": "1500m sh",
+        "time": "3:43.94",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Miting Catalunya",
+        "event": "1500m sh",
+        "time": "3:43.19",
+        "place": "10",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Januarstevne",
+        "event": "800m sh",
+        "time": "1:54.38",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 14",
+        "meet": "31st SPAR European Cross Country Championships, Lagoa",
+        "event": "Cross Country U23 Race",
+        "time": "18:23",
+        "place": "18",
+        "round": "F"
+      },
+      {
+        "date": "NOV 9",
+        "meet": "Nordic Cross Country Championships",
+        "event": "Cross Country",
+        "time": "22:49",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 2",
+        "meet": "24. Volksbank Trier Eifel Flutlichtmeeting",
+        "event": "3000m",
+        "time": "7:40.21",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "Sankthanshaugen 5000",
+        "event": "1500m",
+        "time": "3:38.48",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Internationales Abendsportfest",
+        "event": "1500m",
+        "time": "3:34.33",
+        "place": "11",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "Meeting voor Mon",
+        "event": "1500m",
+        "time": "3:35.17",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "8. International Wiesław Maniak Memorial",
+        "event": "1500m",
+        "time": "3:37.01",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Norwegian Championships",
+        "event": "1500m",
+        "time": "3:39.19",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "Norwegian Championships",
+        "event": "1500m",
+        "time": "3:52.98",
+        "place": "1",
+        "round": "H4"
+      },
+      {
+        "date": "JUL 26",
+        "meet": "Folksam Grand Prix Göteborg",
+        "event": "1500m",
+        "time": "3:38.26",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "European Athletics U23 Championships",
+        "event": "5000m",
+        "time": "13:47.52",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Meeting National Est Lyonnais",
+        "event": "1500m",
+        "time": "3:38.35",
+        "place": "10",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Bislett Games pre-programme",
+        "event": "1500m",
+        "time": "4:26.89",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "1500m Elite Jessheim",
+        "event": "1500m",
+        "time": "3:38.86",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "Meeting international du SATUC Toulouse Athlé",
+        "event": "1500m",
+        "time": "3:37.89",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "Spåret 5000m",
+        "event": "5000m",
+        "time": "13:22.38",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Norwegian Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:42.26",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Indoor Spike",
+        "event": "1500m sh",
+        "time": "3:41.93",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "IFAM Gent Indoor",
+        "event": "1500m sh",
+        "time": "3:47.39",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "IFAM Gent Indoor",
+        "event": "3000m sh",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Norgeslekene innendørs",
+        "event": "1500m sh",
+        "time": "3:47.00",
+        "place": "2",
+        "round": "F3"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

@@ -134,5 +134,504 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-12"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUN 15",
+        "meet": "Bloomington USA U20 Championships",
+        "event": "5000m",
+        "time": "14:32.75",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "JUN 15",
+        "meet": "Brooks PR Invitational",
+        "event": "2 Miles",
+        "time": "8:50.73",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "The Wisco Mile",
+        "event": "Mile",
+        "time": "4:07.03",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "JAN 17",
+        "meet": "Lumberjack Challenge",
+        "event": "Mile",
+        "time": "4:21.05",
+        "place": "10",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 17",
+        "meet": "Lumberjack Challenge",
+        "event": "3000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "DEC 4",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:26.19",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "The Wisco Mile",
+        "event": "Mile",
+        "time": "4:02.23",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 3",
+        "meet": "Stumptown Twilight",
+        "event": "1500m",
+        "time": "3:45.52",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "Portland Track Festival",
+        "event": "5000m",
+        "time": "13:43.93",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "APU Last Chance Twilight & Multis",
+        "event": "5000m",
+        "time": "14:00.79",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 3",
+        "meet": "Boston University/Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:13.26",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "NCAA West Preliminary Round",
+        "event": "5000m",
+        "time": "13:42.63",
+        "place": "8",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Big Sky Outdoor Championships",
+        "event": "5000m",
+        "time": "14:07.85",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Big Sky Outdoor Championships",
+        "event": "10000m",
+        "time": "30:03.46",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Track Meet",
+        "event": "5000m",
+        "time": "13:25.90",
+        "place": "13",
+        "round": "F1"
+      },
+      {
+        "date": "APR 15",
+        "meet": "Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "3:39.32",
+        "place": "10",
+        "round": "F2"
+      },
+      {
+        "date": "APR 15",
+        "meet": "Mt. SAC Relays",
+        "event": "5000m",
+        "time": "13:42.32",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "MAR 11",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "5000m sh",
+        "time": "13:29.69",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "Big Sky Indoor Championships",
+        "event": "Mile sh",
+        "time": "4:11.88",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "Big Sky Indoor Championships",
+        "event": "5000m sh",
+        "time": "14:05.96",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Husky Classic",
+        "event": "3000m",
+        "time": "7:53.65",
+        "place": "6",
+        "round": "F7"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "UW Invitational",
+        "event": "Mile",
+        "time": "3:59.34",
+        "place": "6",
+        "round": "F6"
+      },
+      {
+        "date": "JAN 21",
+        "meet": "Lumberjack Team Challenge",
+        "event": "800m",
+        "time": "1:54.27",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 21",
+        "meet": "Lumberjack Team Challenge",
+        "event": "Mile",
+        "time": "4:08.00",
+        "place": "4",
+        "round": "F2"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 2",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "3000m sh",
+        "time": "7:43.98",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "DEC 2",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:29.26",
+        "place": "3",
+        "round": "F3"
+      },
+      {
+        "date": "NOV 18",
+        "meet": "NCAA D1 Cross Country Championships",
+        "event": "Cross Country",
+        "time": "29:04",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 31",
+        "meet": "Stanford Invitational",
+        "event": "10000m",
+        "time": "28:18.02",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 11",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:48.34",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "5000m sh",
+        "time": "13:38.62",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "Big Sky Indoor Track and Field Conference Championships",
+        "event": "3000m sh",
+        "time": "7:59.05",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Big Sky Indoor Track and Field Conference Championships",
+        "event": "5000m sh",
+        "time": "13:39.87",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "3000m sh",
+        "time": "7:36.42",
+        "place": "5",
+        "round": "F1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:43.62",
+        "place": "18",
+        "round": "F1"
+      },
+      {
+        "date": "NOV 2",
+        "meet": "Abbot Dash to the FInish Line 5K",
+        "event": "5K",
+        "time": "13:49",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:38.25",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Big Sky Men's and Women's Indoor Track & Field Championship",
+        "event": "3000m sh",
+        "time": "8:16.89",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Big Sky Men's and Women's Indoor Track & Field Championship",
+        "event": "5000m sh",
+        "time": "13:53.10",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Husky Classic",
+        "event": "3000m",
+        "time": "8:01.80",
+        "place": "11",
+        "round": "F7"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 6",
+        "meet": "USATF Cross Country Championships",
+        "event": "Cross Country",
+        "time": "30:43",
+        "place": "17",
+        "round": "F"
+      },
+      {
+        "date": "NOV 1",
+        "meet": "Abbott Dash to the Finish Line 5K",
+        "event": "5K",
+        "time": "13:58",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "USA Championships",
+        "event": "5000m",
+        "time": "13:34.51",
+        "place": "17",
+        "round": "F"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "USA Championships",
+        "event": "10000m",
+        "time": "29:22.77",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Sunset Tour, Jack Kemp Stadium",
+        "event": "5000m",
+        "time": "13:25.37",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "5000m",
+        "time": "13:39.04",
+        "place": "17",
+        "round": "F"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "10000m",
+        "time": "29:28.52",
+        "place": "20",
+        "round": "F"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "5000m",
+        "time": "13:34.58",
+        "place": "4",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "10000m",
+        "time": "28:19.60",
+        "place": "6",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "Big Sky Championships, Hornet Stadium",
+        "event": "1500m",
+        "time": "3:45.97",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Big Sky Championships, Hornet Stadium",
+        "event": "1500m",
+        "time": "3:53.65",
+        "place": "7",
+        "round": "H2"
+      },
+      {
+        "date": "APR 17",
+        "meet": "Bryan Clay Invitational",
+        "event": "5000m",
+        "time": "13:17.06",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "APR 4",
+        "meet": "Stanford Invitational",
+        "event": "10000m",
+        "time": "27:53.48",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "3000m sh",
+        "time": "7:56.35",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "5000m sh",
+        "time": "13:21.28",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "Big Sky Conference Indoor Championships",
+        "event": "Mile",
+        "time": "4:05.71",
+        "place": "2",
+        "round": "F3"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "Big Sky Conference Indoor Championships",
+        "event": "3000m",
+        "time": "8:17.03",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "Big Sky Conference Indoor Championships",
+        "event": "5000m",
+        "time": "14:17.17",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "NAU Tune-Up",
+        "event": "3000m",
+        "time": "7:57.93",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Husky Classic",
+        "event": "3000m",
+        "time": "7:41.47",
+        "place": "9",
+        "round": "F7"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "5000m sh",
+        "time": "13:21.11",
+        "place": "3",
+        "round": "F2"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

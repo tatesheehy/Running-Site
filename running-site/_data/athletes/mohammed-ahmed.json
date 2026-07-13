@@ -88,6 +88,14 @@
     {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
+      "event": "3000 m",
+      "time": "7:51.11",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
       "event": "2 Mi",
       "time": "8:26.44",
       "place": "17.",
@@ -126,5 +134,536 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "SEP 9",
+        "meet": "IAAF Continental Cup, Ostrava",
+        "event": "3000m",
+        "time": "7:57.99",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 31",
+        "meet": "Bruxelles Memorial van Damme",
+        "event": "5000m",
+        "time": "13:03.08",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "London Müller Anniversary Games",
+        "event": "5000m",
+        "time": "13:16.82",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Canadian Championships, Ottawa",
+        "event": "5000m",
+        "time": "14:36.09",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Stockholm BAUHAUS-galan",
+        "event": "5000m",
+        "time": "13:14.88",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Eugene Prefontaine Classic",
+        "event": "2 Miles",
+        "time": "8:22.29",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Gold Coast Commonwealth Games, Gold Coast",
+        "event": "10000m",
+        "time": "27:20.56",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 8",
+        "meet": "Gold Coast Commonwealth Games, Gold Coast",
+        "event": "5000m",
+        "time": "13:52.78",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "OCT 6",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "10000m",
+        "time": "26:59.35",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "SEP 30",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "5000m",
+        "time": "13:01.11",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "SEP 27",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "5000m",
+        "time": "13:25.35",
+        "place": "5",
+        "round": "H1"
+      },
+      {
+        "date": "SEP 10",
+        "meet": "Portland 5000",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "Canadian Championships, Montréal",
+        "event": "5000m",
+        "time": "13:54.92",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Prefontaine Classic",
+        "event": "2 Miles",
+        "time": "8:15.76",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Golden Gala",
+        "event": "5000m",
+        "time": "12:58.16",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "USATF Distance Classic",
+        "event": "1500m",
+        "time": "3:41.30",
+        "place": "9",
+        "round": "F3"
+      },
+      {
+        "date": "MAY 2",
+        "meet": "Payton Jordan Invitational",
+        "event": "1500m",
+        "time": "3:41.59",
+        "place": "9",
+        "round": "F1"
+      }
+    ],
+    "2020": [
+      {
+        "date": "AUG 7",
+        "meet": "Bowerman TC Intrasquad Meet V",
+        "event": "600m",
+        "time": "2:10.96",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "Bowerman TC Intrasquad Meet V",
+        "event": "2000m",
+        "time": "5:00.72",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "Bowerman TC Intrasquad Meet IV",
+        "event": "4x1500 Metres Relay",
+        "time": "14:44.69",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Bowerman TC Intrasquad Meet III",
+        "event": "600m",
+        "time": "1:22.95",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Bowerman TC Intrasquad Meet III",
+        "event": "1500m",
+        "time": "3:34.89",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "Bowerman TC Intrasquad Meet II",
+        "event": "3000m",
+        "time": "7:46.64",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "Bowerman TC Intrasquad Meet II",
+        "event": "5000m",
+        "time": "12:47.20",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Bowerman TC Intrasquad Meet I",
+        "event": "1500m",
+        "time": "3:39.84",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Bowerman TC Intrasquad Meet I",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "AUG 26",
+        "meet": "Athletissima Lausanne",
+        "event": "3000m",
+        "time": "7:42.53",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:53.87",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "The XXXII Olympic Games",
+        "event": "5000m",
+        "time": "12:58.61",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "The XXXII Olympic Games",
+        "event": "5000m",
+        "time": "13:38.96",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "The XXXII Olympic Games",
+        "event": "10000m",
+        "time": "27:47.76",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Golden Gala Pietro Mennea",
+        "event": "5000m",
+        "time": "12:50.12",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Track Meet",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Track Meet",
+        "event": "5000m",
+        "time": "13:18.49",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "USATF Golden Games",
+        "event": "1500m",
+        "time": "3:40.67",
+        "place": "8",
+        "round": "F1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "JUL 24",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:10.46",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:15.17",
+        "place": "5",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "World Athletics Championships",
+        "event": "10000m",
+        "time": "27:30.27",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Golden Gala Pietro Mennea",
+        "event": "5000m",
+        "time": "12:55.84",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Prefontaine Classic",
+        "event": "5000m",
+        "time": "13:07.85",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "USATF Distance Classic",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F2"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "Sound Running TEN",
+        "event": "10000m",
+        "time": "26:34.14",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "5000m sh",
+        "time": "12:56.87",
+        "place": "2",
+        "round": "F1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "AUG 27",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:12.92",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:33.16",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "World Athletics Championships",
+        "event": "10000m",
+        "time": "27:56.43",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Herculis Meeting International d’Athlétisme EBS",
+        "event": "5000m",
+        "time": "13:01.58",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Golden Gala Pietro Mennea",
+        "event": "5000m",
+        "time": "12:56.46",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "Canadian 10km Championships, Ottawa",
+        "event": "10K",
+        "time": "28:22",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "AUG 30",
+        "meet": "Golden Gala",
+        "event": "5000m",
+        "time": "12:54.90",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "AUG 25",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "3000m",
+        "time": "7:31.96",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "14:15.76",
+        "place": "16",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "The XXXIII Olympic Games",
+        "event": "10000m",
+        "time": "26:43.79",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "Sunset Tour, Jack Kemp Stadium",
+        "event": "1500m",
+        "time": "3:37.92",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "Canadian Championships",
+        "event": "5000m",
+        "time": "13:10.99",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "USATF Los Angeles Grand Prix",
+        "event": "5000m",
+        "time": "12:54.22",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Oregon Twilight",
+        "event": "1500m",
+        "time": "3:42.54",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Oregon Twilight",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Oregon Relays",
+        "event": "Mile",
+        "time": "4:02.93",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "The TEN",
+        "event": "10000m",
+        "time": "26:53.01",
+        "place": "4",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Boston University DMR Challenge",
+        "event": "5000m sh",
+        "time": "13:06.32",
+        "place": "5",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "NOV 29",
+        "meet": "Canadian Cross Country Championships",
+        "event": "Cross Country",
+        "time": "29:31",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 14",
+        "meet": "World Athletics Championships",
+        "event": "10000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "Canadian Championships",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F2"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

@@ -1,0 +1,875 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "collegeLogo": "",
+  "traits": [],
+  "waUrl": "https://worldathletics.org/athletes/great-britain-ni/henry-mcluckie-14842246",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Henry Mcluckie",
+  "headlineKey": "x",
+  "flag": "GB",
+  "honours": [],
+  "seasons": "0",
+  "lastSynced": "2026-07-13",
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:34.17"
+    },
+    {
+      "event": "Mile",
+      "time": "3:53.99"
+    },
+    {
+      "event": "3000m",
+      "time": "7:36.81"
+    },
+    {
+      "event": "5000m",
+      "time": "13:36.01"
+    },
+    {
+      "event": "10000m",
+      "time": "28:57.18"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:39.95"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:57.00"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:41.97"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "14:18.50"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:01.3h"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:55.5h"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:53"
+    },
+    {
+      "event": "5 Miles Road",
+      "time": "24:18"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "30:18"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "",
+  "ncaa": false,
+  "club": "x",
+  "country": "Great Britain",
+  "results": [
+    {
+      "date": "JUL 10",
+      "meet": "Morton Games",
+      "event": "1500 m",
+      "time": "3:36.65",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "JUL 10",
+      "meet": "Morton Games",
+      "event": "Mile",
+      "time": "3:51.38",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 20",
+      "meet": "Novuna UK Athletics Championships",
+      "event": "1500 m",
+      "time": "3:46.68",
+      "place": "9.",
+      "round": "H2"
+    },
+    {
+      "date": "JUN 14",
+      "meet": "Folksam Grand Prix Sollentuna",
+      "event": "1500 m",
+      "time": "3:37.65",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "IFAM Outdoor",
+      "event": "5000 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 9",
+      "meet": "The Belfast Classic - formerly the Belfast Irish milers meet",
+      "event": "3000 m",
+      "time": "7:43.64",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "3000 m sh",
+      "time": "8:03.35",
+      "place": "8.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 15",
+      "meet": "Novuna UK Athletics Indoor Championships",
+      "event": "3000 m sh",
+      "time": "7:51.70",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 8",
+      "meet": "Meeting Metz Moselle Athlélor Crédit Mutuel",
+      "event": "3000 m sh",
+      "time": "DNF",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 3",
+      "meet": "Czech Indoor Gala",
+      "event": "3000 m sh",
+      "time": "7:46.74",
+      "place": "8.",
+      "round": "F"
+    }
+  ],
+  "dob": "2002-05-03",
+  "college": "",
+  "weight": "x",
+  "lastHistorySynced": "2026-07-05",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "henry-mcluckie",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "MAY 5",
+        "meet": "Street BMC PB Classic, Street",
+        "event": "3000m",
+        "time": "8:30.35",
+        "place": "2"
+      }
+    ],
+    "2019": [
+      {
+        "date": "DEC 1",
+        "meet": "Victory 5, Portsmouth",
+        "event": "5 Miles Road",
+        "time": "24:18",
+        "place": "2"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "U18 Nations Cup, Dublin",
+        "event": "3000m",
+        "time": "8:43.88",
+        "place": "1"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "Welsh Athletics International, Cardiff",
+        "event": "3000m",
+        "time": "8:38.84",
+        "place": "2"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "NatWest International Island Games, Gibraltar",
+        "event": "1500m",
+        "time": "3:56.53",
+        "place": "4"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "NatWest International Island Games, Gibraltar",
+        "event": "1500m",
+        "time": "3:59.57",
+        "place": "1"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "BMC Grand Prix, Watford",
+        "event": "3000m",
+        "time": "9:02.60",
+        "place": "20"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "BMC Grand Prix, Loughborough",
+        "event": "5000m",
+        "time": "14:50.17",
+        "place": "18"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "BMC Regional Races, Brighton",
+        "event": "3000m",
+        "time": "8:17.92",
+        "place": "3"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Loughborough International, Loughborough",
+        "event": "3000m",
+        "time": "8:23.12",
+        "place": "14"
+      }
+    ],
+    "2020": [
+      {
+        "date": "DEC 13",
+        "meet": "PB5K Winter Race Series, Ardingly",
+        "event": "5K",
+        "time": "14:30",
+        "place": "4"
+      },
+      {
+        "date": "OCT 5",
+        "meet": "Fast 5K, Wigan",
+        "event": "5K",
+        "time": "14:24",
+        "place": "10"
+      },
+      {
+        "date": "SEP 27",
+        "meet": "NoblePro MK5km PB Special, Milton Keynes",
+        "event": "5K",
+        "time": "14:14",
+        "place": "4"
+      },
+      {
+        "date": "SEP 15",
+        "meet": "Night of the Fifteen 1500s",
+        "event": "1500m",
+        "time": "3:42.16",
+        "place": "3"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "BMC Gold Standard Races",
+        "event": "3000m",
+        "time": "8:15.91",
+        "place": "1"
+      }
+    ],
+    "2021": [
+      {
+        "date": "DEC 12",
+        "meet": "27th SPAR European Cross Country Championships, Dublin",
+        "event": "Cross Country U20 Race",
+        "time": "18:42",
+        "place": "15"
+      },
+      {
+        "date": "OCT 24",
+        "meet": "Leeds Abbey Dash – 10k for Age UK, Leeds",
+        "event": "10K",
+        "time": "30:18",
+        "place": "36"
+      },
+      {
+        "date": "SEP 26",
+        "meet": "Great Manchester Run, Manchester",
+        "event": "10K",
+        "time": "30:37",
+        "place": "21"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "European Athletics U20 Championships",
+        "event": "1500m",
+        "time": "3:47.15",
+        "place": "3"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "European Athletics U20 Championships",
+        "event": "1500m",
+        "time": "3:50.89",
+        "place": "2"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "British Championships",
+        "event": "1500m",
+        "time": "3:46.68",
+        "place": "12"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "British Championships",
+        "event": "1500m",
+        "time": "3:46.25",
+        "place": "4"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Watford Grand Prix",
+        "event": "5000m",
+        "time": "14:26.43",
+        "place": "12"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "Manchester Invitational",
+        "event": "1500m",
+        "time": "3:40.82",
+        "place": "2"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "Loughborough International",
+        "event": "1500m",
+        "time": "3:45.35",
+        "place": "4"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "Trafford Grand Prix",
+        "event": "5000m",
+        "time": "14:06.70",
+        "place": "9"
+      },
+      {
+        "date": "APR 21",
+        "meet": "BMC Gold Standard Races",
+        "event": "1500m",
+        "time": "3:42.71",
+        "place": "1"
+      },
+      {
+        "date": "MAR 31",
+        "meet": "Comeback 5000",
+        "event": "5000m",
+        "time": "13:56.20",
+        "place": "4"
+      }
+    ],
+    "2022": [
+      {
+        "date": "AUG 10",
+        "meet": "BMC Gold Standard Races",
+        "event": "1500m",
+        "time": "3:42.03",
+        "place": "6"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "Hercules Wimbledon Night of Graded 5000m Races",
+        "event": "1500m",
+        "time": "3:40.41",
+        "place": "4"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "Dave Clarke Mile Extravaganza",
+        "event": "Mile",
+        "time": "3:58.49",
+        "place": "1"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Cork City Sports",
+        "event": "Mile",
+        "time": "3:57.89",
+        "place": "4"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Müller UK Athletics Championships",
+        "event": "5000m",
+        "time": "14:17.41",
+        "place": "18"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "British Milers Club International Grand Prix",
+        "event": "1500m",
+        "time": "3:48.25",
+        "place": "16"
+      },
+      {
+        "date": "JUN 3",
+        "meet": "BoXX United Manchester World Athletics Continental Tour",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAY 28",
+        "meet": "IFAM Oordegem",
+        "event": "5000m",
+        "time": "13:43.10",
+        "place": "18"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Night of the 10",
+        "event": "Mile",
+        "time": "3:59.24",
+        "place": "9"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "UK Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:05.15",
+        "place": "7"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "BoXX United Manchester World Indoor Tour",
+        "event": "3000m sh",
+        "time": "8:00.85",
+        "place": "7"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 10",
+        "meet": "29th SPAR European Cross Country Championships",
+        "event": "Cross Country U23 Race",
+        "time": "25:44",
+        "place": "57"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "The AJ Bell Great North 5k, Newcastle upon Tyne",
+        "event": "5K",
+        "time": "14:48",
+        "place": "11"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "The Monument Mile Classic",
+        "event": "Mile",
+        "time": "3:57.69",
+        "place": "6"
+      },
+      {
+        "date": "JUL 26",
+        "meet": "BMC Regional Races",
+        "event": "1500m",
+        "time": "3:37.57",
+        "place": "9"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "European Athletics U23 Championships",
+        "event": "5000m",
+        "time": "13:52.11",
+        "place": "7"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "British Milers Club",
+        "event": "3000m",
+        "time": "8:05.48",
+        "place": "1"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "England Athletics U20 & U23 Open Championships",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAY 20",
+        "meet": "Night of the 10",
+        "event": "10000m",
+        "time": "28:57.18",
+        "place": "30"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Track Festival",
+        "event": "5000m",
+        "time": "13:36.26",
+        "place": "4"
+      },
+      {
+        "date": "APR 14",
+        "meet": "Bryan Clay Invitational",
+        "event": "5000m",
+        "time": "13:52.51",
+        "place": "21"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "BUCS Indoor Athletics Championships",
+        "event": "3000m sh",
+        "time": "8:18.96",
+        "place": "2"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "BUCS Indoor Athletics Championships",
+        "event": "3000m sh",
+        "time": "8:26.42",
+        "place": "2"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "UK Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:55.82",
+        "place": "4"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "14:18.50",
+        "place": "19"
+      },
+      {
+        "date": "SEP 10",
+        "meet": "Ostrava Silver Spike",
+        "event": "1500m",
+        "time": "3:40.24",
+        "place": "6"
+      },
+      {
+        "date": "SEP 1",
+        "meet": "New Balance KÖ MEILE, Düsseldorf",
+        "event": "Mile",
+        "time": "4:04.2",
+        "place": "12"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "The Monument Mile Classic",
+        "event": "Mile",
+        "time": "3:54.48",
+        "place": "4"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "BMC Gold Standard Races",
+        "event": "1500m",
+        "time": "3:38.33",
+        "place": "1"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "Meeting voor Mon",
+        "event": "1500m",
+        "time": "3:39.47",
+        "place": "13"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "BMC Record Breaker",
+        "event": "1500m",
+        "time": "3:36.66",
+        "place": "7"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Moore-Guldensporenmeeting",
+        "event": "1500m",
+        "time": "3:36.89",
+        "place": "2"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Cork City Sports",
+        "event": "Mile",
+        "time": "3:56.11",
+        "place": "5"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "FAST5000",
+        "event": "5000m",
+        "time": "13:57.39",
+        "place": "12"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "UK Championships",
+        "event": "1500m",
+        "time": "3:40.88",
+        "place": "6"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "UK Championships",
+        "event": "1500m",
+        "time": "3:40.95",
+        "place": "3"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "British Milers Club",
+        "event": "3000m",
+        "time": "7:56.28",
+        "place": "1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Meeting Nikaia",
+        "event": "1500m",
+        "time": "3:37.18",
+        "place": "11"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "IFAM Outdoor",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAY 25",
+        "meet": "IFAM Outdoor",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAY 17",
+        "meet": "USATF Los Angeles Grand Prix",
+        "event": "1500m",
+        "time": "3:37.80",
+        "place": "8"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Track Fest, Jack Kemp Stadium",
+        "event": "5000m",
+        "time": "14:19.46",
+        "place": "11"
+      },
+      {
+        "date": "APR 27",
+        "meet": "adizero Road to Records",
+        "event": "Mile",
+        "time": "4:01.3",
+        "place": "6"
+      },
+      {
+        "date": "APR 13",
+        "meet": "B.A.A. Invitational Mile",
+        "event": "Mile",
+        "time": "4:10.35",
+        "place": "4"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Stanford Invitational",
+        "event": "5000m",
+        "time": "14:01.67",
+        "place": "13"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "The TEN",
+        "event": "1500m",
+        "time": "3:38.64",
+        "place": "3"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "5000m sh",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "JAN 27",
+        "meet": "UW Invitational/Mile City",
+        "event": "Mile",
+        "time": "3:56.56",
+        "place": "2"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "UW Invitational/Mile City",
+        "event": "3000m",
+        "time": "7:47.18",
+        "place": "1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 7",
+        "meet": "New Balance 5th Avenue Mile",
+        "event": "Mile",
+        "time": "3:55.5",
+        "place": "20"
+      },
+      {
+        "date": "SEP 2",
+        "meet": "24. Volksbank Trier Eifel Flutlichtmeeting",
+        "event": "1500m",
+        "time": "3:34.17",
+        "place": "8"
+      },
+      {
+        "date": "AUG 30",
+        "meet": "The Monument Mile Classic",
+        "event": "Mile",
+        "time": "3:53.99",
+        "place": "1"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Internationales Abendsportfest",
+        "event": "1500m",
+        "time": "3:34.42",
+        "place": "12"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "Meeting voor Mon",
+        "event": "1500m",
+        "time": "3:37.30",
+        "place": "4"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "IFAM Oordegem",
+        "event": "1500m",
+        "time": "3:34.59",
+        "place": "2"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "UK Championships",
+        "event": "5000m",
+        "time": "14:07.44",
+        "place": "8"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Night of Athletics",
+        "event": "1500m",
+        "time": "3:34.73",
+        "place": "5"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "Meeting International d'Athlétisme de la Province de Liège",
+        "event": "1500m",
+        "time": "3:35.60",
+        "place": "2"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Meeting Sport e Solidarietà Lignano",
+        "event": "1500m",
+        "time": "3:35.42",
+        "place": "1"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Cork City Sports",
+        "event": "3000m",
+        "time": "7:36.81",
+        "place": "1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Portland Track Festival",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAY 24",
+        "meet": "Track Fest, Jack Kemp Stadium",
+        "event": "5000m",
+        "time": "13:36.01",
+        "place": "5"
+      },
+      {
+        "date": "APR 19",
+        "meet": "Boston 5K",
+        "event": "5K",
+        "time": "13:53",
+        "place": "6"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "The TEN",
+        "event": "10000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "FEB 23",
+        "meet": "UK Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:48.88",
+        "place": "3"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "Mile sh",
+        "time": "3:57.00",
+        "place": "7"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "5000m sh",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "3000m sh",
+        "time": "7:41.97",
+        "place": "3"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "UW Preview/Mile City",
+        "event": "Mile",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "JAN 17",
+        "meet": "UW Preview/Mile City",
+        "event": "3000m",
+        "time": "7:48.05",
+        "place": "3"
+      }
+    ]
+  },
+  "age": "24"
+}

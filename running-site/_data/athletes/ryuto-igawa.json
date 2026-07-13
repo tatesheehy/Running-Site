@@ -110,5 +110,400 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "DEC 2",
+        "meet": "Kosa",
+        "event": "10K",
+        "time": "29:44",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "OCT 7",
+        "meet": "Fukui 73rd National Sports Festival, Fukui",
+        "event": "5000m",
+        "time": "14:04.21",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "Ise Japenese High School Championships, Ise",
+        "event": "5000m",
+        "time": "14:17.47",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "Ise Japenese High School Championships, Ise",
+        "event": "5000m",
+        "time": "14:26.11",
+        "place": "2",
+        "round": "H3"
+      }
+    ],
+    "2019": [
+      {
+        "date": "SEP 14",
+        "meet": "88th Japan National Collegiate Championships",
+        "event": "5000m",
+        "time": "14:13.07",
+        "place": "13",
+        "round": "F"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Kanto District Collegiate Championships, Sagamihara",
+        "event": "5000m",
+        "time": "14:37.75",
+        "place": "22",
+        "round": "F"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Golden Games, Nobeoka",
+        "event": "5000m",
+        "time": "13:54.59",
+        "place": "1",
+        "round": "F6"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "43rd IAAF World Cross Country Championships, Århus",
+        "event": "Cross Country U20 Race",
+        "time": "27:07",
+        "place": "56",
+        "round": "F"
+      },
+      {
+        "date": "FEB 7",
+        "meet": "Box Hill Classic, Melbourne",
+        "event": "3000m",
+        "time": "8:33.70",
+        "place": "11",
+        "round": "F2"
+      }
+    ],
+    "2020": [
+      {
+        "date": "SEP 30",
+        "meet": "6th Waseda University Competition",
+        "event": "5000m",
+        "time": "13:45.30",
+        "place": "7",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 26",
+        "meet": "3rd Waseda University Competition",
+        "event": "3000m",
+        "time": "8:26.28",
+        "place": "3",
+        "round": "F2"
+      }
+    ],
+    "2021": [
+      {
+        "date": "SEP 19",
+        "meet": "90th Japan Student vs. School Championships",
+        "event": "5000m",
+        "time": "14:21.92",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "Hokuren Distance Challenge",
+        "event": "5000m",
+        "time": "14:14.88",
+        "place": "22",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "100th Kanto University Championships",
+        "event": "5000m",
+        "time": "14:08.86",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Japan 10",
+        "event": "10000m",
+        "time": "29:15.62",
+        "place": "24",
+        "round": "F1"
+      },
+      {
+        "date": "APR 10",
+        "meet": "University 10000m Trials",
+        "event": "10000m",
+        "time": "27:59.74",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 28",
+        "meet": "13th Waseda University Competition",
+        "event": "3000m",
+        "time": "8:07.34",
+        "place": "1",
+        "round": "F2"
+      }
+    ],
+    "2022": [
+      {
+        "date": "OCT 15",
+        "meet": "Hakone Ekiden Qualification Race, Tachikawa",
+        "event": "Half Marathon",
+        "time": "1:02:39",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "SEP 11",
+        "meet": "91st Japan Inter-University Athletics Championships",
+        "event": "5000m",
+        "time": "14:26.29",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "HOKUREN Distance Challenge 20th Anniversary Games",
+        "event": "10000m",
+        "time": "28:15.95",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "101st Kanto Inter-University Athletics Championships",
+        "event": "10000m",
+        "time": "28:44.82",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Japan 10",
+        "event": "10000m",
+        "time": "28:23.16",
+        "place": "16",
+        "round": "F2"
+      },
+      {
+        "date": "APR 9",
+        "meet": "30th Kanakuri Memorial Distance",
+        "event": "5000m",
+        "time": "14:03.67",
+        "place": "16",
+        "round": "F4"
+      },
+      {
+        "date": "MAR 24",
+        "meet": "19th Waseda University Competition",
+        "event": "3000m",
+        "time": "8:27.82",
+        "place": "3",
+        "round": "F4"
+      }
+    ],
+    "2023": [
+      {
+        "date": "NOV 25",
+        "meet": "Hachioji Long Distance",
+        "event": "10000m",
+        "time": "27:47.21",
+        "place": "4",
+        "round": "F6"
+      },
+      {
+        "date": "SEP 23",
+        "meet": "71st All Japan Corporate Teams Athletics Championships",
+        "event": "10000m",
+        "time": "28:17.73",
+        "place": "15",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Hokuren Distance Challenge 2023",
+        "event": "10000m",
+        "time": "28:52.56",
+        "place": "23",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "66rd Kyushu Corporate Athletics Championships",
+        "event": "10000m",
+        "time": "28:16.64",
+        "place": "8",
+        "round": "F3"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "34th Golden Games",
+        "event": "5000m",
+        "time": "13:56.37",
+        "place": "6",
+        "round": "F6"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Kanakuri Memorial 65th Kumanichi 30km Road Race, Kumamoto",
+        "event": "30 Kilometres Road",
+        "time": "1:34:57",
+        "place": "16",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Edion Distance Challenge 2024",
+        "event": "5000m",
+        "time": "13:49.30",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "NOV 23",
+        "meet": "2024 Hachioji Long Distance",
+        "event": "10000m",
+        "time": "27:39.05",
+        "place": "2",
+        "round": "F7"
+      },
+      {
+        "date": "SEP 23",
+        "meet": "72nd Japan Corporate Teams Athletics Championships",
+        "event": "5000m",
+        "time": "14:06.09",
+        "place": "15",
+        "round": "F3"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "The 9th NITTAIDAI Challenge Games",
+        "event": "5000m",
+        "time": "13:27.71",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Japan 10",
+        "event": "10000m",
+        "time": "27:56.82",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "32nd Kanakuri Memorial Middle and Long Distance Invitational Meet",
+        "event": "5000m",
+        "time": "13:58.70",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "45th World Athletics Cross Country Championships",
+        "event": "Cross Country Senior Race",
+        "time": "30:23",
+        "place": "54",
+        "round": "F"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "Japanese Cross Country Championships",
+        "event": "Cross Country",
+        "time": "29:16",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "NOV 22",
+        "meet": "Hachioji Long Distance",
+        "event": "10000m",
+        "time": "27:52.61",
+        "place": "18",
+        "round": "F7"
+      },
+      {
+        "date": "SEP 27",
+        "meet": "73rd Japan Corporate Teams Athletics Championships",
+        "event": "10000m",
+        "time": "28:26.33",
+        "place": "15",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "IFAM Oordegem",
+        "event": "5000m",
+        "time": "13:14.58",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "HOKUREN Distance Challenge 2025 in ABASHIRI",
+        "event": "5000m",
+        "time": "13:23.13",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "Japanese Championships",
+        "event": "5000m",
+        "time": "13:37.59",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Japanese Championships",
+        "event": "5000m",
+        "time": "13:55.38",
+        "place": "4",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "36th Golden Games in Nobeoka",
+        "event": "5000m",
+        "time": "13:40.75",
+        "place": "17",
+        "round": "F2"
+      },
+      {
+        "date": "APR 12",
+        "meet": "33rd Kanakuri Memorial Middle and Long Distance Invitational Meet",
+        "event": "5000m",
+        "time": "13:57.26",
+        "place": "20",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Japanese Cross Country Championships",
+        "event": "Cross Country",
+        "time": "28:25",
+        "place": "2",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

@@ -102,5 +102,41 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [],
+    "2023": [],
+    "2024": [],
+    "2025": [
+      {
+        "date": "JUN 20",
+        "meet": "Trials for Africa U18 & U20 Championships",
+        "event": "5000m",
+        "time": "13:45.08",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "Kip Keino Classic",
+        "event": "5000m",
+        "time": "13:45.42",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Adidas Tokyo City Run",
+        "event": "5K",
+        "time": "13:45",
+        "place": "4",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

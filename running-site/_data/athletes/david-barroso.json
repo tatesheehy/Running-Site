@@ -1,0 +1,1193 @@
+{
+  "id": "david-barroso",
+  "name": "David Barroso",
+  "flag": "ES",
+  "country": "Spain",
+  "waUrl": "https://worldathletics.org/athletes/spain/david-barroso-14849411",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "24",
+  "dob": "2001-08-21",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "400m",
+      "time": "47.47"
+    },
+    {
+      "event": "800m",
+      "time": "1:43.83"
+    },
+    {
+      "event": "1500m",
+      "time": "3:35.26"
+    },
+    {
+      "event": "500 Metres",
+      "time": "1:00.20"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:47.93"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:17.26"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:46.04"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:15.07"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:09.67"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 8",
+      "meet": "Meeting Lignano",
+      "event": "1500 m",
+      "time": "3:35.26",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 3",
+      "meet": "Meeting Stanislas Nancy",
+      "event": "800 m",
+      "time": "1:43.83",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 24",
+      "meet": "V Meeting Atletismo Coria del Rio - Premio \"Rogelio Sales\"",
+      "event": "800 m",
+      "time": "1:46.38",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 21",
+      "meet": "Campeonato Extremadura Absoluto",
+      "event": "400 m",
+      "time": "47.47",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 14",
+      "meet": "Spanish Clubs Championships Division Honor Liga Joma-Final",
+      "event": "800 m",
+      "time": "1:49.85",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 14",
+      "meet": "Spanish Clubs Championships Division Honor Liga Joma-Final",
+      "event": "4x400 m Relay",
+      "time": "3:09.67",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 31",
+      "meet": "Ibero American Athletics Championships",
+      "event": "800 m",
+      "time": "1:46.30",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 29",
+      "meet": "Ibero American Athletics Championships",
+      "event": "800 m",
+      "time": "1:45.93",
+      "place": "1.",
+      "round": "H2"
+    },
+    {
+      "date": "MAY 20",
+      "meet": "ESP - POR (Relays)",
+      "event": "500 m",
+      "time": "1:00.20",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Spanish Clubs Championships Division Honor Liga Joma-Leg 2-Match D",
+      "event": "800 m",
+      "time": "1:53.90",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Spanish Clubs Championships Division Honor Liga Joma-Leg 2-Match D",
+      "event": "4x400 m Relay",
+      "time": "3:11.06",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 9",
+      "meet": "International Pegaso Meeting",
+      "event": "800 m",
+      "time": "1:44.56",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "APR 25",
+      "meet": "Spanish Clubs Championships División de Honor Liga Joma Leg 1-Match B",
+      "event": "800 m",
+      "time": "1:53.08",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "APR 25",
+      "meet": "Spanish Clubs Championships División de Honor Liga Joma Leg 1-Match B",
+      "event": "4x400 m Relay",
+      "time": "3:10.43",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "APR 12",
+      "meet": "Spanish Road Running Championships - Mile",
+      "event": "Mile Road",
+      "time": "4:15.07",
+      "place": "1.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUL 14",
+        "meet": "Granollers",
+        "event": "800m",
+        "time": "1:56.53",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Spanish U18 Championships, Gijón",
+        "event": "800m",
+        "time": "1:57.67",
+        "place": "4",
+        "round": "H2"
+      }
+    ],
+    "2019": [
+      {
+        "date": "JUL 7",
+        "meet": "Spanish U20 Championships, Granollers",
+        "event": "800m",
+        "time": "1:56.38",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "Spanish U20 Championships, Granollers",
+        "event": "800m",
+        "time": "1:54.51",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Encuentro Diputación de Cáceres, Cáceres",
+        "event": "800m",
+        "time": "1:52.92",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Spanish Club Championships, Hueska",
+        "event": "800m",
+        "time": "1:54.76",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Spanish Club Championships, Santander",
+        "event": "800m",
+        "time": "1:56.38",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Spanish Club Championships, Vigo",
+        "event": "800m",
+        "time": "1:57.28",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Regional Club Championships, Cáceres",
+        "event": "400m",
+        "time": "50.00",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 3",
+        "meet": "Spanish U20 Indoor Championships, Madrid (i)",
+        "event": "800m sh",
+        "time": "1:57.71",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Spanish U20 Indoor Championships, Madrid (i)",
+        "event": "800m sh",
+        "time": "1:56.35",
+        "place": "2",
+        "round": "H3"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Meeting Iberico, Madrid (i)",
+        "event": "800m sh",
+        "time": "1:57.32",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Regional Championships, Villafranca de los Barros",
+        "event": "800m",
+        "time": "1:56.86",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JAN 20",
+        "meet": "Control Meeting, Antequera (i)",
+        "event": "800m sh",
+        "time": "1:58.35",
+        "place": "7",
+        "round": "F1"
+      }
+    ],
+    "2020": [
+      {
+        "date": "OCT 4",
+        "meet": "Spanish U20 Championships",
+        "event": "800m",
+        "time": "1:54.37",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 3",
+        "meet": "Spanish U20 Championships",
+        "event": "800m",
+        "time": "1:55.11",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "Campeonato de España de Federaciones Autonómicas, Ciudad Real",
+        "event": "800m",
+        "time": "1:53.52",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "SEP 12",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:49.93",
+        "place": "4",
+        "round": "H3"
+      },
+      {
+        "date": "SEP 5",
+        "meet": "Copa de España de Clubes, Cáceres",
+        "event": "800m",
+        "time": "1:54.94",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "Campeonato de Extremadura, Cáceres",
+        "event": "800m",
+        "time": "1:55.68",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "II Jornada Liga Clubes, Cáceres",
+        "event": "1500m",
+        "time": "3:53.75",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "I Jornada Liga Clubes, Cáceres",
+        "event": "800m",
+        "time": "1:52.36",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Campeonato de Extremadura, Cáceres",
+        "event": "800m",
+        "time": "1:54.51",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Control FAA",
+        "event": "800m sh",
+        "time": "1:53.18",
+        "place": "3",
+        "round": "F1"
+      }
+    ],
+    "2021": [
+      {
+        "date": "JUN 30",
+        "meet": "Encuentro Diputación de Cáceres, Plasencia",
+        "event": "800m",
+        "time": "1:49.02",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "Spanish Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:11.73",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Spanish U23 Championships, Nerja",
+        "event": "800m",
+        "time": "1:52.15",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "Spanish U23 Championships, Nerja",
+        "event": "800m",
+        "time": "1:51.28",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Spanish Club Championships, La Nucia",
+        "event": "800m",
+        "time": "1:55.07",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Spanish Club Championships, La Nucia",
+        "event": "4x400 Metres Relay",
+        "time": "3:14.39",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "Control Meeting, San Vicente de Alcántara",
+        "event": "800m",
+        "time": "1:51.70",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 3",
+        "meet": "Meeting Iberoamericano",
+        "event": "800m",
+        "time": "1:50.72",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "Meeting Paco Sánchez Vargas",
+        "event": "800m",
+        "time": "1:52.70",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Spanish Club Championships, San Sebastián",
+        "event": "800m",
+        "time": "1:54.42",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "Gold Gala Fernanda Ribeiro",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "APR 24",
+        "meet": "Spanish Club Championships, Villafranca de los Barros",
+        "event": "800m",
+        "time": "1:53.28",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 17",
+        "meet": "I Jornada de la Liga Autonómica de Clubes, Cáceres",
+        "event": "1500m",
+        "time": "3:57.23",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:52.10",
+        "place": "5",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Spanish U23 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:53.49",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Spanish U23 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:55.56",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Míting Internacional de Catalunya",
+        "event": "800m sh",
+        "time": "1:52.67",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "Reunión FAM",
+        "event": "800m sh",
+        "time": "1:54.06",
+        "place": "3",
+        "round": "F1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "SEP 11",
+        "meet": "Mediterranean Athletics U23 Championships",
+        "event": "800m",
+        "time": "1:47.71",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "Spanish U23 Championships, Santander",
+        "event": "800m",
+        "time": "1:52.43",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Spanish U23 Championships, Santander",
+        "event": "800m",
+        "time": "1:50.67",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Campeonato de España de Federaciones Autonómicas, Granollers",
+        "event": "800m",
+        "time": "1:50.25",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Encuentro Diputación de Cáceres, Cáceres",
+        "event": "800m",
+        "time": "1:51.67",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:50.00",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Meeting Madrid",
+        "event": "800m",
+        "time": "1:47.65",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "IX GP Diputación de Castellón – VI Memorial JA Cansino, Castellón",
+        "event": "800m",
+        "time": "1:46.89",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Liga Joma de Clubes, Madrid",
+        "event": "800m",
+        "time": "1:48.47",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Liga Joma de Clubes, Madrid",
+        "event": "4x400 Metres Relay",
+        "time": "3:13.36",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 3",
+        "meet": "Meeting de Atletismo Coria del Rio, Coria del Rio",
+        "event": "800m",
+        "time": "1:51.74",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Meeting Iberoamericano",
+        "event": "800m",
+        "time": "1:48.62",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Liga Joma de Clubes, Villafranca de los Barros",
+        "event": "800m",
+        "time": "1:53.61",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "Campeonato España Universitario, Murcia",
+        "event": "800m",
+        "time": "1:52.05",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Campeonato España Universitario, Murcia",
+        "event": "800m",
+        "time": "1:51.78",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "APR 30",
+        "meet": "Spanish Club Championships, Córdoba",
+        "event": "800m",
+        "time": "1:54.46",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:51.75",
+        "place": "4",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "Spanish U23 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:52.04",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Spanish U23 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:50.87",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Gran Premio Internacional",
+        "event": "800m sh",
+        "time": "1:49.50",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "Control FAA, Antequera (i)",
+        "event": "800m sh",
+        "time": "1:51.49",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 15",
+        "meet": "Control Meeting, Antequera (i)",
+        "event": "1500m sh",
+        "time": "3:52.68",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "JUL 30",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:46.43",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "Spanish Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:09.85",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:48.41",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 22",
+        "meet": "Meeting Madrid",
+        "event": "800m",
+        "time": "1:45.99",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Campeonato España Federaciones Autonómicas",
+        "event": "800m",
+        "time": "1:49.22",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Reunión Internacional de Atletismo Villa De Bilbao",
+        "event": "1500m",
+        "time": "3:39.61",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Spanish U23 Championships",
+        "event": "800m",
+        "time": "1:49.45",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Spanish U23 Championships",
+        "event": "800m",
+        "time": "1:49.22",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Ethiopian 10",
+        "event": "800m",
+        "time": "1:46.85",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "VII Memorial José Antonio Cansino",
+        "event": "800m",
+        "time": "1:46.44",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Spanish Club Championships Division Honor Liga Joma Permanence",
+        "event": "800m",
+        "time": "1:52.51",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "Meeting Gala Fernanda Ribeiro",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Meeting de Atletismo Toni Bonet",
+        "event": "800m",
+        "time": "1:49.47",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Spanish Clubs Championships Division Honor Liga Joma",
+        "event": "800m",
+        "time": "1:54.63",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Spanish Clubs Championships Division Honor Liga Joma",
+        "event": "4x400 Metres Relay",
+        "time": "3:15.44",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 23",
+        "meet": "Spanish University Championships",
+        "event": "800m",
+        "time": "1:51.57",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "APR 22",
+        "meet": "Spanish University Championships",
+        "event": "800m",
+        "time": "1:52.97",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:49.16",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:49.32",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 5",
+        "meet": "Spanish U23 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:50.46",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "Spanish U23 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:50.47",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "Campeonato de Andalucía",
+        "event": "800m sh",
+        "time": "1:51.92",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "Mediterranean U23 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:52.89",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JAN 14",
+        "meet": "Málaga Indoor Match",
+        "event": "800m sh",
+        "time": "1:52.12",
+        "place": "4",
+        "round": "F1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "MAY 25",
+        "meet": "Spanish Clubs Championships Division Honor Liga Joma-Permanence",
+        "event": "800m",
+        "time": "1:52.97",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "III Meeting de Atletismo Coria del Rio-Premio Rogelio Sale",
+        "event": "800m",
+        "time": "1:52.94",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Spanish University Championships",
+        "event": "1500m",
+        "time": "3:53.38",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Spanish Clubs Championships Division Honor Liga Joma-Leg 1-Match C",
+        "event": "800m",
+        "time": "1:51.1",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Spanish Clubs Championships Division Honor Liga Joma-Leg 1-Match C",
+        "event": "4x400 Metres Relay",
+        "time": "3:14.5",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "World Indoor Tour Gold Madrid 2024",
+        "event": "800m sh",
+        "time": "1:48.47",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Spanish Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:46.04",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Spanish Indoor Championships",
+        "event": "1500m sh",
+        "time": "4:01.44",
+        "place": "2",
+        "round": "H2"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 18",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.27",
+        "place": "6",
+        "round": "SF2"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.94",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 13",
+        "meet": "Fribourg International Meeting",
+        "event": "800m",
+        "time": "1:43.95",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:47.15",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Spanish Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:13.01",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:46.98",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "FISU World University Games",
+        "event": "800m",
+        "time": "1:47.64",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 26",
+        "meet": "FISU World University Games",
+        "event": "800m",
+        "time": "1:47.98",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "FISU World University Games",
+        "event": "800m",
+        "time": "1:51.27",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "Meeting International d'Athlétisme de la Province de Liège",
+        "event": "1000m",
+        "time": "2:17.26",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Míting Internacional Ciutat de Barcelona",
+        "event": "800m",
+        "time": "1:44.83",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "Campeonato Extremadura Absoluto pista aire libre",
+        "event": "800m",
+        "time": "1:56.36",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "Gold Gala Fernanda Ribeiro",
+        "event": "800m",
+        "time": "1:46.46",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "XXXVII Encuentro Atletismo Diputación de Cáceres",
+        "event": "800m",
+        "time": "1:50.61",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "Spanish Clubs Championships Primera Division Liga Joma-Final",
+        "event": "1500m",
+        "time": "4:03.86",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "Spanish Clubs Championships Primera Division Liga Joma-Final",
+        "event": "4x400 Metres Relay",
+        "time": "3:13.40",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 4",
+        "meet": "Desafio Nerja",
+        "event": "800m",
+        "time": "1:45.27",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "GP Diputacion Castellon",
+        "event": "800m",
+        "time": "1:45.39",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "Spanish Clubs Championships Primera Division Liga Joma-Leg 2-Match B",
+        "event": "400m",
+        "time": "48.54",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "Spanish Clubs Championships Primera Division Liga Joma-Leg 2-Match B",
+        "event": "1500m",
+        "time": "3:56.80",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 10",
+        "meet": "Meeting de Atletismo Toni Bonet",
+        "event": "800m",
+        "time": "1:47.68",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "Spanish Clubs Championships Primera Division Liga Joma-Leg 1-Match B",
+        "event": "400m",
+        "time": "48.30",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "Spanish Clubs Championships Primera Division Liga Joma-Leg 1-Match B",
+        "event": "1500m",
+        "time": "4:05.69",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "World Indoor Tour Gold Madrid 2025",
+        "event": "800m sh",
+        "time": "1:48.32",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:47.93",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:50.54",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "JAN 10",
+        "meet": "Meeting Internacional de Catalunya",
+        "event": "800m sh",
+        "time": "1:48.54",
+        "place": "4",
+        "round": "F2"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-10"
+}

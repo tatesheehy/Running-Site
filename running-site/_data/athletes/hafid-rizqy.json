@@ -12,7 +12,7 @@
   "flag": "MA",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-12",
+  "lastSynced": "2026-07-13",
   "prs": [
     {
       "event": "800m",
@@ -51,27 +51,30 @@
       "meet": "20 km de Lausanne - 5km",
       "event": "5 Kilom Road",
       "time": "13:44",
-      "place": "3."
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "APR 4",
       "meet": "Urban Trail de Lille - 5 et 10km",
       "event": "10 Kilom Road",
       "time": "28:20",
-      "place": "35."
+      "place": "35.",
+      "round": "F"
     },
     {
       "date": "FEB 15",
       "meet": "Tamesna 10K",
       "event": "10 Kilom Road",
       "time": "28:31",
-      "place": "1."
+      "place": "1.",
+      "round": "F"
     }
   ],
   "dob": "1997-10-26",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-07-05",
+  "lastHistorySynced": "2026-07-12",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

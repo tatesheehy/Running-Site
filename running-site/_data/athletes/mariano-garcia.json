@@ -1,0 +1,1473 @@
+{
+  "id": "mariano-garcia",
+  "name": "Mariano García",
+  "flag": "ES",
+  "country": "Spain",
+  "waUrl": "https://worldathletics.org/athletes/spain/mariano-garcia-14656737",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "28",
+  "dob": "1997-09-25",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:43.62"
+    },
+    {
+      "event": "1500m",
+      "time": "3:35.53"
+    },
+    {
+      "event": "Mile",
+      "time": "3:59.61"
+    },
+    {
+      "event": "3000m",
+      "time": "8:26.11"
+    },
+    {
+      "event": "3000m SC",
+      "time": "8:57.63"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:45.12"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:16.25"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:16.25"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:35.53"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:59.61"
+    },
+    {
+      "event": "2000 Metres Steeplechase",
+      "time": "6:01.38"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:19.0h"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:19.0h="
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:09.61"
+    },
+    {
+      "event": "4x400 Metres Relay Mixed",
+      "time": "3:33.93"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 8",
+      "meet": "Meeting Lignano",
+      "event": "1500 m",
+      "time": "3:35.82",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 4",
+      "meet": "X Ordizia Meeting - International Meeting Jose Antonio Peña",
+      "event": "1500 m",
+      "time": "3:36.92",
+      "place": "2.",
+      "round": "F3"
+    },
+    {
+      "date": "MAR 22",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:39.63",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:38.19",
+      "place": "1.",
+      "round": "H3"
+    },
+    {
+      "date": "MAR 1",
+      "meet": "Spanish Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:43.80",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Spanish Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:59.15",
+      "place": "1.",
+      "round": "H2"
+    },
+    {
+      "date": "FEB 8",
+      "meet": "INIT Indoor Meeting Karlsruhe",
+      "event": "1500 m sh",
+      "time": "3:35.53",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 6",
+      "meet": "World Indoor Tour Gold Madrid 2026",
+      "event": "800 m sh",
+      "time": "1:48.49",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "FEB 6",
+      "meet": "World Indoor Tour Gold Madrid 2026",
+      "event": "1000 m sh",
+      "time": "2:16.40",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Gran Premio Ciudad de Valencia",
+      "event": "1500 m sh",
+      "time": "3:37.22",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 18",
+      "meet": "CMCM Luxembourg Indoor Meeting",
+      "event": "1500 m sh",
+      "time": "3:36.44",
+      "place": "3.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUL 22",
+        "meet": "Spanish Championships, Getafe",
+        "event": "1500m",
+        "time": "4:00.61",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Spanish Championships, Getafe",
+        "event": "1500m",
+        "time": "3:49.24",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "Granollers",
+        "event": "800m",
+        "time": "1:49.01",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Spanish U23 Championships, Soria",
+        "event": "1500m",
+        "time": "4:04.01",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Spanish U23 Championships, Soria",
+        "event": "1500m",
+        "time": "3:58.31",
+        "place": "3",
+        "round": "H3"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Castellón Memorial Jose Antonio Cansino, Castellón",
+        "event": "1500m",
+        "time": "3:52.17",
+        "place": "14",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Huelva Meeting Iberoamericano de Atletismo, Huelva",
+        "event": "1500m",
+        "time": "3:47.59",
+        "place": "11",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 3",
+        "meet": "Granada Meeting Paco Sanchez Vargas, Granada",
+        "event": "800m",
+        "time": "1:50.57",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Andújar Meeting Internacional, Andújar",
+        "event": "1500m",
+        "time": "3:44.83",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "Spanish Club Championships, San Sebastián",
+        "event": "800m",
+        "time": "1:51.69",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Ourense",
+        "event": "1500m",
+        "time": "3:44.58",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 28",
+        "meet": "Cartagena Spanish Club Championships, Cartagena",
+        "event": "800m",
+        "time": "1:53.68",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Spanish Indoor Championships, Valencia (i)",
+        "event": "1500m sh",
+        "time": "3:51.77",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Spanish Indoor Championships, Valencia (i)",
+        "event": "1500m sh",
+        "time": "3:46.15",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Spanish U23 Indoor Championships, Salamanca (i)",
+        "event": "1500m sh",
+        "time": "4:06.29",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Spanish U23 Indoor Championships, Salamanca (i)",
+        "event": "1500m sh",
+        "time": "3:58.27",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "JAN 20",
+        "meet": "Valencia GP de Atletismo, Valencia (i)",
+        "event": "1500m sh",
+        "time": "3:49.12",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "SEP 28",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "800m",
+        "time": "1:49.08",
+        "place": "6",
+        "round": "H1"
+      },
+      {
+        "date": "SEP 1",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:47.22",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 31",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:49.18",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "AUG 25",
+        "meet": "Meeting Madrid 2019",
+        "event": "800m",
+        "time": "1:45.67",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "Campeonato de España de Federaciones Autonómicas, Pamplona",
+        "event": "800m",
+        "time": "1:47.43",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "Míting Internacional d'Atletisme, Barcelona",
+        "event": "800m",
+        "time": "1:48.74",
+        "place": "13",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Spanish U23 Championships, Tarragona",
+        "event": "1500m",
+        "time": "4:03.28",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Spanish U23 Championships, Tarragona",
+        "event": "1500m",
+        "time": "3:54.11",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting Iberoamericano de Atletismo, Huelva",
+        "event": "800m",
+        "time": "1:51.19",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Meeting Elite, Montreuil",
+        "event": "1500m",
+        "time": "3:43.93",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Spanish Club Championships, Lleida",
+        "event": "1500m",
+        "time": "4:04.93",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Spanish Club Championships, Madrid",
+        "event": "1500m",
+        "time": "4:19.63",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 3",
+        "meet": "European Indoor Championships",
+        "event": "800m sh",
+        "time": "1:47.58",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "European Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.84",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "European Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.09",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Spanish Indoor Championships, Antequera (i)",
+        "event": "800m sh",
+        "time": "1:50.43",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Spanish Indoor Championships, Antequera (i)",
+        "event": "800m sh",
+        "time": "1:50.34",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Spanish U23 Indoor Championships, Salamanca (i)",
+        "event": "800m sh",
+        "time": "1:47.75",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Spanish U23 Indoor Championships, Salamanca (i)",
+        "event": "800m sh",
+        "time": "1:51.87",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Meeting Villa de Madrid",
+        "event": "1500m sh",
+        "time": "3:42.53",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Indoor Meeting, Valencia (i)",
+        "event": "1500m sh",
+        "time": "3:44.08",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 4",
+        "meet": "Antequera (i)",
+        "event": "1500m sh",
+        "time": "3:47.23",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "SEP 25",
+        "meet": "Diamond League Meeting",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "Campeonato de España de Federaciones Autonómicas, Ciudad Real",
+        "event": "800m",
+        "time": "1:50.42",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "Campeonato de España de Federaciones Autonómicas, Ciudad Real",
+        "event": "4x400 Metres Relay Mixed",
+        "time": "3:33.93",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "SEP 13",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:47.55",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 12",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:50.72",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "SEP 6",
+        "meet": "KBC Nacht van de Atletiek",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "Trofeo Toni Bonet, Ibiza",
+        "event": "800m",
+        "time": "1:49.97",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "Memorial José Antonio Cansino, Castellón",
+        "event": "800m",
+        "time": "1:49.15",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 17",
+        "meet": "31th Meeting International di Atletia leggera sport soudarieta, Lignano Sabbiadoro",
+        "event": "800m",
+        "time": "1:49.98",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "Sollentuna GP",
+        "event": "800m",
+        "time": "1:47.24",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "Control vallas",
+        "event": "800m",
+        "time": "1:50.37",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Reunión Nacional, Castellón",
+        "event": "1500m",
+        "time": "3:41.93",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:53.83",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 29",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:50.80",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Villa de Madrid",
+        "event": "800m sh",
+        "time": "1:46.31",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 7",
+        "meet": "Control FACV",
+        "event": "800m sh",
+        "time": "1:47.98",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 24",
+        "meet": "Gran Premio Internacional Ciudad de Valencia",
+        "event": "1500m sh",
+        "time": "3:42.62",
+        "place": "3",
+        "round": "F1"
+      }
+    ],
+    "2021": [
+      {
+        "date": "OCT 16",
+        "meet": "Nazioarteko Milia",
+        "event": "Mile",
+        "time": "4:26.0",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "OCT 12",
+        "meet": "Milla Internacional de Otoño Manuel Pancorbo, Jaén",
+        "event": "Mile",
+        "time": "4:19.0",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "OCT 9",
+        "meet": "Milla Internacional de Berango, Berango",
+        "event": "Mile",
+        "time": "4:19.0",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Spanish Club Championships, La Nucia",
+        "event": "800m",
+        "time": "1:49.08",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Spanish Club Championships, La Nucia",
+        "event": "4x400 Metres Relay",
+        "time": "3:09.61",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 3",
+        "meet": "Meeting Iberoamericano",
+        "event": "800m",
+        "time": "1:46.10",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "European Athletics Team Championships Super League",
+        "event": "800m",
+        "time": "1:46.45",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Meeting Jaen Paraiso Interior",
+        "event": "1500m",
+        "time": "3:41.16",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Desafío Nerja",
+        "event": "1000m",
+        "time": "2:18.89",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "European Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:47.63",
+        "place": "3",
+        "round": "SF1"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "European Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:49.86",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Villa de Madrid",
+        "event": "800m sh",
+        "time": "1:45.66",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.51",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:50.51",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "CMCM Indoor Meeting",
+        "event": "800m sh",
+        "time": "1:46.86",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "800m sh",
+        "time": "1:47.28",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "Campeonato de España de Clubes",
+        "event": "800m sh",
+        "time": "1:50.33",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 23",
+        "meet": "GP de Atletismo Ciudad de Valencia",
+        "event": "1500m sh",
+        "time": "3:41.87",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "OCT 15",
+        "meet": "Nazioarteco Milia",
+        "event": "Mile",
+        "time": "4:30.0",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "OCT 12",
+        "meet": "Milla Urbana Internacional de Otoño Manuel Pancorbo, Jaén",
+        "event": "Mile",
+        "time": "4:22.0",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "OCT 8",
+        "meet": "Milla Internacional de Berango, Berango",
+        "event": "Mile",
+        "time": "4:29.0",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "SEP 25",
+        "meet": "TotalEnergies Milla de Madrid, Madrid",
+        "event": "Mile",
+        "time": "4:18.0",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "SEP 2",
+        "meet": "Memorial van Damme",
+        "event": "800m",
+        "time": "1:44.86",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "European Athletics Championships",
+        "event": "800m",
+        "time": "1:44.85",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "European Athletics Championships",
+        "event": "800m",
+        "time": "1:46.52",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "AUG 18",
+        "meet": "European Athletics Championships",
+        "event": "800m",
+        "time": "1:47.66",
+        "place": "3",
+        "round": "H3"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:46.70",
+        "place": "5",
+        "round": "SF2"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.74",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:46.04",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:47.31",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Meeting Madrid",
+        "event": "800m",
+        "time": "1:46.37",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "800m",
+        "time": "1:48.48",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Meeting Iberoamericano",
+        "event": "1500m",
+        "time": "3:39.06",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Diamond League Meeting",
+        "event": "800m",
+        "time": "1:48.77",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "Campeonato España Universitario, Murcia",
+        "event": "800m",
+        "time": "1:51.15",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Campeonato España Universitario, Murcia",
+        "event": "800m",
+        "time": "1:52.07",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Desafio Nerja",
+        "event": "1500m",
+        "time": "3:48.34",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Trofeo Ciudad de Cartagena, Cartagena",
+        "event": "1000m",
+        "time": "2:31.48",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.20",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 18",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.32",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "World Indoor Tour Madrid 2022",
+        "event": "800m sh",
+        "time": "1:45.82",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:49.34",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:47.92",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "800m sh",
+        "time": "1:46.29",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "800m sh",
+        "time": "1:45.12",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Millrose Games",
+        "event": "Mile sh",
+        "time": "3:59.61",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "BoXX United Manchester World Indoor Tour",
+        "event": "800m sh",
+        "time": "1:49.24",
+        "place": "2",
+        "round": "F1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "SEP 6",
+        "meet": "59. Palio Citta' della Quercia",
+        "event": "800m",
+        "time": "1:45.84",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "SEP 3",
+        "meet": "36th Meeting Citta' Di Padova",
+        "event": "800m",
+        "time": "1:45.92",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 30",
+        "meet": "Grand Prix Sopotu Im. Janusza Sidly",
+        "event": "800m",
+        "time": "1:45.43",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 12",
+        "meet": "BMC Grand Prix",
+        "event": "800m",
+        "time": "1:48.35",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:46.16",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:48.34",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Meeting Iberoamericano",
+        "event": "1500m",
+        "time": "3:44.30",
+        "place": "16",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "Meeting Atletismo Paco Sanchez Vargas",
+        "event": "800m",
+        "time": "1:47.58",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Meeting Desafio Nerja 2023 Restaurante Pulguilla y Ayo",
+        "event": "1500m",
+        "time": "3:38.39",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Meeting de Atletismo Toni Bonet",
+        "event": "800m",
+        "time": "1:47.75",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 23",
+        "meet": "Spanish University Championships",
+        "event": "800m",
+        "time": "1:49.49",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 22",
+        "meet": "Spanish University Championships",
+        "event": "800m",
+        "time": "1:53.59",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "World Indoor Tour Madrid 2023",
+        "event": "800m sh",
+        "time": "1:48.56",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:45.91",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:49.05",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "800m sh",
+        "time": "1:45.26",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "Meeting Internacional Catalunya Pista Coberta",
+        "event": "800m sh",
+        "time": "1:47.15",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "SEP 8",
+        "meet": "Grand Prix Lombardia",
+        "event": "800m",
+        "time": "1:45.54",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "SEP 3",
+        "meet": "60° Palio Città della Quercia",
+        "event": "800m",
+        "time": "1:46.47",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "International Wiesław Maniak Memorial",
+        "event": "800m",
+        "time": "1:44.98",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "Campeonato España Federaciones Autonómicas",
+        "event": "800m",
+        "time": "1:47.10",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:45.92",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:46.55",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "Meeting Madrid 2024",
+        "event": "800m",
+        "time": "1:45.26",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAR 3",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.77",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:47.83",
+        "place": "1",
+        "round": "SF1"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:45.81",
+        "place": "1",
+        "round": "H5"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:47.27",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.82",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "800m sh",
+        "time": "1:45.50",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "1000m sh",
+        "time": "2:17.97",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Miting Catalunya",
+        "event": "800m sh",
+        "time": "1:46.73",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 13",
+        "meet": "Málaga Indoor Match Antequera 2024",
+        "event": "1000m sh",
+        "time": "2:17.51",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 14",
+        "meet": "31st SPAR European Cross Country Championships, Lagoa",
+        "event": "Cross Country Relay",
+        "time": "17:34",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "OCT 11",
+        "meet": "XXXVII Milla Internacional de Berango, Berango",
+        "event": "Mile",
+        "time": "4:22.7",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:47.09",
+        "place": "4",
+        "round": "H3"
+      },
+      {
+        "date": "AUG 12",
+        "meet": "Gyulai István Memorial",
+        "event": "800m",
+        "time": "1:43.84",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:46.79",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:46.63",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Meeting Madrid 2025",
+        "event": "800m",
+        "time": "1:43.62",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Grand Prix Brescia",
+        "event": "800m",
+        "time": "1:46.17",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Míting Internacional Ciutat de Barcelona",
+        "event": "800m",
+        "time": "1:44.65",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 4",
+        "meet": "Desafio Nerja",
+        "event": "800m",
+        "time": "1:47.23",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "Canarias Athletics Invitational",
+        "event": "1500m",
+        "time": "3:37.21",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "Spanish Road Running Championships",
+        "event": "Mile",
+        "time": "4:20.72",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 23",
+        "meet": "World Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:41.83",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "World Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "4:02.68",
+        "place": "1",
+        "round": "H4"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "European Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.33",
+        "place": "5",
+        "round": "SF2"
+      },
+      {
+        "date": "MAR 7",
+        "meet": "European Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.75",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.05",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Spanish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.98",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "800m sh",
+        "time": "1:45.96",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 7",
+        "meet": "Gran Premio Ciudad de Valencia",
+        "event": "800m sh",
+        "time": "1:46.64",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "Elite Indoor Track Miramas Meeting",
+        "event": "1500m sh",
+        "time": "3:38.56",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Antequera Indoor Match",
+        "event": "1000m sh",
+        "time": "2:16.25",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 10",
+        "meet": "Meeting Internacional de Catalunya",
+        "event": "1500m sh",
+        "time": "3:35.87",
+        "place": "1",
+        "round": "F2"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-10"
+}

@@ -1,0 +1,1048 @@
+{
+  "id": "tyrice-taylor",
+  "name": "Tyrice Taylor",
+  "flag": "JM",
+  "country": "Jamaica",
+  "waUrl": "https://worldathletics.org/athletes/jamaica/tyrice-taylor-14795889",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "24",
+  "dob": "2001-10-31",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "200m",
+      "time": "22.50"
+    },
+    {
+      "event": "400m",
+      "time": "46.27"
+    },
+    {
+      "event": "800m",
+      "time": "1:43.74"
+    },
+    {
+      "event": "1500m",
+      "time": "4:04.32"
+    },
+    {
+      "event": "300 Metres",
+      "time": "36.47"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:24.31"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:46.00"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:03.96"
+    },
+    {
+      "event": "4x400 Metres Relay Short Track",
+      "time": "3:04.21"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:17.30"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 12",
+      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "event": "800 m",
+      "time": "1:44.30",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "event": "800 m",
+      "time": "1:46.98",
+      "place": "1.",
+      "round": "SF1"
+    },
+    {
+      "date": "MAY 29",
+      "meet": "NCAA Division I West First Rounds",
+      "event": "800 m",
+      "time": "1:44.35",
+      "place": "1.",
+      "round": "H3"
+    },
+    {
+      "date": "MAY 27",
+      "meet": "NCAA Division I West First Rounds",
+      "event": "800 m",
+      "time": "1:47.80",
+      "place": "1.",
+      "round": "PR4"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Southeastern Conference Outdoor Track & Field Championships",
+      "event": "800 m",
+      "time": "1:45.71",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 14",
+      "meet": "Southeastern Conference Outdoor Track & Field Championships",
+      "event": "800 m",
+      "time": "1:47.01",
+      "place": "1.",
+      "round": "H1"
+    },
+    {
+      "date": "MAY 8",
+      "meet": "Arkansas Twilight",
+      "event": "800 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F3"
+    },
+    {
+      "date": "MAY 2",
+      "meet": "LSU Invitational",
+      "event": "400 m",
+      "time": "46.95",
+      "place": "7.",
+      "round": "F2"
+    },
+    {
+      "date": "MAY 2",
+      "meet": "LSU Invitational",
+      "event": "4x400 m Relay",
+      "time": "3:08.23",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "APR 24",
+      "meet": "John McDonnell Invitational",
+      "event": "800 m",
+      "time": "1:44.74",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
+      "date": "APR 18",
+      "meet": "Mt. SAC Relays",
+      "event": "800 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F3"
+    },
+    {
+      "date": "APR 11",
+      "meet": "Arkansas Spring Invitational",
+      "event": "800 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F2"
+    },
+    {
+      "date": "APR 11",
+      "meet": "Arkansas Spring Invitational",
+      "event": "4x400 m Relay",
+      "time": "3:05.12",
+      "place": "1.",
+      "round": "F3"
+    },
+    {
+      "date": "MAR 22",
+      "meet": "World Athletics Indoor Championships",
+      "event": "4x400 m Relay sh",
+      "time": "3:05.68",
+      "place": "3.",
+      "round": "H2"
+    },
+    {
+      "date": "MAR 22",
+      "meet": "World Athletics Indoor Championships",
+      "event": "4x400 m Relay sh",
+      "time": "3:05.99",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 14",
+      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "event": "800 m sh",
+      "time": "1:46.00",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 13",
+      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "event": "800 m sh",
+      "time": "1:46.16",
+      "place": "1.",
+      "round": "H1"
+    },
+    {
+      "date": "FEB 26",
+      "meet": "Southeastern Conference Indoor Track & Field Championship",
+      "event": "800 m sh",
+      "time": "1:49.11",
+      "place": "2.",
+      "round": "H1"
+    },
+    {
+      "date": "FEB 26",
+      "meet": "Southeastern Conference Indoor Track & Field Championship",
+      "event": "800 m sh",
+      "time": "1:48.78",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 26",
+      "meet": "Southeastern Conference Indoor Track & Field Championship",
+      "event": "4x400 m Relay sh",
+      "time": "3:04.21",
+      "place": "1.",
+      "round": "F3"
+    },
+    {
+      "date": "FEB 20",
+      "meet": "Arkansas Qualifier",
+      "event": "Distance Medley sh",
+      "time": "9:17.30",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Tyson Invitational",
+      "event": "800 m sh",
+      "time": "1:46.11",
+      "place": "1.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Tyson Invitational",
+      "event": "4x400 m Relay sh",
+      "time": "3:08.08",
+      "place": "3.",
+      "round": "F6"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUN 23",
+        "meet": "Kingston Jamaican U20 Championships, Kingston",
+        "event": "800m",
+        "time": "1:51.23",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Kingston JAAA All Comers Meet, Kingston",
+        "event": "400m",
+        "time": "48.78",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Kingston JAAA All Comers Meet, Kingston",
+        "event": "800m",
+        "time": "1:51.44",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Kingston JAAA All Comers Meet, Kingston",
+        "event": "800m",
+        "time": "1:54.86",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 24",
+        "meet": "Kingston ISSA Ch., Kingston",
+        "event": "800m",
+        "time": "1:56.36",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 22",
+        "meet": "Kingston ISSA Ch., Kingston",
+        "event": "800m",
+        "time": "1:56.76",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "Kingston GC Foster Classis, Kingston",
+        "event": "800m",
+        "time": "1:53.76",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Kingston Grace Puma Youngster Goldsmith, Kingston",
+        "event": "400m",
+        "time": "50.60",
+        "place": "2",
+        "round": "F6"
+      }
+    ],
+    "2019": [
+      {
+        "date": "DEC 14",
+        "meet": "Wesley Powell Invitational, Kingston",
+        "event": "300 Metres",
+        "time": "36.47",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "DEC 14",
+        "meet": "Wesley Powell Invitational, Kingston",
+        "event": "600m",
+        "time": "1:24.31",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "Pan American U20 Championships, San José",
+        "event": "800m",
+        "time": "1:49.89",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Pan American U20 Championships, San José",
+        "event": "800m",
+        "time": "1:51.99",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Jamaican U20 Championships, Kingston",
+        "event": "800m",
+        "time": "1:50.98",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "JAAA All Comers Meet, Kingston",
+        "event": "400m",
+        "time": "47.89",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "JAAA All Comers Meet, Kingston",
+        "event": "400m",
+        "time": "48.55",
+        "place": "6",
+        "round": "F4"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "JAAA All Comers Meet, Kingston",
+        "event": "800m",
+        "time": "1:52.42",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 21",
+        "meet": "CARIFTA Games, George Town",
+        "event": "800m",
+        "time": "1:53.64",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "APR 21",
+        "meet": "CARIFTA Games, George Town",
+        "event": "800m",
+        "time": "1:49.73",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 7",
+        "meet": "JAAA CARIFTA Trials, Kingston",
+        "event": "800m",
+        "time": "1:49.75",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 6",
+        "meet": "JAAA CARIFTA Trials, Kingston",
+        "event": "800m",
+        "time": "1:56.33",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "ISSA Ch., Kingston",
+        "event": "800m",
+        "time": "1:48.91",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 28",
+        "meet": "ISSA Ch., Kingston",
+        "event": "800m",
+        "time": "1:55.40",
+        "place": "1",
+        "round": "SF1"
+      },
+      {
+        "date": "MAR 26",
+        "meet": "ISSA Ch., Kingston",
+        "event": "800m",
+        "time": "1:55.64",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "Digicel Grand Prix Final, Spanish Town",
+        "event": "800m",
+        "time": "1:48.85",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "Digicel Central Athletics Championships, Spanish Town",
+        "event": "800m",
+        "time": "1:58.20",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "Digicel Central Athletics Championships, Spanish Town",
+        "event": "800m",
+        "time": "1:51.64",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "Digicel Central Athletics Championships, Spanish Town",
+        "event": "1500m",
+        "time": "4:04.32",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Milo Western Relays, Montego Bay",
+        "event": "800m",
+        "time": "1:53.26",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Youngster Goldsmith Classics, Kingston",
+        "event": "400m",
+        "time": "50.20",
+        "place": "5",
+        "round": "F9"
+      },
+      {
+        "date": "JAN 19",
+        "meet": "McKenley Wint Classics, Kingston",
+        "event": "400m",
+        "time": "49.28",
+        "place": "20",
+        "round": "F"
+      },
+      {
+        "date": "JAN 12",
+        "meet": "Douglas Forrest Invitational, Spanish Town",
+        "event": "800m",
+        "time": "1:55.06",
+        "place": "1",
+        "round": "F3"
+      }
+    ],
+    "2020": [
+      {
+        "date": "DEC 12",
+        "meet": "Tyser Mills Classics",
+        "event": "200m",
+        "time": "22.50",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "JAAA CARIFTA Trials",
+        "event": "800m",
+        "time": "1:54.64",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 7",
+        "meet": "JAAA CARIFTA Trials",
+        "event": "400m",
+        "time": "47.72",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAR 7",
+        "meet": "JAAA CARIFTA Trials",
+        "event": "800m",
+        "time": "1:58.02",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "JAAA CARIFTA Trials",
+        "event": "400m",
+        "time": "47.84",
+        "place": "1",
+        "round": "H4"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Central Ch.",
+        "event": "400m",
+        "time": "48.77",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Central Ch.",
+        "event": "400m",
+        "time": "49.12",
+        "place": "1",
+        "round": "H5"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Youngster Goldsmith Classics",
+        "event": "400m",
+        "time": "48.97",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Central Hurdles and Relays",
+        "event": "400m",
+        "time": "47.48",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "JUN 26",
+        "meet": "Jamaican Championships",
+        "event": "400m",
+        "time": "46.27",
+        "place": "6",
+        "round": "SF1"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Jamaican Championships",
+        "event": "400m",
+        "time": "46.98",
+        "place": "4",
+        "round": "H4"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "JOA/JAAA Olympic Destiny Series 3",
+        "event": "400m",
+        "time": "47.19",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "ISSA/Grace Kennedy Boys and Girls Champs",
+        "event": "400m",
+        "time": "46.43",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "ISSA/Grace Kennedy Boys and Girls Champs",
+        "event": "400m",
+        "time": "46.39",
+        "place": "2",
+        "round": "SF1"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "ISSA/Grace Kennedy Boys and Girls Champs",
+        "event": "400m",
+        "time": "47.23",
+        "place": "2",
+        "round": "H4"
+      },
+      {
+        "date": "APR 30",
+        "meet": "JAAA Qualification Trials 10.6",
+        "event": "400m",
+        "time": "47.53",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "APR 22",
+        "meet": "Central Champs",
+        "event": "800m",
+        "time": "1:51.91",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Central Champs",
+        "event": "400m",
+        "time": "47.27",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "JAAA Qualification Trials 1.5",
+        "event": "400m",
+        "time": "47.74",
+        "place": "1",
+        "round": "F5"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 10",
+        "meet": "ISU Holiday Invitational",
+        "event": "800m",
+        "time": "1:49.80",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "DEC 3",
+        "meet": "Washburn Alumni Invitational",
+        "event": "600 Yards Short Track sh",
+        "time": "1:11.05",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "DEC 3",
+        "meet": "Washburn Alumni Invitational",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:15.22",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "Jamaican Championships",
+        "event": "400m",
+        "time": "47.84",
+        "place": "6",
+        "round": "H3"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "JAAA All-Comers Meet",
+        "event": "400m",
+        "time": "48.45",
+        "place": "5",
+        "round": "F4"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "JAAA/SDF Jubilee Series 2.3",
+        "event": "400m",
+        "time": "48.50",
+        "place": "3",
+        "round": "F3"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "JAAA/SDF Jubilee Series 2.1",
+        "event": "400m",
+        "time": "48.03",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "JAAA/SDF Jubilee Series 2.0",
+        "event": "400m",
+        "time": "48.30",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 26",
+        "meet": "John Wolmer Speed Fest",
+        "event": "800m",
+        "time": "1:51.10",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "Gibson McCook Relays",
+        "event": "400m",
+        "time": "48.14",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Camperdown Classic",
+        "event": "400m",
+        "time": "48.72",
+        "place": "6",
+        "round": "F6"
+      }
+    ],
+    "2023": [
+      {
+        "date": "MAY 20",
+        "meet": "NJCAA Championships",
+        "event": "800m",
+        "time": "1:46.94",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "NJCAA Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:03.96",
+        "place": "2",
+        "round": "F3"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "NJCAA Championships",
+        "event": "800m",
+        "time": "1:51.06",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "APR 29",
+        "meet": "LSU Invitational",
+        "event": "800m",
+        "time": "1:49.20",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "APR 29",
+        "meet": "LSU Invitational",
+        "event": "4x400 Metres Relay",
+        "time": "3:07.28",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 14",
+        "meet": "Bryan Clay Invitational",
+        "event": "800m",
+        "time": "1:49.14",
+        "place": "2",
+        "round": "F6"
+      }
+    ],
+    "2024": [
+      {
+        "date": "JUN 4",
+        "meet": "Maryland Qualifier",
+        "event": "800m",
+        "time": "1:45.85",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Music City Track Carnival",
+        "event": "800m",
+        "time": "1:47.98",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "APR 27",
+        "meet": "LSU Invitational",
+        "event": "800m",
+        "time": "1:48.29",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "APR 19",
+        "meet": "John McDonnell Invitational",
+        "event": "800m",
+        "time": "1:48.22",
+        "place": "2",
+        "round": "F4"
+      },
+      {
+        "date": "APR 19",
+        "meet": "John McDonnell Invitational",
+        "event": "4x400 Metres Relay",
+        "time": "3:08.30",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 6",
+        "meet": "Arkansas Spring Invitational",
+        "event": "800m",
+        "time": "1:52.74",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 6",
+        "meet": "Arkansas Spring Invitational",
+        "event": "4x400 Metres Relay",
+        "time": "3:10.75",
+        "place": "2",
+        "round": "F2"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 18",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:46.56",
+        "place": "7",
+        "round": "SF1"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.13",
+        "place": "3",
+        "round": "H4"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "NACAC Championships",
+        "event": "800m",
+        "time": "1:43.74",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 15",
+        "meet": "NACAC Championships",
+        "event": "800m",
+        "time": "1:49.12",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Ed Murphey Classic",
+        "event": "800m",
+        "time": "1:46.46",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "Jamaican Championships",
+        "event": "800m",
+        "time": "1:45.26",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "800m",
+        "time": "1:47.44",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "800m",
+        "time": "1:45.23",
+        "place": "1",
+        "round": "SF1"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "800m",
+        "time": "1:46.64",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "800m",
+        "time": "1:48.20",
+        "place": "1",
+        "round": "PR6"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "Southeastern Conference Outdoor Track & Field Championships",
+        "event": "800m",
+        "time": "1:47.16",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Southeastern Conference Outdoor Track & Field Championships",
+        "event": "800m",
+        "time": "1:48.30",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "LSU Invitational",
+        "event": "400m",
+        "time": "47.29",
+        "place": "7",
+        "round": "F3"
+      },
+      {
+        "date": "APR 25",
+        "meet": "John McDonnell Invitational",
+        "event": "400m",
+        "time": "46.29",
+        "place": "1",
+        "round": "F5"
+      },
+      {
+        "date": "APR 25",
+        "meet": "John McDonnell Invitational",
+        "event": "4x400 Metres Relay",
+        "time": "3:05.74",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 19",
+        "meet": "Mt. SAC Relays",
+        "event": "800m",
+        "time": "1:45.81",
+        "place": "2",
+        "round": "F3"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "800m sh",
+        "time": "1:47.64",
+        "place": "6",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "Southeastern Conference Indoor Track & Field Championship",
+        "event": "800m sh",
+        "time": "1:49.73",
+        "place": "2",
+        "round": "H4"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Arkansas Qualifier",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:21.26",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Tyson Invitational",
+        "event": "800m sh",
+        "time": "1:46.62",
+        "place": "1",
+        "round": "F5"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Razorback Invitational",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:04.39",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "Razorback Invitational",
+        "event": "800m sh",
+        "time": "1:46.93",
+        "place": "2",
+        "round": "F6"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-10",
+  "ncaaTitle": [
+    "800m"
+  ]
+}

@@ -1,0 +1,549 @@
+{
+  "id": "kethobogile-haingura",
+  "name": "Kethobogile Haingura",
+  "flag": "BW",
+  "country": "Botswana",
+  "waUrl": "https://worldathletics.org/athletes/botswana/kethobogile-haingura-15015852",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "27",
+  "dob": "1998-12-14",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "400m",
+      "time": "47.66"
+    },
+    {
+      "event": "800m",
+      "time": "1:43.58"
+    },
+    {
+      "event": "1500m",
+      "time": "3:35.21"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:14.96"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:47.67"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:16.66"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:03.54"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 7",
+      "meet": "BAUHAUS-Galan",
+      "event": "800 m",
+      "time": "1:45.58",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 31",
+      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+      "event": "800 m",
+      "time": "1:44.21",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Wanda Diamond League",
+      "event": "800 m",
+      "time": "1:43.89",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "APR 26",
+      "meet": "Botswana Golden Grand Prix",
+      "event": "800 m",
+      "time": "1:46.37",
+      "place": "5.",
+      "round": "F1"
+    },
+    {
+      "date": "APR 24",
+      "meet": "Kip Keino Classic",
+      "event": "800 m",
+      "time": "1:45.29",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "APR 10",
+      "meet": "Cape Miller Continental Tour",
+      "event": "800 m",
+      "time": "1:45.60",
+      "place": "1.",
+      "round": "F5"
+    },
+    {
+      "date": "APR 4",
+      "meet": "Botswana Championships",
+      "event": "800 m",
+      "time": "1:44.93",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "APR 3",
+      "meet": "Botswana Championships",
+      "event": "800 m",
+      "time": "1:47.70",
+      "place": "1.",
+      "round": "H1"
+    },
+    {
+      "date": "MAR 21",
+      "meet": "Twin Towers Classic Track & Field Meet",
+      "event": "800 m",
+      "time": "1:46.71",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 8",
+      "meet": "INIT Indoor Meeting Karlsruhe",
+      "event": "800 m sh",
+      "time": "1:47.67",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 3",
+      "meet": "Czech Indoor Gala",
+      "event": "800 m sh",
+      "time": "1:48.04",
+      "place": "7.",
+      "round": "F1"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [
+      {
+        "date": "MAY 15",
+        "meet": "Botswana Championships",
+        "event": "800m",
+        "time": "1:47.16",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Botswana Championships",
+        "event": "800m",
+        "time": "1:51.48",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "APR 30",
+        "meet": "Gaborone International Meet",
+        "event": "800m",
+        "time": "1:48.67",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "Road to GIM2022",
+        "event": "1500m",
+        "time": "4:00.05",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "BAA Athletics Series 3",
+        "event": "1500m",
+        "time": "3:52.92",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "BAA Athletics Series 2",
+        "event": "1500m",
+        "time": "3:56.36",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 15",
+        "meet": "BAA Athletics Series 1",
+        "event": "1500m",
+        "time": "3:58.74",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "MAY 27",
+        "meet": "Botswana Championships",
+        "event": "800m",
+        "time": "1:48.48",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "Botswana Championships",
+        "event": "1500m",
+        "time": "3:49.93",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 29",
+        "meet": "Botswana Golden Grand Prix",
+        "event": "800m",
+        "time": "1:48.59",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 25",
+        "meet": "Botswana Golden Grand Prix Pre Meet",
+        "event": "800m",
+        "time": "1:49.81",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 4",
+        "meet": "Botswana Athletics Series 4",
+        "event": "800m",
+        "time": "1:48.81",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Botswana Athletics Series 3",
+        "event": "800m",
+        "time": "1:51.75",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "Botswana Athletics Series 2",
+        "event": "1500m",
+        "time": "3:53.72",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 21",
+        "meet": "Botswana Athletics Series 1",
+        "event": "1500m",
+        "time": "3:54.27",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "AUG 9",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:44.95",
+        "place": "7",
+        "round": "SF3"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:45.52",
+        "place": "1",
+        "round": "RR1"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:46.46",
+        "place": "7",
+        "round": "H6"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "African Athletics Championships",
+        "event": "800m",
+        "time": "1:45.54",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "African Athletics Championships",
+        "event": "800m",
+        "time": "1:46.86",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "63rd Ostrava Golden Spike",
+        "event": "800m",
+        "time": "1:47.28",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "Anhalt 2024",
+        "event": "800m",
+        "time": "1:47.09",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "Botswana Championships",
+        "event": "1500m",
+        "time": "3:48.79",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 29",
+        "meet": "Cape Milers Club/Endurocad WA Challenger Series",
+        "event": "800m",
+        "time": "1:44.87",
+        "place": "1",
+        "round": "F5"
+      },
+      {
+        "date": "APR 26",
+        "meet": "Cape Milers Club/Endurocad WA Challenger Series",
+        "event": "800m",
+        "time": "1:47.68",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 18",
+        "meet": "ASA Athletics Grand Prix 2",
+        "event": "800m",
+        "time": "1:43.94",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "ASA Athletics Grand Prix 1",
+        "event": "800m",
+        "time": "1:45.14",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "AGN League 5",
+        "event": "800m",
+        "time": "1:45.53",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Curro Podium Final",
+        "event": "600m",
+        "time": "1:14.96",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "AGN League 2",
+        "event": "800m",
+        "time": "1:47.36",
+        "place": "1",
+        "round": "F2"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 18",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:46.05",
+        "place": "6",
+        "round": "SF1"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.02",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "Asics Curro Street Mile",
+        "event": "Mile",
+        "time": "4:03.54",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Memorial van Damme",
+        "event": "1500m",
+        "time": "3:36.70",
+        "place": "15",
+        "round": "F"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Night of Athletics",
+        "event": "800m",
+        "time": "1:44.71",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "Meeting International d'Athlétisme de la Province de Liège",
+        "event": "1000m",
+        "time": "2:16.66",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "BAUHAUS-Galan",
+        "event": "800m",
+        "time": "1:43.61",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Oslo Bislett Games",
+        "event": "800m",
+        "time": "1:43.58",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Meeting International Mohammed VI d'Athlétisme de Rabat",
+        "event": "800m",
+        "time": "1:43.82",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Grand Slam Track Miami",
+        "event": "800m",
+        "time": "1:43.75",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 2",
+        "meet": "Grand Slam Track Miami",
+        "event": "1500m",
+        "time": "3:35.21",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 12",
+        "meet": "FNB Botswana Golden Grand Prix",
+        "event": "800m",
+        "time": "1:44.18",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 4",
+        "meet": "Cape Milers Club/Endurocad Middle Distance Invitational Continental Tour Challenger",
+        "event": "800m",
+        "time": "1:44.00",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "ASA Athletics Grand Prix 2",
+        "event": "800m",
+        "time": "1:43.88",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "ASA Athletics Grand Prix 1",
+        "event": "800m",
+        "time": "1:44.87",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "AGN Track & Field League 4 ( U16",
+        "event": "800m",
+        "time": "1:45.97",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Curro Podium Grand Finale & Simbine Classic Shootout",
+        "event": "600m",
+        "time": "1:17.07",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "AGN Track & Field League 2 (U16",
+        "event": "400m",
+        "time": "47.66",
+        "place": "2",
+        "round": "F5"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
+}

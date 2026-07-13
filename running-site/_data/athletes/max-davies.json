@@ -1,0 +1,700 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "collegeLogo": "",
+  "traits": [],
+  "waUrl": "https://worldathletics.org/athletes/canada/max-davies-14874418",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Max Davies",
+  "headlineKey": "x",
+  "flag": "CA",
+  "honours": [],
+  "seasons": "0",
+  "lastSynced": "2026-07-13",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:47.94"
+    },
+    {
+      "event": "1500m",
+      "time": "3:33.86"
+    },
+    {
+      "event": "Mile",
+      "time": "3:53.24"
+    },
+    {
+      "event": "3000m",
+      "time": "7:57.60"
+    },
+    {
+      "event": "5000m",
+      "time": "14:59.17"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:20.22"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:20.22"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:37.27"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:53.24"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:57.60"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "14:59.17"
+    },
+    {
+      "event": "4x800 Metres Relay Short Track",
+      "time": "7:36.57"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "",
+  "ncaa": false,
+  "club": "x",
+  "country": "Canada",
+  "results": [
+    {
+      "date": "JUL 11",
+      "meet": "Sunset Tour",
+      "event": "1500 m",
+      "time": "3:44.48",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 21",
+      "meet": "Canadian Championships",
+      "event": "1500 m",
+      "time": "3:54.11",
+      "place": "12.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 20",
+      "meet": "Canadian Championships",
+      "event": "1500 m",
+      "time": "3:47.14",
+      "place": "2.",
+      "round": "H1"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "1500 m",
+      "time": "3:35.53",
+      "place": "10.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 7",
+      "meet": "U Sports Track and Field Championships",
+      "event": "1500 m sh",
+      "time": "3:50.34",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 6",
+      "meet": "U Sports Track and Field Championships",
+      "event": "3000 m sh",
+      "time": "8:28.27",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 21",
+      "meet": "OUA Championship",
+      "event": "1500 m sh",
+      "time": "3:42.92",
+      "place": "1.",
+      "round": "F3"
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Boston University David Hemery Valentine Invitational",
+      "event": "1500 m sh",
+      "time": "3:37.27",
+      "place": "9.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Boston University David Hemery Valentine Invitational",
+      "event": "Mile sh",
+      "time": "3:53.24",
+      "place": "9.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "1500 m sh",
+      "time": "3:44.22",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Boston University John Thomas Terrier Classic",
+      "event": "Mile sh",
+      "time": "4:02.54",
+      "place": "11.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 17",
+      "meet": "Don Wright Challenge",
+      "event": "1000 m sh",
+      "time": "2:25.42",
+      "place": "1.",
+      "round": "F1"
+    }
+  ],
+  "dob": "2003-12-19",
+  "college": "",
+  "weight": "x",
+  "lastHistorySynced": "2026-07-12",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "max-davies",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "AUG 3",
+        "meet": "Ontario U18 Championships, Windsor",
+        "event": "1500m",
+        "time": "4:13.75",
+        "place": "10"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "Ontario U18 Championships, Windsor",
+        "event": "3000m",
+        "time": "8:58.86",
+        "place": "5"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "Canadian U20 Championships, Montréal",
+        "event": "5000m",
+        "time": "15:46.44",
+        "place": "16"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Ontario Ch., Toronto",
+        "event": "1500m",
+        "time": "4:06.40",
+        "place": "4"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Last Chance Twilight, Hamilton",
+        "event": "800m",
+        "time": "1:59.15",
+        "place": "4"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "OFSAA Ch., Guelph",
+        "event": "1500m",
+        "time": "4:08.80",
+        "place": "5"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "OFSAA Ch., Guelph",
+        "event": "1500m",
+        "time": "4:11.67",
+        "place": "4"
+      },
+      {
+        "date": "MAR 3",
+        "meet": "Ontario Indoor Championships Series #3, Toronto (i)",
+        "event": "3000m sh",
+        "time": "9:03.59",
+        "place": "9"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Ontario Indoor Championships Series #3, Toronto (i)",
+        "event": "1500m sh",
+        "time": "4:14.24",
+        "place": "9"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "York Open, Toronto (i)",
+        "event": "3000m sh",
+        "time": "8:50.85",
+        "place": "3"
+      },
+      {
+        "date": "JAN 12",
+        "meet": "Sharon Anderson Memorial, Toronto (i)",
+        "event": "1500m sh",
+        "time": "4:15.52",
+        "place": "6"
+      },
+      {
+        "date": "JAN 11",
+        "meet": "Sharon Anderson Memorial, Toronto (i)",
+        "event": "3000m sh",
+        "time": "8:58.11",
+        "place": "1"
+      }
+    ],
+    "2020": [
+      {
+        "date": "FEB 9",
+        "meet": "Ontario Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:37.91",
+        "place": "4"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "York Open",
+        "event": "1500m sh",
+        "time": "4:00.66",
+        "place": "1"
+      },
+      {
+        "date": "JAN 11",
+        "meet": "Ontario Indoor Championships Series #1",
+        "event": "1500m sh",
+        "time": "4:03.61",
+        "place": "1"
+      },
+      {
+        "date": "JAN 4",
+        "meet": "Sharon Anderson Memorial",
+        "event": "3000m sh",
+        "time": "8:43.92",
+        "place": "2"
+      }
+    ],
+    "2021": [
+      {
+        "date": "DEC 4",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "14:59.17",
+        "place": "17"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "Ontario Ch.",
+        "event": "1500m",
+        "time": "3:55.75",
+        "place": "9"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "YUTC Twilight Meet #1",
+        "event": "800m",
+        "time": "1:51.90",
+        "place": "2"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "Phoenix Mini Meet",
+        "event": "3000m",
+        "time": "8:25.98",
+        "place": "1"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Laurel Creek Twilight #2",
+        "event": "1500m",
+        "time": "3:51.91",
+        "place": "5"
+      }
+    ],
+    "2022": [
+      {
+        "date": "AUG 14",
+        "meet": "Welsh Athletics Junior Championships",
+        "event": "800m",
+        "time": "2:08.03",
+        "place": "6"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "World Athletics U20 Championships",
+        "event": "1500m",
+        "time": "3:50.76",
+        "place": "11"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "World Athletics U20 Championships",
+        "event": "1500m",
+        "time": "3:45.55",
+        "place": "3"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "YUTC Twilight #4",
+        "event": "800m",
+        "time": "1:50.09",
+        "place": "1"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "Edge Elite Distance Night #1",
+        "event": "1500m",
+        "time": "3:41.95",
+        "place": "1"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Ontario Canada Games Trials",
+        "event": "1500m",
+        "time": "3:55.65",
+        "place": "9"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Hoka 100m and 1500m Night",
+        "event": "1500m",
+        "time": "3:55.41",
+        "place": "12"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Royal City Inferno Track & Field Festival",
+        "event": "1500m",
+        "time": "3:49.74",
+        "place": "6"
+      }
+    ],
+    "2023": [
+      {
+        "date": "NOV 25",
+        "meet": "Canadian Cross Country Championships, Ottawa",
+        "event": "Cross Country",
+        "time": "30:47",
+        "place": "22"
+      },
+      {
+        "date": "MAR 11",
+        "meet": "U Sports Track & Field Championships",
+        "event": "1500m sh",
+        "time": "3:50.26",
+        "place": "1"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "U Sports Track & Field Championships",
+        "event": "1000m sh",
+        "time": "2:31.32",
+        "place": "12"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Ontario University Championships",
+        "event": "1000m sh",
+        "time": "2:24.59",
+        "place": "2"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Ontario University Championships",
+        "event": "1500m sh",
+        "time": "3:59.81",
+        "place": "10"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Ontario University Championships",
+        "event": "4x800 Metres Relay Short Track sh",
+        "time": "7:39.05",
+        "place": "1"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "Mile sh",
+        "time": "4:05.56",
+        "place": "10"
+      },
+      {
+        "date": "JAN 14",
+        "meet": "40th Annual Can Am Classic",
+        "event": "1000m sh",
+        "time": "2:24.74",
+        "place": "1"
+      },
+      {
+        "date": "JAN 13",
+        "meet": "40th Annual Can Am Classic",
+        "event": "4x800 Metres Relay Short Track sh",
+        "time": "7:41.67",
+        "place": "1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "Mile sh",
+        "time": "3:58.68",
+        "place": "6"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Track Fest, Jack Kemp Stadium",
+        "event": "1500m",
+        "time": "3:39.80",
+        "place": "1"
+      },
+      {
+        "date": "APR 28",
+        "meet": "Bermuda Grand Prix",
+        "event": "1500m",
+        "time": "3:53.96",
+        "place": "2"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Ontario University Championships",
+        "event": "1500m sh",
+        "time": "3:44.24",
+        "place": "1"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Ontario University Championships",
+        "event": "1000m sh",
+        "time": "2:20.22",
+        "place": "1"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Ontario University Championships",
+        "event": "4x800 Metres Relay Short Track sh",
+        "time": "7:40.51",
+        "place": "1"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Guelph Last Chance Meet",
+        "event": "Mile sh",
+        "time": "4:04.40",
+        "place": "1"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "Mile sh",
+        "time": "4:06.98",
+        "place": "11"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Penn State National Open",
+        "event": "3000m sh",
+        "time": "8:00.24",
+        "place": "2"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Penn State National Open",
+        "event": "Mile sh",
+        "time": "3:59.24",
+        "place": "1"
+      },
+      {
+        "date": "JAN 13",
+        "meet": "41st Can Am Classic",
+        "event": "1000m sh",
+        "time": "2:22.59",
+        "place": "1"
+      },
+      {
+        "date": "JAN 12",
+        "meet": "41st Can Am Classic",
+        "event": "4x800 Metres Relay Short Track sh",
+        "time": "7:42.31",
+        "place": "1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 6",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "3000m sh",
+        "time": "7:57.60",
+        "place": "18"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "Sankthanshaugen 5000",
+        "event": "1500m",
+        "time": "3:33.86",
+        "place": "1"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "Meeting voor Mon",
+        "event": "1500m",
+        "time": "3:36.41",
+        "place": "1"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "La Classique d'athlétisme de Montréal",
+        "event": "1500m",
+        "time": "3:36.07",
+        "place": "2"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Canadian Championships",
+        "event": "1500m",
+        "time": "3:58.29",
+        "place": "1"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "Canadian Championships",
+        "event": "1500m",
+        "time": "3:45.13",
+        "place": "1"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "Classique d'Athlétisme de Québec",
+        "event": "Mile",
+        "time": "3:53.90",
+        "place": "1"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "The Jerome Classic",
+        "event": "1500m",
+        "time": "3:35.04",
+        "place": "2"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "The Jerome Classic",
+        "event": "3000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Bob Vigars Classic",
+        "event": "Mile",
+        "time": "3:55.87",
+        "place": "3"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Royal City Inferno Track and Field Festival",
+        "event": "1500m",
+        "time": "3:37.86",
+        "place": "4"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "University of Toronto Track Club",
+        "event": "800m",
+        "time": "1:47.94",
+        "place": "1"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "HOKA Festival of Miles",
+        "event": "Mile",
+        "time": "3:57.51",
+        "place": "3"
+      },
+      {
+        "date": "APR 26",
+        "meet": "115th Drake Relays presented by Xtream powered by Mediacom",
+        "event": "1500m",
+        "time": "3:40.89",
+        "place": "4"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Ontario University Championships",
+        "event": "1500m sh",
+        "time": "3:51.01",
+        "place": "3"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Ontario University Championships",
+        "event": "1000m sh",
+        "time": "2:20.87",
+        "place": "1"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Ontario University Championships",
+        "event": "4x800 Metres Relay Short Track sh",
+        "time": "7:36.57",
+        "place": "1"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "Mile sh",
+        "time": "3:57.26",
+        "place": "1"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "Penn State National Open",
+        "event": "Mile sh",
+        "time": "4:06.52",
+        "place": "8"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "Penn State National Open",
+        "event": "3000m sh",
+        "time": "8:05.75",
+        "place": "1"
+      },
+      {
+        "date": "JAN 11",
+        "meet": "41st Can Am Classic",
+        "event": "1000m sh",
+        "time": "2:23.82",
+        "place": "1"
+      },
+      {
+        "date": "JAN 11",
+        "meet": "41st Can Am Classic",
+        "event": "4x800 Metres Relay Short Track sh",
+        "time": "7:39.07",
+        "place": "1"
+      }
+    ]
+  },
+  "age": "22"
+}

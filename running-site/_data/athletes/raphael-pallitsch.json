@@ -1,0 +1,453 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "collegeLogo": "",
+  "traits": [],
+  "waUrl": "https://worldathletics.org/athletes/austria/raphael-pallitsch-14178277",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Raphael Pallitsch",
+  "headlineKey": "x",
+  "flag": "AT",
+  "honours": [],
+  "seasons": "0",
+  "lastSynced": "2026-07-13",
+  "prs": [
+    {
+      "event": "200m",
+      "time": "22.94"
+    },
+    {
+      "event": "400m",
+      "time": "49.37"
+    },
+    {
+      "event": "800m",
+      "time": "1:46.67"
+    },
+    {
+      "event": "1500m",
+      "time": "3:32.96"
+    },
+    {
+      "event": "Mile",
+      "time": "3:52.54"
+    },
+    {
+      "event": "3000m",
+      "time": "7:48.14"
+    },
+    {
+      "event": "200 Metres Short Track",
+      "time": "22.94"
+    },
+    {
+      "event": "400 Metres Short Track",
+      "time": "50.42"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:17.24"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:47.94"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:26.70"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:36.34"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:55.94"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:48.14"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:55"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "",
+  "ncaa": false,
+  "club": "x",
+  "country": "Austria",
+  "results": [
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "1500 m",
+      "time": "3:35.15",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "1500 m",
+      "time": "3:37.04",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "Mile",
+      "time": "3:52.54",
+      "place": "8.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 29",
+      "meet": "8th Irena Szewińska Memorial",
+      "event": "1500 m",
+      "time": "3:39.25",
+      "place": "6.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 8",
+      "meet": "Meeting Metz Moselle Athlélor Crédit Mutuel",
+      "event": "1500 m sh",
+      "time": "3:36.55",
+      "place": "5.",
+      "round": "F"
+    }
+  ],
+  "dob": "1989-12-18",
+  "college": "",
+  "weight": "x",
+  "lastHistorySynced": "2026-07-12",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "raphael-pallitsch",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "FEB 2",
+        "meet": "ASVÖ Vienna Indoor Gala, Wien (i)",
+        "event": "200m sh",
+        "time": "23.60",
+        "place": "2"
+      }
+    ],
+    "2020": [
+      {
+        "date": "JUL 31",
+        "meet": "3.Waidhofner Abendmeeting",
+        "event": "800m",
+        "time": "1:52.04",
+        "place": "1"
+      }
+    ],
+    "2021": [
+      {
+        "date": "JUN 26",
+        "meet": "Austrian Championships",
+        "event": "800m",
+        "time": "1:53.72",
+        "place": "1"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Austrian Indoor Championships",
+        "event": "800m sh",
+        "time": "1:50.96",
+        "place": "1"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "CMCM Indoor Meeting",
+        "event": "800m sh",
+        "time": "1:49.39",
+        "place": "6"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "Indoor Track & Field Vienna",
+        "event": "800m sh",
+        "time": "1:50.11",
+        "place": "6"
+      }
+    ],
+    "2022": [
+      {
+        "date": "JUN 26",
+        "meet": "Austrian Championships",
+        "event": "1500m",
+        "time": "3:53.22",
+        "place": "1"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Austrian Championships",
+        "event": "800m",
+        "time": "1:51.78",
+        "place": "1"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Merck-Laufgala",
+        "event": "1500m",
+        "time": "3:40.49",
+        "place": "4"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Austrian Club Championships",
+        "event": "1000m",
+        "time": "2:26.70",
+        "place": "1"
+      },
+      {
+        "date": "JUN 3",
+        "meet": "Sparkassen Gala",
+        "event": "1500m",
+        "time": "3:46.72",
+        "place": "1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "AUG 19",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:36.47",
+        "place": "12"
+      },
+      {
+        "date": "JUL 22",
+        "meet": "Balkan Championships",
+        "event": "1500m",
+        "time": "3:43.74",
+        "place": "1"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Meeting Internationald'Athletisme de la Province de Liège",
+        "event": "1500m",
+        "time": "3:39.68",
+        "place": "4"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Austrian Championships, Casino",
+        "event": "1500m",
+        "time": "3:40.74",
+        "place": "1"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "62nd Ostrava Golden Spike",
+        "event": "1500m",
+        "time": "4:02.94",
+        "place": "19"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "European Athletics Team Championships Third Division",
+        "event": "1500m",
+        "time": "3:42.52",
+        "place": "1"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Hungarian GP Series",
+        "event": "1500m",
+        "time": "3:38.16",
+        "place": "1"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Austrian Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:43.40",
+        "place": "1"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Belgrade Indoor Meeting",
+        "event": "1500m sh",
+        "time": "3:41.01",
+        "place": "2"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Czech Indoor Gala",
+        "event": "Mile sh",
+        "time": "3:57.22",
+        "place": "2"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Meeting Internacional Ciudad de Valencia",
+        "event": "1500m sh",
+        "time": "3:40.56",
+        "place": "1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "AUG 3",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:39.32",
+        "place": "13"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:38.20",
+        "place": "11"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:33.60",
+        "place": "6"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:44.29",
+        "place": "6"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "63rd Ostrava Golden Spike",
+        "event": "1500m",
+        "time": "3:33.59",
+        "place": "2"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Raiffeisen AUSTRIAN OPEN Eisenstadt",
+        "event": "1500m",
+        "time": "3:37.42",
+        "place": "1"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "59. Internationales Pfingstsportfest Rehlingen",
+        "event": "1500m",
+        "time": "3:33.78",
+        "place": "3"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "Czech Indoor Gala",
+        "event": "1500m sh",
+        "time": "3:37.36",
+        "place": "4"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 14",
+        "meet": "1. VCM Winterlauf",
+        "event": "5K",
+        "time": "13:55",
+        "place": "1"
+      },
+      {
+        "date": "SEP 15",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:36.94",
+        "place": "7"
+      },
+      {
+        "date": "SEP 14",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:42.40",
+        "place": "6"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Austrian Championships",
+        "event": "1500m",
+        "time": "3:48.42",
+        "place": "1"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "Austrian Championships",
+        "event": "800m",
+        "time": "1:53.19",
+        "place": "1"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "64th Ostrava Golden Spike",
+        "event": "1500m",
+        "time": "3:32.96",
+        "place": "8"
+      },
+      {
+        "date": "MAR 23",
+        "meet": "World Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:41.01",
+        "place": "7"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "World Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:40.08",
+        "place": "2"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "European Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:40.96",
+        "place": "4"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Austrian Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:52.67",
+        "place": "1"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Austrian Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:48.14",
+        "place": "1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "1500m sh",
+        "time": "3:36.34",
+        "place": "3"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "Czech Indoor Gala",
+        "event": "Mile sh",
+        "time": "3:55.94",
+        "place": "5"
+      }
+    ]
+  },
+  "age": "36"
+}

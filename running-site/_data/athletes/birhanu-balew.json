@@ -76,45 +76,734 @@
     {
       "date": "JUL 10",
       "meet": "Meeting International d’Athlétisme Herculis EBS",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "12:52.91",
-      "place": "3"
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "12:56.66",
-      "place": "5"
+      "place": "5.",
+      "round": "F"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "12:47.73",
-      "place": "2"
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "MAY 23",
       "meet": "Wanda Diamond League Xiamen",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:07.75",
-      "place": "7"
+      "place": "7.",
+      "round": "F"
     },
     {
       "date": "MAY 16",
       "meet": "Wanda Diamond League",
-      "event": "3000m",
+      "event": "3000 m",
       "time": "7:29.60",
-      "place": "12"
+      "place": "12.",
+      "round": "F"
     },
     {
       "date": "FEB 14",
-      "meet": "Ras Al Khaimah Half Marathon, Ras Al Khaimah",
+      "meet": "Ras Al Khaimah Half Marathon",
       "event": "Half Marathon",
       "time": "58:23",
-      "place": "2"
+      "place": "2.",
+      "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "SEP 9",
+        "meet": "IAAF Continental Cup, Ostrava",
+        "event": "3000m",
+        "time": "8:12.36",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "AUG 30",
+        "meet": "Jakarta Asian Games, Jakarta",
+        "event": "5000m",
+        "time": "13:43.17",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "London Müller Anniversary Games",
+        "event": "5000m",
+        "time": "13:16.04",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "3000m",
+        "time": "7:34.26",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Athletissima Lausanne",
+        "event": "5000m",
+        "time": "13:01.09",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "Golden Spike Ostrava 2018",
+        "event": "3000m",
+        "time": "7:38.25",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Stockholm BAUHAUS-galan",
+        "event": "5000m",
+        "time": "13:04.25",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Eugene Prefontaine Classic",
+        "event": "2 Miles",
+        "time": "8:21.54",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Shanghai IAAF Diamond League",
+        "event": "5000m",
+        "time": "13:09.64",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 24",
+        "meet": "Abu Dhabi 10 km, Abu Dhabi",
+        "event": "10K",
+        "time": "29:01",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 4",
+        "meet": "IAAF World Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:18.89",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "IAAF World Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:44.03",
+        "place": "4",
+        "round": "H1"
+      }
+    ],
+    "2019": [
+      {
+        "date": "OCT 26",
+        "meet": "CISM Military World Games",
+        "event": "5000m",
+        "time": "14:08.99",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 24",
+        "meet": "CISM Military World Games",
+        "event": "5000m",
+        "time": "14:04.90",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "SEP 30",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "5000m",
+        "time": "13:14.66",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "SEP 27",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "5000m",
+        "time": "13:25.70",
+        "place": "6",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "Weltklasse Zürich",
+        "event": "5000m",
+        "time": "13:21.13",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Athletissima Lausanne",
+        "event": "5000m",
+        "time": "13:17.82",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Prefontaine Classic",
+        "event": "2 Miles",
+        "time": "8:20.56",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "Oslo Bislett Games",
+        "event": "3000m",
+        "time": "7:37.37",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Golden Gala",
+        "event": "5000m",
+        "time": "12:56.26",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "IAAF Diamond League",
+        "event": "5000m",
+        "time": "13:05.04",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 24",
+        "meet": "Asian Athletics Championships, Doha",
+        "event": "5000m",
+        "time": "13:37.42",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 8",
+        "meet": "Arab Championships, Cairo",
+        "event": "5000m",
+        "time": "13:33.72",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "43rd IAAF World Cross Country Championships, Århus",
+        "event": "Cross Country Senior Race",
+        "time": "33:08",
+        "place": "18",
+        "round": "F"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais, Liévin (i)",
+        "event": "2000m sh",
+        "time": "5:00.34",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Meeting National, Mondeville (i)",
+        "event": "3000m sh",
+        "time": "7:46.00",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "FEB 21",
+        "meet": "Villa de Madrid",
+        "event": "3000m sh",
+        "time": "7:43.89",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "3000m sh",
+        "time": "7:34.58",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "15. International PSD Bank Meeting",
+        "event": "3000m sh",
+        "time": "7:38.67",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "Indoor Meeting",
+        "event": "3000m sh",
+        "time": "7:40.93",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "DEC 12",
+        "meet": "Bahrain Night Half Marathon, Manama",
+        "event": "Half Marathon",
+        "time": "1:01:44",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "NOV 14",
+        "meet": "XVII Cross de Atapuerca, Atapuerca",
+        "event": "Cross Country",
+        "time": "27:59",
+        "place": "46",
+        "round": "F"
+      },
+      {
+        "date": "SEP 12",
+        "meet": "Adizero Road to Records, Herzogenaurach",
+        "event": "10K",
+        "time": "28:20",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "Weltklasse Zürich",
+        "event": "5K",
+        "time": "13:02",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "Athletissima Lausanne",
+        "event": "3000m",
+        "time": "7:36.94",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "The XXXII Olympic Games",
+        "event": "5000m",
+        "time": "13:03.20",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "The XXXII Olympic Games",
+        "event": "5000m",
+        "time": "13:39.42",
+        "place": "5",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Oslo Bislett Games",
+        "event": "3000m",
+        "time": "7:33.05",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Golden Gala Pietro Mennea",
+        "event": "5000m",
+        "time": "12:57.71",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "60th Ostrava Golden Spike",
+        "event": "10000m",
+        "time": "27:07.49",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "3000m sh",
+        "time": "7:37.99",
+        "place": "5",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 18",
+        "meet": "Corrida Internationale de Houilles, Houilles",
+        "event": "10K",
+        "time": "28:44",
+        "place": "14",
+        "round": "F"
+      },
+      {
+        "date": "OCT 23",
+        "meet": "Cross Country Bydgoszcz na Start, Bydgoszcz",
+        "event": "Cross Country",
+        "time": "23:25",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "OCT 16",
+        "meet": "Corsa dei Castelli, Trieste",
+        "event": "10K",
+        "time": "28:57",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "5th Islamic Solidarity Games",
+        "event": "5000m",
+        "time": "13:51.64",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 30",
+        "meet": "adizero Road to Records, Herzogenaurach",
+        "event": "5K",
+        "time": "13:07",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Arab Cross Country Championships, Al Sukhair",
+        "event": "Cross Country",
+        "time": "31:30",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "3000m sh",
+        "time": "7:31.77",
+        "place": "4",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 9",
+        "meet": "Annual Charity Run, Al Khobar",
+        "event": "5K",
+        "time": "13:05",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "OCT 4",
+        "meet": "19th Asian Games",
+        "event": "5000m",
+        "time": "13:17.40",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 30",
+        "meet": "19th Asian Games",
+        "event": "10000m",
+        "time": "28:13.62",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:41.00",
+        "place": "15",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "World Athletics Championships",
+        "event": "10000m",
+        "time": "28:08.03",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Arab Games Algiers 2023",
+        "event": "5000m",
+        "time": "14:21.89",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Athletissima Lausanne",
+        "event": "5000m",
+        "time": "13:01.41",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Fast 5000, Montesson",
+        "event": "5000m",
+        "time": "13:05.29",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "APR 29",
+        "meet": "adizero Road to Records",
+        "event": "5K",
+        "time": "13:06",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "World Indoor Tour Madrid 2023",
+        "event": "3000m sh",
+        "time": "7:43.20",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "3000m sh",
+        "time": "7:33.42",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 5",
+        "meet": "Arab Cross Country Championships",
+        "event": "Cross Country",
+        "time": "29:58",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JAN 8",
+        "meet": "79th Elgoibar Juan Muguerza Cross-Country, Elgoibar",
+        "event": "Cross Country",
+        "time": "33:27",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 6",
+        "meet": "66° Campaccio-International Cross Country, San Giorgio su Legnano",
+        "event": "Cross Country",
+        "time": "28:42",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 14",
+        "meet": "Al Sharqiyah International 5KM, Al Khobar",
+        "event": "5K",
+        "time": "13:25",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "OCT 27",
+        "meet": "Medio Maratón Valencia Trinidad Alfonso Zurich, Valencia",
+        "event": "Half Marathon",
+        "time": "59:41",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "SEP 7",
+        "meet": "Birell 10K Race, Praha",
+        "event": "10K",
+        "time": "28:10",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "13:53.11",
+        "place": "10",
+        "round": "H2"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "The XXXIII Olympic Games",
+        "event": "10000m",
+        "time": "27:30.94",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "BAUHAUS-Galan",
+        "event": "3000m",
+        "time": "7:46.10",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "adizero Road to Records",
+        "event": "5K",
+        "time": "13:12",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Wanda Diamond League Xiamen",
+        "event": "5000m",
+        "time": "13:00.47",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAR 17",
+        "meet": "5km Route de Lille, Lille",
+        "event": "5K",
+        "time": "13:08",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 14",
+        "meet": "10K Valencia Ibercaja, Valencia",
+        "event": "10K",
+        "time": "26:57",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "NOV 20",
+        "meet": "6th Islamic Solidarity Games, Riyadh",
+        "event": "5000m",
+        "time": "13:46.26",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "NOV 18",
+        "meet": "6th Islamic Solidarity Games, Riyadh",
+        "event": "10000m",
+        "time": "29:06.58",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 21",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:00.55",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:41.75",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Athletissima Lausanne",
+        "event": "5000m",
+        "time": "13:17.75",
+        "place": "13",
+        "round": "F"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "5000m",
+        "time": "12:53.51",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Paris",
+        "event": "5000m",
+        "time": "12:48.67",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Oslo Bislett Games",
+        "event": "5000m",
+        "time": "12:56.45",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Doha Meeting",
+        "event": "5000m",
+        "time": "13:17.70",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 26",
+        "meet": "adizero: Road to Records 2025, Herzogenaurach",
+        "event": "10K",
+        "time": "26:54",
+        "place": "1",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

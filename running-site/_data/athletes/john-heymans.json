@@ -106,5 +106,432 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "MAY 21",
+        "meet": "Duffel Memorial Vertommen Cuddy, Duffel",
+        "event": "1500m",
+        "time": "3:54.39",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Gent Belgian Club Championships, Gent",
+        "event": "3000m",
+        "time": "8:20.51",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 1",
+        "meet": "Herentals de Stessens Meeting, Herentals",
+        "event": "3000m",
+        "time": "8:20.15",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "APR 28",
+        "meet": "Kessel-Lo Regional Championships, Kessel-Lo",
+        "event": "1500m",
+        "time": "3:56.56",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "DEC 8",
+        "meet": "26th SPAR European Cross Country Championships, Lisboa",
+        "event": "Cross Country U23 Race",
+        "time": "25:30",
+        "place": "24",
+        "round": "F"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Belgian Club Championships, Nivelles",
+        "event": "3000m",
+        "time": "8:23.05",
+        "place": "5",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "SEP 6",
+        "meet": "KBC Nacht van de Atletiek",
+        "event": "5000m",
+        "time": "13:42.84",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 30",
+        "meet": "Gouden 1500",
+        "event": "3000m",
+        "time": "7:57.25",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "Belgian Championships",
+        "event": "1500m",
+        "time": "3:51.51",
+        "place": "6",
+        "round": "F3"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "Brussels Grand Prix",
+        "event": "1500m",
+        "time": "3:49.10",
+        "place": "1",
+        "round": "F2"
+      }
+    ],
+    "2021": [
+      {
+        "date": "MAR 6",
+        "meet": "European Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "DQ",
+        "place": "",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "Belgian Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:51.71",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 11",
+        "meet": "28th SPAR European Cross Country Championships, Piemonte-La Mandria Park",
+        "event": "Cross Country Senior Race",
+        "time": "30:21",
+        "place": "14",
+        "round": "F"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "Brussels CrossCup, Bruxelles",
+        "event": "Cross Country",
+        "time": "31:02",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "ECCC Cross Country, Oeiras",
+        "event": "Cross Country",
+        "time": "32:25",
+        "place": "44",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 10",
+        "meet": "29th SPAR European Cross Country Championships",
+        "event": "Cross Country Senior Race",
+        "time": "30:34",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "NOV 19",
+        "meet": "Belgian Cross Country Championships",
+        "event": "Cross Country",
+        "time": "28:35",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:39.67",
+        "place": "13",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Belgian Championships",
+        "event": "5000m",
+        "time": "13:27.06",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Meeting International Montgeron-Essonne",
+        "event": "5000m",
+        "time": "13:14.16",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Putbos Memoria Leon Buyle VS Flanders Cup",
+        "event": "1500m",
+        "time": "3:40.07",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Track Festival",
+        "event": "5000m",
+        "time": "13:16.88",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 4",
+        "meet": "European Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:57.87",
+        "place": "7",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "3000m sh",
+        "time": "7:42.55",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "IFAM Gent Indoor",
+        "event": "3000m sh",
+        "time": "7:45.48",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "Meeting National Indoor Lyon",
+        "event": "3000m sh",
+        "time": "7:50.25",
+        "place": "6",
+        "round": "F1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 8",
+        "meet": "30th SPAR European Cross Country Championships, Antalya",
+        "event": "Cross Country Senior Race",
+        "time": "22:51",
+        "place": "15",
+        "round": "F"
+      },
+      {
+        "date": "NOV 17",
+        "meet": "Belgian Cross Country Championships",
+        "event": "Cross Country",
+        "time": "22:03",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "13:19.25",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "14:08.33",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "European Athletics Championships",
+        "event": "5000m",
+        "time": "13:25.99",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "IFAM Outdoor",
+        "event": "1500m",
+        "time": "3:38.19",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Super League Interclub M+V",
+        "event": "3000m",
+        "time": "7:52.48",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Super League Interclub M+V",
+        "event": "5000m",
+        "time": "14:00.99",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "Belgian 10",
+        "event": "10000m",
+        "time": "DNF",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "World Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:48.18",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "World Indoor Tour Gold Madrid 2024",
+        "event": "3000m sh",
+        "time": "7:49.73",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "3000m sh",
+        "time": "7:41.59",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "5000m sh",
+        "time": "13:03.46",
+        "place": "5",
+        "round": "F2"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 31",
+        "meet": "BOclassic Alto Adige",
+        "event": "10K",
+        "time": "28:17",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "DEC 14",
+        "meet": "31st SPAR European Cross Country Championships, Lagoa",
+        "event": "Cross Country Senior Race",
+        "time": "22:41",
+        "place": "13",
+        "round": "F"
+      },
+      {
+        "date": "NOV 30",
+        "meet": "Belgian Cross Country Championships",
+        "event": "Cross Country Long Race",
+        "time": "22:16",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:47.37",
+        "place": "13",
+        "round": "H2"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "IFAM Oordegem",
+        "event": "5000m",
+        "time": "13:31.69",
+        "place": "24",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Paavo Nurmi Games",
+        "event": "5000m",
+        "time": "13:03.87",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 3",
+        "meet": "Trond Mohn Games",
+        "event": "3000m",
+        "time": "7:46.69",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Super League",
+        "event": "3000m",
+        "time": "8:12.52",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Super League",
+        "event": "5000m",
+        "time": "13:44.55",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "European Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:59.36",
+        "place": "11",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Boston University Bruce Lehane Scarlet and White Invitational",
+        "event": "3000m sh",
+        "time": "7:37.05",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "5000m sh",
+        "time": "13:08.93",
+        "place": "5",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

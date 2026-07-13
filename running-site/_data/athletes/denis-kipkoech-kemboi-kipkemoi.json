@@ -110,5 +110,138 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [],
+    "2023": [],
+    "2024": [
+      {
+        "date": "AUG 29",
+        "meet": "World Athletics U20 Championships",
+        "event": "3000m",
+        "time": "8:20.79",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "National Trials For World Athletics Under 20 Championships",
+        "event": "3000m",
+        "time": "7:48.48",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Kenyan Championships",
+        "event": "5000m",
+        "time": "14:01.10",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "3rd AK Track And Field Weekend Meeting",
+        "event": "5000m",
+        "time": "13:56.78",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 6",
+        "meet": "2nd AK Track & Field Weekend Meeting/AK Relay Series",
+        "event": "5000m",
+        "time": "13:59.04",
+        "place": "4",
+        "round": "F3"
+      }
+    ],
+    "2025": [
+      {
+        "date": "NOV 9",
+        "meet": "XLIII Cross Internacional de Itálica",
+        "event": "Cross Country",
+        "time": "26:11",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "OCT 25",
+        "meet": "Kenya Trials for World Cross Country Championships, Eldoret",
+        "event": "Cross Country",
+        "time": "30:13",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Athletissima Lausanne",
+        "event": "5000m",
+        "time": "13:13.97",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Trials for Africa U18 & U20 Championships",
+        "event": "5000m",
+        "time": "13:42.37",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "BAUHAUS-Galan",
+        "event": "5000m",
+        "time": "13:07.02",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "FAST5000",
+        "event": "5000m",
+        "time": "13:16.28",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "75. Boris Hanžeković Memorial",
+        "event": "5000m",
+        "time": "13:03.17",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 26",
+        "meet": "5th AK Track & Field Weekend Meeting/Relay Series",
+        "event": "1500m",
+        "time": "3:43.52",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "APR 25",
+        "meet": "5th AK Track & Field Weekend Meeting/Relay Series",
+        "event": "1500m",
+        "time": "3:43.22",
+        "place": "1",
+        "round": "H6"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "3000m sh",
+        "time": "7:54.21",
+        "place": "11",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

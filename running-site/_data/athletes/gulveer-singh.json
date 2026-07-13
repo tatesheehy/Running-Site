@@ -150,5 +150,396 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [
+      {
+        "date": "OCT 17",
+        "meet": "National Open Athletics Championships",
+        "event": "5000m",
+        "time": "14:11.24",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "OCT 3",
+        "meet": "Indian National Games, Gujarat",
+        "event": "10000m",
+        "time": "28:54.29",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 6",
+        "meet": "Inter-Services Athletics Championships, Jalahalli",
+        "event": "5000m",
+        "time": "14:10.28",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "National Inter State Senior Athletics Championships",
+        "event": "5000m",
+        "time": "14:02.50",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "National Inter State Senior Athletics Championships",
+        "event": "10000m",
+        "time": "29:55.71",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Indian Grand Prix, Bhubaneshwar",
+        "event": "5000m",
+        "time": "14:27.82",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "TCS World 10K Bengaluru, Bengaluru",
+        "event": "10K",
+        "time": "30:06",
+        "place": "17",
+        "round": "F"
+      },
+      {
+        "date": "APR 6",
+        "meet": "National Federation Cup",
+        "event": "5000m",
+        "time": "14:04.04",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "APR 2",
+        "meet": "National Federation Cup",
+        "event": "10000m",
+        "time": "29:22.44",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "NOV 1",
+        "meet": "37th National Games",
+        "event": "10000m",
+        "time": "30:23.13",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "OCT 29",
+        "meet": "37th National Games",
+        "event": "5000m",
+        "time": "14:13.03",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 4",
+        "meet": "19th Asian Games",
+        "event": "5000m",
+        "time": "13:29.93",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "SEP 30",
+        "meet": "19th Asian Games",
+        "event": "10000m",
+        "time": "28:17.21",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "Asian Athletics Championships",
+        "event": "5000m",
+        "time": "13:48.33",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Asian Athletics Championships",
+        "event": "10000m",
+        "time": "29:53.69",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "Indian Championships",
+        "event": "5000m",
+        "time": "13:43.23",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Indian Championships",
+        "event": "10000m",
+        "time": "29:03.78",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "26th National Federation Cup Senior Athletics Championships",
+        "event": "5000m",
+        "time": "13:54.41",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "26th National Federation Cup Senior Athletics Championships",
+        "event": "5000m",
+        "time": "14:06.20",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "26th National Federation Cup Senior Athletics Championships",
+        "event": "10000m",
+        "time": "29:05.90",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 15",
+        "meet": "Indian Grand Prix",
+        "event": "5000m",
+        "time": "14:08.33",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 20",
+        "meet": "Indian Grand Prix",
+        "event": "5000m",
+        "time": "13:51.88",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 15",
+        "meet": "Tata Steel Kolkata World 25K, Kolkata",
+        "event": "25 Kilometres Road",
+        "time": "1:14:10",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "NOV 23",
+        "meet": "2024 Hachioji Long Distance",
+        "event": "10000m",
+        "time": "27:14.88",
+        "place": "1",
+        "round": "F8"
+      },
+      {
+        "date": "OCT 20",
+        "meet": "17th Asian Cross Country Championships, Hong Kong",
+        "event": "Cross Country",
+        "time": "32:43",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 28",
+        "meet": "Yogibo Athletics Challenge Cup 2024",
+        "event": "5000m",
+        "time": "13:11.82",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 30",
+        "meet": "63rd National Open Athletics Championships",
+        "event": "5000m",
+        "time": "13:54.70",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Indian Championships",
+        "event": "10000m",
+        "time": "29:50.38",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "Indian Championships",
+        "event": "5000m",
+        "time": "13:34.67",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Portland Track Festival",
+        "event": "5000m",
+        "time": "13:18.92",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "USATF Los Angeles Grand Prix",
+        "event": "5000m",
+        "time": "13:23.78",
+        "place": "14",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Track Fest, Jack Kemp Stadium",
+        "event": "5000m",
+        "time": "13:31.65",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "45th World Athletics Cross Country Championships",
+        "event": "Cross Country Senior Race",
+        "time": "30:07",
+        "place": "42",
+        "round": "F"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "The TEN",
+        "event": "10000m",
+        "time": "27:41.81",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "11th Asian Indoor Athletics Championships",
+        "event": "3000m sh",
+        "time": "DQ",
+        "place": "",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 21",
+        "meet": "Tata Steel World 25K Kolkata, Kolkata",
+        "event": "25 Kilometres Road",
+        "time": "1:12:06",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:42.34",
+        "place": "9",
+        "round": "H2"
+      },
+      {
+        "date": "SEP 14",
+        "meet": "World Athletics Championships",
+        "event": "10000m",
+        "time": "29:13.33",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "AUG 12",
+        "meet": "Gyulai István Memorial",
+        "event": "3000m",
+        "time": "7:34.49",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Sunset Tour, Jack Kemp Stadium",
+        "event": "1500m",
+        "time": "3:36.58",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Sunset Tour, Jack Kemp Stadium",
+        "event": "5000m",
+        "time": "13:18.00",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "26th Asian Athletics Championships",
+        "event": "5000m",
+        "time": "13:24.77",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "26th Asian Athletics Championships",
+        "event": "10000m",
+        "time": "28:38.63",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Doha Meeting",
+        "event": "5000m",
+        "time": "13:24.32",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "The TEN",
+        "event": "10000m",
+        "time": "27:00.22",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Boston University DMR Challenge",
+        "event": "5000m sh",
+        "time": "12:59.77",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "3000m sh",
+        "time": "7:38.26",
+        "place": "2",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

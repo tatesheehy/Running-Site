@@ -32,6 +32,10 @@
       "time": "3:39.27"
     },
     {
+      "event": "Mile",
+      "time": "3:54.78"
+    },
+    {
       "event": "3000m",
       "time": "7:38.04"
     },
@@ -52,57 +56,328 @@
       "time": "2:24.54"
     },
     {
+      "event": "Mile Short Track",
+      "time": "3:54.78"
+    },
+    {
       "event": "3000 Metres Short Track",
       "time": "7:38.04"
     },
     {
       "event": "5000 Metres Short Track",
       "time": "13:11.29"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:16.24"
     }
   ],
   "results": [
     {
       "date": "JUN 12",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:47.18",
-      "place": "6"
+      "place": "6.",
+      "round": "F1"
     },
     {
       "date": "MAY 14",
       "meet": "Big 12 Outdoor Track & Field Championship",
-      "event": "10000m",
+      "event": "10,000 m",
       "time": "30:43.87",
-      "place": "13"
+      "place": "13.",
+      "round": "F1"
     },
     {
       "date": "APR 18",
       "meet": "Oregon Team Invitational",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:39.27",
-      "place": "2"
+      "place": "2.",
+      "round": "F1"
     },
     {
       "date": "APR 3",
       "meet": "Stanford Invitational",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:23.86",
-      "place": "6"
+      "place": "6.",
+      "round": "F1"
     },
     {
       "date": "FEB 28",
       "meet": "Big 12 Indoor Track & Field Championship",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "DNS",
-      "place": ""
+      "place": "",
+      "round": "F1"
     },
     {
       "date": "FEB 27",
       "meet": "Big 12 Indoor Track & Field Championship",
-      "event": "5000 Metres Short Track",
+      "event": "5000 m sh",
       "time": "DNF",
-      "place": ""
+      "place": "",
+      "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [],
+    "2023": [
+      {
+        "date": "DEC 2",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "3000m sh",
+        "time": "7:38.04",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "NOV 18",
+        "meet": "NCAA D1 Cross Country Championships",
+        "event": "Cross Country",
+        "time": "29:11",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Kenyan Championships",
+        "event": "5000m",
+        "time": "13:54.18",
+        "place": "6",
+        "round": "H2"
+      },
+      {
+        "date": "APR 29",
+        "meet": "African U18 Championships",
+        "event": "1500m",
+        "time": "3:50.0",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:11.29",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "National Trials For World Athletics Under 20 Championships",
+        "event": "3000m",
+        "time": "7:51.03",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "National Trials For World Athletics Under 20 Championships",
+        "event": "5000m",
+        "time": "14:18.81",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "5000m",
+        "time": "13:57.42",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "5000m",
+        "time": "13:47.55",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Big 12 Outdoor Track & Field Championship",
+        "event": "1500m",
+        "time": "3:41.45",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "Big 12 Outdoor Track & Field Championship",
+        "event": "1500m",
+        "time": "3:40.46",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "APR 12",
+        "meet": "Bryan Clay Invitational",
+        "event": "5000m",
+        "time": "13:13.29",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:46.79",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:25.24",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Big 12 Indoor Championships",
+        "event": "1000m sh",
+        "time": "2:24.54",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Big 12 Indoor Championships",
+        "event": "1000m sh",
+        "time": "2:25.25",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Big 12 Indoor Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:29.41",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Arkansas Qualifier",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:19.74",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Razorback Invitational",
+        "event": "Mile sh",
+        "time": "3:55.52",
+        "place": "1",
+        "round": "F3"
+      }
+    ],
+    "2025": [
+      {
+        "date": "JUL 23",
+        "meet": "FISU World University Games",
+        "event": "10000m",
+        "time": "28:42.39",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Sunset Tour, Jack Kemp Stadium",
+        "event": "5000m",
+        "time": "12:59.82",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "5000m",
+        "time": "13:20.59",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "5000m",
+        "time": "13:32.05",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "APR 25",
+        "meet": "John McDonnell Invitational",
+        "event": "5000m",
+        "time": "13:35.30",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "3000m sh",
+        "time": "7:53.40",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "5000m sh",
+        "time": "13:11.34",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "Big 12 Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:45.79",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Arkansas Qualifier",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:16.24",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Tyson Invitational",
+        "event": "3000m sh",
+        "time": "7:47.17",
+        "place": "6",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Razorback Invitational",
+        "event": "Mile sh",
+        "time": "3:54.78",
+        "place": "4",
+        "round": "F7"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12",
+  "ncaaTitle": [
+    "5000m"
+  ]
 }

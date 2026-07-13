@@ -138,5 +138,688 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "AUG 3",
+        "meet": "African Championships",
+        "event": "3000m SC",
+        "time": "8:30.87",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "Monaco Herculis",
+        "event": "3000m SC",
+        "time": "8:22.68",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "IAAF World U20 Championships",
+        "event": "3000m SC",
+        "time": "8:26.16",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "IAAF World U20 Championships",
+        "event": "3000m SC",
+        "time": "8:39.15",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Carquefou Meeting National, Carquefou",
+        "event": "5000m",
+        "time": "13:13.87",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Assela Ethiopian U20 Championships, Assela",
+        "event": "3000m SC",
+        "time": "8:35.01",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 22",
+        "meet": "Ethiopian Championships, Addis Ababa",
+        "event": "3000m SC",
+        "time": "8:29.0",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "OCT 4",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "3000m SC",
+        "time": "8:05.21",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "OCT 1",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "3000m SC",
+        "time": "8:12.96",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "SEP 6",
+        "meet": "AG Memorial Van Damme",
+        "event": "3000m SC",
+        "time": "8:06.92",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "African Games",
+        "event": "3000m SC",
+        "time": "8:14.06",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Herculis",
+        "event": "3000m SC",
+        "time": "8:05.51",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "3000m SC",
+        "time": "8:06.01",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Golden Gala",
+        "event": "3000m SC",
+        "time": "8:06.83",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Seiko Golden Grand Prix",
+        "event": "3000m SC",
+        "time": "8:23.01",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Ethiopian Championships, Addis Ababa",
+        "event": "3000m SC",
+        "time": "8:29.1",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "AUG 19",
+        "meet": "Irena Szewińska Memorial",
+        "event": "2000m",
+        "time": "4:58.26",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "AUG 14",
+        "meet": "Herculis",
+        "event": "3000m SC",
+        "time": "8:35.85",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Villa de Madrid",
+        "event": "3000m sh",
+        "time": "7:39.96",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "3000m sh",
+        "time": "7:32.80",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "15. International PSD Bank Meeting",
+        "event": "3000m sh",
+        "time": "7:36.03",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "SEP 14",
+        "meet": "Memorial Borisa Hanžekovića",
+        "event": "3000m SC",
+        "time": "8:12.01",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 9",
+        "meet": "Weltklasse Zürich",
+        "event": "3000m SC",
+        "time": "8:21.11",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Meeting de Paris",
+        "event": "3000m SC",
+        "time": "8:13.31",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "Athletissima Lausanne",
+        "event": "3000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "The XXXII Olympic Games",
+        "event": "5000m",
+        "time": "13:41.13",
+        "place": "9",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "The XXXII Olympic Games",
+        "event": "3000m SC",
+        "time": "8:14.97",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "The XXXII Olympic Games",
+        "event": "3000m SC",
+        "time": "8:12.55",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Ethiopian Trials",
+        "event": "5000m",
+        "time": "12:53.28",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "60th Ostrava Golden Spike",
+        "event": "3000m SC",
+        "time": "8:09.47",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 11",
+        "meet": "Ethiopian Championships, Addis Ababa",
+        "event": "5000m",
+        "time": "13:35.4",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Meeting de l'Eure",
+        "event": "1500m sh",
+        "time": "3:35.54",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "3000m sh",
+        "time": "7:24.98",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 16",
+        "meet": "Olympic candidate trial competition, Addis Ababa",
+        "event": "3000m SC",
+        "time": "8:42.3",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "SEP 11",
+        "meet": "Memorial Borisa Hanžekovića",
+        "event": "3000m",
+        "time": "7:39.31",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "Weltklasse Zürich",
+        "event": "3000m SC",
+        "time": "8:08.56",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "Athletissima Lausanne",
+        "event": "3000m SC",
+        "time": "8:16.41",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUL 18",
+        "meet": "World Athletics Championships",
+        "event": "3000m SC",
+        "time": "8:28.68",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "World Athletics Championships",
+        "event": "3000m SC",
+        "time": "8:17.49",
+        "place": "4",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Oslo Bislett Games",
+        "event": "5000m",
+        "time": "13:04.48",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Golden Gala Pietro Mennea",
+        "event": "3000m SC",
+        "time": "8:06.74",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Prefontaine Classic",
+        "event": "5000m",
+        "time": "13:11.68",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Ooredoo Doha Meeting",
+        "event": "3000m SC",
+        "time": "8:26.68",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "APR 2",
+        "meet": "Ethiopian Championships, Hawassa",
+        "event": "5000m",
+        "time": "13:45.2",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "ORLEN Copernicus Cup",
+        "event": "3000m sh",
+        "time": "7:32.50",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "3000m sh",
+        "time": "7:30.88",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JAN 9",
+        "meet": "Elgoibar Juan Muguerza Cross-Country, Elgoibar",
+        "event": "Cross Country",
+        "time": "34:49",
+        "place": "5",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "NOV 18",
+        "meet": "Urban Trail de Lille",
+        "event": "10K",
+        "time": "28:30",
+        "place": "13",
+        "round": "F"
+      },
+      {
+        "date": "SEP 17",
+        "meet": "Prefontaine Classic",
+        "event": "3000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "Prefontaine Classic",
+        "event": "3000m SC",
+        "time": "8:14.96",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "World Athletics Championships",
+        "event": "3000m SC",
+        "time": "8:21.03",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "World Athletics Championships",
+        "event": "3000m SC",
+        "time": "8:19.99",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "3000m SC",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "BAUHAUS-Galan",
+        "event": "3000m SC",
+        "time": "8:12.27",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "3000m SC",
+        "time": "8:05.15",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "Diamond League Meeting",
+        "event": "3000m",
+        "time": "7:36.81",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "44th World Athletics Cross Country Championships, Bathurst",
+        "event": "Cross Country Relay",
+        "time": "23:21",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "NOV 16",
+        "meet": "Urban Trail de Lille",
+        "event": "10K",
+        "time": "27:33",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "SEP 13",
+        "meet": "Memorial van Damme",
+        "event": "3000m SC",
+        "time": "8:14.66",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "AUG 25",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "3000m SC",
+        "time": "8:21.26",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "3000m SC",
+        "time": "8:12.33",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "The XXXIII Olympic Games",
+        "event": "3000m SC",
+        "time": "8:18.25",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "BAUHAUS-Galan",
+        "event": "3000m SC",
+        "time": "8:10.73",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Meeting International Mohammed VI d’Athlétisme de Rabat/Marrakech",
+        "event": "3000m SC",
+        "time": "8:09.78",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 10",
+        "meet": "Seashore Group Doha Meeting",
+        "event": "3000m SC",
+        "time": "8:09.69",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAR 22",
+        "meet": "African Games",
+        "event": "5000m",
+        "time": "13:44.45",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "World Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:44.77",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "3000m sh",
+        "time": "7:35.04",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "ORLEN Copernicus Cup",
+        "event": "3000m sh",
+        "time": "7:26.73",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Astana Indoor Meet for Amin Tuyakov Prizes",
+        "event": "3000m sh",
+        "time": "7:34.36",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 13",
+        "meet": "Al Sharqiyah International Race",
+        "event": "5K",
+        "time": "13:16",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "SEP 15",
+        "meet": "World Athletics Championships",
+        "event": "3000m SC",
+        "time": "8:41.23",
+        "place": "14",
+        "round": "F"
+      },
+      {
+        "date": "SEP 13",
+        "meet": "World Athletics Championships",
+        "event": "3000m SC",
+        "time": "8:30.14",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Memorial van Damme",
+        "event": "3000m SC",
+        "time": "8:09.62",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "3000m SC",
+        "time": "8:07.57",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Paris",
+        "event": "3000m SC",
+        "time": "8:12.58",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "BAUHAUS-Galan",
+        "event": "3000m SC",
+        "time": "8:15.57",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Doha Meeting",
+        "event": "5000m",
+        "time": "13:40.28",
+        "place": "13",
+        "round": "F"
+      },
+      {
+        "date": "MAR 22",
+        "meet": "World Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:50.07",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Meeting Indoor de Lyon",
+        "event": "1500m sh",
+        "time": "3:37.43",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "3000m sh",
+        "time": "7:31.39",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "3000m sh",
+        "time": "DNF",
+        "place": "",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 12",
+        "meet": "10K Valencia Ibercaja by Kiprun, Valencia",
+        "event": "10K",
+        "time": "27:36",
+        "place": "12",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

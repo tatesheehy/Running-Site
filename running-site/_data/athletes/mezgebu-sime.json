@@ -68,6 +68,14 @@
     {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
+      "event": "3000 m",
+      "time": "7:42.86",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
       "event": "2 Mi",
       "time": "8:14.12",
       "place": "13.",
@@ -114,5 +122,163 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [
+      {
+        "date": "APR 2",
+        "meet": "Ethiopian Championships, Hawassa",
+        "event": "5000m",
+        "time": "14:06.5",
+        "place": "17",
+        "round": "F"
+      }
+    ],
+    "2023": [],
+    "2024": [
+      {
+        "date": "DEC 14",
+        "meet": "Al Sharqiyah International 5KM, Al Khobar",
+        "event": "5K",
+        "time": "13:01",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "NOV 17",
+        "meet": "92nd Cinque Mulini, San Vittore Olona",
+        "event": "Cross Country",
+        "time": "27:51",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "SEP 5",
+        "meet": "Weltklasse Zürich",
+        "event": "3000m",
+        "time": "8:05.00",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "African Athletics Championships",
+        "event": "5000m",
+        "time": "13:48.29",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "Ethiopian Trials by Nerja",
+        "event": "10000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "BAUHAUS-Galan",
+        "event": "3000m",
+        "time": "7:39.40",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Trond Mohn Games",
+        "event": "3000m",
+        "time": "7:39.81",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "Meeting National de Carquefou",
+        "event": "5000m",
+        "time": "13:03.19",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "45th World Athletics Cross Country Championships",
+        "event": "Cross Country U20 Race",
+        "time": "22:41",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "3000m sh",
+        "time": "7:40.81",
+        "place": "5",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 21",
+        "meet": "3ème Corrida de Houilles, Houilles",
+        "event": "10K",
+        "time": "27:55",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "DEC 13",
+        "meet": "Al Sharqiyah International Race",
+        "event": "5K",
+        "time": "13:01",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Athletissima Lausanne",
+        "event": "5000m",
+        "time": "13:14.92",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Prefontaine Classic",
+        "event": "10000m",
+        "time": "27:04.17",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Paris",
+        "event": "5000m",
+        "time": "13:04.51",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Oslo Bislett Games",
+        "event": "5000m",
+        "time": "12:49.80",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Yangtze River Delta Athletics Diamond Gala",
+        "event": "5000m",
+        "time": "12:51.86",
+        "place": "3",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

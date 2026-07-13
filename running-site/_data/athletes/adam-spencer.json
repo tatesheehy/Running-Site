@@ -31,6 +31,10 @@
       "time": "7:40.38"
     },
     {
+      "event": "800 Metres Short Track",
+      "time": "1:50.09"
+    },
+    {
       "event": "1500 Metres Short Track",
       "time": "3:35.23"
     },
@@ -69,58 +73,66 @@
     {
       "date": "APR 10",
       "meet": "Australian Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:34.23",
-      "place": "3"
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "APR 9",
       "meet": "Australian Championships",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:40.33",
-      "place": "1"
+      "place": "1.",
+      "round": "H4"
     },
     {
       "date": "MAR 28",
       "meet": "Maurie Plant Meet",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:37.51",
-      "place": "2"
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "MAR 22",
       "meet": "World Athletics Indoor Championships",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:40.26",
-      "place": "3"
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "MAR 20",
       "meet": "World Athletics Indoor Championships",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:40.79",
-      "place": "2"
+      "place": "2.",
+      "round": "H1"
     },
     {
       "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:35.23",
-      "place": "1"
+      "place": "1.",
+      "round": "F2"
     },
     {
       "date": "FEB 8",
       "meet": "Meeting Metz Moselle Athlélor Crédit Mutuel",
-      "event": "1500 Metres Short Track",
+      "event": "1500 m sh",
       "time": "3:35.89",
-      "place": "2"
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "FEB 6",
       "meet": "World Indoor Tour Gold Madrid 2026",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:59.14",
-      "place": "10"
+      "place": "10.",
+      "round": "F"
     }
   ],
   "dob": "2001-10-04",

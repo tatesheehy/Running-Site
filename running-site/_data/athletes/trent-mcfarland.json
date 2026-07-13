@@ -44,6 +44,14 @@
     {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
+      "event": "1500 m",
+      "time": "3:37.26",
+      "place": "",
+      "round": "F2"
+    },
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
       "event": "Mile",
       "time": "3:52.21",
       "place": "6.",
@@ -228,7 +236,7 @@
   ],
   "dob": "2005-06-01",
   "college": "Michigan",
-  "lastHistorySynced": "2026-07-11",
+  "lastHistorySynced": "2026-07-12",
   "event": "MIDDLE DISTANCE",
   "id": "trent-mcfarland",
   "resultsHistory": {

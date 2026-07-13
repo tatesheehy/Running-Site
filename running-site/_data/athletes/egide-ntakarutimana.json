@@ -114,5 +114,525 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [
+      {
+        "date": "SEP 3",
+        "meet": "Memorial Franco Florio",
+        "event": "5000m",
+        "time": "13:27.51",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 31",
+        "meet": "Palio Città della Quercia",
+        "event": "3000m",
+        "time": "7:43.94",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "Scalata al Castello, Arezzo",
+        "event": "10K",
+        "time": "28:25",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "Memorial Davide Boroni",
+        "event": "3000m",
+        "time": "8:01.56",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "Meeting Internazionale su Pista Regione FVG",
+        "event": "5000m",
+        "time": "14:10.34",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Telesia International Trophy 10k, Telese Terme",
+        "event": "10K",
+        "time": "30:25",
+        "place": "7",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "NOV 27",
+        "meet": "Trofeo del Mare, Bagheria",
+        "event": "10K",
+        "time": "29:07",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 25",
+        "meet": "Brasov Running Festival 10km, Brasov",
+        "event": "10K",
+        "time": "27:45",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "SEP 18",
+        "meet": "Italian Club Ch.",
+        "event": "5000m",
+        "time": "14:03.06",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 17",
+        "meet": "Italian Club Ch.",
+        "event": "1500m",
+        "time": "3:42.42",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 10",
+        "meet": "Centenario Emil Zatopek",
+        "event": "5000m",
+        "time": "13:14.64",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 30",
+        "meet": "58. Palio Città della Quercia",
+        "event": "5000m",
+        "time": "13:08.43",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "XXV Meeting Internazionale Città di Nembro",
+        "event": "3000m",
+        "time": "7:44.64",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "World Athletics Championships",
+        "event": "10000m",
+        "time": "28:24.07",
+        "place": "17",
+        "round": "F"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "XXXI Meeting Citta' Di Conegliano",
+        "event": "5000m",
+        "time": "13:26.81",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "Ethiopian Trials Men",
+        "event": "10000m",
+        "time": "27:24.59",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Castiglione International Meeting",
+        "event": "5000m",
+        "time": "13:35.76",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "APR 23",
+        "meet": "Walk and Middle Distance Night",
+        "event": "5000m",
+        "time": "13:40.51",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "44° Cross della Vallagarina, Rovereto",
+        "event": "Cross Country",
+        "time": "27:17",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "90th Cinque Mulini, San Vittore Olona",
+        "event": "Cross Country",
+        "time": "29:56",
+        "place": "12",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "NOV 11",
+        "meet": "Cardiff Cross Challenge",
+        "event": "Cross Country",
+        "time": "29:28",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "OCT 15",
+        "meet": "Telesia 21k International Half Marathon, Telese Terme",
+        "event": "Half Marathon",
+        "time": "1:02:32",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 1",
+        "meet": "World Athletics Road Running Championships, Riga",
+        "event": "5K",
+        "time": "13:35",
+        "place": "13",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 6",
+        "meet": "59. Palio Citta' della Quercia",
+        "event": "3000m",
+        "time": "7:40.26",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:37.53",
+        "place": "10",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "BAUHAUS-Galan",
+        "event": "3000m",
+        "time": "7:40.52",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Athletissima Lausanne",
+        "event": "5000m",
+        "time": "13:27.75",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Track Night Vienna",
+        "event": "5000m",
+        "time": "13:03.61",
+        "place": "2",
+        "round": "F8"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Fast 5000, Montesson",
+        "event": "5000m",
+        "time": "13:06.76",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "Night of the 10",
+        "event": "10000m",
+        "time": "27:37.09",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 16",
+        "meet": "Campionati Regionale 10.000m",
+        "event": "10000m",
+        "time": "28:01.39",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "Italian Cross Country Championships, Gubbio",
+        "event": "Cross Country",
+        "time": "30:16",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "44th World Athletics Cross Country Championships, Bathurst",
+        "event": "Cross Country Senior Race",
+        "time": "32:42",
+        "place": "57",
+        "round": "F"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "45° Cross della Vallagarina, Rovereto",
+        "event": "Cross Country",
+        "time": "27:27",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 15",
+        "meet": "10K Valencia Ibercaja, Valencia",
+        "event": "10K",
+        "time": "28:00",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "JAN 6",
+        "meet": "66° Campaccio-International Cross Country, San Giorgio su Legnano",
+        "event": "Cross Country",
+        "time": "29:08",
+        "place": "5",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "NOV 17",
+        "meet": "92nd Cinque Mulini, San Vittore Olona",
+        "event": "Cross Country",
+        "time": "28:13",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "NOV 10",
+        "meet": "XXX Campo a Través Internacional de Soria",
+        "event": "Cross Country",
+        "time": "23:39",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "OCT 27",
+        "meet": "Cross Internacional de Atapuerca",
+        "event": "Cross Country",
+        "time": "25:48",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "OCT 20",
+        "meet": "70º Cross Internacional Zornotza, Amorebieta-Etxano",
+        "event": "Cross Country",
+        "time": "27:09",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "OCT 6",
+        "meet": "Arezzo 10, Arezzo",
+        "event": "10K",
+        "time": "28:03",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 3",
+        "meet": "60° Palio Città della Quercia",
+        "event": "3000m",
+        "time": "7:37.33",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "14:11.29",
+        "place": "10",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "FAST5000",
+        "event": "5000m",
+        "time": "13:00.74",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Track Night Vienna",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Night of Athletics",
+        "event": "5000m",
+        "time": "13:12.07",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Atletica 2000 Meeting",
+        "event": "5000m",
+        "time": "13:04.08",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "IFAM Outdoor",
+        "event": "5000m",
+        "time": "13:11.46",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Night of the 10",
+        "event": "10000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JAN 6",
+        "meet": "67° Campaccio-International Cross Country, San Giorgio su Legnano",
+        "event": "Cross Country",
+        "time": "29:53",
+        "place": "4",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "NOV 9",
+        "meet": "XLIII Cross Internacional de Itálica",
+        "event": "Cross Country",
+        "time": "26:35",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "NOV 2",
+        "meet": "Italian 10km Road Running Championships, Prato",
+        "event": "10K",
+        "time": "28:46",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "OCT 19",
+        "meet": "XXIV Mezza Maratona di Cremona, Cremona",
+        "event": "Half Marathon",
+        "time": "1:01:32",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 14",
+        "meet": "World Athletics Championships",
+        "event": "10000m",
+        "time": "29:12.81",
+        "place": "15",
+        "round": "F"
+      },
+      {
+        "date": "AUG 27",
+        "meet": "Scalata Al Castello, Arezzo",
+        "event": "10K",
+        "time": "28:31",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 12",
+        "meet": "Gyulai István Memorial",
+        "event": "3000m",
+        "time": "7:35.16",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "IFAM Oordegem",
+        "event": "5000m",
+        "time": "13:05.71",
+        "place": "15",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "Track Night Vienna",
+        "event": "5000m",
+        "time": "13:17.76",
+        "place": "1",
+        "round": "F10"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "61° Palio Città della Quercia",
+        "event": "5000m",
+        "time": "13:18.77",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Yangtze River Delta Athletics Diamond Gala",
+        "event": "5000m",
+        "time": "13:18.49",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "APR 6",
+        "meet": "Regional Senior 10",
+        "event": "10000m",
+        "time": "28:08.79",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Misano GP Run, Misano Adriatico",
+        "event": "10K",
+        "time": "28:31",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 6",
+        "meet": "68° Campaccio-International Cross Country",
+        "event": "Cross Country",
+        "time": "33:07",
+        "place": "10",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

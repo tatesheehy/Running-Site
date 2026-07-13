@@ -106,5 +106,406 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [
+      {
+        "date": "NOV 15",
+        "meet": "281st Nittadai(NSSU) Distance Meet",
+        "event": "5000m",
+        "time": "13:51.77",
+        "place": "19",
+        "round": "F19"
+      }
+    ],
+    "2021": [
+      {
+        "date": "DEC 4",
+        "meet": "293th Nippon Sport Science University Long Distance Competition",
+        "event": "10000m",
+        "time": "29:47.72",
+        "place": "4",
+        "round": "F5"
+      },
+      {
+        "date": "NOV 14",
+        "meet": "292nd Nippon Sport Science University Long Distance Competition",
+        "event": "5000m",
+        "time": "13:35.16",
+        "place": "11",
+        "round": "F30"
+      },
+      {
+        "date": "SEP 23",
+        "meet": "Two Laps Middle Distance Circuit",
+        "event": "5000m",
+        "time": "13:58.28",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "SEP 23",
+        "meet": "Two Laps Middle Distance Circuit",
+        "event": "5000m",
+        "time": "15:08.08",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "Japan High School Championships",
+        "event": "5000m",
+        "time": "14:52.32",
+        "place": "15",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Japan High School Championships",
+        "event": "1500m",
+        "time": "3:47.77",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUL 28",
+        "meet": "Japan High School Championships",
+        "event": "1500m",
+        "time": "3:53.30",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "Japan U20 Championships",
+        "event": "1500m",
+        "time": "4:06.79",
+        "place": "6",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "76th Tohoku High School Athletic Meet",
+        "event": "5000m",
+        "time": "14:14.56",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "76th Tohoku High School Athletic Meet",
+        "event": "1500m",
+        "time": "3:57.41",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "76th Tohoku High School Athletic Meet",
+        "event": "1500m",
+        "time": "3:50.87",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 25",
+        "meet": "2nd Chuo University Meeting",
+        "event": "5000m",
+        "time": "13:46.95",
+        "place": "1",
+        "round": "F2"
+      }
+    ],
+    "2022": [
+      {
+        "date": "OCT 15",
+        "meet": "Hakone Ekiden Qualification Race, Tachikawa",
+        "event": "Half Marathon",
+        "time": "1:07:23",
+        "place": "289",
+        "round": "F"
+      },
+      {
+        "date": "SEP 11",
+        "meet": "91st Japan Inter-University Athletics Championships",
+        "event": "5000m",
+        "time": "14:30.32",
+        "place": "19",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "106th Japan Championships",
+        "event": "5000m",
+        "time": "14:05.47",
+        "place": "25",
+        "round": "F"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "101st Kanto Inter-University Athletics Championships",
+        "event": "5000m",
+        "time": "14:13.06",
+        "place": "20",
+        "round": "F"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "101st Kanto Inter-University Athletics Championships",
+        "event": "5000m",
+        "time": "14:11.66",
+        "place": "4",
+        "round": "H2"
+      }
+    ],
+    "2023": [
+      {
+        "date": "NOV 19",
+        "meet": "Ageo City Half Marathon, Ageo",
+        "event": "Half Marathon",
+        "time": "1:01:16",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "SEP 2",
+        "meet": "Birell 10KM Race Prague, Praha",
+        "event": "10K",
+        "time": "29:13",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Hokuren Distance Challenge",
+        "event": "5000m",
+        "time": "13:35.35",
+        "place": "12",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "102nd Kanto Inter-University Track & Field Championships",
+        "event": "5000m",
+        "time": "13:47.98",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 8",
+        "meet": "31st Kanakuri Memorial Middle and Long Distance Invitational Meet",
+        "event": "5000m",
+        "time": "13:34.95",
+        "place": "10",
+        "round": "F5"
+      },
+      {
+        "date": "MAR 25",
+        "meet": "Tokorozawa Games",
+        "event": "3000m",
+        "time": "7:57.68",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "HKAA Athletics Series Meeting",
+        "event": "5000m",
+        "time": "13:59.58",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 11",
+        "meet": "HKAA Athletics Series Meeting",
+        "event": "1500m",
+        "time": "3:46.40",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "Japanese Cross Country Championships",
+        "event": "Cross Country",
+        "time": "30:05",
+        "place": "11",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "NOV 9",
+        "meet": "12th NITTAIDAI Challenge Games",
+        "event": "10000m",
+        "time": "27:52.37",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "SEP 29",
+        "meet": "The 5th Waseda University track and field meet",
+        "event": "5K",
+        "time": "13:43",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "Hokuren Distance Challenge",
+        "event": "5000m",
+        "time": "14:05.95",
+        "place": "18",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "Hokuren Distance Challenge",
+        "event": "5000m",
+        "time": "13:54.66",
+        "place": "15",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Selection Meeting for 56th All Japan Inter-University Ekiden",
+        "event": "10000m",
+        "time": "28:36.15",
+        "place": "4",
+        "round": "F4"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "The 9th NITTAIDAI Challenge Games",
+        "event": "5000m",
+        "time": "13:30.19",
+        "place": "9",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "The 103th Kanto Inter-University Track＆Field Championships",
+        "event": "5000m",
+        "time": "13:50.12",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Japan 10",
+        "event": "10000m",
+        "time": "28:55.62",
+        "place": "21",
+        "round": "F"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "45th World Athletics Cross Country Championships",
+        "event": "Cross Country Senior Race",
+        "time": "30:49",
+        "place": "65",
+        "round": "F"
+      },
+      {
+        "date": "MAR 17",
+        "meet": "United Airlines NYC Half",
+        "event": "Half Marathon",
+        "time": "1:04:36",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "Japanese Cross Country Championships",
+        "event": "Cross Country",
+        "time": "29:16",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "JUL 12",
+        "meet": "HOKUREN Distance Challenge 2025 in Chitose",
+        "event": "5000m",
+        "time": "13:16.56",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "Japanese Championships",
+        "event": "1500m",
+        "time": "3:38.16",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Japanese Championships",
+        "event": "1500m",
+        "time": "3:41.58",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "94th Japan Inter-University Athletics Championships",
+        "event": "5000m",
+        "time": "13:40.06",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "94th Japan Inter-University Athletics Championships",
+        "event": "1500m",
+        "time": "3:40.46",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "94th Japan Inter-University Athletics Championships",
+        "event": "1500m",
+        "time": "3:44.21",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "The 104th Kanto Inter-University Track＆Field Championships",
+        "event": "5000m",
+        "time": "14:09.40",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "The 104th Kanto Inter-University Track＆Field Championships",
+        "event": "10000m",
+        "time": "28:37.82",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 25",
+        "meet": "All Japan University Track & Field Challenge",
+        "event": "10000m",
+        "time": "29:52.00",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Maurie Plant Meet",
+        "event": "5000m",
+        "time": "14:06.17",
+        "place": "17",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

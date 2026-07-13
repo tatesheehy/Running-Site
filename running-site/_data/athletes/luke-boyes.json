@@ -1,0 +1,779 @@
+{
+  "id": "luke-boyes",
+  "name": "Luke Boyes",
+  "flag": "AU",
+  "country": "Australia",
+  "waUrl": "https://worldathletics.org/athletes/australia/luke-boyes-14935280",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "22",
+  "dob": "2003-11-05",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "400m",
+      "time": "47.57"
+    },
+    {
+      "event": "800m",
+      "time": "1:44.16"
+    },
+    {
+      "event": "1500m",
+      "time": "3:49.82"
+    },
+    {
+      "event": "Mile",
+      "time": "4:11.50"
+    },
+    {
+      "event": "2000m",
+      "time": "5:19.75"
+    },
+    {
+      "event": "3000m",
+      "time": "8:11.13"
+    },
+    {
+      "event": "Long Jump",
+      "time": "6.26"
+    },
+    {
+      "event": "Long Jump",
+      "time": "6.55"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:13.50"
+    },
+    {
+      "event": "4x400 Metres Relay Mixed",
+      "time": "3:35.05"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 11",
+      "meet": "Moore-Guldensporenmeeting",
+      "event": "800 m",
+      "time": "1:47.40",
+      "place": "4.",
+      "round": "F2"
+    },
+    {
+      "date": "MAY 21",
+      "meet": "Oceania Athletics Championships",
+      "event": "800 m",
+      "time": "1:46.83",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Wanda Diamond League",
+      "event": "800 m",
+      "time": "1:44.16",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "APR 12",
+      "meet": "Australian Championships",
+      "event": "800 m",
+      "time": "1:45.73",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "APR 11",
+      "meet": "Australian Championships",
+      "event": "800 m",
+      "time": "1:48.31",
+      "place": "2.",
+      "round": "H3"
+    },
+    {
+      "date": "MAR 28",
+      "meet": "Maurie Plant Meet",
+      "event": "800 m",
+      "time": "1:45.21",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 14",
+      "meet": "Adelaide Invitational",
+      "event": "800 m",
+      "time": "1:44.38",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 8",
+      "meet": "High Velocity - Campbelltown",
+      "event": "400 m",
+      "time": "47.61",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Perth Track Classic",
+      "event": "800 m",
+      "time": "1:45.16",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Capital Athletics Open & U20 Championships",
+      "event": "800 m",
+      "time": "1:47.60",
+      "place": "1.",
+      "round": "F1"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [
+      {
+        "date": "DEC 5",
+        "meet": "NSW All-Schools Championships",
+        "event": "400m",
+        "time": "51.29",
+        "place": "4",
+        "round": "H2"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "NSW Championships",
+        "event": "800m",
+        "time": "1:58.49",
+        "place": "7",
+        "round": "H4"
+      }
+    ],
+    "2021": [
+      {
+        "date": "DEC 18",
+        "meet": "NSW Milers Series #1",
+        "event": "800m",
+        "time": "1:51.88",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "DEC 12",
+        "meet": "NSW All-Schools Championships",
+        "event": "400m",
+        "time": "49.03",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "DEC 12",
+        "meet": "NSW All-Schools Championships",
+        "event": "Long Jump",
+        "time": "6.26",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "DEC 12",
+        "meet": "NSW All-Schools Championships",
+        "event": "Long Jump",
+        "time": "6.55",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "DEC 10",
+        "meet": "NSW All-Schools Championships",
+        "event": "800m",
+        "time": "1:55.33",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "NSW Open Championships",
+        "event": "800m",
+        "time": "1:57.56",
+        "place": "6",
+        "round": "H3"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "Bankstown Milers",
+        "event": "800m",
+        "time": "1:58.15",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Night of Sprints",
+        "event": "400m",
+        "time": "50.99",
+        "place": "3",
+        "round": "F1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 22",
+        "meet": "NSW Milers Series #3",
+        "event": "1500m",
+        "time": "3:49.82",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "DEC 17",
+        "meet": "Treloar Shield Final",
+        "event": "1500m",
+        "time": "3:53.21",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "DEC 3",
+        "meet": "Albie Thomas Mile",
+        "event": "Mile",
+        "time": "4:11.50",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "NOV 24",
+        "meet": "NSW Milers Series #2",
+        "event": "1500m",
+        "time": "3:51.60",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "NOV 5",
+        "meet": "Treloar Shield Round 4",
+        "event": "1500m",
+        "time": "3:56.51",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 29",
+        "meet": "NSW 3000m Championships",
+        "event": "3000m",
+        "time": "8:38.79",
+        "place": "8",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:50.26",
+        "place": "8",
+        "round": "SF3"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:50.49",
+        "place": "3",
+        "round": "H7"
+      },
+      {
+        "date": "APR 21",
+        "meet": "UniSport Nationals Athletics",
+        "event": "800m",
+        "time": "1:53.18",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 21",
+        "meet": "UniSport Nationals Athletics",
+        "event": "4x400 Metres Relay",
+        "time": "3:18.12",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "APR 20",
+        "meet": "UniSport Nationals Athletics",
+        "event": "800m",
+        "time": "1:54.69",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "APR 19",
+        "meet": "UniSport Nationals Athletics",
+        "event": "1500m",
+        "time": "3:57.28",
+        "place": "9",
+        "round": "F2"
+      },
+      {
+        "date": "APR 19",
+        "meet": "UniSport Nationals Athletics",
+        "event": "4x400 Metres Relay Mixed",
+        "time": "3:35.05",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Australian U20 Championships",
+        "event": "800m",
+        "time": "1:50.12",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Australian U20 Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:13.50",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 28",
+        "meet": "Australian U20 Championships",
+        "event": "800m",
+        "time": "1:50.89",
+        "place": "2",
+        "round": "H3"
+      },
+      {
+        "date": "MAR 26",
+        "meet": "Australian U20 Championships",
+        "event": "400m",
+        "time": "49.15",
+        "place": "4",
+        "round": "H3"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "NSW U20 Championships",
+        "event": "800m",
+        "time": "1:50.62",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "NSW U20 Championships",
+        "event": "400m",
+        "time": "48.99",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "NSW U20 Championships",
+        "event": "400m",
+        "time": "48.97",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "AACT Championships",
+        "event": "800m",
+        "time": "1:52.72",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JAN 15",
+        "meet": "Illawarra Track Challenge",
+        "event": "400m",
+        "time": "49.72",
+        "place": "3",
+        "round": "F1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "AUG 5",
+        "meet": "FISU World University Games",
+        "event": "800m",
+        "time": "1:48.79",
+        "place": "4",
+        "round": "SF2"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "FISU World University Games",
+        "event": "800m",
+        "time": "1:51.73",
+        "place": "2",
+        "round": "H3"
+      },
+      {
+        "date": "APR 21",
+        "meet": "UniSport Nationals Athletics",
+        "event": "800m",
+        "time": "1:50.86",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 21",
+        "meet": "UniSport Nationals Athletics",
+        "event": "4x400 Metres Relay",
+        "time": "3:16.85",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "APR 20",
+        "meet": "UniSport Nationals Athletics",
+        "event": "800m",
+        "time": "1:52.57",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "APR 19",
+        "meet": "UniSport Nationals Athletics",
+        "event": "4x400 Metres Relay Mixed",
+        "time": "3:39.53",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 2",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:47.90",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 1",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:49.32",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "MAR 31",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:51.60",
+        "place": "1",
+        "round": "H4"
+      },
+      {
+        "date": "MAR 11",
+        "meet": "Sydney Track Classic",
+        "event": "800m",
+        "time": "1:46.85",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "NSW Open Track & Field Championships",
+        "event": "800m",
+        "time": "1:49.45",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 4",
+        "meet": "NSW Open Track & Field Championships",
+        "event": "800m",
+        "time": "1:50.53",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Maurie Plant Meet – Melbourne",
+        "event": "800m",
+        "time": "1:47.60",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Adelaide Track Classic",
+        "event": "800m",
+        "time": "1:50.26",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "ACT U20 & Open Championships",
+        "event": "400m",
+        "time": "47.57",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "ACT U20 & Open Championships",
+        "event": "800m",
+        "time": "1:46.69",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 14",
+        "meet": "Illawarra Track Challenge",
+        "event": "400m",
+        "time": "48.98",
+        "place": "1",
+        "round": "F2"
+      }
+    ],
+    "2024": [
+      {
+        "date": "NOV 2",
+        "meet": "NSW 3000m Championships",
+        "event": "3000m",
+        "time": "8:11.13",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "OCT 17",
+        "meet": "NSW Milers Series",
+        "event": "2000m",
+        "time": "5:19.75",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "Meeting Sport e Solidarietà Lignano",
+        "event": "800m",
+        "time": "1:47.50",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Folksam Grand Prix Karlstad",
+        "event": "800m",
+        "time": "1:47.72",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "7è soirée de Saint Maur",
+        "event": "800m",
+        "time": "1:45.40",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Meeting Guadalajara Atletismo Puma",
+        "event": "800m",
+        "time": "1:45.13",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "Meeting Madrid 2024",
+        "event": "800m",
+        "time": "1:45.53",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Folksam GP Sollentuna",
+        "event": "800m",
+        "time": "1:46.09",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "Oceania Athletics Championships",
+        "event": "800m",
+        "time": "1:46.39",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Oceania Athletics Championships",
+        "event": "800m",
+        "time": "1:52.96",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "APR 14",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:44.73",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:48.60",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "APR 12",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:50.19",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "MAR 28",
+        "meet": "Albie Thomas Mile",
+        "event": "800m",
+        "time": "1:45.45",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 23",
+        "meet": "Sydney Track Classic",
+        "event": "800m",
+        "time": "1:45.86",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Canberra Track Classic",
+        "event": "800m",
+        "time": "1:46.15",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "International Track Meet",
+        "event": "800m",
+        "time": "1:46.74",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Melbourne Invitational",
+        "event": "800m",
+        "time": "1:46.43",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Adelaide Invitational",
+        "event": "800m",
+        "time": "1:46.66",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "NSW Milers Series",
+        "event": "800m",
+        "time": "1:49.34",
+        "place": "1",
+        "round": "F5"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.54",
+        "place": "6",
+        "round": "H6"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:44.50",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 12",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:47.73",
+        "place": "2",
+        "round": "SF2"
+      },
+      {
+        "date": "APR 11",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:49.42",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Melbourne Invitational",
+        "event": "800m",
+        "time": "1:46.73",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "Sydney Track Classic",
+        "event": "800m",
+        "time": "1:45.56",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "NSW Milers Series",
+        "event": "800m",
+        "time": "1:47.34",
+        "place": "1",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
+}

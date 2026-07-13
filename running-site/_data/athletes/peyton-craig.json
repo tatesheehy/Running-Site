@@ -1,0 +1,631 @@
+{
+  "id": "peyton-craig",
+  "name": "Peyton Craig",
+  "flag": "AU",
+  "country": "Australia",
+  "waUrl": "https://worldathletics.org/athletes/australia/peyton-craig-14952691",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "21",
+  "dob": "2005-03-28",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:44.01"
+    },
+    {
+      "event": "1500m",
+      "time": "3:41.13"
+    },
+    {
+      "event": "Mile",
+      "time": "4:12.05"
+    },
+    {
+      "event": "3000m",
+      "time": "8:12.63"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "15:04"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "800 m",
+      "time": "1:44.95",
+      "place": "6.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 4",
+      "meet": "Golden Gala Pietro Mennea",
+      "event": "800 m",
+      "time": "1:44.01",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 30",
+      "meet": "19° Triveneto Meeting Internazionale",
+      "event": "800 m",
+      "time": "1:45.07",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "800 m",
+      "time": "1:44.66",
+      "place": "1.",
+      "round": "F2"
+    },
+    {
+      "date": "APR 11",
+      "meet": "Australian Championships",
+      "event": "800 m",
+      "time": "1:49.94",
+      "place": "3.",
+      "round": "H2"
+    },
+    {
+      "date": "MAR 28",
+      "meet": "Maurie Plant Meet",
+      "event": "800 m",
+      "time": "1:46.62",
+      "place": "6.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Hobart Track Classic",
+      "event": "1500 m",
+      "time": "3:44.57",
+      "place": "1.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [
+      {
+        "date": "NOV 14",
+        "meet": "Jai Taurima Shield",
+        "event": "1500m",
+        "time": "3:57.32",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "OCT 18",
+        "meet": "Queensland Athletics Boys All Schools Championships",
+        "event": "1500m",
+        "time": "4:03.30",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 17",
+        "meet": "Queensland Athletics Boys All Schools Championships",
+        "event": "800m",
+        "time": "1:55.34",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "OCT 17",
+        "meet": "Queensland Athletics Boys All Schools Championships",
+        "event": "3000m",
+        "time": "8:57.39",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 12",
+        "meet": "Track is Back Series #1",
+        "event": "1500m",
+        "time": "4:03.60",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 11",
+        "meet": "USCAC Mini Meet",
+        "event": "3000m",
+        "time": "8:43.8",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "OCT 30",
+        "meet": "Noosa Asics 5K Bolt, Noosa",
+        "event": "5K",
+        "time": "15:04",
+        "place": "15",
+        "round": "F"
+      },
+      {
+        "date": "OCT 20",
+        "meet": "UQ Sport 1500m Classic",
+        "event": "1500m",
+        "time": "3:47.28",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "OCT 16",
+        "meet": "Queensland All-Schools Championships",
+        "event": "800m",
+        "time": "1:56.28",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "APR 19",
+        "meet": "Australian U17 Championships",
+        "event": "3000m",
+        "time": "8:33.77",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "APR 17",
+        "meet": "Australian U17 Championships",
+        "event": "1500m",
+        "time": "3:51.18",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 16",
+        "meet": "Australian U17 Championships",
+        "event": "1500m",
+        "time": "4:06.08",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "MAR 13",
+        "meet": "Queensland Championships",
+        "event": "1500m",
+        "time": "3:48.78",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "Queensland Championships",
+        "event": "800m",
+        "time": "1:57.08",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Queensland 3000m Championships",
+        "event": "3000m",
+        "time": "8:19.74",
+        "place": "7",
+        "round": "F3"
+      },
+      {
+        "date": "JAN 16",
+        "meet": "Denise Boyd Shield",
+        "event": "3000m",
+        "time": "8:34.61",
+        "place": "4",
+        "round": "F1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 15",
+        "meet": "Zatopek 10",
+        "event": "3000m",
+        "time": "8:12.67",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "NOV 24",
+        "meet": "Sunshine Coast Track Challenge",
+        "event": "3000m",
+        "time": "8:37.98",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 14",
+        "meet": "Queensland All-Schools Championships",
+        "event": "1500m",
+        "time": "4:01.53",
+        "place": "3",
+        "round": "H"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "World Athletics U20 Championships",
+        "event": "1500m",
+        "time": "3:55.14",
+        "place": "12",
+        "round": "H3"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Gold Coast Invitational",
+        "event": "800m",
+        "time": "1:47.52",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 9",
+        "meet": "Brisbane Track Classic",
+        "event": "1500m",
+        "time": "3:47.08",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Australian U20 Championships",
+        "event": "3000m",
+        "time": "8:12.63",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 27",
+        "meet": "Australian U20 Championships",
+        "event": "1500m",
+        "time": "3:49.53",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 26",
+        "meet": "Australian U20 Championships",
+        "event": "1500m",
+        "time": "3:57.48",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "Queensland 3000m Championships",
+        "event": "3000m",
+        "time": "8:15.19",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "Queensland Championships",
+        "event": "1500m",
+        "time": "3:44.07",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 5",
+        "meet": "Darren Thrupp Shield",
+        "event": "3000m",
+        "time": "8:25.45",
+        "place": "4",
+        "round": "F1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 2",
+        "meet": "Australian U20 3000m Championships",
+        "event": "3000m",
+        "time": "8:18.17",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "NOV 25",
+        "meet": "Alana Boyd Shield",
+        "event": "1500m",
+        "time": "3:46.29",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "OCT 26",
+        "meet": "UQ Athletics Club 1500m Classic",
+        "event": "1500m",
+        "time": "3:50.26",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Adelaide Track Classic",
+        "event": "800m",
+        "time": "1:48.15",
+        "place": "4",
+        "round": "F1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "AUG 30",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:46.95",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:47.31",
+        "place": "1",
+        "round": "SF1"
+      },
+      {
+        "date": "AUG 27",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:51.43",
+        "place": "2",
+        "round": "H3"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:44.11",
+        "place": "6",
+        "round": "SF3"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:45.81",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Track Night Vienna",
+        "event": "800m",
+        "time": "1:44.12",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Meeting International d'Athlétisme de Troyes Aube",
+        "event": "800m",
+        "time": "1:45.86",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "Oceania Athletics Championships",
+        "event": "800m",
+        "time": "1:46.33",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Oceania Athletics Championships",
+        "event": "800m",
+        "time": "1:52.36",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "APR 14",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:45.76",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:47.86",
+        "place": "1",
+        "round": "SF1"
+      },
+      {
+        "date": "APR 12",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:52.81",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "MAR 23",
+        "meet": "Sydney Track Classic",
+        "event": "800m",
+        "time": "1:45.87",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Canberra Track Classic",
+        "event": "800m",
+        "time": "1:45.91",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Maurie Plant Meet",
+        "event": "Mile",
+        "time": "4:12.05",
+        "place": "13",
+        "round": "F"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Adelaide Invitational",
+        "event": "800m",
+        "time": "1:45.41",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "ACT U20 & Open Championships",
+        "event": "800m",
+        "time": "1:45.77",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.44",
+        "place": "4",
+        "round": "H5"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "CITIUS Meeting",
+        "event": "800m",
+        "time": "DQ",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "AUG 12",
+        "meet": "Gyulai István Memorial",
+        "event": "800m",
+        "time": "1:44.24",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "8. International Wiesław Maniak Memorial",
+        "event": "800m",
+        "time": "1:45.66",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "Track Night Vienna",
+        "event": "800m",
+        "time": "DQ",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "FBK Games",
+        "event": "800m",
+        "time": "1:44.32",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "61° Palio Città della Quercia",
+        "event": "800m",
+        "time": "1:45.32",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:44.07",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 12",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:47.50",
+        "place": "2",
+        "round": "SF1"
+      },
+      {
+        "date": "APR 11",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:47.95",
+        "place": "1",
+        "round": "H4"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Melbourne Invitational",
+        "event": "800m",
+        "time": "1:46.45",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 27",
+        "meet": "Box Hill Classic",
+        "event": "800m",
+        "time": "1:46.90",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "Sydney Track Classic",
+        "event": "800m",
+        "time": "1:49.92",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "Perth Track Classic",
+        "event": "1500m",
+        "time": "3:41.13",
+        "place": "3",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
+}

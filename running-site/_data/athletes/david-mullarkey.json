@@ -158,5 +158,848 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "AUG 28",
+        "meet": "Stretford BMC Gold Standard Races, Stretford",
+        "event": "1500m",
+        "time": "3:53.16",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 14",
+        "meet": "Stretford Trafford AC Grand Prix Open, Stretford",
+        "event": "800m",
+        "time": "1:54.33",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "Stretford BMC Gold Standard Races, Stretford",
+        "event": "1500m",
+        "time": "3:53.10",
+        "place": "9",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "Birmingham English Schools Championships, Birmingham",
+        "event": "1500m",
+        "time": "3:58.25",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Birmingham English Schools Championships, Birmingham",
+        "event": "1500m",
+        "time": "3:57.02",
+        "place": "5",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Stretford BMC Gold Standard Races, Stretford",
+        "event": "800m",
+        "time": "1:54.72",
+        "place": "2",
+        "round": "F4"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Loughborough BMC Grand Prix, Loughborough",
+        "event": "1500m",
+        "time": "3:55.56",
+        "place": "8",
+        "round": "F5"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Stretford Trafford AC Grand Prix, Stretford",
+        "event": "3000m",
+        "time": "8:40.05",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Manchester BMC Grand Prix, Manchester",
+        "event": "1500m",
+        "time": "3:55.20",
+        "place": "3",
+        "round": "F4"
+      }
+    ],
+    "2019": [
+      {
+        "date": "DEC 8",
+        "meet": "Telford 10K, Telford",
+        "event": "10K",
+        "time": "30:10",
+        "place": "23",
+        "round": "F"
+      },
+      {
+        "date": "OCT 27",
+        "meet": "Leeds Abbey Dash 10K, Leeds",
+        "event": "10K",
+        "time": "30:37",
+        "place": "46",
+        "round": "F"
+      },
+      {
+        "date": "OCT 2",
+        "meet": "Leeds Varsity, Leeds",
+        "event": "800m",
+        "time": "1:57.83",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "BMC Grand Prix, Stretford",
+        "event": "1500m",
+        "time": "3:53.41",
+        "place": "7",
+        "round": "F3"
+      },
+      {
+        "date": "JUL 23",
+        "meet": "BMC Gold Standard Races, Stretford",
+        "event": "800m",
+        "time": "1:54.94",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "NatWest International Island Games, Gibraltar",
+        "event": "1500m",
+        "time": "3:55.13",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "NatWest International Island Games, Gibraltar",
+        "event": "1500m",
+        "time": "4:00.46",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "NatWest International Island Games, Gibraltar",
+        "event": "800m",
+        "time": "1:55.71",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "NatWest International Island Games, Gibraltar",
+        "event": "800m",
+        "time": "1:56.73",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "BMC Grand Prix, Watford",
+        "event": "3000m",
+        "time": "8:36.41",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "England Athletics U20 / U23 Championships, Bedford",
+        "event": "1500m",
+        "time": "3:59.84",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "England Athletics U20 / U23 Championships, Bedford",
+        "event": "1500m",
+        "time": "3:57.70",
+        "place": "5",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "BMC Grand Prix, Loughborough",
+        "event": "800m",
+        "time": "1:52.82",
+        "place": "2",
+        "round": "F4"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "BMC Regional Races, Leeds",
+        "event": "1500m",
+        "time": "3:50.97",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "BMC Grand Prix, Manchester",
+        "event": "1500m",
+        "time": "3:49.26",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "BMC Gold Standard Races, Stretford",
+        "event": "800m",
+        "time": "1:53.76",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "BUCS Championships, Bedford",
+        "event": "1500m",
+        "time": "3:57.33",
+        "place": "9",
+        "round": "SF2"
+      },
+      {
+        "date": "APR 29",
+        "meet": "BMC Regional Races, Leeds",
+        "event": "3000m",
+        "time": "8:28.78",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "BUCS Indoor Championships, Sheffield (i)",
+        "event": "1500m sh",
+        "time": "4:03.81",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "BUCS Indoor Championships, Sheffield (i)",
+        "event": "1500m sh",
+        "time": "3:57.45",
+        "place": "6",
+        "round": "SF2"
+      }
+    ],
+    "2020": [
+      {
+        "date": "AUG 25",
+        "meet": "BMC Gold Standard Races",
+        "event": "1500m",
+        "time": "3:51.62",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "Podium 5k, Barrowford",
+        "event": "5K",
+        "time": "14:23",
+        "place": "21",
+        "round": "F"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "Trafford 10K, Partington",
+        "event": "10K",
+        "time": "30:47",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Brooks Armagh Road Race, Armagh",
+        "event": "5K",
+        "time": "14:19",
+        "place": "43",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "DEC 12",
+        "meet": "Telford 10K, Telford",
+        "event": "10K",
+        "time": "29:47",
+        "place": "17",
+        "round": "F"
+      },
+      {
+        "date": "OCT 24",
+        "meet": "Leeds Abbey Dash – 10k for Age UK, Leeds",
+        "event": "10K",
+        "time": "29:13",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "BMC Regional Races",
+        "event": "1500m",
+        "time": "3:44.60",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "BMC Gold Standard Races",
+        "event": "800m",
+        "time": "1:51.26",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "BMC Grand Prix",
+        "event": "1500m",
+        "time": "3:43.53",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "BMC Gold Standard Races",
+        "event": "800m",
+        "time": "1:50.21",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "England U23 Championships",
+        "event": "1500m",
+        "time": "3:44.79",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "England U23 Championships",
+        "event": "1500m",
+        "time": "3:54.33",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Watford Grand Prix",
+        "event": "5000m",
+        "time": "14:05.03",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "Sport City Grand Prix",
+        "event": "1500m",
+        "time": "3:42.97",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "Trafford Grand Prix",
+        "event": "5000m",
+        "time": "13:56.52",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "APR 21",
+        "meet": "BMC Gold Standard Races",
+        "event": "3000m",
+        "time": "7:58.98",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Bryggen Sports Invitational",
+        "event": "1500m sh",
+        "time": "3:44.20",
+        "place": "4",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 11",
+        "meet": "Telford 10K, Telford",
+        "event": "10K",
+        "time": "29:04",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 27",
+        "meet": "BMC Grand Prix Final",
+        "event": "1500m",
+        "time": "3:44.10",
+        "place": "10",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "BMC Gold Standard Races",
+        "event": "800m",
+        "time": "1:50.40",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "XXII Commonwealth Games",
+        "event": "5000m",
+        "time": "13:43.92",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "XXII Commonwealth Games",
+        "event": "1500m",
+        "time": "3:50.06",
+        "place": "8",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 23",
+        "meet": "BMC Grand Prix",
+        "event": "1500m",
+        "time": "3:41.48",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "BMC Gold Standard Races",
+        "event": "800m",
+        "time": "1:51.27",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "University of Birmingham Track & Field Festival",
+        "event": "Mile",
+        "time": "3:58.71",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "Müller UK Athletics Championships",
+        "event": "1500m",
+        "time": "3:45.09",
+        "place": "7",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "British Milers Club International Grand Prix",
+        "event": "5000m",
+        "time": "13:47.55",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "BMC Grand Prix",
+        "event": "1500m",
+        "time": "3:44.07",
+        "place": "12",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "BMC Grand Prix",
+        "event": "5000m",
+        "time": "13:52.47",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "UK Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:08.50",
+        "place": "13",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "NOV 18",
+        "meet": "NCAA D1 Cross Country Championships",
+        "event": "Cross Country",
+        "time": "29:51",
+        "place": "40",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "5000m",
+        "time": "14:28.89",
+        "place": "19",
+        "round": "F"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "5000m",
+        "time": "13:55.29",
+        "place": "7",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "5000m",
+        "time": "13:53.36",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Wake Forest Invitational",
+        "event": "5000m",
+        "time": "13:48.78",
+        "place": "11",
+        "round": "F1"
+      },
+      {
+        "date": "APR 14",
+        "meet": "Tom Jones Memorial",
+        "event": "1500m",
+        "time": "3:43.56",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 23",
+        "meet": "Raleigh Relays",
+        "event": "5000m",
+        "time": "13:37.88",
+        "place": "3",
+        "round": "F10"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "ACC Indoor Track & Field Championships",
+        "event": "3000m sh",
+        "time": "8:02.05",
+        "place": "11",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "5000m sh",
+        "time": "13:44.14",
+        "place": "11",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "Razorback Invitational",
+        "event": "3000m sh",
+        "time": "7:58.86",
+        "place": "4",
+        "round": "F3"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:38.27",
+        "place": "10",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "5000m",
+        "time": "14:05.77",
+        "place": "18",
+        "round": "F"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "5000m",
+        "time": "13:52.62",
+        "place": "5",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "5000m",
+        "time": "13:41.76",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 26",
+        "meet": "Payton Jordan Invitational",
+        "event": "5000m",
+        "time": "13:28.43",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "APR 19",
+        "meet": "Wake Forest Invitational",
+        "event": "5000m",
+        "time": "13:41.91",
+        "place": "8",
+        "round": "F3"
+      },
+      {
+        "date": "MAR 22",
+        "meet": "FSU Relays, Florida State University",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:55.42",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "ACC Indoor Track & Field Championships",
+        "event": "3000m sh",
+        "time": "7:54.23",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "ACC Indoor Track & Field Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:40.16",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "5000m sh",
+        "time": "13:28.23",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:36.76",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "3000m sh",
+        "time": "7:42.89",
+        "place": "8",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "NOV 27",
+        "meet": "Manchester Road Race",
+        "event": "Road Race",
+        "time": "20:58",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "NOV 16",
+        "meet": "Flanigan's Rockin' Rib Run 10K presented by Runner's Depot",
+        "event": "10K",
+        "time": "27:49",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 26",
+        "meet": "FISU World University Games",
+        "event": "5000m",
+        "time": "15:02.39",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "FISU World University Games",
+        "event": "5000m",
+        "time": "14:42.01",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 23",
+        "meet": "FISU World University Games",
+        "event": "10000m",
+        "time": "28:43.44",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "European Athletics Team Championships First Division",
+        "event": "5000m",
+        "time": "13:53.31",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "5000m",
+        "time": "13:28.43",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "10000m",
+        "time": "29:11.05",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "5000m",
+        "time": "13:33.85",
+        "place": "6",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "10000m",
+        "time": "28:19.73",
+        "place": "7",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "Big Sky Championships, Hornet Stadium",
+        "event": "5000m",
+        "time": "14:02.46",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "Big Sky Championships, Hornet Stadium",
+        "event": "10000m",
+        "time": "29:23.03",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 17",
+        "meet": "Bryan Clay Invitational",
+        "event": "5000m",
+        "time": "13:29.55",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "APR 4",
+        "meet": "Stanford Invitational",
+        "event": "10000m",
+        "time": "27:51.80",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "Big Sky Conference Indoor Championships",
+        "event": "Mile",
+        "time": "4:06.37",
+        "place": "3",
+        "round": "F3"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "Big Sky Conference Indoor Championships",
+        "event": "3000m",
+        "time": "8:23.63",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "Big Sky Conference Indoor Championships",
+        "event": "5000m",
+        "time": "14:20.86",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "NAU Tune-Up",
+        "event": "3000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Husky Classic",
+        "event": "Mile",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Husky Classic",
+        "event": "3000m",
+        "time": "7:41.21",
+        "place": "8",
+        "round": "F7"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "5000m sh",
+        "time": "13:23.75",
+        "place": "4",
+        "round": "F2"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

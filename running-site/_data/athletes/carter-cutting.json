@@ -79,6 +79,14 @@
     {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
+      "event": "1500 m",
+      "time": "3:37.50",
+      "place": "",
+      "round": "F2"
+    },
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
       "event": "Mile",
       "time": "3:53.07",
       "place": "8.",
@@ -304,7 +312,7 @@
   "dob": "2005-01-10",
   "college": "BYU",
   "weight": "x",
-  "lastHistorySynced": "2026-07-11",
+  "lastHistorySynced": "2026-07-12",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

@@ -1,0 +1,530 @@
+{
+  "id": "alexander-stepanov",
+  "name": "Alexander Stepanov",
+  "flag": "DE",
+  "country": "Germany",
+  "waUrl": "https://worldathletics.org/athletes/germany/alexander-stepanov-14984080",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "21",
+  "dob": "2004-09-30",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "200m",
+      "time": "23.08"
+    },
+    {
+      "event": "400m",
+      "time": "46.85"
+    },
+    {
+      "event": "800m",
+      "time": "1:44.17"
+    },
+    {
+      "event": "200 Metres Short Track",
+      "time": "23.08"
+    },
+    {
+      "event": "400 Metres Short Track",
+      "time": "47.35"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:45.84"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Meeting Stanislas Nancy",
+      "event": "800 m",
+      "time": "1:45.35",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Czesław Cybulski Memorial",
+      "event": "800 m",
+      "time": "1:45.13",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 30",
+      "meet": "10. PUMA NITRO Lange Laufnacht",
+      "event": "800 m",
+      "time": "1:45.44",
+      "place": "3.",
+      "round": "F19"
+    },
+    {
+      "date": "MAY 24",
+      "meet": "61. Internationales Pfingstsportfest Rehlingen",
+      "event": "800 m",
+      "time": "1:47.14",
+      "place": "7.",
+      "round": "F1"
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:46.75",
+      "place": "4.",
+      "round": "H2"
+    },
+    {
+      "date": "MAR 1",
+      "meet": "German Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:45.84",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "German Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:51.86",
+      "place": "1.",
+      "round": "H1"
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "800 m sh",
+      "time": "1:45.89",
+      "place": "1.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 8",
+      "meet": "INIT Indoor Meeting Karlsruhe",
+      "event": "800 m sh",
+      "time": "1:46.17",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "BW Leichtathletik Hallen-Finals Aktive/U20/U18",
+      "event": "400 m sh",
+      "time": "47.35",
+      "place": "1.",
+      "round": "F4"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Meeting Indoor de Lyon",
+      "event": "800 m sh",
+      "time": "1:47.18",
+      "place": "1.",
+      "round": "F2"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [
+      {
+        "date": "JUL 31",
+        "meet": "German U18 Championships",
+        "event": "800m",
+        "time": "2:04.99",
+        "place": "5",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "BaWü U18 und U20",
+        "event": "400m",
+        "time": "51.25",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "Laufnacht der Sparkassen Gala",
+        "event": "800m",
+        "time": "1:55.63",
+        "place": "2",
+        "round": "F6"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "Spitzensportfest Bundes- und Landeskaderathleten",
+        "event": "400m",
+        "time": "50.52",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "U18-Vergleichskampf BW-BY-HE",
+        "event": "800m",
+        "time": "1:58.80",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "JUN 4",
+        "meet": "Sparkassen Gala",
+        "event": "800m",
+        "time": "1:54.88",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Stadtwerke Sindelfingen Hallemeeting",
+        "event": "400m sh",
+        "time": "49.52",
+        "place": "3",
+        "round": "F4"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "BW Leichtathletik Jugend Hallen-Finals",
+        "event": "800m sh",
+        "time": "1:53.67",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "AUG 10",
+        "meet": "European Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:49.03",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "European Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:48.32",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "1. Internationales Stuttgarter Leichtathletik-Meeting",
+        "event": "400m",
+        "time": "48.59",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 22",
+        "meet": "German U20 Championships",
+        "event": "800m",
+        "time": "1:53.34",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "German U20 Championships",
+        "event": "800m",
+        "time": "1:52.77",
+        "place": "2",
+        "round": "H3"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "German U23 Championships",
+        "event": "800m",
+        "time": "1:52.77",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "German U23 Championships",
+        "event": "800m",
+        "time": "1:50.82",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "DLV Junioren Gala",
+        "event": "800m",
+        "time": "1:51.62",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "Merck Laufgala",
+        "event": "800m",
+        "time": "1:50.11",
+        "place": "2",
+        "round": "F4"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "Lange Laufnacht",
+        "event": "800m",
+        "time": "1:52.05",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "German U20 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:57.49",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "German U20 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:55.03",
+        "place": "2",
+        "round": "H4"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "BW Leichtathletik Jugend Hallen Finals",
+        "event": "200m sh",
+        "time": "23.08",
+        "place": "3",
+        "round": "F4"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "BW Leichtathletik Hallen Finals",
+        "event": "400m sh",
+        "time": "49.50",
+        "place": "1",
+        "round": "F3"
+      }
+    ],
+    "2024": [
+      {
+        "date": "AUG 14",
+        "meet": "Nationales Abendsportfest",
+        "event": "800m",
+        "time": "1:46.86",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "BW Leichtathletik Finals",
+        "event": "800m",
+        "time": "1:48.46",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "German U23 Championships",
+        "event": "800m",
+        "time": "1:49.42",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "German U23 Championships",
+        "event": "800m",
+        "time": "1:51.14",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "German Championships",
+        "event": "800m",
+        "time": "1:50.32",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "German Championships",
+        "event": "800m",
+        "time": "1:49.91",
+        "place": "3",
+        "round": "H3"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Puma Nitro Lange Laufnacht",
+        "event": "800m",
+        "time": "1:47.88",
+        "place": "1",
+        "round": "F11"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "German Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.75",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "German Indoor Championships",
+        "event": "800m sh",
+        "time": "1:51.70",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JAN 20",
+        "meet": "Stadtwerke Sindelfingen Hallenmeeting",
+        "event": "800m sh",
+        "time": "1:48.97",
+        "place": "1",
+        "round": "F3"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:46.32",
+        "place": "7",
+        "round": "H4"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "German Championships",
+        "event": "800m",
+        "time": "1:48.69",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "German Championships",
+        "event": "800m",
+        "time": "1:50.22",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "European Athletics U23 Championships",
+        "event": "800m",
+        "time": "1:45.32",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUL 18",
+        "meet": "European Athletics U23 Championships",
+        "event": "800m",
+        "time": "1:46.60",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "European Athletics Team Championships First Division",
+        "event": "800m",
+        "time": "1:45.82",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "Merck-Laufgala Pfungstadt",
+        "event": "800m",
+        "time": "1:44.17",
+        "place": "2",
+        "round": "F12"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "60. Internationales Pfingstsportfest Rehlingen",
+        "event": "800m",
+        "time": "1:46.08",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Blue Sky",
+        "event": "400m",
+        "time": "46.85",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "9. PUMA NITRO Lange Laufnacht",
+        "event": "800m",
+        "time": "1:46.25",
+        "place": "4",
+        "round": "F16"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "German Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.57",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "German Indoor Championships",
+        "event": "800m sh",
+        "time": "1:54.30",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Norddeutsche Meisterschaften Männer",
+        "event": "400m sh",
+        "time": "48.58",
+        "place": "OC",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "12. Nationales Hallenmeeting Erfurt Indoor 2025",
+        "event": "800m sh",
+        "time": "1:48.95",
+        "place": "4",
+        "round": "F2"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
+}

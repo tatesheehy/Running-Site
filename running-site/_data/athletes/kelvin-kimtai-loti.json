@@ -1,0 +1,337 @@
+{
+  "id": "kelvin-kimtai-loti",
+  "name": "Kelvin Kimtai Loti",
+  "flag": "KE",
+  "country": "Kenya",
+  "waUrl": "https://worldathletics.org/athletes/kenya/kelvin-kimtai-loti-15102078",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "26",
+  "dob": "1999-10-05",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:43.61"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:48.66"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 20",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "800 m",
+      "time": "1:44.62",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 19",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "800 m",
+      "time": "1:46.74",
+      "place": "1.",
+      "round": "SF3"
+    },
+    {
+      "date": "JUN 18",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "800 m",
+      "time": "1:47.78",
+      "place": "1.",
+      "round": "H1"
+    },
+    {
+      "date": "MAY 14",
+      "meet": "African Athletics Championships",
+      "event": "800 m",
+      "time": "1:45.47",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 12",
+      "meet": "African Athletics Championships",
+      "event": "800 m",
+      "time": "1:47.63",
+      "place": "1.",
+      "round": "H3"
+    },
+    {
+      "date": "APR 24",
+      "meet": "Kip Keino Classic",
+      "event": "800 m",
+      "time": "1:43.63",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "APR 11",
+      "meet": "Trials For World Athletics Relay Championships",
+      "event": "800 m",
+      "time": "1:45.04",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "APR 9",
+      "meet": "Trials For World Athletics Relay Championships",
+      "event": "800 m",
+      "time": "1:47.43",
+      "place": "1.",
+      "round": "H3"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [
+      {
+        "date": "JUL 1",
+        "meet": "Kenyan Trials For World Under 20 Championships",
+        "event": "800m",
+        "time": "1:51.16",
+        "place": "5",
+        "round": "H1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "JUL 8",
+        "meet": "Trials For World Athletics Championships Budapest 2023",
+        "event": "800m",
+        "time": "1:45.59",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Trials For World Athletics Championships Budapest 2023",
+        "event": "800m",
+        "time": "1:47.05",
+        "place": "4",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Míting Internacional d'Atletisme Ciutat de Barcelona",
+        "event": "800m",
+        "time": "1:44.07",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Meeting National d'Athlétisme de Troyes",
+        "event": "800m",
+        "time": "1:46.78",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "62nd Ostrava Golden Spike",
+        "event": "800m",
+        "time": "1:46.62",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Kenyan Championships",
+        "event": "800m",
+        "time": "1:46.21",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "APR 29",
+        "meet": "6th AK Track and Field weekend Meet",
+        "event": "800m",
+        "time": "1:45.17",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 28",
+        "meet": "6th AK Track and Field weekend Meet",
+        "event": "800m",
+        "time": "1:46.74",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "APR 27",
+        "meet": "6th AK Track and Field weekend Meet",
+        "event": "800m",
+        "time": "1:47.96",
+        "place": "1",
+        "round": "H7"
+      }
+    ],
+    "2024": [
+      {
+        "date": "JUL 14",
+        "meet": "Meeting Sport e Solidarietà Lignano",
+        "event": "800m",
+        "time": "1:46.42",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "Meeting Internazionale Città di Pergine",
+        "event": "800m",
+        "time": "1:46.98",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "National Trials for the XXXIII Olympics Games",
+        "event": "800m",
+        "time": "1:48.70",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "National Trials for the XXXIII Olympics Games",
+        "event": "800m",
+        "time": "1:47.35",
+        "place": "2",
+        "round": "H3"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Hungarian GP Series",
+        "event": "800m",
+        "time": "1:46.01",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Kenyan Championships",
+        "event": "800m",
+        "time": "1:49.43",
+        "place": "3",
+        "round": "H5"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "Trials for African Games 2024",
+        "event": "800m",
+        "time": "1:48.04",
+        "place": "6",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "800m sh",
+        "time": "1:49.21",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "IFAM Gent Indoor",
+        "event": "800m sh",
+        "time": "1:48.66",
+        "place": "2",
+        "round": "F3"
+      }
+    ],
+    "2025": [
+      {
+        "date": "NOV 22",
+        "meet": "4th Betika Bingwa Fest Track and Field",
+        "event": "800m",
+        "time": "1:47.6",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "SEP 18",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.82",
+        "place": "7",
+        "round": "SF2"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.35",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 22",
+        "meet": "Trials for World Athletics Championships Tokyo 2025",
+        "event": "800m",
+        "time": "1:43.90",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "Kenyan Championships",
+        "event": "800m",
+        "time": "1:43.61",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Kenyan Championships",
+        "event": "800m",
+        "time": "1:47.55",
+        "place": "1",
+        "round": "H4"
+      },
+      {
+        "date": "APR 12",
+        "meet": "FNB Botswana Golden Grand Prix",
+        "event": "800m",
+        "time": "1:49.28",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Kenyan Cross Country Championships, Nairobi",
+        "event": "Cross Country",
+        "time": "6:39",
+        "place": "19",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
+}

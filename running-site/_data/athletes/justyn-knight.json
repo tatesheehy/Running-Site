@@ -110,5 +110,392 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "AUG 11",
+        "meet": "Toronto NACAC Championships, Toronto",
+        "event": "5000m",
+        "time": "14:01.77",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Canadian Championships, Ottawa",
+        "event": "5000m",
+        "time": "14:36.56",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Eugene NCAA Div. I Championships",
+        "event": "5000m",
+        "time": "13:55.03",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Tampa NCAA East Preliminary Round",
+        "event": "5000m",
+        "time": "14:08.56",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Coral Gables ACC Ch.",
+        "event": "1500m",
+        "time": "3:46.96",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Coral Gables ACC Ch.",
+        "event": "5000m",
+        "time": "13:58.69",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 10",
+        "meet": "Coral Gables ACC Ch.",
+        "event": "1500m",
+        "time": "3:49.34",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Palo Alto Payton Jordan Invitational",
+        "event": "5000m",
+        "time": "13:18.74",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Azusa Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "3:36.07",
+        "place": "2",
+        "round": "F15"
+      },
+      {
+        "date": "APR 14",
+        "meet": "Lewisburg Bison Outdoor Classic",
+        "event": "1500m",
+        "time": "3:42.71",
+        "place": "1",
+        "round": "F5"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:05.76",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "5000m sh",
+        "time": "14:14.47",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Clemson ACC Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:02.57",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Clemson ACC Indoor Championships",
+        "event": "5000m sh",
+        "time": "13:50.79",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Ames Iowa State Classic",
+        "event": "5000m",
+        "time": "13:39.59",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "New York Millrose Games",
+        "event": "3000m sh",
+        "time": "7:45.86",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Boston John Thomas Terrier Classic",
+        "event": "Mile sh",
+        "time": "3:55.82",
+        "place": "2",
+        "round": "F1"
+      }
+    ],
+    "2019": [
+      {
+        "date": "SEP 30",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "5000m",
+        "time": "13:26.63",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "SEP 27",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "5000m",
+        "time": "13:25.95",
+        "place": "9",
+        "round": "H2"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "Morten Games, Dublin",
+        "event": "Mile",
+        "time": "3:59.85",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 14",
+        "meet": "Cork City Games, Cork City",
+        "event": "Mile",
+        "time": "3:59.08",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "Canadian Championships, Montréal",
+        "event": "5000m",
+        "time": "13:56.68",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Prefontaine Classic",
+        "event": "2 Miles",
+        "time": "8:19.75",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Golden Gala",
+        "event": "5000m",
+        "time": "13:09.76",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "MAY 2",
+        "meet": "Payton Jordan Invitational",
+        "event": "5000m",
+        "time": "13:20.80",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "APR 13",
+        "meet": "B.A.A. 5K",
+        "event": "5K",
+        "time": "13:46",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "Mile sh",
+        "time": "4:03.34",
+        "place": "7",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "FEB 28",
+        "meet": "Boston University Last Chance Invitational",
+        "event": "1500m sh",
+        "time": "3:36.13",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "NYRR Millrose Games",
+        "event": "3000m sh",
+        "time": "7:46.36",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Dr. Norb Sander Columbia Challenge",
+        "event": "Mile sh",
+        "time": "3:59.32",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "AUG 6",
+        "meet": "The XXXII Olympic Games",
+        "event": "5000m",
+        "time": "13:04.38",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "The XXXII Olympic Games",
+        "event": "5000m",
+        "time": "13:30.22",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Golden Gala Pietro Mennea",
+        "event": "5000m",
+        "time": "12:51.93",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "USATF Golden Games",
+        "event": "1500m",
+        "time": "3:33.41",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "APR 24",
+        "meet": "USATF Grand Prix",
+        "event": "1500m",
+        "time": "3:35.85",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "Trials of Miles",
+        "event": "1500m",
+        "time": "3:36.62",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "2 Miles sh",
+        "time": "8:13.92",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2022": [],
+    "2023": [],
+    "2024": [],
+    "2025": [
+      {
+        "date": "AUG 23",
+        "meet": "Sankthanshaugen 5000",
+        "event": "5000m",
+        "time": "13:19.45",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 12",
+        "meet": "Gyulai István Memorial",
+        "event": "3000m",
+        "time": "7:41.10",
+        "place": "13",
+        "round": "F"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "IFAM Oordegem",
+        "event": "5000m",
+        "time": "13:03.21",
+        "place": "11",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "Canadian Championships",
+        "event": "5000m",
+        "time": "13:43.50",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Stumptown Twilight",
+        "event": "1500m",
+        "time": "3:40.50",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Sunset Tour, Jack Kemp Stadium",
+        "event": "5000m",
+        "time": "13:18.90",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Portland Track Festival",
+        "event": "5000m",
+        "time": "13:25.28",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "Oregon Twilight",
+        "event": "1500m",
+        "time": "3:42.01",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "APR 19",
+        "meet": "Oregon Open",
+        "event": "1500m",
+        "time": "3:44.64",
+        "place": "2",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12",
+  "ncaaTitle": [
+    "5000m"
+  ]
 }

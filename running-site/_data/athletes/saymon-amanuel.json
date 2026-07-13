@@ -106,5 +106,98 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [],
+    "2023": [],
+    "2024": [
+      {
+        "date": "NOV 24",
+        "meet": "Festival du Cross-Country",
+        "event": "Cross Country",
+        "time": "23:09",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "NOV 17",
+        "meet": "92nd Cinque Mulini, San Vittore Olona",
+        "event": "Cross Country",
+        "time": "27:48",
+        "place": "4",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "NOV 30",
+        "meet": "C.I.C. Alcobendas-Comunidad de Madrid, Alcobendas",
+        "event": "Cross Country",
+        "time": "23:06",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "NOV 23",
+        "meet": "93rd Cinque Mulini, San Vittore Olona",
+        "event": "Cross Country",
+        "time": "22:48",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:49.43",
+        "place": "15",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Paavo Nurmi Games",
+        "event": "5000m",
+        "time": "13:07.14",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "BAUHAUS-Galan",
+        "event": "5000m",
+        "time": "13:23.78",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "Meeting Nikaia",
+        "event": "5000m",
+        "time": "13:01.85",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "Tata Consultancy Services World 10K Bengaluru, Bengaluru",
+        "event": "10K",
+        "time": "27:55",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "Semi-Marathon International de Lille",
+        "event": "10K",
+        "time": "27:10",
+        "place": "2",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

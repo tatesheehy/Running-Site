@@ -1,0 +1,287 @@
+{
+  "id": "cooper-lutkenhaus",
+  "name": "Cooper Lutkenhaus",
+  "flag": "US",
+  "country": "United States",
+  "waUrl": "https://worldathletics.org/athletes/united-states/cooper-lutkenhaus-15152457",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "17",
+  "dob": "2008-12-19",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "400m",
+      "time": "46.30"
+    },
+    {
+      "event": "800m",
+      "time": "1:42.08"
+    },
+    {
+      "event": "1500m",
+      "time": "3:45.10"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:14.15"
+    },
+    {
+      "event": "600 Metres Short Track",
+      "time": "1:14.15"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:44.03"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "800 m",
+      "time": "1:44.62",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "800 m",
+      "time": "1:42.08",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 7",
+      "meet": "BAUHAUS-Galan",
+      "event": "800 m",
+      "time": "1:42.70",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "1500 m",
+      "time": "3:45.10",
+      "place": "9.",
+      "round": "F3"
+    },
+    {
+      "date": "MAR 22",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:44.24",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:44.29",
+      "place": "1.",
+      "round": "SF2"
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:46.24",
+      "place": "2.",
+      "round": "H2"
+    },
+    {
+      "date": "MAR 1",
+      "meet": "USA Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:46.68",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "USA Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:47.00",
+      "place": "1.",
+      "round": "H3"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "800 m sh",
+      "time": "1:44.03",
+      "place": "1.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "600 m sh",
+      "time": "1:14.15",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Dr. Sander Invitational",
+      "event": "800 m sh",
+      "time": "1:45.23",
+      "place": "1.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [],
+    "2023": [],
+    "2024": [
+      {
+        "date": "JUN 14",
+        "meet": "Nike Outdoor Nationals",
+        "event": "800m",
+        "time": "1:50.40",
+        "place": "1",
+        "round": "F6"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Brooks PR Invitational",
+        "event": "800m",
+        "time": "1:47.58",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "UIL Texas State Championships",
+        "event": "400m",
+        "time": "48.82",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "UIL Texas State Championships",
+        "event": "800m",
+        "time": "1:49.84",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:47.68",
+        "place": "7",
+        "round": "H3"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "USA Championships",
+        "event": "800m",
+        "time": "1:42.27",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "USA Championships",
+        "event": "800m",
+        "time": "1:45.57",
+        "place": "2",
+        "round": "SF2"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "USA Championships",
+        "event": "800m",
+        "time": "1:47.23",
+        "place": "2",
+        "round": "H3"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "USA U20 Championships",
+        "event": "800m",
+        "time": "1:45.45",
+        "place": "1",
+        "round": "F6"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Brooks PR Invitational",
+        "event": "800m",
+        "time": "1:46.26",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "UIL Texas State Championships",
+        "event": "400m",
+        "time": "46.30",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "UIL Texas State Championships",
+        "event": "800m",
+        "time": "1:47.04",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "Nike Indoor Nationals",
+        "event": "800m sh",
+        "time": "1:47.83",
+        "place": "1",
+        "round": "F6"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Millrose Games",
+        "event": "800m sh",
+        "time": "1:46.86",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JAN 24",
+        "meet": "Texas Tech Red Raider Invitational",
+        "event": "800m sh",
+        "time": "1:50.15",
+        "place": "1",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
+}

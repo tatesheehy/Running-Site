@@ -138,5 +138,688 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUN 13",
+        "meet": "Watford BMC Gold Standard Races, Watford",
+        "event": "1500m",
+        "time": "3:49.68",
+        "place": "16",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Loughborough BMC Gold Standard Races, Loughborough",
+        "event": "1500m",
+        "time": "3:49.80",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "Loughborough International, Loughborough",
+        "event": "3000m",
+        "time": "8:26.74",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Fayetteville Arkansas Twilight",
+        "event": "1500m",
+        "time": "3:50.62",
+        "place": "12",
+        "round": "F2"
+      },
+      {
+        "date": "APR 14",
+        "meet": "Fayetteville John McDonnell Invitational",
+        "event": "1500m",
+        "time": "3:58.75",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 24",
+        "meet": "Fayetteville Arkansas Spring Invitational",
+        "event": "3000m",
+        "time": "8:33.92",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "MAY 12",
+        "meet": "The American Conference Championships",
+        "event": "5000m",
+        "time": "15:11.12",
+        "place": "21",
+        "round": "F"
+      },
+      {
+        "date": "APR 18",
+        "meet": "Bryan Clay Invitational",
+        "event": "5000m",
+        "time": "14:56.99",
+        "place": "32",
+        "round": "F2"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Stanford Invitational",
+        "event": "5000m",
+        "time": "14:09.95",
+        "place": "18",
+        "round": "F"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "The American Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:16.97",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "The American Indoor Championships",
+        "event": "5000m sh",
+        "time": "14:25.46",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Iowa State Classic",
+        "event": "5000m",
+        "time": "13:59.42",
+        "place": "6",
+        "round": "F3"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Pittsburg State Invitational",
+        "event": "3000m",
+        "time": "8:13.17",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "JAN 11",
+        "meet": "Arkansas Invitational",
+        "event": "Mile sh",
+        "time": "4:09.18",
+        "place": "3",
+        "round": "F2"
+      }
+    ],
+    "2020": [
+      {
+        "date": "FEB 29",
+        "meet": "The American Conference Championships",
+        "event": "Mile sh",
+        "time": "4:12.41",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 29",
+        "meet": "The American Conference Championships",
+        "event": "3000m sh",
+        "time": "8:09.41",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "The American Conference Championships",
+        "event": "Mile sh",
+        "time": "4:12.23",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Iowa State Classic",
+        "event": "5000m",
+        "time": "14:08.09",
+        "place": "5",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Indiana University Relays",
+        "event": "3000m sh",
+        "time": "8:14.56",
+        "place": "11",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 17",
+        "meet": "Arkansas Invitational",
+        "event": "Mile sh",
+        "time": "4:09.69",
+        "place": "3",
+        "round": "F3"
+      }
+    ],
+    "2021": [
+      {
+        "date": "DEC 3",
+        "meet": "Wooo Pig Classic",
+        "event": "5000m sh",
+        "time": "13:40.42",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "British Championships",
+        "event": "5000m",
+        "time": "13:58.14",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "NCAA Preliminary West Round",
+        "event": "10000m",
+        "time": "29:41.26",
+        "place": "17",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "American Athletic Conference Championships",
+        "event": "5000m",
+        "time": "14:19.07",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "APR 24",
+        "meet": "John McDonnell Invitational",
+        "event": "5000m",
+        "time": "13:59.24",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "APR 2",
+        "meet": "Hayward Premiere",
+        "event": "10000m",
+        "time": "28:41.38",
+        "place": "6",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 3",
+        "meet": "Boston University/Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:32.38",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 23",
+        "meet": "BMC Grand Prix",
+        "event": "1500m",
+        "time": "3:43.48",
+        "place": "12",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "University of Birmingham Track & Field Festival",
+        "event": "Mile",
+        "time": "3:58.61",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Cork City Sports",
+        "event": "3000m",
+        "time": "7:52.64",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Müller UK Athletics Championships",
+        "event": "5000m",
+        "time": "13:51.36",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "NCAA West Preliminary Round",
+        "event": "5000m",
+        "time": "13:45.42",
+        "place": "11",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "NCAA West Preliminary Round",
+        "event": "10000m",
+        "time": "30:02.19",
+        "place": "39",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "American Athletic Conference Championships",
+        "event": "1500m",
+        "time": "3:55.22",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "American Athletic Conference Championships",
+        "event": "5000m",
+        "time": "14:23.07",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 29",
+        "meet": "Payton Jordan Invitational",
+        "event": "5000m",
+        "time": "13:31.34",
+        "place": "10",
+        "round": "F1"
+      },
+      {
+        "date": "APR 1",
+        "meet": "Stanford Invitational",
+        "event": "10000m",
+        "time": "28:19.90",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "American Athletic Conference Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:59.43",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "American Athletic Conference Indoor Championships",
+        "event": "5000m sh",
+        "time": "14:14.16",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "The Badgers Windy City Invitational",
+        "event": "3000m sh",
+        "time": "7:49.33",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Washburn Open",
+        "event": "Mile sh",
+        "time": "4:02.17",
+        "place": "4",
+        "round": "F5"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Washburn Open",
+        "event": "3000m sh",
+        "time": "8:08.66",
+        "place": "1",
+        "round": "F4"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 31",
+        "meet": "Nationale Nederlanden San Silvestre Vallecana, Madrid",
+        "event": "10K",
+        "time": "27:58",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "OCT 1",
+        "meet": "World Athletics Road Running Championships, Riga",
+        "event": "5K",
+        "time": "13:32",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "The AJ Bell Great North 5k, Newcastle upon Tyne",
+        "event": "5K",
+        "time": "13:56",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "Meeting International Schifflange",
+        "event": "5000m",
+        "time": "13:51.64",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "Morton Games",
+        "event": "5000m",
+        "time": "13:25.53",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "UK Championships",
+        "event": "5000m",
+        "time": "13:50.70",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "10000m",
+        "time": "29:10.31",
+        "place": "13",
+        "round": "F"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I West First Rounds, Hornet Stadium",
+        "event": "10000m",
+        "time": "28:21.98",
+        "place": "4",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "American Athletic Conference Outdoor Track & Field Championships",
+        "event": "5000m",
+        "time": "13:49.13",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Payton Jordan Invitational",
+        "event": "5000m",
+        "time": "13:30.57",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 31",
+        "meet": "Stanford Invitational",
+        "event": "10000m",
+        "time": "27:58.92",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "American Athletic Conference Indoor Track & Field Championships",
+        "event": "3000m sh",
+        "time": "8:01.21",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "American Athletic Conference Indoor Track & Field Championships",
+        "event": "5000m sh",
+        "time": "13:52.51",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Windy City Invitational",
+        "event": "5000m sh",
+        "time": "13:58.75",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "JAN 13",
+        "meet": "Arkansas Invitational",
+        "event": "Mile sh",
+        "time": "4:02.26",
+        "place": "4",
+        "round": "F5"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 8",
+        "meet": "30th SPAR European Cross Country Championships, Antalya",
+        "event": "Cross Country Senior Race",
+        "time": "DNS",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "SEP 6",
+        "meet": "The AJ Bell Great North 5k",
+        "event": "5K",
+        "time": "13:58",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "SEP 3",
+        "meet": "Copenhagen Athletics Games",
+        "event": "5000m",
+        "time": "13:30.18",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "Top Flight by RunThrough",
+        "event": "5K",
+        "time": "13:48",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "BMC Record Breaker",
+        "event": "1500m",
+        "time": "3:39.71",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "London Athletics Meet",
+        "event": "3000m",
+        "time": "7:42.78",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "FAST5000",
+        "event": "5000m",
+        "time": "13:19.41",
+        "place": "13",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "UK Championships",
+        "event": "5000m",
+        "time": "13:47.71",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "Meeting Internazionale Città di Nembro",
+        "event": "3000m",
+        "time": "8:08.48",
+        "place": "14",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Night of Athletics",
+        "event": "5000m",
+        "time": "13:27.56",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Night of the 10",
+        "event": "10000m",
+        "time": "28:23.25",
+        "place": "26",
+        "round": "F"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Meeting National Est Lyonnais",
+        "event": "5000m",
+        "time": "13:24.51",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "The TEN",
+        "event": "10000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "UK Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:54.64",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "5000m sh",
+        "time": "13:36.06",
+        "place": "16",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "IFAM Gent Indoor",
+        "event": "3000m sh",
+        "time": "7:47.22",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 31",
+        "meet": "HogmanHoway 5K",
+        "event": "5K",
+        "time": "14:00",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "DEC 14",
+        "meet": "31st SPAR European Cross Country Championships, Lagoa",
+        "event": "Cross Country Senior Race",
+        "time": "22:23",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Night of Athletics",
+        "event": "5000m",
+        "time": "13:27.33",
+        "place": "14",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Meeting International de Marseille",
+        "event": "3000m",
+        "time": "7:45.65",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Boysen Memorial",
+        "event": "5000m",
+        "time": "13:21.74",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "St Mary's University BMC Record Breaker",
+        "event": "1500m",
+        "time": "3:37.61",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "FAST5000",
+        "event": "5000m",
+        "time": "13:53.26",
+        "place": "20",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "The TEN",
+        "event": "10000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Boston University DMR Challenge",
+        "event": "5000m sh",
+        "time": "13:04.99",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Meeting Indoor de Lyon",
+        "event": "3000m sh",
+        "time": "7:49.15",
+        "place": "5",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

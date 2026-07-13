@@ -114,5 +114,190 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [
+      {
+        "date": "OCT 10",
+        "meet": "Night Game Trial",
+        "event": "5000m",
+        "time": "14:55.95",
+        "place": "31",
+        "round": "F12"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "79th Shiga Prefectural Championships",
+        "event": "1500m",
+        "time": "3:56.44",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "79th Shiga Prefectural Championships",
+        "event": "1500m",
+        "time": "4:08.91",
+        "place": "4",
+        "round": "H3"
+      }
+    ],
+    "2021": [
+      {
+        "date": "OCT 9",
+        "meet": "Night Game Trial",
+        "event": "5000m",
+        "time": "14:03.14",
+        "place": "1",
+        "round": "F13"
+      },
+      {
+        "date": "SEP 18",
+        "meet": "54th Kinki High School Youth vs. School Championships",
+        "event": "1500m",
+        "time": "3:56.63",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 28",
+        "meet": "Japan High School Championships",
+        "event": "1500m",
+        "time": "3:53.01",
+        "place": "5",
+        "round": "H4"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "74th Kinki High School vs. School Championships",
+        "event": "1500m",
+        "time": "3:51.56",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "74th Kinki High School vs. School Championships",
+        "event": "1500m",
+        "time": "3:51.01",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "APR 25",
+        "meet": "1st Shiga Prefecture Trials",
+        "event": "3000m",
+        "time": "8:47.57",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "NOV 13",
+        "meet": "300th Nippon Sport Science University Long Distance Competition",
+        "event": "5000m",
+        "time": "14:23.57",
+        "place": "13",
+        "round": "F25"
+      },
+      {
+        "date": "OCT 15",
+        "meet": "Two Laps Middle Distance Circuit",
+        "event": "3000m",
+        "time": "8:31.72",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "SEP 18",
+        "meet": "298th Nippon Sport Science University Long Distance Competition",
+        "event": "5000m",
+        "time": "14:56.03",
+        "place": "28",
+        "round": "F12"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "Hokuren Distance Challenge",
+        "event": "5000m",
+        "time": "14:50.19",
+        "place": "26",
+        "round": "F4"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Hokuren Distance Challenge",
+        "event": "5000m",
+        "time": "14:44.67",
+        "place": "28",
+        "round": "F3"
+      }
+    ],
+    "2023": [
+      {
+        "date": "JUL 16",
+        "meet": "Summer Distance Challenge",
+        "event": "5000m",
+        "time": "14:45.87",
+        "place": "33",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "NOV 17",
+        "meet": "Ageo City Half Marathon, Ageo",
+        "event": "Half Marathon",
+        "time": "1:06:14",
+        "place": "170",
+        "round": "F"
+      },
+      {
+        "date": "OCT 19",
+        "meet": "6th Waseda University track and field meet Mikio Oda Memorial Athletic Field",
+        "event": "10000m",
+        "time": "28:57.46",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "The 9th NITTAIDAI Challenge Games",
+        "event": "1500m",
+        "time": "3:52.80",
+        "place": "18",
+        "round": "F"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "TOKOROZAWA Games",
+        "event": "1500m",
+        "time": "3:48.41",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "JUL 20",
+        "meet": "2025 Summer Distance Challenge",
+        "event": "10000m",
+        "time": "30:24.01",
+        "place": "30",
+        "round": "F4"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Japanese Cross Country Championships",
+        "event": "Cross Country",
+        "time": "29:49",
+        "place": "24",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

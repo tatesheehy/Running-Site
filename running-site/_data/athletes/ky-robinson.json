@@ -96,6 +96,14 @@
     {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
+      "event": "3000 m",
+      "time": "7:42.36",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
       "event": "2 Mi",
       "time": "8:12.16",
       "place": "7.",
@@ -142,5 +150,861 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "DEC 14",
+        "meet": "Brisbane Carlee Beattie Shield, Brisbane",
+        "event": "800m",
+        "time": "1:59.98",
+        "place": "1",
+        "round": "F2"
+      }
+    ],
+    "2019": [
+      {
+        "date": "DEC 14",
+        "meet": "Zatopek:10",
+        "event": "3000m",
+        "time": "8:22.00",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "NOV 16",
+        "meet": "Benita Willis Shield",
+        "event": "5000m",
+        "time": "14:32.83",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "NOV 2",
+        "meet": "GPS Track and Field Championships",
+        "event": "1500m",
+        "time": "3:54.01",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "NOV 2",
+        "meet": "GPS Track and Field Championships",
+        "event": "3000m",
+        "time": "8:27.81",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 22",
+        "meet": "Queensland All School Championships",
+        "event": "1500m",
+        "time": "4:04.85",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 19",
+        "meet": "Queensland All School Championships",
+        "event": "3000m",
+        "time": "8:52.70",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 19",
+        "meet": "Queensland All School Championships",
+        "event": "2000 Metres Steeplechase",
+        "time": "5:59.45",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 28",
+        "meet": "School Holiday All Comers Meet #1",
+        "event": "3000m",
+        "time": "8:19.39",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 6",
+        "meet": "Australian U18 Championships, Sydney",
+        "event": "3000m",
+        "time": "8:41.46",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Australian U18 Championships, Sydney",
+        "event": "1500m",
+        "time": "3:55.25",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "Queensland Championships, Brisbane",
+        "event": "1500m",
+        "time": "4:00.56",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Chilla Porter Shield, Brisbane",
+        "event": "1500m",
+        "time": "3:59.33",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Queensland 3000m Championships, Brisbane",
+        "event": "3000m",
+        "time": "8:46.63",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Jai Taurima Shield, Brisbane",
+        "event": "1500m",
+        "time": "4:02.03",
+        "place": "1",
+        "round": "F2"
+      }
+    ],
+    "2020": [
+      {
+        "date": "NOV 14",
+        "meet": "Jai Taurima Shield",
+        "event": "1500m",
+        "time": "3:52.73",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "Track is Back Series #2",
+        "event": "3000m",
+        "time": "8:28.57",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "Queensland Championships",
+        "event": "1500m",
+        "time": "3:54.28",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 7",
+        "meet": "Queensland Championships",
+        "event": "1500m",
+        "time": "4:07.96",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "Queensland Championships",
+        "event": "3000m SC",
+        "time": "9:04.92",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Denise Boyd Shield",
+        "event": "3000m",
+        "time": "8:37.20",
+        "place": "10",
+        "round": "F3"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "Distance Meet #3",
+        "event": "1500m",
+        "time": "3:54.1",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 23",
+        "meet": "VMC Meet #3",
+        "event": "1500m",
+        "time": "3:52.75",
+        "place": "3",
+        "round": "F2"
+      }
+    ],
+    "2021": [
+      {
+        "date": "JUN 11",
+        "meet": "NCAA Div. I Outdoor Championships",
+        "event": "3000m SC",
+        "time": "8:32.01",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "NCAA Div. I Outdoor Championships",
+        "event": "3000m SC",
+        "time": "8:36.29",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "NCAA Preliminary West Round",
+        "event": "5000m",
+        "time": "14:45.21",
+        "place": "21",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "NCAA Preliminary West Round",
+        "event": "3000m SC",
+        "time": "8:40.45",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "PAC-12 Conference Championships",
+        "event": "3000m SC",
+        "time": "8:41.81",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 1",
+        "meet": "Big Meet",
+        "event": "3000m",
+        "time": "8:12.70",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAY 1",
+        "meet": "Big Meet",
+        "event": "3000m SC",
+        "time": "9:11.35",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 17",
+        "meet": "West Coast Classic",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "APR 17",
+        "meet": "West Coast Classic",
+        "event": "3000m SC",
+        "time": "8:45.32",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 2",
+        "meet": "Stanford Invitational",
+        "event": "5000m",
+        "time": "13:51.53",
+        "place": "8",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 3",
+        "meet": "Boston University/Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:11.53",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "XXII Commonwealth Games",
+        "event": "10000m",
+        "time": "27:44.33",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:27.03",
+        "place": "8",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "NCAA Div. I Outdoor Championships",
+        "event": "5000m",
+        "time": "13:30.23",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "NCAA West Preliminary Round",
+        "event": "5000m",
+        "time": "13:39.02",
+        "place": "4",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Pac-12 Ch.",
+        "event": "5000m",
+        "time": "13:36.80",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Pac-12 Ch.",
+        "event": "3000m SC",
+        "time": "8:33.91",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 30",
+        "meet": "Big Meet",
+        "event": "3000m SC",
+        "time": "8:53.00",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 29",
+        "meet": "Payton Jordan Invitational",
+        "event": "10000m",
+        "time": "27:47.11",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "APR 1",
+        "meet": "Stanford Invitational",
+        "event": "5000m",
+        "time": "13:23.61",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 11",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "5000m sh",
+        "time": "13:20.17",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "Pac 12 Invite",
+        "event": "3000m",
+        "time": "7:50.35",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Husky Classic",
+        "event": "5000m",
+        "time": "13:21.85",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Razorback Invitational",
+        "event": "3000m sh",
+        "time": "7:56.80",
+        "place": "8",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "Razorback Invitational",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:32.18",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 2",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:06.42",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "NOV 18",
+        "meet": "NCAA D1 Cross Country Championships",
+        "event": "Cross Country",
+        "time": "28:56",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 22",
+        "meet": "Under Armour Sunset Tour",
+        "event": "5000m",
+        "time": "13:36.60",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Athletissima Lausanne",
+        "event": "5000m",
+        "time": "13:20.96",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "5000m",
+        "time": "14:04.77",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "10000m",
+        "time": "28:10.96",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "NCAA Division I West First Rounds, Hornet Stadium",
+        "event": "5000m",
+        "time": "13:22.29",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I West First Rounds, Hornet Stadium",
+        "event": "10000m",
+        "time": "28:22.84",
+        "place": "8",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Pac 12 Men's and Women's Track and Field Championships",
+        "event": "1500m",
+        "time": "3:42.99",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Pac 12 Men's and Women's Track and Field Championships",
+        "event": "5000m",
+        "time": "14:14.44",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Pac 12 Men's and Women's Track and Field Championships",
+        "event": "1500m",
+        "time": "3:43.35",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "APR 29",
+        "meet": "The Big Meet",
+        "event": "800m",
+        "time": "1:53.32",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 29",
+        "meet": "The Big Meet",
+        "event": "1500m",
+        "time": "3:45.64",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Payton Jordan Invitational",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "APR 15",
+        "meet": "Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F3"
+      },
+      {
+        "date": "APR 14",
+        "meet": "Bryan Clay Invitational",
+        "event": "5000m",
+        "time": "13:29.44",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 31",
+        "meet": "Stanford Invitational",
+        "event": "10000m",
+        "time": "27:58.74",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 11",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:03.87",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "5000m sh",
+        "time": "13:47.11",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "Ken Shannon Last Chance Invite",
+        "event": "3000m",
+        "time": "7:42.30",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "44th World Athletics Cross Country Championships, Bathurst",
+        "event": "Cross Country Senior Race",
+        "time": "31:11",
+        "place": "23",
+        "round": "F"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "Razorback Invitational",
+        "event": "3000m sh",
+        "time": "7:49.72",
+        "place": "3",
+        "round": "F5"
+      }
+    ],
+    "2024": [
+      {
+        "date": "AUG 30",
+        "meet": "Stadioneröffnung Dresden",
+        "event": "5000m",
+        "time": "13:17.77",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "Borås Folksam Grand Prix",
+        "event": "Mile",
+        "time": "3:52.79",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Track Night Vienna",
+        "event": "5000m",
+        "time": "13:22.81",
+        "place": "13",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Night of Athletics",
+        "event": "5000m",
+        "time": "13:15.61",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "5000m",
+        "time": "13:55.00",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "5000m",
+        "time": "13:50.25",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "PAC 12 Track and Field Championships",
+        "event": "5000m",
+        "time": "14:11.49",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 10",
+        "meet": "PAC 12 Track and Field Championships",
+        "event": "10000m",
+        "time": "29:15.03",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 30",
+        "meet": "The Big Meet",
+        "event": "1500m",
+        "time": "3:43.48",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "APR 30",
+        "meet": "The Big Meet",
+        "event": "3000m",
+        "time": "8:50.48",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "APR 26",
+        "meet": "Payton Jordan Invitational",
+        "event": "1500m",
+        "time": "3:41.56",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "APR 26",
+        "meet": "Payton Jordan Invitational",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "APR 14",
+        "meet": "Australian Championships",
+        "event": "5000m",
+        "time": "13:40.22",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Stanford Invitational",
+        "event": "5000m",
+        "time": "13:35.95",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Stanford Invitational",
+        "event": "10000m",
+        "time": "28:15.12",
+        "place": "12",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:46.13",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "5000m sh",
+        "time": "13:27.79",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Ken Shannon Last Chance",
+        "event": "3000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Boston University DMR Challenge",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:27.06",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Husky Classic",
+        "event": "3000m",
+        "time": "7:36.69",
+        "place": "1",
+        "round": "F7"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "5000m sh",
+        "time": "13:21.99",
+        "place": "11",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 13",
+        "meet": "UW Preview",
+        "event": "1000m",
+        "time": "2:25.61",
+        "place": "3",
+        "round": "F3"
+      },
+      {
+        "date": "JAN 13",
+        "meet": "UW Preview",
+        "event": "Mile",
+        "time": "4:00.50",
+        "place": "3",
+        "round": "F6"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 21",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "12:59.61",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:13.60",
+        "place": "5",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "Sir Walter Miler",
+        "event": "Mile",
+        "time": "3:50.80",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "BAUHAUS-Galan",
+        "event": "5000m",
+        "time": "12:58.38",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Grand Slam Track Philadelphia",
+        "event": "3000m",
+        "time": "8:01.92",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "Track Fest, Jack Kemp Stadium",
+        "event": "5000m",
+        "time": "13:05.23",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Australian Championships",
+        "event": "5000m",
+        "time": "13:50.31",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Maurie Plant Meet",
+        "event": "5000m",
+        "time": "13:13.17",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 22",
+        "meet": "World Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:47.09",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Last Chance Indoor National Qualifier",
+        "event": "5000m sh",
+        "time": "13:02.34",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Millrose Games",
+        "event": "3000m sh",
+        "time": "7:30.38",
+        "place": "4",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12",
+  "ncaaTitle": [
+    "3000m SC",
+    "5000m",
+    "10000m"
+  ]
 }

@@ -1,0 +1,908 @@
+{
+  "id": "slimane-moula",
+  "name": "Slimane Moula",
+  "flag": "DZ",
+  "country": "Algeria",
+  "waUrl": "https://worldathletics.org/athletes/algeria/slimane-moula-14747495",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "27",
+  "dob": "1999-02-25",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "200m",
+      "time": "21.40"
+    },
+    {
+      "event": "400m",
+      "time": "45.96"
+    },
+    {
+      "event": "800m",
+      "time": "1:42.77"
+    },
+    {
+      "event": "300 Metres",
+      "time": "34.48"
+    },
+    {
+      "event": "400 Metres Short Track",
+      "time": "48.03"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:14.34"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:44.80"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:19.19"
+    },
+    {
+      "event": "4x100 Metres Relay",
+      "time": "41.19"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:02.84"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "800 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUN 7",
+      "meet": "BAUHAUS-Galan",
+      "event": "800 m",
+      "time": "1:43.41",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 31",
+      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+      "event": "800 m",
+      "time": "1:43.73",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:46.48",
+      "place": "5.",
+      "round": "SF2"
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:46.13",
+      "place": "3.",
+      "round": "H3"
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "800 m sh",
+      "time": "1:44.80",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 7",
+      "meet": "Russian Winter",
+      "event": "800 m sh",
+      "time": "1:45.48",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 27",
+      "meet": "ACNW League 1",
+      "event": "600 m",
+      "time": "1:14.34",
+      "place": "1.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "AUG 2",
+        "meet": "African Championships",
+        "event": "400m",
+        "time": "47.12",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "African Championships",
+        "event": "400m",
+        "time": "47.37",
+        "place": "6",
+        "round": "SF2"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "IAAF World U20 Championships",
+        "event": "400m",
+        "time": "47.97",
+        "place": "6",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Jesolo Mediterranean U23 Championships, Jesolo",
+        "event": "400m",
+        "time": "45.96",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Jesolo Mediterranean U23 Championships, Jesolo",
+        "event": "4x100 Metres Relay",
+        "time": "41.19",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Jesolo Mediterranean U23 Championships, Jesolo",
+        "event": "400m",
+        "time": "46.96",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "APR 22",
+        "meet": "Arab U20 Championships, Amman",
+        "event": "200m",
+        "time": "21.85",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Arab U20 Championships, Amman",
+        "event": "200m",
+        "time": "21.93",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Arab U20 Championships, Amman",
+        "event": "400m",
+        "time": "46.73",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 19",
+        "meet": "Arab U20 Championships, Amman",
+        "event": "400m",
+        "time": "48.14",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "MAR 3",
+        "meet": "Souk El Tenine",
+        "event": "300 Metres",
+        "time": "34.68",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Souk El Tenine",
+        "event": "600m",
+        "time": "1:19.94",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "OCT 26",
+        "meet": "CISM Military World Games",
+        "event": "4x400 Metres Relay",
+        "time": "3:06.67",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "OCT 25",
+        "meet": "CISM Military World Games",
+        "event": "4x400 Metres Relay",
+        "time": "3:10.96",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "OCT 22",
+        "meet": "CISM Military World Games",
+        "event": "400m",
+        "time": "46.93",
+        "place": "2",
+        "round": "H4"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "Algerian Championships, Algiers",
+        "event": "200m",
+        "time": "21.40",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "Algerian Championships, Algiers",
+        "event": "200m",
+        "time": "21.49",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 26",
+        "meet": "Algerian Championships, Algiers",
+        "event": "400m",
+        "time": "46.51",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "Algerian Championships, Algiers",
+        "event": "400m",
+        "time": "48.36",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Feestenmeeting, Gent",
+        "event": "200m",
+        "time": "21.72",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Guldensporenmeeting, Kortrijk",
+        "event": "400m",
+        "time": "46.66",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Challenge Meeting, Bron",
+        "event": "400m",
+        "time": "46.77",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Challenge International d’Athlétisme, Batna",
+        "event": "200m",
+        "time": "22.29",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Challenge International d’Athlétisme, Batna",
+        "event": "200m",
+        "time": "22.17",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Challenge International d’Athlétisme, Batna",
+        "event": "400m",
+        "time": "46.62",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "APR 8",
+        "meet": "Arab Championships, Cairo",
+        "event": "4x400 Metres Relay",
+        "time": "3:07.85",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Arab Championships, Cairo",
+        "event": "400m",
+        "time": "47.84",
+        "place": "4",
+        "round": "H2"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Arab Championships, Cairo",
+        "event": "400m",
+        "time": "48.10",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JAN 19",
+        "meet": "Mediterranean U23 Indoor Championships, Miramas (i)",
+        "event": "400m sh",
+        "time": "48.54",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JAN 19",
+        "meet": "Mediterranean U23 Indoor Championships, Miramas (i)",
+        "event": "400m sh",
+        "time": "48.03",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [],
+    "2021": [
+      {
+        "date": "JUN 29",
+        "meet": "Meeting d'Athletisme du Centenaire du Mouloudia d'Alger",
+        "event": "800m",
+        "time": "1:46.69",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Arab Championships",
+        "event": "800m",
+        "time": "1:48.56",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "Arab Championships",
+        "event": "800m",
+        "time": "1:46.55",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Tunisian Championships",
+        "event": "400m",
+        "time": "47.06",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "Turkish Championships",
+        "event": "800m",
+        "time": "1:46.71",
+        "place": "OC",
+        "round": "F12"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Olimpik Deneme",
+        "event": "400m",
+        "time": "47.38",
+        "place": "3",
+        "round": "F3"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Olimpik Deneme",
+        "event": "800m",
+        "time": "1:47.06",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 2",
+        "meet": "Olimpik Deneme",
+        "event": "800m",
+        "time": "1:48.73",
+        "place": "4",
+        "round": "F2"
+      }
+    ],
+    "2022": [
+      {
+        "date": "AUG 10",
+        "meet": "5th Islamic Solidarity Games",
+        "event": "400m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "5th Islamic Solidarity Games",
+        "event": "400m",
+        "time": "45.59",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 23",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.85",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.89",
+        "place": "1",
+        "round": "SF3"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.90",
+        "place": "1",
+        "round": "H6"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "XIX Mediterranean Games",
+        "event": "4x400 Metres Relay",
+        "time": "3:03.41",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "BAUHAUS-Galan",
+        "event": "800m",
+        "time": "1:44.60",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "African Athletics Championships",
+        "event": "800m",
+        "time": "1:45.59",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "African Athletics Championships",
+        "event": "800m",
+        "time": "1:46.22",
+        "place": "1",
+        "round": "SF1"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "African Athletics Championships",
+        "event": "800m",
+        "time": "1:50.10",
+        "place": "1",
+        "round": "H4"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Montreuil International Meeting",
+        "event": "800m",
+        "time": "1:45.58",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "61st Golden Spike",
+        "event": "800m",
+        "time": "1:44.19",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "36eme Meeting International Athletisme Montgeron-Essonne, Montgeron",
+        "event": "800m",
+        "time": "1:44.72",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 31",
+        "meet": "4st Elite Event & Young Talents",
+        "event": "400m",
+        "time": "46.2",
+        "place": "1",
+        "round": "F5"
+      },
+      {
+        "date": "MAR 26",
+        "meet": "3st Elite Event & Young Talents",
+        "event": "800m",
+        "time": "1:45.86",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "Algerian Winter Championships",
+        "event": "1000m",
+        "time": "2:28.74",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "Algerian Winter Championships",
+        "event": "1000m",
+        "time": "2:19.19",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAR 18",
+        "meet": "Algerian Winter Championships",
+        "event": "600m",
+        "time": "1:19.86",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "MAR 18",
+        "meet": "Algerian Winter Championships",
+        "event": "600m",
+        "time": "1:15.22",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 4",
+        "meet": "Championnat regional hivernal, Souk El Tenine",
+        "event": "300 Metres",
+        "time": "34.48",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "1er meeting Elite et jeunes Talents",
+        "event": "600m",
+        "time": "1:15.81",
+        "place": "1",
+        "round": "F3"
+      }
+    ],
+    "2023": [
+      {
+        "date": "SEP 8",
+        "meet": "Memorial van Damme",
+        "event": "800m",
+        "time": "1:45.80",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.95",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:43.93",
+        "place": "1",
+        "round": "SF1"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.76",
+        "place": "3",
+        "round": "H6"
+      },
+      {
+        "date": "JUL 26",
+        "meet": "Algerian Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:17.35",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 26",
+        "meet": "Algerian Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:11.55",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "Algerian Championships",
+        "event": "400m",
+        "time": "46.15",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "Algerian Championships",
+        "event": "400m",
+        "time": "47.21",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Herculis Meeting International d’Athlétisme EBS",
+        "event": "800m",
+        "time": "1:43.40",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Arab Games Algiers 2023",
+        "event": "800m",
+        "time": "1:46.87",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Arab Games Algiers 2023",
+        "event": "4x400 Metres Relay",
+        "time": "3:02.84",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "1:43.38",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "Diamond League Meeting",
+        "event": "800m",
+        "time": "1:46.06",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 7",
+        "meet": "2nd Elite & Youth talents Event Ramadhan Evening",
+        "event": "600m",
+        "time": "1:15.21",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "AUG 8",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:45.67",
+        "place": "2",
+        "round": "RR1"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:46.71",
+        "place": "8",
+        "round": "H6"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "BAUHAUS-Galan",
+        "event": "800m",
+        "time": "1:48.02",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "International Marseille Meeting",
+        "event": "800m",
+        "time": "1:44.75",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "Yangtze Delta Athletics Diamond Gala",
+        "event": "800m",
+        "time": "1:44.55",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Elite and youth Talents Event",
+        "event": "600m",
+        "time": "1:15.11",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "ASA Athletics Grand Prix 1",
+        "event": "600m",
+        "time": "1:14.52",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 18",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:46.82",
+        "place": "8",
+        "round": "SF2"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.77",
+        "place": "2",
+        "round": "H7"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "Algerian Championships",
+        "event": "800m",
+        "time": "1:46.47",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "Algerian Championships",
+        "event": "800m",
+        "time": "1:49.78",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "800m",
+        "time": "1:42.86",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "1:44.46",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "BAUHAUS-Galan",
+        "event": "800m",
+        "time": "1:42.77",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "75. Boris Hanžeković Memorial",
+        "event": "800m",
+        "time": "1:45.05",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Doha Meeting",
+        "event": "800m",
+        "time": "1:43.55",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Algerian Winter National Athletics Championships",
+        "event": "600m",
+        "time": "1:25.80",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Algerian Winter National Athletics Championships",
+        "event": "600m",
+        "time": "1:14.61",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "800m sh",
+        "time": "1:45.37",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "800m sh",
+        "time": "1:45.11",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "Czech Indoor Gala",
+        "event": "800m sh",
+        "time": "1:45.50",
+        "place": "3",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
+}

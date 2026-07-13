@@ -96,6 +96,14 @@
     {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
+      "event": "3000 m",
+      "time": "7:45.34",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
       "event": "2 Mi",
       "time": "8:18.09",
       "place": "16.",
@@ -166,5 +174,1024 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "SEP 29",
+        "meet": "Cuenca South American U23 Championships, Cuenca",
+        "event": "1500m",
+        "time": "4:01.64",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Meeting Jose Antonio Peña",
+        "event": "1500m",
+        "time": "3:51.90",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Barcelona Regional Championships, Barcelona",
+        "event": "1500m",
+        "time": "3:51.94",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Pézenas Meeting National, Pezenas",
+        "event": "1500m",
+        "time": "3:56.47",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "Sabadell (i)",
+        "event": "1500m sh",
+        "time": "3:53.36",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JAN 21",
+        "meet": "Sabadell (i)",
+        "event": "1500m sh",
+        "time": "3:53.31",
+        "place": "2",
+        "round": "F5"
+      },
+      {
+        "date": "JAN 12",
+        "meet": "Sabadell (i)",
+        "event": "1500m sh",
+        "time": "3:58.90",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "DEC 15",
+        "meet": "Control Meeting, Sabadell (i)",
+        "event": "3000m sh",
+        "time": "8:18.62",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 26",
+        "meet": "10 km, Granollers",
+        "event": "10K",
+        "time": "29:15",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "Pan American Games",
+        "event": "1500m",
+        "time": "3:43.17",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "Campeonato de España de Federaciones Autonómicas, Pamplona",
+        "event": "1500m",
+        "time": "3:55.41",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "Míting Internacional d'Atletisme, Barcelona",
+        "event": "1500m",
+        "time": "3:42.73",
+        "place": "12",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "Regional Championships, Barcelona",
+        "event": "1500m",
+        "time": "3:52.31",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Meeting de São João, Braga",
+        "event": "1500m",
+        "time": "3:47.18",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "Criterium Josep Campmany, Barcelona",
+        "event": "1500m",
+        "time": "3:44.00",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "Meeting d'Athlétisme Music Jump, Albi",
+        "event": "800m",
+        "time": "1:54.70",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "South American Championships, Lima",
+        "event": "1500m",
+        "time": "3:55.21",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Uruguayan Championships, Montevideo",
+        "event": "1500m",
+        "time": "3:54.40",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "Milla Sagrada Familia, Barcelona",
+        "event": "Mile",
+        "time": "4:19.0",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Spanish Indoor Championships, Antequera (i)",
+        "event": "1500m sh",
+        "time": "3:49.16",
+        "place": "4",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "IFAM Meeting, Gent (i)",
+        "event": "1500m sh",
+        "time": "3:54.42",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "Míting Internacional, Sabadell (i)",
+        "event": "1500m sh",
+        "time": "3:47.13",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Regional Indoor Championships, Sabadell (i)",
+        "event": "1500m sh",
+        "time": "3:48.88",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Regional 3000m Indoor Championships, Sabadell (i)",
+        "event": "3000m sh",
+        "time": "8:26.92",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 11",
+        "meet": "Control Meeting, Sabadell (i)",
+        "event": "1500m sh",
+        "time": "3:54.18",
+        "place": "4",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "DEC 31",
+        "meet": "Cursa dels Nassos, Barcelona",
+        "event": "5K",
+        "time": "13:40",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "DEC 8",
+        "meet": "Grand Prix Darwin Piñeyrúa, Montevideo",
+        "event": "1500m",
+        "time": "3:46.83",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "DEC 5",
+        "meet": "Uruguayan Championships, Montevideo",
+        "event": "1500m",
+        "time": "3:41.83",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 22",
+        "meet": "Míting Internacional D´Atletisme Ciutat de Barcelona",
+        "event": "3000m",
+        "time": "7:57.28",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "SEP 12",
+        "meet": "Spanish Championships",
+        "event": "1500m",
+        "time": "3:47.53",
+        "place": "OC",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "5-K de Sta. Cristina d'Aro (Catalonian Ch.), Santa Cristina d’Aro",
+        "event": "5K",
+        "time": "14:13",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Proves Control, Olot",
+        "event": "2000m",
+        "time": "5:08.49",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Proves Control, Olot",
+        "event": "1000m",
+        "time": "2:23.01",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "Spanish Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:52.12",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "FEB 29",
+        "meet": "Spanish Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:49.71",
+        "place": "5",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Míting Internacional Catalunya",
+        "event": "1500m sh",
+        "time": "3:42.94",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Trofeo Ibercaja Ciudad de Zaragoza",
+        "event": "3000m sh",
+        "time": "8:05.78",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "South American Indoor Championships, Cochabamba (i)",
+        "event": "3000m sh",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "South American Indoor Championships, Cochabamba (i)",
+        "event": "1500m sh",
+        "time": "3:58.18",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Regional Indoor U23 Championships",
+        "event": "3000m sh",
+        "time": "8:16.04",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 17",
+        "meet": "Meeting Elite en salle de Miramas, Miramas (i)",
+        "event": "800m sh",
+        "time": "1:54.37",
+        "place": "4",
+        "round": "F1"
+      }
+    ],
+    "2021": [
+      {
+        "date": "DEC 31",
+        "meet": "Cursa dels Nassos, Barcelona",
+        "event": "5K",
+        "time": "13:39",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "DEC 3",
+        "meet": "Pan American Junior Games",
+        "event": "1500m",
+        "time": "3:44.71",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "NOV 21",
+        "meet": "XXXIX Cross of Italica, Sevilla",
+        "event": "Cross Country",
+        "time": "29:43",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "NOV 14",
+        "meet": "XVII Cross de Atapuerca, Atapuerca",
+        "event": "Cross Country",
+        "time": "26:26",
+        "place": "13",
+        "round": "F"
+      },
+      {
+        "date": "OCT 24",
+        "meet": "67 Cross Internacional Zornoza, Amorebieta-Etxano",
+        "event": "Cross Country",
+        "time": "26:18",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "OCT 16",
+        "meet": "Nazioarteko Milia",
+        "event": "Mile",
+        "time": "4:21.0",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "OCT 9",
+        "meet": "Milla Internacional de Berango, Berango",
+        "event": "Mile",
+        "time": "4:14.0",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "Campeonato de España por Federaciones Autonómicas",
+        "event": "1500m",
+        "time": "3:44.04",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Meeting Stanislas Nancy",
+        "event": "1500m",
+        "time": "3:37.81",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Míting Internacional d'Atletisme Ciutat de Barcelona",
+        "event": "1500m",
+        "time": "3:39.11",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "VIII Trofeo Diputacion de Castellón-Memorial José Antonio Cansino, Castellón",
+        "event": "1500m",
+        "time": "3:36.14",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Braga",
+        "event": "1500m",
+        "time": "3:43.47",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Meeting National",
+        "event": "1500m",
+        "time": "3:35.82",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 3",
+        "meet": "Meeting Iberoamericano",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "South American Championships",
+        "event": "1500m",
+        "time": "3:38.67",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Meeting Jaen Paraiso Interior",
+        "event": "1500m",
+        "time": "3:38.40",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Desafío Nerja",
+        "event": "1500m",
+        "time": "3:37.75",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 2",
+        "meet": "Uruguayan Championships, Montevideo",
+        "event": "1500m",
+        "time": "3:43.61",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "NOV 20",
+        "meet": "XL Cross Internacional de Italica, Sevilla",
+        "event": "Cross Country",
+        "time": "29:50",
+        "place": "14",
+        "round": "F"
+      },
+      {
+        "date": "NOV 13",
+        "meet": "Cross Internacional de Atapuerca, Atapuerca",
+        "event": "Cross Country",
+        "time": "29:27",
+        "place": "19",
+        "round": "F"
+      },
+      {
+        "date": "NOV 6",
+        "meet": "Cross Internacional de Soria, Soria",
+        "event": "Cross Country",
+        "time": "29:28",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "OCT 29",
+        "meet": "Tast de la Mitja, Granollers",
+        "event": "10K",
+        "time": "28:17",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 23",
+        "meet": "Cross Internacional Zornotza, Amorebieta-Etxano",
+        "event": "Cross Country",
+        "time": "26:01",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "OCT 13",
+        "meet": "South American Games, Asunción",
+        "event": "1500m",
+        "time": "3:42.57",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "OCT 12",
+        "meet": "South American Games, Asunción",
+        "event": "5000m",
+        "time": "13:55.24",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:40.16",
+        "place": "10",
+        "round": "SF2"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:35.86",
+        "place": "7",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Meeting International de Sotteville 2022",
+        "event": "1500m",
+        "time": "3:39.44",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Night of Athletics",
+        "event": "1500m",
+        "time": "3:38.68",
+        "place": "10",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "IX GP Diputación de Castellón – VI Memorial JA Cansino, Castellón",
+        "event": "1500m",
+        "time": "3:36.42",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "ATLETICAGENEVE",
+        "event": "1500m",
+        "time": "3:42.06",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 3",
+        "meet": "BoXX United Manchester World Athletics Continental Tour",
+        "event": "1500m",
+        "time": "3:40.58",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Meeting Iberoamericano",
+        "event": "1500m",
+        "time": "3:38.17",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Castiglione International Meeting",
+        "event": "5000m",
+        "time": "13:26.78",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Milla Urbana Real Valle de Cayón, Saron",
+        "event": "Mile",
+        "time": "4:16.00",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Desafio Nerja",
+        "event": "5000m",
+        "time": "13:28.41",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 26",
+        "meet": "Carrera Internacional Noche de San Antón, Jaén",
+        "event": "10K",
+        "time": "29:49",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "LI Gran Premio Cáceres Campo a Través, Serradilla",
+        "event": "Cross Country",
+        "time": "29:05",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "World Indoor Tour Madrid 2022",
+        "event": "3000m sh",
+        "time": "7:52.27",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "Control Meeting",
+        "event": "3000m sh",
+        "time": "7:50.03",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Míting Internacional de Catalunya",
+        "event": "3000m sh",
+        "time": "7:54.36",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "Spanish Cross Country Championships, Jaén",
+        "event": "Cross Country",
+        "time": "28:28",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "BoXX United Manchester World Indoor Tour",
+        "event": "1500m sh",
+        "time": "3:47.53",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JAN 9",
+        "meet": "Elgoibar Juan Muguerza Cross-Country, Elgoibar",
+        "event": "Cross Country",
+        "time": "36:40",
+        "place": "18",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "NOV 19",
+        "meet": "Cross Internacional de Soria, Soria",
+        "event": "Cross Country",
+        "time": "26:57",
+        "place": "21",
+        "round": "F"
+      },
+      {
+        "date": "NOV 12",
+        "meet": "XLI Cross Internacional de Italica, Sevilla",
+        "event": "Cross Country",
+        "time": "30:46",
+        "place": "14",
+        "round": "F"
+      },
+      {
+        "date": "NOV 5",
+        "meet": "67 Cross Internacional de San Sebastián, San Sebastián",
+        "event": "Cross Country",
+        "time": "28:21",
+        "place": "14",
+        "round": "F"
+      },
+      {
+        "date": "OCT 31",
+        "meet": "Pan American Games, Santiago de Chile",
+        "event": "5000m",
+        "time": "14:50.83",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "OCT 1",
+        "meet": "World Athletics Road Running Championships, Riga",
+        "event": "5K",
+        "time": "13:49",
+        "place": "27",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 10",
+        "meet": "Memorial Borisa Hanžekovića",
+        "event": "3000m",
+        "time": "7:37.15",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "Memorial van Damme",
+        "event": "10000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "World Athletics Championships",
+        "event": "10000m",
+        "time": "28:28.49",
+        "place": "17",
+        "round": "F"
+      },
+      {
+        "date": "APR 15",
+        "meet": "10km Huelva Puerta del Descubrimiento, Huelva",
+        "event": "10K",
+        "time": "28:48",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAR 25",
+        "meet": "Trofeo Iberico",
+        "event": "10000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "44th World Athletics Cross Country Championships, Bathurst",
+        "event": "Cross Country Senior Race",
+        "time": "31:14",
+        "place": "26",
+        "round": "F"
+      },
+      {
+        "date": "FEB 5",
+        "meet": "LII Gran Premio Cáceres Campo a Través, Calzadilla",
+        "event": "Cross Country",
+        "time": "27:49",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Spanish Cross Country Championships",
+        "event": "Cross Country",
+        "time": "32:16",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "JAN 8",
+        "meet": "79th Elgoibar Juan Muguerza Cross-Country, Elgoibar",
+        "event": "Cross Country",
+        "time": "34:06",
+        "place": "7",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "NOV 17",
+        "meet": "XLII Cross Internacional de Itálica, Santiponce",
+        "event": "Cross Country",
+        "time": "21:45",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "NOV 3",
+        "meet": "68º Cross Internacional de San Sebastián",
+        "event": "Cross Country",
+        "time": "20:10",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 27",
+        "meet": "Medio Maratón Valencia Trinidad Alfonso Zurich, Valencia",
+        "event": "Half Marathon",
+        "time": "1:02:20",
+        "place": "36",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "13:56.40",
+        "place": "14",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Meeting de Paris",
+        "event": "3000m",
+        "time": "7:38.95",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Track Night Vienna",
+        "event": "5000m",
+        "time": "13:10.06",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Night of Athletics",
+        "event": "5000m",
+        "time": "13:05.95",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "25. Oelder InSiTech Citylauf, Oelde",
+        "event": "5K",
+        "time": "13:39",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "59. Internationales Pfingstsportfest Rehlingen",
+        "event": "5000m",
+        "time": "13:31.78",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Meeting National Est Lyonnais",
+        "event": "5000m",
+        "time": "13:21.67",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 21",
+        "meet": "Cross Cup de Hannut",
+        "event": "Cross Country",
+        "time": "28:43:00",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JAN 14",
+        "meet": "10K Valencia Ibercaja, Valencia",
+        "event": "10K",
+        "time": "28:04",
+        "place": "20",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "NOV 9",
+        "meet": "B.A.A. Half Marathon",
+        "event": "Half Marathon",
+        "time": "1:01:23",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "NOV 2",
+        "meet": "69º Cross Internacional de San Sebastián",
+        "event": "Cross Country",
+        "time": "19:59",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:17.26",
+        "place": "10",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "IFAM Oordegem",
+        "event": "1500m",
+        "time": "3:37.30",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "5000m",
+        "time": "13:05.52",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Cork City Sports",
+        "event": "Mile",
+        "time": "3:55.51",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Paris",
+        "event": "5000m",
+        "time": "12:59.26",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Paavo Nurmi Games",
+        "event": "5000m",
+        "time": "13:08.76",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Great Manchester Run, Manchester",
+        "event": "10K",
+        "time": "27:52",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Tokyo : Speed : Race",
+        "event": "10K",
+        "time": "27:46",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "Semi-Marathon International de Lille",
+        "event": "5K",
+        "time": "12:57",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Meeting Indoor de Lyon",
+        "event": "3000m sh",
+        "time": "7:50.43",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Spanish Cross Country Championships",
+        "event": "Cross Country",
+        "time": "31:29",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "JAN 12",
+        "meet": "10K Valencia Ibercaja by Kiprun, Valencia",
+        "event": "10K",
+        "time": "27:16",
+        "place": "7",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

@@ -86,5 +86,463 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "NOV 18",
+        "meet": "Addis Abeba Great Ethiopian Run, Addis Ababa",
+        "event": "10K",
+        "time": "28:55",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 31",
+        "meet": "Bruxelles Memorial van Damme",
+        "event": "5000m",
+        "time": "12:45.82",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "London Müller Anniversary Games",
+        "event": "5000m",
+        "time": "13:16.39",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "3000m",
+        "time": "7:36.49",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Cambridge adidas Boost Boston Games",
+        "event": "3000m",
+        "time": "7:46.20",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Shanghai IAAF Diamond League",
+        "event": "5000m",
+        "time": "DNS",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "APR 14",
+        "meet": "Boston B.A.A. 5K",
+        "event": "5K",
+        "time": "13:42",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 4",
+        "meet": "IAAF World Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:15.76",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "IAAF World Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:43.55",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "3000m sh",
+        "time": "7:41.79",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Karlsruhe Indoor Meeting",
+        "event": "3000m sh",
+        "time": "7:37.91",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "OCT 20",
+        "meet": "Airtel Delhi Half Marathon, New Delhi",
+        "event": "Half Marathon",
+        "time": "1:01:46",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "OCT 6",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "10000m",
+        "time": "27:11.37",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "Weltklasse Zürich",
+        "event": "5000m",
+        "time": "12:58.15",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "Müller Anniversary Games",
+        "event": "5000m",
+        "time": "13:01.86",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "Ethiopian Trials, Hengelo",
+        "event": "10000m",
+        "time": "26:48.95",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Athletissima Lausanne",
+        "event": "5000m",
+        "time": "13:09.59",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "Oslo Bislett Games",
+        "event": "3000m",
+        "time": "DNS",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Golden Gala",
+        "event": "5000m",
+        "time": "12:54.92",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "BAUHAUS-galan",
+        "event": "10000m",
+        "time": "27:01.02",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "IAAF Diamond League",
+        "event": "5000m",
+        "time": "13:04.83",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "B.A.A. 5K",
+        "event": "5K",
+        "time": "13:42",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "3000m sh",
+        "time": "7:37.41",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "OCT 18",
+        "meet": "Corsa dei Castelli, Trieste",
+        "event": "10K",
+        "time": "29:49",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "JUN 10",
+        "meet": "Golden Gala Pietro Mennea",
+        "event": "5000m",
+        "time": "12:49.02",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Ethiopian Trials",
+        "event": "10000m",
+        "time": "26:57.16",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 6",
+        "meet": "Ethiopian Championships, Addis Ababa",
+        "event": "10000m",
+        "time": "28:22.3",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2022": [],
+    "2023": [
+      {
+        "date": "DEC 9",
+        "meet": "Annual Charity Run, Al Khobar",
+        "event": "5K",
+        "time": "13:09",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "OCT 22",
+        "meet": "Valencia Half Marathon Trinidad Alfonso Zurich, Valencia",
+        "event": "Half Marathon",
+        "time": "57:41",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "OCT 1",
+        "meet": "World Athletics Road Running Championships, Riga",
+        "event": "5K",
+        "time": "12:59",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 27",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:12.65",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:36.15",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Herculis Meeting International d’Athlétisme EBS",
+        "event": "5000m",
+        "time": "12:42.18",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Athletissima Lausanne",
+        "event": "5000m",
+        "time": "12:49.80",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "VII Memorial José Antonio Cansino",
+        "event": "5000m",
+        "time": "13:15.85",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "EDP Meia Maratona de Lisboa, Lisboa",
+        "event": "Half Marathon",
+        "time": "59:07",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 5",
+        "meet": "Mitja Marató de Granollers, Granollers",
+        "event": "Half Marathon",
+        "time": "58:55",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 14",
+        "meet": "Al Sharqiyah International 5KM, Al Khobar",
+        "event": "5K",
+        "time": "12:58",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 13",
+        "meet": "Memorial van Damme",
+        "event": "5000m",
+        "time": "12:44.25",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 30",
+        "meet": "Golden Gala",
+        "event": "5000m",
+        "time": "12:51.07",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "13:15.32",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "14:08.18",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "Ethiopian Trials by Nerja",
+        "event": "10000m",
+        "time": "27:12.89",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "Oslo Bislett Games",
+        "event": "5000m",
+        "time": "12:36.73",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Marathon de Paris",
+        "event": "5K",
+        "time": "13:24",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 22",
+        "meet": "African Games",
+        "event": "5000m",
+        "time": "13:38.12",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "Podium Festival, Leicester",
+        "event": "5K",
+        "time": "13:19",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 21",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:07.02",
+        "place": "13",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:13.73",
+        "place": "6",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Athletissima Lausanne",
+        "event": "5000m",
+        "time": "13:10.08",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "5000m",
+        "time": "12:58.21",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Oslo Bislett Games",
+        "event": "5000m",
+        "time": "12:46.82",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "APR 6",
+        "meet": "Grand Slam Track Kingston",
+        "event": "3000m",
+        "time": "7:51.55",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 4",
+        "meet": "Grand Slam Track Kingston",
+        "event": "5000m",
+        "time": "14:40.20",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "3000m sh",
+        "time": "7:44.48",
+        "place": "7",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }
