@@ -216,6 +216,113 @@
   color: var(--muted);
 }
 
+/* ── MULTI-PR SEARCH TOOL (styled like the H2H tool cards) ── */
+.ath-mpr-tool-body {
+  padding: 16px 18px;
+}
+.ath-mpr-hint {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.ath-mpr-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.ath-mpr-tool-footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.ath-mpr-clear {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 0;
+  transition: color 0.12s;
+}
+.ath-mpr-clear:hover { color: var(--text); }
+.ath-mpr-match-count {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  margin-left: auto;
+}
+.ath-mpr-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ath-mpr-select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 13px;
+  outline: none;
+  min-width: 110px;
+}
+.ath-mpr-select:focus { border-color: var(--accent, #555); }
+.ath-mpr-under {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+.ath-mpr-time {
+  flex: 1;
+  min-width: 0;
+  max-width: 130px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.ath-mpr-time::placeholder { color: var(--muted); }
+.ath-mpr-time:focus { border-color: var(--accent, #555); }
+.ath-mpr-time.invalid { border-color: #d33; }
+.ath-mpr-remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.12s, background 0.12s;
+}
+.ath-mpr-remove:hover { color: #d33; background: rgba(211,51,51,0.08); }
+.ath-mpr-add {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent, #E8500A);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 0;
+}
+.ath-mpr-add:hover { text-decoration: underline; }
+
 .ath-filter-panel-footer {
   padding: 6px 18px 14px;
   display: flex;

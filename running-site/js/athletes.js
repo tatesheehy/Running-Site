@@ -34,6 +34,15 @@ function buildAthletesPage() {
     { key: 'u23',    label: 'U23',      section: 'age',  fn: a => { const ag = a.dob ? calcAgeFromDob(a.dob) : null; return ag !== null && ag <= 22; } },
   ];
   let filterPanelOpen = false;
+  let multiPrRows = [];
+
+  function _isValidTimeInput(str) {
+    return /^\d{1,2}:\d{2}(\.\d{1,3})?$/.test((str || '').trim());
+  }
+
+  function activeMultiPrRows() {
+    return multiPrRows.filter(r => r.event && _isValidTimeInput(r.time));
+  }
 
   // Build country list sorted by count descending
   const countryCounts = {};
@@ -64,6 +73,10 @@ function buildAthletesPage() {
     if (activePresets.size > 0) {
       const active = PRESETS.filter(p => activePresets.has(p.key));
       list = list.filter(a => active.every(p => p.fn(a)));
+    }
+    const activeMpr = activeMultiPrRows();
+    if (activeMpr.length > 0) {
+      list = list.filter(a => activeMpr.every(r => _parseTime(getPr(a, r.event)) < _parseTime(r.time)));
     }
 
     if (activeView === 'list') {
@@ -130,6 +143,62 @@ function buildAthletesPage() {
         </div>
         <div class="ath-preset-chips">${chips}</div>
       </div>`;
+  }
+
+  function _mprMatchText() {
+    const active = activeMultiPrRows();
+    if (!active.length) return '';
+    const n = sortedAthletes().length;
+    return `<span class="ath-mpr-match-count">${n} athlete${n === 1 ? '' : 's'} match${active.length > 1 ? ' all criteria' : ''}</span>`;
+  }
+
+  function renderMultiPrRows() {
+    return multiPrRows.map((r, i) => {
+      const invalid = r.time && !_isValidTimeInput(r.time);
+      return `
+      <div class="ath-mpr-row">
+        <select class="ath-mpr-select" onchange="mprSetEvent(${i}, this.value)">
+          <option value="">Event…</option>
+          ${_CANONICAL_EVENTS.map(e => `<option value="${e.key}"${r.event === e.key ? ' selected' : ''}>${e.label}</option>`).join('')}
+        </select>
+        <span class="ath-mpr-under">under</span>
+        <input class="ath-mpr-time${invalid ? ' invalid' : ''}" type="text" inputmode="numeric" placeholder="e.g. 3:30.00"
+          value="${r.time || ''}" oninput="mprSetTime(${i}, this.value)">
+        <button class="ath-mpr-remove" onclick="mprRemoveRow(${i})" aria-label="Remove event">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>`;
+    }).join('');
+  }
+
+  function renderMultiPrTool() {
+    return `
+      <div class="h2h-compare-section">
+        <div class="h2h-compare-hd">
+          <span class="h2h-compare-title">Multi-PR Search Tool</span>
+        </div>
+        <div class="ath-mpr-tool-body">
+          <p class="ath-mpr-hint">Find athletes who've run under a given time in multiple events at once — e.g. sub-3:30 1500m <em>and</em> sub-13:00 5000m.</p>
+          <div class="ath-mpr-rows" id="ath-mpr-rows">${renderMultiPrRows()}</div>
+          <div class="ath-mpr-tool-footer">
+            <button class="ath-mpr-add" onclick="mprAddRow()">+ Add event</button>
+            ${multiPrRows.length ? `<button class="ath-mpr-clear" onclick="mprClear()">Clear</button>` : ''}
+            <span id="ath-mpr-match">${_mprMatchText()}</span>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  function refreshMultiPrTool() {
+    const rows = qs('#ath-mpr-rows');
+    if (rows) rows.innerHTML = renderMultiPrRows();
+    const footer = qs('.ath-mpr-tool-footer');
+    if (footer) {
+      footer.innerHTML = `
+        <button class="ath-mpr-add" onclick="mprAddRow()">+ Add event</button>
+        ${multiPrRows.length ? `<button class="ath-mpr-clear" onclick="mprClear()">Clear</button>` : ''}
+        <span id="ath-mpr-match">${_mprMatchText()}</span>`;
+    }
   }
 
   function renderFilterPanel() {
@@ -417,6 +486,8 @@ function buildAthletesPage() {
         </div>
       </div>
 
+      ${renderMultiPrTool()}
+
       <div class="ath-filter-bar">
         <div class="ath-search-row">
           <div class="ath-search-wrap">
@@ -497,7 +568,44 @@ function buildAthletesPage() {
     activeCountry = 'all';
     activePresets.clear();
     activeListFilter = null;
+    multiPrRows = [];
     refreshFilterPanel();
+    refreshMultiPrTool();
+    refreshGrid();
+  };
+
+  window.mprAddRow = function() {
+    multiPrRows.push({ event: '', time: '' });
+    refreshMultiPrTool();
+  };
+
+  window.mprRemoveRow = function(i) {
+    multiPrRows.splice(i, 1);
+    refreshMultiPrTool();
+    refreshGrid();
+  };
+
+  window.mprClear = function() {
+    multiPrRows = [];
+    refreshMultiPrTool();
+    refreshGrid();
+  };
+
+  window.mprSetEvent = function(i, val) {
+    if (!multiPrRows[i]) return;
+    multiPrRows[i].event = val;
+    const matchEl = qs('#ath-mpr-match');
+    if (matchEl) matchEl.innerHTML = _mprMatchText();
+    refreshGrid();
+  };
+
+  window.mprSetTime = function(i, val) {
+    if (!multiPrRows[i]) return;
+    multiPrRows[i].time = val;
+    const input = qs(`.ath-mpr-row:nth-child(${i + 1}) .ath-mpr-time`);
+    if (input) input.classList.toggle('invalid', val && !_isValidTimeInput(val));
+    const matchEl = qs('#ath-mpr-match');
+    if (matchEl) matchEl.innerHTML = _mprMatchText();
     refreshGrid();
   };
 
