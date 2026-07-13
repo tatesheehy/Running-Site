@@ -12,10 +12,11 @@
 .h2h-stats-strip {
   display: flex;
   align-items: center;
-  background: var(--bg-light);
+  background: #fff;
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 18px 24px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 16px 24px;
   margin-bottom: 20px;
   gap: 0;
 }
@@ -59,6 +60,11 @@
   align-items: flex-end;
   justify-content: space-between;
   gap: 16px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 14px 16px;
   margin-bottom: 16px;
   flex-wrap: wrap;
 }
@@ -265,8 +271,10 @@
 
 
 .h2h-lb-wrap {
+  background: #fff;
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
   overflow: hidden;
 }
 
@@ -558,8 +566,10 @@
 /* ── Dominance Map ────────────────────────────────────────── */
 
 .h2h-map-wrap {
+  background: #fff;
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -894,6 +904,7 @@
 
 /* ── Top Rivalries Section ────────────────────────────────── */
 .h2h-rivalries-section {
+  background: #fff;
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -1034,6 +1045,7 @@
 /* ── Compare Tool ─────────────────────────────────────────── */
 
 .h2h-compare-section {
+  background: #fff;
   border: 1px solid var(--border);
   border-top: 3px solid var(--accent);
   border-radius: var(--radius-lg);

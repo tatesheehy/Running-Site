@@ -4,16 +4,16 @@
    ============================================================ */
 
 @import "base.css?v=14";
-@import "navbar.css?v=20";
+@import "navbar.css?v=21";
 @import "home.css?v=30";
 @import "articles.css?v=7";
-@import "rankings.css?v=76";
-@import "athletes.css?v=20";
+@import "rankings.css?v=77";
+@import "athletes.css?v=21";
 @import "modals.css?v=11";
 @import "about.css?v=5";
-@import "h2h.css?v=25";
-@import "account.css?v=7";
-@import "event-tracker.css?v=5";
+@import "h2h.css?v=26";
+@import "account.css?v=8";
+@import "event-tracker.css?v=6";
 @import "utilities.css?v=5";
 @import "responsive.css";
 

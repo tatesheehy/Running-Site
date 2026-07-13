@@ -58,7 +58,7 @@
 /* ── NAV / SIDEBAR MODE SWITCH ────────────────────────────── */
 @media (max-width: 960px) {
   .app-sidebar { display: none; }
-  #main, footer, .breaking-bar { margin-left: 0; }
+  #main, footer { margin-left: 0; }
   .mobile-overlay { display: block; pointer-events: none; }
   .mobile-overlay.open { pointer-events: auto; }
 }

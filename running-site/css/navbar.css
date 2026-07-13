@@ -149,7 +149,7 @@
 }
 
 /* Content offset to clear the sidebar — reset to 0 below 960px in responsive.css */
-#main, footer, .breaking-bar { margin-left: 236px; }
+#main, footer { margin-left: 236px; }
 
 .sidebar-group {
   list-style: none;

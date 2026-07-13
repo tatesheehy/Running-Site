@@ -100,9 +100,12 @@
 }
 
 .rr-soon-panel {
-  background: var(--bg);
+  background: #fff;
   border: 1px solid var(--border);
   border-top: 3px solid var(--text);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
 }
 
 .rr-soon-panel-label {
@@ -307,9 +310,12 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 0;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 10px 16px;
+  margin-bottom: 16px;
 }
 
 .rd-header-controls-left {
@@ -1557,6 +1563,9 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-family: var(--font-mono);
   background: #fff;
   border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
   color: #333;
   font-size: 12px;
   margin-bottom: 40px;

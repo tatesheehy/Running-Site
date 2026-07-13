@@ -138,8 +138,11 @@
 }
 
 .acct-card {
+  background: #fff;
   border: 1px solid var(--border);
-  padding: 24px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 20px;
 }
 
 .acct-card--full {

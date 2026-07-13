@@ -548,6 +548,9 @@
 }
 .ath-list-wrap {
   overflow-x: auto;
+  background: #fff;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-card);
 }
 .ath-list-table {
   width: 100%;

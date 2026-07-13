@@ -29,7 +29,12 @@
 
 /* ── Sections ──────────────────────────────────────────────── */
 .et-section {
-  margin-bottom: 48px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 20px;
+  margin-bottom: 16px;
 }
 
 .et-section:last-child {
