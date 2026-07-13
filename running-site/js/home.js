@@ -308,43 +308,46 @@ function buildHome() {
       <a href="athletes.html" class="dash-link dash-card-foot">Find them with Multi-PR Search →</a>
     </div>`;
 
-  // ── Event Leaders by season best (StatMuse League Leaders) ─
-  const sbLeaders = ev => (RANKINGS[ev] || [])
-    .filter(r => r.seasonBest && r.seasonBest !== '—' && parseTimeToSecs(r.seasonBest) != null)
-    .sort((a, b) => parseTimeToSecs(a.seasonBest) - parseTimeToSecs(b.seasonBest))
-    .slice(0, 3);
+  // ── H2H Leaders by event (best season win-loss record per event) ─
+  const h2hMin = typeof _H2H_MIN_RACES !== 'undefined' ? _H2H_MIN_RACES : 3;
+  const h2hLeadersForEvent = ev => {
+    if (typeof _computeAllH2HRecords !== 'function') return [];
+    const { records } = _computeAllH2HRecords('2026', ev, 'all', 'all');
+    return Object.entries(records)
+      .filter(([, r]) => r.wins + r.losses >= h2hMin)
+      .sort((a, b) =>
+        _wilsonScore(b[1].wins, b[1].wins + b[1].losses) - _wilsonScore(a[1].wins, a[1].wins + a[1].losses)
+        || b[1].wins - a[1].wins)
+      .slice(0, 3);
+  };
 
   const leaderSections = ['800m', '1500m', '5000m', '10000m'].map(ev => {
-    const rows = sbLeaders(ev);
-    if (!rows.length) return '';
-    const [top, ...rest] = rows;
-    const a = top.athleteId ? ATHLETES[top.athleteId] : null;
-    const photo = a && a.photo;
-    const bg = (a && a.photoBackground) || '#111';
-    const avatar = `<div class="dash-ldr-avatar${photo ? '' : ' no-photo'}" style="background-color:${bg};${photo ? `background-image:url('${photo}');` : ''}"></div>`;
-    const runners = rest.map(r => `
-      <div class="dash-ldr-runner"${r.athleteId ? ` onclick="event.stopPropagation();openAthleteCard('${r.athleteId}', null)" role="button" tabindex="0"` : ''}>
-        <span class="dash-ldr-rtime">${r.seasonBest}</span>
-        <span class="dash-ldr-rname">${r.name}</span>
+    const ranked = h2hLeadersForEvent(ev);
+    if (!ranked.length) return '';
+    const [[topId, topRec], ...rest] = ranked;
+    const topA = ATHLETES[topId];
+    const runners = rest.map(([id, r]) => `
+      <div class="dash-ldr-runner" onclick="event.stopPropagation();openAthleteCard('${id}', null)" role="button" tabindex="0">
+        <span class="dash-ldr-rtime">${r.wins}–${r.losses}</span>
+        <span class="dash-ldr-rname">${ATHLETES[id] ? ATHLETES[id].name : id}</span>
       </div>`).join('');
     return `
       <div class="dash-ldr-section">
-        <a class="dash-ldr-label" href="event-tracker.html?event=${encodeURIComponent(ev)}">${ev} · Season Best</a>
-        <div class="dash-ldr-body"${top.athleteId ? ` onclick="openAthleteCard('${top.athleteId}', null)" role="button" tabindex="0"` : ''}>
+        <a class="dash-ldr-label" href="h2h.html">${ev} · H2H Leader</a>
+        <div class="dash-ldr-body" onclick="openAthleteCard('${topId}', null)" role="button" tabindex="0">
           <div class="dash-ldr-main">
             <div class="dash-ldr-hero-row">
-              <span class="dash-ldr-badge">${top.seasonBest}</span>
-              <span class="dash-ldr-name">${top.name}</span>
+              <span class="dash-ldr-badge">${topRec.wins}–${topRec.losses}</span>
+              <span class="dash-ldr-name">${topA ? topA.name : topId}</span>
             </div>
             <div class="dash-ldr-runners">${runners}</div>
           </div>
-          ${avatar}
         </div>
       </div>`;
   }).join('');
   const leadersCard = leaderSections ? `
     <div class="dash-card dash-leaders">
-      <div class="dash-card-title">Event Leaders</div>
+      <div class="dash-card-title">H2H Leaders by Event</div>
       <div class="dash-ldr-grid">${leaderSections}</div>
     </div>` : '';
 
