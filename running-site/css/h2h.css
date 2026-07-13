@@ -352,9 +352,9 @@
 }
 
 .h2h-lb-name {
-  font-family: var(--font-display);
+  font-family: var(--font-display); letter-spacing: 0.04em;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
   color: var(--text);
   line-height: 1.1;
 }
@@ -630,8 +630,8 @@
 }
 
 .h2h-map-row-name {
-  font-family: var(--font-display);
-  font-size: 14px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 18px;
   font-weight: 700;
   color: var(--text);
 }
@@ -794,9 +794,9 @@
 }
 
 .h2h-detail-opp-name {
-  font-family: var(--font-display);
+  font-family: var(--font-display); letter-spacing: 0.04em;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 15px;
   color: var(--text);
   flex: 1;
 }
@@ -881,9 +881,9 @@
 .h2h-detail-year-hd:first-child { margin-top: 0; border-top: none; padding-top: 0; }
 .h2h-detail-year {
   font-family: var(--font-display);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -955,8 +955,8 @@
 }
 
 .h2h-rivalry-matchup {
-  font-family: var(--font-display);
-  font-size: 14px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 18px;
   font-weight: 600;
   color: var(--muted);
   white-space: nowrap;
@@ -992,10 +992,10 @@
 
 .h2h-rivalry-score {
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 700;
   color: var(--text);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
   line-height: 1;
   white-space: nowrap;
 }
@@ -1071,9 +1071,9 @@
 
 .h2h-compare-vs {
   font-family: var(--font-display);
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--muted);
   flex-shrink: 0;
@@ -1130,8 +1130,8 @@
 
 
 .h2h-cmp-sel-name {
-  font-family: var(--font-display);
-  font-size: 14px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 18px;
   font-weight: 600;
   color: var(--text);
   flex: 1;
@@ -1229,8 +1229,8 @@
 }
 
 .h2h-find-race-meet {
-  font-family: var(--font-display);
-  font-size: 14px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 18px;
   font-weight: 700;
   color: var(--text);
 }
@@ -1303,8 +1303,8 @@
 
 
 .h2h-cmp-ath-name {
-  font-family: var(--font-display);
-  font-size: 14px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 18px;
   font-weight: 600;
   color: var(--text);
   white-space: nowrap;
@@ -1319,11 +1319,11 @@
 
 .h2h-cmp-score-main {
   font-family: var(--font-display);
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 700;
   color: var(--muted);
   line-height: 1;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
 }
 
 .h2h-cmp-score--lead { color: var(--text); }

@@ -117,9 +117,9 @@ button { font-family: inherit; }
 
 .section-title {
   font-family: var(--font-display);
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 
 /* ── CATEGORY TAG ─────────────────────────────────────────── */

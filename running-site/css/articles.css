@@ -58,10 +58,10 @@
 
 .article-card-title {
   font-family: var(--font-display);
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 1.15;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
   margin-bottom: 7px;
   transition: color 0.15s;
 }
@@ -84,9 +84,9 @@
 
 .page-title {
   font-family: var(--font-display);
-  font-size: 40px;
+  font-size: 51px;
   font-weight: 800;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 
 .filter-bar {
@@ -161,10 +161,10 @@
 
 .article-detail-title {
   font-family: var(--font-display);
-  font-size: 56px;
+  font-size: 71px;
   font-weight: 700;
   line-height: 1.05;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
   margin-bottom: 18px;
 }
 
@@ -223,8 +223,8 @@
 
 .article-body { font-family: 'Source Serif 4', Georgia, serif; font-size: 18px; line-height: 1.82; color: var(--text); }
 .article-body p { margin-bottom: 28px; }
-.article-body h2 { font-family: var(--font-display); font-size: 32px; font-weight: 700; letter-spacing: 0.02em; margin: 44px 0 16px; color: var(--text); }
-.article-body h3 { font-family: var(--font-display); font-size: 24px; font-weight: 600; letter-spacing: 0.02em; margin: 34px 0 12px; }
+.article-body h2 { font-family: var(--font-display); font-size: 41px; font-weight: 700; letter-spacing: 0.04em; margin: 44px 0 16px; color: var(--text); }
+.article-body h3 { font-family: var(--font-display); font-size: 30px; font-weight: 600; letter-spacing: 0.04em; margin: 34px 0 12px; }
 .article-body blockquote {
   border-left: 4px solid var(--accent);
   padding: 4px 0 4px 22px;

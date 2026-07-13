@@ -38,9 +38,9 @@
 
 .home-latest-title {
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 
 .home-rankings-col {
@@ -89,10 +89,10 @@
 
 .home-hero-title {
   font-family: var(--font-display);
-  font-size: 44px;
+  font-size: 56px;
   font-weight: 700;
   line-height: 1.0;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
   color: #fff;
   margin-bottom: 8px;
   max-width: 820px;
@@ -132,7 +132,7 @@
 .hero-image, .hero-image-wrap .img-placeholder { aspect-ratio: 16/9; width: 100%; object-fit: cover; display: block; }
 .hero-image-wrap .cat-tag { position: absolute; top: 12px; left: 12px; }
 .hero-body { padding-right: 28px; }
-.hero-title { font-family: var(--font-display); font-size: 44px; font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 14px; cursor: pointer; }
+.hero-title { font-family: var(--font-display); font-size: 56px; font-weight: 800; line-height: 1.05; letter-spacing: -0.01em; margin-bottom: 14px; cursor: pointer; }
 .hero-title:hover { text-decoration: underline; text-underline-offset: 3px; }
 .hero-excerpt { font-size: 15px; color: var(--muted); line-height: 1.7; margin-bottom: 18px; }
 
@@ -182,10 +182,10 @@
 
 .ep-title {
   font-family: var(--font-display);
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 500;
   line-height: 1.25;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
   margin-bottom: 4px;
   transition: opacity 0.15s;
 }
@@ -271,9 +271,9 @@
 
 .aotw-name {
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 700;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
   line-height: 1.1;
   color: #fff;
   margin-bottom: 3px;
@@ -374,9 +374,9 @@
 
 .rw-title {
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
 }
 
 .event-tabs {
@@ -447,8 +447,8 @@
 .rankings-table tbody tr:hover td { background: #efefef; cursor: pointer; }
 
 .rank-num {
-  font-family: var(--font-display);
-  font-size: 24px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 30px;
   font-weight: 700;
   color: var(--text);
   width: 44px;
@@ -490,8 +490,8 @@
 .rw-row--clickable:hover .rw-name { opacity: 0.75; }
 
 .rw-rank {
-  font-family: var(--font-display);
-  font-size: 14px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 18px;
   font-weight: 600;
   color: var(--muted);
   text-align: center;
@@ -584,10 +584,10 @@
 }
 .fp-ticker-label {
   font-family: var(--font-display);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   color: var(--accent);
   padding-right: 14px;
   border-right: 1px solid rgba(255,255,255,0.15);
@@ -602,8 +602,8 @@
   overflow: hidden;
 }
 .fp-tick {
-  font-family: var(--font-display);
-  font-size: 12px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 15px;
   font-weight: 600;
   color: rgba(255,255,255,0.85);
   white-space: nowrap;
@@ -689,8 +689,8 @@
   margin-bottom: 8px;
 }
 .fp-hero-hed {
-  font-family: var(--font-display);
-  font-size: 32px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 41px;
   font-weight: 700;
   line-height: 1.1;
   color: var(--text);
@@ -852,9 +852,9 @@
 .fp-trending-hd { margin-bottom: 14px; }
 .fp-trending-title {
   font-family: var(--font-display);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 800;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text);
 }
@@ -887,8 +887,8 @@
 .fp-trend-row.fp-trend--pb .fp-trend-tag { color: var(--accent); }
 
 .fp-trend-row-name {
-  font-family: var(--font-display);
-  font-size: 13px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 16px;
   font-weight: 700;
   color: var(--text);
   display: flex;

@@ -33,11 +33,11 @@
   background: none;
   border: none;
   outline: none;
-  font-size: 32px;
+  font-size: 41px;
   font-family: var(--font-display);
   font-weight: 700;
   color: #fff;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   padding: 14px 0;
 }
 #search-input::placeholder { color: #2a2a2a; }
@@ -79,8 +79,8 @@
 }
 
 .search-result-title {
-  font-family: var(--font-display);
-  font-size: 22px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 28px;
   font-weight: 700;
   color: #fff;
   line-height: 1.2;
@@ -186,10 +186,10 @@
   border-bottom: 2px solid transparent;
   margin-bottom: -1px;
   color: #555;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   font-family: var(--font-display);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 8px 0;
   cursor: pointer;
@@ -230,9 +230,9 @@
   border: none;
   border-radius: 6px;
   font-family: var(--font-display);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   padding: 13px;
   cursor: pointer;
@@ -436,8 +436,8 @@
 }
 
 .card-rank {
-  font-family: var(--font-display);
-  font-size: 44px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 56px;
   font-weight: 800;
   color: var(--accent);
   line-height: 1;
@@ -455,8 +455,8 @@
 }
 
 .card-athlete-name {
-  font-family: var(--font-display);
-  font-size: 26px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 33px;
   font-weight: 700;
   color: #fff;
   line-height: 1;
@@ -631,8 +631,8 @@
 .card-achievement-icon { font-size: 22px; display: block; margin-bottom: 2px; }
 
 .card-achievement-count {
-  font-family: var(--font-display);
-  font-size: 15px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 19px;
   font-weight: 700;
   color: #fff;
   display: block;
@@ -694,8 +694,8 @@
 .card-right { padding: 26px 28px; }
 
 .card-headline {
-  font-family: var(--font-display);
-  font-size: 28px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 36px;
   font-weight: 800;
   line-height: 1.15;
   margin-bottom: 22px;
@@ -1062,9 +1062,9 @@
 }
 .h2h-title {
   font-family: var(--font-display);
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 800;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
   color: #f0f0f0;
   position: absolute;
   left: 50%;
@@ -1100,9 +1100,9 @@
   border-radius: 7px;
   color: #f0f0f0;
   font-family: var(--font-display);
-  font-size: 16px;
+  font-size: 21px;
   font-weight: 500;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
   padding: 10px 14px;
   outline: none;
   transition: border-color 0.15s;
@@ -1141,8 +1141,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-display);
-  font-size: 18px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 23px;
   font-weight: 800;
   color: var(--accent);
   padding-top: 10px;
@@ -1185,9 +1185,9 @@
 
 .h2h-name {
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 800;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
   color: #ffffff;
 }
 .h2h-name--right { text-align: right; }
@@ -1227,8 +1227,8 @@
   padding: 4px 0;
 }
 .h2h-rank-num {
-  font-family: var(--font-display);
-  font-size: 18px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 23px;
   font-weight: 800;
   color: var(--accent);
   min-width: 36px;
@@ -1438,8 +1438,8 @@
   gap: 8px;
 }
 .h2h-record-wins {
-  font-family: var(--font-display);
-  font-size: 42px;
+  font-family: var(--font-display); letter-spacing: 0.04em;
+  font-size: 54px;
   font-weight: 800;
   color: #444;
   line-height: 1;
