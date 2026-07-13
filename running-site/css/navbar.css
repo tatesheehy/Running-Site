@@ -116,9 +116,9 @@
   position: absolute;
   top: calc(100% + 10px);
   right: 0;
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  background: #F1F1F2;
+  border: none;
+  border-radius: 16px;
   box-shadow: var(--shadow-card-hover);
   padding: 16px 20px;
   font-family: var(--font-body);
@@ -242,9 +242,9 @@
   position: absolute;
   top: calc(100% + 10px);
   right: 0;
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
+  background: #F1F1F2;
+  border: none;
+  border-radius: 16px;
   min-width: 180px;
   z-index: 9000;
   overflow: hidden;
@@ -277,7 +277,7 @@
   text-align: left;
   transition: background 0.15s ease, color 0.15s ease;
 }
-.user-menu-item:hover { background: var(--bg-light); color: var(--text); }
+.user-menu-item:hover { background: rgba(0,0,0,0.05); color: var(--text); }
 .user-menu-item--signout { color: #999; border-top: 1px solid var(--border); }
 .user-menu-item--signout:hover { color: #ef4444; }
 

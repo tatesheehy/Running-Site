@@ -113,15 +113,17 @@
   top: calc(100% + 6px);
   left: 0;
   min-width: 200px;
-  background: #fff;
-  border: 1px solid var(--border);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  background: #F1F1F2;
+  border: none;
+  border-radius: 16px;
+  box-shadow: var(--shadow-card-hover);
   z-index: 100;
-  padding: 4px;
+  padding: 6px;
 }
 
 .h2h-lb-list-menu-item {
   position: relative;
+  border-radius: 10px;
   padding: 7px 10px 7px 26px;
   font-family: var(--font-mono);
   font-size: 12px;
@@ -131,7 +133,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.h2h-lb-list-menu-item:hover { background: var(--bg-light); }
+.h2h-lb-list-menu-item:hover { background: rgba(0,0,0,0.05); }
 .h2h-lb-list-menu-item.active { font-weight: 700; color: var(--accent); }
 .h2h-lb-list-menu-item.active::before {
   content: '✓';
@@ -205,36 +207,35 @@
 
 .h2h-seg {
   display: inline-flex;
-  background: none;
-  border-radius: var(--radius-sm);
-  padding: 0;
+  background: #ECECEE;
+  border-radius: 999px;
+  padding: 3px;
   gap: 2px;
   flex-shrink: 0;
 }
 
 .h2h-seg-btn {
   background: none;
-  border: 1px solid rgba(0,0,0,0.16);
-  color: rgba(0,0,0,0.5);
+  border: none;
+  color: rgba(0,0,0,0.55);
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 5px 9px;
-  border-radius: 6px;
+  padding: 5px 12px;
+  border-radius: 999px;
   cursor: pointer;
   font-family: var(--font-mono);
   white-space: nowrap;
-  transition: color 0.12s, border-color 0.12s;
+  transition: color 0.15s ease, background 0.15s ease;
 }
 .h2h-seg-btn:hover:not(.active) {
   color: var(--text);
 }
 .h2h-seg-btn.active {
-  background: none;
-  color: var(--accent);
-  border-color: var(--accent);
-  box-shadow: none;
+  background: #fff;
+  color: var(--text);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
   font-weight: 700;
 }
 
@@ -749,8 +750,8 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: rgba(0,0,0,0.5);
-  padding: 3px 8px;
-  border-radius: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
   cursor: pointer;
 }
 .h2h-detail-tab:hover { color: var(--text); }
@@ -1024,7 +1025,7 @@
   align-items: center;
   background: #fff;
   border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
+  border-radius: 999px;
   padding: 0 9px;
   width: 160px;
 }

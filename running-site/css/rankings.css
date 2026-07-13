@@ -877,9 +877,9 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   gap: 10px;
   justify-content: space-between;
   background: #fff;
-  border: 1.5px solid #ddd;
-  border-radius: var(--radius);
-  padding: 9px 14px;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  padding: 9px 16px;
   font-family: var(--font-body);
   font-size: 13px;
   font-weight: 600;
@@ -909,12 +909,13 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   top: calc(100% + 5px);
   left: 0;
   min-width: 100%;
-  background: #fff;
-  border: 1.5px solid #e4e4e4;
-  border-radius: var(--radius);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.09);
+  background: #F1F1F2;
+  border: none;
+  border-radius: 16px;
+  box-shadow: var(--shadow-card-hover);
   z-index: 200;
   overflow: hidden;
+  padding: 6px;
   max-height: 280px;
   overflow-y: auto;
 }
@@ -923,7 +924,8 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 9px 14px;
+  border-radius: 10px;
+  padding: 9px 12px;
   font-family: var(--font-body);
   font-size: 13px;
   font-weight: 500;
@@ -931,7 +933,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   cursor: pointer;
   transition: background 0.1s;
 }
-.rd-cs-opt:hover { background: #f5f5f5; }
+.rd-cs-opt:hover { background: rgba(0,0,0,0.05); }
 .rd-cs-opt--active { color: var(--text); font-weight: 700; background: rgba(0,0,0,0.04); }
 
 .rd-col-labels {
@@ -1635,15 +1637,16 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-weight: 700;
   letter-spacing: 0.06em;
   color: rgba(0,0,0,0.5);
-  background: none;
-  border: 1px solid rgba(0,0,0,0.16);
-  padding: 5px 9px;
+  background: #ECECEE;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 12px;
   cursor: pointer;
   white-space: nowrap;
   transition: color 0.12s, border-color 0.12s;
 }
 .rdt-chip:hover { color: #111; }
-.rdt-chip--active { color: var(--accent); border-color: var(--accent); }
+.rdt-chip--active { color: var(--text); background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
 
 /* Column header + rows share a grid */
 .rdt-cols, .rdt-row {

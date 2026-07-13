@@ -813,22 +813,29 @@
 }
 .fp-rank-tabs {
   display: flex;
-  gap: 14px;
+  background: #ECECEE;
+  border-radius: 999px;
+  padding: 3px;
+  gap: 2px;
 }
 .fp-rank-tab {
   font-size: 11px;
   font-weight: 600;
-  color: var(--muted);
+  color: rgba(0,0,0,0.55);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   background: none;
   border: none;
+  border-radius: 999px;
   cursor: pointer;
-  padding: 0;
-  opacity: 0.6;
+  padding: 4px 12px;
+  transition: color 0.15s ease, background 0.15s ease;
+  opacity: 1;
 }
 .fp-rank-tab.active {
-  color: var(--accent);
+  color: var(--text);
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
   opacity: 1;
 }
 .fp-rank-more {
