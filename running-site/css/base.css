@@ -6,6 +6,36 @@
 /* ── RESET & BASE ─────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+/* Lota Grotesque (Alt 1) — primary UI/body font, self-hosted */
+@font-face {
+  font-family: 'Lota Grotesque';
+  src: url('../fonts/Lota-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lota Grotesque';
+  src: url('../fonts/Lota-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lota Grotesque';
+  src: url('../fonts/Lota-SemiBold.woff2') format('woff2');
+  font-weight: 500 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lota Grotesque';
+  src: url('../fonts/Lota-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --accent: #E8500A;
   --dark: #111111;
@@ -16,7 +46,7 @@
   --bg: #FFFFFF;
   --bg-light: #F7F7F7;
   --font-display: 'Oswald', sans-serif;
-  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Lota Grotesque', system-ui, -apple-system, sans-serif;
   --font-mono: 'Oswald', sans-serif;
   --max-width: 1440px;
   --radius-sm: 8px;

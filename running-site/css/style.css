@@ -3,7 +3,7 @@
    Imports all partial CSS files in dependency order.
    ============================================================ */
 
-@import "base.css?v=14";
+@import "base.css?v=15";
 @import "navbar.css?v=22";
 @import "home.css?v=31";
 @import "articles.css?v=7";
