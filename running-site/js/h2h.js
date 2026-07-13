@@ -54,13 +54,82 @@ function _h2hPersonaTag(a) {
 
 function buildH2HPage() {
   _h2hLbYear       = '2026';
-  _h2hLbEvent      = 'all';
+  const eventParam = typeof getParam === 'function' ? getParam('event') : null;
+  _h2hLbEvent      = eventParam ? decodeURIComponent(eventParam) : 'all';
   _h2hLbOpponentMode = 'all';
   _h2hLbView       = 'table';
   _h2hLbListId     = 'all';
   _h2hFindIds      = [null, null, null, null, null];
   _h2hFindGo       = false;
   _renderH2HPage();
+}
+
+// Renders the leaderboard <table> (or an empty-state message) for a
+// pre-computed/sorted `rows` array of [athleteId, record] pairs. Pure —
+// no DOM writes, no module-state dependency — safe to call from anywhere
+// once _computeAllH2HRecords() has produced the rows. When expandable is
+// false, rows render without the click-to-expand affordance/detail row,
+// since that relies on _h2hCurrentRecs being populated by _renderH2HPage().
+function _renderH2HLbTableHtml(rows, opts = {}) {
+  const { expandable = true, emptyMessage = 'No head-to-head data for this selection.' } = opts;
+  if (rows.length === 0) return `<div class="h2h-lb-empty">${emptyMessage}</div>`;
+
+  const RANK_COLORS = ['#d4a000', '#999', '#b87333'];
+
+  return `<table class="h2h-lb-table">
+      <tbody>
+        ${rows.map(([id, rec], i) => {
+          const a = ATHLETES[id];
+          if (!a) return '';
+          const total    = rec.wins + rec.losses;
+          const pct      = Math.round((rec.wins / total) * 100);
+          const rankColor = RANK_COLORS[i] || null;
+          const rankClass = i === 0 ? 'h2h-lb-row--gold' : i === 1 ? 'h2h-lb-row--silver' : i === 2 ? 'h2h-lb-row--bronze' : '';
+
+          const persona = _h2hPersonaTag(a);
+          const faved = typeof isFavorited === 'function' && isFavorited(id);
+
+          return `
+            <tr class="h2h-lb-row ${rankClass}" id="h2h-row-${id}"${expandable ? ` onclick="h2hToggleExpand('${id}')"` : ''}>
+              <td class="h2h-lb-td h2h-lb-td--rank"${rankColor ? ` style="box-shadow:inset 4px 0 0 ${rankColor}"` : ''}>
+                <span class="h2h-lb-rank-num"${rankColor ? ` style="color:${rankColor}"` : ''}>${i + 1}</span>
+              </td>
+              <td class="h2h-lb-td h2h-lb-td--athlete">
+                <button class="inline-fav-btn${faved ? ' favorited' : ''}" data-fav-id="${id}"
+                  onclick="event.stopPropagation();toggleFavorite('${id}')" aria-label="Save ${a.name}">${_FAV_HEART}</button>
+                <div class="h2h-lb-ath-info">
+                  <div class="h2h-lb-ath-name-row">
+                    <span class="h2h-lb-name h2h-lb-name--link" onclick="event.stopPropagation();openAthleteCard('${id}',null)">${a.name}</span>
+                    ${persona ? `<span class="h2h-persona-tag h2h-persona-tag--${persona.cls}" data-tip="${persona.title}">${persona.label}</span>` : ''}
+                  </div>
+                  <div class="h2h-lb-ath-sub">
+                    <span class="h2h-lb-country">${renderFlag(a.flag)} ${a.country || ''}</span>
+                  </div>
+                </div>
+                ${expandable ? `<svg class="h2h-expand-chevron" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>` : ''}
+              </td>
+              <td class="h2h-lb-td h2h-lb-td--record">
+                <div class="h2h-lb-rec">
+                  <span class="h2h-lb-rec-w">${rec.wins}</span><span class="h2h-lb-rec-sep">–</span><span class="h2h-lb-rec-l">${rec.losses}</span>
+                </div>
+              </td>
+              <td class="h2h-lb-td h2h-lb-td--pct">
+                <div class="h2h-lb-pct-wrap">
+                  <span class="h2h-lb-pct-val">${pct}%</span>
+                  <div class="h2h-lb-pct-bar">
+                    <div class="h2h-lb-pct-fill" style="width:${pct}%"></div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            ${expandable ? `<tr class="h2h-lb-detail" id="h2h-detail-${id}" style="display:none">
+              <td colspan="4" class="h2h-lb-detail-td">
+                <div class="h2h-lb-detail-inner">${_renderExpandDetail(id, rec)}</div>
+              </td>
+            </tr>` : ''}`;
+        }).join('')}
+      </tbody>
+    </table>`;
 }
 
 function _renderH2HPage() {
@@ -93,8 +162,6 @@ function _renderH2HPage() {
 
   const topAthlete = rows[0] ? ATHLETES[rows[0][0]] : null;
   const topRecord  = rows[0] ? rows[0][1] : null;
-
-  const RANK_COLORS = ['#d4a000', '#999', '#b87333'];
 
   main.innerHTML = `
     <div class="container">
@@ -192,63 +259,9 @@ function _renderH2HPage() {
               <span>#</span><span>Athlete</span><span>Record</span><span>Win %</span>
             </div>
             <div class="h2h-lb-wrap">
-              ${rows.length === 0
-                ? `<div class="h2h-lb-empty">No head-to-head data for this selection${_h2hLbOpponentMode === 'ranked' ? ' — try switching to "All" opponents' : ''}${_h2hLbOpponentMode === 'list' ? ' — no members of this list have raced each other yet' : _h2hLbListId !== 'all' ? ' — this list may not have any members who\'ve raced each other yet' : ''}.</div>`
-                : `<table class="h2h-lb-table">
-                    <tbody>
-                      ${rows.map(([id, rec], i) => {
-                        const a = ATHLETES[id];
-                        if (!a) return '';
-                        const total    = rec.wins + rec.losses;
-                        const pct      = Math.round((rec.wins / total) * 100);
-                        const rankColor = RANK_COLORS[i] || null;
-                        const rankClass = i === 0 ? 'h2h-lb-row--gold' : i === 1 ? 'h2h-lb-row--silver' : i === 2 ? 'h2h-lb-row--bronze' : '';
-
-                        const persona = _h2hPersonaTag(a);
-                        const faved = typeof isFavorited === 'function' && isFavorited(id);
-
-                        return `
-                          <tr class="h2h-lb-row ${rankClass}" id="h2h-row-${id}" onclick="h2hToggleExpand('${id}')">
-                            <td class="h2h-lb-td h2h-lb-td--rank"${rankColor ? ` style="box-shadow:inset 4px 0 0 ${rankColor}"` : ''}>
-                              <span class="h2h-lb-rank-num"${rankColor ? ` style="color:${rankColor}"` : ''}>${i + 1}</span>
-                            </td>
-                            <td class="h2h-lb-td h2h-lb-td--athlete">
-                              <button class="inline-fav-btn${faved ? ' favorited' : ''}" data-fav-id="${id}"
-                                onclick="event.stopPropagation();toggleFavorite('${id}')" aria-label="Save ${a.name}">${_FAV_HEART}</button>
-                              <div class="h2h-lb-ath-info">
-                                <div class="h2h-lb-ath-name-row">
-                                  <span class="h2h-lb-name h2h-lb-name--link" onclick="event.stopPropagation();openAthleteCard('${id}',null)">${a.name}</span>
-                                  ${persona ? `<span class="h2h-persona-tag h2h-persona-tag--${persona.cls}" data-tip="${persona.title}">${persona.label}</span>` : ''}
-                                </div>
-                                <div class="h2h-lb-ath-sub">
-                                  <span class="h2h-lb-country">${renderFlag(a.flag)} ${a.country || ''}</span>
-                                </div>
-                              </div>
-                              <svg class="h2h-expand-chevron" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            </td>
-                            <td class="h2h-lb-td h2h-lb-td--record">
-                              <div class="h2h-lb-rec">
-                                <span class="h2h-lb-rec-w">${rec.wins}</span><span class="h2h-lb-rec-sep">–</span><span class="h2h-lb-rec-l">${rec.losses}</span>
-                              </div>
-                            </td>
-                            <td class="h2h-lb-td h2h-lb-td--pct">
-                              <div class="h2h-lb-pct-wrap">
-                                <span class="h2h-lb-pct-val">${pct}%</span>
-                                <div class="h2h-lb-pct-bar">
-                                  <div class="h2h-lb-pct-fill" style="width:${pct}%"></div>
-                                </div>
-                              </div>
-                            </td>
-                          </tr>
-                          <tr class="h2h-lb-detail" id="h2h-detail-${id}" style="display:none">
-                            <td colspan="4" class="h2h-lb-detail-td">
-                              <div class="h2h-lb-detail-inner">${_renderExpandDetail(id, rec)}</div>
-                            </td>
-                          </tr>`;
-                      }).join('')}
-                    </tbody>
-                  </table>`
-              }
+              ${_renderH2HLbTableHtml(rows, {
+                emptyMessage: `No head-to-head data for this selection${_h2hLbOpponentMode === 'ranked' ? ' — try switching to "All" opponents' : ''}${_h2hLbOpponentMode === 'list' ? ' — no members of this list have raced each other yet' : _h2hLbListId !== 'all' ? ' — this list may not have any members who\'ve raced each other yet' : ''}.`,
+              })}
             </div>`
         }
 

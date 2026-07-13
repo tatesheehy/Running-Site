@@ -97,7 +97,7 @@ function _isPbResult(athlete, result) {
   return secs <= prSecs + 0.005;
 }
 
-function _buildTrendingPerformances(limit = 4) {
+function _buildTrendingPerformances(limit = 4, eventFilter = null) {
   const all = Object.values(ATHLETES);
   const cutoff = Date.now() - 30 * 86400000;
 
@@ -117,6 +117,7 @@ function _buildTrendingPerformances(limit = 4) {
       const ts = _trendParseDate(r.date);
       if (ts < cutoff) return;
       if (parseTimeToSecs(r.time) == null) return;
+      if (eventFilter && typeof _h2hEventMatches === 'function' && !_h2hEventMatches(r.event, eventFilter)) return;
       const place = parseInt(r.place, 10);
 
       const isPB = _isPbResult(a, r);

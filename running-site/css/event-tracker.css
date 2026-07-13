@@ -1,0 +1,58 @@
+/* ── EVENT TRACKER PAGE ───────────────────────────────────── */
+.et-page {
+  padding-top: 32px;
+  padding-bottom: 64px;
+}
+
+.et-page-header {
+  margin-bottom: 20px;
+}
+
+.et-page-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.et-page .h2h-seg {
+  margin-bottom: 24px;
+}
+
+.et-page .breaking-bar {
+  position: static;
+  margin-bottom: 32px;
+  border-radius: 6px;
+}
+
+.et-section {
+  margin-bottom: 48px;
+}
+
+.et-section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.et-section-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.et-view-link {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.et-view-link:hover {
+  text-decoration: underline;
+}
