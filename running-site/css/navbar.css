@@ -3,10 +3,10 @@
    ticker, mobile drawer, hamburger
    ============================================================ */
 
-/* ── NAVBAR (light SaaS header) ───────────────────────────── */
+/* ── NAVBAR (transparent, floating — StatMuse-style) ──────── */
 .navbar {
-  background: #fff;
-  border-bottom: 1px solid var(--border);
+  background: transparent;
+  border-bottom: none;
   height: 62px;
   display: flex;
   align-items: center;
@@ -69,18 +69,18 @@
   flex: 1;
   max-width: 520px;
   margin: 0 auto;
-  background: var(--bg-light);
+  background: #fff;
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 8px 16px;
+  border-radius: 999px;
+  padding: 11px 20px;
   color: #999;
   cursor: pointer;
+  box-shadow: var(--shadow-card);
   transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
 }
 .navbar-search-btn:hover {
-  background: #F0F0F0;
   border-color: #DDD;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  box-shadow: var(--shadow-card-hover);
 }
 .navbar-search-btn svg { flex-shrink: 0; }
 .navbar-search-placeholder {

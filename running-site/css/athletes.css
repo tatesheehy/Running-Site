@@ -294,7 +294,7 @@
 .ath-cs.open .ath-cs-arrow { transform: rotate(180deg); }
 
 /* Open: button + panel merge into one cohesive gray shape */
-.ath-cs.open { filter: drop-shadow(0 8px 18px rgba(16,24,40,0.13)); }
+.ath-cs.open { filter: drop-shadow(0 8px 18px rgba(16,24,40,0.13)); position: relative; z-index: 300; }
 .ath-cs.open .ath-cs-btn {
   background: #F1F1F2;
   border-color: transparent;

@@ -301,14 +301,21 @@ window.h2hLbSetList      = id   => {
 };
 
 window.h2hLbToggleListMenu = function() {
-  const menu = document.getElementById('h2h-lb-list-menu');
-  if (!menu) return;
-  menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+  const wrap = document.getElementById('h2h-lb-list-wrap');
+  if (wrap) wrap.classList.toggle('open');
 };
 
 window.h2hLbListMenuSelect = function(id) {
   window.h2hLbSetList(id);
 };
+
+if (!window._h2hLbListOutsideClick) {
+  window._h2hLbListOutsideClick = true;
+  document.addEventListener('click', function(e) {
+    const wrap = document.getElementById('h2h-lb-list-wrap');
+    if (wrap && !wrap.contains(e.target)) wrap.classList.remove('open');
+  });
+}
 
 window.h2hLbCreateList = async function() {
   if (typeof getCurrentUser === 'function' && !getCurrentUser()) { openAuthModal(); return; }
@@ -318,12 +325,6 @@ window.h2hLbCreateList = async function() {
   const list = await createList(name);
   if (list) window.h2hLbSetList(list.id);
 };
-
-document.addEventListener('click', e => {
-  if (e.target.closest('.h2h-lb-list-menu-wrap')) return;
-  const menu = document.getElementById('h2h-lb-list-menu');
-  if (menu && menu.style.display !== 'none') menu.style.display = 'none';
-});
 
 function _h2hCurrentListName() {
   const lists = typeof getLists === 'function' ? getLists() : [];
@@ -342,18 +343,18 @@ function _renderH2HListFilter() {
   const lists = typeof getLists === 'function' ? getLists() : [];
   const currentLabel = _h2hLbListId === 'all' ? 'All Athletes' : _h2hCurrentListName();
   const items = [{ id: 'all', name: 'All Athletes' }, ...lists].map(l => `
-    <div class="h2h-lb-list-menu-item${l.id === _h2hLbListId ? ' active' : ''}" onclick="h2hLbListMenuSelect('${l.id}')">${l.name}</div>
+    <div class="h2h-lb-cs-opt${l.id === _h2hLbListId ? ' h2h-lb-cs-opt--active' : ''}" onclick="h2hLbListMenuSelect('${l.id}')">${l.name}</div>
   `).join('');
 
   return `
     <div class="h2h-lb-ctrl-group">
       <div class="h2h-lb-ctrl-label">List</div>
-      <div class="h2h-lb-list-menu-wrap">
-        <button class="h2h-seg-btn h2h-lb-list-btn" onclick="h2hLbToggleListMenu()">
-          ${currentLabel}
-          <svg width="8" height="6" viewBox="0 0 8 6" fill="none" style="margin-left:5px;vertical-align:1px"><path d="M1 1l3 3 3-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="h2h-lb-cs" id="h2h-lb-list-wrap">
+        <button class="h2h-lb-cs-btn" type="button" onclick="h2hLbToggleListMenu()">
+          <span class="h2h-lb-cs-val">${currentLabel}</span>
+          <svg class="h2h-lb-cs-arrow" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
-        <div class="h2h-lb-list-menu" id="h2h-lb-list-menu" style="display:none">
+        <div class="h2h-lb-cs-list">
           ${items}
           <div class="h2h-lb-list-menu-divider"></div>
           <div class="h2h-lb-list-menu-new">
