@@ -152,15 +152,28 @@ function buildAthletesPage() {
     return `<span class="ath-mpr-match-count">${n} athlete${n === 1 ? '' : 's'} match${active.length > 1 ? ' all criteria' : ''}</span>`;
   }
 
+  function _mprEventLabel(key) {
+    const e = _CANONICAL_EVENTS.find(x => x.key === key);
+    return e ? e.label : 'Event…';
+  }
+
   function renderMultiPrRows() {
     return multiPrRows.map((r, i) => {
       const invalid = r.time && !_isValidTimeInput(r.time);
+      const opts = _CANONICAL_EVENTS.map(e =>
+        `<div class="ath-cs-opt${r.event === e.key ? ' ath-cs-opt--active' : ''}" data-key="${e.key}" onclick="mprPickEvent(${i}, '${e.key}')">${e.label}</div>`
+      ).join('');
       return `
       <div class="ath-mpr-row">
-        <select class="ath-mpr-select" onchange="mprSetEvent(${i}, this.value)">
-          <option value="">Event…</option>
-          ${_CANONICAL_EVENTS.map(e => `<option value="${e.key}"${r.event === e.key ? ' selected' : ''}>${e.label}</option>`).join('')}
-        </select>
+        <div class="ath-cs ath-mpr-cs" data-idx="${i}">
+          <button class="ath-cs-btn" type="button" onclick="mprToggleEventMenu(${i}, event)">
+            <span class="ath-cs-val${r.event ? '' : ' ath-cs-val--ph'}">${_mprEventLabel(r.event)}</span>
+            <svg class="ath-cs-arrow" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1.5l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <div class="ath-cs-list">${opts}</div>
+        </div>
         <span class="ath-mpr-under">under</span>
         <input class="ath-mpr-time${invalid ? ' invalid' : ''}" type="text" inputmode="numeric" placeholder="e.g. 3:30.00"
           value="${r.time || ''}" oninput="mprSetTime(${i}, this.value)">
@@ -513,6 +526,13 @@ function buildAthletesPage() {
   window._mapRenderGrid  = list => { qs('#ath-page-grid').className = 'ath-page-grid'; qs('#ath-page-grid').innerHTML = renderGrid(list); };
   window._mapRestoreGrid = ()   => { activeView = 'grid'; setViewBtns(); refreshGrid(); };
 
+  // Close the custom event dropdown when clicking outside it
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.ath-mpr-cs')) {
+      document.querySelectorAll('.ath-mpr-cs.open').forEach(w => w.classList.remove('open'));
+    }
+  });
+
   window.setAthleteView = function(view) {
     if (view === activeView) return;
     // Exit map/lists if switching to grid/list
@@ -597,6 +617,26 @@ function buildAthletesPage() {
     const matchEl = qs('#ath-mpr-match');
     if (matchEl) matchEl.innerHTML = _mprMatchText();
     refreshGrid();
+  };
+
+  window.mprToggleEventMenu = function(i, ev) {
+    if (ev) ev.stopPropagation();
+    const wrap = qs(`.ath-mpr-cs[data-idx="${i}"]`);
+    if (!wrap) return;
+    const wasOpen = wrap.classList.contains('open');
+    document.querySelectorAll('.ath-mpr-cs.open').forEach(w => w.classList.remove('open'));
+    if (!wasOpen) wrap.classList.add('open');
+  };
+
+  window.mprPickEvent = function(i, key) {
+    const wrap = qs(`.ath-mpr-cs[data-idx="${i}"]`);
+    if (wrap) {
+      wrap.classList.remove('open');
+      const valEl = wrap.querySelector('.ath-cs-val');
+      if (valEl) { valEl.textContent = _mprEventLabel(key); valEl.classList.remove('ath-cs-val--ph'); }
+      wrap.querySelectorAll('.ath-cs-opt').forEach(o => o.classList.toggle('ath-cs-opt--active', o.dataset.key === key));
+    }
+    window.mprSetEvent(i, key);
   };
 
   window.mprSetTime = function(i, val) {

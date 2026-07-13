@@ -888,8 +888,8 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   min-width: 180px;
   transition: border-color 0.15s;
 }
-.rd-cs-btn:hover,
-.rd-cs.open .rd-cs-btn { border-color: var(--text); color: #111; }
+.rd-cs-btn:hover { border-color: var(--text); color: #111; }
+.rd-cs.open .rd-cs-btn { color: #111; }
 .rd-cs-val {
   display: flex;
   align-items: center;
@@ -903,18 +903,26 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   transition: transform 0.2s;
 }
 .rd-cs.open .rd-cs-arrow { transform: rotate(180deg); color: var(--text); }
+
+/* Open: button + panel merge into one cohesive gray shape */
+.rd-cs.open { filter: drop-shadow(0 8px 18px rgba(16,24,40,0.13)); }
+.rd-cs.open .rd-cs-btn {
+  background: #F1F1F2;
+  border-color: transparent;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  border-radius: 16px 16px 0 0;
+}
+
 .rd-cs-list {
   display: none;
   position: absolute;
-  top: calc(100% + 5px);
+  top: 100%;
   left: 0;
-  min-width: 100%;
+  width: 100%;
   background: #F1F1F2;
   border: none;
-  border-radius: 16px;
-  box-shadow: var(--shadow-card-hover);
+  border-radius: 0 0 16px 16px;
   z-index: 200;
-  overflow: hidden;
   padding: 6px;
   max-height: 280px;
   overflow-y: auto;

@@ -263,21 +263,72 @@
   align-items: center;
   gap: 8px;
 }
-.ath-mpr-select {
-  appearance: none;
-  -webkit-appearance: none;
-  padding: 8px 32px 8px 14px;
+/* ── Custom event dropdown (StatMuse-style pill + rounded panel) ── */
+.ath-cs { position: relative; flex-shrink: 0; }
+.ath-cs-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-width: 118px;
+  padding: 8px 14px;
   border-radius: 999px;
   border: 1px solid var(--border);
-  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E") no-repeat right 12px center / 14px;
+  background: #fff;
   color: var(--text);
   font-family: var(--font-body);
   font-size: 13px;
-  outline: none;
-  min-width: 110px;
+  font-weight: 500;
   cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
-.ath-mpr-select:focus { border-color: var(--accent, #555); }
+.ath-cs-btn:hover { border-color: #ddd; }
+.ath-cs-val--ph { color: var(--muted); }
+.ath-cs-arrow {
+  width: 11px;
+  height: 8px;
+  color: #aaa;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+.ath-cs.open .ath-cs-arrow { transform: rotate(180deg); }
+
+/* Open: button + panel merge into one cohesive gray shape */
+.ath-cs.open { filter: drop-shadow(0 8px 18px rgba(16,24,40,0.13)); }
+.ath-cs.open .ath-cs-btn {
+  background: #F1F1F2;
+  border-color: transparent;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  border-radius: 16px 16px 0 0;
+}
+
+.ath-cs-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #F1F1F2;
+  border-radius: 0 0 16px 16px;
+  padding: 6px;
+  z-index: 200;
+  max-height: 280px;
+  overflow-y: auto;
+}
+.ath-cs.open .ath-cs-list { display: block; }
+.ath-cs-opt {
+  padding: 9px 12px;
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.1s ease;
+}
+.ath-cs-opt:hover { background: rgba(0,0,0,0.05); }
+.ath-cs-opt--active { font-weight: 700; background: rgba(0,0,0,0.06); }
 .ath-mpr-under {
   font-family: var(--font-body);
   font-size: 12px;

@@ -895,11 +895,13 @@
 .card-results-empty { color: var(--muted); font-size: 13px; padding: 14px 28px; margin: 0; }
 
 .cr-year-tabs {
-  display: flex;
+  display: inline-flex;
   gap: 2px;
-  padding: 6px 28px 8px;
+  margin: 6px 28px 8px;
+  padding: 3px;
   flex-wrap: wrap;
-  border-bottom: 1px solid #f0f0f0;
+  background: #ECECEE;
+  border-radius: 999px;
 }
 .cr-year-tab {
   font-family: var(--font-body);
@@ -907,16 +909,16 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 3px 8px;
-  border-radius: 4px;
+  padding: 4px 11px;
+  border-radius: 999px;
   border: none;
   background: transparent;
-  color: var(--muted);
+  color: rgba(0,0,0,0.55);
   cursor: pointer;
-  transition: background 0.12s, color 0.12s;
+  transition: background 0.15s ease, color 0.15s ease;
 }
 .cr-year-tab:hover:not(.active) { color: var(--text); }
-.cr-year-tab.active { background: var(--dark); color: #fff; }
+.cr-year-tab.active { background: #fff; color: var(--text); box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
 .cr-year-cnt { font-weight: 400; opacity: 0.65; margin-left: 2px; }
 
 .cr-nonfinish {
