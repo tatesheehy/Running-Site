@@ -150,5 +150,422 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "JUN 1",
+        "meet": "Music City Distance Carnival",
+        "event": "Mile",
+        "time": "4:19.41",
+        "place": "15",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Wingfoot Mile",
+        "event": "Mile",
+        "time": "4:17.40",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "New Balance Indoor Nationals",
+        "event": "2 Miles sh",
+        "time": "9:11.75",
+        "place": "7",
+        "round": "F1"
+      }
+    ],
+    "2020": [],
+    "2021": [
+      {
+        "date": "MAY 29",
+        "meet": "Platinum PT Qualifier",
+        "event": "5000m",
+        "time": "13:27.39",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Trials of Miles NYC Qualifier",
+        "event": "1500m",
+        "time": "3:44.08",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Trials of Miles NYC Qualifier",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Track Meet",
+        "event": "5000m",
+        "time": "13:35.45",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "APR 2",
+        "meet": "Sound Running College Invite",
+        "event": "5000m",
+        "time": "13:47.72",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "Saints Distance Classic",
+        "event": "5000m",
+        "time": "14:10.10",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 3",
+        "meet": "Boston University/Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:18.45",
+        "place": "11",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "NCAA East Preliminary Round",
+        "event": "5000m",
+        "time": "13:52.81",
+        "place": "11",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "C4A-ECAC Ch., Zable Stadium",
+        "event": "5000m",
+        "time": "13:51.65",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "Ivy League Championships",
+        "event": "5000m",
+        "time": "14:10.36",
+        "place": "7",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 2",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:03.78",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "NOV 18",
+        "meet": "NCAA D1 Cross Country Championships",
+        "event": "Cross Country",
+        "time": "28:38",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "5000m",
+        "time": "14:06.53",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "10000m",
+        "time": "28:15.90",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "5000m",
+        "time": "13:52.97",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "10000m",
+        "time": "29:09.37",
+        "place": "8",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Ivy League \"HEPS\" Outdoor Championships",
+        "event": "5000m",
+        "time": "13:56.44",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Ivy League \"HEPS\" Outdoor Championships",
+        "event": "10000m",
+        "time": "29:46.69",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Wake Forest Invitational",
+        "event": "5000m",
+        "time": "13:24.91",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 24",
+        "meet": "Raleigh Relays",
+        "event": "10000m",
+        "time": "28:24.79",
+        "place": "2",
+        "round": "F3"
+      },
+      {
+        "date": "MAR 11",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:10.11",
+        "place": "13",
+        "round": "F"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "5000m sh",
+        "time": "14:19.55",
+        "place": "13",
+        "round": "F"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "3000m sh",
+        "time": "7:44.76",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "Boston University Bruce Lehane Scarlet and White Invite",
+        "event": "Mile sh",
+        "time": "3:56.63",
+        "place": "2",
+        "round": "F1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "12:59.89",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "13:18.67",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "14:09.06",
+        "place": "6",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "5000m",
+        "time": "13:12.61",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "5000m",
+        "time": "13:35.00",
+        "place": "6",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "5000m",
+        "time": "13:57.81",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "5000m",
+        "time": "13:51.08",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "Ivy League Heptagonal Outdoor Track and Field Championships",
+        "event": "5000m",
+        "time": "13:47.34",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 19",
+        "meet": "Wake Forest Invitational",
+        "event": "5000m",
+        "time": "13:37.34",
+        "place": "4",
+        "round": "F3"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 6",
+        "meet": "USATF Cross Country Championships",
+        "event": "Cross Country",
+        "time": "29:45",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "SEP 14",
+        "meet": "World Athletics Championships",
+        "event": "10000m",
+        "time": "29:01.27",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Weltklasse Zürich",
+        "event": "3000m",
+        "time": "7:38.15",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Athletissima Lausanne",
+        "event": "5000m",
+        "time": "13:12.94",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "USA Championships",
+        "event": "5000m",
+        "time": "13:31.94",
+        "place": "13",
+        "round": "F"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "USA Championships",
+        "event": "10000m",
+        "time": "29:03.66",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Paris",
+        "event": "5000m",
+        "time": "12:49.51",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Oslo Bislett Games",
+        "event": "5000m",
+        "time": "12:48.20",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Grand Slam Track Philadelphia",
+        "event": "3000m",
+        "time": "8:03.22",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "APR 17",
+        "meet": "Wake Forest Invitational",
+        "event": "10000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "The TEN",
+        "event": "10000m",
+        "time": "26:57.30",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Last Chance Indoor National Qualifier",
+        "event": "3000m sh",
+        "time": "7:29.72",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 7",
+        "meet": "Crimson Elite",
+        "event": "Mile sh",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "1500m sh",
+        "time": "3:36.11",
+        "place": "5",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

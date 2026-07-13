@@ -86,5 +86,91 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [
+      {
+        "date": "JUL 1",
+        "meet": "Kenyan Trials For World Under 20 Championships",
+        "event": "5000m",
+        "time": "14:29.07",
+        "place": "17",
+        "round": "F"
+      }
+    ],
+    "2023": [],
+    "2024": [
+      {
+        "date": "MAY 22",
+        "meet": "Kenyan Championships",
+        "event": "10000m",
+        "time": "29:20.83",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "JAN 6",
+        "meet": "2nd AK Track & Field Weekend Meeting/AK Relay Series",
+        "event": "5000m",
+        "time": "14:04.0",
+        "place": "4",
+        "round": "F2"
+      }
+    ],
+    "2025": [
+      {
+        "date": "NOV 22",
+        "meet": "Hachioji Long Distance",
+        "event": "10000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F6"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "HOKUREN Distance Challenge 2025 in KITAMI",
+        "event": "5000m",
+        "time": "13:28.77",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "HOKUREN Distance Challenge 2025 in Chitose",
+        "event": "5000m",
+        "time": "13:24.74",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "HOKUREN Distance Challenge 2025 in FUKAGAWA",
+        "event": "5000m",
+        "time": "13:29.00",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "6th AK Track & Field Weekend Meeting/Relay Series",
+        "event": "5000m",
+        "time": "13:42.74",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 25",
+        "meet": "5th AK Track & Field Weekend Meeting/Relay Series",
+        "event": "10000m",
+        "time": "29:09.90",
+        "place": "2",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

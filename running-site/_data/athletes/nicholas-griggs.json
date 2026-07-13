@@ -186,5 +186,709 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [
+      {
+        "date": "DEC 12",
+        "meet": "27th SPAR European Cross Country Championships, Dublin",
+        "event": "Cross Country U20 Race",
+        "time": "18:42",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "AUG 14",
+        "meet": "Irish Life Health National Juvenile Ch.",
+        "event": "1500m",
+        "time": "3:50.85",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "Irish Life Health National Juvenile Ch.",
+        "event": "3000m",
+        "time": "8:19.76",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "Rencontre Internationale",
+        "event": "3000m",
+        "time": "8:07.46",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "European Athletics U20 Championships",
+        "event": "3000m",
+        "time": "8:17.18",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "European Athletics U20 Championships",
+        "event": "3000m",
+        "time": "8:26.04",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Junior 3000",
+        "event": "3000m",
+        "time": "8:11.15",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Irish U20 Championships",
+        "event": "1500m",
+        "time": "3:53.54",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "Afternoon of 5000s",
+        "event": "5000m",
+        "time": "14:15.98",
+        "place": "6",
+        "round": "F9"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 11",
+        "meet": "28th SPAR European Cross Country Championships, Piemonte-La Mandria Park",
+        "event": "Cross Country U20 Race",
+        "time": "17:41",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "OCT 22",
+        "meet": "Northern Ireland International Cross Country",
+        "event": "Cross Country",
+        "time": "25:36",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 17",
+        "meet": "Welsh Athletics U20 International",
+        "event": "Mile",
+        "time": "4:02.58",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "World Athletics U20 Championships",
+        "event": "3000m",
+        "time": "8:04.42",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "World Athletics U20 Championships",
+        "event": "3000m",
+        "time": "8:08.35",
+        "place": "4",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "Irish U20 Championships",
+        "event": "3000m",
+        "time": "8:17.24",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Cork City Sports",
+        "event": "3000m",
+        "time": "7:53.40",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Morton Games",
+        "event": "Mile",
+        "time": "3:58.51",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Irish Championships",
+        "event": "1500m",
+        "time": "4:00.90",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Irish Championships",
+        "event": "1500m",
+        "time": "3:58.76",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Northern Ireland Senior Championships",
+        "event": "800m",
+        "time": "1:58.44",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Northern Ireland Senior Championships",
+        "event": "800m",
+        "time": "1:55.67",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "British Milers Club International Grand Prix",
+        "event": "1500m",
+        "time": "3:42.72",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Loughborough International",
+        "event": "3000m",
+        "time": "8:05.22",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Belfast Irish Milers Meet",
+        "event": "1500m",
+        "time": "3:42.98",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "APR 6",
+        "meet": "Deep River Rock Queen’s 5k, Belfast",
+        "event": "5K",
+        "time": "14:13",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "NIA Live Meet 4",
+        "event": "Mile sh",
+        "time": "3:56.40",
+        "place": "2",
+        "round": "F4"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "Irish Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:05.83",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "NIA Live",
+        "event": "1500m sh",
+        "time": "3:43.71",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "AAI National Indoor Games & Indoor League Final",
+        "event": "3000m sh",
+        "time": "7:57.38",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 10",
+        "meet": "29th SPAR European Cross Country Championships",
+        "event": "Cross Country U20 Race",
+        "time": "16:24",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "OCT 21",
+        "meet": "NI & Ulster and Bobby Rea International Cross Country",
+        "event": "Cross Country",
+        "time": "25:36",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:40.72",
+        "place": "12",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "European Athletics U20 Championships",
+        "event": "3000m",
+        "time": "8:45.69",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "European Athletics U20 Championships",
+        "event": "3000m",
+        "time": "8:32.22",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "Irish Championships",
+        "event": "1500m",
+        "time": "3:40.64",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Irish Championships",
+        "event": "1500m",
+        "time": "3:59.68",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "Spitzen Leichathletik Luzern",
+        "event": "1500m",
+        "time": "3:38.44",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "Morton Games",
+        "event": "Mile",
+        "time": "3:55.73",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "National Junior & U23 Championships (U20)",
+        "event": "1500m",
+        "time": "3:45.91",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "British Milers Club Grand Prix",
+        "event": "1500m",
+        "time": "3:40.63",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Meeting Nikaïa",
+        "event": "1500m",
+        "time": "3:36.09",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "UCD Track & Field Meet",
+        "event": "800m",
+        "time": "1:49.57",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "IFAM Oordegem",
+        "event": "5000m",
+        "time": "13:36.47",
+        "place": "26",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Belfast Irish Milers Meet",
+        "event": "3000m",
+        "time": "7:53.24",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "Birmingham World Indoor Tour Final 2023",
+        "event": "1500m sh",
+        "time": "3:39.94",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Irish Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:55.75",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "Manchester World Indoor Tour",
+        "event": "3000m sh",
+        "time": "7:54.44",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Track & Field Live",
+        "event": "1500m sh",
+        "time": "3:46.17",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 8",
+        "meet": "30th SPAR European Cross Country Championships, Antalya",
+        "event": "Cross Country U23 Race",
+        "time": "18:28",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "NOV 17",
+        "meet": "Irish Cross Country Championships",
+        "event": "Cross Country",
+        "time": "23:48",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "SEP 5",
+        "meet": "Weltklasse Zürich",
+        "event": "3000m",
+        "time": "7:43.44",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "AUG 30",
+        "meet": "Golden Gala",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "AUG 25",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "3000m",
+        "time": "7:39.52",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "BMC Record Breaker",
+        "event": "1500m",
+        "time": "3:35.04",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "London Athletics Meet",
+        "event": "3000m",
+        "time": "7:36.59",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Morton Games",
+        "event": "5000m",
+        "time": "13:13.07",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Cork City Sports",
+        "event": "3000m",
+        "time": "7:41.68",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "Meeting Madrid 2024",
+        "event": "1500m",
+        "time": "3:35.64",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Meeting Nikaia",
+        "event": "1500m",
+        "time": "3:35.40",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:46.66",
+        "place": "14",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "IFAM Outdoor",
+        "event": "1500m",
+        "time": "3:38.46",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "70. ORLEN Janusz Kusocinski Memorial",
+        "event": "1500m",
+        "time": "3:35.90",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Belfast Irish Milers Meet In Association with Tripadvisor",
+        "event": "1500m",
+        "time": "3:42.74",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 30",
+        "meet": "Meeting Iberoamericano Huelva 2024",
+        "event": "1500m",
+        "time": "3:37.38",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "Podium Festival, Leicester",
+        "event": "5K",
+        "time": "13:39",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Irish Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:49.15",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Irish Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:57.33",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "2000m sh",
+        "time": "5:01.98",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Metz Moselle Athleor",
+        "event": "3000m sh",
+        "time": "7:45.57",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "Meeting de L'Eure",
+        "event": "3000m sh",
+        "time": "7:45.94",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 14",
+        "meet": "31st SPAR European Cross Country Championships, Lagoa",
+        "event": "Cross Country U23 Race",
+        "time": "17:47",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "NOV 2",
+        "meet": "69º Cross Internacional de San Sebastián",
+        "event": "Cross Country",
+        "time": "19:49",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "SEP 7",
+        "meet": "New Balance 5th Avenue Mile",
+        "event": "Mile",
+        "time": "3:48.4",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "Sankthanshaugen 5000",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "BMC Record Breaker",
+        "event": "1500m",
+        "time": "3:35.25",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "Meeting voor Mon",
+        "event": "1500m",
+        "time": "3:37.64",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "IFAM Oordegem",
+        "event": "5000m",
+        "time": "13:05.75",
+        "place": "16",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Irish Championships",
+        "event": "1500m",
+        "time": "3:53.90",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "Irish Championships",
+        "event": "1500m",
+        "time": "3:47.89",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "European Athletics U23 Championships",
+        "event": "5000m",
+        "time": "13:45.80",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Morton Games",
+        "event": "Mile",
+        "time": "3:52.42",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Cork City Sports",
+        "event": "3000m",
+        "time": "7:40.38",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Irish U23 Outdoor Championships",
+        "event": "800m",
+        "time": "1:52.39",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Irish U23 Outdoor Championships",
+        "event": "800m",
+        "time": "1:52.46",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "Meeting National de Carquefou",
+        "event": "5000m",
+        "time": "13:26.16",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "British Milers Club Record Breaker with Lagan Valley AC",
+        "event": "Mile",
+        "time": "3:55.97",
+        "place": "1",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

@@ -118,5 +118,124 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [
+      {
+        "date": "MAY 19",
+        "meet": "Gymnasiade",
+        "event": "2000 Metres Steeplechase (0.84)",
+        "time": "5:49.54",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "JUL 1",
+        "meet": "Ugandan Championships",
+        "event": "5000m",
+        "time": "14:28.02",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 4",
+        "meet": "Akii-Bua Memorial, Nelson Mandela Stadium",
+        "event": "5000m",
+        "time": "14:06.54",
+        "place": "9",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "JUN 27",
+        "meet": "Ugandan Championships",
+        "event": "5000m",
+        "time": "14:16.3",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Seven Hills Record Run, Nijmegen",
+        "event": "5K",
+        "time": "14:05",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "APR 7",
+        "meet": "Brunssum Parelloop, Brunssum",
+        "event": "10K",
+        "time": "29:23",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "45th World Athletics Cross Country Championships",
+        "event": "Cross Country U20 Race",
+        "time": "23:25",
+        "place": "11",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "JUL 24",
+        "meet": "Ugandan Championships",
+        "event": "3000m SC",
+        "time": "8:43.25",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "Gouden Spike",
+        "event": "10000m",
+        "time": "28:38.35",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "Meeting Nikaia",
+        "event": "5000m",
+        "time": "13:23.24",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Seven Hills Record Run, Nijmegen",
+        "event": "5K",
+        "time": "13:46",
+        "place": "10",
+        "round": "F8"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "Les Foulées Valenciennoises, Valenciennes",
+        "event": "10K",
+        "time": "28:13",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "2nd National Trials",
+        "event": "5000m",
+        "time": "13:44.46",
+        "place": "3",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

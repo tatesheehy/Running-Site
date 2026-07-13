@@ -36,6 +36,10 @@
       "time": "3:35.44"
     },
     {
+      "event": "Mile",
+      "time": "4:01.29"
+    },
+    {
       "event": "3000m",
       "time": "7:37.08"
     },
@@ -46,6 +50,10 @@
     {
       "event": "10000m",
       "time": "27:45.82"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "4:01.29"
     },
     {
       "event": "3000 Metres Short Track",
@@ -88,59 +96,709 @@
     {
       "date": "JUL 8",
       "meet": "Meeting Lignano",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:35.44",
-      "place": "6"
+      "place": "6.",
+      "round": "F"
     },
     {
       "date": "JUN 13",
       "meet": "USATF LA Grand Prix",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:09.75",
-      "place": "3"
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "DNF",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "MAY 2",
       "meet": "USA 5 km Road Running Championships",
-      "event": "5 Kilometres Road",
+      "event": "5 Kilom Road",
       "time": "13:34",
-      "place": "5"
+      "place": "5.",
+      "round": "F"
     },
     {
       "date": "APR 18",
       "meet": "Boston 5K",
-      "event": "5 Kilometres Road",
+      "event": "5 Kilom Road",
       "time": "13:30",
-      "place": "6"
+      "place": "6.",
+      "round": "F"
     },
     {
       "date": "MAR 28",
       "meet": "The TEN",
-      "event": "10000m",
+      "event": "10,000 m",
       "time": "27:54.60",
-      "place": "12"
+      "place": "12.",
+      "round": "F2"
     },
     {
       "date": "FEB 14",
       "meet": "Sound Invite",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:37.08",
-      "place": "6"
+      "place": "6.",
+      "round": "F2"
     },
     {
       "date": "JAN 31",
       "meet": "Boston University John Thomas Terrier Classic",
-      "event": "5000 Metres Short Track",
+      "event": "5000 m sh",
       "time": "13:12.02",
-      "place": "1"
+      "place": "1.",
+      "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "MAY 11",
+        "meet": "Mid-American Conference Championships",
+        "event": "1500m",
+        "time": "3:56.92",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Billy Hayes Invitational",
+        "event": "800m",
+        "time": "1:52.40",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "Penn Relays",
+        "event": "4xMile Relay",
+        "time": "16:50.28",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "APR 26",
+        "meet": "Penn Relays",
+        "event": "Distance Medley",
+        "time": "9:48.82",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Redhawk Invitational",
+        "event": "1500m",
+        "time": "3:56.27",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Ball State Challenge",
+        "event": "800m",
+        "time": "1:55.70",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Raleigh Relays",
+        "event": "1500m",
+        "time": "3:54.38",
+        "place": "3",
+        "round": "F4"
+      },
+      {
+        "date": "MAR 23",
+        "meet": "Blizzard Buster",
+        "event": "4x800 Metres Relay",
+        "time": "7:53.29",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Alex Wilson Invitational",
+        "event": "800m",
+        "time": "1:52.54",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "GVSU Big Meet 2",
+        "event": "800m",
+        "time": "1:53.68",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "GVSU Big Meet",
+        "event": "Mile",
+        "time": "4:12.86",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Meyo Invitational",
+        "event": "3000m",
+        "time": "8:28.22",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Gladstein Invitational",
+        "event": "Mile sh",
+        "time": "4:12.60",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 12",
+        "meet": "Jim Green Invitational",
+        "event": "800m",
+        "time": "1:54.63",
+        "place": "3",
+        "round": "F4"
+      }
+    ],
+    "2020": [
+      {
+        "date": "FEB 8",
+        "meet": "Meyo Invitational",
+        "event": "Mile",
+        "time": "4:09.50",
+        "place": "4",
+        "round": "F3"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "Indiana University Relays",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:37.01",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Vanderbilt Invitational",
+        "event": "3000m",
+        "time": "8:22.04",
+        "place": "1",
+        "round": "F2"
+      }
+    ],
+    "2021": [
+      {
+        "date": "MAY 28",
+        "meet": "NCAA East Preliminary",
+        "event": "1500m",
+        "time": "3:43.74",
+        "place": "9",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "NCAA East Preliminary",
+        "event": "1500m",
+        "time": "3:44.18",
+        "place": "6",
+        "round": "PR3"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Toledo Rocket Invitational",
+        "event": "Mile",
+        "time": "4:01.38",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "Mid American Conference Championships",
+        "event": "5000m",
+        "time": "14:12.12",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 22",
+        "meet": "Drake Relays",
+        "event": "800m",
+        "time": "1:53.01",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "APR 17",
+        "meet": "EKU Rick Erdmann Twilight",
+        "event": "1500m",
+        "time": "3:43.15",
+        "place": "8",
+        "round": "F3"
+      },
+      {
+        "date": "APR 10",
+        "meet": "Joe Walker Invitational",
+        "event": "1500m",
+        "time": "3:45.91",
+        "place": "7",
+        "round": "F4"
+      },
+      {
+        "date": "APR 3",
+        "meet": "Oliver Nikoloff Invitational",
+        "event": "5000m",
+        "time": "14:45.97",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 25",
+        "meet": "Raleigh Relays",
+        "event": "1500m",
+        "time": "3:50.12",
+        "place": "7",
+        "round": "F6"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "Camel City Invitational",
+        "event": "Mile sh",
+        "time": "4:06.01",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "GVSU BIG MEET- Friday Team Meet",
+        "event": "3000m",
+        "time": "8:12.01",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 5",
+        "meet": "Akron Collegiate Invitational",
+        "event": "Mile",
+        "time": "4:08.09",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "Sycamore Team Challenge",
+        "event": "3000m sh",
+        "time": "8:20.63",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "MAY 27",
+        "meet": "NCAA East Preliminary Round",
+        "event": "5000m",
+        "time": "13:57.62",
+        "place": "12",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "NCAA East Preliminary Round",
+        "event": "1500m",
+        "time": "3:46.90",
+        "place": "7",
+        "round": "PR2"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Mid American Conference Championships",
+        "event": "1500m",
+        "time": "3:47.79",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Mid American Conference Championships",
+        "event": "5000m",
+        "time": "14:53.22",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 28",
+        "meet": "The Penn Relays Carnival",
+        "event": "Distance Medley",
+        "time": "9:33.38",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "APR 22",
+        "meet": "Indiana Invitational",
+        "event": "1500m",
+        "time": "3:41.78",
+        "place": "3",
+        "round": "F4"
+      },
+      {
+        "date": "APR 9",
+        "meet": "Tennessee Relays",
+        "event": "Distance Medley",
+        "time": "9:41.96",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 8",
+        "meet": "Tennessee Relays",
+        "event": "1500m",
+        "time": "3:45.41",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 1",
+        "meet": "Stanford Invitational",
+        "event": "5000m",
+        "time": "13:48.58",
+        "place": "10",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Music City Challenge",
+        "event": "3000m",
+        "time": "7:58.84",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "Indiana University Relays",
+        "event": "3000m sh",
+        "time": "7:54.16",
+        "place": "4",
+        "round": "F4"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "Michigan Invitational",
+        "event": "Mile sh",
+        "time": "4:01.29",
+        "place": "1",
+        "round": "F2"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 2",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:34.90",
+        "place": "11",
+        "round": "F2"
+      },
+      {
+        "date": "NOV 4",
+        "meet": "Abbott Dash to the Finish Line 5K",
+        "event": "5K",
+        "time": "13:52",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "USA Championships",
+        "event": "5000m",
+        "time": "13:39.13",
+        "place": "14",
+        "round": "F"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "5000m",
+        "time": "14:08.46",
+        "place": "6",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "SEC Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:44.68",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "SEC Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:52.29",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "APR 28",
+        "meet": "The Penn Relays Carnival",
+        "event": "Distance Medley",
+        "time": "9:36.53",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Virginia Challenge",
+        "event": "1500m",
+        "time": "3:38.34",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "MAR 31",
+        "meet": "Stanford Invitational",
+        "event": "5000m",
+        "time": "13:26.58",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:31.63",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "SEC Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:52.98",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "SEC Indoor Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:33.18",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "Razorback Invitational",
+        "event": "3000m sh",
+        "time": "7:52.99",
+        "place": "2",
+        "round": "F4"
+      }
+    ],
+    "2024": [
+      {
+        "date": "NOV 28",
+        "meet": "Manchester Road Race",
+        "event": "Road Race",
+        "time": "21:33",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "The Guardian Mile",
+        "event": "Mile",
+        "time": "4:01.78",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "Sunset Tour, Jack Kemp Stadium",
+        "event": "5000m",
+        "time": "13:32.78",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "5000m",
+        "time": "13:31.41",
+        "place": "12",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "USATF Los Angeles Grand Prix",
+        "event": "5000m",
+        "time": "13:23.61",
+        "place": "13",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Track Fest, Jack Kemp Stadium",
+        "event": "1500m",
+        "time": "3:41.79",
+        "place": "7",
+        "round": "F2"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "45th World Athletics Cross Country Championships",
+        "event": "Cross Country Senior Race",
+        "time": "30:21",
+        "place": "51",
+        "round": "F"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "The TEN",
+        "event": "1500m",
+        "time": "3:39.41",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "5000m sh",
+        "time": "13:27.24",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 20",
+        "meet": "USA Cross Country Championships",
+        "event": "Cross Country",
+        "time": "29:35",
+        "place": "8",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "AUG 16",
+        "meet": "Meeting voor Mon",
+        "event": "3000m",
+        "time": "7:44.42",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 13",
+        "meet": "Motonet GP Oulu",
+        "event": "1500m",
+        "time": "3:37.19",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "IFAM Oordegem",
+        "event": "5000m",
+        "time": "13:15.98",
+        "place": "10",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "USA Championships",
+        "event": "10000m",
+        "time": "29:33.22",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Sunset Tour, Jack Kemp Stadium",
+        "event": "5000m",
+        "time": "13:23.80",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "USA 5 km Road Running Championships",
+        "event": "5K",
+        "time": "13:51",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "The TEN",
+        "event": "10000m",
+        "time": "27:45.82",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Last Chance Indoor National Qualifier",
+        "event": "5000m sh",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "USA Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:40.31",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "5000m sh",
+        "time": "13:22.21",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "3000m sh",
+        "time": "7:39.13",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "5000m sh",
+        "time": "DNF",
+        "place": "",
+        "round": "F3"
+      },
+      {
+        "date": "JAN 11",
+        "meet": "USA Cross Country Championships",
+        "event": "Cross Country",
+        "time": "29:59",
+        "place": "3",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

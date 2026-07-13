@@ -1,0 +1,1065 @@
+{
+  "id": "peter-bol",
+  "name": "Peter Bol",
+  "flag": "AU",
+  "country": "Australia",
+  "waUrl": "https://worldathletics.org/athletes/australia/peter-bol-14456885",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "32",
+  "dob": "1994-02-22",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "100m",
+      "time": "11.55"
+    },
+    {
+      "event": "200m",
+      "time": "23.83"
+    },
+    {
+      "event": "200m",
+      "time": "23.22"
+    },
+    {
+      "event": "400m",
+      "time": "47.20"
+    },
+    {
+      "event": "800m",
+      "time": "1:42.55"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.52"
+    },
+    {
+      "event": "Mile",
+      "time": "4:01.84"
+    },
+    {
+      "event": "3000m",
+      "time": "8:32.99"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:16.26"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:45.14"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:15.13"
+    },
+    {
+      "event": "Long Jump",
+      "time": "6.43"
+    },
+    {
+      "event": "600 Metres Road",
+      "time": "1:16.98"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:11.01"
+    },
+    {
+      "event": "4x800 Metres Relay",
+      "time": "7:41.09"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "1000 m",
+      "time": "2:15.13",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "800 m",
+      "time": "1:43.64",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 7",
+      "meet": "BAUHAUS-Galan",
+      "event": "800 m",
+      "time": "1:43.70",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "APR 12",
+      "meet": "Australian Championships",
+      "event": "800 m",
+      "time": "1:45.60",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "APR 11",
+      "meet": "Australian Championships",
+      "event": "800 m",
+      "time": "1:48.98",
+      "place": "1.",
+      "round": "H1"
+    },
+    {
+      "date": "MAR 22",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:45.14",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:46.21",
+      "place": "1.",
+      "round": "SF1"
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:45.87",
+      "place": "1.",
+      "round": "H1"
+    },
+    {
+      "date": "MAR 14",
+      "meet": "Queensland Athletics Championships",
+      "event": "400 m",
+      "time": "48.35",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 13",
+      "meet": "Queensland Athletics Championships",
+      "event": "400 m",
+      "time": "48.01",
+      "place": "2.",
+      "round": "H1"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Hobart Track Classic",
+      "event": "800 m",
+      "time": "1:47.07",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Perth Track Classic",
+      "event": "800 m",
+      "time": "1:43.89",
+      "place": "1.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "DEC 22",
+        "meet": "Geelong Steigen Spectacular, Geelong",
+        "event": "Mile",
+        "time": "4:01.84",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "DEC 13",
+        "meet": "Melbourne Zatopek:10, Melbourne",
+        "event": "4x400 Metres Relay",
+        "time": "3:11.01",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "Monaco Herculis",
+        "event": "800m",
+        "time": "1:46.64",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "1:45.82",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "Meeting Stanislas Nancy",
+        "event": "800m",
+        "time": "1:45.35",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Tübingen SoundTrack Meeting",
+        "event": "800m",
+        "time": "1:45.41",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Stockholm BAUHAUS-galan",
+        "event": "800m",
+        "time": "1:44.56",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Australian Championships, Gold Coast",
+        "event": "800m",
+        "time": "1:47.94",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Australian Championships, Gold Coast",
+        "event": "800m",
+        "time": "1:46.94",
+        "place": "1",
+        "round": "H4"
+      }
+    ],
+    "2019": [
+      {
+        "date": "SEP 28",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "800m",
+        "time": "1:46.92",
+        "place": "5",
+        "round": "H3"
+      },
+      {
+        "date": "SEP 3",
+        "meet": "IWC Zagreb 2019",
+        "event": "800m",
+        "time": "1:47.29",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "Brussels Grand Prix, Bruxelles",
+        "event": "800m",
+        "time": "1:46.03",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 15",
+        "meet": "2. Memoriał Wiesława Maniaka",
+        "event": "800m",
+        "time": "1:46.24",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "Míting Internacional d'Atletisme, Barcelona",
+        "event": "800m",
+        "time": "1:45.56",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Guldensporenmeeting, Kortrijk",
+        "event": "800m",
+        "time": "1:50.56",
+        "place": "10",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "Folksam Grand Prix, Karlstad",
+        "event": "800m",
+        "time": "1:47.30",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Adidas Boost Boston Games",
+        "event": "600 Metres Road",
+        "time": "1:16.98",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Irena Szewińska Memorial",
+        "event": "800m",
+        "time": "1:46.10",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "FBK Games",
+        "event": "800m",
+        "time": "1:46.37",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "BAUHAUS-galan",
+        "event": "800m",
+        "time": "1:47.53",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "APR 6",
+        "meet": "Australian Championships, Sydney",
+        "event": "800m",
+        "time": "1:46.12",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 4",
+        "meet": "Australian Championships, Sydney",
+        "event": "800m",
+        "time": "1:48.94",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "Jandakot Airport Perth Track Classic, Perth",
+        "event": "800m",
+        "time": "1:47.05",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "PSD Bank Leichtathletik Meeting",
+        "event": "800m sh",
+        "time": "1:48.51",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Czech Indoor Gala",
+        "event": "800m sh",
+        "time": "1:47.70",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "Folksam GP, Stockholm (i)",
+        "event": "800m sh",
+        "time": "1:50.47",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Hunter Track Classic, Glendale",
+        "event": "600m",
+        "time": "1:16.26",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2020": [
+      {
+        "date": "SEP 25",
+        "meet": "Diamond League Meeting",
+        "event": "800m",
+        "time": "1:45.74",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "SEP 15",
+        "meet": "70th Hanžeković Memorial",
+        "event": "800m",
+        "time": "1:45.94",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "Göteborg Friidrott GP",
+        "event": "800m",
+        "time": "1:46.25",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "BAUHAUS-Galan",
+        "event": "800m",
+        "time": "1:46.26",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "Irena Szewińska Memorial",
+        "event": "800m",
+        "time": "1:45.92",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 14",
+        "meet": "Herculis",
+        "event": "800m",
+        "time": "1:44.96",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "FEB 29",
+        "meet": "AACT Summer Series Meet Number 10",
+        "event": "800m",
+        "time": "1:45.38",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Sydney Track Classic",
+        "event": "800m",
+        "time": "1:45.85",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "VMC Meet #4",
+        "event": "800m",
+        "time": "1:48.01",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 23",
+        "meet": "VMC Meet #3",
+        "event": "1500m",
+        "time": "3:46.91",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2021": [
+      {
+        "date": "SEP 14",
+        "meet": "Memorial Borisa Hanžekovića",
+        "event": "800m",
+        "time": "1:45.31",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "1:44.88",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "Athletissima Lausanne",
+        "event": "800m",
+        "time": "1:47.49",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "AUG 15",
+        "meet": "4. Memoriał Wiesława Maniaka",
+        "event": "800m",
+        "time": "1:45.49",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "The XXXII Olympic Games",
+        "event": "800m",
+        "time": "1:45.92",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "The XXXII Olympic Games",
+        "event": "800m",
+        "time": "1:44.11",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "The XXXII Olympic Games",
+        "event": "800m",
+        "time": "1:44.13",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Müller British GP",
+        "event": "800m",
+        "time": "1:45.22",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Meeting Stanislas Nancy",
+        "event": "800m",
+        "time": "1:44.89",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Oceania Invitational 2",
+        "event": "800m",
+        "time": "1:44.62",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "Oceania Invitational 1",
+        "event": "800m",
+        "time": "1:44.88",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 17",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:49.27",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 16",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:48.61",
+        "place": "1",
+        "round": "SF1"
+      },
+      {
+        "date": "APR 15",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:50.43",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "APR 1",
+        "meet": "Box Hill Classic",
+        "event": "800m",
+        "time": "1:46.49",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 27",
+        "meet": "Queensland Track Classic",
+        "event": "800m",
+        "time": "1:45.48",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 13",
+        "meet": "Sydney Track Classic",
+        "event": "800m",
+        "time": "1:46.12",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 11",
+        "meet": "Canberra Track Classic",
+        "event": "800m",
+        "time": "1:45.23",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Box Hill Burn",
+        "event": "1000m",
+        "time": "2:18.79",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "Super Summer Series",
+        "event": "800m",
+        "time": "1:47.01",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Zátopek 10",
+        "event": "1500m",
+        "time": "3:42.05",
+        "place": "4",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "AUG 7",
+        "meet": "XXII Commonwealth Games",
+        "event": "800m",
+        "time": "1:47.66",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "XXII Commonwealth Games",
+        "event": "800m",
+        "time": "1:47.01",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 23",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.51",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.58",
+        "place": "3",
+        "round": "SF1"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.50",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Night of Athletics",
+        "event": "800m",
+        "time": "1:44.26",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Meeting International d'Athlétisme de la Province de Liège",
+        "event": "600m",
+        "time": "1:16.47",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "1:44.00",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Meeting National à thème de l'Est Lyonnais",
+        "event": "1500m",
+        "time": "3:35.86",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Diamond League Meeting",
+        "event": "800m",
+        "time": "1:47.59",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Ooredoo Doha Meeting",
+        "event": "800m",
+        "time": "1:49.35",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 9",
+        "meet": "Brisbane Track Classic",
+        "event": "800m",
+        "time": "1:46.12",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 2",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:48.78",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 31",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:54.07",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "Sydney Track Classic",
+        "event": "800m",
+        "time": "1:46.03",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "Box Hill Burn",
+        "event": "1000m",
+        "time": "2:19.30",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Adelaide Track Classic",
+        "event": "800m",
+        "time": "1:47.14",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "AUG 22",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:46.75",
+        "place": "5",
+        "round": "H6"
+      },
+      {
+        "date": "JUL 22",
+        "meet": "Meeting Madrid",
+        "event": "800m",
+        "time": "1:45.03",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 18",
+        "meet": "Gyulai István Memorial",
+        "event": "800m",
+        "time": "1:44.48",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Meeting National à thème de l'Est Lyonnais",
+        "event": "1500m",
+        "time": "3:34.52",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Míting Internacional d'Atletisme Ciutat de Barcelona",
+        "event": "800m",
+        "time": "1:44.29",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "62nd Ostrava Golden Spike",
+        "event": "800m",
+        "time": "1:46.02",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "Merck Laufgala",
+        "event": "800m",
+        "time": "1:45.19",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Meeting Stanislas Nancy",
+        "event": "800m",
+        "time": "1:45.81",
+        "place": "4",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "AUG 8",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:46.12",
+        "place": "4",
+        "round": "RR1"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:47.50",
+        "place": "7",
+        "round": "H4"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "Meeting voor Mon",
+        "event": "800m",
+        "time": "1:45.91",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Moore-Guldensporenmeeting",
+        "event": "800m",
+        "time": "1:45.76",
+        "place": "5",
+        "round": "F3"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "USATF New York City Grand Prix",
+        "event": "800m",
+        "time": "1:48.41",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "USATF Los Angeles Grand Prix",
+        "event": "800m",
+        "time": "1:45.87",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Wanda Diamond League Xiamen",
+        "event": "800m",
+        "time": "1:47.02",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "APR 14",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:45.06",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:48.61",
+        "place": "2",
+        "round": "SF2"
+      },
+      {
+        "date": "APR 12",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:51.03",
+        "place": "1",
+        "round": "H4"
+      },
+      {
+        "date": "MAR 28",
+        "meet": "Albie Thomas Mile",
+        "event": "800m",
+        "time": "1:46.70",
+        "place": "2",
+        "round": "F1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.15",
+        "place": "4",
+        "round": "H4"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "800m",
+        "time": "1:42.55",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Meeting National Est Lyonnais",
+        "event": "800m",
+        "time": "1:43.88",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "64th Ostrava Golden Spike",
+        "event": "800m",
+        "time": "1:43.80",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Grand Slam Track Miami",
+        "event": "800m",
+        "time": "1:44.13",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 2",
+        "meet": "Grand Slam Track Miami",
+        "event": "1500m",
+        "time": "3:35.24",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:43.79",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 12",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:47.64",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "APR 11",
+        "meet": "Australian Championships",
+        "event": "800m",
+        "time": "1:48.97",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Maurie Plant Meet",
+        "event": "1500m",
+        "time": "3:37.29",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "Sydney Track Classic",
+        "event": "800m",
+        "time": "1:44.86",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "Box Hill Burn",
+        "event": "1000m",
+        "time": "2:16.29",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Adelaide Invitational",
+        "event": "800m",
+        "time": "1:46.40",
+        "place": "1",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-10"
+}

@@ -88,6 +88,14 @@
     {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
+      "event": "3000 m",
+      "time": "7:41.94",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
       "event": "2 Mi",
       "time": "8:10.13",
       "place": "1.",
@@ -142,5 +150,450 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "JUN 15",
+        "meet": "New Balance Nationals Outdoor",
+        "event": "2 Miles",
+        "time": "9:17.03",
+        "place": "7",
+        "round": "F3"
+      }
+    ],
+    "2020": [
+      {
+        "date": "JUN 11",
+        "meet": "Desert Dream-Last Hurrah Invitational",
+        "event": "Mile",
+        "time": "4:16.61",
+        "place": "6",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "JUL 2",
+        "meet": "Brooks PR Invitational",
+        "event": "2 Miles",
+        "time": "8:43.91",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 20",
+        "meet": "Texas Distance Festival",
+        "event": "5000m",
+        "time": "14:06.48",
+        "place": "1",
+        "round": "F4"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 3",
+        "meet": "Boston University/Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:19.73",
+        "place": "13",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "NCAA East Preliminary Round",
+        "event": "5000m",
+        "time": "13:45.36",
+        "place": "6",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "ACC Ch.",
+        "event": "5000m",
+        "time": "13:41.77",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAR 24",
+        "meet": "Raleigh Relays",
+        "event": "1500m",
+        "time": "3:41.03",
+        "place": "5",
+        "round": "F15"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "ACC Indoor Championships",
+        "event": "5000m sh",
+        "time": "13:48.15",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "JDL DMR Invitational",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:38.83",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 5",
+        "meet": "Camel City Invitational",
+        "event": "3000m sh",
+        "time": "7:52.39",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JAN 21",
+        "meet": "Hokie Invitational",
+        "event": "Mile sh",
+        "time": "4:00.53",
+        "place": "2",
+        "round": "F1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 2",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:13.61",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "NOV 18",
+        "meet": "NCAA D1 Cross Country Championships",
+        "event": "Cross Country",
+        "time": "29:13",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "5000m",
+        "time": "14:07.50",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "5000m",
+        "time": "14:04.33",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:40.01",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "1500m",
+        "time": "3:42.10",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Wake Forest Invitational",
+        "event": "5000m",
+        "time": "13:25.38",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "APR 7",
+        "meet": "Duke Invitational",
+        "event": "1500m",
+        "time": "3:42.16",
+        "place": "3",
+        "round": "F3"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "5000m sh",
+        "time": "13:43.69",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "ACC Indoor Track & Field Championships",
+        "event": "3000m sh",
+        "time": "7:48.33",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "ACC Indoor Track & Field Championships",
+        "event": "5000m sh",
+        "time": "14:02.97",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "3000m sh",
+        "time": "7:30.23",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "5000m",
+        "time": "13:10.75",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "5000m",
+        "time": "13:33.96",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "5000m",
+        "time": "13:54.43",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "5000m",
+        "time": "13:56.51",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "5000m",
+        "time": "13:19.38",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "10000m",
+        "time": "29:15.12",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 19",
+        "meet": "Wake Forest Invitational",
+        "event": "5000m",
+        "time": "13:27.57",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "APR 12",
+        "meet": "Duke Invitational",
+        "event": "1500m",
+        "time": "3:36.25",
+        "place": "2",
+        "round": "F3"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:42.38",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "NCAA Division I Indoor Championships",
+        "event": "5000m sh",
+        "time": "13:27.37",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "ACC Indoor Track & Field Championships",
+        "event": "Mile sh",
+        "time": "3:54.17",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "ACC Indoor Track & Field Championships",
+        "event": "3000m sh",
+        "time": "7:51.11",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "ACC Indoor Track & Field Championships",
+        "event": "Mile sh",
+        "time": "4:03.85",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Alex Wilson Invite",
+        "event": "Distance Medley",
+        "time": "9:17.92",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Boston University Bruce Lehane Scarlet and White Invitational",
+        "event": "3000m sh",
+        "time": "7:37.41",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Penn State National Open",
+        "event": "Mile sh",
+        "time": "3:55.09",
+        "place": "2",
+        "round": "F1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 6",
+        "meet": "USATF Cross Country Championships",
+        "event": "Cross Country",
+        "time": "29:17",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 7",
+        "meet": "New Balance 5th Avenue Mile",
+        "event": "Mile",
+        "time": "3:48.1",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "USA Championships",
+        "event": "5000m",
+        "time": "13:28.20",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Stumptown Twilight",
+        "event": "1500m",
+        "time": "3:34.44",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "5000m",
+        "time": "13:13.49",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "ACC Outdoor Track & Field Championships",
+        "event": "10000m",
+        "time": "28:51.09",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Duke Twilight",
+        "event": "1500m",
+        "time": "3:34.24",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Duke Twilight",
+        "event": "10000m",
+        "time": "29:44.04",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "APR 26",
+        "meet": "The Penn Relays",
+        "event": "4xMile Relay",
+        "time": "16:25.19",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 24",
+        "meet": "The Penn Relays",
+        "event": "5000m",
+        "time": "13:31.09",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "3000m sh",
+        "time": "7:53.98",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:17.17",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "ACC Indoor Track & Field Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:31.55",
+        "place": "2",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12",
+  "ncaaTitle": [
+    "5000m"
+  ]
 }

@@ -78,6 +78,14 @@
     {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
+      "event": "3000 m",
+      "time": "7:43.80",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
       "event": "2 Mi",
       "time": "8:14.32",
       "place": "14.",
@@ -483,7 +491,7 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-11",
+  "lastHistorySynced": "2026-07-12",
   "dob": "2004-08-31",
   "lastSynced": "2026-07-13"
 }

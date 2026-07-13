@@ -190,5 +190,218 @@
       "round": "F3"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [],
+    "2023": [],
+    "2024": [
+      {
+        "date": "JUN 5",
+        "meet": "NCAA Division I Outdoor Championships",
+        "event": "10000m",
+        "time": "28:10.81",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "5000m",
+        "time": "14:07.81",
+        "place": "10",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "10000m",
+        "time": "28:35.03",
+        "place": "5",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Big 12 Outdoor Track & Field Championship",
+        "event": "5000m",
+        "time": "13:54.19",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "Big 12 Outdoor Track & Field Championship",
+        "event": "10000m",
+        "time": "29:21.67",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 11",
+        "meet": "Bryan Clay Invitational",
+        "event": "10000m",
+        "time": "27:52.13",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 28",
+        "meet": "Clyde Littlefield Texas Relays presented by Truist",
+        "event": "5000m",
+        "time": "13:38.28",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 23",
+        "meet": "Masked Rider Open",
+        "event": "1500m",
+        "time": "3:49.80",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Big 12 Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:59.13",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Big 12 Indoor Championships",
+        "event": "5000m sh",
+        "time": "13:42.08",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "3000m sh",
+        "time": "8:00.49",
+        "place": "1",
+        "round": "F5"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "DeLoss Dodds Invitational and Combined Events",
+        "event": "Mile sh",
+        "time": "4:10.85",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "JUN 13",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "5000m",
+        "time": "13:38.09",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "10000m",
+        "time": "29:10.37",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "5000m",
+        "time": "13:34.88",
+        "place": "5",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "10000m",
+        "time": "28:12.16",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Big 12 Outdoor Track & Field Championship",
+        "event": "5000m",
+        "time": "13:27.89",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Big 12 Outdoor Track & Field Championship",
+        "event": "10000m",
+        "time": "29:37.64",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 25",
+        "meet": "Payton Jordan Invitational",
+        "event": "5000m",
+        "time": "13:33.28",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "APR 16",
+        "meet": "Bryan Clay Invitational",
+        "event": "10000m",
+        "time": "27:45.65",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "APR 3",
+        "meet": "Masked Rider Open",
+        "event": "1500m",
+        "time": "3:48.20",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "Big 12 Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:58.87",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "Big 12 Indoor Championships",
+        "event": "5000m sh",
+        "time": "13:49.55",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "5000m sh",
+        "time": "13:28.58",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Stan Scott Invite & Multis",
+        "event": "3000m sh",
+        "time": "7:58.09",
+        "place": "1",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

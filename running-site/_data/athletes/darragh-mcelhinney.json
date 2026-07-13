@@ -138,5 +138,752 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "DEC 9",
+        "meet": "25th SPAR European Cross Country Championships, Tilburg",
+        "event": "Cross Country U20 Race",
+        "time": "18:53",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "IAAF World U20 Championships",
+        "event": "5000m",
+        "time": "14:53.63",
+        "place": "18",
+        "round": "F"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Loughborough BMC Grand Prix, Loughborough",
+        "event": "1500m",
+        "time": "3:52.10",
+        "place": "13",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Tullamore Ireland Schools Championships, Tullamore",
+        "event": "1500m",
+        "time": "3:57.03",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Oordegem IFAM Meeting, Oordegem",
+        "event": "5000m",
+        "time": "14:11.80",
+        "place": "13",
+        "round": "F3"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Manchester BMC Grand Prix, Manchester",
+        "event": "5000m",
+        "time": "14:25.38",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "Greystones Irish Miler's Club, Greystones",
+        "event": "1500m",
+        "time": "3:49.45",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Armagh Road Race, Armagh",
+        "event": "5K",
+        "time": "14:42",
+        "place": "65",
+        "round": "F"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "Abbotstown (i)",
+        "event": "3000m sh",
+        "time": "8:13.80",
+        "place": "2",
+        "round": "F1"
+      }
+    ],
+    "2019": [
+      {
+        "date": "DEC 8",
+        "meet": "26th SPAR European Cross Country Championships, Lisboa",
+        "event": "Cross Country U20 Race",
+        "time": "19:21",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "European U20 Championships",
+        "event": "5000m",
+        "time": "14:06.05",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "Irish U20 Championships, Tullamore",
+        "event": "800m",
+        "time": "1:54.02",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "BMC Grand Prix, Watford",
+        "event": "3000m",
+        "time": "8:01.48",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Irish Milers Club, Belfast",
+        "event": "1500m",
+        "time": "3:45.12",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "All Ireland Schools Championships, Tullamore",
+        "event": "1500m",
+        "time": "3:52.38",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "IFAM Meeting",
+        "event": "5000m",
+        "time": "13:54.10",
+        "place": "2",
+        "round": "F3"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "43rd IAAF World Cross Country Championships, Århus",
+        "event": "Cross Country U20 Race",
+        "time": "27:00",
+        "place": "53",
+        "round": "F"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Athlone (i)",
+        "event": "5000m sh",
+        "time": "14:13.67",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Irish Indoor Championships, Abbotstown (i)",
+        "event": "1500m sh",
+        "time": "3:59.04",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Irish Indoor Championships, Abbotstown (i)",
+        "event": "1500m sh",
+        "time": "3:59.17",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "AAI Indoor Games, Abbotstown (i)",
+        "event": "3000m sh",
+        "time": "8:16.83",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2020": [
+      {
+        "date": "SEP 6",
+        "meet": "KBC Nacht van de Atletiek",
+        "event": "5000m",
+        "time": "14:01.16",
+        "place": "7",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "Irish Championships",
+        "event": "5000m",
+        "time": "13:56.00",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Irish Championships",
+        "event": "5000m",
+        "time": "15:30.14",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "Irish Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:06.18",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 29",
+        "meet": "Irish Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:30.14",
+        "place": "6",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "AIT Grand Prix",
+        "event": "Mile sh",
+        "time": "4:04.57",
+        "place": "8",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "DEC 12",
+        "meet": "27th SPAR European Cross Country Championships, Dublin",
+        "event": "Cross Country U23 Race",
+        "time": "24:33",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "NOV 21",
+        "meet": "Irish Cross Country Championships",
+        "event": "Cross Country",
+        "time": "30:35",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 28",
+        "meet": "Dave Clarke Mile with Extravaganza",
+        "event": "Mile",
+        "time": "3:58.20",
+        "place": "2",
+        "round": "F11"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "BMC Grand Prix",
+        "event": "1500m",
+        "time": "3:42.17",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "European Athletics U23 Championships",
+        "event": "5000m",
+        "time": "14:25.38",
+        "place": "9",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Irish Championships",
+        "event": "1500m",
+        "time": "3:49.56",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Irish Championships",
+        "event": "1500m",
+        "time": "3:57.12",
+        "place": "4",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "XXIV Meeting Internazionale Città di Nembro",
+        "event": "3000m",
+        "time": "7:52.30",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Watford Grand Prix",
+        "event": "3000m",
+        "time": "8:10.86",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "Belfast Irish Milers Meet",
+        "event": "1500m",
+        "time": "3:43.87",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "Irish Life Health Elite Athlete Indoor Micro Meet",
+        "event": "3000m sh",
+        "time": "7:50.80",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 11",
+        "meet": "28th SPAR European Cross Country Championships, Piemonte-La Mandria Park",
+        "event": "Cross Country U23 Race",
+        "time": "24:51",
+        "place": "26",
+        "round": "F"
+      },
+      {
+        "date": "NOV 20",
+        "meet": "Irish Cross Country Championships, Donegal",
+        "event": "Cross Country",
+        "time": "29:59",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "European Athletics Championships",
+        "event": "5000m",
+        "time": "13:39.11",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "XXV Meeting Internazionale Città di Nembro",
+        "event": "3000m",
+        "time": "7:42.86",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Cork City Sports",
+        "event": "3000m",
+        "time": "7:44.01",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Morton Games",
+        "event": "Mile",
+        "time": "3:58.15",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Irish Championships",
+        "event": "5000m",
+        "time": "13:53.84",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Copenhagen Athletics Games",
+        "event": "1500m",
+        "time": "3:37.72",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "IFAM Oordegem",
+        "event": "5000m",
+        "time": "13:17.17",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "6. Lange Laufnacht, Karlsruhe",
+        "event": "1500m",
+        "time": "3:39.79",
+        "place": "6",
+        "round": "F11"
+      },
+      {
+        "date": "MAR 18",
+        "meet": "World Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:06.31",
+        "place": "9",
+        "round": "H3"
+      },
+      {
+        "date": "MAR 7",
+        "meet": "Belgrade Indoor Meeting",
+        "event": "1500m sh",
+        "time": "3:39.63",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "Irish Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:02.84",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "3000m sh",
+        "time": "7:45.91",
+        "place": "8",
+        "round": "F3"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Irish Universities Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:42.89",
+        "place": "1",
+        "round": "F2"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 2",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:35.99",
+        "place": "16",
+        "round": "F1"
+      },
+      {
+        "date": "NOV 19",
+        "meet": "Irish Senior Cross Country Championships",
+        "event": "Cross Country",
+        "time": "32:14",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "AUG 12",
+        "meet": "BMW Louyet Meeting",
+        "event": "1500m",
+        "time": "3:39.53",
+        "place": "11",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "Morton Games",
+        "event": "5000m",
+        "time": "13:29.77",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Folksam Grand Prix Göteborg",
+        "event": "5000m",
+        "time": "13:30.71",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "Copenhagen Athletics Games",
+        "event": "5000m",
+        "time": "13:37.80",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "Lange Laufnacht",
+        "event": "1500m",
+        "time": "3:38.17",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "European Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:44.72",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAR 4",
+        "meet": "European Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:51.11",
+        "place": "4",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Irish Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:49.18",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "5000m sh",
+        "time": "13:42.97",
+        "place": "15",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "3000m sh",
+        "time": "7:45.79",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "IUAA Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:05.86",
+        "place": "1",
+        "round": "F2"
+      }
+    ],
+    "2024": [
+      {
+        "date": "NOV 27",
+        "meet": "Track & Field Live",
+        "event": "3000m sh",
+        "time": "7:58.77",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Cork City Sports",
+        "event": "3000m",
+        "time": "8:03.25",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Irish Championships",
+        "event": "1500m",
+        "time": "3:44.67",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Irish Championships",
+        "event": "1500m",
+        "time": "3:53.45",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "59. Internationales Pfingstsportfest Rehlingen",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Belfast Irish Milers Meet In Association with Tripadvisor",
+        "event": "1500m",
+        "time": "3:42.48",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Stanford Invitational",
+        "event": "5000m",
+        "time": "14:00.42",
+        "place": "12",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "ORLEN Copernicus Cup",
+        "event": "3000m sh",
+        "time": "7:54.02",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Metz Moselle Athleor",
+        "event": "3000m sh",
+        "time": "7:39.92",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 14",
+        "meet": "31st SPAR European Cross Country Championships, Lagoa",
+        "event": "Cross Country Senior Race",
+        "time": "22:49",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:42.56",
+        "place": "10",
+        "round": "H2"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "Sankthanshaugen 5000",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 12",
+        "meet": "Gyulai István Memorial",
+        "event": "3000m",
+        "time": "7:35.16",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "IFAM Oordegem",
+        "event": "5000m",
+        "time": "13:02.06",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Irish Championships",
+        "event": "1500m",
+        "time": "3:54.42",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "Irish Championships",
+        "event": "1500m",
+        "time": "3:48.09",
+        "place": "4",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Night of Athletics",
+        "event": "5000m",
+        "time": "13:12.17",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Morton Games",
+        "event": "Mile",
+        "time": "3:51.99",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "FAST5000",
+        "event": "5000m",
+        "time": "13:16.26",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "IFAM Outdoor",
+        "event": "5000m",
+        "time": "13:26.48",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 10",
+        "meet": "Belfast Irish milers meet",
+        "event": "1500m",
+        "time": "3:37.86",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Seven Hills Record Run, Nijmegen",
+        "event": "5K",
+        "time": "13:33",
+        "place": "6",
+        "round": "F8"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "3000m sh",
+        "time": "7:43.95",
+        "place": "11",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "3000m sh",
+        "time": "7:45.25",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "IFAM Gent Indoor",
+        "event": "1500m sh",
+        "time": "3:43.85",
+        "place": "1",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

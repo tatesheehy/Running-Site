@@ -1,0 +1,734 @@
+{
+  "id": "noah-kibet",
+  "name": "Noah Kibet",
+  "flag": "KE",
+  "country": "Kenya",
+  "waUrl": "https://worldathletics.org/athletes/kenya/noah-kibet-14973588",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "22",
+  "dob": "2004-04-12",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:44.44"
+    },
+    {
+      "event": "1500m",
+      "time": "3:36.32"
+    },
+    {
+      "event": "Mile",
+      "time": "3:59.26"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:44.98"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:42.20"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:59.26"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:12.02"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "800 m",
+      "time": "1:46.10",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 21",
+      "meet": "Portland Track Festival",
+      "event": "1500 m",
+      "time": "3:42.91",
+      "place": "13.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 14",
+      "meet": "USATF LA Grand Prix",
+      "event": "800 m",
+      "time": "1:47.00",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 5",
+      "meet": "Znamensky Memorial",
+      "event": "800 m",
+      "time": "1:46.85",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 31",
+      "meet": "Meeting International de Forbach",
+      "event": "800 m",
+      "time": "1:46.09",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 28",
+      "meet": "Trond Mohn Games",
+      "event": "800 m",
+      "time": "1:46.95",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 24",
+      "meet": "61. Internationales Pfingstsportfest Rehlingen",
+      "event": "800 m",
+      "time": "1:46.90",
+      "place": "6.",
+      "round": "F1"
+    },
+    {
+      "date": "APR 28",
+      "meet": "Simbine Classic",
+      "event": "800 m",
+      "time": "1:44.96",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "APR 24",
+      "meet": "Kip Keino Classic",
+      "event": "800 m",
+      "time": "1:44.44",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:45.73",
+      "place": "4.",
+      "round": "SF2"
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:45.84",
+      "place": "1.",
+      "round": "H6"
+    },
+    {
+      "date": "FEB 7",
+      "meet": "Russian Winter",
+      "event": "800 m sh",
+      "time": "1:45.77",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 3",
+      "meet": "Czech Indoor Gala",
+      "event": "800 m sh",
+      "time": "1:46.71",
+      "place": "1.",
+      "round": "F2"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [
+      {
+        "date": "SEP 18",
+        "meet": "Kip Keino Classic",
+        "event": "800m",
+        "time": "1:44.97",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:44.88",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:46.47",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:46.70",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "Nairobi Kenya World U20 Trials",
+        "event": "800m",
+        "time": "1:45.45",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Nairobi Kenya World U20 Trials",
+        "event": "800m",
+        "time": "1:47.31",
+        "place": "1",
+        "round": "SF1"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Nairobi Kenya World U20 Trials",
+        "event": "800m",
+        "time": "1:53.68",
+        "place": "4",
+        "round": "H3"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "Athletics Kenya Pre-Trials",
+        "event": "800m",
+        "time": "1:45.11",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "Athletics Kenya Pre-Trials",
+        "event": "4x400 Metres Relay",
+        "time": "3:12.02",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Athletics Kenya Pre-Trials",
+        "event": "800m",
+        "time": "1:46.78",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "Athletics Kenya Pre-Trials",
+        "event": "800m",
+        "time": "1:49.10",
+        "place": "1",
+        "round": "H6"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "2nd AK Weekend Meeting",
+        "event": "800m",
+        "time": "1:47.4",
+        "place": "2",
+        "round": "H3"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "2nd AK Weekend Meeting",
+        "event": "800m",
+        "time": "1:46.74",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "1st Weekend Meeting",
+        "event": "800m",
+        "time": "1:47.44",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "1st Weekend Meeting",
+        "event": "800m",
+        "time": "1:47.77",
+        "place": "1",
+        "round": "H4"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "3rd AK Relay Series",
+        "event": "800m",
+        "time": "1:47.34",
+        "place": "5",
+        "round": "F3"
+      }
+    ],
+    "2022": [
+      {
+        "date": "AUG 6",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:48.50",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:46.37",
+        "place": "1",
+        "round": "SF3"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:51.37",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:47.15",
+        "place": "7",
+        "round": "SF2"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.41",
+        "place": "5",
+        "round": "H5"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Kenyan Trials for World Championships and Commonwealth Games 2022",
+        "event": "800m",
+        "time": "1:45.08",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "61st Golden Spike",
+        "event": "800m",
+        "time": "1:44.89",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Ooredoo Doha Meeting",
+        "event": "800m",
+        "time": "1:49.08",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 28",
+        "meet": "Kenyan Championships",
+        "event": "800m",
+        "time": "1:46.81",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "Kenyan Championships",
+        "event": "800m",
+        "time": "1:46.81",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "APR 26",
+        "meet": "Kenyan Championships",
+        "event": "800m",
+        "time": "1:47.93",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.35",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 18",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.31",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "800m sh",
+        "time": "1:47.98",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Meeting de l’Eure",
+        "event": "800m sh",
+        "time": "1:47.27",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "800m sh",
+        "time": "1:46.06",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "Régionaux CJES",
+        "event": "800m sh",
+        "time": "1:46.75",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Czech Indoor Gala",
+        "event": "800m sh",
+        "time": "1:47.76",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "AUG 12",
+        "meet": "BMC Grand Prix",
+        "event": "800m",
+        "time": "1:46.15",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "CITIUS Meeting",
+        "event": "800m",
+        "time": "1:46.20",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "Meeting International Schifflange",
+        "event": "800m",
+        "time": "1:45.36",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "International Marseille Meeting",
+        "event": "800m",
+        "time": "1:46.07",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Trials For World Athletics Championships Budapest 2023",
+        "event": "800m",
+        "time": "1:47.17",
+        "place": "5",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 4",
+        "meet": "Portland Track Festival",
+        "event": "800m",
+        "time": "1:47.96",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "USATF Los Angeles Grand Prix",
+        "event": "800m",
+        "time": "1:45.39",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "Diamond League Meeting",
+        "event": "800m",
+        "time": "1:49.95",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "APR 15",
+        "meet": "Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "3:36.32",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Millrose Games",
+        "event": "800m sh",
+        "time": "1:44.98",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "LILAC Grand Prix",
+        "event": "800m sh",
+        "time": "1:46.74",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "JUN 14",
+        "meet": "National Trials for the XXXIII Olympics Games",
+        "event": "800m",
+        "time": "1:48.04",
+        "place": "3",
+        "round": "H3"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "USATF Los Angeles Grand Prix",
+        "event": "800m",
+        "time": "1:44.83",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Track Fest, Jack Kemp Stadium",
+        "event": "800m",
+        "time": "1:46.35",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "APR 12",
+        "meet": "Bryan Clay Invitational",
+        "event": "800m",
+        "time": "1:46.28",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.90",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Arkansas Qualifier",
+        "event": "800m sh",
+        "time": "1:47.20",
+        "place": "1",
+        "round": "F6"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Millrose Games",
+        "event": "800m sh",
+        "time": "1:46.09",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "New Mexico Collegiate Classic",
+        "event": "800m sh",
+        "time": "1:47.25",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Dr. Sander Invitational",
+        "event": "Mile sh",
+        "time": "3:59.26",
+        "place": "10",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "JUL 22",
+        "meet": "Trials for World Athletics Championships Tokyo 2025",
+        "event": "800m",
+        "time": "1:45.80",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "Kenyan Championships",
+        "event": "800m",
+        "time": "1:45.80",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Kenyan Championships",
+        "event": "800m",
+        "time": "1:49.21",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "61° Palio Città della Quercia",
+        "event": "800m",
+        "time": "1:45.64",
+        "place": "7",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "Meeting international du SATUC Toulouse Athlé",
+        "event": "800m",
+        "time": "1:45.76",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "75. Boris Hanžeković Memorial",
+        "event": "800m",
+        "time": "1:46.43",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "6th AK Track & Field Weekend Meeting/Relay Series",
+        "event": "800m",
+        "time": "1:48.85",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "6th AK Track & Field Weekend Meeting/Relay Series",
+        "event": "800m",
+        "time": "1:45.98",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 22",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.90",
+        "place": "4",
+        "round": "SF1"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.31",
+        "place": "2",
+        "round": "H4"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "800m sh",
+        "time": "1:46.23",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "800m sh",
+        "time": "1:45.19",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Meeting de L'Eure",
+        "event": "800m sh",
+        "time": "1:45.97",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "Elite Indoor Track Miramas Meeting",
+        "event": "800m sh",
+        "time": "1:46.05",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Sparkassen Indoor Meeting Dortmund",
+        "event": "800m sh",
+        "time": "1:47.54",
+        "place": "2",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
+}

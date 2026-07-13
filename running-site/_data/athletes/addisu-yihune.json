@@ -56,52 +56,355 @@
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:03.22",
-      "place": "12"
+      "place": "12.",
+      "round": "F"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "12:47.62",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "MAY 23",
       "meet": "Wanda Diamond League Xiamen",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "12:57.32",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "APR 18",
       "meet": "Boston 5K",
-      "event": "5 Kilometres Road",
+      "event": "5 Kilom Road",
       "time": "13:14",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "APR 4",
-      "meet": "Urban Trail de Lille",
-      "event": "5 Kilometres Road",
+      "meet": "Urban Trail de Lille - 5 et 10km",
+      "event": "5 Kilom Road",
       "time": "12:54",
-      "place": "2"
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "MAR 21",
       "meet": "World Athletics Indoor Championships",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:38.60",
-      "place": "8"
+      "place": "8.",
+      "round": "F"
     },
     {
       "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
-      "event": "3000 Metres Short Track",
+      "event": "3000 m sh",
       "time": "7:33.58",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [
+      {
+        "date": "AUG 19",
+        "meet": "World Athletics U20 Championships",
+        "event": "5000m",
+        "time": "13:32.76",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "Gyulai István Memorial",
+        "event": "3000m",
+        "time": "7:39.27",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Ethiopian Trials",
+        "event": "5000m",
+        "time": "12:58.99",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 11",
+        "meet": "Ethiopian Championships, Addis Ababa",
+        "event": "5000m",
+        "time": "13:45.8",
+        "place": "5",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "NOV 13",
+        "meet": "Cross Internacional de Atapuerca, Atapuerca",
+        "event": "Cross Country",
+        "time": "29:09",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "NOV 6",
+        "meet": "65th Cross Internacional de San Sebastian, San Sebastián",
+        "event": "Cross Country",
+        "time": "25:28",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "World Athletics U20 Championships",
+        "event": "5000m",
+        "time": "14:03.05",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "BAUHAUS-Galan",
+        "event": "3000m",
+        "time": "7:48.51",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Meeting de Paris",
+        "event": "5000m",
+        "time": "13:14.40",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Castiglione International Meeting",
+        "event": "5000m",
+        "time": "13:02.10",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 30",
+        "meet": "adizero Road to Records, Herzogenaurach",
+        "event": "5K",
+        "time": "13:12",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "APR 2",
+        "meet": "Ethiopian Championships, Hawassa",
+        "event": "5000m",
+        "time": "14:01.2",
+        "place": "15",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "World Indoor Tour Madrid 2022",
+        "event": "3000m sh",
+        "time": "7:47.53",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JAN 9",
+        "meet": "Elgoibar Juan Muguerza Cross-Country, Elgoibar",
+        "event": "Cross Country",
+        "time": "33:53",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 6",
+        "meet": "65° Campaccio-International Cross Country, San Giorgio su Legnano",
+        "event": "Cross Country",
+        "time": "28:39",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "OCT 8",
+        "meet": "Luso Meia Maratona, Lisboa",
+        "event": "Half Marathon",
+        "time": "1:02:02",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "TD Beach to Beacon 10K Road Race",
+        "event": "10K",
+        "time": "27:56",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "USATF Los Angeles Grand Prix",
+        "event": "5000m",
+        "time": "13:17.09",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "APR 29",
+        "meet": "adizero Road to Records",
+        "event": "5K",
+        "time": "13:22",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "3000m sh",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "3000m sh",
+        "time": "7:36.13",
+        "place": "4",
+        "round": "F1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 14",
+        "meet": "Al Sharqiyah International 5KM, Al Khobar",
+        "event": "5K",
+        "time": "13:39",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "SEP 5",
+        "meet": "Weltklasse Zürich",
+        "event": "3000m",
+        "time": "7:41.81",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 25",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "3000m",
+        "time": "7:33.94",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "13:22.33",
+        "place": "14",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "13:52.62",
+        "place": "8",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "Oslo Bislett Games",
+        "event": "5000m",
+        "time": "12:49.65",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "adizero Road to Records",
+        "event": "5K",
+        "time": "13:05",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Wanda Diamond League Xiamen",
+        "event": "5000m",
+        "time": "13:01.44",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "10 km Villa de Laredo, Laredo",
+        "event": "10K",
+        "time": "27:28",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Paris",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Doha Meeting",
+        "event": "5000m",
+        "time": "13:35.73",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "APR 26",
+        "meet": "adizero: Road to Records, Herzogenaurach",
+        "event": "5K",
+        "time": "13:30",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "Semi-Marathon International de Lille",
+        "event": "5K",
+        "time": "13:04",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "3000m sh",
+        "time": "8:00.98",
+        "place": "13",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

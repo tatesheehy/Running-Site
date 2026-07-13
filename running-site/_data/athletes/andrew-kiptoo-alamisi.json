@@ -52,66 +52,249 @@
     {
       "date": "JUN 20",
       "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:47.62",
-      "place": "3"
+      "place": "3.",
+      "round": "F1"
     },
     {
       "date": "JUN 18",
       "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:52.88",
-      "place": "2"
+      "place": "2.",
+      "round": "H1"
     },
     {
       "date": "MAY 23",
       "meet": "Trials World Athletics U20 Championships",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:51.33",
-      "place": "3"
+      "place": "3.",
+      "round": "F1"
     },
     {
       "date": "MAY 20",
       "meet": "Athletics Kenya National Police Service Track and Field Championships",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:49.98",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     },
     {
       "date": "MAY 17",
       "meet": "African Athletics Championships",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:22.47",
-      "place": "7"
+      "place": "7.",
+      "round": "F"
     },
     {
       "date": "APR 24",
       "meet": "Kip Keino Classic",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:42.92",
-      "place": "7"
+      "place": "7.",
+      "round": "F"
     },
     {
       "date": "APR 11",
       "meet": "Trials For World Athletics Relay Championships",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "13:34.30",
-      "place": "2"
+      "place": "2.",
+      "round": "F"
     },
     {
       "date": "APR 9",
       "meet": "Trials For World Athletics Relay Championships",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "14:07.90",
-      "place": "4"
+      "place": "4.",
+      "round": "H1"
     },
     {
       "date": "JAN 10",
       "meet": "46th World Athletics Cross Country Championships",
       "event": "Cross Country U20 Race",
       "time": "23:28",
-      "place": "3"
+      "place": "3.",
+      "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [],
+    "2023": [
+      {
+        "date": "AUG 10",
+        "meet": "Commonwealth Youth Games",
+        "event": "3000m",
+        "time": "8:04.35",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "Commonwealth Youth Games",
+        "event": "1500m",
+        "time": "3:38.12",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "Commonwealth Youth Games",
+        "event": "1500m",
+        "time": "3:51.27",
+        "place": "1",
+        "round": "H2"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 14",
+        "meet": "Al Sharqiyah International 5KM, Al Khobar",
+        "event": "5K",
+        "time": "13:06",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "NOV 17",
+        "meet": "92nd Cinque Mulini, San Vittore Olona",
+        "event": "Cross Country",
+        "time": "27:29",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 27",
+        "meet": "World Athletics U20 Championships",
+        "event": "5000m",
+        "time": "13:41.14",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "National Trials For World Athletics Under 20 Championships",
+        "event": "5000m",
+        "time": "13:43.54",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Atletica 2000 Meeting",
+        "event": "5000m",
+        "time": "13:05.55",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "Grifone Meeting",
+        "event": "1500m",
+        "time": "3:39.18",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "3rd Lucca International Meeting",
+        "event": "3000m",
+        "time": "7:57.37",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "adizero Road to Records",
+        "event": "5K",
+        "time": "13:20",
+        "place": "7",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "NOV 9",
+        "meet": "XLIII Cross Internacional de Itálica",
+        "event": "Cross Country",
+        "time": "26:10",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 12",
+        "meet": "Gyulai István Memorial",
+        "event": "3000m",
+        "time": "7:36.24",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUL 22",
+        "meet": "Trials for World Athletics Championships Tokyo 2025",
+        "event": "5000m",
+        "time": "13:51.37",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "BAUHAUS-Galan",
+        "event": "5000m",
+        "time": "13:29.07",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "61° Palio Città della Quercia",
+        "event": "5000m",
+        "time": "13:16.90",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "75. Boris Hanžeković Memorial",
+        "event": "5000m",
+        "time": "13:03.30",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 26",
+        "meet": "adizero: Road to Records, Herzogenaurach",
+        "event": "5K",
+        "time": "13:03",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Meeting Indoor de Lyon",
+        "event": "3000m sh",
+        "time": "7:45.61",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "3000m sh",
+        "time": "7:57.52",
+        "place": "13",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

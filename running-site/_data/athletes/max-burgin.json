@@ -1,0 +1,445 @@
+{
+  "id": "max-burgin",
+  "name": "Max Burgin",
+  "flag": "GB",
+  "country": "Great Britain",
+  "waUrl": "https://worldathletics.org/athletes/great-britain-ni/max-burgin-14755557",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "24",
+  "dob": "2002-05-20",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:42.29"
+    },
+    {
+      "event": "1500m",
+      "time": "3:47.70"
+    }
+  ],
+  "results": [
+    {
+      "date": "MAY 31",
+      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+      "event": "800 m",
+      "time": "1:42.98",
+      "place": "1.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "AUG 31",
+        "meet": "Loughborough UK School Games, Loughborough",
+        "event": "800m",
+        "time": "1:50.00",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "Bedford England U17/U15 Championships, Bedford",
+        "event": "800m",
+        "time": "1:49.21",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 25",
+        "meet": "Bedford England U17/U15 Championships, Bedford",
+        "event": "800m",
+        "time": "1:53.52",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "Stretford BMC Gold Standard Races, Stretford",
+        "event": "1500m",
+        "time": "3:47.70",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Győr European U18 Championships",
+        "event": "800m",
+        "time": "1:47.36",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Győr European U18 Championships",
+        "event": "800m",
+        "time": "1:52.37",
+        "place": "1",
+        "round": "SF1"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "Győr European U18 Championships",
+        "event": "800m",
+        "time": "1:53.23",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Loughborough BMC Grand Prix, Loughborough",
+        "event": "800m",
+        "time": "1:49.78",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Manchester BMC Grand Prix, Manchester",
+        "event": "800m",
+        "time": "1:47.50",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 1",
+        "meet": "Leeds BMC Regional Races, Leeds",
+        "event": "800m",
+        "time": "1:50.40",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2019": [
+      {
+        "date": "AUG 18",
+        "meet": "Müller Grand Prix",
+        "event": "800m",
+        "time": "1:47.99",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "England Athletics U20 / U23 Championships, Bedford",
+        "event": "800m",
+        "time": "1:45.36",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "England Athletics U20 / U23 Championships, Bedford",
+        "event": "800m",
+        "time": "1:52.10",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "BMC Grand Prix, Loughborough",
+        "event": "800m",
+        "time": "1:46.80",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "West Yorkshire Schools Championships, Leeds",
+        "event": "800m",
+        "time": "1:49.04",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "SEP 15",
+        "meet": "70th Hanžeković Memorial",
+        "event": "800m",
+        "time": "1:47.73",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "BAUHAUS-Galan",
+        "event": "800m",
+        "time": "1:46.02",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "AUG 11",
+        "meet": "BMC Gold Standard Races",
+        "event": "800m",
+        "time": "1:44.75",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2021": [
+      {
+        "date": "MAY 19",
+        "meet": "60th Ostrava Golden Spike",
+        "event": "800m",
+        "time": "1:44.14",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "JUL 20",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "DNS",
+        "place": "",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Müller UK Athletics Championships",
+        "event": "800m",
+        "time": "1:44.54",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Müller UK Athletics Championships",
+        "event": "800m",
+        "time": "1:48.68",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "Paavo Nurmi Games",
+        "event": "800m",
+        "time": "1:43.52",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "61st Golden Spike",
+        "event": "800m",
+        "time": "1:44.54",
+        "place": "3",
+        "round": "F1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "AUG 24",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:47.60",
+        "place": "8",
+        "round": "SF3"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.43",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 23",
+        "meet": "London Athletics Meet",
+        "event": "800m",
+        "time": "1:43.85",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "UK Championships",
+        "event": "800m",
+        "time": "1:45.16",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "UK Championships",
+        "event": "800m",
+        "time": "1:47.12",
+        "place": "2",
+        "round": "H2"
+      }
+    ],
+    "2024": [
+      {
+        "date": "AUG 25",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "800m",
+        "time": "1:43.73",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:43.84",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:43.50",
+        "place": "3",
+        "round": "SF3"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:45.36",
+        "place": "3",
+        "round": "H6"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "BMC Gold Standard Races",
+        "event": "800m",
+        "time": "1:45.35",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "UK Championships",
+        "event": "800m",
+        "time": "1:46.01",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "UK Championships",
+        "event": "800m",
+        "time": "1:45.52",
+        "place": "1",
+        "round": "H2"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 20",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:42.29",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "SEP 18",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:43.37",
+        "place": "2",
+        "round": "SF2"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.73",
+        "place": "1",
+        "round": "H6"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Weltklasse Zürich",
+        "event": "800m",
+        "time": "1:42.42",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Athletissima Lausanne",
+        "event": "800m",
+        "time": "1:43.44",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "UK Championships",
+        "event": "800m",
+        "time": "1:43.92",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "UK Championships",
+        "event": "800m",
+        "time": "1:46.02",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "London Athletics Meet",
+        "event": "800m",
+        "time": "1:42.36",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "800m",
+        "time": "1:47.71",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "1:43.61",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Meeting International Mohammed VI d'Athlétisme de Rabat",
+        "event": "800m",
+        "time": "1:43.34",
+        "place": "2",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-10"
+}

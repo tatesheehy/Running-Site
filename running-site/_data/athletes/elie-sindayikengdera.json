@@ -118,5 +118,195 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [],
+    "2023": [
+      {
+        "date": "AUG 3",
+        "meet": "Jeux de la Francophonie",
+        "event": "1500m",
+        "time": "3:45.65",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Míting Internacional d'Atletisme Ciutat de Barcelona",
+        "event": "3000m",
+        "time": "7:58.03",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Meeting Internacional Ciudad de Málaga",
+        "event": "1500m",
+        "time": "3:44.14",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "VII Memorial José Antonio Cansino",
+        "event": "1500m",
+        "time": "3:41.64",
+        "place": "1",
+        "round": "F2"
+      }
+    ],
+    "2024": [
+      {
+        "date": "JUN 26",
+        "meet": "African Athletics Championships",
+        "event": "5000m",
+        "time": "13:55.06",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "African Athletics Championships",
+        "event": "10000m",
+        "time": "29:38.61",
+        "place": "8",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "NOV 23",
+        "meet": "Cross Internacional de Atapuerca",
+        "event": "Cross Country",
+        "time": "20:32",
+        "place": "14",
+        "round": "F"
+      },
+      {
+        "date": "NOV 16",
+        "meet": "XXXI Campo a Traves Internacional de Soria, Soria",
+        "event": "Cross Country",
+        "time": "24:39",
+        "place": "15",
+        "round": "F"
+      },
+      {
+        "date": "OCT 19",
+        "meet": "71º Cross Internacional Zornotza, Amorebieta-Etxano",
+        "event": "Cross Country",
+        "time": "26:47",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "SEP 21",
+        "meet": "Dam tot Damloop, Amsterdam",
+        "event": "10 Miles Road",
+        "time": "47:45",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "SEP 2",
+        "meet": "XV Certame Atletico \"Disfida di Barletta\"",
+        "event": "3000m",
+        "time": "8:04.59",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 27",
+        "meet": "Scalata Al Castello, Arezzo",
+        "event": "10K",
+        "time": "29:05",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "Meeting voor Mon",
+        "event": "3000m",
+        "time": "7:46.67",
+        "place": "11",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "IFAM Oordegem",
+        "event": "5000m",
+        "time": "13:01.96",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Night of Athletics",
+        "event": "5000m",
+        "time": "13:11.64",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "XXVIII Meeting Internazionale \"Citta' di Nembro\"",
+        "event": "3000m",
+        "time": "7:53.43",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "Meeting National de Carquefou",
+        "event": "5000m",
+        "time": "13:26.77",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "C.D.S. Assoluto su Pista",
+        "event": "5000m",
+        "time": "13:44.30",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "61° Palio Città della Quercia",
+        "event": "5000m",
+        "time": "13:19.31",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Campionati di Società Assoluto Trentino Alto Adige Fase Regionale",
+        "event": "5000m",
+        "time": "13:55.22",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "XI Athletic Elite Meeting",
+        "event": "5000m",
+        "time": "13:34.54",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "APR 27",
+        "meet": "ESET WMD-Night",
+        "event": "1500m",
+        "time": "3:45.33",
+        "place": "5",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

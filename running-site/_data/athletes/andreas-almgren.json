@@ -120,59 +120,782 @@
     {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
-      "event": "2 Miles",
+      "event": "3000 m",
+      "time": "7:42.18",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "2 Mi",
       "time": "8:11.12",
-      "place": "4"
+      "place": "4.",
+      "round": "F"
     },
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "12:55.38",
-      "place": "3"
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "12:48.61",
-      "place": "3"
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "JUN 7",
       "meet": "BAUHAUS-Galan",
-      "event": "1500m",
+      "event": "1500 m",
       "time": "3:36.81",
-      "place": "14"
+      "place": "14.",
+      "round": "F"
     },
     {
       "date": "MAY 23",
       "meet": "Wanda Diamond League Xiamen",
-      "event": "5000m",
+      "event": "5000 m",
       "time": "DNF",
-      "place": ""
+      "place": "",
+      "round": "F"
     },
     {
       "date": "MAY 16",
       "meet": "Wanda Diamond League",
-      "event": "3000m",
+      "event": "3000 m",
       "time": "7:26.48",
-      "place": "3"
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "FEB 22",
-      "meet": "10K Facsa Castellón, Castellón",
-      "event": "10 Kilometres Road",
+      "meet": "10K Facsa Castellón",
+      "event": "10 Kilom Road",
       "time": "26:45",
-      "place": "3"
+      "place": "3.",
+      "round": "F"
     },
     {
       "date": "JAN 11",
-      "meet": "10K Valencia Ibercaja by Kiprun, Valencia",
-      "event": "10 Kilometres Road",
+      "meet": "10K Valencia Ibercaja by Kiprun",
+      "event": "10 Kilom Road",
       "time": "26:45",
-      "place": "1"
+      "place": "1.",
+      "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "AUG 26",
+        "meet": "Swedish Championships, Eskilstuna",
+        "event": "800m",
+        "time": "1:50.40",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 25",
+        "meet": "Swedish Championships, Eskilstuna",
+        "event": "800m",
+        "time": "1:53.31",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Bergen Trond Mohn Games, Bergen",
+        "event": "800m",
+        "time": "1:48.36",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 18",
+        "meet": "Göteborg Folksam GP, Göteborg",
+        "event": "800m",
+        "time": "1:51.14",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "Karlstad Folksam GP, Karlstad",
+        "event": "800m",
+        "time": "1:50.74",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Heusden-Zolder KBC Night of Athletics, Heusden-Zolder",
+        "event": "800m",
+        "time": "1:49.05",
+        "place": "7",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "Sotteville-lès-Rouen Meeting International, Sotteville-lès-Rouen",
+        "event": "800m",
+        "time": "1:52.67",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Swedish Indoor Championships, Gävle (i)",
+        "event": "800m sh",
+        "time": "1:50.76",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Swedish Indoor Championships, Gävle (i)",
+        "event": "800m sh",
+        "time": "1:53.43",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Uppsala Nordenkampen, Uppsala (i)",
+        "event": "800m sh",
+        "time": "1:48.04",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Sätra (i)",
+        "event": "800m sh",
+        "time": "1:50.09",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2019": [
+      {
+        "date": "AUG 25",
+        "meet": "Finnkampen",
+        "event": "1500m",
+        "time": "3:41.20",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "Finnkampen",
+        "event": "800m",
+        "time": "1:52.45",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "AUG 18",
+        "meet": "CAS Meeting, Schifflange",
+        "event": "1500m",
+        "time": "3:43.81",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "Goteborg Athletics Grand Prix, Göteborg",
+        "event": "1500m",
+        "time": "3:38.99",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 11",
+        "meet": "European Athletics Team Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:12.13",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "European Athletics Team Championships",
+        "event": "1500m",
+        "time": "3:49.53",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "Meeting International de la Province de Liège, Liège",
+        "event": "800m",
+        "time": "1:48.55",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Varberg GP, Varberg",
+        "event": "1000m",
+        "time": "2:21.23",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "Folksam Grand Prix, Karlstad",
+        "event": "1500m",
+        "time": "3:39.67",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Folksam Grand Prix, Sollentuna",
+        "event": "1500m",
+        "time": "3:39.68",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Ludvikaspelen, Ludvika",
+        "event": "800m",
+        "time": "1:48.57",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "BAUHAUS-galan",
+        "event": "800m",
+        "time": "1:53.05",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Lange Laufnacht, Karlsruhe",
+        "event": "1500m",
+        "time": "3:40.18",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 2",
+        "meet": "Payton Jordan Invitational",
+        "event": "1500m",
+        "time": "3:44.07",
+        "place": "1",
+        "round": "F4"
+      }
+    ],
+    "2020": [
+      {
+        "date": "AUG 15",
+        "meet": "Swedish Championships",
+        "event": "1500m",
+        "time": "3:54.45",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 14",
+        "meet": "Swedish Championships",
+        "event": "1500m",
+        "time": "3:51.21",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "Sollentuna GP",
+        "event": "2000m",
+        "time": "5:00.23",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "Bannister Running Invitational #5",
+        "event": "1500m",
+        "time": "3:42.31",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Karlstad GP",
+        "event": "1500m",
+        "time": "3:41.01",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "Turebergs explosiva 5, Sollentuna",
+        "event": "1500m",
+        "time": "3:40.58",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Swedish Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:48.34",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2021": [
+      {
+        "date": "OCT 24",
+        "meet": "Swedish Cross Country Championships, Höganäs",
+        "event": "Cross Country",
+        "time": "29:52",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "OCT 23",
+        "meet": "Swedish Cross Country Championships, Höganäs",
+        "event": "Cross Country",
+        "time": "10:01",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 4",
+        "meet": "Finnkampen",
+        "event": "5000m",
+        "time": "13:29.26",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "Swedish Championships",
+        "event": "5000m",
+        "time": "14:01.91",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "Motonet GP",
+        "event": "3000m",
+        "time": "7:41.72",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "Vinthundsvintern 1",
+        "event": "3000m sh",
+        "time": "7:41.6",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "OCT 22",
+        "meet": "Swedish Cross Country Championships, Stockholm",
+        "event": "Cross Country",
+        "time": "11:10",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 22",
+        "meet": "Swedish Cross Country Championships, Stockholm",
+        "event": "Cross Country",
+        "time": "29:21",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 11",
+        "meet": "Memorial Borisa Hanžekovića",
+        "event": "3000m",
+        "time": "7:39.44",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "SEP 4",
+        "meet": "Finnkampen",
+        "event": "1500m",
+        "time": "3:39.56",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 2",
+        "meet": "Memorial van Damme",
+        "event": "5000m",
+        "time": "13:01.70",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "European Athletics Championships",
+        "event": "5000m",
+        "time": "13:26.48",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "Swedish Championships",
+        "event": "5000m",
+        "time": "13:54.38",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "Swedish Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:57.55",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "3000m sh",
+        "time": "7:34.31",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 5",
+        "meet": "Göteborg inomhus",
+        "event": "1500m sh",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "AUG 31",
+        "meet": "Weltklasse Zürich",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:36.57",
+        "place": "9",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Swedish Championships",
+        "event": "1500m",
+        "time": "3:34.55",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 28",
+        "meet": "Swedish Championships",
+        "event": "1500m",
+        "time": "3:49.83",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "BAUHAUS-Galan",
+        "event": "3000m",
+        "time": "7:40.01",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Athletissima Lausanne",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "European Athletics Team Championships First Division",
+        "event": "5000m",
+        "time": "13:25.70",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Oslo Bislett Games",
+        "event": "1500m",
+        "time": "3:32.00",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Folksam Grand Prix Sollentuna",
+        "event": "1500m",
+        "time": "3:36.52",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Golden Gala Pietro Mennea",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "National Team Championships Qualification Group A",
+        "event": "1500m",
+        "time": "3:47.63",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "Diamond League Meeting",
+        "event": "3000m",
+        "time": "7:37.05",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "World Indoor Tour Madrid 2023",
+        "event": "3000m sh",
+        "time": "7:49.40",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "3000m sh",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 8",
+        "meet": "30th SPAR European Cross Country Championships, Antalya",
+        "event": "Cross Country Senior Race",
+        "time": "22:34",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "DNS",
+        "place": "",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "European Athletics Championships",
+        "event": "10000m",
+        "time": "28:01.16",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "BAUHAUS-Galan",
+        "event": "3000m",
+        "time": "7:34.28",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "Oslo Bislett Games",
+        "event": "5000m",
+        "time": "12:50.94",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Spåret5000m",
+        "event": "5000m",
+        "time": "12:59.82",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 10",
+        "meet": "Seashore Group Doha Meeting",
+        "event": "1500m",
+        "time": "3:35.22",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "The TEN",
+        "event": "10000m",
+        "time": "26:52.87",
+        "place": "3",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "eDreams Mitja Marató Barcelona by Brooks, Barcelona",
+        "event": "Half Marathon",
+        "time": "59:23",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 14",
+        "meet": "10K Valencia Ibercaja, Valencia",
+        "event": "10K",
+        "time": "27:20",
+        "place": "6",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "OCT 26",
+        "meet": "Medio Marathon Valencia Trinidad Alfonso Zurich, Valencia",
+        "event": "Half Marathon",
+        "time": "58:41",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:16.38",
+        "place": "9",
+        "round": "H1"
+      },
+      {
+        "date": "SEP 14",
+        "meet": "World Athletics Championships",
+        "event": "10000m",
+        "time": "28:56.02",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Weltklasse Zürich",
+        "event": "3000m",
+        "time": "7:36.82",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Finnkampen",
+        "event": "10K",
+        "time": "29:12",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "Folksam Grand Prix Sollentuna",
+        "event": "3000m",
+        "time": "7:31.42",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "Swedish Championships",
+        "event": "10000m",
+        "time": "28:53.49",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "BAUHAUS-Galan",
+        "event": "5000m",
+        "time": "12:44.27",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Drammen 10K-5K",
+        "event": "5K",
+        "time": "13:05",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "European Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:50.66",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "European Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:50.91",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Swedish Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:36.38",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 12",
+        "meet": "10K Valencia Ibercaja by Kiprun, Valencia",
+        "event": "10K",
+        "time": "26:53",
+        "place": "1",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

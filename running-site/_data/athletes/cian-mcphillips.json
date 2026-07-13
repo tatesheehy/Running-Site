@@ -1,0 +1,621 @@
+{
+  "id": "cian-mcphillips",
+  "name": "Cian Mcphillips",
+  "flag": "IE",
+  "country": "Ireland",
+  "waUrl": "https://worldathletics.org/athletes/ireland/cian-mcphillips-14809057",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "24",
+  "dob": "2002-06-07",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:42.15"
+    },
+    {
+      "event": "1500m",
+      "time": "3:40.56"
+    },
+    {
+      "event": "Mile",
+      "time": "4:10.95"
+    },
+    {
+      "event": "3000m",
+      "time": "8:18.91"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:16.32"
+    },
+    {
+      "event": "600 Metres Short Track",
+      "time": "1:16.37"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:45.33"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:24.13"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:24.13"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:44.85"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "4:10.95"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:18.30"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "800 m",
+      "time": "1:44.89",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "New Balance Indoor Grand Prix",
+      "event": "600 m sh",
+      "time": "1:16.37",
+      "place": "1.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUL 14",
+        "meet": "Dublin IMC, Dublin",
+        "event": "3000m",
+        "time": "8:18.91",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Győr European U18 Championships",
+        "event": "1500m",
+        "time": "4:10.87",
+        "place": "14",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Belfast International, Belfast",
+        "event": "800m",
+        "time": "1:51.63",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "Greystones Irish Miler's Club, Greystones",
+        "event": "1500m",
+        "time": "3:49.85",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 18",
+        "meet": "Athlone Irish Juvenile Indoor Championships, Athlone (i)",
+        "event": "1500m sh",
+        "time": "3:57.28",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "DEC 17",
+        "meet": "NIA LIve, Dublin (i)",
+        "event": "1000m sh",
+        "time": "2:24.13",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "All Ireland Schools Championships, Tullamore",
+        "event": "800m",
+        "time": "1:53.41",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Irish Milers Club, Dublin",
+        "event": "800m",
+        "time": "1:50.71",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "IMC Meet, Greystones",
+        "event": "3000m",
+        "time": "8:27.79",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 31",
+        "meet": "Irish Juvenile Indoor Championships, Athlone (i)",
+        "event": "800m sh",
+        "time": "1:57.94",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "AAI Indoor Games, Abbotstown (i)",
+        "event": "1500m sh",
+        "time": "3:46.42",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Irish U20 Indoor Championships, Athlone (i)",
+        "event": "1500m sh",
+        "time": "3:54.77",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 8",
+        "meet": "NIA Live, Dublin (i)",
+        "event": "800m sh",
+        "time": "1:51.27",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2020": [
+      {
+        "date": "AUG 30",
+        "meet": "Irish Championships",
+        "event": "800m",
+        "time": "1:52.78",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "Irish Championships",
+        "event": "800m",
+        "time": "1:55.23",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "Irish Championships",
+        "event": "1500m",
+        "time": "3:52.30",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Irish Championships",
+        "event": "1500m",
+        "time": "4:09.55",
+        "place": "1",
+        "round": "H4"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "Irish Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:49.63",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 29",
+        "meet": "Irish Indoor Championships",
+        "event": "1500m sh",
+        "time": "4:09.34",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "NYRR Millrose Games",
+        "event": "Mile sh",
+        "time": "4:10.95",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Irish Indoor League",
+        "event": "1500m sh",
+        "time": "3:44.85",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "AUG 4",
+        "meet": "Night Of Sprints",
+        "event": "800m",
+        "time": "1:47.83",
+        "place": "3",
+        "round": "F6"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "AAI Summer Games",
+        "event": "1500m",
+        "time": "3:40.56",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "European Athletics U20 Championships",
+        "event": "1500m",
+        "time": "3:46.55",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "European Athletics U20 Championships",
+        "event": "1500m",
+        "time": "3:48.67",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "AAI Games",
+        "event": "1500m",
+        "time": "3:46.27",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "European Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.06",
+        "place": "4",
+        "round": "SF2"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "European Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:49.98",
+        "place": "2",
+        "round": "H3"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "Irish Life Health Elite Athlete Indoor Micro Meet",
+        "event": "800m sh",
+        "time": "1:46.13",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "JUL 2",
+        "meet": "Morton Games",
+        "event": "800m",
+        "time": "1:50.54",
+        "place": "8",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "AUG 23",
+        "meet": "BMC Gold Standard Races",
+        "event": "800m",
+        "time": "1:47.07",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Irish Championships",
+        "event": "800m",
+        "time": "1:50.75",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "European Athletics U23 Championships",
+        "event": "800m",
+        "time": "1:48.04",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "European Athletics U23 Championships",
+        "event": "800m",
+        "time": "1:46.35",
+        "place": "4",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "VII Ordizia Sari Nagusia",
+        "event": "800m",
+        "time": "1:45.92",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "UCD Track & Field Meet",
+        "event": "800m",
+        "time": "1:46.94",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Irish Universities Track and Field Championships",
+        "event": "1500m",
+        "time": "4:06.81",
+        "place": "2",
+        "round": "H1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "JUN 19",
+        "meet": "Meeting International d'Athlétisme de la Province de Liège",
+        "event": "1500m",
+        "time": "3:42.39",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Night of Athletics",
+        "event": "800m",
+        "time": "1:48.60",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Gold Gala Fernanda Ribeiro",
+        "event": "800m",
+        "time": "1:48.81",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Irish Milers Club-Crusaders",
+        "event": "800m",
+        "time": "1:47.40",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "APR 27",
+        "meet": "ESET WMD",
+        "event": "600m",
+        "time": "1:16.32",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "APR 6",
+        "meet": "Irish Universities Track and Field Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:18.30",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Irish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:52.79",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Irish Indoor Championships",
+        "event": "800m sh",
+        "time": "1:53.26",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "800m sh",
+        "time": "1:46.43",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "IFAM Gent Indoor",
+        "event": "800m sh",
+        "time": "1:48.88",
+        "place": "4",
+        "round": "F3"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "AAI Indoor Games",
+        "event": "800m sh",
+        "time": "1:47.32",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 14",
+        "meet": "31st SPAR European Cross Country Championships, Lagoa",
+        "event": "Cross Country Relay",
+        "time": "17:22",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "SEP 20",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:42.15",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "SEP 18",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:43.18",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.91",
+        "place": "1",
+        "round": "H4"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "IFAM Oordegem",
+        "event": "800m",
+        "time": "1:44.34",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Irish Championships",
+        "event": "800m",
+        "time": "1:49.26",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "Irish Championships",
+        "event": "800m",
+        "time": "1:52.58",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Morton Games",
+        "event": "800m",
+        "time": "1:44.19",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Cork City Sports",
+        "event": "800m",
+        "time": "1:45.51",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "European Athletics Team Championships Second Division",
+        "event": "800m",
+        "time": "1:46.37",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "European Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:47.40",
+        "place": "7",
+        "round": "SF1"
+      },
+      {
+        "date": "MAR 7",
+        "meet": "European Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:57.35",
+        "place": "5",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "800m sh",
+        "time": "1:45.33",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "IFAM Gent Indoor",
+        "event": "800m sh",
+        "time": "1:48.86",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 15",
+        "meet": "Track & Field Live",
+        "event": "600m sh",
+        "time": "1:17.52",
+        "place": "1",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-10"
+}

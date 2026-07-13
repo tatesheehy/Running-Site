@@ -94,5 +94,341 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [
+      {
+        "date": "SEP 18",
+        "meet": "Eritrean Championships, Asmara",
+        "event": "1500m",
+        "time": "3:47.06",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "World Athletics U20 Championships",
+        "event": "1500m",
+        "time": "DNS",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "World Athletics U20 Championships",
+        "event": "1500m",
+        "time": "3:53.08",
+        "place": "6",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "Eritrean World U20 Trials, Asmara",
+        "event": "1500m",
+        "time": "3:47.74",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "Eritrean U20 Championships, Asmara",
+        "event": "1500m",
+        "time": "4:00.84",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "Eritrean U20 Championships, Asmara",
+        "event": "3000m",
+        "time": "8:42.70",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Eritrean U18 Championships, Keren",
+        "event": "3000m",
+        "time": "8:27.33",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Eritrean U18 Championships, Keren",
+        "event": "1500m",
+        "time": "3:57.20",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "ENAF Time Trial, Asmara",
+        "event": "1500m",
+        "time": "3:49.49",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "ENAF Time Trial, Asmara",
+        "event": "5000m",
+        "time": "14:35.30",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "ENAF Time Trial, Asmara",
+        "event": "1500m",
+        "time": "3:50.67",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "ENAF Time Trial, Asmara",
+        "event": "5000m",
+        "time": "14:35.66",
+        "place": "9",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "APR 29",
+        "meet": "Eritrean U20 Championships",
+        "event": "1500m",
+        "time": "3:48.1",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 29",
+        "meet": "Eritrean U20 Championships",
+        "event": "3000m",
+        "time": "8:13.8",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 2",
+        "meet": "Eritrean Championships",
+        "event": "1500m",
+        "time": "3:50.1",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 2",
+        "meet": "Eritrean Championships",
+        "event": "5000m",
+        "time": "14:28.1",
+        "place": "5",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "OCT 15",
+        "meet": "degewo Great 10K",
+        "event": "10K",
+        "time": "27:49",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 1",
+        "meet": "World Athletics Road Running Championships, Riga",
+        "event": "5K",
+        "time": "13:21",
+        "place": "4",
+        "round": "F1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "AUG 10",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "13:31.50",
+        "place": "19",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "13:52.53",
+        "place": "7",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Track Night Vienna",
+        "event": "5000m",
+        "time": "13:07.77",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "IFAM Outdoor",
+        "event": "5000m",
+        "time": "13:11.78",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Trond Mohn Games",
+        "event": "3000m",
+        "time": "7:37.52",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Spåret5000m",
+        "event": "5000m",
+        "time": "13:28.86",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 22",
+        "meet": "African Games",
+        "event": "5000m",
+        "time": "13:52.53",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "African Games",
+        "event": "10000m",
+        "time": "29:53.81",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "IFAM Gent Indoor",
+        "event": "3000m sh",
+        "time": "7:46.51",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 14",
+        "meet": "10K Valencia Ibercaja, Valencia",
+        "event": "10K",
+        "time": "27:35",
+        "place": "10",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "AUG 9",
+        "meet": "IFAM Oordegem",
+        "event": "5000m",
+        "time": "13:28.03",
+        "place": "23",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Night of Athletics",
+        "event": "5000m",
+        "time": "13:27.15",
+        "place": "13",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "Track Fest, Jack Kemp Stadium",
+        "event": "5000m",
+        "time": "13:21.24",
+        "place": "14",
+        "round": "F"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Grand Slam Track Miami",
+        "event": "5000m",
+        "time": "14:01.96",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAY 2",
+        "meet": "Grand Slam Track Miami",
+        "event": "3000m",
+        "time": "8:18.73",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "APR 19",
+        "meet": "Boston 5K",
+        "event": "5K",
+        "time": "13:33",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Drammen 10K-5K",
+        "event": "5K",
+        "time": "13:29",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 22",
+        "meet": "World Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:49.49",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "IFAM Gent Indoor",
+        "event": "1500m sh",
+        "time": "3:43.91",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Vinthundsvintern",
+        "event": "3000m sh",
+        "time": "7:46.03",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Bannister Ignition",
+        "event": "1500m sh",
+        "time": "3:39.31",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 12",
+        "meet": "10K Valencia Ibercaja by Kiprun, Valencia",
+        "event": "10K",
+        "time": "27:21",
+        "place": "8",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

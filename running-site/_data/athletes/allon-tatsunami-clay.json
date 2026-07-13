@@ -1,0 +1,1001 @@
+{
+  "id": "allon-tatsunami-clay",
+  "name": "Allon Tatsunami Clay",
+  "flag": "JP",
+  "country": "Japan",
+  "waUrl": "https://worldathletics.org/athletes/japan/allon-tatsunami-clay-14851854",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "24",
+  "dob": "2002-03-25",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "400m",
+      "time": "47.12"
+    },
+    {
+      "event": "800m",
+      "time": "1:44.63"
+    },
+    {
+      "event": "1500m",
+      "time": "3:37.84"
+    },
+    {
+      "event": "400 Metres Short Track",
+      "time": "49.70"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:15.47"
+    },
+    {
+      "event": "600 Metres Short Track",
+      "time": "1:15.47"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:45.17"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:17.29"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:17.29"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:20.80"
+    },
+    {
+      "event": "4x400 Metres Relay Short Track",
+      "time": "3:07.84"
+    },
+    {
+      "event": "4x800 Metres Relay",
+      "time": "7:15.11"
+    },
+    {
+      "event": "Distance Medley",
+      "time": "9:43.43"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:18.58"
+    },
+    {
+      "event": "2x2x400m Relay",
+      "time": "3:38.36"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 12",
+      "meet": "Edmonton Athletics Invitational",
+      "event": "800 m",
+      "time": "1:44.32",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 12",
+      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "event": "800 m",
+      "time": "1:44.98",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "event": "800 m",
+      "time": "1:45.76",
+      "place": "3.",
+      "round": "SF2"
+    },
+    {
+      "date": "MAY 29",
+      "meet": "NCAA Division I East First Rounds",
+      "event": "800 m",
+      "time": "1:44.63",
+      "place": "1.",
+      "round": "H3"
+    },
+    {
+      "date": "MAY 27",
+      "meet": "NCAA Division I East First Rounds",
+      "event": "800 m",
+      "time": "1:46.65",
+      "place": "1.",
+      "round": "PR4"
+    },
+    {
+      "date": "MAY 17",
+      "meet": "Big Ten Outdoor Track & Field Championships",
+      "event": "800 m",
+      "time": "1:46.58",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Big Ten Outdoor Track & Field Championships",
+      "event": "800 m",
+      "time": "1:45.11",
+      "place": "1.",
+      "round": "H1"
+    },
+    {
+      "date": "MAY 1",
+      "meet": "Larry Ellis Invitational",
+      "event": "1500 m",
+      "time": "3:37.84",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "APR 17",
+      "meet": "Virginia Challenge",
+      "event": "800 m",
+      "time": "1:45.24",
+      "place": "3.",
+      "round": "F3"
+    },
+    {
+      "date": "MAR 22",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:45.42",
+      "place": "6.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 21",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:46.47",
+      "place": "2.",
+      "round": "SF1"
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:46.08",
+      "place": "2.",
+      "round": "H1"
+    },
+    {
+      "date": "MAR 14",
+      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "event": "800 m sh",
+      "time": "1:46.44",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 13",
+      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "event": "800 m sh",
+      "time": "1:47.30",
+      "place": "2.",
+      "round": "H2"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Big Ten Conference Indoor Track & Field Championships",
+      "event": "800 m sh",
+      "time": "1:46.65",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 27",
+      "meet": "Big Ten Conference Indoor Track & Field Championships",
+      "event": "600 m sh",
+      "time": "1:15.47",
+      "place": "1.",
+      "round": "H5"
+    },
+    {
+      "date": "FEB 27",
+      "meet": "Big Ten Conference Indoor Track & Field Championships",
+      "event": "800 m sh",
+      "time": "1:46.31",
+      "place": "1.",
+      "round": "H3"
+    },
+    {
+      "date": "FEB 26",
+      "meet": "Big Ten Conference Indoor Track & Field Championships",
+      "event": "600 m sh",
+      "time": "1:16.57",
+      "place": "2.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 20",
+      "meet": "Philadelphia Metro",
+      "event": "Distance Medley sh",
+      "time": "9:18.58",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Boston University David Hemery Valentine Invitational",
+      "event": "1000 m sh",
+      "time": "2:17.29",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Boston University David Hemery Valentine Invitational",
+      "event": "Mile sh",
+      "time": "DNF",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 7",
+      "meet": "Sykes Sabock Challenge",
+      "event": "800 m sh",
+      "time": "DNF",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 30",
+      "meet": "Penn State National Open",
+      "event": "800 m sh",
+      "time": "1:45.17",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 17",
+      "meet": "Nittany Lion Challenge",
+      "event": "1000 m sh",
+      "time": "2:18.09",
+      "place": "1.",
+      "round": "F1"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "OCT 14",
+        "meet": "Niigata Athletics Autumn Time Trials, Niigata",
+        "event": "800m",
+        "time": "1:47.51",
+        "place": "1",
+        "round": "F5"
+      },
+      {
+        "date": "OCT 6",
+        "meet": "Fukui 73rd National Sports Festival, Fukui",
+        "event": "800m",
+        "time": "1:52.74",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 5",
+        "meet": "Fukui 73rd National Sports Festival, Fukui",
+        "event": "800m",
+        "time": "1:49.86",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "Ise Japenese High School Championships, Ise",
+        "event": "800m",
+        "time": "1:50.05",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "Ise Japenese High School Championships, Ise",
+        "event": "800m",
+        "time": "1:52.89",
+        "place": "1",
+        "round": "H4"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "Ise Japenese High School Championships, Ise",
+        "event": "800m",
+        "time": "1:52.79",
+        "place": "1",
+        "round": "SF3"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Odawara Kanagawa Seisho Area HS Summer Competition, Odawara",
+        "event": "400m",
+        "time": "49.06",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Odawara Kanagawa Seisho Area HS Summer Competition, Odawara",
+        "event": "800m",
+        "time": "1:55.69",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Hiratsuka",
+        "event": "400m",
+        "time": "48.18",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Hiratsuka",
+        "event": "400m",
+        "time": "48.35",
+        "place": "1",
+        "round": "SF3"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Odawara City Championships, Odawara",
+        "event": "800m",
+        "time": "1:52.18",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "Mito Invitational, Mito",
+        "event": "800m",
+        "time": "1:50.02",
+        "place": "5",
+        "round": "F3"
+      }
+    ],
+    "2019": [
+      {
+        "date": "OCT 18",
+        "meet": "Japan U20 Championships",
+        "event": "400m",
+        "time": "47.38",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "OCT 18",
+        "meet": "Japan U20 Championships",
+        "event": "400m",
+        "time": "47.12",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 25",
+        "meet": "Meeting Madrid 2019",
+        "event": "800m",
+        "time": "1:49.17",
+        "place": "10",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 17",
+        "meet": "Athlete Night Games",
+        "event": "800m",
+        "time": "1:46.63",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "Japanese High School Championships, Okinawa",
+        "event": "800m",
+        "time": "1:53.42",
+        "place": "1",
+        "round": "H5"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "Japanese High School Championships, Okinawa",
+        "event": "800m",
+        "time": "1:50.78",
+        "place": "1",
+        "round": "SF1"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "Japanese High School Championships, Okinawa",
+        "event": "800m",
+        "time": "1:50.24",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "103rd Japan Championships, Fukuoka",
+        "event": "800m",
+        "time": "1:46.59",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "103rd Japan Championships, Fukuoka",
+        "event": "800m",
+        "time": "1:47.54",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "72nd Southern Kanto Area High School Championships",
+        "event": "800m",
+        "time": "1:52.29",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "72nd Southern Kanto Area High School Championships",
+        "event": "800m",
+        "time": "1:49.39",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "IAAF World Relays",
+        "event": "2x2x400m Relay",
+        "time": "3:38.36",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "6th Michitaka Kinami Memorial, Osaka",
+        "event": "800m",
+        "time": "1:49.03",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "APR 20",
+        "meet": "269th Nittaidai Distance Meet, Yokohama",
+        "event": "1500m",
+        "time": "3:44.86",
+        "place": "2",
+        "round": "F18"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Pepsi Florida Relays",
+        "event": "800m",
+        "time": "1:48.31",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 28",
+        "meet": "Pepsi Florida Relays",
+        "event": "400m",
+        "time": "47.94",
+        "place": "1",
+        "round": "F7"
+      },
+      {
+        "date": "MAR 17",
+        "meet": "Asian U18 Championships, Hong Kong",
+        "event": "800m",
+        "time": "1:50.57",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "JUL 25",
+        "meet": "83rd Tokyo Championships",
+        "event": "800m",
+        "time": "1:51.33",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "83rd Tokyo Championships",
+        "event": "800m",
+        "time": "1:50.54",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "83rd Tokyo Championships",
+        "event": "800m",
+        "time": "1:52.20",
+        "place": "1",
+        "round": "H9"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Sydney Track Classic",
+        "event": "800m",
+        "time": "1:48.13",
+        "place": "7",
+        "round": "F1"
+      }
+    ],
+    "2021": [
+      {
+        "date": "DEC 3",
+        "meet": "Wooo Pig Classic",
+        "event": "1000m sh",
+        "time": "2:30.16",
+        "place": "7",
+        "round": "F4"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "105th Japan Championships",
+        "event": "800m",
+        "time": "1:53.04",
+        "place": "9",
+        "round": "H3"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "SEC Outdoor Championships",
+        "event": "800m",
+        "time": "1:50.70",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "Aggie Invitational",
+        "event": "400m",
+        "time": "49.54",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "APR 24",
+        "meet": "LSU Alumni Gold",
+        "event": "400m",
+        "time": "48.75",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "APR 17",
+        "meet": "Michael Johnson Invitational",
+        "event": "800m",
+        "time": "1:54.48",
+        "place": "5",
+        "round": "F4"
+      },
+      {
+        "date": "APR 10",
+        "meet": "Texas A&M Team Invitational",
+        "event": "800m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "Willie Williams Classic",
+        "event": "1500m",
+        "time": "3:59.61",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "800m sh",
+        "time": "1:52.41",
+        "place": "8",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "SEC Indoor Championships",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:07.84",
+        "place": "4",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "SEC Indoor Championships",
+        "event": "800m sh",
+        "time": "1:50.29",
+        "place": "4",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Tyson Invitational",
+        "event": "800m sh",
+        "time": "1:48.45",
+        "place": "4",
+        "round": "F3"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Texas Tech Invite",
+        "event": "800m sh",
+        "time": "1:49.60",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 23",
+        "meet": "Aggie Invitational",
+        "event": "600m sh",
+        "time": "1:18.91",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 23",
+        "meet": "Aggie Invitational",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:12.70",
+        "place": "4",
+        "round": "F3"
+      },
+      {
+        "date": "JAN 16",
+        "meet": "Ted Nelson Invitational",
+        "event": "800m sh",
+        "time": "1:51.22",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 16",
+        "meet": "Ted Nelson Invitational",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:18.93",
+        "place": "4",
+        "round": "F2"
+      }
+    ],
+    "2022": [
+      {
+        "date": "APR 30",
+        "meet": "Alumni Muster",
+        "event": "800m",
+        "time": "1:51.20",
+        "place": "4",
+        "round": "F3"
+      },
+      {
+        "date": "APR 23",
+        "meet": "Michael Johnson Invitational",
+        "event": "800m",
+        "time": "1:56.74",
+        "place": "20",
+        "round": "F"
+      },
+      {
+        "date": "APR 16",
+        "meet": "Tom Jones Memorial Invitational",
+        "event": "800m",
+        "time": "1:51.17",
+        "place": "9",
+        "round": "F2"
+      },
+      {
+        "date": "APR 2",
+        "meet": "Texas A&M vs Texas Dual",
+        "event": "800m",
+        "time": "1:51.18",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAR 25",
+        "meet": "Texas Relays",
+        "event": "Distance Medley",
+        "time": "9:43.43",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "Baldy Castillo Invitational",
+        "event": "1500m",
+        "time": "3:57.75",
+        "place": "8",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "SEC Indoor Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:49.98",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Texas Tech Invite",
+        "event": "800m sh",
+        "time": "1:51.35",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Texas Tech Invite",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:13.15",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "Aggie Invitational",
+        "event": "400m sh",
+        "time": "49.70",
+        "place": "2",
+        "round": "F4"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "Aggie Invitational",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:17.41",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 15",
+        "meet": "Ted Nelson Invitational Day 2",
+        "event": "800m sh",
+        "time": "1:49.61",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 15",
+        "meet": "Ted Nelson Invitational Day 2",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:12.85",
+        "place": "1",
+        "round": "F3"
+      }
+    ],
+    "2023": [
+      {
+        "date": "APR 22",
+        "meet": "J Fred Duckett Rice Twilight Meet",
+        "event": "1500m",
+        "time": "3:58.80",
+        "place": "8",
+        "round": "F2"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "1000m sh",
+        "time": "2:22.55",
+        "place": "1",
+        "round": "F2"
+      }
+    ],
+    "2025": [
+      {
+        "date": "AUG 7",
+        "meet": "West Chester Mile",
+        "event": "800m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "The Jerome Classic",
+        "event": "800m",
+        "time": "1:46.75",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Edmonton Athletics Invitational",
+        "event": "800m",
+        "time": "1:47.33",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Japanese Championships",
+        "event": "800m",
+        "time": "1:46.72",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Japanese Championships",
+        "event": "800m",
+        "time": "1:47.36",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Bob Vigars Classic",
+        "event": "800m",
+        "time": "1:47.76",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Portland Track Festival",
+        "event": "800m",
+        "time": "1:46.31",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "800m",
+        "time": "1:47.17",
+        "place": "7",
+        "round": "SF1"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "800m",
+        "time": "1:47.29",
+        "place": "3",
+        "round": "H3"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "NCAA Division I East First Rounds",
+        "event": "800m",
+        "time": "1:47.73",
+        "place": "3",
+        "round": "PR1"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Big Ten Outdoor Track & Field Championships",
+        "event": "800m",
+        "time": "1:47.81",
+        "place": "1",
+        "round": "H5"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Big Ten Outdoor Track & Field Championships",
+        "event": "800m",
+        "time": "1:47.93",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 26",
+        "meet": "The Penn Relays",
+        "event": "4x800 Metres Relay",
+        "time": "7:15.11",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 19",
+        "meet": "Virginia Challenge",
+        "event": "4x400 Metres Relay",
+        "time": "3:20.80",
+        "place": "7",
+        "round": "F2"
+      },
+      {
+        "date": "APR 18",
+        "meet": "Virginia Challenge",
+        "event": "800m",
+        "time": "1:47.82",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Pepsi Florida Relays",
+        "event": "800m",
+        "time": "DNF",
+        "place": "",
+        "round": "F2"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Battle on the Bayou",
+        "event": "800m",
+        "time": "1:48.24",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 28",
+        "meet": "Big Ten Conference Indoor Track & Field Championships",
+        "event": "800m sh",
+        "time": "1:49.39",
+        "place": "5",
+        "round": "H3"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Penn State Tune Up",
+        "event": "800m sh",
+        "time": "1:48.65",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "800m sh",
+        "time": "1:49.54",
+        "place": "1",
+        "round": "F10"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "Penn State National Open",
+        "event": "600m sh",
+        "time": "1:19.99",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "Penn State National Open",
+        "event": "800m sh",
+        "time": "1:55.18",
+        "place": "7",
+        "round": "F2"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-10"
+}

@@ -162,5 +162,808 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "AUG 5",
+        "meet": "African Championships",
+        "event": "5000m",
+        "time": "14:07.22",
+        "place": "10",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "NOV 16",
+        "meet": "Corrida Bulloise, Bulle",
+        "event": "8 Kilometres Road",
+        "time": "23:21",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Harmony Geneve Marathon for UNICEF",
+        "event": "10K",
+        "time": "29:14",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "OCT 18",
+        "meet": "Swiss Half Marathon Championships, Belp",
+        "event": "Half Marathon",
+        "time": "1:03:52",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "SEP 27",
+        "meet": "10km Strasse Belp, Belp",
+        "event": "10K",
+        "time": "28:38",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "SEP 11",
+        "meet": "Swiss Championships",
+        "event": "5000m",
+        "time": "14:04.12",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "Swiss U23 Championships",
+        "event": "800m",
+        "time": "1:57.80",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Swiss U23 Championships",
+        "event": "800m",
+        "time": "1:55.47",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "Abendmeeting",
+        "event": "1500m",
+        "time": "3:42.84",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "CITIUS Champs",
+        "event": "2000m",
+        "time": "5:12.20",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Lauf-Meeting",
+        "event": "5000m",
+        "time": "14:02.96",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Swiss Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:18.29",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "JAN 19",
+        "meet": "Hallenmeeting",
+        "event": "1500m sh",
+        "time": "3:58.91",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "NOV 7",
+        "meet": "20km of Geneva by Geneva Aeroport, Genève",
+        "event": "20 Kilometres Road",
+        "time": "1:00:34",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "SEP 18",
+        "meet": "SVM NLB",
+        "event": "800m",
+        "time": "1:53.02",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "StraLugano, Lugano",
+        "event": "10K",
+        "time": "28:46",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "CITIUS Meeting",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Spitzen Leichtathletik",
+        "event": "5000m",
+        "time": "13:34.18",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Swiss Championships",
+        "event": "5000m",
+        "time": "14:01.62",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "ATLETICAGENEVE",
+        "event": "1500m",
+        "time": "3:40.79",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 4",
+        "meet": "Swiss 10",
+        "event": "10000m",
+        "time": "28:32.72",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "Meeting Meilen",
+        "event": "3000m",
+        "time": "7:49.31",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Berner Mini-Meeting Nr. 4",
+        "event": "5000m",
+        "time": "13:51.98",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "Swiss Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:11.41",
+        "place": "OC",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 18",
+        "meet": "Corrida Internationale de Houilles, Houilles",
+        "event": "10K",
+        "time": "27:32",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "DEC 4",
+        "meet": "Course de l'Escalade, Genève",
+        "event": "Road Race",
+        "time": "20:24",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "NOV 6",
+        "meet": "Balexert 20km de Genève, Genève",
+        "event": "20 Kilometres Road",
+        "time": "58:15",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 18",
+        "meet": "Copenhagen Half Marathon, København",
+        "event": "Half Marathon",
+        "time": "59:12",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "SEP 12",
+        "meet": "Gala dei Castelli",
+        "event": "3000m",
+        "time": "7:38.16",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 7",
+        "meet": "Weltklasse Zürich",
+        "event": "5K",
+        "time": "13:00",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "SEP 2",
+        "meet": "Memorial van Damme",
+        "event": "5000m",
+        "time": "12:52.15",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "Herculis Meeting International d’Athlétisme EBS",
+        "event": "3000m",
+        "time": "7:31.54",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "BAUHAUS-Galan",
+        "event": "3000m",
+        "time": "7:29.48",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "CITIUS Meeting",
+        "event": "1500m",
+        "time": "3:39.48",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Swiss 10",
+        "event": "10000m",
+        "time": "27:58.79",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "SVM Aktive Nationalliga B",
+        "event": "3000m",
+        "time": "8:14.43",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Geneve Generali Half Marathon, Genève",
+        "event": "Half Marathon",
+        "time": "1:01:39",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 3",
+        "meet": "Generali Berliner Halbmarathon, Berlin",
+        "event": "Half Marathon",
+        "time": "1:01:01",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAR 20",
+        "meet": "Rhylauf, Oberriet",
+        "event": "Half Marathon",
+        "time": "1:07:16",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "Swiss Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:03.15",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "JAN 23",
+        "meet": "2. Stadtwerk-Hallenmeeting",
+        "event": "1500m sh",
+        "time": "3:57.30",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 31",
+        "meet": "Cursa dels Nassos, Barcelona",
+        "event": "5K",
+        "time": "13:12",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "DEC 3",
+        "meet": "Course de l'Escalade, Genève",
+        "event": "Road Race",
+        "time": "21:28",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "SVM Nationalliga B",
+        "event": "800m",
+        "time": "1:50.90",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "SVM Nationalliga B",
+        "event": "3000m",
+        "time": "8:37.87",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 10",
+        "meet": "Memorial Borisa Hanžekovića",
+        "event": "3000m",
+        "time": "7:33.95",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 4",
+        "meet": "Gala dei Castelli",
+        "event": "1500m",
+        "time": "3:35.22",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 31",
+        "meet": "Weltklasse Zürich",
+        "event": "5000m",
+        "time": "13:07.02",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "Abendmeeting",
+        "event": "1500m",
+        "time": "3:41.80",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "CITIUS Meeting",
+        "event": "1500m",
+        "time": "3:35.48",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Swiss Championships",
+        "event": "1500m",
+        "time": "3:44.27",
+        "place": "OC",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "Spitzen Leichathletik Luzern",
+        "event": "3000m",
+        "time": "7:37.98",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Track Night Vienna",
+        "event": "5000m",
+        "time": "13:24.28",
+        "place": "7",
+        "round": "F8"
+      },
+      {
+        "date": "APR 2",
+        "meet": "Generali Halbmarathon, Berlin",
+        "event": "Half Marathon",
+        "time": "1:00:17",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAR 25",
+        "meet": "Uster 10K, Uster",
+        "event": "10K",
+        "time": "28:48",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Swiss Indoor Championships",
+        "event": "1500m sh",
+        "time": "DNF",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Swiss Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:50.59",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "MonacoRun, Monaco",
+        "event": "5K",
+        "time": "13:24",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 15",
+        "meet": "10K Valencia Ibercaja, Valencia",
+        "event": "10K",
+        "time": "27:09",
+        "place": "7",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 8",
+        "meet": "Course de l'Escalade, Genève",
+        "event": "Road Race",
+        "time": "20:38",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 21",
+        "meet": "Greifenseelauf, Uster",
+        "event": "Half Marathon",
+        "time": "1:04:32",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 13",
+        "meet": "Memorial van Damme",
+        "event": "5000m",
+        "time": "13:09.23",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "AUG 30",
+        "meet": "Golden Gala",
+        "event": "5000m",
+        "time": "12:59.16",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Athletissima Lausanne",
+        "event": "1500m",
+        "time": "3:34.39",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "13:15.27",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "14:15.49",
+        "place": "15",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "London Athletics Meet",
+        "event": "3000m",
+        "time": "7:27.68",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "Spitzen Leichtathletik Luzern",
+        "event": "3000m",
+        "time": "7:37.50",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Swiss Championships",
+        "event": "1500m",
+        "time": "3:46.98",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "Swiss Championships",
+        "event": "1500m",
+        "time": "3:52.63",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "European Athletics Championships",
+        "event": "10000m",
+        "time": "28:00.32",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "European Athletics Championships",
+        "event": "5000m",
+        "time": "13:21.61",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "BAUHAUS-Galan",
+        "event": "3000m",
+        "time": "7:33.68",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "Oslo Bislett Games",
+        "event": "5000m",
+        "time": "12:50.90",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Grand-Prix von Bern, Bern",
+        "event": "10 Miles Road",
+        "time": "47:06",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Puma Nitro Lange Laufnacht",
+        "event": "1500m",
+        "time": "3:35.50",
+        "place": "2",
+        "round": "F11"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Swiss Long Distances Championships",
+        "event": "10000m",
+        "time": "27:36.29",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Swiss Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:50.24",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "3000m sh",
+        "time": "7:39.32",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Metz Moselle Athleor",
+        "event": "3000m sh",
+        "time": "7:42.45",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JAN 14",
+        "meet": "10K Valencia Ibercaja, Valencia",
+        "event": "10K",
+        "time": "27:13",
+        "place": "5",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 21",
+        "meet": "3ème Corrida de Houilles, Houilles",
+        "event": "10K",
+        "time": "28:00",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "DEC 14",
+        "meet": "31st SPAR European Cross Country Championships, Lagoa",
+        "event": "Cross Country Senior Race",
+        "time": "22:23",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "DEC 7",
+        "meet": "Course de l'Escalade, Genève",
+        "event": "Road Race",
+        "time": "21:22",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "SEP 28",
+        "meet": "StraLugano, Lugano",
+        "event": "Half Marathon",
+        "time": "1:01:42",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:19.57",
+        "place": "11",
+        "round": "H1"
+      },
+      {
+        "date": "SEP 14",
+        "meet": "World Athletics Championships",
+        "event": "10000m",
+        "time": "29:11.65",
+        "place": "14",
+        "round": "F"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Spitzen Leichtathletik Luzern",
+        "event": "1500m",
+        "time": "3:36.15",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "5000m",
+        "time": "12:56.42",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "European Athletics Team Championships First Division",
+        "event": "5000m",
+        "time": "13:45.37",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Oslo Bislett Games",
+        "event": "5000m",
+        "time": "12:50.87",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "Meeting Nikaia",
+        "event": "1500m",
+        "time": "3:42.56",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Doha Meeting",
+        "event": "5000m",
+        "time": "13:17.70",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "European Running Championships, Brussels-Leuven",
+        "event": "10K",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Swiss Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:48.63",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Swiss Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:56.60",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "3000m sh",
+        "time": "7:41.72",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 12",
+        "meet": "10K Valencia Ibercaja by Kiprun, Valencia",
+        "event": "10K",
+        "time": "26:54",
+        "place": "2",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

@@ -145,5 +145,162 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [],
+    "2023": [],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:38.66",
+        "place": "11",
+        "round": "F2"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 6",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener",
+        "event": "5000m sh",
+        "time": "13:24.79",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "NCAA Division I Outdoor Track and Field Championships",
+        "event": "10000m",
+        "time": "29:10.91",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "5000m",
+        "time": "13:34.89",
+        "place": "6",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "NCAA Division I West First Rounds",
+        "event": "10000m",
+        "time": "28:19.22",
+        "place": "5",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 10",
+        "meet": "PAC 12 Last Chance Meet",
+        "event": "1500m",
+        "time": "3:43.93",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 10",
+        "meet": "PAC 12 Last Chance Meet",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "APR 18",
+        "meet": "Bryan Clay Invitational",
+        "event": "1500m",
+        "time": "3:43.02",
+        "place": "4",
+        "round": "F6"
+      },
+      {
+        "date": "APR 17",
+        "meet": "Bryan Clay Invitational",
+        "event": "5000m",
+        "time": "13:16.01",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "APR 4",
+        "meet": "Stanford Invitational",
+        "event": "10000m",
+        "time": "27:37.32",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 22",
+        "meet": "46th Aztec Invitational & Distance Carnival",
+        "event": "1500m",
+        "time": "3:46.17",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "NCAA Division I Indoor Track and Field Championships",
+        "event": "5000m sh",
+        "time": "13:23.28",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "MPSF Indoor Track & Field Championships",
+        "event": "3000m sh",
+        "time": "8:07.90",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "MPSF Indoor Track & Field Championships",
+        "event": "5000m sh",
+        "time": "DQ",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Husky Classic",
+        "event": "5000m",
+        "time": "13:17.16",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "UW Invitational",
+        "event": "Mile",
+        "time": "4:03.84",
+        "place": "6",
+        "round": "F7"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "UW Invitational",
+        "event": "3000m",
+        "time": "7:48.44",
+        "place": "1",
+        "round": "F5"
+      },
+      {
+        "date": "JAN 17",
+        "meet": "UW Preview/Mile City",
+        "event": "3000m",
+        "time": "7:51.71",
+        "place": "6",
+        "round": "F6"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

@@ -98,5 +98,57 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [],
+    "2023": [],
+    "2024": [],
+    "2025": [
+      {
+        "date": "OCT 5",
+        "meet": "tRUNsylvania International 10K Brasov, Brasov",
+        "event": "10K",
+        "time": "27:35",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "IFAM Oordegem",
+        "event": "5000m",
+        "time": "13:19.00",
+        "place": "14",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Night of Athletics",
+        "event": "5000m",
+        "time": "13:17.26",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Trials for Africa U18 & U20 Championships",
+        "event": "10000m",
+        "time": "28:44.49",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "6th AK Track & Field Weekend Meeting/Relay Series",
+        "event": "5000m",
+        "time": "13:59.62",
+        "place": "6",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

@@ -158,5 +158,583 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUN 23",
+        "meet": "Spanish U18 Championships, Gijón",
+        "event": "3000m",
+        "time": "8:49.14",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "Antequera Spanish U18 Indoor Championships, Antequera (i)",
+        "event": "3000m sh",
+        "time": "8:57.79",
+        "place": "6",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "JUN 22",
+        "meet": "Spanish U18 Championships, Castellón",
+        "event": "3000m",
+        "time": "8:53.41",
+        "place": "15",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Control FACV, Valencia",
+        "event": "3000m",
+        "time": "8:55.09",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "Regional U20 Club Championships, Elche",
+        "event": "3000m",
+        "time": "8:47.98",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "FEB 15",
+        "meet": "Control Meeting, Elche",
+        "event": "3000m",
+        "time": "8:32.39",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Control Meeting, Onil",
+        "event": "3000m",
+        "time": "8:47.60",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 24",
+        "meet": "Gran Premio Internacional Ciudad de Valencia",
+        "event": "3000m sh",
+        "time": "8:54.32",
+        "place": "11",
+        "round": "F2"
+      }
+    ],
+    "2021": [],
+    "2022": [
+      {
+        "date": "DEC 11",
+        "meet": "28th SPAR European Cross Country Championships, Piemonte-La Mandria Park",
+        "event": "Cross Country U23 Race",
+        "time": "25:02",
+        "place": "36",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Spanish U23 Championships, Santander",
+        "event": "5000m",
+        "time": "14:34.38",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Campeonato de España de Federaciones Autonómicas, Granollers",
+        "event": "3000m",
+        "time": "8:11.76",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Campeonato Provincial, Gandía",
+        "event": "5000m",
+        "time": "14:22.32",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Campeonato Autonómico, Valencia",
+        "event": "5000m",
+        "time": "14:34.99",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "Trofeo de Atletismo Ciudad de Sagunto, Sagunto",
+        "event": "1500m",
+        "time": "3:44.73",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Reunión Ciutat d ́Ontinyent, Ontinyent",
+        "event": "1500m",
+        "time": "3:50.05",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Meeting Ibiza d'Atletisme Toni Bonet, Ibiza",
+        "event": "3000m",
+        "time": "8:12.74",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "MAR 26",
+        "meet": "Reunión de Fondo G.P. Ciutat de Burjassot, Burjassot",
+        "event": "5000m",
+        "time": "14:31.89",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Spanish U23 Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:23.10",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Campeonato Autonómico",
+        "event": "3000m sh",
+        "time": "8:18.40",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 5",
+        "meet": "Campeonato Provincial, Elche (i)",
+        "event": "1500m sh",
+        "time": "3:57.18",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 10",
+        "meet": "29th SPAR European Cross Country Championships",
+        "event": "Cross Country U23 Race",
+        "time": "25:14",
+        "place": "46",
+        "round": "F"
+      },
+      {
+        "date": "OCT 29",
+        "meet": "Cross Internacional de Atapuerca",
+        "event": "Cross Country",
+        "time": "27:57",
+        "place": "24",
+        "round": "F"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Spanish Championships",
+        "event": "1500m",
+        "time": "3:49.93",
+        "place": "5",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Reunión Internacional de Atletismo Villa De Bilbao",
+        "event": "1500m",
+        "time": "3:41.64",
+        "place": "11",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Spanish U23 Championships",
+        "event": "1500m",
+        "time": "3:52.05",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Spanish U23 Championships",
+        "event": "1500m",
+        "time": "3:49.75",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Meeting Internacional Ciudad de Málaga",
+        "event": "1500m",
+        "time": "3:41.36",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Valencia Championships",
+        "event": "5000m",
+        "time": "14:05.97",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "VII Memorial José Antonio Cansino",
+        "event": "1500m",
+        "time": "3:41.20",
+        "place": "14",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "XXI GP Los Corrales de Buelna",
+        "event": "5000m",
+        "time": "13:55.57",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Meeting Desafio Nerja 2023 Restaurante Pulguilla y Ayo",
+        "event": "1500m",
+        "time": "3:41.35",
+        "place": "11",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Spanish Clubs Championships Division Honor Liga Joma",
+        "event": "3000m",
+        "time": "8:18.58",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Spanish Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:05.86",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Spanish Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:10.23",
+        "place": "7",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "Spanish U23 Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:11.47",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 21",
+        "meet": "Gran Premio Velocitat",
+        "event": "3000m sh",
+        "time": "7:57.05",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "DEC 8",
+        "meet": "30th SPAR European Cross Country Championships, Antalya",
+        "event": "Cross Country U23 Race",
+        "time": "19:01",
+        "place": "20",
+        "round": "F"
+      },
+      {
+        "date": "OCT 27",
+        "meet": "Cross Internacional de Atapuerca",
+        "event": "Cross Country",
+        "time": "26:54",
+        "place": "19",
+        "round": "F"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "Spanish U23 Championships",
+        "event": "1500m",
+        "time": "3:46.64",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Spanish U23 Championships",
+        "event": "1500m",
+        "time": "3:49.86",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Spanish U23 Championships",
+        "event": "5000m",
+        "time": "14:47.85",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Meeting Internacional Ciudad de Málaga",
+        "event": "1500m",
+        "time": "3:43.19",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "Campeonato España Federaciones Autonómicas",
+        "event": "3000m",
+        "time": "8:01.25",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "Spanish Championships",
+        "event": "5000m",
+        "time": "13:50.43",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "VIII Ordizia Meeting",
+        "event": "1500m",
+        "time": "3:42.62",
+        "place": "11",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "XIX Reunión Internacional Villa de Bilbao",
+        "event": "1500m",
+        "time": "3:40.90",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "IFAM Outdoor",
+        "event": "5000m",
+        "time": "13:41.50",
+        "place": "2",
+        "round": "F3"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "GP Diputacion Csatellon",
+        "event": "1500m",
+        "time": "3:41.06",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Meeting de Atletismo Toni Bonet",
+        "event": "3000m",
+        "time": "7:56.13",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Spanish Clubs Championships Division Honor Liga Joma-Leg 2-Match A",
+        "event": "1500m",
+        "time": "4:07.56",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 30",
+        "meet": "Meeting Iberoamericano Huelva 2024",
+        "event": "5000m",
+        "time": "13:54.32",
+        "place": "18",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Spanish Clubs Championships Division Honor Liga Joma-Leg 1-Match A",
+        "event": "3000m",
+        "time": "8:10.47",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "Podium Festival, Leicester",
+        "event": "5K",
+        "time": "14:00",
+        "place": "14",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Spanish 10",
+        "event": "10000m",
+        "time": "28:53.17",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "47.º Cross Internacional das Amendoeiras em Flor",
+        "event": "Cross Country",
+        "time": "28:25",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "FISU Cross Country Championships, Muscat",
+        "event": "Cross Country",
+        "time": "8:05",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 7",
+        "meet": "Meeting Ciudad de Valencia",
+        "event": "3000m sh",
+        "time": "8:00.88",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Spanish U23 Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:09.50",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "NOV 30",
+        "meet": "C.I.C. Alcobendas-Comunidad de Madrid, Alcobendas",
+        "event": "Cross Country",
+        "time": "23:42",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "NOV 23",
+        "meet": "Cross Internacional de Atapuerca",
+        "event": "Cross Country",
+        "time": "20:26",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "Spanish Championships",
+        "event": "5000m",
+        "time": "13:38.21",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Night of Athletics",
+        "event": "1500m",
+        "time": "3:41.97",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Morton Games",
+        "event": "5000m",
+        "time": "13:21.61",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Meeting National Est Lyonnais",
+        "event": "1500m",
+        "time": "3:39.13",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Spanish Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:03.68",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Meeting Indoor de Lyon",
+        "event": "3000m sh",
+        "time": "8:16.60",
+        "place": "12",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 7",
+        "meet": "Gran Premio Ciudad de Valencia",
+        "event": "3000m sh",
+        "time": "7:46.86",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "48.º Cross Internacional das Amendoeiras em Flor",
+        "event": "Cross Country",
+        "time": "28:03",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Spanish Cross Country Championships",
+        "event": "Cross Country",
+        "time": "31:19",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JAN 5",
+        "meet": "LXXXI Elgoibar Cross Country Juan Muguerza Memorial",
+        "event": "Cross Country",
+        "time": "30:39",
+        "place": "5",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

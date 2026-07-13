@@ -1,0 +1,1196 @@
+{
+  "id": "francesco-pernici",
+  "name": "Francesco Pernici",
+  "flag": "IT",
+  "country": "Italy",
+  "waUrl": "https://worldathletics.org/athletes/italy/francesco-pernici-14899530",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "23",
+  "dob": "2003-02-18",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "200m",
+      "time": "22.54"
+    },
+    {
+      "event": "400m",
+      "time": "46.24"
+    },
+    {
+      "event": "800m",
+      "time": "1:43.60"
+    },
+    {
+      "event": "1500m",
+      "time": "4:03.36"
+    },
+    {
+      "event": "400 Metres Short Track",
+      "time": "48.37"
+    },
+    {
+      "event": "500 Metres",
+      "time": "1:01.18"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:15.09"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:47.35"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:21.56"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "4:14.90"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:07.13"
+    },
+    {
+      "event": "4x400 Metres Relay Mixed",
+      "time": "3:28.00"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Meeting Stanislas Nancy",
+      "event": "800 m",
+      "time": "1:43.60",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 17",
+      "meet": "CRL Meeting Bronze Lombardia - Vi° Memorial Avigo Andrea",
+      "event": "400 m",
+      "time": "46.24",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 4",
+      "meet": "Golden Gala Pietro Mennea",
+      "event": "800 m",
+      "time": "1:43.97",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 31",
+      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+      "event": "800 m",
+      "time": "1:44.40",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 3",
+      "meet": "ESET WMD-Night",
+      "event": "600 m",
+      "time": "1:15.09",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "APR 25",
+      "meet": "XLIII Memorial Todaro",
+      "event": "800 m",
+      "time": "1:46.77",
+      "place": "1.",
+      "round": "F2"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "OCT 12",
+        "meet": "Trofeo Marino Filippi",
+        "event": "800m",
+        "time": "1:56.52",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 15",
+        "meet": "Regional U18 Championships",
+        "event": "800m",
+        "time": "1:58.45",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 1",
+        "meet": "Memorial Marco Rotta",
+        "event": "400m",
+        "time": "50.89",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "Meeting Melinda, Cles",
+        "event": "800m",
+        "time": "1:59.17",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 23",
+        "meet": "Gran Premio del Mezzofondo, Trento",
+        "event": "800m",
+        "time": "1:59.64",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Riunione Regionale, Gavardo",
+        "event": "400m",
+        "time": "51.34",
+        "place": "3",
+        "round": "F3"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Riunione Regionale, Gavardo",
+        "event": "800m",
+        "time": "1:56.95",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Italian U18 Championships, Agropoli",
+        "event": "800m",
+        "time": "1:58.76",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "Italian U18 Championships, Agropoli",
+        "event": "800m",
+        "time": "1:57.18",
+        "place": "2",
+        "round": "H5"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Youth Meeting, Chiari",
+        "event": "400m",
+        "time": "51.53",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Regional Championships, Chiari",
+        "event": "800m",
+        "time": "1:58.03",
+        "place": "1",
+        "round": "F5"
+      }
+    ],
+    "2020": [
+      {
+        "date": "OCT 17",
+        "meet": "Italian U18 Championships",
+        "event": "1500m",
+        "time": "4:03.36",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "OCT 10",
+        "meet": "Test Meeting",
+        "event": "800m",
+        "time": "1:52.08",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "OCT 3",
+        "meet": "Regional Meeting",
+        "event": "1500m",
+        "time": "4:04.09",
+        "place": "1",
+        "round": "F5"
+      },
+      {
+        "date": "SEP 27",
+        "meet": "Meeting Nazionale Giovanile Citta' di Chiari",
+        "event": "400m",
+        "time": "49.58",
+        "place": "1",
+        "round": "F7"
+      },
+      {
+        "date": "SEP 12",
+        "meet": "Italian U18 Championships",
+        "event": "800m",
+        "time": "1:55.95",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 11",
+        "meet": "Italian U18 Championships",
+        "event": "800m",
+        "time": "1:56.67",
+        "place": "1",
+        "round": "H6"
+      },
+      {
+        "date": "SEP 6",
+        "meet": "Regional U18 Championships",
+        "event": "800m",
+        "time": "1:55.54",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 5",
+        "meet": "Regional U18 Championships",
+        "event": "400m",
+        "time": "49.50",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 1",
+        "meet": "Memorial Marco Rotta",
+        "event": "400m",
+        "time": "49.60",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "Regional Meeting",
+        "event": "800m",
+        "time": "1:53.74",
+        "place": "1",
+        "round": "F5"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "Regional Championships",
+        "event": "1500m",
+        "time": "4:05.02",
+        "place": "3",
+        "round": "F8"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "Regional Meeting",
+        "event": "600m",
+        "time": "1:19.72",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 22",
+        "meet": "Regional Meeting",
+        "event": "800m",
+        "time": "1:53.66",
+        "place": "2",
+        "round": "F7"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Regional Meeting",
+        "event": "400m",
+        "time": "49.68",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Test Meeting",
+        "event": "800m",
+        "time": "1:52.1",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Italian U18 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:58.64",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Regional Indoor Meeting",
+        "event": "400m sh",
+        "time": "51.29",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Regional Indoor Championships",
+        "event": "800m sh",
+        "time": "1:59.23",
+        "place": "2",
+        "round": "F4"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Indoor Meeting",
+        "event": "1500m sh",
+        "time": "4:14.90",
+        "place": "10",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 11",
+        "meet": "Regional CE Indoor Championships",
+        "event": "800m sh",
+        "time": "1:59.03",
+        "place": "8",
+        "round": "F2"
+      }
+    ],
+    "2021": [
+      {
+        "date": "SEP 26",
+        "meet": "BancaStato GranPrix Ticino 2",
+        "event": "800m",
+        "time": "1:51.08",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 18",
+        "meet": "Agre Alp",
+        "event": "400m",
+        "time": "48.24",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 15",
+        "meet": "Memorial Andrea Avigo",
+        "event": "200m",
+        "time": "22.69",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 9",
+        "meet": "Memorial Guido Crotti",
+        "event": "400m",
+        "time": "48.47",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 5",
+        "meet": "Regional Championships",
+        "event": "800m",
+        "time": "1:49.81",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 4",
+        "meet": "Regional Championships",
+        "event": "400m",
+        "time": "47.91",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "World Athletics U20 Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:12.16",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "World Athletics U20 Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:09.71",
+        "place": "4",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:53.35",
+        "place": "7",
+        "round": "H4"
+      },
+      {
+        "date": "AUG 18",
+        "meet": "World Athletics U20 Championships",
+        "event": "4x400 Metres Relay Mixed",
+        "time": "3:28.00",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "Memorial Davide Boroni",
+        "event": "800m",
+        "time": "1:48.95",
+        "place": "2",
+        "round": "F3"
+      },
+      {
+        "date": "JUL 18",
+        "meet": "European Athletics U20 Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:07.13",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "European Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:50.63",
+        "place": "6",
+        "round": "SF2"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "European Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:50.21",
+        "place": "2",
+        "round": "H4"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "Trofeo Anguria",
+        "event": "400m",
+        "time": "48.21",
+        "place": "2",
+        "round": "F17"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Italian Championships",
+        "event": "800m",
+        "time": "1:49.86",
+        "place": "11",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Italian U20 Championships",
+        "event": "800m",
+        "time": "1:50.29",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "Regional Championships",
+        "event": "800m",
+        "time": "1:49.52",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "Regional Championships",
+        "event": "400m",
+        "time": "47.61",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "National Meeting",
+        "event": "200m",
+        "time": "22.54",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "National Meeting",
+        "event": "400m",
+        "time": "48.00",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "APR 29",
+        "meet": "Meeting Silver Lombardia",
+        "event": "800m",
+        "time": "1:50.95",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Outdoor Meeting",
+        "event": "800m",
+        "time": "1:52.46",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "APR 18",
+        "meet": "Queen Atletica Games",
+        "event": "500 Metres",
+        "time": "1:03.82",
+        "place": "3",
+        "round": "F5"
+      },
+      {
+        "date": "APR 10",
+        "meet": "Memorial Cesare Pettinari",
+        "event": "600m",
+        "time": "1:19.42",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "National Indoor Meeting",
+        "event": "800m sh",
+        "time": "1:53.69",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 7",
+        "meet": "Italian U20 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:54.14",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "National Indoor Meeting",
+        "event": "400m sh",
+        "time": "50.45",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 17",
+        "meet": "Indoor Meeting",
+        "event": "800m sh",
+        "time": "1:56.34",
+        "place": "2",
+        "round": "F1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "SEP 25",
+        "meet": "Provincial Ch.",
+        "event": "200m",
+        "time": "22.66",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "SEP 11",
+        "meet": "Mediterranean Athletics U23 Championships",
+        "event": "800m",
+        "time": "1:48.38",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "SEP 4",
+        "meet": "Regional Meeting",
+        "event": "500 Metres",
+        "time": "1:01.76",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "World Athletics U20 Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:08.55",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:51.07",
+        "place": "4",
+        "round": "H5"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "Miglio di Lonato",
+        "event": "400m",
+        "time": "47.68",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Italian U20 Championships",
+        "event": "800m",
+        "time": "1:47.67",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Italian U20 Championships",
+        "event": "800m",
+        "time": "1:51.62",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Italian Championships",
+        "event": "800m",
+        "time": "1:48.18",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Italian Championships",
+        "event": "800m",
+        "time": "1:48.56",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "XXXI Meeting Citta' Di Conegliano",
+        "event": "800m",
+        "time": "1:46.87",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Memorial Davide Boroni",
+        "event": "800m",
+        "time": "1:49.99",
+        "place": "3",
+        "round": "F3"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Castiglione International Meeting",
+        "event": "800m",
+        "time": "1:47.77",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "APR 30",
+        "meet": "Meeting Athletic Elite",
+        "event": "400m",
+        "time": "47.25",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "APR 23",
+        "meet": "Walk and Middle Distance Night",
+        "event": "600m",
+        "time": "1:17.36",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Meeting Silver Lombardia",
+        "event": "800m",
+        "time": "1:50.70",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "APR 9",
+        "meet": "Regional Meeting",
+        "event": "600m",
+        "time": "1:17.72",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "Italian Indoor Championships",
+        "event": "800m sh",
+        "time": "1:50.97",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "Italian U20 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:51.62",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 23",
+        "meet": "Regional Indoor Meeting",
+        "event": "400m sh",
+        "time": "48.85",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 16",
+        "meet": "National Indoor Meeting",
+        "event": "800m sh",
+        "time": "1:53.22",
+        "place": "2",
+        "round": "F1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "SEP 3",
+        "meet": "36th Meeting Citta' Di Padova",
+        "event": "800m",
+        "time": "1:45.41",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.89",
+        "place": "4",
+        "round": "H6"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "Italian Championships",
+        "event": "800m",
+        "time": "1:45.23",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Italian Championships",
+        "event": "800m",
+        "time": "1:48.49",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "European Athletics U23 Championships",
+        "event": "800m",
+        "time": "1:46.24",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "European Athletics U23 Championships",
+        "event": "800m",
+        "time": "1:45.53",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Meeting Internazionale Citta' Di Nembro",
+        "event": "800m",
+        "time": "1:45.48",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Italian U23 Championships",
+        "event": "800m",
+        "time": "1:47.63",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Italian Club Championships",
+        "event": "800m",
+        "time": "1:47.57",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "Grifone Meeting",
+        "event": "800m",
+        "time": "1:45.72",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "1° Meeting Silver Lombardia",
+        "event": "800m",
+        "time": "1:46.78",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 1",
+        "meet": "Meeing Frate Meno 1",
+        "event": "400m",
+        "time": "47.71",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 8",
+        "meet": "C.D.S. Assoluto di Corsa",
+        "event": "600m",
+        "time": "1:16.76",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Italian Indoor Championships",
+        "event": "800m sh",
+        "time": "1:50.36",
+        "place": "9",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Italian Indoor Championships",
+        "event": "400m sh",
+        "time": "DNF",
+        "place": "",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 5",
+        "meet": "Italian U23 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:50.20",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "7 National Indoor Meeting",
+        "event": "400m sh",
+        "time": "48.37",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "Mediterranean U23 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:53.13",
+        "place": "5",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "SEP 8",
+        "meet": "Grand Prix Lombardia",
+        "event": "800m",
+        "time": "1:45.89",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "SEP 3",
+        "meet": "60° Palio Città della Quercia",
+        "event": "800m",
+        "time": "1:45.42",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Italian Championships",
+        "event": "800m",
+        "time": "1:45.89",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Italian Championships",
+        "event": "800m",
+        "time": "1:48.41",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "Meeting Madrid 2024",
+        "event": "800m",
+        "time": "1:45.26",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "European Athletics Championships",
+        "event": "800m",
+        "time": "DQ",
+        "place": "",
+        "round": "SF2"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "European Athletics Championships",
+        "event": "800m",
+        "time": "1:45.87",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "Grifone Meeting",
+        "event": "800m",
+        "time": "1:45.61",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Meeting International de Montreuil",
+        "event": "800m",
+        "time": "1:46.65",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "ESET WMD",
+        "event": "600m",
+        "time": "1:15.32",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Campionato Regionale Individuale Assoluto 10.000 su Pista",
+        "event": "500 Metres",
+        "time": "1:01.18",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:47.38",
+        "place": "4",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Italian Indoor Championships",
+        "event": "800m sh",
+        "time": "1:49.15",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "Italian U23 Indoor Championships",
+        "event": "400m sh",
+        "time": "48.65",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Italian U23 Indoor Championships",
+        "event": "400m sh",
+        "time": "48.93",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JAN 20",
+        "meet": "3° Manifestazione Regionale Indoor Open",
+        "event": "400m sh",
+        "time": "48.58",
+        "place": "3",
+        "round": "F2"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 18",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:43.84",
+        "place": "4",
+        "round": "SF2"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.11",
+        "place": "2",
+        "round": "H5"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Memorial van Damme",
+        "event": "800m",
+        "time": "1:44.05",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Italian Championships",
+        "event": "800m",
+        "time": "1:47.68",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "Italian Championships",
+        "event": "800m",
+        "time": "1:48.40",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "European Athletics U23 Championships",
+        "event": "800m",
+        "time": "1:45.01",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 18",
+        "meet": "European Athletics U23 Championships",
+        "event": "800m",
+        "time": "1:44.06",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Meeting Stanislas Nancy",
+        "event": "800m",
+        "time": "1:44.28",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "European Athletics Team Championships First Division",
+        "event": "800m",
+        "time": "1:44.39",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "C.D.S. Assoluto su Pista",
+        "event": "800m",
+        "time": "1:46.80",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "61° Palio Città della Quercia",
+        "event": "800m",
+        "time": "1:44.59",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "XI Athletic Elite Meeting",
+        "event": "1000m",
+        "time": "2:21.56",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "APR 25",
+        "meet": "XLII^ Memorial Todaro",
+        "event": "800m",
+        "time": "1:47.30",
+        "place": "1",
+        "round": "F5"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Metting de Nantes Metropole",
+        "event": "800m sh",
+        "time": "1:47.35",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JAN 19",
+        "meet": "Meeting Nazionale Indoor n.7",
+        "event": "400m sh",
+        "time": "DQ",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "IV Memorial \"Alessio Giovannini\"",
+        "event": "800m sh",
+        "time": "1:47.61",
+        "place": "1",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
+}

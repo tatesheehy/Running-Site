@@ -134,5 +134,688 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUL 21",
+        "meet": "Bondoufle French U20 Championships, Bondoufle",
+        "event": "1500m",
+        "time": "3:58.38",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "Bondoufle French U20 Championships, Bondoufle",
+        "event": "1500m",
+        "time": "3:59.41",
+        "place": "5",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Brive-la-Gaillarde",
+        "event": "1500m",
+        "time": "3:55.91",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Carquefou Meeting National, Carquefou",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "Grenoble French Club Championships, Grenoble",
+        "event": "1500m",
+        "time": "3:54.13",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Angouleme French Club Championships, Angoulême",
+        "event": "1500m",
+        "time": "3:57.21",
+        "place": "4",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "DEC 8",
+        "meet": "26th SPAR European Cross Country Championships, Lisboa",
+        "event": "Cross Country U20 Race",
+        "time": "20:46",
+        "place": "86",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "European U20 Championships",
+        "event": "5000m",
+        "time": "15:08.83",
+        "place": "21",
+        "round": "F"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "Meeting de Blois, Blois",
+        "event": "3000m",
+        "time": "8:38.11",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "Meeting National de Carquefou, Carquefou",
+        "event": "5000m",
+        "time": "14:31.07",
+        "place": "13",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Regional Championships, Bron",
+        "event": "3000m",
+        "time": "8:19.47",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "Meeting de Lormont, Lormont",
+        "event": "1500m",
+        "time": "3:54.91",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "French Club Championships, Grenoble",
+        "event": "3000m",
+        "time": "8:30.27",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "French Club Championships, Limoges",
+        "event": "1500m",
+        "time": "3:58.43",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "43rd IAAF World Cross Country Championships, Århus",
+        "event": "Cross Country U20 Race",
+        "time": "27:01",
+        "place": "54",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "DEC 11",
+        "meet": "10km du Circuit Automobile d'Albi, Albi",
+        "event": "10K",
+        "time": "30:39",
+        "place": "17",
+        "round": "F"
+      },
+      {
+        "date": "OCT 4",
+        "meet": "10 km Thermapolis, Amneville",
+        "event": "10K",
+        "time": "30:28",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 12",
+        "meet": "French Championships",
+        "event": "5000m",
+        "time": "14:01.21",
+        "place": "7",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "JUL 3",
+        "meet": "French U23 Championships",
+        "event": "5000m",
+        "time": "14:11.78",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "French Championships",
+        "event": "5000m",
+        "time": "13:55.88",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Meeting National de Carquefou",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Mid Summer Track Night",
+        "event": "5000m",
+        "time": "13:55.50",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "APR 24",
+        "meet": "Be(at) your personal best by ASICS, Angers",
+        "event": "5K",
+        "time": "13:36",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "Meeting de Toulon 1/2 fond",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "French Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:49.01",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "French Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:04.82",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "3000m sh",
+        "time": "8:20.50",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "Meeting Elite de Miramas",
+        "event": "3000m sh",
+        "time": "8:05.51",
+        "place": "4",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 31",
+        "meet": "Cursa dels Nassos, Barcelona",
+        "event": "5K",
+        "time": "13:47",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "DEC 11",
+        "meet": "28th SPAR European Cross Country Championships, Piemonte-La Mandria Park",
+        "event": "Cross Country U23 Race",
+        "time": "24:04",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "OCT 16",
+        "meet": "French 5km Road Running Championships, Albi",
+        "event": "5K",
+        "time": "14:05",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "SEP 10",
+        "meet": "Mediterranean Athletics U23 Championships",
+        "event": "5000m",
+        "time": "14:25.84",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 11",
+        "meet": "Feriascapade, Dax",
+        "event": "10K",
+        "time": "29:44",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "French U23 Championships",
+        "event": "1500m",
+        "time": "3:52.21",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "French U23 Championships",
+        "event": "1500m",
+        "time": "3:55.99",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "French U23 Championships",
+        "event": "5000m",
+        "time": "14:55.39",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Meeting de Bordeaux Athlé",
+        "event": "1500m",
+        "time": "3:41.39",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Meeting National à thème de l'Est Lyonnais",
+        "event": "1500m",
+        "time": "3:40.15",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "IFAM Oordegem",
+        "event": "5000m",
+        "time": "13:26.41",
+        "place": "10",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Championnat de France des clubs",
+        "event": "3000m",
+        "time": "8:04.99",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "Championnat de France des clubs",
+        "event": "1500m",
+        "time": "3:43.23",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 30",
+        "meet": "Meeting Christian Carmel, Stade Cap De Bos",
+        "event": "5000m",
+        "time": "13:45.80",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 24",
+        "meet": "META : TIME : TRIALS by ASICS, Málaga",
+        "event": "5K",
+        "time": "13:53",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 20",
+        "meet": "10 Km de Saint Medard en Jalles, St Medard en Jalles",
+        "event": "10K",
+        "time": "28:53",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 13",
+        "meet": "French Cross Country Championships, Les Mureaux",
+        "event": "Cross Country",
+        "time": "32:31",
+        "place": "10",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "OCT 8",
+        "meet": "20KM de Paris, Paris",
+        "event": "20 Kilometres Road",
+        "time": "58:28",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "OCT 1",
+        "meet": "World Athletics Road Running Championships, Riga",
+        "event": "5K",
+        "time": "13:25",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 31",
+        "meet": "Weltklasse Zürich",
+        "event": "5000m",
+        "time": "13:29.23",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUL 28",
+        "meet": "French Championships",
+        "event": "5000m",
+        "time": "13:31.78",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Night of Athletics",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Meeting de Paris",
+        "event": "2 Miles",
+        "time": "8:31.29",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUN 3",
+        "meet": "European 10",
+        "event": "10000m",
+        "time": "28:42.49",
+        "place": "16",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "IFAM Oordegem",
+        "event": "5000m",
+        "time": "13:15.26",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Championnat de France des clubs Elite 2",
+        "event": "3000m",
+        "time": "7:53.90",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Championnat de France des clubs",
+        "event": "1500m",
+        "time": "3:40.63",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "Semi Marathon de Lille, Lille",
+        "event": "Half Marathon",
+        "time": "1:01:39",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "French Cross Country Championships",
+        "event": "Cross Country Long Race",
+        "time": "33:10",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Championnat National Universitaire FFSU",
+        "event": "1500m sh",
+        "time": "3:49.05",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 15",
+        "meet": "10K Valencia Ibercaja, Valencia",
+        "event": "10K",
+        "time": "28:35",
+        "place": "26",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "NOV 16",
+        "meet": "Urban Trail de Lille",
+        "event": "10K",
+        "time": "27:04",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "NOV 3",
+        "meet": "10km des Quais de Bordeaux, Bordeaux",
+        "event": "10K",
+        "time": "27:49",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 27",
+        "meet": "Medio Maratón Valencia Trinidad Alfonso Zurich, Valencia",
+        "event": "Half Marathon",
+        "time": "59:46",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Meeting International Sotteville 2024",
+        "event": "1500m",
+        "time": "3:37.44",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Meeting du PAC, Stade Cap De Bos",
+        "event": "800m",
+        "time": "1:48.23",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "Meeting National de Bordeaux",
+        "event": "5000m",
+        "time": "13:24.85",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "European Athletics Championships",
+        "event": "5000m",
+        "time": "13:30.06",
+        "place": "15",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Spåret5000m",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Meeting National Est Lyonnais",
+        "event": "5000m",
+        "time": "13:19.77",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Marathon de Paris",
+        "event": "10K",
+        "time": "28:09",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "French Cross Country Championships, Carmaux",
+        "event": "Cross Country",
+        "time": "15:02",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Meeting Indoor de Lyon",
+        "event": "3000m sh",
+        "time": "7:48.43",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Metz Moselle Athleor",
+        "event": "3000m sh",
+        "time": "7:43.42",
+        "place": "5",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "OCT 12",
+        "meet": "Vredestein 20 km de Paris, Paris",
+        "event": "20 Kilometres Road",
+        "time": "56:18",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 21",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:11.72",
+        "place": "14",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:14.87",
+        "place": "8",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "French Championships",
+        "event": "5000m",
+        "time": "13:37.01",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "5000m",
+        "time": "12:55.76",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Paris",
+        "event": "5000m",
+        "time": "12:57.49",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Meeting International de Montreuil",
+        "event": "1500m",
+        "time": "3:35.12",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Finales des Championnats de France des Clubs",
+        "event": "3000m",
+        "time": "7:46.47",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Tokyo : Speed : Race",
+        "event": "10K",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "European Running Championships, Brussels-Leuven",
+        "event": "10K",
+        "time": "27:46",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "French Cross Country Championships, Challans",
+        "event": "Cross Country Long Race",
+        "time": "29:15",
+        "place": "3",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

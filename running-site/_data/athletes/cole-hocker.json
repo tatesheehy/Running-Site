@@ -138,6 +138,14 @@
     {
       "date": "JUL 4",
       "meet": "Prefontaine Classic",
+      "event": "1500 m",
+      "time": "3:32.82",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "JUL 4",
+      "meet": "Prefontaine Classic",
       "event": "Mile",
       "time": "3:47.57",
       "place": "6.",
@@ -226,7 +234,7 @@
   ],
   "dob": "2001-06-06",
   "weight": "145 lbs",
-  "lastHistorySynced": "2026-07-11",
+  "lastHistorySynced": "2026-07-12",
   "coach": "Jerry Schumacher",
   "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
   "event": "MIDDLE DISTANCE + DISTANCE",

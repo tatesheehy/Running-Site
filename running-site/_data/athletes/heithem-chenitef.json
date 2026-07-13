@@ -1,0 +1,544 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "collegeLogo": "",
+  "traits": [],
+  "waUrl": "https://worldathletics.org/athletes/algeria/heithem-chenitef-14980575",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Heithem Chenitef",
+  "headlineKey": "x",
+  "flag": "DZ",
+  "honours": [],
+  "seasons": "0",
+  "lastSynced": "2026-07-13",
+  "prs": [
+    {
+      "event": "400m",
+      "time": "47.62"
+    },
+    {
+      "event": "800m",
+      "time": "1:44.38"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.07"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:17.41"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:47.30"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:23.90"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:36.51"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:12.17"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:07.46"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "",
+  "ncaa": false,
+  "club": "x",
+  "country": "Algeria",
+  "results": [
+    {
+      "date": "FEB 19",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "1500 m sh",
+      "time": "3:41.56",
+      "place": "9.",
+      "round": "F2"
+    },
+    {
+      "date": "JAN 30",
+      "meet": "Elite Indoor Track Miramas Meeting",
+      "event": "1500 m sh",
+      "time": "3:38.74",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Meeting Indoor de Lyon",
+      "event": "1500 m sh",
+      "time": "3:36.51",
+      "place": "1.",
+      "round": "F1"
+    }
+  ],
+  "dob": "2004-01-30",
+  "college": "",
+  "weight": "x",
+  "lastHistorySynced": "2026-07-12",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "heithem-chenitef",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [
+      {
+        "date": "AUG 21",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:49.57",
+        "place": "7"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:49.19",
+        "place": "3"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Meeting d'Athletisme du Centenaire du Mouloudia d'Alger",
+        "event": "800m",
+        "time": "1:50.18",
+        "place": "4"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "5th Journée Elite et SATO",
+        "event": "400m",
+        "time": "48.97",
+        "place": "3"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "4th Journée Elite et SATO",
+        "event": "800m",
+        "time": "1:50.09",
+        "place": "3"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Journée ELITE et Jeunes Talents",
+        "event": "800m",
+        "time": "1:52.23",
+        "place": "2"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Soirée Elite",
+        "event": "1500m",
+        "time": "3:54.45",
+        "place": "13"
+      },
+      {
+        "date": "APR 12",
+        "meet": "Challenge National d’Athlétisme des Aures",
+        "event": "800m",
+        "time": "1:54.90",
+        "place": "1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "AUG 6",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:47.61",
+        "place": "2"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:48.55",
+        "place": "1"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:50.71",
+        "place": "1"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "9e Elite Event & Young Talents",
+        "event": "400m",
+        "time": "47.62",
+        "place": "4"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "Arab U20 Championships",
+        "event": "1500m",
+        "time": "3:55.95",
+        "place": "11"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "Arab U20 Championships",
+        "event": "800m",
+        "time": "1:48.75",
+        "place": "1"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "Arab U20 Championships",
+        "event": "800m",
+        "time": "1:50.67",
+        "place": "4"
+      },
+      {
+        "date": "APR 22",
+        "meet": "2nd Ramadan evening",
+        "event": "800m",
+        "time": "1:51.20",
+        "place": "2"
+      },
+      {
+        "date": "MAR 18",
+        "meet": "Algerian Winter Championships",
+        "event": "600m",
+        "time": "1:20.24",
+        "place": "5"
+      },
+      {
+        "date": "MAR 18",
+        "meet": "Algerian Winter Championships",
+        "event": "600m",
+        "time": "1:17.41",
+        "place": "4"
+      }
+    ],
+    "2023": [
+      {
+        "date": "JUL 24",
+        "meet": "Algerian U20 and U18 Outdoor Meeting",
+        "event": "400m",
+        "time": "DQ",
+        "place": ""
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Guldensporenmeeting",
+        "event": "800m",
+        "time": "1:46.07",
+        "place": "5"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Meeting National d'Athlétisme de Troyes",
+        "event": "800m",
+        "time": "1:48.56",
+        "place": "5"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Czeslaw Cybulski Memorial",
+        "event": "800m",
+        "time": "1:46.63",
+        "place": "7"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "Kurpfalz Gala",
+        "event": "800m",
+        "time": "1:47.88",
+        "place": "1"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "Arab U23 Championships",
+        "event": "800m",
+        "time": "1:47.74",
+        "place": "2"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "Arab U23 Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:07.46",
+        "place": "1"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "Arab U23 Championships",
+        "event": "800m",
+        "time": "1:49.71",
+        "place": "1"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "African U20 Championships",
+        "event": "800m",
+        "time": "1:49.37",
+        "place": "4"
+      },
+      {
+        "date": "MAY 2",
+        "meet": "African U20 Championships",
+        "event": "800m",
+        "time": "1:48.54",
+        "place": "4"
+      },
+      {
+        "date": "APR 18",
+        "meet": "4nd Elite & Youth Talents Event Ramadhan Evening",
+        "event": "400m",
+        "time": "48.76",
+        "place": "2"
+      },
+      {
+        "date": "MAR 31",
+        "meet": "1st Elite Event & Youth talents Ramadhan Evening",
+        "event": "800m",
+        "time": "1:49.71",
+        "place": "2"
+      },
+      {
+        "date": "MAR 17",
+        "meet": "Meeting International Djibouti",
+        "event": "800m",
+        "time": "1:49.57",
+        "place": "5"
+      }
+    ],
+    "2024": [
+      {
+        "date": "JUL 27",
+        "meet": "Meeting voor Mon",
+        "event": "800m",
+        "time": "1:46.09",
+        "place": "2"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "CAS Meeting International",
+        "event": "1500m",
+        "time": "3:41.96",
+        "place": "9"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Arab U23 Championships",
+        "event": "800m",
+        "time": "1:51.61",
+        "place": "1"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "Arab U23 Championships",
+        "event": "1500m",
+        "time": "4:01.16",
+        "place": "1"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Czesław Cybulski Memorial",
+        "event": "800m",
+        "time": "1:45.51",
+        "place": "4"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Meeting International d'Athlétisme de Troyes Aube",
+        "event": "800m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Meeting Amiens Métrropole",
+        "event": "800m",
+        "time": "1:47.31",
+        "place": "1"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Meeting National de Strasbourg",
+        "event": "800m",
+        "time": "1:45.23",
+        "place": "1"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "Meeting Dijon UC",
+        "event": "800m",
+        "time": "1:46.07",
+        "place": "3"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "International Marseille Meeting",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Meeting International de Montreuil",
+        "event": "800m",
+        "time": "1:47.06",
+        "place": "5"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Meeting de Atletismo Toni Bonet",
+        "event": "800m",
+        "time": "1:46.02",
+        "place": "1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 13",
+        "meet": "Al Sharqiyah International Race",
+        "event": "Mile",
+        "time": "4:12.17",
+        "place": "11"
+      },
+      {
+        "date": "SEP 14",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:45.13",
+        "place": "13"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Internationales Abendsportfest",
+        "event": "1500m",
+        "time": "3:34.07",
+        "place": "9"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Meeting Madrid 2025",
+        "event": "1500m",
+        "time": "3:34.85",
+        "place": "2"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Spitzen Leichtathletik Luzern",
+        "event": "1500m",
+        "time": "3:35.35",
+        "place": "4"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Meeting International de Marseille",
+        "event": "1500m",
+        "time": "3:34.48",
+        "place": "1"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Czesław Cybulski Memorial",
+        "event": "1500m",
+        "time": "3:35.47",
+        "place": "1"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Meeting International d'Athlétisme de Troyes Aube",
+        "event": "1500m",
+        "time": "3:36.14",
+        "place": "2"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "Meeting international du SATUC Toulouse Athlé",
+        "event": "800m",
+        "time": "1:44.38",
+        "place": "1"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Meeting International de Forbach",
+        "event": "800m",
+        "time": "1:46.29",
+        "place": "1"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "71. ORLEN Janusz Kusocinski Memorial",
+        "event": "800m",
+        "time": "1:47.27",
+        "place": "7"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Arab Championships",
+        "event": "800m",
+        "time": "1:50.83",
+        "place": "1"
+      },
+      {
+        "date": "MAR 22",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:47.30",
+        "place": "3"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:49.16",
+        "place": "2"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Algerian Winter National Athletics Championships",
+        "event": "1000m",
+        "time": "2:23.90",
+        "place": "1"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Algerian Winter National Athletics Championships",
+        "event": "800m",
+        "time": "1:46.69",
+        "place": "1"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Meeting Indoor de Lyon",
+        "event": "800m sh",
+        "time": "1:47.39",
+        "place": "1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "800m sh",
+        "time": "1:48.38",
+        "place": "4"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "IFAM Gent Indoor",
+        "event": "800m sh",
+        "time": "1:49.88",
+        "place": "5"
+      }
+    ]
+  },
+  "age": "22"
+}

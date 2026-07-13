@@ -118,5 +118,752 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "DEC 9",
+        "meet": "25th SPAR European Cross Country Championships, Tilburg",
+        "event": "Cross Country U23 Race",
+        "time": "24:25",
+        "place": "18",
+        "round": "F"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "Niort French U23 Championships, Niort",
+        "event": "5000m",
+        "time": "14:24.62",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "French Championships, Albi",
+        "event": "5000m",
+        "time": "13:56.12",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "Metz",
+        "event": "1500m",
+        "time": "3:46.53",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Carquefou Meeting National, Carquefou",
+        "event": "5000m",
+        "time": "14:09.54",
+        "place": "16",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "European 10",
+        "event": "10000m",
+        "time": "29:35.23",
+        "place": "18",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Tomblaine French Club Championships",
+        "event": "3000m",
+        "time": "8:33.72",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "APR 15",
+        "meet": "French 10",
+        "event": "10000m",
+        "time": "29:19.18",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "French Indoor Championships, Liévin (i)",
+        "event": "1500m sh",
+        "time": "3:48.65",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Aubiére French U23 Indoor Championships, Aubière (i)",
+        "event": "1500m sh",
+        "time": "3:56.87",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 21",
+        "meet": "Ludwigshafen Meisterschaft Großregion, Ludwigshafen (i)",
+        "event": "1500m sh",
+        "time": "3:58.80",
+        "place": "7",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "DEC 29",
+        "meet": "Corrida Pédestre Internationale de Houilles, Houilles",
+        "event": "10K",
+        "time": "28:24",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "DEC 8",
+        "meet": "26th SPAR European Cross Country Championships, Lisboa",
+        "event": "Cross Country Senior Race",
+        "time": "31:12",
+        "place": "18",
+        "round": "F"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Universiade, Napoli",
+        "event": "5000m",
+        "time": "14:03.24",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Universiade, Napoli",
+        "event": "5000m",
+        "time": "14:20.42",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Meeting de Longwy, Longwy",
+        "event": "1500m",
+        "time": "3:46.46",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "adidas Paris 10K, Paris",
+        "event": "10K",
+        "time": "29:40",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "IFAM Meeting",
+        "event": "5000m",
+        "time": "13:45.20",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "French Club Championships, Montbéliard",
+        "event": "3000m",
+        "time": "8:16.17",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "French Club Championships",
+        "event": "1500m",
+        "time": "3:50.91",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Meeting de la Réunion, L'etang sale",
+        "event": "3000m",
+        "time": "8:10.00",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Meeting Elite, Metz (i)",
+        "event": "3000m sh",
+        "time": "8:07.41",
+        "place": "4",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "DEC 31",
+        "meet": "Cursa dels Nassos, Barcelona",
+        "event": "5K",
+        "time": "13:45",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "OCT 4",
+        "meet": "Semi-Marathon du Grand Nancy, Nancy",
+        "event": "Half Marathon",
+        "time": "1:03:38",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 6",
+        "meet": "La Route du Louvre, Lens",
+        "event": "10K",
+        "time": "29:26",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "3000m sh",
+        "time": "7:56.28",
+        "place": "6",
+        "round": "F2"
+      }
+    ],
+    "2021": [
+      {
+        "date": "DEC 12",
+        "meet": "27th SPAR European Cross Country Championships, Dublin",
+        "event": "Cross Country Senior Race",
+        "time": "30:39",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "NOV 28",
+        "meet": "10km Aubade de la Saint-Nicolas, Nancy",
+        "event": "10K",
+        "time": "29:07",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "NOV 14",
+        "meet": "French Cross Country Championships, Montauban",
+        "event": "Cross Country",
+        "time": "30:57",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 3",
+        "meet": "Semi-Marathon du Grand Nancy, Nancy",
+        "event": "Half Marathon",
+        "time": "1:03:32",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "SEP 26",
+        "meet": "adidas 10K Paris, Paris",
+        "event": "10K",
+        "time": "29:23",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "Courses de Strasbourg, Strasbourg",
+        "event": "10K",
+        "time": "29:47",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "1. Läufermeeting",
+        "event": "800m",
+        "time": "1:51.49",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Meeting Athlétisme Metz Métropole",
+        "event": "800m",
+        "time": "1:51.91",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "French Championships",
+        "event": "5000m",
+        "time": "13:37.22",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "Meeting National à thème de l'Est Lyonnais",
+        "event": "5000m",
+        "time": "13:37.36",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "European 10",
+        "event": "10000m",
+        "time": "27:49.64",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "European Athletics Team Championships Super League",
+        "event": "3000m",
+        "time": "8:31.82",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 24",
+        "meet": "Meeting de sélection à la coupe d’Europe",
+        "event": "10000m",
+        "time": "28:22.19",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 20",
+        "meet": "Meeting flash",
+        "event": "1500m",
+        "time": "3:59.12",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "French Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:55.13",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "3000m sh",
+        "time": "7:49.27",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 11",
+        "meet": "28th SPAR European Cross Country Championships, Piemonte-La Mandria Park",
+        "event": "Cross Country Senior Race",
+        "time": "29:52",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "NOV 27",
+        "meet": "10 km de la St Nicolas, Nancy",
+        "event": "10K",
+        "time": "28:28",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "NOV 6",
+        "meet": "Ekiden de Paris, Paris",
+        "event": "Road Relay",
+        "time": "2:04:40",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 9",
+        "meet": "Vredestein 20KM de Paris, Paris",
+        "event": "20 Kilometres Road",
+        "time": "58:04",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "European Athletics Championships",
+        "event": "10000m",
+        "time": "27:47.13",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Dutch 10",
+        "event": "10000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "European 10",
+        "event": "10000m",
+        "time": "27:59.32",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Championnat de France des clubs, Sarreguemines",
+        "event": "1500m",
+        "time": "3:45.25",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "36eme Meeting International Athletisme Montgeron-Essonne, Montgeron",
+        "event": "5000m",
+        "time": "13:45.32",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAR 20",
+        "meet": "Semi-Marathon du Grand Nancy, Nancy",
+        "event": "Half Marathon",
+        "time": "1:02:30",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "3000m sh",
+        "time": "7:48.53",
+        "place": "9",
+        "round": "F3"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 10",
+        "meet": "29th SPAR European Cross Country Championships",
+        "event": "Cross Country Senior Race",
+        "time": "30:17",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 8",
+        "meet": "20KM de Paris, Paris",
+        "event": "20 Kilometres Road",
+        "time": "1:01:54",
+        "place": "22",
+        "round": "F"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "Memorial van Damme",
+        "event": "10000m",
+        "time": "28:13.96",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "World Athletics Championships",
+        "event": "10000m",
+        "time": "28:07.42",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Herculis Meeting International d’Athlétisme EBS",
+        "event": "5000m",
+        "time": "13:17.95",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Fast 5000, Montesson",
+        "event": "5000m",
+        "time": "13:14.52",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "IFAM Oordegem",
+        "event": "5000m",
+        "time": "13:11.44",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Championnat de France des clubs N1B Poule B",
+        "event": "1500m",
+        "time": "3:41.59",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "Cross das Amendoeiras em Flor, Albufeira",
+        "event": "Cross Country",
+        "time": "25:17",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "3000m sh",
+        "time": "7:40.54",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 5",
+        "meet": "LII Gran Premio Cáceres Campo a Través, Calzadilla",
+        "event": "Cross Country",
+        "time": "27:43",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "CrossCup de Hannut, Hannut",
+        "event": "Cross Country",
+        "time": "28:29",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 8",
+        "meet": "30th SPAR European Cross Country Championships, Antalya",
+        "event": "Cross Country Senior Race",
+        "time": "22:35",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "NOV 17",
+        "meet": "Cross international Le Maine Libre-Allonnes-Sarthe",
+        "event": "Cross Country",
+        "time": "23:45",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "OCT 13",
+        "meet": "VREDESTEIN 20 km de Paris, Paris",
+        "event": "20 Kilometres Road",
+        "time": "58:07",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "13:20.63",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "13:53.27",
+        "place": "9",
+        "round": "H2"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "The XXXIII Olympic Games",
+        "event": "10000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "French Championships",
+        "event": "5000m",
+        "time": "13:41.38",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "European Athletics Championships",
+        "event": "10000m",
+        "time": "28:00.48",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "IFAM Outdoor",
+        "event": "5000m",
+        "time": "13:04.27",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "2ème tour interclubs N2A G-E",
+        "event": "1500m",
+        "time": "3:45.91",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Meeting National Est Lyonnais",
+        "event": "1500m",
+        "time": "3:35.84",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "10K Facsa Castellón, Castellón",
+        "event": "10K",
+        "time": "27:58",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "MONACO RUN 5 km, Monaco",
+        "event": "5K",
+        "time": "13:22",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Metz Moselle Athleor",
+        "event": "3000m sh",
+        "time": "7:38.41",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 21",
+        "meet": "3ème Corrida de Houilles, Houilles",
+        "event": "10K",
+        "time": "27:20",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "NOV 23",
+        "meet": "Cross International Le Maine Libre-Allonnes-Sarthe, Allonnes",
+        "event": "Cross Country",
+        "time": "21:15",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "SEP 21",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:01.34",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:42.00",
+        "place": "7",
+        "round": "H2"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "French Championships",
+        "event": "5000m",
+        "time": "13:31.15",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Meeting National Est Lyonnais",
+        "event": "1500m",
+        "time": "3:31.42",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Paris",
+        "event": "5000m",
+        "time": "12:56.57",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "2ème tour interclubs",
+        "event": "1500m",
+        "time": "3:44.32",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "European Running Championships, Brussels-Leuven",
+        "event": "10K",
+        "time": "27:37",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "Semi-Marathon International de Lille",
+        "event": "5K",
+        "time": "13:00",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "3000m sh",
+        "time": "7:35.11",
+        "place": "2",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

@@ -1,0 +1,868 @@
+{
+  "photoBackground": "#111111",
+  "reviewTitle": "Season review",
+  "collegeLogo": "",
+  "traits": [],
+  "waUrl": "https://worldathletics.org/athletes/italy/joao-bussotti-neves-14381280",
+  "height": "x",
+  "questionBody": "x",
+  "headlineRest": "x",
+  "name": "Joao Bussotti Neves",
+  "headlineKey": "x",
+  "flag": "IT",
+  "honours": [],
+  "seasons": "0",
+  "lastSynced": "2026-07-13",
+  "prs": [
+    {
+      "event": "400m",
+      "time": "49.28"
+    },
+    {
+      "event": "800m",
+      "time": "1:46.11"
+    },
+    {
+      "event": "1500m",
+      "time": "3:33.08"
+    },
+    {
+      "event": "Mile",
+      "time": "3:50.67"
+    },
+    {
+      "event": "3000m",
+      "time": "8:33.23"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:48.52"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:17.23"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:20.02"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:38.72"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:56.45"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "8:34.68"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:59.0h"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "30:45"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:12.42"
+    }
+  ],
+  "hometown": "x",
+  "questionTitle": "Next question",
+  "photo": "",
+  "ncaa": false,
+  "club": "x",
+  "country": "Italy",
+  "results": [
+    {
+      "date": "JUL 4",
+      "meet": "Meeting National Est Lyonnais",
+      "event": "1500 m",
+      "time": "3:35.34",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Meeting International Troyes Aube",
+      "event": "1500 m",
+      "time": "3:34.98",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 21",
+      "meet": "C.D.S. Assoluto su Pista - Finale \"A\" Oro",
+      "event": "800 m",
+      "time": "1:47.58",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 20",
+      "meet": "C.D.S. Assoluto su Pista - Finale \"A\" Oro",
+      "event": "1500 m",
+      "time": "3:47.75",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 17",
+      "meet": "Meeting International de Montreuil",
+      "event": "1500 m",
+      "time": "3:35.41",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 5",
+      "meet": "1500m Elite Jessheim",
+      "event": "1500 m",
+      "time": "3:41.02",
+      "place": "3.",
+      "round": "F6"
+    },
+    {
+      "date": "MAY 30",
+      "meet": "10. PUMA NITRO Lange Laufnacht",
+      "event": "1500 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F12"
+    },
+    {
+      "date": "MAY 20",
+      "meet": "15th Savona International Meeting",
+      "event": "1500 m",
+      "time": "3:35.30",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Italian Indoor Championships",
+      "event": "1500 m sh",
+      "time": "4:01.41",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Campionato Regionale Prove Multiple Indoor",
+      "event": "3000 m sh",
+      "time": "DNF",
+      "place": "",
+      "round": "F1"
+    }
+  ],
+  "dob": "1993-05-10",
+  "college": "",
+  "weight": "x",
+  "lastHistorySynced": "2026-07-05",
+  "coach": "x",
+  "reviewBody": "x",
+  "event": "MIDDLE DISTANCE",
+  "id": "joao-bussotti-neves",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "SEP 9",
+        "meet": "Italian Championships, Pescara",
+        "event": "1500m",
+        "time": "3:46.41",
+        "place": "1"
+      },
+      {
+        "date": "SEP 2",
+        "meet": "Padova Meeting Citta di Padova, Padova",
+        "event": "1500m",
+        "time": "3:38.05",
+        "place": "4"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "Trier BMW Cloppenburg-Meeting, Trier",
+        "event": "1500m",
+        "time": "3:40.21",
+        "place": "1"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:41.31",
+        "place": "11"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:40.87",
+        "place": "3"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Lignano Sabbiadoro Meeting Int. Sport Solidarieta, Lignano Sabbiadoro",
+        "event": "1500m",
+        "time": "3:38.40",
+        "place": "6"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Tarragona Mediterran Games, Tarragona",
+        "event": "1500m",
+        "time": "3:42.34",
+        "place": "8"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "Tarragona Mediterran Games, Tarragona",
+        "event": "1500m",
+        "time": "3:45.53",
+        "place": "3"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Marseille Meeting Pro Athlé, Marseille",
+        "event": "1500m",
+        "time": "3:38.37",
+        "place": "6"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Huelva Meeting Iberoamericano de Atletismo, Huelva",
+        "event": "1500m",
+        "time": "3:41.90",
+        "place": "4"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Montbéliard Meeting National, Montbéliard",
+        "event": "1500m",
+        "time": "3:41.13",
+        "place": "10"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "Firenze Regional Championships, Firenze",
+        "event": "800m",
+        "time": "1:49.37",
+        "place": "1"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "Padova (i)",
+        "event": "1500m sh",
+        "time": "3:48.11",
+        "place": "3"
+      }
+    ],
+    "2019": [
+      {
+        "date": "MAY 11",
+        "meet": "Miglio di Roma, Roma",
+        "event": "Mile",
+        "time": "4:09.19",
+        "place": "3"
+      }
+    ],
+    "2020": [
+      {
+        "date": "OCT 17",
+        "meet": "Italian Championships",
+        "event": "1500m",
+        "time": "3:47.51",
+        "place": "1"
+      },
+      {
+        "date": "SEP 27",
+        "meet": "Meeting Citta' di Conegliano",
+        "event": "800m",
+        "time": "1:48.16",
+        "place": "3"
+      },
+      {
+        "date": "SEP 24",
+        "meet": "Silver Meeting",
+        "event": "1500m",
+        "time": "3:43.62",
+        "place": "3"
+      },
+      {
+        "date": "SEP 15",
+        "meet": "Gala dei Castelli",
+        "event": "1500m",
+        "time": "3:38.04",
+        "place": "8"
+      },
+      {
+        "date": "SEP 5",
+        "meet": "Miglio Ambrosiano",
+        "event": "Mile",
+        "time": "3:57.54",
+        "place": "5"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "Italian Championships",
+        "event": "800m",
+        "time": "1:48.79",
+        "place": "4"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Italian Championships",
+        "event": "800m",
+        "time": "1:49.60",
+        "place": "1"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "Abendmeeting",
+        "event": "1500m",
+        "time": "3:43.62",
+        "place": "7"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "II Meeting Brazzale",
+        "event": "800m",
+        "time": "1:49.16",
+        "place": "2"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Meeting serale 3",
+        "event": "1500m",
+        "time": "3:43.56",
+        "place": "1"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Ivo Merlo Memorial",
+        "event": "800m",
+        "time": "1:48.23",
+        "place": "2"
+      }
+    ],
+    "2021": [
+      {
+        "date": "SEP 21",
+        "meet": "We Run Together International Meeting",
+        "event": "3000m",
+        "time": "9:07.26",
+        "place": "9"
+      },
+      {
+        "date": "SEP 5",
+        "meet": "Meeting Città di Padova",
+        "event": "1500m",
+        "time": "3:39.18",
+        "place": "8"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "32° Meeting Internazionale Di Atletica Leggera Sport e Solidarieta",
+        "event": "800m",
+        "time": "1:46.11",
+        "place": "5"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "Italian Championships",
+        "event": "1500m",
+        "time": "3:41.44",
+        "place": "4"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "XXIV Meeting Internazionale Città di Nembro",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Meeting National",
+        "event": "1500m",
+        "time": "3:36.65",
+        "place": "4"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Meeting Internazionale ATL-Etica",
+        "event": "1500m",
+        "time": "3:40.30",
+        "place": "1"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Meeting Citta' di Conegliano",
+        "event": "800m",
+        "time": "1:46.20",
+        "place": "4"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "IFAM Meeting",
+        "event": "1500m",
+        "time": "3:40.37",
+        "place": "7"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "Regional Meeting",
+        "event": "800m",
+        "time": "1:48.58",
+        "place": "1"
+      },
+      {
+        "date": "MAR 4",
+        "meet": "European Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:44.76",
+        "place": "10"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "Italian Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:41.04",
+        "place": "2"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "National Indoor Meeting",
+        "event": "1500m sh",
+        "time": "3:41.79",
+        "place": "2"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 31",
+        "meet": "Atleticom We Run Rome, Roma",
+        "event": "10K",
+        "time": "31:29",
+        "place": "12"
+      },
+      {
+        "date": "OCT 15",
+        "meet": "Circuito Città di Biella, Biella",
+        "event": "Mile",
+        "time": "4:07.0",
+        "place": "1"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "Italian Indoor Championships",
+        "event": "800m sh",
+        "time": "1:49.64",
+        "place": "3"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "Italian Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:42.36",
+        "place": "5"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "Regional Indoor Meeting",
+        "event": "1500m sh",
+        "time": "3:40.28",
+        "place": "2"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Regional Indoor Combined Events Championships",
+        "event": "800m sh",
+        "time": "1:49.06",
+        "place": "1"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "National Indoor Meeting",
+        "event": "3000m sh",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "JAN 23",
+        "meet": "National Indoor Meeting",
+        "event": "1500m sh",
+        "time": "3:41.71",
+        "place": "1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "AUG 19",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:48.55",
+        "place": "13"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "Italian Championships",
+        "event": "1500m",
+        "time": "3:48.97",
+        "place": "4"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Motonet GP Lappeenranta",
+        "event": "1500m",
+        "time": "3:39.31",
+        "place": "5"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "Meeting Sport e Solidarieta Lignano",
+        "event": "1500m",
+        "time": "3:35.65",
+        "place": "2"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Meeting International de Sotteville 2023",
+        "event": "1500m",
+        "time": "3:44.54",
+        "place": "12"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "Meeting National de Carquefou",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "JUN 17",
+        "meet": "25th International Athletics Meeting Anhalt 2023",
+        "event": "1500m",
+        "time": "3:35.99",
+        "place": "2"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "Kladno hází a Kladenské Memoriály 2023",
+        "event": "1500m",
+        "time": "3:40.78",
+        "place": "3"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Italian Club Championships",
+        "event": "800m",
+        "time": "1:47.82",
+        "place": "2"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Italian Club Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:13.00",
+        "place": "1"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Italian Club Championships",
+        "event": "1500m",
+        "time": "3:44.70",
+        "place": "1"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "Copenhagen Athletics Games",
+        "event": "1500m",
+        "time": "3:37.53",
+        "place": "2"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "Grifone Meeting",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAY 20",
+        "meet": "Lange Laufnacht",
+        "event": "1500m",
+        "time": "3:36.79",
+        "place": "5"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Italian Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.65",
+        "place": "5"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Italian Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:48.27",
+        "place": "2"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Regional Indoor Combined Events Championships",
+        "event": "1000m sh",
+        "time": "2:20.02",
+        "place": "1"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "8 National Indoor Meeting",
+        "event": "Mile sh",
+        "time": "3:56.45",
+        "place": "2"
+      },
+      {
+        "date": "JAN 21",
+        "meet": "II° Memorial Alessio Giovannini Meeting Internazionale Indoor",
+        "event": "800m sh",
+        "time": "1:48.52",
+        "place": "2"
+      }
+    ],
+    "2024": [
+      {
+        "date": "SEP 22",
+        "meet": "Italian Club Championships",
+        "event": "800m",
+        "time": "1:50.84",
+        "place": "4"
+      },
+      {
+        "date": "SEP 22",
+        "meet": "Italian Club Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:12.42",
+        "place": "3"
+      },
+      {
+        "date": "SEP 3",
+        "meet": "Copenhagen Athletics Games",
+        "event": "Mile",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "SEP 1",
+        "meet": "New Balance KÖ MEILE, Düsseldorf",
+        "event": "Mile",
+        "time": "3:59.0",
+        "place": "7"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Italian Championships",
+        "event": "1500m",
+        "time": "3:42.80",
+        "place": "3"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "XIX Reunión Internacional Villa de Bilbao",
+        "event": "1500m",
+        "time": "3:37.18",
+        "place": "9"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Meeting International d'Athlétisme de Troyes Aube",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAY 26",
+        "meet": "IFAM Outdoor",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Trond Mohn Games",
+        "event": "1500m",
+        "time": "3:36.78",
+        "place": "1"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Puma Nitro Lange Laufnacht",
+        "event": "1500m",
+        "time": "3:37.29",
+        "place": "7"
+      },
+      {
+        "date": "APR 30",
+        "meet": "Meeting Iberoamericano Huelva 2024",
+        "event": "1500m",
+        "time": "3:41.87",
+        "place": "13"
+      },
+      {
+        "date": "APR 13",
+        "meet": "X Athletic Elite Meeting",
+        "event": "1000m",
+        "time": "2:17.23",
+        "place": "1"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Meeting Indoor de Lyon",
+        "event": "1500m sh",
+        "time": "3:41.41",
+        "place": "4"
+      },
+      {
+        "date": "JAN 20",
+        "meet": "Sparkassen Indoor Meeting Dortmund",
+        "event": "1500m sh",
+        "time": "3:47.56",
+        "place": "6"
+      },
+      {
+        "date": "JAN 14",
+        "meet": "2° Manifestazione Regionale Indoor Open",
+        "event": "800m sh",
+        "time": "1:50.47",
+        "place": "2"
+      }
+    ],
+    "2025": [
+      {
+        "date": "OCT 5",
+        "meet": "IV Corriaugusta, Augusta",
+        "event": "10K",
+        "time": "32:23",
+        "place": "9"
+      },
+      {
+        "date": "SEP 14",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:38.38",
+        "place": "9"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Italian Championships",
+        "event": "1500m",
+        "time": "3:42.73",
+        "place": "3"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "ISTAF 2025",
+        "event": "Mile",
+        "time": "3:50.67",
+        "place": "7"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Meeting Madrid 2025",
+        "event": "1500m",
+        "time": "3:35.56",
+        "place": "5"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Spitzen Leichtathletik Luzern",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "JUN 21",
+        "meet": "27. Anhalt Meeting Dessau",
+        "event": "1500m",
+        "time": "3:33.08",
+        "place": "3"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "C.D.S. Assoluto su Pista",
+        "event": "4x400 Metres Relay",
+        "time": "3:14.46",
+        "place": "6"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "C.D.S. Assoluto su Pista",
+        "event": "400m",
+        "time": "49.28",
+        "place": "6"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Kladno hází a Kladenské memoriály",
+        "event": "1500m",
+        "time": "3:41.37",
+        "place": "5"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "Canarias Athletics Invitational",
+        "event": "1500m",
+        "time": "3:38.45",
+        "place": "4"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "14th Savona International Meeting",
+        "event": "1500m",
+        "time": "3:37.94",
+        "place": "5"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "World Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:40.92",
+        "place": "4"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Italian Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:55.09",
+        "place": "3"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Meeting Indoor de Lyon",
+        "event": "1500m sh",
+        "time": "3:38.72",
+        "place": "8"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "1500m sh",
+        "time": "3:41.74",
+        "place": "2"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Campionato Regionale Prove Multiple Indoor",
+        "event": "1500m sh",
+        "time": "3:44.20",
+        "place": "2"
+      }
+    ]
+  },
+  "age": "33"
+}

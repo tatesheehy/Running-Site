@@ -1,0 +1,1008 @@
+{
+  "id": "yanis-meziane",
+  "name": "Yanis Meziane",
+  "flag": "FR",
+  "country": "France",
+  "waUrl": "https://worldathletics.org/athletes/france/yanis-meziane-14893694",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "24",
+  "dob": "2002-01-26",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "400m",
+      "time": "46.65"
+    },
+    {
+      "event": "800m",
+      "time": "1:43.71"
+    },
+    {
+      "event": "400 Metres Short Track",
+      "time": "47.07"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:15.09"
+    },
+    {
+      "event": "600 Metres Short Track",
+      "time": "1:15.09"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:45.80"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:10.38"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "800 m",
+      "time": "1:45.66",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "800 m",
+      "time": "1:44.40",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "800 m",
+      "time": "1:44.64",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 14",
+      "meet": "Athlé 91 Track Festival",
+      "event": "400 m",
+      "time": "46.65",
+      "place": "4.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 4",
+      "meet": "Golden Gala Pietro Mennea",
+      "event": "800 m",
+      "time": "1:44.29",
+      "place": "6.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 31",
+      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+      "event": "800 m",
+      "time": "1:44.38",
+      "place": "8.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Wanda Diamond League",
+      "event": "800 m",
+      "time": "1:44.17",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 3",
+      "meet": "Chpts Interclubs LIFA-Elite-N1-N2-Poule A",
+      "event": "400 m",
+      "time": "46.85",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 3",
+      "meet": "Chpts Interclubs LIFA-Elite-N1-N2-Poule A",
+      "event": "4x400 m Relay",
+      "time": "3:11.66",
+      "place": "1.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "DEC 21",
+        "meet": "Regional Indoor Championships",
+        "event": "800m sh",
+        "time": "1:54.99",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "DEC 12",
+        "meet": "Chpts Idf FFSU",
+        "event": "800m sh",
+        "time": "1:54.22",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "French U18 Championships, Angers",
+        "event": "400m",
+        "time": "49.37",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "French U18 Championships, Angers",
+        "event": "400m",
+        "time": "49.21",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "Meeting National à thème de l'Artois, Bruay-la-Buissiere",
+        "event": "400m",
+        "time": "49.58",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Regional U20/U18 Championships, Cergy-Pontoise",
+        "event": "400m",
+        "time": "49.11",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Meeting de Chartres, Chartres",
+        "event": "800m",
+        "time": "1:55.56",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Meeting de Savigny sur Orge, Savigny-sur-Orge",
+        "event": "800m",
+        "time": "1:57.22",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "Interclubs, Noisy-le-Grand",
+        "event": "400m",
+        "time": "49.88",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Regional Meeting, Savigny-le-Temple",
+        "event": "800m",
+        "time": "1:59.05",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "SEP 29",
+        "meet": "Meeting Qualificatif",
+        "event": "800m",
+        "time": "1:52.70",
+        "place": "3",
+        "round": "F3"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "Meeting Régional",
+        "event": "400m",
+        "time": "49.12",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "SEP 13",
+        "meet": "Meeting de l'ASA Maisons Alfort",
+        "event": "800m",
+        "time": "1:53.40",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "SEP 5",
+        "meet": "Meeting ASFI Villejuif",
+        "event": "800m",
+        "time": "1:52.21",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting Régional",
+        "event": "400m",
+        "time": "50.11",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "French U20 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:54.33",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "French Indoor University Championships",
+        "event": "800m sh",
+        "time": "1:54.44",
+        "place": "2",
+        "round": "F2"
+      }
+    ],
+    "2021": [
+      {
+        "date": "OCT 10",
+        "meet": "Cup de France",
+        "event": "4x400 Metres Relay",
+        "time": "3:14.72",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Meeting de Paris",
+        "event": "400m",
+        "time": "47.60",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "DNF",
+        "place": "",
+        "round": "SF2"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "World Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:47.28",
+        "place": "2",
+        "round": "H3"
+      },
+      {
+        "date": "JUL 18",
+        "meet": "European Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:48.56",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "European Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:49.36",
+        "place": "2",
+        "round": "SF2"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "European Athletics U20 Championships",
+        "event": "800m",
+        "time": "1:53.07",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "Meeting de l'US Ivry",
+        "event": "800m",
+        "time": "1:50.01",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "French Championships",
+        "event": "800m",
+        "time": "1:48.64",
+        "place": "5",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Meeting Flash",
+        "event": "400m",
+        "time": "48.64",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Meeting Elite de Cergy-Pontoise",
+        "event": "800m",
+        "time": "1:48.04",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Meeting Just one life, Troyes",
+        "event": "800m",
+        "time": "1:49.72",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "Compétition CJES",
+        "event": "800m",
+        "time": "1:50.90",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "Animation Covid",
+        "event": "400m",
+        "time": "48.45",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "French Indoor Championships",
+        "event": "800m sh",
+        "time": "1:54.16",
+        "place": "2",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "French Indoor Championships",
+        "event": "800m sh",
+        "time": "1:54.18",
+        "place": "6",
+        "round": "H2"
+      }
+    ],
+    "2022": [
+      {
+        "date": "SEP 11",
+        "meet": "Mediterranean Athletics U23 Championships",
+        "event": "800m",
+        "time": "1:47.01",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 18",
+        "meet": "European Athletics Championships",
+        "event": "800m",
+        "time": "1:47.82",
+        "place": "5",
+        "round": "H4"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "French U23 Championships",
+        "event": "800m",
+        "time": "1:48.58",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "French U23 Championships",
+        "event": "800m",
+        "time": "1:52.89",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Meeting International de Sotteville 2022",
+        "event": "800m",
+        "time": "1:49.44",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "French Championships",
+        "event": "800m",
+        "time": "1:49.17",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "French Championships",
+        "event": "800m",
+        "time": "1:48.65",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Meeting National de Strasbourg",
+        "event": "800m",
+        "time": "1:45.52",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Meeting National à thème de l'Est Lyonnais",
+        "event": "800m",
+        "time": "1:47.20",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 4",
+        "meet": "Meeting National de Troyes, Troyes",
+        "event": "800m",
+        "time": "1:46.57",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Pré-Meeting de Montreuil, Montreuil",
+        "event": "800m",
+        "time": "1:46.97",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Championnat de France des clubs",
+        "event": "800m",
+        "time": "1:48.81",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Championnat de France des clubs",
+        "event": "4x400 Metres Relay",
+        "time": "3:13.91",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "36eme Meeting International Athletisme Montgeron-Essonne, Montgeron",
+        "event": "800m",
+        "time": "1:48.54",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "Championnat de France des clubs",
+        "event": "400m",
+        "time": "48.17",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "French Indoor Championships",
+        "event": "800m sh",
+        "time": "1:51.14",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "French Indoor Championships",
+        "event": "800m sh",
+        "time": "1:49.63",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "French U23 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:50.07",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "French U23 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:53.49",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Meeting Elite en salle de Nantes",
+        "event": "800m sh",
+        "time": "1:49.83",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 21",
+        "meet": "Meeting Elite en salle de Lyon",
+        "event": "800m sh",
+        "time": "1:49.53",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 9",
+        "meet": "Championnats Régionaux de 800/1500m",
+        "event": "800m sh",
+        "time": "1:50.41",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "SEP 17",
+        "meet": "Prefontaine Classic",
+        "event": "800m",
+        "time": "1:43.94",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "Memorial van Damme",
+        "event": "800m",
+        "time": "1:43.94",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "SEP 2",
+        "meet": "Wanda Diamond League Xiamen",
+        "event": "800m",
+        "time": "1:44.28",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.30",
+        "place": "4",
+        "round": "SF3"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.30",
+        "place": "3",
+        "round": "H7"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "French Championships",
+        "event": "800m",
+        "time": "1:48.02",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 28",
+        "meet": "French Championships",
+        "event": "800m",
+        "time": "1:48.07",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Herculis Meeting International d’Athlétisme EBS",
+        "event": "800m",
+        "time": "1:44.30",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "European Athletics U23 Championships",
+        "event": "800m",
+        "time": "1:45.92",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "European Athletics U23 Championships",
+        "event": "800m",
+        "time": "1:46.20",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "BAUHAUS-Galan",
+        "event": "800m",
+        "time": "1:45.43",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "European Athletics Team Championships First Division",
+        "event": "800m",
+        "time": "1:47.39",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "1:44.78",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "Montreuil International Meeting",
+        "event": "800m",
+        "time": "1:45.68",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Meeting Jaen Paraiso Interior",
+        "event": "800m",
+        "time": "1:45.39",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Championnat de France des clubs N1A Poule B",
+        "event": "800m",
+        "time": "1:47.78",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Championnat de France des clubs N1A Poule B",
+        "event": "4x400 Metres Relay",
+        "time": "3:12.65",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Championnat de France des clubs",
+        "event": "400m",
+        "time": "47.54",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "Mediterranean U23 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:51.91",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "JUL 7",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "French Championships",
+        "event": "800m",
+        "time": "1:45.47",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "French Championships",
+        "event": "800m",
+        "time": "1:49.16",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "European Athletics Championships",
+        "event": "800m",
+        "time": "1:46.39",
+        "place": "4",
+        "round": "H3"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "International Marseille Meeting",
+        "event": "800m",
+        "time": "1:44.91",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Meeting International Mohammed VI d’Athlétisme de Rabat/Marrakech",
+        "event": "800m",
+        "time": "1:44.13",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Championnat de France des clubs N1A Poule 1",
+        "event": "400m",
+        "time": "47.28",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Championnat de France des clubs N1A Poule 1",
+        "event": "4x400 Metres Relay",
+        "time": "3:10.38",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "800m sh",
+        "time": "1:46.08",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "AGN League 2",
+        "event": "400m",
+        "time": "47.27",
+        "place": "1",
+        "round": "F4"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 18",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.12",
+        "place": "6",
+        "round": "SF3"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.02",
+        "place": "4",
+        "round": "H6"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Memorial van Damme",
+        "event": "800m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Athletissima Lausanne",
+        "event": "800m",
+        "time": "1:44.77",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "AUG 12",
+        "meet": "Gyulai István Memorial",
+        "event": "800m",
+        "time": "1:43.71",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "French Championships",
+        "event": "800m",
+        "time": "1:45.24",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "French Championships",
+        "event": "800m",
+        "time": "1:47.49",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Meeting Madrid 2025",
+        "event": "800m",
+        "time": "1:43.82",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Meeting International de Marseille",
+        "event": "800m",
+        "time": "1:44.77",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "1:44.55",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "FBK Games",
+        "event": "800m",
+        "time": "1:44.32",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "61° Palio Città della Quercia",
+        "event": "800m",
+        "time": "1:43.93",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Meeting International Mohammed VI d'Athlétisme de Rabat",
+        "event": "800m",
+        "time": "1:44.95",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAR 22",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "2:23.96",
+        "place": "6",
+        "round": "SF1"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.07",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "MAR 7",
+        "meet": "European Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.79",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "French Indoor Championships",
+        "event": "800m sh",
+        "time": "1:47.66",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "French Indoor Championships",
+        "event": "800m sh",
+        "time": "1:49.55",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "800m sh",
+        "time": "1:45.80",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "600m sh",
+        "time": "1:15.09",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "Elite Indoor Track Miramas Meeting",
+        "event": "800m sh",
+        "time": "1:45.87",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Metting de Nantes Metropole",
+        "event": "800m sh",
+        "time": "1:46.28",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 4",
+        "meet": "Meeting des Volcans",
+        "event": "400m sh",
+        "time": "47.07",
+        "place": "3",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
+}

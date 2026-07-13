@@ -1,0 +1,821 @@
+{
+  "id": "abdelati-el-guesse",
+  "name": "Abdelati El Guesse",
+  "flag": "MA",
+  "country": "Morocco",
+  "waUrl": "https://worldathletics.org/athletes/morocco/abdelati-el-guesse-14652586",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "33",
+  "dob": "1993-02-27",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:44.19"
+    },
+    {
+      "event": "1500m",
+      "time": "3:38.04"
+    },
+    {
+      "event": "5000m",
+      "time": "14:38.60="
+    },
+    {
+      "event": "5000m",
+      "time": "14:38.6h"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:45.21"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:16.62"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:17.61"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:38.22"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 11",
+      "meet": "48th Grand Prix Nove Mesto nad Metuji",
+      "event": "1500 m",
+      "time": "3:40.84",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 26",
+      "meet": "76. Boris Hanžeković Memorial",
+      "event": "800 m",
+      "time": "1:45.05",
+      "place": "6.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "800 m",
+      "time": "1:45.09",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 19",
+      "meet": "28. Anhalt Meeting Dessau",
+      "event": "800 m",
+      "time": "1:46.14",
+      "place": "6.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "1000 m",
+      "time": "2:16.62",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 31",
+      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+      "event": "800 m",
+      "time": "1:44.62",
+      "place": "10.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 20",
+      "meet": "Desafio Nerja",
+      "event": "1500 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 9",
+      "meet": "International Pegaso Meeting",
+      "event": "800 m",
+      "time": "1:45.71",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 8",
+      "meet": "Meeting Metz Moselle Athlélor Crédit Mutuel",
+      "event": "800 m sh",
+      "time": "1:46.74",
+      "place": "6.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Meeting de L'Eure",
+      "event": "800 m sh",
+      "time": "1:46.68",
+      "place": "2.",
+      "round": "F2"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Meeting Indoor de Lyon",
+      "event": "800 m sh",
+      "time": "1:46.62",
+      "place": "2.",
+      "round": "F1"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUL 24",
+        "meet": "Moroccan Championships, Kenitra",
+        "event": "800m",
+        "time": "1:49.25",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Huelva Meeting Iberoamericano de Atletismo, Huelva",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Montbéliard Meeting National, Montbéliard",
+        "event": "800m",
+        "time": "1:46.88",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "Bydgoszcz European Athletics Festival, Bydgoszcz",
+        "event": "800m",
+        "time": "1:46.99",
+        "place": "5",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "JUL 27",
+        "meet": "Moroccan Championships, Sale",
+        "event": "800m",
+        "time": "1:49.18",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "800m",
+        "time": "1:48.42",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Meeting Federal, Fes",
+        "event": "1500m",
+        "time": "3:43.62",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 6",
+        "meet": "Meeting de Zone Juniors/Seniors, Tahanaout",
+        "event": "1500m",
+        "time": "3:49.67",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "DEC 27",
+        "meet": "Meeting de Ligue 5000m",
+        "event": "5000m",
+        "time": "14:38.6",
+        "place": "12",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "AUG 1",
+        "meet": "The XXXII Olympic Games",
+        "event": "800m",
+        "time": "1:46.85",
+        "place": "8",
+        "round": "SF1"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "The XXXII Olympic Games",
+        "event": "800m",
+        "time": "1:44.84",
+        "place": "4",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Meeting Elite Open",
+        "event": "800m",
+        "time": "1:45.16",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "Moroccan Championships",
+        "event": "800m",
+        "time": "1:45.44",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Moroccan Championships",
+        "event": "800m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "9éme Meeting INA-CRF",
+        "event": "800m",
+        "time": "1:46.38",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "Teste tentative minima 800m Hommes",
+        "event": "800m",
+        "time": "1:45.59",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "8eme Meeting elite INA",
+        "event": "800m",
+        "time": "1:47.60",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "7eme Meeting Elite INA",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "APR 7",
+        "meet": "3eme Meeting Elite Ina Sale",
+        "event": "1500m",
+        "time": "3:38.82",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 27",
+        "meet": "2éme Meeting Elite",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "9ème Meeting Federal",
+        "event": "1500m",
+        "time": "3:38.76",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "Elite Meeting",
+        "event": "1500m",
+        "time": "3:38.04",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "Techniques des Meetings Régionaux, Tahanaout",
+        "event": "5000m",
+        "time": "14:38.60",
+        "place": "33",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "JUL 21",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:46.46",
+        "place": "8",
+        "round": "SF3"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.25",
+        "place": "3",
+        "round": "H6"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "XIX Mediterranean Games",
+        "event": "800m",
+        "time": "1:46.28",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "XIX Mediterranean Games",
+        "event": "800m",
+        "time": "1:46.57",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "Meeting Madrid",
+        "event": "800m",
+        "time": "1:46.93",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "African Athletics Championships",
+        "event": "800m",
+        "time": "1:51.55",
+        "place": "4",
+        "round": "H5"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "800m",
+        "time": "1:46.79",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "IFAM Oordegem",
+        "event": "800m",
+        "time": "1:48.01",
+        "place": "7",
+        "round": "F4"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "2éme Meeting Federal",
+        "event": "800m",
+        "time": "1:45.25",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "World Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:47.43",
+        "place": "6",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Avant Programme Meeting Liévin",
+        "event": "1500m sh",
+        "time": "3:38.22",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Meeting de l’Eure",
+        "event": "1000m sh",
+        "time": "2:18.79",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "Meeting Metz Moselle Athlelor",
+        "event": "800m sh",
+        "time": "1:47.05",
+        "place": "4",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Míting Internacional de Catalunya",
+        "event": "800m sh",
+        "time": "1:47.12",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "Régionaux CJES",
+        "event": "800m sh",
+        "time": "1:46.79",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Meeting Elite en salle de Nantes",
+        "event": "800m sh",
+        "time": "1:48.30",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 22",
+        "meet": "BoXX United Manchester World Indoor Tour",
+        "event": "800m sh",
+        "time": "1:50.84",
+        "place": "4",
+        "round": "F1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "AUG 24",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.55",
+        "place": "7",
+        "round": "SF1"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.24",
+        "place": "1",
+        "round": "H6"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "CITIUS Meeting",
+        "event": "800m",
+        "time": "1:45.21",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 22",
+        "meet": "Flanders Cup Vita",
+        "event": "800m",
+        "time": "1:44.52",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "34° Meeting Arcobaleno EAP AtleticaEuropa",
+        "event": "800m",
+        "time": "1:45.11",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Moroccan Championships",
+        "event": "800m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "Arab Championships",
+        "event": "800m",
+        "time": "1:46.44",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "800m",
+        "time": "1:47.10",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Meeting National à thème de Toulouse",
+        "event": "800m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Reunion Internacional Ciudad de Guadalajara",
+        "event": "800m",
+        "time": "1:47.00",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "800m sh",
+        "time": "1:49.04",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Gothenburg Games",
+        "event": "800m sh",
+        "time": "1:47.32",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "Meeting National Indoor Lyon",
+        "event": "800m sh",
+        "time": "1:46.36",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "AUG 8",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "DNS",
+        "place": "",
+        "round": "RR1"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:46.91",
+        "place": "5",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Meeting International Sotteville 2024",
+        "event": "800m",
+        "time": "1:45.94",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Atleticageneve",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "6th Irena Szewińska Memorial",
+        "event": "800m",
+        "time": "1:44.62",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "63rd Ostrava Golden Spike",
+        "event": "800m",
+        "time": "1:45.96",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Meeting International Mohammed VI d’Athlétisme de Rabat/Marrakech",
+        "event": "800m",
+        "time": "1:45.70",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "Yangtze Delta Athletics Diamond Gala",
+        "event": "800m",
+        "time": "1:45.35",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Wanda Diamond League Xiamen",
+        "event": "800m",
+        "time": "1:45.65",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:45.45",
+        "place": "4",
+        "round": "SF2"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.29",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Meeting Indoor de Lyon",
+        "event": "800m sh",
+        "time": "1:45.28",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "ORLEN Copernicus Cup",
+        "event": "800m sh",
+        "time": "1:46.22",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "IFAM Gent Indoor",
+        "event": "1000m sh",
+        "time": "2:17.61",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Miting Catalunya",
+        "event": "800m sh",
+        "time": "1:45.95",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:46.80",
+        "place": "8",
+        "round": "H2"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "CITIUS Meeting",
+        "event": "800m",
+        "time": "1:44.97",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "Folksam Grand Prix Sollentuna",
+        "event": "800m",
+        "time": "1:45.37",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "8. International Wiesław Maniak Memorial",
+        "event": "800m",
+        "time": "1:46.02",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Meeting International Sotteville 2025",
+        "event": "800m",
+        "time": "1:45.78",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Meeting Stanislas Nancy",
+        "event": "800m",
+        "time": "1:45.06",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "64th Ostrava Golden Spike",
+        "event": "800m",
+        "time": "1:44.19",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Meeting International Mohammed VI d'Athlétisme de Rabat",
+        "event": "800m",
+        "time": "1:45.48",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Doha Meeting",
+        "event": "800m",
+        "time": "1:45.02",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:49.83",
+        "place": "4",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Meeting Indoor de Lyon",
+        "event": "800m sh",
+        "time": "1:45.21",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "800m sh",
+        "time": "1:45.36",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "Elite Indoor Track Miramas Meeting",
+        "event": "800m sh",
+        "time": "1:45.57",
+        "place": "1",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-10"
+}

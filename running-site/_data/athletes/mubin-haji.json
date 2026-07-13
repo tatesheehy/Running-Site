@@ -110,5 +110,42 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [
+      {
+        "date": "APR 2",
+        "meet": "Ethiopian Championships, Hawassa",
+        "event": "5000m",
+        "time": "14:19.4",
+        "place": "19",
+        "round": "F"
+      }
+    ],
+    "2023": [],
+    "2024": [],
+    "2025": [
+      {
+        "date": "AUG 24",
+        "meet": "Final of the Queen of Sports",
+        "event": "5000m",
+        "time": "13:47.41",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Znamensky Brothers Memorial",
+        "event": "5000m",
+        "time": "13:31.75",
+        "place": "1",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

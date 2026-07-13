@@ -134,5 +134,440 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUN 15",
+        "meet": "Hiratsuka Japan University Championships, Hiratsuka",
+        "event": "1500m",
+        "time": "3:58.69",
+        "place": "5",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Sagamihara Kanto District Collegiate Championships, Sagamihara",
+        "event": "3000m SC",
+        "time": "9:26.32",
+        "place": "11",
+        "round": "H1"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Kobe Hyogo Relays, Kobe",
+        "event": "3000m SC",
+        "time": "9:06.46",
+        "place": "5",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "NOV 17",
+        "meet": "NN Zevenheuvelenloop, Nijmegen",
+        "event": "15 Kilometres Road",
+        "time": "44:43",
+        "place": "18",
+        "round": "F"
+      },
+      {
+        "date": "OCT 26",
+        "meet": "Half Marathon, Tachikawa",
+        "event": "Half Marathon",
+        "time": "1:03:58",
+        "place": "15",
+        "round": "F"
+      },
+      {
+        "date": "SEP 12",
+        "meet": "88th Japan National Collegiate Championships",
+        "event": "10000m",
+        "time": "29:25.16",
+        "place": "14",
+        "round": "F"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Half Marathon, Gold Coast",
+        "event": "Half Marathon",
+        "time": "1:04:54",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "1st Chuo University Competition, Hachioji",
+        "event": "10000m",
+        "time": "29:28.02",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "Kanto District Collegiate Championships, Sagamihara",
+        "event": "10000m",
+        "time": "29:30.52",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "APR 21",
+        "meet": "269th Nittaidai Distance Meet, Yokohama",
+        "event": "5000m",
+        "time": "14:13.88",
+        "place": "6",
+        "round": "F20"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "3rd Chuo University Competition, Hachioji",
+        "event": "10000m",
+        "time": "29:28.02",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "NOV 14",
+        "meet": "281st Nittadai(NSSU) Distance Meet",
+        "event": "10000m",
+        "time": "28:22.28",
+        "place": "10",
+        "round": "F9"
+      },
+      {
+        "date": "OCT 17",
+        "meet": "Hakone Ekiden Qualifier, Tachikawa",
+        "event": "Half Marathon",
+        "time": "1:02:08",
+        "place": "20",
+        "round": "F"
+      },
+      {
+        "date": "SEP 20",
+        "meet": "3rd Chuo University Meeting",
+        "event": "5000m",
+        "time": "14:03.1",
+        "place": "1",
+        "round": "ER"
+      },
+      {
+        "date": "SEP 20",
+        "meet": "3rd Chuo University Meeting",
+        "event": "5000m",
+        "time": "14:25.4",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "2nd Chuo University Meeting",
+        "event": "3000m",
+        "time": "8:05.80",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Hokuren Distance Challenge",
+        "event": "5000m",
+        "time": "13:56.74",
+        "place": "2",
+        "round": "F3"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Hokuren Distance Challenge",
+        "event": "5000m",
+        "time": "14:03.36",
+        "place": "9",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Kagawa Marugame International Half Marathon, Marugame",
+        "event": "Half Marathon",
+        "time": "1:07:36",
+        "place": "139",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "OCT 23",
+        "meet": "Hakone Ekiden Yosenkai Half Marathon, Tachikawa",
+        "event": "Half Marathon",
+        "time": "1:04:26",
+        "place": "107",
+        "round": "F"
+      },
+      {
+        "date": "SEP 25",
+        "meet": "205th Tokai University Long Distance Competition",
+        "event": "10000m",
+        "time": "28:58.59",
+        "place": "2",
+        "round": "F4"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Hokuren Distance Challenge",
+        "event": "5000m",
+        "time": "14:11.87",
+        "place": "21",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "100th Kanto University Championships",
+        "event": "10000m",
+        "time": "29:42.04",
+        "place": "25",
+        "round": "F"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "287th Nippon Sport Science University Long Distance Competition",
+        "event": "5000m",
+        "time": "14:46.80",
+        "place": "34",
+        "round": "F10"
+      },
+      {
+        "date": "APR 25",
+        "meet": "2nd Chuo University Meeting",
+        "event": "5000m",
+        "time": "14:09.34",
+        "place": "5",
+        "round": "F2"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 3",
+        "meet": "302nd Nippon Sport Science University Long Distance Competition",
+        "event": "10000m",
+        "time": "28:34.39",
+        "place": "18",
+        "round": "F4"
+      },
+      {
+        "date": "OCT 2",
+        "meet": "299th Nippon Sport Science University Long Distance Competition",
+        "event": "5000m",
+        "time": "13:50.74",
+        "place": "20",
+        "round": "F18"
+      },
+      {
+        "date": "SEP 18",
+        "meet": "298th Nippon Sport Science University Long Distance Competition",
+        "event": "5000m",
+        "time": "13:56.51",
+        "place": "6",
+        "round": "F12"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Hokuren Distance Challenge",
+        "event": "5000m",
+        "time": "13:51.48",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "297th Nippon Sport Science University Long Distance Competition",
+        "event": "5000m",
+        "time": "14:05.29",
+        "place": "1",
+        "round": "F9"
+      }
+    ],
+    "2023": [
+      {
+        "date": "NOV 25",
+        "meet": "Hachioji Long Distance",
+        "event": "10000m",
+        "time": "28:15.17",
+        "place": "2",
+        "round": "F4"
+      },
+      {
+        "date": "SEP 24",
+        "meet": "71st All Japan Corporate Teams Athletics Championships",
+        "event": "5000m",
+        "time": "13:46.28",
+        "place": "12",
+        "round": "F3"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Hokuren Distance Challenge",
+        "event": "5000m",
+        "time": "13:28.35",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Hokuren Distance Challenge 2023",
+        "event": "3000m",
+        "time": "7:51.96",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "65th East Japan Corporate Athletics Championships",
+        "event": "10000m",
+        "time": "28:45.93",
+        "place": "8",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "34th Golden Games",
+        "event": "5000m",
+        "time": "13:35.45",
+        "place": "4",
+        "round": "F4"
+      },
+      {
+        "date": "APR 8",
+        "meet": "31st Kanakuri Memorial Middle and Long Distance Invitational Meet",
+        "event": "5000m",
+        "time": "13:50.80",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "APR 2",
+        "meet": "The 56th Tokyo Big6 Track Field League",
+        "event": "3000m",
+        "time": "8:06.35",
+        "place": "2",
+        "round": "F1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 1",
+        "meet": "Kumamoto Kosa 10 mile Road Race, Kumamoto",
+        "event": "10K",
+        "time": "28:51",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "Japanese Championships",
+        "event": "5000m",
+        "time": "13:16.76",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Seiko Golden Grand Prix",
+        "event": "5000m",
+        "time": "13:23.08",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "APR 29",
+        "meet": "58th Oda Mikio Memorial",
+        "event": "5000m",
+        "time": "13:27.74",
+        "place": "3",
+        "round": "F1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:29.44",
+        "place": "15",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "Meeting voor Mon",
+        "event": "1500m",
+        "time": "3:40.86",
+        "place": "2",
+        "round": "F4"
+      },
+      {
+        "date": "AUG 13",
+        "meet": "Motonet GP Oulu",
+        "event": "1500m",
+        "time": "3:43.65",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "Japanese Championships",
+        "event": "5000m",
+        "time": "13:38.56",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Japanese Championships",
+        "event": "5000m",
+        "time": "13:38.34",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "26th Asian Athletics Championships",
+        "event": "5000m",
+        "time": "13:25.06",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Seiko Golden Grand Prix 2025 Tokyo",
+        "event": "3000m",
+        "time": "7:41.58",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 12",
+        "meet": "33rd Kanakuri Memorial Middle and Long Distance Invitational Meet",
+        "event": "5000m",
+        "time": "13:15.07",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Boston University David Hemery Valentine Invitational",
+        "event": "5000m sh",
+        "time": "13:36.33",
+        "place": "11",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Boston University Bruce Lehane Scarlet and White Invitational",
+        "event": "3000m sh",
+        "time": "7:55.23",
+        "place": "14",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

@@ -118,5 +118,551 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "NOV 24",
+        "meet": "Tuskys Great 10-K, Eldoret",
+        "event": "10K",
+        "time": "28:45",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "SEP 30",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "5000m",
+        "time": "13:03.08",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "SEP 27",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "5000m",
+        "time": "13:24.94",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "SEP 12",
+        "meet": "Kenya World Championship Trials",
+        "event": "5000m",
+        "time": "13:31.24",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "Kenyan Championships",
+        "event": "5000m",
+        "time": "13:31.75",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Kenyan Championships",
+        "event": "5000m",
+        "time": "13:33.7",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "Meeting National de Carquefou, Carquefou",
+        "event": "5000m",
+        "time": "13:17.97",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "AK Meeting",
+        "event": "5000m",
+        "time": "13:52.5",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 19",
+        "meet": "African U20 Championships, Abidjan",
+        "event": "5000m",
+        "time": "13:14.44",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "Kenya African U20 Trials, Nairobi",
+        "event": "5000m",
+        "time": "14:25.0",
+        "place": "4",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "OCT 3",
+        "meet": "Kip Keino Classic",
+        "event": "5000m",
+        "time": "13:11.88",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 14",
+        "meet": "Herculis",
+        "event": "5000m",
+        "time": "13:11.32",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JAN 12",
+        "meet": "10K Valencia Ibercaja, Valencia",
+        "event": "10K",
+        "time": "27:30",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "SEP 18",
+        "meet": "Kip Keino Classic",
+        "event": "5000m",
+        "time": "13:23.50",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 12",
+        "meet": "Adizero Road to Records, Herzogenaurach",
+        "event": "5K",
+        "time": "13:06",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "Weltklasse Zürich",
+        "event": "5K",
+        "time": "13:02",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "Athletissima Lausanne",
+        "event": "3000m",
+        "time": "7:41.50",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Müller British GP",
+        "event": "3000m",
+        "time": "7:35.34",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Oslo Bislett Games",
+        "event": "3000m",
+        "time": "7:30.07",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "Kenya Olympic Games Trials",
+        "event": "5000m",
+        "time": "13:27.86",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Kenya Olympic Games Trials",
+        "event": "5000m",
+        "time": "13:35.82",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "Müller Grand Prix Gateshead",
+        "event": "5000m",
+        "time": "13:24.64",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Harry Schulting Games",
+        "event": "3000m",
+        "time": "7:50.99",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "SEP 7",
+        "meet": "Weltklasse Zürich",
+        "event": "5K",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "SEP 2",
+        "meet": "Memorial van Damme",
+        "event": "5000m",
+        "time": "12:45.71",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "Herculis Meeting International d’Athlétisme EBS",
+        "event": "3000m",
+        "time": "7:33.30",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "XXII Commonwealth Games",
+        "event": "5000m",
+        "time": "13:08.48",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:09.98",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:13.30",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "Kenyan Trials for World Championships and Commonwealth Games 2022",
+        "event": "5000m",
+        "time": "13:29.20",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Golden Gala Pietro Mennea",
+        "event": "5000m",
+        "time": "12:46.79",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 7",
+        "meet": "Kip Keino Classic",
+        "event": "5000m",
+        "time": "13:12.19",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 30",
+        "meet": "adizero Road to Records, Herzogenaurach",
+        "event": "5K",
+        "time": "13:18",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAR 20",
+        "meet": "World Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:43.26",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 18",
+        "meet": "World Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:46.43",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "ORLEN Copernicus Cup",
+        "event": "3000m sh",
+        "time": "7:31.90",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "3000m sh",
+        "time": "7:34.67",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "INIT Indoor Meeting Karlsruhe",
+        "event": "3000m sh",
+        "time": "7:38.15",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JAN 9",
+        "meet": "10K Valencia Ibercaja, Valencia",
+        "event": "10K",
+        "time": "27:23",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "AUG 27",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:12.28",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:33.63",
+        "place": "7",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Herculis Meeting International d’Athlétisme EBS",
+        "event": "5000m",
+        "time": "12:46.02",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Trials For World Athletics Championships Budapest 2023",
+        "event": "5000m",
+        "time": "13:15.72",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Golden Gala Pietro Mennea",
+        "event": "5000m",
+        "time": "12:55.57",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "Semi Marathon de Lille, Lille",
+        "event": "5K",
+        "time": "13:13",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "3000m sh",
+        "time": "7:31.35",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JAN 15",
+        "meet": "10K Valencia Ibercaja, Valencia",
+        "event": "10K",
+        "time": "27:04",
+        "place": "5",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "SEP 13",
+        "meet": "Memorial van Damme",
+        "event": "5000m",
+        "time": "13:02.35",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "SEP 5",
+        "meet": "Weltklasse Zürich",
+        "event": "3000m",
+        "time": "7:34.80",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 30",
+        "meet": "Golden Gala",
+        "event": "5000m",
+        "time": "12:51.55",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "13:18.68",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "14:08.73",
+        "place": "4",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Meeting de Paris",
+        "event": "3000m",
+        "time": "7:28.83",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "National Trials for the XXXIII Olympics Games",
+        "event": "5000m",
+        "time": "13:27.54",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "adizero Road to Records",
+        "event": "10K",
+        "time": "27:40",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "MAR 17",
+        "meet": "10km Route de Lille, Lille",
+        "event": "10K",
+        "time": "27:07",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 21",
+        "meet": "3ème Corrida de Houilles, Houilles",
+        "event": "10K",
+        "time": "27:47",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:28.73",
+        "place": "14",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Athletissima Lausanne",
+        "event": "5000m",
+        "time": "13:18.65",
+        "place": "14",
+        "round": "F"
+      },
+      {
+        "date": "JUL 22",
+        "meet": "Trials for World Athletics Championships Tokyo 2025",
+        "event": "5000m",
+        "time": "14:06.31",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "5000m",
+        "time": "13:04.81",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Paris",
+        "event": "5000m",
+        "time": "13:05.04",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Oslo Bislett Games",
+        "event": "5000m",
+        "time": "12:51.16",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "APR 26",
+        "meet": "adizero: Road to Records, Herzogenaurach",
+        "event": "5K",
+        "time": "13:22",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "Semi-Marathon International de Lille",
+        "event": "10K",
+        "time": "27:15",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Sirikwa Classic Cross Country Tour – Gold",
+        "event": "Cross Country",
+        "time": "31:22",
+        "place": "19",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

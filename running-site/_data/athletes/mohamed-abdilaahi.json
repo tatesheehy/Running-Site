@@ -88,6 +88,14 @@
     {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
+      "event": "3000 m",
+      "time": "7:42.09",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
       "event": "2 Mi",
       "time": "8:10.34",
       "place": "2.",
@@ -126,5 +134,872 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "DEC 9",
+        "meet": "25th SPAR European Cross Country Championships, Tilburg",
+        "event": "Cross Country U20 Race",
+        "time": "18:27",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "OCT 14",
+        "meet": "Berlin 10 km, Berlin",
+        "event": "10K",
+        "time": "29:58",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "Rostock German U20 Championships, Rostock",
+        "event": "5000m",
+        "time": "15:40.46",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "IAAF World U20 Championships",
+        "event": "5000m",
+        "time": "14:30.81",
+        "place": "13",
+        "round": "F"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Mannheim Bauhaus Juniorengala, Mannheim",
+        "event": "1500m",
+        "time": "3:55.03",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Pfungstadt Laufgala, Pfungstadt",
+        "event": "1500m",
+        "time": "3:46.50",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Oordegem IFAM Meeting, Oordegem",
+        "event": "5000m",
+        "time": "14:09.09",
+        "place": "11",
+        "round": "F3"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Karlsruhe Lange Laufnacht, Karlsruhe",
+        "event": "5000m",
+        "time": "14:17.95",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "Halle German U20 Indoor Championships, Halle (i)",
+        "event": "3000m sh",
+        "time": "8:27.53",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "German Indoor Championships, Dortmund (i)",
+        "event": "1500m sh",
+        "time": "4:02.03",
+        "place": "6",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "Dortmund Regional Indoor Championships, Dortmund (i)",
+        "event": "3000m sh",
+        "time": "8:24.28",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Dortmund Regional Indoor Championships, Dortmund (i)",
+        "event": "800m sh",
+        "time": "1:54.65",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JAN 21",
+        "meet": "Dortmund Indoor Meeting, Dortmund (i)",
+        "event": "1500m sh",
+        "time": "3:52.93",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 7",
+        "meet": "Dortmund Hallensportfest, Dortmund (i)",
+        "event": "800m sh",
+        "time": "1:59.02",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "DEC 31",
+        "meet": "Bitburger 0",
+        "event": "8 Kilometres Road",
+        "time": "23:13",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "DEC 8",
+        "meet": "26th SPAR European Cross Country Championships, Lisboa",
+        "event": "Cross Country U23 Race",
+        "time": "25:04",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "OCT 13",
+        "meet": "The Bridgestone Great 10k Berlin, Berlin",
+        "event": "10K",
+        "time": "29:57",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "KBC Night of Athletics, Heusden-Zolder",
+        "event": "1500m",
+        "time": "3:44.79",
+        "place": "10",
+        "round": "F3"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "European U23 Championships",
+        "event": "5000m",
+        "time": "14:27.36",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "European U23 Championships",
+        "event": "10000m",
+        "time": "29:04.21",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "German U23 Championships, Wetzlar",
+        "event": "5000m",
+        "time": "14:23.10",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "German 10",
+        "event": "10000m",
+        "time": "29:20.79",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Putbos Memorial Léon Buyle, Oordegem",
+        "event": "3000m",
+        "time": "8:25.92",
+        "place": "11",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "IFAM Meeting",
+        "event": "5000m",
+        "time": "13:54.35",
+        "place": "15",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "PSD Bank Leichtathletik Meeting",
+        "event": "1500m sh",
+        "time": "3:47.22",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "German Indoor Championships, Leipzig (i)",
+        "event": "3000m sh",
+        "time": "8:04.44",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Indoor Meeting, Dortmund (i)",
+        "event": "1500m sh",
+        "time": "3:46.87",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "SEP 6",
+        "meet": "KBC Nacht van de Atletiek",
+        "event": "5000m",
+        "time": "13:23.71",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 15",
+        "meet": "Puma Jump´n´Run Meeting",
+        "event": "5000m",
+        "time": "13:24.46",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "German Championships",
+        "event": "5000m",
+        "time": "14:02.75",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "1. Königsteiner Burgmeeting",
+        "event": "1500m",
+        "time": "3:40.54",
+        "place": "3",
+        "round": "F3"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Sonsbecker Trackmeeting",
+        "event": "1500m",
+        "time": "3:38.83",
+        "place": "1",
+        "round": "F5"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "German Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:59.14",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "PSD Bank Indoor Meeting",
+        "event": "1500m sh",
+        "time": "3:40.95",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Offene NRW-Hallenmeisterschaften",
+        "event": "1500m sh",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Offene NRW-Hallenmeisterschaften",
+        "event": "3000m sh",
+        "time": "8:44.37",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "NRW-Hallenmeisterschaften U20/U18",
+        "event": "1500m sh",
+        "time": "3:40.01",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 19",
+        "meet": "LGO-Läufertag",
+        "event": "1500m sh",
+        "time": "3:46.76",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "AUG 3",
+        "meet": "The XXXII Olympic Games",
+        "event": "5000m",
+        "time": "13:50.46",
+        "place": "16",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "European Athletics U23 Championships",
+        "event": "5000m",
+        "time": "13:38.69",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Spitzen Leichtathletik",
+        "event": "5000m",
+        "time": "13:17.04",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Meeting National",
+        "event": "5000m",
+        "time": "13:27.79",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "German Championships",
+        "event": "5000m",
+        "time": "13:30.78",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 3",
+        "meet": "Meeting Iberoamericano",
+        "event": "5000m",
+        "time": "13:21.21",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "Merck-Laufgala",
+        "event": "1500m",
+        "time": "3:38.51",
+        "place": "3",
+        "round": "F3"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "56. Internationales Pfingstsportfest",
+        "event": "1500m",
+        "time": "3:39.99",
+        "place": "10",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "Mid Summer Track Night",
+        "event": "5000m",
+        "time": "13:33.82",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "German Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:10.05",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "NOV 26",
+        "meet": "German Cross Country Championships, Löningen",
+        "event": "Cross Country",
+        "time": "30:46",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "AUG 15",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:45.53",
+        "place": "13",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:52.00",
+        "place": "19",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "German Championships",
+        "event": "1500m",
+        "time": "3:45.20",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "German Championships",
+        "event": "1500m",
+        "time": "3:52.96",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "German Championships",
+        "event": "5000m",
+        "time": "13:43.16",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 3",
+        "meet": "4th Irena Szewinska Memorial",
+        "event": "1500m",
+        "time": "3:35.69",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "IFAM Oordegem",
+        "event": "1500m",
+        "time": "3:36.01",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Christi-Himmelfahrt-Sportfest",
+        "event": "800m",
+        "time": "1:50.15",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Track Meet",
+        "event": "5000m",
+        "time": "13:03.18",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "APR 1",
+        "meet": "Stanford Invitational",
+        "event": "10000m",
+        "time": "28:13.83",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "German Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:52.34",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "German Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:44.83",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "3000m sh",
+        "time": "7:43.61",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "PSD Bank Indoor Meeting",
+        "event": "1500m sh",
+        "time": "3:38.73",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "INIT Indoor Meeting Karlsruhe",
+        "event": "3000m sh",
+        "time": "7:41.35",
+        "place": "4",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 31",
+        "meet": "Cursa dels Nassos, Barcelona",
+        "event": "5K",
+        "time": "13:32",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 31",
+        "meet": "Weltklasse Zürich",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUL 30",
+        "meet": "Meeting International Schifflange",
+        "event": "5000m",
+        "time": "13:15.95",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "Spitzen Leichathletik Luzern",
+        "event": "3000m",
+        "time": "7:38.98",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "German Championships",
+        "event": "5000m",
+        "time": "13:42.68",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "Merck Laufgala",
+        "event": "1500m",
+        "time": "3:37.86",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Meeting de Paris",
+        "event": "2 Miles",
+        "time": "8:27.88",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "Montreuil International Meeting",
+        "event": "1500m",
+        "time": "3:38.07",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "APR 8",
+        "meet": "Paderborner Osterlauf, Paderborn",
+        "event": "10K",
+        "time": "28:26",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "INIT Indoor Meeting Karlsruhe",
+        "event": "3000m sh",
+        "time": "7:41.88",
+        "place": "4",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 14",
+        "meet": "Al Sharqiyah International 5KM, Al Khobar",
+        "event": "5K",
+        "time": "13:22",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "NOV 16",
+        "meet": "Urban Trail de Lille",
+        "event": "10K",
+        "time": "27:40",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "SEP 3",
+        "meet": "60° Palio Città della Quercia",
+        "event": "3000m",
+        "time": "7:40.96",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "AUG 30",
+        "meet": "Stadioneröffnung Dresden",
+        "event": "5000m",
+        "time": "13:22.00",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "Meeting voor Mon",
+        "event": "1500m",
+        "time": "DNS",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "Flanders Cup",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Track Night Vienna",
+        "event": "5000m",
+        "time": "14:07.87",
+        "place": "25",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "European Athletics Championships",
+        "event": "5000m",
+        "time": "13:58.89",
+        "place": "26",
+        "round": "F"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "IFAM Outdoor",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "APR 27",
+        "meet": "Yangtze Delta Athletics Diamond Gala",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Wanda Diamond League Xiamen",
+        "event": "5000m",
+        "time": "13:18.45",
+        "place": "13",
+        "round": "F"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "World Indoor Tour Gold Madrid 2024",
+        "event": "3000m sh",
+        "time": "8:02.10",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "German Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:00.48",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Boston University John Thomas Terrier Classic",
+        "event": "5000m sh",
+        "time": "13:16.43",
+        "place": "11",
+        "round": "F1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 13",
+        "meet": "Al Sharqiyah International Race",
+        "event": "5K",
+        "time": "13:17",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:44.68",
+        "place": "11",
+        "round": "H2"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Weltklasse Zürich",
+        "event": "3000m",
+        "time": "7:37.31",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "German Championships",
+        "event": "1500m",
+        "time": "3:48.10",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "German Championships",
+        "event": "1500m",
+        "time": "3:53.08",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "German Championships",
+        "event": "5000m",
+        "time": "13:50.28",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "ISTAF 2025",
+        "event": "Mile",
+        "time": "3:49.32",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "5000m",
+        "time": "12:53.63",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Meeting International d'Athlétisme de Troyes Aube",
+        "event": "1500m",
+        "time": "3:36.99",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Goldenes Oval 2025",
+        "event": "1500m",
+        "time": "3:35.36",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Doha Meeting",
+        "event": "5000m",
+        "time": "13:20.86",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Yangtze River Delta Athletics Diamond Gala",
+        "event": "5000m",
+        "time": "13:05.21",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "FEB 21",
+        "meet": "Boston University DMR Challenge",
+        "event": "5000m sh",
+        "time": "13:06.38",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "FEB 7",
+        "meet": "INIT Indoor Meeting Karlsruhe",
+        "event": "3000m sh",
+        "time": "7:38.97",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "12. Nationales Hallenmeeting Erfurt Indoor 2025",
+        "event": "1500m sh",
+        "time": "3:40.47",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Nordrhein Hallenmeisterschaften",
+        "event": "1500m sh",
+        "time": "3:43.97",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Nordrhein Hallenmeisterschaften",
+        "event": "3000m sh",
+        "time": "8:03.45",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 19",
+        "meet": "CMCM Luxembourg Indoor Meeting",
+        "event": "1500m sh",
+        "time": "3:40.11",
+        "place": "6",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

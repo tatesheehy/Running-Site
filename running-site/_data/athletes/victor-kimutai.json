@@ -90,5 +90,276 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [],
+    "2021": [],
+    "2022": [
+      {
+        "date": "NOV 13",
+        "meet": "300th Nippon Sport Science University Long Distance Competition",
+        "event": "5000m",
+        "time": "13:31.18",
+        "place": "7",
+        "round": "F27"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Hokuren Distance Challenge",
+        "event": "5000m",
+        "time": "13:37.86",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Hokuren Distance Challenge",
+        "event": "3000m",
+        "time": "7:59.28",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "APR 23",
+        "meet": "294th Nippon Sport Science University Long Distance Competition",
+        "event": "10000m",
+        "time": "29:16.02",
+        "place": "8",
+        "round": "F6"
+      },
+      {
+        "date": "APR 10",
+        "meet": "1st Waseda University Competition",
+        "event": "5000m",
+        "time": "13:38.43",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "NOV 11",
+        "meet": "5th NITTAIDAI Challenge Games",
+        "event": "10000m",
+        "time": "27:41.04",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Hokuren Distance Challenge",
+        "event": "5000m",
+        "time": "13:45.15",
+        "place": "12",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Hokuren Distance Challenge",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Selection Meeting for 55th All Japan Inter-University Ekiden",
+        "event": "10000m",
+        "time": "28:49.14",
+        "place": "12",
+        "round": "F4"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "102nd Kanto Inter-University Track & Field Championships",
+        "event": "5000m",
+        "time": "13:53.92",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "102nd Kanto Inter-University Track & Field Championships",
+        "event": "5000m",
+        "time": "14:06.19",
+        "place": "4",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "102nd Kanto Inter-University Track & Field Championships",
+        "event": "10000m",
+        "time": "28:24.57",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "APR 29",
+        "meet": "57th Oda Mikio Memorial",
+        "event": "5000m",
+        "time": "13:40.69",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "APR 8",
+        "meet": "31st Kanakuri Memorial Middle and Long Distance Invitational Meet",
+        "event": "5000m",
+        "time": "13:26.77",
+        "place": "3",
+        "round": "F4"
+      },
+      {
+        "date": "MAR 26",
+        "meet": "Tokorozawa Games",
+        "event": "1500m",
+        "time": "3:49.31",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 25",
+        "meet": "Tokorozawa Games",
+        "event": "3000m",
+        "time": "7:58.97",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "2nd Athletics Kenya Weekend Meeting",
+        "event": "5000m",
+        "time": "14:12.50",
+        "place": "7",
+        "round": "F4"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "2nd Athletics Kenya Weekend Meeting",
+        "event": "5000m",
+        "time": "13:56.14",
+        "place": "2",
+        "round": "F3"
+      }
+    ],
+    "2024": [
+      {
+        "date": "NOV 10",
+        "meet": "12th NITTAIDAI Challenge Games",
+        "event": "5000m",
+        "time": "13:34.26",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "SEP 29",
+        "meet": "The 5th Waseda University track and field meet",
+        "event": "5K",
+        "time": "13:37",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "The 9th NITTAIDAI Challenge Games",
+        "event": "5000m",
+        "time": "13:39.71",
+        "place": "23",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "The 103th Kanto Inter-University Track＆Field Championships",
+        "event": "5000m",
+        "time": "13:37.62",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "The 103th Kanto Inter-University Track＆Field Championships",
+        "event": "10000m",
+        "time": "28:04.93",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "35th Golden Games in Nobeoka",
+        "event": "5000m",
+        "time": "13:23.60",
+        "place": "4",
+        "round": "F3"
+      },
+      {
+        "date": "APR 13",
+        "meet": "32nd Kanakuri Memorial Middle and Long Distance Invitational Meet",
+        "event": "5000m",
+        "time": "13:26.75",
+        "place": "5",
+        "round": "F3"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "TOKOROZAWA Games",
+        "event": "1500m",
+        "time": "3:45.78",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "TOKOROZAWA Games",
+        "event": "3000m",
+        "time": "7:53.75",
+        "place": "1",
+        "round": "F5"
+      }
+    ],
+    "2025": [
+      {
+        "date": "JUN 11",
+        "meet": "HOKUREN Distance Challenge 2025 in FUKAGAWA",
+        "event": "10000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "The 104th Kanto Inter-University Track＆Field Championships",
+        "event": "5000m",
+        "time": "13:31.83",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "The 104th Kanto Inter-University Track＆Field Championships",
+        "event": "10000m",
+        "time": "28:31.37",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "36th Golden Games in Nobeoka",
+        "event": "5000m",
+        "time": "13:11.77",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "APR 12",
+        "meet": "33rd Kanakuri Memorial Middle and Long Distance Invitational Meet",
+        "event": "5000m",
+        "time": "13:20.07",
+        "place": "1",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

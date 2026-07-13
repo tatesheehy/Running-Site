@@ -114,5 +114,583 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "AUG 21",
+        "meet": "Kenyan Championships",
+        "event": "1500m",
+        "time": "3:44.40",
+        "place": "6",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "KDF Ch.",
+        "event": "1500m",
+        "time": "3:40.45",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "African Games Trials, Nairobi",
+        "event": "1500m",
+        "time": "3:44.69",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "African Games Trials, Nairobi",
+        "event": "1500m",
+        "time": "3:46.42",
+        "place": "5",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "AK Weekend Meet",
+        "event": "1500m",
+        "time": "3:46.7",
+        "place": "11",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "MAR 5",
+        "meet": "AK Meeting",
+        "event": "1500m",
+        "time": "3:51.1",
+        "place": "5",
+        "round": "H6"
+      }
+    ],
+    "2021": [
+      {
+        "date": "MAY 28",
+        "meet": "Athletics Kenya Pre-Trials",
+        "event": "1500m",
+        "time": "3:40.18",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "Athletics Kenya Pre-Trials",
+        "event": "1500m",
+        "time": "3:44.82",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "41st Kenya Defence Forces Ch.",
+        "event": "1500m",
+        "time": "3:47.02",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "41st Kenya Defence Forces Ch.",
+        "event": "1500m",
+        "time": "3:49.1",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "MAR 13",
+        "meet": "2nd AK Weekend Meeting",
+        "event": "1500m",
+        "time": "3:42.3",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAR 12",
+        "meet": "2nd AK Weekend Meeting",
+        "event": "1500m",
+        "time": "3:46.8",
+        "place": "3",
+        "round": "H3"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "3rd AK Relay Series",
+        "event": "800m",
+        "time": "1:47.60",
+        "place": "2",
+        "round": "F2"
+      }
+    ],
+    "2022": [
+      {
+        "date": "JUN 1",
+        "meet": "Under Armour Mile",
+        "event": "Mile",
+        "time": "3:59.02",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 28",
+        "meet": "Kenyan Championships",
+        "event": "1500m",
+        "time": "3:38.58",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "Kenyan Championships",
+        "event": "1500m",
+        "time": "3:42.12",
+        "place": "3",
+        "round": "SF2"
+      },
+      {
+        "date": "APR 26",
+        "meet": "Kenyan Championships",
+        "event": "1500m",
+        "time": "3:44.79",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "APR 22",
+        "meet": "KDF Ch.",
+        "event": "1500m",
+        "time": "3:39.03",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "JUN 22",
+        "meet": "Kenyan Championships",
+        "event": "1500m",
+        "time": "3:42.13",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Kenya Defence Forces Championships",
+        "event": "1500m",
+        "time": "3:40.46",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Kenya Defence Forces Championships",
+        "event": "1500m",
+        "time": "3:43.61",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "APR 29",
+        "meet": "6th AK Track and Field weekend Meet",
+        "event": "1500m",
+        "time": "3:40.66",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "6th AK Track and Field weekend Meet",
+        "event": "1500m",
+        "time": "3:43.78",
+        "place": "5",
+        "round": "H5"
+      },
+      {
+        "date": "APR 24",
+        "meet": "Cape Milers Club/Endurocad Middle distance invitational 3",
+        "event": "Mile",
+        "time": "3:56.71",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "APR 17",
+        "meet": "Cape Milers Club/Endurocad Middle distance invitational 2",
+        "event": "1500m",
+        "time": "3:40.87",
+        "place": "6",
+        "round": "F3"
+      }
+    ],
+    "2024": [
+      {
+        "date": "NOV 24",
+        "meet": "Cross Internacional de Alcobendas",
+        "event": "Cross Country",
+        "time": "23:38",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "NOV 17",
+        "meet": "92nd Cinque Mulini, San Vittore Olona",
+        "event": "Cross Country",
+        "time": "27:45",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "NOV 10",
+        "meet": "XXX Campo a Través Internacional de Soria",
+        "event": "Cross Country",
+        "time": "23:31",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "OCT 27",
+        "meet": "Cross Internacional de Atapuerca",
+        "event": "Cross Country",
+        "time": "25:46",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "OCT 20",
+        "meet": "70º Cross Internacional Zornotza, Amorebieta-Etxano",
+        "event": "Cross Country",
+        "time": "26:07",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "CAS Meeting International",
+        "event": "1500m",
+        "time": "3:38.68",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "Spitzen Leichtathletik Luzern",
+        "event": "1500m",
+        "time": "3:36.15",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "FAST5000",
+        "event": "1000m",
+        "time": "2:18.86",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "National Trials for the XXXIII Olympics Games",
+        "event": "1500m",
+        "time": "3:38.42",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 3",
+        "meet": "Josef Odlozil Memorial",
+        "event": "1500m",
+        "time": "3:38.20",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Andorran Championships",
+        "event": "1500m",
+        "time": "3:36.82",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "MAY 22",
+        "meet": "Desafio Nerja",
+        "event": "1500m",
+        "time": "3:36.00",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Míting Internacional Ciutat de Barcelona",
+        "event": "5000m",
+        "time": "13:39.12",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "Meeting Jaén Paraiso Interior 2024",
+        "event": "1500m",
+        "time": "3:35.87",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "GP Internacional Federación Atletismo Comunidad Valenciana Sagunto",
+        "event": "1500m",
+        "time": "3:38.92",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "Trials for African Games 2024",
+        "event": "1500m",
+        "time": "3:40.75",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Kenyan Cross Country Championships",
+        "event": "Cross Country",
+        "time": "5:49",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "3rd AK Track And Field Weekend Meeting",
+        "event": "1500m",
+        "time": "3:42.31",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "3rd AK Track And Field Weekend Meeting",
+        "event": "1500m",
+        "time": "3:44.09",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JAN 6",
+        "meet": "2nd AK Track & Field Weekend Meeting/AK Relay Series",
+        "event": "5000m",
+        "time": "13:55.73",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 13",
+        "meet": "Al Sharqiyah International Race",
+        "event": "5K",
+        "time": "13:08",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "NOV 23",
+        "meet": "Cross Internacional de Atapuerca",
+        "event": "Cross Country",
+        "time": "20:05",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "NOV 16",
+        "meet": "XXXI Campo a Traves Internacional de Soria, Soria",
+        "event": "Cross Country",
+        "time": "23:10",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "NOV 8",
+        "meet": "Cardiff Cross Challenge",
+        "event": "Cross Country",
+        "time": "28:14",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "OCT 25",
+        "meet": "Kenya Trials for World Cross Country Championships, Eldoret",
+        "event": "Cross Country",
+        "time": "31:17",
+        "place": "21",
+        "round": "F"
+      },
+      {
+        "date": "SEP 21",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:03.67",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:13.33",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 12",
+        "meet": "Gyulai István Memorial",
+        "event": "3000m",
+        "time": "7:33.23",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "IFAM Oordegem",
+        "event": "5000m",
+        "time": "12:58.61",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 22",
+        "meet": "Trials for World Athletics Championships Tokyo 2025",
+        "event": "5000m",
+        "time": "13:38.87",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Prefontaine Classic",
+        "event": "10000m",
+        "time": "29:54.31",
+        "place": "17",
+        "round": "F"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Kenyan Championships",
+        "event": "1500m",
+        "time": "3:51.67",
+        "place": "2",
+        "round": "H3"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "Gold Gala Fernanda Ribeiro",
+        "event": "5000m",
+        "time": "13:22.91",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "XXIV Reunion Internacional Ciudad de Guadalajara",
+        "event": "1500m",
+        "time": "3:39.32",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "Kenya Defecnce Forces Track and Field Championships",
+        "event": "1500m",
+        "time": "3:42.71",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "Kip Keino Classic",
+        "event": "1500m",
+        "time": "3:35.87",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "IFAM Outdoor",
+        "event": "1500m",
+        "time": "3:38.18",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "IFAM Outdoor",
+        "event": "5000m",
+        "time": "13:19.61",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "Spåret 5000m",
+        "event": "5000m",
+        "time": "13:20.51",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "5K Breakfast Run Zurich Maratón Sevilla, Sevilla",
+        "event": "5K",
+        "time": "13:47",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Meeting Indoor de Lyon",
+        "event": "3000m sh",
+        "time": "7:43.95",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 7",
+        "meet": "INIT Indoor Meeting Karlsruhe",
+        "event": "3000m sh",
+        "time": "7:38.00",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Meeting de L'Eure",
+        "event": "3000m sh",
+        "time": "7:50.97",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Belgrade Indoor Meeting",
+        "event": "1500m sh",
+        "time": "3:38.54",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 19",
+        "meet": "CMCM Luxembourg Indoor Meeting",
+        "event": "3000m sh",
+        "time": "7:40.29",
+        "place": "3",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

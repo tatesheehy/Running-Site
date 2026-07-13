@@ -1,0 +1,1237 @@
+{
+  "id": "marco-arop",
+  "name": "Marco Arop",
+  "flag": "CA",
+  "country": "Canada",
+  "waUrl": "https://worldathletics.org/athletes/canada/marco-arop-14755875",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "27",
+  "dob": "1998-09-20",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "400m",
+      "time": "46.10"
+    },
+    {
+      "event": "800m",
+      "time": "1:41.20"
+    },
+    {
+      "event": "1500m",
+      "time": "3:35.38"
+    },
+    {
+      "event": "Mile",
+      "time": "3:57.50"
+    },
+    {
+      "event": "3000m",
+      "time": "8:23.39"
+    },
+    {
+      "event": "300 Metres",
+      "time": "36.12"
+    },
+    {
+      "event": "300 Metres Short Track",
+      "time": "36.12"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:21.53"
+    },
+    {
+      "event": "600 Metres Short Track",
+      "time": "1:21.53"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:45.50"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:13.13"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:14.74"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:42.35"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:57.50"
+    },
+    {
+      "event": "600 Metres Road",
+      "time": "1:15.0h"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:04.93"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:03.29"
+    },
+    {
+      "event": "4x400 Metres Relay Short Track",
+      "time": "3:08.49"
+    },
+    {
+      "event": "4x800 Metres Relay",
+      "time": "7:22.43"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:44.66"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 12",
+      "meet": "Edmonton Athletics Invitational",
+      "event": "800 m",
+      "time": "1:42.13",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "800 m",
+      "time": "1:41.84",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 21",
+      "meet": "Canadian Championships",
+      "event": "1500 m",
+      "time": "3:38.28",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 20",
+      "meet": "Canadian Championships",
+      "event": "1500 m",
+      "time": "3:47.92",
+      "place": "4.",
+      "round": "H2"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "800 m",
+      "time": "1:43.33",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 7",
+      "meet": "BAUHAUS-Galan",
+      "event": "800 m",
+      "time": "1:43.11",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 1",
+      "meet": "Maroon and White Tune-Up",
+      "event": "800 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F3"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "AUG 11",
+        "meet": "Toronto NACAC Championships, Toronto",
+        "event": "800m",
+        "time": "1:46.82",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "Sherwood Park Track Classic, Sherwood Park",
+        "event": "400m",
+        "time": "47.99",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Canadian Championships, Ottawa",
+        "event": "800m",
+        "time": "1:46.15",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "Canadian Championships, Ottawa",
+        "event": "800m",
+        "time": "1:49.27",
+        "place": "1",
+        "round": "SF3"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "Burnaby Harry Jerome Track Classic, Burnaby",
+        "event": "800m",
+        "time": "1:47.09",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Calgary CALTAF Classic, Calgary",
+        "event": "400m",
+        "time": "47.39",
+        "place": "2",
+        "round": "F5"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Eugene NCAA Div. I Championships",
+        "event": "800m",
+        "time": "1:45.25",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Eugene NCAA Div. I Championships",
+        "event": "800m",
+        "time": "1:47.14",
+        "place": "2",
+        "round": "SF3"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Tampa NCAA East Preliminary Round",
+        "event": "800m",
+        "time": "1:46.78",
+        "place": "1",
+        "round": "QF1"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "Tampa NCAA East Preliminary Round",
+        "event": "800m",
+        "time": "1:48.56",
+        "place": "1",
+        "round": "H6"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Knoxville SEC Ch.",
+        "event": "800m",
+        "time": "1:47.45",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Knoxville SEC Ch.",
+        "event": "800m",
+        "time": "1:48.42",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "APR 14",
+        "meet": "Knoxville Tennessee Relays",
+        "event": "4x800 Metres Relay",
+        "time": "7:32.35",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Knoxville Tennessee Relays",
+        "event": "800m",
+        "time": "1:47.89",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 31",
+        "meet": "Gainesville Florida Relays",
+        "event": "4x800 Metres Relay",
+        "time": "7:22.43",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "Gainesville Florida Relays",
+        "event": "800m",
+        "time": "1:51.80",
+        "place": "11",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 24",
+        "meet": "Mississippi State Bulldog Relays",
+        "event": "4x400 Metres Relay",
+        "time": "3:11.95",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.55",
+        "place": "6",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "College Station SEC Indoor Championships",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:44.66",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "College Station SEC Indoor Championships",
+        "event": "800m sh",
+        "time": "1:52.09",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Notre Dame Alex Wilson Invitational",
+        "event": "4x400 Metres Relay",
+        "time": "3:07.33",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Notre Dame Alex Wilson Invitational",
+        "event": "Distance Medley",
+        "time": "9:34.44",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Clemson Tiger Paw Invitational",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:08.49",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Boston Scarlet and White Invitational",
+        "event": "800m sh",
+        "time": "1:47.62",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Boston Scarlet and White Invitational",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:09.71",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 20",
+        "meet": "Nashville Vanderbilt Invitational",
+        "event": "800m",
+        "time": "1:48.21",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2019": [
+      {
+        "date": "OCT 1",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "800m",
+        "time": "1:45.78",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "SEP 29",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "800m",
+        "time": "1:45.07",
+        "place": "2",
+        "round": "SF2"
+      },
+      {
+        "date": "SEP 28",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "800m",
+        "time": "1:46.12",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "Pan American Games",
+        "event": "800m",
+        "time": "1:44.25",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "Pan American Games",
+        "event": "800m",
+        "time": "1:48.71",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "Canadian Championships, Montréal",
+        "event": "800m",
+        "time": "1:46.93",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 26",
+        "meet": "Canadian Championships, Montréal",
+        "event": "800m",
+        "time": "1:48.96",
+        "place": "1",
+        "round": "SF3"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA East Preliminary Round",
+        "event": "800m",
+        "time": "1:50.59",
+        "place": "5",
+        "round": "QF3"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "NCAA East Preliminary Round",
+        "event": "800m",
+        "time": "1:50.49",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "SEC Ch.",
+        "event": "800m",
+        "time": "1:46.93",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "SEC Ch.",
+        "event": "800m",
+        "time": "1:49.60",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "APR 26",
+        "meet": "Arkansas National Relay Championships",
+        "event": "400m",
+        "time": "DNF",
+        "place": "",
+        "round": "F3"
+      },
+      {
+        "date": "APR 12",
+        "meet": "Crimson Tide Invitational",
+        "event": "800m",
+        "time": "1:45.50",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "800m sh",
+        "time": "1:47.00",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.66",
+        "place": "5",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "SEC Indoor Championships",
+        "event": "800m sh",
+        "time": "1:47.86",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "SEC Indoor Championships",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:09.93",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "SEC Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.96",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Tiger Paw Invitational",
+        "event": "800m sh",
+        "time": "1:45.90",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Tiger Paw Invitational",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:10.98",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Razorback Invitational",
+        "event": "800m sh",
+        "time": "1:47.63",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Razorback Invitational",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:11.58",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 19",
+        "meet": "Vanderbilt Invitational",
+        "event": "4x400 Metres Relay",
+        "time": "3:13.95",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JAN 11",
+        "meet": "UAB Blazer Invitational",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:14.37",
+        "place": "2",
+        "round": "F1"
+      }
+    ],
+    "2020": [
+      {
+        "date": "AUG 23",
+        "meet": "BAUHAUS-Galan",
+        "event": "800m",
+        "time": "1:44.67",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "Irena Szewińska Memorial",
+        "event": "800m",
+        "time": "1:45.75",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 14",
+        "meet": "Herculis",
+        "event": "800m",
+        "time": "1:44.14",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "American Track League Meet #4",
+        "event": "800m",
+        "time": "1:47.70",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "SEP 9",
+        "meet": "Weltklasse Zürich",
+        "event": "800m",
+        "time": "1:45.23",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "1:44.74",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "Athletissima Lausanne",
+        "event": "800m",
+        "time": "1:44.50",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "Prefontaine Classic",
+        "event": "800m",
+        "time": "1:44.51",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "The XXXII Olympic Games",
+        "event": "800m",
+        "time": "1:44.90",
+        "place": "7",
+        "round": "SF2"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "The XXXII Olympic Games",
+        "event": "800m",
+        "time": "1:45.26",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Herculis",
+        "event": "800m",
+        "time": "1:43.26",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Bauhaus-Galan",
+        "event": "800m",
+        "time": "1:44.00",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "NACAC New Life Invitational",
+        "event": "800m",
+        "time": "1:44.93",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "adidas Boost Boston Games",
+        "event": "600 Metres Road",
+        "time": "1:15.0",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 30",
+        "meet": "Maroon & White Invitational",
+        "event": "800m",
+        "time": "1:44.76",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "1000m sh",
+        "time": "2:17.10",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "Magic City Elite Meet #2",
+        "event": "Mile sh",
+        "time": "3:57.50",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "SEP 8",
+        "meet": "Weltklasse Zürich",
+        "event": "800m",
+        "time": "1:43.38",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "SEP 2",
+        "meet": "Memorial van Damme",
+        "event": "800m",
+        "time": "1:44.48",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "Herculis Meeting International d’Athlétisme EBS",
+        "event": "1000m",
+        "time": "2:14.35",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 23",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.28",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.12",
+        "place": "2",
+        "round": "SF3"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.56",
+        "place": "1",
+        "round": "H5"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "2022 Pre World Championships Invitational",
+        "event": "800m",
+        "time": "1:43.61",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 25",
+        "meet": "Bell Canadian Outdoor Championships",
+        "event": "800m",
+        "time": "1:44.39",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "Bell Canadian Outdoor Championships",
+        "event": "800m",
+        "time": "1:48.44",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Diamond League Meeting",
+        "event": "800m",
+        "time": "1:45.41",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Ooredoo Doha Meeting",
+        "event": "800m",
+        "time": "1:49.51",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 30",
+        "meet": "Maroon and White Invite",
+        "event": "400m",
+        "time": "46.10",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:47.58",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAR 18",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.13",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "World Tune-Up",
+        "event": "800m sh",
+        "time": "1:46.66",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "Mile sh",
+        "time": "3:59.66",
+        "place": "8",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "SEP 17",
+        "meet": "Prefontaine Classic",
+        "event": "800m",
+        "time": "1:42.85",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "SEP 2",
+        "meet": "Wanda Diamond League Xiamen",
+        "event": "800m",
+        "time": "1:43.24",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.24",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.02",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.05",
+        "place": "1",
+        "round": "H7"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Canadian Championships",
+        "event": "800m",
+        "time": "1:44.64",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 28",
+        "meet": "Canadian Championships",
+        "event": "800m",
+        "time": "1:46.05",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Herculis Meeting International d’Athlétisme EBS",
+        "event": "800m",
+        "time": "1:43.51",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Edmonton Athletics Invitational",
+        "event": "800m",
+        "time": "1:48.95",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "1:43.30",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "800m",
+        "time": "1:46.34",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 31",
+        "meet": "Pepsi Florida Relays",
+        "event": "1500m",
+        "time": "3:38.36",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Bob Pollock Invitational",
+        "event": "Mile sh",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "SEP 14",
+        "meet": "Memorial van Damme",
+        "event": "800m",
+        "time": "1:43.25",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "Boris Hanžeković Memorial",
+        "event": "1000m",
+        "time": "2:13.13",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 25",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "800m",
+        "time": "1:41.86",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Athletissima Lausanne",
+        "event": "800m",
+        "time": "1:41.72",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:41.20",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:45.05",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:45.74",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "800m",
+        "time": "1:42.93",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Canadian Championships",
+        "event": "800m",
+        "time": "1:43.71",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "Canadian Championships",
+        "event": "800m",
+        "time": "1:43.53",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "Edmonton Athletics Invitational",
+        "event": "800m",
+        "time": "1:44.58",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "World Athletics Relays",
+        "event": "4x400 Metres Relay",
+        "time": "3:03.29",
+        "place": "5",
+        "round": "OQ(2)3"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "World Athletics Relays",
+        "event": "4x400 Metres Relay",
+        "time": "3:05.02",
+        "place": "5",
+        "round": "OQ(1)1"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Wanda Diamond League Xiamen",
+        "event": "800m",
+        "time": "1:43.61",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "Pepsi Florida Relays",
+        "event": "4x400 Metres Relay",
+        "time": "3:03.73",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Pepsi Florida Relays",
+        "event": "1500m",
+        "time": "3:40.81",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "1000m sh",
+        "time": "2:14.74",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Razorback Invitational",
+        "event": "800m sh",
+        "time": "1:45.50",
+        "place": "1",
+        "round": "F8"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 20",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:41.95",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "SEP 18",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.09",
+        "place": "1",
+        "round": "SF1"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.39",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Weltklasse Zürich",
+        "event": "800m",
+        "time": "1:42.57",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Athletissima Lausanne",
+        "event": "800m",
+        "time": "1:43.91",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "Canadian Championships",
+        "event": "800m",
+        "time": "1:45.44",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "Canadian Championships",
+        "event": "800m",
+        "time": "1:44.46",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "London Athletics Meet",
+        "event": "800m",
+        "time": "1:42.22",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "800m",
+        "time": "1:42.73",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Grand Slam Track Philadelphia",
+        "event": "1500m",
+        "time": "3:35.38",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 31",
+        "meet": "Grand Slam Track Philadelphia",
+        "event": "800m",
+        "time": "1:43.38",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Grand Slam Track Miami",
+        "event": "800m",
+        "time": "1:43.69",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 2",
+        "meet": "Grand Slam Track Miami",
+        "event": "1500m",
+        "time": "3:35.95",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "APR 26",
+        "meet": "adizero: Road to Records, Herzogenaurach",
+        "event": "Mile",
+        "time": "4:04.93",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "APR 6",
+        "meet": "Grand Slam Track Kingston",
+        "event": "800m",
+        "time": "1:45.13",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Grand Slam Track Kingston",
+        "event": "1500m",
+        "time": "3:39.65",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "Alumni Bulldog Relays",
+        "event": "3000m",
+        "time": "8:23.39",
+        "place": "1",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-10"
+}

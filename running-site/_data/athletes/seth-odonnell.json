@@ -110,5 +110,422 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [
+      {
+        "date": "MAR 12",
+        "meet": "VMC Meet #5",
+        "event": "1500m",
+        "time": "3:54.59",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "Victorian Championships",
+        "event": "5000m",
+        "time": "14:44.46",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "Box Hill Classic",
+        "event": "3000m",
+        "time": "8:31.42",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 23",
+        "meet": "VMC Meet #3",
+        "event": "1500m",
+        "time": "3:57.77",
+        "place": "1",
+        "round": "F4"
+      }
+    ],
+    "2021": [
+      {
+        "date": "DEC 12",
+        "meet": "Nike Melbourne Marathon Festival, Melbourne",
+        "event": "Half Marathon",
+        "time": "1:06:22",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "DEC 7",
+        "meet": "Victorian 5000m Championships",
+        "event": "5000m",
+        "time": "14:19.66",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Box Hill Burn",
+        "event": "5000m",
+        "time": "14:45.62",
+        "place": "17",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Victorian 5000m Championships",
+        "event": "5000m",
+        "time": "14:53.45",
+        "place": "11",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 14",
+        "meet": "VMC Meet #3",
+        "event": "1500m",
+        "time": "3:56.30",
+        "place": "5",
+        "round": "F2"
+      }
+    ],
+    "2022": [
+      {
+        "date": "OCT 23",
+        "meet": "Oceania 10km Road Running Championships, Burnie",
+        "event": "10K",
+        "time": "29:25",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "OCT 2",
+        "meet": "Nike Melbourne Marathon Festival, Melbourne",
+        "event": "Half Marathon",
+        "time": "1:03:50",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 27",
+        "meet": "Australian Cross Country Championships, Oakbank",
+        "event": "Cross Country",
+        "time": "32:19",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "Gold Coast Marathon ASICS Half Marathon, Gold Coast",
+        "event": "Half Marathon",
+        "time": "1:09:34",
+        "place": "28",
+        "round": "F"
+      },
+      {
+        "date": "APR 2",
+        "meet": "Australian Championships",
+        "event": "5000m",
+        "time": "13:54.92",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 24",
+        "meet": "Box Hill Classic",
+        "event": "3000m",
+        "time": "8:04.96",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "Box Hill Burn",
+        "event": "5000m",
+        "time": "14:04.98",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "Think Big Run The Bridge Spectran Group 10km Run, Hobart",
+        "event": "10K",
+        "time": "30:24",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "FEB 12",
+        "meet": "5k Frenzy",
+        "event": "5000m",
+        "time": "14:16.24",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Zatopek Classic",
+        "event": "10000m",
+        "time": "30:21.78",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "JAN 15",
+        "meet": "AVSL Round 7",
+        "event": "5000m",
+        "time": "14:15.9",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 2",
+        "meet": "Australian 10",
+        "event": "10000m",
+        "time": "29:17.99",
+        "place": "10",
+        "round": "F"
+      },
+      {
+        "date": "OCT 15",
+        "meet": "Nike Melbourne Marathon Festival",
+        "event": "Half Marathon",
+        "time": "1:04:02",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "Australian Cross Country Championships",
+        "event": "Cross Country",
+        "time": "30:36",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Gold Coast ASICS Half Marathon & Gold Coast Airport Fun Run",
+        "event": "Half Marathon",
+        "time": "1:03:40",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "APR 2",
+        "meet": "Australian Championships",
+        "event": "5000m",
+        "time": "14:37.41",
+        "place": "16",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "VMC Meet #5",
+        "event": "1500m",
+        "time": "3:49.19",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "Box Hill Classic",
+        "event": "3000m",
+        "time": "8:05.46",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Adelaide Track Classic",
+        "event": "5000m",
+        "time": "14:14.66",
+        "place": "10",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 19",
+        "meet": "VMC Meet #1",
+        "event": "1500m",
+        "time": "3:41.47",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "DEC 14",
+        "meet": "Australian 10",
+        "event": "10000m",
+        "time": "28:42.71",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "OCT 13",
+        "meet": "Nike Melbourne Marathon Festival",
+        "event": "Half Marathon",
+        "time": "1:03:25",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "SEP 22",
+        "meet": "Run Prix",
+        "event": "10K",
+        "time": "28:42",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 31",
+        "meet": "Australian Cross Country Championships, Launceston",
+        "event": "Cross Country",
+        "time": "33:19",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 11",
+        "meet": "Sunshine Coast Marathon Festival",
+        "event": "Half Marathon",
+        "time": "1:03:56",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "Gold Coast Half Marathon, Gold Coast",
+        "event": "Half Marathon",
+        "time": "1:03:38",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "McGrath Launceston Running Festival",
+        "event": "10K",
+        "time": "28:56",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 14",
+        "meet": "Australian Championships",
+        "event": "5000m",
+        "time": "14:00.58",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "APR 4",
+        "meet": "Box Hill Classic",
+        "event": "3000m",
+        "time": "8:06.04",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "Box Hill Burn",
+        "event": "5000m",
+        "time": "14:04.78",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "VMC Meet #5",
+        "event": "1500m",
+        "time": "3:47.18",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 13",
+        "meet": "Zatopek: 10",
+        "event": "10000m",
+        "time": "27:59.65",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:34.52",
+        "place": "18",
+        "round": "H1"
+      },
+      {
+        "date": "AUG 13",
+        "meet": "Motonet GP Oulu",
+        "event": "5000m",
+        "time": "13:18.48",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "Folksam Grand Prix Sollentuna",
+        "event": "3000m",
+        "time": "7:34.03",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Night of Athletics",
+        "event": "5000m",
+        "time": "13:17.57",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Moore-Guldensporenmeeting",
+        "event": "1500m",
+        "time": "3:37.82",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Australian Championships",
+        "event": "5000m",
+        "time": "13:49.30",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Maurie Plant Meet",
+        "event": "5000m",
+        "time": "13:14.57",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 13",
+        "meet": "VMC Meet #5",
+        "event": "1500m",
+        "time": "NT",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "Box Hill Burn",
+        "event": "5000m",
+        "time": "13:22.30",
+        "place": "1",
+        "round": "F1"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

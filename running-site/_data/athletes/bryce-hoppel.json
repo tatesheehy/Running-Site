@@ -1,0 +1,1492 @@
+{
+  "id": "bryce-hoppel",
+  "name": "Bryce Hoppel",
+  "flag": "US",
+  "country": "United States",
+  "waUrl": "https://worldathletics.org/athletes/united-states/bryce-hoppel-14656699",
+  "photo": "",
+  "photoBackground": "#111111",
+  "event": "MIDDLE DISTANCE",
+  "age": "28",
+  "dob": "1997-09-05",
+  "height": "x",
+  "weight": "x",
+  "hometown": "x",
+  "coach": "x",
+  "club": "x",
+  "seasons": "0",
+  "ncaa": false,
+  "collegeLogo": "",
+  "college": "",
+  "headlineKey": "x",
+  "headlineRest": "x",
+  "questionTitle": "Next question",
+  "questionBody": "x",
+  "reviewTitle": "Season review",
+  "reviewBody": "x",
+  "traits": [],
+  "honours": [],
+  "prs": [
+    {
+      "event": "400m",
+      "time": "47.68"
+    },
+    {
+      "event": "800m",
+      "time": "1:41.67"
+    },
+    {
+      "event": "1500m",
+      "time": "3:39.78"
+    },
+    {
+      "event": "Mile",
+      "time": "4:09.95"
+    },
+    {
+      "event": "400 Metres Short Track",
+      "time": "50.67"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:17.24"
+    },
+    {
+      "event": "600 Metres Short Track",
+      "time": "1:17.24"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:44.19"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:15.99"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:16.27"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "4:09.95"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:03.53"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:00.7h"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:05.65"
+    },
+    {
+      "event": "4x400 Metres Relay Short Track",
+      "time": "3:10.23"
+    },
+    {
+      "event": "4x800 Metres Relay",
+      "time": "7:29.96"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:57.78"
+    }
+  ],
+  "results": [
+    {
+      "date": "JUL 10",
+      "meet": "Meeting International d’Athlétisme Herculis EBS",
+      "event": "1000 m",
+      "time": "2:15.80",
+      "place": "8.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "800 m",
+      "time": "1:45.05",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 7",
+      "meet": "BAUHAUS-Galan",
+      "event": "800 m",
+      "time": "1:44.66",
+      "place": "8.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 4",
+      "meet": "Golden Gala Pietro Mennea",
+      "event": "800 m",
+      "time": "1:44.45",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "800 m",
+      "time": "1:45.01",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 2",
+      "meet": "Rock Chalk Classic",
+      "event": "800 m",
+      "time": "1:47.30",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Millrose Games",
+      "event": "800 m sh",
+      "time": "1:47.01",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "New Balance Indoor Grand Prix",
+      "event": "600 m sh",
+      "time": "1:17.24",
+      "place": "3.",
+      "round": "F"
+    }
+  ],
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUN 21",
+        "meet": "Des Moines USA Championships",
+        "event": "800m",
+        "time": "1:48.09",
+        "place": "7",
+        "round": "H4"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Eugene NCAA Div. I Championships",
+        "event": "800m",
+        "time": "1:45.67",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Eugene NCAA Div. I Championships",
+        "event": "800m",
+        "time": "1:46.90",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "Eugene NCAA Div. I Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:06.92",
+        "place": "6",
+        "round": "H3"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Sacramento NCAA West Preliminary Round",
+        "event": "4x400 Metres Relay",
+        "time": "3:06.12",
+        "place": "4",
+        "round": "H3"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Sacramento NCAA West Preliminary Round",
+        "event": "800m",
+        "time": "1:47.93",
+        "place": "1",
+        "round": "QF3"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "Sacramento NCAA West Preliminary Round",
+        "event": "800m",
+        "time": "1:49.97",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Waco Big 12 Conference Championships",
+        "event": "800m",
+        "time": "1:49.69",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Waco Big 12 Conference Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:05.65",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Waco Big 12 Conference Championships",
+        "event": "800m",
+        "time": "1:51.49",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "APR 28",
+        "meet": "Fayetteville Arkansas National Relay Championships",
+        "event": "4x800 Metres Relay",
+        "time": "7:42.90",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "Fayetteville Arkansas National Relay Championships",
+        "event": "800m",
+        "time": "1:48.64",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Lawrence Kansas Relays",
+        "event": "800m",
+        "time": "1:49.82",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Lawrence Kansas Relays",
+        "event": "4x400 Metres Relay",
+        "time": "3:06.97",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Lawrence Kansas Relays",
+        "event": "400m",
+        "time": "49.55",
+        "place": "3",
+        "round": "H4"
+      },
+      {
+        "date": "APR 7",
+        "meet": "Tempe Sun Angel Classic",
+        "event": "Mile",
+        "time": "4:22.80",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Austin Clyde Littlefield Texas Relays",
+        "event": "800m",
+        "time": "1:48.69",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "800m sh",
+        "time": "1:50.06",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "800m sh",
+        "time": "1:47.96",
+        "place": "3",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Ames Big 12 Indoor Championships",
+        "event": "800m",
+        "time": "1:47.20",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Ames Big 12 Indoor Championships",
+        "event": "800m",
+        "time": "1:52.40",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Ames Big 12 Indoor Championships",
+        "event": "Distance Medley",
+        "time": "9:53.39",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Notre Dame Alex Wilson Invitational",
+        "event": "Distance Medley",
+        "time": "9:45.62",
+        "place": "7",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Ames Iowa State Classic",
+        "event": "800m",
+        "time": "1:47.09",
+        "place": "1",
+        "round": "F8"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Lexington Rod McCravy Memorial",
+        "event": "800m",
+        "time": "1:48.36",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 20",
+        "meet": "Lincoln Mark Colligan Memorial",
+        "event": "800m sh",
+        "time": "1:52.13",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 20",
+        "meet": "Lincoln Mark Colligan Memorial",
+        "event": "Mile sh",
+        "time": "4:09.95",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 13",
+        "meet": "Manhattan KSU-KU-WSU Triangular",
+        "event": "800m sh",
+        "time": "1:52.99",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 13",
+        "meet": "Manhattan KSU-KU-WSU Triangular",
+        "event": "Mile sh",
+        "time": "4:10.67",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "OCT 1",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "800m",
+        "time": "1:44.25",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "SEP 29",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "800m",
+        "time": "1:45.95",
+        "place": "2",
+        "round": "SF3"
+      },
+      {
+        "date": "SEP 28",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "800m",
+        "time": "1:46.01",
+        "place": "2",
+        "round": "H4"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "Pan American Games",
+        "event": "800m",
+        "time": "1:47.48",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "Pan American Games",
+        "event": "800m",
+        "time": "1:48.04",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 28",
+        "meet": "USA Championships",
+        "event": "800m",
+        "time": "1:46.31",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 26",
+        "meet": "USA Championships",
+        "event": "800m",
+        "time": "1:47.84",
+        "place": "2",
+        "round": "SF2"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "USA Championships",
+        "event": "800m",
+        "time": "1:47.65",
+        "place": "1",
+        "round": "H4"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Sunset Tour",
+        "event": "800m",
+        "time": "1:44.48",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "NCAA Div. I Outdoor Championships",
+        "event": "800m",
+        "time": "1:44.41",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "NCAA Div. I Outdoor Championships",
+        "event": "800m",
+        "time": "1:45.26",
+        "place": "1",
+        "round": "SF1"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "NCAA West Preliminary Round",
+        "event": "4x400 Metres Relay",
+        "time": "3:10.77",
+        "place": "6",
+        "round": "H3"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "NCAA West Preliminary Round",
+        "event": "800m",
+        "time": "1:46.09",
+        "place": "1",
+        "round": "QF2"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "NCAA West Preliminary Round",
+        "event": "800m",
+        "time": "1:50.34",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Big 12 Conference Championships",
+        "event": "800m",
+        "time": "1:45.95",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Big 12 Conference Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:06.97",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Big 12 Conference Championships",
+        "event": "800m",
+        "time": "1:50.17",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "APR 27",
+        "meet": "Arkansas National Relay Championships",
+        "event": "4x400 Metres Relay",
+        "time": "3:11.54",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "APR 26",
+        "meet": "Arkansas National Relay Championships",
+        "event": "800m",
+        "time": "1:45.87",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Kansas Relays",
+        "event": "800m",
+        "time": "1:49.10",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Kansas Relays",
+        "event": "1500m",
+        "time": "3:48.36",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Kansas Relays",
+        "event": "4x400 Metres Relay",
+        "time": "3:10.58",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 6",
+        "meet": "LSU Battle On The Bayou",
+        "event": "800m",
+        "time": "1:49.69",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "APR 6",
+        "meet": "LSU Battle On The Bayou",
+        "event": "1500m",
+        "time": "3:47.98",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "APR 6",
+        "meet": "LSU Battle On The Bayou",
+        "event": "4x400 Metres Relay",
+        "time": "3:10.64",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAR 28",
+        "meet": "Clyde Littlefield Texas Relays",
+        "event": "800m",
+        "time": "1:48.94",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.46",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "NCAA Div. I Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.30",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Big 12 Ch.",
+        "event": "800m sh",
+        "time": "1:46.84",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Big 12 Ch.",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:10.23",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Big 12 Ch.",
+        "event": "Distance Medley Short Track sh",
+        "time": "9:57.78",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Iowa State Classic",
+        "event": "800m",
+        "time": "1:48.10",
+        "place": "1",
+        "round": "F9"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Texas Tech Open",
+        "event": "800m sh",
+        "time": "1:48.44",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Texas Tech Open",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:13.17",
+        "place": "2",
+        "round": "F9"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Jayhawk Classic",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:16.19",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "KU KSU WSU Triangular",
+        "event": "800m sh",
+        "time": "1:56.10",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "KU KSU WSU Triangular",
+        "event": "Mile sh",
+        "time": "4:16.57",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "SEP 25",
+        "meet": "Diamond League Meeting",
+        "event": "800m",
+        "time": "1:45.86",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "SEP 15",
+        "meet": "70th Hanžeković Memorial",
+        "event": "800m",
+        "time": "1:44.95",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 14",
+        "meet": "Herculis",
+        "event": "800m",
+        "time": "1:43.23",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "USA Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.67",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "USA Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.94",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "NYRR Millrose Games",
+        "event": "800m sh",
+        "time": "1:45.70",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "1000m sh",
+        "time": "2:17.41",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2021": [
+      {
+        "date": "AUG 21",
+        "meet": "Prefontaine Classic",
+        "event": "800m",
+        "time": "1:47.22",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "The XXXII Olympic Games",
+        "event": "800m",
+        "time": "1:44.91",
+        "place": "5",
+        "round": "SF1"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "The XXXII Olympic Games",
+        "event": "800m",
+        "time": "1:45.64",
+        "place": "3",
+        "round": "H6"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Müller British GP",
+        "event": "800m",
+        "time": "1:45.45",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Herculis",
+        "event": "800m",
+        "time": "1:47.74",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "U.S. Olympic Trials",
+        "event": "800m",
+        "time": "1:44.14",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 19",
+        "meet": "U.S. Olympic Trials",
+        "event": "800m",
+        "time": "1:46.00",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "JUN 18",
+        "meet": "U.S. Olympic Trials",
+        "event": "800m",
+        "time": "1:48.38",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "USATF Golden Games",
+        "event": "800m",
+        "time": "1:44.94",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 1",
+        "meet": "Rock Chalk Classic",
+        "event": "400m",
+        "time": "47.68",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "APR 30",
+        "meet": "Rock Chalk Classic",
+        "event": "800m",
+        "time": "1:45.43",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "APR 24",
+        "meet": "USATF Grand Prix",
+        "event": "1500m",
+        "time": "3:42.62",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "1000m sh",
+        "time": "2:16.27",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 31",
+        "meet": "American Track League 2",
+        "event": "800m sh",
+        "time": "1:44.37",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 23",
+        "meet": "Jayhawk Classic",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:17.79",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "SEP 8",
+        "meet": "Weltklasse Zürich",
+        "event": "800m",
+        "time": "1:44.77",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "Herculis Meeting International d’Athlétisme EBS",
+        "event": "1000m",
+        "time": "2:15.99",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "800m",
+        "time": "1:46.35",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:46.98",
+        "place": "4",
+        "round": "H3"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Toyota USATF Outdoor Championships",
+        "event": "800m",
+        "time": "1:44.60",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "Toyota USATF Outdoor Championships",
+        "event": "800m",
+        "time": "1:46.32",
+        "place": "2",
+        "round": "SF2"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Toyota USATF Outdoor Championships",
+        "event": "800m",
+        "time": "1:48.12",
+        "place": "1",
+        "round": "H4"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "New York Grand Prix",
+        "event": "800m",
+        "time": "1:45.07",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 21",
+        "meet": "Diamond League Meeting",
+        "event": "800m",
+        "time": "1:46.33",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 30",
+        "meet": "Rock Chalk Classic",
+        "event": "800m",
+        "time": "1:48.00",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 16",
+        "meet": "USATF Golden Games",
+        "event": "800m",
+        "time": "1:47.27",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.51",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAR 18",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.77",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 27",
+        "meet": "US Indoor Championships",
+        "event": "800m sh",
+        "time": "1:45.30",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 26",
+        "meet": "US Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.87",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 6",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "800m sh",
+        "time": "1:46.08",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "Millrose Games",
+        "event": "800m sh",
+        "time": "1:46.05",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2023": [
+      {
+        "date": "DEC 9",
+        "meet": "Start to the Park 10k and Kalakaua Merrie Mile",
+        "event": "Mile",
+        "time": "4:03.53",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "SEP 17",
+        "meet": "Prefontaine Classic",
+        "event": "800m",
+        "time": "1:44.63",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "Memorial van Damme",
+        "event": "800m",
+        "time": "1:44.37",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:46.02",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:44.04",
+        "place": "3",
+        "round": "SF3"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.56",
+        "place": "2",
+        "round": "H4"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Herculis Meeting International d’Athlétisme EBS",
+        "event": "800m",
+        "time": "1:43.95",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "USA Championships",
+        "event": "800m",
+        "time": "1:46.20",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "USA Championships",
+        "event": "800m",
+        "time": "1:45.26",
+        "place": "1",
+        "round": "SF1"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "USA Championships",
+        "event": "800m",
+        "time": "1:47.87",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "USATF NYC Grand Prix",
+        "event": "800m",
+        "time": "1:44.55",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 27",
+        "meet": "USATF Los Angeles Grand Prix",
+        "event": "800m",
+        "time": "1:48.19",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Track Night NYC",
+        "event": "800m",
+        "time": "1:46.07",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "APR 15",
+        "meet": "Kansas Relays",
+        "event": "800m",
+        "time": "1:50.74",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 15",
+        "meet": "Kansas Relays",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "Clyde Littlefield Texas Relays presented by Truist",
+        "event": "800m",
+        "time": "1:45.59",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "USA Indoor Championships",
+        "event": "800m sh",
+        "time": "1:45.92",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "USA Indoor Championships",
+        "event": "800m sh",
+        "time": "1:47.86",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Millrose Games",
+        "event": "800m sh",
+        "time": "1:54.43",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "800m sh",
+        "time": "1:46.58",
+        "place": "4",
+        "round": "F"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 7",
+        "meet": "Kalākaua Merrie Mile",
+        "event": "Mile",
+        "time": "4:17.59",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "New Balance 5th Avenue Mile",
+        "event": "Mile",
+        "time": "4:00.7",
+        "place": "18",
+        "round": "F"
+      },
+      {
+        "date": "AUG 25",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "800m",
+        "time": "1:43.32",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Athletissima Lausanne",
+        "event": "800m",
+        "time": "1:42.63",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:41.67",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:43.41",
+        "place": "2",
+        "round": "SF3"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "800m",
+        "time": "1:45.24",
+        "place": "2",
+        "round": "H6"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "800m",
+        "time": "1:42.77",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "800m",
+        "time": "1:44.01",
+        "place": "1",
+        "round": "SF3"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "U.S. Olympic Team Trials",
+        "event": "800m",
+        "time": "1:46.83",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "BAUHAUS-Galan",
+        "event": "800m",
+        "time": "1:44.29",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "USATF Los Angeles Grand Prix",
+        "event": "800m",
+        "time": "1:43.68",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 20",
+        "meet": "Kansas Relays",
+        "event": "1500m",
+        "time": "3:44.32",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 3",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:44.92",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:45.08",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "World Athletics Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.15",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "USA Indoor Championships",
+        "event": "800m sh",
+        "time": "1:46.67",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "USA Indoor Championships",
+        "event": "800m sh",
+        "time": "1:48.57",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Millrose Games",
+        "event": "800m sh",
+        "time": "1:45.54",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "1000m sh",
+        "time": "2:16.91",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 18",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:43.92",
+        "place": "5",
+        "round": "SF3"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "World Athletics Championships",
+        "event": "800m",
+        "time": "1:45.09",
+        "place": "2",
+        "round": "H4"
+      },
+      {
+        "date": "AUG 28",
+        "meet": "Weltklasse Zürich",
+        "event": "800m",
+        "time": "1:43.78",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "Athletissima Lausanne",
+        "event": "800m",
+        "time": "1:48.18",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "USA Championships",
+        "event": "800m",
+        "time": "1:42.49",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "USA Championships",
+        "event": "800m",
+        "time": "1:45.31",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "JUL 31",
+        "meet": "USA Championships",
+        "event": "800m",
+        "time": "1:45.69",
+        "place": "1",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "London Athletics Meet",
+        "event": "800m",
+        "time": "1:42.71",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "800m",
+        "time": "1:43.51",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting de Paris",
+        "event": "800m",
+        "time": "1:43.11",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "BAUHAUS-Galan",
+        "event": "800m",
+        "time": "1:47.59",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "MAY 16",
+        "meet": "Doha Meeting",
+        "event": "800m",
+        "time": "1:43.26",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 26",
+        "meet": "adizero: Road to Records, Herzogenaurach",
+        "event": "Mile",
+        "time": "4:12.36",
+        "place": "14",
+        "round": "F"
+      },
+      {
+        "date": "APR 6",
+        "meet": "Grand Slam Track Kingston",
+        "event": "800m",
+        "time": "1:47.02",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Grand Slam Track Kingston",
+        "event": "1500m",
+        "time": "3:39.78",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "800m sh",
+        "time": "1:44.98",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Millrose Games",
+        "event": "800m sh",
+        "time": "1:44.19",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "New Balance Indoor Grand Prix",
+        "event": "800m sh",
+        "time": "1:46.04",
+        "place": "1",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-10",
+  "ncaaTitle": [
+    "800m"
+  ]
+}

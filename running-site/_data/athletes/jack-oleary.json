@@ -170,5 +170,504 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "lastSynced": "2026-07-13",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "DEC 9",
+        "meet": "25th SPAR European Cross Country Championships, Tilburg",
+        "event": "Cross Country U23 Race",
+        "time": "25:31",
+        "place": "56",
+        "round": "F"
+      },
+      {
+        "date": "MAY 12",
+        "meet": "Princeton IC4A/ECAC DI Championships",
+        "event": "5000m",
+        "time": "14:36.59",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Lawrenceville Metro Atlantic Ch.",
+        "event": "5000m",
+        "time": "14:36.74",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 26",
+        "meet": "Philadelphia Penn Relays",
+        "event": "5000m",
+        "time": "14:24.50",
+        "place": "21",
+        "round": "F1"
+      },
+      {
+        "date": "APR 21",
+        "meet": "Princeton Larry Ellis Invitational",
+        "event": "1500m",
+        "time": "3:58.54",
+        "place": "9",
+        "round": "F3"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "Raleigh Relays",
+        "event": "1500m",
+        "time": "4:00.60",
+        "place": "14",
+        "round": "F5"
+      }
+    ],
+    "2019": [
+      {
+        "date": "DEC 8",
+        "meet": "26th SPAR European Cross Country Championships, Lisboa",
+        "event": "Cross Country U23 Race",
+        "time": "25:31",
+        "place": "25",
+        "round": "F"
+      },
+      {
+        "date": "NOV 15",
+        "meet": "NCAA Division I Northeast Region Cross Country Ch. (road)",
+        "event": "10K",
+        "time": "29:07",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "NCAA East Preliminary Round",
+        "event": "10000m",
+        "time": "30:34.91",
+        "place": "31",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "ECAC & IC4A Conference Championships",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "MAAC Ch.",
+        "event": "10000m",
+        "time": "29:21.96",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "APR 18",
+        "meet": "Bryan Clay Invitational",
+        "event": "5000m",
+        "time": "14:11.96",
+        "place": "8",
+        "round": "F3"
+      },
+      {
+        "date": "APR 13",
+        "meet": "Metropolitan Ch.",
+        "event": "1500m",
+        "time": "3:56.80",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 29",
+        "meet": "Raleigh Relays",
+        "event": "5000m",
+        "time": "14:18.65",
+        "place": "7",
+        "round": "F5"
+      },
+      {
+        "date": "MAR 23",
+        "meet": "Snow Flake Spring Opener",
+        "event": "1500m",
+        "time": "4:01.40",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 3",
+        "meet": "IC4A/ECAC Ch.",
+        "event": "3000m sh",
+        "time": "8:13.58",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Metro Atlantic Indoor Championships",
+        "event": "3000m sh",
+        "time": "8:24.43",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "BU David Hemery Valentine Invitational",
+        "event": "3000m sh",
+        "time": "8:17.26",
+        "place": "7",
+        "round": "F3"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Dr. Sander Columbia Challenge",
+        "event": "Mile sh",
+        "time": "DNF",
+        "place": "",
+        "round": "F2"
+      }
+    ],
+    "2020": [
+      {
+        "date": "FEB 28",
+        "meet": "Boston University Last Chance Invitational",
+        "event": "5000m sh",
+        "time": "13:44.12",
+        "place": "12",
+        "round": "F2"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "MAAC Indoor Championships",
+        "event": "Mile sh",
+        "time": "4:09.49",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "MAAC Indoor Championships",
+        "event": "Mile sh",
+        "time": "4:19.45",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "BU David Hemery Valentine Invitational",
+        "event": "3000m sh",
+        "time": "7:53.47",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 25",
+        "meet": "Dr. Norb Sander Columbia Challenge",
+        "event": "Mile sh",
+        "time": "4:08.99",
+        "place": "5",
+        "round": "F3"
+      }
+    ],
+    "2021": [
+      {
+        "date": "JUN 9",
+        "meet": "NCAA Div. I Outdoor Championships",
+        "event": "10000m",
+        "time": "28:29.39",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "NCAA East Preliminary",
+        "event": "10000m",
+        "time": "29:01.42",
+        "place": "11",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "MAAC Outdoor T&F Ch.",
+        "event": "5000m",
+        "time": "14:29.78",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 16",
+        "meet": "Virginia Challenge",
+        "event": "1500m",
+        "time": "3:47.83",
+        "place": "6",
+        "round": "F3"
+      },
+      {
+        "date": "APR 16",
+        "meet": "Virginia Challenge",
+        "event": "10000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "APR 2",
+        "meet": "Stanford Invitational",
+        "event": "10000m",
+        "time": "28:37.03",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Bryggen Sports Invitational",
+        "event": "3000m sh",
+        "time": "7:58.34",
+        "place": "3",
+        "round": "F"
+      }
+    ],
+    "2022": [
+      {
+        "date": "NOV 20",
+        "meet": "Irish Cross Country Championships, Donegal",
+        "event": "Cross Country",
+        "time": "30:42",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "JUL 2",
+        "meet": "Morton Games",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Irish Championships",
+        "event": "5000m",
+        "time": "14:31.28",
+        "place": "10",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Trofeo Donkenyarun",
+        "event": "Mile",
+        "time": "4:07.05",
+        "place": "10",
+        "round": "F12"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "European 10",
+        "event": "10000m",
+        "time": "30:06.80",
+        "place": "31",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 14",
+        "meet": "Belfast Irish Milers Meet",
+        "event": "5000m",
+        "time": "14:10.81",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "NOV 19",
+        "meet": "Irish Senior Cross Country Championships",
+        "event": "Cross Country",
+        "time": "33:29",
+        "place": "27",
+        "round": "F"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Night of Athletics",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F3"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Dutch 10",
+        "event": "10000m",
+        "time": "DNF",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "Lange Laufnacht",
+        "event": "5000m",
+        "time": "13:52.67",
+        "place": "11",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 13",
+        "meet": "Belfast Irish Milers Meet",
+        "event": "1500m",
+        "time": "3:46.26",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "APR 29",
+        "meet": "WMD",
+        "event": "5000m",
+        "time": "13:51.02",
+        "place": "8",
+        "round": "F1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "NOV 27",
+        "meet": "Track & Field Live",
+        "event": "3000m sh",
+        "time": "8:20.56",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "NOV 17",
+        "meet": "Irish Cross Country Championships",
+        "event": "Cross Country",
+        "time": "24:55",
+        "place": "26",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "British Milers Club Grand Prix",
+        "event": "5000m",
+        "time": "14:03.06",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "BMC Record Breaker",
+        "event": "3000m",
+        "time": "8:08.33",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Morton Games",
+        "event": "5000m",
+        "time": "13:57.35",
+        "place": "16",
+        "round": "F"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Irish Championships",
+        "event": "5000m",
+        "time": "14:11.00",
+        "place": "8",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "British Milers Club Record Breaker",
+        "event": "Mile",
+        "time": "4:26.85",
+        "place": "11",
+        "round": "F3"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "British Milers Club Record Breaker",
+        "event": "3000m",
+        "time": "8:12.00",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "IFAM Outdoor",
+        "event": "5000m",
+        "time": "14:12.65",
+        "place": "21",
+        "round": "F3"
+      }
+    ],
+    "2025": [
+      {
+        "date": "DEC 14",
+        "meet": "31st SPAR European Cross Country Championships, Lagoa",
+        "event": "Cross Country Senior Race",
+        "time": "22:25",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "NOV 9",
+        "meet": "Mutuelle Ociane Matmut Semi & 10km de Bordeaux, Bordeaux",
+        "event": "10K",
+        "time": "28:13",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Irish Championships",
+        "event": "5000m",
+        "time": "13:41.47",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 11",
+        "meet": "Morton Games",
+        "event": "5000m",
+        "time": "13:22.67",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Cork City Sports",
+        "event": "Mile",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "University of Birmingham Track & Field Festival",
+        "event": "10000m",
+        "time": "28:23.64",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "IFAM Outdoor",
+        "event": "5000m",
+        "time": "13:39.04",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "MAY 10",
+        "meet": "Belfast Irish milers meet",
+        "event": "1500m",
+        "time": "3:45.12",
+        "place": "8",
+        "round": "F"
+      }
+    ]
+  },
+  "lastHistorySynced": "2026-07-12"
 }

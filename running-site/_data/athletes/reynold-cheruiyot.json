@@ -70,6 +70,14 @@
     {
       "date": "JUL 4",
       "meet": "Prefontaine Classic",
+      "event": "1500 m",
+      "time": "3:34.74",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "JUL 4",
+      "meet": "Prefontaine Classic",
       "event": "Mile",
       "time": "3:51.31",
       "place": "11.",
@@ -198,7 +206,7 @@
   ],
   "dob": "2004-07-30",
   "weight": "140",
-  "lastHistorySynced": "2026-07-11",
+  "lastHistorySynced": "2026-07-12",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
