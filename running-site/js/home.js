@@ -241,41 +241,6 @@ function buildHome() {
         : '<p class="dash-empty">No meets on the calendar yet.</p>'}
     </div>`;
 
-  // ── H2H leader card (real season records, needs h2h.js) ───
-  let h2hKingCard = '';
-  if (typeof _computeAllH2HRecords === 'function') {
-    const minRaces = typeof _H2H_MIN_RACES !== 'undefined' ? _H2H_MIN_RACES : 3;
-    const { records } = _computeAllH2HRecords('2026', 'all', 'all', 'all');
-    const top3 = Object.entries(records)
-      .filter(([, r]) => r.wins + r.losses >= minRaces)
-      .sort((a, b) =>
-        _wilsonScore(b[1].wins, b[1].wins + b[1].losses) - _wilsonScore(a[1].wins, a[1].wins + a[1].losses)
-        || b[1].wins - a[1].wins)
-      .slice(0, 3);
-    if (top3.length) {
-      const [kingId, kingRec] = top3[0];
-      const king = ATHLETES[kingId];
-      const kingPct = Math.round(kingRec.wins / (kingRec.wins + kingRec.losses) * 100);
-      const photo = king && king.photo;
-      const bg = (king && king.photoBackground) || '#111';
-      const runners = top3.slice(1).map(([id, r]) => `
-        <div class="dash-king-runner" onclick="event.stopPropagation();openAthleteCard('${id}', null)" role="button" tabindex="0">
-          <span class="dash-ldr-rtime">${r.wins}–${r.losses}</span>
-          <span class="dash-ldr-rname">${ATHLETES[id] ? ATHLETES[id].name : id}</span>
-        </div>`).join('');
-      h2hKingCard = `
-        <div class="dash-card dash-card--clickable dash-h2hking" style="background:${bg}" onclick="openAthleteCard('${kingId}', null)" role="button" tabindex="0">
-          <div class="dash-card-title">H2H leader · 2026</div>
-          <div class="dash-king-record">${kingRec.wins}<span class="dash-king-dash">–</span>${kingRec.losses}</div>
-          <div class="dash-king-name">${king ? king.name : kingId}</div>
-          <div class="dash-king-pct">${kingPct}% win rate in direct meetings</div>
-          <div class="dash-king-runners">${runners}</div>
-          <a href="h2h.html" class="dash-link dash-card-foot" onclick="event.stopPropagation()">Full H2H leaderboard →</a>
-          ${photo ? `<img class="dash-king-photo" src="${photo}" alt="${king ? king.name : ''}">` : ''}
-        </div>`;
-    }
-  }
-
   // ── Barrier clubs card (career PRs under classic marks) ───
   const clubCounts = [
     { label: '800m', barrier: 'Sub-1:44', time: '1:44.00' },
@@ -349,6 +314,7 @@ function buildHome() {
     <div class="dash-card dash-leaders">
       <div class="dash-card-title">H2H Leaders by Event</div>
       <div class="dash-ldr-grid">${leaderSections}</div>
+      <a href="h2h.html" class="dash-link dash-card-foot">Full H2H leaderboard →</a>
     </div>` : '';
 
   // ── Row 3: analytics — results logged per month (last 6) ──
@@ -437,9 +403,8 @@ function buildHome() {
             ${analyticsCard}
           </div>
           <aside class="home-rail">
-            ${meetsCard}
-            ${h2hKingCard}
             ${clubsCard}
+            ${meetsCard}
             ${updatesCard}
           </aside>
         </div>

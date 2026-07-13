@@ -1335,8 +1335,8 @@
   margin-bottom: 2px;
 }
 
-.h2h-enc-row--left  { background: linear-gradient(to right,  rgba(232,80,10,0.10) 0%, rgba(232,80,10,0.03) 55%, transparent 100%); }
-.h2h-enc-row--right { background: linear-gradient(to left,   rgba(232,80,10,0.10) 0%, rgba(232,80,10,0.03) 55%, transparent 100%); }
+.h2h-enc-row--left  { background: linear-gradient(to right,  color-mix(in srgb, var(--accent) 10%, transparent) 0%, color-mix(in srgb, var(--accent) 3%, transparent) 55%, transparent 100%); }
+.h2h-enc-row--right { background: linear-gradient(to left,   color-mix(in srgb, var(--accent) 10%, transparent) 0%, color-mix(in srgb, var(--accent) 3%, transparent) 55%, transparent 100%); }
 
 .h2h-enc-row--left::before,
 .h2h-enc-row--right::after {
@@ -1807,8 +1807,8 @@
 .h2h-enc-ath { color: #888; }
 .h2h-enc-title { color: #ccc; }
 .h2h-enc-row { border-bottom-color: #f0f0f0; }
-.h2h-enc-row--left  { background: linear-gradient(to right,  rgba(232,80,10,0.04), transparent); }
-.h2h-enc-row--right { background: linear-gradient(to left, rgba(232,80,10,0.04), transparent); }
+.h2h-enc-row--left  { background: linear-gradient(to right,  color-mix(in srgb, var(--accent) 4%, transparent), transparent); }
+.h2h-enc-row--right { background: linear-gradient(to left, color-mix(in srgb, var(--accent) 4%, transparent), transparent); }
 .h2h-enc-t { color: #ccc; }
 .h2h-enc-winner .h2h-enc-t { color: #1a1a1a; }
 .h2h-enc-loser  .h2h-enc-t { color: #d8d8d8; }

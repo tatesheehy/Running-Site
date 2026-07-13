@@ -432,8 +432,8 @@
   cursor: help;
 }
 .h2h-persona-tag--loves {
-  background: rgba(232, 80, 10, 0.1);
-  border-color: rgba(232, 80, 10, 0.4);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  border-color: color-mix(in srgb, var(--accent) 40%, transparent);
   color: var(--accent);
 }
 .h2h-persona-tag--homebody {
@@ -601,7 +601,7 @@
 
 [data-theme="light"] .h2h-lb-wrap       { background: #fff; }
 [data-theme="light"] .h2h-col-labels     { background: var(--bg-light); }
-[data-theme="light"] .h2h-lb-row:hover  { background: rgba(232,80,10,0.06); }
+[data-theme="light"] .h2h-lb-row:hover  { background: color-mix(in srgb, var(--accent) 6%, transparent); }
 [data-theme="light"] .h2h-lb-win-tag    { background: #f4f4f4; color: #444; }
 
 /* ── Dominance Map ────────────────────────────────────────── */
@@ -1508,7 +1508,7 @@
 
 /* Warm accent hover, matching .rdt-row:hover */
 .h2h-lb-row:hover,
-.h2h-rivalry-row:hover { background: rgba(232, 80, 10, 0.06); }
+.h2h-rivalry-row:hover { background: color-mix(in srgb, var(--accent) 6%, transparent); }
 
 /* ── Responsive ───────────────────────────────────────────── */
 

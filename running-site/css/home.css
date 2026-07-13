@@ -945,7 +945,7 @@
 .home-split {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 320px;
-  gap: 20px;
+  gap: 12px;
   align-items: start;
   padding: 0 0 64px;
 }
@@ -1006,7 +1006,37 @@
   text-decoration: none;
 }
 .dash-link:hover { text-decoration: underline; }
-.dash-card-foot { margin-top: auto; padding-top: 16px; }
+
+/* Card footer links styled as clear, tappable pill buttons */
+.dash-card-foot {
+  margin-top: 16px;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 9%, transparent);
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+.dash-card-foot:hover {
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+/* Footer button on the dark H2H feature card */
+.dash-h2hking .dash-card-foot {
+  background: rgba(255,255,255,0.16);
+  color: #fff;
+  backdrop-filter: blur(2px);
+}
+.dash-h2hking .dash-card-foot:hover { background: #fff; color: var(--dark); }
+/* Tall leaderboard panel: pin the button to the bottom to fill height */
+.home-hero-board .dash-card-foot { margin-top: auto; }
 
 .dash-eyebrow {
   font-family: var(--font-body);
@@ -1390,7 +1420,7 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
 /* Collapse to a single column (rail drops below main) when the sidebar
    nav switches to the mobile drawer at 960px. */
 @media (max-width: 960px) {
-  .home-split { grid-template-columns: 1fr; gap: 16px; }
+  .home-split { grid-template-columns: 1fr; gap: 12px; }
 }
 @media (max-width: 960px) {
   .home-hero { flex-direction: column; min-height: 0; }
@@ -1399,9 +1429,9 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
   .home-hero-title { font-size: 30px; }
 }
 @media (max-width: 640px) {
-  .home-split { gap: 14px; padding: 18px 0 56px; }
-  .home-main, .home-rail { gap: 14px; }
-  .home-hero { margin-bottom: 16px; }
+  .home-split { gap: 12px; padding: 18px 0 56px; }
+  .home-main, .home-rail { gap: 12px; }
+  .home-hero { margin-bottom: 12px; }
   .home-hero-media { min-height: 300px; }
   .home-hero-title { font-size: 26px; }
   .home-hero-dek { display: none; }
@@ -1437,10 +1467,13 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
   cursor: pointer;
 }
 
-/* H2H Leaders by Event: no avatars — flush everything left */
+/* H2H Leaders by Event: no avatars — flush everything left, tight spacing */
 .dash-leaders .dash-ldr-body { justify-content: flex-start; }
 .dash-leaders .dash-ldr-rtime { min-width: 0; text-align: left; }
 .dash-leaders .dash-ldr-runner { gap: 8px; }
+.dash-leaders .dash-ldr-label { margin-bottom: 4px; }
+.dash-leaders .dash-ldr-hero-row { margin-bottom: 4px; }
+.dash-leaders .dash-ldr-section { padding: 12px 0; }
 
 .dash-ldr-main { flex: 1; min-width: 0; }
 

@@ -186,7 +186,7 @@
 .sidebar-group li a:hover { color: var(--text); background: #F4F4F5; }
 .sidebar-group li a.active {
   color: var(--accent);
-  background: rgba(232,80,10,0.08);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
 }
 
 .sidebar-ico {

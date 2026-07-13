@@ -844,5 +844,5 @@ th.ath-list-pr {
 .ath-list-th:hover { color: rgba(255, 255, 255, 0.85); }
 
 .ath-list-row:nth-child(even) { background: var(--bg-light); }
-.ath-list-row:hover { background: rgba(232, 80, 10, 0.07); }
+.ath-list-row:hover { background: color-mix(in srgb, var(--accent) 7%, transparent); }
 
