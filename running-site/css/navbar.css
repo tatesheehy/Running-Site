@@ -65,7 +65,7 @@
   max-width: 420px;
   background: rgba(255,255,255,0.08);
   border: 1px solid rgba(255,255,255,0.14);
-  border-radius: 8px;
+  border-radius: 14px;
   padding: 9px 14px;
   color: rgba(255,255,255,0.55);
   cursor: pointer;
@@ -86,12 +86,16 @@
 }
 
 /* ── SIDEBAR ──────────────────────────────────────────────── */
+/* top:0 + padding-top (not top:62px) so it's anchored to the same
+   viewport-fixed frame as .navbar — nothing to ever drift apart on scroll.
+   The navbar (z-index 100) draws over the sidebar's top 62px. */
 .app-sidebar {
   position: fixed;
-  top: 62px;
+  top: 0;
   left: 0;
   bottom: 0;
   width: 220px;
+  padding-top: 62px;
   background: var(--dark);
   border-right: 1px solid rgba(255,255,255,0.08);
   overflow-y: auto;
@@ -173,7 +177,7 @@
   right: 0;
   background: #111;
   border: 1px solid #2a2a2a;
-  border-radius: 8px;
+  border-radius: 14px;
   min-width: 180px;
   z-index: 9000;
   overflow: hidden;

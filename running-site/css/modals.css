@@ -764,7 +764,7 @@
   gap: 7px;
   background: rgba(255,255,255,0.06);
   border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 8px;
+  border-radius: 14px;
   padding: 6px 10px;
 }
 .ch-badge.ch-gold   { border-color: rgba(255,200,0,0.3);  background: rgba(255,200,0,0.07);  }
@@ -1164,7 +1164,7 @@
 
 .h2h-photo-wrap {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 14px;
   overflow: hidden;
   margin-bottom: 4px;
 }
@@ -1651,7 +1651,7 @@
   display: none;
   background: #1a1a1a;
   border: 1px solid #2a2a2a;
-  border-radius: 8px;
+  border-radius: 14px;
   padding: 10px 12px;
   min-width: 160px;
   max-width: 240px;

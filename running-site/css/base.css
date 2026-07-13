@@ -19,9 +19,9 @@
   --font-body: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
   --font-mono: 'Oswald', sans-serif;
   --max-width: 1440px;
-  --radius-sm: 0px;
-  --radius: 0px;
-  --radius-lg: 0px;
+  --radius-sm: 8px;
+  --radius: 12px;
+  --radius-lg: 20px;
 }
 
 html { scroll-behavior: smooth; }
