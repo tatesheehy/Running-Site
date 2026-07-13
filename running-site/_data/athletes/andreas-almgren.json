@@ -120,67 +120,59 @@
     {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
-      "event": "2 Mi",
+      "event": "2 Miles",
       "time": "8:11.12",
-      "place": "4.",
-      "round": "F"
+      "place": "4"
     },
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
-      "event": "5000 m",
+      "event": "5000m",
       "time": "12:55.38",
-      "place": "3.",
-      "round": "F"
+      "place": "3"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
-      "event": "5000 m",
+      "event": "5000m",
       "time": "12:48.61",
-      "place": "3.",
-      "round": "F"
+      "place": "3"
     },
     {
       "date": "JUN 7",
       "meet": "BAUHAUS-Galan",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:36.81",
-      "place": "14.",
-      "round": "F"
+      "place": "14"
     },
     {
       "date": "MAY 23",
       "meet": "Wanda Diamond League Xiamen",
-      "event": "5000 m",
+      "event": "5000m",
       "time": "DNF",
-      "place": "",
-      "round": "F"
+      "place": ""
     },
     {
       "date": "MAY 16",
       "meet": "Wanda Diamond League",
-      "event": "3000 m",
+      "event": "3000m",
       "time": "7:26.48",
-      "place": "3.",
-      "round": "F"
+      "place": "3"
     },
     {
       "date": "FEB 22",
-      "meet": "10K Facsa Castellón",
-      "event": "10 Kilom Road",
+      "meet": "10K Facsa Castellón, Castellón",
+      "event": "10 Kilometres Road",
       "time": "26:45",
-      "place": "3.",
-      "round": "F"
+      "place": "3"
     },
     {
       "date": "JAN 11",
-      "meet": "10K Valencia Ibercaja by Kiprun",
-      "event": "10 Kilom Road",
+      "meet": "10K Valencia Ibercaja by Kiprun, Valencia",
+      "event": "10 Kilometres Road",
       "time": "26:45",
-      "place": "1.",
-      "round": "F"
+      "place": "1"
     }
   ],
-  "lastSynced": "2026-07-12"
+  "lastSynced": "2026-07-13"
 }

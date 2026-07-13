@@ -56,59 +56,52 @@
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
-      "event": "5000 m",
+      "event": "5000m",
       "time": "13:03.22",
-      "place": "12.",
-      "round": "F"
+      "place": "12"
     },
     {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
-      "event": "5000 m",
+      "event": "5000m",
       "time": "12:47.62",
-      "place": "1.",
-      "round": "F"
+      "place": "1"
     },
     {
       "date": "MAY 23",
       "meet": "Wanda Diamond League Xiamen",
-      "event": "5000 m",
+      "event": "5000m",
       "time": "12:57.32",
-      "place": "1.",
-      "round": "F"
+      "place": "1"
     },
     {
       "date": "APR 18",
       "meet": "Boston 5K",
-      "event": "5 Kilom Road",
+      "event": "5 Kilometres Road",
       "time": "13:14",
-      "place": "1.",
-      "round": "F"
+      "place": "1"
     },
     {
       "date": "APR 4",
-      "meet": "Urban Trail de Lille - 5 et 10km",
-      "event": "5 Kilom Road",
+      "meet": "Urban Trail de Lille",
+      "event": "5 Kilometres Road",
       "time": "12:54",
-      "place": "2.",
-      "round": "F"
+      "place": "2"
     },
     {
       "date": "MAR 21",
       "meet": "World Athletics Indoor Championships",
-      "event": "3000 m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:38.60",
-      "place": "8.",
-      "round": "F"
+      "place": "8"
     },
     {
       "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
-      "event": "3000 m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:33.58",
-      "place": "1.",
-      "round": "F"
+      "place": "1"
     }
   ],
-  "lastSynced": "2026-07-12"
+  "lastSynced": "2026-07-13"
 }

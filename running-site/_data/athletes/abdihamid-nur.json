@@ -40,14 +40,6 @@
       "time": "3:34.31"
     },
     {
-      "event": "Mile",
-      "time": "3:55.94"
-    },
-    {
-      "event": "3000m",
-      "time": "7:40.66"
-    },
-    {
       "event": "2 Miles",
       "time": "8:13.44"
     },
@@ -88,75 +80,66 @@
     {
       "date": "JUL 10",
       "meet": "Meeting International d’Athlétisme Herculis EBS",
-      "event": "5000 m",
+      "event": "5000m",
       "time": "13:09.49",
-      "place": "9.",
-      "round": "F"
+      "place": "9"
     },
     {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
-      "event": "2 Mi",
+      "event": "2 Miles",
       "time": "8:13.44",
-      "place": "11.",
-      "round": "F"
+      "place": "11"
     },
     {
       "date": "JUN 13",
       "meet": "USATF LA Grand Prix",
-      "event": "5000 m",
+      "event": "5000m",
       "time": "13:07.46",
-      "place": "1.",
-      "round": "F"
+      "place": "1"
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:34.31",
-      "place": "1.",
-      "round": "F2"
+      "place": "1"
     },
     {
       "date": "MAY 2",
       "meet": "USA 5 km Road Running Championships",
-      "event": "5 Kilom Road",
+      "event": "5 Kilometres Road",
       "time": "13:35",
-      "place": "7.",
-      "round": "F"
+      "place": "7"
     },
     {
       "date": "FEB 22",
       "meet": "Saucony Battle for Boston",
-      "event": "5000 m sh",
+      "event": "5000 Metres Short Track",
       "time": "DNF",
-      "place": "",
-      "round": "F"
+      "place": ""
     },
     {
       "date": "FEB 14",
       "meet": "Sound Invite",
-      "event": "5000 m sh",
+      "event": "5000 Metres Short Track",
       "time": "13:11.59",
-      "place": "2.",
-      "round": "F1"
+      "place": "2"
     },
     {
       "date": "JAN 31",
       "meet": "Boston University John Thomas Terrier Classic",
-      "event": "Mile sh",
+      "event": "Mile Short Track",
       "time": "NM",
-      "place": "",
-      "round": "F1"
+      "place": ""
     },
     {
       "date": "JAN 31",
       "meet": "Boston University John Thomas Terrier Classic",
-      "event": "3000 m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:45.90",
-      "place": "4.",
-      "round": "F1"
+      "place": "4"
     }
   ],
-  "lastSynced": "2026-07-12"
+  "lastSynced": "2026-07-13"
 }

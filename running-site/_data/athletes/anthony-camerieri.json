@@ -36,10 +36,6 @@
       "time": "3:35.44"
     },
     {
-      "event": "Mile",
-      "time": "4:01.29"
-    },
-    {
       "event": "3000m",
       "time": "7:37.08"
     },
@@ -50,10 +46,6 @@
     {
       "event": "10000m",
       "time": "27:45.82"
-    },
-    {
-      "event": "Mile Short Track",
-      "time": "4:01.29"
     },
     {
       "event": "3000 Metres Short Track",
@@ -96,67 +88,59 @@
     {
       "date": "JUL 8",
       "meet": "Meeting Lignano",
-      "event": "1500 m",
+      "event": "1500m",
       "time": "3:35.44",
-      "place": "6.",
-      "round": "F"
+      "place": "6"
     },
     {
       "date": "JUN 13",
       "meet": "USATF LA Grand Prix",
-      "event": "5000 m",
+      "event": "5000m",
       "time": "13:09.75",
-      "place": "3.",
-      "round": "F"
+      "place": "3"
     },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",
-      "event": "5000 m",
+      "event": "5000m",
       "time": "DNF",
-      "place": "",
-      "round": "F"
+      "place": ""
     },
     {
       "date": "MAY 2",
       "meet": "USA 5 km Road Running Championships",
-      "event": "5 Kilom Road",
+      "event": "5 Kilometres Road",
       "time": "13:34",
-      "place": "5.",
-      "round": "F"
+      "place": "5"
     },
     {
       "date": "APR 18",
       "meet": "Boston 5K",
-      "event": "5 Kilom Road",
+      "event": "5 Kilometres Road",
       "time": "13:30",
-      "place": "6.",
-      "round": "F"
+      "place": "6"
     },
     {
       "date": "MAR 28",
       "meet": "The TEN",
-      "event": "10,000 m",
+      "event": "10000m",
       "time": "27:54.60",
-      "place": "12.",
-      "round": "F2"
+      "place": "12"
     },
     {
       "date": "FEB 14",
       "meet": "Sound Invite",
-      "event": "3000 m sh",
+      "event": "3000 Metres Short Track",
       "time": "7:37.08",
-      "place": "6.",
-      "round": "F2"
+      "place": "6"
     },
     {
       "date": "JAN 31",
       "meet": "Boston University John Thomas Terrier Classic",
-      "event": "5000 m sh",
+      "event": "5000 Metres Short Track",
       "time": "13:12.02",
-      "place": "1.",
-      "round": "F1"
+      "place": "1"
     }
   ],
-  "lastSynced": "2026-07-12"
+  "lastSynced": "2026-07-13"
 }
