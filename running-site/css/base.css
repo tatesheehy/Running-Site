@@ -6,6 +6,16 @@
 /* ── RESET & BASE ─────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+@font-face {
+  font-family: 'Tungsten';
+  src: url('../fonts/Tungsten-Bold.woff2') format('woff2'),
+       url('../fonts/Tungsten-Bold.woff') format('woff'),
+       url('../fonts/Tungsten-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --accent: #E8500A;
   --dark: #111111;
@@ -15,7 +25,7 @@
   --border: #E5E5E5;
   --bg: #FFFFFF;
   --bg-light: #F7F7F7;
-  --font-display: 'Oswald', sans-serif;
+  --font-display: 'Tungsten', 'Oswald', sans-serif;
   --font-body: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
   --max-width: 1440px;
