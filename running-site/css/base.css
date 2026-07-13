@@ -35,6 +35,20 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Lota Grotesque';
+  src: url('../fonts/Lota-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lota Grotesque';
+  src: url('../fonts/Lota-Black.woff2') format('woff2');
+  font-weight: 800 900;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --accent: #E8500A;
@@ -45,9 +59,9 @@
   --border: #EAEAEA;
   --bg: #FFFFFF;
   --bg-light: #F7F7F7;
-  --font-display: 'Oswald', sans-serif;
+  --font-display: 'Lota Grotesque', sans-serif;
   --font-body: 'Lota Grotesque', system-ui, -apple-system, sans-serif;
-  --font-mono: 'Oswald', sans-serif;
+  --font-mono: 'Lota Grotesque', sans-serif;
   --max-width: 1440px;
   --radius-sm: 8px;
   --radius: 12px;
@@ -170,7 +184,7 @@ button { font-family: inherit; }
 
 /* ── PAGE INTRO TEXT ──────────────────────────────────────── */
 .page-intro {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Lota Grotesque', sans-serif;
   font-weight: 400;
   font-size: 15px;
   color: #555;
