@@ -68,6 +68,8 @@
 .article-card:hover .article-card-title { color: var(--accent); }
 
 .article-card-excerpt {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
   font-size: 13px;
   color: #555;
   line-height: 1.5;

@@ -131,6 +131,8 @@ button { font-family: inherit; }
 
 /* ── PAGE INTRO TEXT ──────────────────────────────────────── */
 .page-intro {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
   font-size: 15px;
   color: #555;
   line-height: 1.65;
