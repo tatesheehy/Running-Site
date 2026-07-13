@@ -20,7 +20,7 @@
             "Locked In",
             "The Threat"
           ],
-          "bite": "The defending world champion who turns middle distance into a strength competition \u2014 and usually wins."
+          "bite": "The defending world champion who turns middle distance into a strength competition — and usually wins."
         },
         {
           "rank": 10,
@@ -35,7 +35,7 @@
             "Rising",
             "Under the Radar"
           ],
-          "bite": "America's best miler \u2014 silky smooth and dangerous in the final 200."
+          "bite": "America's best miler — silky smooth and dangerous in the final 200."
         },
         {
           "rank": 7,
@@ -79,7 +79,7 @@
             "Under the Radar",
             "Vulnerable"
           ],
-          "bite": "The most underrated man in the event \u2014 consistent, unflappable, and always in contention."
+          "bite": "The most underrated man in the event — consistent, unflappable, and always in contention."
         },
         {
           "rank": 6,
@@ -185,8 +185,144 @@
       "name": "800m",
       "description": "Pure guts.",
       "photo": "",
-      "underConstruction": true,
-      "rows": []
+      "underConstruction": false,
+      "rows": [
+        {
+          "rank": 1,
+          "athleteId": "marco-arop",
+          "name": "Marco Arop",
+          "country": "Canada",
+          "flag": "CA",
+          "seasonBest": "1:41.84",
+          "meet": "Meeting de Paris"
+        },
+        {
+          "rank": 2,
+          "athleteId": "cooper-lutkenhaus",
+          "name": "Cooper Lutkenhaus",
+          "country": "United States",
+          "flag": "US",
+          "seasonBest": "1:42.08",
+          "meet": "Oslo Bislett Games"
+        },
+        {
+          "rank": 3,
+          "athleteId": "emmanuel-wanyonyi",
+          "name": "Emmanuel Wanyonyi",
+          "country": "Kenya",
+          "flag": "KE",
+          "seasonBest": "1:42.09",
+          "meet": "Oslo Bislett Games"
+        },
+        {
+          "rank": 4,
+          "athleteId": "max-burgin",
+          "name": "Max Burgin",
+          "country": "Great Britain",
+          "flag": "GB",
+          "seasonBest": "1:42.98",
+          "meet": "Meeting International Mohammed VI d'Athletisme de Rabat"
+        },
+        {
+          "rank": 5,
+          "athleteId": "slimane-moula",
+          "name": "Slimane Moula",
+          "country": "Algeria",
+          "flag": "DZ",
+          "seasonBest": "1:43.41",
+          "meet": "BAUHAUS-Galan"
+        },
+        {
+          "rank": 6,
+          "athleteId": "niels-laros",
+          "name": "Niels Laros",
+          "country": "Netherlands",
+          "flag": "NL",
+          "seasonBest": "1:43.60",
+          "meet": "Meeting de Paris"
+        },
+        {
+          "rank": 7,
+          "athleteId": "francesco-pernici",
+          "name": "Francesco Pernici",
+          "country": "Italy",
+          "flag": "IT",
+          "seasonBest": "1:43.60",
+          "meet": "Meeting Stanislas Nancy"
+        },
+        {
+          "rank": 8,
+          "athleteId": "tobias-grnstad",
+          "name": "Tobias Grønstad",
+          "country": "Norway",
+          "flag": "NO",
+          "seasonBest": "1:43.61",
+          "meet": "Oslo Bislett Games"
+        },
+        {
+          "rank": 9,
+          "athleteId": "kelvin-kimtai-loti",
+          "name": "Kelvin Kimtai Loti",
+          "country": "Kenya",
+          "flag": "KE",
+          "seasonBest": "1:43.63",
+          "meet": "Kip Keino Classic"
+        },
+        {
+          "rank": 10,
+          "athleteId": "peter-bol",
+          "name": "Peter Bol",
+          "country": "Australia",
+          "flag": "AU",
+          "seasonBest": "1:43.64",
+          "meet": "Oslo Bislett Games"
+        },
+        {
+          "rank": 11,
+          "athleteId": "gabriel-tual",
+          "name": "Gabriel Tual",
+          "country": "France",
+          "flag": "FR",
+          "seasonBest": "1:43.66",
+          "meet": "Golden Gala Pietro Mennea"
+        },
+        {
+          "rank": 12,
+          "athleteId": "brandon-miller",
+          "name": "Brandon Miller",
+          "country": "United States",
+          "flag": "US",
+          "seasonBest": "1:43.68",
+          "meet": "Prefontaine Classic"
+        },
+        {
+          "rank": 13,
+          "athleteId": "ben-pattison",
+          "name": "Ben Pattison",
+          "country": "Great Britain",
+          "flag": "GB",
+          "seasonBest": "1:43.70",
+          "meet": "BAUHAUS-Galan"
+        },
+        {
+          "rank": 14,
+          "athleteId": "mark-english",
+          "name": "Mark English",
+          "country": "Ireland",
+          "flag": "IE",
+          "seasonBest": "1:43.80",
+          "meet": "Golden Gala Pietro Mennea"
+        },
+        {
+          "rank": 15,
+          "athleteId": "louey-ouerrat",
+          "name": "Louey Ouerrat",
+          "country": "France",
+          "flag": "FR",
+          "seasonBest": "1:43.80",
+          "meet": "Meeting Nikaia"
+        }
+      ]
     },
     {
       "name": "5000m",
@@ -272,7 +408,7 @@
           "country": "Switzerland",
           "flag": "CH",
           "seasonBest": "12:52.54",
-          "meet": "Meeting International d\u2019Athl\u00e9tisme Herculis EBS"
+          "meet": "Meeting International d’Athlétisme Herculis EBS"
         },
         {
           "rank": 10,
@@ -281,7 +417,7 @@
           "country": "Kenya",
           "flag": "KE",
           "seasonBest": "12:53.71",
-          "meet": "Meeting International d\u2019Athl\u00e9tisme Herculis EBS"
+          "meet": "Meeting International d’Athlétisme Herculis EBS"
         },
         {
           "rank": 11,
@@ -337,8 +473,144 @@
       "name": "10000m",
       "description": "Only the strong survive.",
       "photo": "",
-      "underConstruction": true,
-      "rows": []
+      "underConstruction": false,
+      "rows": [
+        {
+          "rank": 1,
+          "athleteId": "mohamed-abdilaahi",
+          "name": "Mohamed Abdilaahi",
+          "country": "Germany",
+          "flag": "DE",
+          "seasonBest": "26:56.58",
+          "meet": "The TEN"
+        },
+        {
+          "rank": 2,
+          "athleteId": "ky-robinson",
+          "name": "Ky Robinson",
+          "country": "Australia",
+          "flag": "AU",
+          "seasonBest": "26:57.07",
+          "meet": "The TEN"
+        },
+        {
+          "rank": 3,
+          "athleteId": "mike-foppen",
+          "name": "Mike Foppen",
+          "country": "Netherlands",
+          "flag": "NL",
+          "seasonBest": "27:20.52",
+          "meet": "The TEN"
+        },
+        {
+          "rank": 4,
+          "athleteId": "william-kincaid",
+          "name": "William Kincaid",
+          "country": "United States",
+          "flag": "US",
+          "seasonBest": "27:20.84",
+          "meet": "The TEN"
+        },
+        {
+          "rank": 5,
+          "athleteId": "scott-beattie",
+          "name": "Scott Beattie",
+          "country": "Great Britain",
+          "flag": "GB",
+          "seasonBest": "27:23.20",
+          "meet": "The TEN"
+        },
+        {
+          "rank": 6,
+          "athleteId": "gulveer-singh",
+          "name": "Gulveer Singh",
+          "country": "india",
+          "flag": "IN",
+          "seasonBest": "27:24.18",
+          "meet": "The TEN"
+        },
+        {
+          "rank": 7,
+          "athleteId": "david-mullarkey",
+          "name": "David Mullarkey",
+          "country": "Great Britain",
+          "flag": "GB",
+          "seasonBest": "27:26.58",
+          "meet": "The TEN"
+        },
+        {
+          "rank": 8,
+          "athleteId": "elsingi-kipruto",
+          "name": "Elsingi Kipruto",
+          "country": "Kenya",
+          "flag": "KE",
+          "seasonBest": "27:29.83",
+          "meet": "Bryan Clay Invitational"
+        },
+        {
+          "rank": 9,
+          "athleteId": "habtom-samuel",
+          "name": "Habtom Samuel",
+          "country": "Eritrea",
+          "flag": "ER",
+          "seasonBest": "27:30.51",
+          "meet": "Stanford Invitational"
+        },
+        {
+          "rank": 10,
+          "athleteId": "denis-kipngetich",
+          "name": "Denis Kipngetich",
+          "country": "Kenya",
+          "flag": "KE",
+          "seasonBest": "27:38.36",
+          "meet": "Stanford Invitational"
+        },
+        {
+          "rank": 11,
+          "athleteId": "mahadi-abdi-ali",
+          "name": "Mahadi Abdi Ali",
+          "country": "Netherlands",
+          "flag": "NL",
+          "seasonBest": "27:40.96",
+          "meet": "The TEN"
+        },
+        {
+          "rank": 12,
+          "athleteId": "ernest-cheruiyot",
+          "name": "Ernest Cheruiyot",
+          "country": "Kenya",
+          "flag": "KE",
+          "seasonBest": "27:41.59",
+          "meet": "Bryan Clay Invitational"
+        },
+        {
+          "rank": 13,
+          "athleteId": "evans-kurui",
+          "name": "Evans Kurui",
+          "country": "Kenya",
+          "flag": "KE",
+          "seasonBest": "27:48.06",
+          "meet": "Stanford Invitational"
+        },
+        {
+          "rank": 14,
+          "athleteId": "anthony-camerieri",
+          "name": "Anthony Camerieri",
+          "country": "United States",
+          "flag": "US",
+          "seasonBest": "27:54.60",
+          "meet": "The TEN"
+        },
+        {
+          "rank": 15,
+          "athleteId": "egide-ntakarutimana",
+          "name": "Egide Ntakarutimana",
+          "country": "Burundi",
+          "flag": "BI",
+          "seasonBest": "27:59.74",
+          "meet": "Regional Senior 10"
+        }
+      ]
     }
   ]
 }

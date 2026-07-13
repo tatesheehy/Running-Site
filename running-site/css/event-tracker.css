@@ -1,32 +1,39 @@
 /* ── EVENT TRACKER PAGE ───────────────────────────────────── */
 .et-page {
-  padding-top: 32px;
-  padding-bottom: 64px;
+  padding-top: 8px;
+  padding-bottom: 72px;
 }
 
-.et-page-header {
-  margin-bottom: 20px;
+.et-page-header .rankings-page-header-main {
+  align-items: center;
 }
 
-.et-page-title {
-  font-family: var(--font-display);
-  font-size: 32px;
-  font-weight: 700;
-  margin: 0;
+.et-tabs {
+  flex-shrink: 0;
 }
 
-.et-page .h2h-seg {
-  margin-bottom: 24px;
+.et-stats-strip {
+  margin-bottom: 40px;
 }
 
-.et-page .breaking-bar {
+/* ── Ticker ────────────────────────────────────────────────── */
+.et-ticker-bar {
   position: static;
-  margin-bottom: 32px;
   border-radius: 6px;
+  padding-left: 0;
 }
 
+.et-ticker-bar .breaking-badge {
+  margin-left: 14px;
+}
+
+/* ── Sections ──────────────────────────────────────────────── */
 .et-section {
   margin-bottom: 48px;
+}
+
+.et-section:last-child {
+  margin-bottom: 0;
 }
 
 .et-section-header {
@@ -35,19 +42,23 @@
   justify-content: space-between;
   gap: 12px;
   margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
 }
 
 .et-section-title {
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
+  letter-spacing: -0.01em;
   margin: 0;
 }
 
 .et-view-link {
   font-family: var(--font-mono);
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   color: var(--accent);
   text-decoration: none;
   white-space: nowrap;
@@ -55,4 +66,13 @@
 
 .et-view-link:hover {
   text-decoration: underline;
+}
+
+/* ── Responsive ────────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .et-page-header .rankings-page-header-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 }
