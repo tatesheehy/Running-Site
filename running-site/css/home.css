@@ -692,9 +692,11 @@
   margin-bottom: 8px;
 }
 .fp-hero-dek {
-  font-size: 14px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
   color: var(--muted);
-  line-height: 1.5;
+  line-height: 1.4;
   margin-bottom: 10px;
 }
 .fp-hero-read {

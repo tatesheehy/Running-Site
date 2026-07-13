@@ -699,7 +699,7 @@
 }
 
 .card-headline .hl-key { color: var(--text); }
-.card-headline .hl-rest { color: #bbb; }
+.card-headline .hl-rest { color: #bbb; font-weight: 300; }
 
 .card-traits {
   display: flex;
