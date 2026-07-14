@@ -114,12 +114,12 @@ body {
 body[data-page="articles"],
 body[data-page="article"]        { --accent: #0D9488; } /* teal */
 body[data-page="rankings"]       { --accent: #2563EB; } /* blue */
-body[data-page="h2h"]            { --accent: #7C3AED; } /* violet */
+body[data-page="h2h"]            { --accent: #9333EA; } /* purple */
 body[data-page="event-tracker"]  { --accent: #16A34A; } /* green */
 body[data-page="athletes"]       { --accent: #DB2777; } /* pink */
 body[data-page="podcast"]        { --accent: #0891B2; } /* cyan */
-body[data-page="about"]          { --accent: #4F46E5; } /* indigo */
-body[data-page="time-machine"]   { --accent: #CA8A04; } /* amber/gold */
+body[data-page="about"]          { --accent: #CA8A04; } /* gold */
+body[data-page="time-machine"]   { --accent: #4F46E5; } /* electric indigo (wormhole) */
 
 /* ── PAGE HERO — shared accent-block header (StatMuse-style) ───
    One consistent header across every page. Uses --accent, so each
