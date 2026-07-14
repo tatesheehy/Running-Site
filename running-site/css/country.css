@@ -1,0 +1,35 @@
+/* ── COUNTRY PAGES ────────────────────────────────────────── */
+.country-back-link {
+  color: inherit;
+  opacity: 0.85;
+  transition: opacity 0.15s;
+}
+.country-back-link:hover { opacity: 1; text-decoration: underline; }
+
+/* Per-event leaderboard groups (Season Bests / PRs) — 2-col on wide screens */
+.country-event-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 28px;
+}
+.country-event-group { min-width: 0; }
+.country-event-label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding-bottom: 8px;
+  margin-bottom: 4px;
+  border-bottom: 2px solid color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+@media (max-width: 720px) {
+  .country-event-grid { grid-template-columns: 1fr; }
+}
+
+/* Collapsed roster — reuses the .rw-row compact row pattern */
+.et-collapse--country:not(.et-open) .rw-list .rw-row:nth-child(n+9) {
+  display: none;
+}

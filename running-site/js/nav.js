@@ -13,6 +13,7 @@ const _NAV_ICONS = {
   podcast:  '<path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/>',
   about:    '<circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>',
   timemachine: '<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><polyline points="3 3 3 8 8 8"/><polyline points="12 7 12 12 15.5 14"/>',
+  countries: '<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
 };
 
 function _navIcon(name) {
@@ -22,7 +23,7 @@ function _navIcon(name) {
 // ── NAVBAR ────────────────────────────────────────────────
 function buildNavbar() {
   const currentPage = document.body.dataset.page;
-  const pageMap = { home: 'index.html', articles: 'articles.html', rankings: 'rankings.html', article: 'articles.html', athletes: 'athletes.html', h2h: 'h2h.html', 'event-tracker': 'event-tracker.html', 'time-machine': 'time-machine.html' };
+  const pageMap = { home: 'index.html', articles: 'articles.html', rankings: 'rankings.html', article: 'articles.html', athletes: 'athletes.html', h2h: 'h2h.html', 'event-tracker': 'event-tracker.html', 'time-machine': 'time-machine.html', country: 'country.html' };
   const activeHref = pageMap[currentPage] || '';
 
   const _RANK_EVENTS = ['800m', '1500m', '5000m', '10000m'];
@@ -38,6 +39,7 @@ function buildNavbar() {
       { label: 'H2H', href: 'h2h.html', icon: 'h2h', color: '#9333EA' },
       { label: 'Event Tracker', href: 'event-tracker.html', icon: 'tracker', color: '#16A34A', children: _subEvents('event-tracker.html') },
       { label: 'Athletes', href: 'athletes.html', icon: 'athletes', color: '#DB2777' },
+      { label: 'Countries', href: 'country.html', icon: 'countries', color: '#DC2626' },
       { label: 'Time Machine', href: 'time-machine.html', icon: 'timemachine', color: '#4F46E5' },
     ],
     [
