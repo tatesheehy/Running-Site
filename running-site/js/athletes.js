@@ -483,6 +483,9 @@ function buildAthletesPage() {
           </div>
         </div>
       </div>
+
+      ${renderMultiPrTool()}
+
       <div class="ath-page-header">
         <div class="ath-page-controls">
           <div class="ath-page-sort-toggle" id="ath-sort-btns">
@@ -502,8 +505,6 @@ function buildAthletesPage() {
           </div>
         </div>
       </div>
-
-      ${renderMultiPrTool()}
 
       <div class="ath-filter-bar">
         <div class="ath-search-row">

@@ -8,9 +8,9 @@
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 40px 0 20px;
+  padding: 0 0 16px;
   border-bottom: 1px solid var(--border);
-  margin-bottom: 32px;
+  margin-bottom: 16px;
 }
 .ath-page-header-left { display: flex; align-items: baseline; gap: 14px; }
 .ath-page-title {

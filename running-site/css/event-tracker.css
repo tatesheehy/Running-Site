@@ -4,6 +4,9 @@
   padding-bottom: 72px;
 }
 
+.et-page-header {
+  margin-bottom: 16px;
+}
 .et-page-header .rankings-page-header-main {
   align-items: center;
 }

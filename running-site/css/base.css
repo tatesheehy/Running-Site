@@ -204,6 +204,9 @@ a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 button { font-family: inherit; }
 
+/* Site footer removed */
+footer { display: none; }
+
 /* Accessible, consistent focus rings */
 :focus-visible {
   outline: 2px solid var(--accent);

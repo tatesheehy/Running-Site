@@ -1089,7 +1089,7 @@
   background: #fff;
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   box-shadow: var(--shadow-card);
 }
 
