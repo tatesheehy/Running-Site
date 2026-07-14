@@ -51,15 +51,18 @@ function _apPrevSeasonHtml(a, year) {
     ${results.length > 8 ? `<button class="et-see-all et-see-all--sm" onclick="apToggleSection('ap-prev-collapse', this, ${results.length})">See all ${results.length} races</button>` : ''}`;
 }
 
+// The athlete whose profile is currently shown (for the year dropdown).
+let _apId = null;
+window.apSeasonChange = function (year) { if (_apId) apSetSeason(_apId, year); };
+
 // Switch the past-season panel to another year
-window.apSetSeason = function (athleteId, year, btn) {
+window.apSetSeason = function (athleteId, year) {
   const a = ATHLETES[athleteId];
   const slot = document.getElementById('ap-prev-slot');
   if (!a || !slot) return;
   slot.innerHTML = _apPrevSeasonHtml(a, year);
   const title = document.getElementById('ap-prev-title');
   if (title) title.textContent = `${year} Season`;
-  document.querySelectorAll('.ap-year-tabs .cr-year-tab').forEach(b => b.classList.toggle('active', b === btn));
 };
 
 // Local expand/collapse (shared etToggleSection relabels as "athletes"; these are races)
@@ -76,6 +79,7 @@ function buildAthleteProfilePage() {
   const id = getParam('id');
   const a = id && ATHLETES[id];
   if (!a) { goTo('athletes.html'); return; }
+  _apId = id;
 
   document.title = `${a.name} — StatTC`;
 
@@ -169,8 +173,6 @@ function buildAthleteProfilePage() {
             <h1 class="page-hero-title">${a.name}</h1>
             <div class="ap-hero-meta">
               <a class="ap-hero-country" href="country.html?country=${encodeURIComponent(country)}">${renderFlag(flag)} ${country}</a>
-              ${age ? `<span class="ap-hero-chip">Age ${age}</span>` : ''}
-              ${a.waUrl ? `<a class="ap-hero-chip ap-hero-chip--link" href="${a.waUrl}" target="_blank" rel="noopener noreferrer">World Athletics ↗</a>` : ''}
             </div>
           </div>
           <div class="ap-hero-actions">
@@ -178,6 +180,11 @@ function buildAthleteProfilePage() {
             <button class="ap-hero-btn ap-hero-btn--ghost${faved ? ' faved' : ''}" data-fav-id="${id}" onclick="toggleFavorite('${id}')">${faved ? '♥ Saved' : '♡ Save'}</button>
           </div>
         </div>
+        ${(age || a.waUrl) ? `
+        <div class="ap-hero-chips">
+          ${age ? `<span class="ap-hero-chip">Age ${age}</span>` : ''}
+          ${a.waUrl ? `<a class="ap-hero-chip ap-hero-chip--link" href="${a.waUrl}" target="_blank" rel="noopener noreferrer">World Athletics ↗</a>` : ''}
+        </div>` : ''}
       </header>
 
       ${prsHtml ? `
@@ -206,8 +213,7 @@ function buildAthleteProfilePage() {
       <section class="et-section">
         <div class="et-section-header">
           <h2 class="et-section-title" id="ap-prev-title">${prevYear} Season</h2>
-          <div class="cr-year-tabs ap-year-tabs">${histYears.map(yr =>
-            `<button class="cr-year-tab${yr === prevYear ? ' active' : ''}" onclick="apSetSeason('${id}','${yr}',this)">${yr}</button>`).join('')}</div>
+          ${styledDropdown({ value: prevYear, onChange: 'apSeasonChange', minWidth: '110px', options: histYears.map(yr => ({ value: yr, label: yr })) })}
         </div>
         <div id="ap-prev-slot">${_apPrevSeasonHtml(a, prevYear)}</div>
       </section>` : ''}

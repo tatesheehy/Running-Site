@@ -179,7 +179,7 @@
   transition: background 0.1s;
 }
 .h2h-lb-cs-opt:hover { background: rgba(0,0,0,0.05); }
-.h2h-lb-cs-opt--active { color: var(--text); font-weight: 700; background: rgba(0,0,0,0.04); }
+.h2h-lb-cs-opt--active { color: var(--text); font-weight: 700; background: rgba(0,0,0,0.08); }
 
 .h2h-lb-list-menu-divider {
   height: 1px;

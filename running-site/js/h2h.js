@@ -191,11 +191,7 @@ function _renderH2HPage() {
           <div class="h2h-lb-controls-left">
             <div class="h2h-lb-ctrl-group">
               <div class="h2h-lb-ctrl-label">Season</div>
-              <div class="h2h-seg">
-                ${years.map(y => `
-                  <button class="h2h-seg-btn${y === _h2hLbYear ? ' active' : ''}"
-                    onclick="h2hLbSetYear('${y}')">${y}</button>`).join('')}
-              </div>
+              ${styledDropdown({ value: _h2hLbYear, onChange: 'h2hLbSetYear', minWidth: '120px', options: years.map(y => ({ value: y, label: y })) })}
             </div>
             <div class="h2h-lb-ctrl-group">
               <div class="h2h-lb-ctrl-label">Opponents</div>

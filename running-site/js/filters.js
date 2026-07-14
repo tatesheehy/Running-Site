@@ -41,18 +41,64 @@ function readFilterState(prefix, hasCountry) {
   };
 }
 
+// ── Styled dropdown ───────────────────────────────────────
+// Site-wide custom dropdown matching the H2H list selector. Keeps a hidden
+// <input> so existing DOM-reading code (readFilterState etc.) still works.
+// cfg: { id, value, options:[{value,label}], onChange (global fn name), minWidth, placeholder }
+function styledDropdown(cfg) {
+  const esc = v => String(v == null ? '' : v).replace(/"/g, '&quot;');
+  const opts = (cfg.options || []).map(o =>
+    `<div class="sdrop-opt${o.value === cfg.value ? ' sdrop-opt--active' : ''}" data-value="${esc(o.value)}" onclick="sdropSelect(this)">${o.label}</div>`
+  ).join('');
+  const cur = (cfg.options || []).find(o => o.value === cfg.value);
+  return `
+    <div class="sdrop"${cfg.onChange ? ` data-onchange="${cfg.onChange}"` : ''}${cfg.minWidth ? ` style="min-width:${cfg.minWidth}"` : ''}>
+      <input type="hidden"${cfg.id ? ` id="${cfg.id}"` : ''} value="${esc(cfg.value)}">
+      <button class="sdrop-btn" type="button" onclick="sdropToggle(this)">
+        <span class="sdrop-val">${cur ? cur.label : (cfg.placeholder || '')}</span>
+        <svg class="sdrop-arrow" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1.5l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="sdrop-list">${opts}</div>
+    </div>`;
+}
+
+window.sdropToggle = function (btn) {
+  const d = btn.closest('.sdrop');
+  const isOpen = d.classList.contains('open');
+  document.querySelectorAll('.sdrop.open').forEach(x => x.classList.remove('open'));
+  if (!isOpen) d.classList.add('open');
+};
+window.sdropSelect = function (opt) {
+  const d = opt.closest('.sdrop');
+  const val = opt.dataset.value;
+  const input = d.querySelector('input');
+  if (input) input.value = val;
+  d.querySelector('.sdrop-val').textContent = opt.textContent;
+  d.querySelectorAll('.sdrop-opt').forEach(o => o.classList.toggle('sdrop-opt--active', o === opt));
+  d.classList.remove('open');
+  const fn = d.dataset.onchange;
+  if (fn && typeof window[fn] === 'function') window[fn](val);
+};
+if (!window._sdropOutsideBound) {
+  window._sdropOutsideBound = true;
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.sdrop')) document.querySelectorAll('.sdrop.open').forEach(x => x.classList.remove('open'));
+  });
+}
+
 // Render the filter bar. cfg: { prefix, onInput, onClear, country, countries, state }
 function filterBarHtml(cfg) {
   const s = cfg.state || {};
   const countryField = cfg.country ? `
     <div class="sf-field">
       <span class="sf-label">Country</span>
-      <div class="sf-select-wrap">
-        <select class="sf-select" id="${cfg.prefix}-country" onchange="${cfg.onInput}()">
-          <option value="">All countries</option>
-          ${(cfg.countries || []).map(c => `<option value="${c}"${s.country === c ? ' selected' : ''}>${c}</option>`).join('')}
-        </select>
-      </div>
+      ${styledDropdown({
+        id: cfg.prefix + '-country',
+        value: s.country || '',
+        onChange: cfg.onInput,
+        minWidth: '150px',
+        options: [{ value: '', label: 'All countries' }, ...(cfg.countries || []).map(c => ({ value: c, label: c }))],
+      })}
     </div>` : '';
   return `
     <div class="sf-bar">

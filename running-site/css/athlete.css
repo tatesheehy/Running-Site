@@ -46,6 +46,14 @@
   white-space: nowrap;
 }
 .ap-hero-chip--link:hover { background: rgba(255,255,255,0.28); }
+/* Chip row spanning the full hero width, below name/photo */
+.ap-hero-chips {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
 .ap-hero-actions {
   display: flex;
   gap: 10px;
@@ -203,6 +211,11 @@
 .ap-similar-country { font-size: 11px; color: var(--muted); margin-top: 2px; display: flex; align-items: center; justify-content: center; gap: 5px; }
 
 @media (max-width: 640px) {
+  /* Long section titles (e.g. "Top United States — 1500m") wrap awkwardly
+     around the right-aligned link — stack the link below instead. */
+  .ap-page .et-section-header { flex-wrap: wrap; }
+  .ap-country-link { flex-basis: 100%; }
+
   .ap-hero-inner { align-items: flex-start; }
   .ap-hero-photo { width: 72px; height: 72px; }
   .ap-hero-actions { width: 100%; }

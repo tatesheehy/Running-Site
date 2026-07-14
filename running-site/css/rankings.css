@@ -946,7 +946,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   transition: background 0.1s;
 }
 .rd-cs-opt:hover { background: rgba(0,0,0,0.05); }
-.rd-cs-opt--active { color: var(--text); font-weight: 700; background: rgba(0,0,0,0.04); }
+.rd-cs-opt--active { color: var(--text); font-weight: 700; background: rgba(0,0,0,0.08); }
 
 .rd-col-labels {
   display: grid;
