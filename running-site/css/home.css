@@ -1105,8 +1105,13 @@
   position: absolute;
   inset: 0;
   z-index: 1;
-  /* Short bottom-anchored fade — keeps the photo mostly visible */
-  background: linear-gradient(to top, rgba(8,8,11,0.90) 0%, rgba(8,8,11,0.62) 14%, rgba(8,8,11,0.12) 30%, transparent 46%);
+  /* Short bottom-anchored fade — covers the text zone, keeps most of the photo visible */
+  background: linear-gradient(to top,
+    rgba(8,8,11,0.92) 0%,
+    rgba(8,8,11,0.74) 12%,
+    rgba(8,8,11,0.40) 26%,
+    rgba(8,8,11,0.10) 40%,
+    transparent 52%);
 }
 .home-hero-content {
   position: absolute;
@@ -1115,6 +1120,8 @@
   padding: 22px 26px;
   max-width: 640px;
   color: #fff;
+  /* Local contrast so text stays crisp without needing a heavier gradient */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.45), 0 2px 14px rgba(0,0,0,0.4);
 }
 .home-hero-eyebrow {
   font-family: var(--font-body);
