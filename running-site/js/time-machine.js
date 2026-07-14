@@ -6,7 +6,8 @@
 const TM_EVENTS = ['800m', '1500m', '5000m', '10000m'];
 const TM_MIN_DATE = '2018-01-01';
 
-let _tmDate = null; // JS Date currently being viewed
+let _tmDate = null;    // JS Date currently being viewed
+let _tmPending = null; // JS Date staged in the picker, not yet committed
 
 // "MON DD" → month*100+day ordinal for same-season comparisons
 function _tmOrd(dateStr) {
@@ -65,10 +66,29 @@ function _tmSeasonBest(event, year, asOfOrd) {
 }
 
 // ── Controls ──────────────────────────────────────────────
+// Picking a date/preset STAGES it (previews the date + lights up the
+// "Enter the Time Machine" button); the trip only happens on Enter.
+function _tmStage(d) {
+  _tmPending = d;
+  const dp = document.querySelector('.tm-asof-date'); if (dp) dp.textContent = _tmPrettyDate(d);
+  const rl = document.querySelector('.tm-asof-rel');  if (rl) rl.textContent = _tmRelLabel(d);
+  const inp = document.querySelector('.tm-date-picker input'); if (inp) inp.value = _tmIso(d);
+  _tmArm();
+}
+
+// Enable/glow the Enter button only when the staged date differs from
+// the one currently being shown.
+function _tmArm() {
+  const btn = document.getElementById('tm-enter-btn');
+  if (!btn) return;
+  const changed = _tmPending && _tmIso(_tmPending) !== _tmIso(_tmDate);
+  btn.disabled = !changed;
+  btn.classList.toggle('is-armed', !!changed);
+}
+
 window.tmSetDate = function (iso) {
   if (!iso) return;
-  _tmDate = new Date(iso + 'T00:00:00');
-  _tmRender();
+  _tmStage(new Date(iso + 'T00:00:00'));
 };
 
 window.tmSetPreset = function (kind) {
@@ -82,7 +102,14 @@ window.tmSetPreset = function (kind) {
     case '2y': d.setFullYear(d.getFullYear() - 2); break;
     case '5y': d.setFullYear(d.getFullYear() - 5); break;
   }
-  _tmDate = d;
+  _tmStage(d);
+};
+
+// Commit the staged date — actually travel to it.
+window.tmEnter = function () {
+  if (!_tmPending) return;
+  _tmDate = _tmPending;
+  _tmPending = null;
   _tmRender();
 };
 
@@ -117,6 +144,10 @@ function _tmControlsHtml() {
         </label>
       </div>
       <div class="tm-presets">${chips}</div>
+      <button class="tm-enter" id="tm-enter-btn" onclick="tmEnter()" disabled>
+        Enter the Time Machine
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
     </div>`;
 }
 
@@ -262,10 +293,9 @@ function buildTimeMachinePage() {
   const main = qs('#main');
   if (!main) return;
 
-  // default view: one month ago
-  const d = _tmToday();
-  d.setMonth(d.getMonth() - 1);
-  _tmDate = d;
+  // default view: today
+  _tmDate = _tmToday();
+  _tmPending = null;
 
   main.innerHTML = `
     <div class="container tm-page">

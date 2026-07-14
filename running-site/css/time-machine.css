@@ -69,8 +69,18 @@
   outline: none;
   cursor: pointer;
   transition: border-color 0.15s ease;
+  /* Recolor the native calendar popup (selected day, Today/Clear links)
+     to the page accent so it reads as ours, not browser blue. */
+  color-scheme: light;
+  accent-color: var(--accent);
 }
 .tm-date-picker input:focus { border-color: var(--accent); }
+.tm-date-picker input::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.15s ease;
+}
+.tm-date-picker input:hover::-webkit-calendar-picker-indicator { opacity: 1; }
 
 .tm-presets {
   display: flex;
@@ -95,6 +105,38 @@
   border-color: var(--accent);
   background: color-mix(in srgb, var(--accent) 8%, transparent);
 }
+
+/* "Enter the Time Machine" — dim until a new date is staged, then it
+   lights up in the page accent to invite the trip. */
+.tm-enter {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 16px;
+  padding: 12px 24px;
+  border: 1.5px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-light);
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: not-allowed;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+}
+.tm-enter svg { transition: transform 0.2s ease; }
+.tm-enter.is-armed {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+.tm-enter.is-armed:hover {
+  background: color-mix(in srgb, var(--accent) 88%, #000);
+  border-color: color-mix(in srgb, var(--accent) 88%, #000);
+}
+.tm-enter.is-armed:hover svg { transform: translateX(3px); }
 
 /* Section headers */
 .tm-section-head {
