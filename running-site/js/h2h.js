@@ -687,12 +687,18 @@ function _h2hEventMatches(event, filter) {
   return e.includes(f);
 }
 
-function _computeAllH2HRecords(year, eventFilter, opponentMode, listId) {
+// asOfOrd (optional): a month*100+day cutoff — when set, only races on or
+// before that calendar date within the season are counted (Time Machine).
+function _computeAllH2HRecords(year, eventFilter, opponentMode, listId, asOfOrd) {
   const records = {};
   let totalEncounters = 0;
 
-  const getResults = a =>
-    _stripSplitDupes(year === '2026' ? (a.results || []) : ((a.resultsHistory || {})[year] || []));
+  const _ord = ds => { if (!ds) return null; const d = new Date(ds + ' 2000'); return isNaN(d) ? null : (d.getMonth() + 1) * 100 + d.getDate(); };
+  const getResults = a => {
+    let rs = _stripSplitDupes(year === '2026' ? (a.results || []) : ((a.resultsHistory || {})[year] || []));
+    if (asOfOrd != null) rs = rs.filter(r => { const o = _ord(r.date); return o != null && o <= asOfOrd; });
+    return rs;
+  };
 
   const athletes = Object.values(ATHLETES).filter(a => getResults(a).length > 0);
 

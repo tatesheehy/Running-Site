@@ -12,6 +12,7 @@ const _NAV_ICONS = {
   athletes: '<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
   podcast:  '<path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/>',
   about:    '<circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>',
+  timemachine: '<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><polyline points="3 3 3 8 8 8"/><polyline points="12 7 12 12 15.5 14"/>',
 };
 
 function _navIcon(name) {
@@ -21,18 +22,23 @@ function _navIcon(name) {
 // ── NAVBAR ────────────────────────────────────────────────
 function buildNavbar() {
   const currentPage = document.body.dataset.page;
-  const pageMap = { home: 'index.html', articles: 'articles.html', rankings: 'rankings.html', article: 'articles.html', athletes: 'athletes.html', h2h: 'h2h.html', 'event-tracker': 'event-tracker.html' };
+  const pageMap = { home: 'index.html', articles: 'articles.html', rankings: 'rankings.html', article: 'articles.html', athletes: 'athletes.html', h2h: 'h2h.html', 'event-tracker': 'event-tracker.html', 'time-machine': 'time-machine.html' };
   const activeHref = pageMap[currentPage] || '';
+
+  const _RANK_EVENTS = ['800m', '1500m', '5000m', '10000m'];
+  const _subEvents = base => _RANK_EVENTS.map(ev => ({ label: ev, href: `${base}?event=${encodeURIComponent(ev)}` }));
+  const _curEvent = (typeof URLSearchParams !== 'undefined') ? new URLSearchParams(location.search).get('event') : null;
 
   // Sidebar link groups — rendered as separate floating cards (StatMuse-style)
   const navGroups = [
     [
       { label: 'Home', href: 'index.html', icon: 'home', color: '#ff5200' },
       { label: 'Articles', href: 'articles.html', icon: 'articles', color: '#0D9488' },
-      { label: 'Power Rankings', href: 'rankings.html', icon: 'rankings', color: '#2563EB' },
+      { label: 'Power Rankings', href: 'rankings.html', icon: 'rankings', color: '#2563EB', children: _subEvents('rankings.html') },
       { label: 'H2H', href: 'h2h.html', icon: 'h2h', color: '#7C3AED' },
-      { label: 'Event Tracker', href: 'event-tracker.html', icon: 'tracker', color: '#16A34A' },
+      { label: 'Event Tracker', href: 'event-tracker.html', icon: 'tracker', color: '#16A34A', children: _subEvents('event-tracker.html') },
       { label: 'Athletes', href: 'athletes.html', icon: 'athletes', color: '#DB2777' },
+      { label: 'Time Machine', href: 'time-machine.html', icon: 'timemachine', color: '#CA8A04' },
     ],
     [
       { label: 'Podcast', href: 'podcast.html', icon: 'podcast', color: '#0891B2' },
@@ -41,8 +47,27 @@ function buildNavbar() {
   ];
   const navLinks = navGroups.flat();
 
-  const linkHtml = l =>
-    `<li><a href="${l.href}" class="${l.href.includes(activeHref) && activeHref ? 'active' : ''}"${l.color ? ` style="--link-accent:${l.color}"` : ''}>${_navIcon(l.icon)}${l.label}</a></li>`;
+  const _caretSvg = '<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+  const linkHtml = l => {
+    const active = l.href.includes(activeHref) && activeHref ? 'active' : '';
+    const styleAttr = l.color ? ` style="--link-accent:${l.color}"` : '';
+    if (l.children && l.children.length) {
+      const onSection = activeHref && l.href.split('?')[0] === activeHref;
+      const subs = l.children.map(c => {
+        const cActive = onSection && _curEvent && c.href.includes('event=' + encodeURIComponent(_curEvent)) ? ' active' : '';
+        return `<li><a href="${c.href}" class="sidebar-sublink${cActive}">${c.label}</a></li>`;
+      }).join('');
+      return `<li class="sidebar-item--parent${onSection ? ' open' : ''}"${styleAttr}>
+        <div class="sidebar-parent-row">
+          <a href="${l.href}" class="${active}">${_navIcon(l.icon)}${l.label}</a>
+          <button class="sidebar-caret" onclick="toggleSidebarGroup(this)" aria-label="Toggle ${l.label} sub-pages">${_caretSvg}</button>
+        </div>
+        <ul class="sidebar-sublist">${subs}</ul>
+      </li>`;
+    }
+    return `<li><a href="${l.href}" class="${active}"${styleAttr}>${_navIcon(l.icon)}${l.label}</a></li>`;
+  };
 
   const sidebarGroupsHtml = navGroups.map(group =>
     `<ul class="sidebar-group">${group.map(linkHtml).join('')}</ul>`
@@ -149,6 +174,12 @@ function buildNavbar() {
     </div>
   `;
 }
+
+// ── SIDEBAR SUB-PAGE DROPDOWNS ────────────────────────────
+window.toggleSidebarGroup = function(btn) {
+  const li = btn.closest('.sidebar-item--parent');
+  if (li) li.classList.toggle('open');
+};
 
 // ── NOTIFICATIONS MENU ────────────────────────────────────
 function toggleNotifMenu() {

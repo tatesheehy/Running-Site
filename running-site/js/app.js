@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (page === 'h2h')         buildH2HPage();
   if (page === 'account')     buildAccountPage();
   if (page === 'event-tracker') buildEventTrackerPage();
+  if (page === 'time-machine') buildTimeMachinePage();
 
   buildAthleteCardModal();
 

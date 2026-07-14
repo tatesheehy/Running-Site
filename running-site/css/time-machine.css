@@ -1,0 +1,145 @@
+/* ── THE TIME MACHINE ─────────────────────────────────────── */
+.tm-page {
+  padding-top: 8px;
+  padding-bottom: 72px;
+}
+
+/* Date controls */
+.tm-controls {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 18px 20px;
+  margin-bottom: 20px;
+}
+.tm-controls-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+.tm-asof-label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.tm-asof-date {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--accent);
+  letter-spacing: -0.01em;
+}
+.tm-asof-rel {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+.tm-date-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-shrink: 0;
+}
+.tm-date-picker span {
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.tm-date-picker input {
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text);
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 9px 16px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+.tm-date-picker input:focus { border-color: var(--accent); }
+
+.tm-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tm-preset {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: 999px;
+  padding: 7px 15px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.tm-preset:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+}
+
+/* Section headers */
+.tm-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 28px 0 12px;
+}
+.tm-section-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin: 0;
+}
+.tm-section-note {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Season-best grid */
+.tm-sb-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.tm-sb-card { margin-bottom: 0; }
+.tm-sb-leader {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.tm-empty {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--muted);
+  padding: 8px 0;
+}
+
+@media (max-width: 760px) {
+  .tm-sb-grid { grid-template-columns: 1fr; }
+  .tm-controls-row { flex-direction: column; align-items: stretch; }
+}

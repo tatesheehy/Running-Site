@@ -119,6 +119,7 @@ body[data-page="event-tracker"]  { --accent: #16A34A; } /* green */
 body[data-page="athletes"]       { --accent: #DB2777; } /* pink */
 body[data-page="podcast"]        { --accent: #0891B2; } /* cyan */
 body[data-page="about"]          { --accent: #4F46E5; } /* indigo */
+body[data-page="time-machine"]   { --accent: #CA8A04; } /* amber/gold */
 
 /* ── PAGE HERO — shared accent-block header (StatMuse-style) ───
    One consistent header across every page. Uses --accent, so each
