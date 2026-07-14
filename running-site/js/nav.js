@@ -29,7 +29,7 @@ function buildNavbar() {
     [
       { label: 'Home', href: 'index.html', icon: 'home' },
       { label: 'Articles', href: 'articles.html', icon: 'articles' },
-      { label: 'Rankings', href: 'rankings.html', icon: 'rankings' },
+      { label: 'Power Rankings', href: 'rankings.html', icon: 'rankings' },
       { label: 'H2H', href: 'h2h.html', icon: 'h2h' },
       { label: 'Event Tracker', href: 'event-tracker.html', icon: 'tracker' },
       { label: 'Athletes', href: 'athletes.html', icon: 'athletes' },
@@ -52,8 +52,7 @@ function buildNavbar() {
     <nav class="navbar" role="navigation" aria-label="Main navigation">
       <div class="navbar-inner">
         <a href="index.html" class="navbar-brand">
-          <img src="/images/stattc-logo.png" alt="${SITE.name}" class="brand-logo"></a>
-        <div class="navbar-brand-sep" aria-hidden="true"></div>
+          <img src="/images/stattc-wordmark.png" alt="${SITE.name}" class="brand-logo"></a>
         <button class="navbar-search-btn" onclick="openSearch()" aria-label="Search">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
@@ -103,7 +102,7 @@ function buildNavbar() {
     <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
       <div class="mobile-drawer-top">
         <a href="index.html" class="navbar-brand">
-          <img src="/images/stattc-logo.png" alt="${SITE.name}" class="brand-logo"></a>
+          <img src="/images/stattc-wordmark.png" alt="${SITE.name}" class="brand-logo"></a>
         <button class="mobile-drawer-close" onclick="toggleMobileMenu()" aria-label="Close menu">×</button>
       </div>
       <ul class="mobile-drawer-nav">
@@ -131,7 +130,7 @@ function buildNavbar() {
       <div class="auth-modal-inner">
         <button class="auth-modal-close" onclick="closeAuthModal()" aria-label="Close">×</button>
         <div class="auth-brand">
-          <img src="/images/stattc-logo.png" alt="${SITE.name}" class="auth-logo">
+          <img src="/images/stattc-wordmark.png" alt="${SITE.name}" class="auth-logo">
         </div>
         <div class="auth-tabs">
           <button class="auth-tab active" data-tab="signin" onclick="switchAuthTab('signin')">Sign In</button>
@@ -181,7 +180,7 @@ function buildFooter() {
       <div class="footer-inner">
         <div class="footer-brand-wrap">
           <div class="footer-brand">
-            <img src="/images/stattc-logo.png" alt="${SITE.name}" class="brand-logo">
+            <img src="/images/stattc-wordmark.png" alt="${SITE.name}" class="brand-logo">
           </div>
           ${SITE.footerTagline ? `<div class="footer-tagline">${SITE.footerTagline}</div>` : ''}
         </div>

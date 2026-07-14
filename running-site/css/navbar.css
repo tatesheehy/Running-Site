@@ -36,10 +36,6 @@
   gap: 5px;
 }
 
-/* The logo asset is pure white — invert it to black on the light header.
-   Footer/drawer (dark surfaces) keep the original white version. */
-.navbar .brand-logo { filter: invert(1); }
-
 .brand-pencil {
   width: 12px;
   height: 22px;
@@ -48,13 +44,12 @@
   top: 3px;
 }
 
+/* StatTC wordmark logo (already colored — no invert) */
 .brand-logo {
-  height: 46px;
+  height: 26px;
   width: auto;
   display: block;
   flex-shrink: 0;
-  position: relative;
-  top: 4px;
 }
 
 .navbar-brand-sep {
@@ -142,7 +137,7 @@
   left: 0;
   bottom: 0;
   width: 236px;
-  padding: 84px 16px 24px;
+  padding: 100px 16px 24px;
   background: transparent;
   overflow-y: auto;
   z-index: 90;
@@ -155,8 +150,8 @@
    width centers the content in the viewport and makes the sidebar's left gutter
    symmetric with the empty right gutter. Reset to 0 below 960px (responsive.css). */
 #main, footer { margin-left: 236px; margin-right: 236px; }
-/* Top breathing room below the (fixed) navbar — matches sidebar's 16px gap */
-#main { padding-top: 16px; }
+/* Top breathing room below the (fixed) navbar — StatMuse-style generous gap */
+#main { padding-top: 32px; }
 
 .sidebar-group {
   list-style: none;

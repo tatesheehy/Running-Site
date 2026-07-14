@@ -86,28 +86,29 @@
 /* ── BACK TO TOP ─────────────────────────────────────────── */
 #back-to-top {
   position: fixed;
-  bottom: 32px;
-  right: 32px;
-  width: 42px;
-  height: 42px;
-  background: var(--dark);
-  color: #fff;
-  border: none;
-  border-top: 2px solid var(--accent);
+  bottom: 28px;
+  right: 28px;
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  box-shadow: var(--shadow-card-hover);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s, background 0.15s;
+  transition: opacity 0.2s ease, background 0.15s ease, color 0.15s ease, transform 0.15s ease;
   z-index: 999;
 }
 #back-to-top.visible {
   opacity: 1;
   pointer-events: all;
 }
-#back-to-top:hover { background: var(--accent); }
+#back-to-top:hover { background: var(--accent); color: #fff; transform: translateY(-2px); }
 
 /* Circles: avatars, dots, flags */
 .acct-avatar, .acct-fav-photo, .acct-signed-out-icon,

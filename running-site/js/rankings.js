@@ -175,8 +175,8 @@ function buildRankingsHub() {
         <header class="page-hero">
           <div class="page-hero-inner">
             <div>
-              <div class="page-hero-eyebrow">StatTC Rankings &middot; ${RANKINGS_YEAR || new Date().getFullYear()}</div>
-              <h1 class="page-hero-title">Rankings</h1>
+              <div class="page-hero-eyebrow">StatTC Power Rankings &middot; ${RANKINGS_YEAR || new Date().getFullYear()}</div>
+              <h1 class="page-hero-title">Power Rankings</h1>
               ${SITE.rankingsIntro ? `<p class="page-hero-sub">${SITE.rankingsIntro}</p>` : ''}
             </div>
             <div class="page-hero-aside">

@@ -364,7 +364,7 @@ function buildHome() {
         <div class="fp-rank-tabs" id="fp-rank-tabs">${tabsHtml}</div>
       </div>
       <div id="fp-rank-rows">${buildRankingsTableHtml(firstEvent, true)}</div>
-      <a href="rankings.html" class="dash-link dash-card-foot">View all rankings →</a>
+      <a href="event-tracker.html?event=${encodeURIComponent(firstEvent)}" id="fp-rank-viewall" class="dash-link dash-card-foot">View all rankings →</a>
     </div>`;
 
   // ── Row 3: latest updates (articles) ─────────────────────
@@ -416,6 +416,8 @@ function buildHome() {
       qsa('.fp-rank-tab').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       qs('#fp-rank-rows').innerHTML = buildRankingsTableHtml(btn.dataset.event, true);
+      const viewAll = qs('#fp-rank-viewall');
+      if (viewAll) viewAll.href = `event-tracker.html?event=${encodeURIComponent(btn.dataset.event)}`;
     });
   });
 }
