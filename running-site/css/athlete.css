@@ -206,4 +206,13 @@
   .ap-hero-inner { align-items: flex-start; }
   .ap-hero-photo { width: 72px; height: 72px; }
   .ap-hero-actions { width: 100%; }
+  /* Tighten the race-log table so it fits a phone without side-scrolling */
+  .ap-results .card-results-table th:first-child,
+  .ap-results .card-results-table td:first-child { padding-left: 10px; }
+  .ap-results .card-results-table th:last-child,
+  .ap-results .card-results-table td:last-child { padding-right: 10px; }
+  .ap-results .card-results-table th,
+  .ap-results .card-results-table td { padding-right: 8px; }
+  .ap-results .cr-meet { max-width: 96px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .ap-results .card-results-table { font-size: 12px; }
 }

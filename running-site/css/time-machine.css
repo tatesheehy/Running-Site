@@ -204,4 +204,6 @@
 @media (max-width: 760px) {
   .tm-sb-grid { grid-template-columns: 1fr; }
   .tm-controls-row { flex-direction: column; align-items: stretch; }
+  .tm-section-head { flex-wrap: wrap; }
+  .tm-h2h-seg { flex-basis: 100%; }
 }

@@ -1519,3 +1519,38 @@
   .h2h-lb-td--pct   { min-width: 80px; }
   .h2h-detail-opp   { flex: 1 1 100%; }
 }
+
+/* Segmented control groups can be wider than a phone — let them wrap and
+   tighten the buttons so a full event row fits. */
+@media (max-width: 640px) {
+  .h2h-seg { flex-wrap: wrap; flex-shrink: 1; }
+  .h2h-seg-btn { padding: 5px 9px; }
+  .h2h-lb-controls { padding-left: 14px; padding-right: 14px; }
+}
+
+/* Compress the leaderboard table so all four columns fit a phone screen */
+@media (max-width: 640px) {
+  .h2h-lb-td          { padding: 10px 6px; font-size: 13px; }
+  .h2h-lb-td--rank    { width: 30px; }
+  .h2h-lb-rank-num    { font-size: 13px; }
+  .h2h-lb-row--gold .h2h-lb-rank-num { font-size: 15px; }
+  .h2h-lb-td--athlete { min-width: 0; gap: 8px; }
+  .h2h-lb-name        { font-size: 13px; }
+  .h2h-persona-tag    { display: none; }
+  .h2h-lb-rec-w       { font-size: 16px; }
+  .h2h-lb-rec-l       { font-size: 13px; }
+  .h2h-lb-rec-sub     { display: none; }
+  .h2h-lb-td--pct     { min-width: 54px; }
+  .h2h-lb-pct-val     { font-size: 13px; }
+  .h2h-lb-td--wins    { display: none; }
+  /* Sticky column labels track the compressed table columns */
+  .h2h-col-labels     { grid-template-columns: 30px 1fr 90px 58px; padding: 10px 6px; }
+}
+
+/* Very narrow phones: drop the win% bar (keep the number) so nothing clips */
+@media (max-width: 380px) {
+  .h2h-lb-td       { padding: 10px 4px; }
+  .h2h-lb-pct-bar  { display: none; }
+  .h2h-lb-td--pct  { min-width: 40px; }
+  .h2h-col-labels  { grid-template-columns: 26px 1fr 84px 46px; padding: 10px 4px; }
+}
