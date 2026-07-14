@@ -10,7 +10,7 @@
   border-bottom: none;
   height: 76px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   position: fixed;
   top: 0;
   left: 0;
@@ -18,8 +18,10 @@
   z-index: 100;
 }
 
+/* Row sits low in the bar (logo near the sidebar), but items stay centered
+   on each other so the logo is centered on the search bar. */
 .navbar-inner {
-  padding: 0 24px;
+  padding: 0 24px 10px;
   width: 100%;
   display: flex;
   align-items: center;
