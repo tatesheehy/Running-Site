@@ -111,6 +111,17 @@
   letter-spacing: -0.01em;
   color: var(--text);
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.tm-section-title::before {
+  content: '';
+  width: 4px;
+  height: 20px;
+  border-radius: 2px;
+  background: var(--accent);
+  flex-shrink: 0;
 }
 .tm-section-note {
   font-family: var(--font-body);

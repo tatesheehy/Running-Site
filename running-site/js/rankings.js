@@ -912,7 +912,7 @@ function buildRankingsDetail(eventName, opts = {}) {
             </div>
             <div class="rd-header-btns">
               <a class="rd-compare-btn" href="event-tracker.html?event=${encodeURIComponent(eventName)}">Event Tracker</a>
-              <button class="rd-compare-btn" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">Compare Athletes</button>
+              <button class="rd-compare-btn rd-compare-btn--primary" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">Compare Athletes</button>
             </div>
           </div>
         </div>

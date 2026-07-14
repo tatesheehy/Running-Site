@@ -159,20 +159,23 @@
 }
 
 .rr-soon-tag {
-  font-family: var(--font-mono);
-  font-size: 9px;
+  font-family: var(--font-body);
+  font-size: 10px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
+  background: var(--bg-light);
   border: 1px solid var(--border);
-  padding: 3px 8px;
+  border-radius: 999px;
+  padding: 4px 11px;
   white-space: nowrap;
 }
 
 .rr-soon-tag--live {
   color: var(--accent);
-  border-color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 30%, transparent);
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
 }
 
 .rr-soon-arrow {
@@ -326,7 +329,7 @@
 .rd-header-controls .rd-filter { padding: 0; }
 
 /* Compact header — no masthead, just back/title/filters on one bar */
-.rd-header-controls--compact { padding: 14px 0; }
+.rd-header-controls--compact { padding: 12px 18px; }
 .rd-back--mini {
   margin-bottom: 0;
   font-size: 20px;
@@ -352,20 +355,30 @@
 .rd-compare-btn {
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--text);
-  background: none;
+  background: #fff;
   border: 1.5px solid var(--border);
-  border-radius: 6px;
-  padding: 6px 12px;
+  border-radius: 999px;
+  padding: 8px 16px;
   cursor: pointer;
   white-space: nowrap;
   transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 .rd-compare-btn:hover {
-  background: var(--dark);
-  border-color: var(--dark);
+  border-color: var(--accent);
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, transparent);
+}
+.rd-compare-btn--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.rd-compare-btn--primary:hover {
+  background: color-mix(in srgb, var(--accent) 88%, #000);
+  border-color: color-mix(in srgb, var(--accent) 88%, #000);
   color: #fff;
 }
 
