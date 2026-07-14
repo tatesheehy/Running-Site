@@ -16,7 +16,6 @@ function _apSeasonBests(results) {
     const s = parseTimeToSecs(r.time);
     if (s == null || !isFinite(s) || s <= 0) return;
     const key = _apNorm(r.event);
-    if (key.endsWith('sh')) return; // skip indoor marks
     if (!best[key] || s < best[key].secs) {
       best[key] = { event: r.event.trim(), time: r.time, secs: s, meet: (r.meet && r.meet !== 'x') ? r.meet : '', date: r.date || '' };
     }
@@ -32,11 +31,36 @@ function _apSbGridHtml(sbs) {
   if (!sbs.length) return '';
   return `<div class="ap-sb-grid">${sbs.map(sb => `
     <div class="ap-sb-chip">
-      <span class="ap-sb-event">${sb.event}</span>
+      <span class="ap-sb-event">${fmtEventLabel(sb.event)}</span>
       <span class="ap-sb-time">${sb.time}</span>
       ${sb.meet ? `<span class="ap-sb-meet">${sb.meet}${sb.date ? ` · ${sb.date}` : ''}</span>` : ''}
     </div>`).join('')}</div>`;
 }
+
+// One past season's content (SBs + collapsible races) for the year switcher
+function _apPrevSeasonHtml(a, year) {
+  const results = _dedupeResults((a.resultsHistory || {})[year] || []);
+  const sbs = _apSeasonBests(results);
+  return `
+    <div class="ap-prev-note">${results.length} race${results.length === 1 ? '' : 's'}</div>
+    ${sbs.length ? `<div class="ap-sub-label">Season Bests</div>${_apSbGridHtml(sbs)}` : ''}
+    <div class="et-collapse et-collapse--ap" id="ap-prev-collapse">
+      <div class="ap-sub-label">Races</div>
+      <div class="ap-results">${results.length ? _buildResultsTable(results) : `<p class="tm-empty">No races logged in ${year}.</p>`}</div>
+    </div>
+    ${results.length > 8 ? `<button class="et-see-all et-see-all--sm" onclick="apToggleSection('ap-prev-collapse', this, ${results.length})">See all ${results.length} races</button>` : ''}`;
+}
+
+// Switch the past-season panel to another year
+window.apSetSeason = function (athleteId, year, btn) {
+  const a = ATHLETES[athleteId];
+  const slot = document.getElementById('ap-prev-slot');
+  if (!a || !slot) return;
+  slot.innerHTML = _apPrevSeasonHtml(a, year);
+  const title = document.getElementById('ap-prev-title');
+  if (title) title.textContent = `${year} Season`;
+  document.querySelectorAll('.ap-year-tabs .cr-year-tab').forEach(b => b.classList.toggle('active', b === btn));
+};
 
 // Local expand/collapse (shared etToggleSection relabels as "athletes"; these are races)
 window.apToggleSection = function (idEl, btn, total) {
@@ -58,26 +82,32 @@ function buildAthleteProfilePage() {
   const flag = a.flag || '';
   const country = a.country || '';
   const color = (typeof _countryColor === 'function') ? _countryColor(flag) : 'var(--accent)';
+  // Align the whole page's accent with the country-colored header. If the
+  // country has no mapped color, fall back to the page's default accent.
+  if (typeof color === 'string' && color[0] === '#') {
+    document.body.style.setProperty('--accent', color);
+  } else {
+    document.body.style.removeProperty('--accent');
+  }
   const age = a.dob ? calcAgeFromDob(a.dob) : (a.vitals && a.vitals.AGE) || a.age || '';
   const photo = a.photo || '/images/default_card.png';
   const faved = typeof isFavorited === 'function' && isFavorited(id);
 
-  // ── This season / previous season ──────────────────────────
+  // ── This season / past seasons ─────────────────────────────
   const results2026 = _dedupeResults(a.results || []);
   const history = a.resultsHistory || {};
-  const prevYear = Object.keys(history)
+  const histYears = Object.keys(history)
     .filter(y => (history[y] || []).length > 0)
-    .sort((x, y) => parseInt(y) - parseInt(x))[0] || null;
-  const prevResults = prevYear ? _dedupeResults(history[prevYear] || []) : [];
+    .sort((x, y) => parseInt(y) - parseInt(x));
+  const prevYear = histYears[0] || null;
 
   const sbNow = _apSeasonBests(results2026);
-  const sbPrev = _apSeasonBests(prevResults);
 
   // ── Personal bests ─────────────────────────────────────────
   const prs = pickTopPRs(a.prs, 8);
   const prsHtml = prs.length ? `<div class="ap-sb-grid">${prs.map(pr => `
     <div class="ap-sb-chip">
-      <span class="ap-sb-event">${pr.event || ''}</span>
+      <span class="ap-sb-event">${fmtEventLabel(pr.event)}</span>
       <span class="ap-sb-time">${pr.time || ''}</span>
     </div>`).join('')}</div>` : '';
 
@@ -169,15 +199,11 @@ function buildAthleteProfilePage() {
       ${prevYear ? `
       <section class="et-section">
         <div class="et-section-header">
-          <h2 class="et-section-title">${prevYear} Season</h2>
-          <span class="tm-section-note">${prevResults.length} race${prevResults.length === 1 ? '' : 's'}</span>
+          <h2 class="et-section-title" id="ap-prev-title">${prevYear} Season</h2>
+          <div class="cr-year-tabs ap-year-tabs">${histYears.map(yr =>
+            `<button class="cr-year-tab${yr === prevYear ? ' active' : ''}" onclick="apSetSeason('${id}','${yr}',this)">${yr}</button>`).join('')}</div>
         </div>
-        ${sbPrev.length ? `<div class="ap-sub-label">Season Bests</div>${_apSbGridHtml(sbPrev)}` : ''}
-        <div class="et-collapse et-collapse--ap" id="ap-prev-collapse">
-          <div class="ap-sub-label">Races</div>
-          <div class="ap-results">${_buildResultsTable(prevResults)}</div>
-        </div>
-        ${prevResults.length > 8 ? `<button class="et-see-all et-see-all--sm" onclick="apToggleSection('ap-prev-collapse', this, ${prevResults.length})">See all ${prevResults.length} races</button>` : ''}
+        <div id="ap-prev-slot">${_apPrevSeasonHtml(a, prevYear)}</div>
       </section>` : ''}
 
       <section class="et-section">

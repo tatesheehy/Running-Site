@@ -73,6 +73,17 @@
 .ap-hero-btn--ghost:hover { background: rgba(255,255,255,0.28); }
 .ap-hero-btn--ghost.faved { background: #fff; color: var(--accent); }
 
+/* Season timeline sits directly under the section header divider — drop its
+   own top border so there aren't two grey lines stacked. */
+.ap-page .season-tl { border-top: none; padding: 4px 0 8px; }
+
+/* Past-season year switcher */
+.ap-year-tabs { margin: 0; flex-wrap: wrap; }
+.ap-prev-note {
+  font-size: 12px;
+  color: var(--muted);
+}
+
 /* Sub-labels inside a section (Season Bests / Races) */
 .ap-sub-label {
   font-family: var(--font-body);

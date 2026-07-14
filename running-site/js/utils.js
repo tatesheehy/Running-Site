@@ -41,6 +41,15 @@ function normalizeAthlete(a) {
 // Recognizable distances first, roughly in order of prestige/familiarity.
 const _PR_PRIORITY = ['60m', '100m', '200m', '400m', '600m', '800m', '1000m', '1500m', 'mile', '2000m', '3000m', '3000m steeplechase', '5000m', '10000m', 'half marathon', 'marathon'];
 
+// Normalize an event label for DISPLAY: "1500 Metres" / "1500 m" → "1500m"
+// (whole-word "metres"/"meters" only, so "Kilometres" is left alone).
+function fmtEventLabel(event) {
+  if (!event) return '';
+  return String(event)
+    .replace(/\bmet(er|re)s\b/gi, 'm')  // Metres / Meters → m
+    .replace(/(\d)\s+m\b/gi, '$1m');    // "1500 m" → "1500m"
+}
+
 // "1500 Metres Short Track" and "1500m" are the same distance run indoors vs
 // outdoors — collapse them to one canonical key so they dedupe correctly.
 function _prCanonicalKey(event) {

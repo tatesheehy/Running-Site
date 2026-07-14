@@ -76,7 +76,7 @@ function _buildResultsTable(results) {
         <tr>
           <td class="cr-date">${r.date || ''}</td>
           <td class="cr-meet">${r.meet || ''}</td>
-          <td class="cr-event">${r.event || ''}</td>
+          <td class="cr-event">${typeof fmtEventLabel === 'function' ? fmtEventLabel(r.event) : (r.event || '')}</td>
           <td class="cr-time">${_CR_NF.has((r.time||'').toUpperCase()) ? `<span class="cr-nonfinish">${r.time}</span>` : (r.time || '')}</td>
           <td class="cr-place">${_CR_NF.has((r.time||'').toUpperCase()) ? '' : (r.place || '')}</td>
         </tr>`).join('')}

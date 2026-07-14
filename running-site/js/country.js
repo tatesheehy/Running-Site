@@ -10,14 +10,14 @@ const _COUNTRY_EVENTS = ['800m', '1500m', 'Mile', '3000m', '5000m', '10000m'];
 // Primary "flag color" per nation (by 2-letter flag code). Netherlands is
 // forced to orange (the national sporting color) rather than its flag red.
 const _COUNTRY_COLORS = {
-  US: '#3C3B6E', KE: '#BB0000', FR: '#0055A4', AU: '#00843D', ES: '#AA151B',
-  IE: '#169B62', GB: '#012169', SCT: '#005EB8', CA: '#D52B1E', JP: '#BC002D',
-  ET: '#078930', BE: '#111111', NO: '#00205B', NL: '#FF6600', DE: '#111111',
-  MA: '#C1272D', DZ: '#006233', IT: '#008C45', BI: '#1EB53A', SE: '#006AA7',
-  ER: '#12AD2B', NZ: '#00247D', CH: '#D52B1E', UG: '#111111', JM: '#009B3A',
-  PT: '#006600', MX: '#006847', PL: '#DC143C', AT: '#ED2939', ZA: '#007A4D',
-  BW: '#75AADB', BH: '#CE1126', IN: '#FF9933', UY: '#0038A8', VC: '#0072C6',
-  TH: '#A51931', HR: '#FF0000', RS: '#C6363C', GT: '#4997D0',
+  US: '#1F5FE0', KE: '#E01B1B', FR: '#1466E6', AU: '#00A651', ES: '#E01D24',
+  IE: '#17B26A', GB: '#1E52E0', SCT: '#0A7CEB', CA: '#F02D1E', JP: '#EB0033',
+  ET: '#0CB53F', BE: '#E01030', NO: '#1856E0', NL: '#FF6A00', DE: '#E51838',
+  MA: '#E0242B', DZ: '#00B457', IT: '#00A651', BI: '#22C74A', SE: '#0A82DE',
+  ER: '#17C734', NZ: '#1856E0', CH: '#F02D1E', UG: '#F0B000', JM: '#00B84A',
+  PT: '#00A63E', MX: '#00A651', PL: '#EA2E4E', AT: '#F0303F', ZA: '#00A651',
+  BW: '#4DA8E8', BH: '#E31B33', IN: '#FF9A2E', UY: '#1B5AE6', VC: '#0A8AE6',
+  TH: '#E0203E', HR: '#F51818', RS: '#E0323C', GT: '#4DA8E8',
 };
 
 function _countryColor(flag) {
