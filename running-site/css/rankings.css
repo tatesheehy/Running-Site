@@ -949,7 +949,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   border-left: 3px solid transparent;
   margin-bottom: 0;
   position: sticky;
-  top: 68px;
+  top: 76px;
   background: var(--bg);
   z-index: 50;
   box-shadow: 0 3px 8px rgba(0,0,0,0.07);
