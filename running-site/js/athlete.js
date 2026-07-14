@@ -193,7 +193,13 @@ function buildAthleteProfilePage() {
         </div>
         ${buildSeasonTimeline(a)}
         ${sbNow.length ? `<div class="ap-sub-label">Season Bests</div>${_apSbGridHtml(sbNow)}` : ''}
-        ${results2026.length ? `<div class="ap-sub-label">Races</div><div class="ap-results">${_buildResultsTable(results2026)}</div>` : '<p class="tm-empty">No races logged yet this season.</p>'}
+        ${results2026.length ? `
+          <div class="ap-sub-label">Races</div>
+          <div class="et-collapse et-collapse--ap" id="ap-2026-collapse">
+            <div class="ap-results">${_buildResultsTable(results2026)}</div>
+          </div>
+          ${results2026.length > 8 ? `<button class="et-see-all et-see-all--sm" onclick="apToggleSection('ap-2026-collapse', this, ${results2026.length})">See all ${results2026.length} races</button>` : ''}
+        ` : '<p class="tm-empty">No races logged yet this season.</p>'}
       </section>
 
       ${prevYear ? `
