@@ -48,6 +48,7 @@ function _seasonBestTableHtml(list, event) {
   const rowsHtml = list.map((row, i) => {
     const rank = i + 1;
     const rankClass = rank === 1 ? '' : 'gray';
+    const meet = (row.meet && row.meet !== 'x') ? row.meet : '';
     return `
       <tr onclick="openAthleteCard('${row.id}', ${rank})">
         <td><span class="rank-num ${rankClass}">${rank}</span></td>
@@ -55,16 +56,15 @@ function _seasonBestTableHtml(list, event) {
           <div class="name">${row.a.name}</div>
           <div class="country">${renderFlag(row.a.flag)} ${row.a.country || ''}</div>
         </td>
-        <td>${row.a.country || ''}</td>
         <td><span class="best-time">${row.time}</span></td>
-        <td class="meet-cell">${row.meet}</td>
+        <td class="meet-cell" title="${meet}">${meet}</td>
       </tr>`;
   }).join('');
   return `
-    <table class="rankings-table" aria-label="${event} season best rankings">
+    <table class="rankings-table rankings-table--sb" aria-label="${event} season best rankings">
       <thead>
         <tr>
-          <th>Rank</th><th>Athlete</th><th>Country</th>
+          <th>Rank</th><th>Athlete</th>
           <th>Best Time</th><th style="text-align:right">Meet</th>
         </tr>
       </thead>

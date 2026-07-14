@@ -33,7 +33,23 @@
 .et-ticker-top { margin-bottom: 14px; }
 
 /* Recent Performances — trend-row list (home "Recent activity" style) */
-.et-activity-wrap { margin: 0 -20px -20px; }
+/* Season-best table (4 cols: Rank · Athlete · Best Time · Meet). The
+   athlete column keeps all the remaining space; best-time and meet are
+   fixed and meet truncates — so every row is the same height and the two
+   side-by-side event cards line up regardless of name/meet length. */
+.rankings-table.rankings-table--sb td:nth-child(1),
+.rankings-table.rankings-table--sb th:nth-child(1) { width: 44px; }
+.rankings-table.rankings-table--sb td:nth-child(3),
+.rankings-table.rankings-table--sb th:nth-child(3) { width: 82px; text-align: left; }
+.rankings-table.rankings-table--sb td:nth-child(4),
+.rankings-table.rankings-table--sb th:nth-child(4) { width: 96px; text-align: right; }
+.rankings-table.rankings-table--sb .meet-cell {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.et-activity-wrap { margin: 0 -20px; }
 .et-activity-wrap .fp-trend-row { padding-left: 20px; padding-right: 20px; }
 
 /* Collapsed rankings / H2H: show only the first 8 athletes.

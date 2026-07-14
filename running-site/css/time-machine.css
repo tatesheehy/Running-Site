@@ -183,6 +183,10 @@
 .et-collapse--tmsb:not(.et-open) .rankings-table tbody tr:nth-child(n+6) {
   display: none;
 }
+
+/* Center the "See all" button between the last divider and the card edge:
+   its top gap matches the card's 20px bottom padding. */
+.tm-sb-card .et-see-all--sm { margin-top: 20px; }
 .tm-sb-leader {
   font-family: var(--font-display);
   font-size: 15px;
