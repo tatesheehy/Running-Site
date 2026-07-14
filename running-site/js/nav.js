@@ -78,6 +78,8 @@ function buildNavbar() {
   return `
     <nav class="navbar" role="navigation" aria-label="Main navigation">
       <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand">
+          <img src="/images/biblogo.png" alt="${SITE.name}" class="brand-logo"></a>
         <div class="navbar-search" id="nav-search">
           <svg class="navbar-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
@@ -128,6 +130,8 @@ function buildNavbar() {
     </aside>
     <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
       <div class="mobile-drawer-top">
+        <a href="index.html" class="navbar-brand">
+          <img src="/images/biblogo.png" alt="${SITE.name}" class="brand-logo"></a>
         <button class="mobile-drawer-close" onclick="toggleMobileMenu()" aria-label="Close menu">×</button>
       </div>
       <ul class="mobile-drawer-nav">
@@ -155,18 +159,18 @@ function buildNavbar() {
       <div class="auth-modal-inner">
         <button class="auth-modal-close" onclick="closeAuthModal()" aria-label="Close">×</button>
         <div class="auth-brand">
-          <span class="auth-wordmark">${SITE.name}</span>
+          <img src="/images/biblogo.png" alt="${SITE.name}" class="auth-logo">
         </div>
         <div class="auth-tabs">
           <button class="auth-tab active" data-tab="signin" onclick="switchAuthTab('signin')">Sign In</button>
           <button class="auth-tab" data-tab="signup" onclick="switchAuthTab('signup')">Sign Up</button>
         </div>
         <form id="auth-form" onsubmit="handleAuthSubmit(event)">
-          <input type="email" id="auth-email" placeholder="Email address" autocomplete="email" required>
-          <input type="password" id="auth-password" placeholder="Password (min 6 chars)" autocomplete="current-password" required minlength="6">
+          <input type="email" id="auth-email" placeholder="Email address" autocomplete="email" required oninput="authCheckReady()">
+          <input type="password" id="auth-password" placeholder="Password (min 6 chars)" autocomplete="current-password" required minlength="6" oninput="authCheckReady()">
           <div id="auth-error" class="auth-error"></div>
           <div id="auth-success" class="auth-success" style="display:none"></div>
-          <button type="submit" id="auth-submit-btn" class="auth-submit">Sign In</button>
+          <button type="submit" id="auth-submit-btn" class="auth-submit" disabled>Sign In</button>
         </form>
       </div>
     </div>

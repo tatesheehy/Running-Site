@@ -200,6 +200,7 @@ function _setAuthMode(mode) {
   const btn = document.getElementById('auth-submit-btn');
   if (btn) btn.textContent = mode === 'signin' ? 'Sign In' : 'Create Account';
   _clearForm();
+  authCheckReady();
 }
 
 function _clearForm() {
@@ -207,7 +208,22 @@ function _clearForm() {
   const ok  = document.getElementById('auth-success');
   if (err) err.textContent = '';
   if (ok)  { ok.textContent = ''; ok.style.display = 'none'; }
+  const email = document.getElementById('auth-email');
+  const pw    = document.getElementById('auth-password');
+  if (email) email.value = '';
+  if (pw)    pw.value = '';
 }
+
+// Only "arm" (light up) the submit button once both fields hold valid input.
+window.authCheckReady = function () {
+  const btn   = document.getElementById('auth-submit-btn');
+  const email = document.getElementById('auth-email');
+  const pw    = document.getElementById('auth-password');
+  if (!btn || !email || !pw) return;
+  const ready = email.checkValidity() && email.value.trim() && pw.value.length >= 6;
+  btn.disabled = !ready;
+  btn.classList.toggle('is-armed', ready);
+};
 
 window.handleAuthSubmit = async function(e) {
   e.preventDefault();
@@ -226,8 +242,8 @@ window.handleAuthSubmit = async function(e) {
     ? await _sb.auth.signUp({ email, password, options: { emailRedirectTo: window.location.origin } })
     : await _sb.auth.signInWithPassword({ email, password });
 
-  btn.disabled = false;
   btn.textContent = _authMode === 'signin' ? 'Sign In' : 'Create Account';
+  authCheckReady();
 
   if (error) { if (errEl) errEl.textContent = error.message; return; }
 

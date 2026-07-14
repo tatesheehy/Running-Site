@@ -501,10 +501,11 @@
 .mobile-drawer-top {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 14px 20px;
   border-bottom: 1px solid var(--border);
 }
+.mobile-drawer-top .brand-logo { height: 24px; }
 .mobile-drawer-close {
   background: none;
   border: none;
