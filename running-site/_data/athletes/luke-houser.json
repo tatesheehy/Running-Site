@@ -15,7 +15,7 @@
   "flag": "US",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-13",
+  "lastSynced": "2026-07-14",
   "prs": [
     {
       "event": "800m",
@@ -89,6 +89,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "JUL 11",
+      "meet": "The Elliott Denman N.J. International",
+      "event": "1500 m",
+      "time": "3:37.57",
+      "place": "2.",
+      "round": "F1"
+    },
     {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
@@ -213,7 +221,7 @@
   "dob": "2001-05-02",
   "college": "Washington",
   "weight": "x",
-  "lastHistorySynced": "2026-07-12",
+  "lastHistorySynced": "2026-07-13",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

@@ -78,6 +78,14 @@
   ],
   "results": [
     {
+      "date": "JUL 11",
+      "meet": "6° Meeting della Leonessa",
+      "event": "400 m",
+      "time": "47.24",
+      "place": "3.",
+      "round": "F4"
+    },
+    {
       "date": "JUL 3",
       "meet": "Meeting Stanislas Nancy",
       "event": "800 m",
@@ -126,7 +134,7 @@
       "round": "F2"
     }
   ],
-  "lastSynced": "2026-07-13",
+  "lastSynced": "2026-07-14",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -1192,5 +1200,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-12"
+  "lastHistorySynced": "2026-07-13"
 }
