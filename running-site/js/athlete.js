@@ -80,6 +80,7 @@ function buildAthleteProfilePage() {
   const a = id && ATHLETES[id];
   if (!a) { goTo('athletes.html'); return; }
   _apId = id;
+  if (typeof recordRecentAthlete === 'function') recordRecentAthlete(id);
 
   document.title = `${a.name} — StatTC`;
 
@@ -230,6 +231,7 @@ function buildAthleteProfilePage() {
 
       ${countryHtml}
       ${similarHtml}
+      ${typeof renderRecentlyViewed === 'function' ? renderRecentlyViewed({ excludeId: id, min: 1 }) : ''}
     </div>
   `;
 }

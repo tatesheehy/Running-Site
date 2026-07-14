@@ -8,6 +8,60 @@ function getParam(name) { return new URLSearchParams(window.location.search).get
 function goTo(url) { window.location.href = url; }
 window.goTo = goTo;
 
+// ── RECENTLY VIEWED ATHLETES (localStorage, most-recent first) ──
+const _RECENT_KEY = 'stattc_recent_athletes';
+const _RECENT_MAX = 12;
+
+function getRecentAthleteIds() {
+  try { return JSON.parse(localStorage.getItem(_RECENT_KEY)) || []; }
+  catch (e) { return []; }
+}
+
+// Record a viewed athlete: move/insert to the front, cap the list.
+function recordRecentAthlete(id) {
+  if (!id) return;
+  try {
+    const list = getRecentAthleteIds().filter(x => x !== id);
+    list.unshift(id);
+    localStorage.setItem(_RECENT_KEY, JSON.stringify(list.slice(0, _RECENT_MAX)));
+  } catch (e) { /* storage unavailable */ }
+}
+
+// Resolve to athlete objects that still exist, optionally excluding one id.
+function getRecentAthletes(excludeId) {
+  if (typeof ATHLETES === 'undefined') return [];
+  return getRecentAthleteIds()
+    .filter(id => id !== excludeId && ATHLETES[id])
+    .map(id => ATHLETES[id]);
+}
+
+// Horizontal "Recently Viewed" strip of athlete chips. Returns '' when there
+// aren't enough. opts: { excludeId, limit, min }
+function renderRecentlyViewed(opts) {
+  opts = opts || {};
+  const list = getRecentAthletes(opts.excludeId).slice(0, opts.limit || 12);
+  if (list.length < (opts.min || 1)) return '';
+  const cards = list.map(a => `
+    <button class="rv-card" onclick="openAthleteCard('${a.id}', null)">
+      <span class="rv-photo" style="background-color:${a.photoBackground || '#111'};background-image:url('${a.photo || '/images/default_card.png'}')"></span>
+      <span class="rv-name">${a.name}</span>
+      <span class="rv-country">${renderFlag(a.flag)} ${a.country || ''}</span>
+    </button>`).join('');
+  return `
+    <section class="rv-section">
+      <div class="rv-head">
+        <span class="rv-title">Recently Viewed</span>
+        <button class="rv-clear" onclick="clearRecentAthletes()">Clear</button>
+      </div>
+      <div class="rv-strip">${cards}</div>
+    </section>`;
+}
+
+window.clearRecentAthletes = function () {
+  try { localStorage.removeItem(_RECENT_KEY); } catch (e) { /* ignore */ }
+  document.querySelectorAll('.rv-section').forEach(s => s.remove());
+};
+
 function calcAgeFromDob(dob) {
   const born  = new Date(dob);
   const today = new Date();

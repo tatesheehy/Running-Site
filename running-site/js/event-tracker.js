@@ -11,8 +11,27 @@ function buildEventTrackerPage() {
 }
 
 window.eventTrackerSetEvent = function (eventName) {
-  goTo(`event-tracker.html?event=${encodeURIComponent(eventName)}`);
+  if (eventName === _etEvent) return;
+  // Swap the content in place (no full page reload) and keep the URL/back
+  // button in sync via pushState.
+  if (window.history && history.pushState) {
+    history.pushState({ etEvent: eventName }, '', `event-tracker.html?event=${encodeURIComponent(eventName)}`);
+  }
+  buildEventTrackerDetail(eventName);
+  // Re-trigger the page fade so the swap feels smooth, not abrupt.
+  const main = qs('#main');
+  if (main) { main.classList.remove('page-entering'); void main.offsetWidth; main.classList.add('page-entering'); }
 };
+
+// Back/forward should re-render the right event without a reload.
+if (!window._etPopBound) {
+  window._etPopBound = true;
+  window.addEventListener('popstate', () => {
+    if (document.body.dataset.page !== 'event-tracker') return;
+    const ev = typeof getParam === 'function' ? getParam('event') : null;
+    buildEventTrackerDetail(ev ? decodeURIComponent(ev) : EVENT_TRACKER_EVENTS[1]);
+  });
+}
 
 function _buildEventTrackerTabsHtml(activeEvent) {
   const btns = EVENT_TRACKER_EVENTS.map(ev => `

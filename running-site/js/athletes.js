@@ -7,6 +7,12 @@ const _FAV_HEART = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" 
 const _ICON_GRID = `<svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"><rect x="0" y="0" width="6" height="6" rx="1"/><rect x="8" y="0" width="6" height="6" rx="1"/><rect x="0" y="8" width="6" height="6" rx="1"/><rect x="8" y="8" width="6" height="6" rx="1"/></svg>`;
 const _ICON_LIST = `<svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="0" y1="3" x2="14" y2="3"/><line x1="0" y1="7" x2="14" y2="7"/><line x1="0" y1="11" x2="14" y2="11"/></svg>`;
 
+// Last name for alphabetizing (last whitespace-separated token of the name).
+function _lastName(name) {
+  const parts = (name || '').trim().split(/\s+/);
+  return parts[parts.length - 1] || '';
+}
+
 // Parse a time string like "3:29.87" or "1:46.23" into total seconds
 function _parseTime(str) {
   if (!str || str === '—') return Infinity;
@@ -92,7 +98,7 @@ function buildAthletesPage() {
     if (activeView === 'list') {
       const dir = listSortDir;
       list.sort((a, b) => {
-        if (listSortKey === 'name')    return dir * a.name.localeCompare(b.name);
+        if (listSortKey === 'name')    return dir * _lastName(a.name).localeCompare(_lastName(b.name)) || dir * a.name.localeCompare(b.name);
         if (listSortKey === 'country') return dir * (a.country || '').localeCompare(b.country || '') || a.name.localeCompare(b.name);
         if (listSortKey === 'age') {
           const ageA = a.dob ? calcAgeFromDob(a.dob) : (a.age || 0);
@@ -106,8 +112,8 @@ function buildAthletesPage() {
         return dir * (tA - tB);
       });
     } else {
-      if (activeSort === 'alpha')   list.sort((a, b) => a.name.localeCompare(b.name));
-      if (activeSort === 'country') list.sort((a, b) => (a.country || '').localeCompare(b.country || '') || a.name.localeCompare(b.name));
+      if (activeSort === 'alpha')   list.sort((a, b) => _lastName(a.name).localeCompare(_lastName(b.name)) || a.name.localeCompare(b.name));
+      if (activeSort === 'country') list.sort((a, b) => (a.country || '').localeCompare(b.country || '') || _lastName(a.name).localeCompare(_lastName(b.name)));
     }
     return list;
   }
@@ -499,6 +505,8 @@ function buildAthletesPage() {
           </div>
         </div>
       </div>
+
+      ${typeof renderRecentlyViewed === 'function' ? renderRecentlyViewed({}) : ''}
 
       ${renderMultiPrTool()}
 
