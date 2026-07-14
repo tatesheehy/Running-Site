@@ -22,13 +22,43 @@
 /* ── Ticker ────────────────────────────────────────────────── */
 .et-ticker-bar {
   position: static;
-  border-radius: 6px;
+  border-radius: var(--radius-lg);
   padding-left: 0;
 }
 
 .et-ticker-bar .breaking-badge {
   margin-left: 14px;
 }
+/* Ticker pinned at the very top of the page, above the header */
+.et-ticker-top { margin-bottom: 14px; }
+
+/* Recent Performances — trend-row list (home "Recent activity" style) */
+.et-activity-wrap { margin: 0 -20px -20px; }
+.et-activity-wrap .fp-trend-row { padding-left: 20px; padding-right: 20px; }
+
+/* Collapsed rankings / H2H: show only the first 8 rows */
+.et-collapse--rank:not(.et-open) .rankings-table tbody tr:nth-child(n+9),
+.et-collapse--h2h:not(.et-open) .h2h-lb-row:nth-child(n+9) { display: none; }
+
+/* "See all" pill button */
+.et-see-all {
+  margin-top: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 9%, transparent);
+  color: var(--accent);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.et-see-all:hover { background: var(--accent); color: #fff; }
 
 /* ── Sections ──────────────────────────────────────────────── */
 .et-section {

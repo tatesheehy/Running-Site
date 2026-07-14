@@ -138,6 +138,24 @@
 .search-ath-info .search-result-title { font-size: 17px; margin-bottom: 2px; }
 .search-ath-info .search-result-meta { color: #555; }
 
+/* ── Inline navbar search dropdown (light theme) ──────────── */
+.navbar-search-results .search-section + .search-section { border-top-color: var(--border); margin-top: 4px; padding-top: 8px; }
+.navbar-search-results .search-section-hd { color: var(--muted); padding: 6px 12px 6px; }
+.navbar-search-results .search-result-item {
+  padding: 9px 12px;
+  border-bottom: none;
+  border-radius: 10px;
+  transition: background 0.12s ease;
+}
+.navbar-search-results .search-result-item:hover { padding-left: 12px; background: var(--bg-light); }
+.navbar-search-results .search-result-title { color: var(--text); font-size: 15px; margin-bottom: 2px; }
+.navbar-search-results .search-ath-info .search-result-title { font-size: 15px; }
+.navbar-search-results .search-result-meta,
+.navbar-search-results .search-ath-info .search-result-meta { color: var(--muted); }
+.navbar-search-results .search-result-excerpt { color: var(--muted); font-size: 12px; -webkit-line-clamp: 1; }
+.navbar-search-results .search-ath-avatar { width: 34px; height: 34px; }
+.navbar-search-results .search-no-results { color: var(--muted); padding: 14px 12px; font-size: 14px; }
+
 /* ── AUTH MODAL ───────────────────────────────────────────── */
 .auth-modal {
   display: none;

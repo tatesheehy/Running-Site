@@ -94,25 +94,30 @@ function _buildEventTrackerStatsHtml(eventName, sbList, totalEncounters) {
     </div>`;
 }
 
+// Marquee ticker bar — rendered at the very top of the page (above the header).
 function _buildEventTrackerTickerHtml(eventName) {
   const items = (typeof _buildTrendingPerformances === 'function') ? _buildTrendingPerformances(10, eventName) : [];
+  if (!items.length) return '';
+  const chips = items.map(c => {
+    const a = c.athlete, r = c.result;
+    const tag = (typeof _trendTypeTag === 'function') ? _trendTypeTag(c) : '';
+    return `<span class="ticker-item ticker-item-link" onclick="if(window.openAthleteCard){window.openAthleteCard('${a.id}', null)}" role="button" tabindex="0">${renderFlag(a.flag)} ${a.name} <span class="ticker-sep">·</span> ${tag} ${r.time}</span>`;
+  }).join('<span class="ticker-sep">·</span>');
+  return `
+    <div class="breaking-bar et-ticker-bar et-ticker-top" role="marquee">
+      <span class="breaking-badge">${eventName}</span>
+      <div class="ticker-track">
+        <div class="ticker-content">${chips}<span class="ticker-sep">·</span>${chips}<span class="ticker-sep">·</span></div>
+      </div>
+    </div>`;
+}
 
-  const body = items.length ? (() => {
-    const chips = items.map(c => {
-      const a = c.athlete, r = c.result;
-      const tag = (typeof _trendTypeTag === 'function') ? _trendTypeTag(c) : '';
-      return `<span class="ticker-item ticker-item-link" onclick="if(window.openAthleteCard){window.openAthleteCard('${a.id}', null)}" role="button" tabindex="0">${renderFlag(a.flag)} ${a.name} <span class="ticker-sep">·</span> ${tag} ${r.time}</span>`;
-    }).join('<span class="ticker-sep">·</span>');
-
-    return `
-      <div class="breaking-bar et-ticker-bar" role="marquee">
-        <span class="breaking-badge">${eventName}</span>
-        <div class="ticker-track">
-          <div class="ticker-content">${chips}<span class="ticker-sep">·</span>${chips}<span class="ticker-sep">·</span></div>
-        </div>
-      </div>`;
-  })() : `<div class="h2h-lb-empty">No recent ${eventName} performances tracked in the last 30 days.</div>`;
-
+// Recent Performances — same trend-row list as the home "Recent activity", scoped to this event.
+function _buildEventTrackerRecentActivity(eventName) {
+  const items = (typeof _buildTrendingPerformances === 'function') ? _buildTrendingPerformances(6, eventName) : [];
+  const body = items.length
+    ? `<div class="et-activity-wrap"><div class="fp-trending-list">${items.map(trendRow).join('')}</div></div>`
+    : `<div class="h2h-lb-empty">No recent ${eventName} performances tracked in the last 30 days.</div>`;
   return `
     <section class="et-section">
       <div class="et-section-header">
@@ -122,31 +127,47 @@ function _buildEventTrackerTickerHtml(eventName) {
     </section>`;
 }
 
+const _ET_ROW_LIMIT = 8;
+
 function _buildEventTrackerRankingsSection(eventName, sbList) {
+  const collapsible = sbList.length > _ET_ROW_LIMIT;
   return `
     <section class="et-section">
       <div class="et-section-header">
         <h2 class="et-section-title">Season Best Rankings</h2>
       </div>
-      ${_seasonBestTableHtml(sbList, eventName)}
+      <div class="et-collapse${collapsible ? ' et-collapse--rank' : ''}" id="et-sb-collapse">
+        ${_seasonBestTableHtml(sbList, eventName)}
+      </div>
+      ${collapsible ? `<button class="et-see-all" onclick="etToggleSection('et-sb-collapse', this, ${sbList.length})">See all ${sbList.length} athletes</button>` : ''}
     </section>`;
 }
 
 function _buildEventTrackerH2HSection(eventName, rows) {
+  const collapsible = rows.length > _ET_ROW_LIMIT;
   const tableHtml = _renderH2HLbTableHtml(rows, {
     expandable: false,
     emptyMessage: `No head-to-head data for ${eventName} yet.`,
   });
-
   return `
     <section class="et-section">
       <div class="et-section-header">
         <h2 class="et-section-title">Head-to-Head</h2>
         <a class="et-view-link" href="h2h.html?event=${encodeURIComponent(eventName)}">View full H2H &rarr;</a>
       </div>
-      <div class="h2h-lb-wrap">${tableHtml}</div>
+      <div class="et-collapse${collapsible ? ' et-collapse--h2h' : ''}" id="et-h2h-collapse">
+        <div class="h2h-lb-wrap">${tableHtml}</div>
+      </div>
+      ${collapsible ? `<button class="et-see-all" onclick="etToggleSection('et-h2h-collapse', this, ${rows.length})">See all ${rows.length} athletes</button>` : ''}
     </section>`;
 }
+
+window.etToggleSection = function (id, btn, total) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const open = el.classList.toggle('et-open');
+  btn.textContent = open ? 'Show less' : `See all ${total} athletes`;
+};
 
 function buildEventTrackerDetail(eventName) {
   const main = qs('#main');
@@ -164,6 +185,7 @@ function buildEventTrackerDetail(eventName) {
 
   main.innerHTML = `
     <div class="container et-page">
+      ${_buildEventTrackerTickerHtml(eventName)}
       <div class="page-hero">
         <div class="page-hero-inner">
           <div>
@@ -178,7 +200,7 @@ function buildEventTrackerDetail(eventName) {
       </div>
 
       ${_buildEventTrackerStatsHtml(eventName, sbList, totalEncounters)}
-      ${_buildEventTrackerTickerHtml(eventName)}
+      ${_buildEventTrackerRecentActivity(eventName)}
       ${_buildEventTrackerRankingsSection(eventName, sbList)}
       ${_buildEventTrackerH2HSection(eventName, h2hRows)}
     </div>`;

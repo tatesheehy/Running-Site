@@ -1056,13 +1056,45 @@ window.closeSearch = function() {
   const overlay = document.getElementById('search-overlay');
   if (overlay) overlay.classList.remove('open');
   document.body.style.overflow = '';
+  // also close the inline navbar search dropdown
+  const wrap = document.getElementById('nav-search');
+  if (wrap) {
+    wrap.classList.remove('open');
+    const inp = wrap.querySelector('.navbar-search-input');
+    if (inp) inp.value = '';
+    const res = document.getElementById('navbar-search-results');
+    if (res) res.innerHTML = '';
+  }
 };
+
+// Inline navbar search — types straight into the top bar, results drop down below it
+window.navbarSearch = function(query) {
+  const wrap = document.getElementById('nav-search');
+  const results = document.getElementById('navbar-search-results');
+  if (!wrap || !results) return;
+  const html = _buildSearchResultsHtml(query);
+  results.innerHTML = html;
+  wrap.classList.toggle('open', !!html);
+};
+
+// Close the navbar dropdown when clicking outside it (guarded so it registers once)
+if (!window._navSearchOutsideClick) {
+  window._navSearchOutsideClick = true;
+  document.addEventListener('click', function(e) {
+    const wrap = document.getElementById('nav-search');
+    if (wrap && !wrap.contains(e.target)) wrap.classList.remove('open');
+  });
+}
 
 window.handleSearchInput = function(query) {
   const container = document.getElementById('search-results-list');
-  if (!container) return;
-  const q = query.trim().toLowerCase();
-  if (!q) { container.innerHTML = ''; return; }
+  if (container) container.innerHTML = _buildSearchResultsHtml(query);
+};
+
+// Shared results HTML for both the (mobile) overlay and the inline navbar search
+function _buildSearchResultsHtml(query) {
+  const q = (query || '').trim().toLowerCase();
+  if (!q) return '';
 
   // ── Athletes ──────────────────────────────────────────────
   const athleteResults = Object.values(ATHLETES || {}).filter(a =>
@@ -1089,8 +1121,7 @@ window.handleSearchInput = function(query) {
   ).slice(0, 3);
 
   if (!athleteResults.length && !articleResults.length && !eventResults.length) {
-    container.innerHTML = `<div class="search-no-results">No results for "${query}"</div>`;
-    return;
+    return `<div class="search-no-results">No results for "${query}"</div>`;
   }
 
   const sections = [];
@@ -1132,5 +1163,5 @@ window.handleSearchInput = function(query) {
     sections.push(`<div class="search-section"><div class="search-section-hd">Rankings</div>${items}</div>`);
   }
 
-  container.innerHTML = sections.join('');
-};
+  return sections.join('');
+}
