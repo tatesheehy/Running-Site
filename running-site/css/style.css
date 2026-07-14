@@ -4,7 +4,7 @@
    ============================================================ */
 
 @import "base.css?v=25";
-@import "navbar.css?v=32";
+@import "navbar.css?v=34";
 @import "home.css?v=53";
 @import "articles.css?v=8";
 @import "rankings.css?v=87";
@@ -13,7 +13,7 @@
 @import "about.css?v=5";
 @import "h2h.css?v=34";
 @import "account.css?v=8";
-@import "event-tracker.css?v=9";
+@import "event-tracker.css?v=10";
 @import "utilities.css?v=6";
 @import "responsive.css";
 

@@ -156,8 +156,8 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 236px;
-  padding: 100px 16px 24px;
+  width: 210px;
+  padding: 90px 2px 24px 16px;
   background: transparent;
   overflow-y: auto;
   z-index: 90;
@@ -169,9 +169,9 @@
 /* Sidebar clears the content on the left; a matching right gutter of the same
    width centers the content in the viewport and makes the sidebar's left gutter
    symmetric with the empty right gutter. Reset to 0 below 960px (responsive.css). */
-#main, footer { margin-left: 236px; margin-right: 236px; }
-/* Top breathing room below the (fixed) navbar — StatMuse-style generous gap */
-#main { padding-top: 24px; }
+#main, footer { margin-left: 210px; margin-right: 210px; }
+/* Tight top gap below the (fixed) navbar — crunched, StatMuse-style */
+#main { padding-top: 14px; }
 
 .sidebar-group {
   list-style: none;
@@ -198,10 +198,14 @@
   border-radius: var(--radius-sm);
   transition: background 0.15s ease, color 0.15s ease;
 }
-.sidebar-group li a:hover { color: var(--text); background: #F4F4F5; }
+/* Hover lights up in the destination page's own theme color */
+.sidebar-group li a:hover {
+  color: var(--link-accent, var(--text));
+  background: color-mix(in srgb, var(--link-accent, #000) 10%, transparent);
+}
 .sidebar-group li a.active {
-  color: var(--accent);
-  background: color-mix(in srgb, var(--accent) 8%, transparent);
+  color: var(--link-accent, var(--accent));
+  background: color-mix(in srgb, var(--link-accent, var(--accent)) 10%, transparent);
 }
 
 .sidebar-ico {

@@ -36,9 +36,11 @@
 .et-activity-wrap { margin: 0 -20px -20px; }
 .et-activity-wrap .fp-trend-row { padding-left: 20px; padding-right: 20px; }
 
-/* Collapsed rankings / H2H: show only the first 8 rows */
+/* Collapsed rankings / H2H: show only the first 8 athletes.
+   The H2H table is expandable, so each athlete is a row + a (hidden) detail
+   row — 8 athletes = 16 tbody rows, hence :nth-child(n+17). */
 .et-collapse--rank:not(.et-open) .rankings-table tbody tr:nth-child(n+9),
-.et-collapse--h2h:not(.et-open) .h2h-lb-row:nth-child(n+9) { display: none; }
+.et-collapse--h2h:not(.et-open) .h2h-lb-table tbody tr:nth-child(n+17) { display: none; }
 
 /* "See all" pill button */
 .et-see-all {

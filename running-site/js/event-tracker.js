@@ -146,7 +146,7 @@ function _buildEventTrackerRankingsSection(eventName, sbList) {
 function _buildEventTrackerH2HSection(eventName, rows) {
   const collapsible = rows.length > _ET_ROW_LIMIT;
   const tableHtml = _renderH2HLbTableHtml(rows, {
-    expandable: false,
+    expandable: true,
     emptyMessage: `No head-to-head data for ${eventName} yet.`,
   });
   return `
@@ -176,6 +176,8 @@ function buildEventTrackerDetail(eventName) {
   const sbList = _seasonBestRanking(eventName);
 
   const { records, totalEncounters } = _computeAllH2HRecords('2026', eventName, 'all', 'all');
+  // Share the event-filtered records so the expandable H2H rows (Beaten / Lost-to toggle) re-render correctly
+  if (typeof _h2hCurrentRecs !== 'undefined') _h2hCurrentRecs = records;
   const h2hRows = Object.entries(records)
     .filter(([, r]) => r.wins + r.losses >= _H2H_MIN_RACES)
     .sort((a, b) =>

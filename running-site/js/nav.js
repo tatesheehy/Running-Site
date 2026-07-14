@@ -27,22 +27,22 @@ function buildNavbar() {
   // Sidebar link groups — rendered as separate floating cards (StatMuse-style)
   const navGroups = [
     [
-      { label: 'Home', href: 'index.html', icon: 'home' },
-      { label: 'Articles', href: 'articles.html', icon: 'articles' },
-      { label: 'Power Rankings', href: 'rankings.html', icon: 'rankings' },
-      { label: 'H2H', href: 'h2h.html', icon: 'h2h' },
-      { label: 'Event Tracker', href: 'event-tracker.html', icon: 'tracker' },
-      { label: 'Athletes', href: 'athletes.html', icon: 'athletes' },
+      { label: 'Home', href: 'index.html', icon: 'home', color: '#ff5200' },
+      { label: 'Articles', href: 'articles.html', icon: 'articles', color: '#0D9488' },
+      { label: 'Power Rankings', href: 'rankings.html', icon: 'rankings', color: '#2563EB' },
+      { label: 'H2H', href: 'h2h.html', icon: 'h2h', color: '#7C3AED' },
+      { label: 'Event Tracker', href: 'event-tracker.html', icon: 'tracker', color: '#16A34A' },
+      { label: 'Athletes', href: 'athletes.html', icon: 'athletes', color: '#DB2777' },
     ],
     [
-      { label: 'Podcast', href: 'podcast.html', icon: 'podcast' },
-      { label: 'About', href: 'about.html', icon: 'about' },
+      { label: 'Podcast', href: 'podcast.html', icon: 'podcast', color: '#0891B2' },
+      { label: 'About', href: 'about.html', icon: 'about', color: '#4F46E5' },
     ],
   ];
   const navLinks = navGroups.flat();
 
   const linkHtml = l =>
-    `<li><a href="${l.href}" class="${l.href.includes(activeHref) && activeHref ? 'active' : ''}">${_navIcon(l.icon)}${l.label}</a></li>`;
+    `<li><a href="${l.href}" class="${l.href.includes(activeHref) && activeHref ? 'active' : ''}"${l.color ? ` style="--link-accent:${l.color}"` : ''}>${_navIcon(l.icon)}${l.label}</a></li>`;
 
   const sidebarGroupsHtml = navGroups.map(group =>
     `<ul class="sidebar-group">${group.map(linkHtml).join('')}</ul>`
