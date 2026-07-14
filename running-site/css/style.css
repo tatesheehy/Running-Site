@@ -3,13 +3,13 @@
    Imports all partial CSS files in dependency order.
    ============================================================ */
 
-@import "base.css?v=28";
-@import "navbar.css?v=40";
+@import "base.css?v=29";
+@import "navbar.css?v=41";
 @import "home.css?v=53";
 @import "articles.css?v=8";
 @import "rankings.css?v=89";
 @import "athletes.css?v=27";
-@import "modals.css?v=15";
+@import "modals.css?v=16";
 @import "about.css?v=5";
 @import "h2h.css?v=35";
 @import "account.css?v=8";

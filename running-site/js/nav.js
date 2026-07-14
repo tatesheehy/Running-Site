@@ -126,12 +126,10 @@ function buildNavbar() {
     </aside>
     <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
       <div class="mobile-drawer-top">
-        <a href="index.html" class="navbar-brand">
-          <img src="/images/boldd.png" alt="${SITE.name}" class="brand-logo"></a>
         <button class="mobile-drawer-close" onclick="toggleMobileMenu()" aria-label="Close menu">×</button>
       </div>
       <ul class="mobile-drawer-nav">
-        ${navLinks.map(l => `<li><a href="${l.href}">${_navIcon(l.icon)}${l.label}</a></li>`).join('')}
+        ${navLinks.map(l => `<li><a href="${l.href}"${l.color ? ` style="--link-accent:${l.color}"` : ''}>${_navIcon(l.icon)}${l.label}</a></li>`).join('')}
       </ul>
       <div class="mobile-drawer-footer">
         <button class="mobile-drawer-search" onclick="toggleMobileMenu();openSearch()">
@@ -155,7 +153,7 @@ function buildNavbar() {
       <div class="auth-modal-inner">
         <button class="auth-modal-close" onclick="closeAuthModal()" aria-label="Close">×</button>
         <div class="auth-brand">
-          <img src="/images/boldd.png" alt="${SITE.name}" class="auth-logo">
+          <span class="auth-wordmark">${SITE.name}</span>
         </div>
         <div class="auth-tabs">
           <button class="auth-tab active" data-tab="signin" onclick="switchAuthTab('signin')">Sign In</button>
@@ -211,7 +209,7 @@ function buildFooter() {
       <div class="footer-inner">
         <div class="footer-brand-wrap">
           <div class="footer-brand">
-            <img src="/images/boldd.png" alt="${SITE.name}" class="brand-logo">
+            <span class="footer-wordmark">${SITE.name}</span>
           </div>
           ${SITE.footerTagline ? `<div class="footer-tagline">${SITE.footerTagline}</div>` : ''}
         </div>

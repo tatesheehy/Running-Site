@@ -501,12 +501,9 @@
 .mobile-drawer-top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 18px 20px;
+  justify-content: flex-end;
+  padding: 14px 20px;
   border-bottom: 1px solid var(--border);
-}
-.mobile-drawer-top .navbar-brand {
-  font-size: 26px;
 }
 .mobile-drawer-close {
   background: none;
@@ -528,20 +525,32 @@
   flex: 1;
   overflow-y: auto;
 }
+.mobile-drawer-nav { padding: 12px; }
 .mobile-drawer-nav li a {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 13px 24px;
+  margin: 2px 0;
+  padding: 13px 16px;
   color: var(--text);
   text-decoration: none;
+  font-family: var(--font-display);
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.03em;
+  border-radius: var(--radius-sm);
   transition: color 0.15s, background 0.15s;
 }
-.mobile-drawer-nav li a:hover { color: var(--accent); background: var(--bg-light); }
-.mobile-drawer-nav .sidebar-ico { color: var(--muted); }
+/* Hover/press light up in the destination page's own theme color */
+.mobile-drawer-nav li a:hover {
+  color: var(--link-accent, var(--accent));
+  background: color-mix(in srgb, var(--link-accent, var(--accent)) 10%, transparent);
+}
+.mobile-drawer-nav li a:active {
+  background: color-mix(in srgb, var(--link-accent, var(--accent)) 18%, transparent);
+}
+.mobile-drawer-nav li a:hover .sidebar-ico { color: var(--link-accent, var(--accent)); }
+.mobile-drawer-nav .sidebar-ico { color: var(--muted); transition: color 0.15s; }
 
 .mobile-drawer-footer {
   padding: 16px 20px;
