@@ -1241,26 +1241,42 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
 .rankings-hub-actions {
   display: flex;
   align-items: center;
-  gap: 4px;
-  flex-shrink: 0;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
 }
+/* Pill buttons — same shape as the articles filter chips, accent kept on the primary */
+.rankings-hub-actions .h2h-hub-btn,
 .rankings-archive-link {
-  font-family: var(--font-mono);
-  font-size: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  font-family: var(--font-body);
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--muted);
-  text-decoration: none;
+  border-radius: var(--radius);
   white-space: nowrap;
-  padding: 4px 9px;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  border-radius: 4px;
-  transition: color 0.12s;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.15s;
 }
-.rankings-archive-link:hover { color: var(--text); }
+/* Primary — keeps the page accent color */
+.rankings-hub-actions .h2h-hub-btn {
+  background: var(--accent);
+  border: 1.5px solid var(--accent);
+  color: #fff;
+}
+.rankings-hub-actions .h2h-hub-btn:hover { opacity: 0.88; }
+/* Secondary — outlined chip like the inactive filter pills */
+.rankings-archive-link {
+  background: none;
+  border: 1.5px solid var(--border);
+  color: var(--text);
+}
+.rankings-archive-link:hover { background: var(--dark); border-color: var(--dark); color: #fff; }
 
 /* ── RANKINGS ARCHIVE — VINTAGE ───────────────────────── */
 
