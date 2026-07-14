@@ -207,7 +207,6 @@ function buildCountryDetail(country) {
       <span class="rw-rank">${renderFlag(a.flag)}</span>
       <div class="rw-info">
         <span class="rw-name">${a.name}</span>
-        ${a.hometown && a.hometown !== 'x' ? `<span class="rw-country-sm">${a.hometown}</span>` : ''}
       </div>
     </div>`).join('');
   const rosterCollapsible = roster.length > _COUNTRY_ROW_LIMIT;

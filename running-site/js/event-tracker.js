@@ -134,7 +134,7 @@ function _buildEventTrackerRankingsSection(eventName, sbList) {
   return `
     <section class="et-section">
       <div class="et-section-header">
-        <h2 class="et-section-title">Season Best Rankings</h2>
+        <h2 class="et-section-title">Season Leaders</h2>
       </div>
       <div class="et-collapse${collapsible ? ' et-collapse--rank' : ''}" id="et-sb-collapse">
         ${_seasonBestTableHtml(sbList, eventName)}

@@ -153,10 +153,13 @@ function _tmControlsHtml() {
 
 // ── Sections ──────────────────────────────────────────────
 function _tmSeasonBestSection(year, ord) {
-  const cards = TM_EVENTS.map(ev => {
+  const cards = TM_EVENTS.map((ev, i) => {
     const list = _tmSeasonBest(ev, year, ord);
+    const collapsible = list.length > 5;
+    const id = `tm-sb-${i}`;
     const body = list.length
-      ? _seasonBestTableHtml(list.slice(0, 5), ev)
+      ? `<div class="et-collapse${collapsible ? ' et-collapse--tmsb' : ''}" id="${id}">${_seasonBestTableHtml(list, ev)}</div>
+         ${collapsible ? `<button class="et-see-all et-see-all--sm" onclick="tmToggleSection('${id}', this, ${list.length})">See all ${list.length} athletes</button>` : ''}`
       : `<p class="tm-empty">No ${ev} marks recorded yet by this date.</p>`;
     const leader = list[0];
     return `

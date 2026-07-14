@@ -162,6 +162,28 @@ function _trendTypeTag(c) {
   return _TREND_TYPE_LABELS.prominent;
 }
 
+// Compact top-5 season-best list for the home Leaderboard card. Reuses the
+// Event Tracker's _seasonBestRanking so the two always show the same order.
+function _homeSeasonBestRows(event) {
+  const list = (typeof _seasonBestRanking === 'function' ? _seasonBestRanking(event) : []).slice(0, 5);
+  if (!list.length) {
+    return `<p style="color:var(--muted);padding:20px 0;font-size:14px;">No season-best results yet for ${event}.</p>`;
+  }
+  const rowsHtml = list.map((row, i) => {
+    const rank = i + 1;
+    return `
+      <div class="rw-row rw-row--clickable" onclick="openAthleteCard('${row.id}', ${rank})">
+        <span class="rw-rank ${rank === 1 ? 'rw-rank--first' : ''}">${rank}</span>
+        <div class="rw-info">
+          <span class="rw-name">${row.a.name}</span>
+          <span class="rw-country-sm">${renderFlag(row.a.flag)}<span>${row.a.country || ''}</span></span>
+        </div>
+        ${row.time ? `<span class="rw-time">${row.time}</span>` : ''}
+      </div>`;
+  }).join('');
+  return `<div class="rw-list">${rowsHtml}</div>`;
+}
+
 function trendRow(c) {
   const a = c.athlete, r = c.result;
   const cls = c.isPB ? 'fp-trend--pb' : c.isDominant ? 'fp-trend--dominant' : 'fp-trend--prominent';
@@ -360,11 +382,11 @@ function buildHome() {
   const leaderboardCard = `
     <div class="dash-card dash-leaderboard">
       <div class="dash-card-hd">
-        <span class="dash-card-title">Leaderboard</span>
+        <span class="dash-card-title">Season Leaders</span>
         <div class="fp-rank-tabs" id="fp-rank-tabs">${tabsHtml}</div>
       </div>
-      <div id="fp-rank-rows">${buildRankingsTableHtml(firstEvent, true)}</div>
-      <a href="event-tracker.html?event=${encodeURIComponent(firstEvent)}" id="fp-rank-viewall" class="dash-link dash-card-foot">View all rankings →</a>
+      <div id="fp-rank-rows">${_homeSeasonBestRows(firstEvent)}</div>
+      <a href="event-tracker.html?event=${encodeURIComponent(firstEvent)}" id="fp-rank-viewall" class="dash-link dash-card-foot">Go to Event Tracker →</a>
     </div>`;
 
   // ── Row 3: latest updates (articles) ─────────────────────
@@ -415,7 +437,7 @@ function buildHome() {
     btn.addEventListener('click', () => {
       qsa('.fp-rank-tab').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      qs('#fp-rank-rows').innerHTML = buildRankingsTableHtml(btn.dataset.event, true);
+      qs('#fp-rank-rows').innerHTML = _homeSeasonBestRows(btn.dataset.event);
       const viewAll = qs('#fp-rank-viewall');
       if (viewAll) viewAll.href = `event-tracker.html?event=${encodeURIComponent(btn.dataset.event)}`;
     });

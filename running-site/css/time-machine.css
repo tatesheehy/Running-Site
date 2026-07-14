@@ -178,6 +178,11 @@
   gap: 12px;
 }
 .tm-sb-card { margin-bottom: 0; }
+
+/* Collapsed season-best card — show top 5, reveal the rest on "See all" */
+.et-collapse--tmsb:not(.et-open) .rankings-table tbody tr:nth-child(n+6) {
+  display: none;
+}
 .tm-sb-leader {
   font-family: var(--font-display);
   font-size: 15px;

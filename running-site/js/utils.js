@@ -26,10 +26,7 @@ function normalizeAthlete(a) {
       AGE: age,
     },
     prs: (a.prs || []),
-    extra: {
-      CLUB: a.club,
-      COACH: a.coach,
-    },
+    extra: {},
     headline: { keyWord: a.headlineKey, rest: a.headlineRest },
     analysis: {
       reviewTitle: a.reviewTitle,
