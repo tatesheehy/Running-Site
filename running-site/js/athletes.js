@@ -475,11 +475,15 @@ function buildAthletesPage() {
 
   document.getElementById('main').innerHTML = `
     <div class="container">
-      <div class="ath-page-header">
-        <div class="ath-page-header-left">
-          <h1 class="ath-page-title">Athletes</h1>
-          <span class="ath-page-count" id="ath-page-count">${getResultCount()}</span>
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <div>
+            <h1 class="page-hero-title">Athletes</h1>
+            <p class="page-hero-sub" id="ath-page-count">${getResultCount()}</p>
+          </div>
         </div>
+      </div>
+      <div class="ath-page-header">
         <div class="ath-page-controls">
           <div class="ath-page-sort-toggle" id="ath-sort-btns">
             <button class="ath-page-sort active" data-sort="alpha" onclick="sortAthletes('alpha')">A – Z</button>

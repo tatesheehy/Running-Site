@@ -115,15 +115,17 @@ function buildEventTrackerDetail(eventName) {
 
   main.innerHTML = `
     <div class="container et-page">
-      <div class="rankings-page-header et-page-header">
-        <div class="rankings-page-header-main">
+      <div class="page-hero">
+        <div class="page-hero-inner">
           <div>
-            <span class="rankings-page-title-eyebrow">Event Tracker</span>
-            <h1 class="rankings-page-title">${eventName}</h1>
-            <p class="rankings-page-intro">Recent form, season rankings, and head-to-head records — all in one place.</p>
+            <div class="page-hero-eyebrow">Event Tracker</div>
+            <h1 class="page-hero-title">${eventName}</h1>
+            <p class="page-hero-sub">Recent form, season rankings, and head-to-head records — all in one place.</p>
           </div>
-          ${_buildEventTrackerTabsHtml(eventName)}
         </div>
+      </div>
+      <div class="et-page-header">
+        ${_buildEventTrackerTabsHtml(eventName)}
       </div>
 
       ${_buildEventTrackerStatsHtml(eventName, rankRows, totalEncounters)}

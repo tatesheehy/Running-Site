@@ -16,9 +16,13 @@ function buildArticlesPage() {
 
   document.getElementById('main').innerHTML = `
     <div class="container">
-      <div class="page-header">
-        <h1 class="page-title">Articles</h1>
-        ${SITE.articlesIntro ? `<p class="page-intro">${SITE.articlesIntro}</p>` : ''}
+      <div class="page-hero">
+        <div class="page-hero-inner">
+          <div>
+            <h1 class="page-hero-title">Articles</h1>
+            ${SITE.articlesIntro ? `<p class="page-hero-sub">${SITE.articlesIntro}</p>` : ''}
+          </div>
+        </div>
       </div>
       <div class="filter-bar" id="filter-bar">${filterHtml}</div>
       <div class="articles-grid" id="articles-grid"></div>

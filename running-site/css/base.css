@@ -120,6 +120,86 @@ body[data-page="athletes"]       { --accent: #DB2777; } /* pink */
 body[data-page="podcast"]        { --accent: #0891B2; } /* cyan */
 body[data-page="about"]          { --accent: #4F46E5; } /* indigo */
 
+/* ── PAGE HERO — shared accent-block header (StatMuse-style) ───
+   One consistent header across every page. Uses --accent, so each
+   section's block is its own color automatically. */
+.page-hero {
+  background: var(--accent);
+  border-radius: var(--radius);
+  padding: 16px 22px;
+  margin: 0 0 16px;
+  color: #fff;
+  box-shadow: var(--shadow-card);
+}
+.page-hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.page-hero-eyebrow {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 5px;
+}
+/* Title + inline description share a baseline for a tighter, lighter header */
+.page-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(23px, 2.6vw, 30px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: #fff;
+  margin: 0;
+}
+.page-hero-sub {
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.45;
+  color: rgba(255,255,255,0.82);
+  margin: 4px 0 0;
+  max-width: 560px;
+}
+.page-hero-aside {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-shrink: 0;
+}
+.page-hero-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+.page-hero-stat-num {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1;
+  color: #fff;
+}
+.page-hero-stat-label {
+  font-family: var(--font-body);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+  margin-top: 5px;
+  white-space: nowrap;
+}
+@media (max-width: 640px) {
+  .page-hero { padding: 14px 16px; }
+  .page-hero-inner { align-items: flex-start; }
+  .page-hero-aside { gap: 18px; }
+}
+
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 button { font-family: inherit; }

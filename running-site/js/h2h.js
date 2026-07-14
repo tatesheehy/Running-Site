@@ -74,8 +74,6 @@ function _renderH2HLbTableHtml(rows, opts = {}) {
   const { expandable = true, emptyMessage = 'No head-to-head data for this selection.' } = opts;
   if (rows.length === 0) return `<div class="h2h-lb-empty">${emptyMessage}</div>`;
 
-  const RANK_COLORS = ['#d4a000', '#999', '#b87333'];
-
   return `<table class="h2h-lb-table">
       <tbody>
         ${rows.map(([id, rec], i) => {
@@ -83,7 +81,7 @@ function _renderH2HLbTableHtml(rows, opts = {}) {
           if (!a) return '';
           const total    = rec.wins + rec.losses;
           const pct      = Math.round((rec.wins / total) * 100);
-          const rankColor = RANK_COLORS[i] || null;
+          const rankColor = null;
           const rankClass = i === 0 ? 'h2h-lb-row--gold' : i === 1 ? 'h2h-lb-row--silver' : i === 2 ? 'h2h-lb-row--bronze' : '';
 
           const persona = _h2hPersonaTag(a);
@@ -167,32 +165,20 @@ function _renderH2HPage() {
     <div class="container">
       <div class="h2h-page">
 
-        <div class="rankings-page-header">
-          <div class="rankings-page-header-left">
-            <h1 class="rankings-page-title">Head to Head</h1>
-            <p class="rankings-page-intro">Season win-loss records from direct race encounters</p>
+        <div class="page-hero">
+          <div class="page-hero-inner">
+            <div>
+              <h1 class="page-hero-title">Head to Head</h1>
+              <p class="page-hero-sub">Season win-loss records from direct race encounters</p>
+            </div>
+            ${rows.length > 0 ? `
+            <div class="page-hero-aside">
+              <div class="page-hero-stat"><span class="page-hero-stat-num">${rows.length}</span><span class="page-hero-stat-label">Athletes tracked</span></div>
+              <div class="page-hero-stat"><span class="page-hero-stat-num">${totalEncounters}</span><span class="page-hero-stat-label">H2H encounters</span></div>
+              ${topAthlete ? `<div class="page-hero-stat"><span class="page-hero-stat-num">${topAthlete.name.split(' ').slice(-1)[0]}</span><span class="page-hero-stat-label">Leader · ${topRecord.wins}–${topRecord.losses}</span></div>` : ''}
+            </div>` : ''}
           </div>
         </div>
-
-        <!-- Stats strip -->
-        ${rows.length > 0 ? `
-        <div class="h2h-stats-strip">
-          <div class="h2h-stat">
-            <span class="h2h-stat-n">${rows.length}</span>
-            <span class="h2h-stat-l">Athletes tracked</span>
-          </div>
-          <div class="h2h-stat-div"></div>
-          <div class="h2h-stat">
-            <span class="h2h-stat-n">${totalEncounters}</span>
-            <span class="h2h-stat-l">H2H encounters</span>
-          </div>
-          ${topAthlete ? `
-          <div class="h2h-stat-div"></div>
-          <div class="h2h-stat">
-            <span class="h2h-stat-n">${topAthlete.name.split(' ').slice(-1)[0]}</span>
-            <span class="h2h-stat-l">Current leader · ${topRecord.wins}–${topRecord.losses}</span>
-          </div>` : ''}
-        </div>` : ''}
 
         <!-- Compare Tool -->
         ${_renderCompareSection()}

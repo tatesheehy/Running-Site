@@ -102,7 +102,6 @@
 .rr-soon-panel {
   background: #fff;
   border: 1px solid var(--border);
-  border-top: 3px solid var(--text);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-card);
   overflow: hidden;
@@ -114,9 +113,9 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--text);
+  color: var(--accent);
   padding: 16px 20px;
-  border-bottom: 2px solid var(--text);
+  border-bottom: 2px solid var(--accent);
   margin: 0 20px;
   padding-left: 0;
   padding-right: 0;
@@ -464,7 +463,6 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   margin: 0 0 26px;
   background: var(--bg);
   border: 1px solid var(--border);
-  border-top: 3px solid var(--accent);
 }
 
 .rdc-photo-col {
@@ -785,9 +783,6 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   color: #bbb;
   overflow: visible;
 }
-.rd-card-rank.gold   { color: #fff; background: #111; }
-.rd-card-rank.silver { color: #fff; background: #6e6e6e; }
-.rd-card-rank.bronze { color: #fff; background: #8a5a28; }
 .rd-card-rank .rd-crown {
   position: absolute;
   top: -12px;
@@ -798,9 +793,6 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   display: block;
   pointer-events: none;
 }
-.rd-card-rank.gold .rd-crown   { color: #FFD700; }
-.rd-card-rank.silver .rd-crown { color: #C8C8C8; }
-.rd-card-rank.bronze .rd-crown { color: #CD8B4A; }
 
 .rd-card-body {
   padding: 12px 14px 14px;
@@ -1010,9 +1002,6 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   background: transparent;
   position: relative;
 }
-.rd-rank.gold   { background: transparent; color: #E2A800; font-size: 22px; font-weight: 700; }
-.rd-rank.silver { background: transparent; color: #ADADAD; font-size: 22px; font-weight: 700; }
-.rd-rank.bronze { background: transparent; color: #C07838; font-size: 22px; font-weight: 700; }
 .rd-crown {
   position: absolute;
   top: -12px;
@@ -1023,9 +1012,6 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   display: block;
   pointer-events: none;
 }
-.rd-rank.gold .rd-crown   { color: #FFD700; }
-.rd-rank.silver .rd-crown { color: #C8C8C8; }
-.rd-rank.bronze .rd-crown { color: #CD8B4A; }
 
 .rd-avatar {
   width: 52px;

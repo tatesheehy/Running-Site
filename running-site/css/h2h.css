@@ -1088,7 +1088,6 @@
 .h2h-compare-section {
   background: #fff;
   border: 1px solid var(--border);
-  border-top: 3px solid var(--accent);
   border-radius: var(--radius-lg);
   margin-bottom: 24px;
   box-shadow: var(--shadow-card);
@@ -1108,7 +1107,7 @@
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--text);
+  color: var(--accent);
 }
 
 .h2h-compare-pickers {

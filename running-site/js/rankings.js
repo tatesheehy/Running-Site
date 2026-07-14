@@ -172,24 +172,23 @@ function buildRankingsHub() {
   document.getElementById('main').innerHTML = `
     <div class="container">
       <div class="rankings-hub">
-        <header class="rhub-hd">
-          <div class="rhub-eyebrow">stattc rankings &middot; ${RANKINGS_YEAR || new Date().getFullYear()}</div>
-          <div class="rhub-hd-main">
-            <h1 class="rhub-title">Rankings</h1>
-            <div class="rhub-stats">
-              <div class="rhub-stat"><span class="rhub-stat-num">${String(eventCount).padStart(2, '0')}</span><span class="rhub-stat-label">Events</span></div>
-              <div class="rhub-stat"><span class="rhub-stat-num">${String(athleteCount).padStart(2, '0')}</span><span class="rhub-stat-label">Athletes Ranked</span></div>
+        <header class="page-hero">
+          <div class="page-hero-inner">
+            <div>
+              <div class="page-hero-eyebrow">StatTC Rankings &middot; ${RANKINGS_YEAR || new Date().getFullYear()}</div>
+              <h1 class="page-hero-title">Rankings</h1>
+              ${SITE.rankingsIntro ? `<p class="page-hero-sub">${SITE.rankingsIntro}</p>` : ''}
             </div>
-          </div>
-          <div class="rhub-squiggle"></div>
-          <div class="rhub-hd-row">
-            ${SITE.rankingsIntro ? `<p class="rankings-page-intro">${SITE.rankingsIntro}</p>` : '<span></span>'}
-            <div class="rankings-hub-actions">
-              <button class="h2h-hub-btn" onclick="openH2H()">Settle an Argument</button>
-              ${RANKINGS_ARCHIVE.length ? `<a href="rankings.html?view=archive" class="rankings-archive-link"><svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:-2px;margin-right:6px"><path d="M1 2.5C1 1.67 1.67 1 2.5 1H5.5L7 3H12.5C13.33 3 14 3.67 14 4.5V10.5C14 11.33 13.33 12 12.5 12H2.5C1.67 12 1 11.33 1 10.5V2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>Dig through the archives &rarr;</a>` : ''}
+            <div class="page-hero-aside">
+              <div class="page-hero-stat"><span class="page-hero-stat-num">${String(eventCount).padStart(2, '0')}</span><span class="page-hero-stat-label">Events</span></div>
+              <div class="page-hero-stat"><span class="page-hero-stat-num">${String(athleteCount).padStart(2, '0')}</span><span class="page-hero-stat-label">Athletes Ranked</span></div>
             </div>
           </div>
         </header>
+        <div class="rankings-hub-actions">
+          <button class="h2h-hub-btn" onclick="openH2H()">Settle an Argument</button>
+          ${RANKINGS_ARCHIVE.length ? `<a href="rankings.html?view=archive" class="rankings-archive-link"><svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:-2px;margin-right:6px"><path d="M1 2.5C1 1.67 1.67 1 2.5 1H5.5L7 3H12.5C13.33 3 14 3.67 14 4.5V10.5C14 11.33 13.33 12 12.5 12H2.5C1.67 12 1 11.33 1 10.5V2.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>Dig through the archives &rarr;</a>` : ''}
+        </div>
         <div class="rankings-board">${cardsHtml}</div>
       </div>
     </div>
