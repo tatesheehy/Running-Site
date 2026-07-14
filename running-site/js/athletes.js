@@ -25,6 +25,7 @@ function buildAthletesPage() {
   let activeSearch  = '';
   let activeCountry = 'all';
   let activePresets = new Set();
+  let ageMin = null, ageMax = null;
   let listSortKey   = '1500m';
   let listSortDir   = 1;        // 1 = asc (fastest first), -1 = desc
 
@@ -74,6 +75,15 @@ function buildAthletesPage() {
       const active = PRESETS.filter(p => activePresets.has(p.key));
       list = list.filter(a => active.every(p => p.fn(a)));
     }
+    if (ageMin != null || ageMax != null) {
+      list = list.filter(a => {
+        const ag = a.dob ? calcAgeFromDob(a.dob) : parseInt(a.age, 10);
+        if (ag == null || !isFinite(ag)) return false;
+        if (ageMin != null && ag < ageMin) return false;
+        if (ageMax != null && ag > ageMax) return false;
+        return true;
+      });
+    }
     const activeMpr = activeMultiPrRows();
     if (activeMpr.length > 0) {
       list = list.filter(a => activeMpr.every(r => _parseTime(getPr(a, r.event)) < _parseTime(r.time)));
@@ -103,7 +113,8 @@ function buildAthletesPage() {
   }
 
   function activeFilterCount() {
-    return (activeCountry !== 'all' ? 1 : 0) + activePresets.size + (activeListFilter ? 1 : 0);
+    return (activeCountry !== 'all' ? 1 : 0) + activePresets.size + (activeListFilter ? 1 : 0)
+      + ((ageMin != null || ageMax != null) ? 1 : 0);
   }
 
   function renderNationalityChips() {
@@ -235,6 +246,11 @@ function buildAthletesPage() {
           <span class="ath-filter-section-label">Age</span>
         </div>
         <div class="ath-preset-chips">${renderPresetSection('age')}</div>
+        <div class="ath-age-range">
+          <input type="number" inputmode="numeric" min="12" max="70" class="sf-num" id="ath-age-min" placeholder="Min" value="${ageMin != null ? ageMin : ''}" oninput="athSetAge()">
+          <span class="sf-dash">–</span>
+          <input type="number" inputmode="numeric" min="12" max="70" class="sf-num" id="ath-age-max" placeholder="Max" value="${ageMax != null ? ageMax : ''}" oninput="athSetAge()">
+        </div>
       </div>
       ${renderListsFilterSection()}
       ${clearBtn ? `<div class="ath-filter-panel-footer">${clearBtn}</div>` : ''}
@@ -593,9 +609,21 @@ function buildAthletesPage() {
     activeCountry = 'all';
     activePresets.clear();
     activeListFilter = null;
+    ageMin = null; ageMax = null;
     multiPrRows = [];
     refreshFilterPanel();
     refreshMultiPrTool();
+    refreshGrid();
+  };
+
+  // Age range inputs: update state + grid without re-rendering the panel
+  // (which would steal input focus mid-type).
+  window.athSetAge = function() {
+    const mn = parseInt(qs('#ath-age-min')?.value, 10);
+    const mx = parseInt(qs('#ath-age-max')?.value, 10);
+    ageMin = isFinite(mn) ? mn : null;
+    ageMax = isFinite(mx) ? mx : null;
+    updateFilterToggle();
     refreshGrid();
   };
 

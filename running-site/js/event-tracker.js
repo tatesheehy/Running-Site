@@ -129,17 +129,49 @@ function _buildEventTrackerRecentActivity(eventName) {
 
 const _ET_ROW_LIMIT = 8;
 
+let _etFilter = { minAge: null, maxAge: null, country: '' };
+let _etEvent = '';
+let _etFullSbList = [];
+
+// Re-render the Season Leaders list body after a filter change.
+window.etApplyFilter = function () {
+  _etFilter = readFilterState('et-sb', true);
+  const slot = document.getElementById('et-sb-slot');
+  if (slot) slot.innerHTML = _etRankingsBodyHtml();
+  const clr = document.querySelector('.sf-bar .sf-clear');
+  if (clr) clr.classList.toggle('sf-clear--hidden', !filterStateActive(_etFilter));
+};
+window.etClearFilter = function () {
+  _etFilter = { minAge: null, maxAge: null, country: '' };
+  ['et-sb-min', 'et-sb-max', 'et-sb-country'].forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
+  etApplyFilter();
+};
+
+function _etRankingsBodyHtml() {
+  const list = _etFullSbList.filter(row => matchAthleteFilter(row.a, _etFilter));
+  const collapsible = list.length > _ET_ROW_LIMIT;
+  const countLine = filterStateActive(_etFilter)
+    ? `<p class="sf-count">${list.length} athlete${list.length === 1 ? '' : 's'} match</p>` : '';
+  return `
+    ${countLine}
+    <div class="et-collapse${collapsible ? ' et-collapse--rank' : ''}" id="et-sb-collapse">
+      ${_seasonBestTableHtml(list, _etEvent)}
+    </div>
+    ${collapsible ? `<button class="et-see-all" onclick="etToggleSection('et-sb-collapse', this, ${list.length})">See all ${list.length} athletes</button>` : ''}`;
+}
+
 function _buildEventTrackerRankingsSection(eventName, sbList) {
-  const collapsible = sbList.length > _ET_ROW_LIMIT;
+  _etEvent = eventName;
+  _etFullSbList = sbList;
+  _etFilter = { minAge: null, maxAge: null, country: '' };
+  const countries = [...new Set(sbList.map(r => r.a.country).filter(Boolean))].sort();
   return `
     <section class="et-section">
       <div class="et-section-header">
         <h2 class="et-section-title">Season Leaders</h2>
       </div>
-      <div class="et-collapse${collapsible ? ' et-collapse--rank' : ''}" id="et-sb-collapse">
-        ${_seasonBestTableHtml(sbList, eventName)}
-      </div>
-      ${collapsible ? `<button class="et-see-all" onclick="etToggleSection('et-sb-collapse', this, ${sbList.length})">See all ${sbList.length} athletes</button>` : ''}
+      ${filterBarHtml({ prefix: 'et-sb', onInput: 'etApplyFilter', onClear: 'etClearFilter', country: true, countries, state: _etFilter })}
+      <div id="et-sb-slot">${_etRankingsBodyHtml()}</div>
     </section>`;
 }
 

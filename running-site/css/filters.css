@@ -1,0 +1,90 @@
+/* ── SHARED FILTER BAR (age range + country) ──────────────── */
+.sf-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin-bottom: 14px;
+}
+.sf-field { display: flex; align-items: center; gap: 8px; }
+.sf-label {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.sf-age { display: flex; align-items: center; gap: 6px; }
+.sf-num {
+  width: 56px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 5px 10px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+.sf-num:focus { border-color: var(--accent); }
+.sf-dash { color: var(--muted); font-size: 12px; }
+
+.sf-select-wrap { position: relative; }
+.sf-select {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 5px 28px 5px 10px;
+  min-width: 150px;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: border-color 0.15s ease;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5l5 5 5-5' stroke='%23aaa' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+.sf-select:focus { border-color: var(--accent); }
+
+.sf-clear {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  background: none;
+  border: none;
+  padding: 5px 6px;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.sf-clear:hover { color: var(--accent); text-decoration: underline; }
+.sf-clear--hidden { visibility: hidden; }
+
+/* Age range inside the Athletes filter panel */
+.ath-age-range { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+.ath-age-range .sf-num { width: 72px; }
+
+/* Count line under a filtered list */
+.sf-count {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+.sf-empty {
+  font-size: 14px;
+  color: var(--muted);
+  padding: 16px 0;
+}
+
+@media (max-width: 560px) {
+  .sf-bar { gap: 12px; }
+  .sf-select { min-width: 140px; }
+  .sf-clear { margin-left: 0; }
+}

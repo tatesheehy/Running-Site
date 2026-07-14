@@ -152,15 +152,17 @@ function _tmControlsHtml() {
 }
 
 // ── Sections ──────────────────────────────────────────────
-function _tmSeasonBestSection(year, ord) {
-  const cards = TM_EVENTS.map((ev, i) => {
-    const list = _tmSeasonBest(ev, year, ord);
+let _tmFilter = { minAge: null, maxAge: null, country: '' };
+
+function _tmSbCardsHtml(year, ord) {
+  return TM_EVENTS.map((ev, i) => {
+    const list = _tmSeasonBest(ev, year, ord).filter(row => matchAthleteFilter(row.a, _tmFilter));
     const collapsible = list.length > 5;
     const id = `tm-sb-${i}`;
     const body = list.length
       ? `<div class="et-collapse${collapsible ? ' et-collapse--tmsb' : ''}" id="${id}">${_seasonBestTableHtml(list, ev)}</div>
          ${collapsible ? `<button class="et-see-all et-see-all--sm" onclick="tmToggleSection('${id}', this, ${list.length})">See all ${list.length} athletes</button>` : ''}`
-      : `<p class="tm-empty">No ${ev} marks recorded yet by this date.</p>`;
+      : `<p class="tm-empty">No ${ev} marks for this selection.</p>`;
     const leader = list[0];
     return `
       <section class="et-section tm-sb-card">
@@ -171,10 +173,33 @@ function _tmSeasonBestSection(year, ord) {
         ${body}
       </section>`;
   }).join('');
+}
+
+function _tmSeasonBestSection(year, ord) {
+  // Country options: everyone with a mark in any tracked event by this date
+  const countries = [...new Set(TM_EVENTS.flatMap(ev => _tmSeasonBest(ev, year, ord).map(r => r.a.country)).filter(Boolean))].sort();
   return `
     <div class="tm-section-head"><h2 class="tm-section-title">Season Best Leaders</h2></div>
-    <div class="tm-sb-grid">${cards}</div>`;
+    ${filterBarHtml({ prefix: 'tm-sb', onInput: 'tmApplyFilter', onClear: 'tmClearFilter', country: true, countries, state: _tmFilter })}
+    <div class="tm-sb-grid" id="tm-sb-grid-slot">${_tmSbCardsHtml(year, ord)}</div>`;
 }
+
+window.tmApplyFilter = function () {
+  _tmFilter = readFilterState('tm-sb', true);
+  const slot = document.getElementById('tm-sb-grid-slot');
+  if (slot && _tmDate) {
+    const year = String(_tmDate.getFullYear());
+    const ord = (_tmDate.getMonth() + 1) * 100 + _tmDate.getDate();
+    slot.innerHTML = _tmSbCardsHtml(year, ord);
+  }
+  const clr = document.querySelector('.tm-page .sf-clear');
+  if (clr) clr.classList.toggle('sf-clear--hidden', !filterStateActive(_tmFilter));
+};
+window.tmClearFilter = function () {
+  _tmFilter = { minAge: null, maxAge: null, country: '' };
+  ['tm-sb-min', 'tm-sb-max', 'tm-sb-country'].forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
+  tmApplyFilter();
+};
 
 // ── Recent performances in the ~30 days leading up to the date ──
 function _tmRecentPerformances(year, targetDate, windowDays, eventFilter, limit) {

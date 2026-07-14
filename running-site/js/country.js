@@ -209,11 +209,11 @@ function buildCountryDetail(country) {
         <span class="rw-name">${a.name}</span>
       </div>
     </div>`).join('');
-  const rosterCollapsible = roster.length > _COUNTRY_ROW_LIMIT;
-
   const recentHtml = _countryRecentSection(country);
-  const sbHtml = _countryEventSection('Season Bests', 'country-sb', athletes, _countrySeasonBests);
-  const prHtml = _countryEventSection('Personal Bests', 'country-pr', athletes, _countryPRs);
+
+  _cdAthletes = athletes;
+  _cdCountry = country;
+  _cdFilter = { minAge: null, maxAge: null, country: '' };
 
   main.innerHTML = `
     <div class="container">
@@ -229,17 +229,51 @@ function buildCountryDetail(country) {
         </header>
 
         ${recentHtml}
-        ${sbHtml}
-        ${prHtml}
-
-        <section class="et-section">
-          <div class="et-section-header"><h2 class="et-section-title">Full Roster</h2></div>
-          <div class="et-collapse${rosterCollapsible ? ' et-collapse--country' : ''}" id="country-roster-collapse">
-            <div class="rw-list">${rosterHtml}</div>
-          </div>
-          ${rosterCollapsible ? `<button class="et-see-all" onclick="etToggleSection('country-roster-collapse', this, ${roster.length})">See all ${roster.length} athletes</button>` : ''}
-        </section>
+        ${filterBarHtml({ prefix: 'cd', onInput: 'cdApplyFilter', onClear: 'cdClearFilter', country: false, state: _cdFilter })}
+        <div id="cd-boards">${_cdBoardsHtml(athletes, _cdFilter)}</div>
       </div>
     </div>
   `;
 }
+
+let _cdAthletes = [];
+let _cdCountry = '';
+let _cdFilter = { minAge: null, maxAge: null, country: '' };
+
+function _cdBoardsHtml(athletes, filter) {
+  const list = athletes.filter(a => matchAthleteFilter(a, filter));
+  const roster = [...list].sort((a, b) => a.name.localeCompare(b.name));
+  const rosterHtml = roster.map(a => `
+    <div class="rw-row rw-row--clickable" onclick="openAthleteCard('${a.id}', null)">
+      <span class="rw-rank">${renderFlag(a.flag)}</span>
+      <div class="rw-info"><span class="rw-name">${a.name}</span></div>
+    </div>`).join('');
+  const rosterCollapsible = roster.length > _COUNTRY_ROW_LIMIT;
+  const countLine = filterStateActive(filter)
+    ? `<p class="sf-count">${list.length} athlete${list.length === 1 ? '' : 's'} match this age range</p>` : '';
+
+  return `
+    ${countLine}
+    ${_countryEventSection('Season Bests', 'country-sb', list, _countrySeasonBests) || '<section class="et-section"><p class="sf-empty">No season-best marks for this selection.</p></section>'}
+    ${_countryEventSection('Personal Bests', 'country-pr', list, _countryPRs) || ''}
+    <section class="et-section">
+      <div class="et-section-header"><h2 class="et-section-title">Roster</h2></div>
+      ${roster.length ? `
+      <div class="et-collapse${rosterCollapsible ? ' et-collapse--country' : ''}" id="country-roster-collapse">
+        <div class="rw-list">${rosterHtml}</div>
+      </div>
+      ${rosterCollapsible ? `<button class="et-see-all" onclick="etToggleSection('country-roster-collapse', this, ${roster.length})">See all ${roster.length} athletes</button>` : ''}` : '<p class="sf-empty">No athletes in this age range.</p>'}
+    </section>`;
+}
+
+window.cdApplyFilter = function () {
+  _cdFilter = readFilterState('cd', false);
+  const slot = document.getElementById('cd-boards');
+  if (slot) slot.innerHTML = _cdBoardsHtml(_cdAthletes, _cdFilter);
+  const clr = document.querySelector('.sf-bar .sf-clear');
+  if (clr) clr.classList.toggle('sf-clear--hidden', !filterStateActive(_cdFilter));
+};
+window.cdClearFilter = function () {
+  ['cd-min', 'cd-max'].forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
+  cdApplyFilter();
+};
