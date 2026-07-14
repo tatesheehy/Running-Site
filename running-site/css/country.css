@@ -33,3 +33,15 @@
 .et-collapse--country:not(.et-open) .rw-list .rw-row:nth-child(n+9) {
   display: none;
 }
+
+/* Collapsed per-event leaderboards (Season Bests / PRs) — cap at 6 rows */
+.et-collapse--cgroup:not(.et-open) .rw-list .rw-row:nth-child(n+7) {
+  display: none;
+}
+
+/* Compact "See all" button sitting under a single event group */
+.et-see-all--sm {
+  margin-top: 8px;
+  padding: 5px 12px;
+  font-size: 11px;
+}

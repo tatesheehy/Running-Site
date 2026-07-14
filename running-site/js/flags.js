@@ -340,6 +340,58 @@
       <polygon points="24,7 24.5,8.5 26,8.5 24.8,9.4 25.3,10.9 24,10 22.7,10.9 23.2,9.4 22,8.5 23.5,8.5" fill="#CC0001"/>
       <polygon points="27.5,5 28,6.5 29.5,6.5 28.3,7.4 28.8,8.9 27.5,8 26.2,8.9 26.7,7.4 25.5,6.5 27,6.5" fill="#CC0001"/>`),
 
+    /* ── Added nations ───────────────────────────────────── */
+    GT: f(`<rect width="30" height="20" fill="#fff"/>
+      <rect width="10" height="20" fill="#4997D0"/>
+      <rect x="20" width="10" height="20" fill="#4997D0"/>
+      <circle cx="15" cy="10" r="2.2" fill="none" stroke="#3D7A3D" stroke-width="0.7"/>`),
+
+    MX: f(`<rect width="30" height="20" fill="#fff"/>
+      <rect width="10" height="20" fill="#006847"/>
+      <rect x="20" width="10" height="20" fill="#CE1126"/>
+      <circle cx="15" cy="10" r="2.4" fill="#8C5A2B"/>
+      <circle cx="15" cy="10" r="1.5" fill="#fff"/>`),
+
+    HR: f(`<rect width="30" height="20" fill="#171796"/>
+      <rect width="30" height="6.67" fill="#FF0000"/>
+      <rect y="13.33" width="30" height="6.67" fill="#fff"/>
+      <rect x="12.5" y="6.5" width="5" height="7" fill="#fff"/>
+      <path d="M12.5 6.5 h5 v3 l-2.5 4 -2.5 -4 z" fill="#FF0000"/>`),
+
+    RS: f(`<rect width="30" height="20" fill="#C6363C"/>
+      <rect y="6.67" width="30" height="6.67" fill="#0C4076"/>
+      <rect y="13.33" width="30" height="6.67" fill="#fff"/>`),
+
+    UY: f(`<rect width="30" height="20" fill="#fff"/>
+      <rect y="2.22" width="30" height="2.22" fill="#0038A8"/>
+      <rect y="6.67" width="30" height="2.22" fill="#0038A8"/>
+      <rect y="11.11" width="30" height="2.22" fill="#0038A8"/>
+      <rect y="15.55" width="30" height="2.22" fill="#0038A8"/>
+      <rect width="11" height="11.11" fill="#fff"/>
+      <circle cx="5.5" cy="5.55" r="2.6" fill="#FCD116" stroke="#8C5A2B" stroke-width="0.4"/>`),
+
+    TH: f(`<rect width="30" height="20" fill="#A51931"/>
+      <rect y="3.33" width="30" height="13.33" fill="#fff"/>
+      <rect y="6.67" width="30" height="6.67" fill="#2D2A4A"/>`),
+
+    VC: f(`<rect width="30" height="20" fill="#0072C6"/>
+      <rect x="9" width="12" height="20" fill="#FCD116"/>
+      <rect x="21" width="9" height="20" fill="#009E60"/>
+      <polygon points="15,6 16.5,9 13.5,9" fill="#009E60"/>
+      <polygon points="12.5,10 14,13 11,13" fill="#009E60"/>
+      <polygon points="17.5,10 19,13 16,13" fill="#009E60"/>`),
+
+    BI: f(`<rect width="30" height="20" fill="#1EB53A"/>
+      <polygon points="0,0 30,0 0,20" fill="#CE1126"/>
+      <polygon points="30,0 30,20 0,20" fill="#CE1126"/>
+      <polygon points="0,0 13,10 0,20" fill="#1EB53A"/>
+      <polygon points="30,0 17,10 30,20" fill="#1EB53A"/>
+      <polygon points="1,10 15,1.5 29,10 15,18.5" fill="#fff"/>
+      <circle cx="15" cy="10" r="3.4" fill="#fff"/>
+      <polygon points="15,8 15.4,9.2 14.6,9.2" fill="#CE1126"/>
+      <polygon points="13.6,10.8 14,12 13.2,12" fill="#CE1126"/>
+      <polygon points="16.4,10.8 16.8,12 16,12" fill="#CE1126"/>`),
+
   };
 
   window.renderFlag = function (code) {

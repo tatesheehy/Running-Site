@@ -16,8 +16,8 @@ const _COUNTRY_COLORS = {
   MA: '#C1272D', DZ: '#006233', IT: '#008C45', BI: '#1EB53A', SE: '#006AA7',
   ER: '#12AD2B', NZ: '#00247D', CH: '#D52B1E', UG: '#111111', JM: '#009B3A',
   PT: '#006600', MX: '#006847', PL: '#DC143C', AT: '#ED2939', ZA: '#007A4D',
-  BW: '#75AADB', BH: '#CE1126', IN: '#FF9933', UR: '#0038A8', SA: '#0072C6',
-  TH: '#2D2A4A', CR: '#FF0000',
+  BW: '#75AADB', BH: '#CE1126', IN: '#FF9933', UY: '#0038A8', VC: '#0072C6',
+  TH: '#A51931', HR: '#FF0000', RS: '#C6363C', GT: '#4997D0',
 };
 
 function _countryColor(flag) {
@@ -132,8 +132,11 @@ function _countryPRs(athletes, event) {
   }).filter(Boolean).sort((x, y) => x.secs - y.secs);
 }
 
-// One event's ranked list rendered as a labeled compact-row group.
-function _countryEventGroupHtml(event, list) {
+// How many rows each per-event leaderboard shows before "See all".
+const _COUNTRY_GROUP_LIMIT = 6;
+
+// One event's ranked list rendered as a labeled, collapsible compact-row group.
+function _countryEventGroupHtml(event, list, groupId) {
   if (!list.length) return '';
   const rows = list.map((row, i) => {
     const rank = i + 1;
@@ -146,10 +149,14 @@ function _countryEventGroupHtml(event, list) {
         <span class="rw-time">${row.time}</span>
       </div>`;
   }).join('');
+  const collapsible = list.length > _COUNTRY_GROUP_LIMIT;
   return `
     <div class="country-event-group">
       <div class="country-event-label">${event}</div>
-      <div class="rw-list">${rows}</div>
+      <div class="et-collapse${collapsible ? ' et-collapse--cgroup' : ''}" id="${groupId}">
+        <div class="rw-list">${rows}</div>
+      </div>
+      ${collapsible ? `<button class="et-see-all et-see-all--sm" onclick="etToggleSection('${groupId}', this, ${list.length})">See all ${list.length}</button>` : ''}
     </div>`;
 }
 
@@ -158,7 +165,7 @@ function _countryEventSection(title, id, athletes, rankFn) {
     .map(ev => ({ ev, list: rankFn(athletes, ev) }))
     .filter(g => g.list.length);
   if (!groups.length) return '';
-  const html = groups.map(g => _countryEventGroupHtml(g.ev, g.list)).join('');
+  const html = groups.map((g, i) => _countryEventGroupHtml(g.ev, g.list, `${id}-${i}`)).join('');
   return `
     <section class="et-section">
       <div class="et-section-header"><h2 class="et-section-title">${title}</h2></div>
