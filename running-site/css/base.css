@@ -117,6 +117,7 @@ body[data-page="rankings"]       { --accent: #2563EB; } /* blue */
 body[data-page="h2h"]            { --accent: #9333EA; } /* purple */
 body[data-page="event-tracker"]  { --accent: #16A34A; } /* green */
 body[data-page="athletes"]       { --accent: #DB2777; } /* pink */
+body[data-page="athlete"]        { --accent: #DB2777; } /* athlete profile — same pink */
 body[data-page="podcast"]        { --accent: #0891B2; } /* cyan */
 body[data-page="about"]          { --accent: #CA8A04; } /* gold */
 body[data-page="time-machine"]   { --accent: #4F46E5; } /* electric indigo (wormhole) */

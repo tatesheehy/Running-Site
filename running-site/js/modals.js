@@ -509,7 +509,12 @@ function closeAthleteCard() {
   document.body.style.overflow = '';
 }
 
-window.openAthleteCard = openAthleteCard;
+// Athlete profiles now live on dedicated pages — clicking a name navigates
+// there instead of opening the old pop-up card (kept above for reference).
+window.openAthleteCard = function (athleteId, rank) {
+  if (!athleteId || !ATHLETES[athleteId]) return;
+  goTo(`athlete.html?id=${encodeURIComponent(athleteId)}`);
+};
 window.closeAthleteCard = closeAthleteCard;
 
 // ── Add-to-list popover (athlete card) ───────────────────────
@@ -576,7 +581,7 @@ document.addEventListener('click', e => {
 window.openRankingRow = function(encodedData) {
   const r = JSON.parse(decodeURIComponent(encodedData));
   if (r.athleteId && ATHLETES[r.athleteId]) {
-    openAthleteCard(r.athleteId, r.rank);
+    window.openAthleteCard(r.athleteId, r.rank); // navigates to the profile page
     return;
   }
   // Mini card for athletes without a full profile

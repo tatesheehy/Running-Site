@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (page === 'event-tracker') buildEventTrackerPage();
   if (page === 'time-machine') buildTimeMachinePage();
   if (page === 'country')     buildCountryPage();
+  if (page === 'athlete')     buildAthleteProfilePage();
 
   buildAthleteCardModal();
 
