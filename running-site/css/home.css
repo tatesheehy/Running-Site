@@ -1031,39 +1031,44 @@
 /* ── Card base ────────────────────────────────────────────── */
 .dash-card {
   background: #fff;
-  border: 1px solid var(--border);
+  border: 1px solid #EDEFF2;
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-card);
+  box-shadow: 0 1px 2px rgba(16,24,40,0.04);
   padding: 20px;
   min-width: 0;
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* clip the accent header/footer bands to the rounded corners */
+  overflow: hidden; /* clip the header hairline to the rounded corners */
 }
 
-/* ── Accent header band — solid brand orange + white text (page/card
-   identity), distinct from the blue interactive elements inside the card. ── */
+/* ── Card header — editorial, not blocky: dark title with a small brand
+   accent tick, separated from content by a hairline (no solid fill). ── */
 .dash-card > .dash-card-title:first-child,
 .dash-card > .dash-card-hd:first-child {
   margin: -20px -20px 16px;
-  padding: 13px 20px;
-  background: var(--brand);
-  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  padding: 16px 20px 13px;
+  background: transparent;
+  border-bottom: 1px solid var(--border);
 }
-.dash-card > .dash-card-title:first-child {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 800;
-}
+.dash-card > .dash-card-title:first-child,
 .dash-card > .dash-card-hd:first-child .dash-card-title {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.005em;
 }
-/* Event tabs (Season Leaders) on the solid band */
-.dash-card > .dash-card-hd:first-child .fp-rank-tabs { background: rgba(255,255,255,0.22); }
-.dash-card > .dash-card-hd:first-child .fp-rank-tab { color: rgba(255,255,255,0.9); }
-.dash-card > .dash-card-hd:first-child .fp-rank-tab.active { color: var(--brand); background: #fff; }
+.dash-card > .dash-card-title:first-child::before,
+.dash-card > .dash-card-hd:first-child .dash-card-title::before {
+  content: '';
+  width: 3px;
+  height: 15px;
+  border-radius: 2px;
+  background: var(--brand);
+  flex-shrink: 0;
+}
 
 .dash-card--clickable {
   cursor: pointer;
@@ -1102,28 +1107,23 @@
 }
 .dash-link:hover { text-decoration: underline; }
 
-/* Card footer link is an action (navigates you somewhere) — always the
-   interactive blue, regardless of the card's identity-orange header. */
+/* Card footer CTA — a clean text link with arrow (not a filled pill), which
+   reads more editorial/refined than a chunky button. */
 .dash-card-foot {
   margin-top: 16px;
   align-self: flex-start;
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 9px 16px;
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  padding: 6px 0 0;
+  background: none;
   color: var(--accent);
   font-weight: 700;
+  font-size: 13px;
   text-decoration: none;
-  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  transition: gap 0.15s ease;
 }
-.dash-card-foot:hover {
-  background: var(--accent);
-  color: #fff;
-  text-decoration: none;
-  transform: translateY(-1px);
-}
+.dash-card-foot:hover { gap: 9px; text-decoration: none; }
 /* Footer button on the dark H2H feature card */
 .dash-h2hking .dash-card-foot {
   background: rgba(255,255,255,0.16);
