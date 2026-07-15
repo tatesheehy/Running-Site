@@ -1,7 +1,9 @@
 /* ── ADVANCED METRICS ─────────────────────────────────────── */
 .mx-page { padding-bottom: 72px; }
 
-.mx-chart { width: 100%; overflow-x: auto; }
+/* Charts sit in a centered, capped column so they don't sprawl the full
+   card width (which made them needlessly tall). */
+.mx-chart { width: 100%; max-width: 720px; margin: 0 auto; overflow-x: auto; }
 .mx-svg { width: 100%; min-width: 480px; height: auto; display: block; }
 /* Only the dots should catch the pointer, so a shape drawn on top of another
    athlete's dot never blocks its hover tooltip. */
@@ -64,8 +66,9 @@
 .mx-dot--line { opacity: 1; cursor: default; }
 .mx-line { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
 
-/* Strengths radar */
-.mx-svg--radar { min-width: 420px; max-width: 620px; margin: 4px auto 0; }
+/* Strengths radar — kept compact; it's near-square so a wide cap made it
+   tower over the other charts. */
+.mx-svg--radar { min-width: 0; max-width: 420px; margin: 4px auto 0; }
 .mx-radar-grid { stroke: var(--border); fill: none; stroke-width: 1; }
 .mx-radar-lbl {
   fill: var(--text);
@@ -90,6 +93,9 @@
   gap: 12px;
   flex-wrap: wrap;
   margin-bottom: 6px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .mx-radar-slot {
   display: flex;
@@ -192,6 +198,7 @@
 .mx-empty { color: var(--muted); font-size: 14px; padding: 24px 0; text-align: center; }
 
 /* Decay legend */
+#mx-decay-controls { max-width: 720px; margin: 0 auto; }
 .mx-legend { display: flex; gap: 20px; margin: 20px 0 14px; flex-wrap: wrap; }
 .mx-legend-item { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); }
 .mx-legend-line { width: 22px; height: 0; border-top-width: 2px; border-top-style: solid; }
