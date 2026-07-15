@@ -590,8 +590,7 @@ function buildHome() {
   const searchHero = `
     <section class="home-search-hero">
       <div class="hsh-band">
-        <h1 class="hsh-wordmark">StatTC</h1>
-        <p class="hsh-tag">Head-to-heads, rankings, and the deep stats behind distance running.</p>
+        <p class="hsh-tag">Every athlete, every rivalry, every stat.</p>
         <div class="hsh-search" id="home-search">
           <svg class="hsh-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
           <input class="hsh-input" type="text" autocomplete="off" spellcheck="false"
@@ -605,8 +604,9 @@ function buildHome() {
     </section>`;
 
   // Which pair every tool below is pre-loaded with (explains the examples).
+  // Colored to match the A/B athlete colors used across every tool card.
   const pairLabel = (showA && showB)
-    ? `<button class="ht-pair" onclick="openAthleteCard('${showA.id}',null)">${showA.name}</button> vs <button class="ht-pair" onclick="openAthleteCard('${showB.id}',null)">${showB.name}</button>`
+    ? `<button class="ht-pair" style="color:${_cA}" onclick="openAthleteCard('${showA.id}',null)">${showA.name}</button> vs <button class="ht-pair" style="color:${_cB}" onclick="openAthleteCard('${showB.id}',null)">${showB.name}</button>`
     : '';
 
   document.getElementById('main').innerHTML = `
