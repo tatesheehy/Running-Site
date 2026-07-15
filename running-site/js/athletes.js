@@ -60,6 +60,39 @@ function buildAthletesPage() {
     return (a.prs || []).find(p => p.event === event)?.time || null;
   }
 
+  // Top-of-page stat strip — same big-number/tiny-caps component the Event
+  // Tracker & H2H pages use, giving Athletes the same confident, data-forward feel.
+  function _buildAthleteStatsHtml() {
+    const total = all.length;
+    const nations = Object.keys(countryCounts).length;
+    const topCountry = countryList[0] || '';
+    const topCountryN = topCountry ? countryCounts[topCountry] : 0;
+    const subFour = all.filter(a => _parseTime(getPr(a, 'Mile')) < _parseTime('4:00.00')).length;
+    return `
+      <div class="h2h-stats-strip">
+        <div class="h2h-stat">
+          <span class="h2h-stat-n">${total}</span>
+          <span class="h2h-stat-l">Athletes tracked</span>
+        </div>
+        <div class="h2h-stat-div"></div>
+        <div class="h2h-stat">
+          <span class="h2h-stat-n">${nations}</span>
+          <span class="h2h-stat-l">Countries</span>
+        </div>
+        <div class="h2h-stat-div"></div>
+        <div class="h2h-stat">
+          <span class="h2h-stat-n">${subFour}</span>
+          <span class="h2h-stat-l">Sub-4 milers</span>
+        </div>
+        ${topCountry ? `
+        <div class="h2h-stat-div"></div>
+        <div class="h2h-stat">
+          <span class="h2h-stat-n">${topCountry}</span>
+          <span class="h2h-stat-l">Most represented · ${topCountryN}</span>
+        </div>` : ''}
+      </div>`;
+  }
+
   function sortedAthletes() {
     let list = myAthletesActive
       ? all.filter(a => typeof isFavorited === 'function' && isFavorited(a.id))
@@ -516,6 +549,8 @@ function buildAthletesPage() {
           </div>
         </div>
       </div>
+
+      ${_buildAthleteStatsHtml()}
 
       ${typeof renderRecentlyViewed === 'function' ? renderRecentlyViewed({}) : ''}
 
