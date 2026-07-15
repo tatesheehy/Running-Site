@@ -670,7 +670,14 @@ window.homeSearch = function(query) {
   if (!wrap || !results) return;
   const q = (query || '').trim();
   if (!q) { results.innerHTML = ''; wrap.classList.remove('open'); return; }
-  results.innerHTML = typeof _buildSearchResultsHtml === 'function' ? _buildSearchResultsHtml(q) : '';
+  // Natural-language "smart" answer first (H2H, leaderboards, barriers,
+  // country filters), then the normal substring index below it.
+  const answer = typeof _smartSearchAnswer === 'function' ? _smartSearchAnswer(q) : '';
+  let base = typeof _buildSearchResultsHtml === 'function' ? _buildSearchResultsHtml(q) : '';
+  // When we have a smart answer, don't also show the base "no results" empty
+  // state below it (it reads as a contradiction under a successful answer).
+  if (answer && base.includes('search-no-results')) base = '';
+  results.innerHTML = answer + base;
   wrap.classList.add('open');
 };
 
@@ -682,6 +689,190 @@ window.homeSearchFill = function(q) {
   inp.focus();
   window.homeSearch(q);
 };
+
+// ── Natural-language "smart" search (rule-based intent parser) ──────────────
+// Maps a typed phrase onto one of the site's existing query primitives
+// (_computePairMatchup, _seasonBestRanking, PR filtering, country filtering)
+// and renders an inline answer card. Deterministic, client-side, no network.
+// Falls back silently (returns '') so the normal substring index still shows.
+
+// Event vocabulary — longer/higher distances first so "10000" isn't caught by
+// a "1000"/"100" rule and "1500" isn't caught by "500".
+const _SS_EVENTS = [
+  { re: /\b10[\s,]?000\s*m?\b|\b10\s?k\b/, ev: '10000m', label: '10,000m' },
+  { re: /\b5[\s,]?000\s*m?\b|\b5\s?k\b/,   ev: '5000m',  label: '5000m' },
+  { re: /\b3[\s,]?000\s*m?\b|\b3\s?k\b/,   ev: '3000m',  label: '3000m' },
+  { re: /\b1500\s*m?\b/,                    ev: '1500m',  label: '1500m' },
+  { re: /\bmile\b/,                         ev: 'Mile',   label: 'Mile' },
+  { re: /\b800\s*m?\b/,                     ev: '800m',   label: '800m' },
+  { re: /\b400\s*m?\b/,                     ev: '400m',   label: '400m' },
+];
+function _ssDetectEvent(q) { for (const e of _SS_EVENTS) if (e.re.test(q)) return e; return null; }
+
+// Country / demonym vocabulary (values must match ATHLETES[].country strings).
+const _SS_COUNTRIES = {
+  'united states': 'United States', 'usa': 'United States', 'us': 'United States', 'american': 'United States', 'americans': 'United States',
+  'kenya': 'Kenya', 'kenyan': 'Kenya', 'kenyans': 'Kenya',
+  'france': 'France', 'french': 'France',
+  'australia': 'Australia', 'australian': 'Australia', 'aussie': 'Australia', 'aussies': 'Australia',
+  'spain': 'Spain', 'spanish': 'Spain',
+  'ireland': 'Ireland', 'irish': 'Ireland',
+  'great britain': 'Great Britain', 'britain': 'Great Britain', 'british': 'Great Britain', 'gb': 'Great Britain', 'uk': 'Great Britain', 'england': 'Great Britain', 'english': 'Great Britain',
+  'norway': 'Norway', 'norwegian': 'Norway', 'norwegians': 'Norway',
+  'netherlands': 'Netherlands', 'dutch': 'Netherlands', 'holland': 'Netherlands',
+  'canada': 'Canada', 'canadian': 'Canada',
+  'japan': 'Japan', 'japanese': 'Japan',
+  'ethiopia': 'Ethiopia', 'ethiopian': 'Ethiopia', 'ethiopians': 'Ethiopia',
+  'new zealand': 'New Zealand', 'kiwi': 'New Zealand',
+  'germany': 'Germany', 'german': 'Germany',
+  'italy': 'Italy', 'italian': 'Italy',
+  'belgium': 'Belgium', 'belgian': 'Belgium',
+  'uganda': 'Uganda', 'ugandan': 'Uganda',
+  'morocco': 'Morocco', 'moroccan': 'Morocco',
+};
+function _ssDetectCountry(q) {
+  const keys = Object.keys(_SS_COUNTRIES).sort((a, b) => b.length - a.length);
+  for (const k of keys) {
+    if (new RegExp('\\b' + k.replace(/ /g, '\\s+') + '\\b').test(q)) return _SS_COUNTRIES[k];
+  }
+  return null;
+}
+
+// Resolve a free-text fragment to a single athlete (full name, contains, or
+// all-tokens/last-name match; prefers the most specific = shortest name).
+function _ssResolveAthlete(str) {
+  const s = (str || '').trim().toLowerCase().replace(/[?.!]+$/, '');
+  if (s.length < 2 || typeof ATHLETES === 'undefined') return null;
+  const all = Object.values(ATHLETES);
+  let m = all.filter(a => a.name.toLowerCase() === s);
+  if (m.length) return m[0];
+  m = all.filter(a => a.name.toLowerCase().includes(s));
+  if (m.length) return m.sort((a, b) => a.name.length - b.name.length)[0];
+  const toks = s.split(/\s+/);
+  m = all.filter(a => { const n = a.name.toLowerCase(); return toks.every(t => n.includes(t)); });
+  if (m.length) return m.sort((a, b) => a.name.length - b.name.length)[0];
+  return null;
+}
+
+// Best PR (seconds + display) for an athlete at a given event, or null.
+function _ssBestPr(a, ev) {
+  const prs = (a.prs || [])
+    .filter(p => _normalizeEvent(p.event) === _normalizeEvent(ev) && parseTimeToSecs(p.time) != null)
+    .map(p => ({ secs: parseTimeToSecs(p.time), time: p.time }))
+    .sort((x, y) => x.secs - y.secs);
+  return prs[0] || null;
+}
+
+// ── Shared row/wrapper renderers ──
+function _ssAthleteRow(a, right) {
+  const photo = a.photo || '/images/default_card.png';
+  const bg = a.photoBackground || '#111';
+  return `<div class="search-result-item search-result-athlete" onclick="openAthleteCard('${a.id}',null);closeSearch();">
+    <div class="search-ath-avatar" style="background-image:url('${photo}');background-color:${bg}"></div>
+    <div class="search-ath-info">
+      <div class="search-result-title">${a.name}</div>
+      <div class="search-result-meta">${renderFlag(a.flag)} ${a.country || ''}</div>
+    </div>
+    ${right ? `<div class="ss-row-right">${right}</div>` : ''}
+  </div>`;
+}
+function _ssWrap(kicker, bodyHtml, ctaText, ctaHref) {
+  return `<div class="ss-answer">
+    <div class="ss-answer-kicker">${kicker}</div>
+    <div class="ss-answer-body">${bodyHtml}</div>
+    ${ctaHref ? `<a class="ss-answer-cta" href="${ctaHref}">${ctaText} →</a>` : ''}
+  </div>`;
+}
+
+// ── The router ──
+function _smartSearchAnswer(raw) {
+  const q = (raw || '').trim();
+  if (q.length < 3 || typeof ATHLETES === 'undefined') return '';
+  const ql = q.toLowerCase();
+  try {
+    // 1) Head-to-head: "X vs Y", "X versus Y", "X v Y", "X against Y"
+    const sides = ql.split(/\s+(?:vs\.?|versus|v\.?|against)\s+/);
+    if (sides.length === 2 && typeof _computePairMatchup === 'function') {
+      const a1 = _ssResolveAthlete(sides[0]), a2 = _ssResolveAthlete(sides[1]);
+      if (a1 && a2 && a1.id !== a2.id) {
+        const m = _computePairMatchup(a1.id, a2.id) || { wins: 0, losses: 0, races: [] };
+        const short = n => n.split(' ').slice(-1)[0];
+        const leader = m.wins > m.losses ? short(a1.name) : m.losses > m.wins ? short(a2.name) : null;
+        const body = `
+          <div class="ss-h2h">
+            <span class="ss-h2h-name" style="color:var(--brand)">${a1.name}</span>
+            <span class="ss-h2h-score">${m.wins}<em>–</em>${m.losses}</span>
+            <span class="ss-h2h-name ss-h2h-name--r" style="color:var(--accent)">${a2.name}</span>
+          </div>
+          <div class="ss-h2h-meta">${m.races.length} career meeting${m.races.length === 1 ? '' : 's'}${leader ? ` · ${leader} leads` : m.races.length ? ' · all square' : ' · never raced'}</div>`;
+        const href = `h2h.html?a=${encodeURIComponent(a1.id)}&b=${encodeURIComponent(a2.id)}`;
+        return _ssWrap('Head-to-Head', body, 'Open full head-to-head', href);
+      }
+    }
+
+    const evt = _ssDetectEvent(ql);
+    const country = _ssDetectCountry(ql);
+
+    // 2) Barrier / threshold: "sub 3:30", "under 13:00 5000m", "who's run below 1:44"
+    const bm = ql.match(/\b(?:sub|under|below)\s*[-\s]?(\d{1,2}(?::\d{2})?(?:[.:]\d{1,2})?)/);
+    if (bm) {
+      const secs = parseTimeToSecs(bm[1]);
+      if (secs) {
+        const e = evt || _ssInferEventFromTime(secs);
+        const list = Object.values(ATHLETES).map(a => {
+          const pr = _ssBestPr(a, e.ev);
+          return pr && pr.secs < secs ? { a, pr } : null;
+        }).filter(Boolean).sort((x, y) => x.pr.secs - y.pr.secs);
+        const rows = list.slice(0, 6).map(r => _ssAthleteRow(r.a, `<span class="ss-time">${r.pr.time}</span>`)).join('');
+        const body = `<div class="ss-count">${list.length} athlete${list.length === 1 ? '' : 's'} with a ${e.label} PR under ${bm[1]}${evt ? '' : ` <span class="ss-guess">(assumed ${e.label})</span>`}</div>${rows || '<div class="ss-none">No one in the database yet.</div>'}`;
+        const href = `athletes.html?prEvent=${encodeURIComponent(e.ev)}&prTime=${encodeURIComponent(bm[1])}`;
+        return _ssWrap('Barrier Club', body, 'See all in Multi-PR Search', href);
+      }
+    }
+
+    // 3) Leaderboard: "fastest 1500m", "best 5000m", "top 800m", "1500m leaders"
+    const wantsBoard = /\b(fastest|quickest|best|top|leaders?|ranking|rankings)\b/.test(ql);
+    if (wantsBoard && evt && typeof _seasonBestRanking === 'function') {
+      let list = _seasonBestRanking(evt.ev);
+      let scope = '';
+      if (country) { list = list.filter(r => r.a.country === country); scope = ` (${country})`; }
+      const rows = list.slice(0, 6).map(r => _ssAthleteRow(r.a, `<span class="ss-time">${r.time}</span>`)).join('');
+      const body = `<div class="ss-count">Season leaders · ${evt.label}${scope}</div>${rows || '<div class="ss-none">No season marks yet.</div>'}`;
+      const href = `event-tracker.html?event=${encodeURIComponent(evt.ev)}`;
+      return _ssWrap('Leaderboard', body, 'Open Event Tracker', href);
+    }
+
+    // 4) Country filter: "Kenyan runners", "athletes from Norway", "Norwegian 1500m"
+    if (country) {
+      let members = Object.values(ATHLETES).filter(a => a.country === country);
+      let rows;
+      if (evt) {
+        members = members.map(a => { const pr = _ssBestPr(a, evt.ev); return pr ? { a, pr } : null; })
+          .filter(Boolean).sort((x, y) => x.pr.secs - y.pr.secs);
+        rows = members.slice(0, 6).map(r => _ssAthleteRow(r.a, `<span class="ss-time">${r.pr.time}</span>`)).join('');
+      } else {
+        members = members.sort((a, b) => a.name.localeCompare(b.name)).map(a => ({ a }));
+        rows = members.slice(0, 6).map(r => _ssAthleteRow(r.a)).join('');
+      }
+      if (members.length) {
+        const body = `<div class="ss-count">${members.length} athlete${members.length === 1 ? '' : 's'} from ${country}${evt ? ` · ${evt.label}` : ''}</div>${rows}`;
+        return _ssWrap('By Country', body, `Explore ${country}`, `country.html`);
+      }
+    }
+  } catch (e) { /* fall through to plain search */ }
+  return '';
+}
+
+// Rough winning-time brackets so a bare "sub 3:30" (no event) still resolves.
+// Transparently labeled in the UI as an assumption.
+function _ssInferEventFromTime(secs) {
+  if (secs < 110) return { ev: '800m', label: '800m' };     // < 1:50
+  if (secs < 260) return { ev: '1500m', label: '1500m' };   // < 4:20
+  if (secs < 300) return { ev: 'Mile', label: 'Mile' };     // 4:20–5:00
+  if (secs < 560) return { ev: '3000m', label: '3000m' };   // < 9:20
+  if (secs < 960) return { ev: '5000m', label: '5000m' };   // < 16:00
+  return { ev: '10000m', label: '10000m' };
+}
 
 // Close the dropdown on outside click (registered once).
 if (!window._homeSearchOutsideClick) {

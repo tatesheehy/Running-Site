@@ -1157,6 +1157,72 @@ body[data-page="home"] .navbar-util { grid-template-columns: 1fr auto; }
 .hsh-results .search-result-excerpt { color: var(--muted); font-size: 12px; -webkit-line-clamp: 1; }
 .hsh-results .search-no-results { color: var(--muted); padding: 14px 12px; font-size: 14px; }
 .hsh-results .search-no-results-title { color: var(--text); }
+
+/* ── Smart-search answer card (natural-language intent result) ── */
+.ss-answer {
+  margin: 2px 2px 8px;
+  padding: 12px 14px 10px;
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--border));
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--accent) 5%, #fff);
+}
+.ss-answer-kicker {
+  display: inline-block;
+  font-family: var(--font-display, inherit);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.ss-answer-body .search-result-item { padding: 7px 8px; }
+.ss-count {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  padding: 0 2px 6px;
+}
+.ss-guess { color: var(--muted); font-weight: 500; }
+.ss-none { color: var(--muted); font-size: 13px; padding: 6px 2px; }
+.ss-row-right { margin-left: auto; padding-left: 10px; }
+.ss-time {
+  font-family: var(--font-mono, monospace);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+}
+/* H2H answer */
+.ss-h2h {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 6px 0 4px;
+}
+.ss-h2h-name { flex: 1; font-weight: 700; font-size: 15px; text-align: right; }
+.ss-h2h-name--r { text-align: left; }
+.ss-h2h-score {
+  font-family: var(--font-display, inherit);
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text);
+  white-space: nowrap;
+}
+.ss-h2h-score em { color: var(--muted); font-style: normal; margin: 0 3px; }
+.ss-h2h-meta { text-align: center; font-size: 12px; color: var(--muted); padding: 2px 0 4px; }
+/* Shared CTA link */
+.ss-answer-cta {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+}
+.ss-answer-cta:hover { text-decoration: underline; }
+
 .hsh-chips {
   position: relative;
   display: flex;
