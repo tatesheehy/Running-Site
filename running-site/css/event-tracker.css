@@ -108,6 +108,19 @@
   font-weight: 700;
   letter-spacing: -0.01em;
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+/* Accent tab before the title — matches the Time Machine section headers.
+   Uses --accent, so each page's bar picks up that section's color. */
+.et-section-title::before {
+  content: '';
+  width: 4px;
+  height: 18px;
+  border-radius: 2px;
+  background: var(--accent);
+  flex-shrink: 0;
 }
 
 .et-view-link {
