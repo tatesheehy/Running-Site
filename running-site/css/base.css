@@ -62,7 +62,7 @@
   --font-display: 'Lota Grotesque', sans-serif;
   --font-body: 'Lota Grotesque', system-ui, -apple-system, sans-serif;
   --font-mono: 'Lota Grotesque', sans-serif;
-  --max-width: 1440px;
+  --max-width: 1200px; /* content column width, now that there's no side rail narrowing it */
   --nav-h: 116px; /* two-row horizontal header: utility row + nav-links row */
   --radius-sm: 8px;
   --radius: 12px;
