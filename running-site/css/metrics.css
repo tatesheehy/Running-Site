@@ -3,6 +3,35 @@
 
 .mx-chart { width: 100%; overflow-x: auto; }
 .mx-svg { width: 100%; min-width: 480px; height: auto; display: block; }
+.mx-svg--decay { min-width: 560px; }
+
+/* Larger axis text for the headline decay chart */
+.mx-axl--lg { font-size: 13px; }
+
+/* Pace / Relative toggle */
+.mx-mode-toggle {
+  display: inline-flex;
+  gap: 2px;
+  background: var(--bg-light);
+  border-radius: 999px;
+  padding: 3px;
+}
+.mx-mode-btn {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  background: none;
+  border: none;
+  border-radius: 999px;
+  padding: 7px 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.15s, background 0.15s;
+}
+.mx-mode-btn:hover { color: var(--text); }
+.mx-mode-btn.active { color: var(--text); background: #fff; box-shadow: var(--shadow-card); }
+.mx-note--sub { margin: -2px 0 14px; }
 
 /* Axes / grid */
 .mx-grid { stroke: var(--border); stroke-width: 1; }
@@ -21,15 +50,37 @@
 }
 
 /* Decay chart */
-.mx-decay-faint { fill: none; stroke: color-mix(in srgb, var(--text) 10%, transparent); stroke-width: 1; }
-.mx-decay-median { fill: none; stroke: var(--text); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
-.mx-decay-hi { fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.mx-decay-faint { fill: none; stroke: color-mix(in srgb, var(--text) 9%, transparent); stroke-width: 1.4; }
+.mx-decay-median { fill: none; stroke: var(--text); stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+.mx-decay-hi { fill: none; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
 
 /* Scatter / line dots */
 .mx-dot { fill: var(--accent); opacity: 0.65; cursor: pointer; transition: opacity 0.12s; }
 .mx-dot:hover { opacity: 1; }
 .mx-dot--line { opacity: 1; cursor: default; }
 .mx-line { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+
+.mx-dot--hit { cursor: pointer; transition: r 0.1s; }
+.mx-dot--hit:hover { stroke: #fff; stroke-width: 2; }
+
+/* Hover tooltip shared by all charts */
+.mx-tooltip {
+  position: fixed;
+  z-index: 9999;
+  display: none;
+  pointer-events: none;
+  background: #1A1D24;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 7px 11px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(16,24,40,0.28);
+  white-space: nowrap;
+  max-width: 320px;
+}
+.mx-tooltip.show { display: block; }
 
 .mx-note { font-size: 12px; color: var(--muted); margin-top: 12px; }
 .mx-empty { color: var(--muted); font-size: 14px; padding: 24px 0; text-align: center; }
