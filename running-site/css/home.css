@@ -1771,6 +1771,9 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
 .dash-hexagon .mx-svg, .dash-aero .mx-svg { min-width: 0; }
 /* Keep the previews compact so they don't dominate the dashboard */
 .dash-hexagon .mx-svg--radar { max-width: 288px; }
+/* The radar is scaled way down here, so its viewBox-unit labels render tiny —
+   bump them up (and darken) so the distances stay legible on the card. */
+.dash-hex-svg .mx-radar-lbl { font-size: 24px; font-weight: 800; }
 .dash-aero .mx-svg { max-width: 480px; }
 .dash-hex-legend {
   display: flex;
@@ -1851,6 +1854,54 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
 }
 .he-race-win { font-weight: 800; flex-shrink: 0; min-width: 78px; }
 .he-race-meet { color: var(--muted); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+/* Personal Bests comparison example */
+.pc-head {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: baseline;
+  gap: 12px;
+  padding-bottom: 8px;
+  margin-bottom: 2px;
+  border-bottom: 1px solid var(--border);
+}
+.pc-name { font-weight: 700; font-size: 13px; text-align: left; cursor: pointer; }
+.pc-name--r { text-align: right; }
+.pc-name:hover { text-decoration: underline; }
+.pc-head-mid {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.pc-list { display: flex; flex-direction: column; }
+.pc-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: baseline;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--bg-light);
+}
+.pc-row:last-child { border-bottom: none; }
+.pc-t {
+  font-family: var(--font-mono, monospace);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  text-align: left;
+}
+.pc-t--r { text-align: right; }
+.pc-t--win { font-weight: 800; }
+.pc-ev {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  text-align: center;
+  white-space: nowrap;
+}
 
 /* Shared Races example */
 .sr-sub { font-size: 12px; color: var(--muted); margin-bottom: 4px; }

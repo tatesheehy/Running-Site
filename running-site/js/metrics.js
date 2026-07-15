@@ -249,9 +249,11 @@ function _mxEventPct(evKey) {
   return pct;
 }
 
-function _mxRadarSvg(idA, idB) {
+function _mxRadarSvg(idA, idB, colorA, colorB) {
   const A = ATHLETES[idA], B = ATHLETES[idB];
   if (!A && !B) return '<p class="mx-empty">Pick two athletes to compare.</p>';
+  const cA = colorA || _MX_PALETTE[0];
+  const cB = colorB || '#EA580C';
   const evs = MX_EVENTS;
   const pctByEv = evs.map(ev => ({ ev, pct: _mxEventPct(ev.key) }));
 
@@ -282,8 +284,8 @@ function _mxRadarSvg(idA, idB) {
 
   return `<svg viewBox="0 0 ${W} ${H}" class="mx-svg mx-svg--radar" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Strengths radar">
     ${rings}${spokes}${labels}
-    ${shape(A, _MX_PALETTE[0], false)}
-    ${shape(B, '#EA580C', true)}
+    ${shape(A, cA, false)}
+    ${shape(B, cB, true)}
   </svg>`;
 }
 

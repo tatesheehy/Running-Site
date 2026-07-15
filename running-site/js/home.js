@@ -275,23 +275,48 @@ function _homeRenderPairShowcase() {
           <span class="dash-hex-vs">vs</span>
           <span class="dash-hex-name" style="--c:${_cB}" onclick="openAthleteCard('${showB.id}', null)" role="button" tabindex="0"><span class="dash-hex-dot"></span>${showB.name}</span>
         </div>
-        <div class="dash-hex-svg">${_mxRadarSvg(showA.id, showB.id)}</div>
+        <div class="dash-hex-svg">${_mxRadarSvg(showA.id, showB.id, '#FF5200', '#00B7FF')}</div>
         <a href="metrics.html${_pairQ}" class="dash-link dash-card-foot">Open in Advanced Metrics →</a>
       </div>`;
   }
 
-  // Aerobic Decay example
-  let decayExampleCard = '';
-  if (_metricsReady && showA && showB) {
-    _mxMode = 'pace';
-    _mxHighlight = [showA.id, showB.id];
-    decayExampleCard = `
-      <div class="dash-card dash-aero">
-        <div class="dash-card-title">Aerobic Decay</div>
-        <div class="dash-aero-svg">${_mxDecaySvg()}</div>
-        <a href="metrics.html${_pairQ}" class="dash-link dash-card-foot">Explore the aerobic decay tool →</a>
+  // Personal Bests comparison — the pair's shared events side by side, faster
+  // mark highlighted. Showcases the Multi-PR / compare tooling.
+  let prCompareCard = '';
+  if (showA && showB) {
+    const PC_ORDER = ['800m', '1500m', 'Mile', '3000m', '5000m', '10000m'];
+    const bestByEvent = a => {
+      const m = {};
+      (a.prs || []).forEach(p => {
+        const k = _normalizeEvent(p.event);
+        const s = parseTimeToSecs(p.time);
+        if (s != null && (!(k in m) || s < m[k].secs)) m[k] = { time: p.time, secs: s };
+      });
+      return m;
+    };
+    const mA = bestByEvent(showA), mB = bestByEvent(showB);
+    const rows = PC_ORDER.map(ev => {
+      const k = _normalizeEvent(ev);
+      const pa = mA[k], pb = mB[k];
+      if (!pa || !pb) return null;
+      const aWin = pa.secs < pb.secs, bWin = pb.secs < pa.secs;
+      return `<div class="pc-row">
+        <span class="pc-t${aWin ? ' pc-t--win' : ''}" style="${aWin ? `color:${_cA}` : ''}">${pa.time}</span>
+        <span class="pc-ev">${ev}</span>
+        <span class="pc-t pc-t--r${bWin ? ' pc-t--win' : ''}" style="${bWin ? `color:${_cB}` : ''}">${pb.time}</span>
       </div>`;
-    _mxHighlight = [];
+    }).filter(Boolean).join('');
+    prCompareCard = `
+      <div class="dash-card dash-prcompare">
+        <div class="dash-card-title">Personal Bests</div>
+        <div class="pc-head">
+          <span class="pc-name" style="color:${_cA}" onclick="openAthleteCard('${showA.id}', null)" role="button" tabindex="0">${_shortA}</span>
+          <span class="pc-head-mid">event</span>
+          <span class="pc-name pc-name--r" style="color:${_cB}" onclick="openAthleteCard('${showB.id}', null)" role="button" tabindex="0">${_shortB}</span>
+        </div>
+        ${rows ? `<div class="pc-list">${rows}</div>` : '<p class="dash-empty">No shared events between this pair.</p>'}
+        <a href="metrics.html${_pairQ}" class="dash-link dash-card-foot">Compare every mark →</a>
+      </div>`;
   }
 
   // Head-to-Head example
@@ -387,7 +412,7 @@ function _homeRenderPairShowcase() {
     ? `<button class="ht-pair" style="color:${_cA}" onclick="openAthleteCard('${showA.id}',null)">${showA.name}</button> vs <button class="ht-pair" style="color:${_cB}" onclick="openAthleteCard('${showB.id}',null)">${showB.name}</button>`
     : '';
 
-  return { showA, showB, hexExampleCard, decayExampleCard, h2hExampleCard, sharedRacesCard, chipsHtml, pairLabel };
+  return { showA, showB, hexExampleCard, prCompareCard, h2hExampleCard, sharedRacesCard, chipsHtml, pairLabel };
 }
 
 function _homeChipsInner(chipsHtml) {
@@ -404,7 +429,7 @@ window.shuffleHomeTools = function () {
   const pair = _homeRenderPairShowcase();
   const set = (id, html) => { const el = document.getElementById(id); if (el) el.innerHTML = html; };
   set('home-card-h2h', pair.h2hExampleCard);
-  set('home-card-decay', pair.decayExampleCard);
+  set('home-card-pr', pair.prCompareCard);
   set('home-card-hex', pair.hexExampleCard);
   set('home-card-shared', pair.sharedRacesCard);
   set('home-pair-label', _homePairSubInner(pair.pairLabel));
@@ -554,7 +579,7 @@ function buildHome() {
   // re-renders just these cards (see _homeRenderPairShowcase below) — the
   // rest of the page (search hero, activity, meets) never reloads.
   const pair = _homeRenderPairShowcase();
-  const { showA, showB, hexExampleCard, decayExampleCard, h2hExampleCard, sharedRacesCard, chipsHtml, pairLabel } = pair;
+  const { showA, showB, hexExampleCard, prCompareCard, h2hExampleCard, sharedRacesCard, chipsHtml, pairLabel } = pair;
 
   // ── Row 3: recent activity (trending performances) ───────
   const trendItems = _buildTrendingPerformances(5);
@@ -634,7 +659,7 @@ function buildHome() {
           <div class="home-split">
             <div class="home-main">
               <div id="home-card-h2h">${h2hExampleCard}</div>
-              <div id="home-card-decay">${decayExampleCard}</div>
+              <div id="home-card-pr">${prCompareCard}</div>
               ${activityCard}
             </div>
             <aside class="home-rail">
