@@ -459,6 +459,28 @@ function buildMetricsPage() {
   _mxRadarA = null;
   _mxRadarB = null;
 
+  // Top-of-page stat strip — same component as Event Tracker / H2H / Athletes.
+  const _mxAll = Object.values(ATHLETES);
+  const _mxAnalyzed = _mxAll.filter(a => MX_EVENTS.reduce((n, e) => n + (_mxPr(a, e.key) != null ? 1 : 0), 0) >= 3).length;
+  const _mxDataPoints = _mxAll.reduce((n, a) => n + MX_EVENTS.reduce((m, e) => m + (_mxPr(a, e.key) != null ? 1 : 0), 0), 0);
+  const _mxStatsHtml = `
+    <div class="h2h-stats-strip">
+      <div class="h2h-stat">
+        <span class="h2h-stat-n">${_mxAnalyzed}</span>
+        <span class="h2h-stat-l">Athletes analyzed</span>
+      </div>
+      <div class="h2h-stat-div"></div>
+      <div class="h2h-stat">
+        <span class="h2h-stat-n">${MX_EVENTS.length}</span>
+        <span class="h2h-stat-l">Events compared</span>
+      </div>
+      <div class="h2h-stat-div"></div>
+      <div class="h2h-stat">
+        <span class="h2h-stat-n">${_mxDataPoints}</span>
+        <span class="h2h-stat-l">Personal bests charted</span>
+      </div>
+    </div>`;
+
   const eventOpts = MX_EVENTS.map(e => ({ value: e.key, label: e.label }));
   const ageDropdown = (typeof styledDropdown === 'function')
     ? styledDropdown({ value: _mxAgeEvent, onChange: 'mxSetAgeEvent', minWidth: '130px', options: eventOpts }) : '';
@@ -484,6 +506,8 @@ function buildMetricsPage() {
           </div>
         </div>
       </header>
+
+      ${_mxStatsHtml}
 
       <section class="et-section">
         <div class="et-section-header">

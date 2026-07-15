@@ -1090,15 +1090,17 @@
   border-radius: var(--radius-lg);
   margin-bottom: 16px;
   box-shadow: var(--shadow-card);
+  overflow: hidden; /* clip the solid header band to the rounded corners */
 }
 
+/* Tool-box headers: solid accent band + white text (instead of blue text on
+   a gray band), matching the bold color-band aesthetic used site-wide. */
 .h2h-compare-hd {
   display: flex;
   align-items: center;
   gap: 8px;
   padding: 14px 16px;
-  border-bottom: 1px solid var(--border);
-  background: var(--bg-light);
+  background: var(--accent);
 }
 
 .h2h-compare-title {
@@ -1106,7 +1108,7 @@
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #fff;
 }
 
 .h2h-compare-pickers {
@@ -1479,9 +1481,8 @@
 
 /* ── TERMINAL-INSPIRED: mono type · light bands · accent outlines ── */
 
-/* Light mono section headers, matching .rdt-bar */
-.h2h-rivalries-header,
-.h2h-compare-hd {
+/* Light mono section header (rivalries only — compare-hd is a solid accent band) */
+.h2h-rivalries-header {
   background: var(--bg-light);
   border-bottom-color: var(--border);
 }
