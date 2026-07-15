@@ -27,6 +27,7 @@ const MX_DECAY_DIST = [
 
 const _mxNorm = s => (s || '').toLowerCase().replace(/[\s,]+/g, '');
 const _mxEsc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+const _mxOrd = n => { const s = ['th', 'st', 'nd', 'rd'], v = n % 100; return n + (s[(v - 20) % 10] || s[v] || s[0]); };
 const _MX_PALETTE = ['#2563EB', '#DB2777', '#16A34A', '#CA8A04', '#9333EA', '#EA580C'];
 
 let _mxAgeEvent = '5000m';     // event for the Age vs Performance chart
@@ -231,6 +232,98 @@ function _mxRenderDecay() {
   const ctrls = document.getElementById('mx-decay-controls'); if (ctrls) ctrls.innerHTML = _mxDecayControls();
 }
 
+// ── STRENGTHS RADAR ───────────────────────────────────────
+// A spider chart with one spoke per event. Each athlete's distance from the
+// centre is their percentile in that event, so reaching the rim means they're
+// among the fastest in the field. Overlay two athletes to see where each is
+// stronger — a middle-distance shape leans one way, a distance shape the other.
+let _mxRadarA = null, _mxRadarB = null;
+
+// Percentile of every athlete in one event (fastest = 100, slowest = 0).
+function _mxEventPct(evKey) {
+  const rows = [];
+  Object.values(ATHLETES).forEach(a => { const s = _mxPr(a, evKey); if (s != null) rows.push({ id: a.id, sec: s }); });
+  rows.sort((x, y) => x.sec - y.sec);
+  const n = rows.length, pct = {};
+  rows.forEach((o, i) => { pct[o.id] = n > 1 ? (1 - i / (n - 1)) * 100 : 100; });
+  return pct;
+}
+
+function _mxRadarSvg(idA, idB) {
+  const A = ATHLETES[idA], B = ATHLETES[idB];
+  if (!A && !B) return '<p class="mx-empty">Pick two athletes to compare.</p>';
+  const evs = MX_EVENTS;
+  const pctByEv = evs.map(ev => ({ ev, pct: _mxEventPct(ev.key) }));
+
+  const W = 640, H = 560, cx = W / 2, cy = 288, R = 178, n = evs.length;
+  const ang = i => (-90 + i * 360 / n) * Math.PI / 180;
+  const pt = (i, v) => [cx + Math.cos(ang(i)) * R * (v / 100), cy + Math.sin(ang(i)) * R * (v / 100)];
+
+  const rings = [20, 40, 60, 80, 100].map(r =>
+    `<path class="mx-radar-grid" d="M${evs.map((_, i) => { const [x, y] = pt(i, r); return `${x.toFixed(1)} ${y.toFixed(1)}`; }).join(' L')} Z"/>`).join('');
+  const spokes = evs.map((_, i) => { const [x, y] = pt(i, 100); return `<line class="mx-radar-grid" x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"/>`; }).join('');
+  const labels = evs.map((ev, i) => {
+    const [x, y] = pt(i, 118), a = ang(i);
+    const anchor = Math.abs(Math.cos(a)) < 0.3 ? 'middle' : (Math.cos(a) > 0 ? 'start' : 'end');
+    return `<text class="mx-radar-lbl" x="${x.toFixed(1)}" y="${(y + 4).toFixed(1)}" text-anchor="${anchor}">${ev.label}</text>`;
+  }).join('');
+
+  const shape = (a, color, dashed) => {
+    if (!a) return '';
+    const pts = pctByEv.map(({ ev, pct }, i) => ({ i, ev, v: pct[a.id] || 0 }));
+    const d = 'M' + pts.map(p => { const [x, y] = pt(p.i, p.v); return `${x.toFixed(1)} ${y.toFixed(1)}`; }).join(' L') + ' Z';
+    const dots = pts.map(p => {
+      const [x, y] = pt(p.i, p.v), pr = _mxPr(a, p.ev.key);
+      const tip = `${a.name} · ${p.ev.label} · ${pr ? _mxClock(pr) : 'no mark'} · ${_mxOrd(Math.round(p.v))} percentile`;
+      return `<circle class="mx-radar-vtx mx-dot--hit" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="5" fill="${color}" data-tip="${_mxEsc(tip)}"/>`;
+    }).join('');
+    return `<path class="mx-radar-shape${dashed ? ' mx-radar-shape--b' : ''}" style="stroke:${color};fill:${color}" d="${d}"/>${dots}`;
+  };
+
+  return `<svg viewBox="0 0 ${W} ${H}" class="mx-svg mx-svg--radar" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Strengths radar">
+    ${rings}${spokes}${labels}
+    ${shape(A, _MX_PALETTE[0], false)}
+    ${shape(B, '#EA580C', true)}
+  </svg>`;
+}
+
+function _mxRadarPicker(slot, id, color) {
+  const a = ATHLETES[id];
+  return `<div class="mx-radar-slot" style="--c:${color}">
+    <span class="mx-radar-dot"></span>
+    <div class="mx-search-wrap">
+      <input class="mx-search" id="mx-radar-search-${slot}" placeholder="Choose athlete ${slot.toUpperCase()}…" value="${a ? _mxEsc(a.name) : ''}" autocomplete="off"
+        oninput="mxRadarSearch('${slot}', this.value)" onfocus="mxRadarSearch('${slot}', this.value)">
+      <div class="mx-search-results" id="mx-radar-results-${slot}"></div>
+    </div>
+  </div>`;
+}
+function _mxRadarControls() {
+  return `<div class="mx-radar-pickers">
+    ${_mxRadarPicker('a', _mxRadarA, _MX_PALETTE[0])}
+    <span class="mx-radar-vs">vs</span>
+    ${_mxRadarPicker('b', _mxRadarB, '#EA580C')}
+  </div>`;
+}
+window.mxRadarSearch = function (slot, q) {
+  const box = document.getElementById('mx-radar-results-' + slot);
+  if (!box) return;
+  q = (q || '').trim().toLowerCase();
+  const other = slot === 'a' ? _mxRadarB : _mxRadarA;
+  const hits = Object.values(ATHLETES)
+    .filter(a => a.name.toLowerCase().includes(q) && a.id !== other && MX_EVENTS.reduce((n, e) => n + (_mxPr(a, e.key) != null ? 1 : 0), 0) >= 2)
+    .slice(0, 6);
+  box.innerHTML = hits.map(a => `<div class="mx-search-opt" onclick="mxRadarPick('${slot}','${a.id}')">${renderFlag(a.flag)} ${a.name}</div>`).join('')
+    || '<div class="mx-search-opt mx-search-opt--empty">No athletes with two or more event marks</div>';
+  box.classList.add('open');
+};
+window.mxRadarPick = function (slot, id) {
+  if (slot === 'a') _mxRadarA = id; else _mxRadarB = id;
+  const inp = document.getElementById('mx-radar-search-' + slot); if (inp) inp.value = ATHLETES[id] ? ATHLETES[id].name : '';
+  const box = document.getElementById('mx-radar-results-' + slot); if (box) box.classList.remove('open');
+  const chart = document.getElementById('mx-radar-chart'); if (chart) chart.innerHTML = _mxRadarSvg(_mxRadarA, _mxRadarB);
+};
+
 // ── 2. AGE vs PERFORMANCE ─────────────────────────────────
 function _mxAgeScatterSvg(evKey) {
   const pts = [];
@@ -362,14 +455,9 @@ function buildMetricsPage() {
   _mxProgEvent = '5000m';
   _mxProgN = 25;
   _mxMode = 'pace';
-  _mxHighlight = [];
-  // Seed the decay chart with a few strong multi-distance athletes
-  Object.values(ATHLETES)
-    .map(a => ({ a, n: _mxDecayPoints(a).length }))
-    .filter(o => o.n >= 3)
-    .sort((x, y) => y.n - x.n)
-    .slice(0, 3)
-    .forEach(o => _mxHighlight.push(o.a.id));
+  _mxHighlight = [];    // start empty — the user adds athletes to compare
+  _mxRadarA = null;
+  _mxRadarB = null;
 
   const eventOpts = MX_EVENTS.map(e => ({ value: e.key, label: e.label }));
   const ageDropdown = (typeof styledDropdown === 'function')
@@ -392,7 +480,7 @@ function buildMetricsPage() {
           <div>
             <div class="page-hero-eyebrow">Deep Dive</div>
             <h1 class="page-hero-title">Advanced Metrics</h1>
-            <p class="page-hero-sub">Three ways to look past the leaderboard: how runners fade as races get longer, when athletes tend to peak, and how the depth of each event has shifted season to season.</p>
+            <p class="page-hero-sub">Ways to look past the leaderboard: how runners fade as races get longer, where two athletes' strengths cross over, when athletes tend to peak, and how the depth of each event has shifted season to season.</p>
           </div>
         </div>
       </header>
@@ -408,6 +496,15 @@ function buildMetricsPage() {
         <div id="mx-decay-chart" class="mx-chart">${_mxDecaySvg()}</div>
         <div id="mx-decay-controls">${_mxDecayControls()}</div>
         ${how('decay', 'We take each athlete\'s personal best at every distance and convert it into pace per kilometre. Longer races are run slower, so the line naturally climbs from left to right. Distance is drawn on a log scale so the events sit at even spacing. In "Relative to best" mode each curve is divided by that athlete\'s own fastest pace, so everyone starts at plus 0 percent. That removes raw speed from the picture and lets you compare the shape of the decline, a 1500m specialist and a 10,000m specialist side by side.')}
+      </section>
+
+      <section class="et-section">
+        <div class="et-section-header">
+          <h2 class="et-section-title">Skill Hexagon</h2>
+        </div>
+        <div id="mx-radar-controls">${_mxRadarControls()}</div>
+        <div id="mx-radar-chart" class="mx-chart">${_mxRadarSvg(_mxRadarA, _mxRadarB)}</div>
+        ${how('radar', 'Each spoke is an event. An athlete\'s distance from the centre is their percentile in that event, so touching the outer rim means they rank among the fastest in the field, while sitting near the middle means they either do not race it or rank lower. Percentiles come from personal bests across everyone who owns a mark in that event. Laying two athletes on top of each other shows at a glance where each one is stronger and where their profiles cross over.')}
       </section>
 
       <section class="et-section">

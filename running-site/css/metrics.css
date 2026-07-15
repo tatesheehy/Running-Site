@@ -3,6 +3,10 @@
 
 .mx-chart { width: 100%; overflow-x: auto; }
 .mx-svg { width: 100%; min-width: 480px; height: auto; display: block; }
+/* Only the dots should catch the pointer, so a shape drawn on top of another
+   athlete's dot never blocks its hover tooltip. */
+.mx-svg path, .mx-svg line, .mx-svg text { pointer-events: none; }
+.mx-svg circle { pointer-events: auto; }
 .mx-svg--decay { min-width: 560px; }
 
 /* Larger axis text for the headline decay chart */
@@ -59,6 +63,44 @@
 .mx-dot:hover { opacity: 1; }
 .mx-dot--line { opacity: 1; cursor: default; }
 .mx-line { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Strengths radar */
+.mx-svg--radar { min-width: 420px; max-width: 620px; margin: 4px auto 0; }
+.mx-radar-grid { stroke: var(--border); fill: none; stroke-width: 1; }
+.mx-radar-lbl {
+  fill: var(--text);
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+}
+.mx-radar-shape {
+  stroke-width: 2.5;
+  fill-opacity: 0.16;
+  stroke-linejoin: round;
+}
+.mx-radar-shape--b {
+  fill-opacity: 0.05;
+  stroke-dasharray: 7 5;
+}
+.mx-radar-vtx { cursor: pointer; }
+
+.mx-radar-pickers {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.mx-radar-slot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 200px;
+}
+.mx-radar-slot .mx-search-wrap { flex: 1; max-width: none; margin: 0; }
+.mx-radar-dot { width: 11px; height: 11px; border-radius: 50%; background: var(--c); flex-shrink: 0; }
+.mx-radar-vs { font-size: 12px; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
 
 .mx-dot--hit { cursor: pointer; transition: r 0.1s; }
 .mx-dot--hit:hover { stroke: #fff; stroke-width: 2; }

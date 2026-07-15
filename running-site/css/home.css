@@ -1345,6 +1345,24 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
 }
 
 /* ── Analytics card ───────────────────────────────────────── */
+/* ── Homepage metric previews (Skill Hexagon + Aerobic Decay) ── */
+.dash-hex-svg, .dash-aero-svg { margin-top: 10px; overflow: hidden; }
+/* Let the metric SVGs shrink to the card width instead of forcing a min-width */
+.dash-hexagon .mx-svg, .dash-aero .mx-svg { min-width: 0; }
+.dash-hexagon .mx-svg--radar { max-width: 440px; }
+.dash-hex-legend {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.dash-hex-name { display: inline-flex; align-items: center; gap: 6px; color: var(--text); }
+.dash-hex-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--c); }
+.dash-hex-vs { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; }
+
 .dash-bars {
   display: flex;
   align-items: stretch;

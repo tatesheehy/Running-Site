@@ -8,7 +8,7 @@
 .navbar {
   background: #F7F8FA;
   border-bottom: none;
-  height: 76px;
+  height: 90px;
   display: flex;
   align-items: flex-end;
   position: fixed;
@@ -46,10 +46,10 @@
   top: 3px;
 }
 
-/* StatTC wordmark logo (already colored — no invert) */
+/* StatTC bib logo — sized to roughly 3/5 the sidebar width (~126px) */
 .brand-logo {
-  height: 26px;
-  width: auto;
+  width: 126px;
+  height: auto;
   display: block;
   flex-shrink: 0;
 }
@@ -159,7 +159,7 @@
   left: 0;
   bottom: 0;
   width: 210px;
-  padding: 90px 2px 24px 16px;
+  padding: 104px 2px 24px 16px;
   background: transparent;
   overflow-y: auto;
   z-index: 90;

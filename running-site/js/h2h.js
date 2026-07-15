@@ -266,7 +266,7 @@ function _renderH2HPage() {
     window.addEventListener('resize', syncWidths);
     new IntersectionObserver(([entry]) => {
       colLabels.classList.toggle('is-sticky', !entry.isIntersecting);
-    }, { rootMargin: '-62px 0px 0px 0px', threshold: 0 }).observe(sentinel);
+    }, { rootMargin: '-90px 0px 0px 0px', threshold: 0 }).observe(sentinel);
   }
 
   if (_h2hSearch) window.h2hLbSearch(_h2hSearch);

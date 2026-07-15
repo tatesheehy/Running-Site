@@ -339,29 +339,42 @@ function buildHome() {
       <a href="h2h.html" class="dash-link dash-card-foot" style="--accent:#9333EA">Full H2H leaderboard →</a>
     </div>` : '';
 
-  // ── Row 3: analytics — results logged per month (last 6) ──
-  const MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
-  const nowMonth = new Date().getMonth();
-  const monthWindow = [];
-  for (let i = 5; i >= 0; i--) monthWindow.push(MONTHS[(nowMonth - i + 12) % 12]);
-  const monthCounts = {};
-  monthWindow.forEach(m => { monthCounts[m] = 0; });
-  allAthletes.forEach(a => (a.results || []).forEach(r => {
-    const tok = (r.date || '').trim().slice(0, 3).toUpperCase();
-    if (tok in monthCounts) monthCounts[tok]++;
-  }));
-  const maxCount = Math.max(1, ...monthWindow.map(m => monthCounts[m]));
-  const barsHtml = monthWindow.map(m => `
-    <div class="dash-bar-col">
-      <span class="dash-bar-val">${monthCounts[m]}</span>
-      <div class="dash-bar-track"><div class="dash-bar" style="height:${Math.max(3, Math.round(monthCounts[m] / maxCount * 100))}%"></div></div>
-      <span class="dash-bar-label">${m}</span>
-    </div>`).join('');
-  const analyticsCard = `
-    <div class="dash-card dash-analytics">
-      <div class="dash-card-title">Race results by month</div>
-      <div class="dash-bars">${barsHtml}</div>
-    </div>`;
+  // ── Row 3: Skill Hexagon (radar) + Aerobic Decay previews ──
+  // Both reuse the Advanced Metrics tools (js/metrics.js) and link there.
+  const _metricsReady = typeof MX_EVENTS !== 'undefined'
+    && typeof _mxRadarSvg === 'function' && typeof _mxDecaySvg === 'function';
+  let skillHexCard = '';
+  let aeroDecayCard = '';
+  if (_metricsReady) {
+    const coverage = allAthletes
+      .map(a => ({ id: a.id, name: a.name, n: MX_EVENTS.reduce((c, e) => c + (_mxPr(a, e.key) != null ? 1 : 0), 0) }))
+      .filter(o => o.n >= 3)
+      .sort((x, y) => y.n - x.n);
+    const hexA = coverage[0], hexB = coverage[1];
+    if (hexA && hexB) {
+      skillHexCard = `
+        <div class="dash-card dash-hexagon">
+          <div class="dash-card-title">Skill Hexagon</div>
+          <div class="dash-hex-legend">
+            <span class="dash-hex-name" style="--c:#2563EB"><span class="dash-hex-dot"></span>${hexA.name}</span>
+            <span class="dash-hex-vs">vs</span>
+            <span class="dash-hex-name" style="--c:#EA580C"><span class="dash-hex-dot"></span>${hexB.name}</span>
+          </div>
+          <div class="dash-hex-svg">${_mxRadarSvg(hexA.id, hexB.id)}</div>
+          <a href="metrics.html" class="dash-link dash-card-foot" style="--accent:#0EA5E9">Compare any two athletes →</a>
+        </div>`;
+    }
+    // Decay preview: highlight the two strongest all-rounders over the field
+    _mxMode = 'pace';
+    _mxHighlight = [hexA, hexB].filter(Boolean).map(o => o.id);
+    aeroDecayCard = `
+      <div class="dash-card dash-aero">
+        <div class="dash-card-title">Aerobic Decay</div>
+        <div class="dash-aero-svg">${_mxDecaySvg()}</div>
+        <a href="metrics.html" class="dash-link dash-card-foot" style="--accent:#0EA5E9">Explore the aerobic decay tool →</a>
+      </div>`;
+    _mxHighlight = [];
+  }
 
   // ── Row 3: recent activity (trending performances) ───────
   const trendItems = _buildTrendingPerformances(5);
@@ -421,8 +434,9 @@ function buildHome() {
         <div class="home-split">
           <div class="home-main">
             ${leadersCard}
+            ${skillHexCard}
+            ${aeroDecayCard}
             ${activityCard}
-            ${analyticsCard}
           </div>
           <aside class="home-rail">
             ${clubsCard}
