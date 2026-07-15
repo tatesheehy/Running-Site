@@ -1,0 +1,221 @@
+{
+  "photoBackground": null,
+  "reviewTitle": null,
+  "waUrl": "https://worldathletics.org/athletes/kenya/phanuel-kipkosgei-koech-15090820",
+  "height": null,
+  "questionBody": null,
+  "headlineRest": null,
+  "name": "Phanuel Kipkosgei Koech",
+  "headlineKey": null,
+  "flag": "KE",
+  "honours": [
+    {
+      "competition": "World U20 Championships",
+      "short": "WU20",
+      "discipline": "800m",
+      "place": 5,
+      "year": "2024"
+    },
+    {
+      "competition": "Diamond League",
+      "short": "DLF",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2025"
+    }
+  ],
+  "seasons": null,
+  "lastSynced": "2026-07-15",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:46.93"
+    },
+    {
+      "event": "1500m",
+      "time": "3:27.72"
+    },
+    {
+      "event": "3000m",
+      "time": "8:18.01"
+    },
+    {
+      "event": "Mile Road",
+      "time": "3:56.08"
+    }
+  ],
+  "hometown": null,
+  "questionTitle": null,
+  "photo": null,
+  "ncaa": null,
+  "club": null,
+  "country": "Kenya",
+  "results": [
+    {
+      "date": "JUL 14",
+      "meet": "Gyulai István Memorial - Hungarian Athletics Grand Prix",
+      "event": "1500 m",
+      "time": "3:31.09",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 20",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "1500 m",
+      "time": "3:34.85",
+      "place": "6.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 18",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "1500 m",
+      "time": "3:43.1h",
+      "place": "1.",
+      "round": "H3"
+    }
+  ],
+  "dob": "01 DEC 2006",
+  "weight": null,
+  "lastHistorySynced": "2026-07-14",
+  "coach": null,
+  "reviewBody": null,
+  "event": "1500m",
+  "id": "phanuel-kipkosgei-koech",
+  "resultsHistory": {
+    "2023": [
+      {
+        "date": "02 MAY 2023",
+        "meet": "African U18 Championships, Levy Mwanawasa Stadion, Ndola",
+        "event": "800m",
+        "time": "1:49.27",
+        "place": "1."
+      },
+      {
+        "date": "03 MAY 2023",
+        "meet": "African U18 Championships, Levy Mwanawasa Stadion, Ndola",
+        "event": "800m",
+        "time": "1:52.59",
+        "place": "6."
+      }
+    ],
+    "2024": [
+      {
+        "date": "28 JUN 2024",
+        "meet": "National Trials For World Athletics Under 20 Championships, Nyayo National Stadium, Nairobi",
+        "event": "800m",
+        "time": "1:46.93",
+        "place": "2."
+      },
+      {
+        "date": "27 AUG 2024",
+        "meet": "World Athletics U20 Championships, Estadio Atlético de la VIDENA, Lima",
+        "event": "800m",
+        "time": "1:50.20",
+        "place": "4."
+      },
+      {
+        "date": "29 AUG 2024",
+        "meet": "World Athletics U20 Championships, Estadio Atlético de la VIDENA, Lima",
+        "event": "800m",
+        "time": "1:48.24",
+        "place": "1."
+      },
+      {
+        "date": "30 AUG 2024",
+        "meet": "World Athletics U20 Championships, Estadio Atlético de la VIDENA, Lima",
+        "event": "800m",
+        "time": "1:47.46",
+        "place": "5."
+      },
+      {
+        "date": "28 JUN 2024",
+        "meet": "National Trials For World Athletics Under 20 Championships, Nyayo National Stadium, Nairobi",
+        "event": "3000m",
+        "time": "8:18.01",
+        "place": "12."
+      }
+    ],
+    "2025": [
+      {
+        "date": "15 MAY 2025",
+        "meet": "6th AK Track & Field Weekend Meeting/Relay Series, Ulinzi Sports Complex, Langata, Nairobi",
+        "event": "800m",
+        "time": "1:47.00",
+        "place": "1."
+      },
+      {
+        "date": "15 MAY 2025",
+        "meet": "6th AK Track & Field Weekend Meeting/Relay Series, Ulinzi Sports Complex, Langata, Nairobi",
+        "event": "800m",
+        "time": "1:47.48",
+        "place": "5."
+      },
+      {
+        "date": "08 JUN 2025",
+        "meet": "4th Lucca International Meeting, Campo Scuola Moreno Martini, Lucca",
+        "event": "1500m",
+        "time": "3:32.26",
+        "place": "1."
+      },
+      {
+        "date": "20 JUN 2025",
+        "meet": "Meeting de Paris, Stade Charléty, Paris - Promotional Events",
+        "event": "1500m",
+        "time": "3:27.72",
+        "place": "2."
+      },
+      {
+        "date": "24 JUN 2025",
+        "meet": "64th Ostrava Golden Spike, Mestský Stadion, Ostrava",
+        "event": "1500m",
+        "time": "3:29.05",
+        "place": "1."
+      },
+      {
+        "date": "19 JUL 2025",
+        "meet": "London Athletics Meet, Olympic Stadium, London - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:28.82",
+        "place": "1."
+      },
+      {
+        "date": "22 AUG 2025",
+        "meet": "Memorial van Damme, Boudewijnstadion, Bruxelles - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:31.41",
+        "place": "2."
+      },
+      {
+        "date": "28 AUG 2025",
+        "meet": "Weltklasse Zürich, Letzigrund, Zürich - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:30.02",
+        "place": "3."
+      },
+      {
+        "date": "14 SEP 2025",
+        "meet": "World Athletics Championships, Tokyo 2025, National Stadium, Tokyo",
+        "event": "1500m",
+        "time": "3:42.77",
+        "place": "12."
+      },
+      {
+        "date": "26 APR 2025",
+        "meet": "adizero: Road to Records, Herzogenaurach",
+        "event": "Mile Road",
+        "time": "3:56.08",
+        "place": "4."
+      },
+      {
+        "date": "22 FEB 2025",
+        "meet": "Sirikwa Classic Cross Country Tour – Gold, Lobo Village, Eldoret - XC 2.0km",
+        "event": "Cross Country",
+        "time": "6:02",
+        "place": "2."
+      }
+    ]
+  },
+  "age": "19"
+}

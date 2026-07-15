@@ -1,0 +1,658 @@
+{
+  "photoBackground": null,
+  "reviewTitle": null,
+  "waUrl": "https://worldathletics.org/athletes/france/anicet-kozar-14847186",
+  "height": null,
+  "questionBody": null,
+  "headlineRest": null,
+  "name": "Anicet Kozar",
+  "headlineKey": null,
+  "flag": "FR",
+  "honours": [],
+  "seasons": null,
+  "lastSynced": "2026-07-15",
+  "prs": [
+    {
+      "event": "400m",
+      "time": "48.61"
+    },
+    {
+      "event": "800m",
+      "time": "1:45.54"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:48.93"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:19.82"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.29"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:38.08"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "14:37"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:19.87"
+    },
+    {
+      "event": "4x800 Metres Relay",
+      "time": "7:38.80"
+    }
+  ],
+  "hometown": null,
+  "questionTitle": null,
+  "photo": null,
+  "ncaa": null,
+  "club": null,
+  "country": "France",
+  "results": [
+    {
+      "date": "JUL 11",
+      "meet": "Moore-Guldensporenmeeting",
+      "event": "1500 m",
+      "time": "3:40.17",
+      "place": "12.",
+      "round": "F1"
+    },
+    {
+      "date": "JUL 4",
+      "meet": "Meeting National Est Lyonnais",
+      "event": "1500 m",
+      "time": "3:36.18",
+      "place": "6.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 17",
+      "meet": "Meeting International de Montreuil",
+      "event": "1500 m",
+      "time": "3:37.57",
+      "place": "10.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 13",
+      "meet": "Merck Laufgala Pfungstadt",
+      "event": "1500 m",
+      "time": "3:37.39",
+      "place": "8.",
+      "round": "F2"
+    },
+    {
+      "date": "MAY 31",
+      "meet": "Meeting International de Forbach",
+      "event": "800 m",
+      "time": "1:47.28",
+      "place": "5.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 28",
+      "meet": "Trond Mohn Games",
+      "event": "1500 m",
+      "time": "3:39.13",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 20",
+      "meet": "15th Savona International Meeting",
+      "event": "1500 m",
+      "time": "3:35.19",
+      "place": "6.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 1",
+      "meet": "French Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:46.45",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 8",
+      "meet": "Meeting Metz Moselle Athlélor Crédit Mutuel",
+      "event": "1500 m sh",
+      "time": "3:45.91",
+      "place": "10.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 30",
+      "meet": "Elite Indoor Track Miramas Meeting",
+      "event": "1500 m sh",
+      "time": "3:44.12",
+      "place": "6.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 22",
+      "meet": "BAUHAUS-galan Indoor",
+      "event": "1500 m sh",
+      "time": "3:40.07",
+      "place": "5.",
+      "round": "F"
+    }
+  ],
+  "dob": "08 OCT 2001",
+  "weight": null,
+  "lastHistorySynced": "2026-07-14",
+  "coach": null,
+  "reviewBody": null,
+  "event": "1500m",
+  "id": "anicet-kozar",
+  "resultsHistory": {
+    "2021": [
+      {
+        "date": "01 JUN 2021",
+        "meet": "Meeting International de Montreuil, Stade des Grands Pêchers, Montreuil - National Events",
+        "event": "800m",
+        "time": "1:49.51",
+        "place": "4."
+      },
+      {
+        "date": "05 JUN 2021",
+        "meet": "Meeting National de Poitiers, Stade Paul Rebeilleau, Poitiers",
+        "event": "800m",
+        "time": "1:48.97",
+        "place": "8."
+      },
+      {
+        "date": "12 JUN 2021",
+        "meet": "Meeting Just one life, Troyes",
+        "event": "800m",
+        "time": "1:48.69",
+        "place": "8."
+      },
+      {
+        "date": "16 JUN 2021",
+        "meet": "Meeting National à thème de Strasbourg, Stade d'Athlétisme Hautepierre, Strasbourg",
+        "event": "800m",
+        "time": "1:46.54",
+        "place": "7."
+      },
+      {
+        "date": "25 JUN 2021",
+        "meet": "French Championships, Stade Josette et Roger Mikulak, Angers",
+        "event": "800m",
+        "time": "1:49.79",
+        "place": "7."
+      },
+      {
+        "date": "09 JUL 2021",
+        "meet": "European Athletics U23 Championships, Kadrioru staadion, Tallinn",
+        "event": "800m",
+        "time": "2:28.09",
+        "place": "8."
+      },
+      {
+        "date": "30 JAN 2021",
+        "meet": "Meeting athlètes listés, Arena Stade Couvert, Liévin (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:50.38",
+        "place": "7."
+      },
+      {
+        "date": "06 FEB 2021",
+        "meet": "Meeting Metz Moselle Athlelor, L'Anneau-Halle d'athlétisme de Metz, Metz (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:51.51",
+        "place": "3."
+      },
+      {
+        "date": "13 FEB 2021",
+        "meet": "Meeting Elite en salle du Val d'Oise, Stade Couvert Stephane Diagana, Eaubonne (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:50.75",
+        "place": "5."
+      },
+      {
+        "date": "19 FEB 2021",
+        "meet": "French Indoor Championships, Stadium Miramas Métropole, Miramas (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:52.40",
+        "place": "2."
+      },
+      {
+        "date": "20 FEB 2021",
+        "meet": "French Indoor Championships, Stadium Miramas Métropole, Miramas (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:51.58",
+        "place": "2."
+      },
+      {
+        "date": "01 MAY 2021",
+        "meet": "Animation et prises de performances, Stade Hubert Steinmetz, Brumath",
+        "event": "1500m",
+        "time": "3:45.12",
+        "place": "1."
+      },
+      {
+        "date": "15 MAY 2021",
+        "meet": "Meeting Flash Demi-Fond, Stade Raymond Troussier, Decines",
+        "event": "1500m",
+        "time": "3:48.10",
+        "place": "7."
+      },
+      {
+        "date": "14 NOV 2021",
+        "meet": "French Cross Country Championships, Montauban - XC 4.625km",
+        "event": "Cross Country",
+        "time": "14:51",
+        "place": "14."
+      }
+    ],
+    "2022": [
+      {
+        "date": "08 MAY 2022",
+        "meet": "Championnat de France des clubs, Parc des Sports, Haguenau",
+        "event": "400m",
+        "time": "49.03",
+        "place": "2."
+      },
+      {
+        "date": "22 MAY 2022",
+        "meet": "Championnat de France des clubs, Sarreguemines",
+        "event": "400m",
+        "time": "48.61",
+        "place": "1."
+      },
+      {
+        "date": "15 MAY 2022",
+        "meet": "36eme Meeting International Athletisme Montgeron-Essonne, Montgeron",
+        "event": "800m",
+        "time": "1:48.89",
+        "place": "3."
+      },
+      {
+        "date": "29 MAY 2022",
+        "meet": "Meeting international de Forbach, Stade Omnisports Schlossberg, Forbach",
+        "event": "800m",
+        "time": "1:48.12",
+        "place": "2."
+      },
+      {
+        "date": "02 JUN 2022",
+        "meet": "Montreuil International Meeting, Stade des Grands Pêchers, Montreuil",
+        "event": "800m",
+        "time": "1:47.56",
+        "place": "10."
+      },
+      {
+        "date": "14 JUN 2022",
+        "meet": "CITIUS Meeting, Stadion Wankdorf, Bern",
+        "event": "800m",
+        "time": "1:48.37",
+        "place": "6."
+      },
+      {
+        "date": "17 JUN 2022",
+        "meet": "Meeting National de Strasbourg, Stade d'Athlétisme Hautepierre, Strasbourg",
+        "event": "800m",
+        "time": "1:45.60",
+        "place": "8."
+      },
+      {
+        "date": "24 JUN 2022",
+        "meet": "French Championships, Stade Helitas, Caen",
+        "event": "800m",
+        "time": "1:48.75",
+        "place": "3."
+      },
+      {
+        "date": "25 JUN 2022",
+        "meet": "French Championships, Stade Helitas, Caen",
+        "event": "800m",
+        "time": "1:49.69",
+        "place": "5."
+      },
+      {
+        "date": "02 JUL 2022",
+        "meet": "Meeting Stanislas Nancy, Stade Raymond Petit, Tomblaine",
+        "event": "800m",
+        "time": "1:46.92",
+        "place": "4."
+      },
+      {
+        "date": "09 JUL 2022",
+        "meet": "French U23 Championships, Stadium Municipal, Albi",
+        "event": "800m",
+        "time": "1:50.51",
+        "place": "1."
+      },
+      {
+        "date": "10 JUL 2022",
+        "meet": "French U23 Championships, Stadium Municipal, Albi",
+        "event": "800m",
+        "time": "1:49.29",
+        "place": "3."
+      },
+      {
+        "date": "11 SEP 2022",
+        "meet": "Mediterranean Athletics U23 Championships, Stadio Adriatico, Pescara",
+        "event": "800m",
+        "time": "1:48.07",
+        "place": "4."
+      },
+      {
+        "date": "27 JAN 2022",
+        "meet": "Championnats de France FFSU en salle, Stadium Miramas Métropole, Miramas (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:50.57",
+        "place": "2."
+      },
+      {
+        "date": "21 JAN 2022",
+        "meet": "Meeting Elite en salle de Lyon, Halle Stéphane Diagana, Lyon (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:46.10",
+        "place": "4."
+      },
+      {
+        "date": "04 FEB 2022",
+        "meet": "Meeting Elite de Miramas, Stadium Miramas Métropole, Miramas (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:44.60",
+        "place": "7."
+      },
+      {
+        "date": "13 FEB 2022",
+        "meet": "French U23 Indoor Championships, Halle Stéphane Diagana, Lyon (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:47.51",
+        "place": "3."
+      }
+    ],
+    "2023": [
+      {
+        "date": "21 MAY 2023",
+        "meet": "Championnat de France des clubs N1B Poule B, Stade Roger Serzian, Belfort",
+        "event": "800m",
+        "time": "1:48.61",
+        "place": "1."
+      },
+      {
+        "date": "28 MAY 2023",
+        "meet": "Meeting International de Forbach, Stade Omnisports Schlossberg, Forbach",
+        "event": "800m",
+        "time": "1:47.16",
+        "place": "9."
+      },
+      {
+        "date": "31 MAY 2023",
+        "meet": "Montreuil International Meeting, Stade des Grands Pêchers, Montreuil",
+        "event": "800m",
+        "time": "1:46.98",
+        "place": "9."
+      },
+      {
+        "date": "16 JUN 2023",
+        "meet": "Meeting National de Strasbourg, Stade d'Athlétisme Hautepierre, Strasbourg",
+        "event": "800m",
+        "time": "1:45.73",
+        "place": "4."
+      },
+      {
+        "date": "18 JUN 2023",
+        "meet": "Meeting Stanislas Nancy, Stade Raymond Petit, Tomblaine",
+        "event": "800m",
+        "time": "1:46.84",
+        "place": "6."
+      },
+      {
+        "date": "24 JUN 2023",
+        "meet": "Meeting de Cergy-Pontoise, Stade des Maradas, Cergy-Pontoise",
+        "event": "800m",
+        "time": "1:47.43",
+        "place": "3."
+      },
+      {
+        "date": "01 JUL 2023",
+        "meet": "French U23 Championships, Stade Philippe Mahut, Fontainebleau",
+        "event": "800m",
+        "time": "1:50.58",
+        "place": "1."
+      },
+      {
+        "date": "02 JUL 2023",
+        "meet": "French U23 Championships, Stade Philippe Mahut, Fontainebleau",
+        "event": "800m",
+        "time": "1:49.42",
+        "place": "4."
+      },
+      {
+        "date": "17 JUL 2023",
+        "meet": "International Marseille Meeting, Stade Delort, Marseille",
+        "event": "800m",
+        "time": "1:46.42",
+        "place": "5."
+      },
+      {
+        "date": "28 JUL 2023",
+        "meet": "French Championships, Stadium Municipal, Albi",
+        "event": "800m",
+        "time": "1:48.02",
+        "place": "2."
+      },
+      {
+        "date": "29 JUL 2023",
+        "meet": "French Championships, Stadium Municipal, Albi",
+        "event": "800m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "28 JAN 2023",
+        "meet": "Meeting National Indoor Lyon, Halle Stéphane Diagana, Lyon (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:49.84",
+        "place": "7."
+      },
+      {
+        "date": "11 FEB 2023",
+        "meet": "Meeting Metz Moselle Athlelor, L'Anneau-Halle d'athlétisme de Metz, Metz (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:48.93",
+        "place": "7."
+      },
+      {
+        "date": "21 MAY 2023",
+        "meet": "Championnat de France des clubs N1B Poule B, Stade Roger Serzian, Belfort",
+        "event": "4x400 Metres Relay",
+        "time": "3:19.87",
+        "place": "3."
+      }
+    ],
+    "2024": [
+      {
+        "date": "11 MAY 2024",
+        "meet": "Puma Nitro Lange Laufnacht, Carl-Kaufmann-Stadion, Karlsruhe",
+        "event": "800m",
+        "time": "1:46.15",
+        "place": "4."
+      },
+      {
+        "date": "16 MAY 2024",
+        "meet": "Meeting International de Montreuil, Stade des Grands Pêchers, Montreuil",
+        "event": "800m",
+        "time": "1:46.92",
+        "place": "4."
+      },
+      {
+        "date": "19 MAY 2024",
+        "meet": "Míting Internacional Ciutat de Barcelona, Estadi Joan Serrahima, Barcelona",
+        "event": "800m",
+        "time": "1:46.01",
+        "place": "1."
+      },
+      {
+        "date": "25 MAY 2024",
+        "meet": "Meeting Stanislas Nancy, Stade Raymond Petit, Tomblaine",
+        "event": "800m",
+        "time": "1:45.54",
+        "place": "7."
+      },
+      {
+        "date": "08 JUN 2024",
+        "meet": "Meeting National de Strasbourg, Stade d'Athlétisme Hautepierre, Strasbourg",
+        "event": "800m",
+        "time": "1:45.62",
+        "place": "2."
+      },
+      {
+        "date": "16 JUN 2024",
+        "meet": "Meeting International d'Athlétisme de Troyes Aube, Stade d'Athletisme Pierre Voillequin, Troyes",
+        "event": "800m",
+        "time": "1:46.45",
+        "place": "5."
+      },
+      {
+        "date": "19 JUN 2024",
+        "meet": "Nationales Abendsportfest - Pfungstadt, TSV Stadion, Pfungstadt",
+        "event": "800m",
+        "time": "1:45.92",
+        "place": "2."
+      },
+      {
+        "date": "29 JUN 2024",
+        "meet": "French Championships, Stade Josette et Roger Mikulak, Angers",
+        "event": "800m",
+        "time": "1:49.55",
+        "place": "3."
+      },
+      {
+        "date": "04 JUL 2024",
+        "meet": "Meeting International Sotteville 2024, Stade Jean Adret, Sotteville-lès-Rouen",
+        "event": "800m",
+        "time": "1:47.18",
+        "place": "7."
+      },
+      {
+        "date": "13 JUL 2024",
+        "meet": "Moore-Guldensporenmeeting, Sportcentrum Wembley, Kortrijk",
+        "event": "800m",
+        "time": "1:46.02",
+        "place": "6."
+      },
+      {
+        "date": "18 JUL 2024",
+        "meet": "2. Läufermeeting, Stadion Kieselhumes, Saarbrücken",
+        "event": "800m",
+        "time": "1:46.31",
+        "place": "1."
+      },
+      {
+        "date": "05 MAY 2024",
+        "meet": "Internationales thallos Läufermeeting, Schönbuchstadion, Pliezhausen",
+        "event": "1000 Metres",
+        "time": "2:19.82",
+        "place": "2."
+      }
+    ],
+    "2025": [
+      {
+        "date": "24 MAY 2025",
+        "meet": "75. Boris Hanžeković Memorial, Sports Park Mladost, Zagreb",
+        "event": "800m",
+        "time": "1:47.79",
+        "place": "9."
+      },
+      {
+        "date": "29 MAY 2025",
+        "meet": "Meeting international du SATUC Toulouse Athlé, Stade Universitaire D. Faucher, Toulouse",
+        "event": "800m",
+        "time": "1:46.22",
+        "place": "8."
+      },
+      {
+        "date": "02 JUN 2025",
+        "meet": "Josef Odlozil Memorial, Stadion Juliska, Praha",
+        "event": "1500m",
+        "time": "3:37.27",
+        "place": "4."
+      },
+      {
+        "date": "10 JUN 2025",
+        "meet": "Meeting International de Montreuil, Stade Jean Delbert, Montreuil",
+        "event": "1500m",
+        "time": "3:38.05",
+        "place": "10."
+      },
+      {
+        "date": "04 JUL 2025",
+        "meet": "Meeting Stanislas Nancy, Stade Raymond Petit, Tomblaine",
+        "event": "1500m",
+        "time": "3:34.29",
+        "place": "9."
+      },
+      {
+        "date": "13 JUL 2025",
+        "meet": "Meeting International de Marseille, Stade Delort, Marseille",
+        "event": "1500m",
+        "time": "3:35.40",
+        "place": "4."
+      },
+      {
+        "date": "19 JUL 2025",
+        "meet": "Meeting Madrid 2025, Estadio Vallehermoso, Madrid",
+        "event": "1500m",
+        "time": "3:36.41",
+        "place": "9."
+      },
+      {
+        "date": "02 AUG 2025",
+        "meet": "French Championships, Stade Pierre Paul Bernard, Talence",
+        "event": "1500m",
+        "time": "4:05.76",
+        "place": "12."
+      },
+      {
+        "date": "03 AUG 2025",
+        "meet": "French Championships, Stade Pierre Paul Bernard, Talence",
+        "event": "1500m",
+        "time": "DNS",
+        "place": ""
+      },
+      {
+        "date": "31 JAN 2025",
+        "meet": "Elite Indoor Track Miramas Meeting, Stadium Miramas Métropole, Miramas (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:42.63",
+        "place": "9."
+      },
+      {
+        "date": "08 FEB 2025",
+        "meet": "Meeting Metz Moselle Athlelor, L'Anneau-Halle d'athlétisme de Metz, Metz (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:38.08",
+        "place": "6."
+      },
+      {
+        "date": "23 FEB 2025",
+        "meet": "French Indoor Championships, Stadium Miramas Métropole, Miramas (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:42.29",
+        "place": "3."
+      },
+      {
+        "date": "26 OCT 2025",
+        "meet": "French Senior 5 km Road Running Championships & U23 Women, Fréjus",
+        "event": "5 Kilometres Road",
+        "time": "14:37",
+        "place": "14."
+      }
+    ]
+  },
+  "age": "24"
+}

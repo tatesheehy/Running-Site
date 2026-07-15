@@ -1,0 +1,538 @@
+{
+  "photoBackground": null,
+  "reviewTitle": null,
+  "waUrl": "https://worldathletics.org/athletes/france/teo-dabos-14955024",
+  "height": null,
+  "questionBody": null,
+  "headlineRest": null,
+  "name": "Teo Dabos",
+  "headlineKey": null,
+  "flag": "FR",
+  "honours": [],
+  "seasons": null,
+  "lastSynced": "2026-07-15",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:48.57"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:50.89"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:30.59"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.95"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:37.22"
+    },
+    {
+      "event": "3000m",
+      "time": "8:13.91"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "8:13.91"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "14:33"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "29:04"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:18.10"
+    }
+  ],
+  "hometown": null,
+  "questionTitle": null,
+  "photo": null,
+  "ncaa": null,
+  "club": null,
+  "country": "France",
+  "results": [
+    {
+      "date": "JUL 4",
+      "meet": "Meeting National Est Lyonnais",
+      "event": "1500 m",
+      "time": "3:35.67",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Meeting International Troyes Aube",
+      "event": "1500 m",
+      "time": "3:39.89",
+      "place": "12.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 17",
+      "meet": "Meeting International de Montreuil",
+      "event": "1500 m",
+      "time": "3:34.95",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Meeting de Marseille",
+      "event": "1500 m",
+      "time": "3:40.44",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 6",
+      "meet": "Meeting National d'Angoulême",
+      "event": "800 m",
+      "time": "1:48.57",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 30",
+      "meet": "Meeting national de Toulouse",
+      "event": "1500 m",
+      "time": "3:41.16",
+      "place": "2.",
+      "round": "F7"
+    },
+    {
+      "date": "MAY 17",
+      "meet": "Championnat de France des clubs N1A Poule 2",
+      "event": "800 m",
+      "time": "1:50.10",
+      "place": "1.",
+      "round": "F2"
+    },
+    {
+      "date": "MAY 17",
+      "meet": "Championnat de France des clubs N1A Poule 2",
+      "event": "4x400 m Relay",
+      "time": "3:18.10",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 1",
+      "meet": "French Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:45.95",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "1500 m sh",
+      "time": "DNF",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 15",
+      "meet": "French U23 Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:42.78",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Meeting Indoor de Limoges",
+      "event": "1500 m sh",
+      "time": "3:40.27",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Meeting Indoor de Lyon",
+      "event": "1500 m sh",
+      "time": "3:37.22",
+      "place": "4.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 18",
+      "meet": "CMCM Luxembourg Indoor Meeting",
+      "event": "1500 m sh",
+      "time": "3:38.75",
+      "place": "8.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 10",
+      "meet": "Meeting Limoges Athlétisme 87",
+      "event": "800 m sh",
+      "time": "1:50.89",
+      "place": "1.",
+      "round": "F1"
+    }
+  ],
+  "dob": "25 MAY 2004",
+  "weight": null,
+  "lastHistorySynced": "2026-07-14",
+  "coach": null,
+  "reviewBody": null,
+  "event": "1500m",
+  "id": "teo-dabos",
+  "resultsHistory": {
+    "2022": [
+      {
+        "date": "08 MAY 2022",
+        "meet": "Championnat de France des clubs, Stade de Beaublanc, Limoges",
+        "event": "800m",
+        "time": "1:54.06",
+        "place": "1."
+      },
+      {
+        "date": "22 MAY 2022",
+        "meet": "Interclubs, Stade Bernard Becavin, Cognac",
+        "event": "800m",
+        "time": "1:55.45",
+        "place": "1."
+      },
+      {
+        "date": "03 JUN 2022",
+        "meet": "Meeting National d'Angoulême, Stade Ma Campagne, Angoulême",
+        "event": "800m",
+        "time": "1:53.13",
+        "place": "6."
+      },
+      {
+        "date": "24 JUN 2022",
+        "meet": "Meeting de Saintes, Stade Bernard Becavin, Cognac",
+        "event": "800m",
+        "time": "1:56.16",
+        "place": "2."
+      },
+      {
+        "date": "25 JUN 2022",
+        "meet": "Soirée saint-junien athle, St-Junien",
+        "event": "800m",
+        "time": "1:54.18",
+        "place": "1."
+      },
+      {
+        "date": "03 JUL 2022",
+        "meet": "Regional Championships, Stade de Beaublanc, Limoges",
+        "event": "800m",
+        "time": "1:53.68",
+        "place": "2."
+      },
+      {
+        "date": "16 JUL 2022",
+        "meet": "French U20 Championships, Stade de L'Ill, Mulhouse",
+        "event": "800m",
+        "time": "1:56.66",
+        "place": "4."
+      },
+      {
+        "date": "24 SEP 2022",
+        "meet": "Coupe de France, Stade R. Gaillard, Niort",
+        "event": "1000 Metres",
+        "time": "2:30.59",
+        "place": "1."
+      },
+      {
+        "date": "15 JUN 2022",
+        "meet": "Meeting National à thème de Limoges, Stade de Beaublanc, Limoges",
+        "event": "1500m",
+        "time": "3:58.83",
+        "place": "3."
+      },
+      {
+        "date": "02 JUL 2022",
+        "meet": "Regional Championships, Stade de Beaublanc, Limoges",
+        "event": "1500m",
+        "time": "3:58.97",
+        "place": "4."
+      }
+    ],
+    "2023": [
+      {
+        "date": "30 APR 2023",
+        "meet": "Meeting Circuit Régional Cognac, Stade Bernard Becavin, Cognac",
+        "event": "800m",
+        "time": "1:54.57",
+        "place": "1."
+      },
+      {
+        "date": "07 MAY 2023",
+        "meet": "Interclubs 1er tour, Stade de Beaublanc, Limoges",
+        "event": "800m",
+        "time": "1:54.09",
+        "place": "2."
+      },
+      {
+        "date": "24 JUN 2023",
+        "meet": "Meeting National de Limoges, Stade de Beaublanc, Limoges",
+        "event": "800m",
+        "time": "1:50.85",
+        "place": "3."
+      },
+      {
+        "date": "22 JUL 2023",
+        "meet": "Open de France, Stade R. Bobin, Bondoufle",
+        "event": "800m",
+        "time": "1:52.31",
+        "place": "2."
+      },
+      {
+        "date": "23 JUL 2023",
+        "meet": "Open de France, Stade R. Bobin, Bondoufle",
+        "event": "800m",
+        "time": "1:50.94",
+        "place": "9."
+      },
+      {
+        "date": "21 MAY 2023",
+        "meet": "Finale Interclubs N2B Nord, Stade Bernard Becavin, Cognac",
+        "event": "1500m",
+        "time": "3:57.14",
+        "place": "1."
+      },
+      {
+        "date": "11 JUN 2023",
+        "meet": "Pré Régionaux Zone Nord Jour 1, Stade de Beaublanc, Limoges",
+        "event": "1500m",
+        "time": "3:51.15",
+        "place": "1."
+      },
+      {
+        "date": "14 JUL 2023",
+        "meet": "French U20 Championships, Stade de la Margotière, Chateauroux",
+        "event": "1500m",
+        "time": "3:59.24",
+        "place": "5."
+      },
+      {
+        "date": "15 JUL 2023",
+        "meet": "French U20 Championships, Stade de la Margotière, Chateauroux",
+        "event": "1500m",
+        "time": "4:00.37",
+        "place": "8."
+      },
+      {
+        "date": "02 JUN 2023",
+        "meet": "Meeting National d'Angoulême, Stade Ma Campagne, Angoulême",
+        "event": "3000m",
+        "time": "8:34.90",
+        "place": "17."
+      },
+      {
+        "date": "22 OCT 2023",
+        "meet": "5km de St. Omer, St. Omer - French 5km Road Running Championships",
+        "event": "5 Kilometres Road",
+        "time": "14:33",
+        "place": "41."
+      },
+      {
+        "date": "26 MAR 2023",
+        "meet": "French 10km Championships, Houilles - Open Event",
+        "event": "10 Kilometres Road",
+        "time": "31:29",
+        "place": "21."
+      }
+    ],
+    "2024": [
+      {
+        "date": "01 MAY 2024",
+        "meet": "Meeting du Grand Cognac, Stade Bernard Becavin, Cognac",
+        "event": "800m",
+        "time": "1:54.03",
+        "place": "1."
+      },
+      {
+        "date": "12 MAY 2024",
+        "meet": "Finale Interclubs N2A Nord, Stade Bernard Becavin, Cognac",
+        "event": "800m",
+        "time": "1:53.52",
+        "place": "1."
+      },
+      {
+        "date": "01 JUN 2024",
+        "meet": "Meeting de Limoges, Stade de Beaublanc, Limoges",
+        "event": "800m",
+        "time": "1:50.43",
+        "place": "2."
+      },
+      {
+        "date": "03 JUL 2024",
+        "meet": "Meeting de Limoges CDA87, Stade de Beaublanc, Limoges",
+        "event": "800m",
+        "time": "1:51.57",
+        "place": "2."
+      },
+      {
+        "date": "07 JUL 2024",
+        "meet": "Régionaux CJES, Stade de Beaublanc, Limoges",
+        "event": "800m",
+        "time": "1:51.86",
+        "place": "1."
+      },
+      {
+        "date": "08 JUN 2024",
+        "meet": "Tempo run league eacpa, Stade des Maradas, Cergy-Pontoise",
+        "event": "1500m",
+        "time": "3:46.66",
+        "place": "2."
+      },
+      {
+        "date": "19 JUN 2024",
+        "meet": "Meeting National de Bordeaux, Stade de Stehelin, Bordeaux",
+        "event": "1500m",
+        "time": "3:45.12",
+        "place": "3."
+      },
+      {
+        "date": "19 JUL 2024",
+        "meet": "French U23 Championships, Stadium Municipal, Albi",
+        "event": "1500m",
+        "time": "3:54.18",
+        "place": "3."
+      },
+      {
+        "date": "20 JUL 2024",
+        "meet": "French U23 Championships, Stadium Municipal, Albi",
+        "event": "1500m",
+        "time": "3:41.92",
+        "place": "3."
+      },
+      {
+        "date": "04 FEB 2024",
+        "meet": "Championnats AURA Indoor, Stadium Jean-Pellez, Aubière (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:57.40",
+        "place": "10."
+      },
+      {
+        "date": "27 OCT 2024",
+        "meet": "5 km de St. Omer, St. Omer - U23 Events",
+        "event": "5 Kilometres Road",
+        "time": "14:43",
+        "place": "13."
+      },
+      {
+        "date": "17 MAR 2024",
+        "meet": "10 Km de Saint Medard en Jalles, St Medard en Jalles",
+        "event": "10 Kilometres Road",
+        "time": "30:32",
+        "place": "15."
+      }
+    ],
+    "2025": [
+      {
+        "date": "22 JUN 2025",
+        "meet": "Championnats Pré-Régionaux CJES Zone Nord, Stade de Beaublanc, Limoges",
+        "event": "800m",
+        "time": "1:50.63",
+        "place": "1."
+      },
+      {
+        "date": "26 JUL 2025",
+        "meet": "Open de France et Décathlon Féminin, Stade de Vongy, Thonon-les-Bains",
+        "event": "800m",
+        "time": "1:49.12",
+        "place": "1."
+      },
+      {
+        "date": "27 JUL 2025",
+        "meet": "Open de France et Décathlon Féminin, Stade de Vongy, Thonon-les-Bains",
+        "event": "800m",
+        "time": "1:48.78",
+        "place": "1."
+      },
+      {
+        "date": "18 MAY 2025",
+        "meet": "Championnat de France des clubs N1A Poule 2, Stade Paul Rebeilleau, Poitiers",
+        "event": "1500m",
+        "time": "3:43.28",
+        "place": "2."
+      },
+      {
+        "date": "25 MAY 2025",
+        "meet": "IFAM Outdoor, Boudewijnstadion, Bruxelles",
+        "event": "1500m",
+        "time": "3:40.90",
+        "place": "3."
+      },
+      {
+        "date": "29 MAY 2025",
+        "meet": "Meeting international du SATUC Toulouse Athlé, Stade Universitaire D. Faucher, Toulouse",
+        "event": "1500m",
+        "time": "3:38.96",
+        "place": "1."
+      },
+      {
+        "date": "28 JUN 2025",
+        "meet": "Meeting National de Carquefou, Stade Du Moulin Boisseau, Carquefou",
+        "event": "1500m",
+        "time": "3:37.07",
+        "place": "2."
+      },
+      {
+        "date": "17 JUL 2025",
+        "meet": "European Athletics U23 Championships, Fana Stadion, Bergen",
+        "event": "1500m",
+        "time": "3:43.96",
+        "place": "3."
+      },
+      {
+        "date": "19 JUL 2025",
+        "meet": "European Athletics U23 Championships, Fana Stadion, Bergen",
+        "event": "1500m",
+        "time": "3:48.35",
+        "place": "8."
+      },
+      {
+        "date": "02 AUG 2025",
+        "meet": "French Championships, Stade Pierre Paul Bernard, Talence",
+        "event": "1500m",
+        "time": "3:41.54",
+        "place": "6."
+      },
+      {
+        "date": "03 AUG 2025",
+        "meet": "French Championships, Stade Pierre Paul Bernard, Talence",
+        "event": "1500m",
+        "time": "3:41.58",
+        "place": "13."
+      },
+      {
+        "date": "20 DEC 2025",
+        "meet": "Meeting Limoges Athlétisme 87, Salle Marie-José Perec, Limoges (i)",
+        "event": "3000 Metres Short Track",
+        "time": "8:13.91",
+        "place": "1."
+      },
+      {
+        "date": "09 NOV 2025",
+        "meet": "Mutuelle Ociane Matmut Semi & 10km de Bordeaux, Bordeaux",
+        "event": "10 Kilometres Road",
+        "time": "29:04",
+        "place": "17."
+      },
+      {
+        "date": "23 NOV 2025",
+        "meet": "Cross International Le Maine Libre-Allonnes-Sarthe, Allonnes - XC 6.71km",
+        "event": "Cross Country",
+        "time": "22:41",
+        "place": "45."
+      }
+    ]
+  },
+  "age": "22"
+}

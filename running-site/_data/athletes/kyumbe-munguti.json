@@ -1,0 +1,511 @@
+{
+  "photoBackground": null,
+  "reviewTitle": null,
+  "waUrl": "https://worldathletics.org/athletes/kenya/kyumbe-munguti-14849576",
+  "height": null,
+  "questionBody": null,
+  "headlineRest": null,
+  "name": "Kyumbe Munguti",
+  "headlineKey": null,
+  "flag": "KE",
+  "honours": [
+    {
+      "competition": "World Cross Country Championships",
+      "short": "WCC",
+      "discipline": "Cross Country Relay",
+      "place": 1,
+      "year": "2024"
+    },
+    {
+      "competition": "World Cross Country Championships",
+      "short": "WCC",
+      "discipline": "Cross Country Relay",
+      "place": 1,
+      "year": "2023"
+    },
+    {
+      "competition": "World Cross Country Championships",
+      "short": "WCC",
+      "discipline": "Cross Country Relay",
+      "place": 4,
+      "year": "2026"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2023"
+    }
+  ],
+  "seasons": null,
+  "lastSynced": "2026-07-15",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:46.96"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:21.79"
+    },
+    {
+      "event": "1500m",
+      "time": "3:33.71"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:40.89"
+    },
+    {
+      "event": "2000m",
+      "time": "4:56.24"
+    },
+    {
+      "event": "3000m",
+      "time": "7:44.93"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:44.93"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:00.67"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "14:01"
+    }
+  ],
+  "hometown": null,
+  "questionTitle": null,
+  "photo": null,
+  "ncaa": null,
+  "club": null,
+  "country": "Kenya",
+  "results": [
+    {
+      "date": "JUL 12",
+      "meet": "Tampere Meeting",
+      "event": "1500 m",
+      "time": "3:40.65",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "JUL 8",
+      "meet": "Joensuu Motonet GP",
+      "event": "3000 m",
+      "time": "7:49.04",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 20",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "1500 m",
+      "time": "3:34.84",
+      "place": "5.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 18",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "1500 m",
+      "time": "3:37.7h",
+      "place": "1.",
+      "round": "H1"
+    },
+    {
+      "date": "JUN 12",
+      "meet": "Kenya Defence Forces Track and Field Championships",
+      "event": "1500 m",
+      "time": "3:41.47",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "APR 24",
+      "meet": "Kip Keino Classic",
+      "event": "1500 m",
+      "time": "3:36.21",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sirikwa Classic Continental Tour Gold",
+      "event": "Cross Country",
+      "time": "5:53",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Relay",
+      "time": "22:42",
+      "place": "4.",
+      "round": "F"
+    }
+  ],
+  "dob": "28 FEB 1995",
+  "weight": null,
+  "lastHistorySynced": "2026-07-15",
+  "coach": null,
+  "reviewBody": null,
+  "event": "1500m",
+  "id": "kyumbe-munguti",
+  "resultsHistory": {
+    "2021": [
+      {
+        "date": "12 MAR 2021",
+        "meet": "2nd AK Weekend Meeting, Moi International Sports Centre, Kasarani, Nairobi",
+        "event": "1500m",
+        "time": "3:57.7h",
+        "place": "6."
+      },
+      {
+        "date": "15 MAY 2021",
+        "meet": "41st Kenya Defence Forces Ch., Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:49.4h",
+        "place": "3."
+      },
+      {
+        "date": "16 MAY 2021",
+        "meet": "41st Kenya Defence Forces Ch., Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:53.02",
+        "place": "8."
+      }
+    ],
+    "2022": [
+      {
+        "date": "27 MAY 2022",
+        "meet": "Poznań Athletics Grand Prix, Golęcin Stadion, Poznan",
+        "event": "1000 Metres",
+        "time": "2:21.79",
+        "place": "5."
+      },
+      {
+        "date": "05 MAR 2022",
+        "meet": "3rd Weekend Meeting, Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:38.56",
+        "place": "1."
+      },
+      {
+        "date": "22 APR 2022",
+        "meet": "KDF Ch., Ulinzi Sports Complex, Langata, Nairobi",
+        "event": "1500m",
+        "time": "3:37.68",
+        "place": "2."
+      },
+      {
+        "date": "26 APR 2022",
+        "meet": "Kenyan Championships, Moi International Sports Centre, Kasarani, Nairobi",
+        "event": "1500m",
+        "time": "3:41.85",
+        "place": "1."
+      },
+      {
+        "date": "27 APR 2022",
+        "meet": "Kenyan Championships, Moi International Sports Centre, Kasarani, Nairobi",
+        "event": "1500m",
+        "time": "3:37.30",
+        "place": "2."
+      },
+      {
+        "date": "28 APR 2022",
+        "meet": "Kenyan Championships, Moi International Sports Centre, Kasarani, Nairobi",
+        "event": "1500m",
+        "time": "3:36.55",
+        "place": "3."
+      },
+      {
+        "date": "25 MAY 2022",
+        "meet": "24. Internationales Leichtathletik Meeting \"Anhalt 2022\", Paul-Greifzu-Stadion, Dessau",
+        "event": "1500m",
+        "time": "3:37.87",
+        "place": "1."
+      },
+      {
+        "date": "03 JUN 2022",
+        "meet": "4th Irena Szewinska Memorial, Zdzisław Krzyszkowiak Stadium, Bydgoszcz",
+        "event": "1500m",
+        "time": "3:36.12",
+        "place": "4."
+      },
+      {
+        "date": "05 JUN 2022",
+        "meet": "57. Internationales Pfingstsportfest, Bungertstadion, Rehlingen",
+        "event": "1500m",
+        "time": "3:39.31",
+        "place": "4."
+      },
+      {
+        "date": "11 JUN 2022",
+        "meet": "Meeting National de Carquefou, Stade Du Moulin Boisseau, Carquefou",
+        "event": "1500m",
+        "time": "3:39.54",
+        "place": "2."
+      },
+      {
+        "date": "25 JUN 2022",
+        "meet": "Kenyan Trials for World Championships and Commonwealth Games 2022, Moi International Sports Centre, Kasarani, Nairobi",
+        "event": "1500m",
+        "time": "3:45.97",
+        "place": "12."
+      }
+    ],
+    "2023": [
+      {
+        "date": "27 APR 2023",
+        "meet": "6th AK Track and Field weekend Meet, Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:37.82",
+        "place": "1."
+      },
+      {
+        "date": "25 MAY 2023",
+        "meet": "Kenya Defence Forces Championships, Ulinzi Sports Complex, Langata, Nairobi",
+        "event": "1500m",
+        "time": "3:42.28",
+        "place": "1."
+      },
+      {
+        "date": "26 MAY 2023",
+        "meet": "Kenya Defence Forces Championships, Ulinzi Sports Complex, Langata, Nairobi",
+        "event": "1500m",
+        "time": "3:37.35",
+        "place": "1."
+      },
+      {
+        "date": "06 JUN 2023",
+        "meet": "Meeting Iberoamericano, Estadio Iberoamericano, Huelva",
+        "event": "1500m",
+        "time": "3:34.06",
+        "place": "2."
+      },
+      {
+        "date": "17 JUN 2023",
+        "meet": "25th International Athletics Meeting Anhalt 2023, Paul-Greifzu-Stadion, Dessau",
+        "event": "1500m",
+        "time": "3:34.02",
+        "place": "1."
+      },
+      {
+        "date": "22 JUN 2023",
+        "meet": "Kenyan Championships, Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:41.64",
+        "place": "1."
+      },
+      {
+        "date": "24 JUN 2023",
+        "meet": "Kenyan Championships, Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:37.38",
+        "place": "1."
+      },
+      {
+        "date": "08 JUL 2023",
+        "meet": "Trials For World Athletics Championships Budapest 2023, Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:38.79",
+        "place": "7."
+      },
+      {
+        "date": "17 JUL 2023",
+        "meet": "International Marseille Meeting, Stade Delort, Marseille",
+        "event": "1500m",
+        "time": "3:35.34",
+        "place": "3."
+      },
+      {
+        "date": "04 SEP 2023",
+        "meet": "Gala dei Castelli, Stadio Comunale, Bellinzona",
+        "event": "1500m",
+        "time": "3:35.52",
+        "place": "4."
+      },
+      {
+        "date": "05 MAY 2023",
+        "meet": "Diamond League Meeting, Suhaim bin Hamad Stadium, Doha - Diamond Discipline",
+        "event": "3000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "09 JUN 2023",
+        "meet": "Meeting de Paris, Stade Charléty, Paris - Promotional Events",
+        "event": "2 Miles",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "31 AUG 2023",
+        "meet": "Weltklasse Zürich, Letzigrund, Zürich - Diamond Discipline",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "01 OCT 2023",
+        "meet": "World Athletics Road Running Championships, Riga",
+        "event": "Mile Road",
+        "time": "4:00.67",
+        "place": "13."
+      },
+      {
+        "date": "18 FEB 2023",
+        "meet": "44th World Athletics Cross Country Championships, Bathurst",
+        "event": "Cross Country Relay",
+        "time": "23:14",
+        "place": "1."
+      }
+    ],
+    "2024": [
+      {
+        "date": "06 MAR 2024",
+        "meet": "Trials for African Games 2024, Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:44.08",
+        "place": "9."
+      },
+      {
+        "date": "20 APR 2024",
+        "meet": "Kip Keino Classic, Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:33.71",
+        "place": "3."
+      },
+      {
+        "date": "16 MAY 2024",
+        "meet": "Meeting International de Montreuil, Stade des Grands Pêchers, Montreuil",
+        "event": "1500m",
+        "time": "3:40.33",
+        "place": "11."
+      },
+      {
+        "date": "24 MAY 2024",
+        "meet": "Anhalt 2024 - 26. Internationales Leichtathletik Meeting, Paul-Greifzu-Stadion, Dessau",
+        "event": "1500m",
+        "time": "3:39.13",
+        "place": "5."
+      },
+      {
+        "date": "14 JUN 2024",
+        "meet": "National Trials for the XXXIII Olympics Games, Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:35.80",
+        "place": "2."
+      },
+      {
+        "date": "20 JUN 2024",
+        "meet": "6th Irena Szewińska Memorial, Zdzisław Krzyszkowiak Stadium, Bydgoszcz",
+        "event": "1500m",
+        "time": "3:38.52",
+        "place": "5."
+      },
+      {
+        "date": "26 NOV 2024",
+        "meet": "Africa Military Games, MKO Abiola National Stadium, Abuja",
+        "event": "1500m",
+        "time": "3:39.12",
+        "place": "1."
+      },
+      {
+        "date": "02 FEB 2024",
+        "meet": "Elite Indoor Track Miramas Meeting, Stadium Miramas Métropole, Miramas (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:40.89",
+        "place": "7."
+      },
+      {
+        "date": "08 SEP 2024",
+        "meet": "Boris Hanžeković Memorial, Sports Park Mladost, Zagreb",
+        "event": "2000m",
+        "time": "4:56.24",
+        "place": "6."
+      },
+      {
+        "date": "05 SEP 2024",
+        "meet": "Weltklasse Zürich, Letzigrund, Zürich - Promotional Events",
+        "event": "3000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "28 JAN 2024",
+        "meet": "Meeting de L'Eure, Stade couvert Jesse Owens, Val-de-Reuil (i)",
+        "event": "3000 Metres Short Track",
+        "time": "7:44.93",
+        "place": "1."
+      },
+      {
+        "date": "10 FEB 2024",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF, Arena Stade Couvert, Liévin (i) - World Athletics Indoor Tour",
+        "event": "3000 Metres Short Track",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "02 MAR 2024",
+        "meet": "Kenyan Cross Country Championships, Prison Staff Training College, Ruiru - XC 2.0km",
+        "event": "Cross Country",
+        "time": "5:35",
+        "place": "3."
+      },
+      {
+        "date": "30 MAR 2024",
+        "meet": "45th World Athletics Cross Country Championships, Park of Friendship, Beograd",
+        "event": "Cross Country Relay",
+        "time": "22:15",
+        "place": "1."
+      }
+    ],
+    "2025": [
+      {
+        "date": "13 JUN 2025",
+        "meet": "Kenya Defecnce Forces Track and Field Championships, Ulinzi Sports Complex, Langata, Nairobi",
+        "event": "1500m",
+        "time": "3:47.13",
+        "place": "6."
+      },
+      {
+        "date": "19 JUL 2025",
+        "meet": "Meeting Madrid 2025, Estadio Vallehermoso, Madrid",
+        "event": "1500m",
+        "time": "3:35.67",
+        "place": "6."
+      },
+      {
+        "date": "03 MAY 2025",
+        "meet": "Tokyo : Speed : Race, Meijijingu Gaien area, Tokyo",
+        "event": "5 Kilometres Road",
+        "time": "14:01",
+        "place": "16."
+      },
+      {
+        "date": "08 FEB 2025",
+        "meet": "Kenyan Cross Country Championships, Nairobi - XC 2.0km",
+        "event": "Cross Country",
+        "time": "6:23",
+        "place": "4."
+      },
+      {
+        "date": "25 OCT 2025",
+        "meet": "Kenya Trials for World Cross Country Championships, Eldoret - XC 2.0km",
+        "event": "Cross Country",
+        "time": "6:15",
+        "place": "2."
+      }
+    ]
+  },
+  "age": "31",
+  "aaId": 14849576,
+  "countryCode3": "KEN"
+}

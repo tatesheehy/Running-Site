@@ -1,0 +1,944 @@
+{
+  "photoBackground": null,
+  "reviewTitle": null,
+  "waUrl": "https://worldathletics.org/athletes/norway/narve-gilje-nordas-14705412",
+  "height": null,
+  "questionBody": null,
+  "headlineRest": null,
+  "name": "Narve Gilje Nordås",
+  "headlineKey": null,
+  "flag": "NO",
+  "honours": [
+    {
+      "competition": "Olympic Games",
+      "short": "OLY",
+      "discipline": "1500m",
+      "place": 7,
+      "year": "2024"
+    },
+    {
+      "competition": "World Championships",
+      "short": "WC",
+      "discipline": "1500m",
+      "place": 3,
+      "year": "2023"
+    },
+    {
+      "competition": "World Indoor Championships",
+      "short": "WI",
+      "discipline": "1500 Metres Short Track",
+      "place": 5,
+      "year": "2024"
+    },
+    {
+      "competition": "Diamond League",
+      "short": "DLF",
+      "discipline": "3000m",
+      "place": 1,
+      "year": "2024"
+    },
+    {
+      "competition": "European Indoor Championships",
+      "short": "EI",
+      "discipline": "3000 Metres Short Track",
+      "place": 5,
+      "year": "2021"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "5000m",
+      "place": 1,
+      "year": "2025"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2023"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "5000m",
+      "place": 1,
+      "year": "2021"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "5000m",
+      "place": 1,
+      "year": "2020"
+    },
+    {
+      "competition": "National Indoor Championships",
+      "short": "NIC",
+      "discipline": "3000 Metres Short Track",
+      "place": 1,
+      "year": "2026"
+    },
+    {
+      "competition": "National Indoor Championships",
+      "short": "NIC",
+      "discipline": "3000 Metres Short Track",
+      "place": 1,
+      "year": "2023"
+    },
+    {
+      "competition": "National Indoor Championships",
+      "short": "NIC",
+      "discipline": "1500 Metres Short Track",
+      "place": 1,
+      "year": "2020"
+    }
+  ],
+  "seasons": null,
+  "lastSynced": "2026-07-15",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:58.63"
+    },
+    {
+      "event": "1500m",
+      "time": "3:29.47"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:37.03"
+    },
+    {
+      "event": "Mile",
+      "time": "3:47.68"
+    },
+    {
+      "event": "2000m",
+      "time": "4:50.64"
+    },
+    {
+      "event": "3000m",
+      "time": "7:33.49"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:39.05"
+    },
+    {
+      "event": "5000m",
+      "time": "13:04.85"
+    },
+    {
+      "event": "5000 Metres Short Track",
+      "time": "13:04.85"
+    },
+    {
+      "event": "10000m",
+      "time": "28:04.42"
+    },
+    {
+      "event": "3000m SC",
+      "time": "9:53.48"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "13:10"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:31"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "1:04:57"
+    }
+  ],
+  "hometown": null,
+  "questionTitle": null,
+  "photo": null,
+  "ncaa": null,
+  "club": null,
+  "country": "Norway",
+  "results": [
+    {
+      "date": "JUL 14",
+      "meet": "Gyulai István Memorial - Hungarian Athletics Grand Prix",
+      "event": "1500 m",
+      "time": "3:32.78",
+      "place": "9.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Meeting de Paris",
+      "event": "1500 m",
+      "time": "3:32.05",
+      "place": "10.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "1500 m",
+      "time": "3:36.96",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Oslo Bislett Games",
+      "event": "Mile",
+      "time": "3:53.87",
+      "place": "13.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 7",
+      "meet": "BAUHAUS-Galan",
+      "event": "1500 m",
+      "time": "3:31.74",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 31",
+      "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+      "event": "1500 m",
+      "time": "3:33.45",
+      "place": "12.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 24",
+      "meet": "61. Internationales Pfingstsportfest Rehlingen",
+      "event": "1500 m",
+      "time": "3:32.52",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 20",
+      "meet": "15th Savona International Meeting",
+      "event": "1500 m",
+      "time": "3:34.37",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "APR 4",
+      "meet": "Urban Trail de Lille - 5 et 10km",
+      "event": "5 Kilom Road",
+      "time": "13:10",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 1",
+      "meet": "Norwegian Indoor Championships",
+      "event": "3000 m sh",
+      "time": "7:41.44",
+      "place": "1.",
+      "round": "F3"
+    }
+  ],
+  "dob": "30 SEP 1998",
+  "weight": null,
+  "lastHistorySynced": "2026-07-14",
+  "coach": null,
+  "reviewBody": null,
+  "event": "1500m",
+  "id": "narve-gilje-nordas",
+  "resultsHistory": {
+    "2021": [
+      {
+        "date": "19 AUG 2021",
+        "meet": "Motonet GP, Stadion, Lahti",
+        "event": "3000m",
+        "time": "7:41.31",
+        "place": "1."
+      },
+      {
+        "date": "20 FEB 2021",
+        "meet": "Sørvestmesterskapet, Sandneshallen, Sandnes (i)",
+        "event": "3000 Metres Short Track",
+        "time": "7:51.82",
+        "place": "1."
+      },
+      {
+        "date": "06 MAR 2021",
+        "meet": "European Athletics Indoor Championships, Arena Toruń, Toruń (i)",
+        "event": "3000 Metres Short Track",
+        "time": "7:55.03",
+        "place": "2."
+      },
+      {
+        "date": "07 MAR 2021",
+        "meet": "European Athletics Indoor Championships, Arena Toruń, Toruń (i)",
+        "event": "3000 Metres Short Track",
+        "time": "7:50.21",
+        "place": "5."
+      },
+      {
+        "date": "04 JUN 2021",
+        "meet": "Night of Highlights, Bislett Stadion, Oslo",
+        "event": "5000m",
+        "time": "13:16.82",
+        "place": "2."
+      },
+      {
+        "date": "12 JUN 2021",
+        "meet": "Meeting National, Parc des Sports C. Ehrmann, Nice",
+        "event": "5000m",
+        "time": "13:22.15",
+        "place": "7."
+      },
+      {
+        "date": "29 JUN 2021",
+        "meet": "Spitzen Leichtathletik, Stadion Allmend, Luzern",
+        "event": "5000m",
+        "time": "13:16.67",
+        "place": "4."
+      },
+      {
+        "date": "03 AUG 2021",
+        "meet": "The XXXII Olympic Games, National Stadium, Tokyo",
+        "event": "5000m",
+        "time": "13:41.82",
+        "place": "12."
+      },
+      {
+        "date": "10 SEP 2021",
+        "meet": "Norwegian Championships, Stadion, Kristiansand",
+        "event": "5000m",
+        "time": "13:55.86",
+        "place": "1."
+      },
+      {
+        "date": "12 SEP 2021",
+        "meet": "Norwegian Championships, Stadion, Kristiansand",
+        "event": "10000m",
+        "time": "28:47.19",
+        "place": "2."
+      },
+      {
+        "date": "16 OCT 2021",
+        "meet": "Hytteplanmila, Hole",
+        "event": "10 Kilometres Road",
+        "time": "28:55",
+        "place": "1."
+      },
+      {
+        "date": "12 DEC 2021",
+        "meet": "27th SPAR European Cross Country Championships, Dublin",
+        "event": "Cross Country Senior Race",
+        "time": "31:30",
+        "place": "25."
+      }
+    ],
+    "2022": [
+      {
+        "date": "25 MAY 2022",
+        "meet": "Meeting Iberoamericano, Estadio Iberoamericano, Huelva",
+        "event": "1500m",
+        "time": "3:36.23",
+        "place": "1."
+      },
+      {
+        "date": "26 JUL 2022",
+        "meet": "Folksam GP Söderhamn, Hällåsens IP, Söderhamn",
+        "event": "1500m",
+        "time": "3:38.05",
+        "place": "1."
+      },
+      {
+        "date": "08 JUN 2022",
+        "meet": "Trond Mohn Games, Fana Stadion, Bergen",
+        "event": "3000m",
+        "time": "7:43.53",
+        "place": "1."
+      },
+      {
+        "date": "30 JUN 2022",
+        "meet": "BAUHAUS-Galan, Olympiastadion, Stockholm - Diamond Discipline",
+        "event": "3000m",
+        "time": "7:44.28",
+        "place": "8."
+      },
+      {
+        "date": "05 AUG 2022",
+        "meet": "Norgeslekene, Friidrettsstadion, Jessheim",
+        "event": "3000m",
+        "time": "7:44.91",
+        "place": "1."
+      },
+      {
+        "date": "03 JUN 2022",
+        "meet": "BoXX United Manchester World Athletics Continental Tour, Manchester Regional Arena, Manchester",
+        "event": "5000m",
+        "time": "13:26.64",
+        "place": "3."
+      },
+      {
+        "date": "16 JUN 2022",
+        "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Diamond Discipline",
+        "event": "5000m",
+        "time": "13:15.82",
+        "place": "9."
+      },
+      {
+        "date": "21 JUL 2022",
+        "meet": "World Athletics Championships, Oregon 2022, Hayward Field, Eugene, OR",
+        "event": "5000m",
+        "time": "13:37.14",
+        "place": "13."
+      },
+      {
+        "date": "26 JUL 2022",
+        "meet": "Folksam GP Söderhamn, Hällåsens IP, Söderhamn",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "16 AUG 2022",
+        "meet": "European Athletics Championships, Olympiastadion, München",
+        "event": "5000m",
+        "time": "13:39.12",
+        "place": "17."
+      },
+      {
+        "date": "13 APR 2022",
+        "meet": "Night of Highlights, Bislett Stadion, Oslo - Elite Event",
+        "event": "10000m",
+        "time": "28:04.42",
+        "place": "1."
+      },
+      {
+        "date": "22 OCT 2022",
+        "meet": "Hytteplanmila, Hole",
+        "event": "10 Kilometres Road",
+        "time": "28:18",
+        "place": "1."
+      },
+      {
+        "date": "11 DEC 2022",
+        "meet": "28th SPAR European Cross Country Championships, Piemonte-La Mandria Park",
+        "event": "Cross Country Senior Race",
+        "time": "30:40",
+        "place": "21."
+      }
+    ],
+    "2023": [
+      {
+        "date": "20 MAY 2023",
+        "meet": "Lange Laufnacht, Carl-Kaufmann-Stadion, Karlsruhe",
+        "event": "1500m",
+        "time": "3:35.91",
+        "place": "2."
+      },
+      {
+        "date": "27 MAY 2023",
+        "meet": "IFAM Oordegem, Putbosstadion, Oordegem",
+        "event": "1500m",
+        "time": "3:34.70",
+        "place": "1."
+      },
+      {
+        "date": "10 JUN 2023",
+        "meet": "Fast 5000, Montesson",
+        "event": "1500m",
+        "time": "3:32.39",
+        "place": "1."
+      },
+      {
+        "date": "15 JUN 2023",
+        "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:29.47",
+        "place": "8."
+      },
+      {
+        "date": "07 JUL 2023",
+        "meet": "Norwegian Championships, Friidrettsstadion, Jessheim",
+        "event": "1500m",
+        "time": "3:44.18",
+        "place": "1."
+      },
+      {
+        "date": "08 JUL 2023",
+        "meet": "Norwegian Championships, Friidrettsstadion, Jessheim",
+        "event": "1500m",
+        "time": "3:36.45",
+        "place": "1."
+      },
+      {
+        "date": "23 JUL 2023",
+        "meet": "London Athletics Meet, Olympic Stadium, London - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:30.58",
+        "place": "2."
+      },
+      {
+        "date": "19 AUG 2023",
+        "meet": "World Athletics Championships, Budapest 2023, Nemzeti Atlétikai Központ, Budapest",
+        "event": "1500m",
+        "time": "3:34.67",
+        "place": "5."
+      },
+      {
+        "date": "20 AUG 2023",
+        "meet": "World Athletics Championships, Budapest 2023, Nemzeti Atlétikai Központ, Budapest",
+        "event": "1500m",
+        "time": "3:32.81",
+        "place": "5."
+      },
+      {
+        "date": "23 AUG 2023",
+        "meet": "World Athletics Championships, Budapest 2023, Nemzeti Atlétikai Központ, Budapest",
+        "event": "1500m",
+        "time": "3:29.68",
+        "place": "3."
+      },
+      {
+        "date": "16 SEP 2023",
+        "meet": "Prefontaine Classic, Hayward Field, Eugene, OR - Split times",
+        "event": "1500m",
+        "time": "3:33.51",
+        "place": ""
+      },
+      {
+        "date": "12 FEB 2023",
+        "meet": "Nordic Indoor Match, Eva Lisa Holtz Arena, Karlstad (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:41.81",
+        "place": "1."
+      },
+      {
+        "date": "18 FEB 2023",
+        "meet": "Norwegian Indoor Championships, Bærum Idrettspark, Rud, Bærum (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:54.05",
+        "place": "1."
+      },
+      {
+        "date": "16 SEP 2023",
+        "meet": "Prefontaine Classic, Hayward Field, Eugene, OR - Diamond Discipline",
+        "event": "Mile",
+        "time": "3:48.24",
+        "place": "7."
+      },
+      {
+        "date": "08 SEP 2023",
+        "meet": "Memorial van Damme, Boudewijnstadion, Bruxelles - Diamond Discipline",
+        "event": "2000m",
+        "time": "4:50.64",
+        "place": "6."
+      },
+      {
+        "date": "03 JUN 2023",
+        "meet": "Trond Mohn Games, Fana Stadion, Bergen",
+        "event": "3000m",
+        "time": "7:43.94",
+        "place": "1."
+      },
+      {
+        "date": "19 FEB 2023",
+        "meet": "Norwegian Indoor Championships, Bærum Idrettspark, Rud, Bærum (i)",
+        "event": "3000 Metres Short Track",
+        "time": "7:58.19",
+        "place": "1."
+      },
+      {
+        "date": "15 JUL 2023",
+        "meet": "Night of Athletics, Stadion De Veen, Heusden-Zolder",
+        "event": "5000m",
+        "time": "13:05.38",
+        "place": "5."
+      },
+      {
+        "date": "24 AUG 2023",
+        "meet": "World Athletics Championships, Budapest 2023, Nemzeti Atlétikai Központ, Budapest",
+        "event": "5000m",
+        "time": "13:36.55",
+        "place": "8."
+      },
+      {
+        "date": "27 AUG 2023",
+        "meet": "World Athletics Championships, Budapest 2023, Nemzeti Atlétikai Központ, Budapest",
+        "event": "5000m",
+        "time": "13:28.73",
+        "place": "14."
+      },
+      {
+        "date": "18 NOV 2023",
+        "meet": "Urban Trail de Lille - 5 et 10km, Lille",
+        "event": "5 Kilometres Road",
+        "time": "13:26",
+        "place": "2."
+      }
+    ],
+    "2024": [
+      {
+        "date": "30 APR 2024",
+        "meet": "Meeting Iberoamericano Huelva 2024, Estadio Iberoamericano, Huelva",
+        "event": "1500m",
+        "time": "3:34.11",
+        "place": "1."
+      },
+      {
+        "date": "10 MAY 2024",
+        "meet": "Seashore Group Doha Meeting, Suhaim bin Hamad Stadium, Doha - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:33.87",
+        "place": "6."
+      },
+      {
+        "date": "30 MAY 2024",
+        "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:34.86",
+        "place": "13."
+      },
+      {
+        "date": "10 JUN 2024",
+        "meet": "European Athletics Championships, Stadio Olimpico, Roma",
+        "event": "1500m",
+        "time": "3:46.15",
+        "place": "12."
+      },
+      {
+        "date": "12 JUL 2024",
+        "meet": "Meeting International d’Athlétisme Herculis EBS, Stade Louis II, Monaco - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:31.06",
+        "place": "6."
+      },
+      {
+        "date": "20 JUL 2024",
+        "meet": "London Athletics Meet, Olympic Stadium, London - Split times",
+        "event": "1500m",
+        "time": "3:34.58",
+        "place": ""
+      },
+      {
+        "date": "02 AUG 2024",
+        "meet": "The XXXIII Olympic Games, Stade de France, Paris",
+        "event": "1500m",
+        "time": "3:36.41",
+        "place": "3."
+      },
+      {
+        "date": "04 AUG 2024",
+        "meet": "The XXXIII Olympic Games, Stade de France, Paris",
+        "event": "1500m",
+        "time": "3:32.34",
+        "place": "6."
+      },
+      {
+        "date": "06 AUG 2024",
+        "meet": "The XXXIII Olympic Games, Stade de France, Paris",
+        "event": "1500m",
+        "time": "3:30.46",
+        "place": "7."
+      },
+      {
+        "date": "05 SEP 2024",
+        "meet": "Weltklasse Zürich, Letzigrund, Zürich - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:34.31",
+        "place": "12."
+      },
+      {
+        "date": "13 SEP 2024",
+        "meet": "Memorial van Damme, Boudewijnstadion, Bruxelles - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:33.02",
+        "place": "8."
+      },
+      {
+        "date": "10 FEB 2024",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF, Arena Stade Couvert, Liévin (i) - Indoor Meeting",
+        "event": "1500 Metres Short Track",
+        "time": "3:37.45",
+        "place": "5."
+      },
+      {
+        "date": "01 MAR 2024",
+        "meet": "World Athletics Indoor Championships, Glasgow Arena, Glasgow (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:42.09",
+        "place": "1."
+      },
+      {
+        "date": "03 MAR 2024",
+        "meet": "World Athletics Indoor Championships, Glasgow Arena, Glasgow (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:37.03",
+        "place": "5."
+      },
+      {
+        "date": "20 JUL 2024",
+        "meet": "London Athletics Meet, Olympic Stadium, London - Diamond Discipline",
+        "event": "Mile",
+        "time": "3:49.06",
+        "place": "2."
+      },
+      {
+        "date": "22 MAY 2024",
+        "meet": "Trond Mohn Games, Fana Stadion, Bergen",
+        "event": "3000m",
+        "time": "7:35.75",
+        "place": "1."
+      },
+      {
+        "date": "02 JUN 2024",
+        "meet": "BAUHAUS-Galan, Olympiastadion, Stockholm - Diamond Discipline",
+        "event": "3000m",
+        "time": "7:33.49",
+        "place": "1."
+      },
+      {
+        "date": "23 FEB 2024",
+        "meet": "World Indoor Tour Gold Madrid 2024, Gallur, Madrid (i) - World Athletics Indoor Tour",
+        "event": "3000 Metres Short Track",
+        "time": "7:41.28",
+        "place": "1."
+      },
+      {
+        "date": "30 APR 2024",
+        "meet": "Meeting Iberoamericano Huelva 2024, Estadio Iberoamericano, Huelva",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "08 JUN 2024",
+        "meet": "European Athletics Championships, Stadio Olimpico, Roma",
+        "event": "5000m",
+        "time": "13:26.91",
+        "place": "11."
+      },
+      {
+        "date": "29 JUN 2024",
+        "meet": "Norwegian Championships, Sandnes Stadion, Sandnes",
+        "event": "5000m",
+        "time": "13:14.99",
+        "place": "2."
+      },
+      {
+        "date": "07 AUG 2024",
+        "meet": "The XXXIII Olympic Games, Stade de France, Paris",
+        "event": "5000m",
+        "time": "14:08.16",
+        "place": "1."
+      },
+      {
+        "date": "10 AUG 2024",
+        "meet": "The XXXIII Olympic Games, Stade de France, Paris",
+        "event": "5000m",
+        "time": "13:31.34",
+        "place": "17."
+      },
+      {
+        "date": "19 OCT 2024",
+        "meet": "Hytteplanmila, Svendsrudmoen Stadion, Hole - Norwegian 10km Road Running Championships",
+        "event": "10 Kilometres Road",
+        "time": "28:24",
+        "place": "1."
+      },
+      {
+        "date": "16 NOV 2024",
+        "meet": "Urban Trail de Lille - 5 et 10km, Lille",
+        "event": "10 Kilometres Road",
+        "time": "27:31",
+        "place": "5."
+      }
+    ],
+    "2025": [
+      {
+        "date": "06 JUN 2025",
+        "meet": "1500m Elite Jessheim, Friidrettsstadion, Jessheim",
+        "event": "1500m",
+        "time": "3:38.03",
+        "place": "1."
+      },
+      {
+        "date": "12 JUN 2025",
+        "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Split times",
+        "event": "1500m",
+        "time": "3:35.51",
+        "place": ""
+      },
+      {
+        "date": "15 JUN 2025",
+        "meet": "BAUHAUS-Galan, Olympiastadion, Stockholm - Promotional Events",
+        "event": "1500m",
+        "time": "3:32.78",
+        "place": "6."
+      },
+      {
+        "date": "17 JUN 2025",
+        "meet": "Paavo Nurmi Games, Paavo Nurmen Stadion, Turku",
+        "event": "1500m",
+        "time": "3:33.83",
+        "place": "2."
+      },
+      {
+        "date": "24 JUN 2025",
+        "meet": "64th Ostrava Golden Spike, Mestský Stadion, Ostrava",
+        "event": "1500m",
+        "time": "3:30.73",
+        "place": "5."
+      },
+      {
+        "date": "19 JUL 2025",
+        "meet": "London Athletics Meet, Olympic Stadium, London - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:32.54",
+        "place": "7."
+      },
+      {
+        "date": "03 AUG 2025",
+        "meet": "Norwegian Championships, Ravnanger Idrettspark, Askoy",
+        "event": "1500m",
+        "time": "3:39.02",
+        "place": "2."
+      },
+      {
+        "date": "16 AUG 2025",
+        "meet": "Silesia Kamila Skolimowska Memorial, Stadion Śląski, Chorzów - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:33.41",
+        "place": "3."
+      },
+      {
+        "date": "20 AUG 2025",
+        "meet": "Internationales Abendsportfest, TSV Stadion, Pfungstadt",
+        "event": "1500m",
+        "time": "3:30.26",
+        "place": "1."
+      },
+      {
+        "date": "14 SEP 2025",
+        "meet": "World Athletics Championships, Tokyo 2025, National Stadium, Tokyo",
+        "event": "1500m",
+        "time": "3:35.90",
+        "place": "1."
+      },
+      {
+        "date": "15 SEP 2025",
+        "meet": "World Athletics Championships, Tokyo 2025, National Stadium, Tokyo",
+        "event": "1500m",
+        "time": "3:35.72",
+        "place": "7."
+      },
+      {
+        "date": "12 JUN 2025",
+        "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Diamond Discipline",
+        "event": "Mile",
+        "time": "3:49.91",
+        "place": "11."
+      },
+      {
+        "date": "27 JUL 2025",
+        "meet": "ISTAF 2025, Olympiastadion, Berlin",
+        "event": "Mile",
+        "time": "3:47.68",
+        "place": "1."
+      },
+      {
+        "date": "03 JUN 2025",
+        "meet": "Trond Mohn Games, Fana Stadion, Bergen",
+        "event": "3000m",
+        "time": "7:44.80",
+        "place": "2."
+      },
+      {
+        "date": "07 FEB 2025",
+        "meet": "INIT Indoor Meeting Karlsruhe, Europahalle, Karlsruhe (i) - Indoor Meeting",
+        "event": "3000 Metres Short Track",
+        "time": "7:39.05",
+        "place": "5."
+      },
+      {
+        "date": "15 FEB 2025",
+        "meet": "KM innendørs, Sandneshallen, Sandnes (i)",
+        "event": "3000 Metres Short Track",
+        "time": "7:43.93",
+        "place": "1."
+      },
+      {
+        "date": "24 MAY 2025",
+        "meet": "75. Boris Hanžeković Memorial, Sports Park Mladost, Zagreb",
+        "event": "5000m",
+        "time": "13:13.50",
+        "place": "4."
+      },
+      {
+        "date": "01 AUG 2025",
+        "meet": "Norwegian Championships, Ravnanger Idrettspark, Askoy",
+        "event": "5000m",
+        "time": "13:08.33",
+        "place": "1."
+      },
+      {
+        "date": "19 SEP 2025",
+        "meet": "World Athletics Championships, Tokyo 2025, National Stadium, Tokyo",
+        "event": "5000m",
+        "time": "13:25.00",
+        "place": "12."
+      },
+      {
+        "date": "21 FEB 2025",
+        "meet": "Boston University DMR Challenge, Boston Univ. Track & Tennis Center, Boston, MA (i)",
+        "event": "5000 Metres Short Track",
+        "time": "13:04.85",
+        "place": "5."
+      },
+      {
+        "date": "13 DEC 2025",
+        "meet": "Al Sharqiyah International Race - 5KM, Al Khobar - Elite Event",
+        "event": "5 Kilometres Road",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "12 JAN 2025",
+        "meet": "10K Valencia Ibercaja by Kiprun, Valencia",
+        "event": "10 Kilometres Road",
+        "time": "27:33",
+        "place": "11."
+      },
+      {
+        "date": "13 APR 2025",
+        "meet": "European Running Championships, Brussels-Leuven",
+        "event": "10 Kilometres Road",
+        "time": "28:22",
+        "place": "11."
+      },
+      {
+        "date": "27 SEP 2025",
+        "meet": "Gruemila, Grue",
+        "event": "10 Kilometres Road",
+        "time": "29:45",
+        "place": "2."
+      },
+      {
+        "date": "18 OCT 2025",
+        "meet": "Hytteplanmila, Svendsrudmoen Stadion, Hole",
+        "event": "10 Kilometres Road",
+        "time": "28:25",
+        "place": "2."
+      },
+      {
+        "date": "23 NOV 2025",
+        "meet": "Portuguese Cross Country Championship, Parque Urbano de Lagoa, Lagoa - XC 7.47km",
+        "event": "Cross Country",
+        "time": "22:19",
+        "place": "OC"
+      }
+    ]
+  },
+  "age": "27"
+}

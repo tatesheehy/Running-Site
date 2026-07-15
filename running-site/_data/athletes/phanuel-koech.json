@@ -9,7 +9,7 @@
   "headlineKey": "x",
   "flag": "KE",
   "seasons": "xx",
-  "lastSynced": "2026-07-14",
+  "lastSynced": "2026-07-15",
   "prs": [
     {
       "event": "800m",
@@ -35,6 +35,14 @@
   "country": "Kenya",
   "results": [
     {
+      "date": "JUL 14",
+      "meet": "Gyulai István Memorial - Hungarian Athletics Grand Prix",
+      "event": "1500 m",
+      "time": "3:31.09",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "JUN 20",
       "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
       "event": "1500 m",
@@ -53,7 +61,7 @@
   ],
   "dob": "2006-12-01",
   "weight": "145",
-  "lastHistorySynced": "2026-07-13",
+  "lastHistorySynced": "2026-07-14",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

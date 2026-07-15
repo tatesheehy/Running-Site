@@ -1,0 +1,954 @@
+{
+  "photoBackground": null,
+  "reviewTitle": null,
+  "waUrl": "https://worldathletics.org/athletes/turkiye/salih-teksoz-14797500",
+  "height": null,
+  "questionBody": null,
+  "headlineRest": null,
+  "name": "Salih Teksöz",
+  "headlineKey": null,
+  "flag": "TR",
+  "honours": [
+    {
+      "competition": "Balkan Championships",
+      "short": "BC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2025"
+    },
+    {
+      "competition": "Balkan Championships",
+      "short": "BC",
+      "discipline": "800m",
+      "place": 1,
+      "year": "2023"
+    },
+    {
+      "competition": "Balkan Indoor Championships",
+      "short": "BIC",
+      "discipline": "3000 Metres Short Track",
+      "place": 1,
+      "year": "2025"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2026"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "800m",
+      "place": 1,
+      "year": "2024"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "800m",
+      "place": 1,
+      "year": "2023"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2023"
+    },
+    {
+      "competition": "National Indoor Championships",
+      "short": "NIC",
+      "discipline": "3000 Metres Short Track",
+      "place": 1,
+      "year": "2025"
+    },
+    {
+      "competition": "National Indoor Championships",
+      "short": "NIC",
+      "discipline": "800 Metres Short Track",
+      "place": 1,
+      "year": "2024"
+    },
+    {
+      "competition": "National Indoor Championships",
+      "short": "NIC",
+      "discipline": "800 Metres Short Track",
+      "place": 1,
+      "year": "2023"
+    },
+    {
+      "competition": "National Indoor Championships",
+      "short": "NIC",
+      "discipline": "1500 Metres Short Track",
+      "place": 1,
+      "year": "2023"
+    },
+    {
+      "competition": "National Indoor Championships",
+      "short": "NIC",
+      "discipline": "800 Metres Short Track",
+      "place": 1,
+      "year": "2022"
+    },
+    {
+      "competition": "National Indoor Championships",
+      "short": "NIC",
+      "discipline": "800 Metres Short Track",
+      "place": 1,
+      "year": "2019"
+    }
+  ],
+  "seasons": null,
+  "lastSynced": "2026-07-15",
+  "prs": [
+    {
+      "event": "600 Metres",
+      "time": "1:16.70"
+    },
+    {
+      "event": "800m",
+      "time": "1:46.40"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:47.70"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:19.24"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.49"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:41.20"
+    },
+    {
+      "event": "Mile",
+      "time": "3:58.99"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:58.99"
+    },
+    {
+      "event": "2000m",
+      "time": "5:02.39"
+    },
+    {
+      "event": "2000 Metres Short Track",
+      "time": "5:02.39"
+    },
+    {
+      "event": "3000m",
+      "time": "7:52.55"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:52.55"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "30:23"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "30:10"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:08.48"
+    }
+  ],
+  "hometown": null,
+  "questionTitle": null,
+  "photo": null,
+  "ncaa": null,
+  "club": null,
+  "country": "Türkiye",
+  "results": [
+    {
+      "date": "JUL 11",
+      "meet": "81. Cezmi Or Cup",
+      "event": "1500 m",
+      "time": "3:36.59",
+      "place": "1.",
+      "round": "F2"
+    },
+    {
+      "date": "JUL 7",
+      "meet": "Míting Internacional Ciutat de Barcelona",
+      "event": "1500 m",
+      "time": "3:37.75",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "JUL 4",
+      "meet": "Turkish Championships",
+      "event": "800 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F6"
+    },
+    {
+      "date": "JUL 3",
+      "meet": "Turkish Championships",
+      "event": "1500 m",
+      "time": "3:42.57",
+      "place": "1.",
+      "round": "F2"
+    },
+    {
+      "date": "JUN 28",
+      "meet": "Clubs Super League 1st Stage",
+      "event": "3000 m",
+      "time": "8:09.57",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 27",
+      "meet": "Clubs Super League 1st Stage",
+      "event": "1500 m",
+      "time": "4:16.15",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 20",
+      "meet": "Balkan Senior Championships",
+      "event": "1500 m",
+      "time": "3:38.75",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 5",
+      "meet": "Znamensky Memorial",
+      "event": "1500 m",
+      "time": "3:36.66",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 30",
+      "meet": "10. PUMA NITRO Lange Laufnacht",
+      "event": "1500 m",
+      "time": "3:34.49",
+      "place": "5.",
+      "round": "F12"
+    },
+    {
+      "date": "MAY 24",
+      "meet": "IFAM Outdoor",
+      "event": "1500 m",
+      "time": "3:36.59",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 17",
+      "meet": "Internationales Läufermeeting",
+      "event": "1000 m",
+      "time": "2:19.58",
+      "place": "1.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Indoor Olympic Trial",
+      "event": "2000 m sh",
+      "time": "5:02.39",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Indoor Olympic Trial",
+      "event": "3000 m sh",
+      "time": "8:32.43",
+      "place": "2.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 7",
+      "meet": "Russian Winter",
+      "event": "3000 m sh",
+      "time": "7:52.55",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "scottishathletics EAP Indoor International",
+      "event": "Mile sh",
+      "time": "3:58.99",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Meeting Indoor de Lyon",
+      "event": "1500 m sh",
+      "time": "3:41.20",
+      "place": "10.",
+      "round": "F1"
+    }
+  ],
+  "dob": "01 JAN 1994",
+  "weight": null,
+  "lastHistorySynced": "2026-07-14",
+  "coach": null,
+  "reviewBody": null,
+  "event": "1500m",
+  "id": "salih-teksoz",
+  "resultsHistory": {
+    "2021": [
+      {
+        "date": "07 AUG 2021",
+        "meet": "Olimpik Deneme, Istanbul",
+        "event": "800m",
+        "time": "1:52.66",
+        "place": "1."
+      },
+      {
+        "date": "26 AUG 2021",
+        "meet": "Olimpik Deneme Yarışmaları, Mersin",
+        "event": "800m",
+        "time": "1:51.65",
+        "place": "1."
+      },
+      {
+        "date": "08 AUG 2021",
+        "meet": "Olimpik Deneme, Istanbul",
+        "event": "1500m",
+        "time": "3:50.84",
+        "place": "1."
+      }
+    ],
+    "2022": [
+      {
+        "date": "14 MAY 2022",
+        "meet": "Olimpik Deneme Yarışmaları, Nevin Yanıt Atletizm Pisti, Mersin",
+        "event": "400m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "30 JUL 2022",
+        "meet": "Tohm Sporculari - Oli̇mpi̇k Deneme Yarişmalari, Athletics Stadium, Konya",
+        "event": "400m",
+        "time": "DQ",
+        "place": ""
+      },
+      {
+        "date": "14 MAY 2022",
+        "meet": "Olimpik Deneme Yarışmaları, Nevin Yanıt Atletizm Pisti, Mersin",
+        "event": "800m",
+        "time": "1:48.84",
+        "place": "1."
+      },
+      {
+        "date": "21 MAY 2022",
+        "meet": "Turkish University Championships, Seha Aksoy Atletizm Pisti, Izmir",
+        "event": "800m",
+        "time": "1:49.26",
+        "place": "1."
+      },
+      {
+        "date": "29 MAY 2022",
+        "meet": "Olimpik Deneme Yarışmaları, Atıcılar Atletizm Sahası, Bursa",
+        "event": "800m",
+        "time": "1:49.61",
+        "place": "1."
+      },
+      {
+        "date": "12 JUN 2022",
+        "meet": "Turkish Super League First Race, Atıcılar Atletizm Sahası, Bursa",
+        "event": "800m",
+        "time": "1:49.40",
+        "place": "1."
+      },
+      {
+        "date": "19 JUN 2022",
+        "meet": "Balkan Championships, Stadionul de atletism \"Nicolae Mărășescu\", Craiova",
+        "event": "800m",
+        "time": "1:48.51",
+        "place": "2."
+      },
+      {
+        "date": "26 JUN 2022",
+        "meet": "Turkish Championships, Atıcılar Atletizm Sahası, Bursa",
+        "event": "800m",
+        "time": "1:49.74",
+        "place": "2."
+      },
+      {
+        "date": "01 JUL 2022",
+        "meet": "XIX Mediterranean Games, Stade Complexe Olympique, Oran",
+        "event": "800m",
+        "time": "1:50.05",
+        "place": "4."
+      },
+      {
+        "date": "26 AUG 2022",
+        "meet": "Turkish Super League Second Race, Atıcılar Atletizm Sahası, Bursa",
+        "event": "800m",
+        "time": "1:49.34",
+        "place": "1."
+      },
+      {
+        "date": "25 FEB 2022",
+        "meet": "Turkish Indoor Championships, Ataköy Arena, Istanbul (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:55.19",
+        "place": "1."
+      },
+      {
+        "date": "26 FEB 2022",
+        "meet": "Turkish Indoor Championships, Ataköy Arena, Istanbul (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:51.87",
+        "place": "1."
+      },
+      {
+        "date": "05 MAR 2022",
+        "meet": "Balkan Indoor Championships, Ataköy Arena, Istanbul (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:51.01",
+        "place": "2."
+      },
+      {
+        "date": "09 MAR 2022",
+        "meet": "Turkish Univ. Indoor Championships, Osmangazi Atletizm Salonu, Bursa (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:48.62",
+        "place": "2."
+      },
+      {
+        "date": "15 MAY 2022",
+        "meet": "Olimpik Deneme Yarışmaları, Nevin Yanıt Atletizm Pisti, Mersin",
+        "event": "1500m",
+        "time": "3:50.38",
+        "place": "1."
+      },
+      {
+        "date": "28 MAY 2022",
+        "meet": "Olimpik Deneme Yarışmaları, Atıcılar Atletizm Sahası, Bursa",
+        "event": "1500m",
+        "time": "3:48.66",
+        "place": "4."
+      },
+      {
+        "date": "28 AUG 2022",
+        "meet": "Tohm Sporculari - Oli̇mpi̇k Deneme Yarişmalari, Atıcılar Atletizm Sahası, Bursa",
+        "event": "1500m",
+        "time": "3:48.59",
+        "place": "1."
+      },
+      {
+        "date": "27 FEB 2022",
+        "meet": "Turkish Indoor Championships, Ataköy Arena, Istanbul (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:49.43",
+        "place": "3."
+      },
+      {
+        "date": "08 MAR 2022",
+        "meet": "Turkish Univ. Indoor Championships, Osmangazi Atletizm Salonu, Bursa (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:51.38",
+        "place": "1."
+      },
+      {
+        "date": "19 JUN 2022",
+        "meet": "Balkan Championships, Stadionul de atletism \"Nicolae Mărășescu\", Craiova",
+        "event": "4x400 Metres Relay",
+        "time": "3:08.48",
+        "place": "2."
+      }
+    ],
+    "2023": [
+      {
+        "date": "26 MAY 2023",
+        "meet": "Olympic Trial, Nevin Yanıt Atletizm Pisti, Mersin",
+        "event": "800m",
+        "time": "1:48.55",
+        "place": "1."
+      },
+      {
+        "date": "05 JUL 2023",
+        "meet": "Turkcell Super League Club Competition, Seha Aksoy Atletizm Pisti, Izmir",
+        "event": "800m",
+        "time": "1:47.91",
+        "place": "1."
+      },
+      {
+        "date": "09 JUL 2023",
+        "meet": "Turkish Championships, Atıcılar Atletizm Sahası, Bursa",
+        "event": "800m",
+        "time": "1:47.17",
+        "place": "1."
+      },
+      {
+        "date": "23 JUL 2023",
+        "meet": "Balkan Championships, Atletski Stadion, Kraljevo",
+        "event": "800m",
+        "time": "1:47.95",
+        "place": "1."
+      },
+      {
+        "date": "05 AUG 2023",
+        "meet": "Flanders Cup DCLA/Polsstokgala - Meeting voor Mon, AtletiekArena Gaston Roelants Kessel-Lo / Hal 5, Leuven",
+        "event": "800m",
+        "time": "1:46.41",
+        "place": "1."
+      },
+      {
+        "date": "12 AUG 2023",
+        "meet": "BMW Louyet Meeting, Provincial domain Huizingen, Huizingen",
+        "event": "800m",
+        "time": "1:47.26",
+        "place": "3."
+      },
+      {
+        "date": "06 SEP 2023",
+        "meet": "Turkcell Club Super League Final, Seha Aksoy Atletizm Pisti, Izmir",
+        "event": "800m",
+        "time": "1:48.87",
+        "place": "1."
+      },
+      {
+        "date": "10 SEP 2023",
+        "meet": "Memorial Borisa Hanžekovića, Sports Park Mladost, Zagreb - National Events",
+        "event": "800m",
+        "time": "1:46.40",
+        "place": "2."
+      },
+      {
+        "date": "29 JAN 2023",
+        "meet": "Turkish Team Selection Competitions, Osmangazi Atletizm Salonu, Bursa (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:50.00",
+        "place": "1."
+      },
+      {
+        "date": "15 MAR 2023",
+        "meet": "Turkish Indoor Champioships, Ataköy Arena, Istanbul (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:49.40",
+        "place": "1."
+      },
+      {
+        "date": "27 MAY 2023",
+        "meet": "Olympic Trial, Nevin Yanıt Atletizm Pisti, Mersin",
+        "event": "1500m",
+        "time": "3:44.03",
+        "place": "1."
+      },
+      {
+        "date": "04 JUL 2023",
+        "meet": "Turkcell Super League Club Competition, Seha Aksoy Atletizm Pisti, Izmir",
+        "event": "1500m",
+        "time": "3:51.40",
+        "place": "1."
+      },
+      {
+        "date": "08 JUL 2023",
+        "meet": "Turkish Championships, Atıcılar Atletizm Sahası, Bursa",
+        "event": "1500m",
+        "time": "3:42.57",
+        "place": "1."
+      },
+      {
+        "date": "09 AUG 2023",
+        "meet": "Pfungstädter Abendsportfest, TSV Stadion, Pfungstadt",
+        "event": "1500m",
+        "time": "3:42.88",
+        "place": "1."
+      },
+      {
+        "date": "05 SEP 2023",
+        "meet": "Turkcell Club Super League Final, Seha Aksoy Atletizm Pisti, Izmir",
+        "event": "1500m",
+        "time": "4:05.04",
+        "place": "1."
+      },
+      {
+        "date": "28 JAN 2023",
+        "meet": "Turkish Team Selection Competitions, Osmangazi Atletizm Salonu, Bursa (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:45.82",
+        "place": "2."
+      },
+      {
+        "date": "14 MAR 2023",
+        "meet": "Turkish Indoor Champioships, Ataköy Arena, Istanbul (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:47.34",
+        "place": "1."
+      },
+      {
+        "date": "15 MAR 2023",
+        "meet": "Turkish Indoor Champioships, Ataköy Arena, Istanbul (i)",
+        "event": "3000 Metres Short Track",
+        "time": "8:31.02",
+        "place": "8."
+      },
+      {
+        "date": "10 JUN 2023",
+        "meet": "Turkish U23 Championships, Atıcılar Atletizm Sahası, Bursa",
+        "event": "5000m",
+        "time": "DNF",
+        "place": "OC"
+      }
+    ],
+    "2024": [
+      {
+        "date": "19 JUN 2024",
+        "meet": "Meeting International d'Athlétisme de la Province de Liège, Stade Naimette-Xhovémont, Liège",
+        "event": "600 Metres",
+        "time": "1:16.70",
+        "place": "3."
+      },
+      {
+        "date": "03 MAY 2024",
+        "meet": "UAE Athletics Grand Prix, Dubai Police Club Stadium, Dubai",
+        "event": "800m",
+        "time": "1:48.29",
+        "place": "4."
+      },
+      {
+        "date": "12 MAY 2024",
+        "meet": "Papaflessia 2024, Ethnikou Stadiou, Kalamata",
+        "event": "800m",
+        "time": "1:47.60",
+        "place": "3."
+      },
+      {
+        "date": "17 MAY 2024",
+        "meet": "Meeting Jaén Paraiso Interior 2024, Polideportivo Municipal, Andújar",
+        "event": "800m",
+        "time": "1:48.53",
+        "place": "4."
+      },
+      {
+        "date": "26 MAY 2024",
+        "meet": "Balkan Championships, Atatürk Stadyumu, Izmir",
+        "event": "800m",
+        "time": "1:49.33",
+        "place": "3."
+      },
+      {
+        "date": "07 JUN 2024",
+        "meet": "European Athletics Championships, Stadio Olimpico, Roma",
+        "event": "800m",
+        "time": "1:47.80",
+        "place": "8."
+      },
+      {
+        "date": "16 JUN 2024",
+        "meet": "Meeting International EAP de Nivelles, Stade du Parc de la Dodaine, Nivelles",
+        "event": "800m",
+        "time": "1:47.76",
+        "place": "7."
+      },
+      {
+        "date": "30 JUN 2024",
+        "meet": "Turkish Championships, Seha Aksoy Atletizm Pisti, Izmir",
+        "event": "800m",
+        "time": "1:47.71",
+        "place": "1."
+      },
+      {
+        "date": "18 AUG 2024",
+        "meet": "Turkcell Clubs Super League, Atatürk Stadyumu, Izmir",
+        "event": "800m",
+        "time": "1:50.57",
+        "place": "2."
+      },
+      {
+        "date": "21 JAN 2024",
+        "meet": "Indoor Oliympic Trial / Natıonal Team Selection, Ataköy Arena, Istanbul (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:50.42",
+        "place": "2."
+      },
+      {
+        "date": "28 JAN 2024",
+        "meet": "Indoor Oliympic Trial, Ataköy Arena, Istanbul (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:49.59",
+        "place": "1."
+      },
+      {
+        "date": "03 FEB 2024",
+        "meet": "IFAM Gent Indoor, Topsporthal Vlaanderen, Gent (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:49.10",
+        "place": "4."
+      },
+      {
+        "date": "10 FEB 2024",
+        "meet": "Balkan Indoor Championships, Ataköy Arena, Istanbul (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:48.10",
+        "place": "2."
+      },
+      {
+        "date": "18 FEB 2024",
+        "meet": "Turkish Indoor Champioships, Ataköy Arena, Istanbul (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:47.70",
+        "place": "1."
+      },
+      {
+        "date": "08 MAY 2024",
+        "meet": "Abu Dhabi Police Athletics Championship, Zayed Sports City Stadium, Abu Dhabi",
+        "event": "1500m",
+        "time": "3:45.09",
+        "place": "1."
+      },
+      {
+        "date": "17 AUG 2024",
+        "meet": "Turkcell Clubs Super League, Atatürk Stadyumu, Izmir",
+        "event": "1500m",
+        "time": "4:03.47",
+        "place": "3."
+      },
+      {
+        "date": "20 JAN 2024",
+        "meet": "Indoor Oliympic Trial / Natıonal Team Selection, Ataköy Arena, Istanbul (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:42.34",
+        "place": "2."
+      },
+      {
+        "date": "31 DEC 2024",
+        "meet": "Nationale-Nederlanden San Silvestre Vallecana, Madrid",
+        "event": "10 Kilometres Road",
+        "time": "30:10",
+        "place": "31."
+      }
+    ],
+    "2025": [
+      {
+        "date": "31 MAY 2025",
+        "meet": "9. PUMA NITRO Lange Laufnacht, Carl-Kaufmann-Stadion, Karlsruhe",
+        "event": "800m",
+        "time": "1:48.42",
+        "place": "5."
+      },
+      {
+        "date": "29 JUN 2025",
+        "meet": "European Athletics Team Championships Second Division, Atletski stadion Poljane, Maribor",
+        "event": "800m",
+        "time": "1:48.38",
+        "place": "1."
+      },
+      {
+        "date": "10 JAN 2025",
+        "meet": "Meeting Internacional de Catalunya, Pista Coberta de Catalunya, Sabadell (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:49.43",
+        "place": "6."
+      },
+      {
+        "date": "11 JAN 2025",
+        "meet": "Trofeo Ibercaja Ciudad de Zaragoza Indoor, Palacio de los Deportes de Zaragoza, Zaragoza (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:51.86",
+        "place": "2."
+      },
+      {
+        "date": "25 JAN 2025",
+        "meet": "Antequera Indoor Match, Centro de Tecnificación de Atletismo, Antequera (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:48.78",
+        "place": "2."
+      },
+      {
+        "date": "18 MAY 2025",
+        "meet": "Internationales Läufermeeting, Schönbuchstadion, Pliezhausen",
+        "event": "1000 Metres",
+        "time": "2:19.24",
+        "place": "1."
+      },
+      {
+        "date": "09 MAY 2025",
+        "meet": "UAE Athletics Grand Prix, Dubai Police Club Stadium, Dubai",
+        "event": "1500m",
+        "time": "3:42.10",
+        "place": "7."
+      },
+      {
+        "date": "25 MAY 2025",
+        "meet": "IFAM Outdoor, Boudewijnstadion, Bruxelles",
+        "event": "1500m",
+        "time": "3:39.07",
+        "place": "1."
+      },
+      {
+        "date": "08 JUN 2025",
+        "meet": "Znamensky Brothers Memorial, Luzhniki, South Arena, Moskva",
+        "event": "1500m",
+        "time": "3:40.82",
+        "place": "3."
+      },
+      {
+        "date": "17 JUN 2025",
+        "meet": "Clubs Super League 1st Stage, Atatürk Stadyumu, Izmir",
+        "event": "1500m",
+        "time": "3:46.54",
+        "place": "3."
+      },
+      {
+        "date": "28 JUN 2025",
+        "meet": "European Athletics Team Championships Second Division, Atletski stadion Poljane, Maribor",
+        "event": "1500m",
+        "time": "3:43.87",
+        "place": "4."
+      },
+      {
+        "date": "05 JUL 2025",
+        "meet": "IX Ordizia Meeting - International Meeting Jose Antonio Peña, Altamira estadioa, Ordizia",
+        "event": "1500m",
+        "time": "3:37.13",
+        "place": "3."
+      },
+      {
+        "date": "09 JUL 2025",
+        "meet": "Míting Internacional Ciutat de Barcelona, Estadi Joan Serrahima, Barcelona",
+        "event": "1500m",
+        "time": "3:36.67",
+        "place": "5."
+      },
+      {
+        "date": "12 JUL 2025",
+        "meet": "80. Cezmi Or Cup, ENKA Atletizm Pisti, Istanbul",
+        "event": "1500m",
+        "time": "3:41.89",
+        "place": "1."
+      },
+      {
+        "date": "26 JUL 2025",
+        "meet": "Balkan Championships, Panthessaliko Stadium, Volos",
+        "event": "1500m",
+        "time": "3:41.97",
+        "place": "1."
+      },
+      {
+        "date": "07 AUG 2025",
+        "meet": "Serbia Athletics Meeting, Athletics Stadium, Beograd",
+        "event": "1500m",
+        "time": "3:42.34",
+        "place": "3."
+      },
+      {
+        "date": "09 AUG 2025",
+        "meet": "IFAM Oordegem, Putbosstadion, Oordegem",
+        "event": "1500m",
+        "time": "3:38.87",
+        "place": "7."
+      },
+      {
+        "date": "16 AUG 2025",
+        "meet": "Meeting voor Mon, AtletiekArena Gaston Roelants Kessel-Lo / Hal 5, Leuven",
+        "event": "1500m",
+        "time": "3:38.74",
+        "place": "9."
+      },
+      {
+        "date": "22 AUG 2025",
+        "meet": "Turkish Championships, Atatürk Stadyumu, Izmir",
+        "event": "1500m",
+        "time": "3:39.32",
+        "place": "2."
+      },
+      {
+        "date": "02 SEP 2025",
+        "meet": "Clubs Super League Final, Atatürk Stadyumu, Izmir",
+        "event": "1500m",
+        "time": "4:16.78",
+        "place": "3."
+      },
+      {
+        "date": "17 NOV 2025",
+        "meet": "6th Islamic Solidarity Games, Riyadh",
+        "event": "1500m",
+        "time": "3:59.85",
+        "place": "2."
+      },
+      {
+        "date": "19 NOV 2025",
+        "meet": "6th Islamic Solidarity Games, Riyadh",
+        "event": "1500m",
+        "time": "3:45.75",
+        "place": "5."
+      },
+      {
+        "date": "21 FEB 2025",
+        "meet": "Turkish Indoor Championships, Ataköy Arena, Istanbul (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:46.65",
+        "place": "2."
+      },
+      {
+        "date": "18 JUN 2025",
+        "meet": "Clubs Super League 1st Stage, Atatürk Stadyumu, Izmir",
+        "event": "3000m",
+        "time": "8:10.02",
+        "place": "1."
+      },
+      {
+        "date": "28 JAN 2025",
+        "meet": "National Team Selection For Balkan Indoor Championship, Ataköy Arena, Istanbul (i)",
+        "event": "3000 Metres Short Track",
+        "time": "8:03.76",
+        "place": "2."
+      },
+      {
+        "date": "15 FEB 2025",
+        "meet": "Balkan Indoor Championships, Atletska dvorana, Beograd (i)",
+        "event": "3000 Metres Short Track",
+        "time": "8:10.62",
+        "place": "1."
+      },
+      {
+        "date": "23 FEB 2025",
+        "meet": "Turkish Indoor Championships, Ataköy Arena, Istanbul (i)",
+        "event": "3000 Metres Short Track",
+        "time": "8:02.38",
+        "place": "1."
+      },
+      {
+        "date": "24 AUG 2025",
+        "meet": "Turkish Championships, Atatürk Stadyumu, Izmir",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "23 MAR 2025",
+        "meet": "10k National Team Sellection for ERC, Kocaeli",
+        "event": "10 Kilometres Road",
+        "time": "30:23",
+        "place": "4."
+      },
+      {
+        "date": "12 JAN 2025",
+        "meet": "XXXVII Cross Internacional Ciudad de Valladolid, Circuito de la Canada Real de Puente Duero, Valladolid - XC 10.0km",
+        "event": "Cross Country",
+        "time": "30:58",
+        "place": "9."
+      }
+    ]
+  },
+  "age": "32"
+}

@@ -1,0 +1,846 @@
+{
+  "photoBackground": null,
+  "reviewTitle": null,
+  "waUrl": "https://worldathletics.org/athletes/australia/callum-davies-14690926",
+  "height": null,
+  "questionBody": null,
+  "headlineRest": null,
+  "name": "Callum Davies",
+  "headlineKey": null,
+  "flag": "AU",
+  "honours": [
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "5000m",
+      "place": 1,
+      "year": "2023"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2023"
+    }
+  ],
+  "seasons": null,
+  "lastSynced": "2026-07-15",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:48.01"
+    },
+    {
+      "event": "1500m",
+      "time": "3:35.14"
+    },
+    {
+      "event": "Mile",
+      "time": "3:55.48"
+    },
+    {
+      "event": "3000m",
+      "time": "7:47.33"
+    },
+    {
+      "event": "5000m",
+      "time": "13:31.64"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:03.40"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "14:24"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "29:31"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:17.50"
+    }
+  ],
+  "hometown": null,
+  "questionTitle": null,
+  "photo": null,
+  "ncaa": null,
+  "club": null,
+  "country": "Australia",
+  "results": [
+    {
+      "date": "JUL 4",
+      "meet": "Southern Cross University 10km Run - Gold Coast",
+      "event": "10 Kilom Road",
+      "time": "29:31",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 17",
+      "meet": "SEIKO Golden Grand Prix",
+      "event": "1500 m",
+      "time": "3:39.52",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "APR 11",
+      "meet": "Australian Championships",
+      "event": "5000 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "APR 10",
+      "meet": "Australian Championships",
+      "event": "1500 m",
+      "time": "3:35.18",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "APR 9",
+      "meet": "Australian Championships",
+      "event": "1500 m",
+      "time": "3:38.45",
+      "place": "1.",
+      "round": "H3"
+    },
+    {
+      "date": "MAR 28",
+      "meet": "Maurie Plant Meet",
+      "event": "1500 m",
+      "time": "3:39.03",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Hobart Track Classic",
+      "event": "3000 m",
+      "time": "7:48.21",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Box Hill Burn",
+      "event": "5000 m",
+      "time": "13:31.64",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Jai Taurima Shield",
+      "event": "1500 m",
+      "time": "3:36.53",
+      "place": "1.",
+      "round": "F1"
+    }
+  ],
+  "dob": "18 JUL 1999",
+  "weight": null,
+  "lastHistorySynced": "2026-07-14",
+  "coach": null,
+  "reviewBody": null,
+  "event": "1500m",
+  "id": "callum-davies",
+  "resultsHistory": {
+    "2021": [
+      {
+        "date": "03 MAR 2021",
+        "meet": "Hump Day Meet #4, QSAC State Athletics Facility, Nathan, Brisbane",
+        "event": "800m",
+        "time": "1:52.84",
+        "place": "1."
+      },
+      {
+        "date": "11 MAR 2021",
+        "meet": "Queensland Championships, QSAC State Athletics Facility, Nathan, Brisbane",
+        "event": "800m",
+        "time": "1:52.95",
+        "place": "2."
+      },
+      {
+        "date": "26 JAN 2021",
+        "meet": "Zátopek 10, Hagenauer Reserve, Box Hill, Melbourne",
+        "event": "1500m",
+        "time": "3:40.91",
+        "place": "3."
+      },
+      {
+        "date": "13 MAR 2021",
+        "meet": "Queensland Championships, QSAC State Athletics Facility, Nathan, Brisbane",
+        "event": "1500m",
+        "time": "3:46.99",
+        "place": "1."
+      },
+      {
+        "date": "25 MAR 2021",
+        "meet": "Melbourne Track Classic, Lakeside Stadium, Melbourne",
+        "event": "1500m",
+        "time": "3:40.05",
+        "place": "3."
+      },
+      {
+        "date": "01 APR 2021",
+        "meet": "Box Hill Classic, Hagenauer Reserve, Box Hill, Melbourne",
+        "event": "1500m",
+        "time": "3:38.89",
+        "place": "5."
+      },
+      {
+        "date": "16 APR 2021",
+        "meet": "Australian Championships, SOPAC, Sydney",
+        "event": "1500m",
+        "time": "3:43.18",
+        "place": "3."
+      },
+      {
+        "date": "18 APR 2021",
+        "meet": "Australian Championships, SOPAC, Sydney",
+        "event": "1500m",
+        "time": "3:38.94",
+        "place": "6."
+      },
+      {
+        "date": "21 APR 2021",
+        "meet": "UniSport Nationals Athletics, SOPAC, Sydney",
+        "event": "1500m",
+        "time": "3:45.41",
+        "place": "1."
+      },
+      {
+        "date": "25 JUN 2021",
+        "meet": "Inkco Winter Series #1, Performance Centre, Gold Coast",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "20 OCT 2021",
+        "meet": "UQ Sport 1500m Classic, UQ Athletic Centre, St Lucia, Brisbane - Open Event",
+        "event": "1500m",
+        "time": "3:46.62",
+        "place": "1."
+      },
+      {
+        "date": "13 FEB 2021",
+        "meet": "Queensland 3000m Championships, Performance Centre, Gold Coast",
+        "event": "3000m",
+        "time": "7:59.51",
+        "place": "1."
+      },
+      {
+        "date": "24 APR 2021",
+        "meet": "UniSport Nationals Athletics, SOPAC, Sydney",
+        "event": "5000m",
+        "time": "14:34.63",
+        "place": "1."
+      },
+      {
+        "date": "12 JUN 2021",
+        "meet": "Oceania Invitational 2, Performance Centre, Gold Coast",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "13 NOV 2021",
+        "meet": "Benita Willis Shield, QSAC State Athletics Facility, Nathan, Brisbane",
+        "event": "5000m",
+        "time": "14:13.11",
+        "place": "1."
+      },
+      {
+        "date": "30 OCT 2021",
+        "meet": "Noosa Asics 5K Bolt, Noosa",
+        "event": "5 Kilometres Road",
+        "time": "14:39",
+        "place": "11."
+      }
+    ],
+    "2022": [
+      {
+        "date": "05 MAR 2022",
+        "meet": "Queensland Championships, QSAC State Athletics Facility, Nathan, Brisbane",
+        "event": "800m",
+        "time": "1:52.40",
+        "place": "1."
+      },
+      {
+        "date": "06 MAR 2022",
+        "meet": "Queensland Championships, QSAC State Athletics Facility, Nathan, Brisbane",
+        "event": "1500m",
+        "time": "3:43.47",
+        "place": "1."
+      },
+      {
+        "date": "19 MAR 2022",
+        "meet": "Melbourne Track Classic, Lakeside Stadium, Melbourne - Split times",
+        "event": "1500m",
+        "time": "3:44.51",
+        "place": ""
+      },
+      {
+        "date": "24 MAR 2022",
+        "meet": "Box Hill Classic, Hagenauer Reserve, Box Hill, Melbourne",
+        "event": "1500m",
+        "time": "3:41.71",
+        "place": "1."
+      },
+      {
+        "date": "30 MAR 2022",
+        "meet": "Australian Championships, SOPAC, Sydney",
+        "event": "1500m",
+        "time": "3:43.86",
+        "place": "2."
+      },
+      {
+        "date": "01 APR 2022",
+        "meet": "Australian Championships, SOPAC, Sydney",
+        "event": "1500m",
+        "time": "3:42.90",
+        "place": "3."
+      },
+      {
+        "date": "09 APR 2022",
+        "meet": "Brisbane Track Classic, QSAC State Athletics Facility, Nathan, Brisbane",
+        "event": "1500m",
+        "time": "3:40.67",
+        "place": "1."
+      },
+      {
+        "date": "12 JUN 2022",
+        "meet": "Sollentuna GP, Sollentunavallen, Sollentuna",
+        "event": "1500m",
+        "time": "3:39.13",
+        "place": "8."
+      },
+      {
+        "date": "16 JUN 2022",
+        "meet": "Copenhagen Athletics Games, Østerbro Stadion, København",
+        "event": "1500m",
+        "time": "3:37.86",
+        "place": "3."
+      },
+      {
+        "date": "29 JUN 2022",
+        "meet": "Meeting International d'Athlétisme de la Province de Liège, Stade Naimette-Xhovémont, Liège",
+        "event": "1500m",
+        "time": "3:37.86",
+        "place": "1."
+      },
+      {
+        "date": "02 JUL 2022",
+        "meet": "Morton Games, Morton Stadium, Santry, Dublin - Split times",
+        "event": "1500m",
+        "time": "3:42.53",
+        "place": ""
+      },
+      {
+        "date": "05 JUL 2022",
+        "meet": "Cork City Sports, Munster Technological University Track, Cork - Split times",
+        "event": "1500m",
+        "time": "3:41.83",
+        "place": ""
+      },
+      {
+        "date": "30 JUL 2022",
+        "meet": "33° Meeting Internazionale Sport e Solidarieta, Stadio G. Teghil, Lignano Sabbiadoro",
+        "event": "1500m",
+        "time": "3:37.78",
+        "place": "5."
+      },
+      {
+        "date": "27 OCT 2022",
+        "meet": "1500 Metre Classic, QSAC State Athletics Facility, Nathan, Brisbane",
+        "event": "1500m",
+        "time": "3:46.18",
+        "place": "1."
+      },
+      {
+        "date": "19 MAR 2022",
+        "meet": "Melbourne Track Classic, Lakeside Stadium, Melbourne",
+        "event": "Mile",
+        "time": "3:59.54",
+        "place": "2."
+      },
+      {
+        "date": "02 JUL 2022",
+        "meet": "Morton Games, Morton Stadium, Santry, Dublin",
+        "event": "Mile",
+        "time": "3:58.36",
+        "place": "5."
+      },
+      {
+        "date": "05 JUL 2022",
+        "meet": "Cork City Sports, Munster Technological University Track, Cork",
+        "event": "Mile",
+        "time": "3:56.99",
+        "place": "3."
+      },
+      {
+        "date": "07 NOV 2022",
+        "meet": "Queensland 5000m Championships, Performance Centre, Gold Coast",
+        "event": "5000m",
+        "time": "14:11.88",
+        "place": "1."
+      },
+      {
+        "date": "29 OCT 2022",
+        "meet": "Noosa Asics Bolt 5km, Noosa",
+        "event": "5 Kilometres Road",
+        "time": "14:24",
+        "place": "3."
+      }
+    ],
+    "2023": [
+      {
+        "date": "23 FEB 2023",
+        "meet": "Maurie Plant Meet – Melbourne, Lakeside Stadium, Melbourne - Split times",
+        "event": "1500m",
+        "time": "3:40.51",
+        "place": ""
+      },
+      {
+        "date": "30 MAR 2023",
+        "meet": "Australian Championships, QSAC State Athletics Facility, Nathan, Brisbane",
+        "event": "1500m",
+        "time": "3:45.57",
+        "place": "2."
+      },
+      {
+        "date": "01 APR 2023",
+        "meet": "Australian Championships, QSAC State Athletics Facility, Nathan, Brisbane",
+        "event": "1500m",
+        "time": "3:37.92",
+        "place": "1."
+      },
+      {
+        "date": "08 JUN 2023",
+        "meet": "Jessheim 1500m Elite, Friidrettsstadion, Jessheim",
+        "event": "1500m",
+        "time": "3:41.25",
+        "place": "8."
+      },
+      {
+        "date": "11 JUN 2023",
+        "meet": "Folksam Grand Prix Sollentuna, Sollentunavallen, Sollentuna",
+        "event": "1500m",
+        "time": "3:39.95",
+        "place": "7."
+      },
+      {
+        "date": "08 JUL 2023",
+        "meet": "Meeting National à thème de l'Est Lyonnais, Stade Raymond Troussier, Decines",
+        "event": "1500m",
+        "time": "3:37.86",
+        "place": "7."
+      },
+      {
+        "date": "14 JUL 2023",
+        "meet": "Meeting Sport e Solidarieta Lignano, Stadio G. Teghil, Lignano Sabbiadoro",
+        "event": "1500m",
+        "time": "3:37.36",
+        "place": "10."
+      },
+      {
+        "date": "26 JUL 2023",
+        "meet": "BMC Regional Races, Tooting Bec Athletics Track, London",
+        "event": "1500m",
+        "time": "3:41.57",
+        "place": "12."
+      },
+      {
+        "date": "30 JUL 2023",
+        "meet": "Meeting International Schifflange, Stade Jean Jacoby, Schifflange",
+        "event": "1500m",
+        "time": "3:40.39",
+        "place": "1."
+      },
+      {
+        "date": "26 OCT 2023",
+        "meet": "UQ Athletics Club 1500m Classic, UQ Athletic Centre, St Lucia, Brisbane",
+        "event": "1500m",
+        "time": "3:50.51",
+        "place": "2."
+      },
+      {
+        "date": "28 JAN 2023",
+        "meet": "Cooks Classic, Cooks Gardens, Whanganui - New Zealand Mile Ch.",
+        "event": "Mile",
+        "time": "3:56.06",
+        "place": "OC"
+      },
+      {
+        "date": "23 FEB 2023",
+        "meet": "Maurie Plant Meet – Melbourne, Lakeside Stadium, Melbourne",
+        "event": "Mile",
+        "time": "3:55.48",
+        "place": "4."
+      },
+      {
+        "date": "23 FEB 2023",
+        "meet": "Maurie Plant Meet – Melbourne, Lakeside Stadium, Melbourne",
+        "event": "3000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "05 MAY 2023",
+        "meet": "Diamond League Meeting, Suhaim bin Hamad Stadium, Doha - Diamond Discipline",
+        "event": "3000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "03 JUN 2023",
+        "meet": "Trond Mohn Games, Fana Stadion, Bergen",
+        "event": "3000m",
+        "time": "7:55.54",
+        "place": "13."
+      },
+      {
+        "date": "11 FEB 2023",
+        "meet": "Adelaide Track Classic, SA Athletic Stadium, Adelaide",
+        "event": "5000m",
+        "time": "13:48.63",
+        "place": "2."
+      },
+      {
+        "date": "02 APR 2023",
+        "meet": "Australian Championships, QSAC State Athletics Facility, Nathan, Brisbane",
+        "event": "5000m",
+        "time": "13:52.82",
+        "place": "1."
+      },
+      {
+        "date": "15 JUN 2023",
+        "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Diamond Discipline",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "18 JUN 2023",
+        "meet": "Folksam Grand Prix Göteborg, Slottsskogsvallen, Göteborg",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "30 JUN 2023",
+        "meet": "Athletissima Lausanne, Stade Olympique de la Pontaise, Lausanne - Diamond Discipline",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      }
+    ],
+    "2024": [
+      {
+        "date": "10 FEB 2024",
+        "meet": "Adelaide Invitational, SA Athletic Stadium, Adelaide",
+        "event": "1500m",
+        "time": "3:37.00",
+        "place": "4."
+      },
+      {
+        "date": "22 FEB 2024",
+        "meet": "NSW Milers Series, The Crest Athletics Centre, Bankstown, Sydney",
+        "event": "1500m",
+        "time": "3:35.14",
+        "place": "5."
+      },
+      {
+        "date": "11 APR 2024",
+        "meet": "Australian Championships, SA Athletic Stadium, Adelaide",
+        "event": "1500m",
+        "time": "3:41.89",
+        "place": "2."
+      },
+      {
+        "date": "13 APR 2024",
+        "meet": "Australian Championships, SA Athletic Stadium, Adelaide",
+        "event": "1500m",
+        "time": "3:39.56",
+        "place": "7."
+      },
+      {
+        "date": "22 MAY 2024",
+        "meet": "Trond Mohn Games, Fana Stadion, Bergen",
+        "event": "1500m",
+        "time": "3:38.15",
+        "place": "4."
+      },
+      {
+        "date": "24 MAY 2024",
+        "meet": "1500m Elite Jessheim, Friidrettsstadion, Jessheim",
+        "event": "1500m",
+        "time": "3:36.47",
+        "place": "1."
+      },
+      {
+        "date": "03 JUN 2024",
+        "meet": "Josef Odlozil Memorial, Stadion Juliska, Praha",
+        "event": "1500m",
+        "time": "3:38.91",
+        "place": "3."
+      },
+      {
+        "date": "16 JUN 2024",
+        "meet": "Folksam GP Sollentuna, Sollentunavallen, Sollentuna",
+        "event": "1500m",
+        "time": "3:37.03",
+        "place": "1."
+      },
+      {
+        "date": "18 JUN 2024",
+        "meet": "XIX Reunión Internacional Villa de Bilbao, Polideportivo Zorrotza, Bilbao",
+        "event": "1500m",
+        "time": "3:36.97",
+        "place": "6."
+      },
+      {
+        "date": "22 JUN 2024",
+        "meet": "VIII Ordizia Meeting - International Meeting Jose Antonio Peña, Altamira estadioa, Ordizia",
+        "event": "1500m",
+        "time": "3:36.51",
+        "place": "4."
+      },
+      {
+        "date": "09 JUL 2024",
+        "meet": "Cork City Sports, Munster Technological University Track, Cork - Split times",
+        "event": "1500m",
+        "time": "3:41.17",
+        "place": ""
+      },
+      {
+        "date": "27 JAN 2024",
+        "meet": "Cooks Classic, Cooks Gardens, Whanganui - New Zealand Mile Ch.",
+        "event": "Mile",
+        "time": "3:56.16",
+        "place": "2."
+      },
+      {
+        "date": "09 JUL 2024",
+        "meet": "Cork City Sports, Munster Technological University Track, Cork",
+        "event": "Mile",
+        "time": "3:56.94",
+        "place": "7."
+      },
+      {
+        "date": "20 JUL 2024",
+        "meet": "London Athletics Meet, Olympic Stadium, London - Diamond Discipline",
+        "event": "Mile",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "23 MAR 2024",
+        "meet": "Sydney Track Classic, ES Marks Athletics Field, Sydney - Australian 3000m Ch.",
+        "event": "3000m",
+        "time": "7:47.33",
+        "place": "2."
+      },
+      {
+        "date": "04 JUL 2024",
+        "meet": "Folksam Grand Prix Karlstad, Sola Arena, Karlstad",
+        "event": "3000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "15 FEB 2024",
+        "meet": "Maurie Plant Meet, Lakeside Stadium, Melbourne",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "14 APR 2024",
+        "meet": "Australian Championships, SA Athletic Stadium, Adelaide",
+        "event": "5000m",
+        "time": "13:47.20",
+        "place": "8."
+      },
+      {
+        "date": "20 APR 2024",
+        "meet": "Wanda Diamond League Xiamen, Egret Stadium, Xiamen - Diamond Discipline",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "27 APR 2024",
+        "meet": "Yangtze Delta Athletics Diamond Gala, Suzhou Olympic Sports Centre, Suzhou - Diamond Discipline",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "30 MAY 2024",
+        "meet": "Oslo Bislett Games, Bislett Stadion, Oslo - Diamond Discipline",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "12 JUL 2024",
+        "meet": "Morton Games, Morton Stadium, Santry, Dublin",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      }
+    ],
+    "2025": [
+      {
+        "date": "12 JUL 2025",
+        "meet": "Motonet GP Joensuu, Keskusurheilukenttä, Joensuu",
+        "event": "800m",
+        "time": "1:48.01",
+        "place": "6."
+      },
+      {
+        "date": "23 JUL 2025",
+        "meet": "BMC Gold Standard Races, Woodside Stadium, Watford",
+        "event": "800m",
+        "time": "1:49.06",
+        "place": "3."
+      },
+      {
+        "date": "01 MAR 2025",
+        "meet": "Perth Track Classic, WA Athletics Stadium, Perth",
+        "event": "1500m",
+        "time": "3:40.77",
+        "place": "1."
+      },
+      {
+        "date": "29 MAR 2025",
+        "meet": "Maurie Plant Meet, Lakeside Stadium, Melbourne",
+        "event": "1500m",
+        "time": "3:40.75",
+        "place": "9."
+      },
+      {
+        "date": "10 APR 2025",
+        "meet": "Australian Championships, WA Athletics Stadium, Perth",
+        "event": "1500m",
+        "time": "3:41.44",
+        "place": "2."
+      },
+      {
+        "date": "12 APR 2025",
+        "meet": "Australian Championships, WA Athletics Stadium, Perth",
+        "event": "1500m",
+        "time": "3:37.77",
+        "place": "7."
+      },
+      {
+        "date": "06 JUN 2025",
+        "meet": "1500m Elite Jessheim, Friidrettsstadion, Jessheim",
+        "event": "1500m",
+        "time": "3:38.66",
+        "place": "3."
+      },
+      {
+        "date": "12 JUN 2025",
+        "meet": "Bislett Games pre-programme, Bislett Stadion, Oslo",
+        "event": "1500m",
+        "time": "3:37.06",
+        "place": "4."
+      },
+      {
+        "date": "09 JUL 2025",
+        "meet": "Cork City Sports, Munster Technological University Track, Cork - Split times",
+        "event": "1500m",
+        "time": "3:40.78",
+        "place": ""
+      },
+      {
+        "date": "16 JUL 2025",
+        "meet": "Meeting International d'Athlétisme de la Province de Liège, Province Naimette Arena, Liège",
+        "event": "1500m",
+        "time": "3:36.16",
+        "place": "3."
+      },
+      {
+        "date": "19 JUL 2025",
+        "meet": "Meeting Madrid 2025, Estadio Vallehermoso, Madrid",
+        "event": "1500m",
+        "time": "3:36.56",
+        "place": "11."
+      },
+      {
+        "date": "09 JUL 2025",
+        "meet": "Cork City Sports, Munster Technological University Track, Cork",
+        "event": "Mile",
+        "time": "3:56.22",
+        "place": "4."
+      },
+      {
+        "date": "15 MAR 2025",
+        "meet": "Sydney Track Classic, SOPAC, Sydney - Australian 3000m Ch.",
+        "event": "3000m",
+        "time": "7:50.04",
+        "place": "2."
+      },
+      {
+        "date": "12 JUL 2025",
+        "meet": "Motonet GP Joensuu, Keskusurheilukenttä, Joensuu",
+        "event": "3000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "15 FEB 2025",
+        "meet": "Adelaide Invitational, SA Athletic Stadium, Adelaide",
+        "event": "5000m",
+        "time": "13:51.47",
+        "place": "7."
+      },
+      {
+        "date": "13 APR 2025",
+        "meet": "Australian Championships, WA Athletics Stadium, Perth",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "02 JUN 2025",
+        "meet": "61° Palio Città della Quercia, Stadio Quercia, Rovereto",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "20 NOV 2025",
+        "meet": "Victorian 5000m Championships, Lakeside Stadium, Melbourne",
+        "event": "5000m",
+        "time": "14:00.78",
+        "place": "1."
+      },
+      {
+        "date": "20 DEC 2025",
+        "meet": "Albie Thomas Mile, The Crest Athletics Centre, Bankstown, Sydney",
+        "event": "5000m",
+        "time": "13:46.12",
+        "place": "2."
+      },
+      {
+        "date": "26 APR 2025",
+        "meet": "Australian Road Mile Championships, Ballarat",
+        "event": "Mile Road",
+        "time": "4:03.40",
+        "place": "3."
+      }
+    ]
+  },
+  "age": "26"
+}

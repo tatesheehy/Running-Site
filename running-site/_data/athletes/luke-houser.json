@@ -15,7 +15,7 @@
   "flag": "US",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-14",
+  "lastSynced": "2026-07-15",
   "prs": [
     {
       "event": "800m",
@@ -89,6 +89,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "JUL 11",
+      "meet": "The Elliott Denman N.J. International",
+      "event": "800 m",
+      "time": "1:51.50",
+      "place": "10.",
+      "round": "F1"
+    },
     {
       "date": "JUL 11",
       "meet": "The Elliott Denman N.J. International",
@@ -221,7 +229,7 @@
   "dob": "2001-05-02",
   "college": "Washington",
   "weight": "x",
-  "lastHistorySynced": "2026-07-13",
+  "lastHistorySynced": "2026-07-14",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
