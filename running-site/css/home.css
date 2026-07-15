@@ -997,28 +997,28 @@
   overflow: hidden; /* clip the accent header/footer bands to the rounded corners */
 }
 
-/* ── Accent header band — always brand orange (page/card identity),
-   distinct from the blue interactive elements inside the card. ────── */
+/* ── Accent header band — solid brand orange + white text (page/card
+   identity), distinct from the blue interactive elements inside the card. ── */
 .dash-card > .dash-card-title:first-child,
 .dash-card > .dash-card-hd:first-child {
   margin: -20px -20px 16px;
   padding: 13px 20px;
-  background: color-mix(in srgb, var(--brand) 12%, transparent);
+  background: var(--brand);
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 .dash-card > .dash-card-title:first-child {
-  color: var(--brand);
+  color: #fff;
   font-size: 16px;
   font-weight: 800;
 }
 .dash-card > .dash-card-hd:first-child .dash-card-title {
-  color: var(--brand);
+  color: #fff;
   font-size: 16px;
   font-weight: 800;
 }
-/* Event tabs (Season Leaders) on the tinted band */
-.dash-card > .dash-card-hd:first-child .fp-rank-tabs { background: color-mix(in srgb, var(--brand) 16%, transparent); }
-.dash-card > .dash-card-hd:first-child .fp-rank-tab { color: color-mix(in srgb, var(--brand) 78%, #000); }
+/* Event tabs (Season Leaders) on the solid band */
+.dash-card > .dash-card-hd:first-child .fp-rank-tabs { background: rgba(255,255,255,0.22); }
+.dash-card > .dash-card-hd:first-child .fp-rank-tab { color: rgba(255,255,255,0.9); }
 .dash-card > .dash-card-hd:first-child .fp-rank-tab.active { color: var(--brand); background: #fff; }
 
 .dash-card--clickable {
