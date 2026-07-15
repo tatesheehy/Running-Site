@@ -224,6 +224,194 @@ function buildTrendingSection() {
     </div>`;
 }
 
+// ── "Try the tools" pair showcase ───────────────────────────
+// Picks one matchup and builds every pair-dependent card for it. Called once
+// on initial render and again (standalone, no page reload) whenever the user
+// hits Shuffle — see shuffleHomeTools() below.
+function _homeRenderPairShowcase() {
+  const allAthletes = Object.values(ATHLETES);
+  const _metricsReady = typeof MX_EVENTS !== 'undefined'
+    && typeof _mxRadarSvg === 'function' && typeof _mxDecaySvg === 'function';
+
+  function _homeShowcasePair() {
+    // Prefer a random competitive rivalry that has actually raced (so H2H &
+    // shared-race cards are populated), among strong/ranked athletes.
+    try {
+      if (typeof _findTopRivalries === 'function') {
+        const pool = _findTopRivalries('2026', 'all', 'all', 50)
+          .filter(p => ATHLETES[p.id1] && ATHLETES[p.id2]);
+        if (pool.length) {
+          const p = pool[Math.floor(Math.random() * pool.length)];
+          return [ATHLETES[p.id1], ATHLETES[p.id2]];
+        }
+      }
+    } catch (e) { /* fall through */ }
+    // Fallback: two random athletes with enough multi-event data for the charts
+    if (_metricsReady) {
+      const multi = allAthletes.filter(a => MX_EVENTS.reduce((n, e) => n + (_mxPr(a, e.key) != null ? 1 : 0), 0) >= 3);
+      if (multi.length >= 2) {
+        const i = Math.floor(Math.random() * multi.length);
+        let j = Math.floor(Math.random() * multi.length); if (j === i) j = (j + 1) % multi.length;
+        return [multi[i], multi[j]];
+      }
+    }
+    return [null, null];
+  }
+  const [showA, showB] = _homeShowcasePair();
+  // Brand / accent tones distinguish athlete A / B across the homepage UI.
+  const _cA = 'var(--brand)', _cB = 'var(--accent)';
+  const _shortA = showA ? showA.name.split(' ').slice(-1)[0] : '';
+  const _shortB = showB ? showB.name.split(' ').slice(-1)[0] : '';
+  const _pairQ = (showA && showB) ? `?a=${encodeURIComponent(showA.id)}&b=${encodeURIComponent(showB.id)}` : '';
+
+  // Strength Hexagon example
+  let hexExampleCard = '';
+  if (_metricsReady && showA && showB) {
+    hexExampleCard = `
+      <div class="dash-card dash-hexagon">
+        <div class="dash-card-title">Strength Hexagon</div>
+        <div class="dash-hex-legend">
+          <span class="dash-hex-name" style="--c:${_cA}" onclick="openAthleteCard('${showA.id}', null)" role="button" tabindex="0"><span class="dash-hex-dot"></span>${showA.name}</span>
+          <span class="dash-hex-vs">vs</span>
+          <span class="dash-hex-name" style="--c:${_cB}" onclick="openAthleteCard('${showB.id}', null)" role="button" tabindex="0"><span class="dash-hex-dot"></span>${showB.name}</span>
+        </div>
+        <div class="dash-hex-svg">${_mxRadarSvg(showA.id, showB.id)}</div>
+        <a href="metrics.html${_pairQ}" class="dash-link dash-card-foot">Open in Advanced Metrics →</a>
+      </div>`;
+  }
+
+  // Aerobic Decay example
+  let decayExampleCard = '';
+  if (_metricsReady && showA && showB) {
+    _mxMode = 'pace';
+    _mxHighlight = [showA.id, showB.id];
+    decayExampleCard = `
+      <div class="dash-card dash-aero">
+        <div class="dash-card-title">Aerobic Decay</div>
+        <div class="dash-aero-svg">${_mxDecaySvg()}</div>
+        <a href="metrics.html${_pairQ}" class="dash-link dash-card-foot">Explore the aerobic decay tool →</a>
+      </div>`;
+    _mxHighlight = [];
+  }
+
+  // Head-to-Head example
+  let h2hExampleCard = '';
+  if (showA && showB && typeof _computePairMatchup === 'function') {
+    const m = _computePairMatchup(showA.id, showB.id);
+    if (m) {
+      const { wins, losses, races } = m; // wins = showA's wins over showB
+      const leader = wins > losses ? _shortA : losses > wins ? _shortB : null;
+      const recent = races.slice(0, 3).map(r => `
+        <div class="he-race">
+          <span class="he-race-win" style="color:${r.won ? _cA : _cB}">${r.won ? _shortA : _shortB}</span>
+          <span class="he-race-meet">${r.event.trim()} · ${r.meet}</span>
+        </div>`).join('');
+      h2hExampleCard = `
+        <div class="dash-card dash-h2hex">
+          <div class="dash-card-title">Head-to-Head</div>
+          <div class="he-top">
+            <span class="he-name" style="color:${_cA}" onclick="openAthleteCard('${showA.id}', null)" role="button" tabindex="0">${showA.name}</span>
+            <span class="he-score">${wins}<em>–</em>${losses}</span>
+            <span class="he-name he-name--r" style="color:${_cB}" onclick="openAthleteCard('${showB.id}', null)" role="button" tabindex="0">${showB.name}</span>
+          </div>
+          <div class="he-meta">${races.length} career meeting${races.length === 1 ? '' : 's'}${leader ? ` · ${leader} leads` : ' · all square'}</div>
+          ${recent ? `<div class="he-races">${recent}</div>` : ''}
+          <a href="h2h.html${_pairQ}" class="dash-link dash-card-foot">See the full head-to-head →</a>
+        </div>`;
+    }
+  }
+
+  // Shared Races example — runs on a GROUP of 3+ athletes (the featured pair
+  // plus whoever else raced them most), showing off multi-athlete race-finding.
+  function _homeSharedGroup(aId, bId) {
+    const group = [aId, bId];
+    if (typeof _computeSharedRaces !== 'function') return group;
+    const pairShared = _computeSharedRaces([aId, bId]);
+    if (!pairShared.length) return group;
+    const keyOf = r => [r.meet, r.event, r.date].map(s => String(s || '').trim().toLowerCase()).join('|');
+    const anchorKeys = new Set(pairShared.map(s => keyOf(s.entries.find(e => e.id === aId)?.race || {})));
+    const allRaces = a => {
+      const out = [...(a.results || [])];
+      Object.values(a.resultsHistory || {}).forEach(list => (list || []).forEach(r => out.push(r)));
+      return out;
+    };
+    const counts = [];
+    Object.values(ATHLETES).forEach(a => {
+      if (a.id === aId || a.id === bId) return;
+      const seen = new Set();
+      let c = 0;
+      allRaces(a).forEach(r => { const k = keyOf(r); if (anchorKeys.has(k) && !seen.has(k)) { seen.add(k); c++; } });
+      if (c > 0) counts.push({ id: a.id, c });
+    });
+    counts.sort((x, y) => y.c - x.c);
+    for (const cand of counts) {           // greedily add, keeping intersection non-empty
+      if (group.length >= 4) break;
+      if (_computeSharedRaces([...group, cand.id]).length > 0) group.push(cand.id);
+    }
+    return group;
+  }
+  let sharedRacesCard = '';
+  if (showA && showB && typeof _computeSharedRaces === 'function') {
+    const grp = _homeSharedGroup(showA.id, showB.id);
+    const shared = _computeSharedRaces(grp);
+    const names = grp.map(id => (ATHLETES[id]?.name || '').split(' ').slice(-1)[0]);
+    const nameStr = names.length <= 1 ? names[0]
+      : names.slice(0, -1).join(', ') + ' & ' + names[names.length - 1];
+    const rows = shared.slice(0, 4).map(s => {
+      const winner = ATHLETES[s.entries[0].id];
+      return `
+        <div class="sr-row">
+          <span class="sr-meet">${s.event.trim()} · ${s.meet}</span>
+          <span class="sr-times"><b>${winner ? winner.name.split(' ').slice(-1)[0] : ''}</b> ${s.entries[0].race.time}</span>
+        </div>`;
+    }).join('');
+    const q = '?' + grp.map((id, i) => `${['a', 'b', 'c', 'd', 'e'][i]}=${encodeURIComponent(id)}`).join('&');
+    sharedRacesCard = `
+      <div class="dash-card dash-shared">
+        <div class="dash-card-title">Shared Races</div>
+        ${shared.length
+          ? `<div class="sr-sub">${grp.length} athletes — ${nameStr} — all lined up together ${shared.length} time${shared.length === 1 ? '' : 's'}</div><div class="sr-list">${rows}</div>`
+          : `<p class="dash-empty">No single race with all of ${nameStr}.</p>`}
+        <a href="h2h.html${q}" class="dash-link dash-card-foot">Find shared races →</a>
+      </div>`;
+  }
+
+  // "Try" chips seeded from the featured pair, for the search hero.
+  const _chip = c => `<button class="hsh-chip" onclick="homeSearchFill('${String(c).replace(/'/g, "\\'")}')">${c}</button>`;
+  const chipsHtml = [showA && showA.name, showB && showB.name, '1500m']
+    .filter(Boolean).map(_chip).join('');
+
+  // Which pair every tool below is pre-loaded with (explains the examples).
+  // Colored to match the A/B athlete colors used across every tool card.
+  const pairLabel = (showA && showB)
+    ? `<button class="ht-pair" style="color:${_cA}" onclick="openAthleteCard('${showA.id}',null)">${showA.name}</button> vs <button class="ht-pair" style="color:${_cB}" onclick="openAthleteCard('${showB.id}',null)">${showB.name}</button>`
+    : '';
+
+  return { showA, showB, hexExampleCard, decayExampleCard, h2hExampleCard, sharedRacesCard, chipsHtml, pairLabel };
+}
+
+function _homeChipsInner(chipsHtml) {
+  return chipsHtml ? `<span class="hsh-try">Try</span>${chipsHtml}` : '';
+}
+function _homePairSubInner(pairLabel) {
+  return `${pairLabel ? `Live examples running on ${pairLabel}.` : 'Live, interactive examples.'} <button class="ht-shuffle" onclick="shuffleHomeTools()">Shuffle ↻</button>`;
+}
+
+// Re-picks the showcase pair and re-renders only the pair-dependent cards +
+// the "Try" chips — no navigation, no full-page rebuild, scroll position and
+// search state are untouched.
+window.shuffleHomeTools = function () {
+  const pair = _homeRenderPairShowcase();
+  const set = (id, html) => { const el = document.getElementById(id); if (el) el.innerHTML = html; };
+  set('home-card-h2h', pair.h2hExampleCard);
+  set('home-card-decay', pair.decayExampleCard);
+  set('home-card-hex', pair.hexExampleCard);
+  set('home-card-shared', pair.sharedRacesCard);
+  set('home-pair-label', _homePairSubInner(pair.pairLabel));
+  set('home-chips', _homeChipsInner(pair.chipsHtml));
+  _homeWireChartTooltips();
+};
+
 // ── HOME PAGE ─────────────────────────────────────────────
 function buildHome() {
   // Hero: prefer featured article, fall back to featured rankings, then first article
@@ -361,177 +549,12 @@ function buildHome() {
     </div>` : '';
 
   // ── "Try the tools" showcase ──────────────────────────────
-  // Pick ONE good matchup per page-load and run every tool on it, so each card
-  // is a live, pre-filled example (not an empty widget). New pair each refresh.
-  const _metricsReady = typeof MX_EVENTS !== 'undefined'
-    && typeof _mxRadarSvg === 'function' && typeof _mxDecaySvg === 'function';
-
-  function _homeShowcasePair() {
-    // Prefer a random competitive rivalry that has actually raced (so H2H &
-    // shared-race cards are populated), among strong/ranked athletes.
-    try {
-      if (typeof _findTopRivalries === 'function') {
-        const pool = _findTopRivalries('2026', 'all', 'all', 50)
-          .filter(p => ATHLETES[p.id1] && ATHLETES[p.id2]);
-        if (pool.length) {
-          const p = pool[Math.floor(Math.random() * pool.length)];
-          return [ATHLETES[p.id1], ATHLETES[p.id2]];
-        }
-      }
-    } catch (e) { /* fall through */ }
-    // Fallback: two random athletes with enough multi-event data for the charts
-    if (_metricsReady) {
-      const multi = allAthletes.filter(a => MX_EVENTS.reduce((n, e) => n + (_mxPr(a, e.key) != null ? 1 : 0), 0) >= 3);
-      if (multi.length >= 2) {
-        const i = Math.floor(Math.random() * multi.length);
-        let j = Math.floor(Math.random() * multi.length); if (j === i) j = (j + 1) % multi.length;
-        return [multi[i], multi[j]];
-      }
-    }
-    return [null, null];
-  }
-  const [showA, showB] = _homeShowcasePair();
-  // Brand / accent tones distinguish athlete A / B across the homepage UI.
-  const _cA = 'var(--brand)', _cB = 'var(--accent)';
-  const _shortA = showA ? showA.name.split(' ').slice(-1)[0] : '';
-  const _shortB = showB ? showB.name.split(' ').slice(-1)[0] : '';
-  const _pairQ = (showA && showB) ? `?a=${encodeURIComponent(showA.id)}&b=${encodeURIComponent(showB.id)}` : '';
-
-  // Featured Matchup board (top-right, replaces the old Season Leaders panel)
-  let featuredBoard = '';
-  if (showA && showB) {
-    featuredBoard = `
-      <div class="dash-card dash-featured">
-        <div class="dash-card-title">Featured Matchup</div>
-        <div class="fm-body">
-          <div class="fm-side" onclick="openAthleteCard('${showA.id}', null)" role="button" tabindex="0">
-            <span class="fm-dot" style="background:${_cA}"></span>
-            <span class="fm-name">${showA.name}</span>
-            <span class="fm-ct">${renderFlag(showA.flag)} ${showA.country || ''}</span>
-          </div>
-          <span class="fm-vs">VS</span>
-          <div class="fm-side fm-side--b" onclick="openAthleteCard('${showB.id}', null)" role="button" tabindex="0">
-            <span class="fm-dot" style="background:${_cB}"></span>
-            <span class="fm-name">${showB.name}</span>
-            <span class="fm-ct">${renderFlag(showB.flag)} ${showB.country || ''}</span>
-          </div>
-        </div>
-        <p class="fm-note">Every tool below is running on this pair.</p>
-        <button class="dash-card-foot fm-shuffle" onclick="location.reload()">Shuffle matchup ↻</button>
-      </div>`;
-  }
-
-  // Strength Hexagon example
-  let hexExampleCard = '';
-  if (_metricsReady && showA && showB) {
-    hexExampleCard = `
-      <div class="dash-card dash-hexagon">
-        <div class="dash-card-title">Strength Hexagon</div>
-        <div class="dash-hex-legend">
-          <span class="dash-hex-name" style="--c:${_cA}" onclick="openAthleteCard('${showA.id}', null)" role="button" tabindex="0"><span class="dash-hex-dot"></span>${showA.name}</span>
-          <span class="dash-hex-vs">vs</span>
-          <span class="dash-hex-name" style="--c:${_cB}" onclick="openAthleteCard('${showB.id}', null)" role="button" tabindex="0"><span class="dash-hex-dot"></span>${showB.name}</span>
-        </div>
-        <div class="dash-hex-svg">${_mxRadarSvg(showA.id, showB.id)}</div>
-        <a href="metrics.html${_pairQ}" class="dash-link dash-card-foot">Open in Advanced Metrics →</a>
-      </div>`;
-  }
-
-  // Aerobic Decay example
-  let decayExampleCard = '';
-  if (_metricsReady && showA && showB) {
-    _mxMode = 'pace';
-    _mxHighlight = [showA.id, showB.id];
-    decayExampleCard = `
-      <div class="dash-card dash-aero">
-        <div class="dash-card-title">Aerobic Decay</div>
-        <div class="dash-aero-svg">${_mxDecaySvg()}</div>
-        <a href="metrics.html${_pairQ}" class="dash-link dash-card-foot">Explore the aerobic decay tool →</a>
-      </div>`;
-    _mxHighlight = [];
-  }
-
-  // Head-to-Head example
-  let h2hExampleCard = '';
-  if (showA && showB && typeof _computePairMatchup === 'function') {
-    const m = _computePairMatchup(showA.id, showB.id);
-    if (m) {
-      const { wins, losses, races } = m; // wins = showA's wins over showB
-      const leader = wins > losses ? _shortA : losses > wins ? _shortB : null;
-      const recent = races.slice(0, 3).map(r => `
-        <div class="he-race">
-          <span class="he-race-win" style="color:${r.won ? _cA : _cB}">${r.won ? _shortA : _shortB}</span>
-          <span class="he-race-meet">${r.event.trim()} · ${r.meet}</span>
-        </div>`).join('');
-      h2hExampleCard = `
-        <div class="dash-card dash-h2hex">
-          <div class="dash-card-title">Head-to-Head</div>
-          <div class="he-top">
-            <span class="he-name" style="color:${_cA}" onclick="openAthleteCard('${showA.id}', null)" role="button" tabindex="0">${showA.name}</span>
-            <span class="he-score">${wins}<em>–</em>${losses}</span>
-            <span class="he-name he-name--r" style="color:${_cB}" onclick="openAthleteCard('${showB.id}', null)" role="button" tabindex="0">${showB.name}</span>
-          </div>
-          <div class="he-meta">${races.length} career meeting${races.length === 1 ? '' : 's'}${leader ? ` · ${leader} leads` : ' · all square'}</div>
-          ${recent ? `<div class="he-races">${recent}</div>` : ''}
-          <a href="h2h.html${_pairQ}" class="dash-link dash-card-foot">See the full head-to-head →</a>
-        </div>`;
-    }
-  }
-
-  // Shared Races example — runs on a GROUP of 3+ athletes (the featured pair
-  // plus whoever else raced them most), showing off multi-athlete race-finding.
-  function _homeSharedGroup(aId, bId) {
-    const group = [aId, bId];
-    if (typeof _computeSharedRaces !== 'function') return group;
-    const pairShared = _computeSharedRaces([aId, bId]);
-    if (!pairShared.length) return group;
-    const keyOf = r => [r.meet, r.event, r.date].map(s => String(s || '').trim().toLowerCase()).join('|');
-    const anchorKeys = new Set(pairShared.map(s => keyOf(s.entries.find(e => e.id === aId)?.race || {})));
-    const allRaces = a => {
-      const out = [...(a.results || [])];
-      Object.values(a.resultsHistory || {}).forEach(list => (list || []).forEach(r => out.push(r)));
-      return out;
-    };
-    const counts = [];
-    Object.values(ATHLETES).forEach(a => {
-      if (a.id === aId || a.id === bId) return;
-      const seen = new Set();
-      let c = 0;
-      allRaces(a).forEach(r => { const k = keyOf(r); if (anchorKeys.has(k) && !seen.has(k)) { seen.add(k); c++; } });
-      if (c > 0) counts.push({ id: a.id, c });
-    });
-    counts.sort((x, y) => y.c - x.c);
-    for (const cand of counts) {           // greedily add, keeping intersection non-empty
-      if (group.length >= 4) break;
-      if (_computeSharedRaces([...group, cand.id]).length > 0) group.push(cand.id);
-    }
-    return group;
-  }
-  let sharedRacesCard = '';
-  if (showA && showB && typeof _computeSharedRaces === 'function') {
-    const grp = _homeSharedGroup(showA.id, showB.id);
-    const shared = _computeSharedRaces(grp);
-    const names = grp.map(id => (ATHLETES[id]?.name || '').split(' ').slice(-1)[0]);
-    const nameStr = names.length <= 1 ? names[0]
-      : names.slice(0, -1).join(', ') + ' & ' + names[names.length - 1];
-    const rows = shared.slice(0, 4).map(s => {
-      const winner = ATHLETES[s.entries[0].id];
-      return `
-        <div class="sr-row">
-          <span class="sr-meet">${s.event.trim()} · ${s.meet}</span>
-          <span class="sr-times"><b>${winner ? winner.name.split(' ').slice(-1)[0] : ''}</b> ${s.entries[0].race.time}</span>
-        </div>`;
-    }).join('');
-    const q = '?' + grp.map((id, i) => `${['a', 'b', 'c', 'd', 'e'][i]}=${encodeURIComponent(id)}`).join('&');
-    sharedRacesCard = `
-      <div class="dash-card dash-shared">
-        <div class="dash-card-title">Shared Races</div>
-        ${shared.length
-          ? `<div class="sr-sub">${grp.length} athletes — ${nameStr} — all lined up together ${shared.length} time${shared.length === 1 ? '' : 's'}</div><div class="sr-list">${rows}</div>`
-          : `<p class="dash-empty">No single race with all of ${nameStr}.</p>`}
-        <a href="h2h.html${q}" class="dash-link dash-card-foot">Find shared races →</a>
-      </div>`;
-  }
+  // Pick ONE good matchup and run every tool on it, so each card is a live,
+  // pre-filled example (not an empty widget). Shuffle re-picks the pair and
+  // re-renders just these cards (see _homeRenderPairShowcase below) — the
+  // rest of the page (search hero, activity, meets) never reloads.
+  const pair = _homeRenderPairShowcase();
+  const { showA, showB, hexExampleCard, decayExampleCard, h2hExampleCard, sharedRacesCard, chipsHtml, pairLabel } = pair;
 
   // ── Row 3: recent activity (trending performances) ───────
   const trendItems = _buildTrendingPerformances(5);
@@ -583,10 +606,6 @@ function buildHome() {
   // The one thing every visitor understands: a big search box wired to the
   // shared site index (_buildSearchResultsHtml, from modals.js on every page),
   // with a few example chips seeded from the featured pair.
-  const _chip = c => `<button class="hsh-chip" onclick="homeSearchFill('${String(c).replace(/'/g, "\\'")}')">${c}</button>`;
-  const chipsHtml = [showA && showA.name, showB && showB.name, '1500m']
-    .filter(Boolean).map(_chip).join('');
-
   const searchHero = `
     <section class="home-search-hero">
       <div class="hsh-band">
@@ -599,15 +618,9 @@ function buildHome() {
           <kbd class="hsh-kbd" aria-hidden="true">/</kbd>
           <div class="hsh-results" id="home-search-results"></div>
         </div>
-        ${chipsHtml ? `<div class="hsh-chips"><span class="hsh-try">Try</span>${chipsHtml}</div>` : ''}
+        <div class="hsh-chips" id="home-chips">${_homeChipsInner(chipsHtml)}</div>
       </div>
     </section>`;
-
-  // Which pair every tool below is pre-loaded with (explains the examples).
-  // Colored to match the A/B athlete colors used across every tool card.
-  const pairLabel = (showA && showB)
-    ? `<button class="ht-pair" style="color:${_cA}" onclick="openAthleteCard('${showA.id}',null)">${showA.name}</button> vs <button class="ht-pair" style="color:${_cB}" onclick="openAthleteCard('${showB.id}',null)">${showB.name}</button>`
-    : '';
 
   document.getElementById('main').innerHTML = `
     <div class="fp-wrap">
@@ -616,17 +629,17 @@ function buildHome() {
         <div class="home-tools">
           <div class="home-tools-hd">
             <span class="ht-kicker">Explore the tools</span>
-            <p class="ht-sub">${pairLabel ? `Live examples running on ${pairLabel}.` : 'Live, interactive examples.'} <button class="ht-shuffle" onclick="location.reload()">Shuffle ↻</button></p>
+            <p class="ht-sub" id="home-pair-label">${_homePairSubInner(pairLabel)}</p>
           </div>
           <div class="home-split">
             <div class="home-main">
-              ${h2hExampleCard}
-              ${decayExampleCard}
+              <div id="home-card-h2h">${h2hExampleCard}</div>
+              <div id="home-card-decay">${decayExampleCard}</div>
               ${activityCard}
             </div>
             <aside class="home-rail">
-              ${hexExampleCard}
-              ${sharedRacesCard}
+              <div id="home-card-hex">${hexExampleCard}</div>
+              <div id="home-card-shared">${sharedRacesCard}</div>
               ${meetsCard}
             </aside>
           </div>

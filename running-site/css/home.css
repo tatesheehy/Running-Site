@@ -1047,7 +1047,6 @@ body[data-page="home"] .navbar-util { grid-template-columns: 1fr auto; }
   text-align: center;
   padding: 40px 20px 30px;
   border-radius: var(--radius-lg);
-  overflow: hidden;
   background: var(--brand);
   box-shadow: 0 3px 10px rgba(16,24,40,0.08);
 }
