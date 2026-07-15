@@ -252,6 +252,30 @@ function buildHome() {
 
   // ── Row 1: upcoming meets card ────────────────────────────
   const allAthletes = Object.values(ATHLETES);
+
+  // ── Dense site-wide stat strip (StatMuse-style data band) ────────────
+  const _homeStats = (() => {
+    const nations = new Set(allAthletes.map(a => a.country).filter(Boolean)).size;
+    const prs = allAthletes.reduce((n, a) => n + (a.prs || []).length, 0);
+    const races = allAthletes.reduce((n, a) => n + (a.results || []).length, 0);
+    const subFour = allAthletes.filter(a => {
+      const t = (a.prs || []).find(p => p.event === 'Mile');
+      return t && parseTimeToSecs(t.time) < 240;
+    }).length;
+    const rankedEvents = (typeof RANKINGS !== 'undefined') ? Object.keys(RANKINGS).length : 0;
+    const meets = new Set(allAthletes.flatMap(a => (a.results || []).map(r => r.meet)).filter(Boolean)).size;
+    const stat = (n, l) => `<div class="hm-stat"><span class="hm-stat-n">${n}</span><span class="hm-stat-l">${l}</span></div>`;
+    return `<div class="hm-stats">
+      ${stat(allAthletes.length, 'Athletes')}
+      ${stat(nations, 'Countries')}
+      ${stat(prs.toLocaleString(), 'Personal bests')}
+      ${stat(races.toLocaleString(), 'Races logged')}
+      ${stat(subFour, 'Sub-4 milers')}
+      ${stat(meets.toLocaleString(), 'Meets tracked')}
+      ${stat(rankedEvents, 'Ranked events')}
+    </div>`;
+  })();
+
   const upcomingMeets = (SITE.upcomingMeets || [])
     .filter(m => m.name && m.datetime && new Date(m.datetime) > now)
     .sort((a, b) => new Date(a.datetime) - new Date(b.datetime))
@@ -451,6 +475,7 @@ function buildHome() {
             ${leaderboardCard}
           </div>
         </div>
+        ${_homeStats}
         <div class="home-split">
           <div class="home-main">
             ${leadersCard}

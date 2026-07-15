@@ -68,28 +68,18 @@ function buildAthletesPage() {
     const topCountry = countryList[0] || '';
     const topCountryN = topCountry ? countryCounts[topCountry] : 0;
     const subFour = all.filter(a => _parseTime(getPr(a, 'Mile')) < _parseTime('4:00.00')).length;
+    const prs = all.reduce((n, a) => n + (a.prs || []).length, 0);
+    const races = all.reduce((n, a) => n + (a.results || []).length, 0);
+    const stat = (n, l) => `<div class="h2h-stat"><span class="h2h-stat-n">${n}</span><span class="h2h-stat-l">${l}</span></div>`;
+    const div = '<div class="h2h-stat-div"></div>';
     return `
       <div class="h2h-stats-strip">
-        <div class="h2h-stat">
-          <span class="h2h-stat-n">${total}</span>
-          <span class="h2h-stat-l">Athletes tracked</span>
-        </div>
-        <div class="h2h-stat-div"></div>
-        <div class="h2h-stat">
-          <span class="h2h-stat-n">${nations}</span>
-          <span class="h2h-stat-l">Countries</span>
-        </div>
-        <div class="h2h-stat-div"></div>
-        <div class="h2h-stat">
-          <span class="h2h-stat-n">${subFour}</span>
-          <span class="h2h-stat-l">Sub-4 milers</span>
-        </div>
-        ${topCountry ? `
-        <div class="h2h-stat-div"></div>
-        <div class="h2h-stat">
-          <span class="h2h-stat-n">${topCountry}</span>
-          <span class="h2h-stat-l">Most represented · ${topCountryN}</span>
-        </div>` : ''}
+        ${stat(total, 'Athletes tracked')}${div}
+        ${stat(nations, 'Countries')}${div}
+        ${stat(prs.toLocaleString(), 'Personal bests')}${div}
+        ${stat(races.toLocaleString(), 'Races logged')}${div}
+        ${stat(subFour, 'Sub-4 milers')}
+        ${topCountry ? `${div}${stat(topCountry, `Most represented · ${topCountryN}`)}` : ''}
       </div>`;
   }
 
