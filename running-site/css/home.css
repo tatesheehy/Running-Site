@@ -1054,24 +1054,26 @@
 }
 .dash-link:hover { text-decoration: underline; }
 
-/* Card footer as a full-width accent band matching the header */
+/* Card footer link as a subtle tappable pill in the card's accent */
 .dash-card-foot {
-  margin: 16px -20px -20px;
-  display: flex;
+  margin-top: 16px;
+  align-self: flex-start;
+  display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 13px 20px;
-  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-  background: var(--card-accent, var(--accent));
-  color: #fff;
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--card-accent, var(--accent)) 10%, transparent);
+  color: var(--card-accent, var(--accent));
   font-weight: 700;
   text-decoration: none;
-  transition: filter 0.15s ease;
+  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
 }
 .dash-card-foot:hover {
-  filter: brightness(1.08);
+  background: var(--card-accent, var(--accent));
   color: #fff;
   text-decoration: none;
+  transform: translateY(-1px);
 }
 /* Footer button on the dark H2H feature card */
 .dash-h2hking .dash-card-foot {
