@@ -1077,7 +1077,7 @@ body[data-page="home"] .navbar-util { grid-template-columns: 1fr auto; }
   z-index: 2;
   transition: color 0.18s ease;
 }
-.hsh-search:focus-within .hsh-icon { color: var(--accent); }
+.hsh-search:focus-within .hsh-icon { color: #FF7A2E; }
 .hsh-input {
   position: relative;
   z-index: 1;
@@ -1097,8 +1097,8 @@ body[data-page="home"] .navbar-util { grid-template-columns: 1fr auto; }
 .hsh-input::placeholder { color: var(--muted); font-weight: 400; }
 .hsh-input:hover { box-shadow: 0 3px 10px rgba(0,0,0,0.12); }
 .hsh-input:focus {
-  border-color: var(--accent);
-  box-shadow: 0 3px 10px rgba(0,0,0,0.12), 0 0 0 3px rgba(0,183,255,0.22);
+  border-color: #FF7A2E;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.12), 0 0 0 3px rgba(255,122,46,0.30);
 }
 /* "/" keycap hint — decorative, hidden once the user starts typing. */
 .hsh-kbd {
