@@ -72,8 +72,10 @@ function buildNavbar() {
   return `
     <nav class="navbar" role="navigation" aria-label="Main navigation">
       <div class="navbar-util">
-        <a href="index.html" class="navbar-brand">
-          <img src="/images/biblogo.png" alt="${SITE.name}" class="brand-logo"></a>
+        <div class="navbar-util-left">
+          <a href="index.html" class="navbar-brand">
+            <img src="/images/biblogo.png" alt="${SITE.name}" class="brand-logo"></a>
+        </div>
         <div class="navbar-search" id="nav-search">
           <svg class="navbar-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
@@ -82,41 +84,43 @@ function buildNavbar() {
             oninput="navbarSearch(this.value)" onfocus="navbarSearch(this.value)" aria-label="Search">
           <div class="navbar-search-results" id="navbar-search-results"></div>
         </div>
-        <div class="nav-notif-wrap">
-          <button class="navbar-icon-btn" onclick="toggleNotifMenu()" aria-label="Notifications" title="Notifications">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>
-            </svg>
-          </button>
-          <div id="notif-menu" class="notif-menu">No new notifications</div>
-        </div>
-        <button class="navbar-icon-btn" onclick="goTo('account.html')" aria-label="Settings" title="Settings">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-          </svg>
-        </button>
-        <div class="nav-user-wrap">
-          <button id="nav-user-btn" class="navbar-user-btn" onclick="getCurrentUser&&getCurrentUser()?goTo('account.html'):openAuthModal()" aria-label="Sign in" title="Sign in">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
-            </svg>
-            <span class="nav-user-dot"></span>
-          </button>
-          <div id="user-menu" class="user-menu">
-            <div class="user-menu-email" id="user-menu-email"></div>
-            <button class="user-menu-item" onclick="goTo('athletes.html');closeUserMenu();setTimeout(()=>typeof _showMyAthletes==='function'&&_showMyAthletes(),300)">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              My Athletes
+        <div class="navbar-util-right">
+          <div class="nav-notif-wrap">
+            <button class="navbar-icon-btn" onclick="toggleNotifMenu()" aria-label="Notifications" title="Notifications">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+              </svg>
             </button>
-            <button class="user-menu-item user-menu-item--signout" onclick="authSignOut()">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
-              Sign Out
-            </button>
+            <div id="notif-menu" class="notif-menu">No new notifications</div>
           </div>
+          <button class="navbar-icon-btn" onclick="goTo('account.html')" aria-label="Settings" title="Settings">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+          </button>
+          <div class="nav-user-wrap">
+            <button id="nav-user-btn" class="navbar-user-btn" onclick="getCurrentUser&&getCurrentUser()?goTo('account.html'):openAuthModal()" aria-label="Sign in" title="Sign in">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+              </svg>
+              <span class="nav-user-dot"></span>
+            </button>
+            <div id="user-menu" class="user-menu">
+              <div class="user-menu-email" id="user-menu-email"></div>
+              <button class="user-menu-item" onclick="goTo('athletes.html');closeUserMenu();setTimeout(()=>typeof _showMyAthletes==='function'&&_showMyAthletes(),300)">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                My Athletes
+              </button>
+              <button class="user-menu-item user-menu-item--signout" onclick="authSignOut()">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                Sign Out
+              </button>
+            </div>
+          </div>
+          <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </button>
         </div>
-        <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Open menu">
-          <span></span><span></span><span></span>
-        </button>
       </div>
       <div class="navbar-links" aria-label="Primary">
         <ul class="navlinks">${navLinksHtml}</ul>
