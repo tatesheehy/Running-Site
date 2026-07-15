@@ -110,5 +110,6 @@ function buildArticlePage() {
   `;
 
   if (a.gettyEmbed) runScriptsIn(qs('.article-detail-getty'));
+  if (typeof linkAthleteNamesIn === 'function') linkAthleteNamesIn(qs('.article-body'));
   if (typeof buildCommentsSection === 'function') buildCommentsSection(a.id);
 }

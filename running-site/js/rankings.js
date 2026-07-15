@@ -525,7 +525,7 @@ function buildTerminalItem(r, rank, leaderPbSecs) {
           <span class="rdt-nm-line">
             ${r.athleteId ? `<button class="inline-fav-btn${faved ? ' favorited' : ''}" data-fav-id="${r.athleteId}"
               onclick="event.stopPropagation();toggleFavorite('${r.athleteId}')" aria-label="Save ${name}">${_FAV_HEART}</button>` : ''}
-            <span class="rdt-nm">${name}</span>
+            <span class="rdt-nm"${r.athleteId ? ` onclick="event.stopPropagation();openAthleteCard('${r.athleteId}', ${rank})"` : ''}>${name}</span>
           </span>
           <span class="rdt-ct">${country}</span>
         </div>
@@ -562,7 +562,8 @@ function buildTerminalTicker(rows) {
     const pb = ((a?.prs || []).find(p => _rdtEvNorm(p.event) === _rdtEvNorm(_rdCurrentEvent)) || {}).time || '';
     const momentum = typeof r.momentum === 'number' ? r.momentum : 0;
     const arrow = momentum > 0 ? '<span class="rdt-tk-up">▲</span>' : momentum < 0 ? '<span class="rdt-tk-dn">▼</span>' : '';
-    return `<span class="rdt-tk-item">${i + 1}&nbsp;${name}&nbsp;<b>${pb || '—'}</b>&nbsp;${arrow}</span>`;
+    const clickAttr = r.athleteId ? ` onclick="openAthleteCard('${r.athleteId}', null)" role="button" tabindex="0"` : '';
+    return `<span class="rdt-tk-item"${clickAttr}>${i + 1}&nbsp;${name}&nbsp;<b>${pb || '—'}</b>&nbsp;${arrow}</span>`;
   }).join('<span class="rdt-tk-sep">·</span>');
   return `
     <div class="rdt-ticker">

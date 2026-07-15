@@ -272,7 +272,7 @@ function buildHome() {
       : `<div class="dash-meet-row">${inner}</div>`;
   }).join('');
   const meetsCard = `
-    <div class="dash-card dash-meets" style="--card-accent:#00B7FF">
+    <div class="dash-card dash-meets">
       <div class="dash-card-title">Upcoming Meets</div>
       ${meetRows
         ? `<div class="dash-meet-list">${meetRows}</div>`
@@ -309,10 +309,10 @@ function buildHome() {
       </a>`;
   }).join('');
   const clubsCard = `
-    <div class="dash-card dash-clubs" style="--card-accent:#00B7FF">
+    <div class="dash-card dash-clubs">
       <div class="dash-card-title">Barrier Clubs</div>
       <div class="dash-club-list">${clubRows}</div>
-      <a href="athletes.html" class="dash-link dash-card-foot" style="--accent:#00B7FF">Combine marks in Multi-PR Search →</a>
+      <a href="athletes.html" class="dash-link dash-card-foot">Combine marks in Multi-PR Search →</a>
     </div>`;
 
   // ── H2H Leaders by event (best season win-loss record per event) ─
@@ -353,10 +353,10 @@ function buildHome() {
       </div>`;
   }).join('');
   const leadersCard = leaderSections ? `
-    <div class="dash-card dash-leaders" style="--card-accent:#00B7FF">
+    <div class="dash-card dash-leaders">
       <div class="dash-card-title">H2H Leaders by Event</div>
       <div class="dash-ldr-grid">${leaderSections}</div>
-      <a href="h2h.html" class="dash-link dash-card-foot" style="--accent:#00B7FF">Full H2H leaderboard →</a>
+      <a href="h2h.html" class="dash-link dash-card-foot">Full H2H leaderboard →</a>
     </div>` : '';
 
   // ── Row 3: Skill Hexagon (radar) + Aerobic Decay previews ──
@@ -373,25 +373,25 @@ function buildHome() {
     const hexA = coverage[0], hexB = coverage[1];
     if (hexA && hexB) {
       skillHexCard = `
-        <div class="dash-card dash-hexagon" style="--card-accent:#FF5200">
+        <div class="dash-card dash-hexagon">
           <div class="dash-card-title">Strength Hexagon</div>
           <div class="dash-hex-legend">
-            <span class="dash-hex-name" style="--c:#2563EB"><span class="dash-hex-dot"></span>${hexA.name}</span>
+            <span class="dash-hex-name" style="--c:#2563EB" onclick="openAthleteCard('${hexA.id}', null)" role="button" tabindex="0"><span class="dash-hex-dot"></span>${hexA.name}</span>
             <span class="dash-hex-vs">vs</span>
-            <span class="dash-hex-name" style="--c:#EA580C"><span class="dash-hex-dot"></span>${hexB.name}</span>
+            <span class="dash-hex-name" style="--c:#EA580C" onclick="openAthleteCard('${hexB.id}', null)" role="button" tabindex="0"><span class="dash-hex-dot"></span>${hexB.name}</span>
           </div>
           <div class="dash-hex-svg">${_mxRadarSvg(hexA.id, hexB.id)}</div>
-          <a href="metrics.html" class="dash-link dash-card-foot" style="--accent:#FF5200">Compare any two athletes →</a>
+          <a href="metrics.html" class="dash-link dash-card-foot">Compare any two athletes →</a>
         </div>`;
     }
     // Decay preview: highlight the two strongest all-rounders over the field
     _mxMode = 'pace';
     _mxHighlight = [hexA, hexB].filter(Boolean).map(o => o.id);
     aeroDecayCard = `
-      <div class="dash-card dash-aero" style="--card-accent:#FF5200">
+      <div class="dash-card dash-aero">
         <div class="dash-card-title">Aerobic Decay</div>
         <div class="dash-aero-svg">${_mxDecaySvg()}</div>
-        <a href="metrics.html" class="dash-link dash-card-foot" style="--accent:#FF5200">Explore the aerobic decay tool →</a>
+        <a href="metrics.html" class="dash-link dash-card-foot">Explore the aerobic decay tool →</a>
       </div>`;
     _mxHighlight = [];
   }
@@ -399,7 +399,7 @@ function buildHome() {
   // ── Row 3: recent activity (trending performances) ───────
   const trendItems = _buildTrendingPerformances(5);
   const activityCard = `
-    <div class="dash-card dash-activity" style="--card-accent:#FF5200">
+    <div class="dash-card dash-activity">
       <div class="dash-card-title">Recent Activity</div>
       ${trendItems.length
         ? `<div class="fp-trending-list">${trendItems.map(trendRow).join('')}</div>`
@@ -413,13 +413,13 @@ function buildHome() {
     `<button class="fp-rank-tab ${i === 0 ? 'active' : ''}" data-event="${ev}">${TAB_LABELS[ev] || ev}</button>`
   ).join('');
   const leaderboardCard = `
-    <div class="dash-card dash-leaderboard" style="--card-accent:#FF5200">
+    <div class="dash-card dash-leaderboard">
       <div class="dash-card-hd">
         <span class="dash-card-title">Season Leaders</span>
         <div class="fp-rank-tabs" id="fp-rank-tabs">${tabsHtml}</div>
       </div>
       <div id="fp-rank-rows">${_homeSeasonBestRows(firstEvent)}</div>
-      <a href="event-tracker.html?event=${encodeURIComponent(firstEvent)}" id="fp-rank-viewall" class="dash-link dash-card-foot" style="--accent:#FF5200">Go to Event Tracker →</a>
+      <a href="event-tracker.html?event=${encodeURIComponent(firstEvent)}" id="fp-rank-viewall" class="dash-link dash-card-foot">Go to Event Tracker →</a>
     </div>`;
 
   // ── Row 3: latest updates (articles) ─────────────────────
@@ -436,10 +436,10 @@ function buildHome() {
     </div>`;
   }).join('');
   const updatesCard = `
-    <div class="dash-card dash-updates" style="--card-accent:#00B7FF">
+    <div class="dash-card dash-updates">
       <div class="dash-card-title">Latest Updates</div>
       <div class="dash-update-list">${updates || '<p class="dash-empty">No updates yet.</p>'}</div>
-      <a href="articles.html" class="dash-link dash-card-foot" style="--accent:#00B7FF">All articles →</a>
+      <a href="articles.html" class="dash-link dash-card-foot">All articles →</a>
     </div>`;
 
   document.getElementById('main').innerHTML = `

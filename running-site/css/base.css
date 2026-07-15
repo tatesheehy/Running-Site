@@ -51,7 +51,12 @@
 }
 
 :root {
-  --accent: #FF5200;
+  /* Two-color system: orange is brand/identity (logo, nav, page headers,
+     section markers — "where am I"); blue is the interactive/action color
+     (buttons, links, selected states — "what can I do") used uniformly
+     site-wide instead of alternating per page. */
+  --brand: #FF5200;
+  --accent: #00B7FF;
   --dark: #111111;
   --dark-2: #1C1C1C;
   --text: #1A1A1A;
@@ -108,30 +113,11 @@ body {
   padding-top: var(--nav-h); /* clear the fixed navbar */
 }
 
-/* ── PER-PAGE ACCENT ──────────────────────────────────────────
-   Two-color system: warm orange (#FF5200) and cool blue (#00B7FF).
-   Each section overrides --accent so every accent on that page —
-   buttons, links, active tab, section ticks, the active sidebar
-   item — adopts one of the two, alternating section to section so
-   adjacent nav items contrast. The logo stays orange (fixed asset). */
-body[data-page="articles"],
-body[data-page="article"]        { --accent: #00B7FF; }
-body[data-page="rankings"]       { --accent: #FF5200; }
-body[data-page="h2h"]            { --accent: #00B7FF; }
-body[data-page="event-tracker"]  { --accent: #FF5200; }
-body[data-page="athletes"]       { --accent: #00B7FF; }
-body[data-page="athlete"]        { --accent: #00B7FF; } /* athlete profile — same as athletes */
-body[data-page="podcast"]        { --accent: #00B7FF; }
-body[data-page="about"]          { --accent: #FF5200; }
-body[data-page="time-machine"]   { --accent: #00B7FF; }
-body[data-page="metrics"]        { --accent: #FF5200; }
-body[data-page="country"]        { --accent: #FF5200; }
-
-/* ── PAGE HERO — shared accent-block header (StatMuse-style) ───
-   One consistent header across every page. Uses --accent, so each
-   section's block is its own color automatically. */
+/* ── PAGE HERO — shared brand-block header (StatMuse-style) ───
+   One consistent header across every page, always in brand orange —
+   this is page identity/chrome, not an interactive element. */
 .page-hero {
-  background: var(--accent);
+  background: var(--brand);
   border-radius: var(--radius);
   padding: 16px 22px;
   margin: 0 0 16px;

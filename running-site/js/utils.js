@@ -8,6 +8,66 @@ function getParam(name) { return new URLSearchParams(window.location.search).get
 function goTo(url) { window.location.href = url; }
 window.goTo = goTo;
 
+// ── AUTO-LINK ATHLETE NAMES IN PROSE ─────────────────────────
+// Walks a rendered container (e.g. an article body) and wraps any exact,
+// full-name mentions of a tracked athlete in a clickable span that opens
+// their card — so names referenced in article prose are navigable too,
+// not just names rendered from structured data (tables/rows/cards).
+// Text inside existing links/buttons/scripts/inputs is left alone.
+let _linkNamesRegex = null;
+function _buildAthleteNameRegex() {
+  if (_linkNamesRegex || typeof ATHLETES === 'undefined') return _linkNamesRegex;
+  const names = Object.values(ATHLETES)
+    .filter(a => a.name && a.name.trim().length > 2)
+    .sort((a, b) => b.name.length - a.name.length); // longest first avoids partial-shadowing
+  if (!names.length) return null;
+  const escape = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const pattern = names.map(a => escape(a.name)).join('|');
+  _linkNamesRegex = { re: new RegExp(`\\b(${pattern})\\b`, 'g'), byName: Object.fromEntries(names.map(a => [a.name, a.id])) };
+  return _linkNamesRegex;
+}
+
+function linkAthleteNamesIn(container) {
+  if (!container) return;
+  const built = _buildAthleteNameRegex();
+  if (!built) return;
+  const { re, byName } = built;
+  const SKIP_TAGS = new Set(['A', 'BUTTON', 'SCRIPT', 'STYLE', 'INPUT', 'TEXTAREA', 'SELECT']);
+  const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, {
+    acceptNode(node) {
+      let el = node.parentElement;
+      while (el && el !== container) {
+        if (SKIP_TAGS.has(el.tagName) || el.classList.contains('in-text-athlete-link')) return NodeFilter.FILTER_REJECT;
+        el = el.parentElement;
+      }
+      return re.test(node.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+    }
+  });
+  const targets = [];
+  let n;
+  while ((n = walker.nextNode())) targets.push(n);
+
+  targets.forEach(node => {
+    re.lastIndex = 0;
+    const text = node.nodeValue;
+    const frag = document.createDocumentFragment();
+    let last = 0, m;
+    while ((m = re.exec(text))) {
+      if (m.index > last) frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+      const span = document.createElement('span');
+      span.className = 'in-text-athlete-link';
+      span.textContent = m[1];
+      span.setAttribute('role', 'button');
+      span.setAttribute('tabindex', '0');
+      span.onclick = () => openAthleteCard(byName[m[1]], null);
+      frag.appendChild(span);
+      last = re.lastIndex;
+    }
+    if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+    node.parentNode.replaceChild(frag, node);
+  });
+}
+
 // ── RECENTLY VIEWED ATHLETES (localStorage, most-recent first) ──
 const _RECENT_KEY = 'stattc_recent_athletes';
 const _RECENT_MAX = 12;

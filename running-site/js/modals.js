@@ -991,8 +991,8 @@ function renderH2HComparison(id1, id2) {
 
     return `
       <div class="h2h-col${isRight ? ' h2h-col--right' : ''}">
-        <div class="h2h-photo-wrap" style="background:${a.photoBackground || '#111'}">${photoHtml}</div>
-        <div class="h2h-name${isRight ? ' h2h-name--right' : ''}">${a.name}</div>
+        <div class="h2h-photo-wrap" style="background:${a.photoBackground || '#111'};cursor:pointer" onclick="openAthleteCard('${a.id}', null)">${photoHtml}</div>
+        <div class="h2h-name${isRight ? ' h2h-name--right' : ''}" style="cursor:pointer" onclick="openAthleteCard('${a.id}', null)">${a.name}</div>
         <div class="h2h-country${isRight ? ' h2h-country--right' : ''}">${renderFlag(a.flag)} ${a.country}</div>
         <div class="h2h-section-label">Rankings</div>
         <div class="h2h-ranks">${rankHtml}</div>

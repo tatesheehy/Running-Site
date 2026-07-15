@@ -432,7 +432,7 @@ function buildAthletesPage() {
     const chips = members.length
       ? members.map(a => `
           <span class="acct-list-chip">
-            <span class="acct-list-chip-name">${a.name}</span>
+            <span class="acct-list-chip-name" onclick="openAthleteCard('${a.id}', null)" role="button" tabindex="0">${a.name}</span>
             <button class="acct-list-chip-remove" onclick="athListsRemove('${l.id}','${a.id}')" title="Remove">
               <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
             </button>

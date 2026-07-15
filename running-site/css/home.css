@@ -997,25 +997,29 @@
   overflow: hidden; /* clip the accent header/footer bands to the rounded corners */
 }
 
-/* ── Accent header band — tinted in the card's --card-accent to match the
-   footer pill button (soft background + colored text, not a loud fill). ── */
+/* ── Accent header band — always brand orange (page/card identity),
+   distinct from the blue interactive elements inside the card. ────── */
 .dash-card > .dash-card-title:first-child,
 .dash-card > .dash-card-hd:first-child {
   margin: -20px -20px 16px;
   padding: 13px 20px;
-  background: color-mix(in srgb, var(--card-accent, var(--accent)) 12%, transparent);
+  background: color-mix(in srgb, var(--brand) 12%, transparent);
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 .dash-card > .dash-card-title:first-child {
-  color: var(--card-accent, var(--accent));
+  color: var(--brand);
   font-size: 16px;
   font-weight: 800;
 }
-.dash-card > .dash-card-hd:first-child .dash-card-title { color: var(--card-accent, var(--accent)); }
+.dash-card > .dash-card-hd:first-child .dash-card-title {
+  color: var(--brand);
+  font-size: 16px;
+  font-weight: 800;
+}
 /* Event tabs (Season Leaders) on the tinted band */
-.dash-card > .dash-card-hd:first-child .fp-rank-tabs { background: color-mix(in srgb, var(--card-accent, var(--accent)) 16%, transparent); }
-.dash-card > .dash-card-hd:first-child .fp-rank-tab { color: color-mix(in srgb, var(--card-accent, var(--accent)) 78%, #000); }
-.dash-card > .dash-card-hd:first-child .fp-rank-tab.active { color: var(--card-accent, var(--accent)); background: #fff; }
+.dash-card > .dash-card-hd:first-child .fp-rank-tabs { background: color-mix(in srgb, var(--brand) 16%, transparent); }
+.dash-card > .dash-card-hd:first-child .fp-rank-tab { color: color-mix(in srgb, var(--brand) 78%, #000); }
+.dash-card > .dash-card-hd:first-child .fp-rank-tab.active { color: var(--brand); background: #fff; }
 
 .dash-card--clickable {
   cursor: pointer;
@@ -1054,7 +1058,8 @@
 }
 .dash-link:hover { text-decoration: underline; }
 
-/* Card footer link as a subtle tappable pill in the card's accent */
+/* Card footer link is an action (navigates you somewhere) — always the
+   interactive blue, regardless of the card's identity-orange header. */
 .dash-card-foot {
   margin-top: 16px;
   align-self: flex-start;
@@ -1063,14 +1068,14 @@
   gap: 6px;
   padding: 9px 16px;
   border-radius: 999px;
-  background: color-mix(in srgb, var(--card-accent, var(--accent)) 10%, transparent);
-  color: var(--card-accent, var(--accent));
+  background: color-mix(in srgb, var(--accent) 10%, transparent);
+  color: var(--accent);
   font-weight: 700;
   text-decoration: none;
   transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
 }
 .dash-card-foot:hover {
-  background: var(--card-accent, var(--accent));
+  background: var(--accent);
   color: #fff;
   text-decoration: none;
   transform: translateY(-1px);
@@ -1368,11 +1373,11 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
   transition: background 0.12s ease;
 }
 .dash-club-row:last-child { border-bottom: none; }
-.dash-club-row:hover { background: color-mix(in srgb, var(--card-accent, var(--accent)) 8%, transparent); }
+.dash-club-row:hover { background: color-mix(in srgb, var(--accent) 8%, transparent); }
 .dash-club-row:hover .dash-club-arrow { opacity: 1; transform: translateX(2px); }
 .dash-club-arrow {
   flex-shrink: 0;
-  color: var(--card-accent, var(--accent));
+  color: var(--accent);
   font-size: 14px;
   opacity: 0;
   transition: opacity 0.12s ease, transform 0.12s ease;
@@ -1433,7 +1438,8 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
   font-size: 12px;
   font-weight: 700;
 }
-.dash-hex-name { display: inline-flex; align-items: center; gap: 6px; color: var(--text); }
+.dash-hex-name { display: inline-flex; align-items: center; gap: 6px; color: var(--text); cursor: pointer; }
+.dash-hex-name:hover { text-decoration: underline; }
 .dash-hex-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--c); }
 .dash-hex-vs { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; }
 
@@ -1591,7 +1597,7 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
   font-size: 15px;
   font-weight: 700;
   color: #fff;
-  background: var(--accent);
+  background: var(--brand);
   border-radius: var(--radius-sm);
   padding: 3px 10px;
   white-space: nowrap;

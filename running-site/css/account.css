@@ -435,7 +435,8 @@
   font-size: 12px;
 }
 
-.acct-list-chip-name { color: var(--text); }
+.acct-list-chip-name { color: var(--text); cursor: pointer; }
+.acct-list-chip-name:hover { text-decoration: underline; color: var(--accent); }
 
 .acct-list-chip-remove {
   background: none;

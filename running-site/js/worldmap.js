@@ -110,7 +110,7 @@ function initMapInteractions(athletes) {
       fillOpacity: 0.88,
     }).addTo(map);
 
-    const nameList = list.map(a => `<span style="display:block;padding:2px 0">${a.name}</span>`).join('');
+    const nameList = list.map(a => `<span style="display:block;padding:2px 0;cursor:pointer" onclick="openAthleteCard('${a.id}', null)">${a.name}</span>`).join('');
     const popupHtml = `
       <div style="font-family:var(--font-body,sans-serif);min-width:140px">
         <div style="font-weight:700;font-size:13px;margin-bottom:6px;color:#fff">${country}</div>

@@ -119,7 +119,7 @@
   width: 4px;
   height: 18px;
   border-radius: 2px;
-  background: var(--accent);
+  background: var(--brand);
   flex-shrink: 0;
 }
 

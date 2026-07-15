@@ -1157,7 +1157,7 @@ function _renderCompareMatchup() {
     <div class="h2h-compare-result">
       <div class="h2h-compare-summary">
         <div class="h2h-cmp-ath">
-          <span class="h2h-cmp-ath-name">${a1.name}</span>
+          <span class="h2h-cmp-ath-name" onclick="openAthleteCard('${a1.id}', null)" role="button" tabindex="0">${a1.name}</span>
         </div>
         <div class="h2h-cmp-score">
           <div class="h2h-cmp-score-main">
@@ -1166,7 +1166,7 @@ function _renderCompareMatchup() {
           <div class="h2h-cmp-score-meta">${total} meeting${total !== 1 ? 's' : ''}${leader ? ` · ${leader} leads` : ' · tied'}</div>
         </div>
         <div class="h2h-cmp-ath h2h-cmp-ath--right">
-          <span class="h2h-cmp-ath-name">${a2.name}</span>
+          <span class="h2h-cmp-ath-name" onclick="openAthleteCard('${a2.id}', null)" role="button" tabindex="0">${a2.name}</span>
         </div>
       </div>
       ${seasonBar}

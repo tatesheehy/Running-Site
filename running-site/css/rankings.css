@@ -1701,6 +1701,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.rdt-nm:hover { text-decoration: underline; cursor: pointer; }
 .rdt-ct { font-size: 12px; color: var(--muted); }
 .rdt-c { text-align: right; color: var(--text); font-variant-numeric: tabular-nums; }
 .rdt-c.dim { color: var(--muted); }
