@@ -875,7 +875,7 @@
   gap: 14px;
   padding: 10px 12px 10px 14px;
   cursor: pointer;
-  border-left: 3px solid var(--evc, #B0B0B8);
+  border-left: 3px solid #D8DADE;
   transition: background 0.12s, border-color 0.12s;
 }
 .fp-trend-row:nth-child(even) { background: var(--bg-light); }
@@ -890,7 +890,7 @@
   color: var(--muted);
   width: 82px;
 }
-.fp-trend-row.fp-trend--pb .fp-trend-tag { color: var(--accent); }
+.fp-trend-row.fp-trend--pb .fp-trend-tag { color: var(--text); }
 
 .fp-trend-row-name {
   font-family: var(--font-display);
@@ -1028,6 +1028,169 @@
   min-width: 0;
 }
 
+/* ── Search-first hero ─────────────────────────────────────── */
+.home-search-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 64px 20px 40px;
+}
+.hsh-wordmark {
+  font-family: var(--font-display, inherit);
+  font-size: 46px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin: 0;
+  line-height: 1;
+}
+.hsh-tag {
+  margin: 14px 0 30px;
+  font-size: 16px;
+  color: var(--muted);
+  max-width: 520px;
+}
+.hsh-search {
+  position: relative;
+  width: 100%;
+  max-width: 620px;
+}
+.hsh-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: var(--muted);
+  pointer-events: none;
+}
+.hsh-input {
+  width: 100%;
+  height: 58px;
+  padding: 0 20px 0 52px;
+  font-size: 17px;
+  color: var(--text);
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-shadow: 0 2px 10px rgba(16,24,40,0.06);
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.hsh-input::placeholder { color: var(--muted); }
+.hsh-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent), 0 4px 16px rgba(16,24,40,0.08);
+}
+/* Results dropdown — reuses the shared .search-* markup from the overlay */
+.hsh-results {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  z-index: 60;
+  max-height: 420px;
+  overflow-y: auto;
+  text-align: left;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 12px 32px rgba(16,24,40,0.14);
+  padding: 6px;
+}
+.hsh-search.open .hsh-results { display: block; }
+/* The shared .search-* markup is styled for the dark overlay (white text);
+   re-theme it for this light dropdown, mirroring .navbar-search-results. */
+.hsh-results .search-section-hd { color: var(--muted); padding: 8px 12px 6px; }
+.hsh-results .search-result-item { padding: 9px 12px; border-radius: 8px; }
+.hsh-results .search-result-item:hover { padding-left: 12px; background: var(--bg-light); }
+.hsh-results .search-result-title,
+.hsh-results .search-ath-info .search-result-title { color: var(--text); font-size: 15px; margin-bottom: 2px; }
+.hsh-results .search-result-meta,
+.hsh-results .search-ath-info .search-result-meta { color: var(--muted); }
+.hsh-results .search-result-cat { color: var(--accent); }
+.hsh-results .search-result-excerpt { color: var(--muted); font-size: 12px; -webkit-line-clamp: 1; }
+.hsh-results .search-no-results { color: var(--muted); padding: 14px 12px; font-size: 14px; }
+.hsh-results .search-no-results-title { color: var(--text); }
+.hsh-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+.hsh-try {
+  font-size: 13px;
+  color: var(--muted);
+  margin-right: 2px;
+}
+.hsh-chip {
+  padding: 6px 13px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+.hsh-chip:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ── "Explore the tools" section header ────────────────────── */
+.home-tools-hd {
+  padding: 8px 0 18px;
+  border-top: 1px solid var(--border);
+  margin-top: 8px;
+}
+.ht-kicker {
+  display: block;
+  font-family: var(--font-display, inherit);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 18px;
+}
+.ht-sub {
+  margin: 6px 0 0;
+  font-size: 15px;
+  color: var(--text);
+}
+.ht-pair {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+}
+.ht-pair:hover { text-decoration: underline; }
+.ht-shuffle {
+  background: none;
+  border: none;
+  padding: 0 0 0 6px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+  cursor: pointer;
+}
+.ht-shuffle:hover { text-decoration: underline; }
+
+@media (max-width: 640px) {
+  .home-search-hero { padding: 40px 16px 28px; }
+  .hsh-wordmark { font-size: 34px; }
+  .hsh-tag { font-size: 15px; margin-bottom: 24px; }
+  .hsh-input { height: 52px; font-size: 16px; }
+}
+
 /* ── Card base ────────────────────────────────────────────── */
 .dash-card {
   background: #fff;
@@ -1066,7 +1229,7 @@
   width: 3px;
   height: 15px;
   border-radius: 2px;
-  background: var(--brand);
+  background: #CBCED4;
   flex-shrink: 0;
 }
 
@@ -1467,6 +1630,9 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
   overflow: hidden;
   display: flex;
   justify-content: center;
+  /* homepage stays monochrome — the two athletes read as two greys (still
+     distinguishable via the radar's solid/dashed line styles) */
+  filter: grayscale(1);
 }
 /* Let the metric SVGs shrink to the card width instead of forcing a min-width */
 .dash-hexagon .mx-svg, .dash-aero .mx-svg { min-width: 0; }
@@ -1500,7 +1666,7 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
   color: var(--text);
   line-height: 1.1;
 }
-.fm-side:hover .fm-name { color: var(--brand); }
+.fm-side:hover .fm-name { text-decoration: underline; }
 .fm-ct { font-size: 11.5px; color: var(--muted); display: inline-flex; align-items: center; gap: 5px; }
 .fm-vs {
   font-family: var(--font-display);

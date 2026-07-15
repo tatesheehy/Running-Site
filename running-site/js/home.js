@@ -391,7 +391,9 @@ function buildHome() {
     return [null, null];
   }
   const [showA, showB] = _homeShowcasePair();
-  const _cA = '#2563EB', _cB = '#EA580C';
+  // Two neutral tones (not colours) to distinguish athlete A / B across the
+  // homepage UI — the page stays monochrome except for the CTA links.
+  const _cA = '#3A3E46', _cB = '#9CA2AC';
   const _shortA = showA ? showA.name.split(' ').slice(-1)[0] : '';
   const _shortB = showB ? showB.name.split(' ').slice(-1)[0] : '';
   const _pairQ = (showA && showB) ? `?a=${encodeURIComponent(showA.id)}&b=${encodeURIComponent(showB.id)}` : '';
@@ -578,26 +580,53 @@ function buildHome() {
       <a href="articles.html" class="dash-link dash-card-foot">All articles →</a>
     </div>`;
 
+  // ── Search-first hero ─────────────────────────────────────
+  // The one thing every visitor understands: a big search box wired to the
+  // shared site index (_buildSearchResultsHtml, from modals.js on every page),
+  // with a few example chips seeded from the featured pair.
+  const _chip = c => `<button class="hsh-chip" onclick="homeSearchFill('${String(c).replace(/'/g, "\\'")}')">${c}</button>`;
+  const chipsHtml = [showA && showA.name, showB && showB.name, '1500m']
+    .filter(Boolean).map(_chip).join('');
+  const searchHero = `
+    <section class="home-search-hero">
+      <h1 class="hsh-wordmark">StatTC</h1>
+      <p class="hsh-tag">Head-to-heads, rankings, and the deep stats behind distance running.</p>
+      <div class="hsh-search" id="home-search">
+        <svg class="hsh-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input class="hsh-input" type="text" autocomplete="off" spellcheck="false"
+          placeholder="Search any athlete, event, or story…"
+          oninput="homeSearch(this.value)" onfocus="homeSearch(this.value)">
+        <div class="hsh-results" id="home-search-results"></div>
+      </div>
+      ${chipsHtml ? `<div class="hsh-chips"><span class="hsh-try">Try</span>${chipsHtml}</div>` : ''}
+    </section>`;
+
+  // Which pair every tool below is pre-loaded with (explains the examples).
+  const pairLabel = (showA && showB)
+    ? `<button class="ht-pair" onclick="openAthleteCard('${showA.id}',null)">${showA.name}</button> vs <button class="ht-pair" onclick="openAthleteCard('${showB.id}',null)">${showB.name}</button>`
+    : '';
+
   document.getElementById('main').innerHTML = `
     <div class="fp-wrap">
       <div class="fp-body">
-        <div class="home-hero">
-          ${heroCard}
-          <div class="home-hero-board">
-            ${featuredBoard || leaderboardCard}
+        ${searchHero}
+        <div class="home-tools">
+          <div class="home-tools-hd">
+            <span class="ht-kicker">Explore the tools</span>
+            <p class="ht-sub">${pairLabel ? `Live examples running on ${pairLabel}.` : 'Live, interactive examples.'} <button class="ht-shuffle" onclick="location.reload()">Shuffle ↻</button></p>
           </div>
-        </div>
-        <div class="home-split">
-          <div class="home-main">
-            ${h2hExampleCard}
-            ${decayExampleCard}
-            ${activityCard}
+          <div class="home-split">
+            <div class="home-main">
+              ${h2hExampleCard}
+              ${decayExampleCard}
+              ${activityCard}
+            </div>
+            <aside class="home-rail">
+              ${hexExampleCard}
+              ${sharedRacesCard}
+              ${meetsCard}
+            </aside>
           </div>
-          <aside class="home-rail">
-            ${hexExampleCard}
-            ${sharedRacesCard}
-            ${meetsCard}
-          </aside>
         </div>
       </div>
     </div>`;
@@ -613,6 +642,38 @@ function buildHome() {
   });
 
   _homeWireChartTooltips();
+}
+
+// ── Homepage inline live search ─────────────────────────────
+// Types straight into the hero box; results drop down below it. Reuses the
+// site-wide index (_buildSearchResultsHtml, modals.js) so it stays in sync with
+// the overlay search everywhere else — no parallel index to maintain.
+window.homeSearch = function(query) {
+  const wrap = document.getElementById('home-search');
+  const results = document.getElementById('home-search-results');
+  if (!wrap || !results) return;
+  const q = (query || '').trim();
+  if (!q) { results.innerHTML = ''; wrap.classList.remove('open'); return; }
+  results.innerHTML = typeof _buildSearchResultsHtml === 'function' ? _buildSearchResultsHtml(q) : '';
+  wrap.classList.add('open');
+};
+
+// Clicking a "try" chip fills the box and runs the search.
+window.homeSearchFill = function(q) {
+  const inp = document.querySelector('#home-search .hsh-input');
+  if (!inp) return;
+  inp.value = q;
+  inp.focus();
+  window.homeSearch(q);
+};
+
+// Close the dropdown on outside click (registered once).
+if (!window._homeSearchOutsideClick) {
+  window._homeSearchOutsideClick = true;
+  document.addEventListener('click', e => {
+    const wrap = document.getElementById('home-search');
+    if (wrap && !wrap.contains(e.target)) wrap.classList.remove('open');
+  });
 }
 
 // Hover tooltips for the homepage metric previews (Skill Hexagon + Aerobic
