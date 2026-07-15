@@ -580,7 +580,6 @@ function buildHome() {
   document.getElementById('main').innerHTML = `
     <div class="fp-wrap">
       <div class="sf">
-        ${_sfHero(_sfEvent)}
         <div class="sf-grid">
           <aside class="sf-side sf-side--l">
             ${_sfFeaturedRivalry()}
@@ -746,20 +745,14 @@ function _sfHero(event) {
     </div>` : '';
   return `
     <section class="sf-hero">
-      <div class="sf-hero-top">
-        <div class="sf-hero-main">
-          <div class="sf-hero-badge">🏃</div>
-          <div class="sf-hero-id">
-            <h1 class="sf-hero-title">Distance Running</h1>
-            <div class="sf-hero-sub"><b>${total.toLocaleString()}</b> athletes tracked&nbsp;·&nbsp;2026 season</div>
-          </div>
+      <div class="sf-hero-main">
+        <div class="sf-hero-badge">🏃</div>
+        <div class="sf-hero-id">
+          <h1 class="sf-hero-title">Distance Running</h1>
+          <div class="sf-hero-sub"><b>${total.toLocaleString()}</b> athletes tracked&nbsp;·&nbsp;2026 season</div>
         </div>
-        ${holder}
       </div>
-      <div class="sf-hero-timeline">
-        <div class="sf-hero-track"><span class="sf-hero-fill"></span><span class="sf-hero-now"></span></div>
-        <div class="sf-hero-nodes"><span>Indoor</span><span>Outdoor</span><span class="sf-node-now">Now</span><span>Worlds</span><span>Finals</span></div>
-      </div>
+      ${holder}
     </section>`;
 }
 
@@ -828,7 +821,7 @@ function _sfH2HLeaders(event) {
     .sort((a, b) => (typeof _wilsonScore === 'function'
       ? _wilsonScore(b[1].wins, b[1].wins + b[1].losses) - _wilsonScore(a[1].wins, a[1].wins + a[1].losses)
       : 0) || b[1].wins - a[1].wins)
-    .slice(0, 8)
+    .slice(0, 12)
     .map(([id, r]) => ({ id, a: ATHLETES[id], wins: r.wins, losses: r.losses }))
     .filter(x => x.a);
 }
@@ -863,28 +856,121 @@ function _sfTrendRow(c, rank) {
     </div>`;
 }
 
-function _sfBody(tab, event) {
-  if (tab === 'trending') {
-    const items = _buildTrendingPerformances(10);
-    return `<div class="sf-rank sf-rank--pad">${items.length ? items.map((c, i) => _sfTrendRow(c, i + 1)).join('') : '<p class="sf-empty">Nothing notable in the last 30 days.</p>'}</div>`;
-  }
-  if (tab === 'h2h') {
-    const list = _sfH2HLeaders(event);
-    return `<div class="sf-rank sf-rank--pad">${list.length ? list.map((r, i) => _sfH2HRow(r, i + 1)).join('') : '<p class="sf-empty">No head-to-head records yet.</p>'}</div>`;
-  }
-  const sb = (typeof _seasonBestRanking === 'function' ? _seasonBestRanking(event) : []).slice(0, 8);
-  const h2h = _sfH2HLeaders(event).slice(0, 8);
-  return `
-    <div class="sf-cols">
-      <div class="sf-col">
-        <div class="sf-col-hd">Season best</div>
-        <div class="sf-rank">${sb.length ? sb.map((r, i) => _sfLeaderRow(r, i + 1)).join('') : '<p class="sf-empty">No marks yet.</p>'}</div>
-      </div>
-      <div class="sf-col">
-        <div class="sf-col-hd">Head-to-head record</div>
-        <div class="sf-rank">${h2h.length ? h2h.map((r, i) => _sfH2HRow(r, i + 1)).join('') : '<p class="sf-empty">No records yet.</p>'}</div>
-      </div>
+// Per-athlete season stats for the leaders table.
+function _sfPbFor(a, event) {
+  const k = _normalizeEvent(event);
+  let best = null;
+  (a.prs || []).forEach(p => {
+    if (_normalizeEvent(p.event) === k) {
+      const s = parseTimeToSecs(p.time);
+      if (s != null && (best == null || s < best.s)) best = { s, t: p.time };
+    }
+  });
+  return best;
+}
+function _sfSeasonCountFor(a, event) {
+  const k = _normalizeEvent(event);
+  let races = 0, wins = 0;
+  (a.results || []).forEach(r => {
+    if (_normalizeEvent(r.event) === k && parseTimeToSecs(r.time) != null) {
+      races++;
+      if (parseInt(r.place) === 1) wins++;
+    }
+  });
+  return { races, wins };
+}
+function _sfRecordsMap(event) {
+  if (typeof _computeAllH2HRecords !== 'function') return {};
+  try { return _computeAllH2HRecords('2026', event, 'all', 'all').records || {}; } catch (e) { return {}; }
+}
+// Last 5 races in the event this season, oldest→newest, classed by finish
+// (Sofascore "Last 5" form guide): win / podium / ran / did-not-finish.
+const _SF_NF = new Set(['DNF', 'DNS', 'DQ', 'NM', 'NH', 'DSQ']);
+function _sfFormFor(a, event) {
+  const k = _normalizeEvent(event);
+  const races = (a.results || [])
+    .filter(r => _normalizeEvent(r.event) === k && r.date && (r.time || r.place));
+  races.sort((x, y) => _trendParseDate(x.date) - _trendParseDate(y.date));
+  return races.slice(-5).map(r => {
+    if (_SF_NF.has(String(r.time || '').toUpperCase())) return { label: '', cls: 'd' };
+    const p = parseInt(r.place);
+    if (!isNaN(p)) return { label: String(p), cls: p === 1 ? 'w' : p <= 3 ? 'p' : 'o' };
+    return { label: '·', cls: 'o' };
+  });
+}
+function _sfAthCell(a) {
+  return `<span class="sf-tc-ath">${_sfAva(a)}<span class="sf-tc-id"><span class="sf-row-name">${a.name}</span><span class="sf-row-sub">${renderFlag(a.flag)} ${a.country || ''}</span></span></span>`;
+}
+
+// Season leaders — a dense multi-column stats table (Sofascore player-stats style).
+function _sfLeadersTable(event) {
+  const sb = (typeof _seasonBestRanking === 'function' ? _seasonBestRanking(event) : []).slice(0, 15);
+  if (!sb.length) return `<p class="sf-empty">No season marks yet for ${event}.</p>`;
+  const recs = _sfRecordsMap(event);
+  const head = `<div class="sf-thead sf-table-row sf-table-row--lead"><span>#</span><span class="sf-tc-ath">Athlete</span><span>SB</span><span>PB</span><span>Races</span><span>1st</span><span>H2H</span><span>Form</span></div>`;
+  const rows = sb.map((r, i) => {
+    const pb = _sfPbFor(r.a, event);
+    const c = _sfSeasonCountFor(r.a, event);
+    const rec = recs[r.id];
+    const form = _sfFormFor(r.a, event);
+    const formHtml = form.length
+      ? form.map(f => `<span class="sf-form sf-form--${f.cls}">${f.label}</span>`).join('')
+      : '<span class="sf-form-none">—</span>';
+    return `<div class="sf-trow sf-table-row sf-table-row--lead${i < 3 ? ' sf-trow--top' : ''}" onclick="openAthleteCard('${r.id}',null)" role="button" tabindex="0">
+      <span class="sf-tc-rank">${i + 1}</span>
+      ${_sfAthCell(r.a)}
+      <span class="sf-tc-sb"><span class="sf-chip">${r.time}</span></span>
+      <span class="sf-tc-num">${pb ? pb.t : '—'}</span>
+      <span class="sf-tc-num">${c.races || '—'}</span>
+      <span class="sf-tc-num">${c.wins || '—'}</span>
+      <span class="sf-tc-num">${rec ? `${rec.wins}-${rec.losses}` : '—'}</span>
+      <span class="sf-tc-form">${formHtml}</span>
     </div>`;
+  }).join('');
+  return `<div class="sf-table sf-table--lead">${head}${rows}</div>`;
+}
+
+// Trending — table with mark, event, meet.
+function _sfTrendingTable() {
+  const items = _buildTrendingPerformances(16);
+  if (!items.length) return '<p class="sf-empty">Nothing notable in the last 30 days.</p>';
+  const head = `<div class="sf-thead sf-table-row sf-table-row--trend"><span>#</span><span class="sf-tc-ath">Athlete</span><span>Mark</span><span>Event</span><span>Meet</span></div>`;
+  const rows = items.map((c, i) => {
+    const a = c.athlete, r = c.result;
+    return `<div class="sf-trow sf-table-row sf-table-row--trend" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
+      <span class="sf-tc-rank">${i + 1}</span>
+      ${_sfAthCell(a)}
+      <span class="sf-tc-sb"><span class="sf-chip">${r.time}</span></span>
+      <span class="sf-tc-num sf-tc-l">${r.event.trim()}</span>
+      <span class="sf-tc-meet">${r.meet}</span>
+    </div>`;
+  }).join('');
+  return `<div class="sf-table sf-table--trend">${head}${rows}</div>`;
+}
+
+// H2H leaders — table with W, L, Win%, meetings.
+function _sfH2HTable(event) {
+  const list = _sfH2HLeaders(event);
+  if (!list.length) return '<p class="sf-empty">No head-to-head records yet for ' + event + '.</p>';
+  const head = `<div class="sf-thead sf-table-row sf-table-row--h2h"><span>#</span><span class="sf-tc-ath">Athlete</span><span>W</span><span>L</span><span>Win%</span><span>Meets</span></div>`;
+  const rows = list.map((r, i) => {
+    const tot = r.wins + r.losses, pct = tot ? Math.round(r.wins / tot * 100) : 0;
+    return `<div class="sf-trow sf-table-row sf-table-row--h2h${i < 3 ? ' sf-trow--top' : ''}" onclick="openAthleteCard('${r.id}',null)" role="button" tabindex="0">
+      <span class="sf-tc-rank">${i + 1}</span>
+      ${_sfAthCell(r.a)}
+      <span class="sf-tc-num">${r.wins}</span>
+      <span class="sf-tc-num">${r.losses}</span>
+      <span class="sf-tc-sb"><span class="sf-chip">${pct}%</span></span>
+      <span class="sf-tc-num">${tot}</span>
+    </div>`;
+  }).join('');
+  return `<div class="sf-table sf-table--h2h">${head}${rows}</div>`;
+}
+
+function _sfBody(tab, event) {
+  if (tab === 'trending') return _sfTrendingTable();
+  if (tab === 'h2h') return _sfH2HTable(event);
+  return _sfLeadersTable(event);
 }
 
 function _sfCenterCard(event) {
