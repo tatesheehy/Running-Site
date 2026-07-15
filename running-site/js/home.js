@@ -434,11 +434,11 @@ function buildHome() {
         <div class="home-split">
           <div class="home-main">
             ${leadersCard}
-            ${skillHexCard}
             ${aeroDecayCard}
             ${activityCard}
           </div>
           <aside class="home-rail">
+            ${skillHexCard}
             ${clubsCard}
             ${meetsCard}
             ${updatesCard}
@@ -454,6 +454,42 @@ function buildHome() {
       qs('#fp-rank-rows').innerHTML = _homeSeasonBestRows(btn.dataset.event);
       const viewAll = qs('#fp-rank-viewall');
       if (viewAll) viewAll.href = `event-tracker.html?event=${encodeURIComponent(btn.dataset.event)}`;
+    });
+  });
+
+  _homeWireChartTooltips();
+}
+
+// Hover tooltips for the homepage metric previews (Skill Hexagon + Aerobic
+// Decay). Mirrors the metrics-page delegation: one shared #mx-tooltip on
+// <body> (not inside #main, which carries a fade-in transform that would break
+// position:fixed), with mousemove delegated per chart container.
+function _homeWireChartTooltips() {
+  const zones = qsa('.dash-hex-svg, .dash-aero-svg');
+  if (!zones.length) return;
+  let tip = document.getElementById('mx-tooltip');
+  if (!tip) {
+    tip = document.createElement('div');
+    tip.id = 'mx-tooltip';
+    tip.className = 'mx-tooltip';
+    document.body.appendChild(tip);
+  }
+  zones.forEach(zone => {
+    zone.addEventListener('mousemove', e => {
+      const t = document.getElementById('mx-tooltip'); if (!t) return;
+      const el = e.target.closest('[data-tip]');
+      if (!el) { t.classList.remove('show'); return; }
+      t.textContent = el.getAttribute('data-tip');
+      t.classList.add('show');
+      const pad = 14;
+      let x = e.clientX + pad, y = e.clientY + pad;
+      const r = t.getBoundingClientRect();
+      if (x + r.width > window.innerWidth - 8) x = e.clientX - r.width - pad;
+      if (y + r.height > window.innerHeight - 8) y = e.clientY - r.height - pad;
+      t.style.left = x + 'px'; t.style.top = y + 'px';
+    });
+    zone.addEventListener('mouseleave', () => {
+      const t = document.getElementById('mx-tooltip'); if (t) t.classList.remove('show');
     });
   });
 }

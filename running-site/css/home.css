@@ -1346,10 +1346,17 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
 
 /* ── Analytics card ───────────────────────────────────────── */
 /* ── Homepage metric previews (Skill Hexagon + Aerobic Decay) ── */
-.dash-hex-svg, .dash-aero-svg { margin-top: 10px; overflow: hidden; }
+.dash-hex-svg, .dash-aero-svg {
+  margin-top: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
 /* Let the metric SVGs shrink to the card width instead of forcing a min-width */
 .dash-hexagon .mx-svg, .dash-aero .mx-svg { min-width: 0; }
-.dash-hexagon .mx-svg--radar { max-width: 440px; }
+/* Keep the previews compact so they don't dominate the dashboard */
+.dash-hexagon .mx-svg--radar { max-width: 288px; }
+.dash-aero .mx-svg { max-width: 480px; }
 .dash-hex-legend {
   display: flex;
   align-items: center;
