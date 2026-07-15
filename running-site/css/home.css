@@ -1160,21 +1160,24 @@ body[data-page="home"] .navbar-util { grid-template-columns: 1fr auto; }
 
 /* ── Smart-search answer card (natural-language intent result) ── */
 .ss-answer {
-  margin: 2px 2px 8px;
-  padding: 12px 14px 10px;
-  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--border));
+  margin: 2px 2px 10px;
+  padding: 14px 16px 12px;
+  border: 1.5px solid var(--accent);
   border-radius: 12px;
-  background: color-mix(in srgb, var(--accent) 5%, #fff);
+  background: #fff;
 }
 .ss-answer-kicker {
   display: inline-block;
   font-family: var(--font-display, inherit);
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 8px;
+  color: #fff;
+  background: var(--accent);
+  padding: 3px 9px;
+  border-radius: 999px;
+  margin-bottom: 10px;
 }
 .ss-answer-body .search-result-item { padding: 7px 8px; }
 .ss-count {
@@ -1193,25 +1196,35 @@ body[data-page="home"] .navbar-util { grid-template-columns: 1fr auto; }
   color: var(--text);
   white-space: nowrap;
 }
-/* H2H answer */
-.ss-h2h {
+/* H2H answer — a compact two-row scoreboard (never wraps awkwardly) */
+.ss-h2h { display: flex; flex-direction: column; margin: 2px 0 2px; }
+.ss-h2h-row {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 14px;
-  padding: 6px 0 4px;
+  gap: 10px;
+  padding: 7px 2px;
 }
-.ss-h2h-name { flex: 1; font-weight: 700; font-size: 15px; text-align: right; }
-.ss-h2h-name--r { text-align: left; }
-.ss-h2h-score {
-  font-family: var(--font-display, inherit);
-  font-size: 26px;
-  font-weight: 800;
+.ss-h2h-row + .ss-h2h-row { border-top: 1px solid var(--border); }
+.ss-h2h-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.ss-h2h-name {
+  flex: 1;
+  min-width: 0;
+  font-weight: 700;
+  font-size: 15px;
   color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
-.ss-h2h-score em { color: var(--muted); font-style: normal; margin: 0 3px; }
-.ss-h2h-meta { text-align: center; font-size: 12px; color: var(--muted); padding: 2px 0 4px; }
+.ss-h2h-wins {
+  font-family: var(--font-display, inherit);
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.ss-h2h-wins--lead { color: var(--text); }
+.ss-h2h-meta { font-size: 12px; color: var(--muted); padding: 8px 2px 2px; }
 /* Shared CTA link */
 .ss-answer-cta {
   display: inline-block;

@@ -800,9 +800,16 @@ function _smartSearchAnswer(raw) {
         const leader = m.wins > m.losses ? short(a1.name) : m.losses > m.wins ? short(a2.name) : null;
         const body = `
           <div class="ss-h2h">
-            <span class="ss-h2h-name" style="color:var(--brand)">${a1.name}</span>
-            <span class="ss-h2h-score">${m.wins}<em>–</em>${m.losses}</span>
-            <span class="ss-h2h-name ss-h2h-name--r" style="color:var(--accent)">${a2.name}</span>
+            <div class="ss-h2h-row">
+              <span class="ss-h2h-dot" style="background:var(--brand)"></span>
+              <span class="ss-h2h-name">${a1.name}</span>
+              <span class="ss-h2h-wins${m.wins >= m.losses ? ' ss-h2h-wins--lead' : ''}">${m.wins}</span>
+            </div>
+            <div class="ss-h2h-row">
+              <span class="ss-h2h-dot" style="background:var(--accent)"></span>
+              <span class="ss-h2h-name">${a2.name}</span>
+              <span class="ss-h2h-wins${m.losses >= m.wins ? ' ss-h2h-wins--lead' : ''}">${m.losses}</span>
+            </div>
           </div>
           <div class="ss-h2h-meta">${m.races.length} career meeting${m.races.length === 1 ? '' : 's'}${leader ? ` · ${leader} leads` : m.races.length ? ' · all square' : ' · never raced'}</div>`;
         const href = `h2h.html?a=${encodeURIComponent(a1.id)}&b=${encodeURIComponent(a2.id)}`;
