@@ -997,25 +997,25 @@
   overflow: hidden; /* clip the accent header/footer bands to the rounded corners */
 }
 
-/* ── Accent header band — each card's title fills a color band in that
-   card's --card-accent (falls back to the page accent). ────────────── */
+/* ── Accent header band — tinted in the card's --card-accent to match the
+   footer pill button (soft background + colored text, not a loud fill). ── */
 .dash-card > .dash-card-title:first-child,
 .dash-card > .dash-card-hd:first-child {
   margin: -20px -20px 16px;
   padding: 13px 20px;
-  background: var(--card-accent, var(--accent));
+  background: color-mix(in srgb, var(--card-accent, var(--accent)) 12%, transparent);
   border-radius: var(--radius-lg) var(--radius-lg) 0 0;
 }
 .dash-card > .dash-card-title:first-child {
-  color: #fff;
+  color: var(--card-accent, var(--accent));
   font-size: 16px;
   font-weight: 800;
 }
-.dash-card > .dash-card-hd:first-child .dash-card-title { color: #fff; }
-/* Event tabs (Season Leaders) riding on the colored band */
-.dash-card > .dash-card-hd:first-child .fp-rank-tabs { background: rgba(255,255,255,0.22); }
-.dash-card > .dash-card-hd:first-child .fp-rank-tab { color: rgba(255,255,255,0.9); }
-.dash-card > .dash-card-hd:first-child .fp-rank-tab.active { color: var(--text); background: #fff; }
+.dash-card > .dash-card-hd:first-child .dash-card-title { color: var(--card-accent, var(--accent)); }
+/* Event tabs (Season Leaders) on the tinted band */
+.dash-card > .dash-card-hd:first-child .fp-rank-tabs { background: color-mix(in srgb, var(--card-accent, var(--accent)) 16%, transparent); }
+.dash-card > .dash-card-hd:first-child .fp-rank-tab { color: color-mix(in srgb, var(--card-accent, var(--accent)) 78%, #000); }
+.dash-card > .dash-card-hd:first-child .fp-rank-tab.active { color: var(--card-accent, var(--accent)); background: #fff; }
 
 .dash-card--clickable {
   cursor: pointer;
@@ -1147,6 +1147,12 @@
   box-shadow: none;
   background: transparent;
   overflow: hidden;
+}
+/* Docked in the hero (flush against the image), so the tinted header band
+   must be square — a rounded corner here reads as a weird notch. */
+.home-hero-board .dash-card > .dash-card-hd:first-child,
+.home-hero-board .dash-card > .dash-card-title:first-child {
+  border-radius: 0;
 }
 .home-hero-scrim {
   position: absolute;
