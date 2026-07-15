@@ -40,7 +40,7 @@ async function loadData() {
     SITE = siteData;
     SITE.contributors = contributorsData.items || [];
 
-    document.documentElement.style.setProperty('--accent', SITE.accentColor || '#E8500A');
+    document.documentElement.style.setProperty('--accent', SITE.accentColor || '#FF5200');
 
   } catch (err) {
     console.error('Failed to load data:', err);

@@ -1368,11 +1368,11 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
   transition: background 0.12s ease;
 }
 .dash-club-row:last-child { border-bottom: none; }
-.dash-club-row:hover { background: color-mix(in srgb, #DB2777 8%, transparent); }
+.dash-club-row:hover { background: color-mix(in srgb, var(--card-accent, var(--accent)) 8%, transparent); }
 .dash-club-row:hover .dash-club-arrow { opacity: 1; transform: translateX(2px); }
 .dash-club-arrow {
   flex-shrink: 0;
-  color: #DB2777;
+  color: var(--card-accent, var(--accent));
   font-size: 14px;
   opacity: 0;
   transition: opacity 0.12s ease, transform 0.12s ease;

@@ -51,7 +51,7 @@
 }
 
 :root {
-  --accent: #E8500A;
+  --accent: #FF5200;
   --dark: #111111;
   --dark-2: #1C1C1C;
   --text: #1A1A1A;
@@ -109,22 +109,23 @@ body {
 }
 
 /* ── PER-PAGE ACCENT ──────────────────────────────────────────
-   Orange (#E8500A) is the brand default (Home). Each section
-   overrides --accent so every accent on that page — buttons,
-   links, active tab, section ticks, the active sidebar item —
-   adopts its color. The logo stays orange (it's a fixed asset). */
+   Two-color system: warm orange (#FF5200) and cool blue (#00B7FF).
+   Each section overrides --accent so every accent on that page —
+   buttons, links, active tab, section ticks, the active sidebar
+   item — adopts one of the two, alternating section to section so
+   adjacent nav items contrast. The logo stays orange (fixed asset). */
 body[data-page="articles"],
-body[data-page="article"]        { --accent: #0D9488; } /* teal */
-body[data-page="rankings"]       { --accent: #2563EB; } /* blue */
-body[data-page="h2h"]            { --accent: #9333EA; } /* purple */
-body[data-page="event-tracker"]  { --accent: #16A34A; } /* green */
-body[data-page="athletes"]       { --accent: #DB2777; } /* pink */
-body[data-page="athlete"]        { --accent: #DB2777; } /* athlete profile — same pink */
-body[data-page="podcast"]        { --accent: #0891B2; } /* cyan */
-body[data-page="about"]          { --accent: #CA8A04; } /* gold */
-body[data-page="time-machine"]   { --accent: #4F46E5; } /* electric indigo (wormhole) */
-body[data-page="metrics"]        { --accent: #0EA5E9; } /* sky blue */
-body[data-page="country"]        { --accent: #DC2626; } /* flag red */
+body[data-page="article"]        { --accent: #00B7FF; }
+body[data-page="rankings"]       { --accent: #FF5200; }
+body[data-page="h2h"]            { --accent: #00B7FF; }
+body[data-page="event-tracker"]  { --accent: #FF5200; }
+body[data-page="athletes"]       { --accent: #00B7FF; }
+body[data-page="athlete"]        { --accent: #00B7FF; } /* athlete profile — same as athletes */
+body[data-page="podcast"]        { --accent: #00B7FF; }
+body[data-page="about"]          { --accent: #FF5200; }
+body[data-page="time-machine"]   { --accent: #00B7FF; }
+body[data-page="metrics"]        { --accent: #FF5200; }
+body[data-page="country"]        { --accent: #FF5200; }
 
 /* ── PAGE HERO — shared accent-block header (StatMuse-style) ───
    One consistent header across every page. Uses --accent, so each

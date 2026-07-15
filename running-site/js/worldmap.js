@@ -103,7 +103,7 @@ function initMapInteractions(athletes) {
 
     const marker = L.circleMarker(centroid, {
       radius: r,
-      fillColor: '#e8500a',
+      fillColor: '#ff5200',
       color: '#fff',
       weight: 2,
       opacity: 1,
@@ -117,7 +117,7 @@ function initMapInteractions(athletes) {
         <div style="font-size:12px;color:#ccc">${nameList}</div>
         <div style="margin-top:8px">
           <button onclick="mapFilterCountry('${country}')"
-            style="background:#e8500a;color:#fff;border:none;border-radius:5px;padding:5px 12px;font-size:11px;font-weight:700;cursor:pointer;letter-spacing:0.04em;text-transform:uppercase">
+            style="background:#ff5200;color:#fff;border:none;border-radius:5px;padding:5px 12px;font-size:11px;font-weight:700;cursor:pointer;letter-spacing:0.04em;text-transform:uppercase">
             View athletes →
           </button>
         </div>
@@ -159,7 +159,7 @@ window.mapFilterCountry = function(country) {
     _activeCountry = null;
     if (label) label.textContent = '';
     _leafletMarkers.forEach(({ marker }) => {
-      marker.setStyle({ fillColor: '#e8500a', fillOpacity: 0.88 });
+      marker.setStyle({ fillColor: '#ff5200', fillOpacity: 0.88 });
     });
     window._mapRestoreGrid && window._mapRestoreGrid();
     return;
@@ -170,7 +170,7 @@ window.mapFilterCountry = function(country) {
   // Dim other markers
   _leafletMarkers.forEach(({ marker, country: c }) => {
     marker.setStyle(c === country
-      ? { fillColor: '#e8500a', fillOpacity: 1 }
+      ? { fillColor: '#ff5200', fillOpacity: 1 }
       : { fillColor: '#555', fillOpacity: 0.4 }
     );
   });

@@ -371,7 +371,7 @@
   font-family: var(--font-body);
   font-size: 12px;
   font-weight: 600;
-  color: var(--accent, #E8500A);
+  color: var(--accent, #FF5200);
   background: none;
   border: none;
   cursor: pointer;

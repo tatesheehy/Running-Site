@@ -34,17 +34,17 @@ function buildNavbar() {
   // Horizontal nav links. `hint` powers the hover tooltip so unfamiliar tool
   // names (H2H, Time Machine, Event Tracker) explain themselves on hover.
   const navLinks = [
-    { label: 'Home', href: 'index.html', icon: 'home', color: '#ff5200', hint: 'Dashboard & the latest' },
-    { label: 'Articles', href: 'articles.html', icon: 'articles', color: '#0D9488', hint: 'News, features & opinion' },
-    { label: 'Rankings', href: 'rankings.html', icon: 'rankings', color: '#2563EB', hint: 'Our ranked lists by event', children: _subEvents('rankings.html') },
-    { label: 'H2H', href: 'h2h.html', icon: 'h2h', color: '#9333EA', hint: 'Compare two athletes head-to-head' },
-    { label: 'Event Tracker', href: 'event-tracker.html', icon: 'tracker', color: '#16A34A', hint: 'Season-best leaderboards by event', children: _subEvents('event-tracker.html') },
-    { label: 'Athletes', href: 'athletes.html', icon: 'athletes', color: '#DB2777', hint: 'Browse athlete profiles' },
-    { label: 'Countries', href: 'country.html', icon: 'countries', color: '#DC2626', hint: 'Rankings & athletes by nation' },
-    { label: 'Time Machine', href: 'time-machine.html', icon: 'timemachine', color: '#4F46E5', hint: 'Results & records from past seasons' },
-    { label: 'Metrics', href: 'metrics.html', icon: 'metrics', color: '#0EA5E9', hint: 'Deep-dive charts & athlete comparisons' },
-    { label: 'Podcast', href: 'podcast.html', icon: 'podcast', color: '#0891B2', hint: 'Episodes & audio' },
-    { label: 'About', href: 'about.html', icon: 'about', color: '#CA8A04', hint: 'What StatTC is & who makes it' },
+    { label: 'Home', href: 'index.html', icon: 'home', color: '#FF5200', hint: 'Dashboard & the latest' },
+    { label: 'Articles', href: 'articles.html', icon: 'articles', color: '#00B7FF', hint: 'News, features & opinion' },
+    { label: 'Rankings', href: 'rankings.html', icon: 'rankings', color: '#FF5200', hint: 'Our ranked lists by event', children: _subEvents('rankings.html') },
+    { label: 'H2H', href: 'h2h.html', icon: 'h2h', color: '#00B7FF', hint: 'Compare two athletes head-to-head' },
+    { label: 'Event Tracker', href: 'event-tracker.html', icon: 'tracker', color: '#FF5200', hint: 'Season-best leaderboards by event', children: _subEvents('event-tracker.html') },
+    { label: 'Athletes', href: 'athletes.html', icon: 'athletes', color: '#00B7FF', hint: 'Browse athlete profiles' },
+    { label: 'Countries', href: 'country.html', icon: 'countries', color: '#FF5200', hint: 'Rankings & athletes by nation' },
+    { label: 'Time Machine', href: 'time-machine.html', icon: 'timemachine', color: '#00B7FF', hint: 'Results & records from past seasons' },
+    { label: 'Metrics', href: 'metrics.html', icon: 'metrics', color: '#FF5200', hint: 'Deep-dive charts & athlete comparisons' },
+    { label: 'Podcast', href: 'podcast.html', icon: 'podcast', color: '#00B7FF', hint: 'Episodes & audio' },
+    { label: 'About', href: 'about.html', icon: 'about', color: '#FF5200', hint: 'What StatTC is & who makes it' },
   ];
 
   const navLinkHtml = l => {

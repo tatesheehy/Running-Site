@@ -190,7 +190,7 @@
   border-color: #DDD;
   box-shadow: var(--shadow-card-hover);
 }
-.navbar-search-icon { flex-shrink: 0; color: #E8500A; }
+.navbar-search-icon { flex-shrink: 0; color: #FF5200; }
 .navbar-search-input {
   flex: 1;
   min-width: 0;

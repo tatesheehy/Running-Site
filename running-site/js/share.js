@@ -40,7 +40,7 @@ async function renderShareCard(athlete, rank, eventName) {
   canvas.height = H;
   const ctx = canvas.getContext('2d');
 
-  const ACCENT   = '#e8500a';
+  const ACCENT   = '#ff5200';
   const BG_DARK  = athlete.photoBackground || '#111111';
   const BG_LIGHT = '#ffffff';
 
@@ -150,7 +150,7 @@ async function renderShareCard(athlete, rank, eventName) {
   ctx.font = '600 11px Barlow, "Helvetica Neue", sans-serif';
   ctx.fillText('TROPHY CASE', RX, div2y + 22);
 
-  const COMP_COLORS = { OLY: '#d4a000', WC: '#2563eb', WI: '#7c3aed', DLF: '#e8500a' };
+  const COMP_COLORS = { OLY: '#d4a000', WC: '#2563eb', WI: '#7c3aed', DLF: '#ff5200' };
   const PLACE_COLORS = ['#d4a000', '#9e9e9e', '#b87333'];
 
   const honours = (athlete.honours || []).slice(0, 10);
@@ -243,7 +243,7 @@ async function copyShareCard(athlete, rank, eventName) {
 
 function buildShareCardHtml(athlete, rank, eventName) {
   const siteName  = (SITE && SITE.name) || 'StatTC';
-  const accent    = '#e8500a';
+  const accent    = '#ff5200';
   const photoBg   = athlete.photoBackground || '#111';
   const photo     = athlete.photo || '';
   const nameParts = athlete.name.trim().split(' ');
@@ -257,7 +257,7 @@ function buildShareCardHtml(athlete, rank, eventName) {
   const bestPr = (eventName ? prs.find(p => p.event.toLowerCase() === eventName.toLowerCase()) : null)
               ?? prs[0];
 
-  const COMP_COLORS = { OLY: '#d4a000', WC: '#2563eb', WI: '#7c3aed', DLF: '#e8500a' };
+  const COMP_COLORS = { OLY: '#d4a000', WC: '#2563eb', WI: '#7c3aed', DLF: '#ff5200' };
   const PLACE_COLORS = ['#d4a000', '#9e9e9e', '#b87333'];
 
   const badgesHtml = (athlete.honours || []).slice(0, 8).map(h => {
@@ -338,7 +338,7 @@ function openShareOverlay(athleteId, rank, eventName) {
     overlay.innerHTML = `
       ${cardHtml}
       <div style="display:flex;gap:12px;align-items:center">
-        <button id="share-download-btn" style="${BTN_BASE};background:#e8500a;color:#fff">↓ Download</button>
+        <button id="share-download-btn" style="${BTN_BASE};background:#ff5200;color:#fff">↓ Download</button>
         <button id="share-copy-btn"     style="${BTN_BASE};background:#2a2a2a;color:#fff;border:1px solid #444">⧉ Copy image</button>
         <span style="color:#444;font-size:13px;font-family:sans-serif">or screenshot the card above</span>
         <button onclick="document.getElementById('share-overlay').remove()" style="background:none;border:none;color:#555;font-size:22px;cursor:pointer;line-height:1;padding:4px 8px;margin-left:4px">×</button>
