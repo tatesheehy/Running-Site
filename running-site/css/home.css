@@ -476,7 +476,7 @@
   grid-template-columns: 24px 1fr auto;
   align-items: center;
   gap: 10px;
-  padding: 9px 0;
+  padding: 10px 0;
   border-bottom: 1px solid var(--border);
   transition: background 0.12s;
 }
@@ -873,7 +873,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 11px 12px 11px 14px;
+  padding: 10px 12px 10px 14px;
   cursor: pointer;
   border-left: 3px solid var(--evc, #B0B0B8);
   transition: background 0.12s, border-color 0.12s;
@@ -1284,7 +1284,7 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  padding: 12px 0;
+  padding: 10px 0;
   border-bottom: 1px solid var(--bg-light);
   text-decoration: none;
 }
@@ -1408,7 +1408,7 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 12px 8px;
+  padding: 10px 8px;
   margin: 0 -8px;
   border-bottom: 1px solid var(--bg-light);
   border-radius: 8px;
@@ -1535,7 +1535,7 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
   align-items: center;
   justify-content: space-between;
   gap: 14px;
-  padding: 12px 0;
+  padding: 10px 0;
   border-bottom: 1px solid var(--bg-light);
   cursor: pointer;
 }
@@ -1625,7 +1625,7 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
 .dash-leaders .dash-ldr-runner { gap: 8px; }
 .dash-leaders .dash-ldr-label { margin-bottom: 4px; }
 .dash-leaders .dash-ldr-hero-row { margin-bottom: 4px; }
-.dash-leaders .dash-ldr-section { padding: 12px 0; }
+.dash-leaders .dash-ldr-section { padding: 10px 0; }
 
 .dash-ldr-main { flex: 1; min-width: 0; }
 
