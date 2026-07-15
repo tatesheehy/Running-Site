@@ -305,7 +305,7 @@ function buildAthletesPage() {
     if (!list.length) {
       return activeListFilter
         ? '<p class="ath-page-empty">This list has no athletes yet — add some from the My Lists section or an athlete card.</p>'
-        : '<p class="ath-page-empty">No athletes found.</p>';
+        : '<p class="ath-page-empty">No athletes match your filters. <button class="ath-empty-clear" onclick="clearAllFilters()">Clear all filters</button></p>';
     }
 
     const header = LIST_COLS.map(c =>
@@ -347,7 +347,7 @@ function buildAthletesPage() {
         ? '<p class="ath-page-empty">No saved athletes yet — click the heart on any athlete card to save them.</p>'
         : activeListFilter
         ? '<p class="ath-page-empty">This list has no athletes yet — add some from the My Lists section or an athlete card.</p>'
-        : '<p class="ath-page-empty">No athletes found.</p>';
+        : '<p class="ath-page-empty">No athletes match your filters. <button class="ath-empty-clear" onclick="clearAllFilters()">Clear all filters</button></p>';
       return msg;
     }
     return list.map(a => {

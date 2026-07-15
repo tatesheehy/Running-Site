@@ -7,10 +7,10 @@
 /* Solid page-colored bar so scrolled content hides cleanly behind it. */
 .navbar {
   background: #F7F8FA;
-  border-bottom: none;
-  height: 90px;
+  border-bottom: 1px solid var(--border);
+  height: var(--nav-h);
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -18,14 +18,100 @@
   z-index: 100;
 }
 
-/* Row sits low in the bar (logo near the sidebar), but items stay centered
-   on each other so the logo is centered on the search bar. */
-.navbar-inner {
-  padding: 0 24px 10px;
-  width: 100%;
+/* Utility row: logo + search + action icons */
+.navbar-util {
+  padding: 0 24px;
+  height: 64px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   gap: 14px;
+}
+
+/* ── NAV LINKS ROW (horizontal) ───────────────────────────── */
+.navbar-links {
+  flex: 1;
+  min-height: 0;
+  padding: 0 24px;
+  display: flex;
+  align-items: stretch;
+  border-top: 1px solid var(--border);
+  overflow: visible; /* let hover dropdowns escape the bar */
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+  gap: 2px;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+.navlink { position: relative; display: flex; align-items: stretch; }
+.navlink-a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 12px;
+  color: #555;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.navlink-a:hover { color: var(--link-accent, var(--text)); }
+.navlink.active > .navlink-a {
+  color: var(--link-accent, var(--accent));
+  border-bottom-color: var(--link-accent, var(--accent));
+  font-weight: 600;
+}
+.navlink .sidebar-ico { color: currentColor; opacity: 0.65; }
+.navlink-a:hover .sidebar-ico,
+.navlink.active > .navlink-a .sidebar-ico { opacity: 1; }
+.navlink-caret { opacity: 0.5; margin-left: -2px; transition: transform 0.18s ease; }
+.navlink--parent:hover .navlink-caret { transform: rotate(180deg); }
+
+/* Hover dropdown for parent links (Rankings, Event Tracker) */
+.navlink-sub {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  list-style: none;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card-hover);
+  padding: 6px;
+  z-index: 210;
+}
+.navlink--parent:hover .navlink-sub { display: block; }
+.navlink-sublink {
+  display: block;
+  padding: 8px 12px;
+  color: #555;
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: 13.5px;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  transition: color 0.15s ease, background 0.15s ease;
+}
+.navlink-sublink:hover {
+  color: var(--link-accent, var(--text));
+  background: color-mix(in srgb, var(--link-accent, #000) 9%, transparent);
+}
+.navlink-sublink.active {
+  color: var(--link-accent, var(--accent));
+  font-weight: 700;
+  background: color-mix(in srgb, var(--link-accent, var(--accent)) 10%, transparent);
 }
 
 .navbar-brand {
@@ -46,9 +132,9 @@
   top: 3px;
 }
 
-/* StatTC bib logo — sized to roughly 3/5 the sidebar width (~126px) */
+/* StatTC bib logo — compact for the horizontal top bar */
 .brand-logo {
-  width: 126px;
+  width: 92px;
   height: auto;
   display: block;
   flex-shrink: 0;
@@ -149,119 +235,16 @@
 }
 .notif-menu.open { display: block; }
 
-/* ── SIDEBAR (floating card groups, StatMuse-style) ───────── */
-/* top:0 + padding-top (not top:62px) so it's anchored to the same
-   viewport-fixed frame as .navbar — nothing to ever drift apart on scroll.
-   The navbar (z-index 100) draws over the sidebar's top 62px. */
-.app-sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 210px;
-  padding: 104px 2px 24px 16px;
-  background: transparent;
-  overflow-y: auto;
-  z-index: 90;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+/* Tight top gap below the (fixed) two-row navbar */
+#main { padding-top: 18px; }
 
-/* Sidebar clears the content on the left; a matching right gutter of the same
-   width centers the content in the viewport and makes the sidebar's left gutter
-   symmetric with the empty right gutter. Reset to 0 below 960px (responsive.css). */
-#main, footer { margin-left: 210px; margin-right: 210px; }
-/* Tight top gap below the (fixed) navbar — crunched, StatMuse-style */
-#main { padding-top: 14px; }
-
-.sidebar-group {
-  list-style: none;
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-card);
-  padding: 8px;
-  flex-shrink: 0;
-}
-
-.sidebar-group li a {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin: 2px 0;
-  padding: 8px 12px;
-  color: #444;
-  text-decoration: none;
-  font-family: var(--font-display);
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  border-radius: var(--radius-sm);
-  transition: background 0.15s ease, color 0.15s ease;
-}
-/* Hover lights up in the destination page's own theme color */
-.sidebar-group li a:hover {
-  color: var(--link-accent, var(--text));
-  background: color-mix(in srgb, var(--link-accent, #000) 10%, transparent);
-}
-.sidebar-group li a.active {
-  color: var(--link-accent, var(--accent));
-  background: color-mix(in srgb, var(--link-accent, var(--accent)) 10%, transparent);
-}
-
-/* ── Sub-page dropdowns (parent row + caret + sublist) ────── */
-.sidebar-parent-row { display: flex; align-items: center; }
-.sidebar-parent-row > a { flex: 1; margin-right: 0; }
-.sidebar-caret {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 6px 8px;
-  color: #b0b0b0;
-  display: flex;
-  align-items: center;
-  border-radius: var(--radius-sm);
-  transition: transform 0.2s ease, color 0.15s ease, background 0.15s ease;
-}
-.sidebar-caret:hover { color: var(--link-accent, var(--text)); background: color-mix(in srgb, var(--link-accent, #000) 8%, transparent); }
-.sidebar-item--parent.open .sidebar-caret { transform: rotate(180deg); }
-
-.sidebar-sublist {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.22s ease;
-}
-.sidebar-item--parent.open > .sidebar-sublist { max-height: 300px; }
-
-.sidebar-group .sidebar-sublist a {
-  padding: 6px 12px 6px 43px;
-  font-size: 13.5px;
-  font-weight: 500;
-  color: #6b6b6b;
-}
-.sidebar-group .sidebar-sublist a:hover {
-  color: var(--link-accent, var(--text));
-  background: color-mix(in srgb, var(--link-accent, #000) 9%, transparent);
-}
-.sidebar-group .sidebar-sublist a.active {
-  color: var(--link-accent, var(--accent));
-  font-weight: 700;
-  background: color-mix(in srgb, var(--link-accent, var(--accent)) 10%, transparent);
-}
-
+/* Nav-link + mobile-drawer icon wrapper (shared) */
 .sidebar-ico {
   display: flex;
   align-items: center;
-  color: #9a9a9a;
   flex-shrink: 0;
-  transition: color 0.15s ease;
+  transition: color 0.15s ease, opacity 0.15s ease;
 }
-.sidebar-group li a:hover .sidebar-ico,
-.sidebar-group li a.active .sidebar-ico { color: inherit; }
 
 .navbar-subscribe {
   background: var(--accent);

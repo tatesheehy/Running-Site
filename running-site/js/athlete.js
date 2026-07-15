@@ -170,7 +170,7 @@ function buildAthleteProfilePage() {
         <div class="ap-hero-inner">
           <div class="ap-hero-photo" style="background-image:url('${photo}');background-color:${a.photoBackground || '#1a1a2e'}"></div>
           <div class="ap-hero-info">
-            <div class="page-hero-eyebrow"><a href="athletes.html" class="country-back-link">&larr; All Athletes</a></div>
+            <div class="page-hero-eyebrow">${breadcrumbHtml([{ label: 'Home', href: 'index.html' }, { label: 'Athletes', href: 'athletes.html' }, { label: a.name }])}</div>
             <h1 class="page-hero-title">${a.name}</h1>
             <div class="ap-hero-meta">
               <a class="ap-hero-country" href="country.html?country=${encodeURIComponent(country)}">${renderFlag(flag)} ${country}</a>

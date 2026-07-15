@@ -63,6 +63,7 @@
   --font-body: 'Lota Grotesque', system-ui, -apple-system, sans-serif;
   --font-mono: 'Lota Grotesque', sans-serif;
   --max-width: 1440px;
+  --nav-h: 116px; /* two-row horizontal header: utility row + nav-links row */
   --radius-sm: 8px;
   --radius: 12px;
   --radius-lg: 16px;
@@ -103,7 +104,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   overflow-x: clip;
-  padding-top: 90px; /* clear the fixed navbar */
+  padding-top: var(--nav-h); /* clear the fixed navbar */
 }
 
 /* ── PER-PAGE ACCENT ──────────────────────────────────────────
@@ -151,6 +152,22 @@ body[data-page="country"]        { --accent: #DC2626; } /* flag red */
   color: rgba(255,255,255,0.75);
   margin-bottom: 5px;
 }
+/* Breadcrumb trail — lives inside the (accent-colored) hero eyebrow */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.breadcrumb-link {
+  color: rgba(255,255,255,0.75);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+.breadcrumb-link:hover { color: #fff; text-decoration: underline; }
+.breadcrumb-sep { color: rgba(255,255,255,0.4); }
+.breadcrumb-current { color: #fff; }
+
 /* Title + inline description share a baseline for a tighter, lighter header */
 .page-hero-title {
   font-family: var(--font-display);

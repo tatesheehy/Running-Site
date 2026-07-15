@@ -103,10 +103,30 @@
 
 .search-no-results {
   color: #555;
-  font-size: 16px;
-  padding: 24px 0;
-  font-style: italic;
+  padding: 20px 0 8px;
 }
+.search-no-results-title { font-size: 16px; font-style: italic; }
+.search-no-results-hint { font-size: 13px; color: #777; margin-top: 4px; font-style: normal; }
+
+/* ── Search discovery panel (empty / no-results state) ────── */
+.search-suggest { padding: 6px 0 2px; }
+.search-chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 2px 0 6px; }
+.search-chip {
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.search-chip:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+/* On the dark full-screen overlay, chips need light-on-dark treatment */
+.search-results-list .search-chip { background: transparent; border-color: #333; color: #ddd; }
+.search-results-list .search-chip:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
 
 .search-section + .search-section { margin-top: 8px; padding-top: 8px; border-top: 1px solid #1a1a1a; }
 

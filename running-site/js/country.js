@@ -221,7 +221,7 @@ function buildCountryDetail(country) {
         <header class="page-hero" style="background:${color}">
           <div class="page-hero-inner">
             <div>
-              <div class="page-hero-eyebrow"><a href="country.html" class="country-back-link">&larr; All Countries</a></div>
+              <div class="page-hero-eyebrow">${breadcrumbHtml([{ label: 'Home', href: 'index.html' }, { label: 'Countries', href: 'country.html' }, { label: country }])}</div>
               <h1 class="page-hero-title">${renderFlag(flag)} ${country}</h1>
               <p class="page-hero-sub">${athletes.length} athlete${athletes.length === 1 ? '' : 's'} tracked.</p>
             </div>

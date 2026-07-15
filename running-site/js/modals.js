@@ -1052,7 +1052,7 @@ window.openSearch = function() {
   const input = document.getElementById('search-input');
   if (input) { input.value = ''; input.focus(); }
   const list = document.getElementById('search-results-list');
-  if (list) list.innerHTML = '';
+  if (list) list.innerHTML = _buildSearchSuggestHtml();
 };
 
 window.closeSearch = function() {
@@ -1097,7 +1097,9 @@ window.handleSearchInput = function(query) {
 // Shared results HTML for both the (mobile) overlay and the inline navbar search
 function _buildSearchResultsHtml(query) {
   const q = (query || '').trim().toLowerCase();
-  if (!q) return '';
+  // Empty query → a discovery panel so users know what's searchable and where
+  // they can jump, rather than staring at a blank box.
+  if (!q) return _buildSearchSuggestHtml();
 
   // ── Athletes ──────────────────────────────────────────────
   const athleteResults = Object.values(ATHLETES || {}).filter(a =>
@@ -1124,7 +1126,10 @@ function _buildSearchResultsHtml(query) {
   ).slice(0, 3);
 
   if (!athleteResults.length && !articleResults.length && !eventResults.length) {
-    return `<div class="search-no-results">No results for "${query}"</div>`;
+    return `<div class="search-no-results">
+      <div class="search-no-results-title">No results for "${query}"</div>
+      <div class="search-no-results-hint">Try an athlete's name, an event like 1500m, or a country.</div>
+    </div>${_buildSearchSuggestHtml()}`;
   }
 
   const sections = [];
@@ -1167,4 +1172,26 @@ function _buildSearchResultsHtml(query) {
   }
 
   return sections.join('');
+}
+
+// Discovery panel shown when the search box is focused but empty (and beneath
+// a "no results" message). Tells the user what's searchable and offers quick
+// jumps to the main sections.
+function _buildSearchSuggestHtml() {
+  const jumps = [
+    { label: 'Athletes', href: 'athletes.html' },
+    { label: 'Rankings', href: 'rankings.html' },
+    { label: 'Articles', href: 'articles.html' },
+    { label: 'Countries', href: 'country.html' },
+    { label: 'Event Tracker', href: 'event-tracker.html' },
+    { label: 'Head-to-Head', href: 'h2h.html' },
+  ];
+  const chips = jumps.map(j =>
+    `<button class="search-chip" onclick="goTo('${j.href}');closeSearch();">${j.label}</button>`
+  ).join('');
+  return `
+    <div class="search-suggest">
+      <div class="search-section-hd">Search across athletes, articles, rankings &amp; countries</div>
+      <div class="search-chips">${chips}</div>
+    </div>`;
 }

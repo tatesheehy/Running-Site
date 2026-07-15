@@ -24,69 +24,61 @@ function _navIcon(name) {
 // ── NAVBAR ────────────────────────────────────────────────
 function buildNavbar() {
   const currentPage = document.body.dataset.page;
-  const pageMap = { home: 'index.html', articles: 'articles.html', rankings: 'rankings.html', article: 'articles.html', athletes: 'athletes.html', h2h: 'h2h.html', 'event-tracker': 'event-tracker.html', 'time-machine': 'time-machine.html', country: 'country.html', metrics: 'metrics.html' };
+  const pageMap = { home: 'index.html', articles: 'articles.html', rankings: 'rankings.html', article: 'articles.html', athletes: 'athletes.html', athlete: 'athletes.html', h2h: 'h2h.html', 'event-tracker': 'event-tracker.html', 'time-machine': 'time-machine.html', country: 'country.html', metrics: 'metrics.html' };
   const activeHref = pageMap[currentPage] || '';
 
   const _RANK_EVENTS = ['800m', '1500m', '5000m', '10000m'];
   const _subEvents = base => _RANK_EVENTS.map(ev => ({ label: ev, href: `${base}?event=${encodeURIComponent(ev)}` }));
   const _curEvent = (typeof URLSearchParams !== 'undefined') ? new URLSearchParams(location.search).get('event') : null;
 
-  // Sidebar link groups — rendered as separate floating cards (StatMuse-style)
-  const navGroups = [
-    [
-      { label: 'Home', href: 'index.html', icon: 'home', color: '#ff5200' },
-      { label: 'Articles', href: 'articles.html', icon: 'articles', color: '#0D9488' },
-      { label: 'Power Rankings', href: 'rankings.html', icon: 'rankings', color: '#2563EB', children: _subEvents('rankings.html') },
-      { label: 'H2H', href: 'h2h.html', icon: 'h2h', color: '#9333EA' },
-      { label: 'Event Tracker', href: 'event-tracker.html', icon: 'tracker', color: '#16A34A', children: _subEvents('event-tracker.html') },
-      { label: 'Athletes', href: 'athletes.html', icon: 'athletes', color: '#DB2777' },
-      { label: 'Countries', href: 'country.html', icon: 'countries', color: '#DC2626' },
-      { label: 'Time Machine', href: 'time-machine.html', icon: 'timemachine', color: '#4F46E5' },
-      { label: 'Advanced Metrics', href: 'metrics.html', icon: 'metrics', color: '#0EA5E9' },
-    ],
-    [
-      { label: 'Podcast', href: 'podcast.html', icon: 'podcast', color: '#0891B2' },
-      { label: 'About', href: 'about.html', icon: 'about', color: '#CA8A04' },
-    ],
+  // Horizontal nav links. `hint` powers the hover tooltip so unfamiliar tool
+  // names (H2H, Time Machine, Event Tracker) explain themselves on hover.
+  const navLinks = [
+    { label: 'Home', href: 'index.html', icon: 'home', color: '#ff5200', hint: 'Dashboard & the latest' },
+    { label: 'Articles', href: 'articles.html', icon: 'articles', color: '#0D9488', hint: 'News, features & opinion' },
+    { label: 'Rankings', href: 'rankings.html', icon: 'rankings', color: '#2563EB', hint: 'Our ranked lists by event', children: _subEvents('rankings.html') },
+    { label: 'H2H', href: 'h2h.html', icon: 'h2h', color: '#9333EA', hint: 'Compare two athletes head-to-head' },
+    { label: 'Event Tracker', href: 'event-tracker.html', icon: 'tracker', color: '#16A34A', hint: 'Season-best leaderboards by event', children: _subEvents('event-tracker.html') },
+    { label: 'Athletes', href: 'athletes.html', icon: 'athletes', color: '#DB2777', hint: 'Browse athlete profiles' },
+    { label: 'Countries', href: 'country.html', icon: 'countries', color: '#DC2626', hint: 'Rankings & athletes by nation' },
+    { label: 'Time Machine', href: 'time-machine.html', icon: 'timemachine', color: '#4F46E5', hint: 'Results & records from past seasons' },
+    { label: 'Metrics', href: 'metrics.html', icon: 'metrics', color: '#0EA5E9', hint: 'Deep-dive charts & athlete comparisons' },
+    { label: 'Podcast', href: 'podcast.html', icon: 'podcast', color: '#0891B2', hint: 'Episodes & audio' },
+    { label: 'About', href: 'about.html', icon: 'about', color: '#CA8A04', hint: 'What StatTC is & who makes it' },
   ];
-  const navLinks = navGroups.flat();
 
-  const _caretSvg = '<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-
-  const linkHtml = l => {
+  const navLinkHtml = l => {
     const active = l.href.includes(activeHref) && activeHref ? 'active' : '';
     const styleAttr = l.color ? ` style="--link-accent:${l.color}"` : '';
+    const titleAttr = l.hint ? ` title="${l.hint}"` : '';
     if (l.children && l.children.length) {
       const onSection = activeHref && l.href.split('?')[0] === activeHref;
       const subs = l.children.map(c => {
         const cActive = onSection && _curEvent && c.href.includes('event=' + encodeURIComponent(_curEvent)) ? ' active' : '';
-        return `<li><a href="${c.href}" class="sidebar-sublink${cActive}">${c.label}</a></li>`;
+        return `<li><a href="${c.href}" class="navlink-sublink${cActive}">${c.label}</a></li>`;
       }).join('');
-      return `<li class="sidebar-item--parent${onSection ? ' open' : ''}"${styleAttr}>
-        <div class="sidebar-parent-row">
-          <a href="${l.href}" class="${active}">${_navIcon(l.icon)}${l.label}</a>
-          <button class="sidebar-caret" onclick="toggleSidebarGroup(this)" aria-label="Toggle ${l.label} sub-pages">${_caretSvg}</button>
-        </div>
-        <ul class="sidebar-sublist">${subs}</ul>
+      return `<li class="navlink navlink--parent${active ? ' active' : ''}"${styleAttr}>
+        <a href="${l.href}" class="navlink-a"${titleAttr}><span>${l.label}</span>${_caretSvg}</a>
+        <ul class="navlink-sub">${subs}</ul>
       </li>`;
     }
-    return `<li><a href="${l.href}" class="${active}"${styleAttr}>${_navIcon(l.icon)}${l.label}</a></li>`;
+    return `<li class="navlink${active ? ' active' : ''}"${styleAttr}><a href="${l.href}" class="navlink-a"${titleAttr}><span>${l.label}</span></a></li>`;
   };
 
-  const sidebarGroupsHtml = navGroups.map(group =>
-    `<ul class="sidebar-group">${group.map(linkHtml).join('')}</ul>`
-  ).join('');
+  const _caretSvg = '<svg class="navlink-caret" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+  const navLinksHtml = navLinks.map(navLinkHtml).join('');
 
   return `
     <nav class="navbar" role="navigation" aria-label="Main navigation">
-      <div class="navbar-inner">
+      <div class="navbar-util">
         <a href="index.html" class="navbar-brand">
           <img src="/images/biblogo.png" alt="${SITE.name}" class="brand-logo"></a>
         <div class="navbar-search" id="nav-search">
           <svg class="navbar-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
           </svg>
-          <input class="navbar-search-input" type="text" placeholder="Search runners, stats or rankings…" autocomplete="off"
+          <input class="navbar-search-input" type="text" placeholder="Search athletes, articles, rankings…" autocomplete="off"
             oninput="navbarSearch(this.value)" onfocus="navbarSearch(this.value)" aria-label="Search">
           <div class="navbar-search-results" id="navbar-search-results"></div>
         </div>
@@ -126,10 +118,10 @@ function buildNavbar() {
           <span></span><span></span><span></span>
         </button>
       </div>
+      <div class="navbar-links" aria-label="Primary">
+        <ul class="navlinks">${navLinksHtml}</ul>
+      </div>
     </nav>
-    <aside class="app-sidebar" aria-label="Primary">
-      ${sidebarGroupsHtml}
-    </aside>
     <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
       <div class="mobile-drawer-top">
         <a href="index.html" class="navbar-brand">
@@ -179,10 +171,21 @@ function buildNavbar() {
   `;
 }
 
-// ── SIDEBAR SUB-PAGE DROPDOWNS ────────────────────────────
-window.toggleSidebarGroup = function(btn) {
-  const li = btn.closest('.sidebar-item--parent');
-  if (li) li.classList.toggle('open');
+// ── BREADCRUMB ────────────────────────────────────────────
+// trail: array of { label, href? }. The last item is the current page and is
+// rendered as plain text. Used in page-hero eyebrows on deep/detail pages so
+// visitors can see where they are and step back up the hierarchy.
+window.breadcrumbHtml = function(trail) {
+  if (!Array.isArray(trail) || !trail.length) return '';
+  const parts = trail.map((c, i) => {
+    const last = i === trail.length - 1;
+    const node = (!last && c.href)
+      ? `<a href="${c.href}" class="breadcrumb-link">${c.label}</a>`
+      : `<span class="breadcrumb-current">${c.label}</span>`;
+    const sep = last ? '' : '<span class="breadcrumb-sep">/</span>';
+    return node + sep;
+  }).join('');
+  return `<nav class="breadcrumb" aria-label="Breadcrumb">${parts}</nav>`;
 };
 
 // ── NOTIFICATIONS MENU ────────────────────────────────────

@@ -55,14 +55,17 @@
   .navbar-search-btn { max-width: none; }
 }
 
-/* ── NAV / SIDEBAR MODE SWITCH ────────────────────────────── */
-@media (max-width: 960px) {
-  .app-sidebar { display: none; }
-  #main, footer { margin-left: 0; margin-right: 0; }
+/* ── NAV MODE SWITCH (horizontal links row → hamburger drawer) ──
+   Collapse below 992px, the width at which all 11 links stop fitting
+   on one row. --nav-h drives body padding, navbar height, and every
+   sticky-header offset in one shot. */
+@media (max-width: 991px) {
+  :root { --nav-h: 64px; }
+  .navbar-links { display: none; }
   .mobile-overlay { display: block; pointer-events: none; }
   .mobile-overlay.open { pointer-events: auto; }
 }
-@media (min-width: 961px) { .hamburger { display: none; } }
+@media (min-width: 992px) { .hamburger { display: none; } }
 @media (max-width: 640px) {
   .nav-notif-wrap, .navbar-icon-btn { display: none; }
 }
