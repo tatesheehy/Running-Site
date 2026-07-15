@@ -1070,12 +1070,17 @@ window.closeSearch = function() {
   }
 };
 
-// Inline navbar search — types straight into the top bar, results drop down below it
+// Inline navbar search — types straight into the top bar, results drop down below it.
+// Prepends the natural-language "smart" answer (H2H, leaderboards, barriers,
+// country) when available, then the normal substring index.
 window.navbarSearch = function(query) {
   const wrap = document.getElementById('nav-search');
   const results = document.getElementById('navbar-search-results');
   if (!wrap || !results) return;
-  const html = _buildSearchResultsHtml(query);
+  const answer = typeof _smartSearchAnswer === 'function' ? _smartSearchAnswer(query) : '';
+  let base = _buildSearchResultsHtml(query);
+  if (answer && base.includes('search-no-results')) base = '';
+  const html = answer + base;
   results.innerHTML = html;
   wrap.classList.toggle('open', !!html);
 };

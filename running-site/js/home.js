@@ -259,7 +259,7 @@ function _homeRenderPairShowcase() {
   }
   const [showA, showB] = _homeShowcasePair();
   // Brand / accent tones distinguish athlete A / B across the homepage UI.
-  const _cA = 'var(--brand)', _cB = 'var(--accent)';
+  const _cA = 'var(--brand)', _cB = '#1A1A1A';
   const _shortA = showA ? showA.name.split(' ').slice(-1)[0] : '';
   const _shortB = showB ? showB.name.split(' ').slice(-1)[0] : '';
   const _pairQ = (showA && showB) ? `?a=${encodeURIComponent(showA.id)}&b=${encodeURIComponent(showB.id)}` : '';
@@ -275,7 +275,7 @@ function _homeRenderPairShowcase() {
           <span class="dash-hex-vs">vs</span>
           <span class="dash-hex-name" style="--c:${_cB}" onclick="openAthleteCard('${showB.id}', null)" role="button" tabindex="0"><span class="dash-hex-dot"></span>${showB.name}</span>
         </div>
-        <div class="dash-hex-svg">${_mxRadarSvg(showA.id, showB.id, '#FF5200', '#00B7FF')}</div>
+        <div class="dash-hex-svg">${_mxRadarSvg(showA.id, showB.id, '#FF5200', '#1A1A1A')}</div>
         <a href="metrics.html${_pairQ}" class="dash-link dash-card-foot">Open in Advanced Metrics →</a>
       </div>`;
   }
@@ -573,116 +573,381 @@ function buildHome() {
       <a href="h2h.html" class="dash-link dash-card-foot">Full H2H leaderboard →</a>
     </div>` : '';
 
-  // ── "Try the tools" showcase ──────────────────────────────
-  // Pick ONE good matchup and run every tool on it, so each card is a live,
-  // pre-filled example (not an empty widget). Shuffle re-picks the pair and
-  // re-renders just these cards (see _homeRenderPairShowcase below) — the
-  // rest of the page (search hero, activity, meets) never reloads.
-  const pair = _homeRenderPairShowcase();
-  const { showA, showB, hexExampleCard, prCompareCard, h2hExampleCard, sharedRacesCard, chipsHtml, pairLabel } = pair;
-
-  // ── Row 3: recent activity (trending performances) ───────
-  const trendItems = _buildTrendingPerformances(5);
-  const activityCard = `
-    <div class="dash-card dash-activity">
-      <div class="dash-card-title">Recent Activity</div>
-      ${trendItems.length
-        ? `<div class="fp-trending-list">${trendItems.map(trendRow).join('')}</div>`
-        : '<p class="dash-empty">No notable performances in the last 30 days.</p>'}
-    </div>`;
-
-  // ── Row 3: leaderboard (current rankings w/ event tabs) ──
-  const firstEvent = Object.keys(RANKINGS)[0] || '';
-  const TAB_LABELS = { '800m': '800m', '1500m': '1500m', '5000m': '5K', '10000m': '10K', 'Mile': 'Mile' };
-  const tabsHtml = Object.keys(RANKINGS).map((ev, i) =>
-    `<button class="fp-rank-tab ${i === 0 ? 'active' : ''}" data-event="${ev}">${TAB_LABELS[ev] || ev}</button>`
-  ).join('');
-  const leaderboardCard = `
-    <div class="dash-card dash-leaderboard">
-      <div class="dash-card-hd">
-        <span class="dash-card-title">Season Leaders</span>
-        <div class="fp-rank-tabs" id="fp-rank-tabs">${tabsHtml}</div>
+  // ── Sofascore-style homepage: hero header + 3-column layout ─
+  const evs = _sfEventList();
+  _sfEvent = evs.includes('1500m') ? '1500m' : evs[0];
+  _sfTab = 'leaders';
+  document.getElementById('main').innerHTML = `
+    <div class="fp-wrap">
+      <div class="sf">
+        ${_sfHero(_sfEvent)}
+        <div class="sf-grid">
+          <aside class="sf-side sf-side--l">
+            ${_sfFeaturedRivalry()}
+            ${_sfMeetsCard()}
+          </aside>
+          <main class="sf-center">
+            ${_sfCenterCard(_sfEvent)}
+          </main>
+          <aside class="sf-side sf-side--r">
+            ${_sfSpotlightCard()}
+            ${_sfLatestCard()}
+          </aside>
+        </div>
       </div>
-      <div id="fp-rank-rows">${_homeSeasonBestRows(firstEvent)}</div>
-      <a href="event-tracker.html?event=${encodeURIComponent(firstEvent)}" id="fp-rank-viewall" class="dash-link dash-card-foot">Go to Event Tracker →</a>
     </div>`;
+}
 
-  // ── Row 3: latest updates (articles) ─────────────────────
-  const updates = ARTICLES.slice(0, 4).map(a => {
+// ── Bold sports landing builders ────────────────────────────
+function _hpPickRivalry() {
+  try {
+    if (typeof _findTopRivalries === 'function') {
+      const pool = _findTopRivalries('2026', 'all', 'all', 40).filter(p => ATHLETES[p.id1] && ATHLETES[p.id2]);
+      if (pool.length) { const p = pool[Math.floor(Math.random() * pool.length)]; return [ATHLETES[p.id1], ATHLETES[p.id2]]; }
+    }
+  } catch (e) { /* fall through */ }
+  const all = Object.values(ATHLETES).filter(a => (a.prs || []).length);
+  if (all.length >= 2) {
+    const i = Math.floor(Math.random() * all.length);
+    let j = Math.floor(Math.random() * all.length); if (j === i) j = (j + 1) % all.length;
+    return [all[i], all[j]];
+  }
+  return [null, null];
+}
+
+function _hpFeatured(A, B, m) {
+  if (!A || !B) return '';
+  const short = n => n.split(' ').slice(-1)[0];
+  const wins = m ? m.wins : 0, losses = m ? m.losses : 0, races = m ? m.races.length : 0;
+  const leader = wins > losses ? short(A.name) : losses > wins ? short(B.name) : null;
+  const face = (a, side) => `
+    <div class="hp-riv-face hp-riv-face--${side}" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
+      <div class="hp-riv-photo" style="background-image:url('${a.photo || '/images/default_card.png'}');background-color:${a.photoBackground || '#1a1a2e'}"></div>
+      <div class="hp-riv-name">${a.name}</div>
+      <div class="hp-riv-ct">${renderFlag(a.flag)} ${a.country || ''}</div>
+    </div>`;
+  return `
+    <div class="hp-riv-tag"><span>Featured rivalry</span><button class="hp-riv-shuffle" onclick="shuffleHomeRivalry()" title="Shuffle" aria-label="Shuffle rivalry">↻</button></div>
+    <div class="hp-riv-body">
+      ${face(A, 'a')}
+      <span class="hp-riv-vs">VS</span>
+      ${face(B, 'b')}
+    </div>
+    <div class="hp-riv-score"><span class="hp-riv-w hp-riv-w--a${wins >= losses ? ' hp-riv-w--lead' : ''}">${wins}</span><em>–</em><span class="hp-riv-w hp-riv-w--b${losses >= wins ? ' hp-riv-w--lead' : ''}">${losses}</span></div>
+    <div class="hp-riv-meta">${races} career meeting${races === 1 ? '' : 's'}${leader ? ` · ${leader} leads` : races ? ' · all square' : ' · yet to meet'}</div>
+    <a class="hp-riv-cta" href="h2h.html?a=${encodeURIComponent(A.id)}&b=${encodeURIComponent(B.id)}">See the full head-to-head →</a>`;
+}
+
+function _hpHero(A, B, m) {
+  return `
+    <section class="hp-hero">
+      <div class="hp-hero-copy">
+        <span class="hp-eyebrow">Distance running, by the numbers</span>
+        <h1 class="hp-title">Every rivalry.<br>Every result.<br><span class="hp-title-accent">One place.</span></h1>
+        <p class="hp-sub">Head-to-heads, world rankings, and the deep stats behind every runner — from the 800m to the marathon.</p>
+        <div class="hp-cta-row">
+          <a class="hp-btn hp-btn--primary" href="rankings.html">Explore rankings</a>
+          <a class="hp-btn hp-btn--ghost" href="athletes.html">Browse athletes</a>
+        </div>
+      </div>
+      <div class="hp-hero-feature" id="hp-rivalry">${_hpFeatured(A, B, m)}</div>
+    </section>`;
+}
+
+function _hpTrendCard(c) {
+  const a = c.athlete, r = c.result;
+  const tag = c.isPB ? 'Personal Best' : c.isDominant ? 'Dominant Win' : 'Major Meet';
+  const cls = c.isPB ? 'pb' : c.isDominant ? 'dom' : 'maj';
+  return `
+    <div class="hp-trend" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
+      <span class="hp-trend-tag hp-trend-tag--${cls}">${tag}</span>
+      <div class="hp-trend-ath">${renderFlag(a.flag)}<span>${a.name}</span></div>
+      <div class="hp-trend-mark">${r.event.trim()} · <b>${r.time}</b>${r.place ? ` · ${r.place.replace(/\.$/, '')}` : ''}</div>
+      <div class="hp-trend-meet">${r.meet}${r.date ? ` · ${r.date}` : ''}</div>
+    </div>`;
+}
+
+function _hpTrendingSection(items) {
+  if (!items || !items.length) return '';
+  return `
+    <section class="hp-section">
+      <div class="hp-sec-hd">
+        <h2 class="hp-sec-title">Trending performances</h2>
+        <a class="hp-sec-link" href="event-tracker.html">See all →</a>
+      </div>
+      <div class="hp-trend-grid">${items.map(_hpTrendCard).join('')}</div>
+    </section>`;
+}
+
+const _HP_TOOLS = [
+  { t: 'Head-to-Head', d: 'Compare any two runners, race by race.', href: 'h2h.html', icon: '<path d="M8 3v18M16 3v18M3 8h5M16 8h5M3 16h5M16 16h5"/>' },
+  { t: 'World Rankings', d: 'Ranked lists for every event.', href: 'rankings.html', icon: '<path d="M3 3v18h18M8 17V10M13 17V6M18 17v-4"/>' },
+  { t: 'Event Tracker', d: 'Season-best leaderboards, live.', href: 'event-tracker.html', icon: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>' },
+  { t: 'Advanced Metrics', d: 'Strength hexagons & aerobic decay.', href: 'metrics.html', icon: '<polygon points="12 2 21 7 21 17 12 22 3 17 3 7"/>' },
+  { t: 'Athletes', d: "Browse every runner's profile.", href: 'athletes.html', icon: '<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>' },
+  { t: 'Countries', d: 'Rankings & athletes by nation.', href: 'country.html', icon: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/>' },
+];
+
+function _hpToolsSection() {
+  const tiles = _HP_TOOLS.map(x => `
+    <a class="hp-tool" href="${x.href}">
+      <span class="hp-tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${x.icon}</svg></span>
+      <span class="hp-tool-body">
+        <span class="hp-tool-t">${x.t}</span>
+        <span class="hp-tool-d">${x.d}</span>
+      </span>
+      <span class="hp-tool-arrow">→</span>
+    </a>`).join('');
+  return `
+    <section class="hp-section">
+      <div class="hp-sec-hd"><h2 class="hp-sec-title">Explore the tools</h2></div>
+      <div class="hp-tools-grid">${tiles}</div>
+    </section>`;
+}
+
+// Re-pick the featured rivalry in place (no reload).
+window.shuffleHomeRivalry = function () {
+  const [A, B] = _hpPickRivalry();
+  const m = (A && B && typeof _computePairMatchup === 'function') ? _computePairMatchup(A.id, B.id) : null;
+  const el = document.getElementById('hp-rivalry');
+  if (el) el.innerHTML = _hpFeatured(A, B, m);
+};
+
+// ══════════════════════════════════════════════════════════════
+//  Sofascore-style homepage builders (.sf)
+// ══════════════════════════════════════════════════════════════
+let _sfEvent = '1500m';
+let _sfTab = 'leaders';
+
+function _sfEventList() {
+  const ks = Object.keys(RANKINGS || {});
+  return ks.length ? ks : ['1500m', '800m', '5000m', '10000m', 'Mile'];
+}
+function _sfEvShort(ev) { return ({ '5000m': '5K', '10000m': '10K' })[ev] || ev; }
+function _sfAva(a) {
+  return `<div class="sf-ava" style="background-image:url('${a.photo || '/images/default_card.png'}');background-color:${a.photoBackground || '#111'}"></div>`;
+}
+
+// ── Hero header card ──
+function _sfHero(event) {
+  const leaders = (typeof _seasonBestRanking === 'function') ? _seasonBestRanking(event) : [];
+  const top = leaders[0];
+  const total = Object.keys(ATHLETES).length;
+  const holder = top ? `
+    <div class="sf-hero-holder" onclick="openAthleteCard('${top.id}',null)" role="button" tabindex="0">
+      <div class="sf-hero-holder-lbl">World #1 · ${event}</div>
+      <div class="sf-hero-holder-row">
+        <span class="sf-hero-trophy">🏆</span>
+        <div class="sf-hero-holder-id">
+          <span class="sf-hero-holder-name">${top.a.name}</span>
+          <span class="sf-hero-holder-time">${top.time}</span>
+        </div>
+      </div>
+    </div>` : '';
+  return `
+    <section class="sf-hero">
+      <div class="sf-hero-top">
+        <div class="sf-hero-main">
+          <div class="sf-hero-badge">🏃</div>
+          <div class="sf-hero-id">
+            <h1 class="sf-hero-title">Distance Running</h1>
+            <div class="sf-hero-sub"><b>${total.toLocaleString()}</b> athletes tracked&nbsp;·&nbsp;2026 season</div>
+          </div>
+        </div>
+        ${holder}
+      </div>
+      <div class="sf-hero-timeline">
+        <div class="sf-hero-track"><span class="sf-hero-fill"></span><span class="sf-hero-now"></span></div>
+        <div class="sf-hero-nodes"><span>Indoor</span><span>Outdoor</span><span class="sf-node-now">Now</span><span>Worlds</span><span>Finals</span></div>
+      </div>
+    </section>`;
+}
+
+// ── Left rail: featured rivalry (like Sofascore "Featured" match) ──
+function _sfFeaturedRivalry() {
+  const [A, B] = _hpPickRivalry();
+  if (!A || !B) return '';
+  const m = (typeof _computePairMatchup === 'function') ? _computePairMatchup(A.id, B.id) : null;
+  const short = n => n.split(' ').slice(-1)[0];
+  const w = m ? m.wins : 0, l = m ? m.losses : 0, races = m ? m.races.length : 0;
+  const leader = w > l ? short(A.name) : l > w ? short(B.name) : null;
+  return `
+    <div class="sf-card sf-featured" id="sf-featured">
+      <div class="sf-card-hd"><span>Featured rivalry</span><button class="sf-shuffle" onclick="sfShuffleRivalry()" title="Shuffle" aria-label="Shuffle">↻</button></div>
+      <div class="sf-feat-body">
+        <div class="sf-feat-side" onclick="openAthleteCard('${A.id}',null)" role="button" tabindex="0">
+          ${_sfAva(A)}<div class="sf-feat-name">${short(A.name)}</div><div class="sf-feat-ct">${renderFlag(A.flag)}</div>
+        </div>
+        <div class="sf-feat-mid">
+          <div class="sf-feat-score">${w}<em>-</em>${l}</div>
+          <div class="sf-feat-note">${leader ? `${leader} leads` : races ? 'all square' : 'yet to meet'}</div>
+        </div>
+        <div class="sf-feat-side sf-feat-side--r" onclick="openAthleteCard('${B.id}',null)" role="button" tabindex="0">
+          ${_sfAva(B)}<div class="sf-feat-name">${short(B.name)}</div><div class="sf-feat-ct">${renderFlag(B.flag)}</div>
+        </div>
+      </div>
+      <a class="sf-feat-cta" href="h2h.html?a=${encodeURIComponent(A.id)}&b=${encodeURIComponent(B.id)}">${races} career meeting${races === 1 ? '' : 's'} · Full H2H →</a>
+    </div>`;
+}
+window.sfShuffleRivalry = function () {
+  const el = document.getElementById('sf-featured');
+  if (el) el.outerHTML = _sfFeaturedRivalry();
+};
+
+// ── Left rail: upcoming meets (like Sofascore "Games") ──
+function _sfMeetsCard() {
+  const now = Date.now();
+  const meets = (SITE.upcomingMeets || [])
+    .filter(m => m.name && m.datetime && new Date(m.datetime) > now)
+    .sort((a, b) => new Date(a.datetime) - new Date(b.datetime))
+    .slice(0, 6);
+  const rows = meets.map(m => {
+    const d = new Date(m.datetime);
+    const days = Math.ceil((d - now) / 86400000);
+    const when = days <= 0 ? 'Today' : days === 1 ? 'Tomorrow' : `${days}d`;
+    const date = d.toLocaleString('en-US', { month: 'short', day: 'numeric' });
+    const inner = `<span class="sf-meet-date">${date}</span><span class="sf-meet-name">${m.name}</span><span class="sf-meet-when">${when}</span>`;
+    return m.url
+      ? `<a class="sf-meet-row" href="${m.url}" target="_blank" rel="noopener">${inner}</a>`
+      : `<div class="sf-meet-row">${inner}</div>`;
+  }).join('');
+  return `
+    <div class="sf-card">
+      <div class="sf-card-hd"><span>Upcoming meets</span></div>
+      ${rows ? `<div class="sf-meet-list">${rows}</div>` : '<p class="sf-empty">No meets scheduled.</p>'}
+    </div>`;
+}
+
+// ── Center: main tabbed card (like Sofascore Standings/Stats) ──
+function _sfH2HLeaders(event) {
+  if (typeof _computeAllH2HRecords !== 'function') return [];
+  const min = typeof _H2H_MIN_RACES !== 'undefined' ? _H2H_MIN_RACES : 3;
+  const { records } = _computeAllH2HRecords('2026', event, 'all', 'all');
+  return Object.entries(records)
+    .filter(([, r]) => r.wins + r.losses >= min)
+    .sort((a, b) => (typeof _wilsonScore === 'function'
+      ? _wilsonScore(b[1].wins, b[1].wins + b[1].losses) - _wilsonScore(a[1].wins, a[1].wins + a[1].losses)
+      : 0) || b[1].wins - a[1].wins)
+    .slice(0, 8)
+    .map(([id, r]) => ({ id, a: ATHLETES[id], wins: r.wins, losses: r.losses }))
+    .filter(x => x.a);
+}
+
+function _sfLeaderRow(r, rank) {
+  return `
+    <div class="sf-row" onclick="openAthleteCard('${r.id}',null)" role="button" tabindex="0">
+      <span class="sf-rank-n${rank === 1 ? ' sf-rank-n--1' : ''}">${rank}</span>
+      ${_sfAva(r.a)}
+      <div class="sf-row-id"><span class="sf-row-name">${r.a.name}</span><span class="sf-row-sub">${renderFlag(r.a.flag)} ${r.a.country || ''}</span></div>
+      <span class="sf-chip">${r.time}</span>
+    </div>`;
+}
+function _sfH2HRow(r, rank) {
+  return `
+    <div class="sf-row" onclick="openAthleteCard('${r.id}',null)" role="button" tabindex="0">
+      <span class="sf-rank-n${rank === 1 ? ' sf-rank-n--1' : ''}">${rank}</span>
+      ${_sfAva(r.a)}
+      <div class="sf-row-id"><span class="sf-row-name">${r.a.name}</span><span class="sf-row-sub">${renderFlag(r.a.flag)} ${r.a.country || ''}</span></div>
+      <span class="sf-chip sf-chip--rec">${r.wins}<em>–</em>${r.losses}</span>
+    </div>`;
+}
+function _sfTrendRow(c, rank) {
+  const a = c.athlete, r = c.result;
+  const tag = c.isPB ? 'PB' : c.isDominant ? 'WIN' : 'MAJOR';
+  return `
+    <div class="sf-row" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
+      <span class="sf-rank-n${rank === 1 ? ' sf-rank-n--1' : ''}">${rank}</span>
+      ${_sfAva(a)}
+      <div class="sf-row-id"><span class="sf-row-name">${a.name}</span><span class="sf-row-sub">${r.event.trim()} · ${r.meet}</span></div>
+      <span class="sf-chip">${r.time}</span>
+    </div>`;
+}
+
+function _sfBody(tab, event) {
+  if (tab === 'trending') {
+    const items = _buildTrendingPerformances(10);
+    return `<div class="sf-rank sf-rank--pad">${items.length ? items.map((c, i) => _sfTrendRow(c, i + 1)).join('') : '<p class="sf-empty">Nothing notable in the last 30 days.</p>'}</div>`;
+  }
+  if (tab === 'h2h') {
+    const list = _sfH2HLeaders(event);
+    return `<div class="sf-rank sf-rank--pad">${list.length ? list.map((r, i) => _sfH2HRow(r, i + 1)).join('') : '<p class="sf-empty">No head-to-head records yet.</p>'}</div>`;
+  }
+  const sb = (typeof _seasonBestRanking === 'function' ? _seasonBestRanking(event) : []).slice(0, 8);
+  const h2h = _sfH2HLeaders(event).slice(0, 8);
+  return `
+    <div class="sf-cols">
+      <div class="sf-col">
+        <div class="sf-col-hd">Season best</div>
+        <div class="sf-rank">${sb.length ? sb.map((r, i) => _sfLeaderRow(r, i + 1)).join('') : '<p class="sf-empty">No marks yet.</p>'}</div>
+      </div>
+      <div class="sf-col">
+        <div class="sf-col-hd">Head-to-head record</div>
+        <div class="sf-rank">${h2h.length ? h2h.map((r, i) => _sfH2HRow(r, i + 1)).join('') : '<p class="sf-empty">No records yet.</p>'}</div>
+      </div>
+    </div>`;
+}
+
+function _sfCenterCard(event) {
+  const pills = _sfEventList().map(ev =>
+    `<button class="sf-pill${ev === event ? ' active' : ''}" data-ev="${ev}" onclick="sfSetEvent('${ev}')">${_sfEvShort(ev)}</button>`).join('');
+  const tab = (t, label) => `<button class="sf-tab${t === _sfTab ? ' active' : ''}" data-tab="${t}" onclick="sfSetTab('${t}')">${label}</button>`;
+  return `
+    <div class="sf-card sf-main">
+      <div class="sf-tabs" id="sf-tabs">
+        ${tab('leaders', 'Season Leaders')}
+        ${tab('trending', 'Trending')}
+        ${tab('h2h', 'H2H Leaders')}
+      </div>
+      <div class="sf-pillrow" id="sf-pillrow"${_sfTab === 'trending' ? ' style="display:none"' : ''}>${pills}</div>
+      <div class="sf-main-body" id="sf-main-body">${_sfBody(_sfTab, event)}</div>
+    </div>`;
+}
+window.sfSetEvent = function (ev) {
+  _sfEvent = ev;
+  document.querySelectorAll('#sf-pillrow .sf-pill').forEach(p => p.classList.toggle('active', p.dataset.ev === ev));
+  const body = document.getElementById('sf-main-body');
+  if (body) body.innerHTML = _sfBody(_sfTab, ev);
+};
+window.sfSetTab = function (t) {
+  _sfTab = t;
+  document.querySelectorAll('#sf-tabs .sf-tab').forEach(x => x.classList.toggle('active', x.dataset.tab === t));
+  const pr = document.getElementById('sf-pillrow');
+  if (pr) pr.style.display = t === 'trending' ? 'none' : 'flex';
+  const body = document.getElementById('sf-main-body');
+  if (body) body.innerHTML = _sfBody(t, _sfEvent);
+};
+
+// ── Right rail: dark spotlight + latest news ──
+function _sfSpotlightCard() {
+  const top = _buildTrendingPerformances(1)[0];
+  if (!top) return '';
+  const a = top.athlete, r = top.result;
+  const tag = top.isPB ? 'Personal Best' : top.isDominant ? 'Dominant Win' : 'Major Meet';
+  return `
+    <div class="sf-card sf-spot" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
+      <div class="sf-spot-foot">Performance of the week</div>
+      <div class="sf-spot-tag">${tag}</div>
+      <div class="sf-spot-time">${r.time}</div>
+      <div class="sf-spot-name">${renderFlag(a.flag)} ${a.name}</div>
+      <div class="sf-spot-meta">${r.event.trim()} · ${r.meet}${r.date ? ` · ${r.date}` : ''}</div>
+    </div>`;
+}
+function _sfLatestCard() {
+  const arts = (ARTICLES || []).slice(0, 5);
+  const rows = arts.map(a => {
     const dest = a.type === 'rankings'
       ? `rankings.html${a.rankingsEvent ? '?event=' + encodeURIComponent(a.rankingsEvent) : ''}`
       : `article.html?id=${a.id}`;
-    return `<div class="dash-update-row" onclick="goTo('${dest}')" role="button" tabindex="0">
-      <div class="dash-update-main">
-        <span class="dash-update-tag">${a.category || 'Article'}</span>
-        <span class="dash-update-hed">${a.title}</span>
-      </div>
-      ${a.date ? `<span class="dash-update-date">${a.date}</span>` : ''}
+    return `<div class="sf-news-row" onclick="goTo('${dest}')" role="button" tabindex="0">
+      <span class="sf-news-cat">${a.category || 'News'}</span>
+      <span class="sf-news-hed">${a.title}</span>
     </div>`;
   }).join('');
-  const updatesCard = `
-    <div class="dash-card dash-updates">
-      <div class="dash-card-title">Latest Updates</div>
-      <div class="dash-update-list">${updates || '<p class="dash-empty">No updates yet.</p>'}</div>
-      <a href="articles.html" class="dash-link dash-card-foot">All articles →</a>
+  return `
+    <div class="sf-card">
+      <div class="sf-card-hd"><span>Latest</span><a href="articles.html" class="sf-card-link">All →</a></div>
+      <div class="sf-news-list">${rows || '<p class="sf-empty">No news yet.</p>'}</div>
     </div>`;
-
-  // ── Search-first hero ─────────────────────────────────────
-  // The one thing every visitor understands: a big search box wired to the
-  // shared site index (_buildSearchResultsHtml, from modals.js on every page),
-  // with a few example chips seeded from the featured pair.
-  const searchHero = `
-    <section class="home-search-hero">
-      <div class="hsh-band">
-        <p class="hsh-tag">Every athlete, every rivalry, every stat.</p>
-        <div class="hsh-search" id="home-search">
-          <svg class="hsh-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          <input class="hsh-input" type="text" autocomplete="off" spellcheck="false"
-            placeholder="Search any athlete, event, or story…"
-            oninput="homeSearch(this.value)" onfocus="homeSearch(this.value)">
-          <kbd class="hsh-kbd" aria-hidden="true">/</kbd>
-          <div class="hsh-results" id="home-search-results"></div>
-        </div>
-        <div class="hsh-chips" id="home-chips">${_homeChipsInner(chipsHtml)}</div>
-      </div>
-    </section>`;
-
-  document.getElementById('main').innerHTML = `
-    <div class="fp-wrap">
-      <div class="fp-body">
-        ${searchHero}
-        <div class="home-tools">
-          <div class="home-tools-hd">
-            <span class="ht-kicker">Explore the tools</span>
-            <p class="ht-sub" id="home-pair-label">${_homePairSubInner(pairLabel)}</p>
-          </div>
-          <div class="home-split">
-            <div class="home-main">
-              <div id="home-card-h2h">${h2hExampleCard}</div>
-              <div id="home-card-pr">${prCompareCard}</div>
-              ${activityCard}
-            </div>
-            <aside class="home-rail">
-              <div id="home-card-hex">${hexExampleCard}</div>
-              <div id="home-card-shared">${sharedRacesCard}</div>
-              ${meetsCard}
-            </aside>
-          </div>
-        </div>
-      </div>
-    </div>`;
-
-  qsa('.fp-rank-tab').forEach(btn => {
-    btn.addEventListener('click', () => {
-      qsa('.fp-rank-tab').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      qs('#fp-rank-rows').innerHTML = _homeSeasonBestRows(btn.dataset.event);
-      const viewAll = qs('#fp-rank-viewall');
-      if (viewAll) viewAll.href = `event-tracker.html?event=${encodeURIComponent(btn.dataset.event)}`;
-    });
-  });
-
-  _homeWireChartTooltips();
 }
 
 // ── Homepage inline live search ─────────────────────────────
@@ -831,7 +1096,7 @@ function _smartSearchAnswer(raw) {
               <span class="ss-h2h-wins${m.wins >= m.losses ? ' ss-h2h-wins--lead' : ''}">${m.wins}</span>
             </div>
             <div class="ss-h2h-row">
-              <span class="ss-h2h-dot" style="background:var(--accent)"></span>
+              <span class="ss-h2h-dot" style="background:#1A1A1A"></span>
               <span class="ss-h2h-name">${a2.name}</span>
               <span class="ss-h2h-wins${m.losses >= m.wins ? ' ss-h2h-wins--lead' : ''}">${m.losses}</span>
             </div>
@@ -913,13 +1178,13 @@ if (!window._homeSearchOutsideClick) {
     const wrap = document.getElementById('home-search');
     if (wrap && !wrap.contains(e.target)) wrap.classList.remove('open');
   });
-  // "/" focuses the hero search (classic app shortcut); Esc blurs/clears it.
+  // "/" focuses the search (hero box if present, else the navbar search); Esc clears.
   document.addEventListener('keydown', e => {
-    const inp = document.querySelector('#home-search .hsh-input');
+    const inp = document.querySelector('#home-search .hsh-input') || document.querySelector('.navbar-search-input');
     if (!inp) return;
     const typingElsewhere = /^(INPUT|TEXTAREA|SELECT)$/.test((e.target.tagName || '')) || e.target.isContentEditable;
     if (e.key === '/' && !typingElsewhere) { e.preventDefault(); inp.focus(); }
-    else if (e.key === 'Escape' && document.activeElement === inp) { inp.value = ''; window.homeSearch(''); inp.blur(); }
+    else if (e.key === 'Escape' && document.activeElement === inp) { inp.value = ''; inp.blur(); }
   });
 }
 

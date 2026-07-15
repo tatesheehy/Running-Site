@@ -3,9 +3,9 @@
    Imports all partial CSS files in dependency order.
    ============================================================ */
 
-@import "base.css?v=39";
+@import "base.css?v=40";
 @import "navbar.css?v=51";
-@import "home.css?v=96";
+@import "home.css?v=100";
 @import "articles.css?v=9";
 @import "rankings.css?v=98";
 @import "athletes.css?v=29";
@@ -26,5 +26,5 @@
 :root {
   --font-mono: 'Lota Grotesque', sans-serif;
   --brand: #FF5200;
-  --accent: #00B7FF;
+  --accent: #FF5200;
 }

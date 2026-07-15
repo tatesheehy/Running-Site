@@ -56,7 +56,7 @@
      (buttons, links, selected states — "what can I do") used uniformly
      site-wide instead of alternating per page. */
   --brand: #FF5200;
-  --accent: #00B7FF;
+  --accent: #FF5200; /* unified: orange is the single primary/action color (no blue) */
   --dark: #111111;
   --dark-2: #1C1C1C;
   --text: #1A1A1A;
