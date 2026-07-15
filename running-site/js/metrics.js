@@ -29,10 +29,12 @@ const _mxNorm = s => (s || '').toLowerCase().replace(/[\s,]+/g, '');
 const _mxEsc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 const _MX_PALETTE = ['#2563EB', '#DB2777', '#16A34A', '#CA8A04', '#9333EA', '#EA580C'];
 
-let _mxEvent = '5000m';        // drives Age vs Performance + Progression
+let _mxAgeEvent = '5000m';     // event for the Age vs Performance chart
+let _mxProgEvent = '5000m';    // event for the Season Progression chart
 let _mxHighlight = [];         // athlete ids highlighted on the decay chart
 let _mxMode = 'pace';          // 'pace' (absolute) | 'rel' (relative to own best)
-let _mxProgN = 10;             // season progression: average of the top N times
+let _mxProgN = 25;             // season progression: average of the top N times
+const _MX_PROGN_OPTS = [10, 25, 50, 100];
 
 // ── time helpers ──────────────────────────────────────────
 function _mxSec(t) {
@@ -74,7 +76,7 @@ function _mxSeasonBest(a, evKey) {
 }
 
 // ── generic SVG chart scaffold ────────────────────────────
-const _MX_W = 760, _MX_H = 380, _MX_PAD = { t: 24, r: 24, b: 44, l: 62 };
+const _MX_W = 760, _MX_H = 400, _MX_PAD = { t: 34, r: 30, b: 50, l: 60 };
 function _mxX(v, dMin, dMax) {
   return _MX_PAD.l + (v - dMin) / (dMax - dMin || 1) * (_MX_W - _MX_PAD.l - _MX_PAD.r);
 }
@@ -114,7 +116,7 @@ function _mxDecaySvg() {
   });
 
   // Dedicated, larger geometry for this headline chart.
-  const W = 900, H = 520, PAD = { t: 30, r: 34, b: 52, l: 78 };
+  const W = 900, H = 520, PAD = { t: 38, r: 34, b: 52, l: 64 };
   const xMin = Math.log(MX_DECAY_DIST[0].m), xMax = Math.log(MX_DECAY_DIST[MX_DECAY_DIST.length - 1].m);
   let vMin = Infinity, vMax = -Infinity;
   all.forEach(o => o.pts.forEach(p => { vMin = Math.min(vMin, p.val); vMax = Math.max(vMax, p.val); }));
@@ -171,7 +173,7 @@ function _mxDecaySvg() {
   }).join('');
 
   return `<svg viewBox="0 0 ${W} ${H}" class="mx-svg mx-svg--decay" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Aerobic decay chart">
-    <text class="mx-axtitle" x="18" y="${H / 2}" transform="rotate(-90 18 ${H / 2})" text-anchor="middle">${rel ? 'Slowdown vs. own best pace' : 'Pace (per km)'}</text>
+    <text class="mx-axcap" x="8" y="18">${rel ? '% slower than own best' : 'Pace per km'}</text>
     ${vlines}
     ${gridY.join('')}
     ${gridX}
@@ -265,7 +267,7 @@ function _mxAgeScatterSvg(evKey) {
   ).join('');
 
   return `<svg viewBox="0 0 ${_MX_W} ${_MX_H}" class="mx-svg" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Age versus performance">
-    <text class="mx-axtitle" x="16" y="${_MX_H / 2}" transform="rotate(-90 16 ${_MX_H / 2})" text-anchor="middle">Best time</text>
+    <text class="mx-axcap" x="8" y="16">Best time</text>
     <text class="mx-axtitle" x="${_MX_W / 2}" y="${_MX_H - 6}" text-anchor="middle">Age</text>
     ${gridY.join('')}${gridX.join('')}${dots}
   </svg>`;
@@ -323,7 +325,7 @@ function _mxProgressionSvg(evKey) {
   }).join('');
 
   return `<svg viewBox="0 0 ${_MX_W} ${_MX_H}" class="mx-svg" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Season progression">
-    <text class="mx-axtitle" x="16" y="${_MX_H / 2}" transform="rotate(-90 16 ${_MX_H / 2})" text-anchor="middle">Top-${N} avg time</text>
+    <text class="mx-axcap" x="8" y="16">Top-${N} average time</text>
     ${gridY.join('')}${gridX}
     <path class="mx-line" d="${path}"/>${dots}
   </svg>`;
@@ -332,7 +334,7 @@ function _mxProgressionSvg(evKey) {
 window.mxSetProgN = function (n) {
   _mxProgN = n;
   document.querySelectorAll('.mx-progn-btn').forEach(b => b.classList.toggle('active', +b.dataset.n === n));
-  const el = document.getElementById('mx-prog-chart'); if (el) el.innerHTML = _mxProgressionSvg(_mxEvent);
+  const el = document.getElementById('mx-prog-chart'); if (el) el.innerHTML = _mxProgressionSvg(_mxProgEvent);
 };
 
 window.mxSetMode = function (mode) {
@@ -341,18 +343,25 @@ window.mxSetMode = function (mode) {
   const chart = document.getElementById('mx-decay-chart'); if (chart) chart.innerHTML = _mxDecaySvg();
 };
 
-// ── page + event selector ─────────────────────────────────
-window.mxSetEvent = function (ev) {
-  _mxEvent = ev;
-  const ageEl = document.getElementById('mx-age-chart'); if (ageEl) ageEl.innerHTML = _mxAgeScatterSvg(_mxEvent);
-  const progEl = document.getElementById('mx-prog-chart'); if (progEl) progEl.innerHTML = _mxProgressionSvg(_mxEvent);
-  document.querySelectorAll('.mx-event-label').forEach(el => { el.textContent = _mxEvent; });
+// ── per-chart event selectors ─────────────────────────────
+window.mxSetAgeEvent = function (ev) {
+  _mxAgeEvent = ev;
+  const el = document.getElementById('mx-age-chart'); if (el) el.innerHTML = _mxAgeScatterSvg(ev);
+  const lbl = document.getElementById('mx-age-label'); if (lbl) lbl.textContent = ev;
+};
+window.mxSetProgEvent = function (ev) {
+  _mxProgEvent = ev;
+  const el = document.getElementById('mx-prog-chart'); if (el) el.innerHTML = _mxProgressionSvg(ev);
+  const lbl = document.getElementById('mx-prog-label'); if (lbl) lbl.textContent = ev;
 };
 
 function buildMetricsPage() {
   const main = qs('#main');
   if (!main) return;
-  _mxEvent = '5000m';
+  _mxAgeEvent = '5000m';
+  _mxProgEvent = '5000m';
+  _mxProgN = 25;
+  _mxMode = 'pace';
   _mxHighlight = [];
   // Seed the decay chart with a few strong multi-distance athletes
   Object.values(ATHLETES)
@@ -362,9 +371,19 @@ function buildMetricsPage() {
     .slice(0, 3)
     .forEach(o => _mxHighlight.push(o.a.id));
 
-  const eventDropdown = (typeof styledDropdown === 'function')
-    ? styledDropdown({ value: _mxEvent, onChange: 'mxSetEvent', minWidth: '130px', options: MX_EVENTS.map(e => ({ value: e.key, label: e.label })) })
-    : '';
+  const eventOpts = MX_EVENTS.map(e => ({ value: e.key, label: e.label }));
+  const ageDropdown = (typeof styledDropdown === 'function')
+    ? styledDropdown({ value: _mxAgeEvent, onChange: 'mxSetAgeEvent', minWidth: '130px', options: eventOpts }) : '';
+  const progDropdown = (typeof styledDropdown === 'function')
+    ? styledDropdown({ value: _mxProgEvent, onChange: 'mxSetProgEvent', minWidth: '130px', options: eventOpts }) : '';
+  const prognBtns = _MX_PROGN_OPTS.map(n =>
+    `<button class="mx-progn-btn mx-mode-btn${n === _mxProgN ? ' active' : ''}" data-n="${n}" onclick="mxSetProgN(${n})">Top ${n}</button>`).join('');
+
+  const how = (title, body) => `
+    <details class="mx-how">
+      <summary><svg class="mx-how-ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2.5-3 4"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>How does this tool work?</summary>
+      <div class="mx-how-body">${body}</div>
+    </details>`;
 
   main.innerHTML = `
     <div class="container mx-page">
@@ -373,7 +392,7 @@ function buildMetricsPage() {
           <div>
             <div class="page-hero-eyebrow">Deep Dive</div>
             <h1 class="page-hero-title">Advanced Metrics</h1>
-            <p class="page-hero-sub">Aerobic decay across distances, the age curve of the event, and how the sport's leading times have progressed.</p>
+            <p class="page-hero-sub">Three ways to look past the leaderboard: how runners fade as races get longer, when athletes tend to peak, and how the depth of each event has shifted season to season.</p>
           </div>
         </div>
       </header>
@@ -386,33 +405,32 @@ function buildMetricsPage() {
             <button class="mx-mode-btn" data-mode="rel" onclick="mxSetMode('rel')">Relative to best</button>
           </div>
         </div>
-        <p class="mx-note mx-note--sub">${'Pace vs distance across the field. Add athletes to compare their decay curves — flatter = better endurance retention.'}</p>
         <div id="mx-decay-chart" class="mx-chart">${_mxDecaySvg()}</div>
         <div id="mx-decay-controls">${_mxDecayControls()}</div>
+        ${how('decay', 'We take each athlete\'s personal best at every distance and convert it into pace per kilometre. Longer races are run slower, so the line naturally climbs from left to right. Distance is drawn on a log scale so the events sit at even spacing. In "Relative to best" mode each curve is divided by that athlete\'s own fastest pace, so everyone starts at plus 0 percent. That removes raw speed from the picture and lets you compare the shape of the decline, a 1500m specialist and a 10,000m specialist side by side.')}
       </section>
 
       <section class="et-section">
         <div class="et-section-header">
-          <h2 class="et-section-title">Age vs Performance &middot; <span class="mx-event-label">${_mxEvent}</span></h2>
-          ${eventDropdown}
+          <h2 class="et-section-title">Age vs Performance &middot; <span id="mx-age-label" class="mx-event-label">${_mxAgeEvent}</span></h2>
+          ${ageDropdown}
         </div>
-        <div id="mx-age-chart" class="mx-chart">${_mxAgeScatterSvg(_mxEvent)}</div>
-        <p class="mx-note">Each dot is an athlete's best mark plotted against their age. Click a dot to open the profile.</p>
+        <div id="mx-age-chart" class="mx-chart">${_mxAgeScatterSvg(_mxAgeEvent)}</div>
+        ${how('age', 'For every athlete we pull their season best in the selected event, or their lifetime best if they have not raced it this year, along with their current age. Each point is one athlete. Faster times sit higher on the chart, so the lowest cluster of dots marks the age band where runners tend to be at their best for that distance.')}
       </section>
 
       <section class="et-section">
         <div class="et-section-header">
-          <h2 class="et-section-title">Season Progression &middot; <span class="mx-event-label">${_mxEvent}</span></h2>
-          <div class="mx-mode-toggle">
-            <button class="mx-progn-btn mx-mode-btn" data-n="5" onclick="mxSetProgN(5)">Top 5</button>
-            <button class="mx-progn-btn mx-mode-btn active" data-n="10" onclick="mxSetProgN(10)">Top 10</button>
-            <button class="mx-progn-btn mx-mode-btn" data-n="25" onclick="mxSetProgN(25)">Top 25</button>
-          </div>
+          <h2 class="et-section-title">Season Progression &middot; <span id="mx-prog-label" class="mx-event-label">${_mxProgEvent}</span></h2>
+          ${progDropdown}
         </div>
-        <div id="mx-prog-chart" class="mx-chart">${_mxProgressionSvg(_mxEvent)}</div>
-        <p class="mx-note">The average of each season's fastest marks — a measure of the event's depth over time.</p>
+        <div class="mx-progn-row">
+          <span class="mx-progn-lbl">Sample size</span>
+          <div class="mx-mode-toggle">${prognBtns}</div>
+        </div>
+        <div id="mx-prog-chart" class="mx-chart">${_mxProgressionSvg(_mxProgEvent)}</div>
+        ${how('prog', 'For each season we find every athlete\'s best time in the event, sort them fastest to slowest, keep the fastest N, and average those. A small sample follows the very front of the field, while a larger one reaches into its depth. A line that keeps dropping means the event is getting deeper, more athletes running fast, while a flat or rising line means the depth has held steady or thinned out.')}
       </section>
-      <div id="mx-tooltip" class="mx-tooltip"></div>
     </div>`;
 
   // Close the decay search dropdown on outside click
@@ -423,6 +441,17 @@ function buildMetricsPage() {
         document.querySelectorAll('.mx-search-results.open').forEach(b => b.classList.remove('open'));
       }
     });
+  }
+
+  // Tooltip lives on <body>, not inside #main — #main keeps a transform from
+  // its fade-in animation, which would otherwise make position:fixed resolve
+  // against #main (offset by the sidebar) instead of the viewport.
+  let tip = document.getElementById('mx-tooltip');
+  if (!tip) {
+    tip = document.createElement('div');
+    tip.id = 'mx-tooltip';
+    tip.className = 'mx-tooltip';
+    document.body.appendChild(tip);
   }
 
   // Hover tooltips for chart dots (delegated so it survives chart re-renders)
