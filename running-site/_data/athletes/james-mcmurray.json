@@ -1,0 +1,612 @@
+{
+  "photoBackground": null,
+  "reviewTitle": null,
+  "waUrl": "https://worldathletics.org/athletes/great-britain-ni/james-mcmurray-14470231",
+  "height": null,
+  "questionBody": null,
+  "headlineRest": null,
+  "name": "James McMurray",
+  "headlineKey": null,
+  "flag": "GB",
+  "honours": [
+    {
+      "competition": "European Cross Country Championships",
+      "short": "ECC",
+      "discipline": "Cross Country Relay",
+      "place": 1,
+      "year": "2019"
+    }
+  ],
+  "seasons": null,
+  "lastSynced": "2026-07-15",
+  "prs": [
+    {
+      "event": "400m",
+      "time": "50.17"
+    },
+    {
+      "event": "400m",
+      "time": "49.9h"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:19.05"
+    },
+    {
+      "event": "600 Metres Short Track",
+      "time": "1:19.05"
+    },
+    {
+      "event": "800m",
+      "time": "1:46.96"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:49.42"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.90"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:36.17"
+    },
+    {
+      "event": "Mile",
+      "time": "3:57.60"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:57.60"
+    },
+    {
+      "event": "3000m",
+      "time": "7:53.48"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:53.97"
+    },
+    {
+      "event": "5000m",
+      "time": "13:43.35"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "14:22"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "29:37"
+    }
+  ],
+  "hometown": null,
+  "questionTitle": null,
+  "photo": null,
+  "ncaa": null,
+  "club": null,
+  "country": "Great Britain & N.I.",
+  "results": [
+    {
+      "date": "JUL 11",
+      "meet": "British Milers Club Grand Prix",
+      "event": "3000 m",
+      "time": "7:53.48",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 20",
+      "meet": "Novuna UK Athletics Championships",
+      "event": "1500 m",
+      "time": "3:46.62",
+      "place": "8.",
+      "round": "H2"
+    },
+    {
+      "date": "JUN 13",
+      "meet": "British Milers Club Grand Prix",
+      "event": "800 m",
+      "time": "1:47.78",
+      "place": "6.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 30",
+      "meet": "10. PUMA NITRO Lange Laufnacht",
+      "event": "1500 m",
+      "time": "3:36.52",
+      "place": "8.",
+      "round": "F12"
+    },
+    {
+      "date": "MAY 24",
+      "meet": "IFAM Outdoor",
+      "event": "1500 m",
+      "time": "3:34.90",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:42.51",
+      "place": "7.",
+      "round": "H1"
+    },
+    {
+      "date": "MAR 1",
+      "meet": "4J Studios scottishathletics National Indoor Combined Events Championships",
+      "event": "1500 m sh",
+      "time": "3:36.17",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 15",
+      "meet": "Novuna UK Athletics Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:38.36",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Meeting Indoor de Lyon",
+      "event": "1500 m sh",
+      "time": "3:38.53",
+      "place": "5.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 18",
+      "meet": "BMC Sheffield Indoor Grand Prix",
+      "event": "3000 m sh",
+      "time": "7:53.97",
+      "place": "1.",
+      "round": "F1"
+    }
+  ],
+  "dob": "18 JAN 1995",
+  "weight": null,
+  "lastHistorySynced": "2026-07-14",
+  "coach": null,
+  "reviewBody": null,
+  "event": "1500m",
+  "id": "james-mcmurray",
+  "resultsHistory": {
+    "2021": [
+      {
+        "date": "23 JUN 2021",
+        "meet": "BMC Gold Standard Races, Loughborough University Track, Loughborough",
+        "event": "800m",
+        "time": "1:49.46",
+        "place": "1."
+      },
+      {
+        "date": "07 JUL 2021",
+        "meet": "BMC Regional Races, Linford Christie Stadium, London",
+        "event": "800m",
+        "time": "1:49.68",
+        "place": "1."
+      },
+      {
+        "date": "24 JUL 2021",
+        "meet": "BMC Grand Prix, Loughborough University Track, Loughborough",
+        "event": "800m",
+        "time": "1:47.83",
+        "place": "1."
+      },
+      {
+        "date": "14 AUG 2021",
+        "meet": "BMC Grand Prix, Eltham Sutcliffe Park Athletics Track, London",
+        "event": "800m",
+        "time": "1:49.2h",
+        "place": "3."
+      },
+      {
+        "date": "12 JUN 2021",
+        "meet": "Watford Grand Prix, Woodside Stadium, Watford",
+        "event": "1500m",
+        "time": "3:39.85",
+        "place": "3."
+      },
+      {
+        "date": "13 JUL 2021",
+        "meet": "Müller British GP, International Stadium, Gateshead - Split times",
+        "event": "1500m",
+        "time": "3:41.50",
+        "place": ""
+      },
+      {
+        "date": "11 AUG 2021",
+        "meet": "BMC Gold Standard Races, Woodside Stadium, Watford",
+        "event": "1500m",
+        "time": "3:39.19",
+        "place": "1."
+      },
+      {
+        "date": "13 JUL 2021",
+        "meet": "Müller British GP, International Stadium, Gateshead - Promotional Events",
+        "event": "Mile",
+        "time": "3:58.18",
+        "place": "10."
+      },
+      {
+        "date": "08 MAY 2021",
+        "meet": "Trafford Grand Prix, Longford Stadium Trafford, Manchester",
+        "event": "5000m",
+        "time": "14:27.58",
+        "place": "14."
+      },
+      {
+        "date": "24 OCT 2021",
+        "meet": "Leeds Abbey Dash – 10k for Age UK, Leeds",
+        "event": "10 Kilometres Road",
+        "time": "29:37",
+        "place": "16."
+      }
+    ],
+    "2022": [
+      {
+        "date": "09 JUL 2022",
+        "meet": "South of England U20/Senior Inter Counties Ch., Horspath Athletics Track, Oxford",
+        "event": "400m",
+        "time": "50.17",
+        "place": "1."
+      },
+      {
+        "date": "16 JUL 2022",
+        "meet": "Southern Athletics League Division 3 Hertfordshire, Stuart Storey Track, Ware",
+        "event": "400m",
+        "time": "49.9h",
+        "place": "1."
+      },
+      {
+        "date": "11 JUN 2022",
+        "meet": "British Milers Club International Grand Prix, Woodside Stadium, Watford",
+        "event": "800m",
+        "time": "1:48.76",
+        "place": "4."
+      },
+      {
+        "date": "16 JUL 2022",
+        "meet": "Southern Athletics League Division 3 Hertfordshire, Stuart Storey Track, Ware",
+        "event": "800m",
+        "time": "1:58.0h",
+        "place": "1."
+      },
+      {
+        "date": "23 JUL 2022",
+        "meet": "BMC Grand Prix, Longford Stadium Trafford, Manchester",
+        "event": "800m",
+        "time": "1:47.35",
+        "place": "2."
+      },
+      {
+        "date": "10 AUG 2022",
+        "meet": "BMC Gold Standard Races, Woodside Stadium, Watford",
+        "event": "800m",
+        "time": "1:46.96",
+        "place": "1."
+      },
+      {
+        "date": "29 JUN 2022",
+        "meet": "BMC Gold Standard Races, Woodside Stadium, Watford",
+        "event": "1500m",
+        "time": "3:41.88",
+        "place": "2."
+      },
+      {
+        "date": "13 JUL 2022",
+        "meet": "BMC Gold Standard Races, Woodside Stadium, Watford",
+        "event": "1500m",
+        "time": "3:45.80",
+        "place": "1."
+      },
+      {
+        "date": "16 JUL 2022",
+        "meet": "Southern Athletics League Division 3 Hertfordshire, Stuart Storey Track, Ware",
+        "event": "1500m",
+        "time": "3:55.5h",
+        "place": "1."
+      },
+      {
+        "date": "17 AUG 2022",
+        "meet": "BMC Regional Races, Eltham Sutcliffe Park Athletics Track, London",
+        "event": "1500m",
+        "time": "3:40.83",
+        "place": "1."
+      },
+      {
+        "date": "22 JAN 2022",
+        "meet": "BoXX United Manchester World Indoor Tour, Manchester Regional Arena, Manchester (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:43.39",
+        "place": "3."
+      },
+      {
+        "date": "12 FEB 2022",
+        "meet": "Meeting Metz Moselle Athlelor, L'Anneau-Halle d'athlétisme de Metz, Metz (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:44.73",
+        "place": "7."
+      },
+      {
+        "date": "09 JAN 2022",
+        "meet": "BMC Sheffield Indoor Grand Prix, National Indoor Athletics Centre, Sheffield (i)",
+        "event": "3000 Metres Short Track",
+        "time": "8:07.92",
+        "place": "8."
+      },
+      {
+        "date": "01 JUL 2022",
+        "meet": "Finsbury Park 5000's, Finsbury Park, London",
+        "event": "5000m",
+        "time": "14:26.46",
+        "place": "1."
+      },
+      {
+        "date": "16 JUL 2022",
+        "meet": "Southern Athletics League Division 3 Hertfordshire, Stuart Storey Track, Ware",
+        "event": "5000m",
+        "time": "15:24.4h",
+        "place": "1."
+      }
+    ],
+    "2023": [
+      {
+        "date": "08 JAN 2023",
+        "meet": "Manchester Indoor Open Meetings, Sportcity Indoor Track, Manchester (i)",
+        "event": "600 Metres Short Track",
+        "time": "1:19.05",
+        "place": "1."
+      },
+      {
+        "date": "29 JAN 2023",
+        "meet": "Manchester Indoor Open meeting, Sportcity Indoor Track, Manchester (i)",
+        "event": "600 Metres Short Track",
+        "time": "1:19.50",
+        "place": "1."
+      },
+      {
+        "date": "10 JUN 2023",
+        "meet": "British Milers Club Grand Prix - Loughborough, Paula Radcliffe Stadium, Loughborough",
+        "event": "800m",
+        "time": "1:47.45",
+        "place": "4."
+      },
+      {
+        "date": "14 JUN 2023",
+        "meet": "BMC Gold Standard Races, Woodside Stadium, Watford",
+        "event": "800m",
+        "time": "1:47.95",
+        "place": "5."
+      },
+      {
+        "date": "01 JUL 2023",
+        "meet": "British Milers Club Grand Prix - Watford, Woodside Stadium, Watford",
+        "event": "800m",
+        "time": "1:48.06",
+        "place": "7."
+      },
+      {
+        "date": "12 JUL 2023",
+        "meet": "BMC Gold Standard Races, Woodside Stadium, Watford",
+        "event": "800m",
+        "time": "1:48.00",
+        "place": "2."
+      },
+      {
+        "date": "29 JUL 2023",
+        "meet": "British Milers Club Grand Prix - Birmingham University, Birmingham University Athletics Track, Birmingham",
+        "event": "800m",
+        "time": "1:49.91",
+        "place": "2."
+      },
+      {
+        "date": "18 FEB 2023",
+        "meet": "UK Indoor Championships, Utilita Arena Birmingham, Birmingham (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:50.78",
+        "place": "2."
+      },
+      {
+        "date": "19 FEB 2023",
+        "meet": "UK Indoor Championships, Utilita Arena Birmingham, Birmingham (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:49.42",
+        "place": "3."
+      },
+      {
+        "date": "27 MAY 2023",
+        "meet": "IFAM Oordegem, Putbosstadion, Oordegem",
+        "event": "1500m",
+        "time": "3:40.32",
+        "place": "3."
+      },
+      {
+        "date": "24 JUN 2023",
+        "meet": "VII Ordizia Sari Nagusia - International Meeting Jose Antonio Peña, Altamira estadioa, Ordizia",
+        "event": "1500m",
+        "time": "3:38.35",
+        "place": "3."
+      },
+      {
+        "date": "12 AUG 2023",
+        "meet": "BMC Grand Prix, Manchester Regional Arena, Manchester",
+        "event": "1500m",
+        "time": "3:38.85",
+        "place": "4."
+      },
+      {
+        "date": "23 AUG 2023",
+        "meet": "BMC Gold Standard Races, Woodside Stadium, Watford",
+        "event": "1500m",
+        "time": "3:39.64",
+        "place": "3."
+      },
+      {
+        "date": "15 JAN 2023",
+        "meet": "10K Valencia Ibercaja, Valencia",
+        "event": "10 Kilometres Road",
+        "time": "30:47",
+        "place": "128."
+      }
+    ],
+    "2024": [
+      {
+        "date": "08 JUN 2024",
+        "meet": "British Milers Club Grand Prix, Woodside Stadium, Watford",
+        "event": "800m",
+        "time": "1:50.28",
+        "place": "8."
+      },
+      {
+        "date": "22 JUN 2024",
+        "meet": "British Milers Club Grand Prix, Paula Radcliffe Stadium, Loughborough",
+        "event": "800m",
+        "time": "1:49.23",
+        "place": "3."
+      },
+      {
+        "date": "26 MAY 2024",
+        "meet": "IFAM Outdoor, Boudewijnstadion, Bruxelles",
+        "event": "1500m",
+        "time": "3:38.61",
+        "place": "7."
+      },
+      {
+        "date": "29 JUN 2024",
+        "meet": "UK Championships, Manchester Regional Arena, Manchester",
+        "event": "1500m",
+        "time": "3:43.94",
+        "place": "8."
+      },
+      {
+        "date": "24 JUL 2024",
+        "meet": "BMC Record Breaker, Tooting Bec Athletics Track, London",
+        "event": "1500m",
+        "time": "3:37.93",
+        "place": "12."
+      },
+      {
+        "date": "10 AUG 2024",
+        "meet": "British Milers Club Grand Prix, Market Street Athletics Track, Bury St Edmunds",
+        "event": "1500m",
+        "time": "3:38.78",
+        "place": "6."
+      },
+      {
+        "date": "21 AUG 2024",
+        "meet": "BMC Gold Standard Races, Woodside Stadium, Watford",
+        "event": "1500m",
+        "time": "3:41.22",
+        "place": "5."
+      },
+      {
+        "date": "07 DEC 2024",
+        "meet": "Northern Athletics December Indoor Open, English Institute of Sport, Sheffield (i)",
+        "event": "3000 Metres Short Track",
+        "time": "7:56.26",
+        "place": "3."
+      },
+      {
+        "date": "26 APR 2024",
+        "meet": "Comeback 5000#3, Millennium Arena, Battersea Park, London - Elite Event",
+        "event": "5000m",
+        "time": "14:01.85",
+        "place": "8."
+      },
+      {
+        "date": "06 SEP 2024",
+        "meet": "The AJ Bell Great North 5k, Quayside, Newcastle upon Tyne - UK 5km Road Running Championships",
+        "event": "5 Kilometres Road",
+        "time": "14:22",
+        "place": "7."
+      }
+    ],
+    "2025": [
+      {
+        "date": "21 JUN 2025",
+        "meet": "British Milers Club Grand Prix, Paula Radcliffe Stadium, Loughborough",
+        "event": "800m",
+        "time": "1:47.44",
+        "place": "1."
+      },
+      {
+        "date": "23 JUL 2025",
+        "meet": "BMC Gold Standard Races, Woodside Stadium, Watford",
+        "event": "800m",
+        "time": "1:48.53",
+        "place": "2."
+      },
+      {
+        "date": "25 JUN 2025",
+        "meet": "BMC Gold Standard Races, Woodside Stadium, Watford",
+        "event": "1500m",
+        "time": "3:37.91",
+        "place": "1."
+      },
+      {
+        "date": "12 JUL 2025",
+        "meet": "British Milers Club Grand Prix, Woodside Stadium, Watford",
+        "event": "1500m",
+        "time": "3:40.32",
+        "place": "2."
+      },
+      {
+        "date": "02 AUG 2025",
+        "meet": "UK Championships, Alexander Stadium, Birmingham",
+        "event": "1500m",
+        "time": "3:41.23",
+        "place": "5."
+      },
+      {
+        "date": "03 AUG 2025",
+        "meet": "UK Championships, Alexander Stadium, Birmingham",
+        "event": "1500m",
+        "time": "3:47.53",
+        "place": "5."
+      },
+      {
+        "date": "09 AUG 2025",
+        "meet": "IFAM Oordegem, Putbosstadion, Oordegem",
+        "event": "1500m",
+        "time": "3:37.72",
+        "place": "4."
+      },
+      {
+        "date": "12 FEB 2025",
+        "meet": "Ayo Falola Dream Mile and BMC, Lee Valley Athletics Centre, London (i)",
+        "event": "Mile Short Track",
+        "time": "3:57.60",
+        "place": "1."
+      },
+      {
+        "date": "23 FEB 2025",
+        "meet": "UK Indoor Championships, Arena Birmingham, Birmingham (i)",
+        "event": "3000 Metres Short Track",
+        "time": "8:19.76",
+        "place": "14."
+      },
+      {
+        "date": "23 MAY 2025",
+        "meet": "Comeback 5000 25, Millennium Arena, Battersea Park, London - Elite Event",
+        "event": "5000m",
+        "time": "13:43.35",
+        "place": "6."
+      },
+      {
+        "date": "09 AUG 2025",
+        "meet": "IFAM Oordegem, Putbosstadion, Oordegem",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      }
+    ]
+  },
+  "age": "31"
+}

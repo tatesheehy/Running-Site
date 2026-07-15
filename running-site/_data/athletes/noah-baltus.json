@@ -1,0 +1,829 @@
+{
+  "photoBackground": null,
+  "reviewTitle": null,
+  "waUrl": "https://worldathletics.org/athletes/netherlands/noah-baltus-14806069",
+  "height": null,
+  "questionBody": null,
+  "headlineRest": null,
+  "name": "Noah Baltus",
+  "headlineKey": null,
+  "flag": "NL",
+  "honours": [
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2022"
+    },
+    {
+      "competition": "National Indoor Championships",
+      "short": "NIC",
+      "discipline": "1500 Metres Short Track",
+      "place": 1,
+      "year": "2023"
+    }
+  ],
+  "seasons": null,
+  "lastSynced": "2026-07-15",
+  "prs": [
+    {
+      "event": "400m",
+      "time": "48.86"
+    },
+    {
+      "event": "800m",
+      "time": "1:47.16"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:49.01"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:18.65"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.34"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:37.67"
+    },
+    {
+      "event": "Mile",
+      "time": "3:52.47"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:54.28"
+    },
+    {
+      "event": "2000m",
+      "time": "4:58.92"
+    },
+    {
+      "event": "3000m",
+      "time": "7:40.17"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:42.61"
+    },
+    {
+      "event": "5000m",
+      "time": "13:41.64"
+    }
+  ],
+  "hometown": null,
+  "questionTitle": null,
+  "photo": null,
+  "ncaa": null,
+  "club": null,
+  "country": "Netherlands",
+  "results": [
+    {
+      "date": "JUL 10",
+      "meet": "Morton Games",
+      "event": "1500 m",
+      "time": "3:38.62",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "JUL 10",
+      "meet": "Morton Games",
+      "event": "Mile",
+      "time": "3:54.26",
+      "place": "7.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "1500 m",
+      "time": "3:36.68",
+      "place": "13.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 13",
+      "meet": "Merck Laufgala Pfungstadt",
+      "event": "1500 m",
+      "time": "3:34.34",
+      "place": "1.",
+      "round": "F2"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "Bislett Games pre-event",
+      "event": "1500 m",
+      "time": "3:35.94",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 6",
+      "meet": "Meeting de Strasbourg",
+      "event": "800 m",
+      "time": "1:47.16",
+      "place": "5.",
+      "round": "F6"
+    },
+    {
+      "date": "MAY 30",
+      "meet": "10. PUMA NITRO Lange Laufnacht",
+      "event": "1500 m",
+      "time": "3:34.38",
+      "place": "3.",
+      "round": "F12"
+    },
+    {
+      "date": "FEB 1",
+      "meet": "Meeting de L'Eure",
+      "event": "Mile sh",
+      "time": "3:56.67",
+      "place": "5.",
+      "round": "F"
+    }
+  ],
+  "dob": "03 FEB 2002",
+  "weight": null,
+  "lastHistorySynced": "2026-07-14",
+  "coach": null,
+  "reviewBody": null,
+  "event": "1500m",
+  "id": "noah-baltus",
+  "resultsHistory": {
+    "2021": [
+      {
+        "date": "06 AUG 2021",
+        "meet": "Runnersworld Utrecht Trackmeeting, Atletiekbaan Maarschalkerweerd, Utrecht",
+        "event": "400m",
+        "time": "48.86",
+        "place": "1."
+      },
+      {
+        "date": "13 MAY 2021",
+        "meet": "Harry Schulting Games, Vughtse Sports Club Prins Hendrik, Vught",
+        "event": "800m",
+        "time": "1:49.15",
+        "place": "4."
+      },
+      {
+        "date": "06 JUN 2021",
+        "meet": "FBK Games, FBK Stadium, Hengelo - National Events",
+        "event": "800m",
+        "time": "1:47.74",
+        "place": "4."
+      },
+      {
+        "date": "12 JUN 2021",
+        "meet": "Gouden Spike, Sportcomplex De Leidse Hout, Leiden",
+        "event": "800m",
+        "time": "1:49.58",
+        "place": "4."
+      },
+      {
+        "date": "25 JUN 2021",
+        "meet": "Dutch Championships, Atletiekbaan Breda, Breda",
+        "event": "800m",
+        "time": "1:48.78",
+        "place": "3."
+      },
+      {
+        "date": "26 JUN 2021",
+        "meet": "Dutch Championships, Atletiekbaan Breda, Breda",
+        "event": "800m",
+        "time": "1:52.76",
+        "place": "7."
+      },
+      {
+        "date": "14 AUG 2021",
+        "meet": "Flanders Cup OEH, Provincial domain Huizingen, Huizingen - A",
+        "event": "800m",
+        "time": "1:49.38",
+        "place": "5."
+      },
+      {
+        "date": "10 SEP 2021",
+        "meet": "Dutch U20 Championships, De Schothorst, Amersfoort",
+        "event": "800m",
+        "time": "1:57.76",
+        "place": "1."
+      },
+      {
+        "date": "11 SEP 2021",
+        "meet": "Dutch U20 Championships, De Schothorst, Amersfoort",
+        "event": "800m",
+        "time": "1:50.81",
+        "place": "2."
+      },
+      {
+        "date": "10 FEB 2021",
+        "meet": "Limietwedstrijd (op invitatie), Omnisport, Apeldoorn (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:50.03",
+        "place": "5."
+      },
+      {
+        "date": "14 FEB 2021",
+        "meet": "Limietwedstrijd Indoor (op invitatie), Omnisport, Apeldoorn (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:49.01",
+        "place": "4."
+      },
+      {
+        "date": "20 FEB 2021",
+        "meet": "Dutch Indoor Championships, Omnisport, Apeldoorn (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:49.73",
+        "place": "3."
+      },
+      {
+        "date": "29 MAY 2021",
+        "meet": "Next Generation Athletics, Atletiekbaan Brakkenstein, Nijmegen",
+        "event": "1500m",
+        "time": "3:43.26",
+        "place": "1."
+      },
+      {
+        "date": "03 JUL 2021",
+        "meet": "KBC Nacht van de Atletiek, Stadion De Veen, Heusden-Zolder",
+        "event": "1500m",
+        "time": "3:41.69",
+        "place": "5."
+      },
+      {
+        "date": "15 JUL 2021",
+        "meet": "European Athletics U20 Championships, Kadrioru staadion, Tallinn",
+        "event": "1500m",
+        "time": "3:50.97",
+        "place": "5."
+      },
+      {
+        "date": "11 SEP 2021",
+        "meet": "Dutch U20 Championships, De Schothorst, Amersfoort",
+        "event": "1500m",
+        "time": "4:06.89",
+        "place": "2."
+      },
+      {
+        "date": "12 SEP 2021",
+        "meet": "Dutch U20 Championships, De Schothorst, Amersfoort",
+        "event": "1500m",
+        "time": "4:00.79",
+        "place": "1."
+      },
+      {
+        "date": "12 DEC 2021",
+        "meet": "27th SPAR European Cross Country Championships, Dublin - U20 Events",
+        "event": "Cross Country U20 Race",
+        "time": "19:40",
+        "place": "66."
+      }
+    ],
+    "2022": [
+      {
+        "date": "14 MAY 2022",
+        "meet": "LAZ Sportfest, Nordanlage, Leipzig",
+        "event": "800m",
+        "time": "1:49.75",
+        "place": "1."
+      },
+      {
+        "date": "25 MAY 2022",
+        "meet": "24. Internationales Leichtathletik Meeting \"Anhalt 2022\", Paul-Greifzu-Stadion, Dessau",
+        "event": "800m",
+        "time": "1:48.27",
+        "place": "8."
+      },
+      {
+        "date": "06 AUG 2022",
+        "meet": "Lohrheide-Meeting, Lohrheidestadion, Wattenscheid, Bochum",
+        "event": "800m",
+        "time": "1:48.75",
+        "place": "1."
+      },
+      {
+        "date": "09 FEB 2022",
+        "meet": "Hallenmeeting SC DHfK Leipzig, Quarterback Immobilien Arena, Leipzig (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:49.66",
+        "place": "3."
+      },
+      {
+        "date": "21 MAY 2022",
+        "meet": "6. Lange Laufnacht, Karlsruhe",
+        "event": "1500m",
+        "time": "3:42.78",
+        "place": "1."
+      },
+      {
+        "date": "28 MAY 2022",
+        "meet": "IFAM Oordegem, Putbosstadion, Oordegem",
+        "event": "1500m",
+        "time": "3:44.74",
+        "place": "3."
+      },
+      {
+        "date": "06 JUN 2022",
+        "meet": "FBK Games, FBK Stadium, Hengelo - National Events",
+        "event": "1500m",
+        "time": "3:46.79",
+        "place": "5."
+      },
+      {
+        "date": "25 JUN 2022",
+        "meet": "Dutch Championships, Sportpark Orderbos, Apeldoorn",
+        "event": "1500m",
+        "time": "3:48.26",
+        "place": "3."
+      },
+      {
+        "date": "26 JUN 2022",
+        "meet": "Dutch Championships, Sportpark Orderbos, Apeldoorn",
+        "event": "1500m",
+        "time": "3:41.90",
+        "place": "1."
+      },
+      {
+        "date": "02 JUL 2022",
+        "meet": "Night of Athletics, Stadion De Veen, Heusden-Zolder - National Events",
+        "event": "1500m",
+        "time": "3:42.59",
+        "place": "1."
+      },
+      {
+        "date": "26 JUL 2022",
+        "meet": "Last Minute Qualifikation EM München, TSV Stadion, Pfungstadt",
+        "event": "1500m",
+        "time": "3:38.35",
+        "place": "6."
+      },
+      {
+        "date": "31 JUL 2022",
+        "meet": "CAS Meeting International, Stade Jean Jacoby, Schifflange",
+        "event": "1500m",
+        "time": "3:46.61",
+        "place": "10."
+      },
+      {
+        "date": "13 AUG 2022",
+        "meet": "Abendmeeting, Sportanlage Wisacher, Regensdorf",
+        "event": "1500m",
+        "time": "3:44.33",
+        "place": "1."
+      },
+      {
+        "date": "01 FEB 2022",
+        "meet": "9. Nationales Breuninger Hallenmeeting, Hartwig-Gauder-Halle, Erfurt (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:48.23",
+        "place": "9."
+      },
+      {
+        "date": "13 FEB 2022",
+        "meet": "Limietwedstrijd Indoor, Omnisport, Apeldoorn (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:42.61",
+        "place": "3."
+      },
+      {
+        "date": "26 FEB 2022",
+        "meet": "Dutch Indoor Championships, Omnisport, Apeldoorn (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:47.05",
+        "place": "3."
+      }
+    ],
+    "2023": [
+      {
+        "date": "12 AUG 2023",
+        "meet": "BMC Grand Prix, Manchester Regional Arena, Manchester",
+        "event": "800m",
+        "time": "1:48.74",
+        "place": "2."
+      },
+      {
+        "date": "20 MAY 2023",
+        "meet": "Lange Laufnacht, Carl-Kaufmann-Stadion, Karlsruhe",
+        "event": "1500m",
+        "time": "3:39.93",
+        "place": "13."
+      },
+      {
+        "date": "27 MAY 2023",
+        "meet": "IFAM Oordegem, Putbosstadion, Oordegem",
+        "event": "1500m",
+        "time": "3:37.02",
+        "place": "3."
+      },
+      {
+        "date": "04 JUN 2023",
+        "meet": "FBK Games, FBK Stadium, Hengelo",
+        "event": "1500m",
+        "time": "3:41.32",
+        "place": "13."
+      },
+      {
+        "date": "10 JUN 2023",
+        "meet": "Fast 5000, Montesson",
+        "event": "1500m",
+        "time": "3:52.29",
+        "place": "13."
+      },
+      {
+        "date": "05 JUL 2023",
+        "meet": "Folksam Grand Prix Karlstad, Tingvalla IP, Karlstad",
+        "event": "1500m",
+        "time": "3:38.65",
+        "place": "2."
+      },
+      {
+        "date": "13 JUL 2023",
+        "meet": "European Athletics U23 Championships, Leppävaaran Stadion, Espoo",
+        "event": "1500m",
+        "time": "3:44.88",
+        "place": "2."
+      },
+      {
+        "date": "15 JUL 2023",
+        "meet": "European Athletics U23 Championships, Leppävaaran Stadion, Espoo",
+        "event": "1500m",
+        "time": "3:45.49",
+        "place": "7."
+      },
+      {
+        "date": "29 JUL 2023",
+        "meet": "Dutch Championships, Atletiekbaan Breda, Breda",
+        "event": "1500m",
+        "time": "3:54.11",
+        "place": "1."
+      },
+      {
+        "date": "30 JUL 2023",
+        "meet": "Dutch Championships, Atletiekbaan Breda, Breda",
+        "event": "1500m",
+        "time": "3:56.98",
+        "place": "7."
+      },
+      {
+        "date": "04 AUG 2023",
+        "meet": "CITIUS Meeting, Stadion Wankdorf, Bern",
+        "event": "1500m",
+        "time": "3:40.28",
+        "place": "12."
+      },
+      {
+        "date": "03 SEP 2023",
+        "meet": "36th Meeting Citta' Di Padova, Stadio Colbachini, Padova",
+        "event": "1500m",
+        "time": "3:36.29",
+        "place": "9."
+      },
+      {
+        "date": "06 SEP 2023",
+        "meet": "Pfungstädter Abendsportfest, TSV Stadion, Pfungstadt - Split times",
+        "event": "1500m",
+        "time": "3:36.19",
+        "place": "3."
+      },
+      {
+        "date": "03 FEB 2023",
+        "meet": "10. Breuninger Hallenmeeting, Hartwig-Gauder-Halle, Erfurt (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:45.53",
+        "place": "11."
+      },
+      {
+        "date": "12 FEB 2023",
+        "meet": "Sparkassen Indoor Meeting Dortmund, Helmut-Körnig-Halle, Dortmund (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:40.48",
+        "place": "4."
+      },
+      {
+        "date": "18 FEB 2023",
+        "meet": "Dutch Indoor Championships, Omnisport, Apeldoorn (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:48.11",
+        "place": "1."
+      },
+      {
+        "date": "06 SEP 2023",
+        "meet": "Pfungstädter Abendsportfest, TSV Stadion, Pfungstadt",
+        "event": "Mile",
+        "time": "3:52.47",
+        "place": "2."
+      }
+    ],
+    "2024": [
+      {
+        "date": "30 AUG 2024",
+        "meet": "Stadioneröffnung Dresden, Heinz-Steyer-Stadion, Dresden",
+        "event": "800m",
+        "time": "1:48.02",
+        "place": "10."
+      },
+      {
+        "date": "21 JUL 2024",
+        "meet": "CAS Meeting International, Stade Jean Jacoby, Schifflange",
+        "event": "1000 Metres",
+        "time": "2:20.77",
+        "place": "7."
+      },
+      {
+        "date": "11 MAY 2024",
+        "meet": "Puma Nitro Lange Laufnacht, Carl-Kaufmann-Stadion, Karlsruhe",
+        "event": "1500m",
+        "time": "3:37.91",
+        "place": "11."
+      },
+      {
+        "date": "19 MAY 2024",
+        "meet": "59. Internationales Pfingstsportfest Rehlingen, Bungertstadion, Rehlingen",
+        "event": "1500m",
+        "time": "3:34.66",
+        "place": "5."
+      },
+      {
+        "date": "22 MAY 2024",
+        "meet": "Raiffeisen AUSTRIAN OPEN Eisenstadt, Leichtathletikarena, Eisenstadt",
+        "event": "1500m",
+        "time": "3:38.53",
+        "place": "2."
+      },
+      {
+        "date": "26 MAY 2024",
+        "meet": "IFAM Outdoor, Boudewijnstadion, Bruxelles",
+        "event": "1500m",
+        "time": "3:38.18",
+        "place": "7."
+      },
+      {
+        "date": "02 JUN 2024",
+        "meet": "BAUHAUS-Galan, Olympiastadion, Stockholm - Promotional Events",
+        "event": "1500m",
+        "time": "3:35.07",
+        "place": "8."
+      },
+      {
+        "date": "10 JUN 2024",
+        "meet": "European Athletics Championships, Stadio Olimpico, Roma",
+        "event": "1500m",
+        "time": "3:45.30",
+        "place": "13."
+      },
+      {
+        "date": "18 JUN 2024",
+        "meet": "Paavo Nurmi Games, Paavo Nurmen Stadion, Turku",
+        "event": "1500m",
+        "time": "3:35.01",
+        "place": "6."
+      },
+      {
+        "date": "22 JUN 2024",
+        "meet": "Atleticageneve - EAP, Centre sportif Bout-du-Monde, Genève",
+        "event": "1500m",
+        "time": "3:38.15",
+        "place": "7."
+      },
+      {
+        "date": "29 JUN 2024",
+        "meet": "Dutch Championships, FBK Stadium, Hengelo",
+        "event": "1500m",
+        "time": "3:48.21",
+        "place": "3."
+      },
+      {
+        "date": "30 JUN 2024",
+        "meet": "Dutch Championships, FBK Stadium, Hengelo",
+        "event": "1500m",
+        "time": "3:36.99",
+        "place": "2."
+      },
+      {
+        "date": "01 SEP 2024",
+        "meet": "Memorial Zbigniewa Ludwichowskiego, Uniwersytetu Warmińsko-Mazurskiego, Olsztyn",
+        "event": "1500m",
+        "time": "3:38.88",
+        "place": "1."
+      },
+      {
+        "date": "10 SEP 2024",
+        "meet": "Ostrava Silver Spike, Mestský Stadion, Ostrava",
+        "event": "1500m",
+        "time": "3:40.23",
+        "place": "5."
+      },
+      {
+        "date": "03 FEB 2024",
+        "meet": "Boston University Bruce Lehane Scarlet and White Invitational, Boston Univ. Track & Tennis Center, Boston, MA (i) - Split times",
+        "event": "1500 Metres Short Track",
+        "time": "3:38.00",
+        "place": ""
+      },
+      {
+        "date": "17 FEB 2024",
+        "meet": "Dutch Indoor Championships, Omnisport, Apeldoorn (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:59.18",
+        "place": "1."
+      },
+      {
+        "date": "18 FEB 2024",
+        "meet": "Dutch Indoor Championships, Omnisport, Apeldoorn (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:39.69",
+        "place": "2."
+      },
+      {
+        "date": "26 JAN 2024",
+        "meet": "Boston University John Thomas Terrier Classic, Boston Univ. Track & Tennis Center, Boston, MA (i)",
+        "event": "Mile Short Track",
+        "time": "3:54.81",
+        "place": "4."
+      },
+      {
+        "date": "03 FEB 2024",
+        "meet": "Boston University Bruce Lehane Scarlet and White Invitational, Boston Univ. Track & Tennis Center, Boston, MA (i)",
+        "event": "Mile Short Track",
+        "time": "3:54.28",
+        "place": "6."
+      },
+      {
+        "date": "08 SEP 2024",
+        "meet": "Boris Hanžeković Memorial, Sports Park Mladost, Zagreb",
+        "event": "2000m",
+        "time": "4:58.92",
+        "place": "10."
+      },
+      {
+        "date": "27 JUL 2024",
+        "meet": "Meeting voor Mon, AtletiekArena Gaston Roelants Kessel-Lo / Hal 5, Leuven",
+        "event": "3000m",
+        "time": "7:41.54",
+        "place": "6."
+      },
+      {
+        "date": "03 SEP 2024",
+        "meet": "60° Palio Città della Quercia, Stadio Quercia, Rovereto",
+        "event": "3000m",
+        "time": "7:40.17",
+        "place": "4."
+      }
+    ],
+    "2025": [
+      {
+        "date": "05 SEP 2025",
+        "meet": "Runnersworld Utrecht Track Meeting 6, Atletiekbaan Maarschalkerweerd, Utrecht",
+        "event": "400m",
+        "time": "50.45",
+        "place": "3."
+      },
+      {
+        "date": "02 SEP 2025",
+        "meet": "24. Volksbank Trier Eifel Flutlichtmeeting, Moselstadion, Trier",
+        "event": "1000 Metres",
+        "time": "2:18.65",
+        "place": "4."
+      },
+      {
+        "date": "25 MAY 2025",
+        "meet": "IFAM Outdoor, Boudewijnstadion, Bruxelles",
+        "event": "1500m",
+        "time": "3:39.79",
+        "place": "7."
+      },
+      {
+        "date": "01 JUN 2025",
+        "meet": "Goldenes Oval 2025, Heinz-Steyer-Stadion, Dresden",
+        "event": "1500m",
+        "time": "3:35.14",
+        "place": "5."
+      },
+      {
+        "date": "17 JUN 2025",
+        "meet": "Paavo Nurmi Games, Paavo Nurmen Stadion, Turku",
+        "event": "1500m",
+        "time": "3:37.76",
+        "place": "11."
+      },
+      {
+        "date": "21 JUN 2025",
+        "meet": "Motonet GP Kuortane, Kuortaneen keskusurheilukenttä, Kuortane",
+        "event": "1500m",
+        "time": "3:42.24",
+        "place": "4."
+      },
+      {
+        "date": "24 JUN 2025",
+        "meet": "64th Ostrava Golden Spike, Mestský Stadion, Ostrava",
+        "event": "1500m",
+        "time": "3:36.65",
+        "place": "8."
+      },
+      {
+        "date": "02 AUG 2025",
+        "meet": "Dutch Championships, FBK Stadium, Hengelo",
+        "event": "1500m",
+        "time": "4:00.41",
+        "place": "4."
+      },
+      {
+        "date": "03 AUG 2025",
+        "meet": "Dutch Championships, FBK Stadium, Hengelo",
+        "event": "1500m",
+        "time": "3:44.25",
+        "place": "2."
+      },
+      {
+        "date": "09 AUG 2025",
+        "meet": "IFAM Oordegem, Putbosstadion, Oordegem",
+        "event": "1500m",
+        "time": "3:38.39",
+        "place": "8."
+      },
+      {
+        "date": "16 AUG 2025",
+        "meet": "Meeting voor Mon, AtletiekArena Gaston Roelants Kessel-Lo / Hal 5, Leuven",
+        "event": "1500m",
+        "time": "3:39.28",
+        "place": "9."
+      },
+      {
+        "date": "20 AUG 2025",
+        "meet": "Internationales Abendsportfest, TSV Stadion, Pfungstadt",
+        "event": "1500m",
+        "time": "3:39.08",
+        "place": "7."
+      },
+      {
+        "date": "25 JAN 2025",
+        "meet": "Antequera Indoor Match, Centro de Tecnificación de Atletismo, Antequera (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:41.70",
+        "place": "2."
+      },
+      {
+        "date": "08 FEB 2025",
+        "meet": "Meeting Metz Moselle Athlelor, L'Anneau-Halle d'athlétisme de Metz, Metz (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:37.67",
+        "place": "4."
+      },
+      {
+        "date": "15 FEB 2025",
+        "meet": "Meeting Indoor de Lyon, Halle Stéphane Diagana, Lyon (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:42.43",
+        "place": "9."
+      },
+      {
+        "date": "22 FEB 2025",
+        "meet": "Dutch Indoor Championships, Omnisport, Apeldoorn (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:51.39",
+        "place": "2."
+      },
+      {
+        "date": "23 FEB 2025",
+        "meet": "Dutch Indoor Championships, Omnisport, Apeldoorn (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:37.78",
+        "place": "3."
+      },
+      {
+        "date": "06 MAR 2025",
+        "meet": "European Athletics Indoor Championships, Omnisport, Apeldoorn (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:42.25",
+        "place": "6."
+      },
+      {
+        "date": "27 JUL 2025",
+        "meet": "ISTAF 2025, Olympiastadion, Berlin",
+        "event": "Mile",
+        "time": "4:03.05",
+        "place": "14."
+      },
+      {
+        "date": "02 FEB 2025",
+        "meet": "Meeting de L'Eure, Stade couvert Jesse Owens, Val-de-Reuil (i)",
+        "event": "3000 Metres Short Track",
+        "time": "7:42.61",
+        "place": "4."
+      },
+      {
+        "date": "19 JUL 2025",
+        "meet": "Night of Athletics, Stadion De Veen, Heusden-Zolder",
+        "event": "5000m",
+        "time": "13:41.64",
+        "place": "11."
+      }
+    ]
+  },
+  "age": "24"
+}

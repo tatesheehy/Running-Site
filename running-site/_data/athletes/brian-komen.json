@@ -1,0 +1,383 @@
+{
+  "photoBackground": null,
+  "reviewTitle": null,
+  "waUrl": "https://worldathletics.org/athletes/kenya/brian-komen-15092355",
+  "height": null,
+  "questionBody": null,
+  "headlineRest": null,
+  "name": "Brian Komen",
+  "headlineKey": null,
+  "flag": "KE",
+  "honours": [
+    {
+      "competition": "African Championships",
+      "short": "AC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2024"
+    },
+    {
+      "competition": "African Championships",
+      "short": "AC",
+      "discipline": "1500m",
+      "place": 3,
+      "year": "2026"
+    },
+    {
+      "competition": "All-African Games",
+      "short": "AG",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2024"
+    },
+    {
+      "competition": "Diamond League",
+      "short": "DLF",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2024"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2024"
+    }
+  ],
+  "seasons": null,
+  "lastSynced": "2026-07-15",
+  "prs": [
+    {
+      "event": "1500m",
+      "time": "3:28.80"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:37.42"
+    },
+    {
+      "event": "2000m",
+      "time": "5:07.31"
+    },
+    {
+      "event": "2000 Metres Short Track",
+      "time": "5:07.31"
+    }
+  ],
+  "hometown": null,
+  "questionTitle": null,
+  "photo": null,
+  "ncaa": null,
+  "club": null,
+  "country": "Kenya",
+  "results": [
+    {
+      "date": "JUN 20",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "1500 m",
+      "time": "3:32.60",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 18",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "1500 m",
+      "time": "3:43.1h",
+      "place": "2.",
+      "round": "H3"
+    },
+    {
+      "date": "JUN 5",
+      "meet": "Znamensky Memorial",
+      "event": "1500 m",
+      "time": "3:35.56",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 27",
+      "meet": "Athletics Kenya National Police Service Track and Field Championships",
+      "event": "1500 m",
+      "time": "3:44.84",
+      "place": "1.",
+      "round": "H2"
+    },
+    {
+      "date": "MAY 27",
+      "meet": "Athletics Kenya National Police Service Track and Field Championships",
+      "event": "1500 m",
+      "time": "3:43.86",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 17",
+      "meet": "African Athletics Championships",
+      "event": "1500 m",
+      "time": "3:43.19",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "African Athletics Championships",
+      "event": "1500 m",
+      "time": "4:01.53",
+      "place": "2.",
+      "round": "H2"
+    },
+    {
+      "date": "APR 24",
+      "meet": "Kip Keino Classic",
+      "event": "1500 m",
+      "time": "3:37.79",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "APR 11",
+      "meet": "Trials For World Athletics Relay Championships",
+      "event": "1500 m",
+      "time": "3:36.4h",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "APR 9",
+      "meet": "Trials For World Athletics Relay Championships",
+      "event": "1500 m",
+      "time": "3:42.16",
+      "place": "1.",
+      "round": "H1"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sirikwa Classic Continental Tour Gold",
+      "event": "Cross Country",
+      "time": "6:13",
+      "place": "20.",
+      "round": "F"
+    }
+  ],
+  "dob": "10 AUG 1998",
+  "weight": null,
+  "lastHistorySynced": "2026-07-14",
+  "coach": null,
+  "reviewBody": null,
+  "event": "1500m",
+  "id": "brian-komen",
+  "resultsHistory": {
+    "2023": [
+      {
+        "date": "27 APR 2023",
+        "meet": "6th AK Track and Field weekend Meet, Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:41.92",
+        "place": "3."
+      },
+      {
+        "date": "29 APR 2023",
+        "meet": "6th AK Track and Field weekend Meet, Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:35.59",
+        "place": "1."
+      },
+      {
+        "date": "18 JUN 2023",
+        "meet": "Czeslaw Cybulski Memorial, Golęcin Stadion, Poznan",
+        "event": "1500m",
+        "time": "3:33.84",
+        "place": "1."
+      },
+      {
+        "date": "27 JUN 2023",
+        "meet": "62nd Ostrava Golden Spike, Mestský Stadion, Ostrava",
+        "event": "1500m",
+        "time": "3:38.78",
+        "place": "12."
+      },
+      {
+        "date": "01 JUL 2023",
+        "meet": "Meeting National d'Athlétisme de Troyes, Stade d'Athletisme Pierre Voillequin, Troyes",
+        "event": "1500m",
+        "time": "3:35.83",
+        "place": "1."
+      }
+    ],
+    "2024": [
+      {
+        "date": "06 MAR 2024",
+        "meet": "Trials for African Games 2024, Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:38.36",
+        "place": "1."
+      },
+      {
+        "date": "21 MAR 2024",
+        "meet": "African Games, University of Ghana Sports Stadium, Accra",
+        "event": "1500m",
+        "time": "3:47.58",
+        "place": "2."
+      },
+      {
+        "date": "22 MAR 2024",
+        "meet": "African Games, University of Ghana Sports Stadium, Accra",
+        "event": "1500m",
+        "time": "3:39.19",
+        "place": "1."
+      },
+      {
+        "date": "20 APR 2024",
+        "meet": "Kip Keino Classic, Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:32.29",
+        "place": "2."
+      },
+      {
+        "date": "10 MAY 2024",
+        "meet": "Seashore Group Doha Meeting, Suhaim bin Hamad Stadium, Doha - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:32.43",
+        "place": "1."
+      },
+      {
+        "date": "21 MAY 2024",
+        "meet": "Kenyan Championships, Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:44.68",
+        "place": "1."
+      },
+      {
+        "date": "22 MAY 2024",
+        "meet": "Kenyan Championships, Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:37.91",
+        "place": "1."
+      },
+      {
+        "date": "14 JUN 2024",
+        "meet": "National Trials for the XXXIII Olympics Games, Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:37.72",
+        "place": "5."
+      },
+      {
+        "date": "25 JUN 2024",
+        "meet": "African Athletics Championships, Stade Omnisport de JAPOMA, Douala",
+        "event": "1500m",
+        "time": "3:44.20",
+        "place": "2."
+      },
+      {
+        "date": "26 JUN 2024",
+        "meet": "African Athletics Championships, Stade Omnisport de JAPOMA, Douala",
+        "event": "1500m",
+        "time": "3:33.95",
+        "place": "1."
+      },
+      {
+        "date": "12 JUL 2024",
+        "meet": "Meeting International d’Athlétisme Herculis EBS, Stade Louis II, Monaco - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:28.80",
+        "place": "3."
+      },
+      {
+        "date": "02 AUG 2024",
+        "meet": "The XXXIII Olympic Games, Stade de France, Paris",
+        "event": "1500m",
+        "time": "3:36.31",
+        "place": "2."
+      },
+      {
+        "date": "04 AUG 2024",
+        "meet": "The XXXIII Olympic Games, Stade de France, Paris",
+        "event": "1500m",
+        "time": "3:32.57",
+        "place": "4."
+      },
+      {
+        "date": "06 AUG 2024",
+        "meet": "The XXXIII Olympic Games, Stade de France, Paris",
+        "event": "1500m",
+        "time": "3:35.59",
+        "place": "12."
+      },
+      {
+        "date": "22 AUG 2024",
+        "meet": "Athletissima Lausanne, Stade Olympique de la Pontaise, Lausanne - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:31.41",
+        "place": "5."
+      },
+      {
+        "date": "13 SEP 2024",
+        "meet": "Memorial van Damme, Boudewijnstadion, Bruxelles - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:33.21",
+        "place": "9."
+      },
+      {
+        "date": "20 JAN 2024",
+        "meet": "Sparkassen Indoor Meeting Dortmund, Helmut-Körnig-Halle, Dortmund (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:44.06",
+        "place": "2."
+      },
+      {
+        "date": "30 JAN 2024",
+        "meet": "Czech Indoor Gala, Atletická hala, Ostrava (i) - Indoor Meeting",
+        "event": "1500 Metres Short Track",
+        "time": "3:40.90",
+        "place": "8."
+      },
+      {
+        "date": "03 FEB 2024",
+        "meet": "Metz Moselle Athleor, L'Anneau-Halle d'athlétisme de Metz, Metz (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:37.42",
+        "place": "4."
+      },
+      {
+        "date": "10 FEB 2024",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF, Arena Stade Couvert, Liévin (i) - Indoor Meeting",
+        "event": "2000 Metres Short Track",
+        "time": "5:07.31",
+        "place": "9."
+      }
+    ],
+    "2025": [
+      {
+        "date": "25 MAY 2025",
+        "meet": "Meeting International Mohammed VI d'Athlétisme de Rabat, Stade Olympique, Rabat - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:34.38",
+        "place": "11."
+      },
+      {
+        "date": "06 JUN 2025",
+        "meet": "Golden Gala, Stadio Olimpico, Roma - Diamond Discipline",
+        "event": "1500m",
+        "time": "3:31.14",
+        "place": "8."
+      },
+      {
+        "date": "17 JUN 2025",
+        "meet": "Paavo Nurmi Games, Paavo Nurmen Stadion, Turku",
+        "event": "1500m",
+        "time": "3:34.06",
+        "place": "3."
+      },
+      {
+        "date": "22 JUL 2025",
+        "meet": "Trials for World Athletics Championships Tokyo 2025, Nyayo National Stadium, Nairobi",
+        "event": "1500m",
+        "time": "3:49.11",
+        "place": "3."
+      }
+    ]
+  },
+  "age": "27"
+}

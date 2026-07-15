@@ -1,0 +1,836 @@
+{
+  "photoBackground": null,
+  "reviewTitle": null,
+  "waUrl": "https://worldathletics.org/athletes/andorra/pol-moya-14652562",
+  "height": null,
+  "questionBody": null,
+  "headlineRest": null,
+  "name": "Pol Moya",
+  "headlineKey": null,
+  "flag": "AD",
+  "honours": [
+    {
+      "competition": "Ibero-American Championships ",
+      "short": "IC",
+      "discipline": "1500m",
+      "place": 3,
+      "year": "2022"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2024"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "800m",
+      "place": 1,
+      "year": "2023"
+    }
+  ],
+  "seasons": null,
+  "lastSynced": "2026-07-15",
+  "prs": [
+    {
+      "event": "400m",
+      "time": "49.04"
+    },
+    {
+      "event": "400 Metres Short Track",
+      "time": "49.91"
+    },
+    {
+      "event": "800m",
+      "time": "1:46.04"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:48.86"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:23.34"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.54"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:38.37"
+    },
+    {
+      "event": "3000m",
+      "time": "8:09.34"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "8:09.34"
+    },
+    {
+      "event": "5000m",
+      "time": "15:24.24"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:23.7h"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "14:43"
+    },
+    {
+      "event": "4x200 Metres Relay Short Track",
+      "time": "1:34.25"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:17.19"
+    },
+    {
+      "event": "4x400 Metres Relay Short Track",
+      "time": "3:37.40"
+    },
+    {
+      "event": "4x400 Metres Relay Mixed",
+      "time": "3:29.54"
+    }
+  ],
+  "hometown": null,
+  "questionTitle": null,
+  "photo": null,
+  "ncaa": null,
+  "club": null,
+  "country": "Andorra",
+  "results": [
+    {
+      "date": "JUL 4",
+      "meet": "X Ordizia Meeting - International Meeting Jose Antonio Peña",
+      "event": "1500 m",
+      "time": "3:37.54",
+      "place": "4.",
+      "round": "F3"
+    },
+    {
+      "date": "JUN 26",
+      "meet": "76. Boris Hanžeković Memorial",
+      "event": "1500 m",
+      "time": "3:34.54",
+      "place": "14.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 13",
+      "meet": "Merck Laufgala Pfungstadt",
+      "event": "1500 m",
+      "time": "3:35.04",
+      "place": "3.",
+      "round": "F2"
+    },
+    {
+      "date": "JUN 9",
+      "meet": "Reunion Internacional Ciudad de Guadalajara",
+      "event": "800 m",
+      "time": "1:46.04",
+      "place": "5.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 30",
+      "meet": "European Challenger Championships",
+      "event": "800 m",
+      "time": "1:49.44",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 30",
+      "meet": "European Challenger Championships",
+      "event": "1500 m",
+      "time": "3:45.50",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "MAR 20",
+      "meet": "World Athletics Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:44.68",
+      "place": "6.",
+      "round": "H2"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Spanish Indoor Clubs Championships (Joma Trophy and Iberdrola Trophy)",
+      "event": "800 m sh",
+      "time": "1:50.51",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Gran Premio Ciudad de Valencia",
+      "event": "1500 m sh",
+      "time": "3:41.63",
+      "place": "8.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 23",
+      "meet": "Meeting Internacional Catalunya de Pista Coberta",
+      "event": "1500 m sh",
+      "time": "3:41.60",
+      "place": "7.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 18",
+      "meet": "CMCM Luxembourg Indoor Meeting",
+      "event": "1500 m sh",
+      "time": "3:38.37",
+      "place": "5.",
+      "round": "F"
+    }
+  ],
+  "dob": "09 DEC 1996",
+  "weight": null,
+  "lastHistorySynced": "2026-07-15",
+  "coach": null,
+  "reviewBody": null,
+  "event": "1500m",
+  "id": "pol-moya",
+  "resultsHistory": {
+    "2021": [
+      {
+        "date": "11 APR 2021",
+        "meet": "Campionat de Catalunya de Clubs, Palafrugell",
+        "event": "800m",
+        "time": "1:56.87",
+        "place": "1."
+      },
+      {
+        "date": "08 MAY 2021",
+        "meet": "Meeting de Atletismo Toni Bonet, Ibiza",
+        "event": "800m",
+        "time": "1:49.56",
+        "place": "6."
+      },
+      {
+        "date": "16 JUN 2021",
+        "meet": "Reunión de Atletismo Ciudad de Guadalajara, Guadalajara",
+        "event": "800m",
+        "time": "1:51.70",
+        "place": "7."
+      },
+      {
+        "date": "20 JUN 2021",
+        "meet": "European Athletics Team Championships Third League, Tsirio Stadium, Limassol",
+        "event": "800m",
+        "time": "1:51.04",
+        "place": "3."
+      },
+      {
+        "date": "29 JUN 2021",
+        "meet": "VIII Trofeo Diputacion de Castellón-Memorial José Antonio Cansino, Castellón",
+        "event": "800m",
+        "time": "1:48.97",
+        "place": "6."
+      },
+      {
+        "date": "31 JUL 2021",
+        "meet": "The XXXII Olympic Games, National Stadium, Tokyo",
+        "event": "800m",
+        "time": "1:47.44",
+        "place": "7."
+      },
+      {
+        "date": "05 MAR 2021",
+        "meet": "European Athletics Indoor Championships, Arena Toruń, Toruń (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:51.97",
+        "place": "7."
+      },
+      {
+        "date": "01 JUL 2021",
+        "meet": "Míting Internacional d'Atletisme Ciutat de Barcelona, Estadi Joan Serrahima, Barcelona",
+        "event": "1500m",
+        "time": "3:43.57",
+        "place": "3."
+      },
+      {
+        "date": "31 DEC 2021",
+        "meet": "Cursa dels Nassos, Barcelona",
+        "event": "5 Kilometres Road",
+        "time": "14:50",
+        "place": "19."
+      },
+      {
+        "date": "28 NOV 2021",
+        "meet": "Cross Internacional de La Constitucion Alcobendas, Alcobendas - XC 10.06km",
+        "event": "Cross Country",
+        "time": "34:52",
+        "place": "42."
+      },
+      {
+        "date": "20 JUN 2021",
+        "meet": "European Athletics Team Championships Third League, Tsirio Stadium, Limassol",
+        "event": "4x400 Metres Relay",
+        "time": "3:22.68",
+        "place": "3."
+      },
+      {
+        "date": "12 DEC 2021",
+        "meet": "27th SPAR European Cross Country Championships, Dublin",
+        "event": "Cross Country Relay",
+        "time": "20:40",
+        "place": "11."
+      }
+    ],
+    "2022": [
+      {
+        "date": "20 MAY 2022",
+        "meet": "Ibero American Athletics Championships, La Nucia",
+        "event": "800m",
+        "time": "1:49.51",
+        "place": "4."
+      },
+      {
+        "date": "28 MAY 2022",
+        "meet": "Andorra Championships, Andorra La Vella",
+        "event": "800m",
+        "time": "1:49.09",
+        "place": "1."
+      },
+      {
+        "date": "08 JUN 2022",
+        "meet": "Reunión de Atletismo Ciudad de Guadalajara, Guadalajara",
+        "event": "800m",
+        "time": "1:48.17",
+        "place": "2."
+      },
+      {
+        "date": "16 JUN 2022",
+        "meet": "IX GP Diputación de Castellón – VI Memorial JA Cansino, Castellón",
+        "event": "800m",
+        "time": "1:46.26",
+        "place": "6."
+      },
+      {
+        "date": "18 JUN 2022",
+        "meet": "Meeting Madrid, Estadio Vallehermoso, Madrid",
+        "event": "800m",
+        "time": "1:47.50",
+        "place": "1."
+      },
+      {
+        "date": "01 JUL 2022",
+        "meet": "XIX Mediterranean Games, Stade Complexe Olympique, Oran",
+        "event": "800m",
+        "time": "1:49.39",
+        "place": "3."
+      },
+      {
+        "date": "05 JUL 2022",
+        "meet": "Miting Internacional d’Atletisme Ciutat de Barcelona, Estadi Joan Serrahima, Barcelona",
+        "event": "800m",
+        "time": "1:47.68",
+        "place": "4."
+      },
+      {
+        "date": "10 JUL 2022",
+        "meet": "Control FAM, Estadio Vallehermoso, Madrid",
+        "event": "800m",
+        "time": "1:47.28",
+        "place": "1."
+      },
+      {
+        "date": "23 JUL 2022",
+        "meet": "AAI Games, Tullamore Harriers AC Stadium, Tullamore",
+        "event": "800m",
+        "time": "1:50.30",
+        "place": "1."
+      },
+      {
+        "date": "26 JUL 2022",
+        "meet": "Prova de Observação, Lisboa",
+        "event": "800m",
+        "time": "1:47.93",
+        "place": "2."
+      },
+      {
+        "date": "23 JAN 2022",
+        "meet": "Campionat de Catalunya de Clubs, Pista Coberta de Catalunya, Sabadell (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:52.11",
+        "place": "3."
+      },
+      {
+        "date": "30 JAN 2022",
+        "meet": "Réunion FAM, Gallur, Madrid (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:52.75",
+        "place": "4."
+      },
+      {
+        "date": "30 APR 2022",
+        "meet": "Spanish Club Championships, Barcelona",
+        "event": "1500m",
+        "time": "4:11.19",
+        "place": "1."
+      },
+      {
+        "date": "14 MAY 2022",
+        "meet": "Liga Joma de Clubes, Villafranca de los Barros",
+        "event": "1500m",
+        "time": "3:58.14",
+        "place": "4."
+      },
+      {
+        "date": "22 MAY 2022",
+        "meet": "Ibero American Athletics Championships, La Nucia",
+        "event": "1500m",
+        "time": "3:44.64",
+        "place": "3."
+      },
+      {
+        "date": "04 JUN 2022",
+        "meet": "Meeting Jaen Paraiso Interior, Polideportivo Municipal, Andújar",
+        "event": "1500m",
+        "time": "3:42.59",
+        "place": "1."
+      },
+      {
+        "date": "02 JUL 2022",
+        "meet": "XIX Mediterranean Games, Stade Complexe Olympique, Oran",
+        "event": "1500m",
+        "time": "3:43.58",
+        "place": "5."
+      },
+      {
+        "date": "02 FEB 2022",
+        "meet": "Gran Premio Internacional, Velódromo Luis Puig, Valencia (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:47.96",
+        "place": "7."
+      },
+      {
+        "date": "08 FEB 2022",
+        "meet": "Míting Internacional de Catalunya, Pista Coberta de Catalunya, Sabadell (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:46.95",
+        "place": "4."
+      },
+      {
+        "date": "26 FEB 2022",
+        "meet": "Spanish Indoor Championships, Pistas Expourense, Ourense (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:49.19",
+        "place": "OC"
+      },
+      {
+        "date": "23 DEC 2022",
+        "meet": "Control Meeting, Pista Coberta de Catalunya, Sabadell (i)",
+        "event": "3000 Metres Short Track",
+        "time": "8:21.46",
+        "place": "5."
+      },
+      {
+        "date": "31 DEC 2022",
+        "meet": "Cursa dels Nassos, Barcelona",
+        "event": "5 Kilometres Road",
+        "time": "14:43",
+        "place": "19."
+      },
+      {
+        "date": "22 MAY 2022",
+        "meet": "Ibero American Athletics Championships, La Nucia",
+        "event": "4x400 Metres Relay",
+        "time": "3:26.02",
+        "place": "6."
+      },
+      {
+        "date": "11 DEC 2022",
+        "meet": "28th SPAR European Cross Country Championships, Piemonte-La Mandria Park",
+        "event": "Cross Country Relay",
+        "time": "19:57",
+        "place": "14."
+      }
+    ],
+    "2023": [
+      {
+        "date": "20 MAY 2023",
+        "meet": "Andorra Championships, Estadi Comunal, Andorra La Vella",
+        "event": "800m",
+        "time": "1:50.44",
+        "place": "1."
+      },
+      {
+        "date": "30 MAY 2023",
+        "meet": "XIX Games of the Small States of Europe, Marsa Athletics Track, Marsa",
+        "event": "800m",
+        "time": "1:50.37",
+        "place": "2."
+      },
+      {
+        "date": "14 JUN 2023",
+        "meet": "VII Memorial José Antonio Cansino, Pistes d'atletisme Gaetà Huguet, Castellón",
+        "event": "800m",
+        "time": "1:46.19",
+        "place": "6."
+      },
+      {
+        "date": "20 JUN 2023",
+        "meet": "European Athletics Team Championships Third Division, Stadion Śląski, Chorzów",
+        "event": "800m",
+        "time": "1:49.57",
+        "place": "2."
+      },
+      {
+        "date": "12 JUL 2023",
+        "meet": "Reunión Internacional de Atletismo Villa De Bilbao, Polideportivo Zorrotza, Bilbao",
+        "event": "800m",
+        "time": "1:46.38",
+        "place": "1."
+      },
+      {
+        "date": "22 JUL 2023",
+        "meet": "Meeting Madrid, Estadio Vallehermoso, Madrid",
+        "event": "800m",
+        "time": "1:46.21",
+        "place": "3."
+      },
+      {
+        "date": "28 JAN 2023",
+        "meet": "Meeting Internacional Catalunya Pista Coberta, Pista Coberta de Catalunya, Sabadell (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:49.76",
+        "place": "5."
+      },
+      {
+        "date": "04 FEB 2023",
+        "meet": "IFAM Gent Indoor, Topsporthal Vlaanderen, Gent (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:49.01",
+        "place": "3."
+      },
+      {
+        "date": "01 JUN 2023",
+        "meet": "XIX Games of the Small States of Europe, Marsa Athletics Track, Marsa",
+        "event": "1500m",
+        "time": "3:41.10",
+        "place": "1."
+      },
+      {
+        "date": "06 JUN 2023",
+        "meet": "Meeting Iberoamericano, Estadio Iberoamericano, Huelva",
+        "event": "1500m",
+        "time": "3:40.15",
+        "place": "7."
+      },
+      {
+        "date": "05 JUL 2023",
+        "meet": "Míting Internacional d'Atletisme Ciutat de Barcelona, Estadi Joan Serrahima, Barcelona",
+        "event": "1500m",
+        "time": "3:38.18",
+        "place": "7."
+      },
+      {
+        "date": "15 JUL 2023",
+        "meet": "Night of Athletics, Stadion De Veen, Heusden-Zolder",
+        "event": "1500m",
+        "time": "3:37.05",
+        "place": "7."
+      },
+      {
+        "date": "29 JUL 2023",
+        "meet": "Spanish Championships, Pista Parc Central, Torrent",
+        "event": "1500m",
+        "time": "3:43.53",
+        "place": "OC"
+      },
+      {
+        "date": "30 JUL 2023",
+        "meet": "Spanish Championships, Pista Parc Central, Torrent",
+        "event": "1500m",
+        "time": "3:37.88",
+        "place": "OC"
+      },
+      {
+        "date": "25 JAN 2023",
+        "meet": "Meeting Internacional Ciudad de Valencia, Velódromo Luis Puig, Valencia (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:45.05",
+        "place": "7."
+      },
+      {
+        "date": "11 FEB 2023",
+        "meet": "Spanish Indoor Club Championships (Joma Trophy and Iberdrola Trophy), Pistas Expourense, Ourense (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:53.77",
+        "place": "2."
+      },
+      {
+        "date": "18 FEB 2023",
+        "meet": "Spanish Indoor Championships, Gallur, Madrid (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:47.97",
+        "place": "OC"
+      },
+      {
+        "date": "19 FEB 2023",
+        "meet": "Spanish Indoor Championships, Gallur, Madrid (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:47.93",
+        "place": "OC"
+      },
+      {
+        "date": "02 MAR 2023",
+        "meet": "European Athletics Indoor Championships, Ataköy Arena, Istanbul (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:42.23",
+        "place": "7."
+      },
+      {
+        "date": "22 JUN 2023",
+        "meet": "European Athletics Team Championships Third Division, Stadion Śląski, Chorzów",
+        "event": "4x400 Metres Relay Mixed",
+        "time": "3:29.54",
+        "place": "4."
+      }
+    ],
+    "2024": [
+      {
+        "date": "19 MAY 2024",
+        "meet": "Míting Internacional Ciutat de Barcelona, Estadi Joan Serrahima, Barcelona",
+        "event": "800m",
+        "time": "1:46.90",
+        "place": "5."
+      },
+      {
+        "date": "22 JUN 2024",
+        "meet": "Championships of the Small States of Europe, Lathbury Athletics Stadium, Gibraltar",
+        "event": "800m",
+        "time": "1:53.57",
+        "place": "2."
+      },
+      {
+        "date": "30 APR 2024",
+        "meet": "Meeting Iberoamericano Huelva 2024, Estadio Iberoamericano, Huelva",
+        "event": "1500m",
+        "time": "3:40.78",
+        "place": "6."
+      },
+      {
+        "date": "11 MAY 2024",
+        "meet": "Puma Nitro Lange Laufnacht, Carl-Kaufmann-Stadion, Karlsruhe",
+        "event": "1500m",
+        "time": "3:38.18",
+        "place": "7."
+      },
+      {
+        "date": "22 MAY 2024",
+        "meet": "GP Diputacion Csatellon - Memorial Jose Antonio Cansino, Pistes d'atletisme Gaetà Huguet, Castellón",
+        "event": "1500m",
+        "time": "3:37.90",
+        "place": "2."
+      },
+      {
+        "date": "25 MAY 2024",
+        "meet": "Andorran Championships, Estadi Municipal, Mataró",
+        "event": "1500m",
+        "time": "3:37.83",
+        "place": "1."
+      },
+      {
+        "date": "15 JUN 2024",
+        "meet": "Meeting Nikaia, Parc des Sports C. Ehrmann, Nice",
+        "event": "1500m",
+        "time": "3:35.60",
+        "place": "10."
+      },
+      {
+        "date": "19 JUN 2024",
+        "meet": "Meeting International d'Athlétisme de la Province de Liège, Stade Naimette-Xhovémont, Liège",
+        "event": "1500m",
+        "time": "3:37.11",
+        "place": "2."
+      },
+      {
+        "date": "22 JUN 2024",
+        "meet": "Championships of the Small States of Europe, Lathbury Athletics Stadium, Gibraltar",
+        "event": "1500m",
+        "time": "4:04.86",
+        "place": "1."
+      },
+      {
+        "date": "29 JUN 2024",
+        "meet": "Spanish Championships, Estadi Olímpic Camilo Cano, La Nucia",
+        "event": "1500m",
+        "time": "3:44.79",
+        "place": "OC"
+      },
+      {
+        "date": "30 JUN 2024",
+        "meet": "Spanish Championships, Estadi Olímpic Camilo Cano, La Nucia",
+        "event": "1500m",
+        "time": "3:37.12",
+        "place": "OC"
+      },
+      {
+        "date": "04 JUL 2024",
+        "meet": "Meeting International Sotteville 2024, Stade Jean Adret, Sotteville-lès-Rouen",
+        "event": "1500m",
+        "time": "3:42.24",
+        "place": "12."
+      },
+      {
+        "date": "21 DEC 2024",
+        "meet": "Gran Premio Velocitat, Migfons i Fons Short Track, Pista Coberta de Catalunya, Sabadell (i)",
+        "event": "3000 Metres Short Track",
+        "time": "8:09.34",
+        "place": "6."
+      },
+      {
+        "date": "08 DEC 2024",
+        "meet": "30th SPAR European Cross Country Championships, Antalya",
+        "event": "Cross Country Relay",
+        "time": "19:58",
+        "place": "11."
+      }
+    ],
+    "2025": [
+      {
+        "date": "27 MAY 2025",
+        "meet": "Games of the Small States of Europe, Estadi Comunal, Andorra La Vella",
+        "event": "800m",
+        "time": "1:47.85",
+        "place": "1."
+      },
+      {
+        "date": "29 MAY 2025",
+        "meet": "Games of the Small States of Europe, Estadi Comunal, Andorra La Vella",
+        "event": "1500m",
+        "time": "3:47.23",
+        "place": "1."
+      },
+      {
+        "date": "08 JUN 2025",
+        "meet": "Spanish Clubs Championships Segunda Division Liga Joma - Men's Final A, Pista atletismo Carme Sugrañes Blay, Vilanova i la Geltrú",
+        "event": "1500m",
+        "time": "4:07.61",
+        "place": "1."
+      },
+      {
+        "date": "09 AUG 2025",
+        "meet": "IFAM Oordegem, Putbosstadion, Oordegem",
+        "event": "1500m",
+        "time": "3:38.95",
+        "place": "8."
+      },
+      {
+        "date": "16 AUG 2025",
+        "meet": "Meeting voor Mon, AtletiekArena Gaston Roelants Kessel-Lo / Hal 5, Leuven",
+        "event": "1500m",
+        "time": "3:39.35",
+        "place": "10."
+      },
+      {
+        "date": "20 AUG 2025",
+        "meet": "Internationales Abendsportfest, TSV Stadion, Pfungstadt",
+        "event": "1500m",
+        "time": "3:36.86",
+        "place": "2."
+      },
+      {
+        "date": "10 JAN 2025",
+        "meet": "Meeting Internacional de Catalunya, Pista Coberta de Catalunya, Sabadell (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:40.74",
+        "place": "6."
+      },
+      {
+        "date": "25 JAN 2025",
+        "meet": "Astana Indoor Meet for Amin Tuyakov Prizes, Track & Field complex QAZAQSTAN, Astana (i) - World Athletics Indoor Tour",
+        "event": "1500 Metres Short Track",
+        "time": "3:40.71",
+        "place": "4."
+      },
+      {
+        "date": "08 FEB 2025",
+        "meet": "Run & Fly Meeting, Helmut-Körnig-Halle, Dortmund (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:43.30",
+        "place": "1."
+      },
+      {
+        "date": "15 FEB 2025",
+        "meet": "Spanish Indoor Clubs Championships (Joma Trophy and Iberdrola Trophy), Velódromo Luis Puig, Valencia (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:47.41",
+        "place": "2."
+      },
+      {
+        "date": "22 FEB 2025",
+        "meet": "Spanish Indoor Championships, Gallur, Madrid (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:56.06",
+        "place": "OC"
+      },
+      {
+        "date": "23 FEB 2025",
+        "meet": "Spanish Indoor Championships, Gallur, Madrid (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:49.21",
+        "place": "OC"
+      },
+      {
+        "date": "28 FEB 2025",
+        "meet": "World Indoor Tour Gold Madrid 2025, Gallur, Madrid (i) - World Athletics Indoor Tour",
+        "event": "1500 Metres Short Track",
+        "time": "3:40.10",
+        "place": "9."
+      },
+      {
+        "date": "06 MAR 2025",
+        "meet": "European Athletics Indoor Championships, Omnisport, Apeldoorn (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:41.48",
+        "place": "8."
+      },
+      {
+        "date": "08 FEB 2025",
+        "meet": "Run & Fly Meeting, Helmut-Körnig-Halle, Dortmund (i)",
+        "event": "3000 Metres Short Track",
+        "time": "8:15.11",
+        "place": "2."
+      },
+      {
+        "date": "23 MAR 2025",
+        "meet": "Andorra Championships, Estadi Comunal, Andorra La Vella",
+        "event": "5000m",
+        "time": "15:24.24",
+        "place": "3."
+      },
+      {
+        "date": "11 OCT 2025",
+        "meet": "XXXVII Milla Internacional de Berango, Berango",
+        "event": "Mile Road",
+        "time": "4:23.7h",
+        "place": "10."
+      },
+      {
+        "date": "31 MAY 2025",
+        "meet": "Games of the Small States of Europe, Estadi Comunal, Andorra La Vella",
+        "event": "4x400 Metres Relay",
+        "time": "3:17.19",
+        "place": "2."
+      }
+    ]
+  },
+  "age": "29",
+  "aaId": 14652562,
+  "countryCode3": "AND"
+}

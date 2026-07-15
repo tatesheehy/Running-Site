@@ -1,0 +1,1020 @@
+{
+  "photoBackground": null,
+  "reviewTitle": null,
+  "waUrl": "https://worldathletics.org/athletes/czechia/filip-sasinek-14474319",
+  "height": null,
+  "questionBody": null,
+  "headlineRest": null,
+  "name": "Filip Sasínek",
+  "headlineKey": null,
+  "flag": "CZ",
+  "honours": [
+    {
+      "competition": "European Championships",
+      "short": "EC",
+      "discipline": "1500m",
+      "place": 8,
+      "year": "2016"
+    },
+    {
+      "competition": "European Indoor Championships",
+      "short": "EI",
+      "discipline": "1500 Metres Short Track",
+      "place": 3,
+      "year": "2017"
+    },
+    {
+      "competition": "European Indoor Championships",
+      "short": "EI",
+      "discipline": "1500 Metres Short Track",
+      "place": 4,
+      "year": "2019"
+    },
+    {
+      "competition": "European Cross Country Championships",
+      "short": "ECC",
+      "discipline": "Cross Country Relay",
+      "place": 2,
+      "year": "2017"
+    },
+    {
+      "competition": "European U23 Championships",
+      "short": "EUC",
+      "discipline": "1500m",
+      "place": 2,
+      "year": "2017"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2025"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2023"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2022"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2020"
+    },
+    {
+      "competition": "National Championships",
+      "short": "NC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2017"
+    },
+    {
+      "competition": "National Indoor Championships",
+      "short": "NIC",
+      "discipline": "1500 Metres Short Track",
+      "place": 1,
+      "year": "2026"
+    },
+    {
+      "competition": "National Indoor Championships",
+      "short": "NIC",
+      "discipline": "1500 Metres Short Track",
+      "place": 1,
+      "year": "2025"
+    },
+    {
+      "competition": "National Indoor Championships",
+      "short": "NIC",
+      "discipline": "1500 Metres Short Track",
+      "place": 1,
+      "year": "2023"
+    },
+    {
+      "competition": "National Indoor Championships",
+      "short": "NIC",
+      "discipline": "1500 Metres Short Track",
+      "place": 1,
+      "year": "2021"
+    },
+    {
+      "competition": "National Indoor Championships",
+      "short": "NIC",
+      "discipline": "1500 Metres Short Track",
+      "place": 1,
+      "year": "2019"
+    },
+    {
+      "competition": "National Indoor Championships",
+      "short": "NIC",
+      "discipline": "3000 Metres Short Track",
+      "place": 1,
+      "year": "2017"
+    },
+    {
+      "competition": "National Indoor Championships",
+      "short": "NIC",
+      "discipline": "1500 Metres Short Track",
+      "place": 1,
+      "year": "2016"
+    }
+  ],
+  "seasons": null,
+  "lastSynced": "2026-07-15",
+  "prs": [
+    {
+      "event": "300 Metres",
+      "time": "36.32"
+    },
+    {
+      "event": "400m",
+      "time": "48.98"
+    },
+    {
+      "event": "400 Metres Short Track",
+      "time": "51.51"
+    },
+    {
+      "event": "600 Metres",
+      "time": "1:19.57"
+    },
+    {
+      "event": "600 Metres Short Track",
+      "time": "1:19.57"
+    },
+    {
+      "event": "800m",
+      "time": "1:46.24"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:47.75"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:17.05"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:19.62"
+    },
+    {
+      "event": "1500m",
+      "time": "3:34.30"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:36.53"
+    },
+    {
+      "event": "Mile",
+      "time": "3:52.95"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:57.62"
+    },
+    {
+      "event": "2000m",
+      "time": "4:57.60"
+    },
+    {
+      "event": "3000m",
+      "time": "7:51.81"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:51.81"
+    },
+    {
+      "event": "5000m",
+      "time": "13:55.47"
+    },
+    {
+      "event": "300 Metres Hurdles (84.0cm)",
+      "time": "39.82"
+    },
+    {
+      "event": "2000 Metres Steeplechase",
+      "time": "5:45.03"
+    },
+    {
+      "event": "3000m SC",
+      "time": "8:55.53"
+    },
+    {
+      "event": "4x400 Metres Relay",
+      "time": "3:14.85"
+    }
+  ],
+  "hometown": null,
+  "questionTitle": null,
+  "photo": null,
+  "ncaa": null,
+  "club": null,
+  "country": "Czechia",
+  "results": [
+    {
+      "date": "JUN 28",
+      "meet": "Czesław Cybulski Memorial",
+      "event": "1500 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUN 21",
+      "meet": "FBK Games",
+      "event": "1500 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "1500 m",
+      "time": "3:37.32",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "Mile",
+      "time": "3:52.95",
+      "place": "11.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 3",
+      "meet": "Paavo Nurmi Games",
+      "event": "5000 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUN 1",
+      "meet": "Josef Odlozil Memorial",
+      "event": "1500 m",
+      "time": "3:38.83",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 29",
+      "meet": "8th Irena Szewińska Memorial",
+      "event": "1500 m",
+      "time": "3:40.80",
+      "place": "10.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "Wanda Diamond League Xiamen",
+      "event": "5000 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Wanda Diamond League",
+      "event": "3000 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "MAR 1",
+      "meet": "Czech Indoor Championships",
+      "event": "1500 m sh",
+      "time": "3:39.63",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "ORLEN Copernicus Cup",
+      "event": "1500 m sh",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "FEB 19",
+      "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+      "event": "3000 m sh",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "FEB 8",
+      "meet": "Meeting Metz Moselle Athlélor Crédit Mutuel",
+      "event": "3000 m sh",
+      "time": "DNF",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 3",
+      "meet": "Czech Indoor Gala",
+      "event": "3000 m sh",
+      "time": "7:53.94",
+      "place": "10.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 24",
+      "meet": "Meeting Indoor de Lyon",
+      "event": "1500 m sh",
+      "time": "3:39.76",
+      "place": "7.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 18",
+      "meet": "CMCM Luxembourg Indoor Meeting",
+      "event": "1500 m sh",
+      "time": "3:38.62",
+      "place": "7.",
+      "round": "F"
+    }
+  ],
+  "dob": "08 JAN 1996",
+  "weight": null,
+  "lastHistorySynced": "2026-07-14",
+  "coach": null,
+  "reviewBody": null,
+  "event": "1500m",
+  "id": "filip-sasinek",
+  "resultsHistory": {
+    "2021": [
+      {
+        "date": "07 AUG 2021",
+        "meet": "Czech Club Championships, Breclav",
+        "event": "800m",
+        "time": "1:47.89",
+        "place": "1."
+      },
+      {
+        "date": "15 AUG 2021",
+        "meet": "4. Memoriał Wiesława Maniaka, Wieslaw Maniak Municipal Athletic Stadium, Szczecin",
+        "event": "800m",
+        "time": "1:46.70",
+        "place": "7."
+      },
+      {
+        "date": "07 SEP 2021",
+        "meet": "Velká cena Tábora a Memoriál Ing. Jana Pána, Tábor",
+        "event": "800m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "09 FEB 2021",
+        "meet": "3. kolo Halové atletické ligy, Stromovka, Praha (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:47.88",
+        "place": "1."
+      },
+      {
+        "date": "30 AUG 2021",
+        "meet": "Janusz Sidło Memorial, Forest Stadium, Sopot",
+        "event": "1000 Metres",
+        "time": "2:18.54",
+        "place": "2."
+      },
+      {
+        "date": "23 JAN 2021",
+        "meet": "1. kolo Halové atletické ligy, Stromovka, Praha (i)",
+        "event": "1000 Metres Short Track",
+        "time": "2:19.62",
+        "place": "2."
+      },
+      {
+        "date": "19 MAY 2021",
+        "meet": "60th Ostrava Golden Spike, Mestský Stadion, Ostrava",
+        "event": "1500m",
+        "time": "3:37.21",
+        "place": "9."
+      },
+      {
+        "date": "23 MAY 2021",
+        "meet": "56. Internationales Pfingstsportfest, Bungertstadion, Rehlingen",
+        "event": "1500m",
+        "time": "3:38.14",
+        "place": "4."
+      },
+      {
+        "date": "15 JUN 2021",
+        "meet": "Kladno hází a Kladenské Memoriály, Mestský Stadion Sletište, Kladno",
+        "event": "1500m",
+        "time": "3:38.69",
+        "place": "6."
+      },
+      {
+        "date": "17 JUN 2021",
+        "meet": "XXIV Meeting Internazionale Città di Nembro, Centro Sportivo Saletti, Nembro",
+        "event": "1500m",
+        "time": "3:39.40",
+        "place": "1."
+      },
+      {
+        "date": "27 JUN 2021",
+        "meet": "Czech Championships, Stadion Mládeže, Zlín",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "21 AUG 2021",
+        "meet": "CITIUS Meeting, Stadion Wankdorf, Bern",
+        "event": "1500m",
+        "time": "3:36.43",
+        "place": "1."
+      },
+      {
+        "date": "22 AUG 2021",
+        "meet": "Czech Club Championships, Stadion Juliska, Praha",
+        "event": "1500m",
+        "time": "3:50.51",
+        "place": "1."
+      },
+      {
+        "date": "24 AUG 2021",
+        "meet": "Hungarian GP Series Budapest, Lantos Mihály Sportközpont, Budapest",
+        "event": "1500m",
+        "time": "3:39.66",
+        "place": "4."
+      },
+      {
+        "date": "05 SEP 2021",
+        "meet": "Czech Club Championships, Breclav",
+        "event": "1500m",
+        "time": "3:43.21",
+        "place": "1."
+      },
+      {
+        "date": "14 SEP 2021",
+        "meet": "Gala dei Castelli, Stadio Comunale, Bellinzona",
+        "event": "1500m",
+        "time": "3:35.82",
+        "place": "2."
+      },
+      {
+        "date": "03 FEB 2021",
+        "meet": "Czech Indoor Gala, Atletická hala, Ostrava (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:39.75",
+        "place": "3."
+      },
+      {
+        "date": "17 FEB 2021",
+        "meet": "Copernicus Cup, Arena Toruń, Toruń (i) - World Athletics Indoor Tour",
+        "event": "1500 Metres Short Track",
+        "time": "3:36.53",
+        "place": "5."
+      },
+      {
+        "date": "21 FEB 2021",
+        "meet": "Czech Indoor Championships, Vitkovice, Ostrava (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:46.15",
+        "place": "1."
+      },
+      {
+        "date": "04 MAR 2021",
+        "meet": "European Athletics Indoor Championships, Arena Toruń, Toruń (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:40.04",
+        "place": "2."
+      },
+      {
+        "date": "05 MAR 2021",
+        "meet": "European Athletics Indoor Championships, Arena Toruń, Toruń (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:40.64",
+        "place": "9."
+      },
+      {
+        "date": "20 FEB 2021",
+        "meet": "Czech Indoor Championships, Vitkovice, Ostrava (i)",
+        "event": "3000 Metres Short Track",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "05 SEP 2021",
+        "meet": "Czech Club Championships, Breclav",
+        "event": "5000m",
+        "time": "14:14.39",
+        "place": "1."
+      }
+    ],
+    "2022": [
+      {
+        "date": "21 MAY 2022",
+        "meet": "Papaflessia Athletics Meeting 2022, Ethnikou Stadiou, Kalamata",
+        "event": "800m",
+        "time": "1:48.55",
+        "place": "2."
+      },
+      {
+        "date": "31 MAY 2022",
+        "meet": "61st Golden Spike, Mestský Stadion, Ostrava",
+        "event": "800m",
+        "time": "1:46.29",
+        "place": "11."
+      },
+      {
+        "date": "24 AUG 2022",
+        "meet": "5. Memoriał Wiesława Maniaka, Wieslaw Maniak Municipal Athletic Stadium, Szczecin",
+        "event": "800m",
+        "time": "1:46.66",
+        "place": "6."
+      },
+      {
+        "date": "30 AUG 2022",
+        "meet": "Rieter mítink, Ustí Nad Orlicí",
+        "event": "800m",
+        "time": "1:48.15",
+        "place": "3."
+      },
+      {
+        "date": "15 MAY 2022",
+        "meet": "1. kolo extraligy, Mestský Stadion, Ostrava",
+        "event": "1500m",
+        "time": "3:38.44",
+        "place": "1."
+      },
+      {
+        "date": "25 MAY 2022",
+        "meet": "24. Internationales Leichtathletik Meeting \"Anhalt 2022\", Paul-Greifzu-Stadion, Dessau",
+        "event": "1500m",
+        "time": "3:38.76",
+        "place": "2."
+      },
+      {
+        "date": "03 JUN 2022",
+        "meet": "4th Irena Szewinska Memorial, Zdzisław Krzyszkowiak Stadium, Bydgoszcz",
+        "event": "1500m",
+        "time": "3:36.22",
+        "place": "5."
+      },
+      {
+        "date": "06 JUN 2022",
+        "meet": "FBK Games, FBK Stadium, Hengelo",
+        "event": "1500m",
+        "time": "3:36.40",
+        "place": "3."
+      },
+      {
+        "date": "12 JUN 2022",
+        "meet": "Sollentuna GP, Sollentunavallen, Sollentuna",
+        "event": "1500m",
+        "time": "3:38.07",
+        "place": "3."
+      },
+      {
+        "date": "25 JUN 2022",
+        "meet": "Czech Championships, Stadion U Červených domků, Hodonín",
+        "event": "1500m",
+        "time": "3:38.06",
+        "place": "1."
+      },
+      {
+        "date": "30 JUN 2022",
+        "meet": "BAUHAUS-Galan, Olympiastadion, Stockholm - Promotional Events",
+        "event": "1500m",
+        "time": "3:36.56",
+        "place": "1."
+      },
+      {
+        "date": "16 JUL 2022",
+        "meet": "World Athletics Championships, Oregon 2022, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:39.47",
+        "place": "8."
+      },
+      {
+        "date": "15 AUG 2022",
+        "meet": "European Athletics Championships, Olympiastadion, München",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "04 SEP 2022",
+        "meet": "Czech Team Championships, Cheb",
+        "event": "1500m",
+        "time": "3:42.01",
+        "place": "1."
+      },
+      {
+        "date": "11 SEP 2022",
+        "meet": "Memorial Borisa Hanžekovića, Sports Park Mladost, Zagreb",
+        "event": "3000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "04 SEP 2022",
+        "meet": "Czech Team Championships, Cheb",
+        "event": "5000m",
+        "time": "14:13.17",
+        "place": "1."
+      }
+    ],
+    "2023": [
+      {
+        "date": "08 AUG 2023",
+        "meet": "Rieter Mítink, Atletický stadion, Ustí Nad Orlicí",
+        "event": "800m",
+        "time": "1:48.62",
+        "place": "3."
+      },
+      {
+        "date": "13 AUG 2023",
+        "meet": "16. ročník Hvězdného házení, Městský stadion Střelnice, Domažlice",
+        "event": "1000 Metres",
+        "time": "2:19.67",
+        "place": "1."
+      },
+      {
+        "date": "05 JUN 2023",
+        "meet": "Memorial Josef Odložil, Stadion Juliska, Praha",
+        "event": "1500m",
+        "time": "3:43.03",
+        "place": "10."
+      },
+      {
+        "date": "11 JUN 2023",
+        "meet": "Folksam Grand Prix Sollentuna, Sollentunavallen, Sollentuna",
+        "event": "1500m",
+        "time": "3:41.13",
+        "place": "10."
+      },
+      {
+        "date": "18 JUN 2023",
+        "meet": "Czeslaw Cybulski Memorial, Golęcin Stadion, Poznan",
+        "event": "1500m",
+        "time": "3:38.06",
+        "place": "4."
+      },
+      {
+        "date": "27 JUN 2023",
+        "meet": "62nd Ostrava Golden Spike, Mestský Stadion, Ostrava",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "22 JUL 2023",
+        "meet": "16º Triveneto Meeting Internationale, Campo Sportivo G. Draghicchio, Trieste",
+        "event": "1500m",
+        "time": "3:40.54",
+        "place": "1."
+      },
+      {
+        "date": "30 JUL 2023",
+        "meet": "Czech Championships, Stadion Míru, Tábor",
+        "event": "1500m",
+        "time": "3:38.71",
+        "place": "1."
+      },
+      {
+        "date": "03 SEP 2023",
+        "meet": "Czech Teams Championships, Stadion U Červených domků, Hodonín",
+        "event": "1500m",
+        "time": "3:48.57",
+        "place": "1."
+      },
+      {
+        "date": "02 FEB 2023",
+        "meet": "Czech Indoor Gala, Atletická hala, Ostrava (i) - Split times",
+        "event": "1500 Metres Short Track",
+        "time": "3:42.00",
+        "place": ""
+      },
+      {
+        "date": "08 FEB 2023",
+        "meet": "ORLEN Copernicus Cup, Arena Toruń, Toruń (i) - World Athletics Indoor Tour",
+        "event": "1500 Metres Short Track",
+        "time": "3:38.74",
+        "place": "6."
+      },
+      {
+        "date": "11 FEB 2023",
+        "meet": "Meeting Metz Moselle Athlelor, L'Anneau-Halle d'athlétisme de Metz, Metz (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:40.89",
+        "place": "8."
+      },
+      {
+        "date": "19 FEB 2023",
+        "meet": "Czech Indoor Championships, Atletická hala, Ostrava (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:40.24",
+        "place": "1."
+      },
+      {
+        "date": "02 MAR 2023",
+        "meet": "European Athletics Indoor Championships, Ataköy Arena, Istanbul (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:44.76",
+        "place": "8."
+      },
+      {
+        "date": "02 FEB 2023",
+        "meet": "Czech Indoor Gala, Atletická hala, Ostrava (i)",
+        "event": "Mile Short Track",
+        "time": "3:57.62",
+        "place": "4."
+      },
+      {
+        "date": "22 JAN 2023",
+        "meet": "CMCM Indoor Meeting, Coque Sport Center, Luxembourg (i)",
+        "event": "3000 Metres Short Track",
+        "time": "7:54.31",
+        "place": "2."
+      },
+      {
+        "date": "15 FEB 2023",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais, Arena Stade Couvert, Liévin (i) - Indoor Meeting",
+        "event": "3000 Metres Short Track",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "03 SEP 2023",
+        "meet": "Czech Teams Championships, Stadion U Červených domků, Hodonín",
+        "event": "5000m",
+        "time": "13:55.47",
+        "place": "1."
+      },
+      {
+        "date": "05 SEP 2023",
+        "meet": "Opavská míle, Opava",
+        "event": "Mile Road",
+        "time": "3:55.0h",
+        "place": "1."
+      }
+    ],
+    "2024": [
+      {
+        "date": "30 JUN 2024",
+        "meet": "Czech Championships, Stadion Mládeže, Zlín",
+        "event": "1500m",
+        "time": "4:02.39",
+        "place": "9."
+      },
+      {
+        "date": "13 JUL 2024",
+        "meet": "46th Grand Prix Nove Mesto nad Metuji 2024, General Klapálek ́s stadium, Nové Město nad Metují",
+        "event": "1500m",
+        "time": "3:44.52",
+        "place": "4."
+      },
+      {
+        "date": "08 SEP 2024",
+        "meet": "Czech Teams Championships, Stadion Míru, Tábor",
+        "event": "1500m",
+        "time": "3:45.08",
+        "place": "2."
+      },
+      {
+        "date": "30 JAN 2024",
+        "meet": "Czech Indoor Gala, Atletická hala, Ostrava (i) - Indoor Meeting",
+        "event": "1500 Metres Short Track",
+        "time": "3:37.99",
+        "place": "5."
+      },
+      {
+        "date": "03 FEB 2024",
+        "meet": "Folksam GP Stockholm Indoor, Sätrahallen, Stockholm (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:41.39",
+        "place": "5."
+      },
+      {
+        "date": "13 FEB 2024",
+        "meet": "Belgrade Indoor Meeting, Atletska dvorana, Beograd (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:39.38",
+        "place": "5."
+      },
+      {
+        "date": "01 MAR 2024",
+        "meet": "World Athletics Indoor Championships, Glasgow Arena, Glasgow (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:43.82",
+        "place": "4."
+      },
+      {
+        "date": "21 JAN 2024",
+        "meet": "CMCM Indoor Meeting, Coque Sport Center, Luxembourg (i)",
+        "event": "3000 Metres Short Track",
+        "time": "7:51.81",
+        "place": "3."
+      },
+      {
+        "date": "06 FEB 2024",
+        "meet": "ORLEN Copernicus Cup, Arena Toruń, Toruń (i) - World Athletics Indoor Tour",
+        "event": "3000 Metres Short Track",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "10 FEB 2024",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF, Arena Stade Couvert, Liévin (i) - World Athletics Indoor Tour",
+        "event": "3000 Metres Short Track",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "17 FEB 2024",
+        "meet": "Czech Indoor Championships, Atletická hala, Ostrava (i)",
+        "event": "3000 Metres Short Track",
+        "time": "8:06.47",
+        "place": "2."
+      }
+    ],
+    "2025": [
+      {
+        "date": "25 MAY 2025",
+        "meet": "1. kolo extraligy mužů a žen, Sportovní areál Krajinka, Cheb",
+        "event": "800m",
+        "time": "1:53.41",
+        "place": "2."
+      },
+      {
+        "date": "01 JUN 2025",
+        "meet": "Goldenes Oval 2025, Heinz-Steyer-Stadion, Dresden",
+        "event": "1500m",
+        "time": "3:35.32",
+        "place": "6."
+      },
+      {
+        "date": "17 JUN 2025",
+        "meet": "Paavo Nurmi Games, Paavo Nurmen Stadion, Turku",
+        "event": "1500m",
+        "time": "3:35.99",
+        "place": "7."
+      },
+      {
+        "date": "24 JUN 2025",
+        "meet": "64th Ostrava Golden Spike, Mestský Stadion, Ostrava",
+        "event": "1500m",
+        "time": "3:34.30",
+        "place": "10."
+      },
+      {
+        "date": "29 JUN 2025",
+        "meet": "European Athletics Team Championships First Division, Estadio Vallehermoso, Madrid",
+        "event": "1500m",
+        "time": "3:40.87",
+        "place": "6."
+      },
+      {
+        "date": "05 JUL 2025",
+        "meet": "Czesław Cybulski Memorial, Golęcin Stadion, Poznan",
+        "event": "1500m",
+        "time": "3:38.93",
+        "place": "10."
+      },
+      {
+        "date": "06 AUG 2025",
+        "meet": "8. International Wiesław Maniak Memorial, Wieslaw Maniak Municipal Athletic Stadium, Szczecin",
+        "event": "1500m",
+        "time": "3:36.83",
+        "place": "3."
+      },
+      {
+        "date": "24 AUG 2025",
+        "meet": "Czech Championships, Atletický stadion Střelnice, Jablonec nad Nisou",
+        "event": "1500m",
+        "time": "3:39.35",
+        "place": "1."
+      },
+      {
+        "date": "14 SEP 2025",
+        "meet": "World Athletics Championships, Tokyo 2025, National Stadium, Tokyo",
+        "event": "1500m",
+        "time": "3:43.17",
+        "place": "9."
+      },
+      {
+        "date": "18 JAN 2025",
+        "meet": "Sparkassen Indoor Meeting Dortmund, Helmut-Körnig-Halle, Dortmund (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:43.06",
+        "place": "5."
+      },
+      {
+        "date": "16 FEB 2025",
+        "meet": "ORLEN Copernicus Cup, Arena Toruń, Toruń (i) - World Athletics Indoor Tour",
+        "event": "1500 Metres Short Track",
+        "time": "3:37.55",
+        "place": "6."
+      },
+      {
+        "date": "23 FEB 2025",
+        "meet": "Czech Indoor Championships, Atletická hala, Ostrava (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:39.05",
+        "place": "1."
+      },
+      {
+        "date": "28 FEB 2025",
+        "meet": "World Indoor Tour Gold Madrid 2025, Gallur, Madrid (i) - World Athletics Indoor Tour",
+        "event": "1500 Metres Short Track",
+        "time": "3:39.74",
+        "place": "6."
+      },
+      {
+        "date": "21 MAR 2025",
+        "meet": "World Athletics Indoor Championships, Sports Training Center, Nanjing (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:40.86",
+        "place": "6."
+      },
+      {
+        "date": "04 FEB 2025",
+        "meet": "Czech Indoor Gala, Atletická hala, Ostrava (i) - World Athletics Indoor Tour",
+        "event": "Mile Short Track",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "13 FEB 2025",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF, Arena Stade Couvert, Liévin (i) - World Athletics Indoor Tour",
+        "event": "Mile Short Track",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "25 MAY 2025",
+        "meet": "1. kolo extraligy mužů a žen, Sportovní areál Krajinka, Cheb",
+        "event": "3000m",
+        "time": "8:13.61",
+        "place": "1."
+      },
+      {
+        "date": "10 AUG 2025",
+        "meet": "Folksam Grand Prix Sollentuna, Sollentunavallen, Sollentuna",
+        "event": "3000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "12 AUG 2025",
+        "meet": "Gyulai István Memorial - Hungarian Athletics Grand Prix, Nemzeti Atlétikai Központ, Budapest",
+        "event": "3000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "08 FEB 2025",
+        "meet": "Meeting Metz Moselle Athlelor, L'Anneau-Halle d'athlétisme de Metz, Metz (i)",
+        "event": "3000 Metres Short Track",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "16 MAY 2025",
+        "meet": "Doha Meeting, Suhaim bin Hamad Stadium, Doha - Diamond Discipline",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "15 JUN 2025",
+        "meet": "BAUHAUS-Galan, Olympiastadion, Stockholm - Diamond Discipline",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "16 AUG 2025",
+        "meet": "Czech Team Championships, Mestský Stadion, Ostrava",
+        "event": "5000m",
+        "time": "14:40.86",
+        "place": "1."
+      }
+    ]
+  },
+  "age": "30"
+}

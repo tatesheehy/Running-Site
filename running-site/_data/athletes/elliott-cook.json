@@ -1,0 +1,863 @@
+{
+  "photoBackground": null,
+  "reviewTitle": null,
+  "waUrl": "https://worldathletics.org/athletes/united-states/elliott-cook-14907407",
+  "height": null,
+  "questionBody": null,
+  "headlineRest": null,
+  "name": "Elliott Cook",
+  "headlineKey": null,
+  "flag": "US",
+  "honours": [],
+  "seasons": null,
+  "lastSynced": "2026-07-15",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:45.26"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:46.94"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:18.11"
+    },
+    {
+      "event": "1500m",
+      "time": "3:33.84"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:36.78"
+    },
+    {
+      "event": "Mile",
+      "time": "3:52.32"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:52.32"
+    },
+    {
+      "event": "3000m",
+      "time": "7:41.57"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:41.57"
+    },
+    {
+      "event": "4x800 Metres Relay",
+      "time": "7:15.46"
+    },
+    {
+      "event": "Distance Medley",
+      "time": "9:36.89"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:14.88"
+    },
+    {
+      "event": "4xMile Relay",
+      "time": "16:29.87"
+    }
+  ],
+  "hometown": null,
+  "questionTitle": null,
+  "photo": null,
+  "ncaa": null,
+  "club": null,
+  "country": "United States",
+  "results": [
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "1500 m",
+      "time": "3:39.56",
+      "place": "",
+      "round": "F2"
+    },
+    {
+      "date": "JUL 3",
+      "meet": "Prefontaine Classic",
+      "event": "Mile",
+      "time": "3:56.16",
+      "place": "12.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 21",
+      "meet": "Portland Track Festival",
+      "event": "800 m",
+      "time": "1:46.53",
+      "place": "7.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 12",
+      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "event": "1500 m",
+      "time": "3:37.80",
+      "place": "6.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "event": "1500 m",
+      "time": "3:36.77",
+      "place": "7.",
+      "round": "SF2"
+    },
+    {
+      "date": "MAY 29",
+      "meet": "NCAA Division I West First Rounds",
+      "event": "1500 m",
+      "time": "3:45.24",
+      "place": "3.",
+      "round": "H1"
+    },
+    {
+      "date": "MAY 27",
+      "meet": "NCAA Division I West First Rounds",
+      "event": "1500 m",
+      "time": "3:40.17",
+      "place": "7.",
+      "round": "PR1"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "Big Ten Outdoor Track & Field Championships",
+      "event": "800 m",
+      "time": "1:49.64",
+      "place": "5.",
+      "round": "H4"
+    },
+    {
+      "date": "MAY 15",
+      "meet": "Big Ten Outdoor Track & Field Championships",
+      "event": "1500 m",
+      "time": "3:45.15",
+      "place": "2.",
+      "round": "H1"
+    },
+    {
+      "date": "MAY 15",
+      "meet": "Big Ten Outdoor Track & Field Championships",
+      "event": "1500 m",
+      "time": "4:03.07",
+      "place": "8.",
+      "round": "F"
+    },
+    {
+      "date": "MAY 8",
+      "meet": "Oregon Twilight",
+      "event": "1500 m",
+      "time": "3:40.14",
+      "place": "6.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 2",
+      "meet": "Oregon State High Performance",
+      "event": "800 m",
+      "time": "1:49.87",
+      "place": "6.",
+      "round": "F1"
+    },
+    {
+      "date": "MAR 14",
+      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "event": "3000 m sh",
+      "time": "8:09.64",
+      "place": "13.",
+      "round": "F1"
+    },
+    {
+      "date": "MAR 13",
+      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "event": "Mile sh",
+      "time": "3:58.89",
+      "place": "7.",
+      "round": "H1"
+    },
+    {
+      "date": "MAR 13",
+      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "event": "Distance Medley sh",
+      "time": "9:27.49",
+      "place": "7.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Big Ten Conference Indoor Track & Field Championships",
+      "event": "Mile sh",
+      "time": "4:12.49",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "Big Ten Conference Indoor Track & Field Championships",
+      "event": "3000 m sh",
+      "time": "8:09.87",
+      "place": "9.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 27",
+      "meet": "Big Ten Conference Indoor Track & Field Championships",
+      "event": "Mile sh",
+      "time": "4:00.67",
+      "place": "1.",
+      "round": "H1"
+    },
+    {
+      "date": "FEB 26",
+      "meet": "Big Ten Conference Indoor Track & Field Championships",
+      "event": "Distance Medley sh",
+      "time": "9:38.85",
+      "place": "2.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "Distance Medley sh",
+      "time": "9:14.88",
+      "place": "1.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 20",
+      "meet": "Arkansas Qualifier",
+      "event": "Distance Medley sh",
+      "time": "DQ",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Boston University David Hemery Valentine Invitational",
+      "event": "1500 m sh",
+      "time": "3:36.78",
+      "place": "6.",
+      "round": "F1"
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Boston University David Hemery Valentine Invitational",
+      "event": "Mile sh",
+      "time": "3:52.32",
+      "place": "6.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 31",
+      "meet": "Razorback Invitational",
+      "event": "Mile sh",
+      "time": "3:53.57",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "JAN 30",
+      "meet": "Razorback Invitational",
+      "event": "800 m sh",
+      "time": "1:46.94",
+      "place": "2.",
+      "round": "F1"
+    }
+  ],
+  "dob": "22 FEB 2002",
+  "weight": null,
+  "lastHistorySynced": "2026-07-14",
+  "coach": null,
+  "reviewBody": null,
+  "event": "1500m",
+  "id": "elliott-cook",
+  "resultsHistory": {
+    "2021": [
+      {
+        "date": "03 APR 2021",
+        "meet": "Hayward Premiere, Hayward Field, Eugene, OR",
+        "event": "800m",
+        "time": "1:51.28",
+        "place": "2."
+      },
+      {
+        "date": "17 APR 2021",
+        "meet": "West Coast Classic, Hayward Field, Eugene, OR",
+        "event": "800m",
+        "time": "1:49.98",
+        "place": "2."
+      },
+      {
+        "date": "24 APR 2021",
+        "meet": "USATF Grand Prix, Hayward Field, Eugene, OR - College Events",
+        "event": "800m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "07 MAY 2021",
+        "meet": "Oregon Twilight, Hayward Field, Eugene, OR",
+        "event": "800m",
+        "time": "1:50.69",
+        "place": "5."
+      },
+      {
+        "date": "16 MAY 2021",
+        "meet": "Portland Distance Carnival, Griswold Stadium, Portland, OR",
+        "event": "800m",
+        "time": "1:49.53",
+        "place": "1."
+      },
+      {
+        "date": "26 MAY 2021",
+        "meet": "NCAA Preliminary West Round, Cushing Stadium, College Station, TX",
+        "event": "800m",
+        "time": "1:50.48",
+        "place": "4."
+      },
+      {
+        "date": "02 APR 2021",
+        "meet": "Hayward Premiere, Hayward Field, Eugene, OR - Invitational Events",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "23 APR 2021",
+        "meet": "Oregon Relays, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:47.28",
+        "place": "2."
+      },
+      {
+        "date": "07 MAY 2021",
+        "meet": "Oregon Twilight, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "19 FEB 2021",
+        "meet": "Hayward Time Trial, Hayward Field, Eugene, OR",
+        "event": "3000m",
+        "time": "10:46.11",
+        "place": "5."
+      }
+    ],
+    "2022": [
+      {
+        "date": "02 APR 2022",
+        "meet": "Hayward Premiere, Hayward Field, Eugene, OR - Invitational Events",
+        "event": "800m",
+        "time": "1:48.92",
+        "place": "3."
+      },
+      {
+        "date": "06 MAY 2022",
+        "meet": "Oregon Twilight, Hayward Field, Eugene, OR",
+        "event": "800m",
+        "time": "1:50.23",
+        "place": "4."
+      },
+      {
+        "date": "13 MAY 2022",
+        "meet": "Pac-12 Ch., Hayward Field, Eugene, OR",
+        "event": "800m",
+        "time": "1:50.20",
+        "place": "1."
+      },
+      {
+        "date": "13 MAY 2022",
+        "meet": "Pac-12 Ch., Hayward Field, Eugene, OR",
+        "event": "800m",
+        "time": "1:48.81",
+        "place": "1."
+      },
+      {
+        "date": "25 MAY 2022",
+        "meet": "NCAA West Preliminary Round, John McDonnell Field, Fayetteville, AR",
+        "event": "800m",
+        "time": "1:59.04",
+        "place": "8."
+      },
+      {
+        "date": "12 FEB 2022",
+        "meet": "The Badgers Windy City Invitational, Gately Indoor TF Center, Chicago, IL (i) - Invitational Events",
+        "event": "800 Metres Short Track",
+        "time": "1:47.95",
+        "place": "7."
+      },
+      {
+        "date": "27 FEB 2022",
+        "meet": "Boston University Last Chance Meet, Boston Univ. Track & Tennis Center, Boston, MA (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:48.71",
+        "place": "2."
+      },
+      {
+        "date": "22 APR 2022",
+        "meet": "Oregon Relays, Hayward Field, Eugene, OR - Invitational Events",
+        "event": "1500m",
+        "time": "3:41.23",
+        "place": "6."
+      },
+      {
+        "date": "06 MAY 2022",
+        "meet": "Oregon Twilight, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "13 MAY 2022",
+        "meet": "Pac-12 Ch., Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:43.99",
+        "place": "4."
+      },
+      {
+        "date": "15 MAY 2022",
+        "meet": "Pac-12 Ch., Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:40.98",
+        "place": "4."
+      },
+      {
+        "date": "25 MAY 2022",
+        "meet": "NCAA West Preliminary Round, John McDonnell Field, Fayetteville, AR",
+        "event": "1500m",
+        "time": "3:40.80",
+        "place": "4."
+      },
+      {
+        "date": "27 MAY 2022",
+        "meet": "NCAA West Preliminary Round, John McDonnell Field, Fayetteville, AR",
+        "event": "1500m",
+        "time": "3:38.92",
+        "place": "4."
+      },
+      {
+        "date": "08 JUN 2022",
+        "meet": "NCAA Div. I Outdoor Championships, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:44.47",
+        "place": "9."
+      },
+      {
+        "date": "29 JAN 2022",
+        "meet": "Razorback Invitational, Randal Tyson Indoor Center, Fayetteville, AR (i)",
+        "event": "Mile Short Track",
+        "time": "3:59.02",
+        "place": "1."
+      },
+      {
+        "date": "01 APR 2022",
+        "meet": "Hayward Premiere, Hayward Field, Eugene, OR - Invitational Events",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "25 FEB 2022",
+        "meet": "Pac 12 Invite, Dempsey Indoor, Seattle, WA (i)",
+        "event": "Distance Medley",
+        "time": "9:44.03",
+        "place": "2."
+      },
+      {
+        "date": "28 JAN 2022",
+        "meet": "Razorback Invitational, Randal Tyson Indoor Center, Fayetteville, AR (i)",
+        "event": "Distance Medley Short Track",
+        "time": "9:44.19",
+        "place": "6."
+      },
+      {
+        "date": "11 FEB 2022",
+        "meet": "The Badgers Windy City Invitational, Gately Indoor TF Center, Chicago, IL (i)",
+        "event": "Distance Medley Short Track",
+        "time": "9:34.70",
+        "place": "1."
+      },
+      {
+        "date": "22 APR 2022",
+        "meet": "Oregon Relays, Hayward Field, Eugene, OR",
+        "event": "4xMile Relay",
+        "time": "16:29.87",
+        "place": "2."
+      }
+    ],
+    "2023": [
+      {
+        "date": "28 JAN 2023",
+        "meet": "Washington Indoor Invitational, Dempsey Indoor, Seattle, WA (i)",
+        "event": "800m",
+        "time": "1:46.93",
+        "place": "1."
+      },
+      {
+        "date": "25 FEB 2023",
+        "meet": "Ken Shannon Last Chance Invite, Dempsey Indoor, Seattle, WA (i)",
+        "event": "800m",
+        "time": "1:47.01",
+        "place": "2."
+      },
+      {
+        "date": "14 APR 2023",
+        "meet": "Bryan Clay Invitational, Cougar Athletic Stadium, Azusa, CA - Invitational Events",
+        "event": "800m",
+        "time": "1:49.48",
+        "place": "7."
+      },
+      {
+        "date": "29 APR 2023",
+        "meet": "Oregon State High Performance, Oregon State Whyte Track and Field Center, Corvallis, OR",
+        "event": "800m",
+        "time": "1:47.41",
+        "place": "1."
+      },
+      {
+        "date": "04 JUN 2023",
+        "meet": "Portland Track Festival - High Performance, Mt. Hood Community College, Gresham, OR - Invitational Events",
+        "event": "800m",
+        "time": "1:46.98",
+        "place": "4."
+      },
+      {
+        "date": "15 APR 2023",
+        "meet": "Bryan Clay Invitational, Cougar Athletic Stadium, Azusa, CA - Invitational Events",
+        "event": "1500m",
+        "time": "3:39.50",
+        "place": "9."
+      },
+      {
+        "date": "05 MAY 2023",
+        "meet": "Oregon Twilight, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:39.52",
+        "place": "1."
+      },
+      {
+        "date": "26 MAY 2023",
+        "meet": "USATF Los Angeles Grand Prix, Drake Stadium, Los Angeles, CA - National Events",
+        "event": "1500m",
+        "time": "3:38.12",
+        "place": "4."
+      },
+      {
+        "date": "06 JUL 2023",
+        "meet": "USA Championships, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:39.09",
+        "place": "8."
+      },
+      {
+        "date": "10 FEB 2023",
+        "meet": "Boston University David Hemery Valentine Invitational, Boston Univ. Track & Tennis Center, Boston, MA (i) - Split times",
+        "event": "1500 Metres Short Track",
+        "time": "3:40.98",
+        "place": ""
+      },
+      {
+        "date": "11 FEB 2023",
+        "meet": "Boston University David Hemery Valentine Invitational, Boston Univ. Track & Tennis Center, Boston, MA (i)",
+        "event": "Mile Short Track",
+        "time": "3:55.34",
+        "place": "1."
+      },
+      {
+        "date": "10 MAR 2023",
+        "meet": "NCAA Division I Indoor Championships, Convention Center, Albuquerque, NM (i)",
+        "event": "Mile Short Track",
+        "time": "4:03.32",
+        "place": "5."
+      },
+      {
+        "date": "11 MAR 2023",
+        "meet": "NCAA Division I Indoor Championships, Convention Center, Albuquerque, NM (i)",
+        "event": "Mile Short Track",
+        "time": "4:04.27",
+        "place": "7."
+      },
+      {
+        "date": "02 DEC 2023",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener, Boston Univ. Track & Tennis Center, Boston, MA (i)",
+        "event": "Mile Short Track",
+        "time": "3:55.50",
+        "place": "2."
+      },
+      {
+        "date": "27 JAN 2023",
+        "meet": "Washington Indoor Invitational, Dempsey Indoor, Seattle, WA (i)",
+        "event": "Distance Medley",
+        "time": "9:43.27",
+        "place": "1."
+      }
+    ],
+    "2024": [
+      {
+        "date": "23 MAR 2024",
+        "meet": "Oregon Preview, Hayward Field, Eugene, OR",
+        "event": "800m",
+        "time": "1:50.49",
+        "place": "1."
+      },
+      {
+        "date": "30 MAR 2024",
+        "meet": "Stanford Invitational, Cobb Track and Angell Field, Palo Alto, CA",
+        "event": "800m",
+        "time": "1:47.91",
+        "place": "2."
+      },
+      {
+        "date": "20 APR 2024",
+        "meet": "Oregon Relays, Hayward Field, Eugene, OR - Elite Event",
+        "event": "800m",
+        "time": "1:47.01",
+        "place": "2."
+      },
+      {
+        "date": "11 MAY 2024",
+        "meet": "PAC 12 Track and Field Championships, Potts Field, Boulder, CO",
+        "event": "800m",
+        "time": "1:47.79",
+        "place": "1."
+      },
+      {
+        "date": "12 MAY 2024",
+        "meet": "PAC 12 Track and Field Championships, Potts Field, Boulder, CO",
+        "event": "800m",
+        "time": "1:48.18",
+        "place": "1."
+      },
+      {
+        "date": "07 JUL 2024",
+        "meet": "FBK Games, FBK Stadium, Hengelo",
+        "event": "1000 Metres",
+        "time": "2:18.11",
+        "place": "7."
+      },
+      {
+        "date": "23 MAR 2024",
+        "meet": "Oregon Preview, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:42.85",
+        "place": "1."
+      },
+      {
+        "date": "13 APR 2024",
+        "meet": "Bryan Clay Invitational, Cougar Athletic Stadium, Azusa, CA - Invitational Events",
+        "event": "1500m",
+        "time": "3:38.55",
+        "place": "4."
+      },
+      {
+        "date": "03 MAY 2024",
+        "meet": "Oregon Twilight, Hayward Field, Eugene, OR - Invitational Events",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "10 MAY 2024",
+        "meet": "PAC 12 Track and Field Championships, Potts Field, Boulder, CO",
+        "event": "1500m",
+        "time": "3:47.24",
+        "place": "5."
+      },
+      {
+        "date": "12 MAY 2024",
+        "meet": "PAC 12 Track and Field Championships, Potts Field, Boulder, CO",
+        "event": "1500m",
+        "time": "3:54.30",
+        "place": "1."
+      },
+      {
+        "date": "22 MAY 2024",
+        "meet": "NCAA Division I West First Rounds, John McDonnell Field, Fayetteville, AR",
+        "event": "1500m",
+        "time": "3:41.57",
+        "place": "3."
+      },
+      {
+        "date": "24 MAY 2024",
+        "meet": "NCAA Division I West First Rounds, John McDonnell Field, Fayetteville, AR",
+        "event": "1500m",
+        "time": "3:40.43",
+        "place": "3."
+      },
+      {
+        "date": "05 JUN 2024",
+        "meet": "NCAA Division I Outdoor Championships, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:37.25",
+        "place": "1."
+      },
+      {
+        "date": "07 JUN 2024",
+        "meet": "NCAA Division I Outdoor Championships, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:39.57",
+        "place": "2."
+      },
+      {
+        "date": "21 JUN 2024",
+        "meet": "U.S. Olympic Team Trials, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:37.78",
+        "place": "5."
+      },
+      {
+        "date": "22 JUN 2024",
+        "meet": "U.S. Olympic Team Trials, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:34.52",
+        "place": "5."
+      },
+      {
+        "date": "24 JUN 2024",
+        "meet": "U.S. Olympic Team Trials, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:33.84",
+        "place": "8."
+      },
+      {
+        "date": "04 JUL 2024",
+        "meet": "Meeting International Sotteville 2024, Stade Jean Adret, Sotteville-lès-Rouen",
+        "event": "1500m",
+        "time": "3:37.61",
+        "place": "4."
+      },
+      {
+        "date": "03 MAY 2024",
+        "meet": "Oregon Twilight, Hayward Field, Eugene, OR - Invitational Events",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "27 APR 2024",
+        "meet": "The Penn Relay Carnival, Franklin Field, Philadelphia, PA - Championship events",
+        "event": "4x800 Metres Relay",
+        "time": "7:15.46",
+        "place": "2."
+      },
+      {
+        "date": "26 APR 2024",
+        "meet": "The Penn Relay Carnival, Franklin Field, Philadelphia, PA - Championship events",
+        "event": "Distance Medley",
+        "time": "9:36.89",
+        "place": "4."
+      }
+    ],
+    "2025": [
+      {
+        "date": "19 JUL 2025",
+        "meet": "Stumptown Twilight, Lincoln HS, Portland, OR - Elite Event",
+        "event": "800m",
+        "time": "1:45.26",
+        "place": "3."
+      },
+      {
+        "date": "09 AUG 2025",
+        "meet": "IFAM Oordegem, Putbosstadion, Oordegem",
+        "event": "800m",
+        "time": "1:46.19",
+        "place": "3."
+      },
+      {
+        "date": "15 FEB 2025",
+        "meet": "Tyson Invitational, Randal Tyson Indoor Center, Fayetteville, AR (i) - Invitational Events",
+        "event": "800 Metres Short Track",
+        "time": "1:48.76",
+        "place": "7."
+      },
+      {
+        "date": "21 FEB 2025",
+        "meet": "Arkansas Qualifier, Randal Tyson Indoor Center, Fayetteville, AR (i)",
+        "event": "800 Metres Short Track",
+        "time": "1:48.15",
+        "place": "2."
+      },
+      {
+        "date": "15 JUN 2025",
+        "meet": "Portland Track Festival, Griswold Stadium, Portland, OR",
+        "event": "1500m",
+        "time": "3:36.09",
+        "place": "8."
+      },
+      {
+        "date": "05 JUL 2025",
+        "meet": "Prefontaine Classic, Hayward Field, Eugene, OR - Split times",
+        "event": "1500m",
+        "time": "3:44.81",
+        "place": ""
+      },
+      {
+        "date": "31 JUL 2025",
+        "meet": "USA Championships, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:35.36",
+        "place": "4."
+      },
+      {
+        "date": "05 JUL 2025",
+        "meet": "Prefontaine Classic, Hayward Field, Eugene, OR - Promotional Events",
+        "event": "Mile",
+        "time": "4:03.11",
+        "place": "14."
+      },
+      {
+        "date": "28 FEB 2025",
+        "meet": "Big Ten Conference Indoor Track & Field Championships, Fall Creek Pavilion, Indianapolis, IN (i)",
+        "event": "Mile Short Track",
+        "time": "4:00.44",
+        "place": "2."
+      },
+      {
+        "date": "01 MAR 2025",
+        "meet": "Big Ten Conference Indoor Track & Field Championships, Fall Creek Pavilion, Indianapolis, IN (i)",
+        "event": "Mile Short Track",
+        "time": "4:03.79",
+        "place": "2."
+      },
+      {
+        "date": "06 DEC 2025",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener, Boston Univ. Track & Tennis Center, Boston, MA (i) - Invitational Events",
+        "event": "3000 Metres Short Track",
+        "time": "7:41.57",
+        "place": "7."
+      },
+      {
+        "date": "21 FEB 2025",
+        "meet": "Arkansas Qualifier, Randal Tyson Indoor Center, Fayetteville, AR (i)",
+        "event": "Distance Medley Short Track",
+        "time": "9:21.23",
+        "place": "3."
+      },
+      {
+        "date": "28 FEB 2025",
+        "meet": "Big Ten Conference Indoor Track & Field Championships, Fall Creek Pavilion, Indianapolis, IN (i)",
+        "event": "Distance Medley Short Track",
+        "time": "9:36.60",
+        "place": "4."
+      },
+      {
+        "date": "14 MAR 2025",
+        "meet": "NCAA Division I Indoor Track and Field Championships, Virginia Beach Sports Center, Virginia Beach, VA (i)",
+        "event": "Distance Medley Short Track",
+        "time": "9:17.57",
+        "place": "3."
+      }
+    ]
+  },
+  "age": "24"
+}

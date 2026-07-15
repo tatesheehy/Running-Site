@@ -90,6 +90,14 @@
   ],
   "results": [
     {
+      "date": "JUL 14",
+      "meet": "The Jerome Classic",
+      "event": "800 m",
+      "time": "1:44.51",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "JUL 12",
       "meet": "Edmonton Athletics Invitational",
       "event": "800 m",
@@ -282,7 +290,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-14",
+  "lastSynced": "2026-07-15",
   "resultsHistory": {
     "2018": [
       {

@@ -1,0 +1,553 @@
+{
+  "photoBackground": null,
+  "reviewTitle": null,
+  "waUrl": "https://worldathletics.org/athletes/great-britain-ni/george-couttie-15034457",
+  "height": null,
+  "questionBody": null,
+  "headlineRest": null,
+  "name": "George Couttie",
+  "headlineKey": null,
+  "flag": "GB",
+  "honours": [
+    {
+      "competition": "World Cross Country Championships",
+      "short": "WCC",
+      "discipline": "Cross Country Relay",
+      "place": 7,
+      "year": "2026"
+    }
+  ],
+  "seasons": null,
+  "lastSynced": "2026-07-15",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:51.15"
+    },
+    {
+      "event": "1000 Metres",
+      "time": "2:18.53"
+    },
+    {
+      "event": "1000 Metres Short Track",
+      "time": "2:18.53"
+    },
+    {
+      "event": "1500m",
+      "time": "3:36.40"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:36.72"
+    },
+    {
+      "event": "Mile",
+      "time": "3:52.02"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:52.02"
+    },
+    {
+      "event": "2000m",
+      "time": "4:57.81"
+    },
+    {
+      "event": "2000 Metres Short Track",
+      "time": "4:57.81"
+    },
+    {
+      "event": "3000m",
+      "time": "7:36.74"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:36.74"
+    },
+    {
+      "event": "5000m",
+      "time": "13:33.55"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:15.05"
+    }
+  ],
+  "hometown": null,
+  "questionTitle": null,
+  "photo": null,
+  "ncaa": null,
+  "club": null,
+  "country": "Great Britain & N.I.",
+  "results": [
+    {
+      "date": "JUN 21",
+      "meet": "Novuna UK Athletics Championships",
+      "event": "1500 m",
+      "time": "3:43.45",
+      "place": "10.",
+      "round": "F1"
+    },
+    {
+      "date": "JUN 20",
+      "meet": "Novuna UK Athletics Championships",
+      "event": "1500 m",
+      "time": "3:45.88",
+      "place": "6.",
+      "round": "H2"
+    },
+    {
+      "date": "JUN 10",
+      "meet": "NCAA Division I Outdoor Track and Field Championships",
+      "event": "1500 m",
+      "time": "3:36.99",
+      "place": "8.",
+      "round": "SF2"
+    },
+    {
+      "date": "MAY 29",
+      "meet": "NCAA Division I East First Rounds",
+      "event": "1500 m",
+      "time": "3:38.33",
+      "place": "3.",
+      "round": "H2"
+    },
+    {
+      "date": "MAY 27",
+      "meet": "NCAA Division I East First Rounds",
+      "event": "1500 m",
+      "time": "3:43.99",
+      "place": "3.",
+      "round": "PR4"
+    },
+    {
+      "date": "MAY 16",
+      "meet": "ACC Outdoor Track & Field Championships",
+      "event": "5000 m",
+      "time": "13:33.55",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "APR 18",
+      "meet": "Virginia Challenge",
+      "event": "5000 m",
+      "time": "13:33.81",
+      "place": "4.",
+      "round": "F1"
+    },
+    {
+      "date": "MAR 14",
+      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "event": "Mile sh",
+      "time": "3:59.30",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "MAR 14",
+      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "event": "3000 m sh",
+      "time": "8:07.18",
+      "place": "11.",
+      "round": "F1"
+    },
+    {
+      "date": "MAR 13",
+      "meet": "NCAA Division I Indoor Track and Field Championships",
+      "event": "Mile sh",
+      "time": "3:56.12",
+      "place": "3.",
+      "round": "H1"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "ACC Indoor Track & Field Championships",
+      "event": "3000 m sh",
+      "time": "7:46.40",
+      "place": "1.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "Distance Medley sh",
+      "time": "9:15.05",
+      "place": "2.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "1500 m sh",
+      "time": "3:36.72",
+      "place": "",
+      "round": "F3"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Sound Invite",
+      "event": "Mile sh",
+      "time": "3:52.02",
+      "place": "5.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 7",
+      "meet": "Doc Hale Virginia Tech Invitational",
+      "event": "1000 m sh",
+      "time": "2:18.53",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 23",
+      "meet": "Hokie Invitational",
+      "event": "2000 m sh",
+      "time": "4:57.81",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JAN 10",
+      "meet": "46th World Athletics Cross Country Championships",
+      "event": "Cross Country Relay",
+      "time": "23:11",
+      "place": "7.",
+      "round": "F"
+    }
+  ],
+  "dob": "15 JAN 2005",
+  "weight": null,
+  "lastHistorySynced": "2026-07-14",
+  "coach": null,
+  "reviewBody": null,
+  "event": "1500m",
+  "id": "george-couttie",
+  "resultsHistory": {
+    "2022": [
+      {
+        "date": "15 MAY 2022",
+        "meet": "Yorkshire County Championships, Dorothy Hyman Stadium, Cudworth - U20 Events",
+        "event": "3000m",
+        "time": "8:47.72",
+        "place": "1."
+      },
+      {
+        "date": "14 JUN 2022",
+        "meet": "Trafford Grand Prix, Longford Stadium Trafford, Manchester",
+        "event": "3000m",
+        "time": "8:30.21",
+        "place": "1."
+      },
+      {
+        "date": "09 JUL 2022",
+        "meet": "ESAA - English Schools Ch., Sportcity Regional Arena, Manchester",
+        "event": "3000m",
+        "time": "8:28.98",
+        "place": "3."
+      },
+      {
+        "date": "16 JUL 2022",
+        "meet": "UK U20 Championships, Bedford Athletic Stadium, Bedford",
+        "event": "3000m",
+        "time": "8:27.94",
+        "place": "8."
+      },
+      {
+        "date": "01 JUN 2022",
+        "meet": "The SETAFA Summer Track Series Round 2, Salisbury Athletics Track, Salisbury",
+        "event": "5000m",
+        "time": "14:46.53",
+        "place": "1."
+      },
+      {
+        "date": "19 JUN 2022",
+        "meet": "Northern Senior / Under 20 Ch., Wavertree Athletics Centre, Liverpool - U20 Events",
+        "event": "5000m",
+        "time": "14:43.17",
+        "place": "2."
+      }
+    ],
+    "2023": [
+      {
+        "date": "16 MAY 2023",
+        "meet": "BMC Gold Standard Races, Longford Stadium Trafford, Manchester",
+        "event": "1500m",
+        "time": "3:50.26",
+        "place": "8."
+      },
+      {
+        "date": "11 JUL 2023",
+        "meet": "BMC Gold Standard Races, Longford Stadium Trafford, Manchester",
+        "event": "1500m",
+        "time": "3:46.04",
+        "place": "5."
+      },
+      {
+        "date": "01 JUL 2023",
+        "meet": "ESAA English Schools Championships, Alexander Stadium, Birmingham",
+        "event": "3000m",
+        "time": "8:53.95",
+        "place": "15."
+      },
+      {
+        "date": "27 MAY 2023",
+        "meet": "British Milers Club Grand Prix - Manchester, Sportcity Regional Arena, Manchester",
+        "event": "5000m",
+        "time": "14:11.74",
+        "place": "11."
+      },
+      {
+        "date": "17 JUN 2023",
+        "meet": "UK U20 Championships, Chelmsford Sport And Athletics Centre Melbourne Park, Chelmsford",
+        "event": "5000m",
+        "time": "14:56.85",
+        "place": "6."
+      },
+      {
+        "date": "10 AUG 2023",
+        "meet": "European Athletics U20 Championships, Givat Ram Stadium, Jerusalem",
+        "event": "5000m",
+        "time": "14:47.82",
+        "place": "20."
+      }
+    ],
+    "2024": [
+      {
+        "date": "28 MAR 2024",
+        "meet": "Raleigh Relays, Paul Derr TF Facility, Raleigh, NC",
+        "event": "1500m",
+        "time": "3:43.70",
+        "place": "3."
+      },
+      {
+        "date": "19 APR 2024",
+        "meet": "Virginia Challenge, UVA Lanningan Field, Charlottesville, VA - Invitational Events",
+        "event": "1500m",
+        "time": "3:52.45",
+        "place": "11."
+      },
+      {
+        "date": "25 MAY 2024",
+        "meet": "British Milers Club Grand Prix, Sportcity Regional Arena, Manchester",
+        "event": "1500m",
+        "time": "3:45.56",
+        "place": "6."
+      },
+      {
+        "date": "08 JUN 2024",
+        "meet": "British Milers Club Grand Prix, Woodside Stadium, Watford",
+        "event": "1500m",
+        "time": "3:40.56",
+        "place": "6."
+      },
+      {
+        "date": "29 JUN 2024",
+        "meet": "UK Championships, Manchester Regional Arena, Manchester",
+        "event": "1500m",
+        "time": "3:44.65",
+        "place": "4."
+      },
+      {
+        "date": "30 JUN 2024",
+        "meet": "UK Championships, Manchester Regional Arena, Manchester",
+        "event": "1500m",
+        "time": "3:47.82",
+        "place": "12."
+      },
+      {
+        "date": "06 JUL 2024",
+        "meet": "British Milers Club Grand Prix, Birmingham University Athletics Track, Birmingham",
+        "event": "1500m",
+        "time": "3:42.35",
+        "place": "3."
+      },
+      {
+        "date": "19 JUL 2024",
+        "meet": "UK U20 Championships, Alexander Stadium, Birmingham",
+        "event": "1500m",
+        "time": "3:50.86",
+        "place": "1."
+      },
+      {
+        "date": "24 JUL 2024",
+        "meet": "BMC Record Breaker, Tooting Bec Athletics Track, London",
+        "event": "1500m",
+        "time": "3:39.77",
+        "place": "7."
+      },
+      {
+        "date": "28 AUG 2024",
+        "meet": "World Athletics U20 Championships, Estadio Atlético de la VIDENA, Lima",
+        "event": "1500m",
+        "time": "3:44.84",
+        "place": "3."
+      },
+      {
+        "date": "31 AUG 2024",
+        "meet": "World Athletics U20 Championships, Estadio Atlético de la VIDENA, Lima",
+        "event": "1500m",
+        "time": "3:47.42",
+        "place": "11."
+      },
+      {
+        "date": "08 MAR 2024",
+        "meet": "NCAA Division II Indoor Track and Field Championships, Robert W. Plaster Center, Pittsburg, KS (i)",
+        "event": "Mile",
+        "time": "4:11.46",
+        "place": "3."
+      },
+      {
+        "date": "09 MAR 2024",
+        "meet": "NCAA Division II Indoor Track and Field Championships, Robert W. Plaster Center, Pittsburg, KS (i)",
+        "event": "Mile",
+        "time": "4:21.15",
+        "place": "8."
+      },
+      {
+        "date": "19 MAY 2024",
+        "meet": "Loughborough International, Loughborough University Track, Loughborough",
+        "event": "Mile",
+        "time": "4:09.54",
+        "place": "2."
+      },
+      {
+        "date": "10 FEB 2024",
+        "meet": "Boston University David Hemery Valentine Invitational, Boston Univ. Track & Tennis Center, Boston, MA (i)",
+        "event": "Mile Short Track",
+        "time": "4:13.54",
+        "place": "14."
+      },
+      {
+        "date": "08 DEC 2024",
+        "meet": "30th SPAR European Cross Country Championships, Antalya - U20 Events",
+        "event": "Cross Country U20 Race",
+        "time": "14:09",
+        "place": "2."
+      }
+    ],
+    "2025": [
+      {
+        "date": "23 JUL 2025",
+        "meet": "BMC Gold Standard Races, Woodside Stadium, Watford",
+        "event": "800m",
+        "time": "1:51.15",
+        "place": "10."
+      },
+      {
+        "date": "25 JAN 2025",
+        "meet": "Hokie Invitational, Rector Fieldhouse, Blacksburg, VA (i)",
+        "event": "1000 Metres Short Track",
+        "time": "2:20.01",
+        "place": "3."
+      },
+      {
+        "date": "12 JUL 2025",
+        "meet": "Ed Murphey Classic, Billy J. Murphy Track and Field Complex, Memphis, TN",
+        "event": "1500m",
+        "time": "3:37.67",
+        "place": "6."
+      },
+      {
+        "date": "02 AUG 2025",
+        "meet": "UK Championships, Alexander Stadium, Birmingham",
+        "event": "1500m",
+        "time": "3:40.65",
+        "place": "2."
+      },
+      {
+        "date": "03 AUG 2025",
+        "meet": "UK Championships, Alexander Stadium, Birmingham",
+        "event": "1500m",
+        "time": "3:47.84",
+        "place": "6."
+      },
+      {
+        "date": "09 AUG 2025",
+        "meet": "British Milers Club Grand Prix, Longford Stadium Trafford, Manchester",
+        "event": "1500m",
+        "time": "3:38.00",
+        "place": "2."
+      },
+      {
+        "date": "20 AUG 2025",
+        "meet": "BMC Record Breaker, Tooting Bec Athletics Track, London",
+        "event": "1500m",
+        "time": "3:36.40",
+        "place": "5."
+      },
+      {
+        "date": "07 FEB 2025",
+        "meet": "Doc Hale Virginia Tech Invitational, Rector Fieldhouse, Blacksburg, VA (i)",
+        "event": "Mile Short Track",
+        "time": "3:55.44",
+        "place": "1."
+      },
+      {
+        "date": "17 JAN 2025",
+        "meet": "Virginia Tech Invitational, Rector Fieldhouse, Blacksburg, VA (i)",
+        "event": "3000 Metres Short Track",
+        "time": "7:52.29",
+        "place": "1."
+      },
+      {
+        "date": "14 FEB 2025",
+        "meet": "Boston University David Hemery Valentine Invitational, Boston Univ. Track & Tennis Center, Boston, MA (i)",
+        "event": "3000 Metres Short Track",
+        "time": "7:40.18",
+        "place": "7."
+      },
+      {
+        "date": "03 MAR 2025",
+        "meet": "ACC Indoor Track & Field Championships, Norton Sports Center, Louisville, KY (i)",
+        "event": "3000 Metres Short Track",
+        "time": "7:53.75",
+        "place": "6."
+      },
+      {
+        "date": "15 MAR 2025",
+        "meet": "NCAA Division I Indoor Track and Field Championships, Virginia Beach Sports Center, Virginia Beach, VA (i)",
+        "event": "3000 Metres Short Track",
+        "time": "7:57.77",
+        "place": "13."
+      },
+      {
+        "date": "06 DEC 2025",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener, Boston Univ. Track & Tennis Center, Boston, MA (i) - Invitational Events",
+        "event": "3000 Metres Short Track",
+        "time": "7:36.74",
+        "place": "2."
+      },
+      {
+        "date": "14 JUN 2025",
+        "meet": "Run Unbridled Track Fest, George Mason Stadium, Fairfax, VA",
+        "event": "5000m",
+        "time": "13:58.32",
+        "place": "1."
+      },
+      {
+        "date": "24 JAN 2025",
+        "meet": "Hokie Invitational, Rector Fieldhouse, Blacksburg, VA (i)",
+        "event": "Distance Medley Short Track",
+        "time": "9:36.41",
+        "place": "1."
+      },
+      {
+        "date": "21 FEB 2025",
+        "meet": "Boston University DMR Challenge, Boston Univ. Track & Tennis Center, Boston, MA (i)",
+        "event": "Distance Medley Short Track",
+        "time": "9:19.88",
+        "place": "5."
+      },
+      {
+        "date": "01 MAR 2025",
+        "meet": "ACC Indoor Track & Field Championships, Norton Sports Center, Louisville, KY (i)",
+        "event": "Distance Medley Short Track",
+        "time": "9:31.55",
+        "place": "1."
+      }
+    ]
+  },
+  "age": "21"
+}

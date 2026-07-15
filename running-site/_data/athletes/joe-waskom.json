@@ -1,0 +1,942 @@
+{
+  "photoBackground": null,
+  "reviewTitle": null,
+  "waUrl": "https://worldathletics.org/athletes/united-states/joe-waskom-14847449",
+  "height": null,
+  "questionBody": null,
+  "headlineRest": null,
+  "name": "Joe Waskom",
+  "headlineKey": null,
+  "flag": "US",
+  "honours": [
+    {
+      "competition": "NCAA Championships",
+      "short": "NC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2024"
+    },
+    {
+      "competition": "NCAA Championships",
+      "short": "NC",
+      "discipline": "1500m",
+      "place": 1,
+      "year": "2022"
+    }
+  ],
+  "seasons": null,
+  "lastSynced": "2026-07-15",
+  "prs": [
+    {
+      "event": "800m",
+      "time": "1:46.76"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:47.72"
+    },
+    {
+      "event": "1500m",
+      "time": "3:32.52"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:36.23"
+    },
+    {
+      "event": "Mile",
+      "time": "3:51.90"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:55.18"
+    },
+    {
+      "event": "3000m",
+      "time": "7:44.28"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:46.62"
+    },
+    {
+      "event": "2 Miles",
+      "time": "8:54.25"
+    },
+    {
+      "event": "5000m",
+      "time": "13:52.36"
+    },
+    {
+      "event": "3000m SC",
+      "time": "8:35.71"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:04.32"
+    },
+    {
+      "event": "5 Kilometres Road",
+      "time": "14:03"
+    },
+    {
+      "event": "4x800 Metres Relay",
+      "time": "7:28.40"
+    },
+    {
+      "event": "Distance Medley Short Track",
+      "time": "9:16.65"
+    },
+    {
+      "event": "4xMile Relay",
+      "time": "16:14.31"
+    }
+  ],
+  "hometown": null,
+  "questionTitle": null,
+  "photo": null,
+  "ncaa": null,
+  "club": null,
+  "country": "United States",
+  "results": [
+    {
+      "date": "JUL 14",
+      "meet": "Gyulai István Memorial - Hungarian Athletics Grand Prix",
+      "event": "1500 m",
+      "time": "3:32.52",
+      "place": "7.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 26",
+      "meet": "76. Boris Hanžeković Memorial",
+      "event": "1500 m",
+      "time": "3:34.28",
+      "place": "13.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "1500 m",
+      "time": "3:42.15",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUN 16",
+      "meet": "65th Ostrava Golden Spike",
+      "event": "Mile",
+      "time": "4:01.39",
+      "place": "15.",
+      "round": "F"
+    },
+    {
+      "date": "JUN 13",
+      "meet": "Meeting Nikaia",
+      "event": "1500 m",
+      "time": "3:40.32",
+      "place": "13.",
+      "round": "F1"
+    },
+    {
+      "date": "MAY 23",
+      "meet": "LA Track Festival",
+      "event": "1500 m",
+      "time": "3:35.47",
+      "place": "2.",
+      "round": "F2"
+    },
+    {
+      "date": "APR 25",
+      "meet": "116th Drake Relays",
+      "event": "1500 m",
+      "time": "3:38.44",
+      "place": "7.",
+      "round": "F1"
+    },
+    {
+      "date": "APR 21",
+      "meet": "Grand Blue Mile presented by Wellmark Blue Cross Blue Shield - USATF 1 Mile Road Championships",
+      "event": "Mile Road",
+      "time": "4:04.32",
+      "place": "12.",
+      "round": "F"
+    },
+    {
+      "date": "APR 18",
+      "meet": "Bryan Clay Invitational",
+      "event": "1500 m",
+      "time": "3:43.36",
+      "place": "13.",
+      "round": "F1"
+    },
+    {
+      "date": "APR 3",
+      "meet": "Stanford Invitational",
+      "event": "3000 m Steeplechase",
+      "time": "8:37.10",
+      "place": "5.",
+      "round": "F1"
+    },
+    {
+      "date": "MAR 1",
+      "meet": "USA Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:48.48",
+      "place": "6.",
+      "round": "F"
+    },
+    {
+      "date": "FEB 28",
+      "meet": "USA Indoor Championships",
+      "event": "800 m sh",
+      "time": "1:47.72",
+      "place": "1.",
+      "round": "H4"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "1500 m sh",
+      "time": "3:39.50",
+      "place": "",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 22",
+      "meet": "Saucony Battle for Boston",
+      "event": "Mile sh",
+      "time": "3:55.18",
+      "place": "1.",
+      "round": "F2"
+    },
+    {
+      "date": "FEB 14",
+      "meet": "Husky Classic",
+      "event": "800 m",
+      "time": "1:46.76",
+      "place": "1.",
+      "round": "F7"
+    },
+    {
+      "date": "FEB 13",
+      "meet": "Husky Classic",
+      "event": "3000 m",
+      "time": "7:44.28",
+      "place": "3.",
+      "round": "F6"
+    },
+    {
+      "date": "JAN 30",
+      "meet": "UW Invite/Mile City",
+      "event": "Mile",
+      "time": "3:57.11",
+      "place": "8.",
+      "round": "F2"
+    },
+    {
+      "date": "JAN 17",
+      "meet": "UW Preview",
+      "event": "1000 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F3"
+    },
+    {
+      "date": "JAN 16",
+      "meet": "UW Preview",
+      "event": "Mile",
+      "time": "3:59.92",
+      "place": "8.",
+      "round": "F5"
+    }
+  ],
+  "dob": "12 APR 2001",
+  "weight": null,
+  "lastHistorySynced": "2026-07-15",
+  "coach": null,
+  "reviewBody": null,
+  "event": "1500m",
+  "id": "joe-waskom",
+  "resultsHistory": {
+    "2021": [
+      {
+        "date": "25 MAR 2021",
+        "meet": "Raleigh Relays, Paul Derr TF Facility, Raleigh, NC",
+        "event": "1500m",
+        "time": "3:45.08",
+        "place": "1."
+      },
+      {
+        "date": "21 APR 2021",
+        "meet": "UW vs WSU Dual Meet, UW Husky Track, Seattle, WA",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "30 APR 2021",
+        "meet": "West Coast Relays, Veterans Memorial Stadium, Clovis, CA",
+        "event": "1500m",
+        "time": "3:43.12",
+        "place": "1."
+      },
+      {
+        "date": "12 FEB 2021",
+        "meet": "Washington Invitational, Dempsey Indoor, Seattle, WA (i)",
+        "event": "5000m",
+        "time": "13:52.36",
+        "place": "8."
+      },
+      {
+        "date": "25 MAR 2021",
+        "meet": "Raleigh Relays, Paul Derr TF Facility, Raleigh, NC",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "30 APR 2021",
+        "meet": "West Coast Relays, Veterans Memorial Stadium, Clovis, CA - Invitational Events",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "16 MAY 2021",
+        "meet": "PAC-12 Conference Championships, Katherine B. Loker Stadium, Los Angeles, CA",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "02 APR 2021",
+        "meet": "Stanford Invitational, Cobb Track and Angell Field, Palo Alto, CA",
+        "event": "3000m SC",
+        "time": "9:06.76",
+        "place": "4."
+      },
+      {
+        "date": "21 APR 2021",
+        "meet": "UW vs WSU Dual Meet, UW Husky Track, Seattle, WA",
+        "event": "3000m SC",
+        "time": "8:48.97",
+        "place": "3."
+      },
+      {
+        "date": "15 MAY 2021",
+        "meet": "PAC-12 Conference Championships, Katherine B. Loker Stadium, Los Angeles, CA",
+        "event": "3000m SC",
+        "time": "8:35.71",
+        "place": "2."
+      },
+      {
+        "date": "29 MAY 2021",
+        "meet": "NCAA Preliminary West Round, Cushing Stadium, College Station, TX",
+        "event": "3000m SC",
+        "time": "9:15.85",
+        "place": "14."
+      }
+    ],
+    "2022": [
+      {
+        "date": "22 APR 2022",
+        "meet": "Washington-Washington State, Washington University Mooberry& TF Complex, Pullman, WA",
+        "event": "800m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "15 APR 2022",
+        "meet": "Bryan Clay Invitational, Cougar Athletic Stadium, Azusa, CA - Invitational Events",
+        "event": "1500m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "13 MAY 2022",
+        "meet": "Pac-12 Ch., Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:41.62",
+        "place": "1."
+      },
+      {
+        "date": "15 MAY 2022",
+        "meet": "Pac-12 Ch., Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:40.33",
+        "place": "1."
+      },
+      {
+        "date": "25 MAY 2022",
+        "meet": "NCAA West Preliminary Round, John McDonnell Field, Fayetteville, AR",
+        "event": "1500m",
+        "time": "3:45.81",
+        "place": "3."
+      },
+      {
+        "date": "27 MAY 2022",
+        "meet": "NCAA West Preliminary Round, John McDonnell Field, Fayetteville, AR",
+        "event": "1500m",
+        "time": "3:42.75",
+        "place": "2."
+      },
+      {
+        "date": "08 JUN 2022",
+        "meet": "NCAA Div. I Outdoor Championships, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:39.45",
+        "place": "2."
+      },
+      {
+        "date": "10 JUN 2022",
+        "meet": "NCAA Div. I Outdoor Championships, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:45.58",
+        "place": "1."
+      },
+      {
+        "date": "15 JAN 2022",
+        "meet": "Washington Indoor Preview, Dempsey Indoor, Seattle, WA (i)",
+        "event": "Mile",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "12 FEB 2022",
+        "meet": "Husky Classic, Dempsey Indoor, Seattle, WA (i)",
+        "event": "Mile",
+        "time": "3:59.65",
+        "place": "1."
+      },
+      {
+        "date": "18 FEB 2022",
+        "meet": "Arkansas Qualifier, Randal Tyson Indoor Center, Fayetteville, AR (i) - Invitational Events",
+        "event": "Mile Short Track",
+        "time": "3:56.43",
+        "place": "2."
+      },
+      {
+        "date": "29 JAN 2022",
+        "meet": "UW Invitational, Dempsey Indoor, Seattle, WA (i)",
+        "event": "3000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "11 FEB 2022",
+        "meet": "Husky Classic, Dempsey Indoor, Seattle, WA (i)",
+        "event": "3000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "15 MAY 2022",
+        "meet": "Pac-12 Ch., Hayward Field, Eugene, OR",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "25 MAR 2022",
+        "meet": "Raleigh Relays, Paul Derr TF Facility, Raleigh, NC",
+        "event": "3000m SC",
+        "time": "8:47.93",
+        "place": "5."
+      },
+      {
+        "date": "14 APR 2022",
+        "meet": "Mt. SAC Relays, Hilmer Lodge Stadium, Walnut, CA - Invitational Events",
+        "event": "3000m SC",
+        "time": "8:55.98",
+        "place": "10."
+      },
+      {
+        "date": "22 APR 2022",
+        "meet": "Washington-Washington State, Washington University Mooberry& TF Complex, Pullman, WA",
+        "event": "3000m SC",
+        "time": "9:15.44",
+        "place": "4."
+      },
+      {
+        "date": "14 MAY 2022",
+        "meet": "Pac-12 Ch., Hayward Field, Eugene, OR",
+        "event": "3000m SC",
+        "time": "8:41.72",
+        "place": "4."
+      },
+      {
+        "date": "16 JUN 2022",
+        "meet": "Victoria International Track Classic, Centennial Stadium, Victoria",
+        "event": "3000m SC",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "11 MAR 2022",
+        "meet": "NCAA Div. I Indoor Championships, CrossPlex Athletic Facility, Birmingham, AL (i)",
+        "event": "Distance Medley Short Track",
+        "time": "9:29.27",
+        "place": "7."
+      }
+    ],
+    "2023": [
+      {
+        "date": "15 APR 2023",
+        "meet": "Bryan Clay Invitational, Cougar Athletic Stadium, Azusa, CA - Invitational Events",
+        "event": "1500m",
+        "time": "3:35.86",
+        "place": "3."
+      },
+      {
+        "date": "12 MAY 2023",
+        "meet": "Pac 12 Men's and Women's Track and Field Championships, Hilmer Lodge Stadium, Walnut, CA",
+        "event": "1500m",
+        "time": "3:43.71",
+        "place": "5."
+      },
+      {
+        "date": "14 MAY 2023",
+        "meet": "Pac 12 Men's and Women's Track and Field Championships, Hilmer Lodge Stadium, Walnut, CA",
+        "event": "1500m",
+        "time": "3:54.37",
+        "place": "11."
+      },
+      {
+        "date": "24 MAY 2023",
+        "meet": "NCAA Division I West First Rounds, Hornet Stadium - Sac St., Sacramento, CA",
+        "event": "1500m",
+        "time": "3:39.98",
+        "place": "1."
+      },
+      {
+        "date": "26 MAY 2023",
+        "meet": "NCAA Division I West First Rounds, Hornet Stadium - Sac St., Sacramento, CA",
+        "event": "1500m",
+        "time": "3:49.54",
+        "place": "2."
+      },
+      {
+        "date": "07 JUN 2023",
+        "meet": "NCAA Division I Outdoor Championships, Mike A. Myers Stadium, Austin, TX",
+        "event": "1500m",
+        "time": "3:39.50",
+        "place": "1."
+      },
+      {
+        "date": "09 JUN 2023",
+        "meet": "NCAA Division I Outdoor Championships, Mike A. Myers Stadium, Austin, TX",
+        "event": "1500m",
+        "time": "3:42.93",
+        "place": "2."
+      },
+      {
+        "date": "06 JUL 2023",
+        "meet": "USA Championships, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:36.31",
+        "place": "2."
+      },
+      {
+        "date": "08 JUL 2023",
+        "meet": "USA Championships, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:35.32",
+        "place": "2."
+      },
+      {
+        "date": "14 JUL 2023",
+        "meet": "Meeting Sport e Solidarieta Lignano, Stadio G. Teghil, Lignano Sabbiadoro",
+        "event": "1500m",
+        "time": "3:34.64",
+        "place": "1."
+      },
+      {
+        "date": "19 AUG 2023",
+        "meet": "World Athletics Championships, Budapest 2023, Nemzeti Atlétikai Központ, Budapest",
+        "event": "1500m",
+        "time": "3:47.26",
+        "place": "8."
+      },
+      {
+        "date": "26 FEB 2023",
+        "meet": "Last Chance Indoor Qualifier, Boston Univ. Track & Tennis Center, Boston, MA (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:39.53",
+        "place": ""
+      },
+      {
+        "date": "28 JAN 2023",
+        "meet": "Washington Indoor Invitational, Dempsey Indoor, Seattle, WA (i)",
+        "event": "Mile",
+        "time": "3:51.90",
+        "place": "1."
+      },
+      {
+        "date": "26 FEB 2023",
+        "meet": "Last Chance Indoor Qualifier, Boston Univ. Track & Tennis Center, Boston, MA (i)",
+        "event": "Mile Short Track",
+        "time": "3:56.79",
+        "place": "11."
+      },
+      {
+        "date": "10 MAR 2023",
+        "meet": "NCAA Division I Indoor Championships, Convention Center, Albuquerque, NM (i)",
+        "event": "Mile Short Track",
+        "time": "4:02.68",
+        "place": "1."
+      },
+      {
+        "date": "11 MAR 2023",
+        "meet": "NCAA Division I Indoor Championships, Convention Center, Albuquerque, NM (i)",
+        "event": "Mile Short Track",
+        "time": "4:03.73",
+        "place": "4."
+      },
+      {
+        "date": "14 MAY 2023",
+        "meet": "Pac 12 Men's and Women's Track and Field Championships, Hilmer Lodge Stadium, Walnut, CA",
+        "event": "5000m",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "13 MAY 2023",
+        "meet": "Pac 12 Men's and Women's Track and Field Championships, Hilmer Lodge Stadium, Walnut, CA",
+        "event": "3000m SC",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "29 APR 2023",
+        "meet": "The Penn Relays Carnival, Franklin Field, Philadelphia, PA - Championship events",
+        "event": "4x800 Metres Relay",
+        "time": "7:28.40",
+        "place": "9."
+      },
+      {
+        "date": "17 FEB 2023",
+        "meet": "Arkansas Qualifier, Randal Tyson Indoor Center, Fayetteville, AR (i)",
+        "event": "Distance Medley Short Track",
+        "time": "9:16.65",
+        "place": "2."
+      },
+      {
+        "date": "10 MAR 2023",
+        "meet": "NCAA Division I Indoor Championships, Convention Center, Albuquerque, NM (i)",
+        "event": "Distance Medley Short Track",
+        "time": "9:31.97",
+        "place": "4."
+      },
+      {
+        "date": "29 APR 2023",
+        "meet": "The Penn Relays Carnival, Franklin Field, Philadelphia, PA - Championship events",
+        "event": "4xMile Relay",
+        "time": "16:14.31",
+        "place": "3."
+      }
+    ],
+    "2024": [
+      {
+        "date": "20 JUL 2024",
+        "meet": "Motonet GP Joensuu, Keskusurheilukenttä, Joensuu",
+        "event": "800m",
+        "time": "1:48.03",
+        "place": "3."
+      },
+      {
+        "date": "13 APR 2024",
+        "meet": "Bryan Clay Invitational, Cougar Athletic Stadium, Azusa, CA - Invitational Events",
+        "event": "1500m",
+        "time": "3:43.48",
+        "place": "10."
+      },
+      {
+        "date": "26 APR 2024",
+        "meet": "Payton Jordan Invitational, Cobb Track and Angell Field, Palo Alto, CA",
+        "event": "1500m",
+        "time": "3:40.34",
+        "place": "3."
+      },
+      {
+        "date": "10 MAY 2024",
+        "meet": "PAC 12 Track and Field Championships, Potts Field, Boulder, CO",
+        "event": "1500m",
+        "time": "3:48.44",
+        "place": "3."
+      },
+      {
+        "date": "12 MAY 2024",
+        "meet": "PAC 12 Track and Field Championships, Potts Field, Boulder, CO",
+        "event": "1500m",
+        "time": "3:55.13",
+        "place": "4."
+      },
+      {
+        "date": "22 MAY 2024",
+        "meet": "NCAA Division I West First Rounds, John McDonnell Field, Fayetteville, AR",
+        "event": "1500m",
+        "time": "3:40.32",
+        "place": "1."
+      },
+      {
+        "date": "24 MAY 2024",
+        "meet": "NCAA Division I West First Rounds, John McDonnell Field, Fayetteville, AR",
+        "event": "1500m",
+        "time": "3:39.83",
+        "place": "1."
+      },
+      {
+        "date": "05 JUN 2024",
+        "meet": "NCAA Division I Outdoor Championships, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:37.93",
+        "place": "7."
+      },
+      {
+        "date": "07 JUN 2024",
+        "meet": "NCAA Division I Outdoor Championships, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:39.48",
+        "place": "1."
+      },
+      {
+        "date": "21 JUN 2024",
+        "meet": "U.S. Olympic Team Trials, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:37.84",
+        "place": "6."
+      },
+      {
+        "date": "22 JUN 2024",
+        "meet": "U.S. Olympic Team Trials, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:38.29",
+        "place": "5."
+      },
+      {
+        "date": "24 JUN 2024",
+        "meet": "U.S. Olympic Team Trials, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:33.74",
+        "place": "7."
+      },
+      {
+        "date": "09 JUL 2024",
+        "meet": "Cork City Sports, Munster Technological University Track, Cork - Split times",
+        "event": "1500m",
+        "time": "3:40.41",
+        "place": ""
+      },
+      {
+        "date": "12 JUL 2024",
+        "meet": "Morton Games, Morton Stadium, Santry, Dublin - Split times",
+        "event": "1500m",
+        "time": "3:38.68",
+        "place": ""
+      },
+      {
+        "date": "14 JUL 2024",
+        "meet": "Meeting Sport e Solidarietà Lignano, Stadio G. Teghil, Lignano Sabbiadoro",
+        "event": "1500m",
+        "time": "3:36.44",
+        "place": "3."
+      },
+      {
+        "date": "17 JUL 2024",
+        "meet": "Motonet GP Lappeenranta, Kimpisen yleisurheilukenttä, Lappeenranta",
+        "event": "1500m",
+        "time": "3:38.99",
+        "place": "1."
+      },
+      {
+        "date": "27 JAN 2024",
+        "meet": "UW Invitational/Mile City, Dempsey Indoor, Seattle, WA (i)",
+        "event": "Mile",
+        "time": "3:53.64",
+        "place": "3."
+      },
+      {
+        "date": "23 FEB 2024",
+        "meet": "Ken Shannon Last Chance, Dempsey Indoor, Seattle, WA (i) - Invitational Events",
+        "event": "Mile",
+        "time": "3:56.94",
+        "place": "5."
+      },
+      {
+        "date": "09 JUL 2024",
+        "meet": "Cork City Sports, Munster Technological University Track, Cork",
+        "event": "Mile",
+        "time": "3:55.80",
+        "place": "4."
+      },
+      {
+        "date": "12 JUL 2024",
+        "meet": "Morton Games, Morton Stadium, Santry, Dublin",
+        "event": "Mile",
+        "time": "3:53.42",
+        "place": "4."
+      },
+      {
+        "date": "08 MAR 2024",
+        "meet": "NCAA Division I Indoor Championships, The Track at New Balance, Boston, MA (i)",
+        "event": "Mile Short Track",
+        "time": "3:57.13",
+        "place": "2."
+      },
+      {
+        "date": "09 MAR 2024",
+        "meet": "NCAA Division I Indoor Championships, The Track at New Balance, Boston, MA (i)",
+        "event": "Mile Short Track",
+        "time": "4:03.26",
+        "place": "8."
+      },
+      {
+        "date": "13 JAN 2024",
+        "meet": "UW Preview, Dempsey Indoor, Seattle, WA (i)",
+        "event": "3000m",
+        "time": "8:00.19",
+        "place": "2."
+      },
+      {
+        "date": "07 DEC 2024",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener, Boston Univ. Track & Tennis Center, Boston, MA (i)",
+        "event": "3000 Metres Short Track",
+        "time": "7:46.62",
+        "place": "9."
+      },
+      {
+        "date": "29 MAR 2024",
+        "meet": "Stanford Invitational, Cobb Track and Angell Field, Palo Alto, CA",
+        "event": "3000m SC",
+        "time": "8:54.66",
+        "place": "5."
+      },
+      {
+        "date": "11 MAY 2024",
+        "meet": "PAC 12 Track and Field Championships, Potts Field, Boulder, CO",
+        "event": "3000m SC",
+        "time": "9:03.66",
+        "place": "1."
+      },
+      {
+        "date": "02 NOV 2024",
+        "meet": "Abbot Dash to the FInish Line 5K, New York, NY - USA 5km Road Running Ch.",
+        "event": "5 Kilometres Road",
+        "time": "14:03",
+        "place": "13."
+      },
+      {
+        "date": "16 FEB 2024",
+        "meet": "Arkansas Qualifier, Randal Tyson Indoor Center, Fayetteville, AR (i)",
+        "event": "Distance Medley Short Track",
+        "time": "9:18.81",
+        "place": "1."
+      }
+    ],
+    "2025": [
+      {
+        "date": "18 APR 2025",
+        "meet": "Bryan Clay Invitational, Cougar Athletic Stadium, Azusa, CA - Elite Event",
+        "event": "1500m",
+        "time": "3:38.15",
+        "place": "6."
+      },
+      {
+        "date": "24 MAY 2025",
+        "meet": "Track Fest, Jack Kemp Stadium - Occidental College, Los Angeles, CA",
+        "event": "1500m",
+        "time": "3:36.62",
+        "place": "6."
+      },
+      {
+        "date": "08 JUN 2025",
+        "meet": "Brooks PR Invitational, Renton Memorial Stadium, Renton, WA",
+        "event": "1500m",
+        "time": "3:41.49",
+        "place": "7."
+      },
+      {
+        "date": "15 JUN 2025",
+        "meet": "Portland Track Festival, Griswold Stadium, Portland, OR - High Performance",
+        "event": "1500m",
+        "time": "3:43.54",
+        "place": "14."
+      },
+      {
+        "date": "15 JUL 2025",
+        "meet": "The Jerome Classic, Swangard Stadium, Burnaby - Elite Event",
+        "event": "1500m",
+        "time": "3:44.44",
+        "place": "11."
+      },
+      {
+        "date": "31 JUL 2025",
+        "meet": "USA Championships, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:34.58",
+        "place": "5."
+      },
+      {
+        "date": "02 AUG 2025",
+        "meet": "USA Championships, Hayward Field, Eugene, OR",
+        "event": "1500m",
+        "time": "3:39.18",
+        "place": "10."
+      },
+      {
+        "date": "02 FEB 2025",
+        "meet": "New Balance Indoor Grand Prix, The Track at New Balance, Boston, MA (i) - World Athletics Indoor Tour",
+        "event": "1500 Metres Short Track",
+        "time": "3:36.23",
+        "place": "7."
+      },
+      {
+        "date": "23 FEB 2025",
+        "meet": "USA Indoor Championships, Ocean Breeze Athl. Complex, New York, NY (i)",
+        "event": "1500 Metres Short Track",
+        "time": "3:44.60",
+        "place": "11."
+      },
+      {
+        "date": "18 JAN 2025",
+        "meet": "UW Preview/Mile City, Dempsey Indoor, Seattle, WA (i)",
+        "event": "Mile",
+        "time": "3:56.33",
+        "place": "5."
+      },
+      {
+        "date": "15 FEB 2025",
+        "meet": "Husky Classic, Dempsey Indoor, Seattle, WA (i)",
+        "event": "Mile",
+        "time": "3:52.48",
+        "place": "4."
+      },
+      {
+        "date": "06 DEC 2025",
+        "meet": "Boston University Sharon Colyear-Danville Season Opener, Boston Univ. Track & Tennis Center, Boston, MA (i) - Invitational Events",
+        "event": "3000 Metres Short Track",
+        "time": "7:56.96",
+        "place": "17."
+      },
+      {
+        "date": "16 APR 2025",
+        "meet": "Bryan Clay Invitational, Cougar Athletic Stadium, Azusa, CA - Invitational Events",
+        "event": "3000m SC",
+        "time": "8:43.87",
+        "place": "12."
+      },
+      {
+        "date": "26 APR 2025",
+        "meet": "adizero: Road to Records, Herzogenaurach",
+        "event": "Mile Road",
+        "time": "4:07.50",
+        "place": "11."
+      }
+    ]
+  },
+  "age": "25",
+  "aaId": 14847449,
+  "countryCode3": "USA"
+}
