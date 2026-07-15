@@ -431,6 +431,10 @@ function buildHome() {
             ${leaderboardCard}
           </div>
         </div>
+        <div class="home-divider">
+          <span class="home-divider-eyebrow">StatTC &middot; The Dashboard</span>
+          <span class="home-divider-sub">Head-to-heads, event tools &amp; the latest, all in one place</span>
+        </div>
         <div class="home-split">
           <div class="home-main">
             ${leadersCard}

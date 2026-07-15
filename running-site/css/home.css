@@ -941,6 +941,33 @@
    DASHBOARD HOMEPAGE — SaaS card grid
    ============================================================ */
 
+/* ── Section divider band: a bold accent block breaking up the page
+   between the hero row and the white dashboard card grid below, so the
+   page isn't just white-on-white the whole way down. ─────────────── */
+.home-divider {
+  background: var(--accent);
+  border-radius: var(--radius);
+  padding: 16px 22px;
+  margin: 20px 0 16px;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+}
+.home-divider-eyebrow {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+.home-divider-sub {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+}
+
 /* ── Home layout: main content column + right rail ────────── */
 .home-split {
   display: grid;
