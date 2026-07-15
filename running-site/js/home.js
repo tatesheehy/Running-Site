@@ -80,6 +80,21 @@ function _raceMargin(myTime, theirTime) {
 
 const _TREND_TYPE_LABELS = { pb: 'PERSONAL BEST', dominant: 'DOMINANT WIN', prominent: 'MAJOR MEET' };
 
+// Per-event accent colors for the Recent Activity list's left bar — lets you
+// tell events apart at a glance without reading the text. Falls back to a
+// neutral gray for anything not in the common-events list (field events,
+// relays, road distances, etc).
+const _EVENT_ACCENT = {
+  '800m': '#2563EB', '1500m': '#9333EA', 'mile': '#9333EA', '3000m': '#0EA5E9',
+  '5000m': '#16A34A', '10000m': '#CA8A04', 'steeplechase': '#0D9488',
+  '400m': '#DB2777', '200m': '#DB2777', '100m': '#DB2777',
+};
+function _eventAccentColor(eventStr) {
+  const key = _normalizeEvent(eventStr);
+  for (const k in _EVENT_ACCENT) if (key.includes(k)) return _EVENT_ACCENT[k];
+  return '#B0B0B8';
+}
+
 function _trendParseDate(dateStr) {
   if (!dateStr) return 0;
   const d = new Date(`${dateStr} ${new Date().getFullYear()}`);
@@ -187,8 +202,9 @@ function _homeSeasonBestRows(event) {
 function trendRow(c) {
   const a = c.athlete, r = c.result;
   const cls = c.isPB ? 'fp-trend--pb' : c.isDominant ? 'fp-trend--dominant' : 'fp-trend--prominent';
+  const evc = _eventAccentColor(r.event);
   return `
-    <div class="fp-trend-row ${cls}" onclick="openAthleteCard('${a.id}', null)" role="button" tabindex="0">
+    <div class="fp-trend-row ${cls}" style="--evc:${evc}" onclick="openAthleteCard('${a.id}', null)" role="button" tabindex="0">
       <span class="fp-trend-tag">${_trendTypeTag(c)}</span>
       <span class="fp-trend-row-name">${renderFlag(a.flag)} ${a.name}</span>
       <span class="fp-trend-row-stat">${r.event.trim()} · ${r.time}${r.place ? ` · ${r.place.replace(/\.$/, '')}` : ''}</span>
@@ -432,7 +448,7 @@ function buildHome() {
           </div>
         </div>
         <div class="home-divider">
-          <span class="home-divider-eyebrow">StatTC &middot; The Dashboard</span>
+          <span class="home-divider-eyebrow">The Dashboard</span>
           <span class="home-divider-sub">Head-to-heads, event tools &amp; the latest, all in one place</span>
         </div>
         <div class="home-split">
