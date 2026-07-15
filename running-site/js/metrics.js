@@ -459,6 +459,15 @@ function buildMetricsPage() {
   _mxRadarA = null;
   _mxRadarB = null;
 
+  // Deep-link from the homepage tool cards: ?a=<id>&b=<id> pre-loads both the
+  // Strength Hexagon and the Aerobic Decay comparison with the same pair.
+  const _pa = typeof getParam === 'function' ? getParam('a') : null;
+  const _pb = typeof getParam === 'function' ? getParam('b') : null;
+  if (_pa && _pb && ATHLETES[_pa] && ATHLETES[_pb]) {
+    _mxRadarA = _pa; _mxRadarB = _pb;
+    _mxHighlight = [_pa, _pb];
+  }
+
   // Top-of-page stat strip — same component as Event Tracker / H2H / Athletes.
   const _mxAll = Object.values(ATHLETES);
   const _mxAnalyzed = _mxAll.filter(a => MX_EVENTS.reduce((n, e) => n + (_mxPr(a, e.key) != null ? 1 : 0), 0) >= 3).length;

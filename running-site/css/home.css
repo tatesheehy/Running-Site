@@ -1487,6 +1487,93 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
 .dash-hex-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--c); }
 .dash-hex-vs { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; }
 
+/* ── "Try the tools" showcase cards ───────────────────────── */
+/* Featured Matchup board (docked in the hero) */
+.fm-body { display: flex; flex-direction: column; gap: 10px; }
+.fm-side { display: flex; flex-direction: column; gap: 2px; cursor: pointer; padding-left: 16px; position: relative; }
+.fm-dot { position: absolute; left: 0; top: 6px; width: 10px; height: 10px; border-radius: 50%; }
+.fm-name {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  line-height: 1.1;
+}
+.fm-side:hover .fm-name { color: var(--brand); }
+.fm-ct { font-size: 11.5px; color: var(--muted); display: inline-flex; align-items: center; gap: 5px; }
+.fm-vs {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  padding-left: 16px;
+}
+.fm-note { font-size: 11.5px; color: var(--muted); margin: 12px 0 0; }
+.fm-shuffle { border: none; cursor: pointer; font-family: inherit; }
+
+/* Head-to-Head example */
+.he-top {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+}
+.he-name {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  line-height: 1.1;
+  min-width: 0;
+}
+.he-name:hover { text-decoration: underline; }
+.he-name--r { text-align: right; }
+.he-score {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--text);
+  white-space: nowrap;
+}
+.he-score em { font-style: normal; color: var(--muted); padding: 0 3px; }
+.he-meta { text-align: center; font-size: 11.5px; color: var(--muted); margin-top: 6px; }
+.he-races { display: flex; flex-direction: column; margin-top: 12px; }
+.he-race {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 7px 0;
+  border-top: 1px solid var(--bg-light);
+  font-size: 12.5px;
+}
+.he-race-win { font-weight: 800; flex-shrink: 0; min-width: 78px; }
+.he-race-meet { color: var(--muted); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+/* Shared Races example */
+.sr-sub { font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.sr-list { display: flex; flex-direction: column; }
+.sr-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--bg-light);
+}
+.sr-row:last-child { border-bottom: none; }
+.sr-meet {
+  font-size: 12.5px;
+  color: var(--text);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.sr-times { font-family: var(--font-mono); font-size: 12px; color: var(--muted); white-space: nowrap; flex-shrink: 0; }
+
 .dash-bars {
   display: flex;
   align-items: stretch;

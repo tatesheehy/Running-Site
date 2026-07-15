@@ -61,6 +61,18 @@ function buildH2HPage() {
   _h2hLbListId     = 'all';
   _h2hFindIds      = [null, null, null, null, null];
   _h2hFindGo       = false;
+  _h2hCmpA = null; _h2hCmpB = null;
+  // Deep-link from the homepage tool cards: ?a=&b=(&c=&d=&e=) pre-loads the
+  // Compare tool (first two) and the Find-Shared-Races tool (up to five).
+  const _gp = ['a', 'b', 'c', 'd', 'e']
+    .map(k => (typeof getParam === 'function' ? getParam(k) : null))
+    .filter(id => id && ATHLETES[id]);
+  if (_gp.length >= 2) {
+    _h2hCmpA = _gp[0]; _h2hCmpB = _gp[1];
+    _h2hFindIds = [null, null, null, null, null];
+    _gp.slice(0, 5).forEach((id, i) => { _h2hFindIds[i] = id; });
+    _h2hFindGo = true;
+  }
   _renderH2HPage();
 }
 
