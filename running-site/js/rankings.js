@@ -532,9 +532,6 @@ function buildTerminalItem(r, rank, leaderPbSecs) {
         <div class="rdt-c dim">${seasonBest && seasonBest !== '—' ? seasonBest : '—'}</div>
         <div class="rdt-c hi">${meta.pb || '—'}</div>
         <div class="rdt-c rdt-gap${gapSecs === 0 ? ' zero' : ''}">${gapStr}</div>
-        <div class="rdt-c dim">${meta.lastRaceGap ? 'L' + meta.lastRaceGap : '—'}</div>
-        <div class="rdt-c">${meta.lastPlace || '—'}</div>
-        ${_rdtSparklineHtml(meta.spark)}
       </div>
       <div class="rdt-detail" hidden>
         <div class="rdt-dd-grid">
@@ -595,26 +592,27 @@ function buildTerminalHtml(rows) {
   const itemsHtml = rows.map((r, i) => buildTerminalItem(r, i + 1, leaderPbSecs)).join('');
 
   return `
-    ${buildTerminalTicker(rows)}
     <div class="rdt-bar">
-      <div class="rdt-search"><input type="text" placeholder="search athlete or country" oninput="filterRdt(this.value)"></div>
-      <button class="rdt-chip rdt-chip--active" onclick="filterRdtChip(this, null)">All</button>
-      ${topCountries.map(c => `<button class="rdt-chip" onclick="filterRdtChip(this, '${c.replace(/'/g, "\\'")}')">${c}</button>`).join('')}
-      <button class="rdt-chip" onclick="filterRdtChip(this, 'top10')">Top 10</button>
+      <div class="rdt-search">
+        <svg class="rdt-search-icon" width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="8.5" cy="8.5" r="5.5"/><line x1="13" y1="13" x2="18" y2="18"/></svg>
+        <input type="text" placeholder="Search athlete or country" oninput="filterRdt(this.value)">
+      </div>
+      <div class="rdt-chips">
+        <button class="rdt-chip rdt-chip--active" onclick="filterRdtChip(this, null)">All</button>
+        ${topCountries.map(c => `<button class="rdt-chip" onclick="filterRdtChip(this, '${c.replace(/'/g, "\\'")}')">${c}</button>`).join('')}
+        <button class="rdt-chip" onclick="filterRdtChip(this, 'top10')">Top 10</button>
+      </div>
     </div>
     <div class="rdt-cols">
-      <span class="rdt-col-sort" data-col="rank" onclick="sortRdt('rank')">Rk <span class="arw">▼</span></span>
+      <span class="rdt-col-sort" data-col="rank" onclick="sortRdt('rank')">Rank <span class="arw">▼</span></span>
       <span></span>
       <span class="rdt-col-sort" data-col="name" onclick="sortRdt('name')">Athlete</span>
-      <span class="rdt-col-sort" data-col="sb" onclick="sortRdt('sb')">SB</span>
-      <span class="rdt-col-sort" data-col="pb" onclick="sortRdt('pb')">PB</span>
+      <span class="rdt-col-sort" data-col="sb" onclick="sortRdt('sb')">Season Best</span>
+      <span class="rdt-col-sort" data-col="pb" onclick="sortRdt('pb')">Career PB</span>
       <span class="rdt-col-sort" data-col="gap" onclick="sortRdt('gap')">Gap</span>
-      <span>Last</span>
-      <span>Pl</span>
-      <span>Form</span>
     </div>
     <div class="rdt-body" id="rdt-body">${itemsHtml}</div>
-    <div class="rdt-ft"><span>Gap = to leader PB · Last = races since this event · click row for detail</span></div>`;
+    <div class="rdt-ft"><span>Gap is to the leader's PB &middot; tap a row for recent races and more</span></div>`;
 }
 
 window.toggleRdtDetail = function(row) {

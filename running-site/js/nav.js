@@ -14,6 +14,7 @@ const _NAV_ICONS = {
   about:    '<circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>',
   timemachine: '<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><polyline points="3 3 3 8 8 8"/><polyline points="12 7 12 12 15.5 14"/>',
   countries: '<circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>',
+  metrics:  '<path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 5-7"/>',
 };
 
 function _navIcon(name) {
@@ -23,7 +24,7 @@ function _navIcon(name) {
 // ── NAVBAR ────────────────────────────────────────────────
 function buildNavbar() {
   const currentPage = document.body.dataset.page;
-  const pageMap = { home: 'index.html', articles: 'articles.html', rankings: 'rankings.html', article: 'articles.html', athletes: 'athletes.html', h2h: 'h2h.html', 'event-tracker': 'event-tracker.html', 'time-machine': 'time-machine.html', country: 'country.html' };
+  const pageMap = { home: 'index.html', articles: 'articles.html', rankings: 'rankings.html', article: 'articles.html', athletes: 'athletes.html', h2h: 'h2h.html', 'event-tracker': 'event-tracker.html', 'time-machine': 'time-machine.html', country: 'country.html', metrics: 'metrics.html' };
   const activeHref = pageMap[currentPage] || '';
 
   const _RANK_EVENTS = ['800m', '1500m', '5000m', '10000m'];
@@ -41,6 +42,7 @@ function buildNavbar() {
       { label: 'Athletes', href: 'athletes.html', icon: 'athletes', color: '#DB2777' },
       { label: 'Countries', href: 'country.html', icon: 'countries', color: '#DC2626' },
       { label: 'Time Machine', href: 'time-machine.html', icon: 'timemachine', color: '#4F46E5' },
+      { label: 'Advanced Metrics', href: 'metrics.html', icon: 'metrics', color: '#0EA5E9' },
     ],
     [
       { label: 'Podcast', href: 'podcast.html', icon: 'podcast', color: '#0891B2' },

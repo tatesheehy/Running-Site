@@ -292,7 +292,7 @@ function buildHome() {
     <div class="dash-card dash-clubs">
       <div class="dash-card-title">Barrier clubs</div>
       <div class="dash-club-list">${clubRows}</div>
-      <a href="athletes.html" class="dash-link dash-card-foot">Find them with Multi-PR Search →</a>
+      <a href="athletes.html" class="dash-link dash-card-foot" style="--accent:#DB2777">Find them with Multi-PR Search →</a>
     </div>`;
 
   // ── H2H Leaders by event (best season win-loss record per event) ─
@@ -336,7 +336,7 @@ function buildHome() {
     <div class="dash-card dash-leaders">
       <div class="dash-card-title">H2H Leaders by Event</div>
       <div class="dash-ldr-grid">${leaderSections}</div>
-      <a href="h2h.html" class="dash-link dash-card-foot">Full H2H leaderboard →</a>
+      <a href="h2h.html" class="dash-link dash-card-foot" style="--accent:#9333EA">Full H2H leaderboard →</a>
     </div>` : '';
 
   // ── Row 3: analytics — results logged per month (last 6) ──
@@ -386,7 +386,7 @@ function buildHome() {
         <div class="fp-rank-tabs" id="fp-rank-tabs">${tabsHtml}</div>
       </div>
       <div id="fp-rank-rows">${_homeSeasonBestRows(firstEvent)}</div>
-      <a href="event-tracker.html?event=${encodeURIComponent(firstEvent)}" id="fp-rank-viewall" class="dash-link dash-card-foot">Go to Event Tracker →</a>
+      <a href="event-tracker.html?event=${encodeURIComponent(firstEvent)}" id="fp-rank-viewall" class="dash-link dash-card-foot" style="--accent:#16A34A">Go to Event Tracker →</a>
     </div>`;
 
   // ── Row 3: latest updates (articles) ─────────────────────
@@ -406,7 +406,7 @@ function buildHome() {
     <div class="dash-card dash-updates">
       <div class="dash-card-title">Latest updates</div>
       <div class="dash-update-list">${updates || '<p class="dash-empty">No updates yet.</p>'}</div>
-      <a href="articles.html" class="dash-link dash-card-foot">All articles →</a>
+      <a href="articles.html" class="dash-link dash-card-foot" style="--accent:#0D9488">All articles →</a>
     </div>`;
 
   document.getElementById('main').innerHTML = `

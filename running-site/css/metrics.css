@@ -1,0 +1,113 @@
+/* ── ADVANCED METRICS ─────────────────────────────────────── */
+.mx-page { padding-bottom: 72px; }
+
+.mx-chart { width: 100%; overflow-x: auto; }
+.mx-svg { width: 100%; min-width: 480px; height: auto; display: block; }
+
+/* Axes / grid */
+.mx-grid { stroke: var(--border); stroke-width: 1; }
+.mx-axl {
+  fill: var(--muted);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+.mx-axtitle {
+  fill: var(--muted);
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* Decay chart */
+.mx-decay-faint { fill: none; stroke: color-mix(in srgb, var(--text) 10%, transparent); stroke-width: 1; }
+.mx-decay-median { fill: none; stroke: var(--text); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.mx-decay-hi { fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Scatter / line dots */
+.mx-dot { fill: var(--accent); opacity: 0.65; cursor: pointer; transition: opacity 0.12s; }
+.mx-dot:hover { opacity: 1; }
+.mx-dot--line { opacity: 1; cursor: default; }
+.mx-line { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+
+.mx-note { font-size: 12px; color: var(--muted); margin-top: 12px; }
+.mx-empty { color: var(--muted); font-size: 14px; padding: 24px 0; text-align: center; }
+
+/* Decay legend */
+.mx-legend { display: flex; gap: 18px; margin: 14px 0 6px; flex-wrap: wrap; }
+.mx-legend-item { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); }
+.mx-legend-line { width: 22px; height: 0; border-top-width: 2px; border-top-style: solid; }
+.mx-legend-line--faint { border-top-color: color-mix(in srgb, var(--text) 22%, transparent); }
+.mx-legend-line--median { border-top-color: var(--text); border-top-width: 3px; }
+
+/* Athlete search + highlight chips */
+.mx-search-wrap { position: relative; max-width: 320px; margin-top: 6px; }
+.mx-search {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text);
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 9px 16px;
+  outline: none;
+  transition: border-color 0.15s, background 0.15s;
+}
+.mx-search:focus { border-color: var(--accent); background: #fff; }
+.mx-search::placeholder { color: var(--muted); }
+.mx-search-results {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0; right: 0;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-card-hover);
+  z-index: 40;
+  overflow: hidden;
+}
+.mx-search-results.open { display: block; }
+.mx-search-opt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+.mx-search-opt:hover { background: var(--bg-light); }
+.mx-search-opt--empty { color: var(--muted); cursor: default; }
+.mx-search-opt--empty:hover { background: none; }
+
+.mx-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+.mx-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text);
+  background: color-mix(in srgb, var(--c) 10%, transparent);
+  border-radius: 999px;
+  padding: 5px 6px 5px 12px;
+}
+.mx-chip-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--c); }
+.mx-chip button {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+  border-radius: 50%;
+}
+.mx-chip button:hover { color: var(--text); }
+
+@media (max-width: 560px) {
+  .mx-legend { gap: 12px; }
+}

@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (page === 'time-machine') buildTimeMachinePage();
   if (page === 'country')     buildCountryPage();
   if (page === 'athlete')     buildAthleteProfilePage();
+  if (page === 'metrics')     buildMetricsPage();
 
   buildAthleteCardModal();
 

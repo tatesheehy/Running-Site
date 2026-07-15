@@ -121,6 +121,7 @@ body[data-page="athlete"]        { --accent: #DB2777; } /* athlete profile — s
 body[data-page="podcast"]        { --accent: #0891B2; } /* cyan */
 body[data-page="about"]          { --accent: #CA8A04; } /* gold */
 body[data-page="time-machine"]   { --accent: #4F46E5; } /* electric indigo (wormhole) */
+body[data-page="metrics"]        { --accent: #0EA5E9; } /* sky blue */
 body[data-page="country"]        { --accent: #DC2626; } /* flag red */
 
 /* ── PAGE HERO — shared accent-block header (StatMuse-style) ───
