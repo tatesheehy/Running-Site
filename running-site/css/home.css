@@ -994,7 +994,28 @@
   min-width: 0;
   display: flex;
   flex-direction: column;
+  overflow: hidden; /* clip the accent header/footer bands to the rounded corners */
 }
+
+/* ── Accent header band — each card's title fills a color band in that
+   card's --card-accent (falls back to the page accent). ────────────── */
+.dash-card > .dash-card-title:first-child,
+.dash-card > .dash-card-hd:first-child {
+  margin: -20px -20px 16px;
+  padding: 13px 20px;
+  background: var(--card-accent, var(--accent));
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+.dash-card > .dash-card-title:first-child {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+}
+.dash-card > .dash-card-hd:first-child .dash-card-title { color: #fff; }
+/* Event tabs (Season Leaders) riding on the colored band */
+.dash-card > .dash-card-hd:first-child .fp-rank-tabs { background: rgba(255,255,255,0.22); }
+.dash-card > .dash-card-hd:first-child .fp-rank-tab { color: rgba(255,255,255,0.9); }
+.dash-card > .dash-card-hd:first-child .fp-rank-tab.active { color: var(--text); background: #fff; }
 
 .dash-card--clickable {
   cursor: pointer;
@@ -1033,26 +1054,24 @@
 }
 .dash-link:hover { text-decoration: underline; }
 
-/* Card footer links styled as clear, tappable pill buttons */
+/* Card footer as a full-width accent band matching the header */
 .dash-card-foot {
-  margin-top: 16px;
-  align-self: flex-start;
-  display: inline-flex;
+  margin: 16px -20px -20px;
+  display: flex;
   align-items: center;
   gap: 6px;
-  padding: 9px 16px;
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--accent) 9%, transparent);
-  color: var(--accent);
+  padding: 13px 20px;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  background: var(--card-accent, var(--accent));
+  color: #fff;
   font-weight: 700;
   text-decoration: none;
-  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+  transition: filter 0.15s ease;
 }
 .dash-card-foot:hover {
-  background: var(--accent);
+  filter: brightness(1.08);
   color: #fff;
   text-decoration: none;
-  transform: translateY(-1px);
 }
 /* Footer button on the dark H2H feature card */
 .dash-h2hking .dash-card-foot {
