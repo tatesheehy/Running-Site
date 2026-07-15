@@ -59,6 +59,7 @@
   --border: #EAEAEA;
   --bg: #FFFFFF;
   --bg-light: #F7F7F7;
+  --page-bg: #E9ECF1; /* canvas: deeper than the white cards so they separate & the page glares less */
   --font-display: 'Lota Grotesque', sans-serif;
   --font-body: 'Lota Grotesque', system-ui, -apple-system, sans-serif;
   --font-mono: 'Lota Grotesque', sans-serif;
@@ -67,8 +68,8 @@
   --radius-sm: 8px;
   --radius: 12px;
   --radius-lg: 16px;
-  --shadow-card: 0 1px 2px rgba(16,24,40,0.05);
-  --shadow-card-hover: 0 1px 3px rgba(16,24,40,0.06), 0 4px 12px rgba(16,24,40,0.08);
+  --shadow-card: 0 1px 2px rgba(16,24,40,0.06), 0 1px 3px rgba(16,24,40,0.04);
+  --shadow-card-hover: 0 1px 3px rgba(16,24,40,0.06), 0 6px 16px rgba(16,24,40,0.10);
 }
 
 html { scroll-behavior: smooth; }
@@ -100,7 +101,7 @@ html { overflow-x: clip; }
 body {
   font-family: var(--font-body);
   color: var(--text);
-  background: #F7F8FA;
+  background: var(--page-bg);
   font-size: 16px;
   line-height: 1.5;
   overflow-x: clip;

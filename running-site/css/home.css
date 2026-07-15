@@ -956,11 +956,10 @@
   gap: 3px 12px;
 }
 .home-divider-eyebrow {
-  font-family: var(--font-body);
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
   color: #fff;
 }
 .home-divider-sub {
@@ -1007,12 +1006,11 @@
 }
 
 .dash-card-title {
-  font-family: var(--font-body);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--text);
   margin-bottom: 12px;
 }
 
@@ -1334,10 +1332,24 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
   display: flex;
   align-items: center;
   gap: 16px;
-  padding: 12px 0;
+  padding: 12px 8px;
+  margin: 0 -8px;
   border-bottom: 1px solid var(--bg-light);
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.12s ease;
 }
 .dash-club-row:last-child { border-bottom: none; }
+.dash-club-row:hover { background: color-mix(in srgb, #DB2777 8%, transparent); }
+.dash-club-row:hover .dash-club-arrow { opacity: 1; transform: translateX(2px); }
+.dash-club-arrow {
+  flex-shrink: 0;
+  color: #DB2777;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.12s ease, transform 0.12s ease;
+}
 .dash-club-count {
   font-family: var(--font-display);
   font-size: 24px;

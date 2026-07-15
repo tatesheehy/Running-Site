@@ -500,7 +500,7 @@ function buildMetricsPage() {
 
       <section class="et-section">
         <div class="et-section-header">
-          <h2 class="et-section-title">Skill Hexagon</h2>
+          <h2 class="et-section-title">Strength Hexagon</h2>
         </div>
         <div id="mx-radar-controls">${_mxRadarControls()}</div>
         <div id="mx-radar-chart" class="mx-chart">${_mxRadarSvg(_mxRadarA, _mxRadarB)}</div>

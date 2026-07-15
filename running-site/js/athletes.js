@@ -495,6 +495,17 @@ function buildAthletesPage() {
 
   const loggedIn = typeof getCurrentUser === 'function' && !!getCurrentUser();
 
+  // Deep-link from the homepage "Barrier Clubs" widget:
+  // ?prEvent=800m&prTime=1:44.00 pre-fills the Multi-PR Search so the visitor
+  // lands on exactly the athletes that count was measuring.
+  try {
+    const _q = new URLSearchParams(location.search);
+    const _pe = _q.get('prEvent'), _pt = _q.get('prTime');
+    if (_pe && _pt && _CANONICAL_EVENTS.some(e => e.key === _pe) && _isValidTimeInput(_pt)) {
+      multiPrRows = [{ event: _pe, time: _pt }];
+    }
+  } catch (e) { /* ignore malformed query */ }
+
   document.getElementById('main').innerHTML = `
     <div class="container">
       <div class="page-hero">

@@ -273,7 +273,7 @@ function buildHome() {
   }).join('');
   const meetsCard = `
     <div class="dash-card dash-meets">
-      <div class="dash-card-title">Upcoming meets</div>
+      <div class="dash-card-title">Upcoming Meets</div>
       ${meetRows
         ? `<div class="dash-meet-list">${meetRows}</div>`
         : '<p class="dash-empty">No meets on the calendar yet.</p>'}
@@ -295,20 +295,24 @@ function buildHome() {
     return { ...c, n };
   });
   const clubMax = Math.max(1, ...clubCounts.map(c => c.n));
-  const clubRows = clubCounts.map(c => `
-      <div class="dash-club-row">
+  const clubRows = clubCounts.map(c => {
+    const href = `athletes.html?prEvent=${encodeURIComponent(c.label)}&prTime=${encodeURIComponent(c.time)}`;
+    return `
+      <a class="dash-club-row" href="${href}">
         <span class="dash-club-count">${c.n}</span>
         <span class="dash-club-main">
           <span class="dash-club-barrier">${c.barrier} ${c.label}</span>
-          <span class="dash-club-note">athlete${c.n === 1 ? '' : 's'} tracked with a career PR under</span>
+          <span class="dash-club-note">athlete${c.n === 1 ? '' : 's'} with a career PR under this mark</span>
           <span class="dash-club-bar-track"><span class="dash-club-bar" style="width:${Math.max(4, Math.round(c.n / clubMax * 100))}%"></span></span>
         </span>
-      </div>`).join('');
+        <span class="dash-club-arrow">→</span>
+      </a>`;
+  }).join('');
   const clubsCard = `
     <div class="dash-card dash-clubs">
-      <div class="dash-card-title">Barrier clubs</div>
+      <div class="dash-card-title">Barrier Clubs</div>
       <div class="dash-club-list">${clubRows}</div>
-      <a href="athletes.html" class="dash-link dash-card-foot" style="--accent:#DB2777">Find them with Multi-PR Search →</a>
+      <a href="athletes.html" class="dash-link dash-card-foot" style="--accent:#DB2777">Combine marks in Multi-PR Search →</a>
     </div>`;
 
   // ── H2H Leaders by event (best season win-loss record per event) ─
@@ -370,7 +374,7 @@ function buildHome() {
     if (hexA && hexB) {
       skillHexCard = `
         <div class="dash-card dash-hexagon">
-          <div class="dash-card-title">Skill Hexagon</div>
+          <div class="dash-card-title">Strength Hexagon</div>
           <div class="dash-hex-legend">
             <span class="dash-hex-name" style="--c:#2563EB"><span class="dash-hex-dot"></span>${hexA.name}</span>
             <span class="dash-hex-vs">vs</span>
@@ -396,7 +400,7 @@ function buildHome() {
   const trendItems = _buildTrendingPerformances(5);
   const activityCard = `
     <div class="dash-card dash-activity">
-      <div class="dash-card-title">Recent activity</div>
+      <div class="dash-card-title">Recent Activity</div>
       ${trendItems.length
         ? `<div class="fp-trending-list">${trendItems.map(trendRow).join('')}</div>`
         : '<p class="dash-empty">No notable performances in the last 30 days.</p>'}
@@ -433,7 +437,7 @@ function buildHome() {
   }).join('');
   const updatesCard = `
     <div class="dash-card dash-updates">
-      <div class="dash-card-title">Latest updates</div>
+      <div class="dash-card-title">Latest Updates</div>
       <div class="dash-update-list">${updates || '<p class="dash-empty">No updates yet.</p>'}</div>
       <a href="articles.html" class="dash-link dash-card-foot" style="--accent:#0D9488">All articles →</a>
     </div>`;

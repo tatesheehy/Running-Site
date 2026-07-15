@@ -6,7 +6,7 @@
 /* ── NAVBAR (opaque, same color as page — StatMuse-style) ─── */
 /* Solid page-colored bar so scrolled content hides cleanly behind it. */
 .navbar {
-  background: #F7F8FA;
+  background: var(--page-bg);
   border-bottom: 1px solid var(--border);
   height: var(--nav-h);
   display: flex;
