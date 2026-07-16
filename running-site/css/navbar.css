@@ -581,3 +581,26 @@
 .mobile-drawer-footer .navbar-subscribe {
   text-align: center;
 }
+
+/* ════════════════════════════════════════════════════════════
+   All-orange header (Sofascore-style colored bar), no logo
+   ════════════════════════════════════════════════════════════ */
+.navbar { background: var(--brand); border-bottom: none; }
+.navbar-links { border-top: 1px solid rgba(255,255,255,0.22); }
+.navlink-a { color: rgba(255,255,255,0.82); font-weight: 600; }
+.navlink-a:hover { color: #fff; }
+.navlink.active > .navlink-a { color: #fff; border-bottom-color: #fff; }
+.navlink .sidebar-ico { color: currentColor; opacity: 0.8; }
+.navlink-caret { color: currentColor; }
+.navbar-icon-btn { color: rgba(255,255,255,0.92); }
+.navbar-icon-btn:hover { background: rgba(255,255,255,0.16); color: #fff; }
+.navbar-user-btn { background: rgba(255,255,255,0.16); border-color: rgba(255,255,255,0.28); color: #fff; }
+.navbar-user-btn:hover { background: rgba(255,255,255,0.28); color: #fff; }
+.navbar-user-btn.is-logged-in { color: #fff; }
+.nav-user-dot { background: #fff; border-color: var(--brand); }
+.navbar-subscribe { background: #fff; color: var(--brand) !important; }
+.navbar-subscribe:hover { opacity: 1; background: rgba(255,255,255,0.9); }
+.hamburger span { background: #fff; }
+/* white search pill reads cleanly on the orange bar */
+.navbar-search { background: #fff; border-color: transparent; }
+.navbar-search:focus-within { border-color: #fff; box-shadow: 0 0 0 3px rgba(255,255,255,0.35); }

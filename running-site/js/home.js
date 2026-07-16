@@ -582,15 +582,15 @@ function buildHome() {
       <div class="sf">
         <div class="sf-grid">
           <aside class="sf-side sf-side--l">
-            ${_sfFeaturedRivalry()}
-            ${_sfMeetsCard()}
+            ${_sfMostWinsCard()}
+            ${_sfBarrierCard()}
           </aside>
           <main class="sf-center">
             ${_sfCenterCard(_sfEvent)}
           </main>
           <aside class="sf-side sf-side--r">
-            ${_sfSpotlightCard()}
-            ${_sfLatestCard()}
+            ${_sfTrendingMiniCard()}
+            ${_sfMeetsCard()}
           </aside>
         </div>
       </div>
@@ -808,6 +808,87 @@ function _sfMeetsCard() {
     <div class="sf-card">
       <div class="sf-card-hd"><span>Upcoming meets</span></div>
       ${rows ? `<div class="sf-meet-list">${rows}</div>` : '<p class="sf-empty">No meets scheduled.</p>'}
+    </div>`;
+}
+
+// ── Dense side-rail stat lists ──
+function _sfMiniRow(a, chip, rank, chipCls) {
+  return `
+    <div class="sf-row" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
+      <span class="sf-rank-n${rank === 1 ? ' sf-rank-n--1' : ''}">${rank}</span>
+      ${_sfAva(a)}
+      <div class="sf-row-id"><span class="sf-row-name">${a.name}</span><span class="sf-row-sub">${renderFlag(a.flag)} ${a.country || ''}</span></div>
+      <span class="sf-chip${chipCls ? ' ' + chipCls : ''}">${chip}</span>
+    </div>`;
+}
+
+// Most season wins (1st-place finishes across all events).
+function _sfMostWinsCard() {
+  const list = Object.values(ATHLETES).map(a => {
+    let w = 0;
+    (a.results || []).forEach(r => { if (parseInt(r.place) === 1 && parseTimeToSecs(r.time) != null) w++; });
+    return { a, w };
+  }).filter(x => x.w > 0).sort((x, y) => y.w - x.w).slice(0, 8);
+  const rows = list.map((x, i) => _sfMiniRow(x.a, x.w, i + 1)).join('');
+  return `
+    <div class="sf-card">
+      <div class="sf-card-hd"><span>Most wins · 2026</span></div>
+      ${rows ? `<div class="sf-rank">${rows}</div>` : '<p class="sf-empty">No wins recorded.</p>'}
+    </div>`;
+}
+
+// Barrier club — how many athletes hold a career PR under each classic mark.
+function _sfBarrierCard() {
+  const clubs = [
+    { label: 'Sub-1:44', ev: '800m', time: '1:44.00' },
+    { label: 'Sub-3:30', ev: '1500m', time: '3:30.00' },
+    { label: 'Sub-13:00', ev: '5000m', time: '13:00.00' },
+    { label: 'Sub-27:00', ev: '10000m', time: '27:00.00' },
+  ].map(c => {
+    const lim = parseTimeToSecs(c.time);
+    const n = Object.values(ATHLETES).filter(a => {
+      const k = _normalizeEvent(c.ev);
+      let best = null;
+      (a.prs || []).forEach(p => { if (_normalizeEvent(p.event) === k) { const s = parseTimeToSecs(p.time); if (s != null && (best == null || s < best)) best = s; } });
+      return best != null && best < lim;
+    }).length;
+    return { ...c, n };
+  });
+  const max = Math.max(1, ...clubs.map(c => c.n));
+  const rows = clubs.map(c => {
+    const href = `athletes.html?prEvent=${encodeURIComponent(c.ev)}&prTime=${encodeURIComponent(c.time)}`;
+    return `
+      <a class="sf-bar-row" href="${href}">
+        <span class="sf-bar-lbl">${c.label}<span class="sf-bar-ev">${c.ev}</span></span>
+        <span class="sf-bar-track"><span class="sf-bar-fill" style="width:${Math.round(c.n / max * 100)}%"></span></span>
+        <span class="sf-bar-n">${c.n}</span>
+      </a>`;
+  }).join('');
+  return `
+    <div class="sf-card">
+      <div class="sf-card-hd"><span>Barrier club</span></div>
+      <div class="sf-bar-list">${rows}</div>
+    </div>`;
+}
+
+// Trending performances (recent standout marks), dense list.
+function _sfTrendingMiniCard() {
+  const items = _buildTrendingPerformances(7);
+  const rows = items.map((c, i) => {
+    const a = c.athlete, r = c.result;
+    const tag = c.isPB ? 'PB' : c.isDominant ? 'WIN' : 'MAJ';
+    return `
+      <div class="sf-row" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
+        <span class="sf-rank-n">${i + 1}</span>
+        ${_sfAva(a)}
+        <div class="sf-row-id"><span class="sf-row-name">${a.name}</span><span class="sf-row-sub">${r.event.trim()} · ${r.meet}</span></div>
+        <span class="sf-chip">${r.time}</span>
+      </div>`;
+  }).join('');
+  return `
+    <div class="sf-card">
+      <div class="sf-card-hd"><span>Trending</span><a href="event-tracker.html" class="sf-card-link">All →</a></div>
+      ${rows ? `<div class="sf-rank">${rows}</div>` : '<p class="sf-empty">Nothing recent.</p>'}
     </div>`;
 }
 
