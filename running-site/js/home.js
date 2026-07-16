@@ -587,6 +587,10 @@ function buildHome() {
           <span class="sf-crumb-sep">›</span>
           <span class="sf-crumb-cur">2026 Season</span>
         </nav>
+        <div class="sf-hero-row">
+          ${_sfHeroMatchup()}
+          ${_sfSpotlight()}
+        </div>
         <div class="sf-grid">
           <aside class="sf-side sf-side--l">
             ${_sfMostWinsCard()}
@@ -816,6 +820,63 @@ function _sfMeetsCard() {
     <div class="sf-card">
       <div class="sf-card-hd"><span>Upcoming meets</span></div>
       ${rows ? `<div class="sf-meet-list">${rows}</div>` : '<p class="sf-empty">No meets scheduled.</p>'}
+    </div>`;
+}
+
+// ── Hero matchup — a manually-chosen featured rivalry (SITE.featuredMatchup),
+//    with athlete photos, VS, and the head-to-head record. Falls back to a
+//    random top rivalry if no config is set. ──
+function _sfHeroMatchup() {
+  const cfg = (typeof SITE !== 'undefined' && SITE.featuredMatchup) || null;
+  let A = cfg && ATHLETES[cfg.a], B = cfg && ATHLETES[cfg.b];
+  if (!A || !B) { const p = _hpPickRivalry(); A = p[0]; B = p[1]; }
+  if (!A || !B) return '';
+  const event = (cfg && cfg.event) || '';
+  const label = (cfg && cfg.label) || 'Rivalry of the week';
+  const meet = (cfg && cfg.meet) || '';
+  const short = n => n.split(' ').slice(-1)[0];
+  const m = (typeof _computePairMatchup === 'function') ? _computePairMatchup(A.id, B.id) : null;
+  const w = m ? m.wins : 0, l = m ? m.losses : 0, races = m ? m.races.length : 0;
+  const leader = w > l ? short(A.name) : l > w ? short(B.name) : null;
+  const side = (a, cls) => {
+    const pb = event ? _sfPbFor(a, event) : null;
+    return `
+      <div class="sf-mu-side ${cls}" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
+        <div class="sf-mu-photo" style="background-image:url('${a.photo || '/images/default_card.png'}');background-color:${a.photoBackground || '#1a1a2e'}"></div>
+        <div class="sf-mu-name">${a.name}</div>
+        <div class="sf-mu-ct"><span class="sf-mu-flag">${renderFlag(a.flag)}</span>${a.country || ''}</div>
+        ${pb ? `<div class="sf-mu-pb">${event} PB · <b>${pb.t}</b></div>` : ''}
+      </div>`;
+  };
+  return `
+    <div class="sf-card sf-matchup">
+      <div class="sf-mu-eyebrow"><span class="sf-mu-tag">${label}</span>${meet ? `<span class="sf-mu-meet">${meet}</span>` : ''}</div>
+      <div class="sf-mu-body">
+        ${side(A, 'sf-mu-side--a')}
+        <div class="sf-mu-center">
+          <div class="sf-mu-vs">VS</div>
+          <div class="sf-mu-rec">${w}<em>–</em>${l}</div>
+          <div class="sf-mu-rec-lbl">${leader ? `${leader} leads` : races ? 'all square' : 'first meeting'}</div>
+        </div>
+        ${side(B, 'sf-mu-side--b')}
+      </div>
+      <a class="sf-mu-cta" href="h2h.html?a=${encodeURIComponent(A.id)}&b=${encodeURIComponent(B.id)}">See the full head-to-head →</a>
+    </div>`;
+}
+
+// ── Dark spotlight — performance of the week ──
+function _sfSpotlight() {
+  const top = _buildTrendingPerformances(1)[0];
+  if (!top) return '';
+  const a = top.athlete, r = top.result;
+  const tag = top.isPB ? 'Personal best' : top.isDominant ? 'Dominant win' : 'Major meet';
+  return `
+    <div class="sf-card sf-spot" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
+      <div class="sf-spot-foot">Performance of the week</div>
+      <div class="sf-spot-tag">${tag}</div>
+      <div class="sf-spot-time">${r.time}</div>
+      <div class="sf-spot-name"><span class="sf-mu-flag">${renderFlag(a.flag)}</span>${a.name}</div>
+      <div class="sf-spot-meta">${r.event.trim()} · ${r.meet}${r.date ? ` · ${r.date}` : ''}</div>
     </div>`;
 }
 
