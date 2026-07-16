@@ -46,7 +46,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-16",
   "prs": [
     {
       "event": "400m",
@@ -211,12 +211,282 @@
   ],
   "dob": "22 APR 2000",
   "weight": null,
-  "lastHistorySynced": "2026-07-14",
+  "lastHistorySynced": "2026-07-15",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",
   "id": "johannes-munnik",
   "resultsHistory": {
+    "2018": [
+      {
+        "date": "APR 7",
+        "meet": "Paarl South African U20/U18 Championships, Paarl",
+        "event": "1500m",
+        "time": "3:56.91",
+        "place": "4",
+        "round": "H2"
+      },
+      {
+        "date": "APR 7",
+        "meet": "Paarl South African U20/U18 Championships, Paarl",
+        "event": "1500m",
+        "time": "3:52.17",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Paarl South African U20/U18 Championships, Paarl",
+        "event": "800m",
+        "time": "1:55.44",
+        "place": "5",
+        "round": "H1"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Paarl South African U20/U18 Championships, Paarl",
+        "event": "800m",
+        "time": "1:52.95",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "South African Championships, Pretoria",
+        "event": "800m",
+        "time": "1:53.25",
+        "place": "5",
+        "round": "H3"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Pretoria AGN League, Pretoria",
+        "event": "800m",
+        "time": "1:53.92",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 20",
+        "meet": "Potchefstroom",
+        "event": "1500m",
+        "time": "3:58.40",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "JUL 19",
+        "meet": "Sommersportfest, Mannheim",
+        "event": "800m",
+        "time": "1:52.28",
+        "place": "6",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 13",
+        "meet": "Guldensporenmeeting, Kortrijk",
+        "event": "1500m",
+        "time": "3:48.14",
+        "place": "6",
+        "round": "F3"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Sparkassen Gala und Laufnacht, Regensburg",
+        "event": "1500m",
+        "time": "3:50.25",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "JUL 3",
+        "meet": "Abendsportfest, Pfungstadt",
+        "event": "1500m",
+        "time": "3:50.90",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "Meeting Citta di Nembro, Nembro",
+        "event": "3000m",
+        "time": "8:32.79",
+        "place": "19",
+        "round": "F"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Regional U23/U16 Championships, Koblenz",
+        "event": "1500m",
+        "time": "3:46.20",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAY 4",
+        "meet": "ACNW Meeting",
+        "event": "1500m",
+        "time": "3:55.53",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "International Meet, Gaborone",
+        "event": "800m",
+        "time": "1:53.47",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "APR 5",
+        "meet": "South African University Championships, Stellenbosch",
+        "event": "1500m",
+        "time": "3:51.27",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "South African U20 Championships, Paarl",
+        "event": "1500m",
+        "time": "3:57.41",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "South African U20 Championships, Paarl",
+        "event": "1500m",
+        "time": "3:57.00",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "ACNW League 6, Potchefstroom",
+        "event": "400m",
+        "time": "50.99",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "ACNW League 6, Potchefstroom",
+        "event": "800m",
+        "time": "1:51.85",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "ACNW Ch., Potchefstroom",
+        "event": "1500m",
+        "time": "3:54.03",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "ACNW League 5, Potchefstroom",
+        "event": "800m",
+        "time": "1:53.27",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "ACNW League 4, Potchefstroom",
+        "event": "1500m",
+        "time": "3:52.92",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "AGN League 3, Pretoria",
+        "event": "1500m",
+        "time": "3:49.92",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "PUMA School of Speed, Johannesburg",
+        "event": "1500m",
+        "time": "3:56.83",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "ACNW League 1, Potchefstroom",
+        "event": "600m",
+        "time": "1:21.32",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 29",
+        "meet": "ACNW League 1, Potchefstroom",
+        "event": "3000m",
+        "time": "8:36.83",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "DEC 12",
+        "meet": "KZNA Odd Events 2",
+        "event": "1500m",
+        "time": "3:43.69",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "DEC 9",
+        "meet": "AGN League 4",
+        "event": "1500m",
+        "time": "3:48.41",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "NOV 24",
+        "meet": "ACNW Open T&F Meeting",
+        "event": "1500m",
+        "time": "3:49.38",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "NOV 3",
+        "meet": "ACNW Open T&F Meeting",
+        "event": "3000m",
+        "time": "8:23.47",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "MAR 14",
+        "meet": "ACNW Ch.",
+        "event": "1500m",
+        "time": "3:49.19",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "ACNW League Meeting 4",
+        "event": "3000m",
+        "time": "8:15.79",
+        "place": "2",
+        "round": "F"
+      }
+    ],
     "2021": [
       {
         "date": "23 FEB 2021",
@@ -366,6 +636,8 @@
         "place": "1."
       }
     ],
+    "2022": [],
+    "2023": [],
     "2024": [
       {
         "date": "16 JUN 2024",

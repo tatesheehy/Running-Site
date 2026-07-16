@@ -18,7 +18,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-16",
   "prs": [
     {
       "event": "400m",
@@ -171,12 +171,170 @@
   ],
   "dob": "18 JAN 1995",
   "weight": null,
-  "lastHistorySynced": "2026-07-14",
+  "lastHistorySynced": "2026-07-15",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",
   "id": "james-mcmurray",
   "resultsHistory": {
+    "2018": [
+      {
+        "date": "MAY 7",
+        "meet": "Bedford BUCS Championships, Bedford",
+        "event": "1500m",
+        "time": "3:51.34",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Bedford BUCS Championships, Bedford",
+        "event": "1500m",
+        "time": "3:47.44",
+        "place": "2",
+        "round": "SF2"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "Bedford BUCS Championships, Bedford",
+        "event": "1500m",
+        "time": "3:59.20",
+        "place": "1",
+        "round": "H5"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Sheffield BUCS Indoor Championships, Sheffield (i)",
+        "event": "3000m sh",
+        "time": "8:19.59",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Sheffield BUCS Indoor Championships, Sheffield (i)",
+        "event": "3000m sh",
+        "time": "8:29.80",
+        "place": "1",
+        "round": "H3"
+      },
+      {
+        "date": "JAN 7",
+        "meet": "Sheffield BMC Sheffield Open, Sheffield (i)",
+        "event": "3000m sh",
+        "time": "8:24.46",
+        "place": "2",
+        "round": "F2"
+      }
+    ],
+    "2019": [
+      {
+        "date": "DEC 8",
+        "meet": "26th SPAR European Cross Country Championships, Lisboa",
+        "event": "Cross Country Relay",
+        "time": "17:55",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "NOV 24",
+        "meet": "Wilmslow Festive 10K, Wilmslow",
+        "event": "10K",
+        "time": "29:53",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "OCT 27",
+        "meet": "Leeds Abbey Dash 10K, Leeds",
+        "event": "10K",
+        "time": "29:17",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "BMC Grand Prix, Watford",
+        "event": "1500m",
+        "time": "3:39.02",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "BMC Gold Standard Races, Watford",
+        "event": "1500m",
+        "time": "3:40.52",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "IFAM Meeting",
+        "event": "1500m",
+        "time": "3:41.33",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Loughborough International, Loughborough",
+        "event": "800m",
+        "time": "1:49.52",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 15",
+        "meet": "BMC Gold Standard Races, Watford",
+        "event": "1500m",
+        "time": "3:41.70",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "BUCS Championships, Bedford",
+        "event": "1500m",
+        "time": "3:51.57",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "BUCS Championships, Bedford",
+        "event": "1500m",
+        "time": "3:51.10",
+        "place": "1",
+        "round": "SF2"
+      }
+    ],
+    "2020": [
+      {
+        "date": "FEB 1",
+        "meet": "Meeting Elite en salle de Mondeville",
+        "event": "3000m sh",
+        "time": "8:16.38",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JAN 5",
+        "meet": "BMC Sheffield Grand Prix",
+        "event": "1500m sh",
+        "time": "3:44.33",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 3",
+        "meet": "BMC / Glasgow AA Metric Miler Meeting (inc Scottish 3000m Ch.)",
+        "event": "3000m sh",
+        "time": "8:00.38",
+        "place": "1",
+        "round": "F1"
+      }
+    ],
     "2021": [
       {
         "date": "23 JUN 2021",

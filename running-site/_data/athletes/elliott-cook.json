@@ -10,7 +10,7 @@
   "flag": "US",
   "honours": [],
   "seasons": null,
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-16",
   "prs": [
     {
       "event": "800m",
@@ -275,12 +275,40 @@
   ],
   "dob": "22 FEB 2002",
   "weight": null,
-  "lastHistorySynced": "2026-07-14",
+  "lastHistorySynced": "2026-07-15",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",
   "id": "elliott-cook",
   "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "JUN 16",
+        "meet": "New Balance Nationals Outdoor",
+        "event": "800m",
+        "time": "1:52.01",
+        "place": "4",
+        "round": "F4"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "OHSAA State Championships",
+        "event": "800m",
+        "time": "1:51.49",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "OHSAA Division 1 Region 3",
+        "event": "800m",
+        "time": "1:51.66",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2020": [],
     "2021": [
       {
         "date": "03 APR 2021",

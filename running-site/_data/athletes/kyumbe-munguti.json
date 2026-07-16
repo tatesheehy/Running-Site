@@ -39,7 +39,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-16",
   "prs": [
     {
       "event": "800m",
@@ -158,6 +158,91 @@
   "event": "1500m",
   "id": "kyumbe-munguti",
   "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUN 21",
+        "meet": "Kenyan Championships, Nairobi",
+        "event": "800m",
+        "time": "1:52.31",
+        "place": "5",
+        "round": "H2"
+      }
+    ],
+    "2019": [
+      {
+        "date": "SEP 13",
+        "meet": "Kenya World Championship Trials",
+        "event": "1500m",
+        "time": "3:45.52",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Kenyan Championships",
+        "event": "1500m",
+        "time": "3:39.14",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "Kenyan Championships",
+        "event": "1500m",
+        "time": "3:42.59",
+        "place": "2",
+        "round": "H3"
+      },
+      {
+        "date": "JUN 21",
+        "meet": "African Games Trials, Nairobi",
+        "event": "800m",
+        "time": "1:49.0",
+        "place": "6",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 6",
+        "meet": "AK Meeting, Narok",
+        "event": "1500m",
+        "time": "3:45.3",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 24",
+        "meet": "AK Meeting",
+        "event": "800m",
+        "time": "1:49.1",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "AK Weekend Meet",
+        "event": "800m",
+        "time": "1:48.4",
+        "place": "4",
+        "round": "H"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "AK Weekend Meet",
+        "event": "800m",
+        "time": "1:48.0",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "APR 13",
+        "meet": "World Relays Ch. Trials, Iten",
+        "event": "800m",
+        "time": "1:46.96",
+        "place": "4",
+        "round": "F"
+      }
+    ],
+    "2020": [],
     "2021": [
       {
         "date": "12 MAR 2021",

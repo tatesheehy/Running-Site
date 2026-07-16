@@ -10,7 +10,7 @@
   "flag": "FR",
   "honours": [],
   "seasons": null,
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-16",
   "prs": [
     {
       "event": "800m",
@@ -183,12 +183,25 @@
   ],
   "dob": "25 MAY 2004",
   "weight": null,
-  "lastHistorySynced": "2026-07-14",
+  "lastHistorySynced": "2026-07-15",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",
   "id": "teo-dabos",
   "resultsHistory": {
+    "2018": [],
+    "2019": [],
+    "2020": [
+      {
+        "date": "OCT 11",
+        "meet": "Championnat LANA",
+        "event": "800m",
+        "time": "1:59.02",
+        "place": "1",
+        "round": "F2"
+      }
+    ],
+    "2021": [],
     "2022": [
       {
         "date": "08 MAY 2022",

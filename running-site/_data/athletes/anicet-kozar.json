@@ -10,7 +10,7 @@
   "flag": "FR",
   "honours": [],
   "seasons": null,
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-16",
   "prs": [
     {
       "event": "400m",
@@ -147,12 +147,202 @@
   ],
   "dob": "08 OCT 2001",
   "weight": null,
-  "lastHistorySynced": "2026-07-14",
+  "lastHistorySynced": "2026-07-15",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",
   "id": "anicet-kozar",
   "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUL 21",
+        "meet": "Bondoufle French U18 Championships, Bondoufle",
+        "event": "800m",
+        "time": "1:57.06",
+        "place": "5",
+        "round": "H4"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Mulhouse",
+        "event": "800m",
+        "time": "1:59.62",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Colmar Meeting National, Colmar",
+        "event": "800m",
+        "time": "1:57.81",
+        "place": "1",
+        "round": "F3"
+      }
+    ],
+    "2019": [
+      {
+        "date": "OCT 13",
+        "meet": "Coupe de France, Blois",
+        "event": "4x800 Metres Relay",
+        "time": "7:38.80",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 26",
+        "meet": "French Championships, St-Etienne",
+        "event": "800m",
+        "time": "1:51.10",
+        "place": "5",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "European U20 Championships",
+        "event": "800m",
+        "time": "1:51.43",
+        "place": "5",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "French U20 Championships, Angers",
+        "event": "800m",
+        "time": "1:52.13",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 6",
+        "meet": "French U20 Championships, Angers",
+        "event": "800m",
+        "time": "1:53.89",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Meeting de Strasbourg, Strasbourg",
+        "event": "800m",
+        "time": "1:49.35",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 14",
+        "meet": "Meeting du Waldeck, Riedisheim",
+        "event": "800m",
+        "time": "1:50.31",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Meeting Elite, Forbach",
+        "event": "800m",
+        "time": "1:51.68",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "IFAM Meeting",
+        "event": "800m",
+        "time": "1:51.73",
+        "place": "5",
+        "round": "F7"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Interclubs, Reims",
+        "event": "800m",
+        "time": "1:51.10",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 5",
+        "meet": "French Club Championships, Haguenau",
+        "event": "800m",
+        "time": "1:52.83",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "SEP 26",
+        "meet": "Meeting National à thème de Strasbourg",
+        "event": "800m",
+        "time": "1:49.53",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 13",
+        "meet": "French Championships",
+        "event": "800m",
+        "time": "1:51.58",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 12",
+        "meet": "French Championships",
+        "event": "800m",
+        "time": "1:51.13",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "Meeting National à thème de l'Est Lyonnais",
+        "event": "800m",
+        "time": "1:50.50",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Laufmeeting",
+        "event": "800m",
+        "time": "1:50.99",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Meeting Francois Bernardin",
+        "event": "800m",
+        "time": "1:51.04",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 27",
+        "meet": "Sonnenwend Meeting",
+        "event": "400m",
+        "time": "49.35",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 26",
+        "meet": "Swiss 10",
+        "event": "800m",
+        "time": "1:52.09",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting Meilen",
+        "event": "800m",
+        "time": "1:51.48",
+        "place": "3",
+        "round": "F1"
+      }
+    ],
     "2021": [
       {
         "date": "01 JUN 2021",
