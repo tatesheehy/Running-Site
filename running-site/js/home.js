@@ -823,9 +823,9 @@ function _sfMeetsCard() {
     </div>`;
 }
 
-// ── Hero matchup — a manually-chosen featured rivalry (SITE.featuredMatchup),
-//    with athlete photos, VS, and the head-to-head record. Falls back to a
-//    random top rivalry if no config is set. ──
+// ── Hero matchup — a manually-chosen featured rivalry (SITE.featuredMatchup):
+//    a clean scoreboard (name + flag each side, record in the middle, PB
+//    compare row). Falls back to a random top rivalry if no config is set. ──
 function _sfHeroMatchup() {
   const cfg = (typeof SITE !== 'undefined' && SITE.featuredMatchup) || null;
   let A = cfg && ATHLETES[cfg.a], B = cfg && ATHLETES[cfg.b];
@@ -838,28 +838,34 @@ function _sfHeroMatchup() {
   const m = (typeof _computePairMatchup === 'function') ? _computePairMatchup(A.id, B.id) : null;
   const w = m ? m.wins : 0, l = m ? m.losses : 0, races = m ? m.races.length : 0;
   const leader = w > l ? short(A.name) : l > w ? short(B.name) : null;
-  const side = (a, cls) => {
-    const pb = event ? _sfPbFor(a, event) : null;
-    return `
-      <div class="sf-mu-side ${cls}" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
-        <div class="sf-mu-photo" style="background-image:url('${a.photo || '/images/default_card.png'}');background-color:${a.photoBackground || '#1a1a2e'}"></div>
-        <div class="sf-mu-name">${a.name}</div>
-        <div class="sf-mu-ct"><span class="sf-mu-flag">${renderFlag(a.flag)}</span>${a.country || ''}</div>
-        ${pb ? `<div class="sf-mu-pb">${event} PB · <b>${pb.t}</b></div>` : ''}
-      </div>`;
-  };
+  const recLbl = (leader ? `${leader} leads` : races ? 'all square' : 'first meeting')
+    + (races ? ` · ${races} meeting${races === 1 ? '' : 's'}` : '');
+  const pbA = event ? _sfPbFor(A, event) : null;
+  const pbB = event ? _sfPbFor(B, event) : null;
+  const aFast = pbA && pbB && pbA.s < pbB.s, bFast = pbA && pbB && pbB.s < pbA.s;
+  const side = (a, cls) => `
+    <div class="sf-mu-side ${cls}" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
+      <span class="sf-mu-name">${a.name}</span>
+      <span class="sf-mu-ct"><span class="sf-mu-flag">${renderFlag(a.flag)}</span>${a.country || ''}</span>
+    </div>`;
+  const compare = (event && pbA && pbB) ? `
+    <div class="sf-mu-compare">
+      <span class="sf-mu-pb${aFast ? ' sf-mu-pb--win' : ''}">${pbA.t}</span>
+      <span class="sf-mu-pb-lbl">${event} PB</span>
+      <span class="sf-mu-pb${bFast ? ' sf-mu-pb--win' : ''}">${pbB.t}</span>
+    </div>` : '';
   return `
     <div class="sf-card sf-matchup">
       <div class="sf-mu-eyebrow"><span class="sf-mu-tag">${label}</span>${meet ? `<span class="sf-mu-meet">${meet}</span>` : ''}</div>
-      <div class="sf-mu-body">
+      <div class="sf-mu-top">
         ${side(A, 'sf-mu-side--a')}
-        <div class="sf-mu-center">
-          <div class="sf-mu-vs">VS</div>
-          <div class="sf-mu-rec">${w}<em>–</em>${l}</div>
-          <div class="sf-mu-rec-lbl">${leader ? `${leader} leads` : races ? 'all square' : 'first meeting'}</div>
+        <div class="sf-mu-score">
+          <span class="sf-mu-rec">${w}<em>–</em>${l}</span>
+          <span class="sf-mu-rec-lbl">${recLbl}</span>
         </div>
         ${side(B, 'sf-mu-side--b')}
       </div>
+      ${compare}
       <a class="sf-mu-cta" href="h2h.html?a=${encodeURIComponent(A.id)}&b=${encodeURIComponent(B.id)}">See the full head-to-head →</a>
     </div>`;
 }

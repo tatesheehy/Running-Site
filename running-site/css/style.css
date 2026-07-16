@@ -3,15 +3,15 @@
    Imports all partial CSS files in dependency order.
    ============================================================ */
 
-@import "base.css?v=44";
+@import "base.css?v=45";
 @import "navbar.css?v=58";
-@import "home.css?v=118";
-@import "articles.css?v=9";
-@import "rankings.css?v=99";
+@import "home.css?v=120";
+@import "articles.css?v=10";
+@import "rankings.css?v=100";
 @import "athletes.css?v=30";
-@import "modals.css?v=19";
+@import "modals.css?v=20";
 @import "about.css?v=6";
-@import "h2h.css?v=44";
+@import "h2h.css?v=45";
 @import "account.css?v=10";
 @import "event-tracker.css?v=13";
 @import "time-machine.css?v=12";
@@ -24,7 +24,7 @@
 
 /* Override with fresh values — force-busts import cache */
 :root {
-  --font-mono: 'Lota Grotesque', sans-serif;
+  --font-mono: 'Hanken Grotesk', sans-serif;
   --brand: #FF5200;
   --accent: #FF5200;
 }

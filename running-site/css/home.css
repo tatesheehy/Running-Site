@@ -651,9 +651,9 @@
 }
 .sf-hero-row .sf-card { padding: 16px 18px; }
 
-/* Featured matchup card */
-.sf-matchup { display: flex; flex-direction: column; }
-.sf-mu-eyebrow { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+/* Featured matchup card — clean scoreboard, no photos */
+.sf-matchup { display: flex; flex-direction: column; justify-content: center; }
+.sf-mu-eyebrow { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
 .sf-mu-tag {
   font-family: var(--font-display);
   font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
@@ -661,37 +661,60 @@
 }
 .sf-mu-meet { font-size: 12px; color: var(--muted); }
 .sf-mu-meet::before { content: '·'; margin-right: 8px; color: var(--border); }
-.sf-mu-body {
+
+.sf-mu-top {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  gap: 10px;
-  padding: 6px 0 2px;
+  gap: 18px;
 }
-.sf-mu-side { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; cursor: pointer; min-width: 0; }
-.sf-mu-photo {
-  width: 76px; height: 76px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center top;
-  box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--border);
+.sf-mu-side { display: flex; flex-direction: column; gap: 6px; min-width: 0; cursor: pointer; }
+.sf-mu-side--a { align-items: flex-end; text-align: right; }
+.sf-mu-side--b { align-items: flex-start; text-align: left; }
+.sf-mu-name { font-size: 17px; font-weight: 700; color: var(--text); line-height: 1.15; }
+.sf-mu-ct { display: inline-flex; align-items: center; gap: 7px; font-size: 12.5px; color: var(--muted); }
+.sf-mu-flag .flag-icon {
+  width: 22px; height: 15px;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.10);
+  top: 0;
 }
-.sf-mu-side--a .sf-mu-photo { box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--brand); }
-.sf-mu-side--b .sf-mu-photo { box-shadow: 0 0 0 3px #fff, 0 0 0 5px #1A1A1A; }
-.sf-mu-name { font-weight: 700; font-size: 16px; color: var(--text); line-height: 1.1; }
-.sf-mu-ct { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
-.sf-mu-flag .flag-icon { width: 18px; height: 12px; }
-.sf-mu-pb { font-size: 11.5px; color: var(--muted); }
-.sf-mu-pb b { color: var(--text); font-variant-numeric: tabular-nums; }
-.sf-mu-center { text-align: center; padding: 0 4px; }
-.sf-mu-vs { font-family: var(--font-display); font-size: 12px; font-weight: 700; letter-spacing: 0.08em; color: var(--muted); }
-.sf-mu-rec { font-family: var(--font-display); font-size: 30px; font-weight: 800; color: var(--text); line-height: 1; margin-top: 2px; }
-.sf-mu-rec em { font-style: normal; color: var(--border); margin: 0 3px; }
-.sf-mu-rec-lbl { font-size: 11px; color: var(--muted); margin-top: 3px; }
+
+.sf-mu-score { text-align: center; padding: 0 4px; }
+.sf-mu-rec {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 34px; font-weight: 800;
+  color: var(--text);
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+.sf-mu-rec em { font-style: normal; color: var(--border); margin: 0 4px; }
+.sf-mu-rec-lbl { display: block; font-size: 11px; color: var(--muted); margin-top: 6px; white-space: nowrap; }
+
+.sf-mu-compare {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 18px;
+  margin-top: 16px;
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+}
+.sf-mu-pb {
+  font-family: var(--font-mono);
+  font-size: 16px; font-weight: 700;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.sf-mu-pb:first-child { text-align: right; }
+.sf-mu-pb:last-child { text-align: left; }
+.sf-mu-pb--win { color: var(--brand); }
+.sf-mu-pb-lbl { font-size: 11px; font-weight: 600; color: var(--muted); white-space: nowrap; }
+
 .sf-mu-cta {
   display: block; text-align: center;
-  margin-top: 12px; padding-top: 12px;
-  border-top: 1px solid var(--border);
+  margin-top: 14px;
   font-size: 13px; font-weight: 700; color: var(--brand); text-decoration: none;
 }
 .sf-mu-cta:hover { text-decoration: underline; }
@@ -1514,7 +1537,7 @@
   margin-bottom: 8px;
 }
 .fp-hero-dek {
-  font-family: 'Lota Grotesque', sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif;
   font-weight: 300;
   font-size: 17px;
   color: var(--muted);
@@ -1559,7 +1582,7 @@
   transition: color 0.15s;
 }
 .fp-rail-dek {
-  font-family: 'Lota Grotesque', sans-serif;
+  font-family: 'Hanken Grotesk', sans-serif;
   font-weight: 400;
   font-size: 12px;
   color: var(--muted);
