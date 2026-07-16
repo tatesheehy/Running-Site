@@ -589,7 +589,7 @@ function buildHome() {
             ${_sfCenterCard(_sfEvent)}
           </main>
           <aside class="sf-side sf-side--r">
-            ${_sfTrendingMiniCard()}
+            ${_sfRecentCard()}
             ${_sfMeetsCard()}
           </aside>
         </div>
@@ -872,11 +872,16 @@ function _sfBarrierCard() {
 }
 
 // Trending performances (recent standout marks), dense list.
-function _sfTrendingMiniCard() {
-  const items = _buildTrendingPerformances(7);
-  const rows = items.map((c, i) => {
+// Recent performances — filterable by distance, with a "see more" expander.
+let _sfRecentEv = 'all';
+let _sfRecentLimit = 8;
+function _sfRecentItems() {
+  return _buildTrendingPerformances(_sfRecentLimit, _sfRecentEv === 'all' ? null : _sfRecentEv);
+}
+function _sfRecentRowsHtml(items) {
+  if (!items.length) return '<p class="sf-empty">Nothing recent for this distance.</p>';
+  return items.map((c, i) => {
     const a = c.athlete, r = c.result;
-    const tag = c.isPB ? 'PB' : c.isDominant ? 'WIN' : 'MAJ';
     return `
       <div class="sf-row" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
         <span class="sf-rank-n">${i + 1}</span>
@@ -885,12 +890,30 @@ function _sfTrendingMiniCard() {
         <span class="sf-chip">${r.time}</span>
       </div>`;
   }).join('');
+}
+function _sfRecentCard() {
+  const opts = [['all', 'All distances'], ['800m', '800m'], ['1500m', '1500m'], ['mile', 'Mile'], ['3000m', '3000m'], ['5000m', '5000m'], ['10000m', '10,000m']]
+    .map(([v, l]) => `<option value="${v}"${v === _sfRecentEv ? ' selected' : ''}>${l}</option>`).join('');
+  const items = _sfRecentItems();
+  const showMore = items.length >= _sfRecentLimit;
   return `
     <div class="sf-card">
-      <div class="sf-card-hd"><span>Trending</span><a href="event-tracker.html" class="sf-card-link">All →</a></div>
-      ${rows ? `<div class="sf-rank">${rows}</div>` : '<p class="sf-empty">Nothing recent.</p>'}
+      <div class="sf-card-hd"><span>Recent performances</span>
+        <select class="sf-select" onchange="sfRecentSort(this.value)" aria-label="Filter by distance">${opts}</select>
+      </div>
+      <div class="sf-rank" id="sf-recent-body">${_sfRecentRowsHtml(items)}</div>
+      <button class="sf-more" id="sf-recent-more" onclick="sfRecentMore()"${showMore ? '' : ' style="display:none"'}>See more</button>
     </div>`;
 }
+function _sfRenderRecent() {
+  const items = _sfRecentItems();
+  const b = document.getElementById('sf-recent-body');
+  if (b) b.innerHTML = _sfRecentRowsHtml(items);
+  const btn = document.getElementById('sf-recent-more');
+  if (btn) btn.style.display = items.length >= _sfRecentLimit ? '' : 'none';
+}
+window.sfRecentSort = function (ev) { _sfRecentEv = ev; _sfRecentLimit = 8; _sfRenderRecent(); };
+window.sfRecentMore = function () { _sfRecentLimit += 8; _sfRenderRecent(); };
 
 // ── Center: main tabbed card (like Sofascore Standings/Stats) ──
 function _sfH2HLeaders(event) {
@@ -1062,7 +1085,7 @@ function _sfCenterCard(event) {
     <div class="sf-card sf-main">
       <div class="sf-tabs" id="sf-tabs">
         ${tab('leaders', 'Season Leaders')}
-        ${tab('trending', 'Trending')}
+        ${tab('trending', 'Recent')}
         ${tab('h2h', 'H2H Leaders')}
       </div>
       <div class="sf-pillrow" id="sf-pillrow"${_sfTab === 'trending' ? ' style="display:none"' : ''}>${pills}</div>

@@ -604,3 +604,16 @@
 /* white search pill reads cleanly on the orange bar */
 .navbar-search { background: #fff; border-color: transparent; }
 .navbar-search:focus-within { border-color: #fff; box-shadow: 0 0 0 3px rgba(255,255,255,0.35); }
+
+/* ── Left-aligned header layout ──────────────────────────── */
+.navbar-util {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0;                 /* pin left instead of centering */
+  grid-template-columns: none;
+}
+.navbar-util-left { display: none; }   /* logo removed */
+.navbar-util .navbar-search { width: 100%; max-width: 420px; }
+.navbar-util-right { margin-left: auto; }
+.navlinks { margin: 0; justify-content: flex-start; }

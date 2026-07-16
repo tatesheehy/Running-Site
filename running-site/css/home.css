@@ -617,7 +617,7 @@
 
 .fp-body {
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: 0;
   padding: 0 24px;
 }
 
@@ -626,7 +626,7 @@
    ══════════════════════════════════════════════════════════════ */
 .sf {
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: 0;
   padding: 16px 24px 60px;
 }
 .sf-card {
@@ -647,6 +647,30 @@
 }
 .sf-card-link { font-size: 13px; font-weight: 700; color: var(--brand); text-decoration: none; }
 .sf-card-link:hover { text-decoration: underline; }
+.sf-select {
+  font-family: var(--font-display);
+  font-size: 12px; font-weight: 700;
+  color: var(--text);
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+.sf-more {
+  width: 100%;
+  margin-top: 6px;
+  padding: 8px;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: var(--font-display);
+  font-size: 12.5px; font-weight: 700;
+  color: var(--brand);
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s;
+}
+.sf-more:hover { background: color-mix(in srgb, var(--brand) 8%, #fff); border-color: color-mix(in srgb, var(--brand) 30%, var(--border)); }
 .sf-empty { color: var(--muted); font-size: 13px; padding: 12px 4px; }
 
 /* ── Hero header card ── */

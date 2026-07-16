@@ -248,7 +248,7 @@ footer { display: none; }
 /* ── LAYOUT CONTAINER ─────────────────────────────────────── */
 .container {
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: 0; /* left-aligned site */
   padding: 0 24px;
 }
 
