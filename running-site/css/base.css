@@ -6,19 +6,47 @@
 /* ── RESET & BASE ─────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* Hanken Grotesk — primary UI/body font, self-hosted (variable, all weights) */
+/* Lota Grotesque (Alt 1) — primary UI/body font, self-hosted */
 @font-face {
-  font-family: 'Hanken Grotesk';
-  src: url('../fonts/HankenGrotesk-Variable.ttf') format('truetype');
-  font-weight: 100 900;
+  font-family: 'Lota Grotesque';
+  src: url('../fonts/Lota-Regular.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Hanken Grotesk';
-  src: url('../fonts/HankenGrotesk-Italic-Variable.ttf') format('truetype');
-  font-weight: 100 900;
+  font-family: 'Lota Grotesque';
+  src: url('../fonts/Lota-Italic.woff2') format('woff2');
+  font-weight: 400;
   font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lota Grotesque';
+  src: url('../fonts/Lota-SemiBold.woff2') format('woff2');
+  font-weight: 500 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lota Grotesque';
+  src: url('../fonts/Lota-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lota Grotesque';
+  src: url('../fonts/Lota-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lota Grotesque';
+  src: url('../fonts/Lota-Black.woff2') format('woff2');
+  font-weight: 800 900;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -37,9 +65,9 @@
   --bg: #FFFFFF;
   --bg-light: #F7F7F7;
   --page-bg: #F7F8FA;
-  --font-display: 'Hanken Grotesk', sans-serif;
-  --font-body: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
-  --font-mono: 'Hanken Grotesk', sans-serif;
+  --font-display: 'Lota Grotesque', sans-serif;
+  --font-body: 'Lota Grotesque', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Lota Grotesque', sans-serif;
   --max-width: 1200px; /* content column width, now that there's no side rail narrowing it */
   --nav-h: 164px; /* ticker (48) + utility row (64) + nav-links row (52) */
   --radius-sm: 8px;
@@ -268,7 +296,7 @@ footer { display: none; }
 
 /* ── PAGE INTRO TEXT ──────────────────────────────────────── */
 .page-intro {
-  font-family: 'Hanken Grotesk', sans-serif;
+  font-family: 'Lota Grotesque', sans-serif;
   font-weight: 400;
   font-size: 15px;
   color: #555;
