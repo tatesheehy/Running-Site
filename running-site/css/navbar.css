@@ -587,7 +587,7 @@
    ════════════════════════════════════════════════════════════ */
 .navbar { background: var(--brand); border-bottom: none; }
 .navbar-links { border-top: 1px solid rgba(255,255,255,0.22); }
-.navlink-a { color: rgba(255,255,255,0.82); font-weight: 600; }
+.navlink-a { color: rgba(255,255,255,0.85); font-weight: 500; }
 .navlink-a:hover { color: #fff; }
 .navlink.active > .navlink-a { color: #fff; border-bottom-color: #fff; }
 .navlink .sidebar-ico { color: currentColor; opacity: 0.8; }
@@ -605,15 +605,14 @@
 .navbar-search { background: #fff; border-color: transparent; }
 .navbar-search:focus-within { border-color: #fff; box-shadow: 0 0 0 3px rgba(255,255,255,0.35); }
 
-/* ── Left-aligned header layout ──────────────────────────── */
+/* ── Left-aligned header, centered search ────────────────── */
 .navbar-util {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  gap: 14px;
-  margin: 0;                 /* pin left instead of centering */
-  grid-template-columns: none;
+  margin: 0;                 /* content column pinned left */
 }
-.navbar-util-left { display: none; }   /* logo removed */
-.navbar-util .navbar-search { width: 100%; max-width: 420px; }
-.navbar-util-right { margin-left: auto; }
+.navbar-util-left { display: flex; }   /* empty spacer (logo removed) */
+.navbar-util .navbar-search { width: 100%; max-width: 360px; justify-self: center; }
+.navbar-util-right { justify-self: end; margin-left: 0; }
 .navlinks { margin: 0; justify-content: flex-start; }

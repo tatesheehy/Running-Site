@@ -593,6 +593,7 @@ function buildHome() {
             ${_sfMeetsCard()}
           </aside>
         </div>
+        ${_sfToolsSection()}
       </div>
     </div>`;
 }
@@ -810,6 +811,102 @@ function _sfMeetsCard() {
       ${rows ? `<div class="sf-meet-list">${rows}</div>` : '<p class="sf-empty">No meets scheduled.</p>'}
     </div>`;
 }
+
+// ── Tools section — each tool with a live, pre-filled example ──
+function _sfToolIcon(svg) {
+  return `<span class="sf-tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${svg}</svg></span>`;
+}
+const _SF_ICO = {
+  h2h: '<path d="M8 3v18M16 3v18M3 8h5M16 8h5M3 16h5M16 16h5"/>',
+  hex: '<polygon points="12 2 21 7 21 17 12 22 3 17 3 7"/>',
+  evt: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  shared: '<path d="M8 12h8M12 8v8"/><circle cx="12" cy="12" r="9"/>',
+};
+
+function _sfToolCards(A, B) {
+  const short = n => n.split(' ').slice(-1)[0];
+  const metricsReady = typeof MX_EVENTS !== 'undefined' && typeof _mxRadarSvg === 'function';
+
+  // 1) Head-to-Head
+  let h2hCard = '';
+  if (A && B && typeof _computePairMatchup === 'function') {
+    const m = _computePairMatchup(A.id, B.id) || { wins: 0, losses: 0, races: [] };
+    const leader = m.wins > m.losses ? short(A.name) : m.losses > m.wins ? short(B.name) : null;
+    h2hCard = `
+      <div class="sf-card sf-toolc">
+        <div class="sf-toolc-hd">${_sfToolIcon(_SF_ICO.h2h)}Head-to-Head</div>
+        <div class="sf-toolc-ex">
+          <div class="sf-ex-h2h"><span class="sf-ex-nm">${short(A.name)}</span><b class="sf-ex-score">${m.wins}<em>–</em>${m.losses}</b><span class="sf-ex-nm">${short(B.name)}</span></div>
+          <div class="sf-ex-sub">${m.races.length} meeting${m.races.length === 1 ? '' : 's'}${leader ? ` · ${leader} leads` : m.races.length ? ' · all square' : ''}</div>
+        </div>
+        <a class="sf-tool-cta" href="h2h.html?a=${encodeURIComponent(A.id)}&b=${encodeURIComponent(B.id)}">Compare these two →</a>
+      </div>`;
+  }
+
+  // 2) Strength Hexagon (Metrics)
+  let hexCard = '';
+  if (A && B && metricsReady) {
+    hexCard = `
+      <div class="sf-card sf-toolc">
+        <div class="sf-toolc-hd">${_sfToolIcon(_SF_ICO.hex)}Strength Hexagon</div>
+        <div class="sf-toolc-ex sf-ex-hex">${_mxRadarSvg(A.id, B.id, '#FF5200', '#1A1A1A')}</div>
+        <a class="sf-tool-cta" href="metrics.html?a=${encodeURIComponent(A.id)}&b=${encodeURIComponent(B.id)}">Open in Metrics →</a>
+      </div>`;
+  }
+
+  // 3) Event Tracker — season-best top 3
+  let evtCard = '';
+  if (typeof _seasonBestRanking === 'function') {
+    const ev = '1500m';
+    const top = _seasonBestRanking(ev).slice(0, 3);
+    evtCard = `
+      <div class="sf-card sf-toolc">
+        <div class="sf-toolc-hd">${_sfToolIcon(_SF_ICO.evt)}Event Tracker</div>
+        <div class="sf-toolc-ex">
+          <div class="sf-ex-lbl">${ev} · season best</div>
+          ${top.map((r, i) => `<div class="sf-ex-lrow"><span class="sf-rank-n${i === 0 ? ' sf-rank-n--1' : ''}">${i + 1}</span><span class="sf-ex-lnm">${r.a.name}</span><span class="sf-chip">${r.time}</span></div>`).join('')}
+        </div>
+        <a class="sf-tool-cta" href="event-tracker.html?event=${encodeURIComponent(ev)}">Full leaderboard →</a>
+      </div>`;
+  }
+
+  // 4) Shared Races
+  let sharedCard = '';
+  if (A && B && typeof _computeSharedRaces === 'function') {
+    const shared = _computeSharedRaces([A.id, B.id]);
+    const body = shared.length
+      ? shared.slice(0, 3).map(s => {
+          const w = ATHLETES[s.entries[0].id];
+          return `<div class="sf-ex-lrow"><span class="sf-ex-lnm">${s.event.trim()} · ${s.meet}</span><span class="sf-chip">${w ? short(w.name) : ''} ${s.entries[0].race.time}</span></div>`;
+        }).join('')
+      : `<div class="sf-ex-sub">${short(A.name)} &amp; ${short(B.name)} haven't shared a race yet.</div>`;
+    sharedCard = `
+      <div class="sf-card sf-toolc">
+        <div class="sf-toolc-hd">${_sfToolIcon(_SF_ICO.shared)}Shared Races</div>
+        <div class="sf-toolc-ex">${body}</div>
+        <a class="sf-tool-cta" href="h2h.html?a=${encodeURIComponent(A.id)}&b=${encodeURIComponent(B.id)}">Find shared races →</a>
+      </div>`;
+  }
+
+  return h2hCard + hexCard + evtCard + sharedCard;
+}
+
+function _sfToolsSection() {
+  const [A, B] = _hpPickRivalry();
+  const pair = (A && B) ? ` · ${A.name.split(' ').slice(-1)[0]} vs ${B.name.split(' ').slice(-1)[0]}` : '';
+  return `
+    <section class="sf-tools-sec">
+      <div class="sf-tools-hd"><span>Explore the tools<span class="sf-tools-pair">${pair}</span></span><button class="sf-shuffle" onclick="sfShuffleTools()" title="Shuffle example" aria-label="Shuffle">↻</button></div>
+      <div class="sf-tools-grid" id="sf-tools-grid">${_sfToolCards(A, B)}</div>
+    </section>`;
+}
+window.sfShuffleTools = function () {
+  const [A, B] = _hpPickRivalry();
+  const grid = document.getElementById('sf-tools-grid');
+  if (grid) grid.innerHTML = _sfToolCards(A, B);
+  const pair = document.querySelector('.sf-tools-pair');
+  if (pair && A && B) pair.textContent = ` · ${A.name.split(' ').slice(-1)[0]} vs ${B.name.split(' ').slice(-1)[0]}`;
+};
 
 // ── Dense side-rail stat lists ──
 function _sfMiniRow(a, chip, rank, chipCls) {
