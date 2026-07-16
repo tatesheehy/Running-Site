@@ -40,7 +40,7 @@
 .h2h-stat-l {
   font-size: 10px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 0.06em;
   color: var(--muted);
 }
@@ -90,7 +90,7 @@
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
   padding-left: 2px;
 }
@@ -261,7 +261,7 @@
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   padding: 5px 12px;
   border-radius: 999px;
   cursor: pointer;
@@ -288,7 +288,7 @@
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
   position: sticky;
   top: var(--nav-h);
@@ -643,7 +643,7 @@
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
   white-space: nowrap;
   padding: 6px 4px 2px;
@@ -741,7 +741,7 @@
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
 }
 .h2h-map-legend-item::before {
@@ -787,7 +787,7 @@
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  text-transform: none;
   color: rgba(0,0,0,0.5);
   padding: 3px 10px;
   border-radius: 999px;
@@ -932,7 +932,7 @@
   font-family: var(--font-display);
   font-size: 12px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
 }
 .h2h-detail-year-rec {
@@ -964,7 +964,7 @@
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
   display: flex;
   align-items: center;
@@ -1107,7 +1107,7 @@
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: #fff;
 }
 
@@ -1124,7 +1124,7 @@
   font-family: var(--font-display);
   font-size: 12px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
   flex-shrink: 0;
 }
@@ -1246,7 +1246,7 @@
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  text-transform: none;
   padding: 10px 16px;
   cursor: pointer;
   transition: opacity 0.12s;
@@ -1418,7 +1418,7 @@
   font-weight: 700;
   letter-spacing: 0.04em;
   color: var(--muted);
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .h2h-cmp-season-rec {
@@ -1459,7 +1459,7 @@
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.07em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
 }
 

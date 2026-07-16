@@ -21,6 +21,27 @@ function _navIcon(name) {
   return `<span class="sidebar-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${_NAV_ICONS[name] || ''}</svg></span>`;
 }
 
+// ── TOP TICKER (dark fixtures strip, Sofascore-style) ─────
+function buildTickerHtml() {
+  const now = Date.now();
+  const meets = ((typeof SITE !== 'undefined' && SITE.upcomingMeets) || [])
+    .filter(m => m.name && m.datetime && new Date(m.datetime) > now)
+    .sort((a, b) => new Date(a.datetime) - new Date(b.datetime))
+    .slice(0, 8);
+  if (!meets.length) return '';
+  const segs = meets.map(m => {
+    const d = new Date(m.datetime);
+    const days = Math.ceil((d - now) / 86400000);
+    const cd = days <= 0 ? 'Today' : days === 1 ? 'Tomorrow' : `in ${days} days`;
+    const date = d.toLocaleString('en-US', { month: 'short', day: 'numeric' });
+    const inner = `<span class="nav-tick-cd">${cd}</span><span class="nav-tick-date">${date}</span><span class="nav-tick-name">${m.name}</span>`;
+    return m.url
+      ? `<a class="nav-tick" href="${m.url}" target="_blank" rel="noopener">${inner}</a>`
+      : `<span class="nav-tick">${inner}</span>`;
+  }).join('<span class="nav-tick-div" aria-hidden="true"></span>');
+  return `<div class="nav-ticker"><div class="nav-ticker-in"><span class="nav-ticker-lbl">Upcoming meets</span><div class="nav-ticker-items">${segs}</div></div></div>`;
+}
+
 // ── NAVBAR ────────────────────────────────────────────────
 function buildNavbar() {
   const currentPage = document.body.dataset.page;
@@ -71,6 +92,7 @@ function buildNavbar() {
 
   return `
     <nav class="navbar" role="navigation" aria-label="Main navigation">
+      ${buildTickerHtml()}
       <div class="navbar-util">
         <div class="navbar-util-left">
           <a href="index.html" class="navbar-home" aria-label="Home"></a>

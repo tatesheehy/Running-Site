@@ -73,7 +73,7 @@
   font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--accent);
-  text-transform: uppercase;
+  text-transform: none;
   margin-bottom: 4px;
 }
 
@@ -134,7 +134,7 @@
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: #444;
   padding: 4px 0 8px;
 }
@@ -239,7 +239,7 @@
   font-weight: 700;
   font-family: var(--font-display);
   letter-spacing: 0.02em;
-  text-transform: uppercase;
+  text-transform: none;
   padding: 9px 0;
   cursor: pointer;
   transition: color 0.15s, background 0.15s;
@@ -283,7 +283,7 @@
   font-family: var(--font-display);
   font-size: 14px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: none;
   padding: 13px;
   cursor: not-allowed;
   transition: background 0.15s ease, color 0.15s ease;
@@ -663,7 +663,7 @@
   font-weight: 700;
   color: #888;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .card-pr-time {
@@ -807,7 +807,7 @@
   font-weight: 800;
   letter-spacing: 0.06em;
   color: var(--muted);
-  text-transform: uppercase;
+  text-transform: none;
   margin-bottom: 12px;
 }
 .card-honours-badges {
@@ -830,7 +830,7 @@
 .ch-icon { display: block; width: 20px; height: 26px; flex-shrink: 0; }
 .ch-icon-dlf { height: 26px; }
 .ch-text  { display: flex; flex-direction: column; gap: 1px; }
-.ch-comp  { font-size: 11px; font-weight: 800; letter-spacing: 0.06em; color: var(--text); text-transform: uppercase; }
+.ch-comp  { font-size: 11px; font-weight: 800; letter-spacing: 0.06em; color: var(--text); text-transform: none; }
 .ch-event { font-size: 10px; font-weight: 600; color: var(--muted); }
 
 .card-analysis-label {
@@ -838,7 +838,7 @@
   font-weight: 800;
   letter-spacing: 0.06em;
   color: var(--muted);
-  text-transform: uppercase;
+  text-transform: none;
   margin-bottom: 16px;
   border-top: 1.5px solid var(--border);
   padding-top: 20px;
@@ -917,7 +917,7 @@
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: #999;
   padding: 7px 12px 7px 0;
   text-align: left;
@@ -945,7 +945,7 @@
 
 .cr-date  { color: #999; font-size: 12px; white-space: nowrap; min-width: 54px; }
 .cr-meet  { color: var(--text); font-weight: 500; }
-.cr-event { color: #888; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+.cr-event { color: #888; font-size: 11px; font-weight: 700; text-transform: none; letter-spacing: 0.05em; }
 .cr-time  { font-family: var(--font-mono); font-weight: 700; color: var(--text); }
 .cr-place { color: #999; font-size: 12px; text-align: right; padding-right: 28px; }
 
@@ -965,7 +965,7 @@
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  text-transform: none;
   padding: 4px 11px;
   border-radius: 999px;
   border: none;
@@ -1030,7 +1030,7 @@
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
 }
 
@@ -1260,7 +1260,7 @@
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--accent);
   opacity: 0.8;
   margin-top: 2px;
@@ -1269,7 +1269,7 @@
 .h2h-section-label {
   font-size: 10px;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: #888;
   font-weight: 700;
   margin-top: 8px;
@@ -1295,7 +1295,7 @@
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  text-transform: none;
   background: rgba(255,255,255,0.1);
   border: 1px solid rgba(255,255,255,0.15);
   color: #ddd;
@@ -1367,7 +1367,7 @@
 .h2h-enc-title {
   font-size: 10px;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: #555;
   font-weight: 700;
   text-align: center;
@@ -1506,7 +1506,7 @@
 .h2h-record-label {
   font-size: 10px;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: #555;
   font-weight: 700;
   text-align: center;
@@ -1577,7 +1577,7 @@
 .h2h-pr-label {
   font-size: 10px;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: #555;
   font-weight: 700;
   text-align: center;
@@ -1594,7 +1594,7 @@
 .h2h-spr-ev {
   font-size: 10px;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: #555;
   font-weight: 700;
   text-align: center;
@@ -1632,7 +1632,7 @@
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: #555;
 }
 .season-tl-leg {
@@ -1657,7 +1657,7 @@
   font-weight: 700;
   letter-spacing: 0.06em;
   color: #333;
-  text-transform: uppercase;
+  text-transform: none;
   white-space: nowrap;
 }
 .season-tl-track {
@@ -1751,7 +1751,7 @@
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
   margin-bottom: 10px;
 }

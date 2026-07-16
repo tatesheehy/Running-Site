@@ -80,7 +80,7 @@
   letter-spacing: 0.06em;
   color: var(--muted);
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: none;
   padding: 4px 10px;
   border: 1px solid var(--border);
   border-radius: 4px;

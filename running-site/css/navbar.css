@@ -616,3 +616,47 @@
 .navbar-util .navbar-search { width: 100%; max-width: 360px; justify-self: center; }
 .navbar-util-right { justify-self: end; margin-left: 0; }
 .navlinks { margin: 0; justify-content: flex-start; }
+
+/* ── Top ticker (dark fixtures strip, Sofascore-style) ────── */
+.nav-ticker {
+  width: 100%;
+  background: linear-gradient(90deg, #15161A 0%, #1a1714 60%, #201812 100%);
+  flex-shrink: 0;
+}
+.nav-ticker-in {
+  max-width: var(--max-width);
+  margin: 0;                 /* left-aligned with the content column */
+  padding: 0 24px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  overflow: hidden;
+}
+.nav-ticker-lbl {
+  flex-shrink: 0;
+  font-family: var(--font-display);
+  font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: none;
+  color: var(--brand);
+  padding-right: 16px;
+  border-right: 1px solid rgba(255,255,255,0.14);
+}
+.nav-ticker-items { display: flex; align-items: center; gap: 18px; overflow: hidden; white-space: nowrap; min-width: 0; }
+.nav-tick {
+  display: inline-flex; align-items: center; gap: 9px;
+  text-decoration: none; white-space: nowrap;
+}
+.nav-tick-cd {
+  font-size: 10px; font-weight: 800; letter-spacing: 0.03em; text-transform: none;
+  color: var(--brand);
+}
+.nav-tick-date {
+  font-size: 12px; font-weight: 700;
+  color: #fff;
+  background: rgba(255,255,255,0.09);
+  border-radius: 6px;
+  padding: 4px 9px;
+}
+.nav-tick-name { font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.9); }
+.nav-tick:hover .nav-tick-name { color: #fff; }
+.nav-tick-div { width: 1px; height: 22px; background: rgba(255,255,255,0.12); flex-shrink: 0; }

@@ -62,6 +62,7 @@
 @media (max-width: 991px) {
   :root { --nav-h: 64px; }
   .navbar-links { display: none; }
+  .nav-ticker { display: none; }
   .mobile-overlay { display: block; pointer-events: none; }
   .mobile-overlay.open { pointer-events: auto; }
 }

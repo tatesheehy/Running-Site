@@ -10,7 +10,7 @@
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.14em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--accent);
   margin-bottom: 4px;
 }
@@ -59,7 +59,7 @@
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
   margin-top: 5px;
 }
@@ -112,7 +112,7 @@
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--accent);
   padding: 16px 20px;
   border-bottom: 2px solid var(--accent);
@@ -163,7 +163,7 @@
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
   background: var(--bg-light);
   border: none;
@@ -221,7 +221,7 @@
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--accent);
   margin-bottom: 10px;
 }
@@ -258,7 +258,7 @@
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
   opacity: 0.5;
 }
@@ -339,7 +339,7 @@
   font-family: var(--font-display);
   font-size: 20px;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--text);
   white-space: nowrap;
   flex-shrink: 0;
@@ -355,7 +355,7 @@
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--text);
   background: #fff;
   border: 1.5px solid var(--border);
@@ -410,7 +410,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  text-transform: none;
   padding: 6px 14px;
   border: none;
   background: none;
@@ -530,7 +530,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.12em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
   display: flex;
   align-items: center;
@@ -545,7 +545,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   cursor: pointer;
   font: inherit;
   letter-spacing: inherit;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -583,7 +583,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
+  text-transform: none;
   padding: 4px 10px;
   border: 1px solid var(--border);
   background: var(--bg-light);
@@ -624,7 +624,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -650,7 +650,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--text);
   padding-bottom: 6px;
   border-bottom: 2px solid var(--text);
@@ -713,7 +713,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   border-bottom: 1px solid var(--border);
 }
 .rd-dd-pr-row:last-child { border-bottom: none; }
-.rd-dd-pr-event { color: var(--muted); font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+.rd-dd-pr-event { color: var(--muted); font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: none; }
 .rd-dd-pr-time { font-weight: 700; font-family: var(--font-mono); color: var(--text); }
 
 @media (max-width: 860px) {
@@ -854,7 +854,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
   background: rgba(0,0,0,0.04);
   border: 1px solid var(--border);
@@ -956,7 +956,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
   border-left: 3px solid transparent;
   margin-bottom: 0;
@@ -1063,7 +1063,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
 .rd-list-wrap.rd-deep .rd-row-stats { display: flex; }
 
 .rd-row-stat { display: flex; align-items: baseline; gap: 8px; font-size: 11px; line-height: 1.3; }
-.rd-row-stat-label { font-family: var(--font-body); font-weight: 700; font-size: 9px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); min-width: 36px; }
+.rd-row-stat-label { font-family: var(--font-body); font-weight: 700; font-size: 9px; text-transform: none; letter-spacing: 0.07em; color: var(--muted); min-width: 36px; }
 .rd-row-stat-val { font-family: var(--font-mono); font-size: 11px; color: var(--text); }
 .rd-row-stat-meet { font-family: var(--font-body); font-size: 10px; color: var(--muted); font-weight: 400; }
 
@@ -1072,7 +1072,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.07em;
-  text-transform: uppercase;
+  text-transform: none;
   padding: 2px 6px;
   border: 1px solid;
   white-space: nowrap;
@@ -1129,7 +1129,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-family: var(--font-display);
   font-size: 13px;
   font-weight: 900;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
 }
 
@@ -1268,7 +1268,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  text-transform: none;
   border-radius: var(--radius);
   white-space: nowrap;
   cursor: pointer;
@@ -1311,7 +1311,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-size: 12px;
   letter-spacing: 0.06em;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: none;
   text-decoration: none;
   display: inline-block;
   margin-bottom: 18px;
@@ -1394,7 +1394,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: #7a5020;
   margin-bottom: 16px;
   opacity: 0.85;
@@ -1410,7 +1410,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   background: rgba(0,0,0,0.07);
   border: 1px solid #b89040;
   color: #6b4010;
@@ -1423,7 +1423,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-weight: 700;
   color: #8b3a10;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 .archive-empty {
   font-family: var(--font-mono);
@@ -1441,7 +1441,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-size: 9px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   padding: 2px 7px;
   border-radius: 2px;
   transform: rotate(-2deg);
@@ -1537,7 +1537,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: #8b3a10;
   padding-left: 52px;
   margin-top: 16px;
@@ -1552,7 +1552,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
+  text-transform: none;
   padding: 4px 9px;
   border-radius: 4px;
   cursor: pointer;
@@ -1661,7 +1661,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.07em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
   border-bottom: 1px solid var(--border);
 }
@@ -1721,7 +1721,7 @@ a.rd-countdown-pill:hover { opacity: 0.85; }
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--accent);
   margin-bottom: 8px;
 }

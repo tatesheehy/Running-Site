@@ -106,7 +106,7 @@
 }
 .mx-radar-slot .mx-search-wrap { flex: 1; max-width: none; margin: 0; }
 .mx-radar-dot { width: 11px; height: 11px; border-radius: 50%; background: var(--c); flex-shrink: 0; }
-.mx-radar-vs { font-size: 12px; font-weight: 800; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+.mx-radar-vs { font-size: 12px; font-weight: 800; color: var(--muted); text-transform: none; letter-spacing: 0.06em; }
 
 .mx-dot--hit { cursor: pointer; transition: r 0.1s; }
 .mx-dot--hit:hover { stroke: #fff; stroke-width: 2; }
@@ -137,7 +137,7 @@
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 /* Tool description under each heading */
@@ -161,7 +161,7 @@
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  text-transform: none;
   color: var(--muted);
 }
 

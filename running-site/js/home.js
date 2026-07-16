@@ -580,6 +580,13 @@ function buildHome() {
   document.getElementById('main').innerHTML = `
     <div class="fp-wrap">
       <div class="sf">
+        <nav class="sf-crumbs" aria-label="Breadcrumb">
+          <a href="index.html">Athletics</a>
+          <span class="sf-crumb-sep">›</span>
+          <span>Distance Running</span>
+          <span class="sf-crumb-sep">›</span>
+          <span class="sf-crumb-cur">2026 Season</span>
+        </nav>
         <div class="sf-grid">
           <aside class="sf-side sf-side--l">
             ${_sfMostWinsCard()}
