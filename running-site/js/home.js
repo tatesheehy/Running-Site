@@ -732,7 +732,7 @@ function _sfEventList() {
 }
 function _sfEvShort(ev) { return ({ '5000m': '5K', '10000m': '10K' })[ev] || ev; }
 function _sfAva(a) {
-  return `<div class="sf-ava" style="background-image:url('${a.photo || '/images/default_card.png'}');background-color:${a.photoBackground || '#111'}"></div>`;
+  return `<span class="sf-ava sf-ava--flag">${renderFlag(a.flag)}</span>`;
 }
 
 // ── Hero header card ──
@@ -921,7 +921,7 @@ function _sfMiniRow(a, chip, rank, chipCls) {
     <div class="sf-row" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
       <span class="sf-rank-n${rank === 1 ? ' sf-rank-n--1' : ''}">${rank}</span>
       ${_sfAva(a)}
-      <div class="sf-row-id"><span class="sf-row-name">${a.name}</span><span class="sf-row-sub">${renderFlag(a.flag)} ${a.country || ''}</span></div>
+      <div class="sf-row-id"><span class="sf-row-name">${a.name}</span><span class="sf-row-sub">${a.country || ''}</span></div>
       <span class="sf-chip${chipCls ? ' ' + chipCls : ''}">${chip}</span>
     </div>`;
 }
@@ -1039,7 +1039,7 @@ function _sfLeaderRow(r, rank) {
     <div class="sf-row" onclick="openAthleteCard('${r.id}',null)" role="button" tabindex="0">
       <span class="sf-rank-n${rank === 1 ? ' sf-rank-n--1' : ''}">${rank}</span>
       ${_sfAva(r.a)}
-      <div class="sf-row-id"><span class="sf-row-name">${r.a.name}</span><span class="sf-row-sub">${renderFlag(r.a.flag)} ${r.a.country || ''}</span></div>
+      <div class="sf-row-id"><span class="sf-row-name">${r.a.name}</span><span class="sf-row-sub">${r.a.country || ''}</span></div>
       <span class="sf-chip">${r.time}</span>
     </div>`;
 }
@@ -1048,7 +1048,7 @@ function _sfH2HRow(r, rank) {
     <div class="sf-row" onclick="openAthleteCard('${r.id}',null)" role="button" tabindex="0">
       <span class="sf-rank-n${rank === 1 ? ' sf-rank-n--1' : ''}">${rank}</span>
       ${_sfAva(r.a)}
-      <div class="sf-row-id"><span class="sf-row-name">${r.a.name}</span><span class="sf-row-sub">${renderFlag(r.a.flag)} ${r.a.country || ''}</span></div>
+      <div class="sf-row-id"><span class="sf-row-name">${r.a.name}</span><span class="sf-row-sub">${r.a.country || ''}</span></div>
       <span class="sf-chip sf-chip--rec">${r.wins}<em>–</em>${r.losses}</span>
     </div>`;
 }
@@ -1107,7 +1107,7 @@ function _sfFormFor(a, event) {
   });
 }
 function _sfAthCell(a) {
-  return `<span class="sf-tc-ath">${_sfAva(a)}<span class="sf-tc-id"><span class="sf-row-name">${a.name}</span><span class="sf-row-sub">${renderFlag(a.flag)} ${a.country || ''}</span></span></span>`;
+  return `<span class="sf-tc-ath">${_sfAva(a)}<span class="sf-tc-id"><span class="sf-row-name">${a.name}</span><span class="sf-row-sub">${a.country || ''}</span></span></span>`;
 }
 
 // Season leaders — a dense multi-column stats table (Sofascore player-stats style).
