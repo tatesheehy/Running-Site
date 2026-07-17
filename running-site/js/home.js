@@ -594,18 +594,18 @@ function buildHome() {
             ${_sfNextMeetCountdown()}
           </div>
         </div>
-        <div class="sf-grid">
-          <aside class="sf-side sf-side--l">
-            ${_sfMostWinsCard()}
-            ${_sfBarrierCard()}
-          </aside>
+        <div class="sf-main-row">
           <main class="sf-center">
             ${_sfCenterCard(_sfEvent)}
           </main>
           <aside class="sf-side sf-side--r">
             ${_sfRecentCard()}
-            ${_sfMeetsCard()}
           </aside>
+        </div>
+        <div class="sf-bottom-row">
+          ${_sfMostWinsCard()}
+          ${_sfBarrierCard()}
+          ${_sfMeetsCard()}
         </div>
         ${_sfToolsSection()}
       </div>
@@ -843,20 +843,25 @@ function _sfHeroMatchup() {
   const leader = w > l ? short(A.name) : l > w ? short(B.name) : null;
   const recLbl = (leader ? `${leader} leads` : races ? 'all square' : 'first meeting')
     + (races ? ` · ${races} meeting${races === 1 ? '' : 's'}` : '');
-  const pbA = event ? _sfPbFor(A, event) : null;
-  const pbB = event ? _sfPbFor(B, event) : null;
-  const aFast = pbA && pbB && pbA.s < pbB.s, bFast = pbA && pbB && pbB.s < pbA.s;
   const side = (a, cls) => `
     <div class="sf-mu-side ${cls}" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
       <span class="sf-mu-name">${a.name}</span>
       <span class="sf-mu-ct"><span class="sf-mu-flag">${renderFlag(a.flag)}</span>${a.country || ''}</span>
     </div>`;
-  const compare = (event && pbA && pbB) ? `
-    <div class="sf-mu-compare">
-      <span class="sf-mu-pb${aFast ? ' sf-mu-pb--win' : ''}">${pbA.t}</span>
-      <span class="sf-mu-pb-lbl">${event} PB</span>
-      <span class="sf-mu-pb${bFast ? ' sf-mu-pb--win' : ''}">${pbB.t}</span>
-    </div>` : '';
+  // Stat sheet — PB, season best, season wins for each athlete.
+  const rows = [];
+  const pbA = event ? _sfPbFor(A, event) : null, pbB = event ? _sfPbFor(B, event) : null;
+  if (pbA && pbB) rows.push({ lbl: `${event} PB`, a: pbA.t, b: pbB.t, aw: pbA.s < pbB.s, bw: pbB.s < pbA.s });
+  const sbA = event ? _sfSbFor(A, event) : null, sbB = event ? _sfSbFor(B, event) : null;
+  if (sbA && sbB) rows.push({ lbl: '2026 best', a: sbA.t, b: sbB.t, aw: sbA.s < sbB.s, bw: sbB.s < sbA.s });
+  const winA = _sfTotalWins(A), winB = _sfTotalWins(B);
+  rows.push({ lbl: '2026 wins', a: String(winA), b: String(winB), aw: winA > winB, bw: winB > winA });
+  const stats = `<div class="sf-mu-stats">${rows.map(r => `
+    <div class="sf-mu-stat">
+      <span class="sf-mu-sv${r.aw ? ' sf-mu-sv--win' : ''}">${r.a}</span>
+      <span class="sf-mu-slbl">${r.lbl}</span>
+      <span class="sf-mu-sv sf-mu-sv--r${r.bw ? ' sf-mu-sv--win' : ''}">${r.b}</span>
+    </div>`).join('')}</div>`;
   return `
     <div class="sf-card sf-matchup">
       <div class="sf-mu-eyebrow"><span class="sf-mu-tag">${label}</span>${meet ? `<span class="sf-mu-meet">${meet}</span>` : ''}</div>
@@ -868,9 +873,25 @@ function _sfHeroMatchup() {
         </div>
         ${side(B, 'sf-mu-side--b')}
       </div>
-      ${compare}
+      ${stats}
       <a class="sf-mu-cta" href="h2h.html?a=${encodeURIComponent(A.id)}&b=${encodeURIComponent(B.id)}">See the full head-to-head →</a>
     </div>`;
+}
+function _sfSbFor(a, event) {
+  const k = _normalizeEvent(event);
+  let best = null;
+  (a.results || []).forEach(r => {
+    if (_normalizeEvent(r.event) === k) {
+      const s = parseTimeToSecs(r.time);
+      if (s != null && (best == null || s < best.s)) best = { s, t: r.time };
+    }
+  });
+  return best;
+}
+function _sfTotalWins(a) {
+  let w = 0;
+  (a.results || []).forEach(r => { if (parseInt(r.place) === 1 && parseTimeToSecs(r.time) != null) w++; });
+  return w;
 }
 
 // ── Dark spotlight — performance of the week ──

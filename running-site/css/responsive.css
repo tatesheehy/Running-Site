@@ -60,7 +60,7 @@
    on one row. --nav-h drives body padding, navbar height, and every
    sticky-header offset in one shot. */
 @media (max-width: 991px) {
-  :root { --nav-h: 64px; }
+  :root { --nav-h: 56px; }
   .navbar-links { display: none; }
   .nav-ticker { display: none; }
   .mobile-overlay { display: block; pointer-events: none; }
