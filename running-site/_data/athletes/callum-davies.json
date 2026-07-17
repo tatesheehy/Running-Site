@@ -25,7 +25,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-17",
   "prs": [
     {
       "event": "800m",
@@ -146,12 +146,386 @@
   ],
   "dob": "18 JUL 1999",
   "weight": null,
-  "lastHistorySynced": "2026-07-14",
+  "lastHistorySynced": "2026-07-15",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",
   "id": "callum-davies",
   "resultsHistory": {
+    "2018": [
+      {
+        "date": "DEC 13",
+        "meet": "Melbourne Zatopek:10, Melbourne",
+        "event": "3000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "DEC 1",
+        "meet": "Brisbane Joanna Stone Shield, Brisbane",
+        "event": "1500m",
+        "time": "3:47.45",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "NOV 8",
+        "meet": "Sheldon Distance Meet, Sheldon",
+        "event": "3000m",
+        "time": "8:16.5",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "NOV 1",
+        "meet": "Brisbane 1500 Metre Classic, Brisbane",
+        "event": "1500m",
+        "time": "3:47.62",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 27",
+        "meet": "Gold Coast Australian Uni Sport Nationals, Gold Coast",
+        "event": "800m",
+        "time": "1:52.46",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "SEP 25",
+        "meet": "Gold Coast Australian Uni Sport Nationals, Gold Coast",
+        "event": "800m",
+        "time": "1:57.38",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "SEP 24",
+        "meet": "Gold Coast Australian Uni Sport Nationals, Gold Coast",
+        "event": "1500m",
+        "time": "3:59.17",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "IAAF World U20 Championships",
+        "event": "1500m",
+        "time": "3:46.35",
+        "place": "11",
+        "round": "F"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "IAAF World U20 Championships",
+        "event": "1500m",
+        "time": "3:46.32",
+        "place": "4",
+        "round": "H3"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Jämsä",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F4"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "Mannheim Bauhaus Juniorengala, Mannheim",
+        "event": "4x400 Metres Relay",
+        "time": "3:17.50",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Mannheim Bauhaus Juniorengala, Mannheim",
+        "event": "1500m",
+        "time": "3:53.46",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 18",
+        "meet": "Sydney Australian U20 Championships, Sydney",
+        "event": "800m",
+        "time": "1:53.31",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAR 17",
+        "meet": "Sydney Australian U20 Championships, Sydney",
+        "event": "800m",
+        "time": "1:53.50",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "MAR 16",
+        "meet": "Sydney Australian U20 Championships, Sydney",
+        "event": "1500m",
+        "time": "3:49.43",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 15",
+        "meet": "Sydney Australian U20 Championships, Sydney",
+        "event": "1500m",
+        "time": "4:13.53",
+        "place": "6",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 25",
+        "meet": "Brisbane Queensland U20 Championships, Brisbane",
+        "event": "1500m",
+        "time": "3:49.39",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Brisbane Queensland U20 Championships, Brisbane",
+        "event": "800m",
+        "time": "1:53.61",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Brisbane Queensland U20 Championships, Brisbane",
+        "event": "800m",
+        "time": "2:02.15",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Australian Championships, Gold Coast",
+        "event": "1500m",
+        "time": "3:49.46",
+        "place": "7",
+        "round": "H3"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Brisbane Queensland Ch., Brisbane",
+        "event": "1500m",
+        "time": "3:56.17",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "FEB 2",
+        "meet": "Brisbane Queensland Ch., Brisbane",
+        "event": "1500m",
+        "time": "4:00.45",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JAN 18",
+        "meet": "Melbourne Vic Milers, Melbourne",
+        "event": "1500m",
+        "time": "3:47.89",
+        "place": "3",
+        "round": "F1"
+      }
+    ],
+    "2019": [
+      {
+        "date": "DEC 21",
+        "meet": "Albie Thomas",
+        "event": "Mile",
+        "time": "4:14.87",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "DEC 14",
+        "meet": "Zatopek:10",
+        "event": "1500m",
+        "time": "3:43.51",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "NOV 21",
+        "meet": "Maroochy Mile",
+        "event": "Mile",
+        "time": "4:02.47",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "NOV 16",
+        "meet": "Benita Willis Shield",
+        "event": "5000m",
+        "time": "14:18.99",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "NOV 2",
+        "meet": "Noosa Asics Bolt, Noosa",
+        "event": "5K",
+        "time": "14:29",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "OCT 31",
+        "meet": "1500 Metre Classic",
+        "event": "1500m",
+        "time": "3:45.13",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "APR 13",
+        "meet": "UniSport Nationals Athletics, Sydney",
+        "event": "1500m",
+        "time": "3:46.59",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "APR 7",
+        "meet": "Australian Championships, Sydney",
+        "event": "1500m",
+        "time": "3:46.77",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "APR 5",
+        "meet": "Australian Championships, Sydney",
+        "event": "1500m",
+        "time": "3:46.00",
+        "place": "5",
+        "round": "H2"
+      },
+      {
+        "date": "APR 4",
+        "meet": "Australian Championships, Sydney",
+        "event": "800m",
+        "time": "1:52.93",
+        "place": "7",
+        "round": "H1"
+      },
+      {
+        "date": "MAR 23",
+        "meet": "Queensland International Track Classic, Brisbane",
+        "event": "1500m",
+        "time": "3:46.10",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 10",
+        "meet": "Queensland Championships, Brisbane",
+        "event": "1500m",
+        "time": "3:50.87",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "Queensland Championships, Brisbane",
+        "event": "1500m",
+        "time": "4:00.11",
+        "place": "4",
+        "round": "H2"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "Queensland Championships, Brisbane",
+        "event": "800m",
+        "time": "1:52.26",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "Garry Brown Shield, Brisbane",
+        "event": "800m",
+        "time": "1:53.69",
+        "place": "4",
+        "round": "F1"
+      }
+    ],
+    "2020": [
+      {
+        "date": "DEC 20",
+        "meet": "Glynis Nunn Shield",
+        "event": "800m",
+        "time": "1:53.39",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "NOV 14",
+        "meet": "Jai Taurima Shield",
+        "event": "1500m",
+        "time": "3:47.10",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "Track is Back Series #2",
+        "event": "3000m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "Queensland Championships",
+        "event": "1500m",
+        "time": "4:00.86",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "Queensland Championships",
+        "event": "800m",
+        "time": "1:51.13",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 29",
+        "meet": "Jai Taurima Shield",
+        "event": "800m",
+        "time": "1:51.98",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 8",
+        "meet": "Denise Boyd Shield",
+        "event": "3000m",
+        "time": "8:16.57",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "JAN 30",
+        "meet": "Distance Meet #3",
+        "event": "1500m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      }
+    ],
     "2021": [
       {
         "date": "03 MAR 2021",

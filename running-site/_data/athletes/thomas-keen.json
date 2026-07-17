@@ -32,7 +32,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-17",
   "prs": [
     {
       "event": "800m",
@@ -149,12 +149,226 @@
   ],
   "dob": "16 JUN 2001",
   "weight": null,
-  "lastHistorySynced": "2026-07-14",
+  "lastHistorySynced": "2026-07-15",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",
   "id": "thomas-keen",
   "resultsHistory": {
+    "2018": [
+      {
+        "date": "AUG 5",
+        "meet": "Berlin GER-FRA-GBR U20 Match, Berlin",
+        "event": "1500m",
+        "time": "3:56.49",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "Birmingham English Schools Championships, Birmingham",
+        "event": "3000m",
+        "time": "8:24.81",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Győr European U18 Championships",
+        "event": "3000m",
+        "time": "8:27.38",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Bedford England U23/U20 Championships, Bedford",
+        "event": "1500m",
+        "time": "3:55.59",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Bedford England U23/U20 Championships, Bedford",
+        "event": "1500m",
+        "time": "3:59.30",
+        "place": "2",
+        "round": "H1"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "Loughborough International, Loughborough",
+        "event": "3000m",
+        "time": "8:14.41",
+        "place": "6",
+        "round": "F"
+      },
+      {
+        "date": "APR 28",
+        "meet": "Loughborough BUCS Trials & Open, Loughborough",
+        "event": "3000m",
+        "time": "8:27.25",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "AUG 14",
+        "meet": "Manchester International Match (Inc Home Countries International), Manchester",
+        "event": "Mile",
+        "time": "4:11.49",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "BMC Grand Prix, Stretford",
+        "event": "1500m",
+        "time": "3:45.84",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 23",
+        "meet": "BMC Gold Standard Races, Stretford",
+        "event": "1500m",
+        "time": "3:48.42",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 18",
+        "meet": "European U20 Championships",
+        "event": "1500m",
+        "time": "3:57.74",
+        "place": "10",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "BMC Grand Prix, Watford",
+        "event": "3000m",
+        "time": "8:18.41",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "England Athletics U20 / U23 Championships, Bedford",
+        "event": "1500m",
+        "time": "3:55.68",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "England Athletics U20 / U23 Championships, Bedford",
+        "event": "1500m",
+        "time": "3:54.50",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Southern Athletics League, Stevenage",
+        "event": "800m",
+        "time": "1:55.65",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Vitality Westminster Miles, London",
+        "event": "Mile",
+        "time": "4:08.0",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Loughborough International, Loughborough",
+        "event": "1500m",
+        "time": "3:43.97",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "MAY 8",
+        "meet": "BMC Gold Standard Races, Birmingham",
+        "event": "1500m",
+        "time": "3:48.48",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JAN 6",
+        "meet": "BMC Grand Prix, Sheffield (i)",
+        "event": "1500m sh",
+        "time": "3:48.83",
+        "place": "6",
+        "round": "F1"
+      }
+    ],
+    "2020": [
+      {
+        "date": "SEP 23",
+        "meet": "Herc Wimbo 1500 3000 & 5000m Night",
+        "event": "3000m",
+        "time": "8:13.04",
+        "place": "1",
+        "round": "F7"
+      },
+      {
+        "date": "FEB 23",
+        "meet": "UK Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:52.40",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "UK Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:50.60",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "BUCS Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:59.79",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "BUCS Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:55.33",
+        "place": "1",
+        "round": "SF2"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "Indoor Track & Field Vienna",
+        "event": "1500m sh",
+        "time": "3:41.44",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 5",
+        "meet": "BMC Sheffield Grand Prix",
+        "event": "1500m sh",
+        "time": "3:46.33",
+        "place": "4",
+        "round": "F1"
+      }
+    ],
     "2021": [
       {
         "date": "16 MAY 2021",

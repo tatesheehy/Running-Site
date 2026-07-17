@@ -12,7 +12,7 @@
   "flag": "DZ",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-17",
   "prs": [
     {
       "event": "400m",
@@ -59,6 +59,14 @@
   "country": "Algeria",
   "results": [
     {
+      "date": "JUL 15",
+      "meet": "Meeting International d'Athlétisme de la Province de Liège",
+      "event": "1500 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
       "date": "FEB 19",
       "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
       "event": "1500 m sh",
@@ -86,7 +94,7 @@
   "dob": "2004-01-30",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-07-14",
+  "lastHistorySynced": "2026-07-16",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

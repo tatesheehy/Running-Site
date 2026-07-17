@@ -12,7 +12,7 @@
   "flag": "FR",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-17",
   "prs": [
     {
       "event": "800m",
@@ -86,6 +86,14 @@
   "club": "x",
   "country": "France",
   "results": [
+    {
+      "date": "JUL 16",
+      "meet": "Meeting Madrid",
+      "event": "1500 m",
+      "time": "3:39.10",
+      "place": "9.",
+      "round": "F"
+    },
     {
       "date": "JUL 3",
       "meet": "Meeting Stanislas Nancy",

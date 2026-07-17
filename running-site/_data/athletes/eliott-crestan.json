@@ -74,6 +74,14 @@
   ],
   "results": [
     {
+      "date": "JUL 15",
+      "meet": "Meeting International d'Athlétisme de la Province de Liège",
+      "event": "600 m",
+      "time": "1:13.53",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
       "event": "800 m",
@@ -186,7 +194,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-17",
   "resultsHistory": {
     "2018": [
       {

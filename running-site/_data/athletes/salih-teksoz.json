@@ -102,7 +102,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-17",
   "prs": [
     {
       "event": "600 Metres",
@@ -303,12 +303,105 @@
   ],
   "dob": "01 JAN 1994",
   "weight": null,
-  "lastHistorySynced": "2026-07-14",
+  "lastHistorySynced": "2026-07-16",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",
   "id": "salih-teksoz",
   "resultsHistory": {
+    "2018": [
+      {
+        "date": "AUG 15",
+        "meet": "Bursa Turkish Super League, Bursa",
+        "event": "800m",
+        "time": "1:49.23",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Turkish Championships, Bursa",
+        "event": "800m",
+        "time": "1:52.47",
+        "place": "3",
+        "round": "F4"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "Bursa",
+        "event": "800m",
+        "time": "1:50.21",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 9",
+        "meet": "Adana Turkish University Championships, Adana",
+        "event": "800m",
+        "time": "1:54.70",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "Turkish Indoor Championships, Istanbul (i)",
+        "event": "800m sh",
+        "time": "1:51.87",
+        "place": "1",
+        "round": "F3"
+      }
+    ],
+    "2019": [
+      {
+        "date": "MAY 11",
+        "meet": "Turkish University Championships, Samsun",
+        "event": "800m",
+        "time": "1:50.35",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "MAY 11",
+        "meet": "Turkish University Championships, Samsun",
+        "event": "1500m",
+        "time": "3:59.43",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "European Indoor Championships",
+        "event": "800m sh",
+        "time": "1:49.54",
+        "place": "7",
+        "round": "H1"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Turkish U18 Indoor Championships, Istanbul (i)",
+        "event": "800m sh",
+        "time": "1:49.07",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Balkan Indoor Championships, Istanbul (i)",
+        "event": "800m sh",
+        "time": "1:49.41",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Turkish Indoor Championships, Istanbul (i)",
+        "event": "800m sh",
+        "time": "1:50.82",
+        "place": "1",
+        "round": "F3"
+      }
+    ],
+    "2020": [],
     "2021": [
       {
         "date": "07 AUG 2021",

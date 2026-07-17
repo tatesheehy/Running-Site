@@ -12,7 +12,7 @@
   "flag": "GB",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-17",
   "prs": [
     {
       "event": "800m",
@@ -70,6 +70,14 @@
   "club": "x",
   "country": "Great Britain",
   "results": [
+    {
+      "date": "JUL 16",
+      "meet": "Meeting Madrid",
+      "event": "1500 m",
+      "time": "3:38.50",
+      "place": "7.",
+      "round": "F"
+    },
     {
       "date": "JUL 11",
       "meet": "British Milers Club Grand Prix",

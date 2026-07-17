@@ -18,7 +18,7 @@
     }
   ],
   "seasons": "x",
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-17",
   "prs": [
     {
       "event": "800m",
@@ -72,6 +72,14 @@
   "club": "x",
   "country": "Kenya",
   "results": [
+    {
+      "date": "JUL 15",
+      "meet": "Meeting International d'Athlétisme de la Province de Liège",
+      "event": "1500 m",
+      "time": "3:35.71",
+      "place": "3.",
+      "round": "F"
+    },
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
@@ -171,7 +179,7 @@
   ],
   "dob": "1996-11-22",
   "weight": "x",
-  "lastHistorySynced": "2026-07-14",
+  "lastHistorySynced": "2026-07-16",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

@@ -39,7 +39,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-17",
   "prs": [
     {
       "event": "400m",
@@ -176,12 +176,434 @@
   ],
   "dob": "27 NOV 2000",
   "weight": null,
-  "lastHistorySynced": "2026-07-14",
+  "lastHistorySynced": "2026-07-15",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",
   "id": "nuno-pereira",
   "resultsHistory": {
+    "2018": [
+      {
+        "date": "DEC 9",
+        "meet": "25th SPAR European Cross Country Championships, Tilburg",
+        "event": "Cross Country U20 Race",
+        "time": "19:39",
+        "place": "67",
+        "round": "F"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Guimarães Portuguese U23 Championships, Guimarães",
+        "event": "800m",
+        "time": "1:52.29",
+        "place": "2",
+        "round": "F3"
+      },
+      {
+        "date": "JUL 28",
+        "meet": "Guimarães Portuguese U23 Championships, Guimarães",
+        "event": "400m",
+        "time": "50.01",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 22",
+        "meet": "Braga Portuguese Club Championships, Braga",
+        "event": "800m",
+        "time": "1:56.90",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUL 15",
+        "meet": "Funchal",
+        "event": "800m",
+        "time": "1:50.04",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 8",
+        "meet": "Portuguese Championships, Leiria",
+        "event": "800m",
+        "time": "1:53.22",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Maia",
+        "event": "1500m",
+        "time": "3:47.28",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 1",
+        "meet": "Vagos Portuguese U20 Championships, Vagos",
+        "event": "800m",
+        "time": "1:52.22",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "JUN 24",
+        "meet": "Mannheim Bauhaus Juniorengala, Mannheim",
+        "event": "800m",
+        "time": "1:53.47",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Mannheim Bauhaus Juniorengala, Mannheim",
+        "event": "1500m",
+        "time": "3:54.55",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 17",
+        "meet": "Funchal Portuguese Club Championships, Funchal",
+        "event": "800m",
+        "time": "1:54.64",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Funchal Portuguese Club Championships, Funchal",
+        "event": "1500m",
+        "time": "3:56.73",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "Lisboa",
+        "event": "800m",
+        "time": "1:53.14",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Maia Gold Gala Fernanda Ribeiro, Maia",
+        "event": "1500m",
+        "time": "3:50.35",
+        "place": "12",
+        "round": "F"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "Funchal",
+        "event": "800m",
+        "time": "1:51.18",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Funchal",
+        "event": "400m",
+        "time": "49.98",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 18",
+        "meet": "Pombal Portuguese Indoor Club Championships, Pombal (i)",
+        "event": "800m sh",
+        "time": "1:51.84",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Pombal Portuguese Indoor Club Championships, Pombal (i)",
+        "event": "1500m sh",
+        "time": "3:49.18",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Portuguese Indoor Championships, Pombal (i)",
+        "event": "800m sh",
+        "time": "1:54.31",
+        "place": "6",
+        "round": "F4"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Portuguese Indoor Championships, Pombal (i)",
+        "event": "1500m sh",
+        "time": "3:53.08",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 28",
+        "meet": "Pombal Portuguese Indoor Club Championships, Pombal (i)",
+        "event": "1500m sh",
+        "time": "3:53.16",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 21",
+        "meet": "Pombal Portuguese U20 Indoor Championships, Pombal (i)",
+        "event": "800m sh",
+        "time": "1:53.27",
+        "place": "2",
+        "round": "F3"
+      }
+    ],
+    "2019": [
+      {
+        "date": "DEC 8",
+        "meet": "26th SPAR European Cross Country Championships, Lisboa",
+        "event": "Cross Country U20 Race",
+        "time": "DNF",
+        "place": "",
+        "round": "F"
+      },
+      {
+        "date": "AUG 11",
+        "meet": "European Athletics Team Championships First League",
+        "event": "800m",
+        "time": "1:50.44",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 28",
+        "meet": "Portuguese Club Ch. Div. 1, Leiria",
+        "event": "800m",
+        "time": "1:58.45",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "European U20 Championships",
+        "event": "1500m",
+        "time": "3:55.85",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 18",
+        "meet": "European U20 Championships",
+        "event": "1500m",
+        "time": "3:50.48",
+        "place": "4",
+        "round": "H1"
+      },
+      {
+        "date": "JUL 7",
+        "meet": "Portuguese U20 Championships, Vagos",
+        "event": "800m",
+        "time": "1:51.13",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Meeting de São João, Braga",
+        "event": "800m",
+        "time": "1:50.28",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 23",
+        "meet": "Portuguese U23 Championships, Vagos",
+        "event": "800m",
+        "time": "1:53.14",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Portuguese U23 Championships, Vagos",
+        "event": "1500m",
+        "time": "3:58.68",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 20",
+        "meet": "Meeting Iberoamericano de Atletismo, Huelva",
+        "event": "1500m",
+        "time": "3:43.53",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Meeting de Lisboa, Lisboa",
+        "event": "800m",
+        "time": "1:49.71",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Regional U20 Championships, Ribeira Brava",
+        "event": "800m",
+        "time": "1:49.88",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Regional U16 Championships, Ribeira Brava",
+        "event": "400m",
+        "time": "49.99",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Regional U16 Championships, Ribeira Brava",
+        "event": "800m",
+        "time": "1:52.42",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAR 3",
+        "meet": "Portuguese U23 Indoor Championships, Pombal (i)",
+        "event": "800m sh",
+        "time": "1:52.35",
+        "place": "2",
+        "round": "F3"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "Portuguese U23 Indoor Championships, Pombal (i)",
+        "event": "1500m sh",
+        "time": "3:53.78",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 24",
+        "meet": "Portuguese U20 Indoor Championships, Braga (i)",
+        "event": "800m sh",
+        "time": "1:56.89",
+        "place": "1",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "Indoor Meeting, Braga (i)",
+        "event": "800m sh",
+        "time": "1:50.22",
+        "place": "2",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Portuguese Indoor Club Championships, Braga (i)",
+        "event": "800m sh",
+        "time": "1:53.41",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Portuguese Indoor Championships, Pombal (i)",
+        "event": "800m sh",
+        "time": "1:52.10",
+        "place": "5",
+        "round": "F4"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Portuguese Indoor Championships, Pombal (i)",
+        "event": "1500m sh",
+        "time": "4:00.40",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Indoor Meeting, Pombal (i)",
+        "event": "1500m sh",
+        "time": "3:48.22",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 26",
+        "meet": "Meeting Elite, Nantes (i)",
+        "event": "800m sh",
+        "time": "1:50.58",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JAN 6",
+        "meet": "Regional Championships, Ribeira Brava",
+        "event": "800m",
+        "time": "1:53.13",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 5",
+        "meet": "Regional Championships, Ribeira Brava",
+        "event": "1500m",
+        "time": "3:57.58",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "AUG 15",
+        "meet": "Campeonatos Nacionais de Clubes, Lisboa",
+        "event": "800m",
+        "time": "1:51.80",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "Portuguese Championships",
+        "event": "800m",
+        "time": "1:49.21",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 25",
+        "meet": "Campeonatos Nacionais de Clubes, Madeira",
+        "event": "800m",
+        "time": "1:50.47",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "Campeonatos Regionais de Verão, Funchal",
+        "event": "800m",
+        "time": "1:51.02",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Torneio de Regresso, Ribeira Brava",
+        "event": "800m",
+        "time": "1:50.86",
+        "place": "1",
+        "round": "F"
+      }
+    ],
     "2021": [
       {
         "date": "15 MAY 2021",

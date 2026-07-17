@@ -25,7 +25,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-17",
   "prs": [
     {
       "event": "800m",
@@ -260,6 +260,84 @@
   "event": "1500m",
   "id": "joe-waskom",
   "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUN 8",
+        "meet": "Shoreline Brooks PR Invitational",
+        "event": "2 Miles",
+        "time": "8:54.25",
+        "place": "6",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "JUN 15",
+        "meet": "Brooks PR Invitational",
+        "event": "Mile",
+        "time": "4:03.73",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Nike Jesuit Twilight Relays",
+        "event": "Mile",
+        "time": "4:14.89",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "APR 27",
+        "meet": "Shoreline Invitational",
+        "event": "800m",
+        "time": "1:53.49",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "UW High School Invitational",
+        "event": "Mile",
+        "time": "4:10.03",
+        "place": "2",
+        "round": "F1"
+      }
+    ],
+    "2020": [
+      {
+        "date": "FEB 21",
+        "meet": "UW Last Chance Elite Meet",
+        "event": "Mile",
+        "time": "4:07.53",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Husky Classic",
+        "event": "Mile",
+        "time": "DNF",
+        "place": "",
+        "round": "F4"
+      },
+      {
+        "date": "FEB 14",
+        "meet": "Husky Classic",
+        "event": "3000m",
+        "time": "8:25.91",
+        "place": "14",
+        "round": "F4"
+      },
+      {
+        "date": "FEB 1",
+        "meet": "UW Invitational",
+        "event": "3000m",
+        "time": "8:14.06",
+        "place": "10",
+        "round": "F3"
+      }
+    ],
     "2021": [
       {
         "date": "25 MAR 2021",

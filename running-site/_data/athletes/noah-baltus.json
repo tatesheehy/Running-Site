@@ -25,7 +25,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-17",
   "prs": [
     {
       "event": "400m",
@@ -83,6 +83,14 @@
   "club": null,
   "country": "Netherlands",
   "results": [
+    {
+      "date": "JUL 16",
+      "meet": "Meeting Madrid",
+      "event": "1500 m",
+      "time": "3:40.26",
+      "place": "11.",
+      "round": "F"
+    },
     {
       "date": "JUL 10",
       "meet": "Morton Games",
@@ -150,12 +158,274 @@
   ],
   "dob": "03 FEB 2002",
   "weight": null,
-  "lastHistorySynced": "2026-07-14",
+  "lastHistorySynced": "2026-07-15",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",
   "id": "noah-baltus",
   "resultsHistory": {
+    "2018": [
+      {
+        "date": "JUN 16",
+        "meet": "Emmeloord Dutch U18 Championships, Emmeloord",
+        "event": "800m",
+        "time": "1:58.43",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Emmeloord Dutch U18 Championships, Emmeloord",
+        "event": "800m",
+        "time": "1:58.66",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUN 2",
+        "meet": "Oordegem Memorial Léon Buyle, Oordegem",
+        "event": "800m",
+        "time": "1:55.87",
+        "place": "6",
+        "round": "F7"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Oordegem IFAM Meeting, Oordegem",
+        "event": "800m",
+        "time": "1:57.50",
+        "place": "7",
+        "round": "F9"
+      },
+      {
+        "date": "MAY 19",
+        "meet": "Lisse Ter Specke Bokaal, Lisse",
+        "event": "800m",
+        "time": "1:57.71",
+        "place": "3",
+        "round": "F3"
+      },
+      {
+        "date": "FEB 11",
+        "meet": "Apeldoorn Dutch U18 Indoor Championships, Apeldoorn (i)",
+        "event": "800m sh",
+        "time": "1:59.68",
+        "place": "2",
+        "round": "F"
+      }
+    ],
+    "2019": [
+      {
+        "date": "SEP 20",
+        "meet": "Wageningen Track Meeting 3, Wageningen",
+        "event": "5000m",
+        "time": "15:01.39",
+        "place": "3",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Memorial Geert Rasschaert, Ninove",
+        "event": "800m",
+        "time": "1:50.23",
+        "place": "1",
+        "round": "F4"
+      },
+      {
+        "date": "JUL 27",
+        "meet": "Dutch Championships, Den Haag",
+        "event": "800m",
+        "time": "1:55.37",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JUL 26",
+        "meet": "Dutch Championships, Den Haag",
+        "event": "800m",
+        "time": "1:52.22",
+        "place": "1",
+        "round": "H2"
+      },
+      {
+        "date": "JUL 18",
+        "meet": "European U20 Championships",
+        "event": "1500m",
+        "time": "3:51.32",
+        "place": "6",
+        "round": "H1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Next Generation Athletics, Nijmegen",
+        "event": "1500m",
+        "time": "3:47.47",
+        "place": "11",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Gouden Spike, Leiden",
+        "event": "800m",
+        "time": "1:54.95",
+        "place": "1",
+        "round": "F2"
+      },
+      {
+        "date": "JUN 1",
+        "meet": "Putbos Memorial Léon Buyle, Oordegem",
+        "event": "800m",
+        "time": "1:53.63",
+        "place": "1",
+        "round": "F6"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "IFAM Meeting",
+        "event": "800m",
+        "time": "1:53.08",
+        "place": "7",
+        "round": "F11"
+      },
+      {
+        "date": "MAY 17",
+        "meet": "Track Meeting, Wageningen",
+        "event": "800m",
+        "time": "1:53.30",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Dutch U18 Indoor Championships, Apeldoorn (i)",
+        "event": "800m sh",
+        "time": "1:57.81",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "SEP 19",
+        "meet": "Gouden Spike",
+        "event": "800m",
+        "time": "1:48.72",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "SEP 13",
+        "meet": "Dutch U20 Championships",
+        "event": "1500m",
+        "time": "3:48.00",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "SEP 12",
+        "meet": "Dutch U20 Championships",
+        "event": "1500m",
+        "time": "4:14.87",
+        "place": "2",
+        "round": "H2"
+      },
+      {
+        "date": "SEP 6",
+        "meet": "KBC Nacht van de Atletiek",
+        "event": "1500m",
+        "time": "3:46.92",
+        "place": "2",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 30",
+        "meet": "Dutch Championships",
+        "event": "800m",
+        "time": "1:52.44",
+        "place": "8",
+        "round": "F"
+      },
+      {
+        "date": "AUG 29",
+        "meet": "Dutch Championships",
+        "event": "800m",
+        "time": "1:50.74",
+        "place": "3",
+        "round": "H2"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Westfries Atletiek Gala",
+        "event": "800m",
+        "time": "1:52.86",
+        "place": "7",
+        "round": "F4"
+      },
+      {
+        "date": "AUG 15",
+        "meet": "Next Generation Athletics ism Nijmegen Atletiek",
+        "event": "1500m",
+        "time": "3:46.90",
+        "place": "2",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 9",
+        "meet": "Brussels Grand Prix",
+        "event": "800m",
+        "time": "1:50.19",
+        "place": "9",
+        "round": "F1"
+      },
+      {
+        "date": "AUG 1",
+        "meet": "Polsstok & MILA Vught, Vught",
+        "event": "800m",
+        "time": "1:52.00",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 18",
+        "meet": "Test wedstrijd Papendal",
+        "event": "1500m",
+        "time": "3:47.64",
+        "place": "9",
+        "round": "F"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "Runnersworld Utrecht Track Meetings",
+        "event": "1500m",
+        "time": "3:50.10",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 4",
+        "meet": "Test wedstrijd Papendal",
+        "event": "800m",
+        "time": "1:49.12",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "FEB 22",
+        "meet": "Dutch Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:54.06",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Dutch U20 Indoor Championships",
+        "event": "800m sh",
+        "time": "1:54.08",
+        "place": "3",
+        "round": "F"
+      }
+    ],
     "2021": [
       {
         "date": "06 AUG 2021",

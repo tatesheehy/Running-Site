@@ -32,7 +32,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-17",
   "prs": [
     {
       "event": "400m",
@@ -106,6 +106,14 @@
   "club": null,
   "country": "Andorra",
   "results": [
+    {
+      "date": "JUL 15",
+      "meet": "Meeting International d'Athlétisme de la Province de Liège",
+      "event": "1500 m",
+      "time": "3:36.26",
+      "place": "6.",
+      "round": "F"
+    },
     {
       "date": "JUL 4",
       "meet": "X Ordizia Meeting - International Meeting Jose Antonio Peña",
@@ -197,12 +205,273 @@
   ],
   "dob": "09 DEC 1996",
   "weight": null,
-  "lastHistorySynced": "2026-07-15",
+  "lastHistorySynced": "2026-07-16",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",
   "id": "pol-moya",
   "resultsHistory": {
+    "2018": [],
+    "2019": [
+      {
+        "date": "SEP 28",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "800m",
+        "time": "1:48.52",
+        "place": "6",
+        "round": "H3"
+      },
+      {
+        "date": "SEP 6",
+        "meet": "Memorial Francisco Ramón Higueras, Andújar",
+        "event": "800m",
+        "time": "DNF",
+        "place": "",
+        "round": "F1"
+      },
+      {
+        "date": "SEP 1",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:48.19",
+        "place": "OC",
+        "round": "F"
+      },
+      {
+        "date": "AUG 31",
+        "meet": "Spanish Championships",
+        "event": "800m",
+        "time": "1:49.94",
+        "place": "2",
+        "round": "H3"
+      },
+      {
+        "date": "AUG 25",
+        "meet": "Meeting Madrid 2019",
+        "event": "800m",
+        "time": "1:48.00",
+        "place": "4",
+        "round": "F2"
+      },
+      {
+        "date": "AUG 17",
+        "meet": "Ironwill Barcelona Challenge, Santa Coloma de Gramenet",
+        "event": "400m",
+        "time": "49.04",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 11",
+        "meet": "European Athletics Team Championships Third League",
+        "event": "800m",
+        "time": "1:48.58",
+        "place": "3",
+        "round": "F"
+      },
+      {
+        "date": "AUG 11",
+        "meet": "European Athletics Team Championships Third League",
+        "event": "4x400 Metres Relay",
+        "time": "3:26.87",
+        "place": "3",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 23",
+        "meet": "Memorial Jose Antonio Cansino, Castellón",
+        "event": "800m",
+        "time": "1:46.96",
+        "place": "5",
+        "round": "F2"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "Míting Internacional d'Atletisme, Barcelona",
+        "event": "800m",
+        "time": "1:47.21",
+        "place": "11",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "Regional Championships, Barcelona",
+        "event": "800m",
+        "time": "1:49.79",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "JUN 22",
+        "meet": "Andorra Championships, Andorra La Vella",
+        "event": "800m",
+        "time": "1:49.14",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JUN 5",
+        "meet": "Critèrium Josep Campmany, Barcelona",
+        "event": "1500m",
+        "time": "3:45.52",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "XVIII Games of the Small States of Europe",
+        "event": "1500m",
+        "time": "3:57.96",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAY 29",
+        "meet": "XVIII Games of the Small States of Europe",
+        "event": "800m",
+        "time": "1:51.52",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "MAY 18",
+        "meet": "Meeting Nacional de Atletismo Toni Bonet, Elvissa",
+        "event": "1000m",
+        "time": "2:26.37",
+        "place": "7",
+        "round": "F"
+      },
+      {
+        "date": "APR 28",
+        "meet": "Regional University Championships, Lleida",
+        "event": "800m",
+        "time": "1:57.34",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "European Indoor Championships",
+        "event": "800m sh",
+        "time": "1:53.21",
+        "place": "7",
+        "round": "H4"
+      },
+      {
+        "date": "FEB 16",
+        "meet": "Spanish Indoor Championships, Antequera (i)",
+        "event": "800m sh",
+        "time": "1:51.82",
+        "place": "4",
+        "round": "H3"
+      },
+      {
+        "date": "JAN 27",
+        "meet": "Regional Indoor Championships, Sabadell (i)",
+        "event": "1500m sh",
+        "time": "3:54.75",
+        "place": "5",
+        "round": "F"
+      },
+      {
+        "date": "JAN 20",
+        "meet": "Control Meeting, Sabadell (i)",
+        "event": "800m sh",
+        "time": "1:51.66",
+        "place": "1",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 11",
+        "meet": "Control Meeting, Sabadell (i)",
+        "event": "1500m sh",
+        "time": "3:51.93",
+        "place": "1",
+        "round": "F"
+      }
+    ],
+    "2020": [
+      {
+        "date": "AUG 29",
+        "meet": "Trofeo Toni Bonet, Ibiza",
+        "event": "800m",
+        "time": "1:52.68",
+        "place": "4",
+        "round": "F"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "Memorial José Antonio Cansino, Castellón",
+        "event": "800m",
+        "time": "1:49.34",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 29",
+        "meet": "Control d´Estiu, Gavá",
+        "event": "1500m",
+        "time": "3:45.97",
+        "place": "4",
+        "round": "F1"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "Proves Control, Olot",
+        "event": "1000m",
+        "time": "2:23.34",
+        "place": "2",
+        "round": "F"
+      },
+      {
+        "date": "FEB 19",
+        "meet": "Míting Internacional Catalunya",
+        "event": "800m sh",
+        "time": "1:48.97",
+        "place": "5",
+        "round": "F1"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Regional Indoor Championships",
+        "event": "800m sh",
+        "time": "1:54.22",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "FEB 7",
+        "meet": "Control FACV",
+        "event": "800m sh",
+        "time": "1:49.63",
+        "place": "6",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 24",
+        "meet": "Gran Premio Internacional Ciudad de Valencia",
+        "event": "1500m sh",
+        "time": "3:48.61",
+        "place": "7",
+        "round": "F1"
+      },
+      {
+        "date": "JAN 12",
+        "meet": "Regional Indoor Club Championships",
+        "event": "800m sh",
+        "time": "1:52.60",
+        "place": "1",
+        "round": "F"
+      },
+      {
+        "date": "JAN 12",
+        "meet": "Regional Indoor Club Championships",
+        "event": "4x400 Metres Relay Short Track sh",
+        "time": "3:37.40",
+        "place": "1",
+        "round": "F"
+      }
+    ],
     "2021": [
       {
         "date": "11 APR 2021",

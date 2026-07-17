@@ -12,7 +12,7 @@
   "flag": "ES",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-15",
+  "lastSynced": "2026-07-17",
   "prs": [
     {
       "event": "800m",
@@ -94,6 +94,14 @@
   "club": "x",
   "country": "Spain",
   "results": [
+    {
+      "date": "JUL 16",
+      "meet": "Meeting Madrid",
+      "event": "800 m",
+      "time": "1:44.69",
+      "place": "2.",
+      "round": "F"
+    },
     {
       "date": "JUL 8",
       "meet": "Meeting Lignano",
