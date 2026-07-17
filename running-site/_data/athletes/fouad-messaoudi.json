@@ -15,7 +15,7 @@
   "flag": "MA",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-16",
+  "lastSynced": "2026-07-17",
   "prs": [
     {
       "event": "800m",
@@ -69,6 +69,14 @@
   "club": "x",
   "country": "Morocco",
   "results": [
+    {
+      "date": "JUL 15",
+      "meet": "Meeting International d'Athlétisme de la Province de Liège",
+      "event": "1500 m",
+      "time": "3:34.41",
+      "place": "1.",
+      "round": "F"
+    },
     {
       "date": "JUL 11",
       "meet": "Moore-Guldensporenmeeting",
@@ -145,7 +153,7 @@
   "dob": "2001-01-07",
   "college": "Oklahoma State",
   "weight": "x",
-  "lastHistorySynced": "2026-07-15",
+  "lastHistorySynced": "2026-07-16",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

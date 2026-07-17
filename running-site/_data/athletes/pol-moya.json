@@ -32,7 +32,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-16",
+  "lastSynced": "2026-07-17",
   "prs": [
     {
       "event": "400m",
@@ -106,6 +106,14 @@
   "club": null,
   "country": "Andorra",
   "results": [
+    {
+      "date": "JUL 15",
+      "meet": "Meeting International d'Athlétisme de la Province de Liège",
+      "event": "1500 m",
+      "time": "3:36.26",
+      "place": "6.",
+      "round": "F"
+    },
     {
       "date": "JUL 4",
       "meet": "X Ordizia Meeting - International Meeting Jose Antonio Peña",
@@ -197,7 +205,7 @@
   ],
   "dob": "09 DEC 1996",
   "weight": null,
-  "lastHistorySynced": "2026-07-15",
+  "lastHistorySynced": "2026-07-16",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

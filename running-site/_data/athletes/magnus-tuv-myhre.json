@@ -66,6 +66,14 @@
   ],
   "results": [
     {
+      "date": "JUL 16",
+      "meet": "Spitzen Leichtathletik Luzern",
+      "event": "3000 m",
+      "time": "7:49.63",
+      "place": "4.",
+      "round": "F"
+    },
+    {
       "date": "JAN 11",
       "meet": "10K Valencia Ibercaja by Kiprun",
       "event": "10 Kilom Road",
@@ -74,7 +82,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-16",
+  "lastSynced": "2026-07-17",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -748,5 +756,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-15"
+  "lastHistorySynced": "2026-07-16"
 }

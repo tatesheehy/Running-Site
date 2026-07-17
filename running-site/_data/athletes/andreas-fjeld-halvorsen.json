@@ -70,6 +70,14 @@
   ],
   "results": [
     {
+      "date": "JUL 15",
+      "meet": "Meeting International d'Athlétisme de la Province de Liège",
+      "event": "1500 m",
+      "time": "3:36.11",
+      "place": "4.",
+      "round": "F"
+    },
+    {
       "date": "JUN 24",
       "meet": "Boysen Memorial",
       "event": "5000 m",
@@ -134,7 +142,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-16",
+  "lastSynced": "2026-07-17",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -1007,5 +1015,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-15"
+  "lastHistorySynced": "2026-07-16"
 }

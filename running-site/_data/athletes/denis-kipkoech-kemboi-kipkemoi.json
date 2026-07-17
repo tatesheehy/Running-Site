@@ -46,6 +46,14 @@
   ],
   "results": [
     {
+      "date": "JUL 16",
+      "meet": "Spitzen Leichtathletik Luzern",
+      "event": "3000 m",
+      "time": "7:44.33",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "JUN 20",
       "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
       "event": "5000 m",
@@ -110,7 +118,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-16",
+  "lastSynced": "2026-07-17",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -243,5 +251,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-15"
+  "lastHistorySynced": "2026-07-16"
 }
