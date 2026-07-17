@@ -1148,7 +1148,7 @@ function _sfRecentRowsHtml(items) {
       : c.isDominant ? '<span class="sf-badge sf-badge--win">W</span>' : '';
     return `
       <div class="sf-row" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
-        <span class="sf-rank-n">${i + 1}</span>
+        <span class="sf-rank-n${i < 3 ? ' sf-medal sf-medal--' + (i + 1) : ''}">${i + 1}</span>
         ${_sfAva(a)}
         <div class="sf-row-id"><span class="sf-row-name">${a.name}</span><span class="sf-row-sub">${r.event.trim()} · ${r.meet}${r.date ? ` · ${r.date}` : ''}</span></div>
         <span class="sf-recent-end">${badge}<span class="sf-chip">${r.time}</span></span>
@@ -1285,7 +1285,7 @@ function _sfLeadersTable(event) {
       ? form.map(f => `<span class="sf-form sf-form--${f.cls}">${f.label}</span>`).join('')
       : '<span class="sf-form-none">—</span>';
     return `<div class="sf-trow sf-table-row sf-table-row--lead${i < 3 ? ' sf-trow--top' : ''}" onclick="openAthleteCard('${r.id}',null)" role="button" tabindex="0">
-      <span class="sf-tc-rank">${i + 1}</span>
+      <span class="sf-tc-rank${i < 3 ? ' sf-medal sf-medal--' + (i + 1) : ''}">${i + 1}</span>
       ${_sfAthCell(r.a)}
       <span class="sf-tc-sb"><span class="sf-chip">${r.time}</span></span>
       <span class="sf-tc-num">${pb ? pb.t : '—'}</span>

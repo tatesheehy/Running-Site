@@ -628,7 +628,21 @@
   max-width: var(--max-width);
   margin: 0;
   padding: 12px 24px 60px;
+  position: relative;
 }
+/* Warm radial wash behind the hero so cards lift off the page */
+.sf::before {
+  content: '';
+  position: absolute;
+  top: -80px; left: -140px; right: -140px;
+  height: 520px;
+  background:
+    radial-gradient(720px 300px at 22% 0%, rgba(255,82,0,0.10), transparent 70%),
+    radial-gradient(560px 260px at 92% 6%, rgba(255,82,0,0.06), transparent 72%);
+  pointer-events: none;
+  z-index: 0;
+}
+.sf > * { position: relative; z-index: 1; }
 .sf-crumbs {
   display: flex;
   align-items: center;
@@ -3067,3 +3081,65 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
   border: 2px solid var(--border);
 }
 
+
+/* ══════════════════════════════════════════════════════════════
+   VISUAL LIFE — color, depth & motion layered on the clean system
+   ══════════════════════════════════════════════════════════════ */
+
+/* Winner's score/name gets an orange breath */
+.sf-mu-side--a .sf-mu-name, .sf-mu-side--b .sf-mu-name { transition: color 0.15s ease; }
+.sf-mu-side:hover .sf-mu-name { color: var(--orange); }
+
+/* Accent dot before every card header for rhythm */
+.sf-card-hd { position: relative; padding-left: 14px; }
+.sf-card-hd::before {
+  content: '';
+  position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+  width: 4px; height: 16px; border-radius: 2px;
+  background: linear-gradient(180deg, var(--orange), #FF8A4C);
+}
+
+/* Medal-colored ranks (gold / silver / bronze) */
+.sf-medal {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 18px; height: 18px; border-radius: 6px;
+  font-weight: 800 !important;
+  font-variant-numeric: tabular-nums;
+}
+.sf-medal--1 { color: #7A5200; background: linear-gradient(135deg, #FFE49B, #F5C242); }
+.sf-medal--2 { color: #4A4E56; background: linear-gradient(135deg, #EDEFF2, #C9CDD4); }
+.sf-medal--3 { color: #6B3B14; background: linear-gradient(135deg, #F3CCA6, #D8975A); }
+
+/* Countdown numerals: orange gradient for energy */
+.sf-next-seg b {
+  background: linear-gradient(180deg, var(--orange), #FF7A3C);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Spotlight time: subtle top-lit sheen */
+.sf-spot-time {
+  background: linear-gradient(180deg, #FFFFFF 30%, #FFD9C6 140%);
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Orange-tinted hover border on all dashboard cards */
+.sf-card:hover { border-color: rgba(255,82,0,0.28); }
+
+/* Staggered entrance — cards rise into place on load */
+@keyframes sfRise {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .sf-hero-row > *, .sf-main-row > *, .sf-bottom-row > * {
+    animation: sfRise 0.5s cubic-bezier(0.2, 0, 0.2, 1) both;
+  }
+  .sf-hero-row > *:nth-child(2) { animation-delay: 0.06s; }
+  .sf-main-row > *:nth-child(1) { animation-delay: 0.10s; }
+  .sf-main-row > *:nth-child(2) { animation-delay: 0.16s; }
+  .sf-bottom-row > *:nth-child(1) { animation-delay: 0.14s; }
+  .sf-bottom-row > *:nth-child(2) { animation-delay: 0.20s; }
+  .sf-bottom-row > *:nth-child(3) { animation-delay: 0.26s; }
+}
