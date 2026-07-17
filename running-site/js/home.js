@@ -848,22 +848,37 @@ function _sfHeroMatchup() {
       <span class="sf-mu-name">${a.name}</span>
       <span class="sf-mu-ct"><span class="sf-mu-flag">${renderFlag(a.flag)}</span>${a.country || ''}</span>
     </div>`;
-  // Stat sheet — PB, season best, season wins for each athlete.
-  const rows = [];
+  // ── 4-metric comparison dashboard: PB · 2026 wins · Rank · Form ──
+  const fmtRank = r => (r ? `#${r}` : '—');
+  const formHtml = a => {
+    const chips = (typeof _sfFormFor === 'function' ? _sfFormFor(a, event) : []).slice(-3);
+    if (!chips.length) return '<span class="sf-mu-form-na">—</span>';
+    return chips.map(c => `<span class="sf-mu-fc sf-mu-fc--${c.cls}">${c.label || '·'}</span>`).join('');
+  };
   const pbA = event ? _sfPbFor(A, event) : null, pbB = event ? _sfPbFor(B, event) : null;
-  if (pbA && pbB) rows.push({ lbl: `${event} PB`, a: pbA.t, b: pbB.t, aw: pbA.s < pbB.s, bw: pbB.s < pbA.s });
-  const sbA = event ? _sfSbFor(A, event) : null, sbB = event ? _sfSbFor(B, event) : null;
-  if (sbA && sbB) rows.push({ lbl: '2026 best', a: sbA.t, b: sbB.t, aw: sbA.s < sbB.s, bw: sbB.s < sbA.s });
+  const rkA = event ? _sfPbRank(A.id, event) : null, rkB = event ? _sfPbRank(B.id, event) : null;
   const winA = _sfTotalWins(A), winB = _sfTotalWins(B);
-  rows.push({ lbl: '2026 wins', a: String(winA), b: String(winB), aw: winA > winB, bw: winB > winA });
+  const rows = [
+    { lbl: `${event || ''} PB`.trim(), a: pbA ? pbA.t : '—', b: pbB ? pbB.t : '—',
+      aw: pbA && pbB && pbA.s < pbB.s, bw: pbA && pbB && pbB.s < pbA.s, big: true },
+    { lbl: '2026 wins', a: String(winA), b: String(winB), aw: winA > winB, bw: winB > winA },
+    { lbl: 'Season rank', a: fmtRank(rkA), b: fmtRank(rkB),
+      aw: rkA && rkB && rkA < rkB, bw: rkA && rkB && rkB < rkA },
+    { lbl: 'Recent form', aHtml: formHtml(A), bHtml: formHtml(B), form: true }
+  ];
+  const cell = (r, side) => {
+    if (r.form) return `<span class="sf-mu-form sf-mu-form--${side}">${side === 'a' ? r.aHtml : r.bHtml}</span>`;
+    const win = side === 'a' ? r.aw : r.bw;
+    return `<span class="sf-mu-sv${side === 'b' ? ' sf-mu-sv--r' : ''}${win ? ' sf-mu-sv--win' : ''}${r.big ? ' sf-mu-sv--big' : ''}">${side === 'a' ? r.a : r.b}</span>`;
+  };
   const stats = `<div class="sf-mu-stats">${rows.map(r => `
     <div class="sf-mu-stat">
-      <span class="sf-mu-sv${r.aw ? ' sf-mu-sv--win' : ''}">${r.a}</span>
+      ${cell(r, 'a')}
       <span class="sf-mu-slbl">${r.lbl}</span>
-      <span class="sf-mu-sv sf-mu-sv--r${r.bw ? ' sf-mu-sv--win' : ''}">${r.b}</span>
+      ${cell(r, 'b')}
     </div>`).join('')}</div>`;
   return `
-    <div class="sf-card sf-matchup">
+    <div class="sf-card sf-card--feature sf-matchup">
       <div class="sf-mu-eyebrow"><span class="sf-mu-tag">${label}</span>${meet ? `<span class="sf-mu-meet">${meet}</span>` : ''}</div>
       <div class="sf-mu-top">
         ${side(A, 'sf-mu-side--a')}
@@ -876,6 +891,24 @@ function _sfHeroMatchup() {
       ${stats}
       <a class="sf-mu-cta" href="h2h.html?a=${encodeURIComponent(A.id)}&b=${encodeURIComponent(B.id)}">See the full head-to-head →</a>
     </div>`;
+}
+function _sfPbRank(id, event) {
+  const k = _normalizeEvent(event);
+  const ranked = Object.entries(ATHLETES)
+    .map(([aid, a]) => {
+      let best = null;
+      (a.prs || []).forEach(p => {
+        if (_normalizeEvent(p.event) === k) {
+          const s = parseTimeToSecs(p.time);
+          if (s != null && (best == null || s < best)) best = s;
+        }
+      });
+      return best == null ? null : { aid, s: best };
+    })
+    .filter(Boolean)
+    .sort((x, y) => x.s - y.s);
+  const idx = ranked.findIndex(r => r.aid === id);
+  return idx < 0 ? null : idx + 1;
 }
 function _sfSbFor(a, event) {
   const k = _normalizeEvent(event);
@@ -899,14 +932,18 @@ function _sfSpotlight() {
   const top = _buildTrendingPerformances(1)[0];
   if (!top) return '';
   const a = top.athlete, r = top.result;
-  const tag = top.isPB ? 'Personal best' : top.isDominant ? 'Dominant win' : 'Major meet';
+  const badge = top.isPB ? 'PB' : top.isDominant ? 'WIN' : 'SB';
+  const ev = (r.event || '').trim();
   return `
-    <div class="sf-card sf-spot" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
-      <div class="sf-spot-foot">Performance of the week</div>
-      <div class="sf-spot-tag">${tag}</div>
+    <div class="sf-card sf-card--feature sf-spot" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
+      <div class="sf-spot-hd">Performance of the week</div>
+      <div class="sf-spot-badges">
+        <span class="sf-spot-badge">${badge}</span>
+        ${ev ? `<span class="sf-spot-cat">${ev}</span>` : ''}
+      </div>
       <div class="sf-spot-time">${r.time}</div>
       <div class="sf-spot-name"><span class="sf-mu-flag">${renderFlag(a.flag)}</span>${a.name}</div>
-      <div class="sf-spot-meta">${r.event.trim()} · ${r.meet}${r.date ? ` · ${r.date}` : ''}</div>
+      <div class="sf-spot-context">${r.meet}${r.date ? ` · ${r.date}` : ''}</div>
     </div>`;
 }
 
@@ -918,15 +955,22 @@ function _sfNextMeetCountdown() {
     .sort((a, b) => new Date(a.datetime) - new Date(b.datetime))[0];
   if (!next) return '';
   const d = new Date(next.datetime);
-  const days = Math.floor((d - now) / 86400000);
-  const hrs = Math.floor(((d - now) % 86400000) / 3600000);
+  const diff = d - now;
+  const days = Math.floor(diff / 86400000);
+  const hrs = Math.floor((diff % 86400000) / 3600000);
+  const mins = Math.floor((diff % 3600000) / 60000);
   const date = d.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+  const loc = next.location || '';
+  const cfg = (typeof SITE !== 'undefined' && SITE.featuredMatchup) || null;
+  const featured = (cfg && cfg.meet && cfg.meet === next.name && cfg.event) ? `Men's ${cfg.event}` : '';
+  const unit = (v, u) => `<span class="sf-next-seg"><b>${v}</b><i>${u}</i></span>`;
   const inner = `
-    <div class="sf-next-lbl"><span class="sf-next-dot"></span>Next up</div>
+    <div class="sf-next-lbl"><span class="sf-next-dot"></span>Next major meet</div>
     <div class="sf-next-name">${next.name}</div>
-    <div class="sf-next-row">
-      <span class="sf-next-cd"><b>${days}</b>d <b>${hrs}</b>h</span>
-      <span class="sf-next-date">${date}</span>
+    <div class="sf-next-cd">${unit(days, 'D')}${unit(hrs, 'H')}${unit(mins, 'M')}</div>
+    <div class="sf-next-foot">
+      <span class="sf-next-fi">${date}${loc ? ` · ${loc}` : ''}</span>
+      ${featured ? `<span class="sf-next-fi sf-next-fi--feat">Featured: ${featured}</span>` : ''}
     </div>`;
   return next.url
     ? `<a class="sf-card sf-next" href="${next.url}" target="_blank" rel="noopener">${inner}</a>`

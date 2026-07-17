@@ -51,33 +51,57 @@
 }
 
 :root {
-  /* Two-color system: orange is brand/identity (logo, nav, page headers,
-     section markers — "where am I"); blue is the interactive/action color
-     (buttons, links, selected states — "what can I do") used uniformly
-     site-wide instead of alternating per page. */
-  --brand: #FF5200;
-  --accent: #FF5200; /* unified: orange is the single accent color — used sparingly */
+  /* ── ONE orange, three shades. Nothing else. ──────────────── */
+  --orange: #FF5200;         /* primary — advantages, active, brand */
+  --orange-hover: #E04600;   /* hover / pressed */
+  --orange-light: #FFF0E9;   /* tint fills, badges */
+  --brand: var(--orange);
+  --accent: var(--orange);
+
+  /* ── Ink ──────────────────────────────────────────────────── */
   --dark: #111111;
   --dark-2: #1C1C1C;
   --text: #111111;
-  --muted: #666666;
-  --border: #E8E8E8;
-  --bg: #FFFFFF;
-  --bg-light: #F6F7F9;
-  --page-bg: #F6F7F9;
+  --muted: #6B6F76;          /* metadata gray */
   --success: #16A34A;
+  --success-light: #E7F6EC;
   --warning: #D97706;
   --danger: #DC2626;
+
+  /* ── Surfaces: subtle page/card contrast ──────────────────── */
+  --bg: #FFFFFF;             /* card background */
+  --bg-light: #F5F6F8;
+  --page-bg: #F5F6F8;        /* page background — sits under white cards */
+
+  /* ── ONE border, three divider weights ────────────────────── */
+  --border: #ECECEC;         /* the single card/border color */
+  --divider-light: #F2F2F2;  /* faint inner rules */
+  --divider: #ECECEC;        /* default separators */
+  --divider-strong: #DDDDDD; /* heavy section splits */
+
+  /* ── ONE shadow, one hover ────────────────────────────────── */
+  --shadow-card: 0 2px 8px rgba(0,0,0,0.04);
+  --shadow-card-hover: 0 8px 24px rgba(0,0,0,0.08);
+
+  /* ── Radius scale — never deviate ─────────────────────────── */
+  --radius-btn: 10px;
+  --radius-input: 12px;
+  --radius-card: 16px;
+  --radius-feature: 20px;
+  --radius-pill: 999px;
+  --radius-sm: 10px;   /* legacy alias → button */
+  --radius: 12px;      /* legacy alias → input */
+  --radius-lg: 16px;   /* legacy alias → card */
+
+  /* ── 8-point spacing scale ────────────────────────────────── */
+  --sp-1: 4px;  --sp-2: 8px;  --sp-3: 16px; --sp-4: 24px;
+  --sp-5: 32px; --sp-6: 40px; --sp-7: 48px; --sp-8: 64px;
+
   --font-display: 'Lota Grotesque', sans-serif;
   --font-body: 'Lota Grotesque', system-ui, -apple-system, sans-serif;
   --font-mono: 'Lota Grotesque', sans-serif;
-  --max-width: 1200px; /* content column width, now that there's no side rail narrowing it */
+  --max-width: 1200px;
   --nav-h: 136px; /* ticker (38) + utility row (52) + nav-links row (46) */
-  --radius-sm: 8px;
-  --radius: 12px;
-  --radius-lg: 16px;
-  --shadow-card: 0 1px 2px rgba(16,24,40,0.05);
-  --shadow-card-hover: 0 1px 3px rgba(16,24,40,0.06), 0 4px 12px rgba(16,24,40,0.08);
 }
 
 html { scroll-behavior: smooth; }
