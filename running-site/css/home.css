@@ -645,9 +645,9 @@
 /* ── Hero row: featured matchup + dark spotlight ── */
 .sf-hero-row {
   display: grid;
-  grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr);
-  gap: 12px;
-  margin-bottom: 12px;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
 }
 .sf-hero-row .sf-card { padding: 16px 18px; }
 
@@ -718,8 +718,36 @@
   font-size: 13px; font-weight: 700; color: var(--brand); text-decoration: none;
 }
 .sf-mu-cta:hover { text-decoration: underline; }
-/* dark spotlight fills the hero-row cell */
-.sf-hero-row .sf-spot { height: 100%; }
+/* Right hero column: spotlight + next-meet countdown stacked */
+.sf-hero-stack { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.sf-hero-stack .sf-spot { flex: 1; height: auto; }
+
+/* Next-meet countdown card */
+.sf-next { display: flex; flex-direction: column; gap: 6px; text-decoration: none; cursor: pointer; }
+.sf-next-lbl {
+  display: flex; align-items: center; gap: 7px;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.04em;
+  color: var(--muted);
+}
+.sf-next-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--success);
+  animation: tickerPulse 2s ease-in-out infinite;
+}
+.sf-next-name { font-family: var(--font-display); font-size: 15px; font-weight: 600; color: var(--text); line-height: 1.2; }
+.sf-next-row { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.sf-next-cd { font-size: 13px; color: var(--muted); }
+.sf-next-cd b { font-family: var(--font-display); font-size: 19px; font-weight: 700; color: var(--brand); font-variant-numeric: tabular-nums; }
+.sf-next-date { font-size: 12px; color: var(--muted); }
+
+/* PB / win badges (recent performances) */
+.sf-recent-end { display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.sf-badge {
+  font-size: 9.5px; font-weight: 700; letter-spacing: 0.03em;
+  padding: 2px 6px; border-radius: 5px;
+}
+.sf-badge--pb { color: var(--brand); background: rgba(255,82,0,0.10); }
+.sf-badge--win { color: var(--success); background: rgba(22,163,74,0.10); }
 
 @media (max-width: 760px) {
   .sf-hero-row { grid-template-columns: 1fr; }
@@ -727,18 +755,23 @@
 .sf-card {
   background: #fff;
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 12px 14px;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 1px 2px rgba(16,24,40,0.03);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+.sf-card:hover {
+  box-shadow: 0 4px 16px -6px rgba(16,24,40,0.10);
 }
 .sf-card-hd {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: var(--font-display);
-  font-size: 13.5px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
   color: var(--text);
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 .sf-card-link { font-size: 13px; font-weight: 600; color: var(--brand); text-decoration: none; }
 .sf-card-link:hover { text-decoration: underline; }
@@ -821,10 +854,10 @@
 .sf-grid {
   display: grid;
   grid-template-columns: 256px minmax(0, 1fr) 256px;
-  gap: 12px;
+  gap: 16px;
   align-items: start;
 }
-.sf-side { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.sf-side { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
 .sf-center { min-width: 0; }
 
 /* ── Featured rivalry (left) ── */
@@ -880,7 +913,7 @@
 .sf-meet-when { font-size: 11.5px; color: var(--muted); }
 
 /* Tools section — full-width row of tool cards with live examples */
-.sf-tools-sec { margin-top: 20px; }
+.sf-tools-sec { margin-top: 24px; }
 .sf-tools-hd {
   display: flex;
   align-items: center;
@@ -896,7 +929,7 @@
 .sf-tools-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 12px;
+  gap: 16px;
 }
 .sf-toolc { display: flex; flex-direction: column; }
 .sf-toolc-hd {
@@ -1081,13 +1114,14 @@
 .sf-thead > span { text-align: right; }
 .sf-thead > span.sf-tc-ath { text-align: left; }
 .sf-trow {
-  padding: 6px 8px;
+  padding: 7px 8px;
   cursor: pointer;
-  transition: background 0.12s;
-  border-bottom: 1px solid var(--border);
+  transition: background 0.2s ease;
+  border-bottom: 1px solid #F0F1F3;
 }
 .sf-trow:last-child { border-bottom: none; }
-.sf-trow:hover { background: var(--bg-light); }
+.sf-trow:nth-child(odd) { background: #FAFBFC; } /* thead is child 1, so odd = rows 2,4,6… */
+.sf-trow:hover { background: #F1F2F4; }
 .sf-tc-rank { font-size: 12px; font-weight: 600; color: var(--muted); text-align: center; font-variant-numeric: tabular-nums; }
 .sf-trow--top .sf-tc-rank { color: var(--brand); }
 .sf-tc-ath { display: flex; align-items: center; gap: 9px; min-width: 0; }

@@ -56,15 +56,18 @@
      (buttons, links, selected states — "what can I do") used uniformly
      site-wide instead of alternating per page. */
   --brand: #FF5200;
-  --accent: #FF5200; /* unified: orange is the single primary/action color (no blue) */
+  --accent: #FF5200; /* unified: orange is the single accent color — used sparingly */
   --dark: #111111;
   --dark-2: #1C1C1C;
-  --text: #1A1A1A;
-  --muted: #888888;
-  --border: #EAEAEA;
+  --text: #111111;
+  --muted: #666666;
+  --border: #E8E8E8;
   --bg: #FFFFFF;
-  --bg-light: #F7F7F7;
-  --page-bg: #F7F8FA;
+  --bg-light: #F6F7F9;
+  --page-bg: #F6F7F9;
+  --success: #16A34A;
+  --warning: #D97706;
+  --danger: #DC2626;
   --font-display: 'Lota Grotesque', sans-serif;
   --font-body: 'Lota Grotesque', system-ui, -apple-system, sans-serif;
   --font-mono: 'Lota Grotesque', sans-serif;

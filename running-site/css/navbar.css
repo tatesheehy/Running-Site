@@ -583,27 +583,23 @@
 }
 
 /* ════════════════════════════════════════════════════════════
-   All-orange header (Sofascore-style colored bar), no logo
+   Premium light header — orange is an accent (active states,
+   search icon), chrome is white/charcoal. No logo.
    ════════════════════════════════════════════════════════════ */
-.navbar { background: var(--brand); border-bottom: none; }
-.navbar-links { border-top: 1px solid rgba(255,255,255,0.22); }
-.navlink-a { color: rgba(255,255,255,0.85); font-weight: 500; }
-.navlink-a:hover { color: #fff; }
-.navlink.active > .navlink-a { color: #fff; border-bottom-color: #fff; }
-.navlink .sidebar-ico { color: currentColor; opacity: 0.8; }
-.navlink-caret { color: currentColor; }
-.navbar-icon-btn { color: rgba(255,255,255,0.92); }
-.navbar-icon-btn:hover { background: rgba(255,255,255,0.16); color: #fff; }
-.navbar-user-btn { background: rgba(255,255,255,0.16); border-color: rgba(255,255,255,0.28); color: #fff; }
-.navbar-user-btn:hover { background: rgba(255,255,255,0.28); color: #fff; }
-.navbar-user-btn.is-logged-in { color: #fff; }
-.nav-user-dot { background: #fff; border-color: var(--brand); }
-.navbar-subscribe { background: #fff; color: var(--brand) !important; }
-.navbar-subscribe:hover { opacity: 1; background: rgba(255,255,255,0.9); }
-.hamburger span { background: #fff; }
-/* white search pill reads cleanly on the orange bar */
-.navbar-search { background: #fff; border-color: transparent; }
-.navbar-search:focus-within { border-color: #fff; box-shadow: 0 0 0 3px rgba(255,255,255,0.35); }
+.navbar { background: #fff; border-bottom: 1px solid var(--border); }
+.navbar-links { border-top: 1px solid var(--border); }
+.navlink-a { color: var(--muted); font-weight: 500; transition: color 0.2s ease, border-color 0.2s ease; }
+.navlink-a:hover { color: var(--text); }
+.navlink.active > .navlink-a { color: var(--brand); border-bottom-color: var(--brand); font-weight: 600; }
+.navbar-icon-btn { color: var(--muted); }
+.navbar-icon-btn:hover { background: var(--bg-light); color: var(--text); }
+.navbar-user-btn { background: #fff; border-color: var(--border); color: var(--muted); }
+.navbar-user-btn:hover { background: var(--bg-light); color: var(--text); }
+.navbar-user-btn.is-logged-in { color: var(--brand); }
+.nav-user-dot { background: var(--brand); }
+.hamburger span { background: var(--text); }
+.navbar-search { background: var(--bg-light); border-color: transparent; transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease; }
+.navbar-search:focus-within { background: #fff; border-color: var(--border); box-shadow: 0 0 0 3px rgba(255,82,0,0.10); }
 
 /* ── Left-aligned header, centered search ────────────────── */
 .navbar-util {
@@ -660,3 +656,19 @@
 .nav-tick-name { font-size: 13px; font-weight: 500; color: rgba(255,255,255,0.9); }
 .nav-tick:hover .nav-tick-name { color: #fff; }
 .nav-tick-div { width: 1px; height: 22px; background: rgba(255,255,255,0.12); flex-shrink: 0; }
+
+/* Live pulse dot on the ticker label */
+.nav-ticker-lbl::before {
+  content: '';
+  display: inline-block;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--brand);
+  margin-right: 7px;
+  vertical-align: middle;
+  animation: tickerPulse 2s ease-in-out infinite;
+}
+@keyframes tickerPulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255,82,0,0.5); }
+  50% { opacity: 0.7; box-shadow: 0 0 0 4px rgba(255,82,0,0); }
+}

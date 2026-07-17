@@ -589,7 +589,10 @@ function buildHome() {
         </nav>
         <div class="sf-hero-row">
           ${_sfHeroMatchup()}
-          ${_sfSpotlight()}
+          <div class="sf-hero-stack">
+            ${_sfSpotlight()}
+            ${_sfNextMeetCountdown()}
+          </div>
         </div>
         <div class="sf-grid">
           <aside class="sf-side sf-side--l">
@@ -886,6 +889,29 @@ function _sfSpotlight() {
     </div>`;
 }
 
+// ── Next-meet countdown (hero right stack) ──
+function _sfNextMeetCountdown() {
+  const now = Date.now();
+  const next = ((typeof SITE !== 'undefined' && SITE.upcomingMeets) || [])
+    .filter(m => m.name && m.datetime && new Date(m.datetime) > now)
+    .sort((a, b) => new Date(a.datetime) - new Date(b.datetime))[0];
+  if (!next) return '';
+  const d = new Date(next.datetime);
+  const days = Math.floor((d - now) / 86400000);
+  const hrs = Math.floor(((d - now) % 86400000) / 3600000);
+  const date = d.toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+  const inner = `
+    <div class="sf-next-lbl"><span class="sf-next-dot"></span>Next up</div>
+    <div class="sf-next-name">${next.name}</div>
+    <div class="sf-next-row">
+      <span class="sf-next-cd"><b>${days}</b>d <b>${hrs}</b>h</span>
+      <span class="sf-next-date">${date}</span>
+    </div>`;
+  return next.url
+    ? `<a class="sf-card sf-next" href="${next.url}" target="_blank" rel="noopener">${inner}</a>`
+    : `<div class="sf-card sf-next">${inner}</div>`;
+}
+
 // ── Tools section — each tool with a live, pre-filled example ──
 function _sfToolIcon(svg) {
   return `<span class="sf-tool-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${svg}</svg></span>`;
@@ -1053,12 +1079,14 @@ function _sfRecentRowsHtml(items) {
   if (!items.length) return '<p class="sf-empty">Nothing recent for this distance.</p>';
   return items.map((c, i) => {
     const a = c.athlete, r = c.result;
+    const badge = c.isPB ? '<span class="sf-badge sf-badge--pb">PB</span>'
+      : c.isDominant ? '<span class="sf-badge sf-badge--win">W</span>' : '';
     return `
       <div class="sf-row" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
         <span class="sf-rank-n">${i + 1}</span>
         ${_sfAva(a)}
-        <div class="sf-row-id"><span class="sf-row-name">${a.name}</span><span class="sf-row-sub">${r.event.trim()} · ${r.meet}</span></div>
-        <span class="sf-chip">${r.time}</span>
+        <div class="sf-row-id"><span class="sf-row-name">${a.name}</span><span class="sf-row-sub">${r.event.trim()} · ${r.meet}${r.date ? ` · ${r.date}` : ''}</span></div>
+        <span class="sf-recent-end">${badge}<span class="sf-chip">${r.time}</span></span>
       </div>`;
   }).join('');
 }
