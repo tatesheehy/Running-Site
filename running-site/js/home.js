@@ -731,6 +731,8 @@ window.shuffleHomeRivalry = function () {
 // ══════════════════════════════════════════════════════════════
 let _sfEvent = '1500m';
 let _sfTab = 'leaders';
+let _sfLeadPage = 0;
+let _sfH2HPage = 0;
 
 function _sfEventList() {
   const ks = Object.keys(RANKINGS || {});
@@ -1252,31 +1254,72 @@ function _sfAthCell(a) {
 
 // Season leaders — a dense multi-column stats table (Sofascore player-stats style).
 function _sfLeadersTable(event) {
-  const sb = (typeof _seasonBestRanking === 'function' ? _seasonBestRanking(event) : []).slice(0, 15);
-  if (!sb.length) return `<p class="sf-empty">No season marks yet for ${event}.</p>`;
+  const all = (typeof _seasonBestRanking === 'function' ? _seasonBestRanking(event) : []);
+  if (!all.length) return `<p class="sf-empty">No season marks yet for ${event}.</p>`;
+  const PAGE = 10;
+  const pages = Math.ceil(all.length / PAGE);
+  if (_sfLeadPage >= pages) _sfLeadPage = 0;
+  const start = _sfLeadPage * PAGE;
+  const sb = all.slice(start, start + PAGE);
   const recs = _sfRecordsMap(event);
-  const head = `<div class="sf-thead sf-table-row sf-table-row--lead"><span>#</span><span class="sf-tc-ath">Athlete</span><span>SB</span><span>PB</span><span>Races</span><span>1st</span><span>H2H</span><span>Form</span></div>`;
+  // Header cells carry a sort caret; SB is the active sort key.
+  const th = (lbl, active) =>
+    `<span class="sf-th-c${active ? ' sf-th-c--active' : ''}">${lbl}<i class="sf-th-cx">▾</i></span>`;
+  const head = `<div class="sf-thead sf-table-row sf-table-row--lead">
+    <span class="sf-th-hash">#</span>
+    <span></span>
+    <span class="sf-th-name">Name</span>
+    ${th('SB', true)}${th('PB')}${th('Races')}${th('1st')}${th('H2H')}
+  </div>`;
   const rows = sb.map((r, i) => {
     const pb = _sfPbFor(r.a, event);
     const c = _sfSeasonCountFor(r.a, event);
     const rec = recs[r.id];
-    const form = _sfFormFor(r.a, event);
-    const formHtml = form.length
-      ? form.map(f => `<span class="sf-form sf-form--${f.cls}">${f.label}</span>`).join('')
-      : '<span class="sf-form-none">—</span>';
-    return `<div class="sf-trow sf-table-row sf-table-row--lead${i < 3 ? ' sf-trow--top' : ''}" onclick="openAthleteCard('${r.id}',null)" role="button" tabindex="0">
-      <span class="sf-tc-rank">${i + 1}</span>
-      ${_sfAthCell(r.a)}
+    return `<div class="sf-trow sf-table-row sf-table-row--lead${(start + i) < 3 ? ' sf-trow--top' : ''}" onclick="openAthleteCard('${r.id}',null)" role="button" tabindex="0">
+      <span class="sf-tc-rank">${start + i + 1}</span>
+      <span class="sf-tc-flag">${renderFlag(r.a.flag)}</span>
+      <span class="sf-tc-name">${r.a.name}</span>
       <span class="sf-tc-sb"><span class="sf-chip">${r.time}</span></span>
       <span class="sf-tc-num">${pb ? pb.t : '—'}</span>
       <span class="sf-tc-num">${c.races || '—'}</span>
       <span class="sf-tc-num">${c.wins || '—'}</span>
       <span class="sf-tc-num">${rec ? `${rec.wins}-${rec.losses}` : '—'}</span>
-      <span class="sf-tc-form">${formHtml}</span>
     </div>`;
   }).join('');
-  return `<div class="sf-table sf-table--lead">${head}${rows}</div>`;
+  return `<div class="sf-table sf-table--lead sf-gcols">${head}${rows}</div>${_sfPager(pages, _sfLeadPage, 'sfSetLeadPage')}`;
 }
+
+// Numbered pager (‹ 1 2 … N ›). `fn` = global handler name for a page click.
+function _sfPager(pages, cur, fn) {
+  if (pages <= 1) return '';
+  const btn = (p, label, opts = {}) =>
+    `<button class="sf-pg${opts.active ? ' active' : ''}" ${opts.disabled ? 'disabled' : ''} onclick="${fn}(${p})">${label}</button>`;
+  const nums = [];
+  const add = p => nums.push(btn(p, p + 1, { active: p === cur }));
+  const ell = () => nums.push('<span class="sf-pg-ell">…</span>');
+  if (pages <= 7) { for (let p = 0; p < pages; p++) add(p); }
+  else {
+    add(0);
+    if (cur > 2) ell();
+    const s = Math.max(1, cur - 1), e = Math.min(pages - 2, cur + 1);
+    for (let p = s; p <= e; p++) add(p);
+    if (cur < pages - 3) ell();
+    add(pages - 1);
+  }
+  const prev = btn(Math.max(0, cur - 1), '‹', { disabled: cur === 0 });
+  const next = btn(Math.min(pages - 1, cur + 1), '›', { disabled: cur === pages - 1 });
+  return `<div class="sf-pager">${prev}${nums.join('')}${next}</div>`;
+}
+window.sfSetLeadPage = function (p) {
+  _sfLeadPage = p;
+  const body = document.getElementById('sf-main-body');
+  if (body) body.innerHTML = _sfBody(_sfTab, _sfEvent);
+};
+window.sfSetH2HPage = function (p) {
+  _sfH2HPage = p;
+  const body = document.getElementById('sf-main-body');
+  if (body) body.innerHTML = _sfBody(_sfTab, _sfEvent);
+};
 
 // Trending — table with mark, event, meet.
 function _sfTrendingTable() {
@@ -1298,21 +1341,34 @@ function _sfTrendingTable() {
 
 // H2H leaders — table with W, L, Win%, meetings.
 function _sfH2HTable(event) {
-  const list = _sfH2HLeaders(event);
-  if (!list.length) return '<p class="sf-empty">No head-to-head records yet for ' + event + '.</p>';
-  const head = `<div class="sf-thead sf-table-row sf-table-row--h2h"><span>#</span><span class="sf-tc-ath">Athlete</span><span>W</span><span>L</span><span>Win%</span><span>Meets</span></div>`;
+  const all = _sfH2HLeaders(event);
+  if (!all.length) return '<p class="sf-empty">No head-to-head records yet for ' + event + '.</p>';
+  const PAGE = 10;
+  const pages = Math.ceil(all.length / PAGE);
+  if (_sfH2HPage >= pages) _sfH2HPage = 0;
+  const start = _sfH2HPage * PAGE;
+  const list = all.slice(start, start + PAGE);
+  const th = (lbl, active) =>
+    `<span class="sf-th-c${active ? ' sf-th-c--active' : ''}">${lbl}<i class="sf-th-cx">▾</i></span>`;
+  const head = `<div class="sf-thead sf-table-row sf-table-row--h2h">
+    <span class="sf-th-hash">#</span>
+    <span></span>
+    <span class="sf-th-name">Name</span>
+    ${th('W')}${th('L')}${th('Win%', true)}${th('Meets')}
+  </div>`;
   const rows = list.map((r, i) => {
     const tot = r.wins + r.losses, pct = tot ? Math.round(r.wins / tot * 100) : 0;
-    return `<div class="sf-trow sf-table-row sf-table-row--h2h${i < 3 ? ' sf-trow--top' : ''}" onclick="openAthleteCard('${r.id}',null)" role="button" tabindex="0">
-      <span class="sf-tc-rank">${i + 1}</span>
-      ${_sfAthCell(r.a)}
+    return `<div class="sf-trow sf-table-row sf-table-row--h2h${(start + i) < 3 ? ' sf-trow--top' : ''}" onclick="openAthleteCard('${r.id}',null)" role="button" tabindex="0">
+      <span class="sf-tc-rank">${start + i + 1}</span>
+      <span class="sf-tc-flag">${renderFlag(r.a.flag)}</span>
+      <span class="sf-tc-name">${r.a.name}</span>
       <span class="sf-tc-num">${r.wins}</span>
       <span class="sf-tc-num">${r.losses}</span>
       <span class="sf-tc-sb"><span class="sf-chip">${pct}%</span></span>
       <span class="sf-tc-num">${tot}</span>
     </div>`;
   }).join('');
-  return `<div class="sf-table sf-table--h2h">${head}${rows}</div>`;
+  return `<div class="sf-table sf-table--h2h sf-gcols">${head}${rows}</div>${_sfPager(pages, _sfH2HPage, 'sfSetH2HPage')}`;
 }
 
 function _sfBody(tab, event) {
@@ -1329,24 +1385,23 @@ function _sfCenterCard(event) {
     <div class="sf-card sf-main">
       <div class="sf-tabs" id="sf-tabs">
         ${tab('leaders', 'Season Leaders')}
-        ${tab('trending', 'Recent')}
         ${tab('h2h', 'H2H Leaders')}
       </div>
-      <div class="sf-pillrow" id="sf-pillrow"${_sfTab === 'trending' ? ' style="display:none"' : ''}>${pills}</div>
+      <div class="sf-pillrow" id="sf-pillrow">${pills}</div>
       <div class="sf-main-body" id="sf-main-body">${_sfBody(_sfTab, event)}</div>
     </div>`;
 }
 window.sfSetEvent = function (ev) {
   _sfEvent = ev;
+  _sfLeadPage = 0; _sfH2HPage = 0;
   document.querySelectorAll('#sf-pillrow .sf-pill').forEach(p => p.classList.toggle('active', p.dataset.ev === ev));
   const body = document.getElementById('sf-main-body');
   if (body) body.innerHTML = _sfBody(_sfTab, ev);
 };
 window.sfSetTab = function (t) {
   _sfTab = t;
+  _sfLeadPage = 0; _sfH2HPage = 0;
   document.querySelectorAll('#sf-tabs .sf-tab').forEach(x => x.classList.toggle('active', x.dataset.tab === t));
-  const pr = document.getElementById('sf-pillrow');
-  if (pr) pr.style.display = t === 'trending' ? 'none' : 'flex';
   const body = document.getElementById('sf-main-body');
   if (body) body.innerHTML = _sfBody(t, _sfEvent);
 };

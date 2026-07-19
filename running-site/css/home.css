@@ -1034,12 +1034,13 @@
   overflow-x: auto;
 }
 .sf-tab {
-  flex-shrink: 0;
+  flex: 1;
   background: none; border: none;
-  padding: 12px 12px;
+  padding: 14px 8px;
   font-family: var(--font-display);
-  font-size: 13px; font-weight: 600;
+  font-size: 14px; font-weight: 600;
   color: var(--muted);
+  text-align: center;
   border-bottom: 2px solid transparent;
   margin-bottom: -1px;
   cursor: pointer;
@@ -1047,18 +1048,23 @@
 }
 .sf-tab:hover { color: var(--text); }
 .sf-tab.active { color: var(--text); border-bottom-color: var(--brand); }
-.sf-pillrow { display: flex; gap: 6px; flex-wrap: wrap; padding: 10px 12px; }
+
+/* Filter pills — Sofascore "General / Attack / Defense" style:
+   light-grey by default, dark-filled when active */
+.sf-pillrow { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; padding: 16px 12px; }
 .sf-pill {
-  padding: 5px 12px;
-  border-radius: 999px;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
   background: var(--bg-light);
   border: 1px solid transparent;
-  font-size: 12px; font-weight: 600; color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 14px; font-weight: 600; color: var(--text);
   cursor: pointer;
   transition: background 0.15s, color 0.15s;
 }
-.sf-pill:hover { color: var(--text); }
-.sf-pill.active { background: var(--brand); color: #fff; }
+.sf-pill:hover { background: #ECEDF0; }
+.sf-pill.active { background: var(--dark); color: #fff; }
+.sf-pill.active:hover { background: var(--dark); }
 .sf-main-body { padding: 0 6px 8px; overflow-x: auto; }
 .sf-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
 .sf-col { min-width: 0; }
@@ -1128,39 +1134,96 @@
 /* ── Dense stats table (Sofascore player-stats style) ── */
 .sf-table { min-width: 100%; }
 .sf-table-row { display: grid; align-items: center; gap: 6px; }
-.sf-table--lead .sf-table-row  { grid-template-columns: 20px minmax(88px, 1fr) 70px 56px 40px 30px 52px 100px; }
+.sf-table--lead .sf-table-row  { grid-template-columns: 34px 40px minmax(90px, 1fr) 66px 62px 56px 44px 58px; gap: 8px; }
 .sf-table--trend .sf-table-row { grid-template-columns: 22px minmax(128px, 1fr) 78px 64px minmax(120px, 1.2fr); }
-.sf-table--h2h .sf-table-row   { grid-template-columns: 22px minmax(128px, 1fr) 42px 42px 62px 54px; }
+.sf-table--h2h .sf-table-row   { grid-template-columns: 34px 40px minmax(90px, 1fr) 52px 52px 64px 60px; gap: 8px; }
 .sf-thead {
-  padding: 8px 8px 7px;
-  font-size: 10px; font-weight: 700; letter-spacing: 0.04em; text-transform: none;
+  padding: 12px 12px 10px;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.01em; text-transform: none;
   color: var(--muted);
   border-bottom: 1px solid var(--border);
   position: sticky; top: 0; background: #fff; z-index: 1;
 }
-.sf-thead > span { text-align: right; }
-.sf-thead > span.sf-tc-ath { text-align: left; }
+/* Header cell = stacked label + sort caret (Sofascore style) */
+.sf-th-c { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; line-height: 1.05; }
+.sf-th-cx { font-style: normal; font-size: 9px; color: var(--divider-strong); }
+.sf-th-c--active { color: var(--text); }
+.sf-th-c--active .sf-th-cx { color: var(--brand); }
+.sf-th-hash { text-align: center; }
+.sf-th-name { text-align: left; }
 .sf-trow {
-  padding: 7px 8px;
+  padding: 12px 12px;
   cursor: pointer;
-  transition: background 0.2s ease;
-  border-bottom: 1px solid #F0F1F3;
+  transition: background 0.15s ease;
+  border-bottom: none;
 }
-.sf-trow:last-child { border-bottom: none; }
-.sf-trow:nth-child(odd) { background: #FAFBFC; } /* thead is child 1, so odd = rows 2,4,6… */
-.sf-trow:hover { background: #F1F2F4; }
-.sf-tc-rank { font-size: 12px; font-weight: 600; color: var(--muted); text-align: center; font-variant-numeric: tabular-nums; }
-.sf-trow--top .sf-tc-rank { color: var(--brand); }
-.sf-tc-ath { display: flex; align-items: center; gap: 8px; min-width: 0; }
-.sf-tc-id { display: flex; flex-direction: column; min-width: 0; }
+.sf-trow:nth-child(odd) { background: #F7F8FA; } /* thead is child 1, so odd = rows 2,4,6… */
+.sf-trow:hover { background: #EEF0F3; }
+.sf-tc-rank { font-size: 13px; font-weight: 500; color: var(--muted); text-align: center; font-variant-numeric: tabular-nums; }
+.sf-trow--top .sf-tc-rank { color: var(--text); font-weight: 600; }
+
+/* Circular country flag in its own column */
+.sf-tc-flag {
+  width: 28px; height: 28px; border-radius: 50%;
+  overflow: hidden; display: flex; align-items: center; justify-content: center;
+  background: var(--bg-light);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08);
+  justify-self: center;
+}
+.sf-tc-flag .flag-icon {
+  width: 42px; height: 28px; border-radius: 0; box-shadow: none; top: 0; flex-shrink: 0;
+}
+.sf-tc-flag .flag-icon svg { width: 100%; height: 100%; display: block; object-fit: cover; }
+
+.sf-tc-name {
+  font-size: 14px; font-weight: 600; color: var(--text);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
 .sf-tc-num {
   text-align: right;
-  font-size: 12.5px; font-weight: 500; color: var(--text);
+  font-size: 14px; font-weight: 400; color: var(--text);
   font-variant-numeric: tabular-nums;
   overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
 }
 .sf-tc-num.sf-tc-l { text-align: left; color: var(--muted); font-weight: 500; }
 .sf-tc-sb { text-align: right; }
+
+/* ── Shared grid tables (Season Leaders + H2H Leaders):
+   subtle single-weight column dividers, full row height ── */
+.sf-gcols .sf-thead, .sf-gcols .sf-trow { align-items: stretch; }
+.sf-gcols .sf-trow > span { display: flex; align-items: center; }
+.sf-gcols .sf-tc-rank { justify-content: center; }
+.sf-gcols .sf-tc-flag { align-self: center; }
+.sf-gcols .sf-tc-name { justify-content: flex-start; }
+.sf-gcols .sf-tc-sb,
+.sf-gcols .sf-tc-num { justify-content: flex-end; }
+.sf-gcols .sf-th-c { justify-content: center; }
+/* vertical dividers — left of the name and every stat column */
+.sf-gcols .sf-tc-name,
+.sf-gcols .sf-tc-sb,
+.sf-gcols .sf-tc-num,
+.sf-gcols .sf-th-name,
+.sf-gcols .sf-th-c {
+  border-left: 1px solid var(--divider-light);
+  padding-left: 8px;
+}
+
+/* ── Numbered pager (‹ 1 2 … N ›) ── */
+.sf-pager {
+  display: flex; align-items: center; justify-content: center;
+  gap: 4px; padding: 16px 0 4px;
+}
+.sf-pg {
+  min-width: 34px; height: 34px; padding: 0 10px;
+  border: none; background: none; border-radius: var(--radius-pill);
+  font-family: var(--font-display); font-size: 14px; font-weight: 600;
+  color: var(--muted); cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+.sf-pg:hover:not(:disabled) { background: var(--bg-light); color: var(--text); }
+.sf-pg.active { background: var(--orange); color: #fff; }
+.sf-pg:disabled { opacity: 0.35; cursor: default; }
+.sf-pg-ell { color: var(--muted); padding: 0 2px; align-self: flex-end; }
 .sf-tc-meet { font-size: 12px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 /* Recent-form guide (Sofascore "Last 5") */
 .sf-tc-form { display: flex; gap: 3px; justify-content: flex-end; }
