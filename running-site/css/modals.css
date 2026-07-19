@@ -957,7 +957,7 @@
   margin: 6px 28px 8px;
   padding: 3px;
   flex-wrap: wrap;
-  background: #ECECEE;
+  background: var(--border);
   border-radius: 999px;
 }
 .cr-year-tab {
@@ -975,7 +975,7 @@
   transition: background 0.15s ease, color 0.15s ease;
 }
 .cr-year-tab:hover:not(.active) { color: var(--text); }
-.cr-year-tab.active { background: #fff; color: var(--text); box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+.cr-year-tab.active { background: #fff; color: var(--text); box-shadow: var(--shadow-card); }
 .cr-year-cnt { font-weight: 400; opacity: 0.65; margin-left: 2px; }
 
 .cr-nonfinish {
@@ -1330,7 +1330,7 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   padding: 4px 10px;
-  border-radius: 20px;
+  border-radius: var(--radius-card);
   cursor: pointer;
   transition: background 0.15s, color 0.15s, border-color 0.15s;
   font-family: inherit;

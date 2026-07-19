@@ -3,24 +3,24 @@
    Imports all partial CSS files in dependency order.
    ============================================================ */
 
-@import "base.css?v=50";
-@import "navbar.css?v=63";
-@import "home.css?v=158";
-@import "articles.css?v=11";
-@import "rankings.css?v=101";
-@import "athletes.css?v=30";
-@import "modals.css?v=21";
-@import "about.css?v=6";
-@import "h2h.css?v=46";
-@import "account.css?v=10";
-@import "event-tracker.css?v=13";
-@import "time-machine.css?v=12";
-@import "country.css?v=5";
-@import "athlete.css?v=8";
-@import "filters.css?v=5";
-@import "metrics.css?v=10";
-@import "utilities.css?v=6";
-@import "responsive.css?v=2";
+@import "base.css?v=52";
+@import "navbar.css?v=64";
+@import "home.css?v=160";
+@import "articles.css?v=12";
+@import "rankings.css?v=102";
+@import "athletes.css?v=31";
+@import "modals.css?v=22";
+@import "about.css?v=7";
+@import "h2h.css?v=47";
+@import "account.css?v=11";
+@import "event-tracker.css?v=14";
+@import "time-machine.css?v=13";
+@import "country.css?v=6";
+@import "athlete.css?v=9";
+@import "filters.css?v=6";
+@import "metrics.css?v=11";
+@import "utilities.css?v=7";
+@import "responsive.css?v=3";
 
 /* Override with fresh values — force-busts import cache */
 :root {

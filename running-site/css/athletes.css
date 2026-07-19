@@ -39,7 +39,7 @@
   display: inline-flex;
   align-items: center;
   gap: 2px;
-  background: #ECECEE;
+  background: var(--border);
   border-radius: 999px;
   padding: 3px;
   margin-left: 6px;
@@ -58,13 +58,13 @@
   transition: background 0.15s ease, color 0.15s ease;
 }
 .ath-view-btn:hover:not(.active) { color: var(--text); }
-.ath-view-btn.active { background: #fff; color: var(--text); box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+.ath-view-btn.active { background: #fff; color: var(--text); box-shadow: var(--shadow-card); }
 
 .ath-page-sort-toggle {
   display: inline-flex;
   align-items: center;
   gap: 2px;
-  background: #ECECEE;
+  background: var(--border);
   border: none;
   border-radius: 999px;
   padding: 3px;
@@ -86,7 +86,7 @@
   white-space: nowrap;
 }
 .ath-page-sort:hover:not(.active) { color: var(--text); }
-.ath-page-sort.active { background: #fff; color: var(--text); box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+.ath-page-sort.active { background: #fff; color: var(--text); box-shadow: var(--shadow-card); }
 
 
 /* ── FILTER BAR ───────────────────────────────────────────── */
@@ -413,7 +413,7 @@
   font-weight: 600;
   letter-spacing: 0.02em;
   padding: 4px 10px;
-  border-radius: 20px;
+  border-radius: var(--radius-card);
   border: 1px solid var(--border);
   background: transparent;
   color: var(--muted);
@@ -729,7 +729,7 @@ th.ath-list-pr {
   font-weight: 600;
   letter-spacing: 0.02em;
   padding: 4px 10px;
-  border-radius: 20px;
+  border-radius: var(--radius-card);
   border: 1px solid var(--border);
   background: transparent;
   color: var(--muted);
@@ -768,7 +768,7 @@ th.ath-list-pr {
   letter-spacing: 0.03em;
   text-transform: none;
   padding: 4px 10px;
-  border-radius: 20px;
+  border-radius: var(--radius-card);
   cursor: pointer;
   flex-shrink: 0;
   transition: color 0.15s, border-color 0.15s;

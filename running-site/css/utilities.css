@@ -36,7 +36,7 @@
 
 /* pills row */
 .skel-pills-row { display: flex; gap: 10px; padding: 14px 0; }
-.skel-pill      { height: 28px; width: 150px; border-radius: 20px; flex-shrink: 0; }
+.skel-pill      { height: 28px; width: 150px; border-radius: var(--radius-card); flex-shrink: 0; }
 
 /* hero */
 .skel-hero-wrap { margin: 4px 24px 28px; border-radius: var(--radius-lg); overflow: hidden; }

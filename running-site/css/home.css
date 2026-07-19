@@ -625,9 +625,23 @@
    Sofascore-style homepage (.sf) — hero header + 3-column layout
    ══════════════════════════════════════════════════════════════ */
 .sf {
-  max-width: 940px; /* condensed to a Sofascore stats-panel width */
+  max-width: 1240px; /* room for the two-column Sofascore layout */
   margin: 0;
   padding: 12px 24px 60px;
+}
+/* Two-column layout: narrow left rail (small widgets) + wide right column */
+.sf-layout {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+.sf-col-left { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.sf-col-right { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.sf-col-left .sf-promos { grid-template-columns: 1fr; margin-top: 0; }
+.sf-col-right .sf-pgroup, .sf-col-right .sf-tools-sec { margin-top: 0; }
+@media (max-width: 900px) {
+  .sf-layout { grid-template-columns: 1fr; }
 }
 .sf-crumbs {
   display: flex;
@@ -926,7 +940,7 @@
 .sf-hero {
   background: #fff;
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: var(--radius-card);
   padding: 14px 18px;
   display: flex;
   align-items: center;
@@ -1754,7 +1768,7 @@
   height: 42px;
   display: grid;
   place-items: center;
-  border-radius: 11px;
+  border-radius: var(--radius-btn);
   background: color-mix(in srgb, var(--brand) 10%, #fff);
   color: var(--brand);
 }
@@ -1970,7 +1984,7 @@
 }
 .fp-rank-tabs {
   display: flex;
-  background: #ECECEE;
+  background: var(--border);
   border-radius: 999px;
   padding: 3px;
   gap: 2px;
@@ -1992,7 +2006,7 @@
 .fp-rank-tab.active {
   color: var(--text);
   background: #fff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  box-shadow: var(--shadow-card);
   opacity: 1;
 }
 .fp-rank-more {

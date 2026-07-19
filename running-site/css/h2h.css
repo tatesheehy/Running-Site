@@ -247,7 +247,7 @@
 
 .h2h-seg {
   display: inline-flex;
-  background: #ECECEE;
+  background: var(--border);
   border-radius: 999px;
   padding: 3px;
   gap: 2px;
@@ -275,7 +275,7 @@
 .h2h-seg-btn.active {
   background: #fff;
   color: var(--text);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  box-shadow: var(--shadow-card);
   font-weight: 700;
 }
 

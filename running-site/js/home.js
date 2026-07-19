@@ -587,27 +587,25 @@ function buildHome() {
           <span class="sf-crumb-sep">›</span>
           <span class="sf-crumb-cur">2026 Season</span>
         </nav>
-        <div class="sf-hero-row">
-          ${_sfHeroMatchup()}
-          <div class="sf-hero-stack">
+        <div class="sf-layout">
+          <aside class="sf-col-left">
             ${_sfNextMeetCountdown()}
-          </div>
-        </div>
-        <div class="sf-pgroup">
-          <main class="sf-center">
-            ${_sfCenterCard(_sfEvent)}
+            ${_sfMeetsCard()}
+            ${_sfBarrierCard()}
+            ${_sfPromosSection()}
+          </aside>
+          <main class="sf-col-right">
+            ${_sfHeroMatchup()}
+            <div class="sf-pgroup">
+              ${_sfCenterCard(_sfEvent)}
+              <div class="sf-bottom-row sf-bottom-row--2">
+                ${_sfRecentCard()}
+                ${_sfMostWinsCard()}
+              </div>
+            </div>
+            ${_sfToolsSection()}
           </main>
-          <div class="sf-bottom-row sf-bottom-row--2">
-            ${_sfRecentCard()}
-            ${_sfMostWinsCard()}
-          </div>
         </div>
-        <div class="sf-bottom-row sf-bottom-row--2">
-          ${_sfBarrierCard()}
-          ${_sfMeetsCard()}
-        </div>
-        ${_sfPromosSection()}
-        ${_sfToolsSection()}
       </div>
     </div>`;
 }

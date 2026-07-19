@@ -391,7 +391,7 @@
   font-size: 13px;
   font-weight: 600;
   padding: 6px 14px;
-  border-radius: 20px;
+  border-radius: var(--radius-card);
   white-space: nowrap;
 }
 
