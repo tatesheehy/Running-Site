@@ -610,12 +610,13 @@
 /* ── Left-aligned header, centered search ────────────────── */
 .navbar-util {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: auto 1fr auto; /* spacer | wide search | icons */
+  gap: 24px;
   align-items: center;
-  margin: 0;                 /* content column pinned left */
+  margin: 0;
 }
 .navbar-util-left { display: flex; }   /* empty spacer (logo removed) */
-.navbar-util .navbar-search { width: 100%; max-width: 720px; justify-self: center; }
+.navbar-util .navbar-search { width: 100%; max-width: 1000px; justify-self: stretch; }
 .navbar-util-right { justify-self: end; margin-left: 0; }
 .navlinks { margin: 0; justify-content: flex-start; }
 
