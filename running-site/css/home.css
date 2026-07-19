@@ -1031,7 +1031,6 @@
   gap: 2px;
   padding: 0 8px;
   border-bottom: 1px solid var(--border);
-  overflow-x: auto;
 }
 .sf-tab {
   flex: 1;

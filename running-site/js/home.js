@@ -1171,7 +1171,6 @@ function _sfH2HLeaders(event) {
     .sort((a, b) => (typeof _wilsonScore === 'function'
       ? _wilsonScore(b[1].wins, b[1].wins + b[1].losses) - _wilsonScore(a[1].wins, a[1].wins + a[1].losses)
       : 0) || b[1].wins - a[1].wins)
-    .slice(0, 12)
     .map(([id, r]) => ({ id, a: ATHLETES[id], wins: r.wins, losses: r.losses }))
     .filter(x => x.a);
 }
