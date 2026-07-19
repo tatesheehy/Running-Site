@@ -615,7 +615,7 @@
   margin: 0;                 /* content column pinned left */
 }
 .navbar-util-left { display: flex; }   /* empty spacer (logo removed) */
-.navbar-util .navbar-search { width: 100%; max-width: 360px; justify-self: center; }
+.navbar-util .navbar-search { width: 100%; max-width: 720px; justify-self: center; }
 .navbar-util-right { justify-self: end; margin-left: 0; }
 .navlinks { margin: 0; justify-content: flex-start; }
 
