@@ -625,7 +625,7 @@
    Sofascore-style homepage (.sf) — hero header + 3-column layout
    ══════════════════════════════════════════════════════════════ */
 .sf {
-  max-width: var(--max-width);
+  max-width: 940px; /* condensed to a Sofascore stats-panel width */
   margin: 0;
   padding: 12px 24px 60px;
 }
