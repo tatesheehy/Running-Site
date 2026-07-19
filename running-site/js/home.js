@@ -575,7 +575,7 @@ function buildHome() {
 
   // ── Sofascore-style homepage: hero header + 3-column layout ─
   const evs = _sfEventList();
-  _sfEvent = evs.includes('1500m') ? '1500m' : evs[0];
+  _sfEvent = evs.includes('800m') ? '800m' : evs[0];
   _sfTab = 'leaders';
   document.getElementById('main').innerHTML = `
     <div class="fp-wrap">
@@ -593,16 +593,16 @@ function buildHome() {
             ${_sfNextMeetCountdown()}
           </div>
         </div>
-        <div class="sf-main-row">
+        <div class="sf-pgroup">
           <main class="sf-center">
             ${_sfCenterCard(_sfEvent)}
           </main>
-          <aside class="sf-side sf-side--r">
+          <div class="sf-bottom-row sf-bottom-row--2">
             ${_sfRecentCard()}
-          </aside>
+            ${_sfMostWinsCard()}
+          </div>
         </div>
-        <div class="sf-bottom-row">
-          ${_sfMostWinsCard()}
+        <div class="sf-bottom-row sf-bottom-row--2">
           ${_sfBarrierCard()}
           ${_sfMeetsCard()}
         </div>
@@ -729,16 +729,18 @@ window.shuffleHomeRivalry = function () {
 // ══════════════════════════════════════════════════════════════
 //  Sofascore-style homepage builders (.sf)
 // ══════════════════════════════════════════════════════════════
-let _sfEvent = '1500m';
+let _sfEvent = '800m';
 let _sfTab = 'leaders';
 let _sfLeadPage = 0;
 let _sfH2HPage = 0;
 
 function _sfEventList() {
+  const order = ['800m', '1500m', '5000m', '10000m'];
   const ks = Object.keys(RANKINGS || {});
-  return ks.length ? ks : ['1500m', '800m', '5000m', '10000m', 'Mile'];
+  const avail = ks.length ? order.filter(e => ks.includes(e)) : order;
+  return avail.length ? avail : order;
 }
-function _sfEvShort(ev) { return ({ '5000m': '5K', '10000m': '10K' })[ev] || ev; }
+function _sfEvShort(ev) { return ev; }
 function _sfAva(a) {
   return `<span class="sf-ava sf-ava--flag">${renderFlag(a.flag)}</span>`;
 }

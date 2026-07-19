@@ -782,8 +782,9 @@
   justify-content: space-between;
   gap: 8px;
   margin: -16px -16px 12px;
-  padding: 9px 16px;
-  background: #F7F8FA;
+  min-height: 44px;               /* fixed height so header strips line up across columns */
+  padding: 4px 16px;
+  background: #fff;
   border-bottom: 1px solid var(--border);
   font-family: var(--font-display);
   font-size: 13px;
@@ -882,6 +883,8 @@
   margin-top: 16px;
   align-items: start;
 }
+.sf-bottom-row--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.sf-center { margin-bottom: 0; }
 .sf-side { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
 .sf-center { min-width: 0; }
 
@@ -891,6 +894,51 @@
 }
 @media (max-width: 620px) {
   .sf-bottom-row { grid-template-columns: 1fr; }
+}
+
+/* Connect the bottom trio into one panel with internal dividers
+   (Sofascore "Top players | Top stats" style) — desktop only */
+@media (min-width: 981px) {
+  .sf-bottom-row {
+    gap: 0;
+    align-items: stretch;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+  }
+  .sf-bottom-row > .sf-card {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-left: 1px solid var(--border);
+  }
+  .sf-bottom-row > .sf-card:first-child { border-left: none; }
+  .sf-bottom-row > .sf-card:hover { transform: none; box-shadow: none; }
+
+  /* Connect the leaders table to the Recent | Most-wins panel below it
+     into one continuous box (no seam) */
+  .sf-pgroup {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+  }
+  .sf-pgroup > .sf-center > .sf-main {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .sf-pgroup > .sf-center > .sf-main:hover { transform: none; box-shadow: none; }
+  .sf-pgroup > .sf-bottom-row {
+    margin-top: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-top: 1px solid var(--border); /* horizontal seam between table and panel */
+  }
 }
 
 /* ── Featured rivalry (left) ── */
@@ -941,8 +989,8 @@
   transition: background 0.12s;
 }
 .sf-meet-row:hover { background: var(--bg-light); }
-.sf-meet-date { font-size: 11.5px; font-weight: 600; color: var(--brand); min-width: 42px; }
-.sf-meet-name { font-size: 13px; font-weight: 500; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sf-meet-date { font-size: 11.5px; font-weight: 500; color: var(--brand); min-width: 42px; }
+.sf-meet-name { font-size: 13px; font-weight: 400; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .sf-meet-when { font-size: 11.5px; color: var(--muted); }
 
 /* Tools section — full-width row of tool cards with live examples */
@@ -1024,11 +1072,11 @@
   transition: background 0.12s;
 }
 .sf-bar-row:hover { background: var(--bg-light); }
-.sf-bar-lbl { font-size: 12.5px; font-weight: 600; color: var(--text); white-space: nowrap; }
+.sf-bar-lbl { font-size: 12.5px; font-weight: 500; color: var(--text); white-space: nowrap; }
 .sf-bar-ev { font-size: 11px; font-weight: 500; color: var(--muted); margin-left: 5px; }
 .sf-bar-track { height: 6px; border-radius: 3px; background: var(--bg-light); overflow: hidden; }
 .sf-bar-fill { display: block; height: 100%; border-radius: 3px; background: var(--brand); }
-.sf-bar-n { font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: var(--brand); min-width: 22px; text-align: right; }
+.sf-bar-n { font-family: var(--font-mono); font-size: 13px; font-weight: 400; color: var(--brand); min-width: 22px; text-align: right; }
 
 /* ── Center: tabbed main card ── */
 .sf-main { padding: 0; overflow: hidden; }
@@ -1091,7 +1139,7 @@
   transition: background 0.12s;
 }
 .sf-row:hover { background: var(--bg-light); }
-.sf-rank-n { width: 16px; text-align: center; font-size: 12px; font-weight: 600; color: var(--muted); flex-shrink: 0; }
+.sf-rank-n { width: 16px; text-align: center; font-size: 12px; font-weight: 500; color: var(--muted); flex-shrink: 0; }
 .sf-rank-n--1 { color: var(--brand); }
 .sf-ava {
   width: 28px; height: 28px;
@@ -1124,12 +1172,12 @@
 }
 .sf-ava--flag .flag-icon svg { width: 100%; height: 100%; display: block; }
 .sf-row-id { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 0; }
-.sf-row-name { font-size: 13px; font-weight: 600; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sf-row-name { font-size: 13px; font-weight: 400; color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .sf-row-sub { font-size: 11px; color: var(--muted); display: flex; align-items: center; gap: 5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .sf-chip {
   flex-shrink: 0;
   font-family: var(--font-mono);
-  font-size: 13px; font-weight: 700;
+  font-size: 13px; font-weight: 400;
   color: var(--brand);
   font-variant-numeric: tabular-nums;
 }
