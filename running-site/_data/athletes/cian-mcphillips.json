@@ -78,6 +78,14 @@
   ],
   "results": [
     {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "800 m",
+      "time": "1:43.97",
+      "place": "7.",
+      "round": "F"
+    },
+    {
       "date": "JUL 14",
       "meet": "Gyulai István Memorial - Hungarian Athletics Grand Prix",
       "event": "800 m",
@@ -102,7 +110,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-17",
+  "lastSynced": "2026-07-19",
   "resultsHistory": {
     "2018": [
       {

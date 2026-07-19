@@ -32,7 +32,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-17",
+  "lastSynced": "2026-07-19",
   "prs": [
     {
       "event": "800m",
@@ -74,6 +74,22 @@
   "club": null,
   "country": "Great Britain & N.I.",
   "results": [
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "1500 m",
+      "time": "3:32.94",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "Mile",
+      "time": "3:49.33",
+      "place": "8.",
+      "round": "F"
+    },
     {
       "date": "JUL 11",
       "meet": "Moore-Guldensporenmeeting",

@@ -82,6 +82,14 @@
   ],
   "results": [
     {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "800 m",
+      "time": "1:42.97",
+      "place": "2.",
+      "round": "F"
+    },
+    {
       "date": "JUN 26",
       "meet": "76. Boris Hanžeković Memorial",
       "event": "800 m",
@@ -178,7 +186,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-17",
+  "lastSynced": "2026-07-19",
   "resultsHistory": {
     "2018": [
       {

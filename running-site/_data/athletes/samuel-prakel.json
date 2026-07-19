@@ -12,7 +12,7 @@
   "flag": "US",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-17",
+  "lastSynced": "2026-07-19",
   "prs": [
     {
       "event": "800m",
@@ -90,6 +90,22 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "1500 m",
+      "time": "3:33.78",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "Mile",
+      "time": "3:49.63",
+      "place": "9.",
+      "round": "F"
+    },
     {
       "date": "JUL 10",
       "meet": "Morton Games",

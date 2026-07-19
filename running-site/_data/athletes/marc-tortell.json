@@ -10,7 +10,7 @@
   "flag": "DE",
   "honours": [],
   "seasons": null,
-  "lastSynced": "2026-07-17",
+  "lastSynced": "2026-07-19",
   "prs": [
     {
       "event": "600 Metres",
@@ -76,6 +76,14 @@
   "club": null,
   "country": "Germany",
   "results": [
+    {
+      "date": "JUL 18",
+      "meet": "Night of Athletics",
+      "event": "1500 m",
+      "time": "3:35.77",
+      "place": "8.",
+      "round": "F1"
+    },
     {
       "date": "JUL 8",
       "meet": "Meeting Lignano",

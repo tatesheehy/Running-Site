@@ -10,7 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "0",
-  "lastSynced": "2026-07-17",
+  "lastSynced": "2026-07-19",
   "prs": [
     {
       "event": "800m",
@@ -68,6 +68,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "Mile",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
     {
       "date": "JUN 12",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
@@ -240,7 +248,7 @@
   "dob": "2005-06-23",
   "college": "Oregon",
   "weight": "145",
-  "lastHistorySynced": "2026-07-16",
+  "lastHistorySynced": "2026-07-18",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

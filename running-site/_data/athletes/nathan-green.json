@@ -9,7 +9,7 @@
   "waUrl": "https://worldathletics.org/athletes/united-states/nathan-green-15021942",
   "name": "Nathan Green",
   "flag": "US",
-  "lastSynced": "2026-07-17",
+  "lastSynced": "2026-07-19",
   "prs": [
     {
       "event": "800m",
@@ -61,6 +61,22 @@
   "ncaa": false,
   "country": "United States",
   "results": [
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "1500 m",
+      "time": "3:32.94",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "Mile",
+      "time": "3:48.05",
+      "place": "5.",
+      "round": "F"
+    },
     {
       "date": "JUN 26",
       "meet": "76. Boris Hanžeković Memorial",
@@ -152,7 +168,7 @@
   ],
   "dob": "2003-04-10",
   "college": "Washington",
-  "lastHistorySynced": "2026-07-16",
+  "lastHistorySynced": "2026-07-18",
   "event": "MIDDLE DISTANCE",
   "id": "nathan-green",
   "resultsHistory": {

@@ -95,7 +95,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-17",
+  "lastSynced": "2026-07-19",
   "prs": [
     {
       "event": "800m",
@@ -161,6 +161,14 @@
   "club": null,
   "country": "Norway",
   "results": [
+    {
+      "date": "JUL 18",
+      "meet": "Night of Athletics",
+      "event": "5000 m",
+      "time": "13:13.84",
+      "place": "4.",
+      "round": "F1"
+    },
     {
       "date": "JUL 14",
       "meet": "Gyulai István Memorial - Hungarian Athletics Grand Prix",

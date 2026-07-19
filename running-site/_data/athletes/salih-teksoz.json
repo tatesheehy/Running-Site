@@ -102,7 +102,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-17",
+  "lastSynced": "2026-07-19",
   "prs": [
     {
       "event": "600 Metres",
@@ -172,6 +172,14 @@
   "club": null,
   "country": "Türkiye",
   "results": [
+    {
+      "date": "JUL 18",
+      "meet": "Night of Athletics",
+      "event": "1500 m",
+      "time": "3:34.56",
+      "place": "1.",
+      "round": "F2"
+    },
     {
       "date": "JUL 11",
       "meet": "81. Cezmi Or Cup",
@@ -303,7 +311,7 @@
   ],
   "dob": "01 JAN 1994",
   "weight": null,
-  "lastHistorySynced": "2026-07-16",
+  "lastHistorySynced": "2026-07-18",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

@@ -86,6 +86,14 @@
   ],
   "results": [
     {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "Mile",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
+    {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
       "event": "3000 m",
@@ -134,7 +142,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-17",
+  "lastSynced": "2026-07-19",
   "resultsHistory": {
     "2018": [
       {
