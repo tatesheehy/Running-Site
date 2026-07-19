@@ -1064,7 +1064,7 @@
 .sf-pill:hover { background: #ECEDF0; }
 .sf-pill.active { background: var(--dark); color: #fff; }
 .sf-pill.active:hover { background: var(--dark); }
-.sf-main-body { padding: 0 6px 8px; overflow-x: auto; }
+.sf-main-body { padding: 0 0 8px; overflow-x: auto; }
 .sf-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
 .sf-col { min-width: 0; }
 .sf-col-hd {
@@ -1138,8 +1138,8 @@
 .sf-table--h2h .sf-table-row   { grid-template-columns: 34px 40px minmax(90px, 1fr) 52px 52px 64px 60px; gap: 8px; }
 .sf-thead {
   padding: 8px 10px 7px;
-  font-size: 11px; font-weight: 600; letter-spacing: 0.01em; text-transform: none;
-  color: var(--muted);
+  font-size: 11px; font-weight: 700; letter-spacing: 0.01em; text-transform: none;
+  color: #3D4148;
   border-bottom: 1px solid var(--border);
   position: sticky; top: 0; background: #fff; z-index: 1;
 }
