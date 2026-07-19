@@ -1138,10 +1138,10 @@
 .sf-table--h2h .sf-table-row   { grid-template-columns: 34px 40px minmax(90px, 1fr) 52px 52px 64px 60px; gap: 8px; }
 .sf-thead {
   padding: 8px 10px 7px;
-  font-size: 11px; font-weight: 600; letter-spacing: 0.01em; text-transform: none;
-  color: #8A8F98;
+  font-size: 11px; font-weight: 500; letter-spacing: 0.01em; text-transform: none;
+  color: #6B7078;
   border-bottom: 1px solid var(--border);
-  position: sticky; top: 0; background: #fff; z-index: 1;
+  position: sticky; top: 0; background: #F7F8FA; z-index: 1;
 }
 .sf-th-c { display: flex; flex-direction: column; align-items: flex-end; line-height: 1.15; }
 .sf-th-hash { text-align: center; }
@@ -1185,6 +1185,12 @@
 
 /* ── Shared grid tables (Season Leaders + H2H Leaders):
    subtle single-weight column dividers, full row height ── */
+/* Thin grey rules above the header and below the last row */
+.sf-gcols .sf-thead { border-top: 1px solid var(--border); }
+.sf-gcols { border-bottom: 1px solid var(--border); }
+/* Name + SB share the same weight as the other stat columns */
+.sf-gcols .sf-tc-name { font-weight: 400; }
+.sf-gcols .sf-chip { font-weight: 400; }
 .sf-gcols .sf-thead, .sf-gcols .sf-trow { align-items: stretch; }
 .sf-gcols .sf-trow > span { display: flex; align-items: center; }
 .sf-gcols .sf-tc-rank { justify-content: center; }
