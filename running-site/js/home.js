@@ -1069,19 +1069,33 @@ function _sfMiniRow(a, chip, rank, chipCls) {
 }
 
 // Most season wins (1st-place finishes across all events).
+let _sfWinsPage = 0;
 function _sfMostWinsCard() {
-  const list = Object.values(ATHLETES).map(a => {
-    let w = 0;
-    (a.results || []).forEach(r => { if (parseInt(r.place) === 1 && parseTimeToSecs(r.time) != null) w++; });
-    return { a, w };
-  }).filter(x => x.w > 0).sort((x, y) => y.w - x.w).slice(0, 8);
-  const rows = list.map((x, i) => _sfMiniRow(x.a, x.w, i + 1)).join('');
   return `
     <div class="sf-card">
       <div class="sf-card-hd"><span>Most wins · 2026</span></div>
-      ${rows ? `<div class="sf-rank">${rows}</div>` : '<p class="sf-empty">No wins recorded.</p>'}
+      <div id="sf-wins-body">${_sfMostWinsBody()}</div>
     </div>`;
 }
+function _sfMostWinsBody() {
+  const PAGE = 8;
+  const all = Object.values(ATHLETES).map(a => {
+    let w = 0;
+    (a.results || []).forEach(r => { if (parseInt(r.place) === 1 && parseTimeToSecs(r.time) != null) w++; });
+    return { a, w };
+  }).filter(x => x.w > 0).sort((x, y) => y.w - x.w);
+  if (!all.length) return '<p class="sf-empty">No wins recorded.</p>';
+  const pages = Math.ceil(all.length / PAGE);
+  if (_sfWinsPage >= pages) _sfWinsPage = 0;
+  const start = _sfWinsPage * PAGE;
+  const rows = all.slice(start, start + PAGE).map((x, i) => _sfMiniRow(x.a, x.w, start + i + 1)).join('');
+  return `<div class="sf-rank">${rows}</div>${_sfPager(pages, _sfWinsPage, 'sfSetWinsPage')}`;
+}
+window.sfSetWinsPage = function (p) {
+  _sfWinsPage = p;
+  const b = document.getElementById('sf-wins-body');
+  if (b) b.innerHTML = _sfMostWinsBody();
+};
 
 // Barrier club — how many athletes hold a career PR under each classic mark.
 function _sfBarrierCard() {
@@ -1118,13 +1132,9 @@ function _sfBarrierCard() {
 }
 
 // Trending performances (recent standout marks), dense list.
-// Recent performances — filterable by distance, with a "see more" expander.
+// Recent performances — filterable by distance, paginated.
 let _sfRecentEv = 'all';
-let _sfRecentLimit = 8;
-function _sfRecentItems() {
-  return _buildTrendingPerformances(_sfRecentLimit, _sfRecentEv === 'all' ? null : _sfRecentEv);
-}
-function _sfRecentRowsHtml(items) {
+function _sfRecentRowsHtml(items, start = 0) {
   if (!items.length) return '<p class="sf-empty">Nothing recent for this distance.</p>';
   return items.map((c, i) => {
     const a = c.athlete, r = c.result;
@@ -1132,36 +1142,40 @@ function _sfRecentRowsHtml(items) {
       : c.isDominant ? '<span class="sf-badge sf-badge--win">W</span>' : '';
     return `
       <div class="sf-row" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
-        <span class="sf-rank-n">${i + 1}</span>
+        <span class="sf-rank-n">${start + i + 1}</span>
         ${_sfAva(a)}
         <div class="sf-row-id"><span class="sf-row-name">${a.name}</span><span class="sf-row-sub">${r.event.trim()} · ${r.meet}${r.date ? ` · ${r.date}` : ''}</span></div>
         <span class="sf-recent-end">${badge}<span class="sf-chip">${r.time}</span></span>
       </div>`;
   }).join('');
 }
+let _sfRecentPage = 0;
 function _sfRecentCard() {
   const opts = [['all', 'All distances'], ['800m', '800m'], ['1500m', '1500m'], ['mile', 'Mile'], ['3000m', '3000m'], ['5000m', '5000m'], ['10000m', '10,000m']]
     .map(([v, l]) => `<option value="${v}"${v === _sfRecentEv ? ' selected' : ''}>${l}</option>`).join('');
-  const items = _sfRecentItems();
-  const showMore = items.length >= _sfRecentLimit;
   return `
     <div class="sf-card">
       <div class="sf-card-hd"><span>Recent performances</span>
         <select class="sf-select" onchange="sfRecentSort(this.value)" aria-label="Filter by distance">${opts}</select>
       </div>
-      <div class="sf-rank" id="sf-recent-body">${_sfRecentRowsHtml(items)}</div>
-      <button class="sf-more" id="sf-recent-more" onclick="sfRecentMore()"${showMore ? '' : ' style="display:none"'}>See more</button>
+      <div id="sf-recent-body">${_sfRecentBody()}</div>
     </div>`;
 }
-function _sfRenderRecent() {
-  const items = _sfRecentItems();
-  const b = document.getElementById('sf-recent-body');
-  if (b) b.innerHTML = _sfRecentRowsHtml(items);
-  const btn = document.getElementById('sf-recent-more');
-  if (btn) btn.style.display = items.length >= _sfRecentLimit ? '' : 'none';
+function _sfRecentBody() {
+  const PAGE = 8;
+  const all = _buildTrendingPerformances(500, _sfRecentEv === 'all' ? null : _sfRecentEv);
+  const pages = Math.ceil(all.length / PAGE);
+  if (_sfRecentPage >= pages) _sfRecentPage = 0;
+  const start = _sfRecentPage * PAGE;
+  const items = all.slice(start, start + PAGE);
+  return `<div class="sf-rank">${_sfRecentRowsHtml(items, start)}</div>${_sfPager(pages, _sfRecentPage, 'sfSetRecentPage')}`;
 }
-window.sfRecentSort = function (ev) { _sfRecentEv = ev; _sfRecentLimit = 8; _sfRenderRecent(); };
-window.sfRecentMore = function () { _sfRecentLimit += 8; _sfRenderRecent(); };
+function _sfRenderRecent() {
+  const b = document.getElementById('sf-recent-body');
+  if (b) b.innerHTML = _sfRecentBody();
+}
+window.sfRecentSort = function (ev) { _sfRecentEv = ev; _sfRecentPage = 0; _sfRenderRecent(); };
+window.sfSetRecentPage = function (p) { _sfRecentPage = p; _sfRenderRecent(); };
 
 // ── Center: main tabbed card (like Sofascore Standings/Stats) ──
 function _sfH2HLeaders(event) {
