@@ -1070,21 +1070,27 @@ function _sfMiniRow(a, chip, rank, chipCls) {
 
 // Most season wins (1st-place finishes across all events).
 let _sfWinsPage = 0;
+let _sfWinsEv = 'all';
 function _sfMostWinsCard() {
   return `
     <div class="sf-card">
-      <div class="sf-card-hd"><span>Most wins · 2026</span></div>
+      <div class="sf-card-hd"><span>Most wins · 2026</span>
+        ${_sfDropdown('sf-wins-dd', _sfWinsEv, _sfDistOptions(), 'sfSetWinsEv')}
+      </div>
       <div id="sf-wins-body">${_sfMostWinsBody()}</div>
     </div>`;
 }
 function _sfMostWinsBody() {
   const PAGE = 8;
+  const k = _sfWinsEv === 'all' ? null : _normalizeEvent(_sfWinsEv);
   const all = Object.values(ATHLETES).map(a => {
     let w = 0;
-    (a.results || []).forEach(r => { if (parseInt(r.place) === 1 && parseTimeToSecs(r.time) != null) w++; });
+    (a.results || []).forEach(r => {
+      if (parseInt(r.place) === 1 && parseTimeToSecs(r.time) != null && (!k || _normalizeEvent(r.event) === k)) w++;
+    });
     return { a, w };
   }).filter(x => x.w > 0).sort((x, y) => y.w - x.w);
-  if (!all.length) return '<p class="sf-empty">No wins recorded.</p>';
+  if (!all.length) return '<p class="sf-empty">No wins recorded for this distance.</p>';
   const pages = Math.ceil(all.length / PAGE);
   if (_sfWinsPage >= pages) _sfWinsPage = 0;
   const start = _sfWinsPage * PAGE;
@@ -1093,6 +1099,11 @@ function _sfMostWinsBody() {
 }
 window.sfSetWinsPage = function (p) {
   _sfWinsPage = p;
+  const b = document.getElementById('sf-wins-body');
+  if (b) b.innerHTML = _sfMostWinsBody();
+};
+window.sfSetWinsEv = function (ev) {
+  _sfWinsEv = ev; _sfWinsPage = 0;
   const b = document.getElementById('sf-wins-body');
   if (b) b.innerHTML = _sfMostWinsBody();
 };
@@ -1131,6 +1142,51 @@ function _sfBarrierCard() {
     </div>`;
 }
 
+// ── Custom dropdown (styled to match the site, not a native <select>) ──
+function _sfDistOptions() {
+  return [['all', 'All distances'], ['800m', '800m'], ['1500m', '1500m'], ['mile', 'Mile'], ['3000m', '3000m'], ['5000m', '5000m'], ['10000m', '10,000m']];
+}
+function _sfDropdown(id, value, options, fn) {
+  const cur = options.find(o => o[0] === value) || options[0];
+  return `<div class="sf-dd" id="${id}" data-fn="${fn}">
+    <button type="button" class="sf-dd-btn" onclick="sfDdToggle('${id}')" aria-haspopup="listbox">
+      <span class="sf-dd-val">${cur[1]}</span><span class="sf-dd-caret">▾</span>
+    </button>
+    <div class="sf-dd-menu" role="listbox">
+      ${options.map(o => `<button type="button" class="sf-dd-opt${o[0] === value ? ' active' : ''}" data-val="${o[0]}" data-label="${o[1]}" onclick="sfDdPick('${id}','${o[0]}')">${o[1]}</button>`).join('')}
+    </div>
+  </div>`;
+}
+window.sfDdToggle = function (id) {
+  const dd = document.getElementById(id);
+  const willOpen = !dd.classList.contains('open');
+  document.querySelectorAll('.sf-dd.open').forEach(d => d.classList.remove('open'));
+  if (willOpen) {
+    dd.classList.add('open');
+    const menu = dd.querySelector('.sf-dd-menu');
+    const r = dd.querySelector('.sf-dd-btn').getBoundingClientRect();
+    menu.style.top = (r.bottom + 4) + 'px';
+    menu.style.right = (window.innerWidth - r.right) + 'px';
+    menu.style.left = 'auto';
+  }
+};
+window.sfDdPick = function (id, val) {
+  const dd = document.getElementById(id);
+  const opt = dd.querySelector(`.sf-dd-opt[data-val="${val}"]`);
+  dd.querySelector('.sf-dd-val').textContent = opt.dataset.label;
+  dd.querySelectorAll('.sf-dd-opt').forEach(o => o.classList.toggle('active', o.dataset.val === val));
+  dd.classList.remove('open');
+  const fn = dd.dataset.fn;
+  if (typeof window[fn] === 'function') window[fn](val);
+};
+if (!window._sfDdWired) {
+  window._sfDdWired = true;
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.sf-dd')) document.querySelectorAll('.sf-dd.open').forEach(d => d.classList.remove('open'));
+  });
+  window.addEventListener('scroll', () => document.querySelectorAll('.sf-dd.open').forEach(d => d.classList.remove('open')), true);
+}
+
 // Trending performances (recent standout marks), dense list.
 // Recent performances — filterable by distance, paginated.
 let _sfRecentEv = 'all';
@@ -1151,12 +1207,10 @@ function _sfRecentRowsHtml(items, start = 0) {
 }
 let _sfRecentPage = 0;
 function _sfRecentCard() {
-  const opts = [['all', 'All distances'], ['800m', '800m'], ['1500m', '1500m'], ['mile', 'Mile'], ['3000m', '3000m'], ['5000m', '5000m'], ['10000m', '10,000m']]
-    .map(([v, l]) => `<option value="${v}"${v === _sfRecentEv ? ' selected' : ''}>${l}</option>`).join('');
   return `
     <div class="sf-card">
       <div class="sf-card-hd"><span>Recent performances</span>
-        <select class="sf-select" onchange="sfRecentSort(this.value)" aria-label="Filter by distance">${opts}</select>
+        ${_sfDropdown('sf-recent-dd', _sfRecentEv, _sfDistOptions(), 'sfRecentSort')}
       </div>
       <div id="sf-recent-body">${_sfRecentBody()}</div>
     </div>`;

@@ -794,6 +794,46 @@
 }
 .sf-card-link { font-size: 13px; font-weight: 600; color: var(--brand); text-decoration: none; }
 .sf-card-link:hover { text-decoration: underline; }
+
+/* ── Custom dropdown (site-styled, replaces native <select>) ── */
+.sf-dd { position: relative; }
+.sf-dd-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-btn);
+  padding: 7px 12px;
+  font-family: var(--font-display);
+  font-size: 13px; font-weight: 600; color: var(--text);
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+}
+.sf-dd-btn:hover { background: #ECEDF0; }
+.sf-dd.open .sf-dd-btn { border-color: var(--orange); background: #fff; }
+.sf-dd-caret { font-size: 10px; color: var(--muted); transition: transform 0.15s, color 0.15s; }
+.sf-dd.open .sf-dd-caret { transform: rotate(180deg); color: var(--orange); }
+.sf-dd-menu {
+  position: fixed; z-index: 200; display: none;
+  min-width: 160px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-input);
+  box-shadow: var(--shadow-card-hover);
+  padding: 4px;
+  max-height: 280px; overflow-y: auto;
+}
+.sf-dd.open .sf-dd-menu { display: block; }
+.sf-dd-opt {
+  display: block; width: 100%; text-align: left;
+  background: none; border: none; border-radius: 8px;
+  padding: 8px 12px;
+  font-family: var(--font-display);
+  font-size: 13px; font-weight: 500; color: var(--text);
+  cursor: pointer; white-space: nowrap;
+  transition: background 0.12s;
+}
+.sf-dd-opt:hover { background: var(--bg-light); }
+.sf-dd-opt.active { color: var(--orange); font-weight: 700; }
 .sf-select {
   font-family: var(--font-display);
   font-size: 12px; font-weight: 600;
