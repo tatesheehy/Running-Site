@@ -1138,16 +1138,12 @@
 .sf-table--h2h .sf-table-row   { grid-template-columns: 34px 40px minmax(90px, 1fr) 52px 52px 64px 60px; gap: 8px; }
 .sf-thead {
   padding: 8px 10px 7px;
-  font-size: 11px; font-weight: 700; letter-spacing: 0.01em; text-transform: none;
-  color: #3D4148;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.01em; text-transform: none;
+  color: #8A8F98;
   border-bottom: 1px solid var(--border);
   position: sticky; top: 0; background: #fff; z-index: 1;
 }
-/* Header cell = stacked label + sort caret (Sofascore style) */
-.sf-th-c { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; line-height: 1.05; }
-.sf-th-cx { font-style: normal; font-size: 9px; color: var(--divider-strong); }
-.sf-th-c--active { color: var(--text); }
-.sf-th-c--active .sf-th-cx { color: var(--brand); }
+.sf-th-c { display: flex; flex-direction: column; align-items: flex-end; line-height: 1.15; }
 .sf-th-hash { text-align: center; }
 .sf-th-name { text-align: left; }
 .sf-trow {

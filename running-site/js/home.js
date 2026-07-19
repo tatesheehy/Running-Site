@@ -1261,14 +1261,12 @@ function _sfLeadersTable(event) {
   const start = _sfLeadPage * PAGE;
   const sb = all.slice(start, start + PAGE);
   const recs = _sfRecordsMap(event);
-  // Header cells carry a sort caret; SB is the active sort key.
-  const th = (lbl, active) =>
-    `<span class="sf-th-c${active ? ' sf-th-c--active' : ''}">${lbl}<i class="sf-th-cx">▾</i></span>`;
+  const th = lbl => `<span class="sf-th-c">${lbl}</span>`;
   const head = `<div class="sf-thead sf-table-row sf-table-row--lead">
     <span class="sf-th-hash">#</span>
     <span></span>
     <span class="sf-th-name">Name</span>
-    ${th('SB', true)}${th('PB')}${th('Races')}${th('1st')}${th('H2H')}
+    ${th('SB')}${th('PB')}${th('Races')}${th('1st')}${th('H2H')}
   </div>`;
   const rows = sb.map((r, i) => {
     const pb = _sfPbFor(r.a, event);
@@ -1347,13 +1345,12 @@ function _sfH2HTable(event) {
   if (_sfH2HPage >= pages) _sfH2HPage = 0;
   const start = _sfH2HPage * PAGE;
   const list = all.slice(start, start + PAGE);
-  const th = (lbl, active) =>
-    `<span class="sf-th-c${active ? ' sf-th-c--active' : ''}">${lbl}<i class="sf-th-cx">▾</i></span>`;
+  const th = lbl => `<span class="sf-th-c">${lbl}</span>`;
   const head = `<div class="sf-thead sf-table-row sf-table-row--h2h">
     <span class="sf-th-hash">#</span>
     <span></span>
     <span class="sf-th-name">Name</span>
-    ${th('W')}${th('L')}${th('Win%', true)}${th('Meets')}
+    ${th('W')}${th('L')}${th('Win%')}${th('Meets')}
   </div>`;
   const rows = list.map((r, i) => {
     const tot = r.wins + r.losses, pct = tot ? Math.round(r.wins / tot * 100) : 0;
