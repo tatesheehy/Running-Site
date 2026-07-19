@@ -590,7 +590,6 @@ function buildHome() {
         <div class="sf-hero-row">
           ${_sfHeroMatchup()}
           <div class="sf-hero-stack">
-            ${_sfSpotlight()}
             ${_sfNextMeetCountdown()}
           </div>
         </div>
@@ -843,53 +842,34 @@ function _sfHeroMatchup() {
   const leader = w > l ? short(A.name) : l > w ? short(B.name) : null;
   const recLbl = (leader ? `${leader} leads` : races ? 'all square' : 'first meeting')
     + (races ? ` · ${races} meeting${races === 1 ? '' : 's'}` : '');
-  const side = (a, cls) => `
-    <div class="sf-mu-side ${cls}" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
-      <span class="sf-mu-name">${a.name}</span>
-      <span class="sf-mu-ct"><span class="sf-mu-flag">${renderFlag(a.flag)}</span>${a.country || ''}</span>
-    </div>`;
-  // ── 4-metric comparison dashboard: PB · 2026 wins · Rank · Form ──
-  const fmtRank = r => (r ? `#${r}` : '—');
-  const formHtml = a => {
-    const chips = (typeof _sfFormFor === 'function' ? _sfFormFor(a, event) : []).slice(-3);
-    if (!chips.length) return '<span class="sf-mu-form-na">—</span>';
-    return chips.map(c => `<span class="sf-mu-fc sf-mu-fc--${c.cls}">${c.label || '·'}</span>`).join('');
-  };
+  // Photos are supplied via the featured-matchup config (photoA / photoB);
+  // NOT pulled from athlete data. Empty slot shows a plain grey box.
+  const photoA = cfg && cfg.photoA, photoB = cfg && cfg.photoB;
+  const photo = (p, side) =>
+    `<div class="sf-mu-photo sf-mu-photo--${side}${p ? '' : ' sf-mu-photo--ph'}">${p ? `<img src="${p}" alt="">` : ''}</div>`;
+
   const pbA = event ? _sfPbFor(A, event) : null, pbB = event ? _sfPbFor(B, event) : null;
-  const rkA = event ? _sfPbRank(A.id, event) : null, rkB = event ? _sfPbRank(B.id, event) : null;
-  const winA = _sfTotalWins(A), winB = _sfTotalWins(B);
-  const rows = [
-    { lbl: `${event || ''} PB`.trim(), a: pbA ? pbA.t : '—', b: pbB ? pbB.t : '—',
-      aw: pbA && pbB && pbA.s < pbB.s, bw: pbA && pbB && pbB.s < pbA.s, big: true },
-    { lbl: '2026 wins', a: String(winA), b: String(winB), aw: winA > winB, bw: winB > winA },
-    { lbl: 'Season rank', a: fmtRank(rkA), b: fmtRank(rkB),
-      aw: rkA && rkB && rkA < rkB, bw: rkA && rkB && rkB < rkA },
-    { lbl: 'Recent form', aHtml: formHtml(A), bHtml: formHtml(B), form: true }
-  ];
-  const cell = (r, side) => {
-    if (r.form) return `<span class="sf-mu-form sf-mu-form--${side}">${side === 'a' ? r.aHtml : r.bHtml}</span>`;
-    const win = side === 'a' ? r.aw : r.bw;
-    return `<span class="sf-mu-sv${side === 'b' ? ' sf-mu-sv--r' : ''}${win ? ' sf-mu-sv--win' : ''}${r.big ? ' sf-mu-sv--big' : ''}">${side === 'a' ? r.a : r.b}</span>`;
-  };
-  const stats = `<div class="sf-mu-stats">${rows.map(r => `
-    <div class="sf-mu-stat">
-      ${cell(r, 'a')}
-      <span class="sf-mu-slbl">${r.lbl}</span>
-      ${cell(r, 'b')}
-    </div>`).join('')}</div>`;
+  const sbA = event ? _sfSbFor(A, event) : null, sbB = event ? _sfSbFor(B, event) : null;
+  const pbSb = (pb, sb) => `PB ${pb ? pb.t : '—'} · SB ${sb ? sb.t : '—'}`;
+
+  const info = (a, side, pb, sb, rec) => `
+    <div class="sf-mu-side sf-mu-side--${side}" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
+      <span class="sf-mu-name">${a.name}</span>
+      <span class="sf-mu-sub">${pbSb(pb, sb)}</span>
+      <span class="sf-mu-sub">H2H ${rec}</span>
+    </div>`;
+
   return `
     <div class="sf-card sf-card--feature sf-matchup">
-      <div class="sf-mu-eyebrow"><span class="sf-mu-tag">${label}</span>${meet ? `<span class="sf-mu-meet">${meet}</span>` : ''}</div>
-      <div class="sf-mu-top">
-        ${side(A, 'sf-mu-side--a')}
-        <div class="sf-mu-score">
-          <span class="sf-mu-rec">${w}<em>–</em>${l}</span>
-          <span class="sf-mu-rec-lbl">${recLbl}</span>
-        </div>
-        ${side(B, 'sf-mu-side--b')}
+      <div class="sf-mu-photos">
+        ${photo(photoA, 'a')}
+        ${photo(photoB, 'b')}
       </div>
-      ${stats}
-      <a class="sf-mu-cta" href="h2h.html?a=${encodeURIComponent(A.id)}&b=${encodeURIComponent(B.id)}">See the full head-to-head →</a>
+      <div class="sf-mu-info">
+        ${info(A, 'a', pbA, sbA, `${w}–${l}`)}
+        ${info(B, 'b', pbB, sbB, `${l}–${w}`)}
+      </div>
+      <a class="sf-mu-cta" href="h2h.html?a=${encodeURIComponent(A.id)}&b=${encodeURIComponent(B.id)}">see H2H data</a>
     </div>`;
 }
 function _sfPbRank(id, event) {
@@ -1148,7 +1128,7 @@ function _sfRecentRowsHtml(items) {
       : c.isDominant ? '<span class="sf-badge sf-badge--win">W</span>' : '';
     return `
       <div class="sf-row" onclick="openAthleteCard('${a.id}',null)" role="button" tabindex="0">
-        <span class="sf-rank-n${i < 3 ? ' sf-medal sf-medal--' + (i + 1) : ''}">${i + 1}</span>
+        <span class="sf-rank-n">${i + 1}</span>
         ${_sfAva(a)}
         <div class="sf-row-id"><span class="sf-row-name">${a.name}</span><span class="sf-row-sub">${r.event.trim()} · ${r.meet}${r.date ? ` · ${r.date}` : ''}</span></div>
         <span class="sf-recent-end">${badge}<span class="sf-chip">${r.time}</span></span>
@@ -1285,7 +1265,7 @@ function _sfLeadersTable(event) {
       ? form.map(f => `<span class="sf-form sf-form--${f.cls}">${f.label}</span>`).join('')
       : '<span class="sf-form-none">—</span>';
     return `<div class="sf-trow sf-table-row sf-table-row--lead${i < 3 ? ' sf-trow--top' : ''}" onclick="openAthleteCard('${r.id}',null)" role="button" tabindex="0">
-      <span class="sf-tc-rank${i < 3 ? ' sf-medal sf-medal--' + (i + 1) : ''}">${i + 1}</span>
+      <span class="sf-tc-rank">${i + 1}</span>
       ${_sfAthCell(r.a)}
       <span class="sf-tc-sb"><span class="sf-chip">${r.time}</span></span>
       <span class="sf-tc-num">${pb ? pb.t : '—'}</span>
