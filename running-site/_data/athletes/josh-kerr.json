@@ -56,7 +56,7 @@
     }
   ],
   "seasons": "6",
-  "lastSynced": "2026-07-18",
+  "lastSynced": "2026-07-19",
   "prs": [
     {
       "event": "800m",
@@ -125,6 +125,22 @@
   "club": "Adidas",
   "country": "Scotland",
   "results": [
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "1500 m",
+      "time": "3:27.62",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "Mile",
+      "time": "3:42.66",
+      "place": "1.",
+      "round": "F"
+    },
     {
       "date": "JUN 14",
       "meet": "USATF LA Grand Prix",

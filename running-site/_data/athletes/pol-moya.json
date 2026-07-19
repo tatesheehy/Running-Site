@@ -32,7 +32,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-18",
+  "lastSynced": "2026-07-19",
   "prs": [
     {
       "event": "400m",
@@ -106,6 +106,14 @@
   "club": null,
   "country": "Andorra",
   "results": [
+    {
+      "date": "JUL 18",
+      "meet": "Night of Athletics",
+      "event": "1500 m",
+      "time": "3:35.59",
+      "place": "7.",
+      "round": "F1"
+    },
     {
       "date": "JUL 15",
       "meet": "Meeting International d'Athlétisme de la Province de Liège",
@@ -205,7 +213,7 @@
   ],
   "dob": "09 DEC 1996",
   "weight": null,
-  "lastHistorySynced": "2026-07-17",
+  "lastHistorySynced": "2026-07-18",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

@@ -53,7 +53,7 @@
     }
   ],
   "seasons": "x",
-  "lastSynced": "2026-07-18",
+  "lastSynced": "2026-07-19",
   "prs": [
     {
       "event": "800m",
@@ -75,6 +75,14 @@
   "club": "x",
   "country": "Kenya",
   "results": [
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "800 m",
+      "time": "1:43.31",
+      "place": "4.",
+      "round": "F"
+    },
     {
       "date": "JUL 10",
       "meet": "Meeting International d’Athlétisme Herculis EBS",
@@ -110,7 +118,7 @@
   ],
   "dob": "2004-08-01",
   "weight": "x",
-  "lastHistorySynced": "2026-07-17",
+  "lastHistorySynced": "2026-07-18",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

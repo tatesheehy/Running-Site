@@ -15,7 +15,7 @@
   "flag": "MA",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-18",
+  "lastSynced": "2026-07-19",
   "prs": [
     {
       "event": "800m",
@@ -69,6 +69,14 @@
   "club": "x",
   "country": "Morocco",
   "results": [
+    {
+      "date": "JUL 18",
+      "meet": "Night of Athletics",
+      "event": "1500 m",
+      "time": "3:33.78",
+      "place": "2.",
+      "round": "F1"
+    },
     {
       "date": "JUL 15",
       "meet": "Meeting International d'Athlétisme de la Province de Liège",
@@ -153,7 +161,7 @@
   "dob": "2001-01-07",
   "college": "Oklahoma State",
   "weight": "x",
-  "lastHistorySynced": "2026-07-17",
+  "lastHistorySynced": "2026-07-18",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

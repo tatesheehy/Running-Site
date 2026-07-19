@@ -12,7 +12,7 @@
   "flag": "GB",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-18",
+  "lastSynced": "2026-07-19",
   "prs": [
     {
       "event": "800m",
@@ -70,6 +70,22 @@
   "club": "x",
   "country": "Great Britain",
   "results": [
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "1500 m",
+      "time": "3:33.56",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "Mile",
+      "time": "3:51.09",
+      "place": "10.",
+      "round": "F"
+    },
     {
       "date": "JUL 16",
       "meet": "Meeting Madrid",

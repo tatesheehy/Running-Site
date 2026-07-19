@@ -12,7 +12,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-07-18",
+  "lastSynced": "2026-07-19",
   "prs": [
     {
       "event": "800m",
@@ -86,6 +86,22 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "1500 m",
+      "time": "3:33.15",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "Mile",
+      "time": "3:49.13",
+      "place": "7.",
+      "round": "F"
+    },
     {
       "date": "JUL 4",
       "meet": "Prefontaine Classic",
@@ -170,7 +186,7 @@
   "dob": "2002-10-19",
   "college": "North Carolina",
   "weight": "x",
-  "lastHistorySynced": "2026-07-17",
+  "lastHistorySynced": "2026-07-18",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",

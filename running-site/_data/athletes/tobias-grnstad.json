@@ -78,6 +78,14 @@
   ],
   "results": [
     {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "800 m",
+      "time": "1:44.58",
+      "place": "8.",
+      "round": "F"
+    },
+    {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
       "event": "800 m",
@@ -134,7 +142,7 @@
       "round": "F2"
     }
   ],
-  "lastSynced": "2026-07-18",
+  "lastSynced": "2026-07-19",
   "resultsHistory": {
     "2018": [
       {

@@ -46,7 +46,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-18",
+  "lastSynced": "2026-07-19",
   "prs": [
     {
       "event": "800m",
@@ -96,6 +96,22 @@
   "club": null,
   "country": "Great Britain & N.I.",
   "results": [
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "1500 m",
+      "time": "3:31.81",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "Mile",
+      "time": "3:46.73",
+      "place": "3.",
+      "round": "F"
+    },
     {
       "date": "JUL 3",
       "meet": "Meeting Stanislas Nancy",
@@ -147,7 +163,7 @@
   ],
   "dob": "26 APR 1999",
   "weight": null,
-  "lastHistorySynced": "2026-07-17",
+  "lastHistorySynced": "2026-07-18",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

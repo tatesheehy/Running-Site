@@ -5,7 +5,7 @@
   "name": "Robert Farken",
   "headlineKey": "",
   "flag": "DE",
-  "lastSynced": "2026-07-18",
+  "lastSynced": "2026-07-19",
   "prs": [
     {
       "event": "400m",
@@ -65,6 +65,22 @@
   "ncaa": false,
   "country": "Germany",
   "results": [
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "1500 m",
+      "time": "3:30.09",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUL 18",
+      "meet": "Novuna London Athletics Meet",
+      "event": "Mile",
+      "time": "3:46.82",
+      "place": "4.",
+      "round": "F"
+    },
     {
       "date": "JUL 4",
       "meet": "Prefontaine Classic",

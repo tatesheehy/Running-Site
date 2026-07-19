@@ -18,7 +18,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-18",
+  "lastSynced": "2026-07-19",
   "prs": [
     {
       "event": "400m",
@@ -88,6 +88,14 @@
   "club": null,
   "country": "Great Britain & N.I.",
   "results": [
+    {
+      "date": "JUL 18",
+      "meet": "Night of Athletics",
+      "event": "1500 m",
+      "time": "3:37.81",
+      "place": "5.",
+      "round": "F2"
+    },
     {
       "date": "JUL 11",
       "meet": "British Milers Club Grand Prix",
