@@ -1137,7 +1137,7 @@
 .sf-table--trend .sf-table-row { grid-template-columns: 22px minmax(128px, 1fr) 78px 64px minmax(120px, 1.2fr); }
 .sf-table--h2h .sf-table-row   { grid-template-columns: 34px 40px minmax(90px, 1fr) 52px 52px 64px 60px; gap: 8px; }
 .sf-thead {
-  padding: 12px 12px 10px;
+  padding: 8px 10px 7px;
   font-size: 11px; font-weight: 600; letter-spacing: 0.01em; text-transform: none;
   color: var(--muted);
   border-bottom: 1px solid var(--border);
@@ -1151,7 +1151,7 @@
 .sf-th-hash { text-align: center; }
 .sf-th-name { text-align: left; }
 .sf-trow {
-  padding: 12px 12px;
+  padding: 6px 10px;
   cursor: pointer;
   transition: background 0.15s ease;
   border-bottom: none;
@@ -1163,14 +1163,14 @@
 
 /* Circular country flag in its own column */
 .sf-tc-flag {
-  width: 28px; height: 28px; border-radius: 50%;
+  width: 24px; height: 24px; border-radius: 50%;
   overflow: hidden; display: flex; align-items: center; justify-content: center;
   background: var(--bg-light);
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08);
   justify-self: center;
 }
 .sf-tc-flag .flag-icon {
-  width: 42px; height: 28px; border-radius: 0; box-shadow: none; top: 0; flex-shrink: 0;
+  width: 36px; height: 24px; border-radius: 0; box-shadow: none; top: 0; flex-shrink: 0;
 }
 .sf-tc-flag .flag-icon svg { width: 100%; height: 100%; display: block; object-fit: cover; }
 
