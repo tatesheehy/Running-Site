@@ -586,20 +586,26 @@
    Premium light header — orange is an accent (active states,
    search icon), chrome is white/charcoal. No logo.
    ════════════════════════════════════════════════════════════ */
-.navbar { background: #fff; border-bottom: 1px solid var(--border); }
-.navbar-links { border-top: 1px solid var(--border); }
-.navlink-a { color: var(--muted); font-weight: 500; transition: color 0.2s ease, border-color 0.2s ease; }
-.navlink-a:hover { color: var(--text); }
-.navlink.active > .navlink-a { color: var(--brand); border-bottom-color: var(--brand); font-weight: 600; }
-.navbar-icon-btn { color: var(--muted); }
-.navbar-icon-btn:hover { background: var(--bg-light); color: var(--text); }
-.navbar-user-btn { background: #fff; border-color: var(--border); color: var(--muted); }
-.navbar-user-btn:hover { background: var(--bg-light); color: var(--text); }
-.navbar-user-btn.is-logged-in { color: var(--brand); }
-.nav-user-dot { background: var(--brand); }
-.hamburger span { background: var(--text); }
-.navbar-search { background: var(--bg-light); border-color: transparent; transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease; }
-.navbar-search:focus-within { background: #fff; border-color: var(--border); box-shadow: 0 0 0 3px rgba(255,82,0,0.10); }
+.navbar { background: var(--brand); border-bottom: 1px solid rgba(0,0,0,0.08); }
+.navbar-links { border-top: 1px solid rgba(255,255,255,0.18); }
+.navlink-a { color: rgba(255,255,255,0.82); font-weight: 500; transition: color 0.2s ease, border-color 0.2s ease; }
+.navlink-a:hover { color: #fff; }
+.navlink.active > .navlink-a { color: #fff; border-bottom-color: #fff; font-weight: 600; }
+.navbar-icon-btn { color: #fff; }
+.navbar-icon-btn:hover { background: rgba(255,255,255,0.16); color: #fff; }
+.navbar-user-btn { background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.35); color: #fff; }
+.navbar-user-btn:hover { background: rgba(255,255,255,0.25); color: #fff; }
+.navbar-user-btn.is-logged-in { color: #fff; }
+.nav-user-dot { background: #fff; }
+.hamburger span { background: #fff; }
+.navbar-search { background: rgba(255,255,255,0.18); border-color: transparent; transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease; }
+.navbar-search:focus-within { background: #fff; border-color: transparent; box-shadow: 0 0 0 3px rgba(255,255,255,0.35); }
+.navbar-search-icon { color: rgba(255,255,255,0.9); }
+.navbar-search:focus-within .navbar-search-icon { color: var(--brand); }
+.navbar-search input, .navbar-search-placeholder { color: #fff; }
+.navbar-search input::placeholder { color: rgba(255,255,255,0.75); }
+.navbar-search:focus-within input, .navbar-search:focus-within .navbar-search-placeholder { color: var(--text); }
+.navbar-search:focus-within input::placeholder { color: var(--muted); }
 
 /* ── Left-aligned header, centered search ────────────────── */
 .navbar-util {

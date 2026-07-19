@@ -101,7 +101,7 @@
   --font-body: 'Lota Grotesque', system-ui, -apple-system, sans-serif;
   --font-mono: 'Lota Grotesque', sans-serif;
   --max-width: 1200px;
-  --nav-h: 136px; /* ticker (38) + utility row (52) + nav-links row (46) */
+  --nav-h: 98px; /* utility row (52) + nav-links row (46) */
 }
 
 html { scroll-behavior: smooth; }

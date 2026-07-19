@@ -92,7 +92,6 @@ function buildNavbar() {
 
   return `
     <nav class="navbar" role="navigation" aria-label="Main navigation">
-      ${buildTickerHtml()}
       <div class="navbar-util">
         <div class="navbar-util-left">
           <a href="index.html" class="navbar-home" aria-label="Home"></a>
