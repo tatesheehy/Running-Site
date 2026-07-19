@@ -606,9 +606,46 @@ function buildHome() {
           ${_sfBarrierCard()}
           ${_sfMeetsCard()}
         </div>
+        ${_sfPromosSection()}
         ${_sfToolsSection()}
       </div>
     </div>`;
+}
+
+// ── Promo banners — dark gradient cards that link to tools.
+//    Configure via SITE.promos, or edit the defaults below. Drop your own
+//    graphic in by setting `image` to an image path (leave '' for a slot). ──
+function _sfPromos() {
+  if (typeof SITE !== 'undefined' && Array.isArray(SITE.promos) && SITE.promos.length) return SITE.promos;
+  return [
+    {
+      title: 'Time Machine', cta: 'Enter the Time Machine', href: 'time-machine.html',
+      subtitle: 'Rewind the clock and replay any season’s rankings and results.',
+      bg: 'linear-gradient(120deg, #241a12 0%, #7a3d10 55%, #1a1410 100%)', image: ''
+    },
+    {
+      title: 'Metrics Lab', cta: 'Open Metrics', href: 'metrics.html',
+      subtitle: 'Rate athletes on depth, dominance and consistency.',
+      bg: 'linear-gradient(120deg, #0f1416 0%, #123a3f 60%, #0f1416 100%)', image: ''
+    }
+  ];
+}
+function _sfPromoCard(p) {
+  const ext = /^https?:/.test(p.href || '');
+  const art = p.image ? `<img src="${p.image}" alt="">` : '';
+  return `
+    <a class="sf-promo" href="${p.href || '#'}"${ext ? ' target="_blank" rel="noopener"' : ''} style="background:${p.bg || '#1a1a1a'}">
+      <div class="sf-promo-body">
+        <div class="sf-promo-title">${p.title || ''}</div>
+        <div class="sf-promo-sub">${p.subtitle || ''}</div>
+        <span class="sf-promo-cta">${p.cta || 'Explore'}<span class="sf-promo-arrow">↗</span></span>
+      </div>
+      <div class="sf-promo-art${p.image ? '' : ' sf-promo-art--ph'}">${art}</div>
+    </a>`;
+}
+function _sfPromosSection() {
+  const cards = _sfPromos().map(_sfPromoCard).join('');
+  return cards ? `<div class="sf-promos">${cards}</div>` : '';
 }
 
 // ── Bold sports landing builders ────────────────────────────
@@ -1161,14 +1198,7 @@ window.sfDdToggle = function (id) {
   const dd = document.getElementById(id);
   const willOpen = !dd.classList.contains('open');
   document.querySelectorAll('.sf-dd.open').forEach(d => d.classList.remove('open'));
-  if (willOpen) {
-    dd.classList.add('open');
-    const menu = dd.querySelector('.sf-dd-menu');
-    const r = dd.querySelector('.sf-dd-btn').getBoundingClientRect();
-    menu.style.top = (r.bottom + 4) + 'px';
-    menu.style.right = (window.innerWidth - r.right) + 'px';
-    menu.style.left = 'auto';
-  }
+  if (willOpen) dd.classList.add('open');
 };
 window.sfDdPick = function (id, val) {
   const dd = document.getElementById(id);
@@ -1184,7 +1214,6 @@ if (!window._sfDdWired) {
   document.addEventListener('click', e => {
     if (!e.target.closest('.sf-dd')) document.querySelectorAll('.sf-dd.open').forEach(d => d.classList.remove('open'));
   });
-  window.addEventListener('scroll', () => document.querySelectorAll('.sf-dd.open').forEach(d => d.classList.remove('open')), true);
 }
 
 // Trending performances (recent standout marks), dense list.
