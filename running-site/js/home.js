@@ -577,6 +577,31 @@ function buildHome() {
   const evs = _sfEventList();
   _sfEvent = evs.includes('800m') ? '800m' : evs[0];
   _sfTab = 'leaders';
+  // Composite "leaders" block (table + connected Recent/Most-wins panel).
+  const _sfLeadersBlock = () => `
+    <div class="sf-pgroup">
+      ${_sfCenterCard(_sfEvent)}
+      <div class="sf-bottom-row sf-bottom-row--2">
+        ${_sfRecentCard()}
+        ${_sfMostWinsCard()}
+      </div>
+    </div>`;
+  // Section registry — the Studio reorders / hides these by id.
+  const SECTIONS = {
+    nextMeet: { label: 'Next meet', render: _sfNextMeetCountdown },
+    meets:    { label: 'Upcoming meets', render: _sfMeetsCard },
+    barrier:  { label: 'Barrier club', render: _sfBarrierCard },
+    promos:   { label: 'Promo banners', render: _sfPromosSection },
+    hero:     { label: 'H2H hero', render: _sfHeroMatchup },
+    leaders:  { label: 'Leaders + Recent / Most wins', render: _sfLeadersBlock },
+    tools:    { label: 'Tools', render: _sfToolsSection }
+  };
+  window.SF_SECTION_META = Object.fromEntries(Object.entries(SECTIONS).map(([k, v]) => [k, v.label]));
+  const defLayout = { left: ['nextMeet', 'meets', 'barrier', 'promos'], right: ['hero', 'leaders', 'tools'], hidden: [] };
+  const layout = (window.STUDIO && window.STUDIO.layout) || defLayout;
+  const hidden = layout.hidden || [];
+  const renderCol = ids => (ids || []).filter(id => SECTIONS[id] && !hidden.includes(id)).map(id => SECTIONS[id].render()).join('');
+
   document.getElementById('main').innerHTML = `
     <div class="fp-wrap">
       <div class="sf">
@@ -588,27 +613,13 @@ function buildHome() {
           <span class="sf-crumb-cur">2026 Season</span>
         </nav>
         <div class="sf-layout">
-          <aside class="sf-col-left">
-            ${_sfNextMeetCountdown()}
-            ${_sfMeetsCard()}
-            ${_sfBarrierCard()}
-            ${_sfPromosSection()}
-          </aside>
-          <main class="sf-col-right">
-            ${_sfHeroMatchup()}
-            <div class="sf-pgroup">
-              ${_sfCenterCard(_sfEvent)}
-              <div class="sf-bottom-row sf-bottom-row--2">
-                ${_sfRecentCard()}
-                ${_sfMostWinsCard()}
-              </div>
-            </div>
-            ${_sfToolsSection()}
-          </main>
+          <aside class="sf-col-left">${renderCol(layout.left)}</aside>
+          <main class="sf-col-right">${renderCol(layout.right)}</main>
         </div>
       </div>
     </div>`;
 }
+window.rebuildHome = buildHome;
 
 // ── Promo banners — dark gradient cards that link to tools.
 //    Configure via SITE.promos, or edit the defaults below. Drop your own
