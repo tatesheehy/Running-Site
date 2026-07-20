@@ -10,7 +10,7 @@
   "flag": "FR",
   "honours": [],
   "seasons": null,
-  "lastSynced": "2026-07-19",
+  "lastSynced": "2026-07-20",
   "prs": [
     {
       "event": "800m",
@@ -60,6 +60,22 @@
   "club": null,
   "country": "France",
   "results": [
+    {
+      "date": "JUL 18",
+      "meet": "French U23 Championships",
+      "event": "1500 m",
+      "time": "3:46.76",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 17",
+      "meet": "French U23 Championships",
+      "event": "1500 m",
+      "time": "3:48.67",
+      "place": "1.",
+      "round": "H2"
+    },
     {
       "date": "JUL 4",
       "meet": "Meeting National Est Lyonnais",
@@ -183,7 +199,7 @@
   ],
   "dob": "25 MAY 2004",
   "weight": null,
-  "lastHistorySynced": "2026-07-18",
+  "lastHistorySynced": "2026-07-19",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",
