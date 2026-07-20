@@ -225,3 +225,11 @@ body.studio-compact .page-hero { padding: 14px 18px; margin-bottom: 16px; }
 body.studio-compact .section-header { margin: 22px 0 16px; }
 
 .studio-nav-in { flex: 1; min-width: 0; height: 28px; padding: 0 8px; border: 1px solid var(--border); border-radius: 6px; font-family: var(--font-display); font-size: 12.5px; color: var(--text); background: #fff; }
+
+.studio-range-hd { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 4px; font-size: 11px; font-weight: 700; color: var(--muted); }
+.studio-range-hd b { color: var(--text); font-family: var(--font-mono); font-size: 12px; }
+.studio-range { width: 100%; accent-color: var(--orange); }
+
+.studio-canvas-add { display: flex; gap: 6px; margin-bottom: 8px; }
+.studio-canvas-add .studio-btn { margin-top: 6px; }
+.studio-canvas-el { border: 1px solid var(--border); border-radius: 10px; padding: 10px; margin-bottom: 8px; }

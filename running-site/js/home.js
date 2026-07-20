@@ -650,6 +650,7 @@ function buildHome() {
         </div>
       </div>
     </div>`;
+  if (typeof _sfScaleCanvases === 'function') _sfScaleCanvases();
 }
 window.rebuildHome = buildHome;
 window._sfCurrentPromos = function () { return _sfPromos(); };
@@ -696,8 +697,85 @@ if (!window._sfCdTick) {
     document.querySelectorAll('.sf-cd-v[data-cd]').forEach(function (e) { e.textContent = _sfCdText(e.dataset.cd); });
   }, 30000);
 }
+// Live metrics computed from the dataset (for data-bound stat boxes).
+function _sfMetric(key) {
+  try {
+    if (typeof ATHLETES === 'undefined') return '—';
+    const vals = Object.values(ATHLETES);
+    if (key === 'athletes') return String(vals.length);
+    if (key === 'countries') { const s = new Set(); vals.forEach(a => { if (a.country) s.add(a.country); }); return String(s.size); }
+    if (key === 'results') { let n = 0; vals.forEach(a => { n += (a.results || []).length; }); return String(n); }
+    if (key === 'nextMeetDays') {
+      const m = _sfMeets().filter(x => x.datetime && new Date(x.datetime) > Date.now()).sort((a, b) => new Date(a.datetime) - new Date(b.datetime))[0];
+      return m ? String(Math.max(0, Math.ceil((new Date(m.datetime) - Date.now()) / 86400000))) : '—';
+    }
+    if (key === 'sub330') {
+      const k = _normalizeEvent('1500m'), lim = parseTimeToSecs('3:30.00'); let c = 0;
+      vals.forEach(a => { let best = null; (a.prs || []).forEach(p => { if (_normalizeEvent(p.event) === k) { const t = parseTimeToSecs(p.time); if (t != null && (best == null || t < best)) best = t; } }); if (best != null && best < lim) c++; });
+      return String(c);
+    }
+  } catch (e) {}
+  return '—';
+}
+// Auto-generated editorial insight from the data.
+function _sfInsight(kind) {
+  try {
+    if (kind === 'top') { const t = _buildTrendingPerformances(1)[0]; if (t) return { eyebrow: 'Performance of the week', head: t.result.time + ' — ' + t.athlete.name, sub: (t.result.event || '').trim() + ' · ' + t.result.meet }; }
+    if (kind === 'mostWins') {
+      let best = null;
+      Object.values(ATHLETES).forEach(a => { let w = 0; (a.results || []).forEach(r => { if (parseInt(r.place) === 1 && parseTimeToSecs(r.time) != null) w++; }); if (w > 0 && (!best || w > best.w)) best = { a, w }; });
+      if (best) return { eyebrow: 'Most wins · 2026', head: best.a.name, sub: best.w + ' wins this season' };
+    }
+    if (kind === 'barrier') return { eyebrow: 'Barrier club', head: _sfMetric('sub330') + ' under 3:30', sub: '1500 m · 2026 season' };
+    if (kind === 'nextMeet') { const m = _sfMeets().filter(x => x.datetime && new Date(x.datetime) > Date.now()).sort((a, b) => new Date(a.datetime) - new Date(b.datetime))[0]; if (m) return { eyebrow: 'Next up', head: m.name, sub: _sfCdText(m.datetime) + ' to go' }; }
+  } catch (e) {}
+  return { eyebrow: 'Insight', head: '—', sub: '' };
+}
+// Free-form canvas board: absolutely-positioned text/image/shape elements.
+function _sfCanvasItem(c, ed) {
+  const pos = `left:${c.x || 0}px;top:${c.y || 0}px;width:${c.w || 160}px;`;
+  const edA = ed ? ` data-cid="${c.id}" tabindex="0"` : '';
+  if (c.kind === 'image') {
+    return `<img class="sf-cv-item sf-cv-img"${edA} src="${c.image || ''}" alt="" style="${pos}height:${c.h || 100}px;border-radius:${c.radius || 0}px">`;
+  }
+  if (c.kind === 'shape') {
+    return `<div class="sf-cv-item sf-cv-shape"${edA} style="${pos}height:${c.h || 80}px;background:${c.bg || '#FF5200'};border-radius:${c.radius || 8}px"></div>`;
+  }
+  const style = `${pos}font-size:${c.size || 18}px;font-weight:${c.weight || 600};color:${c.color || '#111111'};text-align:${c.align || 'left'};line-height:1.25;`;
+  const cont = ed ? ' data-cv-text="1"' : '';
+  return `<div class="sf-cv-item sf-cv-text"${edA} style="${style}"${cont}>${c.text || 'Text'}</div>`;
+}
+function _sfCanvasBlock(b) {
+  const ed = !!window.STUDIO_EDIT;
+  const h = parseInt(b.height, 10) || 360;
+  const kids = (b.children || []).map(c => _sfCanvasItem(c, ed)).join('');
+  return `<div class="sf-block sf-block--canvas${ed ? ' is-editing' : ''}" data-canvas="${b.id}" style="height:${h}px"><div class="sf-cv-inner" style="height:${h}px">${kids}${ed ? '<div class="sf-cv-guides"></div>' : ''}</div></div>`;
+}
+// Scale each canvas to fit its column (view mode). Editing stays 1:1 and
+// captures the design width so view mode can shrink proportionally on mobile.
+function _sfScaleCanvases() {
+  document.querySelectorAll('.sf-block--canvas').forEach(function (cv) {
+    var inner = cv.querySelector('.sf-cv-inner'); if (!inner) return;
+    var b = ((window.STUDIO && window.STUDIO.blocks) || []).filter(function (x) { return x.id === cv.dataset.canvas; })[0];
+    var designH = (b && parseInt(b.height, 10)) || 360;
+    if (window.STUDIO_EDIT) {
+      inner.style.transform = ''; inner.style.width = ''; cv.style.height = designH + 'px';
+      if (b) b.designW = cv.clientWidth;
+      return;
+    }
+    var dw = (b && b.designW) || cv.clientWidth || 1;
+    inner.style.width = dw + 'px';
+    var scale = Math.min(1, (cv.clientWidth || dw) / dw);
+    inner.style.transformOrigin = 'top left';
+    inner.style.transform = 'scale(' + scale + ')';
+    cv.style.height = (designH * scale) + 'px';
+  });
+}
+if (!window._sfCanvasResizeWired) { window._sfCanvasResizeWired = true; window.addEventListener('resize', _sfScaleCanvases); }
+window._sfScaleCanvases = _sfScaleCanvases;
 function _sfCustomBlock(b) {
   if (!b) return '';
+  if (b.type === 'canvas') return _sfCanvasBlock(b);
   const ed = !!window.STUDIO_EDIT;
   const ea = f => ed ? ` contenteditable="true" data-edit="${f}"` : '';
   const st = _sfBlockStyle(b);
@@ -713,7 +791,12 @@ function _sfCustomBlock(b) {
     return `<div class="sf-block sf-block--button">${btn}</div>`;
   }
   if (b.type === 'stat') {
-    return `<div class="sf-card sf-block sf-block--stat${pad}"${st}><div class="sf-stat-num"${ea('title')}>${b.title || '0'}</div><div class="sf-stat-lbl"${ea('body')}>${b.body || ''}</div></div>`;
+    const num = b.metric ? _sfMetric(b.metric) : (b.title || '0');
+    return `<div class="sf-card sf-block sf-block--stat${pad}"${st}><div class="sf-stat-num"${b.metric ? '' : ea('title')}>${num}</div><div class="sf-stat-lbl"${ea('body')}>${b.body || ''}</div></div>`;
+  }
+  if (b.type === 'insight') {
+    const ins = _sfInsight(b.kind || 'top');
+    return `<div class="sf-card sf-block sf-block--insight${pad}"${st}><div class="sf-ins-eyebrow">${ins.eyebrow}</div><div class="sf-ins-head">${ins.head}</div>${ins.sub ? `<div class="sf-ins-sub">${ins.sub}</div>` : ''}</div>`;
   }
   if (b.type === 'countdown') {
     return `<div class="sf-card sf-block sf-block--cd${pad}"${st}>${(b.title || ed) ? `<div class="sf-cd-t"${ea('title')}>${b.title || ''}</div>` : ''}<div class="sf-cd-v" data-cd="${b.date || ''}">${_sfCdText(b.date)}</div></div>`;

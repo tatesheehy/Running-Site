@@ -85,6 +85,16 @@
       if (t.nav === 'white') body.classList.add('nav-white');
       else if (t.nav === 'dark') body.classList.add('nav-dark');
     }
+    // Global polish sliders
+    if (t.radius) { root.style.setProperty('--radius-card', t.radius + 'px'); root.style.setProperty('--radius-feature', (parseInt(t.radius, 10) + 4) + 'px'); }
+    else { root.style.removeProperty('--radius-card'); root.style.removeProperty('--radius-feature'); }
+    var SH = { none: 'none', soft: '0 2px 8px rgba(0,0,0,0.04)', medium: '0 6px 18px rgba(0,0,0,0.09)', strong: '0 12px 30px rgba(0,0,0,0.16)' };
+    if (t.shadow && SH[t.shadow]) root.style.setProperty('--shadow-card', SH[t.shadow]); else root.style.removeProperty('--shadow-card');
+    if (t.width) root.style.setProperty('--studio-cw', t.width + 'px'); else root.style.removeProperty('--studio-cw');
+    // Custom CSS injection
+    var styleEl = document.getElementById('studio-custom-css');
+    if (!styleEl) { styleEl = document.createElement('style'); styleEl.id = 'studio-custom-css'; document.head.appendChild(styleEl); }
+    styleEl.textContent = t.css || '';
   }
   applyTheme(); // apply immediately on every page
 
@@ -107,6 +117,21 @@
     return e;
   }
 
+  // ---- Owner-only lock. The ✎ button stays hidden until unlocked with the
+  //      passcode below. (Real protection is the Supabase RLS write policy;
+  //      this just keeps Studio out of visitors' sight.) Change this passcode. ----
+  var STUDIO_PASS = 'statc';
+  var LOCK_KEY = 'statc_studio_unlocked';
+  function isUnlocked() { return localStorage.getItem(LOCK_KEY) === '1'; }
+  function tryUnlock() {
+    if (isUnlocked()) return true;
+    var p = window.prompt('Enter Studio passcode');
+    if (p === STUDIO_PASS) { localStorage.setItem(LOCK_KEY, '1'); return true; }
+    if (p != null) window.alert('Incorrect passcode');
+    return false;
+  }
+  window.studioLock = function () { localStorage.removeItem(LOCK_KEY); var f = document.getElementById('studio-fab'); if (f) f.style.display = 'none'; var p = document.getElementById('studio-panel'); if (p) p.classList.remove('open'); };
+
   function build() {
     if (document.getElementById('studio-fab')) return;
 
@@ -114,6 +139,7 @@
     fab.id = 'studio-fab';
     fab.title = 'Customize (Studio)';
     fab.setAttribute('aria-label', 'Open Studio');
+    fab.style.display = isUnlocked() ? '' : 'none';
     document.body.appendChild(fab);
 
     var panel = el('div', 'studio-panel');
@@ -144,8 +170,13 @@
     fab.addEventListener('click', function () { toggle(); });
     panel.querySelector('.studio-x').addEventListener('click', function () { toggle(false); });
     document.addEventListener('keydown', function (e) {
-      if (e.shiftKey && (e.key === 'S' || e.key === 's') && !/input|textarea/i.test((e.target.tagName || '')) && !e.target.isContentEditable) toggle();
+      if (e.shiftKey && (e.key === 'S' || e.key === 's') && !/input|textarea/i.test((e.target.tagName || '')) && !e.target.isContentEditable) {
+        if (!isUnlocked()) { if (tryUnlock()) { fab.style.display = ''; toggle(true); } return; }
+        toggle();
+      }
     });
+    // #studio in the URL also prompts to unlock (handy bookmark).
+    if (location.hash === '#studio' && !isUnlocked()) { if (tryUnlock()) fab.style.display = ''; }
 
     // ---- On-canvas edit mode ----
     var chk = panel.querySelector('#studio-edit-chk');
@@ -200,8 +231,130 @@
         }
         var pr = window.STUDIO.content.promos[+t.dataset.promo];
         if (pr) { pr[t.dataset.pf] = t.innerText; save(); }
+      } else if (t.dataset.cvText != null) {          // canvas text element
+        var cvEl = t.closest('.sf-block--canvas'); if (!cvEl) return;
+        var cvB = cvFind(cvEl.dataset.canvas), ch = cvChild(cvB, t.dataset.cid);
+        if (ch) { ch.text = t.innerText; save(); }
       }
     }, true);
+
+    // ---- Free-form Canvas: drag, snap-to-grid + guides, nudge, delete ----
+    var GRID = 8, SNAP = 6, DRAG_MIN = 3;
+    function cvFind(id) { return (window.STUDIO.blocks || []).filter(function (b) { return b.id === id; })[0]; }
+    function cvChild(cv, cid) { return cv && (cv.children || []).filter(function (c) { return c.id === cid; })[0]; }
+    var _drag = null, _resize = null, _selCid = null, _selCvId = null, _rzEl = null;
+    function ensureRz() {
+      if (!_rzEl) { _rzEl = document.createElement('div'); _rzEl.className = 'sf-cv-rz'; _rzEl.addEventListener('mousedown', rzStart); }
+      return _rzEl;
+    }
+    function placeRz(item) {
+      var inner = item && item.closest('.sf-cv-inner'); if (!inner) return;
+      var h = ensureRz(); if (h.parentNode !== inner) inner.appendChild(h);
+      h.style.left = (item.offsetLeft + item.offsetWidth - 6) + 'px';
+      h.style.top = (item.offsetTop + item.offsetHeight - 6) + 'px';
+      h.style.display = 'block';
+    }
+    function hideRz() { if (_rzEl) _rzEl.style.display = 'none'; }
+    function rzStart(e) {
+      e.preventDefault(); e.stopPropagation();
+      var cv = cvFind(_selCvId), c = cvChild(cv, _selCid); if (!c) return;
+      var item = document.querySelector('.sf-cv-item[data-cid="' + _selCid + '"]'); if (!item) return;
+      _resize = { c: c, item: item, sx: e.clientX, sy: e.clientY, ow: c.w || item.offsetWidth, oh: c.h || item.offsetHeight, isText: c.kind === 'text' };
+    }
+    function cvSelect(item) {
+      document.querySelectorAll('.sf-cv-item.is-sel').forEach(function (x) { x.classList.remove('is-sel'); });
+      if (!item) { _selCid = null; hideRz(); return; }
+      item.classList.add('is-sel');
+      _selCid = item.dataset.cid; _selCvId = item.closest('.sf-block--canvas').dataset.canvas;
+      placeRz(item);
+    }
+    function cvGuides(cvEl, vx, hy) {
+      var g = cvEl.querySelector('.sf-cv-guides'); if (!g) return;
+      g.innerHTML = (vx != null ? '<div class="sf-cv-guide sf-cv-guide--v" style="left:' + vx + 'px"></div>' : '') +
+                    (hy != null ? '<div class="sf-cv-guide sf-cv-guide--h" style="top:' + hy + 'px"></div>' : '');
+    }
+    function cvClearGuides(cvEl) { var g = cvEl && cvEl.querySelector('.sf-cv-guides'); if (g) g.innerHTML = ''; }
+    function cvSnap(d, x, y) {
+      var w = d.item.offsetWidth, h = d.item.offsetHeight;
+      var cw = d.cvEl.clientWidth, ch = d.cvEl.clientHeight;
+      x = Math.round(x / GRID) * GRID; y = Math.round(y / GRID) * GRID;
+      var vlines = [0, cw / 2, cw], hlines = [0, ch / 2, ch];
+      (d.cv.children || []).forEach(function (c) {
+        if (c.id === d.child.id) return;
+        var cwd = c.w || 160, chd = c.h || 80;
+        vlines.push(c.x || 0, (c.x || 0) + cwd, (c.x || 0) + cwd / 2);
+        hlines.push(c.y || 0, (c.y || 0) + chd, (c.y || 0) + chd / 2);
+      });
+      function snap1(pos, size, lines) {
+        var anchors = [[pos, 0], [pos + size / 2, size / 2], [pos + size, size]];
+        var best = null, bd = SNAP + 1, boff = 0;
+        lines.forEach(function (L) { anchors.forEach(function (an) { var dd = Math.abs(an[0] - L); if (dd < bd) { bd = dd; best = L; boff = an[1]; } }); });
+        return (best != null && bd <= SNAP) ? { pos: best - boff, line: best } : { pos: pos, line: null };
+      }
+      var sx = snap1(x, w, vlines), sy = snap1(y, h, hlines);
+      cvGuides(d.cvEl, sx.line, sy.line);
+      var fx = Math.max(0, Math.min(sx.pos, cw - w)), fy = Math.max(0, Math.min(sy.pos, ch - h));
+      return { x: fx, y: fy };
+    }
+    document.addEventListener('mousedown', function (e) {
+      if (!window.STUDIO_EDIT) return;
+      if (e.target.closest && e.target.closest('.sf-cv-rz')) return; // resize handle: keep selection
+      var item = e.target.closest && e.target.closest('.sf-cv-item');
+      if (!item) { cvSelect(null); return; }
+      if (item.classList.contains('is-editing-text')) return; // let caret placement happen
+      cvSelect(item);
+      var cvEl = item.closest('.sf-block--canvas');
+      var cv = cvFind(cvEl.dataset.canvas), child = cvChild(cv, item.dataset.cid);
+      if (!child) return;
+      _drag = { item: item, cvEl: cvEl, cv: cv, child: child, sx: e.clientX, sy: e.clientY, ox: child.x || 0, oy: child.y || 0, moved: false };
+    }, true);
+    document.addEventListener('mousemove', function (e) {
+      if (_resize) {
+        var rdx = e.clientX - _resize.sx, rdy = e.clientY - _resize.sy;
+        var nw = Math.max(20, Math.round((_resize.ow + rdx) / GRID) * GRID);
+        _resize.c.w = nw; _resize.item.style.width = nw + 'px';
+        if (!_resize.isText) { var nh = Math.max(20, Math.round((_resize.oh + rdy) / GRID) * GRID); _resize.c.h = nh; _resize.item.style.height = nh + 'px'; }
+        placeRz(_resize.item);
+        return;
+      }
+      if (!_drag) return;
+      var dx = e.clientX - _drag.sx, dy = e.clientY - _drag.sy;
+      if (!_drag.moved && Math.abs(dx) + Math.abs(dy) < DRAG_MIN) return;
+      if (!_drag.moved) { _drag.moved = true; e.preventDefault && e.preventDefault(); }
+      var p = cvSnap(_drag, _drag.ox + dx, _drag.oy + dy);
+      _drag.child.x = p.x; _drag.child.y = p.y;
+      _drag.item.style.left = p.x + 'px'; _drag.item.style.top = p.y + 'px';
+      placeRz(_drag.item);
+    });
+    document.addEventListener('mouseup', function () {
+      if (_resize) { save(); _resize = null; return; }
+      if (!_drag) return;
+      if (_drag.moved) save();
+      cvClearGuides(_drag.cvEl);
+      _drag = null;
+    });
+    document.addEventListener('dblclick', function (e) {
+      if (!window.STUDIO_EDIT) return;
+      var t = e.target.closest && e.target.closest('.sf-cv-text');
+      if (!t) return;
+      t.classList.add('is-editing-text'); t.setAttribute('contenteditable', 'true'); t.focus();
+    });
+    document.addEventListener('blur', function (e) {
+      var t = e.target;
+      if (t && t.classList && t.classList.contains('is-editing-text')) { t.classList.remove('is-editing-text'); t.removeAttribute('contenteditable'); }
+    }, true);
+    document.addEventListener('keydown', function (e) {
+      if (!window.STUDIO_EDIT || !_selCid || e.target.isContentEditable) return;
+      var cv = cvFind(_selCvId), c = cvChild(cv, _selCid); if (!c) return;
+      var step = e.shiftKey ? 10 : 1, moved = true;
+      if (e.key === 'ArrowLeft') c.x = (c.x || 0) - step;
+      else if (e.key === 'ArrowRight') c.x = (c.x || 0) + step;
+      else if (e.key === 'ArrowUp') c.y = (c.y || 0) - step;
+      else if (e.key === 'ArrowDown') c.y = (c.y || 0) + step;
+      else if (e.key === 'Delete' || e.key === 'Backspace') { cv.children.splice(cv.children.indexOf(c), 1); save(); if (window.rebuildHome) window.rebuildHome(); return; }
+      else moved = false;
+      if (moved) { e.preventDefault(); var el = document.querySelector('.sf-cv-item[data-cid="' + _selCid + '"]'); if (el) { el.style.left = c.x + 'px'; el.style.top = c.y + 'px'; placeRz(el); } save(); }
+    });
 
     var activeTab = 'theme';
     panel.querySelectorAll('.studio-tab').forEach(function (t) {
@@ -268,7 +421,7 @@
         var typeRow = el('label', 'studio-field');
         typeRow.appendChild(el('span', 'studio-field-lbl', 'Type'));
         var sel = el('select', 'studio-field-in');
-        [['text', 'Text'], ['image', 'Image banner'], ['video', 'Video'], ['button', 'Button'], ['stat', 'Stat callout'], ['countdown', 'Countdown'], ['quote', 'Quote'], ['divider', 'Divider'], ['spacer', 'Spacer'], ['html', 'Embed / HTML']].forEach(function (t) {
+        [['text', 'Text'], ['canvas', 'Canvas (free layout)'], ['image', 'Image banner'], ['video', 'Video'], ['button', 'Button'], ['stat', 'Stat callout'], ['insight', 'Auto-insight'], ['countdown', 'Countdown'], ['quote', 'Quote'], ['divider', 'Divider'], ['spacer', 'Spacer'], ['html', 'Embed / HTML']].forEach(function (t) {
           var o = document.createElement('option'); o.value = t[0]; o.textContent = t[1]; if (b.type === t[0]) o.selected = true; sel.appendChild(o);
         });
         sel.addEventListener('change', function () { b.type = sel.value; saveRebuild(); renderBoxes(host); });
@@ -290,11 +443,58 @@
           card.appendChild(textField('Label', b.title, function (v) { b.title = v; saveRebuild(); }));
           card.appendChild(textField('Link', b.href, function (v) { b.href = v; saveRebuild(); }, 'e.g. h2h.html'));
         } else if (b.type === 'stat') {
-          card.appendChild(textField('Number', b.title, function (v) { b.title = v; saveRebuild(); }, 'e.g. 249'));
+          card.appendChild(selectField('Source', [['', 'Custom (type it)'], ['athletes', 'Athletes tracked (live)'], ['countries', 'Countries (live)'], ['results', 'Results logged (live)'], ['nextMeetDays', 'Days to next meet (live)'], ['sub330', 'Sub-3:30 count (live)']], b.metric, function (v) { b.metric = v; saveRebuild(); renderBoxes(host); }));
+          if (!b.metric) card.appendChild(textField('Number', b.title, function (v) { b.title = v; saveRebuild(); }, 'e.g. 249'));
           card.appendChild(textField('Label', b.body, function (v) { b.body = v; saveRebuild(); }, 'e.g. Athletes tracked'));
+        } else if (b.type === 'insight') {
+          card.appendChild(selectField('Insight', [['top', 'Performance of the week'], ['mostWins', 'Most wins leader'], ['barrier', 'Barrier-club update'], ['nextMeet', 'Next meet']], b.kind || 'top', function (v) { b.kind = v; saveRebuild(); }));
+          card.appendChild(el('div', 'studio-note', 'Auto-generated from your data — updates itself as results change.'));
         } else if (b.type === 'countdown') {
           card.appendChild(textField('Title', b.title, function (v) { b.title = v; saveRebuild(); }));
           card.appendChild(dateField('Target date & time', b.date, function (v) { b.date = v; saveRebuild(); }));
+        } else if (b.type === 'canvas') {
+          if (!Array.isArray(b.children)) b.children = [];
+          card.appendChild(el('div', 'studio-note', 'Turn on “Edit page”, then drag elements around the board. Arrow keys nudge 1px (Shift = 10px); Delete removes; double-click text to edit. They snap to a grid and to each other.'));
+          card.appendChild(textField('Board height (px)', b.height, function (v) { b.height = v; saveRebuild(); }, '360'));
+          var addRow = el('div', 'studio-canvas-add');
+          [['text', '+ Text'], ['shape', '+ Shape'], ['image', '+ Image']].forEach(function (k) {
+            var ab = el('button', 'studio-btn studio-btn--ghost', k[1]);
+            ab.style.marginTop = '6px';
+            ab.addEventListener('click', function () {
+              var cid = 'cv_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 4);
+              var base = { id: cid, kind: k[0], x: 16, y: 16 };
+              if (k[0] === 'text') Object.assign(base, { text: 'New text', w: 200, size: 18, weight: 600, color: '#111111' });
+              if (k[0] === 'shape') Object.assign(base, { w: 140, h: 90, bg: '#FF5200', radius: 12 });
+              if (k[0] === 'image') Object.assign(base, { w: 180, h: 120, image: '', radius: 8 });
+              b.children.push(base); saveRebuild(); renderBoxes(host);
+            });
+            addRow.appendChild(ab);
+          });
+          card.appendChild(addRow);
+          b.children.forEach(function (ch) {
+            var cc = el('div', 'studio-canvas-el');
+            var ctop = el('div', 'studio-promo-top');
+            ctop.appendChild(el('span', null, ch.kind + (ch.kind === 'text' ? ' · ' + (ch.text || '').slice(0, 14) : '')));
+            var cdel = el('button', 'studio-mini', '✕');
+            cdel.addEventListener('click', function () { b.children.splice(b.children.indexOf(ch), 1); saveRebuild(); renderBoxes(host); });
+            ctop.appendChild(cdel); cc.appendChild(ctop);
+            if (ch.kind === 'text') {
+              cc.appendChild(textField('Text', ch.text, function (v) { ch.text = v; saveRebuild(); }));
+              cc.appendChild(rangeField('Size', ch.size, 10, 72, 18, 'px', function (v) { ch.size = +v; saveRebuild(); }));
+              cc.appendChild(selectField('Weight', [['400', 'Regular'], ['600', 'Semibold'], ['800', 'Bold']], String(ch.weight || 600), function (v) { ch.weight = +v; saveRebuild(); }));
+              cc.appendChild(colorField('Color', ch.color, function (v) { ch.color = v; saveRebuild(); }));
+            } else if (ch.kind === 'shape') {
+              cc.appendChild(colorField('Fill', ch.bg, function (v) { ch.bg = v; saveRebuild(); }));
+              cc.appendChild(rangeField('Corner radius', ch.radius, 0, 80, 12, 'px', function (v) { ch.radius = +v; saveRebuild(); }));
+              cc.appendChild(rangeField('Width', ch.w, 20, 600, 140, 'px', function (v) { ch.w = +v; saveRebuild(); }));
+              cc.appendChild(rangeField('Height', ch.h, 20, 500, 90, 'px', function (v) { ch.h = +v; saveRebuild(); }));
+            } else if (ch.kind === 'image') {
+              cc.appendChild(imageField(ch.image, function (v) { ch.image = v; saveRebuild(); }));
+              cc.appendChild(rangeField('Width', ch.w, 20, 600, 180, 'px', function (v) { ch.w = +v; saveRebuild(); }));
+              cc.appendChild(rangeField('Height', ch.h, 20, 500, 120, 'px', function (v) { ch.h = +v; saveRebuild(); }));
+            }
+            card.appendChild(cc);
+          });
         } else if (b.type === 'spacer') {
           card.appendChild(textField('Height (px)', b.height, function (v) { b.height = v; saveRebuild(); }, '24'));
         } else if (b.type === 'divider') {
@@ -575,6 +775,15 @@
       s.addEventListener('change', function () { onSet(s.value); });
       row.appendChild(s); return row;
     }
+    function rangeField(label, val, min, max, def, unit, onSet) {
+      var row = el('label', 'studio-field');
+      var head = el('div', 'studio-range-hd');
+      head.innerHTML = '<span>' + label + '</span><b>' + (val || def) + (unit || '') + '</b>';
+      var i = el('input', 'studio-range'); i.type = 'range'; i.min = min; i.max = max; i.value = val || def;
+      i.addEventListener('input', function () { head.querySelector('b').textContent = i.value + (unit || ''); onSet(i.value); });
+      row.appendChild(head); row.appendChild(i);
+      return row;
+    }
 
     // ---- Theme tab ----
     function renderTheme(host) {
@@ -618,6 +827,16 @@
       host.appendChild(selectField('Font', FONTS, window.STUDIO.theme.font, function (v) { window.STUDIO.theme.font = v; save(); applyTheme(); }));
       host.appendChild(selectField('Navbar', [['orange', 'Orange'], ['white', 'White'], ['dark', 'Dark']], window.STUDIO.theme.nav || 'orange', function (v) { window.STUDIO.theme.nav = v; save(); applyTheme(); }));
       host.appendChild(selectField('Density', [['', 'Comfortable'], ['compact', 'Compact']], window.STUDIO.theme.density, function (v) { window.STUDIO.theme.density = v; save(); applyTheme(); }));
+
+      host.appendChild(el('div', 'studio-field-lbl studio-mt', 'Polish'));
+      host.appendChild(rangeField('Corner radius', window.STUDIO.theme.radius, 0, 28, 16, 'px', function (v) { window.STUDIO.theme.radius = v; save(); applyTheme(); }));
+      host.appendChild(selectField('Shadow', [['', 'Default'], ['none', 'None'], ['soft', 'Soft'], ['medium', 'Medium'], ['strong', 'Strong']], window.STUDIO.theme.shadow, function (v) { window.STUDIO.theme.shadow = v; save(); applyTheme(); }));
+      host.appendChild(rangeField('Content width', window.STUDIO.theme.width, 900, 1440, 1240, 'px', function (v) { window.STUDIO.theme.width = v; save(); applyTheme(); }));
+
+      host.appendChild(el('div', 'studio-field-lbl studio-mt', 'Custom CSS (advanced)'));
+      var css = el('textarea', 'studio-ta'); css.placeholder = '.sf-card { … }'; css.value = window.STUDIO.theme.css || '';
+      css.addEventListener('change', function () { window.STUDIO.theme.css = css.value; save(); applyTheme(); });
+      host.appendChild(css);
 
       var reset = el('button', 'studio-btn studio-btn--ghost', 'Reset theme');
       reset.addEventListener('click', function () { window.STUDIO.theme = {}; save(); applyTheme(); renderTheme(host); });
@@ -723,6 +942,10 @@
       var btns = el('div', 'studio-btns');
       btns.appendChild(exp); btns.appendChild(imp); btns.appendChild(reset);
       host.appendChild(btns);
+
+      var lock = el('button', 'studio-btn studio-btn--ghost', '🔒 Lock Studio (hide ✎)');
+      lock.addEventListener('click', function () { window.studioLock(); });
+      host.appendChild(lock);
     }
 
     renderTab(activeTab);
