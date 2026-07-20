@@ -63,16 +63,28 @@
   window.STUDIO = load();
   if (!window.STUDIO.theme) window.STUDIO.theme = {};
   if (!window.STUDIO.content) window.STUDIO.content = {};
+  if (!window.STUDIO.text) window.STUDIO.text = {};
 
   function applyTheme() {
-    var root = document.documentElement;
+    var root = document.documentElement, t = window.STUDIO.theme || {};
     THEME_FIELDS.forEach(function (f) {
-      var v = window.STUDIO.theme[f.id];
+      var v = t[f.id];
       f.vars.forEach(function (cssVar) {
         if (v) root.style.setProperty(cssVar, v);
         else root.style.removeProperty(cssVar);
       });
     });
+    // Font
+    if (t.font) { root.style.setProperty('--font-display', t.font); root.style.setProperty('--font-body', t.font); }
+    else { root.style.removeProperty('--font-display'); root.style.removeProperty('--font-body'); }
+    // Density + navbar style (body classes)
+    var body = document.body;
+    if (body) {
+      body.classList.toggle('studio-compact', t.density === 'compact');
+      body.classList.remove('nav-white', 'nav-dark');
+      if (t.nav === 'white') body.classList.add('nav-white');
+      else if (t.nav === 'dark') body.classList.add('nav-dark');
+    }
   }
   applyTheme(); // apply immediately on every page
 
@@ -170,16 +182,25 @@
       save(); if (window.rebuildHome) window.rebuildHome();
     }, true);
 
-    // Inline text editing → write back to the block config on blur
+    // Inline text editing → persist on blur (no re-render, keeps the cursor).
     document.addEventListener('blur', function (e) {
-      var t = e.target;
-      if (!t || !t.dataset || t.dataset.edit == null) return;
-      var slot = t.closest('.sf-slot'); if (!slot) return;
-      var id = slot.dataset.id;
-      var blk = (window.STUDIO.blocks || []).filter(function (b) { return b.id === id; })[0];
-      if (!blk) return;
-      blk[t.dataset.edit] = t.innerText;
-      save(); // persist without re-render (keeps cursor)
+      var t = e.target; if (!t || !t.dataset) return;
+      if (t.dataset.edit != null) {                 // custom box (title/body)
+        var slot = t.closest('.sf-slot'); if (!slot) return;
+        var blk = (window.STUDIO.blocks || []).filter(function (b) { return b.id === slot.dataset.id; })[0];
+        if (blk) { blk[t.dataset.edit] = t.innerText; save(); }
+      } else if (t.dataset.t != null) {             // site label / header override
+        window.STUDIO.text = window.STUDIO.text || {};
+        window.STUDIO.text[t.dataset.t] = t.innerText;
+        save();
+      } else if (t.dataset.promo != null && t.dataset.pf != null) { // promo banner text
+        window.STUDIO.content = window.STUDIO.content || {};
+        if (!Array.isArray(window.STUDIO.content.promos)) {
+          window.STUDIO.content.promos = window._sfCurrentPromos ? JSON.parse(JSON.stringify(window._sfCurrentPromos())) : [];
+        }
+        var pr = window.STUDIO.content.promos[+t.dataset.promo];
+        if (pr) { pr[t.dataset.pf] = t.innerText; save(); }
+      }
     }, true);
 
     var activeTab = 'theme';
@@ -247,7 +268,7 @@
         var typeRow = el('label', 'studio-field');
         typeRow.appendChild(el('span', 'studio-field-lbl', 'Type'));
         var sel = el('select', 'studio-field-in');
-        [['text', 'Text'], ['image', 'Image banner'], ['video', 'Video'], ['quote', 'Quote'], ['html', 'Embed / HTML']].forEach(function (t) {
+        [['text', 'Text'], ['image', 'Image banner'], ['video', 'Video'], ['button', 'Button'], ['stat', 'Stat callout'], ['countdown', 'Countdown'], ['quote', 'Quote'], ['divider', 'Divider'], ['spacer', 'Spacer'], ['html', 'Embed / HTML']].forEach(function (t) {
           var o = document.createElement('option'); o.value = t[0]; o.textContent = t[1]; if (b.type === t[0]) o.selected = true; sel.appendChild(o);
         });
         sel.addEventListener('change', function () { b.type = sel.value; saveRebuild(); renderBoxes(host); });
@@ -265,6 +286,19 @@
           card.appendChild(el('div', 'studio-note', 'Autoplays muted. YouTube/Vimeo show the preview; direct .mp4 loops silently.'));
           card.appendChild(el('div', 'studio-field-lbl studio-mt', 'Poster (for .mp4, optional)'));
           card.appendChild(imageField(b.poster, function (v) { b.poster = v; saveRebuild(); }));
+        } else if (b.type === 'button') {
+          card.appendChild(textField('Label', b.title, function (v) { b.title = v; saveRebuild(); }));
+          card.appendChild(textField('Link', b.href, function (v) { b.href = v; saveRebuild(); }, 'e.g. h2h.html'));
+        } else if (b.type === 'stat') {
+          card.appendChild(textField('Number', b.title, function (v) { b.title = v; saveRebuild(); }, 'e.g. 249'));
+          card.appendChild(textField('Label', b.body, function (v) { b.body = v; saveRebuild(); }, 'e.g. Athletes tracked'));
+        } else if (b.type === 'countdown') {
+          card.appendChild(textField('Title', b.title, function (v) { b.title = v; saveRebuild(); }));
+          card.appendChild(dateField('Target date & time', b.date, function (v) { b.date = v; saveRebuild(); }));
+        } else if (b.type === 'spacer') {
+          card.appendChild(textField('Height (px)', b.height, function (v) { b.height = v; saveRebuild(); }, '24'));
+        } else if (b.type === 'divider') {
+          card.appendChild(el('div', 'studio-note', 'A thin horizontal line. No content needed.'));
         } else if (b.type === 'quote') {
           card.appendChild(textareaField('Quote', b.body, function (v) { b.body = v; saveRebuild(); }));
           card.appendChild(textField('Attribution', b.title, function (v) { b.title = v; saveRebuild(); }));
@@ -273,6 +307,21 @@
         } else {
           card.appendChild(textField('Heading', b.title, function (v) { b.title = v; saveRebuild(); }));
           card.appendChild(textareaField('Body', b.body, function (v) { b.body = v; saveRebuild(); }, 'Two line breaks = new paragraph'));
+        }
+
+        // Per-box styling (skip for divider/spacer, which have no surface)
+        if (b.type !== 'divider' && b.type !== 'spacer') {
+          card.appendChild(el('div', 'studio-field-lbl studio-mt', 'Box style'));
+          card.appendChild(colorField('Background', b.bg, function (v) { b.bg = v; saveRebuild(); }));
+          card.appendChild(colorField('Text color', b.fg, function (v) { b.fg = v; saveRebuild(); }));
+          var padRow = el('label', 'studio-field');
+          padRow.appendChild(el('span', 'studio-field-lbl', 'Padding'));
+          var ps = el('select', 'studio-field-in');
+          [['', 'Medium'], ['s', 'Small'], ['l', 'Large']].forEach(function (p) {
+            var o = document.createElement('option'); o.value = p[0]; o.textContent = p[1]; if ((b.pad || '') === p[0]) o.selected = true; ps.appendChild(o);
+          });
+          ps.addEventListener('change', function () { b.pad = ps.value; saveRebuild(); });
+          padRow.appendChild(ps); card.appendChild(padRow);
         }
 
         var colRow = el('label', 'studio-field');
@@ -336,6 +385,29 @@
       i.type = 'text'; i.value = val || ''; if (placeholder) i.placeholder = placeholder;
       i.addEventListener('change', function () { onSet(i.value); });
       row.appendChild(i);
+      return row;
+    }
+    function dateField(label, val, onSet) {
+      var row = el('label', 'studio-field');
+      row.appendChild(el('span', 'studio-field-lbl', label));
+      var i = el('input', 'studio-field-in');
+      i.type = 'datetime-local';
+      if (val) { try { var d = new Date(val); if (!isNaN(d)) i.value = new Date(d.getTime() - d.getTimezoneOffset() * 60000).toISOString().slice(0, 16); } catch (e) {} }
+      i.addEventListener('change', function () { onSet(i.value ? new Date(i.value).toISOString() : ''); });
+      row.appendChild(i);
+      return row;
+    }
+    function colorField(label, val, onSet) {
+      var row = el('label', 'studio-field studio-field--row');
+      row.appendChild(el('span', 'studio-field-lbl', label));
+      var wrap = el('span', 'studio-color-wrap');
+      var color = el('input', 'studio-color'); color.type = 'color';
+      color.value = /^#[0-9a-f]{6}$/i.test(val || '') ? val : '#ffffff';
+      var hex = el('input', 'studio-hex'); hex.type = 'text'; hex.value = val || ''; hex.placeholder = 'none';
+      color.addEventListener('input', function () { hex.value = color.value; onSet(color.value); });
+      hex.addEventListener('change', function () { var v = hex.value.trim(); onSet(v); if (/^#[0-9a-f]{6}$/i.test(v)) color.value = v; });
+      wrap.appendChild(color); wrap.appendChild(hex);
+      row.appendChild(wrap);
       return row;
     }
 
@@ -423,11 +495,105 @@
         setPromos(); renderContent(host);
       });
       host.appendChild(add);
+
+      // ---- Upcoming meets ----
+      host.appendChild(el('div', 'studio-sec-hd', 'Upcoming meets'));
+      if (!Array.isArray(C.meets)) {
+        C.meets = window._sfCurrentMeets ? JSON.parse(JSON.stringify(window._sfCurrentMeets())) : [];
+      }
+      var setMeets = function () { save(); if (window.rebuildHome) window.rebuildHome(); };
+      C.meets.forEach(function (m, idx) {
+        var mc = el('div', 'studio-promo');
+        var mtop = el('div', 'studio-promo-top');
+        mtop.appendChild(el('span', null, m.name || 'Meet ' + (idx + 1)));
+        var md = el('button', 'studio-mini', '✕');
+        md.addEventListener('click', function () { C.meets.splice(idx, 1); setMeets(); renderContent(host); });
+        mtop.appendChild(md); mc.appendChild(mtop);
+        mc.appendChild(textField('Name', m.name, function (v) { m.name = v; setMeets(); }));
+        mc.appendChild(dateField('Date & time', m.datetime, function (v) { m.datetime = v; setMeets(); }));
+        mc.appendChild(textField('Link', m.url, function (v) { m.url = v; setMeets(); }));
+        host.appendChild(mc);
+      });
+      var addM = el('button', 'studio-btn studio-btn--ghost', '+ Add meet');
+      addM.addEventListener('click', function () {
+        C.meets.push({ name: 'New meet', datetime: new Date(Date.now() + 7 * 86400000).toISOString(), url: '' });
+        setMeets(); renderContent(host);
+      });
+      host.appendChild(addM);
+
+      // ---- Nav bar links ----
+      host.appendChild(el('div', 'studio-sec-hd', 'Navigation links'));
+      var BASE_NAV = [
+        ['index.html', 'Home'], ['articles.html', 'Articles'], ['rankings.html', 'Rankings'], ['h2h.html', 'H2H'],
+        ['event-tracker.html', 'Event Tracker'], ['athletes.html', 'Athletes'], ['country.html', 'Countries'],
+        ['time-machine.html', 'Time Machine'], ['metrics.html', 'Metrics'], ['podcast.html', 'Podcast'], ['about.html', 'About']
+      ];
+      if (!Array.isArray(C.nav)) {
+        C.nav = BASE_NAV.map(function (n) { return { href: n[0], label: n[1], hidden: false }; });
+      }
+      var setNav = function () { save(); if (window.rebuildNav) window.rebuildNav(); };
+      C.nav.forEach(function (n, i) {
+        var row = el('div', 'studio-item' + (n.hidden ? ' is-hidden' : ''));
+        var inp = el('input', 'studio-nav-in');
+        inp.type = 'text'; inp.value = n.label;
+        inp.addEventListener('change', function () { n.label = inp.value; setNav(); });
+        row.appendChild(inp);
+        var ctr = el('span', 'studio-item-ctrl');
+        ctr.innerHTML = '<button data-a="up">↑</button><button data-a="down">↓</button><button data-a="hide">' + (n.hidden ? '◍' : '○') + '</button>';
+        ctr.querySelectorAll('button').forEach(function (bt) {
+          bt.addEventListener('click', function () {
+            var a = bt.dataset.a;
+            if (a === 'up' && i > 0) { C.nav.splice(i, 1); C.nav.splice(i - 1, 0, n); }
+            else if (a === 'down' && i < C.nav.length - 1) { C.nav.splice(i, 1); C.nav.splice(i + 1, 0, n); }
+            else if (a === 'hide') { n.hidden = !n.hidden; }
+            setNav(); renderContent(host);
+          });
+        });
+        row.appendChild(ctr);
+        host.appendChild(row);
+      });
+    }
+
+    var PRESETS = {
+      'Orange':    { accent: '#FF5200', accentHover: '#E04600', nav: 'orange', pageBg: '#F5F6F8', density: '', font: '' },
+      'Charcoal':  { accent: '#FF5200', accentHover: '#E04600', nav: 'dark', pageBg: '#F4F5F7', density: '', font: '' },
+      'Minimal':   { accent: '#111111', accentHover: '#333333', nav: 'white', pageBg: '#FFFFFF', density: 'compact', font: "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" },
+      'Track red': { accent: '#E5241D', accentHover: '#B71C16', nav: 'white', pageBg: '#F6F6F7', density: '', font: '' }
+    };
+    var FONTS = [
+      ['', 'Lota Grotesque (default)'],
+      ["system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif", 'System sans'],
+      ["Georgia, 'Times New Roman', serif", 'Serif (Georgia)'],
+      ["'Trebuchet MS', 'Segoe UI', sans-serif", 'Trebuchet'],
+      ["'Courier New', monospace", 'Monospace']
+    ];
+    function selectField(label, options, cur, onSet) {
+      var row = el('label', 'studio-field studio-field--row');
+      row.appendChild(el('span', 'studio-field-lbl', label));
+      var s = el('select', 'studio-field-in');
+      options.forEach(function (o) { var op = document.createElement('option'); op.value = o[0]; op.textContent = o[1]; if ((cur || '') === o[0]) op.selected = true; s.appendChild(op); });
+      s.addEventListener('change', function () { onSet(s.value); });
+      row.appendChild(s); return row;
     }
 
     // ---- Theme tab ----
     function renderTheme(host) {
-      host.innerHTML = '<p class="studio-note">Recolor the whole site. Applies to every page.</p>';
+      host.innerHTML = '';
+      // Presets
+      host.appendChild(el('div', 'studio-field-lbl', 'Presets'));
+      var pw = el('div', 'studio-presets');
+      Object.keys(PRESETS).forEach(function (name) {
+        var b = el('button', 'studio-preset', name);
+        b.addEventListener('click', function () {
+          var p = PRESETS[name];
+          window.STUDIO.theme = { accent: p.accent, accentHover: p.accentHover, pageBg: p.pageBg, nav: p.nav, density: p.density, font: p.font };
+          save(); applyTheme(); renderTheme(host);
+        });
+        pw.appendChild(b);
+      });
+      host.appendChild(pw);
+
+      host.appendChild(el('div', 'studio-field-lbl studio-mt', 'Colors'));
       THEME_FIELDS.forEach(function (f) {
         var row = el('label', 'studio-row');
         var val = window.STUDIO.theme[f.id] || f.def;
@@ -447,7 +613,13 @@
         row.appendChild(wrap);
         host.appendChild(row);
       });
-      var reset = el('button', 'studio-btn studio-btn--ghost', 'Reset colors');
+
+      host.appendChild(el('div', 'studio-field-lbl studio-mt', 'Typography & chrome'));
+      host.appendChild(selectField('Font', FONTS, window.STUDIO.theme.font, function (v) { window.STUDIO.theme.font = v; save(); applyTheme(); }));
+      host.appendChild(selectField('Navbar', [['orange', 'Orange'], ['white', 'White'], ['dark', 'Dark']], window.STUDIO.theme.nav || 'orange', function (v) { window.STUDIO.theme.nav = v; save(); applyTheme(); }));
+      host.appendChild(selectField('Density', [['', 'Comfortable'], ['compact', 'Compact']], window.STUDIO.theme.density, function (v) { window.STUDIO.theme.density = v; save(); applyTheme(); }));
+
+      var reset = el('button', 'studio-btn studio-btn--ghost', 'Reset theme');
       reset.addEventListener('click', function () { window.STUDIO.theme = {}; save(); applyTheme(); renderTheme(host); });
       host.appendChild(reset);
     }

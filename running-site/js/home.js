@@ -640,9 +640,9 @@ function buildHome() {
         <nav class="sf-crumbs" aria-label="Breadcrumb">
           <a href="index.html">Athletics</a>
           <span class="sf-crumb-sep">›</span>
-          <span>Distance Running</span>
+          <span>${_sfT('crumb.cat','Distance Running')}</span>
           <span class="sf-crumb-sep">›</span>
-          <span class="sf-crumb-cur">2026 Season</span>
+          <span class="sf-crumb-cur">${_sfT('crumb.season','2026 Season')}</span>
         </nav>
         <div class="sf-layout">
           <aside class="sf-col-left">${renderCol(layout.left, 'left')}</aside>
@@ -653,6 +653,14 @@ function buildHome() {
 }
 window.rebuildHome = buildHome;
 window._sfCurrentPromos = function () { return _sfPromos(); };
+
+// Editable text with an override layer. Returns the owner's saved copy if set,
+// else the default. In edit mode it renders as an inline-editable span.
+function _sfT(key, def) {
+  const o = window.STUDIO && window.STUDIO.text;
+  const v = (o && o[key] != null) ? o[key] : def;
+  return window.STUDIO_EDIT ? `<span class="sf-t" data-t="${key}" contenteditable="true">${v}</span>` : v;
+}
 
 // Render a user-created custom box (Studio → Boxes).
 function _sfBlockPara(t) {
@@ -669,15 +677,54 @@ function _sfVideoInner(b) {
   if (/\.(mp4|webm|ogg)(\?|#|$)/i.test(url)) return `<div class="sf-video"><video src="${url}" autoplay muted loop playsinline${b.poster ? ` poster="${b.poster}"` : ''}></video></div>`;
   return url ? `<a class="sf-video-fallback" href="${url}" target="_blank" rel="noopener">▶ ${url}</a>` : '<div class="sf-block-imgph"></div>';
 }
+function _sfBlockStyle(b) {
+  let s = '';
+  if (b.bg) s += 'background:' + b.bg + ';';
+  if (b.fg) s += 'color:' + b.fg + ';';
+  return s ? ` style="${s}"` : '';
+}
+function _sfBlockPad(b) { return b.pad === 's' ? ' sf-block--pad-s' : b.pad === 'l' ? ' sf-block--pad-l' : ''; }
+function _sfCdText(iso) {
+  const d = new Date(iso).getTime();
+  if (isNaN(d)) return '—';
+  const diff = d - Date.now();
+  if (diff <= 0) return 'Now';
+  return Math.floor(diff / 86400000) + 'd ' + Math.floor((diff % 86400000) / 3600000) + 'h ' + Math.floor((diff % 3600000) / 60000) + 'm';
+}
+if (!window._sfCdTick) {
+  window._sfCdTick = setInterval(function () {
+    document.querySelectorAll('.sf-cd-v[data-cd]').forEach(function (e) { e.textContent = _sfCdText(e.dataset.cd); });
+  }, 30000);
+}
 function _sfCustomBlock(b) {
   if (!b) return '';
+  const ed = !!window.STUDIO_EDIT;
+  const ea = f => ed ? ` contenteditable="true" data-edit="${f}"` : '';
+  const st = _sfBlockStyle(b);
+  const pad = _sfBlockPad(b);
+
+  if (b.type === 'divider') return `<div class="sf-block sf-block--divider"></div>`;
+  if (b.type === 'spacer') return `<div class="sf-block sf-block--spacer" style="height:${parseInt(b.height, 10) || 24}px"></div>`;
+  if (b.type === 'button') {
+    const label = b.title || 'Button';
+    const btn = ed
+      ? `<span class="sf-block-btn"${st}${ea('title')}>${label}</span>`
+      : `<a class="sf-block-btn" href="${b.href || '#'}"${st}>${label}</a>`;
+    return `<div class="sf-block sf-block--button">${btn}</div>`;
+  }
+  if (b.type === 'stat') {
+    return `<div class="sf-card sf-block sf-block--stat${pad}"${st}><div class="sf-stat-num"${ea('title')}>${b.title || '0'}</div><div class="sf-stat-lbl"${ea('body')}>${b.body || ''}</div></div>`;
+  }
+  if (b.type === 'countdown') {
+    return `<div class="sf-card sf-block sf-block--cd${pad}"${st}>${(b.title || ed) ? `<div class="sf-cd-t"${ea('title')}>${b.title || ''}</div>` : ''}<div class="sf-cd-v" data-cd="${b.date || ''}">${_sfCdText(b.date)}</div></div>`;
+  }
   if (b.type === 'video') {
     const cap = (b.title || b.caption)
       ? `<div class="sf-block-cap">${b.title ? `<div class="sf-block-cap-t">${b.title}</div>` : ''}${b.caption ? `<div class="sf-block-cap-s">${b.caption}</div>` : ''}</div>` : '';
-    return `<div class="sf-card sf-block sf-block--video">${_sfVideoInner(b)}${cap}</div>`;
+    return `<div class="sf-card sf-block sf-block--video"${st}>${_sfVideoInner(b)}${cap}</div>`;
   }
   if (b.type === 'html') {
-    return `<div class="sf-card sf-block sf-block--html">${b.html || ''}</div>`;
+    return `<div class="sf-card sf-block sf-block--html${pad}"${st}>${b.html || ''}</div>`;
   }
   if (b.type === 'image') {
     const img = b.image ? `<img src="${b.image}" alt="${b.title || ''}">` : '<div class="sf-block-imgph"></div>';
@@ -685,15 +732,13 @@ function _sfCustomBlock(b) {
       ? `<div class="sf-block-cap">${b.title ? `<div class="sf-block-cap-t">${b.title}</div>` : ''}${b.caption ? `<div class="sf-block-cap-s">${b.caption}</div>` : ''}</div>` : '';
     const inner = img + cap;
     return b.href
-      ? `<a class="sf-card sf-block sf-block--image" href="${b.href}">${inner}</a>`
-      : `<div class="sf-card sf-block sf-block--image">${inner}</div>`;
+      ? `<a class="sf-card sf-block sf-block--image" href="${b.href}"${st}>${inner}</a>`
+      : `<div class="sf-card sf-block sf-block--image"${st}>${inner}</div>`;
   }
-  const ed = !!window.STUDIO_EDIT;
-  const ea = f => ed ? ` contenteditable="true" data-edit="${f}"` : '';
   if (b.type === 'quote') {
-    return `<div class="sf-card sf-block sf-block--quote"><blockquote${ea('body')}>${_sfBlockPara(b.body)}</blockquote>${(b.title || ed) ? `<cite${ea('title')}>${b.title || ''}</cite>` : ''}</div>`;
+    return `<div class="sf-card sf-block sf-block--quote${pad}"${st}><blockquote${ea('body')}>${_sfBlockPara(b.body)}</blockquote>${(b.title || ed) ? `<cite${ea('title')}>${b.title || ''}</cite>` : ''}</div>`;
   }
-  return `<div class="sf-card sf-block sf-block--text">${(b.title || ed) ? `<div class="sf-block-h"${ea('title')}>${b.title || ''}</div>` : ''}${(b.body || ed) ? `<div class="sf-block-body"${ea('body')}>${_sfBlockPara(b.body)}</div>` : ''}</div>`;
+  return `<div class="sf-card sf-block sf-block--text${pad}"${st}>${(b.title || ed) ? `<div class="sf-block-h"${ea('title')}>${b.title || ''}</div>` : ''}${(b.body || ed) ? `<div class="sf-block-body"${ea('body')}>${_sfBlockPara(b.body)}</div>` : ''}</div>`;
 }
 
 // ── Promo banners — dark gradient cards that link to tools.
@@ -716,21 +761,26 @@ function _sfPromos() {
     }
   ];
 }
-function _sfPromoCard(p) {
+function _sfPromoCard(p, i) {
   const ext = /^https?:/.test(p.href || '');
   const art = p.image ? `<img src="${p.image}" alt="">` : '';
+  const ed = window.STUDIO_EDIT;
+  const pe = f => ed ? ` contenteditable="true" data-promo="${i}" data-pf="${f}"` : '';
+  // In edit mode the promo is a div (so links don't fire) with editable text.
+  const tag = ed ? 'div' : 'a';
+  const attrs = ed ? '' : ` href="${p.href || '#'}"${ext ? ' target="_blank" rel="noopener"' : ''}`;
   return `
-    <a class="sf-promo" href="${p.href || '#'}"${ext ? ' target="_blank" rel="noopener"' : ''} style="background:${p.bg || '#1a1a1a'}">
+    <${tag} class="sf-promo" style="background:${p.bg || '#1a1a1a'}"${attrs}>
       <div class="sf-promo-body">
-        <div class="sf-promo-title">${p.title || ''}</div>
-        <div class="sf-promo-sub">${p.subtitle || ''}</div>
-        <span class="sf-promo-cta">${p.cta || 'Explore'}<span class="sf-promo-arrow">↗</span></span>
+        <div class="sf-promo-title"${pe('title')}>${p.title || ''}</div>
+        <div class="sf-promo-sub"${pe('subtitle')}>${p.subtitle || ''}</div>
+        <span class="sf-promo-cta"><span${pe('cta')}>${p.cta || 'Explore'}</span><span class="sf-promo-arrow">↗</span></span>
       </div>
       <div class="sf-promo-art${p.image ? '' : ' sf-promo-art--ph'}">${art}</div>
-    </a>`;
+    </${tag}>`;
 }
 function _sfPromosSection() {
-  const cards = _sfPromos().map(_sfPromoCard).join('');
+  const cards = _sfPromos().map((p, i) => _sfPromoCard(p, i)).join('');
   return cards ? `<div class="sf-promos">${cards}</div>` : '';
 }
 
@@ -929,9 +979,15 @@ window.sfShuffleRivalry = function () {
 };
 
 // ── Left rail: upcoming meets (like Sofascore "Games") ──
+function _sfMeets() {
+  const m = window.STUDIO && window.STUDIO.content && window.STUDIO.content.meets;
+  if (Array.isArray(m)) return m;
+  return (typeof SITE !== 'undefined' && SITE.upcomingMeets) || [];
+}
+window._sfCurrentMeets = function () { return _sfMeets(); };
 function _sfMeetsCard() {
   const now = Date.now();
-  const meets = (SITE.upcomingMeets || [])
+  const meets = _sfMeets()
     .filter(m => m.name && m.datetime && new Date(m.datetime) > now)
     .sort((a, b) => new Date(a.datetime) - new Date(b.datetime))
     .slice(0, 6);
@@ -947,7 +1003,7 @@ function _sfMeetsCard() {
   }).join('');
   return `
     <div class="sf-card">
-      <div class="sf-card-hd"><span>Upcoming meets</span></div>
+      <div class="sf-card-hd"><span>${_sfT('hd.meets','Upcoming meets')}</span></div>
       ${rows ? `<div class="sf-meet-list">${rows}</div>` : '<p class="sf-empty">No meets scheduled.</p>'}
     </div>`;
 }
@@ -1059,7 +1115,7 @@ function _sfSpotlight() {
 // ── Next-meet countdown (hero right stack) ──
 function _sfNextMeetCountdown() {
   const now = Date.now();
-  const next = ((typeof SITE !== 'undefined' && SITE.upcomingMeets) || [])
+  const next = _sfMeets()
     .filter(m => m.name && m.datetime && new Date(m.datetime) > now)
     .sort((a, b) => new Date(a.datetime) - new Date(b.datetime))[0];
   if (!next) return '';
@@ -1199,7 +1255,7 @@ let _sfWinsEv = 'all';
 function _sfMostWinsCard() {
   return `
     <div class="sf-card">
-      <div class="sf-card-hd"><span>Most wins · 2026</span>
+      <div class="sf-card-hd"><span>${_sfT('hd.wins','Most wins · 2026')}</span>
         ${_sfDropdown('sf-wins-dd', _sfWinsEv, _sfDistOptions(), 'sfSetWinsEv')}
       </div>
       <div id="sf-wins-body">${_sfMostWinsBody()}</div>
@@ -1262,7 +1318,7 @@ function _sfBarrierCard() {
   }).join('');
   return `
     <div class="sf-card">
-      <div class="sf-card-hd"><span>Barrier club</span></div>
+      <div class="sf-card-hd"><span>${_sfT('hd.barrier','Barrier club')}</span></div>
       <div class="sf-bar-list">${rows}</div>
     </div>`;
 }
@@ -1326,7 +1382,7 @@ let _sfRecentPage = 0;
 function _sfRecentCard() {
   return `
     <div class="sf-card">
-      <div class="sf-card-hd"><span>Recent performances</span>
+      <div class="sf-card-hd"><span>${_sfT('hd.recent','Recent performances')}</span>
         ${_sfDropdown('sf-recent-dd', _sfRecentEv, _sfDistOptions(), 'sfRecentSort')}
       </div>
       <div id="sf-recent-body">${_sfRecentBody()}</div>

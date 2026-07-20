@@ -68,6 +68,18 @@ function buildNavbar() {
     { label: 'About', href: 'about.html', icon: 'about', color: 'var(--brand)', hint: 'What StatTC is & who makes it' },
   ];
 
+  // Studio nav override: reorder / rename / hide links (matched by href).
+  let _effLinks = navLinks;
+  const _navOvr = window.STUDIO && window.STUDIO.content && window.STUDIO.content.nav;
+  if (Array.isArray(_navOvr) && _navOvr.length) {
+    const byHref = {}; navLinks.forEach(l => { byHref[l.href] = l; });
+    _effLinks = _navOvr.map(o => {
+      const base = byHref[o.href]; if (!base) return null;
+      if (o.hidden) return null;
+      return Object.assign({}, base, o.label != null ? { label: o.label } : {});
+    }).filter(Boolean);
+  }
+
   const navLinkHtml = l => {
     const active = l.href.includes(activeHref) && activeHref ? 'active' : '';
     const styleAttr = l.color ? ` style="--link-accent:${l.color}"` : '';
@@ -88,7 +100,7 @@ function buildNavbar() {
 
   const _caretSvg = '<svg class="navlink-caret" width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
-  const navLinksHtml = navLinks.map(navLinkHtml).join('');
+  const navLinksHtml = _effLinks.map(navLinkHtml).join('');
 
   return `
     <nav class="navbar" role="navigation" aria-label="Main navigation">
@@ -153,7 +165,7 @@ function buildNavbar() {
         <button class="mobile-drawer-close" onclick="toggleMobileMenu()" aria-label="Close menu">×</button>
       </div>
       <ul class="mobile-drawer-nav">
-        ${navLinks.map(l => `<li><a href="${l.href}"${l.color ? ` style="--link-accent:${l.color}"` : ''}>${_navIcon(l.icon)}${l.label}</a></li>`).join('')}
+        ${_effLinks.map(l => `<li><a href="${l.href}"${l.color ? ` style="--link-accent:${l.color}"` : ''}>${_navIcon(l.icon)}${l.label}</a></li>`).join('')}
       </ul>
       <div class="mobile-drawer-footer">
         <button class="mobile-drawer-search" onclick="toggleMobileMenu();openSearch()">
@@ -258,3 +270,8 @@ function buildFooter() {
     </footer>
   `;
 }
+
+window.rebuildNav = function () {
+  var t = document.getElementById('nav-placeholder');
+  if (t) t.innerHTML = buildNavbar();
+};
