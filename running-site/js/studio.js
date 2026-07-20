@@ -28,6 +28,7 @@
   // Make the config available synchronously (before buildHome runs).
   window.STUDIO = load();
   if (!window.STUDIO.theme) window.STUDIO.theme = {};
+  if (!window.STUDIO.content) window.STUDIO.content = {};
 
   function applyTheme() {
     var root = document.documentElement;
@@ -65,6 +66,7 @@
       '<div class="studio-tabs">' +
         '<button class="studio-tab active" data-tab="theme">Theme</button>' +
         '<button class="studio-tab" data-tab="layout">Layout</button>' +
+        '<button class="studio-tab" data-tab="content">Content</button>' +
         '<button class="studio-tab" data-tab="data">Save / Load</button>' +
       '</div>' +
       '<div class="studio-body" id="studio-body"></div>';
@@ -97,7 +99,136 @@
     function renderTab(tab) {
       if (tab === 'theme') return renderTheme(body);
       if (tab === 'layout') return renderLayout(body);
+      if (tab === 'content') return renderContent(body);
       return renderData(body);
+    }
+
+    // Reusable image slot: upload a file OR paste a URL. Stored as a data-URL.
+    function imageField(cur, onSet) {
+      var wrap = el('div', 'studio-img');
+      var thumb = el('div', 'studio-img-thumb');
+      if (cur) thumb.style.backgroundImage = 'url("' + cur + '")';
+      else thumb.classList.add('empty');
+      var controls = el('div', 'studio-img-ctrl');
+      var up = el('label', 'studio-img-up', 'Upload');
+      var file = el('input');
+      file.type = 'file'; file.accept = 'image/*'; file.style.display = 'none';
+      file.addEventListener('change', function () {
+        var f = file.files[0]; if (!f) return;
+        var r = new FileReader();
+        r.onload = function () { thumb.style.backgroundImage = 'url("' + r.result + '")'; thumb.classList.remove('empty'); onSet(r.result); };
+        r.readAsDataURL(f);
+      });
+      up.appendChild(file);
+      var url = el('input', 'studio-img-url');
+      url.type = 'text'; url.placeholder = 'or paste image URL';
+      url.value = (cur && cur.indexOf('data:') !== 0) ? cur : '';
+      url.addEventListener('change', function () {
+        var v = url.value.trim();
+        thumb.style.backgroundImage = v ? 'url("' + v + '")' : '';
+        thumb.classList.toggle('empty', !v); onSet(v);
+      });
+      var clr = el('button', 'studio-img-clr', 'Clear');
+      clr.addEventListener('click', function () { thumb.style.backgroundImage = ''; thumb.classList.add('empty'); url.value = ''; onSet(''); });
+      controls.appendChild(up); controls.appendChild(clr);
+      wrap.appendChild(thumb); wrap.appendChild(controls); wrap.appendChild(url);
+      return wrap;
+    }
+
+    function textField(label, val, onSet, placeholder) {
+      var row = el('label', 'studio-field');
+      row.appendChild(el('span', 'studio-field-lbl', label));
+      var i = el('input', 'studio-field-in');
+      i.type = 'text'; i.value = val || ''; if (placeholder) i.placeholder = placeholder;
+      i.addEventListener('change', function () { onSet(i.value); });
+      row.appendChild(i);
+      return row;
+    }
+
+    // Athlete picker (name → id) using a datalist.
+    var _athList = null;
+    function athleteOptions() {
+      if (_athList) return _athList;
+      _athList = [];
+      if (typeof ATHLETES === 'object') {
+        for (var id in ATHLETES) { if (ATHLETES[id] && ATHLETES[id].name) _athList.push([id, ATHLETES[id].name]); }
+      }
+      return _athList;
+    }
+    function athleteField(label, curId, onPick) {
+      var opts = athleteOptions();
+      var listId = 'studio-ath-' + Math.random().toString(36).slice(2, 7);
+      var row = el('label', 'studio-field');
+      row.appendChild(el('span', 'studio-field-lbl', label));
+      var i = el('input', 'studio-field-in');
+      i.type = 'text'; i.setAttribute('list', listId);
+      var curName = ''; opts.forEach(function (o) { if (o[0] === curId) curName = o[1]; });
+      i.value = curName || curId || '';
+      var dl = document.createElement('datalist'); dl.id = listId;
+      opts.forEach(function (o) { var op = document.createElement('option'); op.value = o[1]; dl.appendChild(op); });
+      i.addEventListener('change', function () {
+        var hit = opts.filter(function (o) { return o[1].toLowerCase() === i.value.trim().toLowerCase(); })[0];
+        onPick(hit ? hit[0] : i.value.trim());
+      });
+      row.appendChild(i); row.appendChild(dl);
+      return row;
+    }
+
+    // ---- Content tab ----
+    function renderContent(host) {
+      if (document.body.dataset.page !== 'home') {
+        host.innerHTML = '<p class="studio-note">Open the <a href="index.html">home page</a> to edit its content & photos.</p>';
+        return;
+      }
+      var C = window.STUDIO.content;
+      host.innerHTML = '';
+
+      // Featured H2H matchup
+      var siteFm = (typeof SITE !== 'undefined' && SITE.featuredMatchup) || {};
+      C.featuredMatchup = C.featuredMatchup || {};
+      var fm = C.featuredMatchup;
+      var eff = function (k) { return fm[k] != null ? fm[k] : siteFm[k]; };
+      var setFm = function (k, v) { fm[k] = v; save(); if (window.rebuildHome) window.rebuildHome(); };
+
+      host.appendChild(el('div', 'studio-sec-hd', 'Featured H2H'));
+      host.appendChild(athleteField('Athlete A', eff('a'), function (v) { setFm('a', v); }));
+      host.appendChild(athleteField('Athlete B', eff('b'), function (v) { setFm('b', v); }));
+      host.appendChild(textField('Event', eff('event'), function (v) { setFm('event', v); }, 'e.g. Mile'));
+      host.appendChild(textField('Meet', eff('meet'), function (v) { setFm('meet', v); }, 'e.g. London Diamond League'));
+      host.appendChild(el('div', 'studio-field-lbl studio-mt', 'Photo · Athlete A'));
+      host.appendChild(imageField(eff('photoA'), function (v) { setFm('photoA', v); }));
+      host.appendChild(el('div', 'studio-field-lbl studio-mt', 'Photo · Athlete B'));
+      host.appendChild(imageField(eff('photoB'), function (v) { setFm('photoB', v); }));
+
+      // Promo banners
+      host.appendChild(el('div', 'studio-sec-hd', 'Promo banners'));
+      if (!Array.isArray(C.promos)) {
+        C.promos = window._sfCurrentPromos ? JSON.parse(JSON.stringify(window._sfCurrentPromos())) : [];
+      }
+      var setPromos = function () { save(); if (window.rebuildHome) window.rebuildHome(); };
+      C.promos.forEach(function (p, idx) {
+        var card = el('div', 'studio-promo');
+        var top = el('div', 'studio-promo-top');
+        top.appendChild(el('span', null, 'Banner ' + (idx + 1)));
+        var del = el('button', 'studio-mini', '✕ remove');
+        del.addEventListener('click', function () { C.promos.splice(idx, 1); setPromos(); renderContent(host); });
+        top.appendChild(del);
+        card.appendChild(top);
+        card.appendChild(textField('Title', p.title, function (v) { p.title = v; setPromos(); }));
+        card.appendChild(textField('Subtitle', p.subtitle, function (v) { p.subtitle = v; setPromos(); }));
+        card.appendChild(textField('Button', p.cta, function (v) { p.cta = v; setPromos(); }));
+        card.appendChild(textField('Link', p.href, function (v) { p.href = v; setPromos(); }, 'time-machine.html'));
+        card.appendChild(textField('Background', p.bg, function (v) { p.bg = v; setPromos(); }, 'CSS color / gradient'));
+        card.appendChild(el('div', 'studio-field-lbl studio-mt', 'Graphic'));
+        card.appendChild(imageField(p.image, function (v) { p.image = v; setPromos(); }));
+        host.appendChild(card);
+      });
+      var add = el('button', 'studio-btn studio-btn--ghost', '+ Add banner');
+      add.addEventListener('click', function () {
+        C.promos.push({ title: 'New banner', subtitle: '', cta: 'Explore', href: '#', bg: 'linear-gradient(120deg,#14110f,#3a2a12,#14110f)', image: '' });
+        setPromos(); renderContent(host);
+      });
+      host.appendChild(add);
     }
 
     // ---- Theme tab ----

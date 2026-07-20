@@ -107,3 +107,63 @@
   border: 1px solid var(--border); border-radius: 10px; padding: 10px;
   font-family: var(--font-mono); font-size: 11px; color: var(--text);
 }
+
+/* ── Content tab ── */
+.studio-sec-hd {
+  font-size: 12px; font-weight: 800; letter-spacing: 0.02em;
+  color: var(--text); margin: 18px 0 10px; padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+.studio-sec-hd:first-child { margin-top: 0; }
+.studio-field { display: block; margin-bottom: 10px; }
+.studio-field-lbl { display: block; font-size: 11px; font-weight: 700; color: var(--muted); margin-bottom: 4px; }
+.studio-mt { margin-top: 12px; }
+.studio-field-in {
+  width: 100%; height: 32px; padding: 0 10px;
+  border: 1px solid var(--border); border-radius: 8px;
+  font-family: var(--font-display); font-size: 13px; color: var(--text); background: #fff;
+}
+.studio-field-in:focus { outline: none; border-color: var(--orange); }
+
+/* Image slot */
+.studio-img { margin-bottom: 8px; }
+.studio-img-thumb {
+  width: 100%; height: 92px; border-radius: 10px;
+  background-size: cover; background-position: center;
+  border: 1px solid var(--border);
+}
+.studio-img-thumb.empty {
+  background:
+    repeating-linear-gradient(-45deg, var(--bg-light) 0 8px, #fff 8px 16px);
+}
+.studio-img-ctrl { display: flex; gap: 8px; margin: 6px 0; }
+.studio-img-up {
+  flex: 1; text-align: center; cursor: pointer;
+  padding: 7px; border-radius: 8px;
+  background: var(--orange); color: #fff;
+  font-size: 12px; font-weight: 700;
+}
+.studio-img-up:hover { background: var(--orange-hover); }
+.studio-img-clr {
+  padding: 7px 12px; border: none; border-radius: 8px; cursor: pointer;
+  background: var(--bg-light); color: var(--muted);
+  font-family: var(--font-display); font-size: 12px; font-weight: 600;
+  box-shadow: inset 0 0 0 1px var(--border);
+}
+.studio-img-clr:hover { color: var(--text); }
+.studio-img-url {
+  width: 100%; height: 30px; padding: 0 10px;
+  border: 1px solid var(--border); border-radius: 8px;
+  font-family: var(--font-mono); font-size: 11px; color: var(--text);
+}
+
+/* Promo editor card */
+.studio-promo {
+  border: 1px solid var(--border); border-radius: 12px;
+  padding: 12px; margin-bottom: 12px; background: var(--bg-light);
+}
+.studio-promo-top {
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 12px; font-weight: 700; color: var(--text); margin-bottom: 8px;
+}
+.studio-mini { border: none; background: none; cursor: pointer; font-size: 11px; font-weight: 600; color: var(--danger); }

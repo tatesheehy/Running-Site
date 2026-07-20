@@ -620,11 +620,14 @@ function buildHome() {
     </div>`;
 }
 window.rebuildHome = buildHome;
+window._sfCurrentPromos = function () { return _sfPromos(); };
 
 // ── Promo banners — dark gradient cards that link to tools.
 //    Configure via SITE.promos, or edit the defaults below. Drop your own
 //    graphic in by setting `image` to an image path (leave '' for a slot). ──
 function _sfPromos() {
+  const sp = window.STUDIO && window.STUDIO.content && window.STUDIO.content.promos;
+  if (Array.isArray(sp)) return sp;
   if (typeof SITE !== 'undefined' && Array.isArray(SITE.promos) && SITE.promos.length) return SITE.promos;
   return [
     {
@@ -879,7 +882,9 @@ function _sfMeetsCard() {
 //    a clean scoreboard (name + flag each side, record in the middle, PB
 //    compare row). Falls back to a random top rivalry if no config is set. ──
 function _sfHeroMatchup() {
-  const cfg = (typeof SITE !== 'undefined' && SITE.featuredMatchup) || null;
+  const _base = (typeof SITE !== 'undefined' && SITE.featuredMatchup) || {};
+  const _over = (window.STUDIO && window.STUDIO.content && window.STUDIO.content.featuredMatchup) || {};
+  const cfg = Object.assign({}, _base, _over);
   let A = cfg && ATHLETES[cfg.a], B = cfg && ATHLETES[cfg.b];
   if (!A || !B) { const p = _hpPickRivalry(); A = p[0]; B = p[1]; }
   if (!A || !B) return '';
