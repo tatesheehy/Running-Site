@@ -589,6 +589,7 @@ function buildHome() {
   // Section registry — the Studio reorders / hides these by id.
   const SECTIONS = {
     lead:     { label: 'Lead story', render: _sfLeadStory },
+    ranking:  { label: 'Power ranking', render: _sfFeaturedRanking },
     stories:  { label: 'Latest stories', render: _sfStoriesRiver },
     nextMeet: { label: 'Next meet', render: _sfNextMeetCountdown },
     meets:    { label: 'Upcoming meets', render: _sfMeetsCard },
@@ -606,7 +607,7 @@ function buildHome() {
     Object.fromEntries(Object.entries(SECTIONS).map(([k, v]) => [k, v.label])),
     Object.fromEntries(blocks.map(b => [b.id, (b.title || 'Custom box') + ' ✎']))
   );
-  const defLayout = { left: ['nextMeet', 'meets', 'barrier', 'promos'], right: ['lead', 'stories', 'hero', 'leaders', 'tools'], hidden: [] };
+  const defLayout = { left: ['nextMeet', 'meets', 'barrier', 'promos'], right: ['lead', 'ranking', 'stories', 'hero', 'leaders', 'tools'], hidden: [] };
   const layout = (window.STUDIO && window.STUDIO.layout) || defLayout;
   // Surface any newly-added built-in sections that a saved layout doesn't know about.
   (function () {
@@ -698,6 +699,32 @@ function _sfStoryCard(a) {
     <h3 class="sf-story-title">${a.title}</h3>
     <div class="sf-byline sf-byline--sm">${a.author || ''}${a.date ? ` · ${a.date}` : ''}</div>
   </a>`;
+}
+function _sfFeaturedRanking() {
+  const evs = (typeof RANKINGS_EVENTS !== 'undefined' && RANKINGS_EVENTS) || [];
+  const ov = window.STUDIO && window.STUDIO.content && window.STUDIO.content.featuredEvent;
+  const ev = (ov && evs.find(e => e.name === ov && (e.rows || []).length)) || evs.find(e => (e.rows || []).length);
+  if (!ev) return '';
+  const yr = (typeof RANKINGS_YEAR !== 'undefined' && RANKINGS_YEAR) || '';
+  const top = (ev.rows || []).slice(0, 3);
+  const rowsHtml = top.map((r, i) => {
+    const a = r.athleteId && ATHLETES[r.athleteId];
+    const name = (a && a.name) || r.name || r.athleteId || '';
+    const flag = (a && a.flag) || r.flag || '';
+    return `<a class="sf-rk-row" href="rankings.html?event=${encodeURIComponent(ev.name)}">
+      <span class="sf-rk-rank">${i + 1}</span>
+      <span class="sf-rk-main">
+        <span class="sf-rk-name">${name}${flag ? ` <span class="sf-rk-flag">${renderFlag(flag)}</span>` : ''}</span>
+        ${r.bite ? `<span class="sf-rk-bite">${r.bite}</span>` : ''}
+      </span>
+    </a>`;
+  }).join('');
+  return `<section class="sf-rk">
+    <div class="sf-rk-eyebrow">Power Ranking${yr ? ` · ${yr}` : ''}</div>
+    <h2 class="sf-rk-title">${ev.name}${ev.description ? ` <span class="sf-rk-sub">${ev.description}</span>` : ''}</h2>
+    <div class="sf-rk-list">${rowsHtml}</div>
+    <a class="sf-rk-more" href="rankings.html?event=${encodeURIComponent(ev.name)}">See the full ${ev.name} ranking →</a>
+  </section>`;
 }
 function _sfStoriesRiver() {
   const arts = _sfArticles();

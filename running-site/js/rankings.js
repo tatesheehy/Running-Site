@@ -756,13 +756,14 @@ window.toggleRdView = function(mode) {
   if (termWrap) termWrap.style.display = mode === 'terminal' ? '' : 'none';
   if (colLabels) colLabels.style.display = mode === 'list' ? '' : 'none';
   if (skimToggle) skimToggle.style.display = mode === 'terminal' ? 'none' : '';
+  document.body.classList.toggle('rd-terminal-page', mode === 'terminal');
   document.querySelectorAll('.rd-view-btn').forEach(btn => {
     btn.classList.toggle('rd-view-btn--active', btn.dataset.mode === mode);
   });
 };
 
 function buildRankingsDetail(eventName, opts = {}) {
-  document.body.classList.add('rd-terminal-page');
+  document.body.classList.remove('rd-terminal-page');
   const {
     archiveYear   = null,
     archiveWeekId = null,
@@ -899,27 +900,37 @@ function buildRankingsDetail(eventName, opts = {}) {
   const athleteCount = rows.length;
   const terminalHtml = buildTerminalHtml(rows);
 
+  const updatedLabel = (weekObj && weekObj.weekLabel) || (ev && ev.weekLabel) || '';
   document.getElementById('main').innerHTML = `
     <div class="container">
-      <div class="rankings-detail">
-        <div class="rd-header">
-          <div class="rd-header-controls rd-header-controls--compact">
-            <div class="rd-header-controls-left">
-              <a href="${backUrl}" class="rd-back rd-back--mini" title="${backLabel}">&larr;</a>
-              <span class="rd-mini-title">${eventName}</span>
-              ${filterHtml}
-            </div>
-            <div class="rd-header-btns">
-              <a class="rd-compare-btn" href="event-tracker.html?event=${encodeURIComponent(eventName)}">Event Tracker</a>
-              <button class="rd-compare-btn rd-compare-btn--primary" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">Compare Athletes</button>
-            </div>
+      <div class="rankings-detail rd-flagship">
+        <a href="${backUrl}" class="rd-back rd-back--mini" title="${backLabel}">&larr; ${backLabel}</a>
+        <header class="rd-masthead">
+          <div class="rd-masthead-eyebrow">Power Rankings · ${displayYear}</div>
+          <h1 class="rd-masthead-title">${eventName}</h1>
+          ${ev && ev.description ? `<p class="rd-masthead-dek">${ev.description}</p>` : ''}
+          <div class="rd-masthead-meta">
+            ${updatedLabel ? `<span>Updated ${updatedLabel}</span>` : ''}
+            <span>${athleteCount} ranked</span>
+          </div>
+        </header>
+        <div class="rd-viewbar">
+          <div class="rd-views">
+            <button class="rd-view-btn rd-view-btn--active" data-mode="list" onclick="toggleRdView('list')">Takes</button>
+            <button class="rd-view-btn" data-mode="terminal" onclick="toggleRdView('terminal')">Table</button>
+          </div>
+          <div class="rd-viewbar-right">
+            ${filterHtml}
+            <button class="rd-compare-btn rd-compare-btn--primary" onclick="openH2H(null,'${eventName.replace(/'/g,"\\'")}')">Compare Athletes</button>
           </div>
         </div>
         ${ev?.photo && !archiveYear ? `<div class="rd-event-banner" style="background-image:url('${ev.photo}')"></div>` : ''}
-        <div class="rd-terminal-wrap">${terminalHtml}</div>
+        <div class="rd-list-wrap"><div class="rd-list">${rowsHtml}</div>${sectionsHtml}</div>
+        <div class="rd-terminal-wrap" style="display:none">${terminalHtml}</div>
       </div>
     </div>
   `;
+  window._rdView = 'list';
   // Detect when col-labels become sticky and activate the top-mask
   const sentinel = document.getElementById('rd-col-sentinel');
   const colLabels = document.querySelector('.rd-col-labels');
