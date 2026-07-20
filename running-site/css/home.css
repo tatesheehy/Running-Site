@@ -3293,3 +3293,49 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
   border: 2px solid var(--border);
 }
 
+
+/* ── Custom user-created boxes (Studio → Boxes) ── */
+.sf-block { padding: 16px; }
+.sf-block--text .sf-block-h { font-family: var(--font-display); font-size: 16px; font-weight: 800; letter-spacing: -0.01em; color: var(--text); margin-bottom: 8px; }
+.sf-block--text .sf-block-body { font-size: 14px; line-height: 1.55; color: var(--text); }
+.sf-block--text .sf-block-body p { margin: 0 0 8px; }
+.sf-block--text .sf-block-body p:last-child { margin-bottom: 0; }
+.sf-block--quote { padding: 20px; }
+.sf-block--quote blockquote { font-family: var(--font-display); font-size: 18px; font-weight: 600; line-height: 1.4; color: var(--text); margin: 0; }
+.sf-block--quote blockquote::before { content: '“'; color: var(--orange); }
+.sf-block--quote blockquote::after { content: '”'; color: var(--orange); }
+.sf-block--quote cite { display: block; margin-top: 10px; font-size: 12.5px; font-style: normal; font-weight: 600; color: var(--muted); }
+.sf-block--image { padding: 0; overflow: hidden; }
+.sf-block--image img, .sf-block-imgph { display: block; width: 100%; }
+.sf-block-imgph { height: 160px; background: repeating-linear-gradient(-45deg, var(--bg-light) 0 10px, #fff 10px 20px); }
+.sf-block-cap { padding: 12px 16px; }
+.sf-block-cap-t { font-family: var(--font-display); font-size: 14px; font-weight: 700; color: var(--text); }
+.sf-block-cap-s { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+.sf-block--html { overflow: hidden; }
+.sf-block--html iframe, .sf-block--html img, .sf-block--html video { max-width: 100%; }
+
+/* Video box (Studio → Boxes → Video) */
+.sf-block--video { padding: 0; overflow: hidden; }
+.sf-video { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #000; }
+.sf-video iframe, .sf-video video { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: cover; }
+.sf-video-fallback { display: block; padding: 16px; color: var(--orange); font-weight: 600; word-break: break-all; }
+
+/* ── On-canvas edit mode (Studio → Edit page) ── */
+.sf-slot { position: relative; }
+.sf--editing .sf-slot { outline: 1px dashed transparent; outline-offset: 2px; border-radius: var(--radius-card); transition: outline-color 0.12s ease; }
+.sf--editing .sf-slot:hover { outline-color: var(--orange); }
+.sf-slot-bar {
+  position: absolute; top: 8px; right: 8px; z-index: 30;
+  display: none; align-items: center; gap: 6px;
+  background: rgba(17,17,17,0.92); color: #fff;
+  padding: 4px 6px; border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.28);
+}
+.sf-slot:hover > .sf-slot-bar { display: inline-flex; }
+.sf-slot-name { font-family: var(--font-display); font-size: 11px; font-weight: 700; opacity: 0.85; padding: 0 4px; max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sf-slot-acts { display: inline-flex; gap: 2px; }
+.sf-slot-acts button { width: 22px; height: 22px; border: none; border-radius: 5px; background: rgba(255,255,255,0.14); color: #fff; cursor: pointer; font-size: 12px; line-height: 1; }
+.sf-slot-acts button:hover { background: var(--orange); }
+.sf-slot--hidden { opacity: 0.45; }
+.sf--editing [contenteditable="true"] { outline: 1px dashed rgba(255,82,0,0.55); outline-offset: 3px; border-radius: 4px; cursor: text; }
+.sf--editing [contenteditable="true"]:focus { outline: 2px solid var(--orange); }

@@ -596,15 +596,47 @@ function buildHome() {
     leaders:  { label: 'Leaders + Recent / Most wins', render: _sfLeadersBlock },
     tools:    { label: 'Tools', render: _sfToolsSection }
   };
-  window.SF_SECTION_META = Object.fromEntries(Object.entries(SECTIONS).map(([k, v]) => [k, v.label]));
+  // Custom user-created boxes (Studio → Boxes) live in STUDIO.blocks.
+  const blocks = (window.STUDIO && window.STUDIO.blocks) || [];
+  const blockMap = {};
+  blocks.forEach(b => { if (b && b.id) blockMap[b.id] = b; });
+  window.SF_SECTION_META = Object.assign(
+    Object.fromEntries(Object.entries(SECTIONS).map(([k, v]) => [k, v.label])),
+    Object.fromEntries(blocks.map(b => [b.id, (b.title || 'Custom box') + ' ✎']))
+  );
   const defLayout = { left: ['nextMeet', 'meets', 'barrier', 'promos'], right: ['hero', 'leaders', 'tools'], hidden: [] };
   const layout = (window.STUDIO && window.STUDIO.layout) || defLayout;
   const hidden = layout.hidden || [];
-  const renderCol = ids => (ids || []).filter(id => SECTIONS[id] && !hidden.includes(id)).map(id => SECTIONS[id].render()).join('');
+  const editing = !!window.STUDIO_EDIT;
+  const renderOne = id => SECTIONS[id] ? SECTIONS[id].render() : (blockMap[id] ? _sfCustomBlock(blockMap[id]) : '');
+  // In edit mode every box is wrapped in an editable "slot" with hover handles.
+  const wrap = (id, colName) => {
+    const html = renderOne(id);
+    if (!editing) return html;
+    const isHidden = hidden.includes(id);
+    const name = (window.SF_SECTION_META && window.SF_SECTION_META[id]) || id;
+    const isBlock = !!blockMap[id];
+    return `<div class="sf-slot${isHidden ? ' sf-slot--hidden' : ''}" data-id="${id}" data-col="${colName}">
+      <div class="sf-slot-bar">
+        <span class="sf-slot-name">${name}</span>
+        <span class="sf-slot-acts">
+          <button type="button" data-a="up" title="Move up">↑</button>
+          <button type="button" data-a="down" title="Move down">↓</button>
+          <button type="button" data-a="move" title="Swap column">⇄</button>
+          <button type="button" data-a="hide" title="${isHidden ? 'Show' : 'Hide'}">${isHidden ? '◍' : '○'}</button>
+          ${isBlock ? '<button type="button" data-a="del" title="Delete">✕</button>' : ''}
+        </span>
+      </div>
+      ${html}
+    </div>`;
+  };
+  const renderCol = (ids, colName) => (ids || [])
+    .filter(id => (SECTIONS[id] || blockMap[id]) && (editing || !hidden.includes(id)))
+    .map(id => wrap(id, colName)).join('');
 
   document.getElementById('main').innerHTML = `
     <div class="fp-wrap">
-      <div class="sf">
+      <div class="sf${editing ? ' sf--editing' : ''}">
         <nav class="sf-crumbs" aria-label="Breadcrumb">
           <a href="index.html">Athletics</a>
           <span class="sf-crumb-sep">›</span>
@@ -613,14 +645,56 @@ function buildHome() {
           <span class="sf-crumb-cur">2026 Season</span>
         </nav>
         <div class="sf-layout">
-          <aside class="sf-col-left">${renderCol(layout.left)}</aside>
-          <main class="sf-col-right">${renderCol(layout.right)}</main>
+          <aside class="sf-col-left">${renderCol(layout.left, 'left')}</aside>
+          <main class="sf-col-right">${renderCol(layout.right, 'right')}</main>
         </div>
       </div>
     </div>`;
 }
 window.rebuildHome = buildHome;
 window._sfCurrentPromos = function () { return _sfPromos(); };
+
+// Render a user-created custom box (Studio → Boxes).
+function _sfBlockPara(t) {
+  return String(t || '').split(/\n{2,}/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
+}
+function _sfYouTubeId(u) { const m = String(u || '').match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/|v\/)|youtu\.be\/)([\w-]{11})/); return m ? m[1] : null; }
+function _sfVimeoId(u) { const m = String(u || '').match(/vimeo\.com\/(?:video\/)?(\d+)/); return m ? m[1] : null; }
+function _sfVideoInner(b) {
+  const url = b.url || '';
+  const yt = _sfYouTubeId(url);
+  if (yt) return `<div class="sf-video"><iframe src="https://www.youtube.com/embed/${yt}?autoplay=1&mute=1&loop=1&playlist=${yt}&controls=1&modestbranding=1&rel=0&playsinline=1" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>`;
+  const vm = _sfVimeoId(url);
+  if (vm) return `<div class="sf-video"><iframe src="https://player.vimeo.com/video/${vm}?autoplay=1&muted=1&loop=1&background=1" allow="autoplay" allowfullscreen loading="lazy"></iframe></div>`;
+  if (/\.(mp4|webm|ogg)(\?|#|$)/i.test(url)) return `<div class="sf-video"><video src="${url}" autoplay muted loop playsinline${b.poster ? ` poster="${b.poster}"` : ''}></video></div>`;
+  return url ? `<a class="sf-video-fallback" href="${url}" target="_blank" rel="noopener">▶ ${url}</a>` : '<div class="sf-block-imgph"></div>';
+}
+function _sfCustomBlock(b) {
+  if (!b) return '';
+  if (b.type === 'video') {
+    const cap = (b.title || b.caption)
+      ? `<div class="sf-block-cap">${b.title ? `<div class="sf-block-cap-t">${b.title}</div>` : ''}${b.caption ? `<div class="sf-block-cap-s">${b.caption}</div>` : ''}</div>` : '';
+    return `<div class="sf-card sf-block sf-block--video">${_sfVideoInner(b)}${cap}</div>`;
+  }
+  if (b.type === 'html') {
+    return `<div class="sf-card sf-block sf-block--html">${b.html || ''}</div>`;
+  }
+  if (b.type === 'image') {
+    const img = b.image ? `<img src="${b.image}" alt="${b.title || ''}">` : '<div class="sf-block-imgph"></div>';
+    const cap = (b.title || b.caption)
+      ? `<div class="sf-block-cap">${b.title ? `<div class="sf-block-cap-t">${b.title}</div>` : ''}${b.caption ? `<div class="sf-block-cap-s">${b.caption}</div>` : ''}</div>` : '';
+    const inner = img + cap;
+    return b.href
+      ? `<a class="sf-card sf-block sf-block--image" href="${b.href}">${inner}</a>`
+      : `<div class="sf-card sf-block sf-block--image">${inner}</div>`;
+  }
+  const ed = !!window.STUDIO_EDIT;
+  const ea = f => ed ? ` contenteditable="true" data-edit="${f}"` : '';
+  if (b.type === 'quote') {
+    return `<div class="sf-card sf-block sf-block--quote"><blockquote${ea('body')}>${_sfBlockPara(b.body)}</blockquote>${(b.title || ed) ? `<cite${ea('title')}>${b.title || ''}</cite>` : ''}</div>`;
+  }
+  return `<div class="sf-card sf-block sf-block--text">${(b.title || ed) ? `<div class="sf-block-h"${ea('title')}>${b.title || ''}</div>` : ''}${(b.body || ed) ? `<div class="sf-block-body"${ea('body')}>${_sfBlockPara(b.body)}</div>` : ''}</div>`;
+}
 
 // ── Promo banners — dark gradient cards that link to tools.
 //    Configure via SITE.promos, or edit the defaults below. Drop your own

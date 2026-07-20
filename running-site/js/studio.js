@@ -23,7 +23,41 @@
     try { return JSON.parse(localStorage.getItem(KEY)) || {}; }
     catch (e) { return {}; }
   }
-  function save() { localStorage.setItem(KEY, JSON.stringify(window.STUDIO)); }
+  var _statusEl = null;
+  function setStatus(s) { if (_statusEl) _statusEl.textContent = s || ''; }
+  function sbClient() { return (window.getSupabase && window.getSupabase()) || null; }
+  function sbUser() { return (window.getCurrentUser && window.getCurrentUser()) || null; }
+
+  var _remoteTimer = null;
+  function saveRemote() {
+    var sb = sbClient(), user = sbUser();
+    if (!sb || !user) { setStatus('Saved on this device'); return; }
+    setStatus('Saving…');
+    clearTimeout(_remoteTimer);
+    _remoteTimer = setTimeout(function () {
+      Promise.resolve(
+        sb.from('site_config').upsert({ key: 'studio', config: window.STUDIO, updated_at: new Date().toISOString() }, { onConflict: 'key' })
+      ).then(function (res) { setStatus(res && res.error ? 'Save failed — check the site_config table' : 'Saved to account ✓'); })
+       .catch(function () { setStatus('Save failed'); });
+    }, 700);
+  }
+  function loadRemote() {
+    var sb = sbClient(); if (!sb) return;
+    Promise.resolve(sb.from('site_config').select('config').eq('key', 'studio').maybeSingle())
+      .then(function (res) {
+        if (res && res.data && res.data.config) {
+          window.STUDIO = res.data.config;
+          if (!window.STUDIO.theme) window.STUDIO.theme = {};
+          if (!window.STUDIO.content) window.STUDIO.content = {};
+          localStorage.setItem(KEY, JSON.stringify(window.STUDIO));
+          applyTheme();
+          if (window.rebuildHome && document.body.dataset.page === 'home' && !window.STUDIO_EDIT) window.rebuildHome();
+          var atab = document.querySelector('.studio-tab.active'); if (atab) atab.click();
+          setStatus(sbUser() ? 'Synced with account' : '');
+        }
+      }).catch(function () { /* table may not exist yet */ });
+  }
+  function save() { localStorage.setItem(KEY, JSON.stringify(window.STUDIO)); saveRemote(); }
 
   // Make the config available synchronously (before buildHome runs).
   window.STUDIO = load();
@@ -41,6 +75,17 @@
     });
   }
   applyTheme(); // apply immediately on every page
+
+  // Pull the shared config from Supabase (public read) once the client is up,
+  // and re-pull whenever auth changes.
+  (function initRemote() {
+    var tries = 0;
+    (function poll() {
+      var sb = sbClient();
+      if (sb) { loadRemote(); try { sb.auth.onAuthStateChange(function () { loadRemote(); }); } catch (e) {} return; }
+      if (tries++ < 60) setTimeout(poll, 150);
+    })();
+  })();
 
   // ---- UI (built after DOM is ready) ---------------------------------------
   function el(tag, cls, html) {
@@ -62,15 +107,20 @@
     var panel = el('div', 'studio-panel');
     panel.id = 'studio-panel';
     panel.innerHTML =
-      '<div class="studio-hd"><span>Studio</span><button class="studio-x" aria-label="Close">✕</button></div>' +
+      '<div class="studio-hd"><span>Studio</span>' +
+        '<label class="studio-edit-tgl"><input type="checkbox" id="studio-edit-chk"> Edit page</label>' +
+        '<button class="studio-x" aria-label="Close">✕</button></div>' +
+      '<div class="studio-status" id="studio-status"></div>' +
       '<div class="studio-tabs">' +
         '<button class="studio-tab active" data-tab="theme">Theme</button>' +
         '<button class="studio-tab" data-tab="layout">Layout</button>' +
         '<button class="studio-tab" data-tab="content">Content</button>' +
-        '<button class="studio-tab" data-tab="data">Save / Load</button>' +
+        '<button class="studio-tab" data-tab="boxes">Boxes</button>' +
+        '<button class="studio-tab" data-tab="data">Save</button>' +
       '</div>' +
       '<div class="studio-body" id="studio-body"></div>';
     document.body.appendChild(panel);
+    _statusEl = panel.querySelector('#studio-status');
 
     var open = false;
     function toggle(v) {
@@ -82,8 +132,55 @@
     fab.addEventListener('click', function () { toggle(); });
     panel.querySelector('.studio-x').addEventListener('click', function () { toggle(false); });
     document.addEventListener('keydown', function (e) {
-      if (e.shiftKey && (e.key === 'S' || e.key === 's') && !/input|textarea/i.test((e.target.tagName || ''))) toggle();
+      if (e.shiftKey && (e.key === 'S' || e.key === 's') && !/input|textarea/i.test((e.target.tagName || '')) && !e.target.isContentEditable) toggle();
     });
+
+    // ---- On-canvas edit mode ----
+    var chk = panel.querySelector('#studio-edit-chk');
+    function setEdit(on) {
+      window.STUDIO_EDIT = on;
+      document.body.classList.toggle('studio-editing', on);
+      chk.checked = on;
+      if (document.body.dataset.page === 'home' && window.rebuildHome) window.rebuildHome();
+    }
+    chk.addEventListener('change', function () { setEdit(chk.checked); });
+
+    // Slot handles (delegated so they survive re-renders)
+    document.addEventListener('click', function (e) {
+      var btn = e.target.closest && e.target.closest('.sf-slot-bar button');
+      if (!btn) return;
+      e.preventDefault(); e.stopPropagation();
+      var slot = btn.closest('.sf-slot'); if (!slot) return;
+      var id = slot.dataset.id, a = btn.dataset.a;
+      var L = ensureLayout();
+      var col = L.left.indexOf(id) >= 0 ? 'left' : (L.right.indexOf(id) >= 0 ? 'right' : null);
+      if (a === 'up' || a === 'down') {
+        if (!col) return; var arr = L[col], i = arr.indexOf(id);
+        if (a === 'up' && i > 0) { arr.splice(i, 1); arr.splice(i - 1, 0, id); }
+        if (a === 'down' && i < arr.length - 1) { arr.splice(i, 1); arr.splice(i + 1, 0, id); }
+      } else if (a === 'move') {
+        if (!col) return; var other = col === 'left' ? 'right' : 'left';
+        L[col].splice(L[col].indexOf(id), 1); L[other].push(id);
+      } else if (a === 'hide') {
+        var h = L.hidden.indexOf(id); if (h >= 0) L.hidden.splice(h, 1); else L.hidden.push(id);
+      } else if (a === 'del') {
+        (window.STUDIO.blocks || []).some(function (b, j) { if (b.id === id) { window.STUDIO.blocks.splice(j, 1); return true; } });
+        ['left', 'right', 'hidden'].forEach(function (k) { var j = L[k].indexOf(id); if (j >= 0) L[k].splice(j, 1); });
+      }
+      save(); if (window.rebuildHome) window.rebuildHome();
+    }, true);
+
+    // Inline text editing → write back to the block config on blur
+    document.addEventListener('blur', function (e) {
+      var t = e.target;
+      if (!t || !t.dataset || t.dataset.edit == null) return;
+      var slot = t.closest('.sf-slot'); if (!slot) return;
+      var id = slot.dataset.id;
+      var blk = (window.STUDIO.blocks || []).filter(function (b) { return b.id === id; })[0];
+      if (!blk) return;
+      blk[t.dataset.edit] = t.innerText;
+      save(); // persist without re-render (keeps cursor)
+    }, true);
 
     var activeTab = 'theme';
     panel.querySelectorAll('.studio-tab').forEach(function (t) {
@@ -100,7 +197,104 @@
       if (tab === 'theme') return renderTheme(body);
       if (tab === 'layout') return renderLayout(body);
       if (tab === 'content') return renderContent(body);
+      if (tab === 'boxes') return renderBoxes(body);
       return renderData(body);
+    }
+
+    function textareaField(label, val, onSet, placeholder) {
+      var row = el('label', 'studio-field');
+      row.appendChild(el('span', 'studio-field-lbl', label));
+      var t = el('textarea', 'studio-field-ta');
+      t.value = val || ''; if (placeholder) t.placeholder = placeholder;
+      t.addEventListener('change', function () { onSet(t.value); });
+      row.appendChild(t);
+      return row;
+    }
+    function defLayout() { return { left: ['nextMeet', 'meets', 'barrier', 'promos'], right: ['hero', 'leaders', 'tools'], hidden: [] }; }
+    function ensureLayout() { window.STUDIO.layout = window.STUDIO.layout || defLayout(); if (!window.STUDIO.layout.hidden) window.STUDIO.layout.hidden = []; return window.STUDIO.layout; }
+    function blockCol(id) { var L = ensureLayout(); return L.left.indexOf(id) >= 0 ? 'left' : 'right'; }
+    function moveBlockToCol(id, col) {
+      var L = ensureLayout();
+      ['left', 'right'].forEach(function (k) { var i = L[k].indexOf(id); if (i >= 0) L[k].splice(i, 1); });
+      L[col].push(id);
+    }
+    function saveRebuild() { save(); if (window.rebuildHome) window.rebuildHome(); }
+
+    // ---- Boxes tab (create custom boxes) ----
+    function renderBoxes(host) {
+      if (document.body.dataset.page !== 'home') {
+        host.innerHTML = '<p class="studio-note">Open the <a href="index.html">home page</a> to create boxes.</p>';
+        return;
+      }
+      window.STUDIO.blocks = window.STUDIO.blocks || [];
+      ensureLayout();
+      var blocks = window.STUDIO.blocks;
+      host.innerHTML = '<p class="studio-note">Build your own boxes and drop them into the page. Reorder or hide them in the Layout tab.</p>';
+
+      blocks.forEach(function (b) {
+        var card = el('div', 'studio-promo');
+        var top = el('div', 'studio-promo-top');
+        top.appendChild(el('span', null, 'Box · ' + (b.title || b.type)));
+        var del = el('button', 'studio-mini', '✕ delete');
+        del.addEventListener('click', function () {
+          var i = blocks.indexOf(b); if (i >= 0) blocks.splice(i, 1);
+          var L = ensureLayout();
+          ['left', 'right', 'hidden'].forEach(function (k) { var j = L[k].indexOf(b.id); if (j >= 0) L[k].splice(j, 1); });
+          saveRebuild(); renderBoxes(host);
+        });
+        top.appendChild(del); card.appendChild(top);
+
+        var typeRow = el('label', 'studio-field');
+        typeRow.appendChild(el('span', 'studio-field-lbl', 'Type'));
+        var sel = el('select', 'studio-field-in');
+        [['text', 'Text'], ['image', 'Image banner'], ['video', 'Video'], ['quote', 'Quote'], ['html', 'Embed / HTML']].forEach(function (t) {
+          var o = document.createElement('option'); o.value = t[0]; o.textContent = t[1]; if (b.type === t[0]) o.selected = true; sel.appendChild(o);
+        });
+        sel.addEventListener('change', function () { b.type = sel.value; saveRebuild(); renderBoxes(host); });
+        typeRow.appendChild(sel); card.appendChild(typeRow);
+
+        if (b.type === 'image') {
+          card.appendChild(textField('Title', b.title, function (v) { b.title = v; saveRebuild(); }));
+          card.appendChild(textField('Caption', b.caption, function (v) { b.caption = v; saveRebuild(); }));
+          card.appendChild(textField('Link', b.href, function (v) { b.href = v; saveRebuild(); }));
+          card.appendChild(el('div', 'studio-field-lbl studio-mt', 'Image'));
+          card.appendChild(imageField(b.image, function (v) { b.image = v; saveRebuild(); }));
+        } else if (b.type === 'video') {
+          card.appendChild(textField('Video URL', b.url, function (v) { b.url = v; saveRebuild(); }, 'YouTube, Vimeo, or .mp4 link'));
+          card.appendChild(textField('Caption', b.caption, function (v) { b.caption = v; saveRebuild(); }));
+          card.appendChild(el('div', 'studio-note', 'Autoplays muted. YouTube/Vimeo show the preview; direct .mp4 loops silently.'));
+          card.appendChild(el('div', 'studio-field-lbl studio-mt', 'Poster (for .mp4, optional)'));
+          card.appendChild(imageField(b.poster, function (v) { b.poster = v; saveRebuild(); }));
+        } else if (b.type === 'quote') {
+          card.appendChild(textareaField('Quote', b.body, function (v) { b.body = v; saveRebuild(); }));
+          card.appendChild(textField('Attribution', b.title, function (v) { b.title = v; saveRebuild(); }));
+        } else if (b.type === 'html') {
+          card.appendChild(textareaField('HTML / embed code', b.html, function (v) { b.html = v; saveRebuild(); }, '<iframe …></iframe>'));
+        } else {
+          card.appendChild(textField('Heading', b.title, function (v) { b.title = v; saveRebuild(); }));
+          card.appendChild(textareaField('Body', b.body, function (v) { b.body = v; saveRebuild(); }, 'Two line breaks = new paragraph'));
+        }
+
+        var colRow = el('label', 'studio-field');
+        colRow.appendChild(el('span', 'studio-field-lbl', 'Column'));
+        var cs = el('select', 'studio-field-in');
+        [['left', 'Left column'], ['right', 'Right column']].forEach(function (c) {
+          var o = document.createElement('option'); o.value = c[0]; o.textContent = c[1]; if (blockCol(b.id) === c[0]) o.selected = true; cs.appendChild(o);
+        });
+        cs.addEventListener('change', function () { moveBlockToCol(b.id, cs.value); saveRebuild(); });
+        colRow.appendChild(cs); card.appendChild(colRow);
+
+        host.appendChild(card);
+      });
+
+      var add = el('button', 'studio-btn', '+ New box');
+      add.addEventListener('click', function () {
+        var id = 'blk_' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5);
+        window.STUDIO.blocks.push({ id: id, type: 'text', title: 'New box', body: 'Write anything here.' });
+        ensureLayout().right.push(id);
+        saveRebuild(); renderBoxes(host);
+      });
+      host.appendChild(add);
     }
 
     // Reusable image slot: upload a file OR paste a URL. Stored as a data-URL.
@@ -314,8 +508,22 @@
 
     // ---- Data tab (export / import / reset) ----
     function renderData(host) {
-      host.innerHTML =
-        '<p class="studio-note">Changes are saved in this browser. To make them permanent, Export the JSON and commit it (or paste it into another browser to import).</p>';
+      var user = sbUser();
+      host.innerHTML = '';
+      var acct = el('div', 'studio-acct');
+      if (user) {
+        acct.innerHTML = '<div class="studio-acct-on">● Signed in as ' + (user.email || 'you') + '</div>' +
+          '<p class="studio-note">Every change auto-saves to your account and goes live for all visitors. No commit needed.</p>';
+      } else {
+        acct.innerHTML = '<div class="studio-acct-off">○ Not signed in</div>' +
+          '<p class="studio-note">Sign in (top-right) to auto-save changes to your account and publish them live. Until then, changes are kept in this browser — use Export to back them up.</p>';
+      }
+      host.appendChild(acct);
+      if (user) {
+        var now = el('button', 'studio-btn', 'Save to account now');
+        now.addEventListener('click', function () { saveRemote(); });
+        host.appendChild(now);
+      }
       var ta = el('textarea', 'studio-ta');
       ta.value = JSON.stringify(window.STUDIO, null, 2);
       host.appendChild(ta);
