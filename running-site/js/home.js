@@ -588,6 +588,8 @@ function buildHome() {
     </div>`;
   // Section registry — the Studio reorders / hides these by id.
   const SECTIONS = {
+    lead:     { label: 'Lead story', render: _sfLeadStory },
+    stories:  { label: 'Latest stories', render: _sfStoriesRiver },
     nextMeet: { label: 'Next meet', render: _sfNextMeetCountdown },
     meets:    { label: 'Upcoming meets', render: _sfMeetsCard },
     barrier:  { label: 'Barrier club', render: _sfBarrierCard },
@@ -604,8 +606,14 @@ function buildHome() {
     Object.fromEntries(Object.entries(SECTIONS).map(([k, v]) => [k, v.label])),
     Object.fromEntries(blocks.map(b => [b.id, (b.title || 'Custom box') + ' ✎']))
   );
-  const defLayout = { left: ['nextMeet', 'meets', 'barrier', 'promos'], right: ['hero', 'leaders', 'tools'], hidden: [] };
+  const defLayout = { left: ['nextMeet', 'meets', 'barrier', 'promos'], right: ['lead', 'stories', 'hero', 'leaders', 'tools'], hidden: [] };
   const layout = (window.STUDIO && window.STUDIO.layout) || defLayout;
+  // Surface any newly-added built-in sections that a saved layout doesn't know about.
+  (function () {
+    const seen = (layout.left || []).concat(layout.right || [], layout.hidden || []);
+    const missing = Object.keys(SECTIONS).filter(id => seen.indexOf(id) < 0);
+    if (missing.length) layout.right = missing.concat(layout.right || []);
+  })();
   const hidden = layout.hidden || [];
   const editing = !!window.STUDIO_EDIT;
   const renderOne = id => SECTIONS[id] ? SECTIONS[id].render() : (blockMap[id] ? _sfCustomBlock(blockMap[id]) : '');
@@ -654,6 +662,53 @@ function buildHome() {
 }
 window.rebuildHome = buildHome;
 window._sfCurrentPromos = function () { return _sfPromos(); };
+
+// ── Editorial front page (The Athletic × The Ringer) ──────────
+function _sfArticles() {
+  return (typeof ARTICLES !== 'undefined' && Array.isArray(ARTICLES)) ? ARTICLES.filter(a => a.type !== 'rankings') : [];
+}
+function _sfCatKey(cat) { return String(cat || 'story').toLowerCase().replace(/[^a-z]+/g, ''); }
+function _sfLead() {
+  const arts = _sfArticles();
+  const feat = arts.find(a => String(a.featured).toLowerCase() === 'true');
+  return feat || arts[0] || null;
+}
+function _sfLeadStory() {
+  const a = _sfLead();
+  if (!a) return '';
+  const dest = `article.html?id=${a.id}`;
+  const img = (typeof imgHTML === 'function') ? imgHTML(a.image, a.title, a.imagePosition, 16 / 9, 'sf-lead-img')
+    : (a.image ? `<img class="sf-lead-img" src="${a.image}" alt="" style="object-position:${a.imagePosition || 'center'}">` : '<div class="sf-lead-ph"></div>');
+  return `<article class="sf-card sf-lead" onclick="goTo('${dest}')" role="button" tabindex="0">
+    <div class="sf-lead-media">${img}</div>
+    <div class="sf-lead-body">
+      <span class="sf-cat sf-cat--${_sfCatKey(a.category)}">${a.category || 'STORY'}</span>
+      <h2 class="sf-lead-title">${a.title}</h2>
+      ${a.excerpt ? `<p class="sf-lead-dek">${a.excerpt}</p>` : ''}
+      <div class="sf-byline">${a.author ? `By <b>${a.author}</b>` : ''}${a.date ? ` · ${a.date}` : ''}${a.readTime ? ` · ${a.readTime}` : ''}</div>
+    </div>
+  </article>`;
+}
+function _sfStoryCard(a) {
+  const dest = `article.html?id=${a.id}`;
+  const img = (typeof imgHTML === 'function') ? imgHTML(a.image, a.title, a.imagePosition, 16 / 10, 'sf-story-img')
+    : (a.image ? `<img class="sf-story-img" src="${a.image}" alt="">` : '<div class="sf-story-ph"></div>');
+  return `<a class="sf-story" href="${dest}">
+    <div class="sf-story-media">${img}<span class="sf-cat sf-cat--${_sfCatKey(a.category)}">${a.category || 'STORY'}</span></div>
+    <h3 class="sf-story-title">${a.title}</h3>
+    <div class="sf-byline sf-byline--sm">${a.author || ''}${a.date ? ` · ${a.date}` : ''}</div>
+  </a>`;
+}
+function _sfStoriesRiver() {
+  const arts = _sfArticles();
+  const lead = _sfLead();
+  const rest = arts.filter(a => a !== lead).slice(0, 4);
+  if (!rest.length) return '';
+  return `<div class="sf-stories">
+    <div class="sf-card-hd"><span>${_sfT('hd.latest', 'Latest')}</span><a class="sf-card-link" href="articles.html">All stories →</a></div>
+    <div class="sf-stories-grid">${rest.map(_sfStoryCard).join('')}</div>
+  </div>`;
+}
 
 // Editable text with an override layer. Returns the owner's saved copy if set,
 // else the default. In edit mode it renders as an inline-editable span.

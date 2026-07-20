@@ -100,6 +100,7 @@
   --font-display: 'Lota Grotesque', sans-serif;
   --font-body: 'Lota Grotesque', system-ui, -apple-system, sans-serif;
   --font-mono: 'Lota Grotesque', sans-serif;
+  --font-editorial: 'Source Serif 4', Georgia, 'Times New Roman', serif; /* article headlines */
   --max-width: 1200px;
   --nav-h: 98px; /* utility row (52) + nav-links row (46) */
 }
