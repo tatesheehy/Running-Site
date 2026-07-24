@@ -10,7 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "0",
-  "lastSynced": "2026-07-23",
+  "lastSynced": "2026-07-24",
   "prs": [
     {
       "event": "800m",
@@ -68,6 +68,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "JUL 23",
+      "meet": "USA Championships",
+      "event": "1500 m",
+      "time": "3:46.01",
+      "place": "8.",
+      "round": "H1"
+    },
     {
       "date": "JUL 18",
       "meet": "Novuna London Athletics Meet",
@@ -248,7 +256,7 @@
   "dob": "2005-06-23",
   "college": "Oregon",
   "weight": "145",
-  "lastHistorySynced": "2026-07-22",
+  "lastHistorySynced": "2026-07-23",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
