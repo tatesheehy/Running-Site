@@ -102,6 +102,14 @@
   ],
   "results": [
     {
+      "date": "JUL 24",
+      "meet": "USA Championships",
+      "event": "800 m",
+      "time": "1:46.93",
+      "place": "4.",
+      "round": "H3"
+    },
+    {
       "date": "JUL 10",
       "meet": "Ed Murphey Classic",
       "event": "800 m",
@@ -174,7 +182,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-07-25",
   "resultsHistory": {
     "2018": [
       {
@@ -631,5 +639,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-23"
+  "lastHistorySynced": "2026-07-24"
 }

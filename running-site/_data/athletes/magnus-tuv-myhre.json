@@ -66,6 +66,14 @@
   ],
   "results": [
     {
+      "date": "JUL 23",
+      "meet": "Norwegian Championships",
+      "event": "5000 m",
+      "time": "13:32.08",
+      "place": "1.",
+      "round": "F2"
+    },
+    {
       "date": "JUL 16",
       "meet": "Spitzen Leichtathletik Luzern",
       "event": "3000 m",
@@ -82,7 +90,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-07-25",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -756,5 +764,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-23"
+  "lastHistorySynced": "2026-07-24"
 }

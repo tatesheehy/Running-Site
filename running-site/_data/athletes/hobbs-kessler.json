@@ -18,7 +18,7 @@
     }
   ],
   "seasons": "4",
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-07-25",
   "prs": [
     {
       "event": "800m",
@@ -83,6 +83,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "JUL 24",
+      "meet": "USA Championships",
+      "event": "800 m",
+      "time": "1:45.93",
+      "place": "2.",
+      "round": "H1"
+    },
     {
       "date": "JUL 4",
       "meet": "Prefontaine Classic",
@@ -182,7 +190,7 @@
   ],
   "dob": "2003-03-15",
   "weight": "140",
-  "lastHistorySynced": "2026-07-23",
+  "lastHistorySynced": "2026-07-24",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

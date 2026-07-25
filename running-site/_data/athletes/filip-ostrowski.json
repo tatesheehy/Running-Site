@@ -94,6 +94,14 @@
   ],
   "results": [
     {
+      "date": "JUL 24",
+      "meet": "Polish Championships",
+      "event": "800 m",
+      "time": "1:47.60",
+      "place": "1.",
+      "round": "H1"
+    },
+    {
       "date": "JUL 16",
       "meet": "Meeting Madrid",
       "event": "1500 m",
@@ -238,7 +246,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-07-25",
   "resultsHistory": {
     "2018": [
       {
