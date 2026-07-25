@@ -925,7 +925,7 @@ function buildRankingsDetail(eventName, opts = {}) {
           </div>
         </div>
         ${ev?.photo && !archiveYear ? `<div class="rd-event-banner" style="background-image:url('${ev.photo}')"></div>` : ''}
-        <div class="rd-list-wrap"><div class="rd-list">${rowsHtml}</div>${sectionsHtml}</div>
+        <div class="rd-list-wrap rd-deep"><div class="rd-list">${rowsHtml}</div>${sectionsHtml}</div>
         <div class="rd-terminal-wrap" style="display:none">${terminalHtml}</div>
       </div>
     </div>
