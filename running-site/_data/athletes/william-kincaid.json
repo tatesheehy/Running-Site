@@ -98,6 +98,14 @@
   ],
   "results": [
     {
+      "date": "JUL 23",
+      "meet": "USA Championships",
+      "event": "10,000 m",
+      "time": "30:13.66",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "JUN 13",
       "meet": "USATF LA Grand Prix",
       "event": "5000 m",
@@ -130,7 +138,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-20",
+  "lastSynced": "2026-07-24",
   "resultsHistory": {
     "2018": [
       {

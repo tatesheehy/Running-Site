@@ -50,6 +50,14 @@
   ],
   "results": [
     {
+      "date": "JUL 21",
+      "meet": "TIPOS P-T-S Meeting",
+      "event": "800 m",
+      "time": "1:45.65",
+      "place": "6.",
+      "round": "F"
+    },
+    {
       "date": "JUN 21",
       "meet": "FBK Games",
       "event": "800 m",
@@ -106,7 +114,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-20",
+  "lastSynced": "2026-07-24",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -627,5 +635,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-19"
+  "lastHistorySynced": "2026-07-23"
 }

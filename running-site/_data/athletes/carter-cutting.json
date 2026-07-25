@@ -10,7 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-07-20",
+  "lastSynced": "2026-07-24",
   "prs": [
     {
       "event": "800m",
@@ -68,6 +68,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "JUL 23",
+      "meet": "USA Championships",
+      "event": "1500 m",
+      "time": "3:41.59",
+      "place": "3.",
+      "round": "H3"
+    },
     {
       "date": "JUL 11",
       "meet": "Sunset Tour",
@@ -312,7 +320,7 @@
   "dob": "2005-01-10",
   "college": "BYU",
   "weight": "x",
-  "lastHistorySynced": "2026-07-19",
+  "lastHistorySynced": "2026-07-23",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
