@@ -130,7 +130,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-25",
+  "lastSynced": "2026-07-26",
   "prs": [
     {
       "event": "300 Metres",
@@ -224,6 +224,14 @@
   "club": null,
   "country": "Czechia",
   "results": [
+    {
+      "date": "JUL 25",
+      "meet": "Czech Championships",
+      "event": "1500 m",
+      "time": "3:39.34",
+      "place": "1.",
+      "round": "F"
+    },
     {
       "date": "JUL 15",
       "meet": "Meeting International d'Athlétisme de la Province de Liège",

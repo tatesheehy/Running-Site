@@ -66,6 +66,14 @@
   ],
   "results": [
     {
+      "date": "JUL 25",
+      "meet": "Spanish Championships",
+      "event": "800 m",
+      "time": "1:49.56",
+      "place": "2.",
+      "round": "H1"
+    },
+    {
       "date": "JUL 16",
       "meet": "Meeting Madrid",
       "event": "800 m",
@@ -202,7 +210,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-25",
+  "lastSynced": "2026-07-26",
   "resultsHistory": {
     "2018": [
       {

@@ -9,7 +9,7 @@
   "headlineKey": "x",
   "flag": "FR",
   "seasons": "10",
-  "lastSynced": "2026-07-25",
+  "lastSynced": "2026-07-26",
   "prs": [
     {
       "event": "800m",
@@ -90,6 +90,14 @@
   "club": "x",
   "country": "France",
   "results": [
+    {
+      "date": "JUL 25",
+      "meet": "French Championships",
+      "event": "1500 m",
+      "time": "3:40.91",
+      "place": "1.",
+      "round": "H1"
+    },
     {
       "date": "JUL 10",
       "meet": "Meeting International d’Athlétisme Herculis EBS",

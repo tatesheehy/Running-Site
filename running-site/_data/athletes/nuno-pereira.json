@@ -39,7 +39,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-25",
+  "lastSynced": "2026-07-26",
   "prs": [
     {
       "event": "400m",
@@ -101,6 +101,14 @@
   "club": null,
   "country": "Portugal",
   "results": [
+    {
+      "date": "JUL 25",
+      "meet": "Portuguese Championships",
+      "event": "1500 m",
+      "time": "3:38.28",
+      "place": "2.",
+      "round": "F"
+    },
     {
       "date": "JUL 3",
       "meet": "Meeting Stanislas Nancy",

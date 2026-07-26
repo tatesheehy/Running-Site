@@ -15,7 +15,7 @@
   "flag": "US",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-25",
+  "lastSynced": "2026-07-26",
   "prs": [
     {
       "event": "800m",
@@ -89,6 +89,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "JUL 25",
+      "meet": "USA Championships",
+      "event": "1500 m",
+      "time": "3:50.87",
+      "place": "6.",
+      "round": "F"
+    },
     {
       "date": "JUL 23",
       "meet": "USA Championships",
@@ -237,7 +245,7 @@
   "dob": "2001-05-02",
   "college": "Washington",
   "weight": "x",
-  "lastHistorySynced": "2026-07-24",
+  "lastHistorySynced": "2026-07-25",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

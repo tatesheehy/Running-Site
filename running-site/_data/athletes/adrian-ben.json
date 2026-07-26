@@ -12,7 +12,7 @@
   "flag": "ES",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-25",
+  "lastSynced": "2026-07-26",
   "prs": [
     {
       "event": "800m",
@@ -94,6 +94,14 @@
   "club": "x",
   "country": "Spain",
   "results": [
+    {
+      "date": "JUL 25",
+      "meet": "Spanish Championships",
+      "event": "1500 m",
+      "time": "4:26.67",
+      "place": "3.",
+      "round": "H1"
+    },
     {
       "date": "JUL 16",
       "meet": "Meeting Madrid",

@@ -18,7 +18,7 @@
     }
   ],
   "seasons": "x",
-  "lastSynced": "2026-07-25",
+  "lastSynced": "2026-07-26",
   "prs": [
     {
       "event": "800m",
@@ -84,6 +84,14 @@
   "club": "x",
   "country": "Norway",
   "results": [
+    {
+      "date": "JUL 24",
+      "meet": "Norwegian Championships",
+      "event": "1500 m",
+      "time": "3:50.22",
+      "place": "1.",
+      "round": "H1"
+    },
     {
       "date": "JUL 18",
       "meet": "Night of Athletics",

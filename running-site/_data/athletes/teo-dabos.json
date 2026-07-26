@@ -10,7 +10,7 @@
   "flag": "FR",
   "honours": [],
   "seasons": null,
-  "lastSynced": "2026-07-25",
+  "lastSynced": "2026-07-26",
   "prs": [
     {
       "event": "800m",
@@ -60,6 +60,14 @@
   "club": null,
   "country": "France",
   "results": [
+    {
+      "date": "JUL 25",
+      "meet": "French Championships",
+      "event": "1500 m",
+      "time": "3:46.36",
+      "place": "4.",
+      "round": "H2"
+    },
     {
       "date": "JUL 18",
       "meet": "French U23 Championships",
@@ -199,7 +207,7 @@
   ],
   "dob": "25 MAY 2004",
   "weight": null,
-  "lastHistorySynced": "2026-07-24",
+  "lastHistorySynced": "2026-07-25",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

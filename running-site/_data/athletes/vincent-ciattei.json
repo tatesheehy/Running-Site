@@ -10,7 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "9",
-  "lastSynced": "2026-07-25",
+  "lastSynced": "2026-07-26",
   "prs": [
     {
       "event": "800m",
@@ -99,6 +99,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "JUL 25",
+      "meet": "USA Championships",
+      "event": "1500 m",
+      "time": "3:50.32",
+      "place": "2.",
+      "round": "F"
+    },
     {
       "date": "JUL 23",
       "meet": "USA Championships",

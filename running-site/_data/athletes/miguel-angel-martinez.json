@@ -62,6 +62,14 @@
   ],
   "results": [
     {
+      "date": "JUL 25",
+      "meet": "Spanish Championships",
+      "event": "5000 m",
+      "time": "14:10.86",
+      "place": "9.",
+      "round": "F"
+    },
+    {
       "date": "JUL 18",
       "meet": "Night of Athletics",
       "event": "5000 m",
@@ -166,7 +174,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-25",
+  "lastSynced": "2026-07-26",
   "resultsHistory": {
     "2018": [
       {
@@ -744,5 +752,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-24"
+  "lastHistorySynced": "2026-07-25"
 }

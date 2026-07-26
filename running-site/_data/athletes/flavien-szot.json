@@ -12,7 +12,7 @@
   "flag": "FR",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-25",
+  "lastSynced": "2026-07-26",
   "prs": [
     {
       "event": "800m",
@@ -94,6 +94,14 @@
   "club": "x",
   "country": "France",
   "results": [
+    {
+      "date": "JUL 25",
+      "meet": "French Championships",
+      "event": "1500 m",
+      "time": "3:41.66",
+      "place": "3.",
+      "round": "H1"
+    },
     {
       "date": "JUL 8",
       "meet": "Meeting Lignano",

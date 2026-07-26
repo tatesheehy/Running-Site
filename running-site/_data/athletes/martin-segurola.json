@@ -12,7 +12,7 @@
   "flag": "ES",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-25",
+  "lastSynced": "2026-07-26",
   "prs": [
     {
       "event": "800m",
@@ -62,6 +62,14 @@
   "club": "x",
   "country": "Spain",
   "results": [
+    {
+      "date": "JUL 25",
+      "meet": "Spanish Championships",
+      "event": "1500 m",
+      "time": "4:01.67",
+      "place": "1.",
+      "round": "H3"
+    },
     {
       "date": "JUL 4",
       "meet": "X Ordizia Meeting - International Meeting Jose Antonio Peña",
@@ -186,7 +194,7 @@
   "dob": "2003-07-01",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-07-24",
+  "lastHistorySynced": "2026-07-25",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
