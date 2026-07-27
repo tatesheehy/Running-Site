@@ -12,7 +12,7 @@
   "flag": "ES",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-26",
+  "lastSynced": "2026-07-27",
   "prs": [
     {
       "event": "800m",
@@ -62,6 +62,14 @@
   "club": "x",
   "country": "Spain",
   "results": [
+    {
+      "date": "JUL 26",
+      "meet": "Spanish Championships",
+      "event": "1500 m",
+      "time": "3:48.15",
+      "place": "5.",
+      "round": "F"
+    },
     {
       "date": "JUL 25",
       "meet": "Spanish Championships",
@@ -194,7 +202,7 @@
   "dob": "2003-07-01",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-07-25",
+  "lastHistorySynced": "2026-07-26",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

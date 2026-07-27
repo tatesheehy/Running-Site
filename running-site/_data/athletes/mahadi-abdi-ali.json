@@ -94,6 +94,22 @@
   ],
   "results": [
     {
+      "date": "JUL 26",
+      "meet": "Dutch Championships",
+      "event": "1500 m",
+      "time": "3:43.58",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 25",
+      "meet": "Dutch Championships",
+      "event": "1500 m",
+      "time": "3:46.55",
+      "place": "1.",
+      "round": "H2"
+    },
+    {
       "date": "JUN 28",
       "meet": "Meeting International Troyes Aube",
       "event": "1500 m",
@@ -158,7 +174,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-26",
+  "lastSynced": "2026-07-27",
   "resultsHistory": {
     "2018": [
       {

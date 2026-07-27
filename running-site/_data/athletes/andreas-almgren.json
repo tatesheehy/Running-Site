@@ -118,6 +118,14 @@
   ],
   "results": [
     {
+      "date": "JUL 24",
+      "meet": "Swedish Championships",
+      "event": "10,000 m",
+      "time": "28:49.73",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
       "event": "3000 m",
@@ -190,7 +198,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-26",
+  "lastSynced": "2026-07-27",
   "resultsHistory": {
     "2018": [
       {

@@ -12,7 +12,7 @@
   "flag": "SE",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-26",
+  "lastSynced": "2026-07-27",
   "prs": [
     {
       "event": "800m",
@@ -78,6 +78,38 @@
   "club": "x",
   "country": "Sweden",
   "results": [
+    {
+      "date": "JUL 26",
+      "meet": "Swedish Championships",
+      "event": "800 m",
+      "time": "1:46.63",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "JUL 25",
+      "meet": "Swedish Championships",
+      "event": "800 m",
+      "time": "1:50.55",
+      "place": "1.",
+      "round": "H3"
+    },
+    {
+      "date": "JUL 25",
+      "meet": "Swedish Championships",
+      "event": "1500 m",
+      "time": "3:48.74",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "JUL 24",
+      "meet": "Swedish Championships",
+      "event": "1500 m",
+      "time": "3:59.48",
+      "place": "3.",
+      "round": "H2"
+    },
     {
       "date": "JUN 16",
       "meet": "65th Ostrava Golden Spike",
@@ -202,7 +234,7 @@
   "dob": "2001-03-08",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-07-25",
+  "lastHistorySynced": "2026-07-26",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

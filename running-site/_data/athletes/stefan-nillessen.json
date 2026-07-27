@@ -9,7 +9,7 @@
   "headlineKey": "x",
   "flag": "NL",
   "seasons": "x",
-  "lastSynced": "2026-07-26",
+  "lastSynced": "2026-07-27",
   "prs": [
     {
       "event": "400m",
@@ -76,6 +76,22 @@
   "country": "Netherlands",
   "results": [
     {
+      "date": "JUL 26",
+      "meet": "Dutch Championships",
+      "event": "1500 m",
+      "time": "DNS",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "JUL 25",
+      "meet": "Dutch Championships",
+      "event": "1500 m",
+      "time": "3:46.79",
+      "place": "5.",
+      "round": "H2"
+    },
+    {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
       "event": "1500 m",
@@ -134,7 +150,7 @@
   ],
   "dob": "2003-01-02",
   "weight": "x",
-  "lastHistorySynced": "2026-07-25",
+  "lastHistorySynced": "2026-07-26",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

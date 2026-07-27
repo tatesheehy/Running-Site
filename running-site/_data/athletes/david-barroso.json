@@ -66,6 +66,22 @@
   ],
   "results": [
     {
+      "date": "JUL 26",
+      "meet": "Spanish Championships",
+      "event": "800 m",
+      "time": "1:46.73",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 26",
+      "meet": "Spanish Championships",
+      "event": "4x400 m Relay",
+      "time": "3:07.30",
+      "place": "3.",
+      "round": "F"
+    },
+    {
       "date": "JUL 25",
       "meet": "Spanish Championships",
       "event": "800 m",
@@ -210,7 +226,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-26",
+  "lastSynced": "2026-07-27",
   "resultsHistory": {
     "2018": [
       {

@@ -9,7 +9,7 @@
   "headlineKey": "x",
   "flag": "FR",
   "seasons": "10",
-  "lastSynced": "2026-07-26",
+  "lastSynced": "2026-07-27",
   "prs": [
     {
       "event": "800m",
@@ -90,6 +90,14 @@
   "club": "x",
   "country": "France",
   "results": [
+    {
+      "date": "JUL 26",
+      "meet": "French Championships",
+      "event": "1500 m",
+      "time": "3:41.71",
+      "place": "6.",
+      "round": "F"
+    },
     {
       "date": "JUL 25",
       "meet": "French Championships",

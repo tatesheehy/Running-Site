@@ -94,6 +94,14 @@
   ],
   "results": [
     {
+      "date": "JUL 26",
+      "meet": "Irish Championships",
+      "event": "5000 m",
+      "time": "13:45.29",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
       "date": "JUL 10",
       "meet": "Morton Games",
       "event": "5000 m",
@@ -166,7 +174,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-26",
+  "lastSynced": "2026-07-27",
   "resultsHistory": {
     "2018": [
       {

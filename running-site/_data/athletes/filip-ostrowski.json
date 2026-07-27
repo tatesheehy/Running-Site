@@ -94,6 +94,14 @@
   ],
   "results": [
     {
+      "date": "JUL 26",
+      "meet": "Polish Championships",
+      "event": "1500 m",
+      "time": "3:37.71",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "JUL 25",
       "meet": "Polish Championships",
       "event": "800 m",
@@ -115,6 +123,14 @@
       "event": "1500 m",
       "time": "3:35.80",
       "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 11",
+      "meet": "Wakacyjne zawody lekkoatletyczne",
+      "event": "High Jump",
+      "time": "1.90",
+      "place": "6.",
       "round": "F"
     },
     {
@@ -254,7 +270,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-26",
+  "lastSynced": "2026-07-27",
   "resultsHistory": {
     "2018": [
       {

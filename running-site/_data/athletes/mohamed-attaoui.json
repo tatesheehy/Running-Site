@@ -18,7 +18,7 @@
     }
   ],
   "seasons": "4",
-  "lastSynced": "2026-07-26",
+  "lastSynced": "2026-07-27",
   "prs": [
     {
       "event": "400m",
@@ -83,6 +83,14 @@
   "club": "x",
   "country": "Spain",
   "results": [
+    {
+      "date": "JUL 26",
+      "meet": "Spanish Championships",
+      "event": "800 m",
+      "time": "1:46.85",
+      "place": "2.",
+      "round": "F"
+    },
     {
       "date": "JUL 25",
       "meet": "Spanish Championships",
@@ -230,7 +238,7 @@
   ],
   "dob": "2001-09-26",
   "weight": "145",
-  "lastHistorySynced": "2026-07-25",
+  "lastHistorySynced": "2026-07-26",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

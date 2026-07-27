@@ -74,6 +74,14 @@
   ],
   "results": [
     {
+      "date": "JUL 26",
+      "meet": "USA Championships",
+      "event": "5000 m",
+      "time": "13:47.29",
+      "place": "4.",
+      "round": "F"
+    },
+    {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
       "event": "3000 m",
@@ -130,7 +138,7 @@
       "round": "F2"
     }
   ],
-  "lastSynced": "2026-07-26",
+  "lastSynced": "2026-07-27",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -548,5 +556,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-25"
+  "lastHistorySynced": "2026-07-26"
 }

@@ -10,7 +10,7 @@
   "flag": "FR",
   "honours": [],
   "seasons": null,
-  "lastSynced": "2026-07-26",
+  "lastSynced": "2026-07-27",
   "prs": [
     {
       "event": "800m",
@@ -60,6 +60,14 @@
   "club": null,
   "country": "France",
   "results": [
+    {
+      "date": "JUL 26",
+      "meet": "French Championships",
+      "event": "1500 m",
+      "time": "3:43.35",
+      "place": "9.",
+      "round": "F"
+    },
     {
       "date": "JUL 25",
       "meet": "French Championships",
@@ -207,7 +215,7 @@
   ],
   "dob": "25 MAY 2004",
   "weight": null,
-  "lastHistorySynced": "2026-07-25",
+  "lastHistorySynced": "2026-07-26",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

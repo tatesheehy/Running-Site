@@ -12,7 +12,7 @@
   "flag": "FR",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-26",
+  "lastSynced": "2026-07-27",
   "prs": [
     {
       "event": "200m",
@@ -74,6 +74,14 @@
   "club": "x",
   "country": "France",
   "results": [
+    {
+      "date": "JUL 26",
+      "meet": "French Championships",
+      "event": "1500 m",
+      "time": "3:41.18",
+      "place": "2.",
+      "round": "F"
+    },
     {
       "date": "JUL 25",
       "meet": "French Championships",
@@ -166,7 +174,7 @@
   "dob": "2003-08-02",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-07-25",
+  "lastHistorySynced": "2026-07-26",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

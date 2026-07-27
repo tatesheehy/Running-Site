@@ -12,7 +12,7 @@
   "flag": "IT",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-26",
+  "lastSynced": "2026-07-27",
   "prs": [
     {
       "event": "400m",
@@ -78,6 +78,14 @@
   "club": "x",
   "country": "Italy",
   "results": [
+    {
+      "date": "JUL 25",
+      "meet": "Italian Championships",
+      "event": "1500 m",
+      "time": "3:58.23",
+      "place": "2.",
+      "round": "F"
+    },
     {
       "date": "JUL 4",
       "meet": "Meeting National Est Lyonnais",

@@ -106,6 +106,22 @@
   ],
   "results": [
     {
+      "date": "JUL 26",
+      "meet": "Dutch Championships",
+      "event": "1500 m",
+      "time": "3:43.07",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 25",
+      "meet": "Dutch Championships",
+      "event": "1500 m",
+      "time": "3:53.19",
+      "place": "3.",
+      "round": "H1"
+    },
+    {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
       "event": "3000 m",
@@ -186,7 +202,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-26",
+  "lastSynced": "2026-07-27",
   "resultsHistory": {
     "2018": [
       {

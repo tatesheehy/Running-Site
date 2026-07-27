@@ -82,6 +82,22 @@
   ],
   "results": [
     {
+      "date": "JUL 26",
+      "meet": "Irish Championships",
+      "event": "1500 m",
+      "time": "3:45.02",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
+      "date": "JUL 25",
+      "meet": "Irish Championships",
+      "event": "1500 m",
+      "time": "3:52.66",
+      "place": "1.",
+      "round": "H3"
+    },
+    {
       "date": "JUL 14",
       "meet": "Gyulai István Memorial - Hungarian Athletics Grand Prix",
       "event": "3000 m",
@@ -194,7 +210,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-26",
+  "lastSynced": "2026-07-27",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -898,5 +914,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-25"
+  "lastHistorySynced": "2026-07-26"
 }
