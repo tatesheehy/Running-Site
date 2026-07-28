@@ -95,7 +95,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-27",
+  "lastSynced": "2026-07-28",
   "prs": [
     {
       "event": "200m",
@@ -181,6 +181,22 @@
   "club": null,
   "country": "Türkiye",
   "results": [
+    {
+      "date": "JUL 26",
+      "meet": "Clubs Super League Final",
+      "event": "3000 m",
+      "time": "8:07.17",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 25",
+      "meet": "Clubs Super League Final",
+      "event": "1500 m",
+      "time": "4:09.25",
+      "place": "3.",
+      "round": "F"
+    },
     {
       "date": "JUL 11",
       "meet": "Moore-Guldensporenmeeting",

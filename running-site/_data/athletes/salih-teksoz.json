@@ -102,7 +102,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-27",
+  "lastSynced": "2026-07-28",
   "prs": [
     {
       "event": "600 Metres",
@@ -172,6 +172,14 @@
   "club": null,
   "country": "Türkiye",
   "results": [
+    {
+      "date": "JUL 25",
+      "meet": "Clubs Super League Final",
+      "event": "1500 m",
+      "time": "4:09.19",
+      "place": "2.",
+      "round": "F"
+    },
     {
       "date": "JUL 18",
       "meet": "Night of Athletics",
@@ -311,7 +319,7 @@
   ],
   "dob": "01 JAN 1994",
   "weight": null,
-  "lastHistorySynced": "2026-07-26",
+  "lastHistorySynced": "2026-07-27",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",
