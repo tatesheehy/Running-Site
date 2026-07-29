@@ -58,6 +58,14 @@
   ],
   "results": [
     {
+      "date": "JUL 28",
+      "meet": "XXIII Commonwealth Games",
+      "event": "800 m",
+      "time": "1:45.97",
+      "place": "3.",
+      "round": "H4"
+    },
+    {
       "date": "JUN 7",
       "meet": "BAUHAUS-Galan",
       "event": "800 m",
@@ -146,7 +154,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-28",
+  "lastSynced": "2026-07-29",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -545,5 +553,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-27"
+  "lastHistorySynced": "2026-07-28"
 }

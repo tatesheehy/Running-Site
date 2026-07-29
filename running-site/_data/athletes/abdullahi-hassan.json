@@ -106,6 +106,14 @@
   ],
   "results": [
     {
+      "date": "JUL 28",
+      "meet": "XXIII Commonwealth Games",
+      "event": "800 m",
+      "time": "1:47.30",
+      "place": "4.",
+      "round": "H3"
+    },
+    {
       "date": "JUL 12",
       "meet": "Edmonton Athletics Invitational",
       "event": "800 m",
@@ -210,7 +218,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-28",
+  "lastSynced": "2026-07-29",
   "resultsHistory": {
     "2018": [
       {

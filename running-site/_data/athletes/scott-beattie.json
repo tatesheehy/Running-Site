@@ -74,6 +74,14 @@
   ],
   "results": [
     {
+      "date": "JUL 28",
+      "meet": "XXIII Commonwealth Games",
+      "event": "10,000 m",
+      "time": "27:54.50",
+      "place": "5.",
+      "round": "F1"
+    },
+    {
       "date": "JUL 10",
       "meet": "Morton Games",
       "event": "5000 m",
@@ -138,7 +146,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-28",
+  "lastSynced": "2026-07-29",
   "resultsHistory": {
     "2018": [
       {

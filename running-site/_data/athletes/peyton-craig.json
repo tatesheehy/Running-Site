@@ -50,6 +50,14 @@
   ],
   "results": [
     {
+      "date": "JUL 28",
+      "meet": "XXIII Commonwealth Games",
+      "event": "800 m",
+      "time": "1:47.17",
+      "place": "3.",
+      "round": "H3"
+    },
+    {
       "date": "JUL 21",
       "meet": "TIPOS P-T-S Meeting",
       "event": "800 m",
@@ -114,7 +122,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-28",
+  "lastSynced": "2026-07-29",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -635,5 +643,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-27"
+  "lastHistorySynced": "2026-07-28"
 }
