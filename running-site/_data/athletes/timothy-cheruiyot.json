@@ -66,7 +66,7 @@
     }
   ],
   "seasons": "8",
-  "lastSynced": "2026-07-29",
+  "lastSynced": "2026-07-30",
   "prs": [
     {
       "event": "800m",
@@ -103,6 +103,14 @@
   "club": "Iten Training Camp",
   "country": "Kenya",
   "results": [
+    {
+      "date": "JUL 29",
+      "meet": "XXIII Commonwealth Games",
+      "event": "Mile",
+      "time": "3:58.98",
+      "place": "2.",
+      "round": "H1"
+    },
     {
       "date": "JUL 4",
       "meet": "Prefontaine Classic",

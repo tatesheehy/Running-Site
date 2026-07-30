@@ -70,6 +70,14 @@
       "round": "F1"
     },
     {
+      "date": "JUN 19",
+      "meet": "Kenyan Championships Cum Trials for Commonwealth Games",
+      "event": "10,000 m",
+      "time": "28:28.42",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
       "date": "JUN 10",
       "meet": "Oslo Bislett Games",
       "event": "5000 m",
@@ -118,7 +126,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-29",
+  "lastSynced": "2026-07-30",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -502,7 +510,7 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-28",
+  "lastHistorySynced": "2026-07-29",
   "ncaaTitle": [
     "10000m"
   ]

@@ -46,7 +46,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-07-29",
+  "lastSynced": "2026-07-30",
   "prs": [
     {
       "event": "800m",
@@ -96,6 +96,14 @@
   "club": null,
   "country": "Great Britain & N.I.",
   "results": [
+    {
+      "date": "JUL 29",
+      "meet": "XXIII Commonwealth Games",
+      "event": "Mile",
+      "time": "3:54.18",
+      "place": "3.",
+      "round": "H2"
+    },
     {
       "date": "JUL 18",
       "meet": "Novuna London Athletics Meet",
@@ -163,7 +171,7 @@
   ],
   "dob": "26 APR 1999",
   "weight": null,
-  "lastHistorySynced": "2026-07-28",
+  "lastHistorySynced": "2026-07-29",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

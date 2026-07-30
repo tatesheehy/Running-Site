@@ -18,7 +18,7 @@
     }
   ],
   "seasons": "3",
-  "lastSynced": "2026-07-29",
+  "lastSynced": "2026-07-30",
   "prs": [
     {
       "event": "800m",
@@ -67,6 +67,14 @@
   "club": "x",
   "country": "Kenya",
   "results": [
+    {
+      "date": "JUL 29",
+      "meet": "XXIII Commonwealth Games",
+      "event": "Mile",
+      "time": "DNF",
+      "place": "",
+      "round": "H2"
+    },
     {
       "date": "JUL 4",
       "meet": "Prefontaine Classic",
@@ -206,7 +214,7 @@
   ],
   "dob": "2004-07-30",
   "weight": "140",
-  "lastHistorySynced": "2026-07-28",
+  "lastHistorySynced": "2026-07-29",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
@@ -681,6 +689,6 @@
       }
     ]
   },
-  "age": "21",
+  "age": "22",
   "ncaa": false
 }
