@@ -86,6 +86,14 @@
   ],
   "results": [
     {
+      "date": "JUL 30",
+      "meet": "XXIII Commonwealth Games",
+      "event": "800 m",
+      "time": "1:45.38",
+      "place": "4.",
+      "round": "SF2"
+    },
+    {
       "date": "JUL 28",
       "meet": "XXIII Commonwealth Games",
       "event": "800 m",
@@ -166,7 +174,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-30",
+  "lastSynced": "2026-07-31",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -904,7 +912,7 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-29",
+  "lastHistorySynced": "2026-07-30",
   "ncaaTitle": [
     "800m"
   ]

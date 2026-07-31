@@ -12,7 +12,7 @@
   "flag": "DZ",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-30",
+  "lastSynced": "2026-07-31",
   "prs": [
     {
       "event": "1500m",
@@ -46,6 +46,14 @@
   "club": "x",
   "country": "Algeria",
   "results": [
+    {
+      "date": "JUL 30",
+      "meet": "Algeria Athletics Open Championships",
+      "event": "1500 m",
+      "time": "3:34.54",
+      "place": "1.",
+      "round": "F"
+    },
     {
       "date": "JUL 14",
       "meet": "Gyulai István Memorial - Hungarian Athletics Grand Prix",
@@ -138,7 +146,7 @@
   "dob": "2004-10-05",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-07-29",
+  "lastHistorySynced": "2026-07-30",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

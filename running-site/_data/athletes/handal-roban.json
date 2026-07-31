@@ -82,6 +82,14 @@
   ],
   "results": [
     {
+      "date": "JUL 30",
+      "meet": "XXIII Commonwealth Games",
+      "event": "800 m",
+      "time": "1:45.96",
+      "place": "7.",
+      "round": "SF1"
+    },
+    {
       "date": "JUL 28",
       "meet": "XXIII Commonwealth Games",
       "event": "800 m",
@@ -266,7 +274,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-30",
+  "lastSynced": "2026-07-31",
   "resultsHistory": {
     "2018": [
       {
