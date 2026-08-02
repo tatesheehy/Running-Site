@@ -283,6 +283,11 @@
         "name": "The Tight Headline Rule",
         "body": "Editorial headlines set at 800 weight, -0.035em tracking, ~1.0 line-height. That density is the site's authored-content signal; a loose or light headline reads as generic chrome.",
         "section": "typography"
+      },
+      {
+        "name": "The Ramp Rule",
+        "body": "Font sizes come from the --fs-1..--fs-12 ramp in base.css, greys from --ink/--ink-2/--muted/--muted-2, radii from --radius-xs..--radius-pill. A literal px or hex in a partial is drift, not a decision — add a step to the ramp instead.",
+        "section": "tokens"
       }
     ],
     "dos": [

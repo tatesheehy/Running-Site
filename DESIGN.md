@@ -8,6 +8,8 @@ colors:
   ink: "#111111"
   ink-soft: "#1C1C1C"
   muted: "#6B6F76"
+  ink-2: "#3A3A3A"
+  muted-2: "#9AA0A8"
   surface: "#FFFFFF"
   page-bg: "#F5F6F8"
   border: "#ECECEC"
@@ -48,6 +50,8 @@ typography:
     lineHeight: 1.2
     letterSpacing: "0.12em"
 rounded:
+  xs: "4px"
+  sm-2: "8px"
   btn: "10px"
   input: "12px"
   card: "16px"

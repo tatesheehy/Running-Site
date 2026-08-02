@@ -554,6 +554,7 @@
 
 .h2h-lb-pct-fill {
   height: 100%;
+  width: 100%;            /* scaleX() scales from this; don't rely on auto */
   background: var(--accent);
   border-radius: var(--radius-xs);
   transform-origin: left center;
