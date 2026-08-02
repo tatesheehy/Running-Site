@@ -12,7 +12,7 @@
 .mx-svg--decay { min-width: 560px; }
 
 /* Larger axis text for the headline decay chart */
-.mx-axl--lg { font-size: 13px; }
+.mx-axl--lg { font-size: var(--fs-4); }
 
 /* Pace / Relative toggle */
 .mx-mode-toggle {
@@ -24,7 +24,7 @@
 }
 .mx-mode-btn {
   font-family: var(--font-body);
-  font-size: 12px;
+  font-size: var(--fs-3);
   font-weight: 700;
   color: var(--muted);
   background: none;
@@ -44,13 +44,13 @@
 .mx-axl {
   fill: var(--muted);
   font-family: var(--font-body);
-  font-size: 11px;
+  font-size: var(--fs-2);
   font-variant-numeric: tabular-nums;
 }
 .mx-axtitle {
   fill: var(--muted);
   font-family: var(--font-body);
-  font-size: 11px;
+  font-size: var(--fs-2);
   font-weight: 700;
   letter-spacing: 0.04em;
 }
@@ -73,7 +73,7 @@
 .mx-radar-lbl {
   fill: var(--text);
   font-family: var(--font-display);
-  font-size: 13px;
+  font-size: var(--fs-4);
   font-weight: 700;
 }
 .mx-radar-shape {
@@ -106,7 +106,7 @@
 }
 .mx-radar-slot .mx-search-wrap { flex: 1; max-width: none; margin: 0; }
 .mx-radar-dot { width: 11px; height: 11px; border-radius: 50%; background: var(--c); flex-shrink: 0; }
-.mx-radar-vs { font-size: 12px; font-weight: 800; color: var(--muted); text-transform: none; letter-spacing: 0.06em; }
+.mx-radar-vs { font-size: var(--fs-3); font-weight: 800; color: var(--muted); text-transform: none; letter-spacing: 0.06em; }
 
 .mx-dot--hit { cursor: pointer; transition: r 0.1s; }
 .mx-dot--hit:hover { stroke: #fff; stroke-width: 2; }
@@ -120,10 +120,10 @@
   background: #1A1D24;
   color: #fff;
   font-family: var(--font-body);
-  font-size: 12px;
+  font-size: var(--fs-3);
   font-weight: 600;
   padding: 7px 11px;
-  border-radius: 8px;
+  border-radius: var(--radius-sm-2);
   box-shadow: 0 6px 20px rgba(16,24,40,0.28);
   white-space: nowrap;
   max-width: 320px;
@@ -134,7 +134,7 @@
 .mx-axcap {
   fill: var(--muted);
   font-family: var(--font-body);
-  font-size: 11px;
+  font-size: var(--fs-2);
   font-weight: 800;
   letter-spacing: 0.04em;
   text-transform: none;
@@ -142,7 +142,7 @@
 
 /* Tool description under each heading */
 .mx-desc {
-  font-size: 13.5px;
+  font-size: var(--fs-4);
   line-height: 1.6;
   color: var(--muted);
   margin: 2px 0 18px;
@@ -158,7 +158,7 @@
   flex-wrap: wrap;
 }
 .mx-progn-lbl {
-  font-size: 11px;
+  font-size: var(--fs-2);
   font-weight: 800;
   letter-spacing: 0.06em;
   text-transform: none;
@@ -178,7 +178,7 @@
   cursor: pointer;
   list-style: none;
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: var(--fs-4);
   font-weight: 700;
   color: var(--accent);
   user-select: none;
@@ -188,19 +188,19 @@
 .mx-how-ico { flex-shrink: 0; }
 .mx-how[open] summary { margin-bottom: 10px; }
 .mx-how-body {
-  font-size: 13px;
+  font-size: var(--fs-4);
   line-height: 1.7;
   color: var(--muted);
   max-width: 800px;
 }
 
-.mx-note { font-size: 12px; color: var(--muted); margin-top: 12px; }
-.mx-empty { color: var(--muted); font-size: 14px; padding: 24px 0; text-align: center; }
+.mx-note { font-size: var(--fs-3); color: var(--muted); margin-top: 12px; }
+.mx-empty { color: var(--muted); font-size: var(--fs-5); padding: 24px 0; text-align: center; }
 
 /* Decay legend */
 #mx-decay-controls { max-width: 720px; margin: 0 auto; }
 .mx-legend { display: flex; gap: 20px; margin: 20px 0 14px; flex-wrap: wrap; }
-.mx-legend-item { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); }
+.mx-legend-item { display: flex; align-items: center; gap: 8px; font-size: var(--fs-3); color: var(--muted); }
 .mx-legend-line { width: 22px; height: 0; border-top-width: 2px; border-top-style: solid; }
 .mx-legend-line--faint { border-top-color: color-mix(in srgb, var(--text) 22%, transparent); }
 .mx-legend-line--median { border-top-color: var(--text); border-top-width: 3px; }
@@ -210,7 +210,7 @@
 .mx-search {
   width: 100%;
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: var(--fs-5);
   color: var(--text);
   background: var(--bg-light);
   border: 1px solid var(--border);
@@ -239,7 +239,7 @@
   align-items: center;
   gap: 8px;
   padding: 10px 14px;
-  font-size: 14px;
+  font-size: var(--fs-5);
   cursor: pointer;
   transition: background 0.1s;
 }
@@ -252,7 +252,7 @@
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  font-size: 12px;
+  font-size: var(--fs-3);
   font-weight: 700;
   color: var(--text);
   background: color-mix(in srgb, var(--c) 10%, transparent);
@@ -264,7 +264,7 @@
   background: none;
   border: none;
   color: var(--muted);
-  font-size: 16px;
+  font-size: var(--fs-6);
   line-height: 1;
   cursor: pointer;
   padding: 0 4px;

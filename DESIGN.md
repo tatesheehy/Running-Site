@@ -18,11 +18,11 @@ colors:
   danger: "#DC2626"
 typography:
   editorial:
-    fontFamily: "Source Serif 4, Georgia, Times New Roman, serif"
-    fontSize: "clamp(30px, 4vw, 46px)"
-    fontWeight: 600
-    lineHeight: 1.06
-    letterSpacing: "-0.02em"
+    fontFamily: "Lota Grotesque, system-ui, -apple-system, sans-serif"
+    fontSize: "clamp(32px, 4.2vw, 50px)"
+    fontWeight: 800
+    lineHeight: 1.02
+    letterSpacing: "-0.035em"
   display:
     fontFamily: "Lota Grotesque, sans-serif"
     fontSize: "clamp(23px, 2.6vw, 30px)"
@@ -114,7 +114,7 @@ That translates to an interface where the writing leads and the data sits within
 The system is deliberately restrained at the chrome level so it can be generous at the content level. A hand-made athlete graphic should be the most visually interesting thing in any viewport it appears in. If the interface is competing with it, the interface is wrong.
 
 **Key Characteristics:**
-- Editorial-first: serif headlines mark authored judgment; sans-serif marks product chrome
+- Editorial-first: heavy, tightly-tracked headlines mark authored judgment; small tracked labels mark chrome
 - Flat surfaces, separated by rules and whitespace rather than shadow
 - Exactly one accent color, used sparingly enough to still mean something
 - Data rendered as evidence inside arguments, not as dashboards
@@ -149,13 +149,12 @@ A near-monochrome editorial palette with a single high-energy orange reserved fo
 
 ## Typography
 
-**Editorial Font:** Source Serif 4 (with Georgia, Times New Roman, serif)
-**Display / Body Font:** Lota Grotesque (with system-ui, -apple-system, sans-serif)
+**Sole Font:** Lota Grotesque (with system-ui, -apple-system, sans-serif)
 
-**Character:** A deliberate two-voice pairing. The serif is the byline voice — it appears only where a human made a judgment, which is what separates StatTC from a results database. The grotesque is the building: navigation, tables, labels, controls. The split is semantic, not decorative, and readers should be able to feel which is which without being told.
+**Character:** One grotesque, used across the entire site. No serif, no second family. Because the typeface never changes, hierarchy is carried entirely by **weight, size, and tracking** — and that constraint is the point: it forces every level of the ramp to be unmistakably distinct rather than leaning on a font swap to do the work. Headlines run heavy and optically tight; labels run small and widely tracked; body sits quiet in the middle. The result reads as a modern sports desk rather than a newspaper.
 
 ### Hierarchy
-- **Editorial** (600, `clamp(30px, 4vw, 46px)`, 1.06, -0.02em): Article and lead-story headlines, and ranking-page titles. Source Serif 4 only. This is the signature of the whole site.
+- **Editorial** (800, `clamp(32px, 4.2vw, 50px)`, 1.02, -0.035em): Article and lead-story headlines, and ranking-page titles. The heaviest weight paired with aggressive negative tracking — this tight, dense setting is what marks a headline as authored judgment now that no serif does it. This is the signature of the site.
 - **Display** (800, `clamp(23px, 2.6vw, 30px)`, 1.05, -0.01em): Page hero titles and major section heads. Lota Grotesque.
 - **Title** (800, 18px, 1.15, -0.015em): Card titles, story-river headlines, athlete names in ranking rows.
 - **Body** (400, 16px, 1.5): Article prose and descriptive copy. Article measure caps around 65–75ch; never let prose run the full 1200px container.
@@ -164,9 +163,9 @@ A near-monochrome editorial palette with a single high-energy orange reserved fo
 
 ### Named Rules
 
-**The Serif Means Judgment Rule.** Source Serif 4 appears only on human-authored headlines — articles, takes, ranking titles. It never appears on navigation, buttons, table headers, or data labels. If a serif headline sits above auto-generated content, either the content needs a human take or the headline needs to be sans.
+**The One Family Rule.** Lota Grotesque is the only typeface on the site. No serif, no display face, no second family for a single surface. If a headline isn't reading as important enough, the fix is weight, size, and tracking — never a new font.
 
-**The Two Families Rule.** Two typefaces, no third. New fonts do not get introduced for a single surface.
+**The Tight Headline Rule.** Editorial headlines set at 800 weight, -0.035em tracking, ~1.0 line-height. That density is the site's authored-content signal; a loose or light headline reads as generic chrome.
 
 ## Layout
 
@@ -260,7 +259,7 @@ The recurring franchise unit and the most StatTC-specific pattern in the system.
 ### Do:
 - **Do** resolve every color, radius, and spacing value to a `:root` custom property from `base.css`.
 - **Do** use exactly two breakpoints — 960px for structural reflow, 640px for phone density.
-- **Do** reserve Source Serif 4 for human-authored headlines, so the serif always signals judgment.
+- **Do** set editorial headlines at 800 weight with -0.035em tracking, so density signals authored judgment.
 - **Do** keep surfaces flat at rest and reach for a hairline rule or background step before a shadow.
 - **Do** give every ranking row an editorial bite; if there's no take, render a table instead.
 - **Do** let custom graphics be the loudest element in their viewport, and keep surrounding chrome quiet.

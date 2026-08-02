@@ -63,6 +63,12 @@
   --dark-2: #1C1C1C;
   --text: #111111;
   --muted: #6B6F76;          /* metadata gray */
+  /* Neutral ramp — the only greys. Replaced 12 ad-hoc hand-picked
+     greys that had accumulated across the partials.
+     --ink-2 / --muted-2 read as secondary on light AND on the dark
+     athlete-card + footer surfaces, so one ramp serves both. */
+  --ink-2: #3A3A3A;          /* near-black secondary */
+  --muted-2: #9AA0A8;        /* tertiary / on-dark secondary */
   --success: #16A34A;
   --success-light: #E7F6EC;
   --warning: #D97706;
@@ -84,6 +90,8 @@
   --shadow-card-hover: 0 8px 24px rgba(0,0,0,0.08);
 
   /* ── Radius scale — never deviate ─────────────────────────── */
+  --radius-xs: 4px;    /* avatars, thumbnails, small chips — tight corners */
+  --radius-sm-2: 8px;  /* compact controls, inline tags */
   --radius-btn: 10px;
   --radius-input: 12px;
   --radius-card: 16px;
@@ -100,7 +108,25 @@
   --font-display: 'Lota Grotesque', sans-serif;
   --font-body: 'Lota Grotesque', system-ui, -apple-system, sans-serif;
   --font-mono: 'Lota Grotesque', sans-serif;
-  --font-editorial: 'Source Serif 4', Georgia, 'Times New Roman', serif; /* article headlines */
+  --font-editorial: 'Lota Grotesque', system-ui, -apple-system, sans-serif; /* legacy alias → display */
+  /* ── TYPE RAMP ────────────────────────────────────────────
+     The only font sizes on the site. A literal px font-size in a
+     partial is drift, not a decision — add a step here instead.
+     Dense at the small end because data tables need it; wide gaps
+     at the top so headings never read as "almost the same size". */
+  --fs-1:  10px;   /* micro labels, table sub-captions */
+  --fs-2:  11px;   /* eyebrows, category tags, table headers */
+  --fs-3:  12px;   /* metadata, bylines, chips */
+  --fs-4:  13px;   /* secondary body, dense table cells */
+  --fs-5:  14px;   /* UI default, table cells, nav */
+  --fs-6:  16px;   /* body copy */
+  --fs-7:  18px;   /* card + story titles */
+  --fs-8:  20px;   /* subheads */
+  --fs-9:  24px;   /* section heads */
+  --fs-10: 30px;   /* page titles */
+  --fs-11: 40px;   /* display numerals, big stats */
+  --fs-12: 56px;   /* hero display */
+
   --max-width: 1200px;
   --nav-h: 98px; /* utility row (52) + nav-links row (46) */
 }
@@ -135,7 +161,7 @@ body {
   font-family: var(--font-body);
   color: var(--text);
   background: var(--page-bg);
-  font-size: 16px;
+  font-size: var(--fs-6);
   line-height: 1.5;
   overflow-x: clip;
   padding-top: var(--nav-h); /* clear the fixed navbar */
@@ -161,7 +187,7 @@ body {
 }
 .page-hero-eyebrow {
   font-family: var(--font-body);
-  font-size: 10px;
+  font-size: var(--fs-1);
   font-weight: 800;
   letter-spacing: 0.14em;
   text-transform: none;
@@ -196,7 +222,7 @@ body {
 }
 .page-hero-sub {
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: var(--fs-4);
   line-height: 1.45;
   color: rgba(255,255,255,0.82);
   margin: 4px 0 0;
@@ -216,14 +242,14 @@ body {
 }
 .page-hero-stat-num {
   font-family: var(--font-display);
-  font-size: 20px;
+  font-size: var(--fs-8);
   font-weight: 800;
   line-height: 1;
   color: #fff;
 }
 .page-hero-stat-label {
   font-family: var(--font-body);
-  font-size: 8px;
+  font-size: var(--fs-1);
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: none;
@@ -300,7 +326,7 @@ footer { display: none; }
 
 .section-title {
   font-family: var(--font-display);
-  font-size: 22px;
+  font-size: var(--fs-9);
   font-weight: 700;
 }
 
@@ -309,7 +335,7 @@ footer { display: none; }
   display: inline-block;
   background: var(--text);
   color: var(--bg);
-  font-size: 10px;
+  font-size: var(--fs-1);
   font-weight: 700;
   padding: 3px 8px;
   letter-spacing: 0.06em;
@@ -326,8 +352,8 @@ footer { display: none; }
 .page-intro {
   font-family: 'Lota Grotesque', sans-serif;
   font-weight: 400;
-  font-size: 15px;
-  color: #555;
+  font-size: var(--fs-5);
+  color: var(--muted);
   line-height: 1.65;
   margin-top: 12px;
   max-width: 680px;
@@ -335,7 +361,7 @@ footer { display: none; }
 
 /* ── META ─────────────────────────────────────────────────── */
 .meta {
-  font-size: 13px;
+  font-size: var(--fs-4);
   color: var(--muted);
 }
 .meta .author { color: var(--text); font-weight: 600; }
@@ -370,15 +396,15 @@ footer {
 
 .footer-wordmark {
   font-family: var(--font-display);
-  font-size: 22px;
+  font-size: var(--fs-9);
   font-weight: 800;
   letter-spacing: -0.01em;
   color: var(--accent);
 }
 
 .footer-tagline {
-  font-size: 12px;
-  color: #666;
+  font-size: var(--fs-3);
+  color: var(--muted);
   font-style: italic;
 }
 
@@ -389,11 +415,11 @@ footer {
 }
 
 .footer-links a {
-  color: #888;
-  font-size: 13px;
+  color: var(--muted-2);
+  font-size: var(--fs-4);
   transition: color 0.15s;
 }
 
 .footer-links a:hover { color: #fff; }
 
-.footer-copy { color: #555; font-size: 12px; }
+.footer-copy { color: var(--muted); font-size: var(--fs-3); }

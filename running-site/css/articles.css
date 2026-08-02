@@ -58,7 +58,7 @@
 
 .article-card-title {
   font-family: var(--font-display);
-  font-size: 22px;
+  font-size: var(--fs-9);
   font-weight: 600;
   line-height: 1.15;
   margin-bottom: 7px;
@@ -70,8 +70,8 @@
 .article-card-excerpt {
   font-family: 'Lota Grotesque', sans-serif;
   font-weight: 400;
-  font-size: 13px;
-  color: #555;
+  font-size: var(--fs-4);
+  color: var(--muted);
   line-height: 1.5;
   margin-bottom: 7px;
 }
@@ -85,7 +85,7 @@
 
 .page-title {
   font-family: var(--font-display);
-  font-size: 40px;
+  font-size: var(--fs-11);
   font-weight: 800;
 }
 
@@ -98,7 +98,7 @@
 
 .filter-btn {
   padding: 7px 16px;
-  font-size: 12px;
+  font-size: var(--fs-3);
   font-weight: 700;
   letter-spacing: 0.05em;
   border: 1.5px solid var(--border);
@@ -117,7 +117,7 @@
 
 .load-more-btn {
   padding: 12px 32px;
-  font-size: 14px;
+  font-size: var(--fs-5);
   font-weight: 700;
   border: 1.5px solid var(--dark);
   background: none;
@@ -141,7 +141,7 @@
 }
 
 .article-breadcrumb {
-  font-size: 12px;
+  font-size: var(--fs-3);
   font-weight: 600;
   letter-spacing: 0.04em;
   color: var(--muted);
@@ -161,15 +161,16 @@
 
 .article-detail-title {
   font-family: var(--font-display);
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.05;
+  font-size: var(--fs-12);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
   margin-bottom: 18px;
 }
 
 .article-detail-excerpt {
-  font-family: 'Source Serif 4', Georgia, serif;
-  font-size: 20px;
+  font-family: var(--font-body);
+  font-size: var(--fs-8);
   font-style: italic;
   color: var(--muted);
   line-height: 1.65;
@@ -179,7 +180,7 @@
 }
 
 .article-detail-meta {
-  font-size: 13px;
+  font-size: var(--fs-4);
   color: var(--muted);
   margin-bottom: 36px;
 }
@@ -220,7 +221,7 @@
   margin-bottom: 40px;
 }
 
-.article-body { font-family: 'Source Serif 4', Georgia, serif; font-size: 18px; line-height: 1.82; color: var(--text); }
+.article-body { font-family: var(--font-body); font-size: var(--fs-7); line-height: 1.7; color: var(--text); max-width: 70ch; }
 .article-body p { margin-bottom: 28px; }
 /* Athlete names auto-linked in prose (see linkAthleteNamesIn in utils.js) */
 .in-text-athlete-link {
@@ -231,25 +232,29 @@
   text-underline-offset: 2px;
 }
 .in-text-athlete-link:hover { text-decoration-color: var(--accent); }
-.article-body h2 { font-family: var(--font-display); font-size: 32px; font-weight: 700; margin: 44px 0 16px; color: var(--text); }
-.article-body h3 { font-family: var(--font-display); font-size: 24px; font-weight: 600; margin: 34px 0 12px; }
+.article-body h2 { font-family: var(--font-display); font-size: var(--fs-10); font-weight: 700; margin: 44px 0 16px; color: var(--text); }
+.article-body h3 { font-family: var(--font-display); font-size: var(--fs-9); font-weight: 600; margin: 34px 0 12px; }
 .article-body blockquote {
-  border-left: 4px solid var(--accent);
-  padding: 4px 0 4px 22px;
-  margin: 30px 0;
-  color: #555;
+  padding: 0;
+  margin: 38px 0;
+  color: var(--text);
+  font-size: var(--fs-8);
+  font-weight: 700;
+  line-height: 1.32;
+  letter-spacing: -0.02em;
+  max-width: 34ch;
   font-style: italic;
-  font-size: 20px;
+  font-size: var(--fs-8);
   line-height: 1.6;
 }
 .article-body a { color: var(--accent); text-decoration: underline; }
 .article-body pre {
   white-space: pre-wrap;
   word-break: break-word;
-  font-family: 'Source Serif 4', Georgia, serif;
+  font-family: var(--font-body);
   font-size: inherit;
   background: none;
   padding: 0;
   margin-bottom: 26px;
 }
-.article-body pre code { font-family: 'Source Serif 4', Georgia, serif; background: none; padding: 0; }
+.article-body pre code { font-family: var(--font-body); background: none; padding: 0; }

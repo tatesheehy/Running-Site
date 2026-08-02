@@ -56,7 +56,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (page === 'article') {
     window.addEventListener('scroll', () => {
       const total = document.body.scrollHeight - window.innerHeight;
-      progressBar.style.width = total > 0 ? ((window.scrollY / total) * 100) + '%' : '0%';
+      // scaleX (not width) so scrolling never triggers layout
+      progressBar.style.transform = 'scaleX(' + (total > 0 ? window.scrollY / total : 0) + ')';
     }, { passive: true });
   }
 

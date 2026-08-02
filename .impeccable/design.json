@@ -8,56 +8,158 @@
         "role": "primary",
         "displayName": "Signal Orange",
         "canonical": "#FF5200",
-        "tonalRamp": ["#3D1400", "#5C1E00", "#8A2E00", "#B83D00", "#E04600", "#FF5200", "#FF8A54", "#FFF0E9"]
+        "tonalRamp": [
+          "#3D1400",
+          "#5C1E00",
+          "#8A2E00",
+          "#B83D00",
+          "#E04600",
+          "#FF5200",
+          "#FF8A54",
+          "#FFF0E9"
+        ]
       },
       "ink": {
         "role": "neutral",
         "displayName": "Press Ink",
         "canonical": "#111111",
-        "tonalRamp": ["#000000", "#111111", "#1C1C1C", "#3A3A3A", "#6B6F76", "#B0B3B8", "#DDDDDD", "#F5F6F8"]
+        "tonalRamp": [
+          "#000000",
+          "#111111",
+          "#1C1C1C",
+          "#3A3A3A",
+          "#6B6F76",
+          "#B0B3B8",
+          "#DDDDDD",
+          "#F5F6F8"
+        ]
       },
       "muted": {
         "role": "neutral",
         "displayName": "Desk Gray",
         "canonical": "#6B6F76",
-        "tonalRamp": ["#1A1C1F", "#2C2F33", "#44484E", "#6B6F76", "#92969D", "#B9BCC2", "#DCDEE1", "#F2F3F5"]
+        "tonalRamp": [
+          "#1A1C1F",
+          "#2C2F33",
+          "#44484E",
+          "#6B6F76",
+          "#92969D",
+          "#B9BCC2",
+          "#DCDEE1",
+          "#F2F3F5"
+        ]
       },
       "page-bg": {
         "role": "neutral",
         "displayName": "Press Gray",
         "canonical": "#F5F6F8",
-        "tonalRamp": ["#26282B", "#3D4044", "#5A5E64", "#8B9096", "#C3C7CC", "#E4E6E9", "#F5F6F8", "#FFFFFF"]
+        "tonalRamp": [
+          "#26282B",
+          "#3D4044",
+          "#5A5E64",
+          "#8B9096",
+          "#C3C7CC",
+          "#E4E6E9",
+          "#F5F6F8",
+          "#FFFFFF"
+        ]
       },
       "border": {
         "role": "neutral",
         "displayName": "Rule",
         "canonical": "#ECECEC",
-        "tonalRamp": ["#2B2B2B", "#454545", "#6E6E6E", "#9C9C9C", "#C6C6C6", "#DDDDDD", "#ECECEC", "#F7F7F7"]
+        "tonalRamp": [
+          "#2B2B2B",
+          "#454545",
+          "#6E6E6E",
+          "#9C9C9C",
+          "#C6C6C6",
+          "#DDDDDD",
+          "#ECECEC",
+          "#F7F7F7"
+        ]
       },
-      "success": { "role": "tertiary", "displayName": "Confirm Green", "canonical": "#16A34A" },
-      "warning": { "role": "tertiary", "displayName": "Caution Amber", "canonical": "#D97706" },
-      "danger": { "role": "tertiary", "displayName": "Alert Red", "canonical": "#DC2626" }
+      "success": {
+        "role": "tertiary",
+        "displayName": "Confirm Green",
+        "canonical": "#16A34A"
+      },
+      "warning": {
+        "role": "tertiary",
+        "displayName": "Caution Amber",
+        "canonical": "#D97706"
+      },
+      "danger": {
+        "role": "tertiary",
+        "displayName": "Alert Red",
+        "canonical": "#DC2626"
+      }
     },
     "typographyMeta": {
-      "editorial": { "displayName": "Editorial", "purpose": "Human-authored headlines only — articles, takes, ranking titles. Signals judgment." },
-      "display": { "displayName": "Display", "purpose": "Page hero titles and major section heads." },
-      "title": { "displayName": "Title", "purpose": "Card titles, story headlines, athlete names in ranking rows." },
-      "body": { "displayName": "Body", "purpose": "Article prose, capped at 65–75ch measure." },
-      "label": { "displayName": "Label", "purpose": "Eyebrows, category tags, table headers, stat captions. Wide tracking makes small text read as deliberate." }
+      "editorial": {
+        "displayName": "Editorial",
+        "purpose": "Human-authored headlines only — articles, takes, ranking titles. Heaviest weight + tight tracking is the authored-content signal."
+      },
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page hero titles and major section heads."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card titles, story headlines, athlete names in ranking rows."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Article prose, capped at 65–75ch measure."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Eyebrows, category tags, table headers, stat captions. Wide tracking makes small text read as deliberate."
+      }
     },
     "shadows": [
-      { "name": "hover-lift", "value": "0 8px 24px rgba(0,0,0,0.08)", "purpose": "Hover state on interactive cards that navigate. Never a resting state." },
-      { "name": "overlay", "value": "0 24px 70px rgba(0,0,0,0.55)", "purpose": "Modals, dropdowns, search overlay, site gate — surfaces that genuinely float." }
+      {
+        "name": "hover-lift",
+        "value": "0 8px 24px rgba(0,0,0,0.08)",
+        "purpose": "Hover state on interactive cards that navigate. Never a resting state."
+      },
+      {
+        "name": "overlay",
+        "value": "0 24px 70px rgba(0,0,0,0.55)",
+        "purpose": "Modals, dropdowns, search overlay, site gate — surfaces that genuinely float."
+      }
     ],
     "motion": [
-      { "name": "ease-standard", "value": "cubic-bezier(0.2, 0, 0.2, 1)", "purpose": "Default easing for state and page transitions." },
-      { "name": "duration-state", "value": "0.15s", "purpose": "Hover and focus color shifts." },
-      { "name": "duration-page", "value": "0.18s", "purpose": "Page fade-in on route change." },
-      { "name": "duration-reveal", "value": "0.4s", "purpose": "Scroll-reveal fade and 16px rise." }
+      {
+        "name": "ease-standard",
+        "value": "cubic-bezier(0.2, 0, 0.2, 1)",
+        "purpose": "Default easing for state and page transitions."
+      },
+      {
+        "name": "duration-state",
+        "value": "0.15s",
+        "purpose": "Hover and focus color shifts."
+      },
+      {
+        "name": "duration-page",
+        "value": "0.18s",
+        "purpose": "Page fade-in on route change."
+      },
+      {
+        "name": "duration-reveal",
+        "value": "0.4s",
+        "purpose": "Scroll-reveal fade and 16px rise."
+      }
     ],
     "breakpoints": [
-      { "name": "reflow", "value": "960px" },
-      { "name": "phone", "value": "640px" }
+      {
+        "name": "reflow",
+        "value": "960px"
+      },
+      {
+        "name": "phone",
+        "value": "640px"
+      }
     ]
   },
   "components": [
@@ -113,9 +215,9 @@
       "name": "Editorial Lead",
       "kind": "custom",
       "refersTo": null,
-      "description": "The homepage front door — custom graphic with serif headline. Graphic is the loudest element; chrome stays quiet.",
+      "description": "The homepage front door — custom graphic with a heavy, tightly-tracked headline. Graphic is the loudest element; chrome stays quiet.",
       "html": "<a class=\"ds-lead\"><span class=\"ds-lead-media\"></span><span class=\"ds-lead-body\"><span class=\"ds-chip-solid\">Opinion</span><span class=\"ds-lead-title\">How to Disappear</span><span class=\"ds-lead-dek\">The strange case of Jonah Koech and track's transparency problem</span><span class=\"ds-lead-by\">By <b>Tate Sheehy</b> · 5 min read</span></span></a>",
-      "css": ".ds-lead { display: block; text-decoration: none; color: #111111; } .ds-lead-media { display: block; aspect-ratio: 16/9; border-radius: 4px; background: linear-gradient(135deg, #1d4ed8, #0a0a0b); } .ds-lead-body { display: block; padding-top: 16px; } .ds-chip-solid { display: inline-block; background: #B91C3C; color: #fff; border-radius: 4px; padding: 4px 10px; font-family: 'Lota Grotesque', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; } .ds-lead-title { display: block; margin-top: 12px; font-family: 'Source Serif 4', Georgia, serif; font-size: clamp(30px, 4vw, 46px); font-weight: 600; line-height: 1.06; letter-spacing: -0.02em; } .ds-lead-dek { display: block; margin-top: 10px; font-family: 'Lota Grotesque', sans-serif; font-size: 18px; line-height: 1.4; color: #6B6F76; } .ds-lead-by { display: block; margin-top: 12px; font-family: 'Lota Grotesque', sans-serif; font-size: 13px; color: #6B6F76; }"
+      "css": ".ds-lead { display: block; text-decoration: none; color: #111111; } .ds-lead-media { display: block; aspect-ratio: 16/9; border-radius: 4px; background: linear-gradient(135deg, #1d4ed8, #0a0a0b); } .ds-lead-body { display: block; padding-top: 16px; } .ds-chip-solid { display: inline-block; background: #B91C3C; color: #fff; border-radius: 4px; padding: 4px 10px; font-family: 'Lota Grotesque', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; } .ds-lead-title { display: block; margin-top: 12px; font-family: 'Lota Grotesque', sans-serif; font-size: clamp(32px, 4.2vw, 50px); font-weight: 800; line-height: 1.02; letter-spacing: -0.035em; } .ds-lead-dek { display: block; margin-top: 10px; font-family: 'Lota Grotesque', sans-serif; font-size: 18px; line-height: 1.4; color: #6B6F76; } .ds-lead-by { display: block; margin-top: 12px; font-family: 'Lota Grotesque', sans-serif; font-size: 13px; color: #6B6F76; }"
     },
     {
       "name": "Data Table",
@@ -130,26 +232,63 @@
     "northStar": "The Press Box",
     "overview": "StatTC is designed as a working writer's vantage point on the sport. A press box is authoritative without being ceremonial: it exists so someone with a good eye can watch, judge, and file. Everything in it earns its spot — the sightline, the monitor, the stat sheet at your elbow. Nothing is there to impress a visitor.\n\nThat translates to an interface where the writing leads and the data sits within arm's reach. A signed take is the front door; rankings are the recurring franchise; the numbers are receipts you reach for mid-argument, never a wall you stare at. The visual language is quiet, high-contrast, and unfussy so the two things that are genuinely StatTC's own — the voice and the custom graphics — are the only elements doing loud work. One orange accent carries every moment of emphasis on the site; when everything can be highlighted, nothing is.\n\nThe system is deliberately restrained at the chrome level so it can be generous at the content level. A hand-made athlete graphic should be the most visually interesting thing in any viewport it appears in. If the interface is competing with it, the interface is wrong.",
     "keyCharacteristics": [
-      "Editorial-first: serif headlines mark authored judgment; sans-serif marks product chrome",
+      "Editorial-first: heavy, tightly-tracked headlines mark authored judgment; small tracked labels mark chrome",
       "Flat surfaces, separated by rules and whitespace rather than shadow",
       "Exactly one accent color, used sparingly enough to still mean something",
       "Data rendered as evidence inside arguments, not as dashboards",
       "Custom graphics are the visual payload; the frame stays out of their way"
     ],
     "rules": [
-      { "name": "The One Voice Rule", "body": "Signal Orange is the only accent in the system. Any new hue introduced for decoration — a second 'category color,' a blue gradient, a green trend line — is a defect. Status colors are the sole exception and they may only communicate state, never brand.", "section": "colors" },
-      { "name": "The Token Rule", "body": "Every color in a component references a custom property from :root in base.css. A raw hex in a page stylesheet is drift, not a decision.", "section": "colors" },
-      { "name": "The Serif Means Judgment Rule", "body": "Source Serif 4 appears only on human-authored headlines — articles, takes, ranking titles. It never appears on navigation, buttons, table headers, or data labels. If a serif headline sits above auto-generated content, either the content needs a human take or the headline needs to be sans.", "section": "typography" },
-      { "name": "The Two Families Rule", "body": "Two typefaces, no third. New fonts do not get introduced for a single surface.", "section": "typography" },
-      { "name": "The Two Breakpoints Rule", "body": "960px for structural reflow, 640px for phone density. Every new rule uses the two canonical breakpoints, and stray ones are consolidated on sight.", "section": "layout" },
-      { "name": "The Lead Is The Front Door Rule", "body": "On the homepage, the lead story renders above the column split at every viewport width. No schedule module, promo, or data panel may render above it on any screen size.", "section": "layout" },
-      { "name": "The Flat-At-Rest Rule", "body": "--shadow-card is legacy and should resolve to none for idle surfaces. If a surface needs separation, use a 1px solid var(--border) rule or a background step to Press Gray — not a shadow.", "section": "elevation" },
-      { "name": "The Radius Means Class Rule", "body": "Never invent a radius. If an element doesn't map to button/input/card/feature/pill, it needs to be reclassified, not given a new number.", "section": "shapes" }
+      {
+        "name": "The One Voice Rule",
+        "body": "Signal Orange is the only accent in the system. Any new hue introduced for decoration — a second 'category color,' a blue gradient, a green trend line — is a defect. Status colors are the sole exception and they may only communicate state, never brand.",
+        "section": "colors"
+      },
+      {
+        "name": "The Token Rule",
+        "body": "Every color in a component references a custom property from :root in base.css. A raw hex in a page stylesheet is drift, not a decision.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Lota Grotesque is the only typeface on the site. No serif, no display face, no second family for a single surface. If a headline isn't reading as important enough, the fix is weight, size, and tracking — never a new font.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two Families Rule",
+        "body": "Two typefaces, no third. New fonts do not get introduced for a single surface.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two Breakpoints Rule",
+        "body": "960px for structural reflow, 640px for phone density. Every new rule uses the two canonical breakpoints, and stray ones are consolidated on sight.",
+        "section": "layout"
+      },
+      {
+        "name": "The Lead Is The Front Door Rule",
+        "body": "On the homepage, the lead story renders above the column split at every viewport width. No schedule module, promo, or data panel may render above it on any screen size.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat-At-Rest Rule",
+        "body": "--shadow-card is legacy and should resolve to none for idle surfaces. If a surface needs separation, use a 1px solid var(--border) rule or a background step to Press Gray — not a shadow.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Radius Means Class Rule",
+        "body": "Never invent a radius. If an element doesn't map to button/input/card/feature/pill, it needs to be reclassified, not given a new number.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Tight Headline Rule",
+        "body": "Editorial headlines set at 800 weight, -0.035em tracking, ~1.0 line-height. That density is the site's authored-content signal; a loose or light headline reads as generic chrome.",
+        "section": "typography"
+      }
     ],
     "dos": [
       "Do resolve every color, radius, and spacing value to a :root custom property from base.css.",
       "Do use exactly two breakpoints — 960px for structural reflow, 640px for phone density.",
-      "Do reserve Source Serif 4 for human-authored headlines, so the serif always signals judgment.",
+      "Do set editorial headlines at 800 weight with -0.035em tracking, so density signals authored judgment.",
       "Do keep surfaces flat at rest and reach for a hairline rule or background step before a shadow.",
       "Do give every ranking row an editorial bite; if there's no take, render a table instead.",
       "Do let custom graphics be the loudest element in their viewport, and keep surrounding chrome quiet.",

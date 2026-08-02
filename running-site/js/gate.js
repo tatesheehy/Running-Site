@@ -20,7 +20,7 @@
     'body{visibility:hidden}body.gate-ok{visibility:visible}' +
     '#site-gate{visibility:visible!important;position:fixed;inset:0;z-index:2147483000;' +
     'display:flex;align-items:center;justify-content:center;background:#111;' +
-    'font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}';
+    'font-family:"Lota Grotesque",system-ui,-apple-system,sans-serif}';
   (document.head || document.documentElement).appendChild(st);
 
   function unlock() {

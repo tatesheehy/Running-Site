@@ -83,7 +83,7 @@ async function renderShareCard(athlete, rank, eventName) {
     .filter(Boolean).join('  ·  ');
   if (rankLine) {
     ctx.fillStyle = ACCENT;
-    ctx.font = '700 13px Barlow, "Helvetica Neue", sans-serif';
+    ctx.font = '700 13px "Lota Grotesque", sans-serif';
     ctx.fillText(rankLine, RX, 52);
   }
 
@@ -94,23 +94,23 @@ async function renderShareCard(athlete, rank, eventName) {
 
   if (firstName) {
     ctx.fillStyle = '#aaaaaa';
-    ctx.font = '400 34px Oswald, "Helvetica Neue", sans-serif';
+    ctx.font = '400 34px "Lota Grotesque", sans-serif';
     ctx.fillText(firstName, RX, 108);
   }
 
   // Auto-fit last name
-  ctx.font = '700 96px Oswald, "Helvetica Neue", sans-serif';
+  ctx.font = '700 96px "Lota Grotesque", sans-serif';
   let nameSize = 96;
   while (ctx.measureText(lastName).width > RW && nameSize > 48) {
     nameSize -= 4;
-    ctx.font = `700 ${nameSize}px Oswald, "Helvetica Neue", sans-serif`;
+    ctx.font = `700 ${nameSize}px "Lota Grotesque", sans-serif`;
   }
   ctx.fillStyle = '#111111';
   ctx.fillText(lastName, RX - 4, firstName ? 210 : 180);
 
   // Country
   ctx.fillStyle = '#888888';
-  ctx.font = '500 15px Barlow, "Helvetica Neue", sans-serif';
+  ctx.font = '500 15px "Lota Grotesque", sans-serif';
   ctx.fillText(`${flagToEmoji(athlete.flag)}  ${(athlete.country || '').toUpperCase()}`, RX, firstName ? 242 : 212);
 
   // Divider
@@ -128,15 +128,15 @@ async function renderShareCard(athlete, rank, eventName) {
   let div2y = div1y + 36;
   if (bestPr) {
     ctx.fillStyle = '#aaaaaa';
-    ctx.font = '600 11px Barlow, "Helvetica Neue", sans-serif';
+    ctx.font = '600 11px "Lota Grotesque", sans-serif';
     ctx.fillText('PERSONAL BEST', RX, div1y + 24);
 
     ctx.fillStyle = '#111111';
-    ctx.font = 'bold 76px "Courier New", Courier, monospace';
+    ctx.font = '800 76px "Lota Grotesque", sans-serif';
     ctx.fillText(bestPr.time, RX, div1y + 104);
 
     ctx.fillStyle = '#aaaaaa';
-    ctx.font = '500 13px Barlow, "Helvetica Neue", sans-serif';
+    ctx.font = '500 13px "Lota Grotesque", sans-serif';
     ctx.fillText(bestPr.event, RX, div1y + 124);
     div2y = div1y + 144;
   }
@@ -147,14 +147,14 @@ async function renderShareCard(athlete, rank, eventName) {
 
   // Trophy case
   ctx.fillStyle = '#aaaaaa';
-  ctx.font = '600 11px Barlow, "Helvetica Neue", sans-serif';
+  ctx.font = '600 11px "Lota Grotesque", sans-serif';
   ctx.fillText('TROPHY CASE', RX, div2y + 22);
 
   const COMP_COLORS = { OLY: '#d4a000', WC: '#2563eb', WI: '#7c3aed', DLF: '#ff5200' };
   const PLACE_COLORS = ['#d4a000', '#9e9e9e', '#b87333'];
 
   const honours = (athlete.honours || []).slice(0, 10);
-  ctx.font = '600 12px Barlow, "Helvetica Neue", sans-serif';
+  ctx.font = '600 12px "Lota Grotesque", sans-serif';
 
   let bx = RX, by = div2y + 36;
   const BH = 30;
@@ -189,7 +189,7 @@ async function renderShareCard(athlete, rank, eventName) {
 
   // ── Branding ──
   ctx.fillStyle = '#cccccc';
-  ctx.font = '400 12px Barlow, "Helvetica Neue", sans-serif';
+  ctx.font = '400 12px "Lota Grotesque", sans-serif';
   const brandW = ctx.measureText('stattc.com').width;
   ctx.fillText('stattc.com', W - 48 - brandW, H - 18);
 
@@ -266,7 +266,7 @@ function buildShareCardHtml(athlete, rank, eventName) {
     return `
       <div style="display:flex;align-items:center;gap:5px;background:#f5f5f5;border-radius:4px;
         padding:3px 8px 3px 4px;border-left:3px solid ${placeColor};font-size:10px;color:#333;
-        font-family:'Helvetica Neue',sans-serif;font-weight:600;white-space:nowrap">
+        font-family:'Lota Grotesque',sans-serif;font-weight:700;white-space:nowrap">
         <span style="width:7px;height:7px;border-radius:50%;background:${compColor};display:inline-block;flex-shrink:0"></span>
         ${h.short} '${String(h.year).slice(2)}&nbsp;${h.discipline}
       </div>`;
@@ -275,7 +275,7 @@ function buildShareCardHtml(athlete, rank, eventName) {
   return `
     <div id="share-card" style="
       width:600px;height:315px;display:flex;border-radius:10px;overflow:hidden;
-      font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+      font-family:'Lota Grotesque',sans-serif;
       box-shadow:0 8px 32px rgba(0,0,0,0.4);position:relative;
     ">
       <!-- orange top bar -->
@@ -293,15 +293,15 @@ function buildShareCardHtml(athlete, rank, eventName) {
       <div style="flex:1;background:#fff;padding:20px 20px 14px 22px;display:flex;flex-direction:column;justify-content:space-between;min-width:0">
         <div>
           ${rankLine ? `<div style="font-size:10px;font-weight:700;color:${accent};margin-bottom:6px">${rankLine}</div>` : ''}
-          ${firstName ? `<div style="font-size:14px;font-weight:400;color:#aaa;line-height:1;font-family:Oswald,sans-serif">${firstName.toUpperCase()}</div>` : ''}
-          <div style="font-size:40px;font-weight:700;color:#111;line-height:1;font-family:Oswald,sans-serif">${lastName.toUpperCase()}</div>
+          ${firstName ? `<div style="font-size:14px;font-weight:400;color:#aaa;line-height:1;font-family:'Lota Grotesque',sans-serif;letter-spacing:0.06em">${firstName.toUpperCase()}</div>` : ''}
+          <div style="font-size:40px;font-weight:700;color:#111;line-height:1;font-family:'Lota Grotesque',sans-serif;letter-spacing:-0.03em">${lastName.toUpperCase()}</div>
           <div style="font-size:11px;color:#888;margin-top:3px">${(athlete.country || '').toUpperCase()}</div>
         </div>
 
         ${bestPr ? `
           <div>
             <div style="font-size:9px;font-weight:600;color:#aaa;letter-spacing:0.05em;margin-bottom:2px">PERSONAL BEST</div>
-            <div style="font-size:30px;font-weight:700;color:#111;font-family:'Courier New',monospace;line-height:1">${bestPr.time}</div>
+            <div style="font-size:30px;font-weight:700;color:#111;font-family:'Lota Grotesque',sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-0.02em;line-height:1">${bestPr.time}</div>
             <div style="font-size:10px;color:#aaa;margin-top:1px">${bestPr.event}</div>
           </div>
         ` : ''}
@@ -334,13 +334,13 @@ function openShareOverlay(athleteId, rank, eventName) {
     ].join(';');
 
     const cardHtml = buildShareCardHtml(athlete, rank, eventName);
-    const BTN_BASE = 'border:none;padding:10px 22px;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;font-family:Barlow,sans-serif';
+    const BTN_BASE = 'border:none;padding:10px 22px;border-radius:6px;font-size:14px;font-weight:600;cursor:pointer;font-family:"Lota Grotesque",sans-serif';
     overlay.innerHTML = `
       ${cardHtml}
       <div style="display:flex;gap:12px;align-items:center">
         <button id="share-download-btn" style="${BTN_BASE};background:#ff5200;color:#fff">↓ Download</button>
         <button id="share-copy-btn"     style="${BTN_BASE};background:#2a2a2a;color:#fff;border:1px solid #444">⧉ Copy image</button>
-        <span style="color:#444;font-size:13px;font-family:sans-serif">or screenshot the card above</span>
+        <span style="color:#444;font-size:13px;font-family:'Lota Grotesque',sans-serif">or screenshot the card above</span>
         <button onclick="document.getElementById('share-overlay').remove()" style="background:none;border:none;color:#555;font-size:22px;cursor:pointer;line-height:1;padding:4px 8px;margin-left:4px">×</button>
       </div>
     `;

@@ -127,7 +127,7 @@ function _renderH2HLbTableHtml(rows, opts = {}) {
                 <div class="h2h-lb-pct-wrap">
                   <span class="h2h-lb-pct-val">${pct}%</span>
                   <div class="h2h-lb-pct-bar">
-                    <div class="h2h-lb-pct-fill" style="width:${pct}%"></div>
+                    <div class="h2h-lb-pct-fill" style="transform:scaleX(${pct / 100})"></div>
                   </div>
                 </div>
               </td>

@@ -32,11 +32,11 @@
   gap: 7px;
   color: #fff;
   font-weight: 700;
-  font-size: 14px;
+  font-size: var(--fs-5);
 }
 .ap-hero-country:hover { text-decoration: underline; }
 .ap-hero-chip {
-  font-size: 11px;
+  font-size: var(--fs-2);
   font-weight: 700;
   letter-spacing: 0.04em;
   color: rgba(255,255,255,0.92);
@@ -61,7 +61,7 @@
 }
 .ap-hero-btn {
   font-family: var(--font-body);
-  font-size: 12px;
+  font-size: var(--fs-3);
   font-weight: 800;
   letter-spacing: 0.04em;
   text-transform: none;
@@ -88,14 +88,14 @@
 /* Past-season year switcher */
 .ap-year-tabs { margin: 0; flex-wrap: wrap; }
 .ap-prev-note {
-  font-size: 12px;
+  font-size: var(--fs-3);
   color: var(--muted);
 }
 
 /* Sub-labels inside a section (Season Bests / Races) */
 .ap-sub-label {
   font-family: var(--font-body);
-  font-size: 11px;
+  font-size: var(--fs-2);
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: none;
@@ -119,7 +119,7 @@
   min-width: 0;
 }
 .ap-sb-event {
-  font-size: 11px;
+  font-size: var(--fs-2);
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: none;
@@ -130,12 +130,12 @@
 }
 .ap-sb-time {
   font-family: var(--font-display);
-  font-size: 19px;
+  font-size: var(--fs-8);
   font-weight: 800;
   color: var(--text);
 }
 .ap-sb-meet {
-  font-size: 11px;
+  font-size: var(--fs-2);
   color: var(--muted);
   white-space: nowrap;
   overflow: hidden;
@@ -161,13 +161,13 @@
 .ap-h2h-stat { display: flex; flex-direction: column; gap: 4px; }
 .ap-h2h-num {
   font-family: var(--font-display);
-  font-size: 28px;
+  font-size: var(--fs-10);
   font-weight: 800;
   color: var(--accent);
   line-height: 1;
 }
 .ap-h2h-label {
-  font-size: 11px;
+  font-size: var(--fs-2);
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: none;
@@ -176,7 +176,7 @@
 
 /* Country snapshot */
 .ap-country-link {
-  font-size: 12px;
+  font-size: var(--fs-3);
   font-weight: 700;
   color: var(--accent);
   white-space: nowrap;
@@ -207,8 +207,8 @@
   background-position: top center;
   margin: 0 auto 8px;
 }
-.ap-similar-name { font-weight: 700; font-size: 13px; }
-.ap-similar-country { font-size: 11px; color: var(--muted); margin-top: 2px; display: flex; align-items: center; justify-content: center; gap: 5px; }
+.ap-similar-name { font-weight: 700; font-size: var(--fs-4); }
+.ap-similar-country { font-size: var(--fs-2); color: var(--muted); margin-top: 2px; display: flex; align-items: center; justify-content: center; gap: 5px; }
 
 @media (max-width: 640px) {
   /* Long section titles (e.g. "Top United States — 1500m") wrap awkwardly
@@ -227,5 +227,5 @@
   .ap-results .card-results-table th,
   .ap-results .card-results-table td { padding-right: 8px; }
   .ap-results .cr-meet { max-width: 96px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .ap-results .card-results-table { font-size: 12px; }
+  .ap-results .card-results-table { font-size: var(--fs-3); }
 }

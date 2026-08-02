@@ -15,16 +15,16 @@
 .ath-page-header-left { display: flex; align-items: baseline; gap: 14px; }
 .ath-page-title {
   font-family: var(--font-display);
-  font-size: 44px;
+  font-size: var(--fs-11);
   font-weight: 900;
   color: var(--dark);
   margin: 0;
   line-height: 1;
 }
 .ath-page-count {
-  font-size: 13px;
+  font-size: var(--fs-4);
   font-weight: 600;
-  color: #999;
+  color: var(--muted-2);
   letter-spacing: 0.02em;
   white-space: nowrap;
 }
@@ -72,7 +72,7 @@
 }
 .ath-page-sort {
   font-family: var(--font-body);
-  font-size: 10px;
+  font-size: var(--fs-1);
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: none;
@@ -126,19 +126,19 @@
   background: var(--bg-light);
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: var(--fs-5);
   outline: none;
   transition: border-color 0.15s;
 }
 .ath-search-input::placeholder { color: var(--muted); }
-.ath-search-input:focus { border-color: var(--accent, #555); }
+.ath-search-input:focus { border-color: var(--accent, var(--muted)); }
 .ath-search-clear {
   position: absolute;
   right: 10px;
   background: none;
   border: none;
   color: var(--muted);
-  font-size: 13px;
+  font-size: var(--fs-4);
   cursor: pointer;
   padding: 4px;
   line-height: 1;
@@ -154,7 +154,7 @@
   align-items: center;
   gap: 6px;
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: var(--fs-4);
   font-weight: 600;
   padding: 8px 16px;
   border-radius: 999px;
@@ -177,10 +177,10 @@
   min-width: 18px;
   height: 18px;
   padding: 0 5px;
-  border-radius: 99px;
+  border-radius: var(--radius-pill);
   background: var(--dark);
   color: #fff;
-  font-size: 10px;
+  font-size: var(--fs-1);
   font-weight: 700;
   line-height: 1;
 }
@@ -211,7 +211,7 @@
   margin-bottom: 10px;
 }
 .ath-filter-section-label {
-  font-size: 10px;
+  font-size: var(--fs-1);
   font-weight: 700;
   letter-spacing: 0.07em;
   text-transform: none;
@@ -224,7 +224,7 @@
 }
 .ath-mpr-hint {
   font-family: var(--font-body);
-  font-size: 12px;
+  font-size: var(--fs-3);
   color: var(--muted);
   margin-bottom: 12px;
 }
@@ -241,7 +241,7 @@
 }
 .ath-mpr-clear {
   font-family: var(--font-body);
-  font-size: 12px;
+  font-size: var(--fs-3);
   font-weight: 600;
   color: var(--muted);
   background: none;
@@ -253,7 +253,7 @@
 .ath-mpr-clear:hover { color: var(--text); }
 .ath-mpr-match-count {
   font-family: var(--font-body);
-  font-size: 12px;
+  font-size: var(--fs-3);
   font-weight: 600;
   color: var(--text);
   margin-left: auto;
@@ -277,17 +277,17 @@
   background: #fff;
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: var(--fs-4);
   font-weight: 500;
   cursor: pointer;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
-.ath-cs-btn:hover { border-color: #ddd; }
+.ath-cs-btn:hover { border-color: var(--divider-strong); }
 .ath-cs-val--ph { color: var(--muted); }
 .ath-cs-arrow {
   width: 11px;
   height: 8px;
-  color: #aaa;
+  color: var(--muted-2);
   flex-shrink: 0;
   transition: transform 0.2s ease;
 }
@@ -318,9 +318,9 @@
 .ath-cs.open .ath-cs-list { display: block; }
 .ath-cs-opt {
   padding: 9px 12px;
-  border-radius: 10px;
+  border-radius: var(--radius-btn);
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: var(--fs-4);
   font-weight: 500;
   color: var(--text);
   white-space: nowrap;
@@ -331,7 +331,7 @@
 .ath-cs-opt--active { font-weight: 700; background: rgba(0,0,0,0.06); }
 .ath-mpr-under {
   font-family: var(--font-body);
-  font-size: 12px;
+  font-size: var(--fs-3);
   color: var(--muted);
   flex-shrink: 0;
 }
@@ -345,12 +345,12 @@
   background: #fff;
   color: var(--text);
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: var(--fs-4);
   outline: none;
   transition: border-color 0.15s;
 }
 .ath-mpr-time::placeholder { color: var(--muted); }
-.ath-mpr-time:focus { border-color: var(--accent, #555); }
+.ath-mpr-time:focus { border-color: var(--accent, var(--muted)); }
 .ath-mpr-time.invalid { border-color: #d33; }
 .ath-mpr-remove {
   display: inline-flex;
@@ -369,7 +369,7 @@
 .ath-mpr-remove:hover { color: #d33; background: rgba(211,51,51,0.08); }
 .ath-mpr-add {
   font-family: var(--font-body);
-  font-size: 12px;
+  font-size: var(--fs-3);
   font-weight: 600;
   color: var(--accent, #FF5200);
   background: none;
@@ -386,7 +386,7 @@
 }
 .ath-filter-clear-all {
   font-family: var(--font-body);
-  font-size: 12px;
+  font-size: var(--fs-3);
   font-weight: 600;
   color: var(--muted);
   background: none;
@@ -409,7 +409,7 @@
   align-items: center;
   gap: 5px;
   font-family: var(--font-body);
-  font-size: 11px;
+  font-size: var(--fs-2);
   font-weight: 600;
   letter-spacing: 0.02em;
   padding: 4px 10px;
@@ -507,15 +507,15 @@
   margin-bottom: 14px;
 }
 .ath-flip-age {
-  font-size: 11px;
-  color: #555;
+  font-size: var(--fs-2);
+  color: var(--muted);
   margin-top: 4px;
   font-weight: 500;
 }
 .ath-flip-prs-label {
-  font-size: 9px;
+  font-size: var(--fs-1);
   font-weight: 700;
-  letter-spacing: 0.06em;color: #444;
+  letter-spacing: 0.06em;color: var(--ink-2);
   margin-bottom: 10px;
 }
 .ath-flip-prs-wrap {
@@ -545,26 +545,26 @@
   align-items: center;
 }
 .ath-flip-pr-event {
-  font-size: 10px;
+  font-size: var(--fs-1);
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: none;
-  color: #555;
+  color: var(--muted);
 }
 .ath-flip-pr-time {
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: var(--fs-4);
   font-weight: 700;
-  color: #ccc;
+  color: var(--divider-strong);
   font-variant-numeric: tabular-nums;
 }
-.ath-flip-no-prs { font-size: 12px; color: #444; }
+.ath-flip-no-prs { font-size: var(--fs-3); color: var(--ink-2); }
 .ath-flip-cta {
-  font-size: 11px;
+  font-size: var(--fs-2);
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: none;
-  color: #888;
+  color: var(--muted-2);
   margin-top: auto;
   padding-top: 14px;
   border-top: 1px solid #1e1e1e;
@@ -573,27 +573,27 @@
 /* shared name/country styles used on both faces */
 .ath-page-name {
   font-family: var(--font-display);
-  font-size: 19px;
+  font-size: var(--fs-8);
   font-weight: 900;
   color: #fff;
   line-height: 1.1;
   margin-bottom: 4px;
 }
 .ath-page-country {
-  font-size: 12px;
-  color: #777;
+  font-size: var(--fs-3);
+  color: var(--muted);
   display: flex;
   align-items: center;
   gap: 6px;
   font-weight: 500;
 }
-.ath-page-empty { color: #555; font-size: 14px; padding: 60px 0; text-align: center; }
+.ath-page-empty { color: var(--muted); font-size: var(--fs-5); padding: 60px 0; text-align: center; }
 .ath-empty-clear {
   background: none;
   border: none;
   color: var(--accent);
   font-family: var(--font-display);
-  font-size: 14px;
+  font-size: var(--fs-5);
   font-weight: 600;
   cursor: pointer;
   padding: 0 2px;
@@ -603,7 +603,7 @@
 
 @media (max-width: 768px) {
   .ath-page-header { flex-direction: column; align-items: flex-start; gap: 14px; padding: 28px 0 16px; }
-  .ath-page-title { font-size: 36px; }
+  .ath-page-title { font-size: var(--fs-11); }
   .ath-page-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; }
 }
 @media (max-width: 480px) {
@@ -623,12 +623,12 @@
 .ath-list-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 13px;
+  font-size: var(--fs-4);
 }
 .ath-list-th {
   padding: 10px 14px;
   text-align: left;
-  font-size: 10px;
+  font-size: var(--fs-1);
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: none;
@@ -657,7 +657,7 @@ th.ath-list-country,
 th.ath-list-age,
 th.ath-list-pr {
   font-family: inherit;
-  font-size: 10px;
+  font-size: var(--fs-1);
   font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--muted);
@@ -688,7 +688,7 @@ th.ath-list-pr {
   min-width: 180px;
 }
 .ath-list-num {
-  font-size: 11px;
+  font-size: var(--fs-2);
   color: var(--muted);
   min-width: 18px;
   text-align: right;
@@ -698,11 +698,11 @@ th.ath-list-pr {
 
 .ath-list-country {
   color: var(--muted);
-  font-size: 12px;
+  font-size: var(--fs-3);
 }
 .ath-list-pr {
   font-family: var(--font-mono, monospace);
-  font-size: 13px;
+  font-size: var(--fs-4);
   font-variant-numeric: tabular-nums;
   color: var(--text);
   text-align: right;
@@ -710,7 +710,7 @@ th.ath-list-pr {
 }
 .ath-list-age {
   color: var(--muted);
-  font-size: 12px;
+  font-size: var(--fs-3);
   text-align: right;
   min-width: 40px;
 }
@@ -725,7 +725,7 @@ th.ath-list-pr {
   align-items: center;
   gap: 6px;
   font-family: var(--font-body);
-  font-size: 11px;
+  font-size: var(--fs-2);
   font-weight: 600;
   letter-spacing: 0.02em;
   padding: 4px 10px;
@@ -747,7 +747,7 @@ th.ath-list-pr {
   border-color: var(--dark);
 }
 .ath-preset-count {
-  font-size: 10px;
+  font-size: var(--fs-1);
   opacity: 0.65;
   font-weight: 500;
 }
@@ -763,7 +763,7 @@ th.ath-list-pr {
   border: 1px solid var(--border);
   color: var(--muted);
   font-family: var(--font-body);
-  font-size: 11px;
+  font-size: var(--fs-2);
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: none;
@@ -776,7 +776,7 @@ th.ath-list-pr {
 .ath-lists-view-btn:hover { color: var(--text); border-color: var(--text); }
 
 .ath-lists-view-desc {
-  font-size: 13px;
+  font-size: var(--fs-4);
   color: var(--muted);
   line-height: 1.5;
   margin-bottom: 16px;
@@ -788,7 +788,7 @@ th.ath-list-pr {
   text-align: center;
 }
 .ath-lists-view-signin p {
-  font-size: 13px;
+  font-size: var(--fs-4);
   color: var(--muted);
   margin-bottom: 12px;
 }
@@ -800,10 +800,10 @@ th.ath-list-pr {
   background: var(--accent);
   color: #fff;
   border: none;
-  font-size: 13px;
+  font-size: var(--fs-4);
   font-weight: 700;
   padding: 8px 20px;
-  border-radius: 6px;
+  border-radius: var(--radius-xs);
   cursor: pointer;
 }
 .ath-lists-view-signin button:hover { opacity: 0.85; }
@@ -818,8 +818,8 @@ th.ath-list-pr {
 /* ── LEAFLET MAP OVERRIDES ───────────────────────────────── */
 .map-popup .leaflet-popup-content-wrapper {
   background: #1a1a1a;
-  border: 1px solid #333;
-  border-radius: 10px;
+  border: 1px solid var(--ink-2);
+  border-radius: var(--radius-btn);
   box-shadow: 0 8px 32px rgba(0,0,0,0.6);
   padding: 0;
 }
@@ -834,7 +834,7 @@ th.ath-list-pr {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  font-size: 11px;
+  font-size: var(--fs-2);
   font-weight: 800;
   color: #fff;
   pointer-events: none;

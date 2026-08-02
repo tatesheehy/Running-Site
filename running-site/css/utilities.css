@@ -51,7 +51,7 @@
 .skel-article-card { height: 220px; }
 
 /* page header (title + toggle) */
-.skel-page-hdr { display: flex; align-items: center; justify-content: space-between; padding: 40px 0 24px; border-bottom: 3px solid #eee; margin-bottom: 28px; }
+.skel-page-hdr { display: flex; align-items: center; justify-content: space-between; padding: 40px 0 24px; border-bottom: 3px solid var(--border); margin-bottom: 28px; }
 .skel-title    { height: 44px; width: 180px; }
 .skel-toggle   { height: 36px; width: 160px; }
 
@@ -61,7 +61,7 @@
 
 /* rankings rows */
 .skel-rows { display: flex; flex-direction: column; gap: 1px; }
-.skel-row  { height: 64px; border-radius: 4px; }
+.skel-row  { height: 64px; border-radius: var(--radius-xs); }
 
 /* article detail */
 .skel-article-wrap  { padding-top: 32px; max-width: 720px; }
@@ -76,10 +76,12 @@
   top: 0;
   left: 0;
   height: 3px;
-  width: 0%;
+  width: 100%;
   background: var(--accent);
   z-index: 9999;
-  transition: width 0.08s linear;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.08s linear;
   pointer-events: none;
 }
 
