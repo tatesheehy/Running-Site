@@ -12,7 +12,7 @@
   "flag": "NZ",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-01",
+  "lastSynced": "2026-08-02",
   "prs": [
     {
       "event": "400m",
@@ -74,6 +74,14 @@
   "club": "x",
   "country": "New Zealand",
   "results": [
+    {
+      "date": "AUG 1",
+      "meet": "XXIII Commonwealth Games",
+      "event": "Mile",
+      "time": "3:56.63",
+      "place": "9.",
+      "round": "F1"
+    },
     {
       "date": "JUL 29",
       "meet": "XXIII Commonwealth Games",

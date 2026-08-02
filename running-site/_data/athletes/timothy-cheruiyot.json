@@ -66,7 +66,7 @@
     }
   ],
   "seasons": "8",
-  "lastSynced": "2026-08-01",
+  "lastSynced": "2026-08-02",
   "prs": [
     {
       "event": "800m",
@@ -103,6 +103,14 @@
   "club": "Iten Training Camp",
   "country": "Kenya",
   "results": [
+    {
+      "date": "AUG 1",
+      "meet": "XXIII Commonwealth Games",
+      "event": "Mile",
+      "time": "3:55.41",
+      "place": "3.",
+      "round": "F1"
+    },
     {
       "date": "JUL 29",
       "meet": "XXIII Commonwealth Games",

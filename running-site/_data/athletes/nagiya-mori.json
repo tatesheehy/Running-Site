@@ -70,6 +70,14 @@
   ],
   "results": [
     {
+      "date": "AUG 1",
+      "meet": "IFAM Oordegem",
+      "event": "5000 m",
+      "time": "13:15.01",
+      "place": "16.",
+      "round": "F1"
+    },
+    {
       "date": "JUN 14",
       "meet": "Japanese Championships",
       "event": "5000 m",
@@ -134,7 +142,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-08-01",
+  "lastSynced": "2026-08-02",
   "resultsHistory": {
     "2018": [
       {

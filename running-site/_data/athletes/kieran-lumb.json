@@ -12,7 +12,7 @@
   "flag": "CA",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-01",
+  "lastSynced": "2026-08-02",
   "prs": [
     {
       "event": "800m",
@@ -118,6 +118,14 @@
   "club": "x",
   "country": "Canada",
   "results": [
+    {
+      "date": "AUG 1",
+      "meet": "XXIII Commonwealth Games",
+      "event": "5000 m",
+      "time": "13:26.18",
+      "place": "8.",
+      "round": "F1"
+    },
     {
       "date": "JUN 18",
       "meet": "Canadian Championships",
@@ -1277,5 +1285,5 @@
       }
     ]
   },
-  "age": "27"
+  "age": "28"
 }

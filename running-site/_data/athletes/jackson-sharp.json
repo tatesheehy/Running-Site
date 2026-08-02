@@ -74,6 +74,14 @@
   ],
   "results": [
     {
+      "date": "AUG 1",
+      "meet": "XXIII Commonwealth Games",
+      "event": "5000 m",
+      "time": "13:29.38",
+      "place": "9.",
+      "round": "F1"
+    },
+    {
       "date": "JUL 14",
       "meet": "Gyulai István Memorial - Hungarian Athletics Grand Prix",
       "event": "3000 m",
@@ -178,7 +186,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-08-01",
+  "lastSynced": "2026-08-02",
   "resultsHistory": {
     "2018": [
       {
