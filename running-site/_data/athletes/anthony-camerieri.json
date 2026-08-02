@@ -94,6 +94,14 @@
   ],
   "results": [
     {
+      "date": "JUL 26",
+      "meet": "USA Championships",
+      "event": "5000 m",
+      "time": "13:47.47",
+      "place": "5.",
+      "round": "F"
+    },
+    {
       "date": "JUL 14",
       "meet": "Gyulai István Memorial - Hungarian Athletics Grand Prix",
       "event": "3000 m",
@@ -166,7 +174,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -808,5 +816,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-23"
+  "lastHistorySynced": "2026-07-31"
 }

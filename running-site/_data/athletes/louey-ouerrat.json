@@ -50,6 +50,22 @@
   ],
   "results": [
     {
+      "date": "JUL 25",
+      "meet": "French Championships",
+      "event": "800 m",
+      "time": "1:44.91",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 24",
+      "meet": "French Championships",
+      "event": "800 m",
+      "time": "1:46.91",
+      "place": "1.",
+      "round": "H2"
+    },
+    {
       "date": "JUL 10",
       "meet": "Meeting International d’Athlétisme Herculis EBS",
       "event": "1000 m",
@@ -138,7 +154,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -731,5 +747,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-23"
+  "lastHistorySynced": "2026-07-31"
 }

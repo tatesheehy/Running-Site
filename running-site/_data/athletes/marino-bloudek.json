@@ -118,6 +118,22 @@
   ],
   "results": [
     {
+      "date": "JUL 26",
+      "meet": "Croatian Championships",
+      "event": "800 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F2"
+    },
+    {
+      "date": "JUL 25",
+      "meet": "Croatian Championships",
+      "event": "1500 m",
+      "time": "3:47.21",
+      "place": "2.",
+      "round": "F"
+    },
+    {
       "date": "JUN 26",
       "meet": "76. Boris Hanžeković Memorial",
       "event": "800 m",
@@ -270,7 +286,7 @@
       "round": "F4"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "resultsHistory": {
     "2018": [
       {

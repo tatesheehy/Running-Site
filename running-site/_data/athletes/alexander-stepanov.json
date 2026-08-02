@@ -54,6 +54,22 @@
   ],
   "results": [
     {
+      "date": "JUL 26",
+      "meet": "German Championships",
+      "event": "800 m",
+      "time": "1:48.44",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 25",
+      "meet": "German Championships",
+      "event": "800 m",
+      "time": "1:48.58",
+      "place": "1.",
+      "round": "H3"
+    },
+    {
       "date": "JUL 18",
       "meet": "BW Leichtathletik Finals Aktive/U20/U18",
       "event": "400 m",
@@ -158,7 +174,7 @@
       "round": "F2"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -542,5 +558,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-23"
+  "lastHistorySynced": "2026-07-31"
 }

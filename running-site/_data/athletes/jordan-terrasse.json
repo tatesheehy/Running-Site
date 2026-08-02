@@ -70,6 +70,22 @@
   ],
   "results": [
     {
+      "date": "JUL 25",
+      "meet": "French Championships",
+      "event": "800 m",
+      "time": "1:45.57",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 24",
+      "meet": "French Championships",
+      "event": "800 m",
+      "time": "1:46.78",
+      "place": "2.",
+      "round": "H3"
+    },
+    {
       "date": "JUL 4",
       "meet": "Meeting National Est Lyonnais",
       "event": "800 m",
@@ -190,7 +206,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "resultsHistory": {
     "2018": [
       {

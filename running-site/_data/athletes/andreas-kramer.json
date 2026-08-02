@@ -70,6 +70,22 @@
   ],
   "results": [
     {
+      "date": "JUL 26",
+      "meet": "Swedish Championships",
+      "event": "800 m",
+      "time": "1:48.14",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "JUL 25",
+      "meet": "Swedish Championships",
+      "event": "800 m",
+      "time": "1:49.56",
+      "place": "1.",
+      "round": "H2"
+    },
+    {
       "date": "JAN 22",
       "meet": "BAUHAUS-galan Indoor",
       "event": "1500 m sh",
@@ -78,7 +94,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "resultsHistory": {
     "2018": [
       {

@@ -86,6 +86,14 @@
   ],
   "results": [
     {
+      "date": "JUL 28",
+      "meet": "XXIII Commonwealth Games",
+      "event": "10,000 m",
+      "time": "27:48.93",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
       "date": "JUL 10",
       "meet": "Meeting International d’Athlétisme Herculis EBS",
       "event": "5000 m",
@@ -150,7 +158,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "resultsHistory": {
     "2018": [
       {

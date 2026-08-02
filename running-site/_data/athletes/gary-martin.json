@@ -10,7 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "prs": [
     {
       "event": "800m",
@@ -84,6 +84,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "JUL 25",
+      "meet": "USA Championships",
+      "event": "1500 m",
+      "time": "3:50.74",
+      "place": "4.",
+      "round": "F"
+    },
     {
       "date": "JUL 23",
       "meet": "USA Championships",
@@ -264,7 +272,7 @@
   "dob": "2003-12-23",
   "college": "Virginia",
   "weight": "x",
-  "lastHistorySynced": "2026-07-23",
+  "lastHistorySynced": "2026-07-31",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",

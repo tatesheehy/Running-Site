@@ -7,7 +7,7 @@
   "photo": "",
   "photoBackground": "#111111",
   "event": "MIDDLE DISTANCE",
-  "age": "23",
+  "age": "24",
   "dob": "2002-07-28",
   "height": "x",
   "weight": "x",
@@ -105,6 +105,22 @@
     }
   ],
   "results": [
+    {
+      "date": "JUL 30",
+      "meet": "XXIII Commonwealth Games",
+      "event": "800 m",
+      "time": "1:45.77",
+      "place": "6.",
+      "round": "SF2"
+    },
+    {
+      "date": "JUL 28",
+      "meet": "XXIII Commonwealth Games",
+      "event": "800 m",
+      "time": "1:47.30",
+      "place": "4.",
+      "round": "H3"
+    },
     {
       "date": "JUL 12",
       "meet": "Edmonton Athletics Invitational",
@@ -210,7 +226,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "resultsHistory": {
     "2018": [
       {

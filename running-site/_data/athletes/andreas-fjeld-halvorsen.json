@@ -70,6 +70,22 @@
   ],
   "results": [
     {
+      "date": "JUL 25",
+      "meet": "Norwegian Championships",
+      "event": "1500 m",
+      "time": "3:36.84",
+      "place": "2.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 24",
+      "meet": "Norwegian Championships",
+      "event": "1500 m",
+      "time": "3:53.86",
+      "place": "2.",
+      "round": "H2"
+    },
+    {
       "date": "JUL 18",
       "meet": "Night of Athletics",
       "event": "5000 m",
@@ -150,7 +166,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -1023,5 +1039,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-23"
+  "lastHistorySynced": "2026-07-31"
 }

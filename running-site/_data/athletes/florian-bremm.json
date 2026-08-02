@@ -90,6 +90,14 @@
   ],
   "results": [
     {
+      "date": "JUL 25",
+      "meet": "German Championships",
+      "event": "5000 m",
+      "time": "14:09.03",
+      "place": "2.",
+      "round": "F"
+    },
+    {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
       "event": "5000 m",
@@ -138,7 +146,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "resultsHistory": {
     "2018": [
       {

@@ -74,6 +74,22 @@
   ],
   "results": [
     {
+      "date": "JUL 26",
+      "meet": "Belgian Championships",
+      "event": "400 m",
+      "time": "45.97",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 25",
+      "meet": "Belgian Championships",
+      "event": "400 m",
+      "time": "45.87",
+      "place": "2.",
+      "round": "H2"
+    },
+    {
       "date": "JUL 15",
       "meet": "Meeting International d'Athlétisme de la Province de Liège",
       "event": "600 m",
@@ -194,7 +210,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "resultsHistory": {
     "2018": [
       {

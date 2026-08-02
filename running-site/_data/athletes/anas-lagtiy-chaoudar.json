@@ -4,7 +4,7 @@
   "waUrl": "https://worldathletics.org/athletes/france/anas-lagtiy-chaoudar-15032059",
   "name": "Anas Lagtiy Chaoudar",
   "flag": "FR",
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "prs": [
     {
       "event": "800m",
@@ -44,6 +44,22 @@
   "ncaa": false,
   "country": "France",
   "results": [
+    {
+      "date": "JUL 26",
+      "meet": "French Championships",
+      "event": "1500 m",
+      "time": "3:41.53",
+      "place": "5.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 25",
+      "meet": "French Championships",
+      "event": "1500 m",
+      "time": "3:46.27",
+      "place": "3.",
+      "round": "H2"
+    },
     {
       "date": "JUL 3",
       "meet": "Meeting Stanislas Nancy",
@@ -118,7 +134,7 @@
     }
   ],
   "dob": "2004-01-17",
-  "lastHistorySynced": "2026-07-23",
+  "lastHistorySynced": "2026-07-31",
   "event": "MIDDLE DISTANCE",
   "id": "anas-lagtiy-chaoudar",
   "resultsHistory": {

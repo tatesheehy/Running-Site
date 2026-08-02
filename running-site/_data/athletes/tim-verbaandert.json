@@ -12,7 +12,7 @@
   "flag": "NL",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "prs": [
     {
       "event": "800m",
@@ -74,6 +74,14 @@
   "club": "x",
   "country": "Netherlands",
   "results": [
+    {
+      "date": "JUL 25",
+      "meet": "Dutch Championships",
+      "event": "5000 m",
+      "time": "14:11.01",
+      "place": "1.",
+      "round": "F"
+    },
     {
       "date": "JUN 28",
       "meet": "Meeting de Paris",

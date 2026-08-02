@@ -9,7 +9,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "prs": [
     {
       "event": "1500m",
@@ -83,6 +83,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "JUL 26",
+      "meet": "USA Championships",
+      "event": "5000 m",
+      "time": "13:46.88",
+      "place": "2.",
+      "round": "F"
+    },
     {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",

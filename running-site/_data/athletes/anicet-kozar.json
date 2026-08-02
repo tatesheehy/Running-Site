@@ -10,7 +10,7 @@
   "flag": "FR",
   "honours": [],
   "seasons": null,
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "prs": [
     {
       "event": "400m",
@@ -56,6 +56,22 @@
   "club": null,
   "country": "France",
   "results": [
+    {
+      "date": "JUL 26",
+      "meet": "French Championships",
+      "event": "1500 m",
+      "time": "3:43.02",
+      "place": "8.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 25",
+      "meet": "French Championships",
+      "event": "1500 m",
+      "time": "3:41.85",
+      "place": "4.",
+      "round": "H1"
+    },
     {
       "date": "JUL 11",
       "meet": "Moore-Guldensporenmeeting",

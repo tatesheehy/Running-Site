@@ -31,7 +31,7 @@
     }
   ],
   "seasons": "9",
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "prs": [
     {
       "event": "800m",
@@ -88,6 +88,14 @@
   "club": "Nike",
   "country": "Portugal",
   "results": [
+    {
+      "date": "JUL 26",
+      "meet": "Portuguese Championships",
+      "event": "800 m",
+      "time": "1:46.11",
+      "place": "1.",
+      "round": "F3"
+    },
     {
       "date": "JUN 27",
       "meet": "Campeonato Nacional de Clubes - 1ª divisão",

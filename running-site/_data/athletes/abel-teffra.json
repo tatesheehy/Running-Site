@@ -13,7 +13,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "prs": [
     {
       "event": "800m",
@@ -67,6 +67,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "JUL 24",
+      "meet": "USA Championships",
+      "event": "800 m",
+      "time": "1:48.74",
+      "place": "7.",
+      "round": "H3"
+    },
     {
       "date": "JUL 23",
       "meet": "USA Championships",
@@ -167,7 +175,7 @@
   "dob": "2002-01-23",
   "college": "Georgetown",
   "weight": "x",
-  "lastHistorySynced": "2026-07-23",
+  "lastHistorySynced": "2026-07-31",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

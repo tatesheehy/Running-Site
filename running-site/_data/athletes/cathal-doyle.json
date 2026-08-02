@@ -12,7 +12,7 @@
   "flag": "IE",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "prs": [
     {
       "event": "800m",
@@ -70,6 +70,22 @@
   "club": "x",
   "country": "Ireland",
   "results": [
+    {
+      "date": "JUL 26",
+      "meet": "Irish Championships",
+      "event": "1500 m",
+      "time": "3:44.79",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
+      "date": "JUL 25",
+      "meet": "Irish Championships",
+      "event": "1500 m",
+      "time": "3:52.23",
+      "place": "1.",
+      "round": "H2"
+    },
     {
       "date": "JUL 10",
       "meet": "Morton Games",

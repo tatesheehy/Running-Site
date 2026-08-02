@@ -78,6 +78,22 @@
   ],
   "results": [
     {
+      "date": "JUL 26",
+      "meet": "Italian Championships",
+      "event": "800 m",
+      "time": "1:44.89",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 25",
+      "meet": "Italian Championships",
+      "event": "800 m",
+      "time": "1:46.21",
+      "place": "1.",
+      "round": "H1"
+    },
+    {
       "date": "JUL 11",
       "meet": "6° Meeting della Leonessa",
       "event": "400 m",
@@ -134,7 +150,7 @@
       "round": "F2"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -1200,5 +1216,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-23"
+  "lastHistorySynced": "2026-07-31"
 }

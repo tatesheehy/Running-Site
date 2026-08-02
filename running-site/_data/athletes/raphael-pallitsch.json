@@ -12,7 +12,7 @@
   "flag": "AT",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "prs": [
     {
       "event": "200m",
@@ -83,6 +83,14 @@
   "country": "Austria",
   "results": [
     {
+      "date": "JUL 25",
+      "meet": "Austrian Championships",
+      "event": "1500 m",
+      "time": "4:06.31",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "JUL 14",
       "meet": "Gyulai István Memorial - Hungarian Athletics Grand Prix",
       "event": "1500 m",
@@ -134,7 +142,7 @@
   "dob": "1989-12-18",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-07-23",
+  "lastHistorySynced": "2026-07-31",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

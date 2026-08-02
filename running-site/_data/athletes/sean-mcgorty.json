@@ -110,6 +110,14 @@
   ],
   "results": [
     {
+      "date": "JUL 26",
+      "meet": "USA Championships",
+      "event": "5000 m",
+      "time": "13:54.37",
+      "place": "9.",
+      "round": "F"
+    },
+    {
       "date": "JUL 11",
       "meet": "Sunset Tour",
       "event": "1500 m",
@@ -158,7 +166,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "resultsHistory": {
     "2018": [
       {

@@ -78,6 +78,22 @@
   ],
   "results": [
     {
+      "date": "JUL 24",
+      "meet": "Norwegian Championships",
+      "event": "800 m",
+      "time": "1:47.39",
+      "place": "1.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 23",
+      "meet": "Norwegian Championships",
+      "event": "800 m",
+      "time": "1:52.42",
+      "place": "1.",
+      "round": "H2"
+    },
+    {
       "date": "JUL 18",
       "meet": "Novuna London Athletics Meet",
       "event": "800 m",
@@ -142,7 +158,7 @@
       "round": "F2"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "resultsHistory": {
     "2018": [
       {

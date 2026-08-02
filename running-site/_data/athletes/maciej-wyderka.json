@@ -7,7 +7,7 @@
   "photo": "",
   "photoBackground": "#111111",
   "event": "MIDDLE DISTANCE",
-  "age": "23",
+  "age": "24",
   "dob": "2002-07-29",
   "height": "x",
   "weight": "x",
@@ -85,6 +85,22 @@
     }
   ],
   "results": [
+    {
+      "date": "JUL 25",
+      "meet": "Polish Championships",
+      "event": "800 m",
+      "time": "1:46.25",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 24",
+      "meet": "Polish Championships",
+      "event": "800 m",
+      "time": "1:47.93",
+      "place": "1.",
+      "round": "H3"
+    },
     {
       "date": "JUL 14",
       "meet": "Gyulai István Memorial - Hungarian Athletics Grand Prix",
@@ -174,7 +190,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "resultsHistory": {
     "2018": [
       {

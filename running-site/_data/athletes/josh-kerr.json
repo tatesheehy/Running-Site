@@ -56,7 +56,7 @@
     }
   ],
   "seasons": "6",
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "prs": [
     {
       "event": "800m",
@@ -125,6 +125,14 @@
   "club": "Adidas",
   "country": "Scotland",
   "results": [
+    {
+      "date": "JUL 29",
+      "meet": "XXIII Commonwealth Games",
+      "event": "Mile",
+      "time": "3:58.57",
+      "place": "1.",
+      "round": "H1"
+    },
     {
       "date": "JUL 18",
       "meet": "Novuna London Athletics Meet",

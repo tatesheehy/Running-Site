@@ -58,6 +58,22 @@
   ],
   "results": [
     {
+      "date": "JUL 25",
+      "meet": "French Championships",
+      "event": "800 m",
+      "time": "1:45.12",
+      "place": "3.",
+      "round": "F"
+    },
+    {
+      "date": "JUL 24",
+      "meet": "French Championships",
+      "event": "800 m",
+      "time": "1:46.60",
+      "place": "1.",
+      "round": "H3"
+    },
+    {
       "date": "JUL 14",
       "meet": "Gyulai István Memorial - Hungarian Athletics Grand Prix",
       "event": "800 m",
@@ -138,7 +154,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-07-24",
+  "lastSynced": "2026-08-01",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -1012,5 +1028,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-23"
+  "lastHistorySynced": "2026-07-31"
 }
