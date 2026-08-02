@@ -86,6 +86,14 @@
   ],
   "results": [
     {
+      "date": "AUG 1",
+      "meet": "XXIII Commonwealth Games",
+      "event": "5000 m",
+      "time": "13:32.36",
+      "place": "11.",
+      "round": "F1"
+    },
+    {
       "date": "JUL 28",
       "meet": "XXIII Commonwealth Games",
       "event": "10,000 m",
@@ -166,7 +174,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-01",
+  "lastSynced": "2026-08-02",
   "resultsHistory": {
     "2018": [
       {

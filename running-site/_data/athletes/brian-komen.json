@@ -46,7 +46,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-08-01",
+  "lastSynced": "2026-08-02",
   "prs": [
     {
       "event": "1500m",
@@ -72,6 +72,14 @@
   "club": null,
   "country": "Kenya",
   "results": [
+    {
+      "date": "AUG 1",
+      "meet": "XXIII Commonwealth Games",
+      "event": "Mile",
+      "time": "3:59.33",
+      "place": "13.",
+      "round": "F1"
+    },
     {
       "date": "JUL 29",
       "meet": "XXIII Commonwealth Games",
@@ -171,7 +179,7 @@
   ],
   "dob": "10 AUG 1998",
   "weight": null,
-  "lastHistorySynced": "2026-07-31",
+  "lastHistorySynced": "2026-08-01",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

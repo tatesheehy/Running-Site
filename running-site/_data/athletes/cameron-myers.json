@@ -10,7 +10,7 @@
   "headlineKey": "xx",
   "flag": "AU",
   "seasons": "2",
-  "lastSynced": "2026-08-01",
+  "lastSynced": "2026-08-02",
   "prs": [
     {
       "event": "800m",
@@ -55,6 +55,14 @@
   "club": "xx",
   "country": "Australia",
   "results": [
+    {
+      "date": "AUG 1",
+      "meet": "XXIII Commonwealth Games",
+      "event": "Mile",
+      "time": "3:55.26",
+      "place": "2.",
+      "round": "F1"
+    },
     {
       "date": "JUL 29",
       "meet": "XXIII Commonwealth Games",
@@ -186,7 +194,7 @@
   ],
   "dob": "2006-06-09",
   "weight": "150",
-  "lastHistorySynced": "2026-07-31",
+  "lastHistorySynced": "2026-08-01",
   "coach": "xx",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

@@ -54,6 +54,14 @@
   ],
   "results": [
     {
+      "date": "AUG 1",
+      "meet": "XXIII Commonwealth Games",
+      "event": "5000 m",
+      "time": "13:40.42",
+      "place": "16.",
+      "round": "F1"
+    },
+    {
       "date": "JUL 11",
       "meet": "Moore-Guldensporenmeeting",
       "event": "1500 m",
@@ -110,7 +118,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-01",
+  "lastSynced": "2026-08-02",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -527,5 +535,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-07-31"
+  "lastHistorySynced": "2026-08-01"
 }
