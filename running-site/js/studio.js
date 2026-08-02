@@ -384,8 +384,8 @@
       row.appendChild(t);
       return row;
     }
-    function defLayout() { return { left: ['nextMeet', 'meets', 'barrier', 'promos'], right: ['hero', 'leaders', 'tools'], hidden: [] }; }
-    function ensureLayout() { window.STUDIO.layout = window.STUDIO.layout || defLayout(); if (!window.STUDIO.layout.hidden) window.STUDIO.layout.hidden = []; return window.STUDIO.layout; }
+    function defLayout() { return { left: ['nextMeet', 'meets'], right: ['lead', 'ranking', 'stories'], hidden: ['barrier', 'promos', 'hero', 'leaders', 'tools'] }; }
+    function ensureLayout() { window.STUDIO.layout = window.STUDIO.layout || defLayout(); if (!window.STUDIO.layout.hidden) window.STUDIO.layout.hidden = []; window.STUDIO.layoutV = 2; return window.STUDIO.layout; }
     function blockCol(id) { var L = ensureLayout(); return L.left.indexOf(id) >= 0 ? 'left' : 'right'; }
     function moveBlockToCol(id, col) {
       var L = ensureLayout();
@@ -850,7 +850,7 @@
         return;
       }
       var meta = window.SF_SECTION_META || {};
-      var L = window.STUDIO.layout || { left: ['nextMeet', 'meets', 'barrier', 'promos'], right: ['hero', 'leaders', 'tools'], hidden: [] };
+      var L = window.STUDIO.layout || { left: ['nextMeet', 'meets'], right: ['lead', 'ranking', 'stories'], hidden: ['barrier', 'promos', 'hero', 'leaders', 'tools'] };
       window.STUDIO.layout = L; if (!L.hidden) L.hidden = [];
 
       host.innerHTML = '<p class="studio-note">Move boxes up/down, hide them, or send them to the other column.</p>';

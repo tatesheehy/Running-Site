@@ -632,10 +632,12 @@
 /* Two-column layout: narrow left rail (small widgets) + wide right column */
 .sf-layout {
   display: grid;
-  grid-template-columns: 320px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) 320px;
   gap: 16px;
   align-items: start;
 }
+/* Lead take: full-width hero band above the two-column layout. */
+.sf-lead-band { margin-bottom: 28px; }
 .sf-col-left { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
 .sf-col-right { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
 .sf-col-left .sf-promos { grid-template-columns: 1fr; margin-top: 0; }

@@ -607,8 +607,21 @@ function buildHome() {
     Object.fromEntries(Object.entries(SECTIONS).map(([k, v]) => [k, v.label])),
     Object.fromEntries(blocks.map(b => [b.id, (b.title || 'Custom box') + ' ✎']))
   );
-  const defLayout = { left: ['nextMeet', 'meets', 'barrier', 'promos'], right: ['lead', 'ranking', 'stories', 'hero', 'leaders', 'tools'], hidden: [] };
-  const layout = (window.STUDIO && window.STUDIO.layout) || defLayout;
+  // Blog-first magazine cover: the lead take is the front door, Power Rankings
+  // below it, then the story river. Stats stay off the front (they live on
+  // athlete profiles); the rail keeps only a light schedule.
+  const defLayout = { left: ['nextMeet', 'meets'], right: ['lead', 'ranking', 'stories'], hidden: ['barrier', 'promos', 'hero', 'leaders', 'tools'] };
+  // Layout schema version. Saved Studio layouts from before the blog-first
+  // redesign (no matching layoutV) are stale — supersede them with defLayout so
+  // every visitor gets the new front page. Owner re-saves stamp the current
+  // version, so intentional customizations from here on are honored.
+  const LAYOUT_VERSION = 2;
+  let layout = (window.STUDIO && window.STUDIO.layout) || defLayout;
+  if (window.STUDIO && window.STUDIO.layout && window.STUDIO.layoutV !== LAYOUT_VERSION) {
+    layout = defLayout;
+    window.STUDIO.layout = null;          // in-memory reset; persists on next owner save
+    window.STUDIO.layoutV = LAYOUT_VERSION;
+  }
   // Surface any newly-added built-in sections that a saved layout doesn't know about.
   (function () {
     const seen = (layout.left || []).concat(layout.right || [], layout.hidden || []);
@@ -640,8 +653,11 @@ function buildHome() {
     </div>`;
   };
   const renderCol = (ids, colName) => (ids || [])
-    .filter(id => (SECTIONS[id] || blockMap[id]) && (editing || !hidden.includes(id)))
+    .filter(id => id !== 'lead' && (SECTIONS[id] || blockMap[id]) && (editing || !hidden.includes(id)))
     .map(id => wrap(id, colName)).join('');
+  // The lead take is the front door: pinned as a full-width hero band above the
+  // two-column layout so it's always the first thing a visitor sees.
+  const leadBand = (SECTIONS.lead && (editing || !hidden.includes('lead'))) ? wrap('lead', 'right') : '';
 
   document.getElementById('main').innerHTML = `
     <div class="fp-wrap">
@@ -653,9 +669,10 @@ function buildHome() {
           <span class="sf-crumb-sep">›</span>
           <span class="sf-crumb-cur">${_sfT('crumb.season','2026 Season')}</span>
         </nav>
+        ${leadBand ? `<div class="sf-lead-band">${leadBand}</div>` : ''}
         <div class="sf-layout">
-          <aside class="sf-col-left">${renderCol(layout.left, 'left')}</aside>
           <main class="sf-col-right">${renderCol(layout.right, 'right')}</main>
+          <aside class="sf-col-left">${renderCol(layout.left, 'left')}</aside>
         </div>
       </div>
     </div>`;
@@ -706,13 +723,16 @@ function _sfFeaturedRanking() {
   const ev = (ov && evs.find(e => e.name === ov && (e.rows || []).length)) || evs.find(e => (e.rows || []).length);
   if (!ev) return '';
   const yr = (typeof RANKINGS_YEAR !== 'undefined' && RANKINGS_YEAR) || '';
-  const top = (ev.rows || []).slice(0, 3);
-  const rowsHtml = top.map((r, i) => {
+  const top = [...(ev.rows || [])]
+    .filter(r => r.rank != null)
+    .sort((a, b) => a.rank - b.rank)
+    .slice(0, 3);
+  const rowsHtml = top.map((r) => {
     const a = r.athleteId && ATHLETES[r.athleteId];
     const name = (a && a.name) || r.name || r.athleteId || '';
     const flag = (a && a.flag) || r.flag || '';
     return `<a class="sf-rk-row" href="rankings.html?event=${encodeURIComponent(ev.name)}">
-      <span class="sf-rk-rank">${i + 1}</span>
+      <span class="sf-rk-rank">${r.rank}</span>
       <span class="sf-rk-main">
         <span class="sf-rk-name">${name}${flag ? ` <span class="sf-rk-flag">${renderFlag(flag)}</span>` : ''}</span>
         ${r.bite ? `<span class="sf-rk-bite">${r.bite}</span>` : ''}
