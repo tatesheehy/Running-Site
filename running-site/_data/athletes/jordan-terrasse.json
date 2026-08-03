@@ -70,6 +70,14 @@
   ],
   "results": [
     {
+      "date": "AUG 1",
+      "meet": "IFAM Oordegem",
+      "event": "800 m",
+      "time": "1:46.59",
+      "place": "6.",
+      "round": "F1"
+    },
+    {
       "date": "JUL 25",
       "meet": "French Championships",
       "event": "800 m",
@@ -206,7 +214,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-08-02",
+  "lastSynced": "2026-08-03",
   "resultsHistory": {
     "2018": [
       {

@@ -54,6 +54,14 @@
   ],
   "results": [
     {
+      "date": "AUG 1",
+      "meet": "Internationales BlueTrackNight Meeting",
+      "event": "400 m",
+      "time": "46.19",
+      "place": "1.",
+      "round": "F7"
+    },
+    {
       "date": "JUL 26",
       "meet": "German Championships",
       "event": "800 m",
@@ -174,7 +182,7 @@
       "round": "F2"
     }
   ],
-  "lastSynced": "2026-08-02",
+  "lastSynced": "2026-08-03",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -558,5 +566,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-01"
+  "lastHistorySynced": "2026-08-02"
 }

@@ -32,7 +32,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-08-02",
+  "lastSynced": "2026-08-03",
   "prs": [
     {
       "event": "400m",
@@ -106,6 +106,14 @@
   "club": null,
   "country": "Andorra",
   "results": [
+    {
+      "date": "AUG 1",
+      "meet": "IFAM Oordegem",
+      "event": "800 m",
+      "time": "1:46.02",
+      "place": "2.",
+      "round": "F2"
+    },
     {
       "date": "JUL 18",
       "meet": "Night of Athletics",
@@ -213,7 +221,7 @@
   ],
   "dob": "09 DEC 1996",
   "weight": null,
-  "lastHistorySynced": "2026-08-01",
+  "lastHistorySynced": "2026-08-02",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

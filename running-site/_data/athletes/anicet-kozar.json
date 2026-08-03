@@ -10,7 +10,7 @@
   "flag": "FR",
   "honours": [],
   "seasons": null,
-  "lastSynced": "2026-08-02",
+  "lastSynced": "2026-08-03",
   "prs": [
     {
       "event": "400m",
@@ -56,6 +56,14 @@
   "club": null,
   "country": "France",
   "results": [
+    {
+      "date": "AUG 1",
+      "meet": "IFAM Oordegem",
+      "event": "1500 m",
+      "time": "3:36.36",
+      "place": "9.",
+      "round": "F1"
+    },
     {
       "date": "JUL 26",
       "meet": "French Championships",

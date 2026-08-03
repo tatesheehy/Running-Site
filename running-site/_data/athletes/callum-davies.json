@@ -25,7 +25,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-08-02",
+  "lastSynced": "2026-08-03",
   "prs": [
     {
       "event": "800m",
@@ -71,6 +71,14 @@
   "club": null,
   "country": "Australia",
   "results": [
+    {
+      "date": "AUG 2",
+      "meet": "Sunshine Coast Marathon Festival - 10K & 5K",
+      "event": "10 Kilom Road",
+      "time": "29:30",
+      "place": "1.",
+      "round": "F"
+    },
     {
       "date": "JUL 4",
       "meet": "Southern Cross University 10km Run - Gold Coast",

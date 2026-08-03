@@ -12,7 +12,7 @@
   "flag": "GB",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-02",
+  "lastSynced": "2026-08-03",
   "prs": [
     {
       "event": "800m",
@@ -102,6 +102,14 @@
   "club": "x",
   "country": "Great Britain",
   "results": [
+    {
+      "date": "AUG 1",
+      "meet": "IFAM Oordegem",
+      "event": "1500 m",
+      "time": "3:37.77",
+      "place": "12.",
+      "round": "F1"
+    },
     {
       "date": "JUL 10",
       "meet": "Morton Games",

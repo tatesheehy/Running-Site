@@ -90,6 +90,14 @@
   ],
   "results": [
     {
+      "date": "AUG 1",
+      "meet": "IFAM Oordegem",
+      "event": "1500 m",
+      "time": "3:42.26",
+      "place": "15.",
+      "round": "F1"
+    },
+    {
       "date": "JUL 26",
       "meet": "Belgian Championships",
       "event": "5000 m",
@@ -146,7 +154,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-02",
+  "lastSynced": "2026-08-03",
   "resultsHistory": {
     "2018": [
       {

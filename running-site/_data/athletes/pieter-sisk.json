@@ -12,7 +12,7 @@
   "flag": "BE",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-02",
+  "lastSynced": "2026-08-03",
   "prs": [
     {
       "event": "400m",
@@ -90,6 +90,14 @@
   "club": "x",
   "country": "Belgium",
   "results": [
+    {
+      "date": "AUG 1",
+      "meet": "IFAM Oordegem",
+      "event": "1500 m",
+      "time": "3:36.94",
+      "place": "11.",
+      "round": "F1"
+    },
     {
       "date": "JUL 26",
       "meet": "Belgian Championships",
@@ -222,7 +230,7 @@
   "dob": "1999-12-08",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-08-01",
+  "lastHistorySynced": "2026-08-02",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
