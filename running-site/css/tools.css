@@ -1,0 +1,82 @@
+/* ============================================================
+   TOOLS — hub page for every data tool
+   ============================================================ */
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-7);
+}
+
+.tool-card {
+  display: grid;
+  grid-template-columns: 44px 1fr auto;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: var(--sp-4);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  text-decoration: none;
+  color: var(--text);
+  transition: box-shadow 0.15s cubic-bezier(0.2,0,0.2,1),
+              border-color 0.15s cubic-bezier(0.2,0,0.2,1);
+}
+.tool-card:hover {
+  border-color: var(--divider-strong);
+  box-shadow: var(--shadow-card-hover);
+}
+.tool-card:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+.tool-card-ico {
+  width: 44px; height: 44px;
+  display: grid; place-items: center;
+  border-radius: var(--radius-btn);
+  background: var(--orange-light);
+  color: var(--brand);
+}
+.tool-card-ico svg { width: 22px; height: 22px; }
+
+.tool-card-body { display: block; min-width: 0; }
+.tool-card-note {
+  display: block;
+  font-size: var(--fs-2);
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+.tool-card-label {
+  display: block;
+  margin-top: 3px;
+  font-family: var(--font-display);
+  font-size: var(--fs-7);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.tool-card-blurb {
+  display: block;
+  margin-top: 4px;
+  font-size: var(--fs-4);
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.tool-card-arrow {
+  font-size: var(--fs-7);
+  color: var(--muted-2);
+  transition: transform 0.15s cubic-bezier(0.2,0,0.2,1), color 0.15s;
+}
+.tool-card:hover .tool-card-arrow {
+  color: var(--brand);
+  transform: translateX(4px);
+}
+
+@media (max-width: 560px) {
+  .tool-grid { grid-template-columns: 1fr; }
+  .tool-card { padding: var(--sp-3); }
+}

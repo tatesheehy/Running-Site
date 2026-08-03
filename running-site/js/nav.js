@@ -58,12 +58,14 @@ function buildNavbar() {
     { label: 'Home', href: 'index.html', icon: 'home', color: 'var(--brand)', hint: 'Dashboard & the latest' },
     { label: 'Articles', href: 'articles.html', icon: 'articles', color: 'var(--brand)', hint: 'News, features & opinion' },
     { label: 'Rankings', href: 'rankings.html', icon: 'rankings', color: 'var(--brand)', hint: 'Our ranked lists by event', children: _subEvents('rankings.html') },
-    { label: 'H2H', href: 'h2h.html', icon: 'h2h', color: 'var(--brand)', hint: 'Compare two athletes head-to-head' },
-    { label: 'Event Tracker', href: 'event-tracker.html', icon: 'tracker', color: 'var(--brand)', hint: 'Season-best leaderboards by event', children: _subEvents('event-tracker.html') },
     { label: 'Athletes', href: 'athletes.html', icon: 'athletes', color: 'var(--brand)', hint: 'Browse athlete profiles' },
-    { label: 'Countries', href: 'country.html', icon: 'countries', color: 'var(--brand)', hint: 'Rankings & athletes by nation' },
-    { label: 'Time Machine', href: 'time-machine.html', icon: 'timemachine', color: 'var(--brand)', hint: 'Results & records from past seasons' },
-    { label: 'Metrics', href: 'metrics.html', icon: 'metrics', color: 'var(--brand)', hint: 'Deep-dive charts & athlete comparisons' },
+    { label: 'Tools', href: 'tools.html', icon: 'metrics', color: 'var(--brand)', hint: 'H2H, leaderboards, metrics & archive', children: [
+      { label: 'Head to Head', href: 'h2h.html' },
+      { label: 'Event Tracker', href: 'event-tracker.html' },
+      { label: 'Metrics', href: 'metrics.html' },
+      { label: 'Time Machine', href: 'time-machine.html' },
+      { label: 'Countries', href: 'country.html' },
+    ] },
     { label: 'Podcast', href: 'podcast.html', icon: 'podcast', color: 'var(--brand)', hint: 'Episodes & audio' },
     { label: 'About', href: 'about.html', icon: 'about', color: 'var(--brand)', hint: 'What StatTC is & who makes it' },
   ];
@@ -78,6 +80,12 @@ function buildNavbar() {
       if (o.hidden) return null;
       return Object.assign({}, base, o.label != null ? { label: o.label } : {});
     }).filter(Boolean);
+    // A saved override only knows the links that existed when it was saved.
+    // Append any built-in link it has never seen, otherwise adding a new page
+    // means it silently never appears in the nav for anyone with saved config.
+    const seen = {}; _navOvr.forEach(o => { seen[o.href] = true; });
+    const unseen = navLinks.filter(l => !seen[l.href]);
+    if (unseen.length) _effLinks = _effLinks.concat(unseen);
   }
 
   const navLinkHtml = l => {

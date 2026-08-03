@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (page === 'rankings')    buildRankingsPage();
   if (page === 'athletes')    buildAthletesPage();
   if (page === 'about')       buildAboutPage();
+  if (page === 'tools')       buildToolsPage();
   if (page === 'h2h')         buildH2HPage();
   if (page === 'account')     buildAccountPage();
   if (page === 'event-tracker') buildEventTrackerPage();

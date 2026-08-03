@@ -49,6 +49,7 @@
           window.STUDIO = res.data.config;
           if (!window.STUDIO.theme) window.STUDIO.theme = {};
           if (!window.STUDIO.content) window.STUDIO.content = {};
+          migrateTheme();   // remote config bypasses the boot-time migration
           localStorage.setItem(KEY, JSON.stringify(window.STUDIO));
           applyTheme();
           if (window.rebuildHome && document.body.dataset.page === 'home' && !window.STUDIO_EDIT) window.rebuildHome();
@@ -64,6 +65,23 @@
   if (!window.STUDIO.theme) window.STUDIO.theme = {};
   if (!window.STUDIO.content) window.STUDIO.content = {};
   if (!window.STUDIO.text) window.STUDIO.text = {};
+
+  // Theme schema version. Configs saved before the brand-band redesign carry
+  // an experimental accent and the `white` navbar variant, which override the
+  // documented brand orange and fight the orange nav band. Because the remote
+  // config is public-read, that stale theme reaches every visitor — so drop
+  // those two fields once and let the current design defaults through. Any
+  // deliberate re-pick in Studio saves with the current version and sticks.
+  var THEME_VERSION = 2;
+  function migrateTheme() {
+    if (!window.STUDIO.theme) window.STUDIO.theme = {};
+    if (window.STUDIO.themeV === THEME_VERSION) return;
+    delete window.STUDIO.theme.accent;
+    delete window.STUDIO.theme.accentHover;
+    delete window.STUDIO.theme.nav;
+    window.STUDIO.themeV = THEME_VERSION;
+  }
+  migrateTheme();
 
   function applyTheme() {
     var root = document.documentElement, t = window.STUDIO.theme || {};

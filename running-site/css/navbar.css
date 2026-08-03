@@ -679,3 +679,39 @@
   0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255,82,0,0.5); }
   50% { opacity: 0.7; box-shadow: 0 0 0 4px rgba(255,82,0,0); }
 }
+
+/* ── BRAND BAND ───────────────────────────────────────────────
+   The nav-links row carries the brand orange. The utility row
+   above it stays light so the search field keeps its contrast
+   and the logo reads cleanly. Text is white throughout the band,
+   so `--link-accent` (orange, for light chrome) is overridden
+   here — on orange, the active marker is white, not more orange. */
+.navbar-links {
+  background: var(--brand);
+  border-top: none;
+}
+.navbar-links .navlink-a {
+  color: #fff;            /* full white: translucent white on orange drops contrast further */
+  font-weight: 700;
+}
+.navbar-links .navlink-a:hover {
+  color: #fff;
+  background: rgba(0,0,0,0.08);
+}
+.navbar-links .navlink.active > .navlink-a {
+  color: #fff;
+  font-weight: 800;
+  border-bottom-color: #fff;
+}
+.navbar-links .navlink .sidebar-ico { opacity: 0.8; }
+.navbar-links .navlink-a:hover .sidebar-ico,
+.navbar-links .navlink.active > .navlink-a .sidebar-ico { opacity: 1; }
+.navbar-links .navlink-caret { opacity: 0.7; }
+.navbar-links .navlink-a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -3px;
+}
+
+/* Dropdowns hang below the orange band onto white — keep them light
+   so they stay legible and match every other surface on the site. */
+.navbar-links .navlink-sub { border-color: var(--border); }
