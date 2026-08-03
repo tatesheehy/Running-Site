@@ -625,7 +625,7 @@
    Sofascore-style homepage (.sf) — hero header + 3-column layout
    ══════════════════════════════════════════════════════════════ */
 .sf {
-  max-width: var(--studio-cw, 1240px); /* room for the two-column Sofascore layout */
+  max-width: var(--studio-cw, var(--max-width));
   margin: 0;
   padding: 12px 24px 60px;
 }
@@ -3433,7 +3433,9 @@ a.dash-meet-row:hover .dash-meet-name { color: var(--accent); }
 .sf-lead-media { position: relative; aspect-ratio: 16 / 9; max-height: 52vh; overflow: hidden; background: var(--bg-light); }
 .sf-lead-img, .sf-lead-media img, .sf-lead-media .cropped-img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .sf-lead-ph { width: 100%; height: 100%; background: var(--bg-light); }
-.sf-lead-body { padding: 20px 22px 22px; }
+/* No side padding: the headline, category and byline sit on the same left
+   edge as the graphic above them and the search field in the navbar. */
+.sf-lead-body { padding: 18px 0 22px; }
 .sf-lead-body .sf-cat { margin-bottom: 12px; }
 .sf-lead-title {
   font-family: var(--font-editorial);

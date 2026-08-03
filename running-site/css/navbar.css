@@ -28,12 +28,16 @@
   height: 52px;
   flex-shrink: 0;
   display: grid;
-  grid-template-columns: 1fr minmax(0, 1fr) 1fr;
+  /* auto side columns + zero gap so the search field's left edge lands on the
+     same gutter as the nav links and page content. A fixed `gap` here offsets
+     the search by the gap width even when the logo column is empty, which is
+     what used to break the alignment. Side columns space themselves. */
+  grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
-  gap: 14px;
-  max-width: var(--max-width);
+  gap: 0;
+  max-width: var(--studio-cw, var(--max-width));
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
 }
 .navbar-util-left {
   display: flex;
@@ -45,6 +49,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
+  margin-left: 14px;
   justify-self: end;
   min-width: max-content;
 }
@@ -64,12 +69,16 @@
   list-style: none;
   display: flex;
   align-items: stretch;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 2px;
-  margin: 0 auto;
-  max-width: var(--max-width);
+  margin: 0;
+  max-width: var(--studio-cw, var(--max-width));
   width: 100%;
 }
+
+/* First link's text sits on the gutter, not 12px inside it, so it lines up
+   with the search field's left edge and the page content below. */
+.navlinks > .navlink:first-child > .navlink-a { padding-left: 0; }
 
 .navlink { position: relative; display: flex; align-items: stretch; }
 .navlink-a {
@@ -178,7 +187,7 @@
   width: 100%;
   min-width: 0;
   max-width: 480px;
-  justify-self: center;
+  justify-self: start;   /* left edge on the shared gutter, not centered in its column */
   background: #fff;
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -611,13 +620,16 @@
 .navbar-util {
   display: grid;
   grid-template-columns: auto 1fr auto; /* spacer | wide search | icons */
-  gap: 24px;
+  /* No column gap: the left spacer is empty, so any gap would push the search
+     field off the shared gutter that the nav links and page content sit on.
+     The icon cluster supplies its own spacing via margin-left instead. */
+  gap: 0;
   align-items: center;
   margin: 0;
 }
 .navbar-util-left { display: flex; }   /* empty spacer (logo removed) */
 .navbar-util .navbar-search { width: 100%; max-width: 1000px; justify-self: stretch; }
-.navbar-util-right { justify-self: end; margin-left: 0; }
+.navbar-util-right { justify-self: end; margin-left: 24px; }
 .navlinks { margin: 0; justify-content: flex-start; }
 
 /* ── Top ticker (dark fixtures strip, Sofascore-style) ────── */

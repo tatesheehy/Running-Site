@@ -301,7 +301,7 @@ footer { display: none; }
 
 /* ── LAYOUT CONTAINER ─────────────────────────────────────── */
 .container {
-  max-width: var(--max-width);
+  max-width: var(--studio-cw, var(--max-width));
   margin: 0; /* left-aligned site */
   padding: 0 24px;
 }
