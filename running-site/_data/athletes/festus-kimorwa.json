@@ -54,6 +54,14 @@
       "round": "H1"
     },
     {
+      "date": "MAY 23",
+      "meet": "69th Kyushu Corporate Athletics Championships",
+      "event": "10,000 m",
+      "time": "27:38.32",
+      "place": "1.",
+      "round": "F3"
+    },
+    {
       "date": "MAY 4",
       "meet": "37th Golden Games in Nobeoka",
       "event": "5000 m",
@@ -86,7 +94,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-03",
+  "lastSynced": "2026-08-04",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -172,5 +180,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-02"
+  "lastHistorySynced": "2026-08-03"
 }
