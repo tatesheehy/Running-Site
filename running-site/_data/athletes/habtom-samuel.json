@@ -13,7 +13,7 @@
   "headlineKey": "x",
   "flag": "ER",
   "seasons": "x",
-  "lastSynced": "2026-08-04",
+  "lastSynced": "2026-08-05",
   "prs": [
     {
       "event": "1500m",
@@ -70,6 +70,14 @@
   "ncaa": false,
   "country": "Eritrea",
   "results": [
+    {
+      "date": "AUG 1",
+      "meet": "TD Beach to Beacon 10K Road Race",
+      "event": "10 Kilom Road",
+      "time": "27:40",
+      "place": "1.",
+      "round": "F"
+    },
     {
       "date": "JUN 12",
       "meet": "NCAA Division I Outdoor Track and Field Championships",
@@ -194,7 +202,7 @@
   "dob": "2003-11-30",
   "college": "New Mexico",
   "weight": "x",
-  "lastHistorySynced": "2026-08-03",
+  "lastHistorySynced": "2026-08-04",
   "reviewBody": "x",
   "event": "DISTANCE",
   "id": "habtom-samuel",

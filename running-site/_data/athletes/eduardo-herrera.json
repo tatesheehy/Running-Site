@@ -86,6 +86,14 @@
   ],
   "results": [
     {
+      "date": "AUG 4",
+      "meet": "CAC Games",
+      "event": "5000 m",
+      "time": "13:50.86",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
       "event": "3000 m",
@@ -182,7 +190,7 @@
       "round": "F2"
     }
   ],
-  "lastSynced": "2026-08-04",
+  "lastSynced": "2026-08-05",
   "resultsHistory": {
     "2018": [
       {
