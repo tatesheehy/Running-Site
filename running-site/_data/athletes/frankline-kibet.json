@@ -54,6 +54,14 @@
   ],
   "results": [
     {
+      "date": "AUG 5",
+      "meet": "World Athletics U20 Championships",
+      "event": "5000 m",
+      "time": "13:28.27",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
       "event": "5000 m",
@@ -86,7 +94,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-05",
+  "lastSynced": "2026-08-06",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -122,5 +130,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-04"
+  "lastHistorySynced": "2026-08-05"
 }
