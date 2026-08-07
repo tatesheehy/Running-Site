@@ -86,6 +86,14 @@
   ],
   "results": [
     {
+      "date": "AUG 5",
+      "meet": "CAC Games",
+      "event": "1500 m",
+      "time": "3:46.07",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "AUG 4",
       "meet": "CAC Games",
       "event": "5000 m",
@@ -190,7 +198,7 @@
       "round": "F2"
     }
   ],
-  "lastSynced": "2026-08-06",
+  "lastSynced": "2026-08-07",
   "resultsHistory": {
     "2018": [
       {

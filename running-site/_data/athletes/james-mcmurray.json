@@ -18,7 +18,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-08-06",
+  "lastSynced": "2026-08-07",
   "prs": [
     {
       "event": "400m",
@@ -88,6 +88,14 @@
   "club": null,
   "country": "Great Britain & N.I.",
   "results": [
+    {
+      "date": "AUG 5",
+      "meet": "BMC Gold Standard Races",
+      "event": "800 m",
+      "time": "1:49.07",
+      "place": "2.",
+      "round": "F1"
+    },
     {
       "date": "AUG 1",
       "meet": "IFAM Oordegem",
