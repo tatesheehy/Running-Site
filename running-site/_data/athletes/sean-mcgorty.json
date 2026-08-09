@@ -110,6 +110,22 @@
   ],
   "results": [
     {
+      "date": "AUG 7",
+      "meet": "Sir Walter Miler",
+      "event": "1500 m",
+      "time": "3:40.65",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "AUG 7",
+      "meet": "Sir Walter Miler",
+      "event": "Mile",
+      "time": "3:56.98",
+      "place": "7.",
+      "round": "F"
+    },
+    {
       "date": "JUL 26",
       "meet": "USA Championships",
       "event": "5000 m",
@@ -166,7 +182,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-08-08",
+  "lastSynced": "2026-08-09",
   "resultsHistory": {
     "2018": [
       {

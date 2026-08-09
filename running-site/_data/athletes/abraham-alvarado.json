@@ -86,6 +86,22 @@
   ],
   "results": [
     {
+      "date": "AUG 7",
+      "meet": "Sir Walter Miler",
+      "event": "1500 m",
+      "time": "3:37.03",
+      "place": "",
+      "round": "F"
+    },
+    {
+      "date": "AUG 7",
+      "meet": "Sir Walter Miler",
+      "event": "Mile",
+      "time": "3:51.95",
+      "place": "2.",
+      "round": "F"
+    },
+    {
       "date": "JUL 11",
       "meet": "Sunset Tour",
       "event": "800 m",
@@ -174,7 +190,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-08",
+  "lastSynced": "2026-08-09",
   "resultsHistory": {
     "2018": [
       {
