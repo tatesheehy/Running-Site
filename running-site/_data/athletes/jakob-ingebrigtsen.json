@@ -2,22 +2,10 @@
   "photoBackground": "#0d1b2a",
   "reviewTitle": "Season review",
   "traits": [
-    {
-      "emoji": "⚡",
-      "label": "Explosive Kick"
-    },
-    {
-      "emoji": "🧠",
-      "label": "Tactical IQ"
-    },
-    {
-      "emoji": "🏔️",
-      "label": "Front Runner"
-    },
-    {
-      "emoji": "🔥",
-      "label": "Mental Edge"
-    }
+    "Explosive Kick",
+    "Tactical IQ",
+    "Front Runner",
+    "Mental Edge"
   ],
   "waUrl": "https://worldathletics.org/athletes/norway/jakob-ingebrigtsen-14653717",
   "height": "5'11\"",
@@ -26,86 +14,6 @@
   "name": "Jakob Ingebrigtsen",
   "headlineKey": "Generational talent",
   "flag": "NO",
-  "seasons": "8",
-  "prs": [
-    {
-      "event": "400m",
-      "time": "51.03"
-    },
-    {
-      "event": "800m",
-      "time": "1:46.44"
-    },
-    {
-      "event": "1500m",
-      "time": "3:26.73"
-    },
-    {
-      "event": "Mile",
-      "time": "3:43.73"
-    },
-    {
-      "event": "2000m",
-      "time": "4:43.13"
-    },
-    {
-      "event": "3000m",
-      "time": "7:17.55"
-    },
-    {
-      "event": "3000m SC",
-      "time": "8:26.81"
-    },
-    {
-      "event": "2 Miles",
-      "time": "7:54.10"
-    },
-    {
-      "event": "5000m",
-      "time": "12:48.45"
-    },
-    {
-      "event": "Half Marathon",
-      "time": "1:03:13"
-    },
-    {
-      "event": "800 Metres Short Track",
-      "time": "1:52.01"
-    },
-    {
-      "event": "1500 Metres Short Track",
-      "time": "3:29.63"
-    },
-    {
-      "event": "Mile Short Track",
-      "time": "3:45.14"
-    },
-    {
-      "event": "3000 Metres Short Track",
-      "time": "7:40.32"
-    },
-    {
-      "event": "Mile Road",
-      "time": "4:00.71"
-    },
-    {
-      "event": "10 Kilometres Road",
-      "time": "27:54"
-    }
-  ],
-  "hometown": "Sandnes, Norway",
-  "questionTitle": "Next question",
-  "photo": "/images/jakobcard.png",
-  "club": "Sandnes IL",
-  "country": "Norway",
-  "results": [],
-  "dob": "2000-09-19",
-  "weight": "132 lbs",
-  "coach": "Gjert Ingebrigtsen",
-  "reviewBody": "Ingebrigtsen has yet to race in 2026. The Norwegian may return from racing in mid-July following surgery to remove damaged tissue and scarring from the sheath surrounding his left Achilles tendon in February of this year. ",
-  "event": "MIDDLE DISTANCE + DISTANCE",
-  "id": "jakob-ingebrigtsen",
-  "age": "25",
   "honours": [
     {
       "competition": "Olympic Games",
@@ -206,5 +114,1094 @@
       "year": "2022"
     }
   ],
-  "lastSynced": "2026-07-13"
+  "seasons": "8",
+  "lastSynced": "2026-08-11",
+  "prs": [
+    {
+      "event": "400m",
+      "time": "51.03"
+    },
+    {
+      "event": "800m",
+      "time": "1:46.44"
+    },
+    {
+      "event": "1500m",
+      "time": "3:26.73"
+    },
+    {
+      "event": "Mile",
+      "time": "3:43.73"
+    },
+    {
+      "event": "2000m",
+      "time": "4:43.13"
+    },
+    {
+      "event": "3000m",
+      "time": "7:17.55"
+    },
+    {
+      "event": "3000m SC",
+      "time": "8:26.81"
+    },
+    {
+      "event": "2 Miles",
+      "time": "7:54.10"
+    },
+    {
+      "event": "5000m",
+      "time": "12:48.45"
+    },
+    {
+      "event": "Half Marathon",
+      "time": "1:03:13"
+    },
+    {
+      "event": "800 Metres Short Track",
+      "time": "1:52.01"
+    },
+    {
+      "event": "1500 Metres Short Track",
+      "time": "3:29.63"
+    },
+    {
+      "event": "Mile Short Track",
+      "time": "3:45.14"
+    },
+    {
+      "event": "3000 Metres Short Track",
+      "time": "7:40.32"
+    },
+    {
+      "event": "Mile Road",
+      "time": "4:00.71"
+    },
+    {
+      "event": "10 Kilometres Road",
+      "time": "27:54"
+    }
+  ],
+  "hometown": "Sandnes, Norway",
+  "questionTitle": "Next question",
+  "photo": "/images/jakobcard.png",
+  "club": "Sandnes IL",
+  "country": "Norway",
+  "results": [
+    {
+      "date": "AUG 10",
+      "meet": "European Athletics Championships",
+      "event": "5000 m",
+      "time": "13:15.29",
+      "place": "1.",
+      "round": "F1"
+    }
+  ],
+  "dob": "2000-09-19",
+  "weight": "132 lbs",
+  "lastHistorySynced": "2026-07-10",
+  "coach": "Gjert Ingebrigtsen",
+  "reviewBody": "Ingebrigtsen has yet to race in 2026. The Norwegian may return from racing in mid-July following surgery to remove damaged tissue and scarring from the sheath surrounding his left Achilles tendon in February of this year. ",
+  "event": "MIDDLE DISTANCE + DISTANCE",
+  "id": "jakob-ingebrigtsen",
+  "resultsHistory": {
+    "2018": [
+      {
+        "date": "DEC 9",
+        "meet": "25th SPAR European Cross Country Championships, Tilburg",
+        "event": "Cross Country U20 Race",
+        "time": "18:00",
+        "place": "1"
+      },
+      {
+        "date": "SEP 9",
+        "meet": "IAAF Continental Cup, Ostrava",
+        "event": "1500m",
+        "time": "3:40.80",
+        "place": "3"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Bergen Trond Mohn Games, Bergen",
+        "event": "1500m",
+        "time": "3:41.81",
+        "place": "1"
+      },
+      {
+        "date": "AUG 18",
+        "meet": "Norwegian Championships, Byrkjelo",
+        "event": "1500m",
+        "time": "4:03.54",
+        "place": "1"
+      },
+      {
+        "date": "AUG 17",
+        "meet": "Norwegian Championships, Byrkjelo",
+        "event": "1500m",
+        "time": "3:55.94",
+        "place": "1"
+      },
+      {
+        "date": "AUG 11",
+        "meet": "European Athletics Championships",
+        "event": "5000m",
+        "time": "13:17.06",
+        "place": "1"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:38.10",
+        "place": "1"
+      },
+      {
+        "date": "AUG 8",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:40.81",
+        "place": "2"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "Monaco Herculis",
+        "event": "1500m",
+        "time": "3:31.18",
+        "place": "4"
+      },
+      {
+        "date": "JUL 14",
+        "meet": "IAAF World U20 Championships",
+        "event": "5000m",
+        "time": "13:20.78",
+        "place": "3"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "IAAF World U20 Championships",
+        "event": "1500m",
+        "time": "3:41.89",
+        "place": "2"
+      },
+      {
+        "date": "JUL 10",
+        "meet": "IAAF World U20 Championships",
+        "event": "1500m",
+        "time": "3:51.34",
+        "place": "1"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Stockholm BAUHAUS-galan",
+        "event": "1500m",
+        "time": "3:37.42",
+        "place": "1"
+      },
+      {
+        "date": "JUN 7",
+        "meet": "Oslo Bislett Games",
+        "event": "1500m",
+        "time": "3:36.06",
+        "place": "3"
+      },
+      {
+        "date": "MAY 26",
+        "meet": "Eugene Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:52.28",
+        "place": "4"
+      },
+      {
+        "date": "MAY 3",
+        "meet": "Palo Alto Payton Jordan Invitational",
+        "event": "1500m",
+        "time": "3:39.06",
+        "place": "1"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais, Liévin (i)",
+        "event": "1500m sh",
+        "time": "3:40.31",
+        "place": "6"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Gent IFAM Meeting, Gent (i)",
+        "event": "1500m sh",
+        "time": "3:40.96",
+        "place": "2"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "Baerum Norwegian Indoor Championships, Bærum (i)",
+        "event": "800m sh",
+        "time": "1:52.01",
+        "place": "2"
+      },
+      {
+        "date": "FEB 4",
+        "meet": "Baerum Norwegian Indoor Championships, Bærum (i)",
+        "event": "3000m sh",
+        "time": "7:56.74",
+        "place": "1"
+      },
+      {
+        "date": "FEB 3",
+        "meet": "Baerum Norwegian Indoor Championships, Bærum (i)",
+        "event": "1500m sh",
+        "time": "3:42.75",
+        "place": "1"
+      }
+    ],
+    "2019": [
+      {
+        "date": "DEC 8",
+        "meet": "26th SPAR European Cross Country Championships, Lisboa",
+        "event": "Cross Country U20 Race",
+        "time": "18:20",
+        "place": "1"
+      },
+      {
+        "date": "OCT 19",
+        "meet": "Hytteplanmila, Hole",
+        "event": "10K",
+        "time": "27:54",
+        "place": "1"
+      },
+      {
+        "date": "OCT 6",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "1500m",
+        "time": "3:31.70",
+        "place": "4"
+      },
+      {
+        "date": "OCT 4",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "1500m",
+        "time": "3:36.58",
+        "place": "3"
+      },
+      {
+        "date": "OCT 3",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "1500m",
+        "time": "3:37.67",
+        "place": "1"
+      },
+      {
+        "date": "SEP 30",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "5000m",
+        "time": "13:02.93",
+        "place": "5"
+      },
+      {
+        "date": "SEP 27",
+        "meet": "IAAF World Championships in Athletics",
+        "event": "5000m",
+        "time": "13:25.20",
+        "place": "4"
+      },
+      {
+        "date": "SEP 6",
+        "meet": "AG Memorial Van Damme",
+        "event": "1500m",
+        "time": "3:31.62",
+        "place": "2"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "Meeting de Paris",
+        "event": "1500m",
+        "time": "3:31.33",
+        "place": "4"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "European Athletics Team Championships First League",
+        "event": "1500m",
+        "time": "3:43.43",
+        "place": "1"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "Norwegian Championships, Hamar",
+        "event": "1500m",
+        "time": "3:36.33",
+        "place": "1"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "Norwegian Championships, Hamar",
+        "event": "1500m",
+        "time": "4:02.01",
+        "place": "1"
+      },
+      {
+        "date": "JUL 20",
+        "meet": "Müller Anniversary Games",
+        "event": "5000m",
+        "time": "13:02.03",
+        "place": "2"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Herculis",
+        "event": "1500m",
+        "time": "3:30.47",
+        "place": "2"
+      },
+      {
+        "date": "JUL 5",
+        "meet": "Athletissima Lausanne",
+        "event": "1500m",
+        "time": "3:30.16",
+        "place": "2"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:51.30",
+        "place": "4"
+      },
+      {
+        "date": "JUN 13",
+        "meet": "Oslo Bislett Games",
+        "event": "Mile",
+        "time": "3:53.04",
+        "place": "6"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "BAUHAUS-galan",
+        "event": "1500m",
+        "time": "3:37.30",
+        "place": "3"
+      },
+      {
+        "date": "MAR 30",
+        "meet": "43rd IAAF World Cross Country Championships, Århus",
+        "event": "Cross Country U20 Race",
+        "time": "24:39",
+        "place": "12"
+      },
+      {
+        "date": "MAR 3",
+        "meet": "European Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:43.23",
+        "place": "2"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "European Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:56.15",
+        "place": "1"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "European Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:42.00",
+        "place": "1"
+      },
+      {
+        "date": "MAR 1",
+        "meet": "European Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:51.20",
+        "place": "1"
+      },
+      {
+        "date": "FEB 20",
+        "meet": "PSD Bank Leichtathletik Meeting",
+        "event": "1500m sh",
+        "time": "3:36.02",
+        "place": "1"
+      },
+      {
+        "date": "FEB 10",
+        "meet": "Nordenkampen",
+        "event": "1500m sh",
+        "time": "3:36.21",
+        "place": "1"
+      }
+    ],
+    "2020": [
+      {
+        "date": "OCT 17",
+        "meet": "Hytteplanmila",
+        "event": "10K",
+        "time": "DNF",
+        "place": ""
+      },
+      {
+        "date": "SEP 20",
+        "meet": "Norwegian Championships",
+        "event": "800m",
+        "time": "1:48.72",
+        "place": "1"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "Norwegian Championships",
+        "event": "800m",
+        "time": "1:54.87",
+        "place": "1"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "Norwegian Championships",
+        "event": "1500m",
+        "time": "3:33.93",
+        "place": "1"
+      },
+      {
+        "date": "SEP 17",
+        "meet": "Golden Gala Pietro Mennea",
+        "event": "3000m",
+        "time": "7:27.05",
+        "place": "2"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "59th Ostrava Golden Spike",
+        "event": "1500m",
+        "time": "3:33.92",
+        "place": "1"
+      },
+      {
+        "date": "SEP 4",
+        "meet": "AG Memorial Van Damme",
+        "event": "1500m",
+        "time": "3:30.69",
+        "place": "1"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "BAUHAUS-Galan",
+        "event": "1500m",
+        "time": "3:30.74",
+        "place": "2"
+      },
+      {
+        "date": "AUG 14",
+        "meet": "Herculis",
+        "event": "1500m",
+        "time": "3:28.68",
+        "place": "2"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Boysen Memorial",
+        "event": "800m",
+        "time": "1:46.44",
+        "place": "1"
+      },
+      {
+        "date": "JUN 11",
+        "meet": "Impossible Games",
+        "event": "2000m",
+        "time": "4:50.01",
+        "place": "1"
+      },
+      {
+        "date": "MAY 20",
+        "meet": "Forus Perseløp, Stavanger",
+        "event": "5K",
+        "time": "13:28",
+        "place": "1"
+      }
+    ],
+    "2021": [
+      {
+        "date": "DEC 12",
+        "meet": "27th SPAR European Cross Country Championships, Dublin",
+        "event": "Cross Country Senior Race",
+        "time": "30:15",
+        "place": "1"
+      },
+      {
+        "date": "SEP 11",
+        "meet": "Norwegian Championships",
+        "event": "1500m",
+        "time": "3:33.26",
+        "place": "1"
+      },
+      {
+        "date": "SEP 9",
+        "meet": "Weltklasse Zürich",
+        "event": "1500m",
+        "time": "3:31.45",
+        "place": "2"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "Athletissima Lausanne",
+        "event": "3000m",
+        "time": "7:33.06",
+        "place": "1"
+      },
+      {
+        "date": "AUG 21",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:47.24",
+        "place": "1"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXII Olympic Games",
+        "event": "1500m",
+        "time": "3:28.32",
+        "place": "1"
+      },
+      {
+        "date": "AUG 5",
+        "meet": "The XXXII Olympic Games",
+        "event": "1500m",
+        "time": "3:32.13",
+        "place": "2"
+      },
+      {
+        "date": "AUG 3",
+        "meet": "The XXXII Olympic Games",
+        "event": "1500m",
+        "time": "3:36.49",
+        "place": "4"
+      },
+      {
+        "date": "JUL 9",
+        "meet": "Herculis",
+        "event": "1500m",
+        "time": "3:29.25",
+        "place": "3"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "Golden Gala Pietro Mennea",
+        "event": "5000m",
+        "time": "12:48.45",
+        "place": "1"
+      },
+      {
+        "date": "MAY 23",
+        "meet": "Müller Grand Prix Gateshead",
+        "event": "1500m",
+        "time": "3:36.27",
+        "place": "1"
+      },
+      {
+        "date": "MAR 7",
+        "meet": "European Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:48.20",
+        "place": "1"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "European Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:49.52",
+        "place": "3"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "European Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:37.56",
+        "place": "1"
+      },
+      {
+        "date": "MAR 4",
+        "meet": "European Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:39.89",
+        "place": "2"
+      },
+      {
+        "date": "FEB 9",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "1500m sh",
+        "time": "3:31.80",
+        "place": "1"
+      }
+    ],
+    "2022": [
+      {
+        "date": "DEC 11",
+        "meet": "28th SPAR European Cross Country Championships, Piemonte-La Mandria Park",
+        "event": "Cross Country Senior Race",
+        "time": "29:33",
+        "place": "1"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "Weltklasse Zürich",
+        "event": "1500m",
+        "time": "3:29.02",
+        "place": "1"
+      },
+      {
+        "date": "AUG 26",
+        "meet": "Athletissima Lausanne",
+        "event": "1500m",
+        "time": "3:29.05",
+        "place": "1"
+      },
+      {
+        "date": "AUG 18",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:32.76",
+        "place": "1"
+      },
+      {
+        "date": "AUG 16",
+        "meet": "European Athletics Championships",
+        "event": "5000m",
+        "time": "13:21.13",
+        "place": "1"
+      },
+      {
+        "date": "AUG 15",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:38.48",
+        "place": "1"
+      },
+      {
+        "date": "JUL 24",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:09.24",
+        "place": "1"
+      },
+      {
+        "date": "JUL 21",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:13.92",
+        "place": "2"
+      },
+      {
+        "date": "JUL 19",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:29.47",
+        "place": "2"
+      },
+      {
+        "date": "JUL 17",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:37.02",
+        "place": "3"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:35.12",
+        "place": "3"
+      },
+      {
+        "date": "JUN 16",
+        "meet": "Oslo Bislett Games",
+        "event": "Mile",
+        "time": "3:46.46",
+        "place": "1"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "Trond Mohn Games",
+        "event": "800m",
+        "time": "1:47.22",
+        "place": "4"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:49.76",
+        "place": "1"
+      },
+      {
+        "date": "MAY 6",
+        "meet": "Track Meet",
+        "event": "5000m",
+        "time": "13:02.03",
+        "place": "1"
+      },
+      {
+        "date": "MAR 20",
+        "meet": "World Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:33.02",
+        "place": "2"
+      },
+      {
+        "date": "MAR 19",
+        "meet": "World Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:38.42",
+        "place": "2"
+      },
+      {
+        "date": "FEB 17",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "1500m sh",
+        "time": "3:30.60",
+        "place": "1"
+      }
+    ],
+    "2023": [
+      {
+        "date": "SEP 17",
+        "meet": "Prefontaine Classic",
+        "event": "3000m",
+        "time": "7:23.63",
+        "place": "1"
+      },
+      {
+        "date": "SEP 16",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:43.73",
+        "place": "1"
+      },
+      {
+        "date": "SEP 8",
+        "meet": "Memorial van Damme",
+        "event": "2000m",
+        "time": "4:43.13",
+        "place": "1"
+      },
+      {
+        "date": "AUG 27",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:11.30",
+        "place": "1"
+      },
+      {
+        "date": "AUG 24",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:36.21",
+        "place": "3"
+      },
+      {
+        "date": "AUG 23",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:29.65",
+        "place": "2"
+      },
+      {
+        "date": "AUG 20",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:34.98",
+        "place": "1"
+      },
+      {
+        "date": "AUG 19",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:33.94",
+        "place": "1"
+      },
+      {
+        "date": "JUL 16",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "1500m",
+        "time": "3:27.14",
+        "place": "1"
+      },
+      {
+        "date": "JUN 30",
+        "meet": "Athletissima Lausanne",
+        "event": "1500m",
+        "time": "3:28.72",
+        "place": "1"
+      },
+      {
+        "date": "JUN 15",
+        "meet": "Oslo Bislett Games",
+        "event": "1500m",
+        "time": "3:27.95",
+        "place": "1"
+      },
+      {
+        "date": "JUN 9",
+        "meet": "Meeting de Paris",
+        "event": "2 Miles",
+        "time": "7:54.10",
+        "place": "1"
+      },
+      {
+        "date": "MAY 28",
+        "meet": "Meeting International Mohammed VI d'Athletisme de Rabat",
+        "event": "1500m",
+        "time": "3:32.59",
+        "place": "1"
+      },
+      {
+        "date": "MAR 5",
+        "meet": "European Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:40.32",
+        "place": "1"
+      },
+      {
+        "date": "MAR 4",
+        "meet": "European Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:56.57",
+        "place": "1"
+      },
+      {
+        "date": "MAR 3",
+        "meet": "European Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:33.95",
+        "place": "1"
+      },
+      {
+        "date": "MAR 2",
+        "meet": "European Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:50.29",
+        "place": "3"
+      },
+      {
+        "date": "FEB 15",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais",
+        "event": "1500m sh",
+        "time": "3:32.38",
+        "place": "1"
+      }
+    ],
+    "2024": [
+      {
+        "date": "DEC 8",
+        "meet": "30th SPAR European Cross Country Championships, Antalya",
+        "event": "Cross Country Senior Race",
+        "time": "22:16",
+        "place": "1"
+      },
+      {
+        "date": "SEP 15",
+        "meet": "Copenhagen Half Marathon, Copenhagen",
+        "event": "Half Marathon",
+        "time": "1:03:13",
+        "place": "34"
+      },
+      {
+        "date": "SEP 13",
+        "meet": "Memorial van Damme",
+        "event": "1500m",
+        "time": "3:30.37",
+        "place": "1"
+      },
+      {
+        "date": "SEP 5",
+        "meet": "Weltklasse Zürich",
+        "event": "1500m",
+        "time": "3:29.52",
+        "place": "2"
+      },
+      {
+        "date": "AUG 25",
+        "meet": "Silesia Kamila Skolimowska Memorial",
+        "event": "3000m",
+        "time": "7:17.55",
+        "place": "1"
+      },
+      {
+        "date": "AUG 22",
+        "meet": "Athletissima Lausanne",
+        "event": "1500m",
+        "time": "3:27.83",
+        "place": "1"
+      },
+      {
+        "date": "AUG 10",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "13:13.66",
+        "place": "1"
+      },
+      {
+        "date": "AUG 7",
+        "meet": "The XXXIII Olympic Games",
+        "event": "5000m",
+        "time": "13:51.59",
+        "place": "1"
+      },
+      {
+        "date": "AUG 6",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:28.24",
+        "place": "4"
+      },
+      {
+        "date": "AUG 4",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:32.38",
+        "place": "1"
+      },
+      {
+        "date": "AUG 2",
+        "meet": "The XXXIII Olympic Games",
+        "event": "1500m",
+        "time": "3:37.04",
+        "place": "3"
+      },
+      {
+        "date": "JUL 12",
+        "meet": "Meeting International d’Athlétisme Herculis EBS",
+        "event": "1500m",
+        "time": "3:26.73",
+        "place": "1"
+      },
+      {
+        "date": "JUN 29",
+        "meet": "Norwegian Championships",
+        "event": "5000m",
+        "time": "13:14.36",
+        "place": "1"
+      },
+      {
+        "date": "JUN 28",
+        "meet": "Norwegian Championships",
+        "event": "1500m",
+        "time": "3:34.03",
+        "place": "1"
+      },
+      {
+        "date": "JUN 12",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:31.95",
+        "place": "1"
+      },
+      {
+        "date": "JUN 10",
+        "meet": "European Athletics Championships",
+        "event": "1500m",
+        "time": "3:37.65",
+        "place": "1"
+      },
+      {
+        "date": "JUN 8",
+        "meet": "European Athletics Championships",
+        "event": "5000m",
+        "time": "13:20.11",
+        "place": "1"
+      },
+      {
+        "date": "MAY 30",
+        "meet": "Oslo Bislett Games",
+        "event": "1500m",
+        "time": "3:29.74",
+        "place": "1"
+      },
+      {
+        "date": "MAY 25",
+        "meet": "Prefontaine Classic",
+        "event": "Mile",
+        "time": "3:45.60",
+        "place": "2"
+      }
+    ],
+    "2025": [
+      {
+        "date": "SEP 21",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:02.00",
+        "place": "10"
+      },
+      {
+        "date": "SEP 19",
+        "meet": "World Athletics Championships",
+        "event": "5000m",
+        "time": "13:42.15",
+        "place": "8"
+      },
+      {
+        "date": "SEP 14",
+        "meet": "World Athletics Championships",
+        "event": "1500m",
+        "time": "3:37.84",
+        "place": "8"
+      },
+      {
+        "date": "MAR 23",
+        "meet": "World Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:38.79",
+        "place": "1"
+      },
+      {
+        "date": "MAR 22",
+        "meet": "World Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:46.09",
+        "place": "1"
+      },
+      {
+        "date": "MAR 21",
+        "meet": "World Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:39.80",
+        "place": "1"
+      },
+      {
+        "date": "MAR 9",
+        "meet": "European Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:48.37",
+        "place": "1"
+      },
+      {
+        "date": "MAR 8",
+        "meet": "European Athletics Indoor Championships",
+        "event": "3000m sh",
+        "time": "7:55.32",
+        "place": "1"
+      },
+      {
+        "date": "MAR 7",
+        "meet": "European Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:36.56",
+        "place": "1"
+      },
+      {
+        "date": "MAR 6",
+        "meet": "European Athletics Indoor Championships",
+        "event": "1500m sh",
+        "time": "3:37.49",
+        "place": "1"
+      },
+      {
+        "date": "FEB 13",
+        "meet": "Meeting Hauts-de-France Pas-de-Calais Trophée EDF",
+        "event": "Mile sh",
+        "time": "3:45.14",
+        "place": "1"
+      }
+    ]
+  },
+  "age": "25",
+  "ncaa": false
 }

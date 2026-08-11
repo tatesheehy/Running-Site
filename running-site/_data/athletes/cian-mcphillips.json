@@ -78,6 +78,14 @@
   ],
   "results": [
     {
+      "date": "AUG 10",
+      "meet": "European Athletics Championships",
+      "event": "800 m",
+      "time": "1:46.84",
+      "place": "7.",
+      "round": "H4"
+    },
+    {
       "date": "JUL 26",
       "meet": "Irish Championships",
       "event": "800 m",
@@ -126,7 +134,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-10",
+  "lastSynced": "2026-08-11",
   "resultsHistory": {
     "2018": [
       {

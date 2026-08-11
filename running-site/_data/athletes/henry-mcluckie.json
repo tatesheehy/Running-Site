@@ -12,7 +12,7 @@
   "flag": "GB",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-10",
+  "lastSynced": "2026-08-11",
   "prs": [
     {
       "event": "1500m",
@@ -78,6 +78,14 @@
   "club": "x",
   "country": "Great Britain",
   "results": [
+    {
+      "date": "AUG 9",
+      "meet": "British Milers Club Grand Prix",
+      "event": "1500 m",
+      "time": "3:36.41",
+      "place": "1.",
+      "round": "F1"
+    },
     {
       "date": "AUG 1",
       "meet": "IFAM Oordegem",

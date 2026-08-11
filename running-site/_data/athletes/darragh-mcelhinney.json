@@ -74,6 +74,14 @@
   ],
   "results": [
     {
+      "date": "AUG 10",
+      "meet": "European Athletics Championships",
+      "event": "5000 m",
+      "time": "13:37.62",
+      "place": "18.",
+      "round": "F1"
+    },
+    {
       "date": "JUL 26",
       "meet": "Irish Championships",
       "event": "5000 m",
@@ -146,7 +154,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-08-10",
+  "lastSynced": "2026-08-11",
   "resultsHistory": {
     "2018": [
       {

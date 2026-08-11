@@ -118,6 +118,14 @@
   ],
   "results": [
     {
+      "date": "AUG 10",
+      "meet": "European Athletics Championships",
+      "event": "800 m",
+      "time": "1:47.23",
+      "place": "2.",
+      "round": "H1"
+    },
+    {
       "date": "JUL 26",
       "meet": "Croatian Championships",
       "event": "800 m",
@@ -286,7 +294,7 @@
       "round": "F4"
     }
   ],
-  "lastSynced": "2026-08-10",
+  "lastSynced": "2026-08-11",
   "resultsHistory": {
     "2018": [
       {

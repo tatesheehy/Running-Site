@@ -66,6 +66,14 @@
   ],
   "results": [
     {
+      "date": "AUG 10",
+      "meet": "European Athletics Championships",
+      "event": "800 m",
+      "time": "1:46.33",
+      "place": "4.",
+      "round": "H4"
+    },
+    {
       "date": "JUL 25",
       "meet": "French Championships",
       "event": "800 m",
@@ -154,7 +162,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-10",
+  "lastSynced": "2026-08-11",
   "resultsHistory": {
     "2018": [
       {

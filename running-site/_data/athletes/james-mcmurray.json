@@ -18,7 +18,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-08-10",
+  "lastSynced": "2026-08-11",
   "prs": [
     {
       "event": "400m",
@@ -88,6 +88,14 @@
   "club": null,
   "country": "Great Britain & N.I.",
   "results": [
+    {
+      "date": "AUG 9",
+      "meet": "British Milers Club Grand Prix",
+      "event": "800 m",
+      "time": "1:47.03",
+      "place": "4.",
+      "round": "F2"
+    },
     {
       "date": "AUG 5",
       "meet": "BMC Gold Standard Races",
