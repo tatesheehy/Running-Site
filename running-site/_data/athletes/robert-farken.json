@@ -5,7 +5,7 @@
   "name": "Robert Farken",
   "headlineKey": "",
   "flag": "DE",
-  "lastSynced": "2026-08-14",
+  "lastSynced": "2026-08-15",
   "prs": [
     {
       "event": "400m",
@@ -65,6 +65,14 @@
   "ncaa": false,
   "country": "Germany",
   "results": [
+    {
+      "date": "AUG 14",
+      "meet": "European Athletics Championships",
+      "event": "1500 m",
+      "time": "3:41.65",
+      "place": "2.",
+      "round": "H2"
+    },
     {
       "date": "JUL 26",
       "meet": "German Championships",

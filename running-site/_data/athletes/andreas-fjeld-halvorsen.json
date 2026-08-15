@@ -70,6 +70,14 @@
   ],
   "results": [
     {
+      "date": "AUG 14",
+      "meet": "European Athletics Championships",
+      "event": "1500 m",
+      "time": "3:51.70",
+      "place": "16.",
+      "round": "H2"
+    },
+    {
       "date": "AUG 10",
       "meet": "European Athletics Championships",
       "event": "5000 m",
@@ -174,7 +182,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-14",
+  "lastSynced": "2026-08-15",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -1047,5 +1055,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-13"
+  "lastHistorySynced": "2026-08-14"
 }

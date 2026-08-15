@@ -12,7 +12,7 @@
   "flag": "SE",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-14",
+  "lastSynced": "2026-08-15",
   "prs": [
     {
       "event": "800m",
@@ -78,6 +78,14 @@
   "club": "x",
   "country": "Sweden",
   "results": [
+    {
+      "date": "AUG 14",
+      "meet": "European Athletics Championships",
+      "event": "1500 m",
+      "time": "3:41.84",
+      "place": "3.",
+      "round": "H2"
+    },
     {
       "date": "AUG 9",
       "meet": "British Milers Club Grand Prix",
@@ -242,7 +250,7 @@
   "dob": "2001-03-08",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-08-13",
+  "lastHistorySynced": "2026-08-14",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

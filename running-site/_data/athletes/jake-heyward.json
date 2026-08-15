@@ -46,7 +46,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-08-14",
+  "lastSynced": "2026-08-15",
   "prs": [
     {
       "event": "800m",
@@ -96,6 +96,14 @@
   "club": null,
   "country": "Great Britain & N.I.",
   "results": [
+    {
+      "date": "AUG 14",
+      "meet": "European Athletics Championships",
+      "event": "1500 m",
+      "time": "3:35.49",
+      "place": "1.",
+      "round": "H1"
+    },
     {
       "date": "AUG 1",
       "meet": "XXIII Commonwealth Games",
@@ -179,7 +187,7 @@
   ],
   "dob": "26 APR 1999",
   "weight": null,
-  "lastHistorySynced": "2026-08-13",
+  "lastHistorySynced": "2026-08-14",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",
