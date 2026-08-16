@@ -74,6 +74,14 @@
   ],
   "results": [
     {
+      "date": "AUG 15",
+      "meet": "European Athletics Championships",
+      "event": "10,000 m",
+      "time": "28:50.35",
+      "place": "15.",
+      "round": "F1"
+    },
+    {
       "date": "AUG 1",
       "meet": "IFAM Oordegem",
       "event": "5000 m",
@@ -154,7 +162,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-15",
+  "lastSynced": "2026-08-16",
   "resultsHistory": {
     "2018": [
       {

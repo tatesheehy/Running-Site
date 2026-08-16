@@ -12,7 +12,7 @@
   "flag": "SE",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-15",
+  "lastSynced": "2026-08-16",
   "prs": [
     {
       "event": "800m",
@@ -78,6 +78,14 @@
   "club": "x",
   "country": "Sweden",
   "results": [
+    {
+      "date": "AUG 15",
+      "meet": "European Athletics Championships",
+      "event": "1500 m",
+      "time": "3:36.16",
+      "place": "2.",
+      "round": "F1"
+    },
     {
       "date": "AUG 14",
       "meet": "European Athletics Championships",
@@ -250,7 +258,7 @@
   "dob": "2001-03-08",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-08-14",
+  "lastHistorySynced": "2026-08-15",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

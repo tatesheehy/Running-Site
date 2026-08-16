@@ -25,7 +25,7 @@
     }
   ],
   "seasons": "12",
-  "lastSynced": "2026-08-15",
+  "lastSynced": "2026-08-16",
   "prs": [
     {
       "event": "400m",
@@ -114,6 +114,14 @@
   "club": "xx",
   "country": "Scotland",
   "results": [
+    {
+      "date": "AUG 15",
+      "meet": "European Athletics Championships",
+      "event": "1500 m",
+      "time": "3:37.18",
+      "place": "6.",
+      "round": "F1"
+    },
     {
       "date": "AUG 14",
       "meet": "European Athletics Championships",

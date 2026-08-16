@@ -20,7 +20,7 @@
         }
       ],
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -189,7 +189,7 @@
       ],
       "dob": "1996-11-22",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -914,7 +914,7 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -1076,7 +1076,7 @@
       "dob": "2002-01-23",
       "college": "Georgetown",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -1595,7 +1595,7 @@
       "waUrl": "https://worldathletics.org/athletes/france/anas-lagtiy-chaoudar-15032059",
       "name": "Anas Lagtiy Chaoudar",
       "flag": "FR",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -1733,7 +1733,7 @@
         }
       ],
       "dob": "2004-01-17",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "event": "MIDDLE DISTANCE",
       "id": "anas-lagtiy-chaoudar",
       "resultsHistory": {
@@ -2144,7 +2144,7 @@
       "waUrl": "https://worldathletics.org/athletes/morocco/anass-essayi-14805620",
       "name": "Anass Essayi",
       "flag": "MA",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -2861,7 +2861,7 @@
       "headlineKey": "x",
       "flag": "IE",
       "seasons": "8",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -2926,6 +2926,14 @@
       "club": "x",
       "country": "Ireland",
       "results": [
+        {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "1500 m",
+          "time": "3:36.24",
+          "place": "3.",
+          "round": "F1"
+        },
         {
           "date": "AUG 14",
           "meet": "European Athletics Championships",
@@ -3033,7 +3041,7 @@
       ],
       "dob": "1996-06-18",
       "weight": "150",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
@@ -3888,7 +3896,7 @@
       "headlineKey": "x",
       "flag": "FR",
       "seasons": "10",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -3969,6 +3977,14 @@
       "club": "x",
       "country": "France",
       "results": [
+        {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "1500 m",
+          "time": "3:37.61",
+          "place": "10.",
+          "round": "F1"
+        },
         {
           "date": "AUG 14",
           "meet": "European Athletics Championships",
@@ -5071,7 +5087,7 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -5288,7 +5304,7 @@
       ],
       "college": "Michigan",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -5495,7 +5511,7 @@
       "waUrl": "https://worldathletics.org/athletes/kenya/brian-masai-15067660",
       "name": "Brian Masai",
       "flag": "KE",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -5829,7 +5845,7 @@
         }
       ],
       "dob": "1999-03-02",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "event": "MIDDLE DISTANCE",
       "id": "brian-masai",
       "resultsHistory": {
@@ -6188,7 +6204,7 @@
       "headlineKey": "xx",
       "flag": "AU",
       "seasons": "2",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -6372,7 +6388,7 @@
       ],
       "dob": "2006-06-09",
       "weight": "150",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "xx",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -6891,7 +6907,7 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -7209,7 +7225,7 @@
       "dob": "2005-01-10",
       "college": "BYU",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -7571,7 +7587,7 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "1500m",
@@ -7721,7 +7737,7 @@
       "dob": "2005-08-05",
       "college": "Cal Poly",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
@@ -7950,7 +7966,7 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -8118,7 +8134,7 @@
       ],
       "college": "NAU",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "clay-shively",
@@ -8336,7 +8352,7 @@
         }
       ],
       "seasons": "4",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -8520,7 +8536,7 @@
       ],
       "dob": "2001-06-06",
       "weight": "145 lbs",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "Jerry Schumacher",
       "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
       "event": "MIDDLE DISTANCE + DISTANCE",
@@ -9349,7 +9365,7 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -9611,7 +9627,7 @@
       "dob": "2003-10-28",
       "college": "NAU",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
       "id": "colin-sahlman",
@@ -10184,7 +10200,7 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "1500m",
@@ -11327,7 +11343,7 @@
         }
       ],
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -11392,7 +11408,7 @@
       ],
       "dob": "2004-08-01",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -11820,7 +11836,7 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -11994,7 +12010,7 @@
       "dob": "2002-10-19",
       "college": "North Carolina",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
@@ -12491,7 +12507,7 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -12753,7 +12769,7 @@
       "dob": "2003-12-23",
       "college": "Virginia",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
@@ -13290,7 +13306,7 @@
       "headlineKey": "x",
       "flag": "GB",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -14307,7 +14323,7 @@
       "headlineKey": "x",
       "flag": "ER",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "1500m",
@@ -14496,7 +14512,7 @@
       "dob": "2003-11-30",
       "college": "New Mexico",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "reviewBody": "x",
       "event": "DISTANCE",
       "id": "habtom-samuel",
@@ -15050,7 +15066,7 @@
         }
       ],
       "seasons": "4",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -15246,7 +15262,7 @@
       ],
       "dob": "2003-03-15",
       "weight": "140",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -15848,7 +15864,7 @@
         }
       ],
       "seasons": "9",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -15905,6 +15921,14 @@
       "club": "Nike",
       "country": "Portugal",
       "results": [
+        {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "1500 m",
+          "time": "3:39.69",
+          "place": "12.",
+          "round": "F1"
+        },
         {
           "date": "AUG 14",
           "meet": "European Athletics Championships",
@@ -17285,7 +17309,7 @@
         }
       ],
       "seasons": "12",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -17374,6 +17398,14 @@
       "club": "xx",
       "country": "Scotland",
       "results": [
+        {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "1500 m",
+          "time": "3:37.18",
+          "place": "6.",
+          "round": "F1"
+        },
         {
           "date": "AUG 14",
           "meet": "European Athletics Championships",
@@ -18297,7 +18329,7 @@
         }
       ],
       "seasons": "8",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -19440,7 +19472,7 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -20286,7 +20318,7 @@
         }
       ],
       "seasons": "6",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -21211,7 +21243,7 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "1500m",
@@ -21445,7 +21477,7 @@
       "dob": "2005-02-28",
       "college": "Stanford",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
@@ -22327,9 +22359,9 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "dob": "2004-08-31",
-      "lastSynced": "2026-08-15"
+      "lastSynced": "2026-08-16"
     },
     {
       "photoBackground": "#111111",
@@ -22351,7 +22383,7 @@
         }
       ],
       "seasons": "4",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -22595,7 +22627,7 @@
       ],
       "dob": "2001-09-26",
       "weight": "145",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -23541,7 +23573,7 @@
       "results": [],
       "dob": "1998-02-17",
       "weight": "150",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
@@ -24191,7 +24223,7 @@
       "waUrl": "https://worldathletics.org/athletes/australia/morgan-mcdonald-14496066",
       "name": "Morgan McDonald",
       "flag": "AU",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "1500m",
@@ -24667,7 +24699,7 @@
         }
       ],
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -24733,6 +24765,14 @@
       "club": "x",
       "country": "Norway",
       "results": [
+        {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "1500 m",
+          "time": "3:37.31",
+          "place": "7.",
+          "round": "F1"
+        },
         {
           "date": "AUG 14",
           "meet": "European Athletics Championships",
@@ -25752,7 +25792,7 @@
       "waUrl": "https://worldathletics.org/athletes/united-states/nathan-green-15021942",
       "name": "Nathan Green",
       "flag": "US",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -25927,7 +25967,7 @@
       ],
       "dob": "2003-04-10",
       "college": "Washington",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "event": "MIDDLE DISTANCE",
       "id": "nathan-green",
       "resultsHistory": {
@@ -26562,7 +26602,7 @@
       "headlineKey": "xx",
       "flag": "NL",
       "seasons": "3",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -26634,7 +26674,7 @@
       ],
       "dob": "2005-04-17",
       "weight": "145",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "xx",
       "reviewBody": "xx",
       "event": "MIDDLE DISTANCE",
@@ -27269,7 +27309,7 @@
       "headlineKey": "x",
       "flag": "AU",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -28292,7 +28332,7 @@
       "headlineKey": "x",
       "flag": "KE",
       "seasons": "xx",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -28344,7 +28384,7 @@
       ],
       "dob": "2006-12-01",
       "weight": "145",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -28503,7 +28543,7 @@
       "headlineKey": "x",
       "flag": "FR",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "1500m",
@@ -28681,7 +28721,7 @@
       "dob": "2005-03-16",
       "college": "Cornell",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
@@ -28855,7 +28895,7 @@
         }
       ],
       "seasons": "3",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -29051,7 +29091,7 @@
       ],
       "dob": "2004-07-30",
       "weight": "140",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -29536,7 +29576,7 @@
       "name": "Robert Farken",
       "headlineKey": "",
       "flag": "DE",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -29596,6 +29636,14 @@
       "ncaa": false,
       "country": "Germany",
       "results": [
+        {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "1500 m",
+          "time": "3:37.49",
+          "place": "9.",
+          "round": "F1"
+        },
         {
           "date": "AUG 14",
           "meet": "European Athletics Championships",
@@ -30398,7 +30446,7 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -30524,7 +30572,7 @@
       "dob": "2004-09-05",
       "college": "Wake Forest",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "reviewBody": "x",
       "event": "DISTANCE",
       "id": "rocky-hansen",
@@ -30758,7 +30806,7 @@
       "headlineKey": "x",
       "flag": "NZ",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -30867,7 +30915,7 @@
       ],
       "dob": "2009-04-12",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
@@ -31073,7 +31121,7 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -31319,7 +31367,7 @@
       "dob": "2005-06-23",
       "college": "Oregon",
       "weight": "145",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -31590,7 +31638,7 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -31683,7 +31731,7 @@
       ],
       "college": "Haverford",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "Matthew Cohen",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE/DISTANCE",
@@ -31711,7 +31759,7 @@
       "headlineKey": "x",
       "flag": "NL",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -31777,6 +31825,14 @@
       "club": "x",
       "country": "Netherlands",
       "results": [
+        {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "1500 m",
+          "time": "3:35.70",
+          "place": "1.",
+          "round": "F1"
+        },
         {
           "date": "AUG 14",
           "meet": "European Athletics Championships",
@@ -31860,7 +31916,7 @@
       ],
       "dob": "2003-01-02",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -32687,7 +32743,7 @@
         }
       ],
       "seasons": "8",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -33587,7 +33643,7 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -33767,7 +33823,7 @@
       ],
       "college": "NAU",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
       "id": "tor-hotung-davidsen",
@@ -34103,7 +34159,7 @@
       "waUrl": "https://worldathletics.org/athletes/united-states/trent-mcfarland-15077970",
       "name": "Trent McFarland",
       "flag": "US",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "1500m",
@@ -34334,7 +34390,7 @@
       ],
       "dob": "2005-06-01",
       "college": "Michigan",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "event": "MIDDLE DISTANCE",
       "id": "trent-mcfarland",
       "resultsHistory": {
@@ -34636,7 +34692,7 @@
       "headlineKey": "x",
       "flag": "BW",
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -35425,7 +35481,7 @@
       "headlineKey": "x",
       "flag": "US",
       "seasons": "9",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -36712,7 +36768,7 @@
         }
       ],
       "seasons": "x",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -37707,7 +37763,7 @@
       "flag": "SE",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -37773,6 +37829,14 @@
       "club": "x",
       "country": "Sweden",
       "results": [
+        {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "1500 m",
+          "time": "3:36.16",
+          "place": "2.",
+          "round": "F1"
+        },
         {
           "date": "AUG 14",
           "meet": "European Athletics Championships",
@@ -37945,7 +38009,7 @@
       "dob": "2001-03-08",
       "college": "",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -38899,7 +38963,7 @@
       "flag": "BE",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -40005,7 +40069,7 @@
       "flag": "NO",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -40111,7 +40175,7 @@
       "dob": "2006-06-26",
       "college": "",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -40643,7 +40707,7 @@
       "flag": "FR",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -40721,6 +40785,14 @@
       "club": "x",
       "country": "France",
       "results": [
+        {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "1500 m",
+          "time": "3:37.37",
+          "place": "8.",
+          "round": "F1"
+        },
         {
           "date": "AUG 14",
           "meet": "European Athletics Championships",
@@ -41650,7 +41722,7 @@
       "flag": "BE",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -41876,7 +41948,7 @@
       "dob": "1999-12-08",
       "college": "",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -42677,7 +42749,7 @@
       "flag": "IT",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -43521,7 +43593,7 @@
       "flag": "BE",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -43651,7 +43723,7 @@
       "dob": "1998-08-02",
       "college": "",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -44116,7 +44188,7 @@
       "flag": "US",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -45722,7 +45794,7 @@
       "flag": "CA",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -46833,7 +46905,7 @@
       "flag": "FR",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -47075,7 +47147,7 @@
       "dob": "2002-06-16",
       "college": "",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -47574,7 +47646,7 @@
       "flag": "FR",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "200m",
@@ -47744,7 +47816,7 @@
       "dob": "2003-08-02",
       "college": "",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -48496,7 +48568,7 @@
       "flag": "NL",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -49419,7 +49491,7 @@
       "flag": "AU",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -50288,7 +50360,7 @@
       "flag": "AU",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -51418,7 +51490,7 @@
       "flag": "AU",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -52653,7 +52725,7 @@
       "flag": "IT",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -52715,6 +52787,14 @@
       "club": "x",
       "country": "Italy",
       "results": [
+        {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "1500 m",
+          "time": "3:38.15",
+          "place": "11.",
+          "round": "F1"
+        },
         {
           "date": "AUG 14",
           "meet": "European Athletics Championships",
@@ -53839,7 +53919,7 @@
       "flag": "FR",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -54802,7 +54882,7 @@
       "flag": "FR",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -55558,7 +55638,7 @@
       "flag": "PT",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "60m",
@@ -56933,7 +57013,7 @@
       "flag": "MA",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -57079,7 +57159,7 @@
       "dob": "2001-01-07",
       "college": "Oklahoma State",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -57726,7 +57806,7 @@
       "flag": "ES",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -59141,7 +59221,7 @@
       "flag": "KE",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -59335,7 +59415,7 @@
       "dob": "1996-10-10",
       "college": "Iowa State",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -60209,7 +60289,7 @@
       "flag": "DZ",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -60307,7 +60387,7 @@
       "dob": "2004-01-30",
       "college": "",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -60777,7 +60857,7 @@
       "flag": "ES",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -62217,7 +62297,7 @@
       "flag": "ZA",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -63301,7 +63381,7 @@
       "flag": "US",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -63547,7 +63627,7 @@
       "dob": "2001-05-02",
       "college": "Washington",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -64264,7 +64344,7 @@
       "flag": "US",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -64474,7 +64554,7 @@
       "dob": "2001-09-18",
       "college": "",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -65134,7 +65214,7 @@
       "flag": "ES",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -66086,7 +66166,7 @@
       "flag": "GB",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -67254,7 +67334,7 @@
       "flag": "AT",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "200m",
@@ -67392,7 +67472,7 @@
       "dob": "1989-12-18",
       "college": "",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -67731,7 +67811,7 @@
       "flag": "CA",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -69093,7 +69173,7 @@
       "dob": "1996-12-12",
       "college": "Texas Tech",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -69834,7 +69914,7 @@
       "flag": "US",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -70087,7 +70167,7 @@
       ],
       "college": "",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -70739,7 +70819,7 @@
       "flag": "IE",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -71670,7 +71750,7 @@
       "flag": "JP",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -72378,7 +72458,7 @@
       "flag": "FR",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -73122,7 +73202,7 @@
       "flag": "DZ",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "1500m",
@@ -73256,7 +73336,7 @@
       "dob": "2004-10-05",
       "college": "",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -73452,7 +73532,7 @@
       "flag": "GB",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -74629,7 +74709,7 @@
       "flag": "ES",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -75549,7 +75629,7 @@
       "flag": "GB",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "1500m",
@@ -76448,7 +76528,7 @@
       "flag": "ES",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -76646,7 +76726,7 @@
       "dob": "2003-07-01",
       "college": "",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -77102,7 +77182,7 @@
       "flag": "IT",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -77986,7 +78066,7 @@
       "flag": "CA",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -78152,7 +78232,7 @@
       "dob": "2003-12-19",
       "college": "",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -78694,7 +78774,7 @@
       "flag": "NZ",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -79797,7 +79877,7 @@
       "flag": "US",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -79959,7 +80039,7 @@
       "dob": "1998-09-22",
       "college": "",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -80669,7 +80749,7 @@
       "flag": "US",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -81814,7 +81894,7 @@
       "flag": "US",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -82715,7 +82795,7 @@
       "flag": "GB",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -83823,7 +83903,7 @@
       "flag": "NL",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -83885,6 +83965,14 @@
       "club": "x",
       "country": "Netherlands",
       "results": [
+        {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "10,000 m",
+          "time": "DNF",
+          "place": "",
+          "round": "F1"
+        },
         {
           "date": "AUG 10",
           "meet": "European Athletics Championships",
@@ -84830,7 +84918,7 @@
       "flag": "UY",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -85044,7 +85132,7 @@
       "dob": "2002-07-24",
       "college": "",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -85508,7 +85596,7 @@
       "flag": "FR",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -86763,7 +86851,7 @@
       "flag": "MA",
       "honours": [],
       "seasons": "0",
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -86825,7 +86913,7 @@
       "dob": "1997-10-26",
       "college": "",
       "weight": "x",
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": "x",
       "reviewBody": "x",
       "event": "MIDDLE DISTANCE",
@@ -87479,7 +87567,7 @@
           "round": "F3"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -88644,7 +88732,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -89209,7 +89297,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -89342,7 +89430,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "djamel-sedjati",
@@ -89424,7 +89512,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -89864,7 +89952,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "eliott-crestan",
@@ -90078,7 +90166,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -91223,7 +91311,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -92340,7 +92428,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [
@@ -93078,7 +93166,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "ncaaTitle": [
         "800m"
       ]
@@ -93303,7 +93391,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -94328,7 +94416,7 @@
           "round": "F8"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -95146,7 +95234,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "ncaaTitle": [
         "800m"
       ]
@@ -95287,7 +95375,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -95984,7 +96072,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -97496,7 +97584,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -97953,7 +98041,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "slimane-moula",
@@ -98091,7 +98179,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -98861,7 +98949,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "gabriel-tual",
@@ -99035,7 +99123,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -100236,7 +100324,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -101062,7 +101150,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "handal-roban",
@@ -101340,7 +101428,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -102581,7 +102669,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [
@@ -103455,7 +103543,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "marino-bloudek",
@@ -103769,7 +103857,7 @@
           "round": "F4"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -105510,7 +105598,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -106835,7 +106923,7 @@
           "round": "F2"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [
@@ -107901,7 +107989,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "kethobogile-haingura",
@@ -108067,7 +108155,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -108466,7 +108554,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "tobias-grnstad",
@@ -108644,7 +108732,7 @@
           "round": "F2"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -109681,7 +109769,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -110299,7 +110387,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "louey-ouerrat",
@@ -110465,7 +110553,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -111058,7 +111146,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "tyrice-taylor",
@@ -111316,7 +111404,7 @@
           "round": "F6"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -112320,7 +112408,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -113797,7 +113885,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -114422,7 +114510,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "maciej-wyderka",
@@ -114624,7 +114712,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -116037,7 +116125,7 @@
           "round": "H3"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -116268,7 +116356,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "jordan-terrasse",
@@ -116486,7 +116574,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -117571,7 +117659,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -119200,7 +119288,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -120481,7 +120569,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -122042,7 +122130,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -123191,7 +123279,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -124148,7 +124236,7 @@
           "round": "F2"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -124532,7 +124620,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "peyton-craig",
@@ -124674,7 +124762,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -125195,7 +125283,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "noah-kibet",
@@ -125361,7 +125449,7 @@
           "round": "F2"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -125929,7 +126017,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "moad-zahafi",
@@ -126023,7 +126111,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -126961,7 +127049,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "ncaaTitle": [
         "800m"
       ]
@@ -127134,7 +127222,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -128111,7 +128199,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -128928,6 +129016,14 @@
       ],
       "results": [
         {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "10,000 m",
+          "time": "28:07.90",
+          "place": "3.",
+          "round": "F1"
+        },
+        {
           "date": "AUG 10",
           "meet": "European Athletics Championships",
           "event": "5000 m",
@@ -128984,7 +129080,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -130029,7 +130125,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -130325,7 +130421,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "mohamed-abdilaahi",
@@ -130471,7 +130567,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -131464,7 +131560,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -132269,6 +132365,14 @@
       ],
       "results": [
         {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "10,000 m",
+          "time": "27:23.44",
+          "place": "1.",
+          "round": "F1"
+        },
+        {
           "date": "JUL 24",
           "meet": "Swedish Championships",
           "event": "10,000 m",
@@ -132349,7 +132453,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -133226,7 +133330,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -134183,7 +134287,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -135133,6 +135237,14 @@
       ],
       "results": [
         {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "10,000 m",
+          "time": "DNF",
+          "place": "",
+          "round": "F1"
+        },
+        {
           "date": "AUG 10",
           "meet": "European Athletics Championships",
           "event": "5000 m",
@@ -135205,7 +135317,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -136106,7 +136218,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -136280,7 +136392,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "graham-blanks",
@@ -136434,7 +136546,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [
@@ -136851,7 +136963,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "jacob-krop",
@@ -136973,7 +137085,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [
@@ -137519,7 +137631,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "eduardo-herrera",
@@ -137721,7 +137833,7 @@
           "round": "F2"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -138574,7 +138686,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [
@@ -139216,7 +139328,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "ncaaTitle": [
         "3000m",
         "5000m"
@@ -139370,7 +139482,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [
@@ -139796,7 +139908,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "mathew-kipchumba-kipsang",
@@ -139954,7 +140066,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [
@@ -140532,7 +140644,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "egide-ntakarutimana",
@@ -140650,7 +140762,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -141170,7 +141282,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "parker-wolfe",
@@ -141324,7 +141436,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [
@@ -141766,7 +141878,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "ncaaTitle": [
         "5000m"
       ]
@@ -141943,7 +142055,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -142628,7 +142740,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -143012,7 +143124,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "ncaaTitle": [
         "10000m"
       ]
@@ -143137,7 +143249,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -143974,7 +144086,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -144432,7 +144544,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "florian-bremm",
@@ -144590,7 +144702,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -145535,7 +145647,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -145693,7 +145805,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "etienne-daguinos",
@@ -145839,7 +145951,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -146692,7 +146804,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -147083,7 +147195,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "santiago-catrofe",
@@ -147261,7 +147373,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -148422,7 +148534,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -149116,7 +149228,7 @@
       "photo": "",
       "photoBackground": "#111111",
       "event": "MIDDLE DISTANCE",
-      "age": "27",
+      "age": "28",
       "dob": "1998-08-16",
       "height": "x",
       "weight": "x",
@@ -149207,6 +149319,14 @@
       ],
       "results": [
         {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "10,000 m",
+          "time": "27:42.67",
+          "place": "2.",
+          "round": "F1"
+        },
+        {
           "date": "AUG 10",
           "meet": "European Athletics Championships",
           "event": "5000 m",
@@ -149287,7 +149407,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -150320,7 +150440,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -151024,7 +151144,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "mike-foppen",
@@ -151134,6 +151254,14 @@
       ],
       "results": [
         {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "10,000 m",
+          "time": "DNF",
+          "place": "",
+          "round": "F1"
+        },
+        {
           "date": "AUG 10",
           "meet": "European Athletics Championships",
           "event": "5000 m",
@@ -151238,7 +151366,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -152483,7 +152611,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -152698,7 +152826,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "jackson-sharp",
@@ -152888,7 +153016,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -153885,7 +154013,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -154302,7 +154430,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "darragh-mcelhinney",
@@ -154460,7 +154588,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -155385,7 +155513,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -156166,7 +156294,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -156787,7 +156915,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [
@@ -157429,7 +157557,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "frankline-kibet",
@@ -157527,7 +157655,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -157563,7 +157691,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "dylan-jacobs",
@@ -157717,7 +157845,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -158330,7 +158458,7 @@
           "round": "F2"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [
@@ -158748,7 +158876,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "saymon-amanuel",
@@ -158858,7 +158986,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -158951,7 +159079,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "abdihamid-nur",
@@ -159129,7 +159257,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -160602,6 +160730,14 @@
       ],
       "results": [
         {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "10,000 m",
+          "time": "28:25.58",
+          "place": "12.",
+          "round": "F1"
+        },
+        {
           "date": "AUG 1",
           "meet": "XXIII Commonwealth Games",
           "event": "5000 m",
@@ -160690,7 +160826,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -161603,6 +161739,14 @@
       ],
       "results": [
         {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "10,000 m",
+          "time": "28:21.25",
+          "place": "6.",
+          "round": "F1"
+        },
+        {
           "date": "AUG 10",
           "meet": "European Athletics Championships",
           "event": "5000 m",
@@ -161635,7 +161779,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [
@@ -162309,7 +162453,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "brian-fay",
@@ -162495,7 +162639,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -163564,7 +163708,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -163657,7 +163801,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "kasey-knevelbaard",
@@ -163907,7 +164051,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -165288,6 +165432,14 @@
       ],
       "results": [
         {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "10,000 m",
+          "time": "29:05.68",
+          "place": "16.",
+          "round": "F1"
+        },
+        {
           "date": "AUG 10",
           "meet": "European Athletics Championships",
           "event": "5000 m",
@@ -165384,7 +165536,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -166365,7 +166517,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -166882,7 +167034,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -167015,7 +167167,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "elie-sindayikengdera",
@@ -167137,7 +167289,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -167327,7 +167479,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "justyn-knight",
@@ -167449,7 +167601,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -167833,7 +167985,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "ncaaTitle": [
         "5000m"
       ]
@@ -167986,7 +168138,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -168679,7 +168831,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -169472,7 +169624,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -169524,7 +169676,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "ernest-cheruiyot",
@@ -169718,7 +169870,7 @@
           "round": "F3"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -169931,7 +170083,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "sam-parsons",
@@ -170029,7 +170181,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -170954,7 +171106,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -171619,7 +171771,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -172576,7 +172728,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -173217,7 +173369,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -174154,7 +174306,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -174683,6 +174835,14 @@
       ],
       "results": [
         {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "10,000 m",
+          "time": "28:22.41",
+          "place": "8.",
+          "round": "F1"
+        },
+        {
           "date": "JUL 25",
           "meet": "Swiss Championships",
           "event": "5000 m",
@@ -174715,7 +174875,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -175524,7 +175684,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -175795,7 +175955,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "andrew-kiptoo-alamisi",
@@ -175929,7 +176089,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -176103,7 +176263,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "elzan-bibic",
@@ -176205,7 +176365,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -177558,7 +177718,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -177940,7 +178100,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "yu-shibata",
@@ -178058,7 +178218,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -178243,7 +178403,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "scott-beattie",
@@ -178320,6 +178480,14 @@
         }
       ],
       "results": [
+        {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "10,000 m",
+          "time": "28:50.35",
+          "place": "15.",
+          "round": "F1"
+        },
         {
           "date": "AUG 1",
           "meet": "IFAM Oordegem",
@@ -178401,7 +178569,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -179206,7 +179374,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -179243,7 +179411,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "andreas-fjeld-halvorsen",
@@ -179429,7 +179597,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -180302,7 +180470,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "dolphine-chelimo",
@@ -180424,7 +180592,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -180543,7 +180711,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "dawit-seare",
@@ -180641,7 +180809,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -180977,7 +181145,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "sean-mcgorty",
@@ -181163,7 +181331,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -181867,7 +182035,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -181953,7 +182121,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "elsingi-kipruto",
@@ -182127,7 +182295,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -182156,7 +182324,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "brian-muange-musau",
@@ -182282,7 +182450,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -182536,7 +182704,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "ncaaTitle": [
         "5000m"
       ]
@@ -182669,7 +182837,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -183394,7 +183562,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -183601,7 +183769,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "tomonori-yamaguchi",
@@ -183711,7 +183879,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -184112,7 +184280,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "evans-kurui",
@@ -184261,7 +184429,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [],
         "2019": [],
@@ -184418,7 +184586,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "id": "jack-oleary",
@@ -184512,6 +184680,14 @@
       ],
       "results": [
         {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "10,000 m",
+          "time": "28:24.89",
+          "place": "10.",
+          "round": "F1"
+        },
+        {
           "date": "JUL 26",
           "meet": "Irish Championships",
           "event": "5000 m",
@@ -184592,7 +184768,7 @@
           "round": "F"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -185269,7 +185445,7 @@
           "round": "F1"
         }
       ],
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "resultsHistory": {
         "2018": [
           {
@@ -185847,7 +186023,7 @@
           }
         ]
       },
-      "lastHistorySynced": "2026-08-15"
+      "lastHistorySynced": "2026-08-16"
     },
     {
       "photoBackground": null,
@@ -185946,7 +186122,7 @@
         }
       ],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -186012,6 +186188,14 @@
       "club": null,
       "country": "Norway",
       "results": [
+        {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "1500 m",
+          "time": "3:37.31",
+          "place": "7.",
+          "round": "F1"
+        },
         {
           "date": "AUG 14",
           "meet": "European Athletics Championships",
@@ -187098,7 +187282,7 @@
         }
       ],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -187151,7 +187335,7 @@
       ],
       "dob": "01 DEC 2006",
       "weight": null,
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": null,
       "reviewBody": null,
       "event": "1500m",
@@ -187338,7 +187522,7 @@
         }
       ],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -188555,7 +188739,7 @@
         }
       ],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -188720,7 +188904,7 @@
       ],
       "dob": "22 APR 2000",
       "weight": null,
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": null,
       "reviewBody": null,
       "event": "1500m",
@@ -189391,7 +189575,7 @@
         }
       ],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -189592,7 +189776,7 @@
       ],
       "dob": "15 JAN 2005",
       "weight": null,
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": null,
       "reviewBody": null,
       "event": "1500m",
@@ -189976,7 +190160,7 @@
         }
       ],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "1500m",
@@ -190109,7 +190293,7 @@
       ],
       "dob": "10 AUG 1998",
       "weight": null,
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": null,
       "reviewBody": null,
       "event": "1500m",
@@ -190344,7 +190528,7 @@
       "flag": "DE",
       "honours": [],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "600 Metres",
@@ -191553,7 +191737,7 @@
         }
       ],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -192487,7 +192671,7 @@
         }
       ],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -193317,7 +193501,7 @@
         }
       ],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -193367,6 +193551,14 @@
       "club": null,
       "country": "Great Britain & N.I.",
       "results": [
+        {
+          "date": "AUG 15",
+          "meet": "European Athletics Championships",
+          "event": "1500 m",
+          "time": "3:36.40",
+          "place": "4.",
+          "round": "F1"
+        },
         {
           "date": "AUG 14",
           "meet": "European Athletics Championships",
@@ -193458,7 +193650,7 @@
       ],
       "dob": "26 APR 1999",
       "weight": null,
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": null,
       "reviewBody": null,
       "event": "1500m",
@@ -193965,7 +194157,7 @@
       "flag": "US",
       "honours": [],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -194230,7 +194422,7 @@
       ],
       "dob": "22 FEB 2002",
       "weight": null,
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": null,
       "reviewBody": null,
       "event": "1500m",
@@ -194856,7 +195048,7 @@
       "flag": "FR",
       "honours": [],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -195061,7 +195253,7 @@
       ],
       "dob": "25 MAY 2004",
       "weight": null,
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": null,
       "reviewBody": null,
       "event": "1500m",
@@ -195454,7 +195646,7 @@
         }
       ],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -196667,7 +196859,7 @@
       "flag": "FR",
       "honours": [],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -197554,7 +197746,7 @@
         }
       ],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -198747,7 +198939,7 @@
         }
       ],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "200m",
@@ -200014,7 +200206,7 @@
         }
       ],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "600 Metres",
@@ -200239,7 +200431,7 @@
       ],
       "dob": "01 JAN 1994",
       "weight": null,
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": null,
       "reviewBody": null,
       "event": "1500m",
@@ -201113,7 +201305,7 @@
         }
       ],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "300 Metres",
@@ -202393,7 +202585,7 @@
         }
       ],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "400m",
@@ -202582,7 +202774,7 @@
       ],
       "dob": "09 DEC 1996",
       "weight": null,
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": null,
       "reviewBody": null,
       "event": "1500m",
@@ -203507,7 +203699,7 @@
         }
       ],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -204557,7 +204749,7 @@
         }
       ],
       "seasons": null,
-      "lastSynced": "2026-08-15",
+      "lastSynced": "2026-08-16",
       "prs": [
         {
           "event": "800m",
@@ -204670,7 +204862,7 @@
       ],
       "dob": "28 FEB 1995",
       "weight": null,
-      "lastHistorySynced": "2026-08-15",
+      "lastHistorySynced": "2026-08-16",
       "coach": null,
       "reviewBody": null,
       "event": "1500m",
