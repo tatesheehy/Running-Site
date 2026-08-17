@@ -31,7 +31,7 @@
     }
   ],
   "seasons": "9",
-  "lastSynced": "2026-08-16",
+  "lastSynced": "2026-08-17",
   "prs": [
     {
       "event": "800m",
@@ -94,7 +94,7 @@
       "event": "1500 m",
       "time": "3:39.69",
       "place": "12.",
-      "round": "F1"
+      "round": "F"
     },
     {
       "date": "AUG 14",
@@ -1446,6 +1446,6 @@
       }
     ]
   },
-  "age": "26",
+  "age": "27",
   "ncaa": false
 }

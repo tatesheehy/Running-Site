@@ -106,6 +106,14 @@
   ],
   "results": [
     {
+      "date": "AUG 16",
+      "meet": "ASICS Falmouth Road Race",
+      "event": "Road Race",
+      "time": "31:04",
+      "place": "2.",
+      "round": "F"
+    },
+    {
       "date": "JUL 28",
       "meet": "XXIII Commonwealth Games",
       "event": "10,000 m",
@@ -170,7 +178,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-16",
+  "lastSynced": "2026-08-17",
   "resultsHistory": {
     "2018": [
       {

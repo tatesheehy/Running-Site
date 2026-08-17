@@ -13,7 +13,7 @@
   "headlineKey": "x",
   "flag": "ER",
   "seasons": "x",
-  "lastSynced": "2026-08-16",
+  "lastSynced": "2026-08-17",
   "prs": [
     {
       "event": "1500m",
@@ -70,6 +70,14 @@
   "ncaa": false,
   "country": "Eritrea",
   "results": [
+    {
+      "date": "AUG 16",
+      "meet": "ASICS Falmouth Road Race",
+      "event": "Road Race",
+      "time": "30:53",
+      "place": "1.",
+      "round": "F"
+    },
     {
       "date": "AUG 1",
       "meet": "TD Beach to Beacon 10K Road Race",
@@ -202,7 +210,7 @@
   "dob": "2003-11-30",
   "college": "New Mexico",
   "weight": "x",
-  "lastHistorySynced": "2026-08-15",
+  "lastHistorySynced": "2026-08-16",
   "reviewBody": "x",
   "event": "DISTANCE",
   "id": "habtom-samuel",

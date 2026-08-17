@@ -87,7 +87,7 @@
       "event": "5000 m",
       "time": "13:21.07",
       "place": "8.",
-      "round": "F1"
+      "round": "F"
     },
     {
       "date": "AUG 1",
@@ -226,7 +226,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-16",
+  "lastSynced": "2026-08-17",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -930,5 +930,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-15"
+  "lastHistorySynced": "2026-08-16"
 }

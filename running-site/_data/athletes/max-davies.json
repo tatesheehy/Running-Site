@@ -12,7 +12,7 @@
   "flag": "CA",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-16",
+  "lastSynced": "2026-08-17",
   "prs": [
     {
       "event": "800m",
@@ -70,6 +70,22 @@
   "club": "x",
   "country": "Canada",
   "results": [
+    {
+      "date": "AUG 15",
+      "meet": "Stumptown Twilight",
+      "event": "600 m",
+      "time": "1:52.56",
+      "place": "4.",
+      "round": "F"
+    },
+    {
+      "date": "AUG 15",
+      "meet": "Stumptown Twilight",
+      "event": "1500 m",
+      "time": "3:34.64",
+      "place": "2.",
+      "round": "F1"
+    },
     {
       "date": "JUL 29",
       "meet": "XXIII Commonwealth Games",
@@ -178,7 +194,7 @@
   "dob": "2003-12-19",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-08-15",
+  "lastHistorySynced": "2026-08-16",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

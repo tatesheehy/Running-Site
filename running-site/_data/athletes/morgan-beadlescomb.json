@@ -98,6 +98,14 @@
   ],
   "results": [
     {
+      "date": "AUG 16",
+      "meet": "ASICS Falmouth Road Race",
+      "event": "Road Race",
+      "time": "32:19",
+      "place": "10.",
+      "round": "F"
+    },
+    {
       "date": "JUL 3",
       "meet": "Prefontaine Classic",
       "event": "3000 m",
@@ -162,7 +170,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-16",
+  "lastSynced": "2026-08-17",
   "resultsHistory": {
     "2018": [
       {
