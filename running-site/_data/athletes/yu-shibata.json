@@ -7,7 +7,7 @@
   "photo": "",
   "photoBackground": "#111111",
   "event": "MIDDLE DISTANCE",
-  "age": "21",
+  "age": "22",
   "dob": "2004-08-19",
   "height": "x",
   "weight": "x",
@@ -114,7 +114,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-08-18",
+  "lastSynced": "2026-08-19",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -299,5 +299,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-17"
+  "lastHistorySynced": "2026-08-18"
 }
