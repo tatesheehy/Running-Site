@@ -130,7 +130,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-08-19",
+  "lastSynced": "2026-08-20",
   "prs": [
     {
       "event": "300 Metres",
@@ -224,6 +224,14 @@
   "club": null,
   "country": "Czechia",
   "results": [
+    {
+      "date": "AUG 19",
+      "meet": "Espoo Motonet GP",
+      "event": "5000 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F1"
+    },
     {
       "date": "JUL 25",
       "meet": "Czech Championships",

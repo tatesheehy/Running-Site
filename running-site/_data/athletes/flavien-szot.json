@@ -12,7 +12,7 @@
   "flag": "FR",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-19",
+  "lastSynced": "2026-08-20",
   "prs": [
     {
       "event": "800m",
@@ -94,6 +94,14 @@
   "club": "x",
   "country": "France",
   "results": [
+    {
+      "date": "AUG 19",
+      "meet": "Espoo Motonet GP",
+      "event": "5000 m",
+      "time": "13:41.33",
+      "place": "2.",
+      "round": "F1"
+    },
     {
       "date": "JUL 26",
       "meet": "French Championships",
