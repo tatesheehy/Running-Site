@@ -94,6 +94,14 @@
   ],
   "results": [
     {
+      "date": "AUG 19",
+      "meet": "BMC Record Breaker",
+      "event": "3000 m",
+      "time": "7:51.50",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
       "date": "AUG 7",
       "meet": "Sir Walter Miler",
       "event": "1500 m",
@@ -246,7 +254,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-20",
+  "lastSynced": "2026-08-21",
   "resultsHistory": {
     "2018": [
       {

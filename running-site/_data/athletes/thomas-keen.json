@@ -32,7 +32,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-08-20",
+  "lastSynced": "2026-08-21",
   "prs": [
     {
       "event": "800m",
@@ -74,6 +74,14 @@
   "club": null,
   "country": "Great Britain & N.I.",
   "results": [
+    {
+      "date": "AUG 19",
+      "meet": "BMC Record Breaker",
+      "event": "800 m",
+      "time": "1:46.61",
+      "place": "2.",
+      "round": "F1"
+    },
     {
       "date": "AUG 1",
       "meet": "XXIII Commonwealth Games",

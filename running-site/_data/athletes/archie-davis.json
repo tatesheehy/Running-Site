@@ -12,7 +12,7 @@
   "flag": "GB",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-20",
+  "lastSynced": "2026-08-21",
   "prs": [
     {
       "event": "800m",
@@ -70,6 +70,14 @@
   "club": "x",
   "country": "Great Britain",
   "results": [
+    {
+      "date": "AUG 19",
+      "meet": "BMC Record Breaker",
+      "event": "800 m",
+      "time": "1:47.49",
+      "place": "6.",
+      "round": "F1"
+    },
     {
       "date": "AUG 9",
       "meet": "British Milers Club Grand Prix",

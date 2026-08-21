@@ -12,7 +12,7 @@
   "flag": "UY",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-20",
+  "lastSynced": "2026-08-21",
   "prs": [
     {
       "event": "800m",
@@ -70,6 +70,14 @@
   "club": "x",
   "country": "Uruguay",
   "results": [
+    {
+      "date": "AUG 19",
+      "meet": "BMC Record Breaker",
+      "event": "1500 m",
+      "time": "3:35.43",
+      "place": "2.",
+      "round": "F1"
+    },
     {
       "date": "JUL 14",
       "meet": "Gyulai István Memorial - Hungarian Athletics Grand Prix",
@@ -226,7 +234,7 @@
   "dob": "2002-07-24",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-08-19",
+  "lastHistorySynced": "2026-08-20",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

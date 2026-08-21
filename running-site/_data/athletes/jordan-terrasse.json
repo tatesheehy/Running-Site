@@ -70,6 +70,14 @@
   ],
   "results": [
     {
+      "date": "AUG 19",
+      "meet": "BMC Record Breaker",
+      "event": "800 m",
+      "time": "1:50.65",
+      "place": "10.",
+      "round": "F1"
+    },
+    {
       "date": "AUG 1",
       "meet": "IFAM Oordegem",
       "event": "800 m",
@@ -214,7 +222,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-08-20",
+  "lastSynced": "2026-08-21",
   "resultsHistory": {
     "2018": [
       {

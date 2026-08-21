@@ -12,7 +12,7 @@
   "flag": "AU",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-20",
+  "lastSynced": "2026-08-21",
   "prs": [
     {
       "event": "800m",
@@ -70,6 +70,14 @@
   "club": "x",
   "country": "Australia",
   "results": [
+    {
+      "date": "AUG 19",
+      "meet": "BMC Record Breaker",
+      "event": "800 m",
+      "time": "1:47.11",
+      "place": "2.",
+      "round": "F2"
+    },
     {
       "date": "AUG 1",
       "meet": "XXIII Commonwealth Games",

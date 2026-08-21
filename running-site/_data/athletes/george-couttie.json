@@ -18,7 +18,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-08-20",
+  "lastSynced": "2026-08-21",
   "prs": [
     {
       "event": "800m",
@@ -80,6 +80,14 @@
   "club": null,
   "country": "Great Britain & N.I.",
   "results": [
+    {
+      "date": "AUG 19",
+      "meet": "BMC Record Breaker",
+      "event": "3000 m",
+      "time": "7:50.41",
+      "place": "1.",
+      "round": "F1"
+    },
     {
       "date": "JUN 21",
       "meet": "Novuna UK Athletics Championships",
@@ -219,7 +227,7 @@
   ],
   "dob": "15 JAN 2005",
   "weight": null,
-  "lastHistorySynced": "2026-08-19",
+  "lastHistorySynced": "2026-08-20",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",
