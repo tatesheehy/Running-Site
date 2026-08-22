@@ -86,6 +86,14 @@
   ],
   "results": [
     {
+      "date": "AUG 21",
+      "meet": "Athletissima Lausanne",
+      "event": "5000 m",
+      "time": "12:58.33",
+      "place": "3.",
+      "round": "F"
+    },
+    {
       "date": "MAY 23",
       "meet": "LA Track Festival",
       "event": "1500 m",
@@ -134,7 +142,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-21",
+  "lastSynced": "2026-08-22",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -776,7 +784,7 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-20",
+  "lastHistorySynced": "2026-08-21",
   "ncaaTitle": [
     "3000m",
     "5000m"

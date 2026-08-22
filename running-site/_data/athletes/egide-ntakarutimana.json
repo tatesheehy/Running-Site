@@ -58,6 +58,14 @@
   ],
   "results": [
     {
+      "date": "AUG 21",
+      "meet": "Athletissima Lausanne",
+      "event": "5000 m",
+      "time": "13:07.21",
+      "place": "10.",
+      "round": "F"
+    },
+    {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
       "event": "5000 m",
@@ -114,7 +122,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-21",
+  "lastSynced": "2026-08-22",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -634,5 +642,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-20"
+  "lastHistorySynced": "2026-08-21"
 }

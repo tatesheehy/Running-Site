@@ -66,6 +66,14 @@
   ],
   "results": [
     {
+      "date": "AUG 21",
+      "meet": "Athletissima Lausanne",
+      "event": "800 m",
+      "time": "1:44.18",
+      "place": "5.",
+      "round": "F"
+    },
+    {
       "date": "AUG 12",
       "meet": "European Athletics Championships",
       "event": "800 m",
@@ -170,7 +178,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-21",
+  "lastSynced": "2026-08-22",
   "resultsHistory": {
     "2018": [
       {

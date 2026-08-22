@@ -53,7 +53,7 @@
     }
   ],
   "seasons": "x",
-  "lastSynced": "2026-08-21",
+  "lastSynced": "2026-08-22",
   "prs": [
     {
       "event": "800m",
@@ -75,6 +75,14 @@
   "club": "x",
   "country": "Kenya",
   "results": [
+    {
+      "date": "AUG 21",
+      "meet": "Athletissima Lausanne",
+      "event": "800 m",
+      "time": "1:42.19",
+      "place": "1.",
+      "round": "F"
+    },
     {
       "date": "JUL 18",
       "meet": "Novuna London Athletics Meet",
@@ -118,7 +126,7 @@
   ],
   "dob": "2004-08-01",
   "weight": "x",
-  "lastHistorySynced": "2026-08-20",
+  "lastHistorySynced": "2026-08-21",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

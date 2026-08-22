@@ -110,6 +110,14 @@
   ],
   "results": [
     {
+      "date": "AUG 21",
+      "meet": "Athletissima Lausanne",
+      "event": "800 m",
+      "time": "1:43.18",
+      "place": "4.",
+      "round": "F"
+    },
+    {
       "date": "JUL 12",
       "meet": "Edmonton Athletics Invitational",
       "event": "800 m",
@@ -166,7 +174,7 @@
       "round": "F3"
     }
   ],
-  "lastSynced": "2026-08-21",
+  "lastSynced": "2026-08-22",
   "resultsHistory": {
     "2018": [
       {
