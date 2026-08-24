@@ -50,7 +50,7 @@
     }
   ],
   "seasons": "4",
-  "lastSynced": "2026-08-23",
+  "lastSynced": "2026-08-24",
   "prs": [
     {
       "event": "800m",
@@ -135,6 +135,14 @@
   "club": "Nike",
   "country": "United States",
   "results": [
+    {
+      "date": "AUG 23",
+      "meet": "Silesia Kamila Skolimowska Memorial",
+      "event": "1500 m",
+      "time": "3:31.16",
+      "place": "3.",
+      "round": "F"
+    },
     {
       "date": "JUL 4",
       "meet": "Prefontaine Classic",
@@ -234,7 +242,7 @@
   ],
   "dob": "2001-06-06",
   "weight": "145 lbs",
-  "lastHistorySynced": "2026-08-22",
+  "lastHistorySynced": "2026-08-23",
   "coach": "Jerry Schumacher",
   "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
   "event": "MIDDLE DISTANCE + DISTANCE",

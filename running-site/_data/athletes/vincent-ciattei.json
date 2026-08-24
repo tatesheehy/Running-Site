@@ -10,7 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "9",
-  "lastSynced": "2026-08-23",
+  "lastSynced": "2026-08-24",
   "prs": [
     {
       "event": "800m",
@@ -99,6 +99,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "AUG 23",
+      "meet": "Silesia Kamila Skolimowska Memorial",
+      "event": "1500 m",
+      "time": "3:31.77",
+      "place": "7.",
+      "round": "F"
+    },
     {
       "date": "JUL 26",
       "meet": "USA Championships",

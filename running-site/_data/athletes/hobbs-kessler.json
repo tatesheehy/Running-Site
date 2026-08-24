@@ -18,7 +18,7 @@
     }
   ],
   "seasons": "4",
-  "lastSynced": "2026-08-23",
+  "lastSynced": "2026-08-24",
   "prs": [
     {
       "event": "800m",
@@ -83,6 +83,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "AUG 23",
+      "meet": "Silesia Kamila Skolimowska Memorial",
+      "event": "1500 m",
+      "time": "3:32.76",
+      "place": "11.",
+      "round": "F"
+    },
     {
       "date": "AUG 7",
       "meet": "Sir Walter Miler",
@@ -214,7 +222,7 @@
   ],
   "dob": "2003-03-15",
   "weight": "140",
-  "lastHistorySynced": "2026-08-22",
+  "lastHistorySynced": "2026-08-23",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

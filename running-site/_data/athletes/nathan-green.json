@@ -9,7 +9,7 @@
   "waUrl": "https://worldathletics.org/athletes/united-states/nathan-green-15021942",
   "name": "Nathan Green",
   "flag": "US",
-  "lastSynced": "2026-08-23",
+  "lastSynced": "2026-08-24",
   "prs": [
     {
       "event": "800m",
@@ -61,6 +61,14 @@
   "ncaa": false,
   "country": "United States",
   "results": [
+    {
+      "date": "AUG 23",
+      "meet": "Silesia Kamila Skolimowska Memorial",
+      "event": "1500 m",
+      "time": "3:47.72",
+      "place": "15.",
+      "round": "F"
+    },
     {
       "date": "JUL 25",
       "meet": "USA Championships",
@@ -184,7 +192,7 @@
   ],
   "dob": "2003-04-10",
   "college": "Washington",
-  "lastHistorySynced": "2026-08-22",
+  "lastHistorySynced": "2026-08-23",
   "event": "MIDDLE DISTANCE",
   "id": "nathan-green",
   "resultsHistory": {

@@ -5,7 +5,7 @@
   "waUrl": "https://worldathletics.org/athletes/morocco/anass-essayi-14805620",
   "name": "Anass Essayi",
   "flag": "MA",
-  "lastSynced": "2026-08-23",
+  "lastSynced": "2026-08-24",
   "prs": [
     {
       "event": "800m",
@@ -45,6 +45,14 @@
   "ncaa": false,
   "country": "Morocco",
   "results": [
+    {
+      "date": "AUG 23",
+      "meet": "Silesia Kamila Skolimowska Memorial",
+      "event": "1500 m",
+      "time": "3:31.91",
+      "place": "8.",
+      "round": "F"
+    },
     {
       "date": "AUG 1",
       "meet": "IFAM Oordegem",

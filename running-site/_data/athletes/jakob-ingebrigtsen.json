@@ -115,7 +115,7 @@
     }
   ],
   "seasons": "8",
-  "lastSynced": "2026-08-23",
+  "lastSynced": "2026-08-24",
   "prs": [
     {
       "event": "400m",
@@ -188,6 +188,14 @@
   "club": "Sandnes IL",
   "country": "Norway",
   "results": [
+    {
+      "date": "AUG 23",
+      "meet": "Silesia Kamila Skolimowska Memorial",
+      "event": "1500 m",
+      "time": "3:31.19",
+      "place": "4.",
+      "round": "F"
+    },
     {
       "date": "AUG 10",
       "meet": "European Athletics Championships",
