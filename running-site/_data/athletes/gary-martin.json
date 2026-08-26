@@ -10,7 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-08-25",
+  "lastSynced": "2026-08-26",
   "prs": [
     {
       "event": "800m",
@@ -84,6 +84,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "AUG 24",
+      "meet": "Folksam Grand Prix Göteborg",
+      "event": "1000 m",
+      "time": "2:16.40",
+      "place": "2.",
+      "round": "F1"
+    },
     {
       "date": "JUL 25",
       "meet": "USA Championships",
@@ -272,7 +280,7 @@
   "dob": "2003-12-23",
   "college": "Virginia",
   "weight": "x",
-  "lastHistorySynced": "2026-08-24",
+  "lastHistorySynced": "2026-08-25",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",

@@ -86,6 +86,14 @@
   ],
   "results": [
     {
+      "date": "AUG 24",
+      "meet": "Folksam Grand Prix Göteborg",
+      "event": "3000 m",
+      "time": "7:45.90",
+      "place": "6.",
+      "round": "F1"
+    },
+    {
       "date": "AUG 1",
       "meet": "XXIII Commonwealth Games",
       "event": "5000 m",
@@ -142,7 +150,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-25",
+  "lastSynced": "2026-08-26",
   "resultsHistory": {
     "2018": [
       {

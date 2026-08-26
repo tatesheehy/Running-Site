@@ -50,6 +50,14 @@
   ],
   "results": [
     {
+      "date": "AUG 24",
+      "meet": "Folksam Grand Prix Göteborg",
+      "event": "1000 m",
+      "time": "2:16.21",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
       "date": "AUG 10",
       "meet": "European Athletics Championships",
       "event": "800 m",
@@ -162,7 +170,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-08-25",
+  "lastSynced": "2026-08-26",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -755,5 +763,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-24"
+  "lastHistorySynced": "2026-08-25"
 }
