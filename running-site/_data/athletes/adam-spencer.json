@@ -12,7 +12,7 @@
   "flag": "AU",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-26",
+  "lastSynced": "2026-08-27",
   "prs": [
     {
       "event": "800m",
@@ -70,6 +70,14 @@
   "club": "x",
   "country": "Australia",
   "results": [
+    {
+      "date": "AUG 26",
+      "meet": "Internationales Abendsportfest",
+      "event": "800 m",
+      "time": "1:45.70",
+      "place": "1.",
+      "round": "F2"
+    },
     {
       "date": "AUG 19",
       "meet": "BMC Record Breaker",

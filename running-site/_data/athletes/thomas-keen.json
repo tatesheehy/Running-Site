@@ -32,7 +32,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-08-26",
+  "lastSynced": "2026-08-27",
   "prs": [
     {
       "event": "800m",
@@ -74,6 +74,14 @@
   "club": null,
   "country": "Great Britain & N.I.",
   "results": [
+    {
+      "date": "AUG 26",
+      "meet": "9. International Wiesław Maniak Memorial",
+      "event": "800 m",
+      "time": "1:46.24",
+      "place": "8.",
+      "round": "F"
+    },
     {
       "date": "AUG 19",
       "meet": "BMC Record Breaker",

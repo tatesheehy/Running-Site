@@ -15,7 +15,7 @@
   "flag": "MA",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-26",
+  "lastSynced": "2026-08-27",
   "prs": [
     {
       "event": "800m",
@@ -69,6 +69,14 @@
   "club": "x",
   "country": "Morocco",
   "results": [
+    {
+      "date": "AUG 26",
+      "meet": "Internationales Abendsportfest",
+      "event": "1500 m",
+      "time": "3:38.47",
+      "place": "13.",
+      "round": "F1"
+    },
     {
       "date": "AUG 24",
       "meet": "Folksam Grand Prix Göteborg",
@@ -169,7 +177,7 @@
   "dob": "2001-01-07",
   "college": "Oklahoma State",
   "weight": "x",
-  "lastHistorySynced": "2026-08-25",
+  "lastHistorySynced": "2026-08-26",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

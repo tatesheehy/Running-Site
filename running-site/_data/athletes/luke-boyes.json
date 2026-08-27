@@ -70,6 +70,14 @@
   ],
   "results": [
     {
+      "date": "AUG 26",
+      "meet": "Internationales Abendsportfest",
+      "event": "800 m",
+      "time": "1:46.04",
+      "place": "4.",
+      "round": "F1"
+    },
+    {
       "date": "AUG 1",
       "meet": "XXIII Commonwealth Games",
       "event": "800 m",
@@ -182,7 +190,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-08-26",
+  "lastSynced": "2026-08-27",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -807,5 +815,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-25"
+  "lastHistorySynced": "2026-08-26"
 }

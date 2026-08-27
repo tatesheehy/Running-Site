@@ -32,7 +32,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-08-26",
+  "lastSynced": "2026-08-27",
   "prs": [
     {
       "event": "400m",
@@ -106,6 +106,14 @@
   "club": null,
   "country": "Andorra",
   "results": [
+    {
+      "date": "AUG 26",
+      "meet": "9. International Wiesław Maniak Memorial",
+      "event": "1500 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
     {
       "date": "AUG 1",
       "meet": "IFAM Oordegem",
@@ -221,7 +229,7 @@
   ],
   "dob": "09 DEC 1996",
   "weight": null,
-  "lastHistorySynced": "2026-08-25",
+  "lastHistorySynced": "2026-08-26",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

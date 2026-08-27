@@ -130,7 +130,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-08-26",
+  "lastSynced": "2026-08-27",
   "prs": [
     {
       "event": "300 Metres",
@@ -224,6 +224,14 @@
   "club": null,
   "country": "Czechia",
   "results": [
+    {
+      "date": "AUG 26",
+      "meet": "9. International Wiesław Maniak Memorial",
+      "event": "1500 m",
+      "time": "3:37.95",
+      "place": "10.",
+      "round": "F"
+    },
     {
       "date": "AUG 19",
       "meet": "Espoo Motonet GP",

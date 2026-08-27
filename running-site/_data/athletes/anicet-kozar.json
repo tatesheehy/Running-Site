@@ -10,7 +10,7 @@
   "flag": "FR",
   "honours": [],
   "seasons": null,
-  "lastSynced": "2026-08-26",
+  "lastSynced": "2026-08-27",
   "prs": [
     {
       "event": "400m",
@@ -56,6 +56,14 @@
   "club": null,
   "country": "France",
   "results": [
+    {
+      "date": "AUG 26",
+      "meet": "Internationales Abendsportfest",
+      "event": "1500 m",
+      "time": "3:37.48",
+      "place": "11.",
+      "round": "F1"
+    },
     {
       "date": "AUG 19",
       "meet": "BMC Record Breaker",

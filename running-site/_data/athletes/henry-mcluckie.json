@@ -12,7 +12,7 @@
   "flag": "GB",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-26",
+  "lastSynced": "2026-08-27",
   "prs": [
     {
       "event": "1500m",
@@ -78,6 +78,14 @@
   "club": "x",
   "country": "Great Britain",
   "results": [
+    {
+      "date": "AUG 26",
+      "meet": "Internationales Abendsportfest",
+      "event": "1500 m",
+      "time": "3:35.57",
+      "place": "6.",
+      "round": "F1"
+    },
     {
       "date": "AUG 9",
       "meet": "British Milers Club Grand Prix",

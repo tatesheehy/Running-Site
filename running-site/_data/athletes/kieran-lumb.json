@@ -12,7 +12,7 @@
   "flag": "CA",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-26",
+  "lastSynced": "2026-08-27",
   "prs": [
     {
       "event": "800m",
@@ -118,6 +118,14 @@
   "club": "x",
   "country": "Canada",
   "results": [
+    {
+      "date": "AUG 26",
+      "meet": "Internationales Abendsportfest",
+      "event": "1500 m",
+      "time": "3:37.21",
+      "place": "10.",
+      "round": "F1"
+    },
     {
       "date": "AUG 1",
       "meet": "XXIII Commonwealth Games",

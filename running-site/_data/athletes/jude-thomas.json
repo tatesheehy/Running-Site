@@ -12,7 +12,7 @@
   "flag": "AU",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-26",
+  "lastSynced": "2026-08-27",
   "prs": [
     {
       "event": "800m",
@@ -70,6 +70,14 @@
   "club": "x",
   "country": "Australia",
   "results": [
+    {
+      "date": "AUG 26",
+      "meet": "Internationales Abendsportfest",
+      "event": "1500 m",
+      "time": "3:40.21",
+      "place": "15.",
+      "round": "F1"
+    },
     {
       "date": "AUG 9",
       "meet": "British Milers Club Grand Prix",

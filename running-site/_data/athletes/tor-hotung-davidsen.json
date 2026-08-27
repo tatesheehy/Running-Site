@@ -10,7 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-08-26",
+  "lastSynced": "2026-08-27",
   "prs": [
     {
       "event": "400m",
@@ -35,6 +35,14 @@
   "ncaa": false,
   "country": "United States",
   "results": [
+    {
+      "date": "AUG 26",
+      "meet": "Internationales Abendsportfest",
+      "event": "1500 m",
+      "time": "3:40.17",
+      "place": "4.",
+      "round": "F2"
+    },
     {
       "date": "AUG 19",
       "meet": "BMC Record Breaker",
@@ -198,7 +206,7 @@
   ],
   "college": "NAU",
   "weight": "x",
-  "lastHistorySynced": "2026-08-25",
+  "lastHistorySynced": "2026-08-26",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "tor-hotung-davidsen",

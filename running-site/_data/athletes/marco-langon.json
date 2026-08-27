@@ -76,6 +76,14 @@
   "country": "United States",
   "results": [
     {
+      "date": "AUG 26",
+      "meet": "Internationales Abendsportfest",
+      "event": "1500 m",
+      "time": "3:34.22",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
       "date": "AUG 1",
       "meet": "IFAM Oordegem",
       "event": "1500 m",
@@ -515,7 +523,7 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-25",
+  "lastHistorySynced": "2026-08-26",
   "dob": "2004-08-31",
-  "lastSynced": "2026-08-26"
+  "lastSynced": "2026-08-27"
 }
