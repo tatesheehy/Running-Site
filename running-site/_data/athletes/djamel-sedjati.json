@@ -62,6 +62,14 @@
   ],
   "results": [
     {
+      "date": "AUG 27",
+      "meet": "Weltklasse Zürich",
+      "event": "800 m",
+      "time": "1:41.83",
+      "place": "2.",
+      "round": "F"
+    },
+    {
       "date": "AUG 21",
       "meet": "Athletissima Lausanne",
       "event": "800 m",
@@ -86,7 +94,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-27",
+  "lastSynced": "2026-08-28",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -526,5 +534,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-26"
+  "lastHistorySynced": "2026-08-27"
 }

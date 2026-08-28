@@ -66,7 +66,7 @@
     }
   ],
   "seasons": "8",
-  "lastSynced": "2026-08-27",
+  "lastSynced": "2026-08-28",
   "prs": [
     {
       "event": "800m",
@@ -103,6 +103,14 @@
   "club": "Iten Training Camp",
   "country": "Kenya",
   "results": [
+    {
+      "date": "AUG 27",
+      "meet": "Weltklasse Zürich",
+      "event": "1500 m",
+      "time": "3:33.01",
+      "place": "11.",
+      "round": "F"
+    },
     {
       "date": "AUG 1",
       "meet": "XXIII Commonwealth Games",

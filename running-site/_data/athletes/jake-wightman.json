@@ -25,7 +25,7 @@
     }
   ],
   "seasons": "12",
-  "lastSynced": "2026-08-27",
+  "lastSynced": "2026-08-28",
   "prs": [
     {
       "event": "400m",
@@ -114,6 +114,14 @@
   "club": "xx",
   "country": "Scotland",
   "results": [
+    {
+      "date": "AUG 27",
+      "meet": "Weltklasse Zürich",
+      "event": "800 m",
+      "time": "1:43.76",
+      "place": "4.",
+      "round": "F"
+    },
     {
       "date": "AUG 15",
       "meet": "European Athletics Championships",

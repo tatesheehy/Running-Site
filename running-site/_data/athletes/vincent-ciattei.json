@@ -10,7 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "9",
-  "lastSynced": "2026-08-27",
+  "lastSynced": "2026-08-28",
   "prs": [
     {
       "event": "800m",
@@ -99,6 +99,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "AUG 27",
+      "meet": "Weltklasse Zürich",
+      "event": "1500 m",
+      "time": "3:32.50",
+      "place": "7.",
+      "round": "F"
+    },
     {
       "date": "AUG 23",
       "meet": "Silesia Kamila Skolimowska Memorial",

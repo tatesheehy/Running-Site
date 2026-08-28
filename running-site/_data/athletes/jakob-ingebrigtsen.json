@@ -115,7 +115,7 @@
     }
   ],
   "seasons": "8",
-  "lastSynced": "2026-08-27",
+  "lastSynced": "2026-08-28",
   "prs": [
     {
       "event": "400m",
@@ -188,6 +188,14 @@
   "club": "Sandnes IL",
   "country": "Norway",
   "results": [
+    {
+      "date": "AUG 27",
+      "meet": "Weltklasse Zürich",
+      "event": "1500 m",
+      "time": "3:32.16",
+      "place": "5.",
+      "round": "F"
+    },
     {
       "date": "AUG 23",
       "meet": "Silesia Kamila Skolimowska Memorial",

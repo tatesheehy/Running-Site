@@ -18,7 +18,7 @@
     }
   ],
   "seasons": "4",
-  "lastSynced": "2026-08-27",
+  "lastSynced": "2026-08-28",
   "prs": [
     {
       "event": "400m",
@@ -83,6 +83,14 @@
   "club": "x",
   "country": "Spain",
   "results": [
+    {
+      "date": "AUG 27",
+      "meet": "Weltklasse Zürich",
+      "event": "800 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
     {
       "date": "AUG 13",
       "meet": "European Athletics Championships",
@@ -262,7 +270,7 @@
   ],
   "dob": "2001-09-26",
   "weight": "145",
-  "lastHistorySynced": "2026-08-26",
+  "lastHistorySynced": "2026-08-27",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

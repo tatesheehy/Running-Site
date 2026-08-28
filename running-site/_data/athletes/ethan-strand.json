@@ -12,7 +12,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-08-27",
+  "lastSynced": "2026-08-28",
   "prs": [
     {
       "event": "800m",
@@ -86,6 +86,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "AUG 27",
+      "meet": "Weltklasse Zürich",
+      "event": "1500 m",
+      "time": "3:32.95",
+      "place": "10.",
+      "round": "F"
+    },
     {
       "date": "AUG 23",
       "meet": "Silesia Kamila Skolimowska Memorial",
@@ -194,7 +202,7 @@
   "dob": "2002-10-19",
   "college": "North Carolina",
   "weight": "x",
-  "lastHistorySynced": "2026-08-26",
+  "lastHistorySynced": "2026-08-27",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",

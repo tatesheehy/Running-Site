@@ -86,6 +86,14 @@
   ],
   "results": [
     {
+      "date": "AUG 27",
+      "meet": "Weltklasse Zürich",
+      "event": "3000 m",
+      "time": "7:50.45",
+      "place": "15.",
+      "round": "F"
+    },
+    {
       "date": "AUG 21",
       "meet": "Athletissima Lausanne",
       "event": "5000 m",
@@ -206,7 +214,7 @@
       "round": "F2"
     }
   ],
-  "lastSynced": "2026-08-27",
+  "lastSynced": "2026-08-28",
   "resultsHistory": {
     "2018": [
       {

@@ -4,7 +4,7 @@
   "waUrl": "https://worldathletics.org/athletes/france/anas-lagtiy-chaoudar-15032059",
   "name": "Anas Lagtiy Chaoudar",
   "flag": "FR",
-  "lastSynced": "2026-08-27",
+  "lastSynced": "2026-08-28",
   "prs": [
     {
       "event": "800m",
@@ -44,6 +44,14 @@
   "ncaa": false,
   "country": "France",
   "results": [
+    {
+      "date": "AUG 27",
+      "meet": "Weltklasse Zürich",
+      "event": "1500 m",
+      "time": "3:34.38",
+      "place": "14.",
+      "round": "F"
+    },
     {
       "date": "AUG 1",
       "meet": "IFAM Oordegem",
@@ -142,7 +150,7 @@
     }
   ],
   "dob": "2004-01-17",
-  "lastHistorySynced": "2026-08-26",
+  "lastHistorySynced": "2026-08-27",
   "event": "MIDDLE DISTANCE",
   "id": "anas-lagtiy-chaoudar",
   "resultsHistory": {

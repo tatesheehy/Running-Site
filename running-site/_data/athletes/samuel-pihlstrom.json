@@ -12,7 +12,7 @@
   "flag": "SE",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-27",
+  "lastSynced": "2026-08-28",
   "prs": [
     {
       "event": "800m",
@@ -78,6 +78,14 @@
   "club": "x",
   "country": "Sweden",
   "results": [
+    {
+      "date": "AUG 27",
+      "meet": "Weltklasse Zürich",
+      "event": "1500 m",
+      "time": "3:39.15",
+      "place": "16.",
+      "round": "F"
+    },
     {
       "date": "AUG 23",
       "meet": "Silesia Kamila Skolimowska Memorial",
@@ -266,7 +274,7 @@
   "dob": "2001-03-08",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-08-26",
+  "lastHistorySynced": "2026-08-27",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

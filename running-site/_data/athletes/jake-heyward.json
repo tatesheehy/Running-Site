@@ -46,7 +46,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-08-27",
+  "lastSynced": "2026-08-28",
   "prs": [
     {
       "event": "800m",
@@ -96,6 +96,14 @@
   "club": null,
   "country": "Great Britain & N.I.",
   "results": [
+    {
+      "date": "AUG 27",
+      "meet": "Weltklasse Zürich",
+      "event": "1500 m",
+      "time": "3:32.73",
+      "place": "9.",
+      "round": "F"
+    },
     {
       "date": "AUG 23",
       "meet": "Silesia Kamila Skolimowska Memorial",
@@ -203,7 +211,7 @@
   ],
   "dob": "26 APR 1999",
   "weight": null,
-  "lastHistorySynced": "2026-08-26",
+  "lastHistorySynced": "2026-08-27",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

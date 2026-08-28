@@ -28,7 +28,7 @@
     }
   ],
   "seasons": "x",
-  "lastSynced": "2026-08-27",
+  "lastSynced": "2026-08-28",
   "prs": [
     {
       "event": "800m",
@@ -89,6 +89,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "AUG 27",
+      "meet": "Weltklasse Zürich",
+      "event": "1500 m",
+      "time": "3:31.85",
+      "place": "3.",
+      "round": "F"
+    },
     {
       "date": "JUL 18",
       "meet": "Novuna London Athletics Meet",

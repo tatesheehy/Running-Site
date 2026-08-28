@@ -10,7 +10,7 @@
   "headlineKey": "xx",
   "flag": "AU",
   "seasons": "2",
-  "lastSynced": "2026-08-27",
+  "lastSynced": "2026-08-28",
   "prs": [
     {
       "event": "800m",
@@ -55,6 +55,14 @@
   "club": "xx",
   "country": "Australia",
   "results": [
+    {
+      "date": "AUG 27",
+      "meet": "Weltklasse Zürich",
+      "event": "3000 m",
+      "time": "7:27.97",
+      "place": "3.",
+      "round": "F"
+    },
     {
       "date": "AUG 1",
       "meet": "XXIII Commonwealth Games",
@@ -194,7 +202,7 @@
   ],
   "dob": "2006-06-09",
   "weight": "150",
-  "lastHistorySynced": "2026-08-26",
+  "lastHistorySynced": "2026-08-27",
   "coach": "xx",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

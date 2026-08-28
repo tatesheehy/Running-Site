@@ -86,6 +86,14 @@
   ],
   "results": [
     {
+      "date": "AUG 27",
+      "meet": "Weltklasse Zürich",
+      "event": "3000 m",
+      "time": "7:33.30",
+      "place": "9.",
+      "round": "F"
+    },
+    {
       "date": "AUG 1",
       "meet": "IFAM Oordegem",
       "event": "5000 m",
@@ -174,7 +182,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-08-27",
+  "lastSynced": "2026-08-28",
   "resultsHistory": {
     "2018": [
       {

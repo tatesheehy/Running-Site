@@ -9,7 +9,7 @@
   "headlineKey": "x",
   "flag": "FR",
   "seasons": "10",
-  "lastSynced": "2026-08-27",
+  "lastSynced": "2026-08-28",
   "prs": [
     {
       "event": "800m",
@@ -90,6 +90,14 @@
   "club": "x",
   "country": "France",
   "results": [
+    {
+      "date": "AUG 27",
+      "meet": "Weltklasse Zürich",
+      "event": "1500 m",
+      "time": "3:33.88",
+      "place": "13.",
+      "round": "F"
+    },
     {
       "date": "AUG 15",
       "meet": "European Athletics Championships",
