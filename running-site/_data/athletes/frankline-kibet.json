@@ -54,6 +54,14 @@
   ],
   "results": [
     {
+      "date": "AUG 30",
+      "meet": "Grand Prix Brescia",
+      "event": "3000 m",
+      "time": "7:35.11",
+      "place": "2.",
+      "round": "F"
+    },
+    {
       "date": "AUG 5",
       "meet": "World Athletics U20 Championships",
       "event": "5000 m",
@@ -94,7 +102,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-30",
+  "lastSynced": "2026-08-31",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -130,5 +138,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-29"
+  "lastHistorySynced": "2026-08-30"
 }

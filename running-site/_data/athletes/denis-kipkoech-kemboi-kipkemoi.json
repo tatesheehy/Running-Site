@@ -46,6 +46,14 @@
   ],
   "results": [
     {
+      "date": "AUG 30",
+      "meet": "Grand Prix Brescia",
+      "event": "3000 m",
+      "time": "7:35.19",
+      "place": "5.",
+      "round": "F"
+    },
+    {
       "date": "JUL 16",
       "meet": "Spitzen Leichtathletik Luzern",
       "event": "3000 m",
@@ -118,7 +126,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-30",
+  "lastSynced": "2026-08-31",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -251,5 +259,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-29"
+  "lastHistorySynced": "2026-08-30"
 }

@@ -130,7 +130,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-08-30",
+  "lastSynced": "2026-08-31",
   "prs": [
     {
       "event": "300 Metres",
@@ -224,6 +224,14 @@
   "club": null,
   "country": "Czechia",
   "results": [
+    {
+      "date": "AUG 30",
+      "meet": "Grand Prix Brescia",
+      "event": "3000 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F"
+    },
     {
       "date": "AUG 26",
       "meet": "9. International Wiesław Maniak Memorial",

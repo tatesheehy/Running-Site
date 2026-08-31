@@ -74,6 +74,14 @@
   ],
   "results": [
     {
+      "date": "AUG 30",
+      "meet": "Grand Prix Brescia",
+      "event": "3000 m",
+      "time": "7:37.26",
+      "place": "6.",
+      "round": "F"
+    },
+    {
       "date": "AUG 24",
       "meet": "Folksam Grand Prix Göteborg",
       "event": "3000 m",
@@ -146,7 +154,7 @@
       "round": "F2"
     }
   ],
-  "lastSynced": "2026-08-30",
+  "lastSynced": "2026-08-31",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -564,5 +572,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-29"
+  "lastHistorySynced": "2026-08-30"
 }

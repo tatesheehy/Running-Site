@@ -12,7 +12,7 @@
   "flag": "BE",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-30",
+  "lastSynced": "2026-08-31",
   "prs": [
     {
       "event": "400m",
@@ -66,6 +66,14 @@
   "club": "x",
   "country": "Belgium",
   "results": [
+    {
+      "date": "AUG 30",
+      "meet": "ISTAF 2026",
+      "event": "1500 m",
+      "time": "3:33.13",
+      "place": "4.",
+      "round": "F"
+    },
     {
       "date": "AUG 14",
       "meet": "European Athletics Championships",
@@ -142,7 +150,7 @@
   "dob": "1998-08-02",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-08-29",
+  "lastHistorySynced": "2026-08-30",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

@@ -10,7 +10,7 @@
   "flag": "DE",
   "honours": [],
   "seasons": null,
-  "lastSynced": "2026-08-30",
+  "lastSynced": "2026-08-31",
   "prs": [
     {
       "event": "600 Metres",
@@ -76,6 +76,14 @@
   "club": null,
   "country": "Germany",
   "results": [
+    {
+      "date": "AUG 30",
+      "meet": "ISTAF 2026",
+      "event": "1500 m",
+      "time": "3:41.67",
+      "place": "12.",
+      "round": "F"
+    },
     {
       "date": "AUG 26",
       "meet": "Internationales Abendsportfest",

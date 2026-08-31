@@ -12,7 +12,7 @@
   "flag": "AU",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-30",
+  "lastSynced": "2026-08-31",
   "prs": [
     {
       "event": "800m",
@@ -70,6 +70,14 @@
   "club": "x",
   "country": "Australia",
   "results": [
+    {
+      "date": "AUG 30",
+      "meet": "Grand Prix Brescia",
+      "event": "1500 m",
+      "time": "3:32.32",
+      "place": "1.",
+      "round": "F"
+    },
     {
       "date": "AUG 26",
       "meet": "Internationales Abendsportfest",

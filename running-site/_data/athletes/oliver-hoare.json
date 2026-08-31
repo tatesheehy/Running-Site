@@ -13,7 +13,7 @@
   "headlineKey": "x",
   "flag": "AU",
   "seasons": "x",
-  "lastSynced": "2026-08-30",
+  "lastSynced": "2026-08-31",
   "prs": [
     {
       "event": "800m",
@@ -90,6 +90,14 @@
   "ncaa": false,
   "country": "Australia",
   "results": [
+    {
+      "date": "AUG 30",
+      "meet": "ISTAF 2026",
+      "event": "1500 m",
+      "time": "3:35.96",
+      "place": "9.",
+      "round": "F"
+    },
     {
       "date": "AUG 1",
       "meet": "XXIII Commonwealth Games",

@@ -58,6 +58,14 @@
   ],
   "results": [
     {
+      "date": "AUG 30",
+      "meet": "Grand Prix Brescia",
+      "event": "800 m",
+      "time": "1:44.26",
+      "place": "2.",
+      "round": "F"
+    },
+    {
       "date": "AUG 12",
       "meet": "European Athletics Championships",
       "event": "800 m",
@@ -170,7 +178,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-30",
+  "lastSynced": "2026-08-31",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -1044,5 +1052,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-29"
+  "lastHistorySynced": "2026-08-30"
 }

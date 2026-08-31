@@ -86,6 +86,14 @@
   ],
   "results": [
     {
+      "date": "AUG 30",
+      "meet": "Grand Prix Brescia",
+      "event": "800 m",
+      "time": "1:46.12",
+      "place": "10.",
+      "round": "F"
+    },
+    {
       "date": "AUG 27",
       "meet": "Weltklasse Zürich",
       "event": "800 m",
@@ -190,7 +198,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-08-30",
+  "lastSynced": "2026-08-31",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -928,7 +936,7 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-29",
+  "lastHistorySynced": "2026-08-30",
   "ncaaTitle": [
     "800m"
   ]

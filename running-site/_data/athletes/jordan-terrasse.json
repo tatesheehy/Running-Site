@@ -70,6 +70,14 @@
   ],
   "results": [
     {
+      "date": "AUG 30",
+      "meet": "XX Mediterranean Games",
+      "event": "800 m",
+      "time": "1:46.81",
+      "place": "3.",
+      "round": "H2"
+    },
+    {
       "date": "AUG 19",
       "meet": "BMC Record Breaker",
       "event": "800 m",
@@ -222,7 +230,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-08-30",
+  "lastSynced": "2026-08-31",
   "resultsHistory": {
     "2018": [
       {

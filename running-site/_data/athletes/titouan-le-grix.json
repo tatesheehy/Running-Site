@@ -12,7 +12,7 @@
   "flag": "FR",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-30",
+  "lastSynced": "2026-08-31",
   "prs": [
     {
       "event": "800m",
@@ -74,6 +74,14 @@
   "club": "x",
   "country": "France",
   "results": [
+    {
+      "date": "AUG 30",
+      "meet": "Grand Prix Brescia",
+      "event": "1500 m",
+      "time": "3:33.61",
+      "place": "7.",
+      "round": "F"
+    },
     {
       "date": "AUG 9",
       "meet": "British Milers Club Grand Prix",
@@ -254,7 +262,7 @@
   "dob": "2002-06-16",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-08-29",
+  "lastHistorySynced": "2026-08-30",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

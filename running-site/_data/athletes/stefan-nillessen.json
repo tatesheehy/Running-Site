@@ -9,7 +9,7 @@
   "headlineKey": "x",
   "flag": "NL",
   "seasons": "x",
-  "lastSynced": "2026-08-30",
+  "lastSynced": "2026-08-31",
   "prs": [
     {
       "event": "400m",
@@ -75,6 +75,14 @@
   "club": "x",
   "country": "Netherlands",
   "results": [
+    {
+      "date": "AUG 30",
+      "meet": "Grand Prix Brescia",
+      "event": "1500 m",
+      "time": "3:33.05",
+      "place": "3.",
+      "round": "F"
+    },
     {
       "date": "AUG 27",
       "meet": "Weltklasse Zürich",
@@ -182,7 +190,7 @@
   ],
   "dob": "2003-01-02",
   "weight": "x",
-  "lastHistorySynced": "2026-08-29",
+  "lastHistorySynced": "2026-08-30",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

@@ -62,6 +62,14 @@
   ],
   "results": [
     {
+      "date": "AUG 30",
+      "meet": "TCS Sydney Marathon Presented by ASICS",
+      "event": "Marathon",
+      "time": "2:10:56",
+      "place": "17.",
+      "round": "F"
+    },
+    {
       "date": "JUL 4",
       "meet": "Northside Hospital Peachtree Road Race",
       "event": "10 Kilom Road",
@@ -86,7 +94,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-30",
+  "lastSynced": "2026-08-31",
   "resultsHistory": {
     "2018": [
       {
@@ -544,5 +552,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-29"
+  "lastHistorySynced": "2026-08-30"
 }

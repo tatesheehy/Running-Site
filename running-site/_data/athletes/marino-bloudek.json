@@ -118,6 +118,14 @@
   ],
   "results": [
     {
+      "date": "AUG 30",
+      "meet": "XX Mediterranean Games",
+      "event": "800 m",
+      "time": "1:46.33",
+      "place": "2.",
+      "round": "H1"
+    },
+    {
       "date": "AUG 21",
       "meet": "Athletissima Lausanne",
       "event": "800 m",
@@ -318,7 +326,7 @@
       "round": "F4"
     }
   ],
-  "lastSynced": "2026-08-30",
+  "lastSynced": "2026-08-31",
   "resultsHistory": {
     "2018": [
       {

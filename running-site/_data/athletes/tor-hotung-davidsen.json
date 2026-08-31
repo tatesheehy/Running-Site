@@ -10,7 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-08-30",
+  "lastSynced": "2026-08-31",
   "prs": [
     {
       "event": "400m",
@@ -35,6 +35,14 @@
   "ncaa": false,
   "country": "United States",
   "results": [
+    {
+      "date": "AUG 30",
+      "meet": "Grand Prix Brescia",
+      "event": "1500 m",
+      "time": "3:39.17",
+      "place": "15.",
+      "round": "F"
+    },
     {
       "date": "AUG 26",
       "meet": "Internationales Abendsportfest",
@@ -206,7 +214,7 @@
   ],
   "college": "NAU",
   "weight": "x",
-  "lastHistorySynced": "2026-08-29",
+  "lastHistorySynced": "2026-08-30",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
   "id": "tor-hotung-davidsen",

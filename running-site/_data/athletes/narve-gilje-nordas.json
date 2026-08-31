@@ -95,7 +95,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-08-30",
+  "lastSynced": "2026-08-31",
   "prs": [
     {
       "event": "800m",
@@ -161,6 +161,14 @@
   "club": null,
   "country": "Norway",
   "results": [
+    {
+      "date": "AUG 30",
+      "meet": "ISTAF 2026",
+      "event": "1500 m",
+      "time": "3:33.32",
+      "place": "5.",
+      "round": "F"
+    },
     {
       "date": "AUG 15",
       "meet": "European Athletics Championships",
