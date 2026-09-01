@@ -70,6 +70,14 @@
   ],
   "results": [
     {
+      "date": "AUG 29",
+      "meet": "Finnkampen",
+      "event": "800 m",
+      "time": "1:48.88",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
       "date": "AUG 12",
       "meet": "European Athletics Championships",
       "event": "800 m",
@@ -110,7 +118,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-31",
+  "lastSynced": "2026-09-01",
   "resultsHistory": {
     "2018": [
       {

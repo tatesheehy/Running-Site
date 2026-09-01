@@ -62,6 +62,14 @@
   ],
   "results": [
     {
+      "date": "AUG 31",
+      "meet": "XX Mediterranean Games",
+      "event": "800 m",
+      "time": "1:46.00",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "AUG 30",
       "meet": "XX Mediterranean Games",
       "event": "800 m",
@@ -102,7 +110,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-31",
+  "lastSynced": "2026-09-01",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -542,5 +550,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-30"
+  "lastHistorySynced": "2026-08-31"
 }

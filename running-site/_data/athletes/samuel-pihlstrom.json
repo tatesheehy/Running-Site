@@ -12,7 +12,7 @@
   "flag": "SE",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-08-31",
+  "lastSynced": "2026-09-01",
   "prs": [
     {
       "event": "800m",
@@ -78,6 +78,22 @@
   "club": "x",
   "country": "Sweden",
   "results": [
+    {
+      "date": "AUG 30",
+      "meet": "Finnkampen",
+      "event": "1500 m",
+      "time": "3:46.08",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "AUG 29",
+      "meet": "Finnkampen",
+      "event": "800 m",
+      "time": "1:49.41",
+      "place": "3.",
+      "round": "F1"
+    },
     {
       "date": "AUG 27",
       "meet": "Weltklasse Zürich",
@@ -274,7 +290,7 @@
   "dob": "2001-03-08",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-08-30",
+  "lastHistorySynced": "2026-08-31",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

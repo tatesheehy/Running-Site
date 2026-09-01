@@ -146,14 +146,6 @@
       "round": "F"
     },
     {
-      "date": "MAY 13",
-      "meet": "African Athletics Championships",
-      "event": "10,000 m",
-      "time": "29:16.00",
-      "place": "11.",
-      "round": "F"
-    },
-    {
       "date": "APR 24",
       "meet": "Kip Keino Classic",
       "event": "1500 m",
@@ -162,7 +154,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-08-31",
+  "lastSynced": "2026-09-01",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -740,5 +732,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-08-30"
+  "lastHistorySynced": "2026-08-31"
 }
