@@ -12,7 +12,7 @@
   "flag": "FR",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-09-01",
+  "lastSynced": "2026-09-02",
   "prs": [
     {
       "event": "800m",
@@ -94,6 +94,14 @@
   "club": "x",
   "country": "France",
   "results": [
+    {
+      "date": "SEP 1",
+      "meet": "XX Mediterranean Games",
+      "event": "1500 m",
+      "time": "3:43.03",
+      "place": "1.",
+      "round": "F"
+    },
     {
       "date": "AUG 26",
       "meet": "9. International Wiesław Maniak Memorial",

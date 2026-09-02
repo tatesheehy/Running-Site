@@ -5,7 +5,7 @@
   "waUrl": "https://worldathletics.org/athletes/morocco/anass-essayi-14805620",
   "name": "Anass Essayi",
   "flag": "MA",
-  "lastSynced": "2026-09-01",
+  "lastSynced": "2026-09-02",
   "prs": [
     {
       "event": "800m",
@@ -45,6 +45,14 @@
   "ncaa": false,
   "country": "Morocco",
   "results": [
+    {
+      "date": "SEP 1",
+      "meet": "XX Mediterranean Games",
+      "event": "1500 m",
+      "time": "3:43.20",
+      "place": "3.",
+      "round": "F"
+    },
     {
       "date": "AUG 27",
       "meet": "Weltklasse Zürich",

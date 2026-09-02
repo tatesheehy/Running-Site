@@ -32,7 +32,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-09-01",
+  "lastSynced": "2026-09-02",
   "prs": [
     {
       "event": "400m",
@@ -106,6 +106,14 @@
   "club": null,
   "country": "Andorra",
   "results": [
+    {
+      "date": "SEP 1",
+      "meet": "XX Mediterranean Games",
+      "event": "1500 m",
+      "time": "3:43.96",
+      "place": "7.",
+      "round": "F"
+    },
     {
       "date": "AUG 26",
       "meet": "9. International Wiesław Maniak Memorial",
@@ -229,7 +237,7 @@
   ],
   "dob": "09 DEC 1996",
   "weight": null,
-  "lastHistorySynced": "2026-08-31",
+  "lastHistorySynced": "2026-09-01",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

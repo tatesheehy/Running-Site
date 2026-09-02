@@ -12,7 +12,7 @@
   "flag": "DZ",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-09-01",
+  "lastSynced": "2026-09-02",
   "prs": [
     {
       "event": "1500m",
@@ -46,6 +46,14 @@
   "club": "x",
   "country": "Algeria",
   "results": [
+    {
+      "date": "SEP 1",
+      "meet": "XX Mediterranean Games",
+      "event": "1500 m",
+      "time": "3:43.19",
+      "place": "2.",
+      "round": "F"
+    },
     {
       "date": "JUL 30",
       "meet": "Algeria Athletics Open Championships",
@@ -146,7 +154,7 @@
   "dob": "2004-10-05",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-08-31",
+  "lastHistorySynced": "2026-09-01",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

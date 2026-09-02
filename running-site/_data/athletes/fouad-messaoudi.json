@@ -15,7 +15,7 @@
   "flag": "MA",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-09-01",
+  "lastSynced": "2026-09-02",
   "prs": [
     {
       "event": "800m",
@@ -69,6 +69,14 @@
   "club": "x",
   "country": "Morocco",
   "results": [
+    {
+      "date": "SEP 1",
+      "meet": "XX Mediterranean Games",
+      "event": "5000 m",
+      "time": "14:41.75",
+      "place": "3.",
+      "round": "F"
+    },
     {
       "date": "AUG 26",
       "meet": "Internationales Abendsportfest",
@@ -177,7 +185,7 @@
   "dob": "2001-01-07",
   "college": "Oklahoma State",
   "weight": "x",
-  "lastHistorySynced": "2026-08-31",
+  "lastHistorySynced": "2026-09-01",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

@@ -12,7 +12,7 @@
   "flag": "PT",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-09-01",
+  "lastSynced": "2026-09-02",
   "prs": [
     {
       "event": "60m",
@@ -110,6 +110,22 @@
   "club": "x",
   "country": "Portugal",
   "results": [
+    {
+      "date": "SEP 1",
+      "meet": "XX Mediterranean Games",
+      "event": "1500 m",
+      "time": "3:45.19",
+      "place": "10.",
+      "round": "F"
+    },
+    {
+      "date": "SEP 1",
+      "meet": "XX Mediterranean Games",
+      "event": "5000 m",
+      "time": "14:41.11",
+      "place": "1.",
+      "round": "F"
+    },
     {
       "date": "AUG 14",
       "meet": "European Athletics Championships",

@@ -95,7 +95,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-09-01",
+  "lastSynced": "2026-09-02",
   "prs": [
     {
       "event": "200m",
@@ -181,6 +181,14 @@
   "club": null,
   "country": "Türkiye",
   "results": [
+    {
+      "date": "SEP 1",
+      "meet": "XX Mediterranean Games",
+      "event": "1500 m",
+      "time": "3:43.53",
+      "place": "5.",
+      "round": "F"
+    },
     {
       "date": "AUG 26",
       "meet": "9. International Wiesław Maniak Memorial",
