@@ -15,7 +15,7 @@
   "flag": "US",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-09-02",
+  "lastSynced": "2026-09-03",
   "prs": [
     {
       "event": "800m",
@@ -89,6 +89,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "SEP 2",
+      "meet": "Serbia Athletics Meeting",
+      "event": "1500 m",
+      "time": "3:49.04",
+      "place": "10.",
+      "round": "F"
+    },
     {
       "date": "AUG 30",
       "meet": "Grand Prix Brescia",
@@ -277,7 +285,7 @@
   "dob": "2001-05-02",
   "college": "Washington",
   "weight": "x",
-  "lastHistorySynced": "2026-09-01",
+  "lastHistorySynced": "2026-09-02",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
