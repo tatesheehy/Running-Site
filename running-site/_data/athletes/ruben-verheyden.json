@@ -12,7 +12,7 @@
   "flag": "BE",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-09-04",
+  "lastSynced": "2026-09-05",
   "prs": [
     {
       "event": "400m",
@@ -90,6 +90,14 @@
   "club": "x",
   "country": "Belgium",
   "results": [
+    {
+      "date": "SEP 4",
+      "meet": "Allianz Memorial van Damme",
+      "event": "1500 m",
+      "time": "3:32.47",
+      "place": "10.",
+      "round": "F"
+    },
     {
       "date": "AUG 24",
       "meet": "Folksam Grand Prix Göteborg",

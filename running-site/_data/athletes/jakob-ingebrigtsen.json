@@ -115,7 +115,7 @@
     }
   ],
   "seasons": "8",
-  "lastSynced": "2026-09-04",
+  "lastSynced": "2026-09-05",
   "prs": [
     {
       "event": "400m",
@@ -188,6 +188,14 @@
   "club": "Sandnes IL",
   "country": "Norway",
   "results": [
+    {
+      "date": "SEP 4",
+      "meet": "Allianz Memorial van Damme",
+      "event": "1500 m",
+      "time": "3:30.52",
+      "place": "4.",
+      "round": "F"
+    },
     {
       "date": "AUG 27",
       "meet": "Weltklasse Zürich",

@@ -70,6 +70,14 @@
   ],
   "results": [
     {
+      "date": "SEP 4",
+      "meet": "Allianz Memorial van Damme",
+      "event": "800 m",
+      "time": "1:49.62",
+      "place": "8.",
+      "round": "F"
+    },
+    {
       "date": "AUG 31",
       "meet": "XX Mediterranean Games",
       "event": "800 m",
@@ -158,7 +166,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-04",
+  "lastSynced": "2026-09-05",
   "resultsHistory": {
     "2018": [
       {
@@ -928,5 +936,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-03"
+  "lastHistorySynced": "2026-09-04"
 }

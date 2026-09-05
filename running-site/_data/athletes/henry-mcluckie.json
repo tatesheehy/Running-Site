@@ -12,7 +12,7 @@
   "flag": "GB",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-09-04",
+  "lastSynced": "2026-09-05",
   "prs": [
     {
       "event": "1500m",
@@ -78,6 +78,14 @@
   "club": "x",
   "country": "Great Britain",
   "results": [
+    {
+      "date": "SEP 2",
+      "meet": "25. Volksbank Trier Eifel Flutlichtmeeting",
+      "event": "1500 m",
+      "time": "3:34.77",
+      "place": "10.",
+      "round": "F1"
+    },
     {
       "date": "AUG 26",
       "meet": "Internationales Abendsportfest",

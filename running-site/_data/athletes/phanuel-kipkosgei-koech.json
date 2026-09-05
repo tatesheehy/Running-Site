@@ -25,7 +25,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-09-04",
+  "lastSynced": "2026-09-05",
   "prs": [
     {
       "event": "800m",
@@ -51,6 +51,14 @@
   "club": null,
   "country": "Kenya",
   "results": [
+    {
+      "date": "SEP 4",
+      "meet": "Allianz Memorial van Damme",
+      "event": "1500 m",
+      "time": "3:30.18",
+      "place": "2.",
+      "round": "F"
+    },
     {
       "date": "AUG 27",
       "meet": "Weltklasse Zürich",
@@ -94,7 +102,7 @@
   ],
   "dob": "01 DEC 2006",
   "weight": null,
-  "lastHistorySynced": "2026-09-03",
+  "lastHistorySynced": "2026-09-04",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

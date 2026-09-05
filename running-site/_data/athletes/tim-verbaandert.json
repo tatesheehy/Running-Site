@@ -12,7 +12,7 @@
   "flag": "NL",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-09-04",
+  "lastSynced": "2026-09-05",
   "prs": [
     {
       "event": "800m",
@@ -74,6 +74,14 @@
   "club": "x",
   "country": "Netherlands",
   "results": [
+    {
+      "date": "SEP 2",
+      "meet": "25. Volksbank Trier Eifel Flutlichtmeeting",
+      "event": "1500 m",
+      "time": "3:35.58",
+      "place": "12.",
+      "round": "F1"
+    },
     {
       "date": "AUG 21",
       "meet": "Athletissima Lausanne",

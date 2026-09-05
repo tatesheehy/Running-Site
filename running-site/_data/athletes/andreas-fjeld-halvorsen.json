@@ -70,6 +70,14 @@
   ],
   "results": [
     {
+      "date": "SEP 2",
+      "meet": "25. Volksbank Trier Eifel Flutlichtmeeting",
+      "event": "1500 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F2"
+    },
+    {
       "date": "AUG 30",
       "meet": "ISTAF 2026",
       "event": "1500 m",
@@ -198,7 +206,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-04",
+  "lastSynced": "2026-09-05",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -1071,5 +1079,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-03"
+  "lastHistorySynced": "2026-09-04"
 }

@@ -12,7 +12,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-09-04",
+  "lastSynced": "2026-09-05",
   "prs": [
     {
       "event": "800m",
@@ -86,6 +86,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "SEP 4",
+      "meet": "Allianz Memorial van Damme",
+      "event": "1500 m",
+      "time": "3:30.50",
+      "place": "3.",
+      "round": "F"
+    },
     {
       "date": "AUG 27",
       "meet": "Weltklasse Zürich",
@@ -202,7 +210,7 @@
   "dob": "2002-10-19",
   "college": "North Carolina",
   "weight": "x",
-  "lastHistorySynced": "2026-09-03",
+  "lastHistorySynced": "2026-09-04",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",

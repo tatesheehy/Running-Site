@@ -58,6 +58,14 @@
   ],
   "results": [
     {
+      "date": "SEP 4",
+      "meet": "Allianz Memorial van Damme",
+      "event": "800 m",
+      "time": "1:42.87",
+      "place": "3.",
+      "round": "F"
+    },
+    {
       "date": "AUG 30",
       "meet": "Grand Prix Brescia",
       "event": "800 m",
@@ -178,7 +186,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-04",
+  "lastSynced": "2026-09-05",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -1052,5 +1060,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-03"
+  "lastHistorySynced": "2026-09-04"
 }

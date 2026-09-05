@@ -12,7 +12,7 @@
   "flag": "US",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-09-04",
+  "lastSynced": "2026-09-05",
   "prs": [
     {
       "event": "800m",
@@ -90,6 +90,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "SEP 2",
+      "meet": "25. Volksbank Trier Eifel Flutlichtmeeting",
+      "event": "800 m",
+      "time": "1:47.46",
+      "place": "6.",
+      "round": "F1"
+    },
     {
       "date": "AUG 30",
       "meet": "ISTAF 2026",

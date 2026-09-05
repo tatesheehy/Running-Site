@@ -12,7 +12,7 @@
   "flag": "AU",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-09-04",
+  "lastSynced": "2026-09-05",
   "prs": [
     {
       "event": "800m",
@@ -70,6 +70,14 @@
   "club": "x",
   "country": "Australia",
   "results": [
+    {
+      "date": "SEP 2",
+      "meet": "25. Volksbank Trier Eifel Flutlichtmeeting",
+      "event": "1500 m",
+      "time": "3:32.89",
+      "place": "3.",
+      "round": "F1"
+    },
     {
       "date": "AUG 30",
       "meet": "Grand Prix Brescia",

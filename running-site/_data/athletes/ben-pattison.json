@@ -74,6 +74,14 @@
   ],
   "results": [
     {
+      "date": "SEP 4",
+      "meet": "Allianz Memorial van Damme",
+      "event": "800 m",
+      "time": "1:44.29",
+      "place": "5.",
+      "round": "F"
+    },
+    {
       "date": "AUG 13",
       "meet": "European Athletics Championships",
       "event": "800 m",
@@ -258,7 +266,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-04",
+  "lastSynced": "2026-09-05",
   "resultsHistory": {
     "2018": [
       {
@@ -1084,5 +1092,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-03"
+  "lastHistorySynced": "2026-09-04"
 }

@@ -28,7 +28,7 @@
     }
   ],
   "seasons": "x",
-  "lastSynced": "2026-09-04",
+  "lastSynced": "2026-09-05",
   "prs": [
     {
       "event": "800m",
@@ -89,6 +89,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "SEP 4",
+      "meet": "Allianz Memorial van Damme",
+      "event": "1500 m",
+      "time": "3:30.56",
+      "place": "5.",
+      "round": "F"
+    },
     {
       "date": "AUG 27",
       "meet": "Weltklasse Zürich",

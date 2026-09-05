@@ -130,7 +130,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-09-04",
+  "lastSynced": "2026-09-05",
   "prs": [
     {
       "event": "300 Metres",
@@ -224,6 +224,14 @@
   "club": null,
   "country": "Czechia",
   "results": [
+    {
+      "date": "SEP 2",
+      "meet": "25. Volksbank Trier Eifel Flutlichtmeeting",
+      "event": "1500 m",
+      "time": "3:34.73",
+      "place": "9.",
+      "round": "F1"
+    },
     {
       "date": "AUG 30",
       "meet": "Grand Prix Brescia",

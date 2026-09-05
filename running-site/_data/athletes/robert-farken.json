@@ -5,7 +5,7 @@
   "name": "Robert Farken",
   "headlineKey": "",
   "flag": "DE",
-  "lastSynced": "2026-09-04",
+  "lastSynced": "2026-09-05",
   "prs": [
     {
       "event": "400m",
@@ -65,6 +65,14 @@
   "ncaa": false,
   "country": "Germany",
   "results": [
+    {
+      "date": "SEP 4",
+      "meet": "Allianz Memorial van Damme",
+      "event": "1500 m",
+      "time": "3:32.11",
+      "place": "9.",
+      "round": "F"
+    },
     {
       "date": "AUG 30",
       "meet": "ISTAF 2026",
