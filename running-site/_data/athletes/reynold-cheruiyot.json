@@ -18,7 +18,7 @@
     }
   ],
   "seasons": "3",
-  "lastSynced": "2026-09-05",
+  "lastSynced": "2026-09-06",
   "prs": [
     {
       "event": "800m",
@@ -67,6 +67,14 @@
   "club": "x",
   "country": "Kenya",
   "results": [
+    {
+      "date": "SEP 5",
+      "meet": "Allianz Memorial van Damme",
+      "event": "5000 m",
+      "time": "13:22.24",
+      "place": "10.",
+      "round": "F"
+    },
     {
       "date": "AUG 23",
       "meet": "Silesia Kamila Skolimowska Memorial",
@@ -222,7 +230,7 @@
   ],
   "dob": "2004-07-30",
   "weight": "140",
-  "lastHistorySynced": "2026-09-04",
+  "lastHistorySynced": "2026-09-05",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
