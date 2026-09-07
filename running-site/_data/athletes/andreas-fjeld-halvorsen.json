@@ -70,6 +70,22 @@
   ],
   "results": [
     {
+      "date": "SEP 5",
+      "meet": "The Monument Mile Classic",
+      "event": "1500 m",
+      "time": "3:38.61",
+      "place": "",
+      "round": "F1"
+    },
+    {
+      "date": "SEP 5",
+      "meet": "The Monument Mile Classic",
+      "event": "Mile",
+      "time": "3:54.39",
+      "place": "4.",
+      "round": "F1"
+    },
+    {
       "date": "SEP 2",
       "meet": "25. Volksbank Trier Eifel Flutlichtmeeting",
       "event": "1500 m",
@@ -206,7 +222,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-06",
+  "lastSynced": "2026-09-07",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -1079,5 +1095,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-05"
+  "lastHistorySynced": "2026-09-06"
 }

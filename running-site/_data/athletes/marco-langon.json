@@ -76,6 +76,14 @@
   "country": "United States",
   "results": [
     {
+      "date": "SEP 6",
+      "meet": "New Balance Kö Meile",
+      "event": "Mile Road",
+      "time": "3:52.83",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "AUG 30",
       "meet": "ISTAF 2026",
       "event": "1500 m",
@@ -531,7 +539,7 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-05",
+  "lastHistorySynced": "2026-09-06",
   "dob": "2004-08-31",
-  "lastSynced": "2026-09-06"
+  "lastSynced": "2026-09-07"
 }

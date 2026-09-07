@@ -12,7 +12,7 @@
   "flag": "BE",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-09-06",
+  "lastSynced": "2026-09-07",
   "prs": [
     {
       "event": "400m",
@@ -90,6 +90,14 @@
   "club": "x",
   "country": "Belgium",
   "results": [
+    {
+      "date": "SEP 6",
+      "meet": "New Balance Kö Meile",
+      "event": "Mile Road",
+      "time": "3:58.52",
+      "place": "11.",
+      "round": "F"
+    },
     {
       "date": "AUG 14",
       "meet": "European Athletics Championships",
@@ -238,7 +246,7 @@
   "dob": "1999-12-08",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-09-05",
+  "lastHistorySynced": "2026-09-06",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

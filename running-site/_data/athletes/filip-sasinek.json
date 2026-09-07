@@ -130,7 +130,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-09-06",
+  "lastSynced": "2026-09-07",
   "prs": [
     {
       "event": "300 Metres",
@@ -246,6 +246,22 @@
       "event": "1500 m",
       "time": "3:37.95",
       "place": "10.",
+      "round": "F"
+    },
+    {
+      "date": "AUG 23",
+      "meet": "4. kolo I. ligy mužů a žen",
+      "event": "800 m",
+      "time": "1:51.25",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "AUG 23",
+      "meet": "4. kolo I. ligy mužů a žen",
+      "event": "1500 m",
+      "time": "3:56.83",
+      "place": "1.",
       "round": "F"
     },
     {

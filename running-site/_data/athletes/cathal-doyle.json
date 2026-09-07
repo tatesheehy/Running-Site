@@ -12,7 +12,7 @@
   "flag": "IE",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-09-06",
+  "lastSynced": "2026-09-07",
   "prs": [
     {
       "event": "800m",
@@ -70,6 +70,14 @@
   "club": "x",
   "country": "Ireland",
   "results": [
+    {
+      "date": "SEP 6",
+      "meet": "New Balance Kö Meile",
+      "event": "Mile Road",
+      "time": "3:55.33",
+      "place": "5.",
+      "round": "F"
+    },
     {
       "date": "SEP 2",
       "meet": "25. Volksbank Trier Eifel Flutlichtmeeting",
