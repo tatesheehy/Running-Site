@@ -18,7 +18,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-09-07",
+  "lastSynced": "2026-09-08",
   "prs": [
     {
       "event": "400m",
@@ -88,6 +88,22 @@
   "club": null,
   "country": "Great Britain & N.I.",
   "results": [
+    {
+      "date": "SEP 5",
+      "meet": "BMC Bury Track Festival",
+      "event": "800 m",
+      "time": "1:48.62",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
+      "date": "SEP 5",
+      "meet": "BMC Bury Track Festival",
+      "event": "Mile",
+      "time": "4:01.33",
+      "place": "1.",
+      "round": "F1"
+    },
     {
       "date": "AUG 19",
       "meet": "BMC Record Breaker",
