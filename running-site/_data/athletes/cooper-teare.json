@@ -9,7 +9,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-09-08",
+  "lastSynced": "2026-09-09",
   "prs": [
     {
       "event": "1500m",
@@ -83,6 +83,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "SEP 8",
+      "meet": "62° Palio Città della Quercia",
+      "event": "3000 m",
+      "time": "7:41.70",
+      "place": "7.",
+      "round": "F"
+    },
     {
       "date": "AUG 1",
       "meet": "IFAM Oordegem",

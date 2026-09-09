@@ -54,6 +54,14 @@
   ],
   "results": [
     {
+      "date": "SEP 8",
+      "meet": "62° Palio Città della Quercia",
+      "event": "3000 m",
+      "time": "7:36.53",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "AUG 30",
       "meet": "Grand Prix Brescia",
       "event": "3000 m",
@@ -102,7 +110,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-08",
+  "lastSynced": "2026-09-09",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -138,5 +146,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-07"
+  "lastHistorySynced": "2026-09-08"
 }

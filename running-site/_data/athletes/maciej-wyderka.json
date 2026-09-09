@@ -86,6 +86,14 @@
   ],
   "results": [
     {
+      "date": "SEP 8",
+      "meet": "62° Palio Città della Quercia",
+      "event": "800 m",
+      "time": "1:43.79",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
       "date": "AUG 30",
       "meet": "Grand Prix Brescia",
       "event": "800 m",
@@ -214,7 +222,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-08",
+  "lastSynced": "2026-09-09",
   "resultsHistory": {
     "2018": [
       {

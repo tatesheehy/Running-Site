@@ -118,6 +118,14 @@
   ],
   "results": [
     {
+      "date": "SEP 8",
+      "meet": "Dinamo Zrinjevac - International Athletics Meeting",
+      "event": "800 m",
+      "time": "1:45.50",
+      "place": "4.",
+      "round": "F2"
+    },
+    {
       "date": "AUG 31",
       "meet": "XX Mediterranean Games",
       "event": "800 m",
@@ -334,7 +342,7 @@
       "round": "F4"
     }
   ],
-  "lastSynced": "2026-09-08",
+  "lastSynced": "2026-09-09",
   "resultsHistory": {
     "2018": [
       {
