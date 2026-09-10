@@ -58,6 +58,14 @@
   ],
   "results": [
     {
+      "date": "SEP 8",
+      "meet": "Dinamo Zrinjevac - International Athletics Meeting",
+      "event": "1500 m",
+      "time": "3:38.20",
+      "place": "3.",
+      "round": "F"
+    },
+    {
       "date": "JUL 8",
       "meet": "Meeting Lignano",
       "event": "800 m",
@@ -90,7 +98,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-09",
+  "lastSynced": "2026-09-10",
   "resultsHistory": {
     "2018": [
       {
@@ -1028,7 +1036,7 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-08",
+  "lastHistorySynced": "2026-09-09",
   "ncaaTitle": [
     "800m"
   ]
