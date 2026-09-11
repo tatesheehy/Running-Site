@@ -12,7 +12,7 @@
   "flag": "IT",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-09-10",
+  "lastSynced": "2026-09-11",
   "prs": [
     {
       "event": "400m",
@@ -78,6 +78,14 @@
   "club": "x",
   "country": "Italy",
   "results": [
+    {
+      "date": "SEP 9",
+      "meet": "II^ Sabia Day",
+      "event": "800 m",
+      "time": "1:48.58",
+      "place": "4.",
+      "round": "F1"
+    },
     {
       "date": "SEP 1",
       "meet": "XX Mediterranean Games",
