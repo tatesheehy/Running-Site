@@ -50,7 +50,7 @@
     }
   ],
   "seasons": "4",
-  "lastSynced": "2026-09-11",
+  "lastSynced": "2026-09-12",
   "prs": [
     {
       "event": "800m",
@@ -135,6 +135,14 @@
   "club": "Nike",
   "country": "United States",
   "results": [
+    {
+      "date": "SEP 11",
+      "meet": "World Athletics Ultimate Championship",
+      "event": "5000 m",
+      "time": "13:00.05",
+      "place": "2.",
+      "round": "F1"
+    },
     {
       "date": "SEP 4",
       "meet": "Allianz Memorial van Damme",
@@ -258,7 +266,7 @@
   ],
   "dob": "2001-06-06",
   "weight": "145 lbs",
-  "lastHistorySynced": "2026-09-10",
+  "lastHistorySynced": "2026-09-11",
   "coach": "Jerry Schumacher",
   "reviewBody": "At just 23, Hocker is already running times that would have seemed impossible a generation ago for an American miler. His Olympic gold proved it wasn't a fluke.",
   "event": "MIDDLE DISTANCE + DISTANCE",

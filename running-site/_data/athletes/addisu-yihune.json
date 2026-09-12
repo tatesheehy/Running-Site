@@ -54,6 +54,14 @@
   ],
   "results": [
     {
+      "date": "SEP 11",
+      "meet": "World Athletics Ultimate Championship",
+      "event": "5000 m",
+      "time": "DNF",
+      "place": "",
+      "round": "F1"
+    },
+    {
       "date": "JUN 28",
       "meet": "Meeting de Paris",
       "event": "5000 m",
@@ -110,7 +118,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-11",
+  "lastSynced": "2026-09-12",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -406,5 +414,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-10"
+  "lastHistorySynced": "2026-09-11"
 }

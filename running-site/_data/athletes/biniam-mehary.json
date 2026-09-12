@@ -62,6 +62,14 @@
   ],
   "results": [
     {
+      "date": "SEP 11",
+      "meet": "World Athletics Ultimate Championship",
+      "event": "5000 m",
+      "time": "13:00.24",
+      "place": "4.",
+      "round": "F1"
+    },
+    {
       "date": "SEP 5",
       "meet": "Allianz Memorial van Damme",
       "event": "5000 m",
@@ -118,7 +126,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-11",
+  "lastSynced": "2026-09-12",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -292,5 +300,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-10"
+  "lastHistorySynced": "2026-09-11"
 }

@@ -115,7 +115,7 @@
     }
   ],
   "seasons": "8",
-  "lastSynced": "2026-09-11",
+  "lastSynced": "2026-09-12",
   "prs": [
     {
       "event": "400m",
@@ -188,6 +188,14 @@
   "club": "Sandnes IL",
   "country": "Norway",
   "results": [
+    {
+      "date": "SEP 11",
+      "meet": "World Athletics Ultimate Championship",
+      "event": "5000 m",
+      "time": "12:59.24",
+      "place": "1.",
+      "round": "F1"
+    },
     {
       "date": "SEP 4",
       "meet": "Allianz Memorial van Damme",
