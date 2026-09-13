@@ -102,6 +102,14 @@
   ],
   "results": [
     {
+      "date": "SEP 12",
+      "meet": "World Athletics Ultimate Championship",
+      "event": "800 m",
+      "time": "1:44.47",
+      "place": "6.",
+      "round": "SF2"
+    },
+    {
       "date": "JUL 24",
       "meet": "USA Championships",
       "event": "800 m",
@@ -182,7 +190,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-12",
+  "lastSynced": "2026-09-13",
   "resultsHistory": {
     "2018": [
       {
@@ -639,5 +647,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-11"
+  "lastHistorySynced": "2026-09-12"
 }

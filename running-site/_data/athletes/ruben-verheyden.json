@@ -12,7 +12,7 @@
   "flag": "BE",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-09-12",
+  "lastSynced": "2026-09-13",
   "prs": [
     {
       "event": "400m",
@@ -90,6 +90,14 @@
   "club": "x",
   "country": "Belgium",
   "results": [
+    {
+      "date": "SEP 12",
+      "meet": "Lët'z mile Luxembourg City",
+      "event": "Mile Road",
+      "time": "4:04.9h",
+      "place": "4.",
+      "round": "F"
+    },
     {
       "date": "SEP 4",
       "meet": "Allianz Memorial van Damme",

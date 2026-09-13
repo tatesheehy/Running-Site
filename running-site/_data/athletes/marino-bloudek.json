@@ -118,6 +118,14 @@
   ],
   "results": [
     {
+      "date": "SEP 12",
+      "meet": "World Athletics Ultimate Championship",
+      "event": "800 m",
+      "time": "1:45.90",
+      "place": "8.",
+      "round": "SF1"
+    },
+    {
       "date": "SEP 8",
       "meet": "Dinamo Zrinjevac - International Athletics Meeting",
       "event": "800 m",
@@ -342,7 +350,7 @@
       "round": "F4"
     }
   ],
-  "lastSynced": "2026-09-12",
+  "lastSynced": "2026-09-13",
   "resultsHistory": {
     "2018": [
       {

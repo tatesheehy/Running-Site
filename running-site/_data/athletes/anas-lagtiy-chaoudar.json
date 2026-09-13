@@ -4,7 +4,7 @@
   "waUrl": "https://worldathletics.org/athletes/france/anas-lagtiy-chaoudar-15032059",
   "name": "Anas Lagtiy Chaoudar",
   "flag": "FR",
-  "lastSynced": "2026-09-12",
+  "lastSynced": "2026-09-13",
   "prs": [
     {
       "event": "800m",
@@ -44,6 +44,14 @@
   "ncaa": false,
   "country": "France",
   "results": [
+    {
+      "date": "SEP 12",
+      "meet": "Lët'z mile Luxembourg City",
+      "event": "Mile Road",
+      "time": "4:08.2h",
+      "place": "7.",
+      "round": "F"
+    },
     {
       "date": "SEP 1",
       "meet": "XX Mediterranean Games",
@@ -158,7 +166,7 @@
     }
   ],
   "dob": "2004-01-17",
-  "lastHistorySynced": "2026-09-11",
+  "lastHistorySynced": "2026-09-12",
   "event": "MIDDLE DISTANCE",
   "id": "anas-lagtiy-chaoudar",
   "resultsHistory": {

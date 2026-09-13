@@ -74,6 +74,14 @@
   ],
   "results": [
     {
+      "date": "SEP 12",
+      "meet": "World Athletics Ultimate Championship",
+      "event": "800 m",
+      "time": "1:47.58",
+      "place": "8.",
+      "round": "SF2"
+    },
+    {
       "date": "SEP 4",
       "meet": "Allianz Memorial van Damme",
       "event": "800 m",
@@ -266,7 +274,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-12",
+  "lastSynced": "2026-09-13",
   "resultsHistory": {
     "2018": [
       {
@@ -1092,5 +1100,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-11"
+  "lastHistorySynced": "2026-09-12"
 }
