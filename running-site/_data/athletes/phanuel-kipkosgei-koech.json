@@ -25,7 +25,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-09-13",
+  "lastSynced": "2026-09-14",
   "prs": [
     {
       "event": "800m",
@@ -51,6 +51,14 @@
   "club": null,
   "country": "Kenya",
   "results": [
+    {
+      "date": "SEP 13",
+      "meet": "World Athletics Ultimate Championship",
+      "event": "1500 m",
+      "time": "3:31.77",
+      "place": "10.",
+      "round": "F1"
+    },
     {
       "date": "SEP 4",
       "meet": "Allianz Memorial van Damme",
@@ -102,7 +110,7 @@
   ],
   "dob": "01 DEC 2006",
   "weight": null,
-  "lastHistorySynced": "2026-09-12",
+  "lastHistorySynced": "2026-09-13",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

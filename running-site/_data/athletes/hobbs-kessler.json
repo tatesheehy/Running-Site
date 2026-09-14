@@ -18,7 +18,7 @@
     }
   ],
   "seasons": "4",
-  "lastSynced": "2026-09-13",
+  "lastSynced": "2026-09-14",
   "prs": [
     {
       "event": "800m",
@@ -83,6 +83,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "SEP 13",
+      "meet": "World Athletics Ultimate Championship",
+      "event": "1500 m",
+      "time": "3:30.73",
+      "place": "3.",
+      "round": "F1"
+    },
     {
       "date": "SEP 4",
       "meet": "Allianz Memorial van Damme",
@@ -238,7 +246,7 @@
   ],
   "dob": "2003-03-15",
   "weight": "140",
-  "lastHistorySynced": "2026-09-12",
+  "lastHistorySynced": "2026-09-13",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

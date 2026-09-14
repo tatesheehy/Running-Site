@@ -31,7 +31,7 @@
     }
   ],
   "seasons": "9",
-  "lastSynced": "2026-09-13",
+  "lastSynced": "2026-09-14",
   "prs": [
     {
       "event": "800m",
@@ -88,6 +88,14 @@
   "club": "Nike",
   "country": "Portugal",
   "results": [
+    {
+      "date": "SEP 13",
+      "meet": "World Athletics Ultimate Championship",
+      "event": "1500 m",
+      "time": "3:39.54",
+      "place": "12.",
+      "round": "F1"
+    },
     {
       "date": "AUG 27",
       "meet": "Weltklasse Zürich",

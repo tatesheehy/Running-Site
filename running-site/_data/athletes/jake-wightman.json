@@ -25,7 +25,7 @@
     }
   ],
   "seasons": "12",
-  "lastSynced": "2026-09-13",
+  "lastSynced": "2026-09-14",
   "prs": [
     {
       "event": "400m",
@@ -114,6 +114,14 @@
   "club": "xx",
   "country": "Scotland",
   "results": [
+    {
+      "date": "SEP 13",
+      "meet": "World Athletics Ultimate Championship",
+      "event": "1500 m",
+      "time": "3:31.56",
+      "place": "9.",
+      "round": "F1"
+    },
     {
       "date": "AUG 27",
       "meet": "Weltklasse Zürich",
