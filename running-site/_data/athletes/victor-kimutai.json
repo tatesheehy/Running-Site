@@ -50,6 +50,14 @@
   ],
   "results": [
     {
+      "date": "JUL 4",
+      "meet": "HOKUREN Distance Challenge in Chitose",
+      "event": "5000 m",
+      "time": "13:09.38",
+      "place": "2.",
+      "round": "F1"
+    },
+    {
       "date": "MAY 30",
       "meet": "Twolaps Middle Distance Circuit",
       "event": "1500 m",
@@ -90,7 +98,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-14",
+  "lastSynced": "2026-09-15",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -361,5 +369,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-13"
+  "lastHistorySynced": "2026-09-14"
 }

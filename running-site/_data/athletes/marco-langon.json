@@ -76,6 +76,14 @@
   "country": "United States",
   "results": [
     {
+      "date": "SEP 13",
+      "meet": "New Balance 5th Avenue Mile",
+      "event": "Mile Road",
+      "time": "3:45.0h",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "SEP 6",
       "meet": "New Balance Kö Meile",
       "event": "Mile Road",
@@ -539,7 +547,7 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-13",
+  "lastHistorySynced": "2026-09-14",
   "dob": "2004-08-31",
-  "lastSynced": "2026-09-14"
+  "lastSynced": "2026-09-15"
 }

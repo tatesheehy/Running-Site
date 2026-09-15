@@ -12,7 +12,7 @@
   "flag": "AU",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-09-14",
+  "lastSynced": "2026-09-15",
   "prs": [
     {
       "event": "800m",
@@ -70,6 +70,14 @@
   "club": "x",
   "country": "Australia",
   "results": [
+    {
+      "date": "SEP 13",
+      "meet": "New Balance 5th Avenue Mile",
+      "event": "Mile Road",
+      "time": "3:45.8h",
+      "place": "3.",
+      "round": "F"
+    },
     {
       "date": "SEP 6",
       "meet": "New Balance Kö Meile",

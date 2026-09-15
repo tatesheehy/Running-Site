@@ -10,7 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-09-14",
+  "lastSynced": "2026-09-15",
   "prs": [
     {
       "event": "800m",
@@ -84,6 +84,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "SEP 13",
+      "meet": "New Balance 5th Avenue Mile",
+      "event": "Mile Road",
+      "time": "3:47.9h",
+      "place": "8.",
+      "round": "F"
+    },
     {
       "date": "SEP 2",
       "meet": "Serbia Athletics Meeting",
@@ -296,7 +304,7 @@
   "dob": "2003-12-23",
   "college": "Virginia",
   "weight": "x",
-  "lastHistorySynced": "2026-09-13",
+  "lastHistorySynced": "2026-09-14",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",
