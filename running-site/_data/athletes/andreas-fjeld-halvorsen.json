@@ -70,6 +70,14 @@
   ],
   "results": [
     {
+      "date": "SEP 19",
+      "meet": "World Athletics Road Running Championships",
+      "event": "Mile Road",
+      "time": "3:59.42",
+      "place": "23.",
+      "round": "F1"
+    },
+    {
       "date": "SEP 5",
       "meet": "The Monument Mile Classic",
       "event": "1500 m",
@@ -222,7 +230,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-18",
+  "lastSynced": "2026-09-19",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -1095,5 +1103,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-17"
+  "lastHistorySynced": "2026-09-18"
 }

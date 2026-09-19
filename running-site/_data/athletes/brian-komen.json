@@ -46,7 +46,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-09-18",
+  "lastSynced": "2026-09-19",
   "prs": [
     {
       "event": "1500m",
@@ -72,6 +72,14 @@
   "club": null,
   "country": "Kenya",
   "results": [
+    {
+      "date": "SEP 19",
+      "meet": "World Athletics Road Running Championships",
+      "event": "Mile Road",
+      "time": "3:56.61",
+      "place": "14.",
+      "round": "F1"
+    },
     {
       "date": "AUG 1",
       "meet": "XXIII Commonwealth Games",
@@ -179,7 +187,7 @@
   ],
   "dob": "10 AUG 1998",
   "weight": null,
-  "lastHistorySynced": "2026-09-17",
+  "lastHistorySynced": "2026-09-18",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

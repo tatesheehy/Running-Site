@@ -39,7 +39,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-09-18",
+  "lastSynced": "2026-09-19",
   "prs": [
     {
       "event": "800m",
@@ -85,6 +85,14 @@
   "club": null,
   "country": "Kenya",
   "results": [
+    {
+      "date": "SEP 19",
+      "meet": "World Athletics Road Running Championships",
+      "event": "Mile Road",
+      "time": "3:59.89",
+      "place": "25.",
+      "round": "F1"
+    },
     {
       "date": "JUL 12",
       "meet": "Tampere Meeting",
@@ -152,7 +160,7 @@
   ],
   "dob": "28 FEB 1995",
   "weight": null,
-  "lastHistorySynced": "2026-09-17",
+  "lastHistorySynced": "2026-09-18",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

@@ -13,7 +13,7 @@
   "headlineKey": "x",
   "flag": "AU",
   "seasons": "x",
-  "lastSynced": "2026-09-18",
+  "lastSynced": "2026-09-19",
   "prs": [
     {
       "event": "800m",
@@ -90,6 +90,14 @@
   "ncaa": false,
   "country": "Australia",
   "results": [
+    {
+      "date": "SEP 19",
+      "meet": "World Athletics Road Running Championships",
+      "event": "Mile Road",
+      "time": "3:53.65",
+      "place": "6.",
+      "round": "F1"
+    },
     {
       "date": "SEP 13",
       "meet": "New Balance 5th Avenue Mile",

@@ -58,6 +58,14 @@
   ],
   "results": [
     {
+      "date": "SEP 18",
+      "meet": "72. ORLEN Janusz Kusocinski Memorial",
+      "event": "800 m",
+      "time": "1:44.74",
+      "place": "3.",
+      "round": "F"
+    },
+    {
       "date": "SEP 8",
       "meet": "Dinamo Zrinjevac - International Athletics Meeting",
       "event": "1500 m",
@@ -98,7 +106,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-18",
+  "lastSynced": "2026-09-19",
   "resultsHistory": {
     "2018": [
       {
@@ -1036,7 +1044,7 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-17",
+  "lastHistorySynced": "2026-09-18",
   "ncaaTitle": [
     "800m"
   ]
