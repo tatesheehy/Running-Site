@@ -42,6 +42,14 @@
   ],
   "results": [
     {
+      "date": "SEP 19",
+      "meet": "World Athletics Road Running Championships",
+      "event": "5 Kilom Road",
+      "time": "13:00",
+      "place": "3.",
+      "round": "F1"
+    },
+    {
       "date": "JUL 10",
       "meet": "Meeting International d’Athlétisme Herculis EBS",
       "event": "5000 m",
@@ -106,7 +114,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-19",
+  "lastSynced": "2026-09-20",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -199,5 +207,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-18"
+  "lastHistorySynced": "2026-09-19"
 }

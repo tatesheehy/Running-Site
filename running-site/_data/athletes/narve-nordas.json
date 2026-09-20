@@ -18,7 +18,7 @@
     }
   ],
   "seasons": "x",
-  "lastSynced": "2026-09-19",
+  "lastSynced": "2026-09-20",
   "prs": [
     {
       "event": "800m",
@@ -84,6 +84,14 @@
   "club": "x",
   "country": "Norway",
   "results": [
+    {
+      "date": "SEP 19",
+      "meet": "World Athletics Road Running Championships",
+      "event": "5 Kilom Road",
+      "time": "13:17",
+      "place": "15.",
+      "round": "F1"
+    },
     {
       "date": "AUG 30",
       "meet": "ISTAF 2026",

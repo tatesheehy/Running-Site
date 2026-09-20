@@ -98,6 +98,14 @@
   ],
   "results": [
     {
+      "date": "SEP 19",
+      "meet": "World Athletics Road Running Championships",
+      "event": "5 Kilom Road",
+      "time": "13:29",
+      "place": "18.",
+      "round": "F1"
+    },
+    {
       "date": "SEP 5",
       "meet": "Allianz Memorial van Damme",
       "event": "5000 m",
@@ -210,7 +218,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-19",
+  "lastSynced": "2026-09-20",
   "resultsHistory": {
     "2018": [
       {

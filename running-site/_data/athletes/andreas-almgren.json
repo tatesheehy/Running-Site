@@ -118,6 +118,14 @@
   ],
   "results": [
     {
+      "date": "SEP 20",
+      "meet": "World Athletics Road Running Championships",
+      "event": "Half Marathon",
+      "time": "58:06",
+      "place": "1.",
+      "round": "F1"
+    },
+    {
       "date": "AUG 30",
       "meet": "Finnkampen",
       "event": "10,000 m",
@@ -214,7 +222,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-19",
+  "lastSynced": "2026-09-20",
   "resultsHistory": {
     "2018": [
       {

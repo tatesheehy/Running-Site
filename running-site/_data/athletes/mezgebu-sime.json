@@ -66,6 +66,14 @@
   ],
   "results": [
     {
+      "date": "SEP 19",
+      "meet": "World Athletics Road Running Championships",
+      "event": "5 Kilom Road",
+      "time": "13:08",
+      "place": "7.",
+      "round": "F1"
+    },
+    {
       "date": "AUG 27",
       "meet": "Weltklasse Zürich",
       "event": "3000 m",
@@ -138,7 +146,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-19",
+  "lastSynced": "2026-09-20",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -296,5 +304,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-18"
+  "lastHistorySynced": "2026-09-19"
 }

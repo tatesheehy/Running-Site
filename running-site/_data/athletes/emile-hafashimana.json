@@ -58,6 +58,14 @@
   ],
   "results": [
     {
+      "date": "SEP 20",
+      "meet": "World Athletics Road Running Championships",
+      "event": "Half Marathon",
+      "time": "1:01:16",
+      "place": "25.",
+      "round": "F1"
+    },
+    {
       "date": "JUN 20",
       "meet": "C.D.S. Assoluto su Pista - Finale \"A\" Oro",
       "event": "1500 m",
@@ -130,7 +138,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-19",
+  "lastSynced": "2026-09-20",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -512,5 +520,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-18"
+  "lastHistorySynced": "2026-09-19"
 }

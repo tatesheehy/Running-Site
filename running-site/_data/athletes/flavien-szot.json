@@ -12,7 +12,7 @@
   "flag": "FR",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-09-19",
+  "lastSynced": "2026-09-20",
   "prs": [
     {
       "event": "800m",
@@ -100,6 +100,14 @@
       "event": "Mile Road",
       "time": "3:53.44",
       "place": "5.",
+      "round": "F1"
+    },
+    {
+      "date": "SEP 19",
+      "meet": "World Athletics Road Running Championships",
+      "event": "5 Kilom Road",
+      "time": "14:47",
+      "place": "48.",
       "round": "F1"
     },
     {

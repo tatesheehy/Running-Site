@@ -78,6 +78,14 @@
   ],
   "results": [
     {
+      "date": "SEP 20",
+      "meet": "World Athletics Road Running Championships",
+      "event": "Half Marathon",
+      "time": "1:03:08",
+      "place": "64.",
+      "round": "F1"
+    },
+    {
       "date": "AUG 10",
       "meet": "European Athletics Championships",
       "event": "5000 m",
@@ -142,7 +150,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-19",
+  "lastSynced": "2026-09-20",
   "resultsHistory": {
     "2018": [
       {

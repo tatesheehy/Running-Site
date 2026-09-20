@@ -86,6 +86,14 @@
   ],
   "results": [
     {
+      "date": "SEP 19",
+      "meet": "World Athletics Road Running Championships",
+      "event": "5 Kilom Road",
+      "time": "13:31",
+      "place": "21.",
+      "round": "F1"
+    },
+    {
       "date": "AUG 15",
       "meet": "European Athletics Championships",
       "event": "10,000 m",
@@ -182,7 +190,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-19",
+  "lastSynced": "2026-09-20",
   "resultsHistory": {
     "2018": [
       {

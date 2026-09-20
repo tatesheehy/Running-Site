@@ -58,6 +58,14 @@
   ],
   "results": [
     {
+      "date": "SEP 19",
+      "meet": "World Athletics Road Running Championships",
+      "event": "5 Kilom Road",
+      "time": "13:12",
+      "place": "9.",
+      "round": "F1"
+    },
+    {
       "date": "SEP 11",
       "meet": "World Athletics Ultimate Championship",
       "event": "5000 m",
@@ -146,7 +154,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-19",
+  "lastSynced": "2026-09-20",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -666,5 +674,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-18"
+  "lastHistorySynced": "2026-09-19"
 }
