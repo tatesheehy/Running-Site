@@ -25,7 +25,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-09-21",
+  "lastSynced": "2026-09-22",
   "prs": [
     {
       "event": "800m",
@@ -57,7 +57,7 @@
       "event": "1500 m",
       "time": "3:31.77",
       "place": "10.",
-      "round": "F1"
+      "round": "F"
     },
     {
       "date": "SEP 4",
@@ -110,7 +110,7 @@
   ],
   "dob": "01 DEC 2006",
   "weight": null,
-  "lastHistorySynced": "2026-09-20",
+  "lastHistorySynced": "2026-09-21",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

@@ -46,7 +46,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-09-21",
+  "lastSynced": "2026-09-22",
   "prs": [
     {
       "event": "1500m",
@@ -78,7 +78,7 @@
       "event": "Mile Road",
       "time": "3:56.61",
       "place": "14.",
-      "round": "F1"
+      "round": "F"
     },
     {
       "date": "AUG 1",
@@ -187,7 +187,7 @@
   ],
   "dob": "10 AUG 1998",
   "weight": null,
-  "lastHistorySynced": "2026-09-20",
+  "lastHistorySynced": "2026-09-21",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",

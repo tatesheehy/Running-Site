@@ -67,7 +67,7 @@
       "event": "800 m",
       "time": "1:41.91",
       "place": "1.",
-      "round": "F1"
+      "round": "F"
     },
     {
       "date": "SEP 12",
@@ -134,7 +134,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-21",
+  "lastSynced": "2026-09-22",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -574,5 +574,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-20"
+  "lastHistorySynced": "2026-09-21"
 }

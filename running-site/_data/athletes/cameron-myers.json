@@ -10,7 +10,7 @@
   "headlineKey": "xx",
   "flag": "AU",
   "seasons": "2",
-  "lastSynced": "2026-09-21",
+  "lastSynced": "2026-09-22",
   "prs": [
     {
       "event": "800m",
@@ -61,7 +61,7 @@
       "event": "1500 m",
       "time": "3:29.68",
       "place": "2.",
-      "round": "F1"
+      "round": "F"
     },
     {
       "date": "SEP 4",
@@ -226,7 +226,7 @@
   ],
   "dob": "2006-06-09",
   "weight": "150",
-  "lastHistorySynced": "2026-09-20",
+  "lastHistorySynced": "2026-09-21",
   "coach": "xx",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

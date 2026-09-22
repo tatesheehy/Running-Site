@@ -91,7 +91,7 @@
       "event": "5000 m",
       "time": "13:00.26",
       "place": "5.",
-      "round": "F1"
+      "round": "F"
     },
     {
       "date": "SEP 5",
@@ -166,7 +166,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-21",
+  "lastSynced": "2026-09-22",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -808,7 +808,7 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-20",
+  "lastHistorySynced": "2026-09-21",
   "ncaaTitle": [
     "3000m",
     "5000m"

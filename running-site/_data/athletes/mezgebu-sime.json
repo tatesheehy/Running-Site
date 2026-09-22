@@ -71,7 +71,7 @@
       "event": "5 Kilom Road",
       "time": "13:08",
       "place": "7.",
-      "round": "F1"
+      "round": "F"
     },
     {
       "date": "AUG 27",
@@ -146,7 +146,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-21",
+  "lastSynced": "2026-09-22",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -304,5 +304,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-20"
+  "lastHistorySynced": "2026-09-21"
 }
