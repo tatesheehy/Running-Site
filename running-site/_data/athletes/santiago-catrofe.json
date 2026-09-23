@@ -94,6 +94,14 @@
   ],
   "results": [
     {
+      "date": "SEP 22",
+      "meet": "South American Games",
+      "event": "10,000 m",
+      "time": "28:16.79",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "SEP 5",
       "meet": "Prague 10K Night Race",
       "event": "10 Kilom Road",
@@ -190,7 +198,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-22",
+  "lastSynced": "2026-09-23",
   "resultsHistory": {
     "2018": [
       {
