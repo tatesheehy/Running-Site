@@ -12,7 +12,7 @@
   "flag": "UY",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-09-23",
+  "lastSynced": "2026-09-24",
   "prs": [
     {
       "event": "800m",
@@ -70,6 +70,14 @@
   "club": "x",
   "country": "Uruguay",
   "results": [
+    {
+      "date": "SEP 23",
+      "meet": "South American Games",
+      "event": "1500 m",
+      "time": "3:46.05",
+      "place": "1.",
+      "round": "F"
+    },
     {
       "date": "AUG 19",
       "meet": "BMC Record Breaker",
@@ -234,7 +242,7 @@
   "dob": "2002-07-24",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-09-22",
+  "lastHistorySynced": "2026-09-23",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",
