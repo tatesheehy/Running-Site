@@ -94,6 +94,14 @@
   ],
   "results": [
     {
+      "date": "SEP 24",
+      "meet": "South American Games",
+      "event": "5000 m",
+      "time": "13:32.19",
+      "place": "2.",
+      "round": "F"
+    },
+    {
       "date": "SEP 22",
       "meet": "South American Games",
       "event": "10,000 m",
@@ -198,7 +206,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-24",
+  "lastSynced": "2026-09-25",
   "resultsHistory": {
     "2018": [
       {
