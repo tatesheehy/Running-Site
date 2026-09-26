@@ -54,6 +54,14 @@
   ],
   "results": [
     {
+      "date": "SEP 24",
+      "meet": "ABSA Run Your City",
+      "event": "10 Kilom Road",
+      "time": "28:59",
+      "place": "4.",
+      "round": "F"
+    },
+    {
       "date": "JUN 21",
       "meet": "FBK Games",
       "event": "5000 m",
@@ -118,7 +126,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-25",
+  "lastSynced": "2026-09-26",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -237,5 +245,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-24"
+  "lastHistorySynced": "2026-09-25"
 }
