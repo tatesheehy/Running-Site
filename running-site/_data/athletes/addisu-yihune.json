@@ -54,6 +54,14 @@
   ],
   "results": [
     {
+      "date": "SEP 26",
+      "meet": "Pollença Running Fest",
+      "event": "5 Kilom Road",
+      "time": "13:18",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "SEP 19",
       "meet": "World Athletics Road Running Championships",
       "event": "5 Kilom Road",
@@ -126,7 +134,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-26",
+  "lastSynced": "2026-09-27",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -422,5 +430,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-25"
+  "lastHistorySynced": "2026-09-26"
 }

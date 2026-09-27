@@ -70,6 +70,14 @@
   ],
   "results": [
     {
+      "date": "SEP 26",
+      "meet": "20th Asian Games",
+      "event": "1500 m",
+      "time": "3:45.79",
+      "place": "3.",
+      "round": "H2"
+    },
+    {
       "date": "SEP 25",
       "meet": "20th Asian Games",
       "event": "10,000 m",
@@ -174,7 +182,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-26",
+  "lastSynced": "2026-09-27",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -565,5 +573,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-25"
+  "lastHistorySynced": "2026-09-26"
 }
