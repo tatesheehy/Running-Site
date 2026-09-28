@@ -54,6 +54,14 @@
   ],
   "results": [
     {
+      "date": "SEP 26",
+      "meet": "TCS Lidingoloppet",
+      "event": "Cross Country",
+      "time": "46:48",
+      "place": "3.",
+      "round": "F"
+    },
+    {
       "date": "SEP 19",
       "meet": "World Athletics Road Running Championships",
       "event": "5 Kilom Road",
@@ -134,7 +142,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-27",
+  "lastSynced": "2026-09-28",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -324,5 +332,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-26"
+  "lastHistorySynced": "2026-09-27"
 }

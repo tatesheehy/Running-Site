@@ -38,6 +38,14 @@
   ],
   "results": [
     {
+      "date": "SEP 26",
+      "meet": "Yogibo Athletics Challenge Cup",
+      "event": "5000 m",
+      "time": "13:20.64",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "SEP 13",
       "meet": "74th Japan Corporate Teams Athletics Championships",
       "event": "5000 m",
@@ -110,7 +118,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-09-27",
+  "lastSynced": "2026-09-28",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -196,5 +204,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-09-26"
+  "lastHistorySynced": "2026-09-27"
 }
