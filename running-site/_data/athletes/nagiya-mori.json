@@ -70,6 +70,14 @@
   ],
   "results": [
     {
+      "date": "SEP 29",
+      "meet": "20th Asian Games",
+      "event": "5000 m",
+      "time": "13:35.55",
+      "place": "4.",
+      "round": "F"
+    },
+    {
       "date": "SEP 28",
       "meet": "20th Asian Games",
       "event": "1500 m",
@@ -166,7 +174,7 @@
       "round": "F1"
     }
   ],
-  "lastSynced": "2026-09-29",
+  "lastSynced": "2026-09-30",
   "resultsHistory": {
     "2018": [
       {
