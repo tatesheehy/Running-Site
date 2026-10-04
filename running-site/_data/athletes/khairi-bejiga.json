@@ -46,6 +46,14 @@
   ],
   "results": [
     {
+      "date": "OCT 4",
+      "meet": "tRUNsylvania International 10K Brasov",
+      "event": "10 Kilom Road",
+      "time": "26:54",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "AUG 21",
       "meet": "Athletissima Lausanne",
       "event": "5000 m",
@@ -94,7 +102,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-10-03",
+  "lastSynced": "2026-10-04",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -187,5 +195,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-10-02"
+  "lastHistorySynced": "2026-10-03"
 }
