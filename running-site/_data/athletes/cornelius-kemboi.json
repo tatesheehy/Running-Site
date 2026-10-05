@@ -58,14 +58,6 @@
   ],
   "results": [
     {
-      "date": "OCT 4",
-      "meet": "tRUNsylvania International 10K Brasov",
-      "event": "10 Kilom Road",
-      "time": "27:12",
-      "place": "3.",
-      "round": "F"
-    },
-    {
       "date": "SEP 11",
       "meet": "World Athletics Ultimate Championship",
       "event": "5000 m",
@@ -178,7 +170,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-10-04",
+  "lastSynced": "2026-10-05",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -604,5 +596,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-10-03"
+  "lastHistorySynced": "2026-10-04"
 }

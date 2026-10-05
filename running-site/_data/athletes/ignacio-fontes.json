@@ -12,7 +12,7 @@
   "flag": "ES",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-10-04",
+  "lastSynced": "2026-10-05",
   "prs": [
     {
       "event": "400m",
@@ -86,6 +86,14 @@
   "club": "x",
   "country": "Spain",
   "results": [
+    {
+      "date": "OCT 3",
+      "meet": "XXXVIII Milla Internacional de Berango",
+      "event": "Mile Road",
+      "time": "4:24.2h",
+      "place": "3.",
+      "round": "F"
+    },
     {
       "date": "AUG 9",
       "meet": "British Milers Club Grand Prix",

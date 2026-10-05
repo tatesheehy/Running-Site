@@ -54,6 +54,14 @@
   ],
   "results": [
     {
+      "date": "OCT 4",
+      "meet": "tRUNsylvania International 10K Brasov",
+      "event": "10 Kilom Road",
+      "time": "27:34",
+      "place": "11.",
+      "round": "F"
+    },
+    {
       "date": "SEP 19",
       "meet": "World Athletics Road Running Championships",
       "event": "5 Kilom Road",
@@ -126,7 +134,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-10-04",
+  "lastSynced": "2026-10-05",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -341,5 +349,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-10-03"
+  "lastHistorySynced": "2026-10-04"
 }
