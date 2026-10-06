@@ -12,7 +12,7 @@
   "flag": "ES",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-10-05",
+  "lastSynced": "2026-10-06",
   "prs": [
     {
       "event": "800m",
@@ -94,6 +94,14 @@
   "club": "x",
   "country": "Spain",
   "results": [
+    {
+      "date": "OCT 4",
+      "meet": "XX Carreira Popular Coruña 10",
+      "event": "10 Kilom Road",
+      "time": "30:40",
+      "place": "3.",
+      "round": "F"
+    },
     {
       "date": "SEP 2",
       "meet": "25. Volksbank Trier Eifel Flutlichtmeeting",

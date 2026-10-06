@@ -32,7 +32,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-10-05",
+  "lastSynced": "2026-10-06",
   "prs": [
     {
       "event": "400m",
@@ -106,6 +106,14 @@
   "club": null,
   "country": "Andorra",
   "results": [
+    {
+      "date": "OCT 3",
+      "meet": "XXXVIII Milla Internacional de Berango",
+      "event": "Mile Road",
+      "time": "4:25.4h",
+      "place": "7.",
+      "round": "F"
+    },
     {
       "date": "SEP 19",
       "meet": "World Athletics Road Running Championships",
@@ -245,7 +253,7 @@
   ],
   "dob": "09 DEC 1996",
   "weight": null,
-  "lastHistorySynced": "2026-10-04",
+  "lastHistorySynced": "2026-10-05",
   "coach": null,
   "reviewBody": null,
   "event": "1500m",
