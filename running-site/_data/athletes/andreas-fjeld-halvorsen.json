@@ -70,6 +70,14 @@
   ],
   "results": [
     {
+      "date": "OCT 3",
+      "meet": "RunFest",
+      "event": "5 Kilom Road",
+      "time": "13:28",
+      "place": "2.",
+      "round": "F"
+    },
+    {
       "date": "SEP 19",
       "meet": "World Athletics Road Running Championships",
       "event": "Mile Road",
@@ -230,7 +238,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-10-06",
+  "lastSynced": "2026-10-07",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -1103,5 +1111,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-10-05"
+  "lastHistorySynced": "2026-10-06"
 }

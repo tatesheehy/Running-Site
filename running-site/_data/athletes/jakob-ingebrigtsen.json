@@ -115,7 +115,7 @@
     }
   ],
   "seasons": "8",
-  "lastSynced": "2026-10-06",
+  "lastSynced": "2026-10-07",
   "prs": [
     {
       "event": "400m",
@@ -188,6 +188,14 @@
   "club": "Sandnes IL",
   "country": "Norway",
   "results": [
+    {
+      "date": "OCT 3",
+      "meet": "RunFest",
+      "event": "5 Kilom Road",
+      "time": "13:26",
+      "place": "1.",
+      "round": "F"
+    },
     {
       "date": "SEP 19",
       "meet": "World Athletics Road Running Championships",
