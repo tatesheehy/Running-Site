@@ -118,6 +118,14 @@
   ],
   "results": [
     {
+      "date": "OCT 11",
+      "meet": "Bank of America Chicago Marathon",
+      "event": "Marathon",
+      "time": "2:08:01",
+      "place": "15.",
+      "round": "F"
+    },
+    {
       "date": "SEP 7",
       "meet": "Faxon Law New Haven Road Race",
       "event": "20 Kilom Road",
@@ -166,7 +174,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-10-14",
+  "lastSynced": "2026-10-15",
   "resultsHistory": {
     "2018": [
       {
