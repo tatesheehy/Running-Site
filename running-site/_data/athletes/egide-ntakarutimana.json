@@ -58,6 +58,14 @@
   ],
   "results": [
     {
+      "date": "OCT 18",
+      "meet": "72º Cross Internacional Zornotza",
+      "event": "Cross Country",
+      "time": "25:19",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "SEP 26",
       "meet": "TCS Lidingoloppet",
       "event": "Cross Country",
@@ -162,7 +170,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-10-18",
+  "lastSynced": "2026-10-19",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -682,5 +690,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-10-17"
+  "lastHistorySynced": "2026-10-18"
 }
