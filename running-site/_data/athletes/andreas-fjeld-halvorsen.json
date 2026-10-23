@@ -70,6 +70,14 @@
   ],
   "results": [
     {
+      "date": "OCT 17",
+      "meet": "Hytteplanmila",
+      "event": "10 Kilom Road",
+      "time": "28:28",
+      "place": "3.",
+      "round": "F"
+    },
+    {
       "date": "OCT 3",
       "meet": "RunFest",
       "event": "5 Kilom Road",
@@ -238,7 +246,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-10-22",
+  "lastSynced": "2026-10-23",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -1111,5 +1119,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-10-21"
+  "lastHistorySynced": "2026-10-22"
 }
