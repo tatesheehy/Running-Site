@@ -58,6 +58,14 @@
   ],
   "results": [
     {
+      "date": "OCT 25",
+      "meet": "TREK Marathon de Lille",
+      "event": "Marathon",
+      "time": "2:10:17",
+      "place": "4.",
+      "round": "F"
+    },
+    {
       "date": "SEP 20",
       "meet": "World Athletics Road Running Championships",
       "event": "Half Marathon",
@@ -138,7 +146,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-10-26",
+  "lastSynced": "2026-10-27",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -520,5 +528,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-10-25"
+  "lastHistorySynced": "2026-10-26"
 }

@@ -46,6 +46,14 @@
   ],
   "results": [
     {
+      "date": "OCT 25",
+      "meet": "Medio Marathon Valencia Trinidad Alfonso Zurich",
+      "event": "Half Marathon",
+      "time": "1:01:32",
+      "place": "24.",
+      "round": "F"
+    },
+    {
       "date": "OCT 4",
       "meet": "tRUNsylvania International 10K Brasov",
       "event": "10 Kilom Road",
@@ -102,7 +110,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-10-26",
+  "lastSynced": "2026-10-27",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -195,5 +203,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-10-25"
+  "lastHistorySynced": "2026-10-26"
 }
