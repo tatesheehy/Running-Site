@@ -10,7 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-10-27",
+  "lastSynced": "2026-10-28",
   "prs": [
     {
       "event": "400m",
@@ -272,7 +272,7 @@
   "dob": "2003-10-28",
   "college": "NAU",
   "weight": "x",
-  "lastHistorySynced": "2026-10-26",
+  "lastHistorySynced": "2026-10-27",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",
   "id": "colin-sahlman",
@@ -832,5 +832,5 @@
       }
     ]
   },
-  "age": "22"
+  "age": "23"
 }
