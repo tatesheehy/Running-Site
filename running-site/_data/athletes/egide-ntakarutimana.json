@@ -58,6 +58,14 @@
   ],
   "results": [
     {
+      "date": "NOV 1",
+      "meet": "Padenghe Half Marathon",
+      "event": "Half Marathon",
+      "time": "1:02:41",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "OCT 18",
       "meet": "72º Cross Internacional Zornotza",
       "event": "Cross Country",
@@ -170,7 +178,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-11-01",
+  "lastSynced": "2026-11-02",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -690,5 +698,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-10-31"
+  "lastHistorySynced": "2026-11-01"
 }

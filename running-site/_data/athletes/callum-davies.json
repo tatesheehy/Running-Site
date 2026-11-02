@@ -25,7 +25,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-11-01",
+  "lastSynced": "2026-11-02",
   "prs": [
     {
       "event": "800m",
@@ -71,6 +71,14 @@
   "club": null,
   "country": "Australia",
   "results": [
+    {
+      "date": "OCT 28",
+      "meet": "UQ Sport 1500m Classic",
+      "event": "1500 m",
+      "time": "3:44.29",
+      "place": "1.",
+      "round": "F1"
+    },
     {
       "date": "AUG 2",
       "meet": "Sunshine Coast Marathon Festival - 10K & 5K",

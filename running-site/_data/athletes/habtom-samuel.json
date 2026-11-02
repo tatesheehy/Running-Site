@@ -13,7 +13,7 @@
   "headlineKey": "x",
   "flag": "ER",
   "seasons": "x",
-  "lastSynced": "2026-11-01",
+  "lastSynced": "2026-11-02",
   "prs": [
     {
       "event": "1500m",
@@ -70,6 +70,14 @@
   "ncaa": false,
   "country": "Eritrea",
   "results": [
+    {
+      "date": "OCT 31",
+      "meet": "Abbott Dash to the Finish Line 5K",
+      "event": "5 Kilom Road",
+      "time": "13:31",
+      "place": "1.",
+      "round": "F"
+    },
     {
       "date": "AUG 16",
       "meet": "ASICS Falmouth Road Race",
@@ -210,7 +218,7 @@
   "dob": "2003-11-30",
   "college": "New Mexico",
   "weight": "x",
-  "lastHistorySynced": "2026-10-31",
+  "lastHistorySynced": "2026-11-01",
   "reviewBody": "x",
   "event": "DISTANCE",
   "id": "habtom-samuel",

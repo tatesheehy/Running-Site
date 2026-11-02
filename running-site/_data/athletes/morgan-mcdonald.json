@@ -9,7 +9,7 @@
   "waUrl": "https://worldathletics.org/athletes/australia/morgan-mcdonald-14496066",
   "name": "Morgan McDonald",
   "flag": "AU",
-  "lastSynced": "2026-11-01",
+  "lastSynced": "2026-11-02",
   "prs": [
     {
       "event": "1500m",
@@ -85,6 +85,14 @@
   "ncaa": false,
   "country": "Australia",
   "results": [
+    {
+      "date": "OCT 31",
+      "meet": "Abbott Dash to the Finish Line 5K",
+      "event": "5 Kilom Road",
+      "time": "13:46",
+      "place": "5.",
+      "round": "F"
+    },
     {
       "date": "MAY 23",
       "meet": "LA Track Festival",

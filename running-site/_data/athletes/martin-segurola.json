@@ -12,7 +12,7 @@
   "flag": "ES",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-11-01",
+  "lastSynced": "2026-11-02",
   "prs": [
     {
       "event": "800m",
@@ -62,6 +62,14 @@
   "club": "x",
   "country": "Spain",
   "results": [
+    {
+      "date": "NOV 1",
+      "meet": "70º Cross Internacional de San Sebastián",
+      "event": "Cross Country",
+      "time": "21:19",
+      "place": "7.",
+      "round": "F"
+    },
     {
       "date": "OCT 3",
       "meet": "XXXVIII Milla Internacional de Berango",
@@ -226,7 +234,7 @@
   "dob": "2003-07-01",
   "college": "",
   "weight": "x",
-  "lastHistorySynced": "2026-10-31",
+  "lastHistorySynced": "2026-11-01",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE",

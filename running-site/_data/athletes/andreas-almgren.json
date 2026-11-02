@@ -118,6 +118,14 @@
   ],
   "results": [
     {
+      "date": "NOV 1",
+      "meet": "TCS New York City Marathon",
+      "event": "Marathon",
+      "time": "2:06:01",
+      "place": "1.",
+      "round": "F"
+    },
+    {
       "date": "SEP 20",
       "meet": "World Athletics Road Running Championships",
       "event": "Half Marathon",
@@ -222,7 +230,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-11-01",
+  "lastSynced": "2026-11-02",
   "resultsHistory": {
     "2018": [
       {
