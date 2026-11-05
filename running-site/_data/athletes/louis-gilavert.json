@@ -12,7 +12,7 @@
   "flag": "FR",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-11-04",
+  "lastSynced": "2026-11-05",
   "prs": [
     {
       "event": "800m",
@@ -70,6 +70,14 @@
   "club": "x",
   "country": "France",
   "results": [
+    {
+      "date": "NOV 1",
+      "meet": "MAIF Ekiden de Paris",
+      "event": "Road Relay",
+      "time": "2:06:23",
+      "place": "2.",
+      "round": "F"
+    },
     {
       "date": "OCT 3",
       "meet": "XXXVIII Milla Internacional de Berango",
