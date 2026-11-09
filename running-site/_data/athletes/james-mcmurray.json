@@ -18,7 +18,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-11-08",
+  "lastSynced": "2026-11-09",
   "prs": [
     {
       "event": "400m",
@@ -88,6 +88,14 @@
   "club": null,
   "country": "Great Britain & N.I.",
   "results": [
+    {
+      "date": "NOV 8",
+      "meet": "Marathon de Bordeaux AG2R La Mondiale - Semi & 10km",
+      "event": "10 Kilom Road",
+      "time": "29:02",
+      "place": "20.",
+      "round": "F"
+    },
     {
       "date": "SEP 5",
       "meet": "BMC Bury Track Festival",

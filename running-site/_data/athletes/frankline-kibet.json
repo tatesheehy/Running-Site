@@ -54,6 +54,14 @@
   ],
   "results": [
     {
+      "date": "NOV 8",
+      "meet": "XLIV Cross Internacional de Itálica",
+      "event": "Cross Country",
+      "time": "27:39",
+      "place": "3.",
+      "round": "F"
+    },
+    {
       "date": "SEP 8",
       "meet": "62° Palio Città della Quercia",
       "event": "3000 m",
@@ -110,7 +118,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-11-08",
+  "lastSynced": "2026-11-09",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -146,5 +154,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-11-07"
+  "lastHistorySynced": "2026-11-08"
 }

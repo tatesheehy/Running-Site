@@ -12,7 +12,7 @@
   "flag": "FR",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-11-08",
+  "lastSynced": "2026-11-09",
   "prs": [
     {
       "event": "400m",
@@ -70,6 +70,14 @@
   "club": "x",
   "country": "France",
   "results": [
+    {
+      "date": "NOV 8",
+      "meet": "Marathon de Bordeaux AG2R La Mondiale - Semi & 10km",
+      "event": "10 Kilom Road",
+      "time": "28:22",
+      "place": "5.",
+      "round": "F"
+    },
     {
       "date": "JUL 16",
       "meet": "Meeting Madrid",

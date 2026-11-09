@@ -46,6 +46,14 @@
   ],
   "results": [
     {
+      "date": "NOV 8",
+      "meet": "XLIV Cross Internacional de Itálica",
+      "event": "Cross Country",
+      "time": "27:52",
+      "place": "4.",
+      "round": "F"
+    },
+    {
       "date": "NOV 1",
       "meet": "70º Cross Internacional de San Sebastián",
       "event": "Cross Country",
@@ -134,7 +142,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-11-08",
+  "lastSynced": "2026-11-09",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -267,5 +275,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-11-07"
+  "lastHistorySynced": "2026-11-08"
 }

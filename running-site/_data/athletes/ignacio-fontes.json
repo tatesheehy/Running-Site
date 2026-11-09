@@ -12,7 +12,7 @@
   "flag": "ES",
   "honours": [],
   "seasons": "0",
-  "lastSynced": "2026-11-08",
+  "lastSynced": "2026-11-09",
   "prs": [
     {
       "event": "400m",
@@ -86,6 +86,14 @@
   "club": "x",
   "country": "Spain",
   "results": [
+    {
+      "date": "NOV 8",
+      "meet": "XLIV Cross Internacional de Itálica",
+      "event": "Cross Country",
+      "time": "29:38",
+      "place": "27.",
+      "round": "F"
+    },
     {
       "date": "OCT 3",
       "meet": "XXXVIII Milla Internacional de Berango",

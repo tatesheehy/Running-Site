@@ -13,7 +13,7 @@
   "headlineKey": "x",
   "flag": "ER",
   "seasons": "x",
-  "lastSynced": "2026-11-08",
+  "lastSynced": "2026-11-09",
   "prs": [
     {
       "event": "1500m",
@@ -70,6 +70,14 @@
   "ncaa": false,
   "country": "Eritrea",
   "results": [
+    {
+      "date": "NOV 8",
+      "meet": "Boston Half",
+      "event": "Half Marathon",
+      "time": "59:49",
+      "place": "1.",
+      "round": "F"
+    },
     {
       "date": "OCT 31",
       "meet": "Abbott Dash to the Finish Line 5K",
@@ -218,7 +226,7 @@
   "dob": "2003-11-30",
   "college": "New Mexico",
   "weight": "x",
-  "lastHistorySynced": "2026-11-07",
+  "lastHistorySynced": "2026-11-08",
   "reviewBody": "x",
   "event": "DISTANCE",
   "id": "habtom-samuel",

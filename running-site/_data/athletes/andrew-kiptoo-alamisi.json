@@ -50,6 +50,14 @@
   ],
   "results": [
     {
+      "date": "NOV 8",
+      "meet": "XLIV Cross Internacional de Itálica",
+      "event": "Cross Country",
+      "time": "28:17",
+      "place": "7.",
+      "round": "F"
+    },
+    {
       "date": "AUG 1",
       "meet": "XXIII Commonwealth Games",
       "event": "5000 m",
@@ -130,7 +138,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-11-08",
+  "lastSynced": "2026-11-09",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -304,5 +312,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-11-07"
+  "lastHistorySynced": "2026-11-08"
 }
