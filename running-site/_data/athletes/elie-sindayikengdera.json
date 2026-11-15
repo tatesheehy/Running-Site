@@ -54,6 +54,14 @@
   ],
   "results": [
     {
+      "date": "NOV 14",
+      "meet": "Sparkassen Cross Pforzheim",
+      "event": "Cross Country",
+      "time": "19:48",
+      "place": "8.",
+      "round": "F"
+    },
+    {
       "date": "OCT 18",
       "meet": "72º Cross Internacional Zornotza",
       "event": "Cross Country",
@@ -150,7 +158,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-11-14",
+  "lastSynced": "2026-11-15",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -340,5 +348,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-11-13"
+  "lastHistorySynced": "2026-11-14"
 }

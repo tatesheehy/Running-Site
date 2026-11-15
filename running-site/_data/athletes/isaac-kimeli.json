@@ -90,6 +90,14 @@
   ],
   "results": [
     {
+      "date": "NOV 14",
+      "meet": "Sparkassen Cross Pforzheim",
+      "event": "Cross Country",
+      "time": "19:45",
+      "place": "6.",
+      "round": "F"
+    },
+    {
       "date": "AUG 15",
       "meet": "European Athletics Championships",
       "event": "10,000 m",
@@ -170,7 +178,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-11-14",
+  "lastSynced": "2026-11-15",
   "resultsHistory": {
     "2018": [
       {
