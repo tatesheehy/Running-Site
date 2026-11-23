@@ -74,6 +74,14 @@
   ],
   "results": [
     {
+      "date": "NOV 22",
+      "meet": "Cross Internacional de Atapuerca",
+      "event": "Cross Country",
+      "time": "22:54",
+      "place": "4.",
+      "round": "F"
+    },
+    {
       "date": "NOV 15",
       "meet": "32 \"Campo A Traves\" Internacional De Soria",
       "event": "Cross Country",
@@ -170,7 +178,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-11-22",
+  "lastSynced": "2026-11-23",
   "resultsHistory": {
     "2018": [],
     "2019": [
@@ -748,5 +756,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-11-21"
+  "lastHistorySynced": "2026-11-22"
 }

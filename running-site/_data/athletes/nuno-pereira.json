@@ -39,7 +39,7 @@
     }
   ],
   "seasons": null,
-  "lastSynced": "2026-11-22",
+  "lastSynced": "2026-11-23",
   "prs": [
     {
       "event": "400m",
@@ -101,6 +101,14 @@
   "club": null,
   "country": "Portugal",
   "results": [
+    {
+      "date": "NOV 22",
+      "meet": "Portuguese Cross Country Championships",
+      "event": "Cross Country",
+      "time": "25:57",
+      "place": "17.",
+      "round": "F"
+    },
     {
       "date": "AUG 14",
       "meet": "European Athletics Championships",

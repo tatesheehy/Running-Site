@@ -50,6 +50,14 @@
   ],
   "results": [
     {
+      "date": "NOV 21",
+      "meet": "27th NITTAIDAI Challenge Games",
+      "event": "10,000 m",
+      "time": "27:55.63",
+      "place": "12.",
+      "round": "F4"
+    },
+    {
       "date": "JUL 4",
       "meet": "HOKUREN Distance Challenge in Chitose",
       "event": "5000 m",
@@ -98,7 +106,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-11-22",
+  "lastSynced": "2026-11-23",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -369,5 +377,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-11-21"
+  "lastHistorySynced": "2026-11-22"
 }

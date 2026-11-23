@@ -58,6 +58,14 @@
   ],
   "results": [
     {
+      "date": "NOV 22",
+      "meet": "Cross Internacional de Atapuerca",
+      "event": "Cross Country",
+      "time": "22:56",
+      "place": "6.",
+      "round": "F"
+    },
+    {
       "date": "NOV 14",
       "meet": "Sparkassen Cross Pforzheim",
       "event": "Cross Country",
@@ -186,7 +194,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-11-22",
+  "lastSynced": "2026-11-23",
   "resultsHistory": {
     "2018": [],
     "2019": [],
@@ -706,5 +714,5 @@
       }
     ]
   },
-  "lastHistorySynced": "2026-11-21"
+  "lastHistorySynced": "2026-11-22"
 }

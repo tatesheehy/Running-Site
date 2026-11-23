@@ -10,7 +10,7 @@
   "headlineKey": "x",
   "flag": "US",
   "seasons": "x",
-  "lastSynced": "2026-11-22",
+  "lastSynced": "2026-11-23",
   "prs": [
     {
       "event": "800m",
@@ -84,6 +84,14 @@
   "club": "x",
   "country": "United States",
   "results": [
+    {
+      "date": "NOV 21",
+      "meet": "Philadelphia Marathon - Half Marathon @ 8K",
+      "event": "Half Marathon",
+      "time": "1:02:23",
+      "place": "4.",
+      "round": "F"
+    },
     {
       "date": "SEP 13",
       "meet": "New Balance 5th Avenue Mile",
@@ -304,7 +312,7 @@
   "dob": "2003-12-23",
   "college": "Virginia",
   "weight": "x",
-  "lastHistorySynced": "2026-11-21",
+  "lastHistorySynced": "2026-11-22",
   "coach": "x",
   "reviewBody": "x",
   "event": "MIDDLE DISTANCE/DISTANCE",
