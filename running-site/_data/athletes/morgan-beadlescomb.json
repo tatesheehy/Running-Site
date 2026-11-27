@@ -98,6 +98,14 @@
   ],
   "results": [
     {
+      "date": "NOV 26",
+      "meet": "Manchester Road Race",
+      "event": "Road Race",
+      "time": "21:03",
+      "place": "3.",
+      "round": "F"
+    },
+    {
       "date": "SEP 27",
       "meet": "Heart to Heart 5k Presented by BCH",
       "event": "5 Kilom Road",
@@ -178,7 +186,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-11-26",
+  "lastSynced": "2026-11-27",
   "resultsHistory": {
     "2018": [
       {

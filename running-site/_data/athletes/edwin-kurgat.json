@@ -106,6 +106,14 @@
   ],
   "results": [
     {
+      "date": "NOV 26",
+      "meet": "Manchester Road Race",
+      "event": "Road Race",
+      "time": "21:01",
+      "place": "2.",
+      "round": "F"
+    },
+    {
       "date": "OCT 31",
       "meet": "Abbott Dash to the Finish Line 5K",
       "event": "5 Kilom Road",
@@ -186,7 +194,7 @@
       "round": "F"
     }
   ],
-  "lastSynced": "2026-11-26",
+  "lastSynced": "2026-11-27",
   "resultsHistory": {
     "2018": [
       {
